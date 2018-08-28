@@ -38,11 +38,11 @@ Choose **Wiki**.
 # [Previous navigation](#tab/previous-nav)
 
 > [!div class="mx-imgBorder"]  
-> ![Open Wiki hub](/vsts/project/wiki/_img/wiki/wiki-connect-browser.png)
+> ![Open Wiki hub](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
  
-If you don't see the **Wiki** hub, your screen size may be reduced. Choose the ![](/vsts/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), and then choose **Wiki>Wiki**.
+If you don't see the **Wiki** hub, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), and then choose **Wiki>Wiki**.
 
-![Open wiki hub, reduced screen size](/vsts/project/wiki/_img/wiki/open-wiki-hub.png)
+![Open wiki hub, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
 
 ---

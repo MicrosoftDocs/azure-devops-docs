@@ -93,7 +93,7 @@ The hosted agent machines running Linux, macOS, and Windows now have Java 10 pre
 
 ### Progressively expose and phase deployments using release gates, now generally available
 
-Release gates, which enable data-driven approval of deployments, now becomes generally available! Using release gates, you can specify application health criteria that must be met before a release is promoted to the next environment. All the specified gates are periodically evaluated prior to or after any deployment, until they are all successful. Four types of gates are available out of the box and you can add more gates from the [Marketplace](https://marketplace.visualstudio.com/search?term=tag%3AReleaseGates&target=VSTS&category=All%20categories&sortBy=Relevance). You will be able to audit that all the necessary criteria for a deployment were met. See the [documentation for release gates](/vsts/pipelines/release/approvals/gates) for more information.
+Release gates, which enable data-driven approval of deployments, now becomes generally available! Using release gates, you can specify application health criteria that must be met before a release is promoted to the next environment. All the specified gates are periodically evaluated prior to or after any deployment, until they are all successful. Four types of gates are available out of the box and you can add more gates from the [Marketplace](https://marketplace.visualstudio.com/search?term=tag%3AReleaseGates&target=VSTS&category=All%20categories&sortBy=Relevance). You will be able to audit that all the necessary criteria for a deployment were met. See the [documentation for release gates](/azure/devops/pipelines/release/approvals/gates) for more information.
 
 > [!div class="mx-imgBorder"]
 ![Release gates panel](_img/134_09.png)
@@ -116,7 +116,7 @@ You can also target [Azure Service Fabric](https://azure.microsoft.com/services/
 
 ### Release hybrid applications to Azure Stack
 
-Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/vsts/pipelines/library/service-endpoints?view=vsts#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/vsts/pipelines/targets/azure-stack?view=vsts) documentation for more information.
+Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=vsts#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Connect to Azure](_img/134_08.png)
@@ -129,11 +129,11 @@ The **Helm Tool Installer** task acquires a specific version of Helm from the in
 
 ### Follow packages
 
-[Last Update](/vsts/release-notes/2018/apr-16-vsts#subscribe-to-package-update-notifications) we released a new package notification type, which allows you to get updates about packages and feeds you care about by setting up a new subscription in the **Notifications** settings. Now, we’ve made it even easier to set up notifications with a new **Follow** button directly on every package. The **Follow** button is also compatible with release views. If you follow a package while looking at it through a view, you’ll only get updates for new versions that are promoted to that view.
+[Last Update](/azure/devops/release-notes/2018/apr-16-vsts#subscribe-to-package-update-notifications) we released a new package notification type, which allows you to get updates about packages and feeds you care about by setting up a new subscription in the **Notifications** settings. Now, we’ve made it even easier to set up notifications with a new **Follow** button directly on every package. The **Follow** button is also compatible with release views. If you follow a package while looking at it through a view, you’ll only get updates for new versions that are promoted to that view.
 
 ### Control who can pull packages from upstream sources
 
-With the new upstream sources feature that was released [last update](/vsts/release-notes/2018/apr-16-vsts#use-upstream-nuget-packages-from-elsewhere-in-vsts), you’re now able to use NuGet and npm packages from other teams’ feeds through your feed. As we listened to your feedback, we heard that the current permissions for upstream sources, which require you to be a Contributor to save packages from an upstream, weren’t granular enough in some situations.
+With the new upstream sources feature that was released [last update](/azure/devops/release-notes/2018/apr-16-vsts#use-upstream-nuget-packages-from-elsewhere-in-vsts), you’re now able to use NuGet and npm packages from other teams’ feeds through your feed. As we listened to your feedback, we heard that the current permissions for upstream sources, which require you to be a Contributor to save packages from an upstream, weren’t granular enough in some situations.
 
 This Update we’ve introduced a new role in Package Management called **Collaborator**. A Collaborator can save packages from an upstream source but cannot publish packages directly into the feed (for example, by using `nuget push`). This enables you to restrict package publish to those you trust or to the build system, while allowing your engineers to use new packages from your upstream sources.
 
@@ -146,7 +146,7 @@ A few of the interactions on the feed settings page have been improved. Now, cha
 ### Manage test plans using the new Test Plans hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Test Plan Experience** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Test Plan Experience** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
 Introducing the new hub for **Test Plans**! Not only can you add, edit, and delete plans from this page but also find and favorite plans across your team and the project. We pioneered this type of experience in **Dashboards**, **Queries**, and **Plans**. This is another step to bring this consistency across the product.
 
@@ -178,7 +178,7 @@ The [Demo Generator](https://vstsdemogenerator.azurewebsites.net/) helps you cre
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 
-Check out the [documentation](/vsts/demo-gen) for step-by-step instructions for using the Generator.
+Check out the [documentation](/azure/devops/demo-gen) for step-by-step instructions for using the Generator.
 
 ## Next steps and Feedback
 

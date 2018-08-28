@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/artifacts/get-started-maven
+redirect_url: /azure/devops/artifacts/get-started-maven
 ---

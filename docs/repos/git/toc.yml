@@ -110,9 +110,9 @@
     - name: Configure branch policy for an external service
       href: pr-status-policy.md
   - name: Define a CI build for your repo
-    href: ../../pipelines/build/ci-build-git.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
-    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Manage repos
@@ -128,7 +128,7 @@
     - name: Git and TFVC repos
       href: team-projects.md
     - name: "Set Git permissions (Security)"
-      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -158,7 +158,7 @@
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
-    href: ../../project/wiki/markdown-guidance.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Frequently asked questions
     href: howto.md
   - name: History
@@ -168,7 +168,7 @@
     - name: Commit details
       href: commit-details.md
   - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Git limits
     href: limits.md
 - name: Resources
@@ -200,6 +200,6 @@
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse
-      href: /vsts/java/download-eclipse-plug-in
+      href: /azure/devops/java/download-eclipse-plug-in
     - name: IntelliJ IDEA
-      href: /vsts/java/download-intellij-plug-in
+      href: /azure/devops/java/download-intellij-plug-in

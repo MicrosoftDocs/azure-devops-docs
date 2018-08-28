@@ -36,9 +36,9 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [Repor
 | | |
 
 ## Step-by-Step Tutorials
-- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
 - [Create an Analytics view](analytics-views-create.md)
 - [Manage Analytics views](analytics-views-manage.md)
 
@@ -58,8 +58,8 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [Repor
 - [Resolve errors associated with an Analytics view](troubleshooting-views.md)
 
 ## Reference 
-- [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [API versioning](../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [API versioning](../extend-analytics/odata-api-version.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
 
 <!---
 Future:

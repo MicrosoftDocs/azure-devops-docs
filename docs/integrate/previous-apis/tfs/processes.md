@@ -32,7 +32,7 @@ GET https://{instance}/DefaultCollection/_apis/process/processes?api-version={ve
 | Parameter          | Type                                                     | Notes                                                                                                                       
 |:-------------------|:---------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance           | string                                                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string                                                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | api-version        | string                                                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 [!code-REST [GET__processes_json](./_data/processes/GET__processes.json)]
@@ -51,7 +51,7 @@ GET https://{instance}/DefaultCollection/_apis/process/processes/{processId}?api
 | Parameter          | Type    | Notes                                                                                                                       
 |:-------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | processId          | string  | ID of the process.
 | api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

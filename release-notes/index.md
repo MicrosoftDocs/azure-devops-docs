@@ -2898,7 +2898,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 April 2015](https://visualstudio.microsoft.com/integrate/extensions/overview)</td>
+            <td>[29 April 2015](/azure/devops/integrate/)</td>
             <td>Extensions</td>
             <td>2015.2</td>
         </tr>

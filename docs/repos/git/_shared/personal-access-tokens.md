@@ -49,7 +49,7 @@ that this token will authorize for *your specific tasks*.
    > * Git: [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
 	or [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
 	(requires [Git for Windows](https://www.git-scm.com/download/win))
-   > * NuGet: [NuGet Credential Provider](/vsts/artifacts/nuget/nuget-exe)
+   > * NuGet: [NuGet Credential Provider](/azure/devops/artifacts/nuget/nuget-exe)
 
 ## Revoke personal access tokens to remove access
 

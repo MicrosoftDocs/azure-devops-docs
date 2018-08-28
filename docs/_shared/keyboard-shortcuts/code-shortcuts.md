@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts when working in the **Code** hub. T
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Code shortcuts](/vsts/_shared/_img/keyboard-shortcuts/code-shortcuts.png)</td>
+<td>![Code shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/code-shortcuts.png)</td>
 <td>
 
 **Code**<br/> 

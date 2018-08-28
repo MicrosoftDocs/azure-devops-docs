@@ -42,7 +42,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
 - [**Search box**](search-basics.md): use to find code, work items, or wiki content 
-- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
+- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
 
 ::: moniker-end
@@ -59,7 +59,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
 - [**Search box**](search-basics.md): use to find code, work items, or wiki content 
-- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
+- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
 
 
@@ -67,7 +67,7 @@ Here's what you need to know to get up and running using the web portal.
 
 
 > [!NOTE]   
-> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a  project, see [Tools and clients](../../user-guide/tools.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json). 
+> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a  project, see [Tools and clients](../../user-guide/tools.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json). 
 
 
 # [New navigation](#tab/new-nav)

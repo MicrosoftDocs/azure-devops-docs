@@ -137,7 +137,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ---
 
-Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json). 
+Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 
 
 

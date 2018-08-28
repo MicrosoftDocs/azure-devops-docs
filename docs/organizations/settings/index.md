@@ -24,13 +24,13 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 ## 5-Minute Quickstarts    
 - [Set area paths](set-area-paths.md)
 - [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
-- [Add users to a project or team](../security/add-users-team-project.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
-- [Add a team administrator](../../organizations/settings/add-team-administrator.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json) 
+- [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
+- [Add and manage users](../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Change individual permissions](../security/change-individual-permissions.md) 
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 
@@ -51,8 +51,8 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 
 ## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
-- [Team administrator role & permissions](../../organizations/settings/team-administrator-permissions.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
+- [Default permissions and access](../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Team administrator role & permissions](../../organizations/settings/team-administrator-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 
 
 ## Resources 

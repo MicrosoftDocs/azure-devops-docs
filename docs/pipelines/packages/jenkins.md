@@ -72,7 +72,7 @@ The easiest way to use the Azure Artifacts NuGet service is by adding the [Micro
   * Commit this change to your repo.
 
 ![Add your feed URL to nuget.config](_img/nugetconfig.png)
-* [Generate a PAT (personal access token)](https://visualstudio.microsoft.com/en-us/news/2015/2015-jul-7-vso) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
+* [Generate a PAT (personal access token)](/azure/devops/release-notes/index) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
 * Save your feed URL and PAT to a text file for use later in the walkthrough.
 
 

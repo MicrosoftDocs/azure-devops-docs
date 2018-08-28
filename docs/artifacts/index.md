@@ -29,7 +29,7 @@ Host your NuGet, npm, and Maven packages in **Azure DevOps Services** and **Team
 
 ## Resources
 
-- [Build and Release with Pipelines in Azure DevOps Services](/vsts/pipelines/index)
+- [Build and Release with Pipelines in Azure DevOps Services](/azure/devops/pipelines/index)
 
 ## Videos
 | | |

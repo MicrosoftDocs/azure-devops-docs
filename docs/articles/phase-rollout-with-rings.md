@@ -66,7 +66,7 @@ At the application level, the composition of VSTS extensions is innocuous, easy 
 
 ![Progressive exposure of the application layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
-At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](/vsts/extend/develop/data-storage).
+At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](/azure/devops/extend/develop/data-storage).
 
 ![Progressive exposure of the infrastructure layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
@@ -106,7 +106,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
+> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
 
 ## Dealing with monitoring and noise
 
@@ -167,7 +167,7 @@ The ring deployment model allows you to process a hotfix like any other change. 
 
 ### How do you deal with variables that span (shared) release environments?
 
-Refer to [Variables in Release Management](/vsts/pipelines/release/variables).
+Refer to [Variables in Release Management](/azure/devops/pipelines/release/variables).
 
 ### How can you manage secrets used by the pipeline?
 

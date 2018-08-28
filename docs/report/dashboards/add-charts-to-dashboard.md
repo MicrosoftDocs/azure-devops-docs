@@ -52,7 +52,7 @@ Each time a build is run, it logs information about the build, including the run
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open **Build and Release>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Build and Release>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -77,7 +77,7 @@ Each time a release is deployed, it logs information about the release to each o
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open **Build and Release>Releases** to add a release definition chart to a team dashboard.   
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Build and Release>Releases** to add a release definition chart to a team dashboard.   
 
 	![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
 
@@ -99,7 +99,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
@@ -123,7 +123,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 Requires TFS 2017.2 or later version. 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -147,7 +147,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 >[!NOTE]  
 ><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) as needed.  
 
 2. If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 

@@ -5,7 +5,7 @@ ms.topic: include
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/vsts/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/vsts/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/vsts/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
  
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
@@ -15,15 +15,15 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
-	![Open your Kanban board](/vsts/boards/boards/_img/quickstart/open-kanban-board-agile.png)  
+	![Open your Kanban board](/azure/devops/boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
-	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/azure/devops/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team's board](/vsts/boards/boards/_img/quickstart/select-kanban-team-board.png) 
+	> ![Choose another team's board](/azure/devops/boards/boards/_img/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the ![](/vsts/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/vsts/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
@@ -42,28 +42,28 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
-	![Open Portfolio Kanban board, Features](/vsts/boards/boards/_img/quickstart/open-kanban-board.png)
+	![Open Portfolio Kanban board, Features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
-	![Open Work hub when screen size is reduced](/vsts/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
+	![Open Work hub when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](/vsts/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+	> ![Choose another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2015"
-	![Choose another team from the project menu](/vsts/boards/sprints/_img/capacity/vso-team-selector.png)
+	![Choose another team from the project menu](/azure/devops/boards/sprints/_img/capacity/vso-team-selector.png)
 	::: moniker-end
 
 0. Your Kanban board displays. 
 	::: moniker range=">= tfs-2017"   
-	![Kanban board, Agile template](/vsts/boards/boards/_img/kanban-basics-intro.png)   
+	![Kanban board, Agile template](/azure/devops/boards/boards/_img/kanban-basics-intro.png)   
 	::: moniker-end   
 	::: moniker range=">= tfs-2013 <= tfs-2015"    
 	> [!div class="mx-imgBorder"]  
-	> ![TFS 2015, Kanban board, Agile template](/vsts/boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
+	> ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
 	::: moniker-end   
 
 

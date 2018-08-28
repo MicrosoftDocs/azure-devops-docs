@@ -34,25 +34,25 @@ Wikis and repository README files are great ways to share information with your 
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Publish code to a wiki](publish-repo-to-wiki.md)  
 - [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
  
 ## Concepts 
 
 ::: moniker range=">= tfs-2018"
 - [Wiki Git repository files and file structure](wiki-file-structure.md)  
-- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017" 
-- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
 
 ## How-to Guides
@@ -85,7 +85,7 @@ Wikis and repository README files are great ways to share information with your 
 
 - [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
-- [Navigate in the web portal](..//navigation/index.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json) 
+- [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json) 
  
 ## Resources 
 

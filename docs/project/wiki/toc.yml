@@ -1,5 +1,5 @@
 - name: Wikis
-  href: index.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
+  href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: "About Wikis, READMes, & markdown"
@@ -17,13 +17,13 @@
   - name: Share your project vision
     href: project-vision-status.md
   - name: Add markdown to a dashboard
-    href: ../../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
+    href: ../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Wiki file structure
     href: wiki-file-structure.md 
   - name: Create a README 
-    href: ../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
+    href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: View Wiki history and revert

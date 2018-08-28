@@ -32,7 +32,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 - [Create or edit a managed query](using-queries.md)
 - [Triage work items](triage-work-items.md)
-- [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 
 
 ## Samples
@@ -49,18 +49,18 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## How-to Guides
-- [Configure work item query-based charts](../../report/dashboards/charts.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json) 
+- [Configure work item query-based charts](../../report/dashboards/charts.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json) 
 - [Organize queries, add a query folder](organize-queries.md)
-- [Change column options](../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)  
-- [Email/print work items](../work-items/email-work-items.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json) 
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)  
+- [Email/print work items](../work-items/email-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json) 
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json) 
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json) 
 - [WIQL syntax](wiql-syntax.md)
-- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
  
 
  

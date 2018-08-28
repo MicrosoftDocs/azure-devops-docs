@@ -11,7 +11,7 @@ You can use the following keyboard shortcuts when working in the **Work** hub, *
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work Backlogs page shortcuts](/vsts/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
+<td>![Work Backlogs page shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
 <td>
 **Backlogs**<br/><br/>
 

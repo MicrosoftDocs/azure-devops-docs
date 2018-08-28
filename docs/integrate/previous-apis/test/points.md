@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter           | Type   | Default | Notes
 |:--------------------|:------|:--------|:---------------------------------
 | URL
-| instance            | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance            | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project             | string |         | Name or ID of the project.
 | plan                | int    |         | ID of the test plan.
 | suite               | int    |         | ID of the suite that contains the points.
@@ -75,7 +75,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter           | Type   | Notes
 |:--------------------|:------|:---------------------------------
 | URL
-| instance            | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance            | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project             | string | Name or ID of the project.
 | plan                | int    | ID of the test plan.
 | suite               | int    | ID of the suite that contains the point.
@@ -113,7 +113,7 @@ Content-Type: application/json
 | Parameter           | Type   | Notes
 |:--------------------|:------|:---------------------------------
 | URL
-| instance            | string     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance            | string     | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project             | string     | Name or ID of the project.
 | plan                | int        | ID of the test plan.
 | suite               | int        | ID of the suite that contains the point.
@@ -162,7 +162,7 @@ Content-Type: application/json
 | Parameter         | Type   | Default | Notes
 |:------------------|:-------|:--------|:------------------------
 | URL
-| instance          | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project           | string |         | Name or ID of the project.
 | Query
 | api-version       | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

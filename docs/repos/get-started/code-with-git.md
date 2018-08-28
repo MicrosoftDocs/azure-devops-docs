@@ -144,6 +144,6 @@ TODO
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration & delivery](../../pipelines/get-started-designer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration & delivery](../../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 > or
 > [learn more about working with a Git repo](../git/index.md)

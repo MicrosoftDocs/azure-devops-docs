@@ -23,7 +23,7 @@ Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
 Then, read [Plan and track work](plan-track-work.md) to get familiar with work items and work item types.
 
-Next, to develop your product backlog, read [Create your backlog](../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../boards/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json).
+Next, to develop your product backlog, read [Create your backlog](../backlogs/create-your-backlog.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../boards/kanban-quickstart.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json).
 
 Other resources to get you up and running: 
 

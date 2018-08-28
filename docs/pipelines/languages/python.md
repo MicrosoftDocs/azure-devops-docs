@@ -40,7 +40,7 @@ For the exact versions of Python that are preinstalled, refer to [Microsoft-host
 Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# /vsts/pipelines/languages/python
+# /azure/devops/pipelines/languages/python
 pool: 'Hosted Linux Preview'
 
 steps:

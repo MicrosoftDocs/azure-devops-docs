@@ -34,7 +34,7 @@ Although the 1.0 set is locked from a breaking change standpoint, it is not lock
 
 To learn more about how to use the APIs, check out [Get started with the REST APIs](/rest/api/vsts/?view=vsts-rest-4.1).
 
-To explore the available APIs, see the [Visual Studio Online REST API Reference](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi).
+To explore the available APIs, see the [Visual Studio Online REST API Reference](/azure/devops/integrate/).
 
 **Developers with existing apps using the 1.0 preview APIs:** you should start migrating to the release 1.0 APIs as soon as possible. Graduated preview APIs (any API in the 1.0 set) are subject to stop working in 12 weeks from today. To learn more about versioning and migrating, see the [versioning and migration](/rest/api/vsts/?view=vsts-rest-4.1) page.
 
@@ -44,7 +44,7 @@ I am also happy to announce that the service hooks features is out of preview an
 
 Visual Studio Online supports 14 services out of the box, including Trello, UserVoice, HipChat, AppVeyor, MyGet, Flowdock, Zendesk, Kato, Zapier, Campfire, Azure, and more. You can also use service hooks with your own custom solutions, enabling your solutions to react efficiently when events happen in your Visual Studio Online projects.
 
-To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/vsts/service-hooks/index?view=vsts).
+To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=vsts).
 
 Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso).
 

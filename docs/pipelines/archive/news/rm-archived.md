@@ -653,7 +653,7 @@ such as Slack to receive such notifications.
 **Release Management client SDK**
 
 In the last update, we published the
-[Release Management REST APIs](https://visualstudio.microsoft.com/integrate/api/rm/overview).
+[Release Management REST APIs](/azure/devops/integrate/).
 In this update, we are publishing a C# client SDK
 to help you easily integrate your applications with
 Release Management. The SDK is available as a

@@ -31,8 +31,8 @@ New to Git? [Learn more](/azure/devops/learn/git/learn-git-with-team-services) a
 
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
 VSTS IDE integrations are available for [Visual Studio](../../organizations/accounts/set-up-vs.md), 
-[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
-and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
+[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/azure/devops/java/download-eclipse-plug-in), 
+and [IntelliJ](/azure/devops/java/download-intellij-plug-in).</p>
 
 
 <p>New to Git? Learn how to share code with Git and VSTS with the following getting started guides:</p>

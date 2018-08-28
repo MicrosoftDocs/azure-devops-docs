@@ -21,21 +21,21 @@ Add, rename, and delete team projects as you scale your organization.
 
 ## 5-Minute Quickstarts
 
-- [View permissions](../security/view-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Look up a project administrator](../security/lookup-organization-owner-admin.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Add users to a project or team](../security/add-users-team-project.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)  
+- [View permissions](../security/view-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Look up a project administrator](../security/lookup-organization-owner-admin.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
 
 ## Step-by-Step Tutorials
 
-- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 
 ## Concepts
 
-- [About areas and iterations](../settings/about-areas-iterations.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [About teams and Agile tools](../settings/about-teams-and-settings.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)  
+- [About areas and iterations](../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [About teams and Agile tools](../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
 - [Resources granted to project members](resources-granted-to-project-members.md)  
 
 
@@ -43,13 +43,13 @@ Add, rename, and delete team projects as you scale your organization.
 
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
-- [Change service visibility](../settings/set-services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
+- [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Connect to projects](connect-to-projects.md)
 
 ## Reference
 
-* [Default permissions and access](../../organizations/security/permissions-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)
-* [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
+* [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 ## Resources
 

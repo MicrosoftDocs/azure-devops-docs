@@ -32,7 +32,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | filter         | string | Git ref name filter. If you specify this parameter, only refs that start with that string are returned.
@@ -86,7 +86,7 @@ Content-Type: application/json
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | Query
@@ -107,7 +107,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositorie
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | ref            | string | Git ref name.

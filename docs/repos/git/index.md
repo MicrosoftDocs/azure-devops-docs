@@ -64,7 +64,7 @@ Learn the basics of working in Git with these tutorials which show tasks perform
 
 ## Reference
 
-- [Format comments with markdown](../../project/wiki/markdown-guidance.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json)
+- [Format comments with markdown](../../project/wiki/markdown-guidance.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
 - [Command reference](command-prompt.md)
 - [Frequently asked questions](howto.md)
 

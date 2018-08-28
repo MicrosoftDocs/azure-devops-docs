@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields?api-version={version}
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
 | URL
-| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields/{fieldName}?api-versio
 
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
-| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | fieldName     | string    | Refernce name of the field
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.

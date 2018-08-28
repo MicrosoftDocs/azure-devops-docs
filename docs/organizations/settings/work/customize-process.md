@@ -17,7 +17,7 @@ ms.date: 05/31/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process), [Scrum](/vsts/boards/work-items/guidance/scrum-process), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
 
 > [!IMPORTANT]  
