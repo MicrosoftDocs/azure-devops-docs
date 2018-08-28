@@ -9,6 +9,7 @@
     #publishSymbols: true # Optional
     #symbolServerType: ' ' # Required when publishSymbols == True# Options:  , teamServices, fileShare
     #symbolsPath: # Optional
+    #compressSymbols: false # Required when symbolServerType == FileShare
     #detailedLog: true # Optional
     #treatNotIndexedAsWarning: false # Optional
     #symbolsMaximumWaitTime: # Optional

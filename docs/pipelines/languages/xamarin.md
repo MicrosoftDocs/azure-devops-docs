@@ -10,32 +10,99 @@ author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 08/31/2018
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '> tfs-2018'
 ---
-
-# PLACEHOLDER PLACEHOLDER PLACEHOLDER
 
 # Xamarin
 
-**Azure Pipelines | TFS 2018 | TFS 2017.2**
+This guidance explains how to build Xamarin apps for Android and iOS.
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
+## Example
 
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> 
-> This guidance applies to Azure Pipelines.
-::: moniker-end
+For a working example of how to build a Xamarin app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-This guide explains creating pipelines for Xamarin projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+```
+https://github.com/adventworks/xamarin-sample
+```
 
-::: moniker range="vsts"
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-::: moniker-end
+The sample code includes a `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
-## Get started
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
-You can build Xamarin projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Xamarin. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+## Build environment
+
+You can use Azure Pipelines to build your Xamarin apps without needing to set up any infrastructure of your own. Xamarin tools are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use macOS or Windows agents to run Xamarin.Android builds, and macOS agents to run Xamarin.iOS builds.
+
+For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+
+Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
+
+```yaml
+# https://docs.microsoft.com/vsts/pipelines/languages/xamarin
+pool:
+  vmImage: 'macOS 10.13' # For Windows, use 'VS2017-Win2016'
+```
+
+## Build a Xamarin.Android app
+
+To build a Xamarin.Android app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. See the [Xamarin.Android](../tasks/build/xamarin-android.md) task for more about these options.
+
+```yaml
+variables:
+  buildConfiguration: 'Release'
+  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
+steps:
+- task: NuGetToolInstaller@0
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*Droid*.csproj'
+    outputDirectory: '$(outputDirectory)'
+    configuration: '$(buildConfiguration)'
+```
+
+### Next steps
+
+See [Android](android.md) guidance for information about:
+
+* Signing and aligning an Android APK
+* Testing on the Android Emulator
+* Testing on Azure-hosted devices
+* Retaining build artifacts with the build record
+* Distributing through App Center
+* Distributing through Google Play
+
+## Build a Xamarin.iOS app
+
+To build a Xamarin.iOS app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. See the [Xamarin.iOS](../tasks/build/xamarin-ios.md) task for more about these options.
+
+```yaml
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: XamariniOS@2
+  inputs:
+    solutionFile: '**/*.sln'
+    configuration: '$(buildConfiguration)'
+    packageApp: false
+    buildForSimulator: true
+```
+
+<!-- ## Build Xamarin.Android and Xamarin.iOS apps with one pipeline -->
+
+### Next steps
+
+See [Xcode](xcode.md) guidance for information about:
+
+* Signing and provisioning an IPA
+* Testing with the Simulator
+* Testing on Azure-hosted devices
+* Retaining build artifacts with the build record
+* Distributing through App Center
+* Distributing through the Apple App Store

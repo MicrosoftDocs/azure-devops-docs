@@ -12,13 +12,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build: Xamarin.Android
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/xamarin-android.png) Build an Android app with Xamarin
-
 
 ## Demands
 
@@ -104,7 +102,6 @@ Select x86 or x64.
 ## Example
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
-
 
 ## Open source
 
