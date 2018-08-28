@@ -9,7 +9,7 @@
     #kubernetesCluster: # Required when connectionType == Azure Resource Manager
     #kubernetesServiceConnection: # Required when connectionType == Kubernetes Service Connection
     #namespace: # Optional
-    #command: 'ls' # Options: create, delete, expose, get, init, install, ls, package, rollback, upgrade
+    #command: 'ls' # Options: create, delete, expose, get, init, install, login, logout, ls, package, rollback, upgrade
     #chartType: 'Name' # Required when command == Install || Command == Upgrade# Options: name, filePath
     #chartName: # Required when chartType == Name
     #chartPath: # Required when chartType == FilePath || Command == Package

@@ -136,7 +136,7 @@ to store your APK with the build record or test and deploy it in subsequent pipe
 ### App Center
 
 Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
-or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required (no payment is necessary).
+or promote the app to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
 ::: moniker range="> tfs-2018"
 

@@ -13,29 +13,34 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# PLACEHOLDER PLACEHOLDER PLACEHOLDER
-
 # Xcode
 
-**Azure Pipelines | TFS 2018 | TFS 2017.2**
+This guidance explains how to build apps with Xcode.
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
+## Example
 
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> 
-> This guidance applies to Azure Pipelines.
-::: moniker-end
+For a working example of how to build an app with Xcode, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-This guide explains creating pipelines for Xcode projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+```
+https://github.com/adventworks/xcode-sample
+```
 
-::: moniker range="vsts"
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-::: moniker-end
+The sample code includes a `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
-## Get started
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
-You can build Xcode projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Xcode. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+## Build environment
+
+You can use Azure Pipelines to build your apps with Xcode without needing to set up any infrastructure of your own. Xcode is preinstalled on [Microsoft-hosted macOS agents](../agents/hosted.md) in Azure Pipelines. You can use the macOS agents to run your builds.
+
+For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+
+# Install Apple provisioning profiles
+
+# Install Apple signing certificates
+
+### Signing and provisioning
+
+#### Install Apple certificates
+
+#### Install Apple provisioning profiles
