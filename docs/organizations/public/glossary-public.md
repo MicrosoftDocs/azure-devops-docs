@@ -62,7 +62,7 @@ Open source software refers to freely available software that you can download, 
 
 ## Organization 
 
-The Azure DevOps platform associated with a URL (for example, `https://dev.azure.OrganizationName/ProjectName/`) that supports adding both private and public projects. Owners and administrators can manage user access to their organization's data through security groups, access levels, and other administrative options. 
+The Azure DevOps platform associated with a URL (for example, `https://dev.azure.com/OrganizationName/ProjectName/`) that supports adding both private and public projects. Owners and administrators can manage user access to their organization's data through security groups, access levels, and other administrative options. 
 
 <!---
 ## Organizational User	

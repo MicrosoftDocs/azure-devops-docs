@@ -18,8 +18,11 @@ ms.date: 09/05/2018
 
 You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. 
 
+
+::: moniker range=">= tfs-2015 <= tfs-2018"   
 > [!NOTE]    
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
+::: moniker-end  
 
 ## Prerequisites
 
@@ -45,7 +48,7 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 
 Choose: 
 - **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members-vs.md). 
-- Choose **Boards** to being [adding work items](../../boards/work-items/view-add-work-items.md).
+- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-readme) for your project summary page.
 - Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
 - Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
@@ -87,10 +90,6 @@ To define a README file for your project, see [Initialize a README file for your
 ## Initialize a README file for a Git repo
 
 You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
-
-
-> [!NOTE]   
-> If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
 
 # [New navigation](#tab/new-nav)  
 
@@ -154,9 +153,12 @@ You can share your project vision and objective, as well as ways for team member
 0. You can start editing directly from the Welcome page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project page, Edit Welcome Markdown page](_img/share-project/markdown-welcome-page-edit.png)
+	> ![Project page, Edit Welcome Markdown page](_img/share-project/markdown-welcome-page-edit.png)  
 
-2. To add another page, simply enter a link to a new Markdown file that doesn't yet exist, for example:
+	> [!NOTE]   
+	> If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
+
+0. To add another page, simply enter a link to a new Markdown file that doesn't yet exist, for example:
  
 	`[page-1](./page-1.md)`
 
@@ -221,8 +223,6 @@ To add users to the project, choose the ![](_img/share-project/add-members-new-n
 
 > [!div class="mx-imgBorder"]  
 > ![Project stats](_img/share-project/project-stats-new-nav.png) 
-
-
 
 ::: moniker-end  
 

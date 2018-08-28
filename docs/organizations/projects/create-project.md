@@ -87,7 +87,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 	Choose: 
 	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
-	- Choose **Boards** to being [adding work items](../../boards/work-items/view-add-work-items.md).
+	- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
 	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
 	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).

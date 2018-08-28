@@ -94,7 +94,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 	Choose: 
 	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
-	- Choose **Boards** to being [adding work items](../../boards/work-items/view-add-work-items.md).
+	- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
 	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
 	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
@@ -133,7 +133,7 @@ Once created, an [anonymous user](glossary-public.md#anonymous-user) or [public 
  
 To provide instant access, share the URL of your public project with those people you want to have access to the project in a read-only mode. For example, you can share this portion of the URL shown under **Clone to your computer**.  
 
-`https://dev.azure.OrganizationName/ProjectName/`
+`https://dev.azure.com/OrganizationName/ProjectName/`
 
 
 ## Try this next
