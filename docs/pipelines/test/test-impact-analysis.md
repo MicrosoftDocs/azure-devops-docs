@@ -114,7 +114,9 @@ Here is a sample that creates this configuration:
 
 TIA is integrated into existing test reporting at both the summary and details levels, including notification emails.
 
-![Reporting includes TIA integration](_img/test-impact-analysis/tia-reports.png)
+![Reporting Summary includes TIA integration](_img/test-impact-analysis/tia-reports-1.png)
+
+![Reporting Tests page includes TIA integration](_img/test-impact-analysis/tia-reports-2.png)
 
 [More information about TIA and Azure Pipelines integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
 
