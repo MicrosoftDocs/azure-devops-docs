@@ -1,11 +1,13 @@
-- name: Pipelines get started
-  href: index.md
+- name: Start using Azure Pipelines
+  href: index.md?toc=/vsts/pipelines/get-started/toc.json&bc=/vsts/pipelines/get-started/breadcrumb/toc.json
   items:
-  - name: Get started guide
+  - name: What is Azure Pipelines
+    href: what-is-azure-pipelines.md
+  - name: Get started with Azure Pipelines
     href: pipelines-get-started.md
-  - name: Why Use Pipelines?
+  - name: Why Use Azure Pipelines?
     href: why-use-pipelines.md
   - name: Create your first pipeline
-    href: ../get-started-yaml.md
+    href: ../get-started-yaml.md?toc=/vsts/pipelines/get-started/toc.json&bc=/vsts/pipelines/get-started/breadcrumb/toc.json
   - name: Key Concepts
     href: key-pipelines-concepts.md

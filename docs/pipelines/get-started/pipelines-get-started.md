@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines New User Guide
+title: Get started using Azure Pipelines
 titleSuffix: Azure DevOps Services
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
 ms.prod: devops
@@ -12,49 +12,41 @@ monikerRange: '>= tfs-2015'
 
 # Getting started with Azure Pipelines
 
-## What is Azure Pipelines?
+You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [task-based designer](../get-started-designer.md) to do the same. 
 
-Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
+When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
+When you use the task-based designer, you define a **build pipeline** to build and test your code, and then to publish artifacts. You also define a **release pipeline** to consume and deploy those artifacts to deployment targets.
 
-Pipelines combines both **Continuous Integration (CI)** and **Continuous Deployment (CD)** to constantly and consistently test and build your code and ship it to any target. 
+## Using Azure Pipelines with YAML
 
-If you're not sure if Pipelines is right for your needs, read [Why Use Azure Pipelines?](why-use-pipelines.md).
+You can configure your pipelines in a YAML file that exists alongside your code.
 
-## Does Pipelines work with my language and tools?
+> TODO: CAN WE GET SOME INFO ON WHO WOULD USE THIS AND WHY?
 
-### Languages
+1. Connect your GitHub repo directly to Azure DevOps or use Azure Repos to store your project
+2. Edit your `azure-pipelines.yaml` file
+3. Push your code to your version control repository, this will kick off the default trigger to build and deploy, and monitor the results
+4. Your updated, tested, and packaged code is sent to your deployment target
 
-You can use practically any language with Azure Pipelines, including **Python, Java, PHP, Ruby, C#, and Go.**
+![Pipelines YAML intro image ](../_img/pipelines-image-yaml.png)
 
-### Version control systems
 
-The starting point for using CI and CD practices for your applications is to have your source code in a version control system. Pipelines supports two forms of version control: **Git and Team Foundation Version Control.**
+If you think the YAML workflow is best for you, take the next step by [creating your first pipeline using YAML](../get-started-yaml.md).
 
-### Application types
+## Using Azure Pipelines with designer (UX)
 
-You can use Azure Pipelines with most application types, including **.NET, Java, Node, Android, Xcode, and C++.**
+You can create and configure your build and release pipelines in the Azure DevOps UX with the designer. 
 
-### Deployment targets
+> TODO: CAN WE GET SOME INFO ON WHO WOULD USE THIS AND WHY? Like maybe about TFS users or what applications, etc. 
 
-Azure Pipelines can be used to deploy your code to multiple targets, such as **virtual machines, containers, on-premises and cloud platforms, PaaS services.**
+1. Connect your Git repo to Azure DevOps
+2. Use the Azure Pipelines UX (designer) to create your build and release pipelines
+3. Push your code to your version control repository
+4. Once your code is pushed to the repository your pipeline is triggered, running any tasks such as building or testing code
+5. The build creates an artifact that is used by the rest of your pipeline, running any tasks such as deploying to staging or production
+6. Your updated, tested, and packaged code is sent to your deployment target
 
-### Package formats
+![Pipelines designer intro image](../_img/pipelines-image-designer.png)
 
-If your goal is to produce packages that can be consumed by others, you can publish **NuGet, npm, or Maven packages** to the built-in package management repository in Azure Pipelines or any other package management repository of your choice.
+If you think the designer workflow is best for you, take the next step by [creating your first pipeline using the designer](../get-started-designer.md).
 
-## What do I need to use Pipelines?
-
-To use Azure Pipelines, you'll need the following:
-
-* An Azure DevOps organization or TFS account
-* Have your source code stored in a version control system (Git or TFVC)
-
-**ELBATK NOTE:** NEED HELP HERE - what all is needed?
-
-## How do I start using Pipelines?
-
-If you'd like to ramp up and learn a little more about Pipelines, visit our get started guide to [using the designer](../get-started-designer.md).
-
-If you'd like to jump in and use Pipelines with your code, check out....
-
-## Resources
