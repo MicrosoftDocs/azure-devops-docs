@@ -15,7 +15,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-#  Git and Azure Repos
+# Git and Azure Repos
+
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Host and manage your code in Git version control with Azure DevOps Services and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.

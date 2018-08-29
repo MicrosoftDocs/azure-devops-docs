@@ -14,10 +14,6 @@ monikerRange: 'vsts'
 
 # Sign up for free and invite others to collaborate on your project
 
-Sign up for an Azure DevOps organization to upload and share code in free unlimited private 
-Git repositories. You can then connect to your favorite development tool like Eclipse, Xcode, 
-Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
-
 [!INCLUDE [acquisition-intro-devops](../../_shared/acquisition-intro-devops.md)]
 
 <a name="MicrosoftAccount"></a>
