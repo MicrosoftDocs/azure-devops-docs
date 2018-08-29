@@ -1,7 +1,7 @@
 ---
 title: Pipeline variables
 titleSuffix: Azure Pipelines & TFS
-description: Pipeline variables are name-value pairs defined by you or provided by Build or Release Management. You can use variables as inputs and in your scripts.
+description: Pipeline variables are name-value pairs defined by you or provided by Azure Pipelines or TFS. You can use variables as inputs and in your scripts.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -92,7 +92,8 @@ steps:
 To use a variable in a YAML statement, wrap it in `$()`. For example:
 
 ```yaml
-pool: Hosted Linux Preview
+pool:
+  vmImage: 'Ubuntu 16.04'
 steps:
 - script: ls
   workingDirectory: $(agent.homeDirectory)
@@ -107,12 +108,14 @@ referencing environment variables.
 ```yaml
 jobs:
 - job: LinuxOrMacOs
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   steps:
   - bash: echo $AGENT_HOMEDIRECTORY
 
 - job: Windows
-  pool: Hosted VS2017
+  pool:
+    vmImage: 'VS2017-Win2016'
   steps:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
@@ -125,7 +128,8 @@ This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 ```yaml
-pool: Hosted Linux Preview
+pool:
+  vmImage: 'Ubuntu 16.04'
 
 steps:
 
@@ -149,8 +153,9 @@ jobs:
 
 # Set an output variable from job A
 - job: A
-  pool: Hosted VS2017
-  steps: 
+  pool:
+    vmImage: 'VS2017-Win2016'
+  steps:
   - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
@@ -159,7 +164,8 @@ jobs:
 # Map the variable into job B
 - job: B
   dependsOn: A
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
   steps:
@@ -178,8 +184,9 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    name: Hosted Linux Preview
-    parallel: 2
+    vmImage: 'Ubuntu 16.04'
+  strategy:
+    maxParallel: 2
     matrix:
       debugJob:
         configuration: debug
@@ -196,7 +203,8 @@ jobs:
 # Map the variable from the debug job
 - job: B
   dependsOn: A
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -210,7 +218,7 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    name: Hosted Linux Preview
+    vmImage: 'Ubuntu 16.04'
     parallel: 2 # Two slices
   steps:
   - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
@@ -221,7 +229,8 @@ jobs:
 # Map the variable from the job for the first slice
 - job: B
   dependsOn: A
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:

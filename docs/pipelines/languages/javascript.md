@@ -64,7 +64,7 @@ YAML builds are not yet available on TFS.
 * After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **Empty process** template.
 
 * Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
+  * **Agent queue:** `Hosted Ubuntu 1604`
 
 * Add the following tasks to the pipeline in the order specified:
   * **npm**
@@ -142,8 +142,9 @@ You can build and test your app on multiple versions of Node.
 
 ::: moniker range="vsts"
 ```yaml
-pool: 
-  name: Hosted Linux Preview
+pool:
+  vmImage: 'Ubuntu 16.04'
+strategy:
   matrix:
     node_8_x:
       node_version: 8.x
