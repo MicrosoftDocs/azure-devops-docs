@@ -49,7 +49,7 @@ Tutorials, references, and other documentation show you how to configure and man
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#index1"></a>
-                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsF cols cols4" style="float: left; display: flex;">
                                     <li>
                                         <a href="overview.md">
                                             <div class="cardSize">

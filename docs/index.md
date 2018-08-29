@@ -18,8 +18,8 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Documentation</h1>
-        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).</p>
-        <p><i>[What happened to Visual Studio Team Services?](/azure/devops/user-guide/what-happened-vsts)</i></p>
+        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).<br/>
+        <i>[What happened to Visual Studio Team Services?](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -30,7 +30,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <a href="#index1"></a>
                                 <h2 style="float: left; display: flex;">Start using Azure DevOps</h2>
-                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/pipelines/build/ci-build-github">
                                         <div class="cardSize">
@@ -109,7 +109,7 @@ featureFlags:
                                     </li>
                                 </ul>
                                 <a href="#index3"></a>
-                                <ul id="index3" class="cardsA panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
+                                <ul id="index3" class="cardsF panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/pipelines/index">
                                             <div class="cardSize">
@@ -448,7 +448,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
-                                <ul id="index4" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                <ul id="index4" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/report/dashboards/index">
                                             <div class="cardSize">
