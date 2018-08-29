@@ -104,6 +104,10 @@ You've been able to trigger a build based on a pull request (PR) and get that qu
 
 We have now added support for Azure Kubernetes Service (AKS) targeting Go Language on DevOps Projects. See the tutorial documentation for [AKS](https://docs.microsoft.com/azure/devops-project/azure-devops-project-aks) for more information.
 
+### The build status reported to GitHub is more succinct
+
+When VSTS posts the status of a build to GitHub, the status text appears on the associated commit, branch, and pull request check. Until now, each build pipeline's name in the text was prefaced with `VSTS:`. We removed this preface from the status text so that the name of the build pipeline would be easier to see with a glance and not cause confusion about `VSTS:` being in a build pipeline's official name. Unfortunately, this change affects GitHub branch protection rules where GitHub still expects pipeline names to begin with `VSTS:`. This may cause GitHub pull requests to be blocked until repository settings are updated. To resolve this, after running the build at least once, update your repository's branch protection rules under repository Settings > Branches > Branch protection rules.
+
 ## Feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
