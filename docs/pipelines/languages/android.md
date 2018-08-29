@@ -45,7 +45,8 @@ Change values to match your project configuration. See the [Gradle](../tasks/bui
 
 ```yaml
 # /azure/devops/pipelines/languages/android
-queue: 'Hosted macOS Preview'
+pool:
+  vmImage: 'macOS 10.13'
 
 steps:
 - task: Gradle@2

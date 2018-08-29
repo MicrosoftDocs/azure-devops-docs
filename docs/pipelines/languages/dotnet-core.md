@@ -87,7 +87,8 @@ Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Linux P
 Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-pool: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
+pool:
+  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 ```
 
 # [Designer](#tab/designer)

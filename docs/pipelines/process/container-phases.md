@@ -74,7 +74,8 @@ resources:
     image: ubuntu:18.04
 
 pool:
-  name: 'Hosted Ubuntu 1604'
+  vmImage: 'Ubuntu 16.04'
+strategy:
   matrix:
     ubuntu14:
       containerResource: u14

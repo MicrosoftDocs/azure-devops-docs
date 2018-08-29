@@ -34,13 +34,15 @@ To use a Microsoft-hosted agent pool, first decide which pool to use:
 Then, when defining the `queue` in your YAML, use the queue you decided on.
 
 ```yaml
-phases:
-- phase: Windows
-  queue: Hosted VS2017
+jobs:
+- job: Windows
+  pool:
+    vmImage: 'VS2017-Win2016'
   steps:
   - script: echo hello from Windows
-- phase: macOS
-  queue: Hosted macOS
+- job: macOS
+  pool:
+    vmImage: 'macOS 10.13'
   steps:
   - script: echo hello from macOS
 ```

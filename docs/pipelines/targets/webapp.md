@@ -267,7 +267,8 @@ Using jobs, you can control the order of deployment to multiple web apps.
 jobs:
 
 - job: buildandtest
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   steps:
 
   # add steps here to build the app
@@ -281,7 +282,8 @@ jobs:
       WebAppName: '<name of test stage web app>'
 
 - job: prod
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   dependsOn: buildandtest
   condition: succeeded()
   steps:

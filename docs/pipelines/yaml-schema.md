@@ -184,17 +184,20 @@ jobs:
 - template: jobs/build.yml  # Template reference
   parameters:
     name: macOS
-    pool: Hosted macOS Preview
+    pool:
+      vmImage: 'macOS 10.13'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
-    pool: Hosted Linux Preview
+    pool:
+      vmImage: 'Ubuntu 16.04'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
-    pool: Hosted VS2017
+    pool:
+      vmImage: 'VS2017-Win2016'
     sign: true  # Extra step on Windows only
 ```
 
@@ -282,6 +285,8 @@ For example:
 
 ```yaml
 pool:
+  vmImage: 'Ubuntu 16.04'
+strategy:
   matrix:
     x64_debug:
       buildArch: x64
@@ -468,17 +473,20 @@ steps:
 
 jobs:
 - job: macOS
-  pool: Hosted macOS Preview
+  pool:
+    vmImage: 'macOS 10.13'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
-  pool: Hosted Linux Preview
+  pool:
+    vmImage: 'Ubuntu 16.04'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
-  pool: Hosted VS2017
+  pool:
+    vmImage: 'VS2017-Win2016'
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only
@@ -545,7 +553,8 @@ parameters:
 
 jobs:
 - job: Build
-  pool: Hosted VS2017
+  pool:
+    vmImage: 'VS2017-Win2016'
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}

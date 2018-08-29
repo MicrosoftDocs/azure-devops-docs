@@ -139,7 +139,8 @@ You can use Azure Pipelines to build and push your Docker images without needing
 Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-pool: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
+pool:
+  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 ```
 
 # [Designer](#tab/designer)
@@ -256,7 +257,8 @@ For an example on using this approach, follow these steps:
 Replace the contents in the `azure-pipelines.yml` file at the root of your repo with the following content:
 
 ```yaml
-pool: 'Hosted Linux Preview'
+pool:
+  vmImage: 'Ubuntu 16.04'
 
 steps:
   - script: docker build -t $(dockerId)/$(dockerImage) . # include other options to meet your needs
