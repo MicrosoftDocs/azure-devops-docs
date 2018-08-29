@@ -27,15 +27,15 @@ The Free Tier includes:
 * One self-hosted Azure Pipelines concurrent job.
 * 20,000 virtual user minutes of cloud-based load testing.
 
-> During your first purchase for your Azure DevOps Services organization, you're prompt to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All Azure DevOps Services services are billed via Azure. You aren't required to pay for or use any other Azure services.
+> During your first purchase for your Azure DevOps Services organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All Azure DevOps Services services are billed via Azure. You aren't required to pay for or use any other Azure services.
 > 
 > These are the paid services that are offered by Microsoft:
 >
 > * [Azure DevOps Services users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 > * [Microsoft-hosted Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
 > * [Self-hosted Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
-> * [Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-> * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+> * [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Test Manager)
+> * [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (formerly Package Management)
 >
 > [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests that you run. By default, paid usage is turned off for your Azure DevOps Services organization.
 > You can only enable paid usage via the Azure portal.
@@ -47,7 +47,7 @@ The first time that you set up billing for your Azure DevOps Services organizati
 * [Azure DevOps Services project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
 
-You also need these same permissions and roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your Azure DevOps Services organization.
+To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 
 ## Next steps
 

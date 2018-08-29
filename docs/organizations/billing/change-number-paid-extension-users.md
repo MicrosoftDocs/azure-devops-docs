@@ -19,11 +19,9 @@ monikerRange: '>= tfs-2015'
 
 To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.  
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-
 ## Prerequisites 
 
-You need Azure DevOps Services [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+You must have [access to billing](add-backup-billing-managers.md) for your organization Azure subscription.
 
 [!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
@@ -35,9 +33,10 @@ You need Azure DevOps Services [project collection administrator or organization
 
     ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Extensions**. ....?
+3. Select **Users** > **...** > **Manage extensions**.
 
-4. ?
+   ![Select users and manage extensions](_img/_shared/select-users-and-manage-extensions.png)
+
 
 # [Previous navigation](#tab/prev-nav)
 

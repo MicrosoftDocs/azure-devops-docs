@@ -2,33 +2,40 @@
 ms.topic: include
 ---
 
-## Sign up for DevOps with a personal Microsoft account.
+## Sign up for Azure DevOps with a personal Microsoft account
 
-1. Right-click the sign-up link, **Azure DevOps**, and enter your email address for your Microsoft account. If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription.
+1. Select the sign-up link for **Azure DevOps**.
 
-2. On the Microsoft account sign-in page, enter your email address for your Microsoft account. Then enter your password, and finish signing in.
+2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
 
-   If you don't have a Microsoft account, you can create a Microsoft account at this time.
+   ![Sign in with your Microsoft account](_img/sign-in-with-microsoft-account.png)
 
-3. Enter a name for your organization. The name you enter cannot contain spaces or special characters
- (such as / \ [ ] : | < > + = ; ? or *), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace.
-To manage your code, choose **Git** or **Team Foundation Version Control (TFVC)**.
+3. Enter your password, and choose **Sign in**.
 
-   Choose Git for distributed source control and TFVC for centralized source control. To learn more, review Git or Team Foundation Version Control.
+   If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
 
-4. (Optional) Click Change details to change default assignments. Otherwise, click Continue to confirm to initiate your organization creation.
+   ![Enter your password and sign in](_img/enter-password-sign-in.png)
 
-   To change default assignments, use the following guidance:
+4. To get started with Azure DevOps, choose **Continue**.
 
-> - Project name: You can specify your project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
-> - Organize work using: The default work tracking process is set to Agile. If you want to work with Scrum or CMMI processes, then select those now. You can't change the process after the project is created. (To learn more, see Choose process.
-> - Host your projects in: You can choose between several locations for where you want your data hosted.
+   ![Choose Continue to sign up for Azure DevOps ](_img/sign-up-azure-devops.png)
+
+5. Enter a name for your organization. The name you enter cannot contain spaces or special characters
+ (such as / \ [ ] : | < > + = ; ? or *), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Choose **Continue**.
+
+   ![Almost done](_img/almost-done.png)
+
+   You'll see the following dialog as your organization is created.
+
+   ![Taking you to your new Azure DevOps organization](_img/taking-you-to-your-new-azure-devops-org.png)
 
 Congratulations, you're now an Azure DevOps organization owner!
-
 To sign in to your organization at any time, go to https://dev.azure.com/{yourorganization}.
 
->[!Note]
->If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes DevOps as a benefit, learn how to add your work or school account to your subscription so you can use your subscriber benefits in DevOps.
+5. Enter a project name and select the visibility. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less. Visibility can either be public or private. With public visibility, anyone on the internet can view your project. With private visibility only people you give access to will be able to view your project. Choose **Create project**.
 
-[Create your first project](../organizations/projects/create-project.md) and invite teammates to join. You can also [add code](../user-guide/code-with-git.md), start [planning and tracking using work items](../user-guide/plan-track-work.md), or [rename your project](../organizations/projects/rename-project.md).
+    ![Create a project to get started](_img/create-project-to-get-started.png)
+
+For more information about organizations and projects, read [Define organizations and projects](../user-guide/define-organizations-and-projects.md) and [Create a project](../organizations/projects/create-project.md).
+
+![Welcome to the project page](_img/welcome-to-the-project.png)
