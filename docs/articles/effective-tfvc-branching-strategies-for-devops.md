@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/azure/devops/repos/tfvc/index)) with Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/azure/devops/repos/tfvc/index)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?

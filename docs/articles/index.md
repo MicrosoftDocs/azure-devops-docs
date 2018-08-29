@@ -14,14 +14,14 @@ author: kaelli
 
 **VSTS | TFS**
 
-Here you'll find more resources to support your development efforts with Visual Studio Team Services (VSTS), Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
+Here you'll find more resources to support your development efforts with Azure DevOps Services, Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
 > [!NOTE]
-> For the full documentation set, go to [VSTS Documentation](../index.md).
+> For the full documentation set, go to the [Azure DevOps Documentation](../index.md).
    
 ##	Migration and integration
 
-*   [Migrate data from TFS to VSTS](migration-overview.md)
+*   [Migrate data from TFS to Azure DevOps Services](migration-overview.md)
 *   [Migration options](migrate-to-vsts-from-tfs.md)  
 
 ## Version Control
@@ -35,7 +35,7 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ##	DevOps: Continuous integration and continuous delivery
 
-*   [Add Continuous Security Validation to your CICD Pipeline](security-validation-cicd-pipeline.md)
+*   [Add Continuous Security Validation to your CI/CD Pipeline](security-validation-cicd-pipeline.md)
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Progressively expose your features using feature flags](phase-features-with-feature-flags.md)
 *   [Progressively expose your releases using deployment rings](phase-rollout-with-rings.md)

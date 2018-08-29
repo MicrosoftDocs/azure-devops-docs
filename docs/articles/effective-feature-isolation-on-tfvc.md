@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
 
-Are you planning to implement [Team Foundation Version Control](../repos/tfvc/overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
+Are you planning to implement [Team Foundation Version Control](../repos/tfvc/overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
