@@ -1,6 +1,6 @@
 ---
 title: Azure Repos Documentation
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
 layout: HubPage 
 hide_bc: true
@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Boards</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Repos</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Repos</h1>
