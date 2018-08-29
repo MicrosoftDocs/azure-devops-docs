@@ -79,7 +79,6 @@ Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifact
 to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
 
 ```yaml
-steps:
 - task: CopyFiles@2
   inputs:
     contents: '**/*.ipa'
@@ -108,7 +107,6 @@ Add the [App Store Release](https://marketplace.visualstudio.com/items?itemName=
 task to automate the release of updates to existing iOS TestFlight beta apps or production apps in the App Store.
 
 ```yaml
-steps:
 - task: AppStoreRelease@1
   displayName: 'Publish to the App Store TestFlight track'
   inputs:
@@ -125,7 +123,6 @@ Add the [App Store Promote](https://marketplace.visualstudio.com/items?itemName=
 task to automate the promotion of a previously submitted app from iTunes Connect to the App Store.
 
 ```yaml
-steps:
 - task: AppStorePromote@1
   displayName: 'Submit to the App Store for review'
   inputs:
