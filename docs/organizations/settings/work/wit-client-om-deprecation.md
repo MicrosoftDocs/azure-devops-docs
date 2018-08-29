@@ -31,5 +31,5 @@ changing your code to use rest api
 ## Error messages in your code
 
 ## Related articles
-- [REST API Reference](../../../rest/api/vsts/?view=vsts-rest-5.0)
-- [Client Libraries Samples](../../integrate/get-started/client-libraries/samples?view=vsts)
+- [REST API Reference](/rest/api/vsts/index)
+- [Client Libraries Samples](../../../integrate/get-started/client-libraries/samples.md?view=vsts)
