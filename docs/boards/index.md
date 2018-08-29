@@ -1,6 +1,6 @@
 ---
 title: Azure Boards Documentation 
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
 hide_bc: true

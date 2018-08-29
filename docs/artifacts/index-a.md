@@ -1,6 +1,6 @@
 ---
 title: Azure Artifacts Documentation
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds.
 layout: HubPage 
 hide_bc: true

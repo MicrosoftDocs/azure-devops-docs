@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps Documentation 
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps 
 layout: HubPage 
 hide_bc: true
@@ -18,8 +18,7 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Documentation</h1>
-        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).<br/>
-        <i>[What happened to Visual Studio Team Services?](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
+        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. <i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i> For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).</p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -61,7 +60,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Start using Azure DevOps</h3>
+                                                            <h3>Start using Azure DevOps</h3>
                                                             <p>Sign up and get started using Azure DevOps.</p>
                                                         </div>
                                                     </div>
@@ -80,7 +79,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>What's new</h3>
+                                                            <h3>What's new</h3>
                                                             <p>Find out about new features being released. </p>
                                                         </div>
                                                     </div>
@@ -99,7 +98,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Navigation basics</h3>
+                                                            <h3>Navigation basics</h3>
                                                             <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>
@@ -234,8 +233,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="/media/logos/logo_android.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_android.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -361,8 +360,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_kubernetes.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="/media/logos/logo_kubernetes.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_kubernetes.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_kubernetes.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -379,8 +378,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_linux-color.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="/media/logos/logo_linux-color.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_linux-color.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -415,8 +414,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_npm.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="/media/logos/logo_npm.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_npm.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -433,8 +432,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_nuget.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="/media/logos/logo_nuget.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_nuget.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

@@ -1,6 +1,6 @@
 ---
-title: Azure Boards Documentation 
-titleSuffix: Azure DevOps 
+title: Azure DevOps Settings Documentation 
+titleSuffix: Azure DevOps Services
 description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
 hide_bc: true
@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps Services</a>  /  Azure Settings</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Settings</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Settings Documentation</h1>
