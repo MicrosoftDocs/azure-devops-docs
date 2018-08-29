@@ -555,7 +555,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-process-permissions-permission">Administer process permissions</td>
 		<td>
-			Can modify permissions for processes. Applies to Azure DevOps only. 
+			Can modify permissions for processes. Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -605,19 +605,19 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps only.
+			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-field-permission">Delete field from account</td>
 		<td>
-			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to Azure DevOps only.
+			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps only.
+			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -669,7 +669,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps only.
+			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -746,15 +746,16 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="bypass-rules-permission">Bypass rules on work item updates</td>
-		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p></td>
+		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p>
+		<p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
 	</tr>
 	<tr>
 		<td id="change-process-team-project-permission">Change process of team project</td>
-		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps only. </td>
+		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. </td>
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
-		<td>Can add tags through a work item form.</td>
+		<td>Can add tags through a work item form. Users granted Stakeholder access for a public project are granted this permission by default. </p></td>
 	</tr>
 	<tr>
 		<td id="create-test-runs-permission">Create test runs</td>
@@ -763,7 +764,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	<tr>
 		<td id="delete-work-items-in-this-project-permission">
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
-		<td>Can [mark work items in this project as deleted](../../boards/backlogs/remove-delete-work-items.md).
+		<td>Can [mark work items in this project as deleted](../../boards/backlogs/remove-delete-work-items.md). Users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
 <li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
 <li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
@@ -773,7 +774,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	<tr>
 		<td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
 		<td>Can delete [Analytics views](../../report/analytics/analytics-views-manage.md)
-that have been saved under the Shared area. Applies to Azure DevOps only.</td>
+that have been saved under the Shared area. Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
@@ -807,7 +808,7 @@ that have been saved under the Shared area. Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
-		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to Azure DevOps only.</td>
+		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
@@ -825,12 +826,12 @@ that have been saved under the Shared area. Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-		<td>Can [move a work item from one team project to another team project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps only.
+		<td>Can [move a work item from one team project to another team project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps Services only. Users granted Stakeholder access for a public project are granted this permission by default.
 		</td>
 	</tr>
 	<tr>
 		<td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
-		<td>Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project.</td>
+		<td>Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. Users granted Stakeholder access for a public project are granted this permission by default.</td>
 	</tr>
 	<tr>
 		<td id="rename-team-project-permission">Rename team project</td>
@@ -838,15 +839,16 @@ that have been saved under the Shared area. Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p></td>
+		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p>
+		<p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
 	</tr>
 	<tr>
 		<td id="update-project-visibility">Update project visibility</td>
-		<td>Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps only.</td>
+		<td>Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>
-		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps only.</td>
+		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
 		<td id="view-team-project-level-information-permission">View team project-level information</td>
@@ -1120,14 +1122,14 @@ By default, the team project level and collection level Readers groups have only
 		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
 		<td>
 		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services only.
 		</td>
 	</tr>
 	<tr>
 		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
 		<td>
 		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services only.
 		</td>
 	</tr>
 	<tr>
@@ -1450,7 +1452,7 @@ Members of the Project Administrators group are automatically granted permission
 		<td>
 			Can create area nodes.
 			Users who have both this permission and the <strong>Edit this node</strong> permission
-			can move or re-order any child area nodes.
+			can move or re-order any child area nodes. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
 				that may need to delete, add, or rename area nodes.
@@ -1461,8 +1463,9 @@ Members of the Project Administrators group are automatically granted permission
 		<td id="area-delete-this-node-permission">Delete this node</td>
 		<td>
 			Users who have both this permission and the <strong>Edit this node</strong> permission for another node
-			can delete area nodes and reclassify existing work items from the deleted node.
+			can delete area nodes and reclassify existing work items from the deleted node. 
 			If the deleted node has child nodes, those nodes are also deleted.
+			<p>Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.</p>
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
 				that may need to delete, add, or rename area nodes.
@@ -1472,7 +1475,7 @@ Members of the Project Administrators group are automatically granted permission
 	<tr>
 		<td id="area-edit-this-node-permission">Edit this node</td>
 		<td>
-			Can set permissions for this node and rename area nodes.
+			Can set permissions for this node and rename area nodes. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects. 
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
 				that may need to delete, add, or rename area nodes.
@@ -1482,7 +1485,7 @@ Members of the Project Administrators group are automatically granted permission
 	<tr>
 		<td id="area-edit-work-items-in-this-node-permission">Edit work items in this node</td>
 		<td>
-			Can edit work items in this area node.
+			Can edit work items in this area node. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
 				that may need to edit work items under the area node.
@@ -1519,7 +1522,7 @@ Members of the Project Administrators group are automatically granted permission
 	<tr>
 		<td id="area-view-work-items-in-this-node-permission">View work items in this node</td>
 		<td>
-			Can view, but not change, work items in this area node.
+			Can view, but not change, work items in this area node. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
 			<blockquote>
 				If you set the View work items in this node to Deny,
 				the user will not be able to see any work items in this area node.

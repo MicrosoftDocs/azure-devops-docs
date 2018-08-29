@@ -1,4 +1,4 @@
-- name: Navigation basics 
+- name: Web portal navigation 
   href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   items:
   - name: Open a service, page, or settings

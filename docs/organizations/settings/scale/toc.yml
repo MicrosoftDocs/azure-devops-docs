@@ -57,7 +57,7 @@
     href: /rest/api/vsts/core/teams
 - name: Resources
   items:
-  - name: Navigation basics
+  - name: Web portal navigation
     href: ../../../project/navigation/index.md
   - name: Manage projects
     href: ../../projects/index.md

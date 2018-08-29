@@ -88,7 +88,7 @@
     href: faqs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Navigation basics
+  - name: Web portal navigation
     href: ../project/navigation/index.md
   - name: Project management
     href: ../organizations/projects/index.md

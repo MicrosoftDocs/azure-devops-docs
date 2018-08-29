@@ -27,7 +27,7 @@ Next, to develop your product backlog, read [Create your backlog](../backlogs/cr
 
 Other resources to get you up and running: 
 
-- [Navigation basics](../../project/navigation/index.md)  
+- [Web portal navigation](../../project/navigation/index.md)  
 - [Work items](../work-items/index.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)  
 

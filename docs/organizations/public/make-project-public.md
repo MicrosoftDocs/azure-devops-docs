@@ -46,7 +46,7 @@ Before you can change a private project, to a public project, you must enable an
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
+0. Choose the **Policy** page, and select **On** for **Allow public projects**.     
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png) 
@@ -62,7 +62,7 @@ Before you can change a private project, to a public project, you must enable an
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
 
-0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
+0. Choose the **Policy** page, and select **On** for **Allow public projects**.     
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  

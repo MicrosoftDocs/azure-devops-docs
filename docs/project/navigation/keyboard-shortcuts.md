@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 You can use the keyboard shortcuts listed in this topic when you work within Azure DevOps Services, the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
-For specific guidance on navigating within the web portal, see [Navigation basics](index.md).
+For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
 
 ## Web portal
 
@@ -254,7 +254,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  
 - [Default keyboard shortcuts for Visual Studio](https://msdn.microsoft.com/library/da5kh0wa.aspx)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Navigation basics](..//navigation/index.md) 
+- [Web portal navigation](..//navigation/index.md) 
 
 ###Install Team Explorer  
 

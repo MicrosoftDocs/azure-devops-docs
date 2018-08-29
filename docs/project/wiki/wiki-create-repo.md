@@ -1,5 +1,5 @@
 ---
-title: Share information by creating a wiki for your team project 
+title: Share information by creating a wiki for your project 
 titleSuffix: Azure DevOps & TFS
 description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-collab
@@ -16,7 +16,7 @@ ms.date: 09/05/2018
 ---
 
 
-# Create a Wiki for your team project
+# Create a Wiki for your project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
