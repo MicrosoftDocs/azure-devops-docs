@@ -36,7 +36,7 @@ sections:
         image:
           src: ../_img/index/DevOpsIconPipelines40.svg
         title: Start using Azure DevOps Pipelines  
-- title: 5-minute Quickstarts
+- title: 5-minute quickstarts
   items:
   - type: list
     style: cards
@@ -48,11 +48,11 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
         title: Sign up for Azure DevOps
-      - href: define-organizations-and-projects.md
+      - href: create-organizations-msa-or-work-student.md
         html:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
-        title: Define organizations and projects
+        title: Create organizations
       - href: code-with-git.md
         html: <p></p>
         image:
@@ -89,7 +89,7 @@ sections:
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Get started as an admin
 
-- title: Step-by-step Tutorials
+- title: Step-by-step tutorials
   items:
   - type: list
     style: cards
@@ -126,7 +126,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Grant or restrict permissions to select tasks
-      - href: vsts/organizations/settings/work/customize-process.md
+      - href: azure/devops/organizations/settings/work/customize-process.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_config-tools.svg
@@ -144,6 +144,11 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_learn-about.svg
         title: Key concepts
+      - href: define-organizations-and-projects.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_guidelines.svg
+        title: Defining organizations and projects
       - href: source-control.md
         html: <p></p>
         image:

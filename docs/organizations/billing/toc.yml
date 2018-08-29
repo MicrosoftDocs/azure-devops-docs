@@ -10,7 +10,7 @@
     href: set-up-billing-for-your-organization-vs.md
   - name: Pay for users
     href: buy-basic-access-add-users.md
-  - name: Buy Azure Pipelines
+  - name: Buy CI/CD
     href: buy-more-build-vs.md
   - name: Start free trials
     href: try-additional-features-vs.md
@@ -30,7 +30,7 @@
       href: change-azure-subscription.md
     - name: Change number of paid users
       href: reduce-cancel-paid-vsts-users.md
-    - name: Buy TFS CALs or Test hub
+    - name: Buy TFS CALs or Test
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
       href: vsts-billing-faq.md
@@ -44,7 +44,7 @@
       href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
       href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-    - name: Buy TFS CALs or Test hub  
+    - name: Buy TFS CALs or Test  
       href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
