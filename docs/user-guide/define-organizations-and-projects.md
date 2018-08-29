@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [dev15-version-header](../_shared/dev15-version-header.md)]
 
-Consider the size and scope of your enterprise and team structure when you're defining your organizations and projects.
+Consider the size and scope of your company and team structure when you're defining your organizations and projects.
 
 You can use one of the following approaches:
 
-- Map Azure DevOps **organizations** to business units (consider a "business unit" a department within your enterprise/company)
+- Map Azure DevOps **organizations** to business units (consider a "business unit" a department within your company)
 - Mapping Azure DevOps **projects** to business units
 
 Before you begin, understand [about projects and scaling your organization](../organizations/projects/about-projects.md) and know [what you get with Azure DevOps services or TFS](services.md).
@@ -42,7 +42,7 @@ Use your work or school account that's managed by your Azure Active Directory. I
 
 ## Defining organizations
 
-An Azure DevOps organization is the set of services and users for a business unit you define. It can be for your whole company, a specific business unit within your enterprise, or just you. If you are setting up Azure DevOps for a large company or enterprise, you may want to create multiple organizations with different accounts (mostly likely Azure Active Directory accounts). Think about what groups and users in your enterprise or company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three Azure DevOps organizations: **Fabrikam-Marketing**, **Fabrikam-Engineering**, and **Fabrikam-Sales**. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Engineering, and will be mostly isolated from the others.
+An Azure DevOps organization is the set of services and users for a business unit you define. It can be for your whole company, a specific business unit within your company, or just you. If you are setting up Azure DevOps for a large company, you may want to create multiple organizations with different accounts (mostly likely Azure Active Directory accounts). Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three Azure DevOps organizations: **Fabrikam-Marketing**, **Fabrikam-Engineering**, and **Fabrikam-Sales**. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Engineering, and will be mostly isolated from the others.
 
 Settings at the Azure DevOps organization are managed by Administrators. As the creator of the organization, you are an Administrator by default. You can access those settings using the **Admin settings** button in the lower-left of your Azure DevOps organization portal.
 
@@ -78,7 +78,7 @@ A high volume of queries and boards can make it difficult to find what you are l
 
 ### Multiple projects
 
-Most enterprises are working on several products or services at a time. In this case, we recommend having multiple projects. An Azure DevOps project is best determined by how you ship the product. Having several projects shifts the administration burden and allows your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects.
+Most companies are working on several products or services at a time. In this case, we recommend having multiple projects. An Azure DevOps project is best determined by how you ship the product. Having several projects shifts the administration burden and allows your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects.
 Having team independence with multiple projects creates some alignment challenges. If each project is using a different process or iteration schedule, it can make communication and collaboration difficult if the taxonomies are not the same.
 
 > ![Consider the following:]

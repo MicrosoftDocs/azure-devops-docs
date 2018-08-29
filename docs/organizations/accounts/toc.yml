@@ -26,7 +26,7 @@
     href: ../../organizations/security/restrict-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Defining organizations and projects
+  - name: Define organizations and projects
     href: ../../user-guide/define-organizations-and-projects.md
   - name: Add subscription user to organization
     href: add-basic-or-vs-subscription-users.md
