@@ -29,7 +29,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <a href="#start"> </a>
                                 <h2 style="float: left; display: flex;">Get started with Team Foundation Server</h2>
-                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/user-guide/index">
                                         <div class="cardSize">
@@ -109,7 +109,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Applications</h2>
-                                <ul id="index2" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                <ul id="index2" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/repos/index">
                                             <div class="cardSize">
@@ -208,7 +208,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index3"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
-                                <ul id="index3" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                <ul id="index3" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/report/dashboards/index">
                                             <div class="cardSize">
