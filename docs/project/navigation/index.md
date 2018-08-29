@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 07/21/2018
 ---
 
-# Navigation basics  
+# Web portal navigation   
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
@@ -36,7 +36,7 @@ Here's what you need to know to get up and running using the web portal.
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
+- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md) 
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited 
 - [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
@@ -64,10 +64,6 @@ Here's what you need to know to get up and running using the web portal.
 
 
 ---
-
-
-> [!NOTE]   
-> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a  project, see [Tools and clients](../../user-guide/tools.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json). 
 
 
 # [New navigation](#tab/new-nav)

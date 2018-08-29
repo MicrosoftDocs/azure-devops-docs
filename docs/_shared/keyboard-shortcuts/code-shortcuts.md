@@ -8,7 +8,7 @@ ms.topic: include
 You can use the following keyboard shortcuts when working in the **Code** hub. To view the valid shortcuts, enter **Shift+?** from the **Code** hub or when editing a wiki page. 
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. 
+><b>Feature availability: </b>The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
 
 <table width="70%">
 <tbody valign="top">

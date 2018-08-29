@@ -222,7 +222,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_portal.svg
-        title: Navigation basics
+        title: Web portal navigation
       - href: ../organizations/security/index.md
         html: <p></p>
         image:

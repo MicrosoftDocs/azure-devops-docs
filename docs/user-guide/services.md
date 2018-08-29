@@ -66,15 +66,16 @@ You can perform the following tasks in Dashboards:
 
 To learn more, see [Dashboards](../report/dashboards/dashboards.md). 
 
-## Azure Repos
-
-From **Azure Repos** you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
+## Source control 
 
 # [New navigation](#tab/new-nav)
+From **Repos**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
 ![Azure Repos, Git files page](_img/repos-git-hub.png)
 
 # [Previous navigation](#tab/prev-nav)
+
+From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
 <img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" />
 
@@ -91,19 +92,23 @@ To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](.
 
 ## Plan and track work
 
-From **Azure Boards** you gain access to Agile tools to support planning and tracking work.
+
 
 # [New navigation](#tab/new-nav)
+
+From **Boards**, you gain access to Agile tools to support planning and tracking work.
 
 ![Azure Boards backlogs](_img/boards-backlogs.png)
 
 # [Previous navigation](#tab/prev-nav)
 
+From **Work**, you gain access to Agile tools to support planning and tracking work.
+
 <img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
 ---
 
-Specifically, from **Azure Boards** you can perform the following tasks:
+Specifically, you can perform the following tasks:
 
 - Add and update work items
 - Define work item queries and create status and trend charts based on those queries
@@ -115,44 +120,49 @@ Specifically, from **Azure Boards** you can perform the following tasks:
 
 See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) for an overview of each.
  
-## Azure Pipelines
-
-**Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
+## Continuous integration and deployment  
 
 # [New navigation](#tab/new-nav)
+
+**Pipelines** provides an integrated set of features to support building and deploying your applications.
 
 ![Builds, Pipelines page](_img/builds-pipelines-page.png)
 
 # [Previous navigation](#tab/prev-nav)
 
+**Build and release** provides an integrated set of features to support building and deploying your applications.
+
 <img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 
 ---
 
-Use Pipelines to implement continuous integration and continuous delivery.
+Use pipelines to implement continuous integration and continuous delivery.
 
 - **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release pipelines that represent your environments from development to production. Run automation to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
-
 To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
 
 
-## Test Plans
+## Manaual, exploratory, and load testing  
 
-Test features support manual and exploratory testing, load or performance testing, and continuous testing.  Here we show **Test Plans** that supports creating and managing manual tests.  
+Test features support manual and exploratory testing, load or performance testing, and continuous testing.  
 
 # [New navigation](#tab/new-nav)
+
+**Test Plans** supports creating and managing manual tests. 
 
 ![Test Plans](_img/test-plans-vert.png)
 
 # [Previous navigation](#tab/prev-nav)
 
+**Test** supports creating and managing manual tests. 
+
 <img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" />
 
 ---
 
-**Test Plans** provides support for the following:
+With test features, you gain access to the following features:
 
 - Customization of workflows with test plan, test suite and test case work items  
 - End-to-end traceability from requirements to test cases and bugs with requirement-based test suites  
@@ -169,15 +179,58 @@ To learn more, see [Testing overview](../test/index.md).
 
 The following services work across the previously mentioned services to support:
 
+::: moniker range="vsts" 
+- Team dashboards 
+- Project Wiki
+- Discussion within work item forms
+- Linking of work items, commits, pull requests and other artifacts to support traceability
+- Alerts and change notifications managed per user, team, project, or organization 
+- Request and manage feedback
+- Analytics service, Analytic views, and Power BI reporting
+::: moniker-end  
+
+::: moniker range="tfs-2018" 
+- Dashboards 
+- Project Wiki
+- Discussion within work item forms
+- Linking of work items, commits, pull requests and other artifacts to support traceability
+- Alerts and change notifications managed per user, team, project, or project collection 
+- Request and manage feedback
+- SQL Server Reporting
+::: moniker-end  
+
+::: moniker range="tfs-2017" 
+- Dashboards 
+- Discussion within work item forms
+- Linking of work items, commits, pull requests and other artifacts to support traceability
+- Alerts and change notifications managed per user, team, project, or project collection  
+- Request and manage feedback
+- Team (chat) rooms
+- SQL Server Reporting
+
+> [!NOTE]  
+> Team rooms are deprecated for TFS 2017.2. Instead, we recommend you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
+::: moniker-end  
+
+
+::: moniker range="tfs-2015" 
+- Dashboards 
 - Linking of work items, commits, pull requests and other artifacts to support traceability
 - Alerts and change notifications managed per user or for teams  
 - Request and manage feedback
 - Team (chat) rooms
-- Reporting
+- SQL Server Reporting
+::: moniker-end  
 
->[!NOTE]  
->Team rooms are deprecated for TFS 2017.2. Instead, we recommend you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
 
+::: moniker range="tfs-2013" 
+- Team home page  
+- Linking of work items, commits, pull requests and other artifacts to support traceability
+- Alerts and change notifications managed per user or for teams  
+- Request and manage feedback
+- Team (chat) rooms
+- SQL Server Reporting
+::: moniker-end 
 
 ## Service hooks
 
@@ -197,7 +250,7 @@ The following services support your DevOps operations.
 
 To learn more, see [Pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
-## Azure services
+## Azure cloud-hosted services
 
 Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Azure DevOps Services or TFS.
 
@@ -207,7 +260,7 @@ For continuous delivery to Azure from Azure DevOps Services, see [Automatically 
 
 ## Administrative services
 
-There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.
+There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal. To learn more, see [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 # [New navigation](#tab/new-nav)
 
@@ -219,14 +272,10 @@ There are a number of features and tasks associated with administrating a collab
 
 ---
 
-> [!div class="mx-tdBreakAll"]  
-> |Organization Management (Azure DevOps Services)  | Administration (TFS)  | 
-> |-------------|----------| 
-> |- Manage users, access, and billing<br/>- Add and manage projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
 
- 
 ## Related articles
 
+- [Understand differences between Azure DevOps Services and TFS](about-vsts-tfs.md)
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  

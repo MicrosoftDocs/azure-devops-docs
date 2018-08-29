@@ -98,7 +98,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Navigation basics</h3>
+                                                            <h3>Web portal navigation</h3>
                                                             <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>

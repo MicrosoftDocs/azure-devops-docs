@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-<!--- TFS version only -->
+<!--- Updated to support Azure DevOps Services Pipelines only -->
 
 <table>
 <tr valign="bottom">
@@ -11,14 +11,13 @@ ms.topic: include
 <th>Readers</th>
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
-<th>Project Admins</th>
+<th>Organization Owner/<br/>Project Admins</th>
 <th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View build and release pipelines 
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left">View build and release pipelines</td>
+<td>![checkmark](/azure/devops/_img/icons/preview.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -29,7 +28,7 @@ ms.topic: include
 <tr>
 <td align="left">Define builds with continuous integration
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -40,7 +39,7 @@ ms.topic: include
 <tr>
 <td align="left">Define releases, manage deployments, manage releases with Release Management
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td> </td>
@@ -51,7 +50,7 @@ ms.topic: include
 <tr>
 <td align="left">Approve releases
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![preview](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
@@ -62,7 +61,7 @@ ms.topic: include
 <tr>
 <td align="left">Package Management (5 users free)
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
@@ -75,7 +74,7 @@ ms.topic: include
 <tr>
 <td align="left">Queue builds, edit build quality
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td> </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -86,7 +85,7 @@ ms.topic: include
 <tr>
 <td align="left">Manage build queues and build qualities
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -97,7 +96,7 @@ ms.topic: include
 <tr>
 <td align="left">Manage build retention policies, delete and destroy builds
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -109,7 +108,7 @@ ms.topic: include
 <tr>
 <td align="left">Administer build permissions
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -120,7 +119,7 @@ ms.topic: include
 <tr>
 <td align="left">Manage release permissions
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
@@ -131,7 +130,7 @@ ms.topic: include
 <tr>
 <td align="left">Create and edit task groups 
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -142,7 +141,7 @@ ms.topic: include
 <tr>
 <td align="left">Manage task group permissions
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -153,7 +152,7 @@ ms.topic: include
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -164,7 +163,7 @@ ms.topic: include
 <tr>
 <td align="left">Use and manage library items such as variable groups 
 </td>
-<td>  </td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -172,7 +171,11 @@ ms.topic: include
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
+
+
 </tbody>
 </table>
+
+
 
 

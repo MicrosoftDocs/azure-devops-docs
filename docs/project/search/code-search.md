@@ -32,7 +32,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
 # [New navigation](#tab/new-nav)
 
-1. Open the **Azure Repos** section in Azure DevOps (see [Navigation basics](../navigation/index.md)).
+1. Open the **Azure Repos** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
 1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 

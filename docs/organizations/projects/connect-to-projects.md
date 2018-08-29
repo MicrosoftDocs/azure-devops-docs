@@ -75,7 +75,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
 ::: moniker-end   
 
-To learn more about each page and the tasks you can perform, see [Navigation basics](../../project/navigation/index.md).
+To learn more about each page and the tasks you can perform, see [Web portal navigation](../../project/navigation/index.md).
 
 
 <a name="logindifferentcred"></a>

@@ -42,7 +42,7 @@ featureFlags:
 														<p><a href="/azure/devops/boards/get-started/index">Azure Boards</a></p>
 														<p><a href="/azure/devops/pipelines/get-started/pipelines-get-started">Azure Pipelines</a></p>
 														<p><a href="/azure/devops/user-guide/index">Azure DevOps</a></p>
-														<p><a href="/azure/devops/project/navigation/preview-features">Navigation basics</a></p>
+														<p><a href="/azure/devops/project/navigation/preview-features">Web portal navigation</a></p>
 														<p><a href="/azure/devops/release-notes/index">What's new</a></p>
                                                     </div>
                                                 </div>

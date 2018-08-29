@@ -16,8 +16,16 @@ ms.date: 09/05/2018
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
-You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. 
+::: moniker range=">= tfs-2018"  
+From the project summary page, you can share your project vision with your team, add project members, and check the latest project activity. You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file or through a project wiki.  
 
+If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2017"  
+From the project home page, you can share your project vision with your team, add project members, and check the latest project activity. You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file.   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"   
 > [!NOTE]    
@@ -26,10 +34,9 @@ You can quickly get started with a team project from the project page. You can s
 
 ## Prerequisites
 
-- To edit information on the project page, change the repository used to share your project vision. or manage team membership, you must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow**. 
+- To edit information on the project page, change the repository used to share your project vision. or manage project membership, you must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow**. 
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers) 
-
+- To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
 ## Open Project summary 
 
@@ -172,9 +179,8 @@ You can share your project vision and objective, as well as ways for team member
 
 ## Initialize a README file for a TFVC repo
 
-You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file. For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md). 
+For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md). 
 
-Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder will also show up in the left pane for easy navigation between them so you can provide additional information.  
 
 # [New navigation](#tab/new-nav)  
 
@@ -187,6 +193,33 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 	> [!div class="mx-imgBorder"]  
 	> ![Welcome page, TFVC new project, create readme, new nav](_img/share-project/welcome-page-tfvc-new-nav.png) 
 
+0. You can select the TFVC repository and choose **Save**. If no README file has been created yet in the repo, you'll see the following message. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![About this project dialog, new nav](_img/share-project/about-this-project-form.png) 
+
+0. To create a README file, choose **Repos>Files** and choose new file to add a file to the project repository. 
+
+0. Name the file as **README.md**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add new file dialog, new nav](_img/share-project/create-readme-file-web-portal.png) 
+
+0. Add the contents of your README file in markdown format, and then choose **Check in...**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Enter Readme file contents, new nav](_img/share-project/tfvc-readme-file.png) 
+
+0. Choose **Check in** to complete the check in process of the README file.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Check-in README file dialog, new nav](_img/share-project/tfvc-readme-checkin.png) 
+
+0. Now, choose **Overview>Summary** to review your project summary page with the README file displayed.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![About this project dialog, new nav](_img/share-project/tfvc-project-summary-with-readme.png) 
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
@@ -197,19 +230,20 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 0. Open the Project home page. 
 
-0. Choose **Create README**.
- 
+0. Choose **Create README**.  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Welcome page, TFVC new project, create readme, previous nav](_img/share-project/welcome-page-tfvc-prev-nav.png) 
 
+	A default README file is added to the project repository, in this case, the **Fabrikam Fiber TFVC** repo.
+
+0. You can immediately edit the README file. When done, choose **Check in**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Edit page, new nav](_img/share-project/tfvc-checkin-page.png)  
+Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder will also show up in the left pane for easy navigation between them so you can provide additional information.  
+
 ---
-
-A default README file is added to the project repository, in this case, the **Fabrikam Fiber TFVC** repo.
-
-You can immediately edit the README file. When done, choose **Check in**. 
-
-> [!div class="mx-imgBorder"]  
-> ![Edit page, new nav](_img/share-project/tfvc-checkin-page.png)  
 
 
 
@@ -219,7 +253,7 @@ You can immediately edit the README file. When done, choose **Check in**.
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity. 
 
 ::: moniker range="vsts"   
-To add users to the project, choose the ![](_img/share-project/add-members-new-nav.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md). 
+To add users to the project, choose the ![](_img/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Project stats](_img/share-project/project-stats-new-nav.png) 

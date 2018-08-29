@@ -8,7 +8,7 @@ ms.topic: include
 You can use the following keyboard shortcuts when working in the **Work** hub, **Work Items** page which is currently in preview. To enable it, see [Enable preview features](/azure/devops/project/navigation/preview-features).  
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS. 
+><b>Feature availability: </b>The following shortcuts are available from the web portal for Azure DevOps Services. 
 
 <table width="70%">
 <tbody valign="top">

@@ -56,7 +56,7 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 
 ## Resources 
-- [Navigation basics](../../project/navigation/index.md) 
+- [Web portal navigation](../../project/navigation/index.md) 
 - [Manage projects](../projects/index.md) 
 - [Security & identity](../security/index.md) 
 - [Manage Extensions (Marketplace)](../../marketplace/index.md) 

@@ -46,13 +46,32 @@ Assign **Basic** access to all users with a Visual Studio subscriptions and paid
 
 ![Basic access features](_img/access-levels-2017-basic.png)
 
-## Stakeholder
+<a id="stakeholder-access">  </a>
+## Stakeholder access 
 
 ::: moniker range="vsts"
-Assign **Stakeholder** access to an unlimited number of users for free. Stakeholder provides access to: 
-- A limited set of features to work tracking: Enter bugs, view backlogs, boards, charts, and dashboards. 
-- Full access to Build and Release pipelines. 
-- Full access to Azure DevOps in public projects, barring some features in work tracking and administrative features. 
+Assign **Stakeholder** access to an unlimited number of users for free.
+
+<!---
+> [!NOTE]   
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [Default roles and access for public projects](../public/default-roles-access-public.md#pipelinesbuild-and-release).
+-->
+
+Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
+
+| Service, application, or setting | Private project | Public project|
+|------------|-----------------|---------------|
+|**Dashboards** | Partial access | Full access | 
+|**Wiki** | Full access | Full access | 
+|**Boards (Work)** | Partial access | Full access | 
+|**Repos (Code)**| No access | Full access | 
+|**Pipelines (Build and Release)** | Full access | Full access | 
+|**Test Plans (Test)** | No access | No access | 
+|**Notifications** | Full access | Full access | 
+|**Semantic search** | Full access | Full access | 
+|**Project settings** | Partial access | Partial access | 
+|**Organization settings** | Partial access | Partial access | 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -61,7 +80,159 @@ Assign **Stakeholder** access to those users who need to enter bugs, view backlo
 ![Stakeholder access features](_img/access-levels-2017-stakeholder.png)  
 ::: moniker-end
 
-See [Stakeholder access](get-started-stakeholder.md#stakeholder-feature-access) for details of features available to stakeholders.
+
+<a id="feature-access">  </a>
+
+::: moniker range="vsts"
+### Stakeholder access to user features for Private projects
+
+The following features are available to Stakeholders from the web portal for private projects.
+
+> [!div class="mx-tdBreakAll"]
+> |Boards/Work  |Organization, Dashboards, Wiki, and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>2, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Work across projects](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>5</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>6</sup><br/>- [View wiki pages](../../project/wiki/filter-print-wiki.md) <sup>7</sup><br/><br/>**Pipelines/Build & Release**<br/> - All features <sup>8</sup>  |
+
+**Notes:**
+
+1. Can assign existing tags to work items, but not create new tags. 
+2. Cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting. 
+3. Cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
+4. Can save queries under My Queries but cannot save under Shared Queries. 
+5. Cannot view markdown README files defined for repositories. 
+6. Can add users and assign licenses when added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md).
+7. Have read-only permissions to wiki pages. These permissions can't be changed. 
+8. When the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all **Pipeline (Build and Release)** features. If it is disabled, Stakeholders have access to [View releases](../../pipelines/release/approvals/index.md) and [Approve releases](../../pipelines/release/approvals/index.md) only.
+
+### Stakeholder access to user features for Public projects
+From the web portal for private projects, Stakeholders have access to the following features in full, similar to those granted to users who were granted Basic access.  
+
+> [!div class="mx-tdBreakAll"]
+> |Boards/Work  |Organization, Dashboards, Wiki, and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <br/>- [View, add, and modify items on backlogs](#check-backlog)<br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md)<br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md)<br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query)<br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Work across projects](../../project/navigation/work-across-projects.md)<br/>- [View and edit project welcome pages](../../project/wiki/project-vision-status.md)<br/>- [View and manage team dashboards](../../report/dashboards.md)<br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>1</sup><br/>- [View and edit wiki pages](../../project/wiki/filter-print-wiki.md) <br/><br/>**Pipelines/Build & Release**<br/> - All features <sup>2</sup>  |
+
+
+**Notes:**
+
+1. To add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md).
+2. When the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all **Pipeline (Build and Release)** features. If it is disabled, Stakeholders have access to [View releases](../../pipelines/release/approvals/index.md) and [Approve releases](../../pipelines/release/approvals/index.md) only.
+
+
+### Stakeholder access to administrative features
+
+The following administrative features are granted or denied to users with Stakeholder access by default. Additional features are granted to Stakeholders in public projects. 
+
+Items with a ![](_img/icons/checkmark.png) checkmark are granted permission by default. Items with an ![red x](_img/icons/delete-icon.png) indicate that permissions aren't granted and can't be granted to Stakeholders. Members of the Project Collection Administrators or Project Administrators group can grant or deny these permissions for Stakeholders. 
+
+**Project settings**
+| Permission | Private project | Public project|
+|------------|-----------------|---------------|
+|Bypass rules on work item updates | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
+|Change process of team project | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
+|Create work item tag definition | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
+|Delete and restore work items | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
+|Move work items out of a project | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
+|Permanently delete work items | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
+|Suppress notifications for owrk item updates | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
+|Agile backlog tools management| ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) | 
+
+The following permissions to manage area and iteration path settings are granted to Stakeholders by default in both private and public projects: 
+- Create, delete, and edit child nodes 
+- Edit work items in this node (area path only) 
+- View work items in this node (area path only)  
+
+The following permissions to manage organization settings are granted to Stakeholders in both private and public projects: 
+
+- Administer process permissions 
+- Create, delete, edit processes  
+- Delete field from account 
+- Add and manage users  
+
+You can change the permissions granted to Stakeholders. See [Grant or restrict access to select features and functions](restrict-access.md).
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+### Stakeholder access to user features
+The following features are available to Stakeholders from the web portal.
+
+> [!div class="mx-tdBreakAll"]
+> |Work  |Dashboards, Wiki, and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Work across projects](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [View wiki pages](../../project/wiki/add-edit-wiki.md) <sup>7</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
+
+**Notes:**
+
+1. Stakeholders can assign existing tags to work items, but not create new tags.
+2. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
+3. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
+4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
+5. Stakeholders can only view and approve releases.
+6. Stakeholders cannot view markdown README files defined for repositories.
+7. Stakeholders have read-only permissions to wiki pages. These permissions can't be changed.
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+### Stakeholder access to user features
+The following features are available to Stakeholders from the web portal of the listed TFS or later version. Those not annotated are available from all versions. To determine your platform or TFS version, see [Platform and version support](../../user-guide/provide-feedback.md#platform-version).   
+
+> [!div class="mx-tdBreakAll"]
+> |Work  |Dashboards and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>2, 3</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup><br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md) |- [Work across projects](../../project/navigation/work-across-projects.md) (TFS 2017)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup> (TFS 2017)<br/>- [View team dashboards](../../report/dashboards/dashboards.md) (TFS 2015)<br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md) (TFS 2017) <br/>- [Set personal alerts for changes to work items](../../boards/queries/alerts-and-notifications.md) (TFS 2013, 2015)<br/><br/>- **Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2)<br/>- [Approve a release](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2) |
+
+**Notes:**   
+1. Stakeholders can assign existing tags to work items, but not create new tags.  
+2. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
+3. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
+4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
+5. Stakeholders can only view and approve releases.  
+6. Stakeholders cannot view markdown README files defined for repositories.  
+
+::: moniker-end
+
+
+### Features stakeholders can't access 
+
+If you need access to the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to be have **Basic** access.  
+
+> [!NOTE]   
+> Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have  permissions to complete the task.
+
+::: moniker range="vsts"
+**For Private projects:**
+- Change the priority of an item within a backlog  
+- Delete work items or move work items to another team project
+- Create shared queries, view charts, and modify the home page  
+- View Delivery Plans (a Marketplace extension)    
+- Access the full set of features under **Pipelines (Build and Release)**, **Repos (Code)** or **Test Plans (Test)**.  
+
+**For Public projects:**
+- View Delivery Plans (a Marketplace extension)    
+- Access the full set of features under **Repos (Code)** or **Test Plans (Test)**. 
+::: moniker-end
+
+
+::: moniker range="tfs-2018"
+- Change the priority of an item within a backlog  
+- Delete work items or move work items to another team project
+- Create shared queries, view charts, and modify the home page  
+- View Delivery Plans (a Marketplace extension)    
+- Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+- Change the priority of an item within a backlog  
+- Delete work items or move work items to another team project
+- Create shared queries, view charts, and modify the home page  
+- View Delivery Plans (a Marketplace extension)    
+- Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  
+- Participate in team rooms, which capture interactive, detailed conversations about the project.  
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## VS Enterprise
@@ -111,18 +282,26 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 
  
 <a id="test-manager"  >  </a>
-## Access to the Test hub and Marketplace extensions
+::: moniker range="vsts"
+## Test Plans/Test features and Marketplace extensions
 
-Full access to the Test hub requires Advanced (TFS 2015 or earlier versions) or VS Enterprise (TFS 2017 or later version) access. Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to **Test Plans/Test** features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+
+To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+## Test features and Marketplace extensions
+
+Full access to **Test Plans/Test** features requires **Advanced** (TFS 2015 or earlier versions) or **VS Enterprise** (TFS 2017 or later version) access. Visual Studio Test Professional plus the test features in the TFS web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
 
 To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
 
 ::: moniker-end
 
-## What features are accessible to users who belong to two different groups?
-If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
+## What features can users access who are added to two different groups?
+If a user belongs to a group that has **Basic** access and another group that has **VS Enterprise** access, the user has access to all features available through **VS Enterprise**, which is a superset of **Basic**.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
