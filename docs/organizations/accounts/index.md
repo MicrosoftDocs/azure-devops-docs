@@ -31,7 +31,7 @@ Sign up for an Azure DevOps organization. Add users and manage permissions and a
 
 ## Concepts
 
-* [Defining organizations and projects](../../user-guide/define-organizations-and-projects.md)
+* [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
 * [Add subscription user to organization](add-basic-or-vs-subscription-users.md)
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
 * [Glossary](../../project/navigation/glossary.md)

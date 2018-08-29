@@ -48,7 +48,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
         title: Sign up for Azure DevOps
-      - href: ../organizations/accounts/create-organizations-msa-or-work-student.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../organizations/accounts/create-organization-msa-or-work-student.md
         html:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -68,7 +68,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_test.svg
         title: Add & run manual tests
-      - href: azure/devops/marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_extensions.svg
@@ -78,7 +78,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: View permissions
-      - href: ../project/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_management.svg
@@ -148,7 +148,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_guidelines.svg
-        title: Defining organizations and projects
+        title: Define organizations and projects
       - href: source-control.md
         html: <p></p>
         image:
