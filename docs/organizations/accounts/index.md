@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/10/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization management
@@ -17,17 +17,24 @@ monikerRange: '>= tfs-2013'
 
 Sign up for an Azure DevOps organization. Add users and manage permissions and access.
 
-## 5-Minute Quickstarts
+## 5-Minute quickstarts
 
 * [Create your Azure DevOps organization](create-organization-msa-or-work-student.md)
 * [Pay for users](../billing/buy-basic-access-add-users.md)
-* [Buy Azure Pipelines](../billing/buy-more-build-vs.md)
+* [Buy CI/CD](../billing/buy-more-build-vs.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 * [Buy cloud-based load testing](../billing/buy-load-testing-vs.md)
 
-## Step-by-Step Tutorials
+## Step-by-step tutorials
 
 * [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
+
+## Concepts
+
+* [Defining organizations and projects](../../user-guide/define-organizations-and-projects.md)
+* [Add subscription user to organization](add-basic-or-vs-subscription-users.md)
+* [Resources granted to project members](../projects/resources-granted-to-project-members.md)
+* [Glossary](../../project/navigation/glossary.md)
 
 ## Reference
 

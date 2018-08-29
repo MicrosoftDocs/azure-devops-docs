@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site. 
+To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
 
 With Azure DevOps Services, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
@@ -28,7 +28,7 @@ With Azure DevOps Services, you can upload and share code in free, unlimited pri
 
 ## Prerequisites
 
-Before you begin, do either of the following:
+Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md) and before you begin, do either of the following:
 
 * To use only Microsoft accounts with your Azure DevOps Services organization, complete these steps. Ignore the Azure Active Directory (Azure AD) callouts.
 
@@ -42,7 +42,7 @@ Before you begin, do either of the following:
 
 	* You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
-	* To use existing on-premises identities with Azure DevOps Services, see	[use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+	* To use existing on-premises identities with Azure DevOps Services, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 
 ## How does Azure AD control access to Azure DevOps Services?
@@ -52,22 +52,21 @@ Azure DevOps Services authenticates users through your Azure AD, so that only us
 Without Azure AD, you're solely responsible for controlling Azure DevOps Services organization access. And all users must sign in with their Microsoft account. 
 [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
 
-
 <a name="SignIn"></a>
 
 ## Create your organization and sign up for Azure DevOps Services
 
-1. Go to [Azure DevOps Services](https://go.microsoft.com/fwlink/?LinkId=307137), and do either of the following:
+1. Go to [Azure DevOps Services](https://go.microsoft.com/fwlink/?LinkId=307137), and use either of the following:
 
 	* **Microsoft account**: If you're a Visual Studio subscriber and get Azure DevOps Services as a benefit, use the Microsoft account email address that's associated with your subscription. 
 
-	* **Azure AD**: Use your work or school account email address. Depending on the account you use, your sign-in page might vary from the page shown here:
+	* **Azure AD**: Use your work or school account email address. Depending on the account you use, your sign-in page might vary from the page shown as follows:
 
 	  ![Enter your email address](_img/_shared/sign-in.png)
 
 	  [Got browser problems?](faq-create-organization.md#browser-problems)
 
-1. Do the following:
+2. Do the following:
 
     a. **Microsoft account**: Enter the email address for your Microsoft account, select **Next**, and then enter your password to finish signing in.  
     If you are not using **Azure AD**, and you don't have a Microsoft account, you can create a Microsoft account at this time.
@@ -80,13 +79,13 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 
 	  [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-1. Under **Host my projects at**, enter the name of your Azure DevOps Services organization and then, under **Manage code using**, select **Git** or **Team Foundation Version Control**.
+3. Under **Host my projects at**, enter the name of your Azure DevOps Services organization and then, under **Manage code using**, select **Git** or **Team Foundation Version Control**.
 
 	![Name your organization, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-organization-directory.png)
 
 	Learn which version control works bests for you: [Git](../../repos/git/overview.md) or [Team Foundation Version Control](../../repos/tfvc/overview.md).
 
-1. Confirm your organization's location and, if you're using **Azure AD**, confirm the directory that you're connecting to your Azure DevOps Services organization. 
+4. Confirm your organization's location and, if you're using **Azure AD**, confirm the directory that you're connecting to your Azure DevOps Services organization. 
 
 	![Rename project, change organization location, or select another process](_img/sign-up-visual-studio-team-services/check-organization-location-standard.png)
 	
@@ -106,7 +105,7 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 
     If you belong to multiple directories, ensure that you want to connect this directory to your Azure DevOps Services organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
 
-1. After Azure DevOps Services creates your organization and project, add code, work items, or more users.
+5. After Azure DevOps Services creates your organization and project, add code, work items, or more users.
 
     ![Add code or work items](_img/_shared/project-created.png)
 	Congratulations, you're now an Azure DevOps Services organization owner! 
@@ -120,6 +119,9 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 
 > [!div class="nextstepaction"]
 > [Manage users and access](add-organization-users-from-user-hub.md)
+> or
+> [!div class="nextstepaction"]
+> [Create project](../projects/create-project.md)
 
 * Add code to Git or Team Foundation Version Control:
 

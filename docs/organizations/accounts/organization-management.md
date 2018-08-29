@@ -26,7 +26,7 @@ With an Azure DevOps Services organization, you gain access to the platform in w
 
 ## Create your organization
 
-To get started, [create your Azure DevOps Services organization](create-organization-msa-or-work-student.md) and then invite others so they can access your organization.
+Before you get started, read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your Azure DevOps Services organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps Services can create your project for code and other assets,
