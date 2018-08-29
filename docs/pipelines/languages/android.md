@@ -87,7 +87,6 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 ::: moniker range="> tfs-2018"
 
 ```yaml
-steps:
 - task: AndroidSigning@2
   inputs:
     apkFiles: '**/*.apk'
@@ -123,7 +122,6 @@ to store your APK with the build record or test and deploy it in subsequent pipe
 ::: moniker range="> tfs-2018"
 
 ```yaml
-steps:
 - task: CopyFiles@2
   inputs:
     contents: '**/*.apk'
@@ -160,7 +158,6 @@ task to release a new Android app version to the Google Play store.
 ::: moniker range="> tfs-2018"
 
 ```yaml
-steps:
 - task: GooglePlayRelease@2
   inputs:
     apkFile: '**/*.apk'
@@ -178,7 +175,6 @@ task to promote a previously-released Android app update from one track to anoth
 ::: moniker range="> tfs-2018"
 
 ```yaml
-steps:
 - task: GooglePlayPromote@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
@@ -197,7 +193,6 @@ task to increase the rollout percentage of an app that was previously released t
 ::: moniker range="> tfs-2018"
 
 ```yaml
-steps:
 - task: GooglePlayIncreaseRollout@1
   inputs:
     packageName: 'com.yourCompany.appPackageName'

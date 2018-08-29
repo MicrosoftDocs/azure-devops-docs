@@ -1,6 +1,6 @@
 ---
 title: Go
-description: Build Go projects using Azure Pipelines and TFS
+description: Build and test Go projects using Azure Pipelines or TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 # Go
 
-This guidance explains how to build Go projects.
+This guidance explains how to build and test Go projects.
 
 ## Example
 
@@ -57,7 +57,7 @@ When an Azure Pipelines build fetches code from a remote repository, it places t
 ```yaml
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
-  GOROOT: '/usr/local/go1.10' # Go installation path
+  GOROOT: '/usr/local/go1.11' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
@@ -90,7 +90,6 @@ This snippet does the following:
 Use `go get` to download the source code for a Go project or to install a tool into the Go workspace. Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-steps:
 - script: go get -v -t -d ./...
   workingDirectory: '$(modulePath)'
   displayName: 'go get dependencies'
@@ -101,7 +100,6 @@ steps:
 Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gpkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
 
 ```yaml
-steps:
 - script: |
     if [ -f Gopkg.toml ]; then
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
@@ -116,7 +114,6 @@ steps:
 Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-steps:
 - script: go test -v ./...
   workingDirectory: '$(modulePath)'
   displayName: 'Run tests'
@@ -127,8 +124,7 @@ steps:
 Use `go build` to bulid your Go project. Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-steps:
-- script: go build -o main . # Replace `main` if your primary .go file is named differently
+- script: go build -v .
   workingDirectory: '$(modulePath)'
   displayName: 'Build'
 ```
