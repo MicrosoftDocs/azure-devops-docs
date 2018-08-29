@@ -15,8 +15,6 @@ monikerRange: 'vsts'
 
 # Code with Git
 
-#### Azure Repos
-
 After you create a new organization and team project in Azure DevOps Services, you can begin sharing your code with others.
 
 In this article we'll show you how to start working with your code in Azure Repos with a simple walkthrough that covers:
