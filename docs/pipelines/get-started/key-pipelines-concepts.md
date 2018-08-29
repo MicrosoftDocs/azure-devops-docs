@@ -14,20 +14,6 @@ monikerRange: '>= tfs-2015'
 
 Learn about the key concepts and components that are used in Pipelines. Understanding the basic terms and parts of Pipelines will help you further explore how it can help you deliver better code more efficiently and reliably.
 
-## How Pipelines works
-
-![Pipelines into image](../_img/pipelines-image.png)
-
-Azure Pipelines is simple in its design:
-
-1. Edit your code any way you like
-2. Push your code to your version control repository
-3. Once your code is pushed to the repository your build pipeline is triggered, running any tasks such as checking or testing code
-4. The build pipeline creates an artifact that is used by the release pipeline, running any tasks such as building and testing code
-5. Your updated, tested, and packaged code is sent to your deployment target
-
-**ELBATK NOTE:** NEED HELP HERE - should we get art for this kind of stuff? 
-
 ## Agent
 
 When your build or deployment runs, the system begins one or more jobs. An **agent** is installable software that runs one build or deployment job at a time.
@@ -52,7 +38,7 @@ Once you have continuous integration in place, the next step is to create a rele
 
 ## Pipeline
 
-A **pipeline** is made up of **tasks** and can be thought of as a script that defines how your testing, building, and deploying tasks are run.
+A **pipeline** defines the continuous integration and deployment process for your app. It is made up of steps called **tasks** and can be thought of as a script that defines how your test, build, and deploy steps are run.
 
 ## Release
 

@@ -40,14 +40,4 @@ There are plenty of reasons to use Azure Pipelines for your CI/CD solution:
 * Great integration for GitHub
 * Great offer for open source projects
 
-## What can Pipelines do for me?
-
-To show the benefit of using Azure Pipelines, check out the two scenarios below. In the first scenario, we'll cover the development process without using CI/CD with Pipelines, and then in the second we'll show how Pipelines can optimize your dev process so you can focus more on your code and less on other things.
-
-**ELBATK NOTE:** NEED HELP HERE - from PM or Andy on scenario, if we wanna go this route..
-
-### Development process _without_ Azure Pipelines
-
-### Development process _with_ Azure Pipelines
-
 
