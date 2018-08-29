@@ -1,5 +1,6 @@
 ---
-title: Get started with Git and Visual Studio 2013 | VSTS & TFS
+title: Get started with Git and Visual Studio 2013
+titleSuffix: Azure Repos
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
@@ -21,7 +22,7 @@ monikerRange: '>= tfs-2013'
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
@@ -52,7 +53,7 @@ To get started, you'll first need to clone your repo to your local machine.  Onc
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to VSTS from Visual Studio.
+0. Sign in to Azure DevOps Services from Visual Studio.
 
 0. Clone the repository to your computer.
 
@@ -77,7 +78,7 @@ Let's add a new app to the repo so we can make some changes.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to VSTS.
+0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Azure DevOps Services.
 If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
@@ -167,7 +168,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="create_team_project"></a>
-#### Q: How do I create a project on VSTS?
+#### Q: How do I create a project on Azure DevOps Services?
 * [Sign up and create your project](../../organizations/accounts/create-organization-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
@@ -187,9 +188,9 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the CODE hub in VSTS.
+* Get the clone URL from the Repos hub in Azure DevOps Services.
 
-For the Fabrikam project on VSTS, the command to clone would look like this:
+For the Fabrikam project on Azure DevOps Services, the command to clone would look like this:
 
 `git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam`
 
@@ -205,7 +206,7 @@ Then commit to the local repo:
 
 `git commit -a -m "Initial commit"`
 
-When you're ready to publish your topic branch to the repo on VSTS, push the changes:
+When you're ready to publish your topic branch to the repo on Azure DevOps Services, push the changes:
 
 `git push origin users/jamal/new_branch`
 

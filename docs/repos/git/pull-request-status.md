@@ -1,5 +1,6 @@
 ---
-title: Pull request workflow extensibility | VSTS & TFS
+title: Pull request workflow extensibility
+titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: devops
@@ -15,25 +16,25 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-#### VSTS | TFS 2018 Update 2
+#### Azure Repos | TFS 2018 Update 2
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
-These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
+These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
 
 Integrating into the PR workflow involves a few different concepts:
 
 * [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
 * [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
 * [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
-* [Custom actions](#custom-actions) - provides a way to extend the status menu using VSTS extensions.
+* [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
 ## Service hooks
 
 Any service that wants to integrate with pull requests will need to know when a new PR has been created or updated, so that the contents of the PR may be evaluated. 
-[Service hooks](../../service-hooks/overview.md) enable external systems to be alerted when events occur in VSTS.
+[Service hooks](../../service-hooks/overview.md) enable external systems to be alerted when events occur in Azure DevOps Services.
 There are two event triggers for pull requests: - **pull request created** and **pull request updated**. 
 Ensure that there are subscriptions for both of these events to receive notifications any time the code in a PR changes.
 
@@ -136,7 +137,7 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
 
 ![Status menu](_img/pull-request-status/custom-status-menu-entries.png)
 

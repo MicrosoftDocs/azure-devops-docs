@@ -26,7 +26,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 1. Install one of the following Git command line tools:
 
   >- To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows)
-  >- To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../repos/git/set-up-credential-managers.md#macos-and-linux)
+  >- To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](../repos/git/set-up-credential-managers.md#macos-and-linux)
 
 ## Clone the repo to your computer
 

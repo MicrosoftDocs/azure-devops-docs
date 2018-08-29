@@ -1,6 +1,7 @@
 ---
-title: Import repositories from TFVC to Git | VSTS & TFS
-description: Search your Git repo in VSTS or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
+title: Import repositories from TFVC to Git
+titleSuffix: Azure Repos
+description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 
 # Import repositories from TFVC to Git
-#### VSTS | TFS 2018 | TFS 2017 Update 2
+#### Azure Repos | TFS 2018 | TFS 2017 Update 2
 
 You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change 
 that requires careful planning. You need to think about: 

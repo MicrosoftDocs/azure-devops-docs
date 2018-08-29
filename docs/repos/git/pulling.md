@@ -1,5 +1,6 @@
 ---
-title: Pull changes to your local Git repo | VSTS & TFS
+title: Pull changes to your local Git repo
+titleSuffix: Azure Repos
 description: Using Git Pull, fetch, and merge to get code from others
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 #   Update code with fetch and pull
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Update the code in your local repo with the changes from other members of your team using the following commands:
 

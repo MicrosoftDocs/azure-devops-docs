@@ -50,7 +50,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/git">
+                                        <a href="/azure/devops/repos/git">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

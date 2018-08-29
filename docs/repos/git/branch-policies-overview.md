@@ -1,6 +1,7 @@
 ---
-title: Branch policies | VSTS & TFS    
-description: Learn about branch policies in VSTS & TFS  
+title: Branch policies
+titleSuffix: Azure Repos    
+description: Learn about branch policies in Azure DevOps Services & TFS  
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch policies
 
-#### VSTS | TFS 2018 | TFS 2017
+#### Azure Repos | TFS 2018 | TFS 2017
 
 Branch policies are an important part of the Git workflow and enable you to:
 

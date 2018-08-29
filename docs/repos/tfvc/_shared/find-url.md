@@ -6,7 +6,7 @@ ms.topic: include
 
 A: You'll find it in the code hub in your project.
 
-1. Sign in to your VSTS account and browse to your project or type the project URL directly in your browser. 
+1. Sign in to your Azure DevOps Services organization and browse to your project or type the project URL directly in your browser. 
 
 * The URL will look like ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```
 

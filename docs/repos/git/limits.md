@@ -1,5 +1,6 @@
 ---
 title: Git limits
+titleSuffix: Azure Repos
 description: Resource limits applied to Git operations
 ms.assetid: 
 ms.prod: devops
@@ -15,13 +16,13 @@ monikerRange: 'vsts'
 
 # Git limits
 
-#### VSTS
+#### Azure Repos
 
 We impose a few resource limits on Git repositories in Visual Studio Team Services.
 Our goal is to ensure reliability and availability for all customers.
 Also, by keeping the amount of data and number of pushes reasonable, you can expect to have a better overall experience with Git.
 
-Git participates in [rate limiting](../../integrate/concepts/rate-limits.md) along with the rest of VSTS.
+Git participates in [rate limiting](../../integrate/concepts/rate-limits.md) along with the rest of Azure DevOps Services.
 In addition, we impose limits on the total size of repositories and pushes.
 
 ## Repository size
@@ -55,6 +56,6 @@ Someone may have inadvertently checked in build outputs or a VM image, for examp
 For these reasons and more, pushes are limited to 5GB at a time.
 
 There's one exception where large pushes are normal.
-When you migrate a repository from another service into VSTS, it comes in as a single push.
+When you migrate a repository from another service into Azure Repos, it comes in as a single push.
 We don't intend to block imports, even of very large repositories.
 If the repository is more than 5GB, then you must use the [Import repository](import-git-repository.md) feature instead of the command line.

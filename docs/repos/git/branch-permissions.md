@@ -1,6 +1,7 @@
 ---
-title: Set Git branch security and permissions |  VSTS & TFS
-description: Set permissions for Git branches in VSTS/TFS.
+title: Set Git branch security and permissions
+titleSuffix: Azure Repos
+description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Set branch permissions
 
-#### VSTS | TFS 2018 | TFS 2017 Update 1
+#### Azure Repos | TFS 2018 | TFS 2017 Update 1
 
 ## Overview
 
@@ -38,15 +39,15 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 > Avoid trouble:  You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
-Add users or groups to your branch permissions by selecting **Add**, then choosing **Add user** or **Add VSTS group**. 
-Enter the display name or their Microsoft Account, then select **Save Changes**.
+Add users or groups to your branch permissions by selecting **Add** 
+Enter the sign-in address or group alias, then select **Save Changes**.
 
 ## Remove users or groups
 
-Remove permissions for a user or group by selecting the user or VSTS group, then selecting **Remove**. 
+Remove permissions for a user or group by selecting the user or Azure DevOps group, then selecting **Remove**. 
 The user or group will still exist in your Project and this change will not affect other permissions for the user or group.    
 
-![Remove branch permissions for a user in VSTS or TFS](_img/branches/remove_permissions.png)
+![Remove branch permissions for a user in Azure DevOps Services or TFS](_img/branches/remove_permissions.png)
  
 ## Set permissions 
 
@@ -54,7 +55,7 @@ Control branch permission settings from the branch permission view. Users and gr
 [inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
 
 > [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and VSTS.
+> These permissions have changed in TFS 2017 Update 1 and Azure DevOps Services.
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
@@ -91,10 +92,10 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker range="vsts" 
 
-### Permissions in VSTS
+### Permissions in Azure DevOps Services
 
 >[!NOTE]
->[In VSTS](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
+>[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**

@@ -1,6 +1,6 @@
 ---
 title: Collaborate on code
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.prod: devops
 ms.technology: devops-new-user
@@ -14,9 +14,6 @@ monikerRange: 'vsts'
 ---
 
 # What is Azure Repos?
-
->[!NOTE]
->This topic is still a work in progress but will be done for the 9/5 launch.
 
 Azure Repos is a set of version control tools you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
@@ -57,7 +54,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 <div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
 <div class="ico48Link"><a href="/azure/devops/java/download-eclipse-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="/azure/devops/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="/azure/devops/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 
@@ -271,7 +268,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
 
 ### Extend pull request workflows with pull request status
 
-Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
+Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
 
 <ul class="panelContent cardsFTitle">
     <li>

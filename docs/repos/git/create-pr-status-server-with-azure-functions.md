@@ -1,5 +1,6 @@
 ---
 title: Use Azure Functions to create custom branch policies
+titleSuffix: Azure Repos
 description: Create a serverless function to listen to pull request events and post status on the pull request status API.
 ms.assetid: 
 ms.prod: devops
@@ -15,16 +16,16 @@ monikerRange: '>= tfs-2018'
 
 # Use Azure Functions to create custom branch policies
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in a VSTS Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+An Azure DevOps Services organization with a Git repo. If you don't have an Azure DevOps Services organization, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 
-## Create a basic Azure function to listen to VSTS events
+## Create a basic Azure function to listen to Azure Repos events
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
@@ -74,7 +75,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
+Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests when pull requests change, you will need to provide the service hook with the Azure function URL.
 
 For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** and the second will be for the **Pull request updated** event.
 
@@ -84,7 +85,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Copy function url](_img/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
-2. Browse to your VSTS project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+2. Browse to your Azure DevOps Services project, e.g. `https://<your account>.visualstudio.com/<your project name>`
 
 3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 

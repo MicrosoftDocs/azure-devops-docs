@@ -1,6 +1,7 @@
 ---
-title: Fork your repository in VSTS or TFS
-description: Learn to isolate code using forks in VSTS & TFS
+title: Fork your repository
+titleSuffix: Azure Repos
+description: Learn to isolate code using forks in Azure DevOps Services & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Forks
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
