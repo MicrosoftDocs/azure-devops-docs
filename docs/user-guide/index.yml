@@ -48,7 +48,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
         title: Sign up for Azure DevOps
-      - href: create-organizations-msa-or-work-student.md
+      - href: ../organizations/accounts/create-organizations-msa-or-work-student.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -68,21 +68,21 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_test.svg
         title: Add & run manual tests
-      - href: vsts/marketplace/install-vsts-extension.md
+      - href: azure/devops/marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_extensions.svg
         title: Install a Marketplace extension
-      - href: ../organizations/security/view-permissions.md
+      - href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: View permissions
-      - href: index.md
+      - href: ../project/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_management.svg
-        title: Manage a project
+        title: Create a project
       - href:  index.md
         html: <p></p>
         image:
@@ -96,37 +96,37 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../project/navigation/set-favorites.md
+      - href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_setup.svg
         title: Set favorites
-      - href: ../boards/work-items/follow-work-items.md
+      - href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_pull-request.svg
         title: Follow work & pull requests
-      - href: .md
+      - href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/toolbars/member.svg
         title: Get started as a stakeholder
-      - href: vsts/organizations/accounts/add-organization-users-from-user-hub.md
+      - href: ../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Add & manage users
-      - href: vsts/organizations/security/change-individual-permissions.md
+      - href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Change individual permissions
-      - href: vsts/organizations/security/restrict-access.md
+      - href: ../organizations/security/restrict-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Grant or restrict permissions to select tasks
-      - href: azure/devops/organizations/settings/work/customize-process.md
+      - href: ../organizations/settings/work/customize-process.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_config-tools.svg
@@ -154,7 +154,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
-      - href: ../work/backlogs/overview.md
+      - href: ../work/backlogs/overview.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_kaban.svg
@@ -182,7 +182,7 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: docs/organizations/projects/connect-to-projects.md
+      - href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_accessibility.svg
@@ -195,17 +195,17 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../security/index.md?toc=%2fvsts%2fbilling%2ftoc.json&%3bbc=%2fvsts%2fbilling%2fbreadcrumb%2ftoc.json&%3bview=vsts&view=vsts
+      - href: ../security/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_reference.svg
         title: Permissions
-      - href: ../security/access-levels.md?toc=%2fvsts%2fbilling%2ftoc.json&%3bbc=%2fvsts%2fbilling%2fbreadcrumb%2ftoc.json&%3bview=vsts&view=vsts
+      - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_reference.svg
         title: About access levels
-      - href: ../security/permissions-access.md?toc=%2fvsts%2fbilling%2ftoc.json&%3bbc=%2fvsts%2fbilling%2fbreadcrumb%2ftoc.json&%3bview=vsts&view=vsts
+      - href: ../security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_reference.svg
