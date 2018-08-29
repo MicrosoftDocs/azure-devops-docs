@@ -37,8 +37,8 @@ The high-level workflow for migrating from SVN to Git is as follows:
 * Prepare a migration environment
 * Convert the source SVN repository to a local Git repository
 * (Optional) Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
-* Push the local Git repository to a remote Git repository hosted on Visual Studio Team Services (VSTS)
-* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on VSTS
+* Push the local Git repository to a remote Git repository hosted on Azure Repos
+* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on Azure Repos
 * Developers switch to Git as main source control system
 
 ## Prepare a migration environment
@@ -49,12 +49,12 @@ Configure a migration environment on a local workstation and install the followi
 * [Subversion](http://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/repos/git/docs/git-svn.html) (already part of Git)
 
-You will also need to create a Git repository on your VSTS account to host the converted SVN repository, you may follow [Create a new Git repo in your project
+You will also need to create a Git repository on your Azure DevOps organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
 ](/azure/devops/repos/git/create-new-repo)
 
 ## Convert the source SVN repository to a local Git repository
 
-The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Visual Studio Team Services (VSTS).
+The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Azure Repos.
 
 > [!TIP]
 >
