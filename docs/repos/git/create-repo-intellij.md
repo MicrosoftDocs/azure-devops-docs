@@ -1,6 +1,7 @@
 ---
-title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
-description: Intro to the IntelliJ plugin available for VSTS.
+title: Azure Repos Plugin for IntelliJ IDEA and Android Studio
+titleSuffix: Azure Repos
+description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -13,28 +14,28 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# VSTS Plugin for IntelliJ IDEA and Android Studio
+# Azure Repos Plugin for IntelliJ IDEA and Android Studio
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
-The VSTS Plugin for IntelliJ allows you to connect to your Git repositories on VSTS and Team Foundation Server (TFS) in a seamless and intuitive way.
-You can also use this plugin to import projects into VSTS or create pull requests in your VSTS/TFS Git repository.
+The Azure Repos Plugin for IntelliJ allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
+You can also use this plugin to import projects into Azure Repos or create pull requests in your Azure DevOps Services/TFS Git repository.
 
-In this guide, we show you how to create a VSTS Git repo using the VSTS web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.
+In this guide, we show you how to create a Git repo using the Azure DevOps Services web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.
 
 ## Prerequisites
 To complete the steps in this guide you need:
 
-* A VSTS account. If you don't have a VSTS account, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
-* The VSTS plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
+* The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
   * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows).
   * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
 
 ## Create a repo
-0. Navigate to your VSTS project by browsing to `https://<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
+0. Navigate to your Azure DevOps Services project by browsing to `https://<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/create-repo-intellij/select-vsts-project.png) 
   
@@ -82,32 +83,32 @@ To complete the steps in this guide you need:
     git commit -m "Committing DeepSpace sample files"
     ```
 
-0. Run the following command to push the commit of DeepSpace sample files up to your VSTS DeepSpace repo.
+0. Run the following command to push the commit of DeepSpace sample files up to your Azure Repos DeepSpace repo.
 
     ```
     git push
     ```
 
-0. Switch back to the VSTS web portal and refresh, and you can see the files that were added.
+0. Switch back to the Azure DevOps Services web portal and refresh, and you can see the files that were added.
 
   ![DeepSpace files](_img/create-repo-intellij/deep-space-files.png)
 
 
 
 ## Clone your repo in IntelliJ
-Now that we've got a VSTS repo with some sample code, let's take a look at how we can work with the code from IntelliJ IDEA. To clone your VSTS repo in IntelliJ is extremely simple. You don't even need to know the URL for the repo.
+Now that we've got a Git repo with some sample code, let's take a look at how we can work with the code from IntelliJ IDEA. To clone your VSTS repo in IntelliJ is extremely simple. You don't even need to know the URL for the repo.
 
 
 0. Open IntelliJ IDEA and select **Check out from Version Control** and then choose **VSTS Git**.
 
   ![Clone repo](_img/create-repo-intellij/clone-context-menu.png)
 
-0. Next just sign in to VSTS...
+0. Next just sign in to Azure DevOps Services...
 
-  ![VSTS Sign-in](_img/create-repo-intellij/vsts-sign-in.png)
+  ![Azure DevOps Services Sign-in](_img/create-repo-intellij/vsts-sign-in.png)
 
-0. When you click **Sign in**, you will be presented with the standard VSTS sign in UI.
-Once signed in, you should see the list of all repositories you have access to on VSTS.
+0. When you click **Sign in**, you will be presented with the standard Azure DevOps Services sign in UI.
+Once signed in, you should see the list of all repositories you have access to on Azure DevOps Services.
 Choose the correct repo, **DeepSpace**, and click the **Clone** button.
 (You may also want to choose where on your hard drive the repo is cloned to by changing the Parent Directory.)
 
@@ -143,7 +144,7 @@ assigned to you. Select the **Add Missing Earth** work item and click **OK**. Yo
 
   ![Commit Earth](_img/create-repo-intellij/commit-earth.png)
 
-  Note that this change is only done locally; it hasn't been changed in our VSTS repo yet.
+  Note that this change is only done locally; it hasn't been changed in our Azure DevOps Services repo yet.
 
 ## Create a pull request
 You can push your local branch to the server and create a pull request for your team to review.

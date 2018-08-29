@@ -1,5 +1,6 @@
 ---
-title: Git branching guidance | VSTS & TFS
+title: Git branching guidance
+titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.prod: devops

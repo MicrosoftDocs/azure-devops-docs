@@ -1,5 +1,6 @@
 ---
 title: Require branches to be created in folders
+titleSuffix: Azure Repos
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.prod: devops
@@ -15,14 +16,14 @@ monikerRange: '>= tfs-2018'
 
 # Require branches to be created in folders
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.
-VSTS, TFS, and Visual Studio treat `/` as a folder separator and will automatically collapse folders by default.
+Azure DevOps Services, TFS, and Visual Studio treat `/` as a folder separator and will automatically collapse folders by default.
 This way, you don't have to wade through every single branch to find the one you're looking for.
 You don't have to rely on everyone to get it right, either.
-VSTS and TFS can enforce the correct use of branch folders.
+Azure Repos and TFS can enforce the correct use of branch folders.
 
 ## Planning
 
@@ -45,7 +46,7 @@ Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choo
 ## Enforce permissions
 
 Run the following commands in the Developer Command Prompt.
-Each command is preceded with an explanation of what it's doing. If you don't have a personal access token cached (for example by signing in to the VSTS web portal) you'll be prompted to login.
+Each command is preceded with an explanation of what it's doing. If you don't have a personal access token cached (for example by signing in to the Azure DevOps Services web portal) you'll be prompted to login.
 
 First, block the Create Branch permission at the repository root for the project's contributors.
 

@@ -2,12 +2,12 @@
 ms.topic: include
 ---
 
-0.  Sign in to your VSTS account 
+0.  Sign in to your Azure DevOps Services organization 
 (```http://{youraccount}.visualstudio.com```).
 
 0.  From your home page, open your profile. Go to your security details.
 
-	<img alt="Go to VSTS home, open your profile, go to Security" src="./_img/my-profile.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to Azure DevOps Services home, open your profile, go to Security" src="./_img/my-profile.png" style="border: 1px solid #CCCCCC" />
 
 0. Create a new personal access token.
 
@@ -15,10 +15,10 @@ ms.topic: include
 
 0.  Name your token. Select a lifespan for your token.
 
-	If you're using VSTS, and you have more than one account, 
-	you can also select the VSTS account where you want to use the token.
+	If you're using Azure DevOps Services, and you have more than one organization, 
+	you can also select the Azure DevOps Services organization where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 0.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) 
 that this token will authorize for **your specific tasks**.

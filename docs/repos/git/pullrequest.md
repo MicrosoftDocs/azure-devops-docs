@@ -1,5 +1,6 @@
 ---
-title: Create a pull request | VSTS & TFS
+title: Create a pull request
+titleSuffix: Azure Repos
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 #  Create a pull request
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
@@ -34,20 +35,20 @@ In this tutorial you learn how to:
 
 ## Create a pull request
 
-To create a pull request in VSTS:
+To create a pull request in Azure Repos:
 
 0. [Push](pushing.md) your local branch.
-0. Create a pull request for the branch in VSTS. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
+0. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
 
-  ![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create-pr-from-push.png)
+  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
 
-  ![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create-pr-from-push-files-tab.png)
+  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push-files-tab.png)
  
   You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
 
   ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-  From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal for your current branch.   
+  From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
@@ -58,7 +59,7 @@ To create a pull request in VSTS:
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in VSTS to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/boards/index.md) to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 
@@ -66,7 +67,7 @@ Pull request reviewers will see the proposed updates to the branch in the form o
 include notifications for other team members to answer a question or give other feedback. You can make changes and push commits to resolve issues brought up in the feedback and these 
 changes are immediately reflected in the pull request.
 
-![Adding comments to a VSTS Pull request](_img/pull_request_comment.png)
+![Adding comments to pull request](_img/pull_request_comment.png)
 
 If the changes need much more development to complete, you can abandon the pull request. You can later open up a new pull request to
 revisit the changes and link to the conversations that took place in the abandoned pull request. 

@@ -1,6 +1,7 @@
 ---
-title: Connect to your Git repos with SSH | VSTS & TFS
-description: Authenticate to VSTS Git Repositories with SSH Keys
+title: Connect to your Git repos with SSH
+titleSuffix: Azure Repos
+description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 
 # Use SSH key authentication
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
@@ -78,22 +79,22 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 <a name="configuration"></a>
 
-### Step 2:  Add the public key to VSTS/TFS
+### Step 2:  Add the public key to Azure DevOps Services/TFS
 
 Associate the public key generated in the previous step with your user ID.
 
 0.  Open your security settings by browsing to the web portal and selecting your name in the upper right of the
 user interface. Select **My security** in the menu that appears.
 
-    ![Accessing User Profile in VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
+    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
 0. Select **SSH Public Keys** , then select **Add**.
 
-    ![Accessing Security Configuration in VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause VSTS to use an invalid public key. 
+0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause Azure DevOps Services to use an invalid public key. 
 
-    ![Configuring Public Key in VSTS](_img/use-ssh-authentication/ssh_key_input.png)
+    ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
 
 0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
@@ -105,7 +106,7 @@ user interface. Select **My security** in the menu that appears.
 
 0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an account named **fabrikops2**, as indicated by the first part of the URL before the `@`.
 
-   ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
+   ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
    
 0. Run `git clone` from the command prompt. 
 
@@ -143,7 +144,7 @@ If you are using the Bash shell (including Git Bash), start ssh-agent with:
 eval `ssh-agent`
 ```
 
-### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with VSTS?
+### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
@@ -159,7 +160,7 @@ ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 ```
 
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
-pasting in the public key into the **Key Data** field when adding the key to VSTS.
+pasting in the public key into the **Key Data** field when adding the key to Azure DevOps Services.
 
 <a name="migrate"></a>
  
@@ -175,9 +176,9 @@ You can now run any Git command that connects to `origin`.
 
 <a name="newkeys"></a>
 
-### I'm using Git LFS with VSTS and I get errors when pulling files tracked by Git LFS.
+### I'm using Git LFS with Azure DevOps Services and I get errors when pulling files tracked by Git LFS.
 
-VSTS currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
+Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
  
 ### How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub ?
 
@@ -209,7 +210,7 @@ takes care of starting `ssh-agent` for you.
 
 ### What notifications may I receive regarding my SSH keys?
 
-Whenever you register a new SSH Key with VSTS, you will recevie an email notification informing you that a new SSH key has been added to your account.
+Whenever you register a new SSH Key with Azure DevOps Services, you will recevie an email notification informing you that a new SSH key has been added to your account.
 
 ![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
 

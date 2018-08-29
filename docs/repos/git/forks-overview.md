@@ -1,6 +1,7 @@
 ---
-title: Forks | VSTS & TFS     
-description: Learn about forks in VSTS & TFS  
+title: Forks
+titleSuffix: Azure Repos     
+description: Learn about forks in Azure DevOps Services & TFS  
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2018'
 
 # Forks
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.

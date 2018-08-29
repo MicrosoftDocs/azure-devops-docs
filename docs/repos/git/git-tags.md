@@ -1,5 +1,6 @@
 ---
 title: Working with Git tags
+titleSuffix: Azure Repos
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
 ms.prod: devops
@@ -15,11 +16,11 @@ monikerRange: '>= tfs-2017'
 
 # Working with Git tags
 
-#### VSTS | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
 
-VSTS and TFS support both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can [create annotated tags using the web portal](git-tags.md?tabs=vsts-tfs-web-portal#create-tag), and starting with Visual Studio 2017 Update 6, you can [create both lightweight and annotated tags from within Visual Studio](git-tags.md?tabs=visual-studio#create-tag). For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
+Azure DevOps Services and TFS support both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can [create annotated tags using the web portal](git-tags.md?tabs=vsts-tfs-web-portal#create-tag), and starting with Visual Studio 2017 Update 6, you can [create both lightweight and annotated tags from within Visual Studio](git-tags.md?tabs=visual-studio#create-tag). For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
 
-This article provides an overview of working with Git tags in VSTS, TFS, and Visual Studio.
+This article provides an overview of working with Git tags in Azure DevOps Services, TFS, and Visual Studio.
 
 >[!IMPORTANT]
 >The **Tags** view in Visual Studio was introduced in Visual Studio 2017 Update 6. If you are on versions earlier than this, you can view and create tags from the history and commit details views starting with Visual Studio 2015, but you won't be able to perform the operations in the **Tags** view as described in this article.
@@ -163,7 +164,7 @@ To delete a tag, you must have the [Force Push](../../organizations/security/per
 
 ### Delete a tag in the remote repo
 
-The steps in this procedure show you how to delete a tag in the remote repo using the VSTS web portal.
+The steps in this procedure show you how to delete a tag in the remote repo using the Azure DevOps Services web portal.
 
 1. To delete a tag, select the ellipsis to the right of the tag name and choose **Delete tag**.
 

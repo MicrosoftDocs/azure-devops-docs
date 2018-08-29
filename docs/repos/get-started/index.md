@@ -1,7 +1,7 @@
 ---
 title: Get started guide for Azure Repos 
-titleSuffix: Azure DevOps 
-description: Sign up and get started using Azure DevOps Repos 
+titleSuffix: Azure Repos 
+description: Sign up and get started using Azure Repos 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
@@ -14,22 +14,16 @@ monikerRange: '>= tfs-2013'
 
 # Start using Azure Repos 
 
-**Azure DevOps Repos**
+Use this guide to sign up and start using Azure Repos.
 
-## 5-Minute Quickstarts
+If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md)
 
->[!NOTE]
->This topic is still a work in progress but will be done for the 9/5 launch.
+Start with [Sign up and invite some teammates](sign-up-invite-teammates.md). Azure DevOps Services includes free private Git repos so it's easy to try out.
 
-Get started with a free account and share your code using Git.
+Then, learn how to [Code with Git](code-with-git.md). Whether your code is in your Azure DevOps project, a GitHub repo, or on your local computer, this guide shows you how to get started.
 
-- New to Azure DevOps Repos? [Sign up and invite some teammates](sign-up-invite-teammates.md)  
-- Have an existing Organization? Join/login to that organization
-- Get the code
-    - Don't have a repo? Create one
-- Clone the repo
-- Create a branch
-- Working with the code (commits, pushes, and pulls)
-- Review your code with Pull Requests
-- [Code with Git](code-with-git.md)
- 
+Other resources to get you up and running:
+
+- [Navigation basics](../../project/navigation/index.md)
+- [Security & identity](../../organizations/security/index.md)
+- [About projects and scaling your organization](../../organizations/projects/about-projects.md)

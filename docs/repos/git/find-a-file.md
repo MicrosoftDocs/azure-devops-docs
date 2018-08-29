@@ -1,6 +1,7 @@
 ---
-title: Find a file in your Git repo | VSTS & TFS
-description: Search your Git repo in VSTS or TFS for a specific file or folder
+title: Find a file in your Git repo
+titleSuffix: Azure Repos
+description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 
 # Find a file or folder in your Git repository
-#### VSTS | TFS 2018 | TFS 2017
+#### Azure Repos | TFS 2018 | TFS 2017
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Code** hub. 
 

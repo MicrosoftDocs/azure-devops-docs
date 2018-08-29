@@ -1,6 +1,7 @@
 ---
-title: VSTS Git tutorial | VSTS & TFS
-description: Learn Git with the VSTS/TFS Git tutorial.
+title: Azure Repos Git tutorial
+titleSuffix: Azure Repos
+description: Learn Git with the Azure DevOps Services/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -12,9 +13,9 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-#  VSTS Git tutorial
+#  Azure Repos Git tutorial
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 

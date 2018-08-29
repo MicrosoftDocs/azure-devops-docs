@@ -1,5 +1,6 @@
 ---
 title: Create a pull request status server with Node.js
+titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
@@ -15,12 +16,12 @@ monikerRange: '>= tfs-2018'
 
 # Create a pull request status server with Node.js
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* An Azure DevOps Services organization with a Git repo. If you don't have an Azure DevOps Services organization, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
@@ -86,7 +87,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
   Verify the server is running by browsing to `http://localhost:3000/`.
 
 ## Listen for HTTP POST requests
-The web server is going to receive `POST` requests from VSTS, so you need to handle those requests in your server.
+The web server is going to receive `POST` requests from Azure DevOps Services, so you need to handle those requests in your server.
 
 1. At the end of the `app.js` file, add the following code, and save the file.
 
@@ -103,7 +104,7 @@ The web server is going to receive `POST` requests from VSTS, so you need to han
     ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
@@ -121,7 +122,7 @@ In order to receive the service hook notifications, you'll need to expose a port
     http://c3c1bffa.ngrok.io
     ```
 
-3. Browse to your VSTS project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+3. Browse to your Azure DevOps Services project, e.g. `https://<your account>.visualstudio.com/<your project name>`
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -179,7 +180,7 @@ Now that your server can receive service hook events when new PRs are created,up
     app.use(bodyParser.json());
     ```
 
-3. To simplify making REST API call to VSTS, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
+3. To simplify making REST API calls to Azure Repos, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
 
     ```
     npm install vso-node-api 
@@ -199,7 +200,7 @@ Now that your server can receive service hook events when new PRs are created,up
     var vstsGit = connection.getGitApi();
     ```
 
-5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your VSTS account.
+5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps Services organization.
 
     ```
     setx COLLECTIONURL "https://<your account>.visualstudio.com/DefaultCollection"

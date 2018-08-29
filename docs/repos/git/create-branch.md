@@ -1,6 +1,7 @@
 ---
-title: Create a new Git branch from the web | VSTS & TFS
-description: Use the branches page to create a new Git branch in VSTS or TFS
+title: Create a new Git branch from the web
+titleSuffix: Azure Repos
+description: Use the branches page to create a new Git branch in Azure DevOps Services or TFS
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a new Git branch
 
-#### VSTS | TFS 2018 | TFS 2017
+#### Azure Repos | TFS 2018 | TFS 2017
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](branches.md).   

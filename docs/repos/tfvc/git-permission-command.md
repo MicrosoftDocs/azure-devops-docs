@@ -1,5 +1,6 @@
 ---
 title: Git permission command
+titleSuffix: Azure Repos
 description: Git permission command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Git permission command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Modifies the user access control list (ACL) and displays authorization settings for a git repository or branch within a git repository.        
 

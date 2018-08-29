@@ -1,5 +1,6 @@
 ---
-title: Git index to content for VSTS & TFS    
+title: Git index to content
+titleSuffix: Azure Repos   
 description: Guide to getting started with Git documentation  
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 # Git Repositories
 
-Use Git repositories to host and collaborate on your code using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).  
+Use Git repositories to host and collaborate on your code using Azure DevOps Services or Team Foundation Server (TFS).  
 
 ## 5-Minute Quickstarts 
 

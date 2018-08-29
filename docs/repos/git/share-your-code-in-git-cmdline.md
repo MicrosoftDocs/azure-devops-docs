@@ -1,5 +1,6 @@
 ---
-title: Share your code with Git from the command line | VSTS & TFS
+title: Share your code with Git from the command line
+titleSuffix: Azure Repos
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: devops
@@ -15,18 +16,18 @@ monikerRange: '>= tfs-2015'
 
 # Get started with Git from the command line
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
-This guide show you how to share your code in a VSTS Git repo using the command line.
+This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
 The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [VSTS CLI](/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest).
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -37,7 +38,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 ### Windows
 
 Download and install [Git for Windows](https://git-scm.com/download/win) , which includes the [Git Credential Manager](set-up-credential-managers.md) to 
-easily connect to VSTS. 
+easily connect to Azure Repos. 
 
 ### macOS
 
@@ -67,7 +68,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
     cd /home/fabrikam/fiber
     ```
 
-0. Create a Git repo on your machine to store your code. You will connect this repo to VSTS in the next step.
+0. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next step.
 
     ```
     git init .
@@ -80,13 +81,13 @@ Create a local Git repo for your code. If your code is already in a local Git re
     git commit -m "first commit of my code"
     ```
 
-## Create your VSTS repo
+## Create your Git repo in Azure Repos
 
-0. [Create a new VSTS Git repo](create-new-repo.md) for your code. Copy the clone URL once you are done creating your repo.
+0. [Create a new Git repo in Azure Repos](create-new-repo.md) for your code. Copy the clone URL once you are done creating your repo.
 
-   ![Get the clone URL after creating the VSTS repo](_img/share-your-code-in-git-cmdline/clone_url.png)
+   ![Get the clone URL after creating the Git repo in Azure Repos](_img/share-your-code-in-git-cmdline/clone_url.png)
 
-0. Connect your local repo to the VSTS repo using the copied clone URL in the `git remote` command:
+0. Connect your local repo to the Git repo in Azure Repos using the copied clone URL in the `git remote` command:
 
     ```
     git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
