@@ -120,6 +120,27 @@ jobs:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
 ```
+### Counters
+
+You can create a counter that is automatically incremented by one in each execution of your pipeline.  You can optionally provide a seed value for the counter if you need to start at a specific number.  The counter can be assigned to a variable and then referenced in task inputs or scripts as you would any other variable.
+
+```yaml
+variables:
+  major: 2
+  minor: 1
+  # creates a counter called versioncounter and seeds it at 100 and then assigns the value to a variable named patch.
+  patch: $[counter('versioncounter', 100)]
+
+# use the patch variable as part of your pipeline naming scheme
+name: $(Date:yyyyMMdd).$(patch)
+queue: 'Hosted Linux Preview'
+
+steps:
+
+# use the variables as part of your versioning for your nuget package
+- script: |
+    dotnet pack /p:PackageVersion=$(major).$(minor).$(patch)
+```
 
 ### Set a job-scoped variable from a script
 
