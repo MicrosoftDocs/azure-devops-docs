@@ -12,22 +12,17 @@ ms.date: 07/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
-<a name="prerequisites"></a>  
-
-<!--
-# Prerequisites
-
-* Read the [glossary](./test-glossary.md) section to understand the test reports terminology.
--->
-
-<a name="testreporting"></a>  
-
 # Review continuous testing results
+
+<a name="prerequisites"></a>  
+<a name="testreporting"></a>
 
 Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
+
+> Read the [glossary](./test-glossary.md) to understand test reports terminology.
 
 ::: moniker range="<= tfs-2018"
 
@@ -225,7 +220,7 @@ Azure DevOps also provides other ways to surface the test information:
   - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
   - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
   
-* Test Analytics provides rich insights into test results measured over a period of time.
+* [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
   It can help identify problematic areas in your test by providing data such as the top failing tests, and more.
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
