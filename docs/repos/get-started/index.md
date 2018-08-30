@@ -14,9 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Start using Azure Repos
 
-Use this guide to sign up and start using Azure Repos.
-
-If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md)
+Use this guide to sign up and start using Azure Repos. If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md)
 
 Azure DevOps Services includes free unlimited private Git repos so Azure Repos is easy to try out. Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 

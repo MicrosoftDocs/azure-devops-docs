@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Sign up for Azure DevOps with a personal Microsoft account
 
-1. Select the sign-up link for **Azure DevOps**.
+1. Select the sign-up link for [**Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=307137).
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
 
