@@ -8,6 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: overview
+robots: NOINDEX, NOFOLLOW
 monikerRange: '>= tfs-2013'
 ms.date: 06/19/2018
 ---

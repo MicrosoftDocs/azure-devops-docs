@@ -42,8 +42,8 @@
     href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Tutorials - admins
   items:
-  - name: Admin tutorials placeholder
-    href: index.yml
+  - name: Get started as a project admin
+    href: project-admin-tutorial.md
 - name: Concepts
   items:
   - name: Key concepts 
@@ -53,8 +53,8 @@
   - name: Source control 
     href: source-control.md
   - name: Kanban & Agile tools
-    href: ../boards/backlogs/overview.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Clients & Tools
+    href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: Clients & tools
     href: tools.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Software development roles
     href: roles.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json

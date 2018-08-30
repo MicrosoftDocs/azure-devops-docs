@@ -1,11 +1,14 @@
 - name: Queries
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: About managed queries
     href: example-queries.md
   - name: Adhoc vs managed queries
     href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  - name: Start using Azure Boards
+    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: View, run, or email a query 
