@@ -251,12 +251,12 @@ Tutorials, references, and other documentation show you how to configure and man
 </a></div>
 <div class="ico48Link">
 <a href="targets/scvmm.md">
-<img width="48" height="48" alt="" src="_img/index/empty.svg">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
 <span>SCVMM</span>
 </a></div>
 <div class="ico48Link">
 <a href="targets/vmware.md">
-<img width="48" height="48" alt="" src="_img/index/empty.svg">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
 <span>VMware</span>
 </a></div>
 <div class="ico48Link">
@@ -285,28 +285,70 @@ Tutorials, references, and other documentation show you how to configure and man
 </a></div>
 </div>
 
-## Step-by-step tutorials
+## More information
 
-* [Build open source projects](build/ci-public.md)
-* [Build multiple branches](build/ci-build-git.md)
-* [Set up a multi-stage release](release/define-multistage-release-process.md)
-
-## Concepts
-
-- [Build and release agents](agents/agents.md)
-- [Build and release tasks](process/tasks.md)  
-- [Parallel jobs](licensing/concurrent-jobs-vsts.md)
-- [Release pipelines](release/index.md)
-
+<div id="main" class="v2">
+<div class="container">
+<ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Step-by-step tutorials</h3>
+                        <p>
+                        <a href="build/ci-public.md">Build open source projects</a><br/>
+                        <a href="build/ci-build-git.md">Build multiple branches</a><br/>
+                        <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Concepts</h3>
+                        <p>
+                        <a href="agents/agents.md">Build and release agents</a><br/>
+                        <a href="licensing/concurrent-jobs-vsts.md">Parallel jobs</a><br/>
+                        <a href="release/index.md">Release pipelines</a><br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Reference</h3>
+                        <p>
+                        <a href="yaml-schema.md">YAML schema</a><br/>
+                        <a href="process/tasks.md">Build and release tasks</a><br/>
+                        <a href="policies/permissions.md">Permissions &amp; security roles</a><br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+</div>
+</div>
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T174/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T168/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T170/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T171/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/190/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
-| | |
+> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101]
+
+<br/>
+
+> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102]
 
 ::: moniker-end
 
