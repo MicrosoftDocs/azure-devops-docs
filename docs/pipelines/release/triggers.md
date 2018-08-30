@@ -25,7 +25,7 @@ in your DevOps CI/CD processes.
 The former is configured through [release triggers](#release-triggers),
 and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
 
-<h2 id="release-triggers">Release (continuous deployment) triggers</h2>
+<h2 id="release-triggers">Continuous deployment triggers</h2>
 
 If you specify [certain types](artifacts.md#sources) of
 artifacts in a release pipeline, you can enable continuous deployment.
@@ -54,12 +54,21 @@ changes in every development sprint. It means you don't need to update the trigg
 filter across all release pipelines for every change - instead you just change the
 default branch in the build pipeline.
 
-You can also configure a **pull request trigger** that will create a new release when a pull request 
-uploads a new version of the artifact. Add the branches targetted by pull requests
+>Note that, even though a release is automatically created, it
+might not be deployed automatically to any stages. The
+[stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+
+
+<h2 id="prsettrigger">Pull request triggers</h2>
+
+You can configure a pull request trigger that will create a new release when a pull request 
+uploads a new version of the artifact. Enable the trigger and add the branches targetted by pull requests
 that you want to activate this trigger. 
 
 ![Selecting a trigger for a release](_img/trigger-01a.png)
 
+However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
+Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
@@ -69,19 +78,6 @@ might not be deployed automatically to any stages. The
 
 You can choose to have the deployment to each stage triggered automatically
 when a release is created by a continuous deployment trigger, based on:
-
-* **A predefined schedule**. When you select this option,
-  you can select the days of the week and the time of day that
-  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
-  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
-
-  ![The scheduled trigger conditions settings](_img/trigger-02.png)
-
-* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
-  and specify if you want to include or exclude particular branches of the code.
-  Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
-
-  ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
 * **The result of deploying to a previous stage in the pipeline**.
   Use this setting if you want the release to be first deployed and validated in
@@ -97,6 +93,28 @@ when a release is created by a continuous deployment trigger, based on:
   for partially succeeded (but not failed) deployments.
 
   ![The stage trigger conditions settings](_img/trigger-02a.png)
+
+* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
+  and specify if you want to include or exclude particular branches of the code.
+  Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
+
+  ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
+
+* **A predefined schedule**. When you select this option,
+  you can select the days of the week and the time of day that
+  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
+  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
+
+  ![The scheduled trigger conditions settings](_img/trigger-02.png)
+
+<a name="prtrigger"></a>
+
+* **A pull request that updates the artifacts**. If you have enabled
+  [pull request triggers](#prsettrigger) for your pipeline, you must also enable
+  pull request deployment for the specific stages where you want the release to be deployed. 
+  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+
+  ![The pull request trigger conditions settings](_img/trigger-02c.png)
 
 * **Manually by a user**. Releases are
   not automatically deployed to the stage. To

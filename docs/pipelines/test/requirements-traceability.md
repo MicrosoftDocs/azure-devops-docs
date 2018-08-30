@@ -26,6 +26,8 @@ Requirements traceability help teams to get insights into indicators such as
 **quality of requirements** or **readiness to ship the requirement**.
 A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
 
+> Read the [glossary](./test-glossary.md) to understand test reports terminology.
+
 <a name="agileteams"></a>
 ## Agile teams running automated tests 
 

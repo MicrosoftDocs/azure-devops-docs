@@ -16,9 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-The section lists commonly used terms for [test reports](review-continuous-test-results-after-build.md) and test analytics in the pipeline.
-
-<!-- [Test Analytics](test-analytics.md) -->
+The section lists commonly used terms for [test reports](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) in the pipeline.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,10 +31,10 @@ The section lists commonly used terms for [test reports](review-continuous-test-
 | **Outcome** | There are 13 possible outcomes for a test result: Aborted, Blocked, Error, Failed, Inconclusive, None, Not applicable, Not executed, Not impacted, Passed, Paused, Timeout, Unspecified and Warning. Some of the commonly used outcomes are:<br />- **Aborted**: Test execution terminated abruptly due to internal factors such as bad code or external factors such as an environment issue<br />- **Failed**: Test not meeting the desired outcome<br />- **Inconclusive**: Test without a definitive outcome<br />- **Not executed**: Test marked as skipped for execution<br />- **Not impacted**: Test not impacted by the code changes that triggered the execution of the build or release pipeline<br />- **Passed**: Test executed successfully<br /> - **Timeout**: Test with execution duration exceeding the specified threshold |
 | **Flaky** | Tests with non-deterministic behavior. For example, the test may result in different outcomes for the same configuration, code, or inputs. |
 | **Filter** | Mechanism to search for the test results within the result set, using the available attributes. [Learn more](review-continuous-test-results-after-build.md). |
-| **Grouping** | An aid to organizing the test results view based on available attributes such as **Requirement**, **Test files**, **Priority**, and more. Both **Test reports** and **Test analytics** provide support for grouping test results. |
+| **Grouping** | An aid to organizing the test results view based on available attributes such as **Requirement**, **Test files**, **Priority**, and more. Both [test reports](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) provide support for grouping test results. |
 | **Pass percentage** | Measure of the success of test outcome for a single instance of execution or over a period of time. |
 | **Priority** | Specifies the degree of importance or criticality of a test. |
-| **Test analytics** | A view of the historical test data to provide meaningful insights. |
+| **Test analytics** | A [view of the historical test data](test-analytics.md) to provide meaningful insights. |
 | **Test case** | Uniquely identifies a single test within the specified branch. |
 | **Test files** | Group tests based on the way they are packaged; such as files, DLLs, or other formats. |
 | **Test reports** | A view of a single instance of test execution in a build or release summary that contains [details](review-continuous-test-results-after-build.md) of status and help for troubleshooting, traceability, and more. |
