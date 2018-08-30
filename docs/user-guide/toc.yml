@@ -42,7 +42,7 @@
     href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Tutorials - admins
   items:
-  - name: Get started as a project admin
+  - name: Get started as an admin
     href: project-admin-tutorial.md
 - name: Concepts
   items:

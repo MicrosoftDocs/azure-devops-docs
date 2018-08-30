@@ -18,10 +18,10 @@ You provide others access to your organization by adding their email addresses t
 
 4. Complete the form.
 
-   - **Users:** Enter the email address (Microsoft account address) for the user. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.
-     > [!Note]
-     > You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account?lang=en-US) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access.
-     > If your users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
+   - **Users:** Enter the email address (Microsoft account address) for the user. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
+	> [!Note]  
+	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account?lang=en-US) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access.  
+	> If your users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).  
    - **Access level:** Leave the Access level at Basic for those users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).
    - **Add to project:** Select the project that you named in the previous procedure.
    - **DevOps Groups:** Leave this entry at Project Contributors, the default security group for users who will contribute to your project. Tl learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).
