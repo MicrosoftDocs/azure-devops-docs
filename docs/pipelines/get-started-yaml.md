@@ -25,7 +25,7 @@ This is a step-by-step guide to build a GitHub repository using Azure Pipelines.
   * **New YAML pipeline creation experience**
 
   You can check the preview features by selecting your profile in your Azure DevOps organization.
-  ![New YAML pipeline creation experience](_img/get-started-yaml/preview-toggle.png)
+  ![Open Preview Features](../project/navigation/_img/manage-features/choose-preview-features-vert.png) 
 
 * You need a GitHub account, where you can create a repository.
 
