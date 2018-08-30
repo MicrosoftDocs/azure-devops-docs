@@ -39,9 +39,16 @@ To get a copy of the source code to work with it, you clone the Git repo that co
 
 If you're just getting started with Azure Repos, your code might be in one of several places:
 
+- [I just created my Azure DevOps organization so I don't have any code](#i-just-created-my-azure-devops-organization-so-i-dont-have-any-code)
 - [The code is in my (or my organization's) Azure Repos Git repo](#the-code-is-in-my-or-my-organizations-azure-repos-git-repo)
 - [The code is in another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-in-another-git-repo)
 - [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
+
+### I just created my Azure DevOps organization so I don't have any code
+
+If you just signed up for Azure DevOps services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo you can [clone it](#clone-the-repo) and then add your code to that repo.
+
+If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then [clone](#clone-the-repo) the new repo and add your code there.
 
 ### The code is in my (or my organization's) Azure Repos Git repo
 
@@ -64,7 +71,7 @@ Once the repository is cloned, we'll show you how to add your existing code to t
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -103,7 +110,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 1. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
   ```
-  git clone https://regius.visualstudio.com/FabrikamFiber%20Web/_git/SmartHotel360
+  git clone https://regius@dev.azure.com/regius/FabrikamFiber%20Web/_git/SmartHotel360
   ```
 
   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
@@ -111,7 +118,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 1. Switch your directory to the repository you just cloned.
 
   ```
-  cd hotels360
+  cd SmartHotel360
   ```
 
   Keep this command window open, as you'll use it in the following steps.

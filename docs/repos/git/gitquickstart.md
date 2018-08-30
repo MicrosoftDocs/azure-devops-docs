@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -30,7 +30,7 @@ If you don't have your code in an Azure DevOps Services or TFS Git repo, visit o
 
 <a name="clone"></a>
 
-## Get your code 
+## Get your code
 
 To get a copy of the source code, you [clone](clone.md) a Git repository. Cloning creates both a copy of the source code for you to work with and all the version control information so Git can manage the source code.
 
@@ -38,14 +38,17 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 # [Visual Studio](#tab/visual-studio)
 
-0. In Team Explorer, open up the **Connect** page by selecting the **Connect** icon, and then choose **Manage Connections**, **Connect to Project**.    
+0. In Team Explorer, open up the **Connect** page by selecting the **Connect** icon, and then choose **Manage Connections**, **Connect to Project**.
 
   ![Cloning Azure DevOps Services Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
   
 0. On the **Connect to a Project** dialog, select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
-to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.   
+to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.
    
    ![Cloning a Git Repository from a connected Azure DevOps Services organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
+
+  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
+
 
 0. Verify the location of the cloned repo on your PC and select **Clone**.
 
@@ -56,6 +59,8 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 0. Open the Azure DevOps Services web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
 
   ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_img/gitquickstart-vs2017/clone-url.png)
+
+  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
