@@ -3,6 +3,8 @@
   items:
   - name: What is Azure Pipelines
     href: what-is-azure-pipelines.md
+  - name: Sign up for Azure Pipelines
+    href: pipelines-sign-up.md
   - name: Get started with Azure Pipelines
     href: pipelines-get-started.md
   - name: Why Use Azure Pipelines?

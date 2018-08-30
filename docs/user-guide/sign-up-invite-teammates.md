@@ -16,7 +16,6 @@ monikerRange: 'vsts'
 # Sign up for a free Azure DevOps Services organization
 
 
- 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
 <a name="MicrosoftAccount"></a>

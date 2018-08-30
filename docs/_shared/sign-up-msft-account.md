@@ -8,22 +8,22 @@ ms.topic: include
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
 
-   ![Sign in with your Microsoft account](/azure/devops/_shared/_img/sign-in-with-microsoft-account.png)
+   ![Sign in with your Microsoft account](../_shared/_img/sign-in-with-microsoft-account.png)
 
 3. Enter your password, and choose **Sign in**.
 
    If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
 
-   ![Enter your password and sign in](/azure/devops/_shared/_img/enter-password-sign-in.png)
+   ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
 
 4. To get started with Azure DevOps, choose **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](/azure/devops/_shared/_img/sign-up-azure-devops.png)
+   ![Choose Continue to sign up for Azure DevOps](../_shared/_img/sign-up-azure-devops.png)
 
 5. Enter a name for your organization. The name you enter cannot contain spaces or special characters
  (such as / \ [ ] : | < > + = ; ? or *), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Choose **Continue**.
 
-   ![Almost done](/azure/devops/_shared/_img/almost-done.png)
+   ![Almost done](../_shared/_img/almost-done.png)
 
    You'll see the following dialog as your organization is created.
 
