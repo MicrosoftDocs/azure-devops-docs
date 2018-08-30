@@ -12,7 +12,7 @@ ms.date: 08/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test Analytics
+# Test analytics
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
