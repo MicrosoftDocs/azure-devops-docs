@@ -199,7 +199,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you don't have an existing release pipeline that deploys your web app:
 
-   * Open the **Releases** page in the **Pipelines** hub and choose the **+** icon, then choose
+   * Open the **Releases** page in the **Azure Pipelines** section and choose the **+** icon, then choose
      **Create release pipeline**.
      
      ![Creating a new release pipeline](_img/continuous-test-selenium/continuous-test-selenium-06.png)

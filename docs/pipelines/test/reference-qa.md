@@ -170,11 +170,11 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 ----------------------------
 
 <a name="test-hub"></a>
-## Running automated tests from the Test hub
+## Running automated tests from Azure Test Plans
 
 [Go to related topic &gt;](run-automated-tests-from-test-hub.md)
 
-### Q: What permissions do I need to run automated tests from the test hub?
+### Q: What permissions do I need to run automated tests from Azure Test Plans?
 
 You must be a Project Contributor, or have the following permissions:
 
@@ -265,7 +265,7 @@ non-Azure Pipelines artifacts such as Jenkins, based on user feedback.
 
 ### Q: I already have a scheduled testing release pipeline. Can I reuse the same pipeline to run test on-demand, or should I create a new pipeline as shown above? 
 
-**A:** We recommend you use a separate release pipeline and stage for on-demand automated testing from the **Test** hub because:
+**A:** We recommend you use a separate release pipeline and stage for on-demand automated testing from Azure Test Plans because:
 
 * You may not want to deploy the app every time you want to run a few on-demand tests.
 Scheduled testing stages are typically set up to deploy the product and then run tests.
@@ -336,7 +336,7 @@ from different sources, set this option to
 * I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do this in the work item
      for the test case, or use the **Column options** link in the **Test Plans**
-     page of the **Test** hub to add the **Automation status** column to the list
+     page of Azure Test Plans to add the **Automation status** column to the list
      of tests. See the [pre-requisites section](../../test/run-automated-tests-from-test-hub.md#prerequisites) for information
      about automating manual tests.<p />
 
