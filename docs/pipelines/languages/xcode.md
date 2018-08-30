@@ -59,6 +59,7 @@ steps:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
+    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 ```
