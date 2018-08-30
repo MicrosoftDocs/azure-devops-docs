@@ -203,5 +203,5 @@ From the [New work item widget](../../Report/widget-catalog.md#new-work-item-wid
 
 If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
-If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../backlogs/overview.md#scale).
+If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../get-started/what-is-azure-boards.md#scale).
 -->

@@ -26,6 +26,6 @@ After signing up, learn how to [Code with Git](code-with-git.md). Whether your c
 
 Other resources to get you up and running:
 
-- [Navigation basics](../../project/navigation/index.md)
+- [Web portal navigation](../../project/navigation/index.md)
 - [Security & identity](../../organizations/security/index.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)

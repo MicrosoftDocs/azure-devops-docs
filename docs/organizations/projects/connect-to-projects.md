@@ -306,7 +306,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/backlogs/overview.md). 
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 
 
 ### User accounts and licensing
 

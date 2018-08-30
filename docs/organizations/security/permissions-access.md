@@ -27,7 +27,7 @@ For a complete reference of all built-in groups and permissions, see [Permission
 <a id="agile-tools-and-work-tracking" />
 ## Boards/Work 
 
-You can connect to work items from the web portal **Boards** or **Work** hub and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../boards/work-items/about-agile-tools.md). 
+You can connect to work items from the web portal **Boards** or **Work** hub and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
 
 
 ::: moniker range=">= tfs-2013  <= tfs-2018"  

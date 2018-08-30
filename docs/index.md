@@ -18,7 +18,9 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Documentation</h1>
-        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. <i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i> For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).</p><br/>
+        <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing.</p> 
+        <p>For the on-premises platform (TFS), see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).</p>
+        <p><i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -42,7 +44,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Build GitHub projects using Azure Pipelines</h3>
-                                                            <p>Set up continuous integration builds for your GitHub repository.</p>
+                                                            <p>Set up continuous integration and continuous delivery (CI/CD) for your GitHub repository.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -61,7 +63,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Start using Azure DevOps</h3>
-                                                            <p>Sign up and get started using Azure DevOps.</p>
+                                                            <p>Sign up and get started using Azure DevOps Services.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -80,7 +82,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>What's new</h3>
-                                                            <p>Find out about new features being released. </p>
+                                                            <p>Learn about new features under development and recently released. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -98,7 +100,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Navigation basics</h3>
+                                                            <h3>Web portal navigation</h3>
                                                             <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>
@@ -178,7 +180,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Artifacts</h3>
-                                                            <p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
+                                                            <p>Share code with others across your teams or company, and support CI/CD of your apps.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -197,7 +199,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Test Plans</h3>
-                                                            <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
+                                                            <p>Improve the overall code quality of your apps by using manual, exploratory, or load-based testing services.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -216,7 +218,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Settings</h3>
-                                                            <p>Configure resources to scale and grow your organization. </p>
+                                                            <p>Configure resources and settings for users, teams, projects, and organizations.  </p>
                                                         </div>
                                                     </div>
                                                 </div>

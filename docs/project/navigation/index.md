@@ -90,7 +90,7 @@ Now that you have an understanding of how the user interface is structured, it's
 
 If all you need is a code repository and bug tracking solution, then start with the [Get started with Git](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [About Agile tools](../../boards/work-items/about-agile-tools.md?context=vsts/default).
+To start planning and tracking work, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md?context=vsts/default).
 
 ## Connect to the web portal, user accounts and licensing  
 

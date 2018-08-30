@@ -13,7 +13,7 @@ monikerRange: '>= vsts'
 
 # What happened to VSTS?
 
-On September 5th, 2018, Visual Studio Team Services was rebranded as "Azure DevOps", a set of DevOps services and features under the Azure brand. The individual features of VSTS are now branded as separate services, as follows:
+On September 5th, 2018, Visual Studio Team Services was rebranded as "Azure DevOps Services", a set of DevOps services and features under the Azure brand. The individual features of VSTS are now branded as separate services, as follows:
 
 | VSTS feature        | Azure DevOps service |
 |---------------------|----------------------|
@@ -23,7 +23,10 @@ On September 5th, 2018, Visual Studio Team Services was rebranded as "Azure DevO
 | Test                | Azure Test Plans     |
 | Package (extension) | Azure Artifacts      |
 
-Each service can be acquired separately, or together as Azure DevOps Services. If you are already a VSTS subscriber, you have access to all of the services.
+Currently, you can acquire Azure Pipelines separately. In the future, you'll be able to acquire each service separately or all together as Azure DevOps Services. If you are already a VSTS subscriber, you have access to all of the services. 
+
+> [!NOTE]   
+> You can [disable select services from the user interface](../organizations/settings/set-services.md).
 
 Follow the [Azure DevOps Release Notes](/azure/devops/release-notes/index) to get news on the latest updates!
 
@@ -37,10 +40,10 @@ We will also update this page as status changes.
 
 ## I preferred the old user interface. How do I go back?
 
-At this time, you can still use the old UI by choosing your profile icon and selecting **Preview features** from the drop-down menu.
+At this time, you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
 > [!div class="mx-imgBorder"]  
-> ![Clicking on your profile icon to access Preview Features](_img/preview-features.png)
+> ![Open Preview Features](../project/navigation/_img/manage-features/choose-preview-features-vert.png)
 
 Then, toggle the **New Navigation** option to **Off**.
 

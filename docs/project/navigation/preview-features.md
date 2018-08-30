@@ -41,7 +41,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)  
+	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)
 
 0. To enable or disable a feature, choose the slider. 
 
@@ -58,7 +58,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
+	> ![Preview features options for yourself](_img/manage-features/user-latest.png) 
 
 ---
 

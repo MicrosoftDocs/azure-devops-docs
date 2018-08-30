@@ -31,7 +31,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 
 ## Agile tools
-A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
+A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../get-started/what-is-azure-boards.md).
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
