@@ -7157,7 +7157,7 @@
     },
     {
       "source_path": "docs/build-release/actions/ci-build-github.md",
-      "redirect_url": "/azure/devops/pipelines/build/ci-build-github",
+      "redirect_url": "/azure/devops/pipelines/get-started-yaml",
       "redirect_document_id": true
     },
     {

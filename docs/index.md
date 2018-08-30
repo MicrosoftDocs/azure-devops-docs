@@ -31,7 +31,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Start using Azure DevOps</h2>
                                 <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/azure/devops/pipelines/build/ci-build-github">
+                                        <a href="/azure/devops/pipelines/get-started-yaml">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

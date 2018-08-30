@@ -45,7 +45,7 @@ Use this topic to learn:
 > * Find work assigned to you, or query for other work items
 
 For information about working with pipelines, see these articles: 
-- [Build your GitHub repository](../../pipelines/build/ci-build-github.md)
+- [Build your GitHub repository](../../pipelines/get-started-yaml.md)
 - [Build OSS repositories](../../pipelines/build/ci-public.md)
 
 
