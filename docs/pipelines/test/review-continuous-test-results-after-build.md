@@ -115,7 +115,7 @@ able to perform the required operations in context, such as bug creation or requ
 History of test execution can provide meaningful insights into reliability or performance of tests.
 When troubleshooting a failure, it is valuable to know how a test has performed in the past.
 The **Tests** page provides test history in context with the test results.
-The test history information is exposed in a progressive manner starting with the current build definition to other branches,
+The test history information is exposed in a progressive manner starting with the current build pipeline to other branches,
 or the current stage to other stages, for build and release respectively.
 
 ![View historical trends](_img/review-continuous-test-results-after-build/view-historical-trend.png)
