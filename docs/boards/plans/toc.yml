@@ -1,9 +1,12 @@
 - name: Plans (Agile at scale)
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: "About teams & Agile tools"
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json   
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
+  - name: Start using Azure Boards
+    href: ../get-started/index.md 
 - name: Quickstarts
   items:
   - name: Add and manage dashboards

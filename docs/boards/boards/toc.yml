@@ -1,11 +1,14 @@
 - name: Boards (Kanban) 
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: About Kanban and Agile project management
     href: kanban-overview.md
   - name: "Backlogs, boards, & plans"
-    href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
+    href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+  - name: Start using Azure Boards
+    href: ../get-started/index.md 
 - name: Quickstarts
   items:
   - name: Kanban board quickstart

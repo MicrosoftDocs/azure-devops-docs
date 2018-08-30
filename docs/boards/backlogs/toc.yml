@@ -1,13 +1,14 @@
 - name: Backlogs
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: About backlogs 
     href: backlogs-overview.md
   - name: "Backlogs, boards, & plans"
     href: backlogs-boards-plans.md
-  - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
+  - name: Start using Azure Boards
+    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Create your backlog
@@ -32,6 +33,8 @@
     href: ../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Concepts
   items:
+  - name: About teams and Agile tools
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Groom your backlog
     href: best-practices-product-backlog.md
   - name: "Backlog items & multi-team ownership"

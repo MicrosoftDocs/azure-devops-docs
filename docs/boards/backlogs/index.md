@@ -53,7 +53,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 
 ## Concepts 
   
-- [Groom your backlog](best-practices-product-backlog.md)           
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)  
+- [Groom your backlog](best-practices-product-backlog.md)         
 - [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
 - [Share work plans](../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
