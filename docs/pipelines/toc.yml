@@ -222,10 +222,16 @@
       href: test/set-up-continuous-test-environments-builds.md
     - name: Set up test builds
       href: test/set-up-continuous-testing-builds.md
-    - name: Use Test Impact Analysis
+    - name: Test analytics
+      href: test/test-analytics.md
+    - name: Requirements traceability
+      href: test/requirements-traceability.md
+    - name: Test impact analysis
       href: test/test-impact-analysis.md
     - name: FAQs for testing
       href: test/reference-qa.md
+    - name: Test glossary
+      href: test/test-glossary.md
   - name: Publish symbols for debugging
     items:
     - name: Publish symbols
