@@ -290,6 +290,14 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
+<td>Build.SourceVersionMessage</td>
+<td>The comment of the commit or changeset.
+
+Note: This variable is available in TFS 2015.4.
+</td>
+</tr>
+
+<tr>
 <td>Build.StagingDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-artifacts-directory.md)]

@@ -269,6 +269,13 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 </tr>
 
 <tr>
+<td>Build.SourcesDirectoryHash</td>
+<td>
+Note: This variable is available in TFS 2015 RTM, but not in TFS 2015.4.
+</td>
+</tr>
+
+<tr>
 <td>Build.SourceVersion</td>
 <td>The latest version control change that is included in this build.
 <ul>
@@ -276,6 +283,14 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <li>TFVC: the [changeset](../../../repos/tfvc/find-view-changesets.md).</li>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+</td>
+</tr>
+
+<tr>
+<td>Build.SourceVersionMessage</td>
+<td>The comment of the commit or changeset.
+
+Note: This variable is available in TFS 2015.4.
 </td>
 </tr>
 
