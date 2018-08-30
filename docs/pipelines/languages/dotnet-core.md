@@ -29,10 +29,6 @@ This guidance explains how to build .NET Core projects.
 
 ::: moniker-end
 
-<br/>
-
->[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
-
 ## Example
 
 This example shows how to build a .NET Core project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:

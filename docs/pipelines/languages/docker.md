@@ -30,10 +30,6 @@ Docker Hub or Azure Container Registry.
 
 ::: moniker-end
 
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]
-
 <a name="example"></a>
 ## Example
 
