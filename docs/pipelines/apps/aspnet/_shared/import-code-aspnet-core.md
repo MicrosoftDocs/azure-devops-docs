@@ -3,7 +3,7 @@ To configure a CI build pipeline for your app, the source code needs to be in a 
 For a simple way to follow this quickstart, get the following sample app code and put it into your own version control repository:
 
 ```
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
 You've got a few version control options. Some common ones are:

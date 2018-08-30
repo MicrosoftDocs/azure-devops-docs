@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 
 * Before you read this topic, you should understand the type of build you'd like to work with:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
-* You need a GitHub repository with your app. If you do not have one, we recommend forking the [sample .NET Core app](https://github.com/adventworks/dotnetcore-sample) into your own GitHub account.
+* You need a GitHub repository with your app. If you do not have one, we recommend forking the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your own GitHub account.
 
 * You must be a contributor with admin privileges on the repository that you work with. If you create or fork a repository into a GitHub organization other than your personal GitHub account, you must still add yourself as an admin contributor under the repository's **Settings > Collaborators**.
 

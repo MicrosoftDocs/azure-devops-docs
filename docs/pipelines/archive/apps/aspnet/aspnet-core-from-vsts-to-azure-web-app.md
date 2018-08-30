@@ -39,7 +39,7 @@ You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines
 [!INCLUDE [temp](../_shared/import-code-1.md)]
 
 ```bash
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
 [!INCLUDE [temp](../_shared/import-code-2.md)]
