@@ -26,11 +26,47 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
     1. From your **Packages** page, click _Connect to Feed_
 
-        ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed.png)
+        ::: moniker range="vsts"
+
+        # [New navigation](#tab/new-nav)
+        > [!div class="mx-imgBorder"] 
+        >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+        > 
+
+        # [Previous navigation](#tab/previous-nav)
+        ![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed.png)
+
+        ---
+
+        ::: moniker-end
+
+        ::: moniker range=">= tfs-2017 < vsts"
+
+        ![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed.png)
+
+        ::: moniker-end
 
     2. Copy the "registry" text:
 
+        ::: moniker range="vsts"
+
+        # [New navigation](#tab/new-nav)
+        > [!div class="mx-imgBorder"] 
+        >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
+        > 
+
+        # [Previous navigation](#tab/previous-nav)
         ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
+
+        ---
+
+        ::: moniker-end
+
+        ::: moniker range=">= tfs-2017 < vsts"
+
+        ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
+
+        ::: moniker-end
         
 2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 

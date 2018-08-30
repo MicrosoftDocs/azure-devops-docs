@@ -1,5 +1,5 @@
 ---
-title: Install and license Azure Artifacts for Azure DevOps Services and TFS
+title: License Azure Artifacts for Azure DevOps Services and TFS
 description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -12,19 +12,11 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Install and license Azure Artifacts
+# License Azure Artifacts
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 Azure Artifacts is an *extension* to Azure DevOps Services and TFS. The Azure Artifacts extension comes pre-installed in both Azure DevOps Services and TFS (2017 and 2018).
-
-::: moniker range="vsts" 
-
-## Install Artifacts in Azure DevOps Services
-
-The Azure Artifacts extension comes pre-installed from the Marketplace. If for some reason you do not see Azure Artifacts in your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts" 
 
@@ -32,28 +24,32 @@ The Azure Artifacts extension comes pre-installed from the Marketplace. If for s
 
 Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Azure Artifacts.
 
+> If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+
 ::: moniker-end
 
 ::: moniker range="vsts" 
 
 ## Assign Artifacts in Azure DevOps Services
 
-Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your organization will be granted access to Azure Artifacts for 30 days.  After the 30-day trial period your organization will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  
 
 You will need to assign your licenses by following the instructions below:
 
-> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
-
-1. Go to your organization, select the **Users** hub, and select **Azure Artifacts**.
-1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
-
-   > If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+1. Go to your organization, select **Admin settings** in the bottom left of the UX:
+2. Select **Users**
+3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**
+4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts" 
 
 ## Assign licenses in TFS
+
+Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your organization will be granted access to Azure Artifacts for 30 days.  After the 30-day trial period your organization will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+
+> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
 1. From any collection in TFS, hover over the settings menu and select the **Users** hub. Then select **Azure Artifacts**.
 
