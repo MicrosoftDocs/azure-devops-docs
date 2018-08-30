@@ -75,6 +75,7 @@ Your Agile tool set, available from **Azure Boards**, consists of the following 
 
 ---
 
+<a id="scale" />
 ## Teams and Agile tools
 A team refers to a group of project members that work in a particular product area. Those areas are represented as **area paths**, hierarchical paths denoting the possible areas of ownership in an organization. A team is defined by a name, its members, and its area paths.
 

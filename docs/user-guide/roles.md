@@ -52,7 +52,7 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [About Azure Boards and Agile tools](../boards/work-items/about-agile-tools.md).  
+To get started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
 If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps Services and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 

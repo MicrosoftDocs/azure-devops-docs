@@ -87,7 +87,7 @@ Requires TFS 2015.1 or later version.
 
 ## Related articles
 
-- [Get started with Agile tools to plan and track work](../../boards/backlogs/overview.md)
+- [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md)
 - [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
 - [Create your backlog](../../boards/backlogs/create-your-backlog.md)  
 - [Define features and epics](../../boards/backlogs/define-features-epics.md)

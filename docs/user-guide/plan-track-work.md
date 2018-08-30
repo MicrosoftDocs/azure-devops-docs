@@ -8,6 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
+robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
 monikerRange: 'vsts'
 ms.date: 09/05/2018

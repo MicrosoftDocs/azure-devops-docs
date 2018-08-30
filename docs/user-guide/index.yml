@@ -23,7 +23,7 @@ abstract:
 sections:
 - title:
   items:
-  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+  - html: <a href=what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
 - title: 
   items:
   - type: list
@@ -53,12 +53,17 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_dev-ops.svg
         title: Create organizations
+      - href: ../projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_management.svg
+        title: Create a project
       - href: code-with-git.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/logos/logo_git-color.svg
         title: Code with Git
-      - href: plan-track-work.md
+      - href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_quick-start.svg
@@ -78,11 +83,6 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: View permissions
-      - href: ../projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_management.svg
-        title: Create a project
       - href:  index.md
         html: <p></p>
         image:
@@ -109,8 +109,8 @@ sections:
       - href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/toolbars/member.svg
-        title: Get started as a stakeholder
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Get started as a Stakeholder
       - href: ../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
@@ -126,11 +126,6 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Grant or restrict permissions to select tasks
-      - href: ../organizations/settings/work/customize-process.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_config-tools.svg
-        title: Customize a project
 
 - title: Concepts
   items:
@@ -154,11 +149,11 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
-      - href: ../work/backlogs/overview.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_kaban.svg
-        title: Kanban & Agile tools
+        title: Boards, Kanban & Agile tools
       - href: tools.md
         html: <p></p>
         image:

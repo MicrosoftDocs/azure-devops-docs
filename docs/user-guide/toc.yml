@@ -1,37 +1,40 @@
 - name: Azure DevOps user guide
   href: index.yml
 - name: Overview
+  expanded: true
   items:
   - name: "What is DevOps?"
     href: what-is-vsts.md
   - name: Overview of services
-    href: services.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
-  - name: What's the difference? Azure DevOps Services vs. TFS
-    href: about-vsts-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-- name: Quickstarts
+    href: services.md
+  - name: What happened to Visual Studio Team Services
+    href: what-happened-vsts.md 
+- name: Quickstarts - admins
   items:
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
   - name: Create organizations
     href: ../organizations/accounts/create-organization-msa-or-work-student.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Define organizations and projects
-    href: define-organizations-and-projects.md
+  - name: Add users to a project or team 
+    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
+  - name: Configure team resources
+    href: ../organizations/settings/team-administrator-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+  - name: Get started as an admin
+    href: project-admin-tutorial.md
+  - name: Install a Marketplace extension
+    href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+- name: Quickstarts - users
+  items:
   - name: Code with Git
     href: code-with-git.md
   - name: Set up continuous integration & delivery
     href: ../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: "Plan & track work"
-    href: plan-track-work.md 
+    href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
   - name: "Add & run manual tests"
     href: add-run-manual-tests.md
-  - name: "Project management"
-    href: ../organizations/projects/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Install a Marketplace extension
-    href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: "Get started as an Admin"
-    href: ../organizations/settings/team-administrator-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Tutorials - users
   items:
   - name: Set favorites
@@ -42,8 +45,10 @@
     href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Tutorials - admins
   items:
-  - name: Get started as an admin
-    href: project-admin-tutorial.md
+  - name: Change individual permissions 
+    href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+  - name: Grant or restrict permissions to select tasks
+    href: ../organizations/security/restrict-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Key concepts 
@@ -58,6 +63,8 @@
     href: tools.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Software development roles
     href: roles.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+  - name: What's the difference? Azure DevOps Services vs. TFS
+    href: about-vsts-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Glossary
     href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides
@@ -90,7 +97,7 @@
   items:
   - name: Web portal navigation
     href: ../project/navigation/index.md
-  - name: Project management
+  - name: Manage projects
     href: ../organizations/projects/index.md
   - name: Security & identity
     href: ../organizations/security/index.md
