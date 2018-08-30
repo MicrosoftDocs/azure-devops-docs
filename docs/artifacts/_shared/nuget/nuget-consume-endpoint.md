@@ -6,8 +6,26 @@ ms.topic: include
 
 1. Select **Connect to feed**:
 
-   ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![Connect to feed button in the upper-right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
+    > 
 
+    # [Previous navigation](#tab/previous-nav)
+    ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+
+   ---
+   
 1. Copy the NuGet package source URL:
 
-   ![NuGet Package source URL in the Connect to feed dialog](../_img/nuget-consume-url.png)
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![NuGet Package source URL in the Connect to feed dialog](../_img/nuget-consume-url-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![NuGet Package source URL in the Connect to feed dialog](../_img/nuget-consume-url.png)
+
+   ---
+   
+

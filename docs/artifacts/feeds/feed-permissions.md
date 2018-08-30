@@ -41,7 +41,27 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 Select **Permissions**.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+>![Editing a feed's permissions](_img/editfeeddialog-azure-devops-newnav.png)
+> 
+
+# [Previous navigation](#tab/previous-nav)
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+![Editing a feed's permissions](_img/editfeeddialog1.png)
+
+::: moniker-end
+
+
 
 In the edit feed dialog:
 

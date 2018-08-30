@@ -6,8 +6,8 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install and license Azure Artifacts
-    href: install.md
+  - name: License Azure Artifacts
+    href: license-azure-artifacts.md
   - name: NuGet
     href: get-started-nuget.md
   - name: npm
@@ -86,8 +86,6 @@
       href: npm/npmrc.md
     - name: Use packages from npmjs.com
       href: npm/upstream-sources.md
-    - name: Install an npm package
-      href: get-started-npm.md
     - name: Publish an npm package
       href: npm/publish.md
     - name: Deprecate, unpublish, or recover an npm package

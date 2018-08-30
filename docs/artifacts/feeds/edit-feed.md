@@ -33,7 +33,27 @@ To edit permissions, see [Secure feeds using permissions](feed-permissions.md#ed
 
 ## Removing a feed
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+>![Delete a feed](../_shared/_img/deletefeed-azure-devops-newnav.png)
+> 
+
+# [Previous navigation](#tab/previous-nav)
 ![Delete a feed](../_shared/_img/deletefeed.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+![Delete a feed](../_shared/_img/deletefeed.png)
+
+::: moniker-end
+
+
 
 In the edit feed dialog:
 - Select **Delete feed**

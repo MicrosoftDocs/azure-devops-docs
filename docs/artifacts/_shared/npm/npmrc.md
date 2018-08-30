@@ -14,7 +14,15 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
 1. Click _Generate npm credentials_ and copy them to add them to your user **_.npmrc_** manually:
 
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
     ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
+
+   ---
 
 **Create a token that lasts longer than 90 days:**
 

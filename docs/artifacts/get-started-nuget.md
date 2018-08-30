@@ -17,9 +17,13 @@ monikerRange: '>= tfs-2017'
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
-This guide assumes you've already set up Azure Artifacts. You can check out how to install and license the extension in the 
-[Install and license Azure Artifacts guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
-listing to install it.
+This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+
+::: moniker range=">=tfs-2018"
+
+> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your Azure DevOps organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+
+::: moniker-end
 
 <a name="create-a-feed"></a>
 ## Create a feed

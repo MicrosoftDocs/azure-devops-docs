@@ -22,9 +22,17 @@ This tutorial is an end-to-end guide on using npm to store JavaScript packages u
 
 ### Install Azure Artifacts extension
 
-Azure Artifacts is an extension that comes pre-installed from the Marketplace. If your organization doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts is an extension that comes pre-installed from the Marketplace. 
 
-In your Azure DevOps Services/TFS organization, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
+::: moniker range=">=tfs-2017"
+
+> If your organization doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+
+::: moniker-end
+
+If you're using the new navigation UX for Azure DevOps Services, select the **Artifacts** hub to access Azure Artifacts.
+
+If you're using the previous navigation UX or TFS, go to any project in your organization and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
 
 ### Assign licenses
 
@@ -32,14 +40,21 @@ You will need to assign your licenses by following the instructions below:
 
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-1. Go to your organization, select the **Users** hub, and select **Azure Artifacts**.
+# [New navigation](#tab/new-nav)
+1. Go to your organization, select **Admin settings** in the bottom left of the UX:
+2. Select **Users**
+3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**
+4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**
+
+# [Previous navigation](#tab/previous-nav)
+1. Go to your organization, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
-   > If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+---
 
 ## Step 2: Create a feed
 
-On your first visit to the **Packages** hub in the **Build and Release** hub group, you'll be welcomed with an image telling you to create a new feed, click the **+ New feed** button.
+On your first visit to the **Artifacts** hub, you'll be welcomed with an image telling you to create a new feed, click the **+ New feed** button.
 
 In the dialog:
 * Give the feed a name.
@@ -47,7 +62,25 @@ In the dialog:
 * **Upstream sources**: Clicking _Use packages from public sources through this feed_ will add both the public NPM (registry.npmjs.org) and NuGet (packages.nuget.org) as upstreams to your feed.  When upstreams are enabled your client (i.e. npm and nuget) will be able to fetch packages from the public registry through your private feed and your private feed will cache those packages for you.  If you select _Use packages published to this feed_ your feed will be created without connectivity to public registries. You can connect them at a later date if you desire.
 * When you're done, choose _Create_.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+>![New feed dialog](_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+> 
+
+# [Previous navigation](#tab/previous-nav)
 ![New feed dialog](_shared/_img/new-feed-dialog.png)
+
+---
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+![New feed dialog](_shared/_img/new-feed-dialog.png)
+
+::: moniker-end
 
 You can change these settings later by [editing the feed](./feeds/edit-feed.md).
 
@@ -62,13 +95,46 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
 1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
+    ::: moniker range="vsts"
+
+    1. From your **Artifacts** page, click _Connect to Feed_
+
+        # [New navigation](#tab/new-nav)
+        > [!div class="mx-imgBorder"] 
+        >![Connect to feed button in the upper-right of the page](_shared/_img/connect-to-feed-azure-devops-newnav.png)
+        > 
+
+        # [Previous navigation](#tab/previous-nav)
+        ![Connect to feed button in the upper-right of the page](_shared/_img/connect-to-feed.png)
+
+        ---
+
+    2. Copy the "registry" text:
+
+        # [New navigation](#tab/new-nav)
+        > [!div class="mx-imgBorder"] 
+        >![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
+        > 
+
+        # [Previous navigation](#tab/previous-nav)
+        ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+
+        ---
+        
+    ::: moniker-end
+
+    ::: moniker range=">= tfs-2017 < vsts"
+
     1. From your **Packages** page, click _Connect to Feed_
 
-        ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed.png)
+        ![Connect to feed button in the upper-right of the page](_shared/_img/connect-to-feed.png)
 
     2. Copy the "registry" text:
 
         ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+
+    ::: moniker-end
+
         
 2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
@@ -102,25 +168,80 @@ There are two options for setting up authentication in a build task:
 #### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Pipelines** hub.
 
-    ![Connect to feed from Azure Artifacts](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    ::: moniker range="vsts"
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![builds-tab-mine-new-button](_shared/_img/build-definition/add-pipeline-azure-devops-newnav.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
+
+    ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+    ::: moniker-end
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 
-1. Select _Empty process_ at the top of the form
+1. Select _Empty job_ at the top of the form
 
-1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
+1. Add a task to **Agent job 1** of your build pipeline by clicking the **"+"**:
+
+    ::: moniker range="vsts"
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition-azure-devops-newnav.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
 
     ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
+
+    ::: moniker-end
 
 1. Select **Package** or search for _npm_ in the search bar, select **npm** and select _Add_:
 
     ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-task.png)
 
-1. Select the **npm install** task underneath **Phase 1**:
+1. Select the **npm install** task underneath **Agent job 1**:
+
+    ::: moniker range="vsts"
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-install-azure-devops-newnav.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-install.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
 
     ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-install.png)
+
+    ::: moniker-end
+    
 
 1. Browse to and select your **Working folder with package.json**:
 
@@ -145,25 +266,80 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under **Pipelines** hub.
+    
+    ::: moniker range="vsts"
 
-    ![Connect to feed from Azure Artifacts](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
+
+    ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+    ::: moniker-end
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 
 1. Select _Empty process_ at the top of the form
 
-1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
+1. Add a task to **Agent job 1** of your build pipeline by clicking the **"+"**:
+
+    ::: moniker range="vsts"
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition-azure-devops-newnav.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
 
     ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
+
+    ::: moniker-end
 
 1. Select **Package** or search for _npm_ in the search bar, select **npm Authenticate** and select _Add_:
 
     ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task.png)
 
-1. Select the **npm Authenticate** task underneath **Phase 1**:
+1. Select the **npm Authenticate** task underneath **Agent job 1**:
+
+    ::: moniker range="vsts"
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    > ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-phase-azure-devops-newnav.png)
+    >
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
+
+    ---
+
+    ::: moniker-end
+
+    ::: moniker range=">=tfs-2017 < vsts"
 
     ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
+
+    ::: moniker-end
+    
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
@@ -179,7 +355,25 @@ In addition to packages you publish, you can use packages from [www.npmjs.com](h
 
 You can choose to enable or disable upstream sources in the _Settings_ -> _Upstream sources_ tab:
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+> ![Upstream sources](_shared/_img/upstream-sources-settings-azure-devops-newnav.png)
+>
+
+# [Previous navigation](#tab/previous-nav)
 ![Upstream sources](_shared/_img/upstream-sources-settings.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+![Upstream sources](_shared/_img/upstream-sources-settings.png)
+
+::: moniker-end
 
 ## Step 5: Build your project
 

@@ -6,8 +6,25 @@ ms.topic: include
 
 1. Select **Connect to feed**:
 
-   ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![Connect to feed button in the upper-right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+
+   ---
 
 1. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
 
-   ![NuGet publish instructions in the Connect to feed dialog](../_img/nugeturl.png)
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![NuGet publish instructions in the Connect to feed dialog](../_img/nugeturl-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![NuGet publish instructions in the Connect to feed dialog](../_img/nugeturl.png)
+
+   ---
+   
