@@ -85,8 +85,7 @@ For example: `c:\agent\_work`.
 
 <tr>
 <td>Build.ArtifactStagingDirectory</td>
-<td>The local path on the agent where any artifacts are copied to before being pushed to their destination.
-<br><br>
+<td>
 [!INCLUDE [include](../_shared/variables-build-artifacts-directory.md)]
 </td>
 </tr>
