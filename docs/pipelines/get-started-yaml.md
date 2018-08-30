@@ -78,21 +78,21 @@ You should now have a sample app in your GitHub account.
 
 1. Copy the sample markdown from the status badge panel.
 
-## Add status badge to your repository
+## Add a status badge to your repository
 
 In GitHub:
 
 1. Inspect the `azure-pipelines.yml` file at the root of your repository. The YAML file contains the instructions for the pipeline. The next time you change any file in this repository, Azure Pipelines will automatically build your code.
 
-1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
+1. Go back to the list of files and select the _Readme.md_ file, and then choose **Edit**.
 
-1. Copy the status badge markdown that you copied in the previous section at the beginning of the readme.md file.
+1. Copy the status badge Markdown that you copied in the previous section at the beginning of the readme.md file.
 
 1. Commit the change to the master branch.
 
 1. Notice that the status badge appears in the description of your repository.
 
-Back in Azure Pipelines:
+In Azure Pipelines:
 
 1. Observe that a new build is queued; its status could be either not started or running.
 

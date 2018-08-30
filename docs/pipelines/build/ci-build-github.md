@@ -1,5 +1,5 @@
 ---
-title: Build your GitHub repository
+title: Build your GitHub repository using visual designer in Azure Pipelines
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -16,71 +16,81 @@ ms.date: 06/29/2018
 monikerRange: 'vsts'
 ---
 
-# Build your GitHub repository
+# Build your GitHub repo by using the designer
 
-Azure Pipelines can perform continuous integration (CI) and continuous delivery (CD) for code in your GitHub repository.
-
-In this tutorial, you learn how to:
-
-> [!div class="checklist"]
-> * Set up CI builds for your GitHub repository
-> * Add a build status badge to your README file
+> [!TIP]
+> We recommend that you use YAML instead of the visual desinger that we explain below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).
 
 ## Prerequisites
 
-* Before you read this topic, you should understand the type of build you'd like to work with:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+[!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
 
-* You need a GitHub repository with your app. If you do not have one, we recommend forking the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your own GitHub account.
+* You need a GitHub account, where you can create a repository.
 
-* You must be a contributor with admin privileges on the repository that you work with. If you create or fork a repository into a GitHub organization other than your personal GitHub account, you must still add yourself as an admin contributor under the repository's **Settings > Collaborators**.
+## Get the sample code
+
+Azure Pipelines can be used to build an app written in any language. For this guide, we will use a .NET Core sample app. Fork the following repository into your own GitHub account.
+
+`https://github.com/MicrosoftDocs/pipelines-dotnet-core`
+
+You should now have a sample app in your GitHub account.
 
 ## Set up CI for your GitHub repository
 
 Follow the steps below to configure GitHub as a source for your Azure Pipelines build.
 
-> [!IMPORTANT]
-> Ensure your browser does not block the pop-up on step 4 below.
+1. Login to your Azure DevOps organization and navigate to your project.
 
-1. Navigate to your Azure DevOps organization and project. Select **Pipelines**, and then select **Builds**.
-1. Select **New** to create a new build pipeline.
+1. In your project, navigate to the **Pipelines** page, and then choose **New pipeline**.
+
 1. Select **GitHub** for the type of repository.
+
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
+
 1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your Azure DevOps organization. If you already are signed into GitHub in another browser tab, you may not see this step.
+
 1. Choose the repository that contains the sample you forked earlier and select **Continue**.
+
 1. Select the **ASP.NET Core** build template or a template that is appropriate for your application.
-1. Choose **Hosted VS2017** for Agent pool.
+
+1. Choose **Hosted Ubuntu 1604** for Agent pool.
+
 1. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
+
 1. Select **Save & queue** to save your build pipeline and create the first build.
+
 1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
-## Add a build status badge
+## Get the status badge
 
-This section explores possibilities for further integrating Azure Pipelines and GitHub. You will create a build badge for the Azure Pipelines build pipeline by populating a GitHub readme file with Markdown that points to the build badge URL.
+1. In the Azure pipelines page, navigate to the list of pipelines.
 
-1. Navigate to your GitHub account. Select **Code**. Create a Readme.md file unless one already exists.
-1. For this step, paste the following markdown into your Readme.md file. Replace the tokens using the name of the build pipeline and the `definitionId` that you obtained above.
+1. Select the pipeline that was created for you.
 
-    `[![Build status](https://dev.azure.com/{your-organization}/{your-vsts-project}/_apis/build/status/{build-definition-name}?branch=master)](https://dev.azure.com/{your-organization}/{your-vsts-project}/_build/latest?definitionId={definitionId}&branch=master)]`
+1. In the context menu for the pipeline, select **Status badge**.
 
-1. **Commit** your Readme.md file to the repository. The rendered Readme now shows the build badge.
-1. Click on the build badge to navigate to the last completed build in Azure Pipelines.
-1. In the build results page, select the commit id in the **Timeline** tab. This link navigates you directly to the GitHub commit.
+   ![Status badge](../_img/get-started-yaml/status-badge.png)
+
+1. Copy the sample markdown from the status badge panel.
+
+## Add a status badge to your repository
+
+In GitHub:
+
+1. Select the _Readme.md_ file, and then choose **Edit**.
+
+1. Copy the status badge Markdown that you copied in the previous section at the beginning of the readme.md file.
+
+1. Commit the change to the master branch.
+
+1. Notice that the status badge appears in the description of your repository.
+
+In Azure Pipelines:
+
+1. Observe that a new build is queued; its status could be either not started or running.
 
 ## Q & A
 
 ### How do I use a personal access token to authorize the Azure Pipelines to GitHub connection?
 
 See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the Azure Pipelines **Get sources** task of your build or release pipelines by creating a GitHub [service connection](../library/service-endpoints.md) and entering the token.
-
-## Next steps
-
-In this tutorial, you learned how to set up and manage CI with GitHub and Azure Pipelines.
-
-You learned how to:
-
-> [!div class="checklist"]
-> * Set up CI builds for your GitHub repository
-> * Display an Azure Pipelines build status within a GitHub README file
-
-> [!div class="nextstepaction"]
-> [Build multiple branches](ci-build-git.md)
