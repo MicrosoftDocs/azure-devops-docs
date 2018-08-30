@@ -20,15 +20,6 @@ You can grant or restrict access to resources that you manage in Azure DevOps Se
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
-<!--- 
-This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 
-
-Maybe consider this in a 2 or 3 step process: 
-- what areas to open up/close down
-- Role and delegation 
-- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
--->
-
 Use this topic to learn: 
 
 > [!div class="checklist"]
@@ -228,3 +219,12 @@ What you can do on TFS differs from what is available  from Azure DevOps
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
  
+
+<!--- 
+This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 
+
+Maybe consider this in a 2 or 3 step process: 
+- what areas to open up/close down
+- Role and delegation 
+- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
+-->

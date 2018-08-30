@@ -18,7 +18,6 @@ ms.date: 09/05/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-
 Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. 
 
 <a name="MicrosoftAccount"></a>
@@ -29,6 +28,8 @@ Sign up for an Azure DevOps organization and Azure Boards to begin planning and 
 
 <a id="invite-others" />
 [!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]
+
+For more information on managing users and organization access, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users-from-user-hub.md).
 
 
 ## Try this next  
