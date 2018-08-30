@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 07/20/2018
+ms.date: 08/02/2018
 monikerRange: '>= tfs-2015'
 ---
 
