@@ -28,8 +28,12 @@
     href: languages/java.md
   - name: JavaScript
     href: languages/javascript.md
+  - name: PHP
+    href: languages/php.md
   - name: Python
     href: languages/python.md
+  - name: Ruby
+    href: languages/ruby.md
   - name: Xamarin
     href: languages/xamarin.md
   - name: Xcode

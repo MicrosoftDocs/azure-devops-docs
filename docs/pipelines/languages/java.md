@@ -66,7 +66,7 @@ steps:
     goals: 'package'
 ```
 
-### Customize
+### Customize Maven
 
 #### Adjust the build path
 
@@ -80,7 +80,7 @@ For details about common Java phases and goals, see the [Maven documentation](ht
 
 ## Build your code with Gradle
 
-To build with Gradle add the following snippet to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+To build with Gradle, add the following snippet to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 steps:
@@ -97,7 +97,7 @@ steps:
     tasks: 'build'
 ```
 
-### Customize
+### Customize Gradle
 
 #### Choose the version of Gradle
 

@@ -191,9 +191,17 @@ Tutorials, references, and other documentation show you how to configure and man
 <img width="48" height="48" alt="" src="_img/index/logo_nodejs.svg">
 <span>JavaScript</span>
 </a></div>
+<div class="ico48Link"><a href="languages/php.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg">
+<span>PHP</span>
+</a></div>
 <div class="ico48Link"><a href="languages/python.md">
 <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg">
 <span>Python</span>
+</a></div>
+<div class="ico48Link"><a href="languages/ruby.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg">
+<span>Ruby</span>
 </a></div>
 <div class="ico48Link">
 <a href="apps/windows/universal.md">
