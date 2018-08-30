@@ -22,7 +22,7 @@ This quickstart will help you set up billing for your Azure DevOps Services orga
 
 **All Azure DevOps services are billed via Azure**, and you are not required to use any other Azure services.
 
-If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
+If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ The first time you set up billing for your Azure DevOps Services organization, w
 * [Azure DevOps Services project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your Azure DevOps Services organization, you only need have access to purchase on the Azure subscription.
+To make subsequent edits to paid quantities in your Azure DevOps Services organization, you only need have access to [purchase on the Azure subscription](add-backup-billing-managers.md).
 
 ## Set up billing via the Azure Portal
 
