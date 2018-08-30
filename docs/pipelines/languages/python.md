@@ -35,7 +35,7 @@ You can use Azure Pipelines to build your Python projects without needing to set
 
 For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
 
-### Use specific Python version
+### Use a specific Python version
 
 Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
