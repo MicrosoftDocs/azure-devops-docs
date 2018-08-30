@@ -9,12 +9,11 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 05/17/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
-#   Update code with fetch and pull
+# Update code with fetch and pull
 
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
