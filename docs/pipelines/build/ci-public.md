@@ -39,11 +39,11 @@ If you already use Azure Pipelines public projects to manage your code, then you
 
 # [GitHub repo](#tab/github)
 
-Follow the steps in [Build your GitHub repo](ci-build-github.md) to set up a build pipeline and to add a build badge to the `Readme.md` file at the root of your repository.
+Follow the steps in [Create your first pipeline](../get-started-yaml.md) to set up a build pipeline and to add a build badge to the `Readme.md` file at the root of your repository.
 
 # [Azure Repos Git repo](#tab/gitvsts)
 
-Follow the steps in [Your first build and release](../get-started-designer.md) to set up a build and release pipeline.
+Follow the steps in [Use designer](../get-started-designer.md) to set up a build and release pipeline.
 
 ---
 
