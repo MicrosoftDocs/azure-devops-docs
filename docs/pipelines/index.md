@@ -51,7 +51,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsF cols cols4" style="float: left; display: flex;">
                                     <li>
-                                        <a href="overview.md">
+                                        <a href="get-started/index.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
