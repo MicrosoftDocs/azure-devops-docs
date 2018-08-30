@@ -35,7 +35,7 @@ You can build every commit and pull request to your Git repository using Azure P
 
 ## Prerequisites
 
-* You need a Git repository in Azure Pipelines, TFS, or GitHub with your app. If you do not have one, we recommend importing the [sample .NET Core app](https://github.com/adventworks/dotnetcore-sample) into your Azure Pipelines or TFS project, or forking it into your GitHub repository. Note that you must use Azure Pipelines to build a GitHub repository. You cannot use TFS.
+* You need a Git repository in Azure Pipelines, TFS, or GitHub with your app. If you do not have one, we recommend importing the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your Azure Pipelines or TFS project, or forking it into your GitHub repository. Note that you must use Azure Pipelines to build a GitHub repository. You cannot use TFS.
 
 * You also need a working build for your repository.
 

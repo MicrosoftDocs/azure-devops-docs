@@ -162,44 +162,38 @@
       href: library/secure-files.md
   - name: Retention policies
     href: policies/retention.md
-- name: Tutorials
-  items:
-  - name: Build multiple branches
-    href: build/ci-build-git.md
-  - name: Build GitHub repo using designer
-    href: build/ci-build-github.md
-  - name: Build open source projects
-    href: build/ci-public.md
-  - name: CD to Azure Web App
-    href: apps/cd/deploy-webdeploy-webapps.md
-  - name: Set up a multi-stage release
-    href: release/define-multistage-release-process.md
-  - name: Use approvals and gates
-    href: release/deploy-using-approvals.md
-  - name: Jenkins CI for Azure Pipelines Azure CD
-    href: release/integrate-jenkins-vsts-cicd.md
-  - name: Jenkins CI for Azure Pipelines Azure AKS
-    href: release/integrate-jenkins-vsts-aks.md
 - name: How-to Guides
   items:
-  - name: Connect to Azure
-    href: library/connect-to-azure.md
-  - name: Use YAML CI (config as code)
-    href: build/yaml.md
-  - name: Build more app types
+  - name: Build
     items:
-    - name: Azure Cloud Service
-      href: apps/aspnet/build-aspnet-cloudservice.md
-    - name: SQL Server Database
-      href: apps/aspnet/build-aspnet-dacpac.md
+    - name: Build open-source projects
+      href: build/ci-public.md
+    - name: Build multiple branches
+      href: build/ci-build-git.md
+    - name: Build GitHub repo using designer
+      href: build/ci-build-github.md
+    - name: Use YAML CI (config as code)
+      href: build/yaml.md
     - name: Run a PowerShell script
       href: scripts/powershell.md
     - name: Run Git commands
       href: scripts/git-commands.md
-    - name: Sign your mobile app
-      href: apps/mobile/app-signing.md
-  - name: Deploy to more targets
+    - name: Publish symbols
+      href: symbols/index.md
+  - name: Release
     items:
+    - name: Connect to Azure
+      href: library/connect-to-azure.md
+    - name: CD to Azure Web App
+      href: apps/cd/deploy-webdeploy-webapps.md
+    - name: Set up a multi-stage release
+      href: release/define-multistage-release-process.md
+    - name: Use approvals and gates
+      href: release/deploy-using-approvals.md
+    - name: Jenkins CI for Azure Pipelines Azure CD
+      href: release/integrate-jenkins-vsts-cicd.md
+    - name: Jenkins CI for Azure Pipelines Azure AKS
+      href: release/integrate-jenkins-vsts-aks.md
     - name: Extend IIS Server deployments
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: IIS servers (WinRM)
@@ -208,8 +202,10 @@
       href: library/government-cloud.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
-  - name: Test your apps
+  - name: Test
     items:
+    - name: Test glossary
+      href: test/test-glossary.md
     - name: Unit test with builds
       href: test/getting-started-with-continuous-testing.md
     - name: UI test with Selenium
@@ -230,13 +226,7 @@
       href: test/test-impact-analysis.md
     - name: FAQs for testing
       href: test/reference-qa.md
-    - name: Test glossary
-      href: test/test-glossary.md
-  - name: Publish symbols for debugging
-    items:
-    - name: Publish symbols
-      href: symbols/index.md
-  - name: Use packages in CI/CD
+  - name: Package
     items:
     - name: NuGet
       items:
@@ -256,14 +246,11 @@
       href: targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
-  - name: "Set build and release permissions (Security)"
-    href: policies/set-permissions.md 
-  - name: C/C++ with GCC
-    href: apps/c-cpp/gcc.md
-  - name: .NET for Windows
-    href: apps/windows/dot-net.md
-  - name: Universal Windows Platform
-    href: apps/windows/universal.md
+  - name: Administer
+    items:
+    - name: "Set build and release permissions (Security)"
+      href: policies/set-permissions.md 
+
 - name: Troubleshooting
   items:
   - name: Troubleshoot build and release
@@ -272,6 +259,7 @@
     href: release/variables.md#debug-mode
   - name: Troubleshoot Azure connections
     href: release/azure-rm-endpoint.md
+
 - name: Reference
   href: tasks/index.md
   items:

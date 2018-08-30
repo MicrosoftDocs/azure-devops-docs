@@ -18,7 +18,7 @@ Azure Repos is a full-featured Git server for hosting your team's source code. Y
 1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** textbox.
 
   ```
-  https://github.com/adventworks/dotnetcore-docker-sample
+  https://github.com/MicrosoftDocs/pipelines-dotnet-core
   ```
 
 1. Click **Import** to copy the sample code into your Git repo.

@@ -35,7 +35,7 @@ Before you read this topic, you should understand the type of pipeline that you'
 If you want some sample code that works with this guidance, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ```
 
