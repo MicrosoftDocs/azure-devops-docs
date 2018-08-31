@@ -149,10 +149,10 @@
       href: process/variables.md
   - name: Licensing
     items:
-    - name: Pipelines in TFS
-      href: licensing/concurrent-pipelines-tfs.md
-    - name: Jobs in Azure Pipelines
+    - name: Parallel jobs
       href: licensing/concurrent-jobs-vsts.md
+    - name: Pipelines
+      href: licensing/concurrent-pipelines-tfs.md
   - name: Library
     href: library/index.md
     items:
