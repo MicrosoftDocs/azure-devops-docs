@@ -69,6 +69,7 @@ that you want to activate this trigger.
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
 Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
+You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The

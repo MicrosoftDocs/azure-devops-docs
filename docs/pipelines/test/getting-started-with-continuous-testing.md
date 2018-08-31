@@ -91,7 +91,7 @@ solution - on the same build machine.
 1. After the build finishes, you can review the test results to resolve any problems that happened.
    Go to the build summary and open the **Tests** page.
 
-   ![Go to Azure Pipelines, build pipeline, build summary](_img/getting-started-with-continuous-testing/open-summary.png)
+   ![Go to build pipeline, build summary](_img/getting-started-with-continuous-testing/open-summary.png)
 
 <a name="reviewesults"></a><a name="runothertests"></a>
 
