@@ -336,7 +336,7 @@ from different sources, set this option to
 * I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do this in the work item
      for the test case, or use the **Column options** link in the **Test Plans**
-     page of Azure Test Plans to add the **Automation status** column to the list
+     page of [!INCLUDE [pipelines-hub-include-nolink](_shared/pipelines-hub-include-nolink.md)] to add the **Automation status** column to the list
      of tests. See the [pre-requisites section](../../test/run-automated-tests-from-test-hub.md#prerequisites) for information
      about automating manual tests.<p />
 
