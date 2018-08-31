@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 # Build your GitHub repo by using the designer
 
 > [!TIP]
-> We recommend that you use YAML instead of the visual desinger that we explain below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).
+> We recommend that you use YAML instead of the visual designer that we explain below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).
 
 ## Prerequisites
 
