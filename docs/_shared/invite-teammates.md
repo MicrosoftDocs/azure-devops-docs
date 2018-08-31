@@ -8,7 +8,7 @@ You provide others access to your organization by adding their email addresses t
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](/azure/devops/_shared/_img/icons/gear-icon.png) **Admin settings**.
+2. Choose the ![](/azure/devops/_img/icons/gear-icon.png) gear icon to open **Admin settings**.
 
    ![Open Admin Settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)
 
@@ -16,15 +16,14 @@ You provide others access to your organization by adding their email addresses t
 
    ![Choose Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 
-4. Complete the form.
+4. Complete the form.  
 
    - **Users:** Enter the email address (Microsoft account address) for the user. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
-   - **Access level:** Leave the Access level at Basic for those users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).
-   - **Add to project:** Select the project that you named in the previous procedure.
-   - **DevOps Groups:** Leave this entry at Project Contributors, the default security group for users who will contribute to your project. Tl learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).
+   - **Access level:** Leave the Access level at Basic for those users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
+   - **Add to project:** Select the project that you named in the previous procedure.  
+   - **DevOps Groups:** Leave this entry at Project Contributors, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
 
 	> [!Note]  
-	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access.  
-	> If your users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).  
+	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If your users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).  
 
 5. When you're done, choose **Add** to complete your invitation.

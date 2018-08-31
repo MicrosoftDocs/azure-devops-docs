@@ -25,7 +25,7 @@ For example, the following image illustrates four different charts created from 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ## Prerequisites
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 - All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
