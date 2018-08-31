@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/13/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,11 +22,17 @@ You have to set up billing when you need more than the *free tier* of resources 
 
 * 5 Azure DevOps Services users (Basic)
 * 5 Package Management users
-* Free tier of Microsoft-hosted continuous integration/continuous development (CI/CD) (1 concurrent job, up to 4 hours per month)
+* Free tier of Microsoft-hosted continuous integration/continuous development (CI/CD) (1 concurrent job, up to 30 hours per month)
 * 1 self-hosted CI/CD concurrent job
-* 20,000 virtual user minutes of cloud-based load testing 
+* 20,000 virtual user minutes of cloud-based load testing
 
 You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+
+<a name="why-no-team-projects-in-Azure-portal"></a>
+
+### Q: Why do I no longer see Team Projects in the Azure portal?
+
+A: Starting September 28th, you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to access any Team Projects you’ve created via the Azure portal through your Azure DevOps organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
 
 ### Q: Can I buy Azure DevOps Services by using a purchase order?
 
@@ -162,5 +168,5 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps billing support](https://visualstudio.microsoft.com/team-services/support/)
