@@ -17,15 +17,14 @@ You consume and publish packages through a particular feed.
     # [Previous navigation](#tab/previous-nav)
     ![Go to Packages hub](_img/goto-feed-hub.png)
 
-   ---
+    ---
+    ::: moniker-end
 
-   ::: moniker-end
+    ::: moniker range=">= tfs-2017 < vsts"
 
-   ::: moniker range=">= tfs-2017 < vsts"
+    ![Go to Packages hub](_img/goto-feed-hub.png)
 
-   ![Go to Packages hub](_img/goto-feed-hub.png)
-
-   ::: moniker-end
+    ::: moniker-end
    
 
 1. Select **+ New feed**:

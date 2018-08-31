@@ -4,7 +4,7 @@ ms.topic: include
 
 To talk to Azure DevOps Services feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
 
-:::: moniker range="vsts"
+::: moniker range="vsts"
 
 1. From your **Artifacts** page, click _Connect to Feed_
 
@@ -12,29 +12,34 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
     > [!div class="mx-imgBorder"] 
     >![Connect to feed button in the upper-right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
     > 
+
     # [Previous navigation](#tab/previous-nav)
     ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+    
     ---
 
 2. Copy the "registry" text:
+
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
     >![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
     > 
+
     # [Previous navigation](#tab/previous-nav)
     ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
+
     ---
     
-:::: moniker-end
+::: moniker-end
 
-:::: moniker range=">= tfs-2018 < vsts"
+::: moniker range=">= tfs-2018 < vsts"
 
 1. From your **Packages** page, click _Connect to Feed_
     ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
 2. Copy the "registry" text:
     ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
 
-:::: moniker-end
+::: moniker-end
 
 1. Open the **Maven** tab, choose **Generate Maven credentials**, and copy the generated credentials. (images below)
 
