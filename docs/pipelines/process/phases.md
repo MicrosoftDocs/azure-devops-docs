@@ -98,7 +98,7 @@ If you want to specify just the pool, you can do that and skip the other propert
 ```yaml
 jobs:
 - job: Run this job on a Linux agent
-  pool: Hosted Linux Preview
+  pool: Default # the default self-hosted agent pool in your organization
   steps:
     ...
 ```
@@ -112,11 +112,12 @@ Templates can include parameters which the pipeline can vary.
 
 parameters:
   name: ''  # defaults for any parameters that aren't specified
-  pool: ''
+  vmImage: ''
 
 jobs:
 - job: ${{ parameters.name }}
-  pool: ${{ parameters.pool }}
+  pool: 
+    vmImage: ${{ parameters.vmImage }}
   steps:
   - script: npm install
   - script: npm test
@@ -132,17 +133,17 @@ jobs:
 - template: templates/npm.yml  # Template reference
   parameters:
     name: macOS
-    pool: Hosted macOS Preview
+    vmImage: xcode9-macos10.13
 
 - template: templates/npm.yml  # Template reference
   parameters:
     name: Linux
-    pool: Hosted Linux Preview
+    vmImage: ubuntu-1604
 
 - template: templates/npm.yml  # Template reference
   parameters:
     name: Windows
-    pool: Hosted VS2017
+    vmImage: vs2017-win2016
 ```
 
 
@@ -329,13 +330,13 @@ From a single job you can run multiple jobs and multiple agents in parallel. Som
 
 ::: moniker range="vsts"
 
-The `matrix` setting enables a job to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
+The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
 
 ```yaml
 jobs:
 - job: Test
-  pool:
-    parallel: 2
+  strategy:
+    maxParallel: 2
     matrix: 
       US_IE:
         Location: US
@@ -408,7 +409,7 @@ See [Parallel and multiple execution using agent jobs](#parallelexec).
 ```yaml
 jobs:
 - job: Test
-  pool:
+  strategy:
     parallel: 2
 ```
 ::: moniker-end
@@ -463,7 +464,34 @@ Job variables are not yet supported in the web editor.
 
 # [YAML](#tab/yaml)
 
-These options are not available in YAML.
+```yaml
+# test and upload my code as an artifact named WebSite
+jobs:
+- job: Build
+  pool:
+    vmImage: ubuntu-16.04
+  steps:
+  - script: npm test
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(System.DefaultWorkingDirectory)'
+      artifactName: WebSite
+
+# download the artifact and deploy it only if the build job succeeded
+- job: Deploy
+  pool:
+    vmImage: ubuntu-16.04
+  steps:
+  - checkout: none #skip checking out the default repository resource
+  - task: DownloadBuildArtifacts@0
+    displayName: 'Download Build Artifacts'
+    inputs:
+      artifactName: WebSite
+      downloadPath: $(System.DefaultWorkingDirectory)
+
+  dependsOn: Build
+  condition: succeeded()
+```
 
 # [Designer](#tab/designer)
 

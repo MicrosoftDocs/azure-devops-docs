@@ -29,11 +29,14 @@ The full syntax to specify an agent job is:
 ```yaml
 jobs:
 - job: string
-  server:
-    timeoutInMinutes: number
-    cancelTimeoutInMinutes: number
-    parallel: number
+  timeoutInMinutes: number
+  cancelTimeoutInMinutes: number
+  strategy:
+    maxParallel: number
     matrix: { string: { string: string } }
+
+  pool: server
+
 ```
 
 You can also use the simplified syntax:
@@ -98,8 +101,8 @@ The `matrix` setting enables a job to be dispatched multiple times, with differe
 ```yaml
 jobs:
 - job: Test
-  server:
-    parallel: 2
+  strategy:
+    maxParallel: 2
     matrix: 
       US_IE:
         Location: US
@@ -110,6 +113,9 @@ jobs:
       Europe_Chrome:
         Location: Europe
         Browser: Chrome
+  
+  pool: server
+    
 ```
 ::: moniker-end
 ::: moniker range="< vsts"
