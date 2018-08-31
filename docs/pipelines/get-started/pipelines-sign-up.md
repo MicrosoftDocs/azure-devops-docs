@@ -13,32 +13,45 @@ monikerRange: '>= tfs-2015'
 
 # Sign up for Azure Pipelines
 
+[!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
 
+## Start with Azure Pipelines
 
-1. From the Azure website, choose **Start free with Pipelines**.
+1. From the Azure website, select **Start free with Azure Pipelines**.
 
-   ![Start free with Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
+   ![Start free with Azure Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
 
-2. Enter your email address, phone number, or Skype ID for your Microsoft account.
+   Or from your new project page, select **Azure Pipelines**
 
-   If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
+   ![New project, select Azure Pipelines](../_img/new-project-select-pipelines.png)
 
-   ![Sign in with your Microsoft account](../../_shared/_img/sign-in-with-microsoft-account.png)
+2. Select the location of your code, **GitHub** or **Azure Repos**.
 
-3. Enter your password and choose **Sign in**.
+   ![New build Azure Pipelines, select where your code is hosted](../_img/new-build-pipelines.png)
 
-   If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
+3. Grant Azure Pipelines permission to access your GitHub repositories by selecting  **Authorize** to authorize with OAuth, or **Install our app from the GitHub Marketplace**.
 
-   ![Enter your password and sign in](../../_shared/_img/enter-password-sign-in.png)
+   ![choose-authorize-with-oauth.png](../_img/choose-authorize-with-oauth.png)
 
-4. Choose **Next**.
+   ![GitHub fetching repositories](../_img/github-fetching-repositiories.png)
 
-   ![Get started with Azure DevOps, choose Next](../../_shared/_img/get-started-with-azure-devops-next.png)
+4.  Select a repository.
 
-5. Create a project to get started. For more information, see [Define your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md) and [Create a project](../../organizations/projects/create-project.md).
+    ![Select repository](../_img/select-repository-pipelines.png)
 
-   ![Create a project to get started](../../_shared/_img/create-project-to-get-started.png)
+    ![Analyzing repository to recommend template](../_img/analyzing-repository-to-recommend-template.png)
 
+5. Choose a template.
+
+   ![Choose a template](../_img/choose-template.png)
+
+6. Choose **Save and run**.
+
+   ![Save and run Azure Pipelines](../_img/save-and-run-azure-pipelines.png)
+
+7. Select to either commit directly to the master branch or create a new branch for this commit and start a pull request.
+
+   ![Commit to master of create a new branch](../_img/commit-to-master-or-create-new-branch.png)
 
 
 ## Next steps

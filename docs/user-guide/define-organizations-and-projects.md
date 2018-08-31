@@ -17,14 +17,9 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [dev15-version-header](../_shared/dev15-version-header.md)]
 
-Consider the size and scope of your company and team structure when you're defining your organizations and projects.
+In Azure DevOps, an organization is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other organizational structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
-You can use one of the following approaches:
-
-- Map Azure DevOps Services **organizations** to business units. Consider a **business unit** a department within your company.
-- Map Azure DevOps Services **projects** to business units.
-
-Before you begin, understand [about projects and scaling your organization](../organizations/projects/about-projects.md) and know [what you get with Azure DevOps Services or Microsoft Team Foundation Server (TFS)](services.md).
+For a larger company, you may want to create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three Azure DevOps organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other.
 
 ## Choose your organization admin account type
 
@@ -38,13 +33,11 @@ If you don’t have an Azure Active Directory instance, you can either [create o
 
 ### Azure Active Directory-backed account
 
-Use your work or school organization that's managed by your Azure Active Directory instance. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/) to **automatically connect** your Azure DevOps Services organization to your Azure Active Directory. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Use your work or school account managed by its Azure Active Directory instance. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure Active Directory](https://azure.microsoft.com/documentation/articles/sign-up-organization/) to **automatically connect** your Azure DevOps Services organization to your Azure Active Directory. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## Define organizations
 
-An Azure DevOps Services organization is the set of services and users for a business unit you define. It can be for your whole company, a specific business unit within your company, or just you. If you're setting up Azure DevOps Services for a large company, you might want to create multiple organizations with different accounts, probably Azure Active Directory accounts. Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the fictional Fabrikam company might create three Azure DevOps Services organizations: **Fabrikam-Marketing**, **Fabrikam-Engineering**, and **Fabrikam-Sales**. Each organization will have a separate URL, such as `https://dev.azure.com/Fabrikam-Engineering`, and will be mostly isolated from the others.
-
-Settings at the Azure DevOps Services organization are managed by administrators. As the creator of the organization, you're an administrator by default. You can access those settings by using the **Admin settings** button in the lower-left of your Azure DevOps Services organization portal.
+Organization settings at the Azure DevOps Services organization are managed by administrators. As the creator of the organization, you're an administrator by default. You can access those settings by using the **Admin settings** button in the lower-left of your Azure DevOps Services organization portal.
 
 ![Open admin settings](../_shared/_img/settings/open-admin-settings-vert.png)
 
@@ -59,7 +52,7 @@ Within an organization, you can have one large single project or multiple projec
 - Create a single project that contains many repos and teams.
 - Create multiple projects, each containing its own set of teams, repos, builds, work items, and other elements.
 
-Projects can be created or removed as you need or retire them. Think about the specific strategic work scoped to one of the Azure DevOps Services organizations you created previously and who should have access to it. Use this information to name and create a project. This project will have a URL defined under the organization you created it in and can be accessed at `https://dev.azure.com/{organization-name}/{project-name}`.
+Projects can be created or removed as you need. Think about the specific strategic work scoped to one of the Azure DevOps Services organizations you created previously and who should have access to it. Use this information to name and create a project. This project will have a URL defined under the organization you created it in and can be accessed at `https://dev.azure.com/{organization-name}/{project-name}`.
 
 Configure your project by visiting its URL and selecting the **Project settings** button at the lower-right of the page.
 
@@ -88,7 +81,7 @@ Having team independence with multiple projects creates some alignment challenge
 
 Azure DevOps Services provides cross-project experiences when it comes to managing work. You can easily create cross-project queries and move work items from one project to another.
 
-If the products stored in multiple repos work on independent schedules or processes, then splitting them into multiple projects might make the most sense. When you’re considering multiple projects, note that Git repo portability makes it easy to move a repo between projects and still retain full-fidelity commit history. Other history cannot be migrated between projects. Examples are push and pull request history.
+If the projects stored in multiple repos work on independent schedules or processes, then splitting them into multiple projects might make the most sense. When you’re considering multiple projects, note that Git repo portability makes it easy to move a repo between projects and still retain full-fidelity commit history. Other history cannot be migrated between projects. Examples are push and pull request history.
 
 ## Try this next  
 

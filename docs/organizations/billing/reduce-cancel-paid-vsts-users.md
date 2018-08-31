@@ -32,10 +32,10 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 
 ## Update the number of paid users on your organization
 
-1. As Azure DevOps Services project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Buy**.
+1. As Azure DevOps Services project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Buy**.
 
    > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/get-vsts-users-marketplace.png)
+![Go to Visual Studio Marketplace, Other, Azure DevOps Services Users](_img/buy-more-basic-access/get-vsts-users-marketplace.png)
 
 1. Select your Azure DevOps Services organization, if you have multiple organizations.
 

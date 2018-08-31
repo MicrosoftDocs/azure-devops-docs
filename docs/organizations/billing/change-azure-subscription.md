@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Change the Azure subscription that your Azure DevOps Services organization uses for billing
+# Change the Azure subscription your Azure DevOps Services organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -55,9 +55,9 @@ If the target subscription is in the same Azure Active Directory as the destinat
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Team Services administration**. 
+2. Go to **All services** > **Azure DevOps Services organizations**. 
 
-   ![Choose All services and Team Services administration](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Choose All services and Azure DevOps Services organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization and **Remove billing**.
 
@@ -65,7 +65,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Purchase again using the new subscription
 
-1. Make your purchases again in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). During your first purchase, select the new Azure subscription to use for billing going forward.
+1. Make your purchases again in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). During your first purchase, select the new Azure subscription to use for billing going forward.
 
 >[!NOTE]
 > You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.
@@ -78,4 +78,4 @@ If you wait until the 1st of next month to make your purchases again, your Azure
 - [Self-hosted Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
+- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
