@@ -20,7 +20,7 @@ Choose one of the following to get started:
 - Choose **Test Plans** to start [defining test plans and test suites](/azure/devops/test/create-a-test-plan).
 - Choose [Manage your services](/azure/devops/settings/set-services) to disable the visibility of one or more services.
 
-To get started managing your project, see [project-admin-tutorial](/azure/devops/user-guide/project-admin-tutorial). 
+To get started managing your project, see [Get started as an administrator](/azure/devops/user-guide/project-admin-tutorial). 
 
 For more information about organizations and projects, see these articles: 
 - [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
