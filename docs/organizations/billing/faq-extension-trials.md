@@ -26,7 +26,7 @@ monikerRange: 'vsts'
 A: Instead of offering an organization trial, Azure DevOps Services provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
 * 5 Azure DevOps Services users: Basic.
 * 5 Package Management users. 
-* Free tier of Microsoft-hosted continuous integration/continuous deployment (CI/CD): one concurrent job, up to four hours per month. 
+* Free tier of Microsoft-hosted continuous integration/continuous deployment (CI/CD): one concurrent job, up to 30 hours per month. 
 * One self-hosted CI/CD concurrent job. 
 * 20,000 virtual user minutes of cloud-based load testing per month.  
 

@@ -33,6 +33,9 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 
 > [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
 
+>[!Note]
+>Azure DevOps Services was previously called Visual Studio Team Services or VSTS.
+
 We offer a path to connect to an Azure Active Directory where the users' email addresses are the same before and after the connection. For example, if users currently sign in to their MSA with the email address *jamalhartnett@fabrikam.com*, they'll sign in with the same email address as their Azure AD identity.
 
 We will update this guidance when we have a solution for scenarios where email addresses must be changed.

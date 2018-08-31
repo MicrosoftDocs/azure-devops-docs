@@ -13,15 +13,11 @@ monikerRange: '>= tfs-2015'
 
 # Sign up for Azure Pipelines
 
-[!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
-
-## Start with Azure Pipelines
-
 1. From the Azure website, select **Start free with Azure Pipelines**.
 
    ![Start free with Azure Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
 
-   Or from your new project page, select **Azure Pipelines**
+   Or if you've already [signed up for Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md), from your new project page, select **Azure Pipelines**.
 
    ![New project, select Azure Pipelines](../_img/new-project-select-pipelines.png)
 
