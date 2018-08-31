@@ -1187,7 +1187,7 @@
     },
     {
       "source_path": "docs/work/agile-project-management.md",
-      "redirect_url": "/azure/devops/boards/backlogs/overview",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {
@@ -2772,7 +2772,7 @@
     },
     {
       "source_path": "docs/work/plan.md",
-      "redirect_url": "/azure/devops/boards/backlogs/overview",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {
@@ -5587,7 +5587,7 @@
     },
     {
       "source_path": "docs/work/overview.md",
-      "redirect_url": "/azure/devops/boards/backlogs/overview",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {
@@ -5792,7 +5792,7 @@
     },
     {
       "source_path": "docs/report/guidance/analytics-widgets-VSTS.md",
-      "redirect_url": "/azure/devops/report/analytics/analytics-widgets-VSTS",
+      "redirect_url": "/azure/devops/report/analytics/analytics-widgets",
       "redirect_document_id": false
     },
     {
@@ -5872,7 +5872,7 @@
     },
     {
       "source_path": "docs/user-guide/kanban-agile.md",
-      "redirect_url": "/azure/devops/boards/backlogs/overview",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {
@@ -10392,7 +10392,7 @@
     },
     {
       "source_path": "docs/work/backlogs/overview.md",
-      "redirect_url": "/azure/devops/boards/backlogs/overview",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {
@@ -10813,6 +10813,11 @@
     {
       "source_path": "docs/work/work-items/about-work-items.md",
       "redirect_url": "/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/about-agile-tools.md",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
       "redirect_document_id": false
     },
     {

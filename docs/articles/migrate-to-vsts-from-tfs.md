@@ -1,5 +1,6 @@
 ---
 title: Migration options for migrating from TFS to Azure DevOps Services
+titleSuffix: Azure DevOps Services & TFS
 description: Learn about migrating from Team Foundation Server (TFS) to Azure DevOps Services
 ms.prod: devops
 ms.topic: article
@@ -15,6 +16,8 @@ monikerRange: '>= tfs-2013'
 
 # Migration options
 
+**Azure DevOps Services | TFS**
+
 When you decide to make the move from TFS to Azure DevOps, you might start fresh with an empty organization. Often, however,
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
 which vary in both the fidelity of the data transfer and the complexity of the process.
@@ -23,7 +26,7 @@ Prior to migrating data, review the differences that exist between [TFS and Azur
 
 ## Option 1: Copy the most important assets manually
 
-By far the easiest option for moving data into VSTS is to manually copy your most important assets and start relatively fresh. 
+By far the easiest option for moving data into Azure DevOps Services is to manually copy your most important assets and start relatively fresh. 
 This can be difficult when you are in the middle of a large project, but you can make it easier if you do some advance planning
 and schedule your move when it makes sense for your team.
 

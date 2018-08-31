@@ -1,6 +1,7 @@
 ---
 title: Technical Articles 
-description: A public collection of VSTS-specific topics shared for partners.
+titleSuffix: Azure DevOps Services & TFS
+description: A public collection of specific topics shared for partners.
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -10,9 +11,9 @@ ms.author: kaelli
 author: kaelli
 ---
 
-# Technical Articles
+# Technical articles
 
-**VSTS | TFS**
+**Azure DevOps Services | TFS**
 
 Here you'll find more resources to support your development efforts with Azure DevOps Services, Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
@@ -24,7 +25,7 @@ Here you'll find more resources to support your development efforts with Azure D
 *   [Migrate data from TFS to Azure DevOps Services](migration-overview.md)
 *   [Migration options](migrate-to-vsts-from-tfs.md)  
 
-## Version Control
+## Version control
 
 *   [Git lost my changes?](git-log-history-simplification.md)
 *   [Manage branching strategies in TFVC for DevOps](effective-tfvc-branching-strategies-for-devops.md)

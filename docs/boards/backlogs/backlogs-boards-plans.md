@@ -56,7 +56,7 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 ::: moniker-end
 
 
-You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
+You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
@@ -336,11 +336,11 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 ## Related articles  
 
 ::: moniker range=">= tfs-2017"  
-Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](overview.md).
+Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
-Now that you understand how backlogs and boards work, [get started using them to plan and track your work](overview.md).
+Now that you understand how backlogs and boards work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 
 A few things to keep in mind...

@@ -1,5 +1,6 @@
 ---
-title: Migration import from TFS to Azure DevOps Services | Azure DevOps & TFS
+title: Migration import from TFS to Azure DevOps Services 
+titleSuffix: Azure DevOps Services & TFS
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
 ms.topic: article
@@ -14,8 +15,10 @@ monikerRange: '>= tfs-2013'
 
 # Import
 
+**Azure DevOps Services | TFS**
+
 > [!NOTE]
-> Visual Studio Team Services (VSTS) was recently rebranded to Azure DevOps. The rebranding has no impact to the TFS Database Import Service. You can continue to use it to migrate to Azure DevOps.As part of this rebrand, the term 'account' has been updated to be 'organization'.   
+> Visual Studio Team Services (VSTS) was recently rebranded to Azure DevOps Servoces. The rebranding has no impact to the TFS Database Import Service. You can continue to use it to migrate to Azure DevOps.As part of this rebrand, the term 'account' has been updated to be 'organization'.   
 >
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 >
