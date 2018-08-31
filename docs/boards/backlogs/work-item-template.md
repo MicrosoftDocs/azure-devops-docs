@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 # Use templates to add and update work items 
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
+**Azure Boards | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
 
 <!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -138,12 +138,23 @@ The main method for adding a work item using a template is to open the template 
 
 ::: moniker range=">= tfs-2017"
 
-0. Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings or admin context for a team.
+0. Open settings for a team.   
+
+	####New navigation  
+	Choose **Project Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
+
+	Expand **Work** and choose **Team configuration**. 
+	####Previous navigation  
+
+	Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team admin context](../../_img/open-admin-context-standard.png)
 
-0. Choose the **Boards>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
+0. Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
    
 	<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
 
@@ -284,17 +295,26 @@ You can view the list of templates defined for each work item type, and also add
  
 <a id="team-services-manage" /> 
 
-You manage templates from the team admin context. All templates are defined for a team. 
+You manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
 
-### Open the admin context for your team  
- 
-1. From a web browser, open the web portal administrative context for your team. Here we open the admin page for the Web team. 
+0. From a web browser, open settings for a team. 
+
+	####New navigation  
+	Choose **Project Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
+
+	Expand **Work** and choose **Team configuration**. 
+	####Previous navigation  
+
+	Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+
+	Here we open the admin page for the Web team. 
 
 	<img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.  
-
-2. Choose **Templates** under **Work**.  
+0. Choose **Work>Templates**.  
 
 	<img src="_img/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
 

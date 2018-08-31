@@ -110,7 +110,7 @@ featureFlags:
                                     </li>
                                 </ul>
                                 <a href="#index3"></a>
-                                <ul id="index3" class="cardsF panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
+                                <ul id="index3" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/pipelines/index">
                                             <div class="cardSize">

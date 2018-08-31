@@ -15,7 +15,7 @@ ms.date: 08/06/2018
 
 # View and work with the built-in team velocity chart 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. The built-in team velocity chart provides an indication of how much work a team can complete during a sprint. The chart is only available for the product backlog and is based on the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 
