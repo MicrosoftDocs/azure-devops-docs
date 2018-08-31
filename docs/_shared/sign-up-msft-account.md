@@ -21,24 +21,23 @@ ms.topic: include
    ![Choose Continue to sign up for Azure DevOps](../_shared/_img/sign-up-azure-devops.png)
 
 5. Enter a name for your organization. The name you enter cannot contain spaces or special characters
- (such as / \ [ ] : | < > + = ; ? or '*'), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Choose **Continue**.
+ (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Choose **Continue**.
 
    ![Almost done](../_shared/_img/almost-done.png)
 
    You'll see the following dialog as your organization is created.
 
-   ![Taking you to your new Azure DevOps organization](../_shared/_img/taking-you-to-your-new-azure-devops-org.png)
+   ![Taking you to your new Azure DevOps organization](/azure/devops/_shared/_img/taking-you-to-your-new-azure-devops-org.png)
 
-   Congratulations, you're now an Azure DevOps organization owner!
-To sign in to your organization at any time, go to `https://dev.azure.com/{yourorganization}`.
+	Congratulations, you're now an Azure DevOps organization owner!
 
-6. Enter a project name and select the visibility. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less. Visibility can either be public or private. With public visibility, anyone on the internet can view your project. With private visibility only people you give access to will be able to view your project. Choose **Create project**.
+	To sign in to your organization at any time, go to `https://dev.azure.com/{yourorganization}`.
 
-   ![Welcome to the project](_img/welcome-to-the-project.png)
+5. Next, enter a name for your project and select the visibility. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less. Visibility can either be public or private. With public visibility, anyone on the internet can view your project. With private visibility only people you give access to will be able to view your project. Choose **Create project**.
+
+    ![Create a project to get started](/azure/devops/_shared/_img/create-project-to-get-started.png)
 
 <!---
-    ![Create a project to get started](/azure/devops/_img/create-project-to-get-started.png)
-
 For more information about organizations and projects, see these articles: 
 - [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
 - [About projects and scaling your organization](/azure/devops//organizations/about-projects)

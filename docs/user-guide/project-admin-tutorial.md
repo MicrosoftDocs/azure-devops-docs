@@ -10,25 +10,38 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 ms.date: 09/05/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ---
 
 
 # Get started as an administrator
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]  
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
-With most Azure DevOps Services, you can start using any of the services and configure resources as you go. No up front work is required. Most settings define defaults which you can keep as is.  
+With most Azure DevOps Services or Team Foundation Server (TFS) applications, you can start using any service and configure resources as you go. No up front work is required. Most settings define defaults.  
 
-As an organization owner or a project admin, there are a few items you may want to attend to at the start, to ensure a smooth operational experience. The larger your organization, you'll want to consider additional tasks to structure your project to support multiple teams or products. 
+As an organization owner or a project admin, there are a few items you may want to attend to at the start, to ensure a smooth operational experience. The larger your organization, you'll want to consider additional tasks to structure your project to support multiple teams or software development apps. 
 
 ## Add users  
 
-The first task is to ensure that all members of your organization or group are added to your organization and project. For small groups, using Microsoft Accounts to add users to your organization and projects works fine. 
+::: moniker range="vsts"  
+The first task is to ensure that all members of your organization or group are added to your organization and project. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
 
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
 - [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md)
 - [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md) 
+- 
+::: moniker-end 
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+The first task is to ensure that all members of your organization or group are added to your organization and project. 
+
+Larger organizations will want to consider using Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Active Directory prior to installing TFS. To learn more, see: 
+
+* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+- 
+::: moniker-end 
 
 ## Grant or restrict permissions 
 
@@ -44,33 +57,59 @@ If you decide you want to delegate specific tasks to others, than you'll want to
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
 - [Set permissions at the project-level or project collection-level](../organizations/security/set-project-collection-level-permissions.md)
 
-
+::: moniker range=">= tfs-2015" 
 ## Share your project vision, support collaboration 
+::: moniker-end 
 
-Each project has a summary page where you can share information through README files or by pointing to a project Wiki. To help guide users new to your project get oriented and share established processes and procedures for working in the project, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md). 
+::: moniker range="vsts"  
+Each project has a summary page where you can share information through README files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md). 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2015"  
+Each project has a summary page where you can share information through README files. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md). 
+
+::: moniker-end 
+
+::: moniker range="vsts"  
 
 ## Remove unused services from the user interface
 
-To simplify the web portal user interface, you can disable select services. If you use a project to only log bugs, then you can remove all services except for Boards. 
+To simplify the web portal user interface, you can disable select services. If you use a project to only log bugs, then you can remove all services except for **Boards**. 
 
-For example, here we show that Test Plans has been disabled.
+For example, here we show that **Test Plans** has been disabled.
 
 > [!div class="mx-imgBorder"]  
 > ![Disable a service](_img/services/set-service-visibility.png)   
 
+::: moniker-end 
 
+
+::: moniker range=">= tfs-2015" 
 ## Set code, test, and other policies 
 
 There are several policies you can set to support collaboration across your teams, secure your project, and to automatically remove files no longer needed. You'll want to review these articles to set policies. 
 
+::: moniker-end 
+
+::: moniker range="vsts"  
 - [Change application access policies for your organization](../organizations/accounts/change-application-access-policies-vs.md)  
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
+::: moniker-end 
+
+::: moniker range=">= tfs-2015  <= tfs-2018" 
+- [Manage branch policies](../repos/git/branch-policies.md)  
+- [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
+- [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
+- [Set test retention policies](../test/how-long-to-keep-test-results.md) 
+::: moniker-end 
+
 
 ## Define area and iteration paths for work tracking
-If you support several products or feature areas, you can assign work items by feature area by setting up [area paths](../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you'll want to configure [iteration paths](../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, team capacity&mdash;you need to configure several sprints. 
+If you support several products or feature areas, you can assign work items by feature area by setting up [area paths](../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you'll want to configure [iteration paths](../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md).  
 
 
 > [!div class="mx-tdBreakAll"] 
@@ -78,18 +117,26 @@ If you support several products or feature areas, you can assign work items by f
 > |-------------|----------| 
 > |<img src="../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
-For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md).
 
+::: moniker range="vsts"  
 ## Customize work tracking processes  
 While you and your teams can start using all work tracking tools immediately after you create a project, oftentimes one or more users will want to customize the experience to meet one or more business needs. While you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests. 
 
 > [!NOTE]   
-> By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work tracking experience. If you want to lock down who is able to perform these tasks, then you can set the permissions at the organization level to **Deny**. 
+> By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work tracking experience. If you want to lock down who is able to perform these tasks, then you can set the permissions at the organization level to **Deny**.  
 
 To learn more, see: 
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)  
 - [Customize a project](../organizations/settings/work/customize-process.md)  
 - [Add and manage processes](../organizations/settings/work/manage-process.md)  
+::: moniker-end 
+
+::: moniker range=">= tfs-2013  <= tfs-2018" 
+## Customize work tracking processes  
+While you and your teams can start using all work tracking tools immediately after you create a project, oftentimes one or more users will want to customize the experience to meet one or more business needs. You'll want to establish a methodology for who will manage the updates and evaluate requests. 
+
+To learn more, see [On-premises XML process model ](../reference/on-premises-xml-process-model.md). 
+::: moniker-end 
 
 ## Review and update notifications
 
@@ -98,12 +145,20 @@ A number of notifications are predefined for each project you add. Notifications
 - [Out of the box or default subscriptions](../notifications/oob-built-in-notifications.md)
 - [Team notifications](../notifications/howto-manage-team-notifications.md), managed by a team administrator
 - Project notifications, managed by a member of the Project Administrators group
-- [Organization/collection-level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administartors group
+- [Organization/collection-level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group
 
 If users believe they are getting too many notifications, they can [opt out of a subscription](../notifications/howto-manage-personal-notifications.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](_img/services/personal-notifications.png)   
+
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+## Configure an SMTP server 
+
+In order for team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts).  
+
+::: moniker-end 
 
 ## Add teams to scale your organization 
 
@@ -116,19 +171,33 @@ To learn more, see:
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)  
 - [Add team administrator](../organizations/settings/add-team-administrator.md)  
 
+::: moniker range=">= tfs-2015"  
 ## Install and manage extensions 
 
 An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 
 You'll want to let your users know about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization owner, be a member of the Project Collection Administrators group, or be added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
+::: moniker-end 
+
+::: moniker range="vsts"  
 ## Set up billing
 All organizations can add up to five users with Basic access and unlimited users with Stakeholder access. If you need to add more users, pay for additional services or extensions, then you'll want to [set up billing to manage that](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
 
+::: moniker-end 
 
 ## Related articles
-
+::: moniker range="vsts"  
 - [Manage projects](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
 - [Manage organizations](../organizations/accounts/index.md)
-- [All settings](../organizations/settings/about-settings.md).  
+- [All settings](../organizations/settings/about-settings.md)
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+- [Manage projects](../organizations/projects/index.md)
+- [Security & identity](../organizations/security/index.md)
+- [Manage organizations](../organizations/accounts/index.md)
+- [All settings](../organizations/settings/about-settings.md)
+- [TFS administration](/tfs/server/index)
+::: moniker-end 

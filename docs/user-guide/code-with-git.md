@@ -42,7 +42,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   
    ![Open project and select Code to clone URL](_img/code-with-git-clone-repo.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, open the project for your Azure DevOps Services organization and select the **Code** hub. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
@@ -87,25 +87,29 @@ In this step, we'll make a change to the files on your computer, commit the chan
     >```
     >git push
     >```
-# New navigation(#tab/new-nav)
 
-5. Switch back to the web portal and select **History** from the Code page to view your new commit. 
+## View History 
+
+# [New navigation](#tab/new-nav)
+
+0. Switch back to the web portal and select **History** from the Code page to view your new commit. 
 
    ![Select Code, then History to view commits](_img/code-history-vert.png)
 
-6. Switch to the **Files** tab and select the README file to view your changes.
+0. Switch to the **Files** tab and select the README file to view your changes.
 
    ![Files tab, view changes in README file](_img/first-edit-readme-file.png)
 
-# Previous navigation(#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
-5. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
+0. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
 
    >![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
-6. Switch to the **Files** tab and select the README file to view your changes.
+0. Switch to the **Files** tab and select the README file to view your changes.
 
    >![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
+
 ---
 
 ## Try this next  

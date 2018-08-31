@@ -533,7 +533,7 @@ For team admins, supports access to the quick dialog to [add or remove team memb
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.    
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 

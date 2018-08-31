@@ -153,7 +153,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_kaban.svg
-        title: Boards, Kanban & Agile tools
+        title: Boards, backlogs, & Agile tools
       - href: tools.md
         html: <p></p>
         image:
@@ -167,8 +167,8 @@ sections:
       - href: about-vsts-tfs.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        title: What's the difference between Azure DevOps Services and TFS?
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "Feature differences: Azure DevOps Services and TFS"
 
 - title: How-to guides
   items:
@@ -180,7 +180,7 @@ sections:
       - href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_accessibility.svg
+          src: https://docs.microsoft.com/media/common/i_http.svg
         title: Sign in to a web or a client
 
 - title: Reference
@@ -190,22 +190,16 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../security/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: Permissions
-      - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: About access levels
       - href: ../security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
+          src: https://docs.microsoft.com/media/common/i_overview.svg
         title: Default permissions & access
-
+      - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_protect.svg
+        title: About access levels
 - title: Resources
   items:
   - type: list
@@ -226,8 +220,8 @@ sections:
       - href: ../organizations/projects/index.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_agile.svg
-        title: Project management
+          src: https://docs.microsoft.com/media/common/i_management.svg
+        title: Manage projects
       - href: ../organizations/billing/index.md
         html: <p></p>
         image:

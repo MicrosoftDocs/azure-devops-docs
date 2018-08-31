@@ -57,7 +57,7 @@
     href: define-organizations-and-projects.md
   - name: Source control 
     href: source-control.md
-  - name: Kanban & Agile tools
+  - name: Backlogs, boards, & Agile tools
     href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Clients & tools
     href: tools.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
@@ -85,14 +85,14 @@
   items:
   - name: "Permissions & access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: About access levels
+    href: ../organizations/security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Keyboard shortcuts
     href: ../project/navigation/keyboard-shortcuts.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Markdown guidance
-    href: ../project/wiki/markdown-guidance.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
   - name: Navigate in Team Explorer
     href: work-team-explorer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: FAQs
-    href: faqs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: faqs.md
 - name: Resources
   items:
   - name: Web portal navigation
