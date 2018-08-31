@@ -31,8 +31,8 @@ It helps improve the efficiency of your pipeline by identifying repetitive, high
 ## View test analytics for builds
 
 To help teams find and fix tests that fail frequently or intermittently, use the **top failing tests** report.
-The build summary includes the **Analytics** page that contains this report.
-The top-level view provides a summary of the test pass rate and results for a build, for the specified period.
+The build summary includes the **Analytics** page that hosts this report.
+The top-level view provides a summary of the test pass rate and results for the selected build pipeline, for the specified period.
 The default range is 14 days. 
 
 ![View trends in build](_img/test-analytics/view-in-build.png)
@@ -65,11 +65,12 @@ The detailed view contains two sections:
 
     ![View failing tests](_img/test-analytics/failing-tests.png)
 
-  - Chart view: A graphical view of the total test failures for each day in the specified period, along with the average pass rate during that period. 
+  - Chart view: A graphical view of the total test failures for each day in the specified period,
+    along with the trend line of average pass rate during that period. You can also change the graph to show average duration and only the result count. 
 
     ![View chart](_img/test-analytics/chart-view.png)
 
-* **Results**: Lists all the failed test results in an order based on the total number of failures, starting with the highest value.
+* **Results**: Lists all the failed test cases in an order based on the total number of failures, starting with the highest value.
   It helps you focus on the problematic tests, and provides the ability to drill down for more details.
 
   ![View chart](_img/test-analytics/results-view.png)
@@ -79,15 +80,18 @@ The detailed view contains two sections:
 The report view can be organized in several different ways using the **group by** option.
 Grouping test results can provide deep insights into various aspects of the top failing tests.
 In the example below, the test results are grouped based on the [test files](test-glossary.md) they belong to.
-It shows the test files and their respective contribution towards the total of test failures, during the specified period.
+It shows the test files and their respective contribution towards the total of test failures, during the
+specified period to help you easily identify and prioritize your next steps. 
 Additionally, for each test file, it shows the tests that contribute to these failures.
 
 ![Group by test files](_img/test-analytics/group-test-failure.png)
 
 ### Drill down to individual tests
 
-After you have identified one or more tests in the **Results** section, select the individual test result you want to analyze.
-This provides a drill-down view of the selected test with a stacked chart of passed or failed instances of the test, for each day in the specified period.
+After you have identified one or more tests in the **Details** section, select the individual test case you want to analyze.
+This provides a drill-down view of the selected test with a stacked chart of various outcomes such as passed or
+failed instances of the test, for each day in the specified period. 
+This view helps you infer hidden patterns and take actions accordingly. 
 
 ![Drill down for test](_img/test-analytics/drill-down-test.png)
 
@@ -115,7 +119,8 @@ However, observing test execution trends for a period can help infer hidden patt
 
 ## Report information source
 
-The source of information for test analytics is the set of [published test results](../tasks/test/publish-test-results.md) for the build or release pipeline.
+The source of information for test analytics is the set of [published test results](../tasks/test/publish-test-results.md) for
+the build or release pipeline.
 These result are accrued over a period of time, and form the basis of the rich insights that test analytics provides. 
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
