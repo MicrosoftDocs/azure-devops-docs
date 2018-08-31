@@ -35,7 +35,7 @@ You can build Android projects using [Microsoft-hosted agents](../agents/hosted.
 To get started using a sample Android project, fork this repository in GitHub, or import it into Azure Repos or TFS:
 
 ```
-https://github.com/adventworks/android-sample
+https://github.com/MicrosoftDocs/pipelines-android
 ```
 
 ### Your code

@@ -22,7 +22,7 @@ This guidance explains how to build Xamarin apps for Android and iOS.
 For a working example of how to build a Xamarin app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/xamarin-sample
+https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
 The sample code includes a `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
