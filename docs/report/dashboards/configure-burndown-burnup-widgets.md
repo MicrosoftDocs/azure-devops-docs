@@ -1,5 +1,5 @@
 ---
-title: Configure Bundown/Burnup widgets
+title: Configure Burndown & Burnup widgets
 titleSuffix: Azure DevOps Services   
 description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps
 ms.technology: devops-analytics
