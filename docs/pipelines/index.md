@@ -1,7 +1,7 @@
 ---
-title: Azure Pipelines Documentation
-titleSuffix: Azure DevOps Services & TFS
-description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
+title: CI/CD index to content for Azure Pipelines and Team Foundation Server
+titleSuffix: Azure Pipelines and TFS
+description: Learn how to configure CI/CD for the app and platform of your choice. Find tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="vsts"
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
-Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < vsts"
@@ -32,7 +32,7 @@ Tutorials, references, and other documentation show you how to configure and man
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
-Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Get started</h3>
-                                                            <p>Are you a newbie looking to know the basics? Here we'll give you the lay of the land.</p>
+                                                            <p>Are you looking to know the basics? Find them here.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -98,7 +98,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Use the designer</h3>
-                                                            <p>Learn the basics to get started using the designer to drag, drop, and customize tasks.</p>
+                                                            <p>Learn the basics of using the designer to add and customize tasks.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -472,7 +472,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Azure Web App</h3>
+                                                            <h3><br/>Azure Web Apps</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -544,7 +544,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>SCVMM</h3>
+                                                            <h3><br/>Virtual Machine Manager</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -715,7 +715,7 @@ Tutorials, references, and other documentation show you how to configure and man
                     <div class="cardText">
                         <h3>Step-by-step tutorials</h3>
                         <p>
-                        <a href="build/ci-public.md">Build open source projects</a><br/>
+                        <a href="build/ci-public.md">Build open-source projects</a><br/>
                         <a href="build/ci-build-git.md">Build multiple branches</a><br/>
                         <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br/>
                         </p>
