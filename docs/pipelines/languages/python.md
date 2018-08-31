@@ -18,7 +18,7 @@ This guidance explains how to build Python apps.
 
 ## Example
 
-For a working example of how to build a Python app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+For a working example of how to build a Python app with Django, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-python-django

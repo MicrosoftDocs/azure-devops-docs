@@ -28,7 +28,7 @@ This guidance explains how to build Java projects. See [Android](android.md) for
 To get started using a sample Java project, fork this repository in GitHub, or import it into Azure Repos or TFS:
 
 ```
-https://github.com/adventworks/java-sample
+https://github.com/MicrosoftDocs/pipelines-java
 ```
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the project.

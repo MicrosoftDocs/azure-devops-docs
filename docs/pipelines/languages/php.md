@@ -21,7 +21,7 @@ This guidance explains how to build PHP projects.
 For a working example of how to build a PHP project, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/MicrosoftDocs/pipelines-python-django
+https://github.com/MicrosoftDocs/pipelines-php
 ```
 
 The sample code includes a `azure-pipelines.yml` file at the root of the repository.

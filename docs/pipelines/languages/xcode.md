@@ -22,7 +22,7 @@ This guidance explains how to build apps with Xcode.
 For a working example of how to build an app with Xcode, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/xcode-sample
+https://github.com/MicrosoftDocs/pipelines-xcode
 ```
 
 The sample code includes a `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
