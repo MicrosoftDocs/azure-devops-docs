@@ -389,6 +389,8 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. 
 
+In order view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can click any cell to see a more [detailed](../../pipelines/test/review-continuous-test-results-after-build.md) view for the selected environment.
+
 ::: moniker-end
 ::: moniker range="tfs-2017"
 Requires TFS 2017.1 or later version. 
@@ -418,8 +420,7 @@ Configurable widget that you can use to view and track the status of a release p
 
 ![Requirements quality widget](_img/widget-requirements-quality.png)  
 
-Configurable widget that you can use to track quality continuously from a build or release pipeline. 
-To learn more, see [Associate automated test results with requirements](../../test/associate-automated-results-with-requirements.md). 
+Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc. To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
 
 ---- 
 ::: moniker-end
@@ -463,11 +464,11 @@ Requires TFS 2017.2 or later version.
 > **Feature availability:** You can access this widget from Azure DevOps or TFS 2017.   
 -->
 
-Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build pipeline. 
+Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc. 
 
-From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. 
+From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart. 
 
-To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md). 
+The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md) 
 
 ---- 
 ::: moniker-end
