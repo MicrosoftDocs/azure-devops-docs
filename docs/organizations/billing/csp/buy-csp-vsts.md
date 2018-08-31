@@ -25,13 +25,16 @@ To set up billing for a customer who's already created an Azure DevOps Services 
 (in other words, not an identity in their Azure Active Directory), the customer needs to do the following steps first:
 
 1. Your customer must [change their Azure DevOps Services organization to be backed by their Azure Active Directory](../../accounts/access-with-azure-ad.md).
-1. Your customer must [unlink the existing Azure subscription that's used for billing on their Azure DevOps Services organization](../change-azure-subscription.md), if they had previously set up billing.
+1. Your customer must [remove the link to the existing Azure subscription that's used for billing on their Azure DevOps Services organization](../change-azure-subscription.md#remove-billing-subscription-and-purchase-again), if they had previously set up billing.
 
 Make sure your identity hasn't been added into the customer's Azure Active Directory. If it has, you need to have the identity removed before you can go through the purchasing steps for your customer.
 
 ## Buy resources for customers
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Azure DevOps Services/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+
+>[!Note]
+>Azure DevOps Services was previously called Visual Studio Team Services or VSTS.
 
 1. Sign in to the [Partner Center](https://partnercenter.microsoft.com).
 1. Choose the customer for whom you're purchasing.
