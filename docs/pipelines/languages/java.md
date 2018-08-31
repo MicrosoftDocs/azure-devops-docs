@@ -44,6 +44,7 @@ You can use Azure Pipelines to build your Java projects on [Microsoft-hosted age
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 pool:
   vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
 ```

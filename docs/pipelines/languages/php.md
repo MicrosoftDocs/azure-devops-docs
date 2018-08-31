@@ -8,7 +8,7 @@ ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/23/2018
+ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
@@ -37,14 +37,25 @@ For the exact versions of PHP that are preinstalled, refer to [Microsoft-hosted 
 
 ### Use a specific PHP version
 
+On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A symlink at `/usr/bin/php` points to the currently set PHP version, so that when you run `php`, the set version executes. To use a PHP version other than the default, the symlink can be pointed to that version using the `update-alternatives` tool. Set the PHP version that you prefer by adding the following snippet to your `azure-pipelines.yml` file and changing the value of the **phpVersion** variable accordingly.
+
 ```yaml
-# /azure/devops/pipelines/languages/php
+# https://docs.microsoft.com/azure/devops/pipelines/languages/php
 pool:
   vmImage: 'Ubuntu 16.04'
 
+variables:
+  phpVersion: 7.2
+
 steps:
-- script: ***************************************************************************
-  displayName: 'Use PHP version 7.2'
+- script: |
+    sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+    sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+    sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+    sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+    sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+    php -version
+  displayName: 'Use PHP version $(phpVersion)'
 ```
 
 ### Install dependencies
@@ -68,6 +79,7 @@ To run tests with phpunit, add the following snippet to your `azure-pipelines.ym
 ### Retain the PHP app with the build record
 
 To save the artifacts of this build with the build record, add the following snippet to your `azure-pipelines.yml` file.
+Optionally, customize the value of **rootFolderOrFile** to alter what is included in the archive.
 
 ```yaml
 - task: ArchiveFiles@2

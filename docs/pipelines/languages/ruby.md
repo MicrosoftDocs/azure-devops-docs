@@ -8,7 +8,7 @@ ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/23/2018
+ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
@@ -40,7 +40,7 @@ For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted
 Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
-# /azure/devops/pipelines/languages/ruby
+# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
 pool:
   vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 
