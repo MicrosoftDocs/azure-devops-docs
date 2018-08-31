@@ -687,7 +687,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 </a>
                             </li>
                             <li>
-                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101">
+                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
