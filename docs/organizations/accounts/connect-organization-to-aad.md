@@ -139,9 +139,9 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
     ![Confirm Azure AD connection](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Select **All services** > **Team Services administration**.
+2. Select **All services** > **Azure DevOps Services organization**.
 
-   ![All services, Team Services administration](_img/_shared/azure-portal-team-services-administration.png)
+   ![All services, Azure DevOps Services organization](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your Azure DevOps Services organization.  
     If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the Azure DevOps Services organization.

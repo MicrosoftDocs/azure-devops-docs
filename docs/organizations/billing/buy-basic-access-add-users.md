@@ -16,13 +16,13 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to pay for more users in your Azure DevOps Services organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/team-services/pricing/). You also get five additional users free in your Azure DevOps Services organization.
+In this quickstart, you learn how to pay for more users in your Azure DevOps Services organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five additional users free in your Azure DevOps Services organization.
 
 [Pay for additional Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for Azure DevOps Services users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
 
 For a list of included features, see the [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
@@ -41,10 +41,10 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 
 ## Increase number of paid Azure DevOps Services users
 
-1. Sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and choose **Get**.
+1. Sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and choose **Get**.
 
    > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
+![Go to Visual Studio Marketplace, Other, Azure DevOps Services Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
 
 1. Select your Azure DevOps Services organization (if you have multiple organizations) and then choose **Buy**.
 
@@ -70,21 +70,15 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 
 1. Choose **Manage users** to go to your Azure DevOps Services organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+The number of users to whom you can assign Basic appears on the right side of your screen.
+
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
-The number of users to whom you can assign Basic appears on the right side of your page.
-
-![users-summary](_img/_shared/users-summary.png)
-
-If you don't see the summary to the right of your page, choose **Summary**.
-
-![Manage users summary button](_img/_shared/manage-users-summary.png)
+   ![Azure DevOps number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
 # [Previous navigation](#tab/prev-nav)
-
-The number of users to whom you can assign Basic appears on the right side of your page.
 
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)

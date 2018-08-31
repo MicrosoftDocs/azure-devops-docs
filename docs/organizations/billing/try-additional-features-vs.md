@@ -24,8 +24,7 @@ There are two paid features in Azure DevOps Services that are offered by Microso
 
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
-During the trial, any user in your Azure DevOps Services organization whose access level is Basic (including Visual Studio subscribers) can use these features.
-You assign these features explicitly to users within the User hub, after the trial ends. You choose to pay for a certain number of users on an ongoing basis.
+During the trial, any user in your Azure DevOps Services organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
 This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including:
 
@@ -35,7 +34,7 @@ This same process applies to paid extensions that are offered by other publisher
 - [Code Quality NDepend](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
 - [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
@@ -44,7 +43,7 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 ## Start a trial for your organization
 
-1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
+1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
     ![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
@@ -96,7 +95,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 ## Clean up resources
 
-To cancel a paid extension, you must have access to the Azure subscription that was used to buy it.
+To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md), you must have access to the Azure subscription that was used to buy it.
 
 ## Next steps
 

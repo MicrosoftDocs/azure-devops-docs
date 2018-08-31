@@ -32,7 +32,7 @@ A:  Yes, those apps will continue to work.
 
 #### Q:  What apps integrate with Azure DevOps Services?
 
-A:  Find the [apps that integrate with Azure DevOps Services](https://marketplace.visualstudio.com/VSTS).
+A:  Find the [apps that integrate with Azure DevOps Services](https://marketplace.visualstudio.com/azuredevops).
 
 <a name="find-owner"></a>
 

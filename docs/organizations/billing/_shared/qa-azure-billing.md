@@ -15,7 +15,7 @@ A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases 
 A:	Yes. You can use these prepaid funds to pay for: 
 
 *	[Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
-*	[Microsoft-published extensions for VSTS and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/vsts).
+*	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops).
 *	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs).
 *   [Xamarin University](https://www.xamarin.com/university).
 

@@ -29,18 +29,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-Your Azure DevOps Services organization includes a **free tier** of 20,000 virtual user minutes per month for cloud-based load testing.
-If you need more minutes, take the following steps:
-
 1. [Set up billing for your Azure DevOps Services organization](set-up-billing-for-your-organization-vs.md).
-2. [Enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your Azure DevOps Services organization.
-
-The first time you set up billing for your Azure DevOps Services organization, whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need the following permissions and role:
-
-* [Azure DevOps Services project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
-
-To make subsequent edits to paid quantities in your Azure DevOps Services organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Enable paid load testing
 
@@ -51,7 +40,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
     > [!NOTE]
     > If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Select **All services**, choose **Team Services administration**, and select your Azure DevOps Services organization.
+2. Select **All services**, choose **Azure DevOps Services organizations**, and select your Azure DevOps Services organization.
 
    ![Azure DevOps Services organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
