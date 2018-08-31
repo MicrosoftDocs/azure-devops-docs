@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.manager: douge
 ms.author: douge
 ms.date: 07/06/2018
-monikerRange: '>= tfs-2015'
+monikerRange: 'vsts'
 ---
 
 # Key Concepts for New Azure Pipelines Users
@@ -20,9 +20,13 @@ When your build or deployment runs, the system begins one or more jobs. An **age
 
 The [Build and Release Agents article](../agents/agents.md) goes more in-depth about the different types of agents and how to use them.
 
+## Artifact
+
+A collection of files or packages published by a build and made available to subsequent tasks such as distribution or deployment.
+
 ## Build
 
-A **build** is an essential part of the development process - parts of an application are collected and tested in **builds** to ensure a reliable final product. 
+A build represents one execution of a pipeline and it collects the logs associated with running the steps as well as the results of running tests.
 
 ## Continuous delivery
 
@@ -34,7 +38,11 @@ A **build** is an essential part of the development process - parts of an applic
 
 ## Deployment target
 
-Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more stages. This automation process is again defined as a collection of tasks. Azure Pipelines and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+A virtual machine, container, web app, or any service that is used to host the application being developed. A pipeline may deploy the app to one or more deployment targets after build is completed and tests are run.
+
+## Jobs
+
+A build contains one or more **jobs**, each of which runs on an **agent**. A job represents an execution boundary of a set of steps, all of which run together on the same agent. For example, you may build two configurations - x86 and x64. In this case, you have one build and two jobs.
 
 ## Pipeline
 
@@ -42,11 +50,16 @@ A **pipeline** defines the continuous integration and deployment process for you
 
 ## Release
 
-**Release** is the term used to describe the step of the development process after **build**. In the **release** step, code is tested, built, and deployed to any available deployment target. 
+When you use the visual designer, you create a release pipeline in addition to a build pipeline. A **release** is the term used to describe one execution of a release pipeline. It is made up of deployments to multiple stages.
 
 ## Task
 
 A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks. Each task runs a specific job in the **pipeline**.
+
+## Triggers
+
+A **trigger** is something that is set up to tell the pipeline when it should be run. You can configure a pipeline to be run upon a push to a repository, at a particular point of time, or upon the completion of another build. All of these are known as **triggers**.
+
 
 
 

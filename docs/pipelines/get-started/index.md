@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
-monikerRange: '>= tfs-2013'
+monikerRange: 'vsts'
 ms.date: 09/05/2018
 ---
 
@@ -17,13 +17,15 @@ ms.date: 09/05/2018
 
 Use this guide to sign up and start using Azure Pipelines. 
 
-## Get started with Azure Pipelines
 
-Learn what Azure Pipelines is and what software and projects you can use with it in the [Azure Pipelines get started guide](pipelines-get-started.md).
+## What is Azure Pipelines?
 
-## Why use Azure Pipelines?
+Check out the [What is Azure Pipelines](what-is-azure-pipelines.md) to find out what Azure Pipelines is, and how you could benefit from using it to streamline your code building, testing, and deploying. 
 
-Check out the [Why use Azure Pipelines guide](why-use-pipelines.md) to find out how you could benefit from using Azure Pipelines to streamline your code building, testing, and deploying. 
+## How to use Azure Pipelines
+
+Quickly learn the different ways you can [use Azure Pipelines](pipelines-get-started.md) to automate your builds and releases.
+
 
 ## Key Concepts for Azure Pipelines
 
