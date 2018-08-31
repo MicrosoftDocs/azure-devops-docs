@@ -62,6 +62,8 @@
       href: develop/public-project.md
     - name: New navigation (preview)
       href: develop/web-navigation.md
+    - name: Work with URLs
+      href: develop/work-with-urls.md      
     - name: Use a platform UI control
       items:
       - name: Configure
