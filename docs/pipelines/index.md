@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2013'
 ::: moniker-end
 
 ::: moniker range="vsts"
-Azure Pipelines help you implement a build, test, and deployment pipeline for any app.
+Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
@@ -36,8 +36,6 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
 <div id="main" class="v2">
     <div class="container">
         <ul class="pivots">
@@ -49,7 +47,7 @@ Tutorials, references, and other documentation show you how to configure and man
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#index1"></a>
-                                <ul id="index1" class="cardsF cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex;">
                                     <li>
                                         <a href="get-started/index.md">
                                             <div class="cardSize">
@@ -95,7 +93,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_kanban.svg" alt="" />
+                                                                <img src="../_img/index/i_kanban.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -114,7 +112,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_scrum.svg" alt="" />
+                                                                <img src="../_img/index/i_scrum.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -133,170 +131,583 @@ Tutorials, references, and other documentation show you how to configure and man
                 </ul>
             </li>
         </ul>
-    </div>
-</div>
+                                <a href="#index1-1" data-linktype="self-bookmark"></a>
+                                <h2 style="float: left; display: flex;">Videos</h2>
+                                <ul id="index2" class="cardsH panelContent singlePanelContent cols cols2" style="float: left; display: flex!important;">
+                                    <li>
+                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="_img/index/video-build-deploy-placeholder.png" alt="" data-linktype="external">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build and deploy your code with Azure Pipelines</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="_img/index/video-continuous-builds-placeholder.png" alt="" data-linktype="external">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Builds with your GitHub projects using Azure Pipelines</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                </ul>
+                                <a href="#index2"></a>
+                                <h2 style="float: left; display: flex;">Build your app</h2>
+                                <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                    <li>
+                                        <a href="apps/aspnet/build-aspnet-4.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>.NET</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/dotnet-core.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_aspnetcore.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="_img/index/logo_aspnetcore.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>.NET Core</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/android.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_android.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_android.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Android</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/c-cpp/gcc.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>C/C++ with GCC</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/windows/cpp.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_visual-studio.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>C/C++ with VC++</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/docker.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_dockercontainer.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_dockercontainer.svg" data-linktype="external" data-hoverimage="_img/index/logo_dockercontainer.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Docker</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/go.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_go.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_go.svg" data-linktype="external" data-hoverimage="_img/index/logo_go.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Go</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/dotnet-core.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_net.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external" data-hoverimage="_img/index/logo_net.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>.NET Desktop</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/javascript.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_nodejs.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_nodejs.svg" data-linktype="external" data-hoverimage="_img/index/logo_nodejs.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>JavaScript VM</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/php.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_php.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>PHP</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/python.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_python.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Python</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/ruby.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_ruby.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Ruby</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/windows/universal.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_uwp.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="_img/index/logo_uwp.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>UWP</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/xamarin.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xamarin.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Xamarin</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="languages/xcode.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Xcode</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#index3"></a>
+                                <h2 style="float: left; display: flex;">Deploy your app</h2>
+                                <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                    <li>
+                                        <a href="apps/cd/azure/deploy-container-kubernetes.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/containerservice.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/containerservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/containerservice.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Azure Kubernetes Service</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/azure-stack.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/azure-stack.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Azure Stack</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/azure-sqldb.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/sqldatabase.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Azure SQL database</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/webapp.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/app-service-web.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Azure Web App</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/cd/deploy-linuxvm-deploygroups.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Linux VM</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/npm.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_npm.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>npm</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/nuget.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_nuget.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>NuGet</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/scvmm.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>SCVMM</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="targets/vmware.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>VMware</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/cd/deploy-docker-webapp.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/appservice.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/appservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/appservice.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Web App for Containers</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/cd/deploy-webdeploy-iis-deploygroups.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Windows VM</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#index4"></a>
+                                <h2 style="float: left; display: flex;">Test your app</h2>
+                                <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                    <li>
+                                        <a href="test/getting-started-with-continuous-testing.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_visual-studio.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Visual Studio Test</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="test/continuous-test-selenium.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("tasks/test/_img/visual-studio-test-icon.png"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="tasks/test/_img/visual-studio-test-icon.png" data-linktype="external" data-hoverimage="tasks/test/_img/visual-studio-test-icon.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Selenium Test</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="test/review-continuous-test-results-after-build.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("tasks/test/_img/run-functional-tests-icon.png"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="tasks/test/_img/run-functional-tests-icon.png" data-linktype="external" data-hoverimage="tasks/test/_img/run-functional-tests-icon.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Review results</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
 
-## Build your app
+<h2> More information</h2>
 
-<div class="ico48Case halfStack">
-<div class="ico48Link">
-<a href="apps/aspnet/build-aspnet-4.md">
-<img width="48" height="48" alt="" src="_img/index/logo_net.svg">
-<span>.NET</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/dotnet-core.md">
-<img width="48" height="48" alt="" src="_img/index/logo_aspnetcore.svg">
-<span>.NET Core</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/android.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg">
-<span>Android</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/c-cpp/gcc.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
-<span>C/C++ with GCC</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/windows/cpp.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
-<span>C/C++ with VC++</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/docker.md">
-<!--<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg">-->
-<img width="48" height="48" alt="" src="_img/index/logo_dockercontainer.svg">
-<span>Docker image</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/go.md">
-<img width="48" height="48" alt="" src="_img/index/logo_go.svg">
-<span>Go</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/java.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg">
-<span>Java</span>
-</a></div>
-<div class="ico48Link">
-<!--<a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg">-->
-<img width="48" height="48" alt="" src="_img/index/logo_net.svg">
-<span>.NET Desktop</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/javascript.md">
-<!--<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg">-->
-<img width="48" height="48" alt="" src="_img/index/logo_nodejs.svg">
-<span>JavaScript</span>
-</a></div>
-<div class="ico48Link"><a href="languages/php.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg">
-<span>PHP</span>
-</a></div>
-<div class="ico48Link"><a href="languages/python.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg">
-<span>Python</span>
-</a></div>
-<div class="ico48Link"><a href="languages/ruby.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg">
-<span>Ruby</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/windows/universal.md">
-<img width="48" height="48" alt="" src="_img/index/logo_uwp.svg">
-<span>UWP</span>
-</a></div>
-<div class="ico48Link">
-<a href="languages/xamarin.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
-<span>Xamarin</span>
-</a></div>
-<div class="ico48Link"><a href="languages/xcode.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg">
-<span>Xcode</span>
-</a></div>
-</div>
-
-## Deploy your app
-
-<div class="ico48Case halfStack">
-<div class="ico48Link">
-<a href="apps/cd/azure/deploy-container-kubernetes.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/containerservice.svg">
-<span>Azure Kubernetes Service</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/azure-stack.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
-<span>Azure Stack</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/azure-sqldb.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
-<span>Azure SQL database</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/webapp.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
-<span>Azure Web App</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/cd/deploy-linuxvm-deploygroups.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-<span>Linux VM</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/npm.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg">
-<span>npm</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/nuget.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg">
-<span>NuGet</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/scvmm.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-<span>SCVMM</span>
-</a></div>
-<div class="ico48Link">
-<a href="targets/vmware.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-<span>VMware</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/cd/deploy-docker-webapp.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/appservice.svg">
-<span>Web App for Containers</span>
-</a></div>
-<div class="ico48Link">
-<a href="apps/cd/deploy-webdeploy-iis-deploygroups.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-<span>Windows VM</span>
-</a></div>
-</div>
-
-## Test your app
-
-<div class="ico48Case halfStack">
-<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
-<span>Visual Studio Test</span>
-</a></div>
-<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png">
-<span>Selenium Test</span>
-</a></div>
-<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png">
-<span>Review results</span>
-</a></div>
-</div>
-
-## More information
-
-<div id="main" class="v2">
-<div class="container">
 <ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
     <li>
         <div class="cardSize">
@@ -349,19 +760,3 @@ Tutorials, references, and other documentation show you how to configure and man
 </ul>
 </div>
 </div>
-
-## Videos
-
-> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101]
-
-<br/>
-
-> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102]
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
-
-::: moniker-end
