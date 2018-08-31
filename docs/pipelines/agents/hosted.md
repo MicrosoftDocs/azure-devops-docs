@@ -18,38 +18,44 @@ monikerRange: 'vsts'
 
 ## Use a Microsoft-hosted agent
 
-To use a Microsoft-hosted agent pool, first decide which pool to use:
+The Microsoft-hosted agent pool provides 5 virtual machine images to choose from:
 
-| If your development team uses... | ...then choose this pool |
-|----------------------------------|---------------------------|
-| Docker containers | Hosted Linux or Hosted VS2017 |
-| Development tools on Ubuntu | Hosted Linux |
-| Development tools on macOS | Hosted macOS (see notes below) |
-| .NET Core | Hosted Linux (optimal) or Hosted VS2017 |
-| Visual Studio 2017 | Hosted VS2017 |
-| Visual Studio 2013 or Visual Studio 2015 | Hosted |
+* Ubuntu 16.04 (ubuntu-16.04)
+* Visual Studio 2017 on Windows Server 2016 (vs2017-win2016)
+* Xcode 9 on macOS 10.13 (xcode9-macos10.13)
+* Windows Server 1803 (win1803)
+* Visual Studio 2015 on Windows Server 2012R2 (vs2015-win2012r2)
+
+| If your development team uses... | ...then choose this image... | ...or pool in web designer |
+|----------------------------------|------------------------------|----------------------------|
+| Docker containers | ubuntu-16.04 or vs2017-win2016 or win1803 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
+| Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
+| Development tools on macOS | xcode9-macos10.13 (see notes below) | Hosted macOS |
+| .NET Core | ubuntu-1604 or win1803 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
+| Visual Studio 2017 | vs2017-win2017 | Hosted VS2017 |
+| Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 
 # [YAML](#tab/yaml)
 
-Then, when defining the `queue` in your YAML, use the queue you decided on.
+In Yaml you will be defaulted to the Microsoft-hosted agent pool, you simply need to specify which virtual machine image you want to use.
 
 ```yaml
 jobs:
 - job: Windows
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS 10.13'
+    vmImage: 'xcode9-macos10.13'
   steps:
   - script: echo hello from macOS
 ```
 
 # [Web](#tab/web)
 
-Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
+Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent pool**, select the pool you decided on.
 
 ---
 
@@ -65,19 +71,21 @@ You can manually select of tool versions on macOS images. [See below](#mac-pick-
 
 Software on Microsoft-hosted agents is updated once each month.
 
-* [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/README.md#standard-images).
-* [Inventory of software currently installed on the Hosted macOS agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
-* [Inventory of software currently installed on the Microsoft-hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
+* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
+* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
+* [Xcode 9 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
+* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+* [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 
 ## Capabilities and limitations
 
 Microsoft-hosted agents:
 
 * Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
-* Provide at least 10 GB of storage.
+* Provide at least 10 GB of storage for your source and build outputs.
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2 and Standard_DS3_v2](/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
+* Run as an administrator on Windows and a passwordless sudo user on Linux
 
 Microsoft-hosted agents do not offer:
 

@@ -110,17 +110,17 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    demands: agent.os -equals Windows_NT
+    vmImage: vs2017-win2016
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    demands: agent.os -equals Darwin
+    vmImage: xcode9-macos10.13
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    demands: agent.os -equals Linux
+    vmImage: ubuntu-16.04
   steps:
   - script: echo hello from Linux
 ```

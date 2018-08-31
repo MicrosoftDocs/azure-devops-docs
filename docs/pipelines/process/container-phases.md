@@ -42,7 +42,7 @@ resources:
 
 pool:
   container: my_container
-  name: 'Hosted Ubuntu 1604'
+  vmImage: 'Ubuntu 16.04'
 steps:
 - script: printenv
 ```
@@ -114,18 +114,6 @@ resources:
   - container: my_container
     image: ubuntu:16.04
     options: --hostname container-test --ip 192.168.0.1
-```
-
-### Local image
-
-If you need to build the image locally rather than pulling a cached copy from
-a registry, set this to `true`. It defaults to `false`.
-
-```yaml
-resources:
-  - container: my_container
-    image: ubuntu:16.04
-    localImage: true
 ```
 
 # [Designer](#tab/designer)

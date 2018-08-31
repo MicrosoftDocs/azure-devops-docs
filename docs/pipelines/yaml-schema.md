@@ -131,9 +131,11 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
+  strategy: [ parallel | maxParallel | matrix ]
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  pool: string | pool
-  server: true | server
+  pool: string | [ server ]
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give run always even if cancelled tasks before killing them
   variables: { string: string } | [ variable ]
   steps: [ script | bash | powershell | checkout | task | stepTemplate ]
 ```
@@ -197,7 +199,7 @@ jobs:
   parameters:
     name: Windows
     pool:
-      vmImage: 'VS2017-Win2016'
+      vmImage: 'vs2017-win2016'
     sign: true  # Extra step on Windows only
 ```
 
@@ -256,10 +258,7 @@ pipeline. It also holds information about the job's strategy for running.
 ```yaml
 name: string  # name of the pool to run this job in
 demands: string | [ string ]  ## see below
-timeoutInMinutes: number
-cancelTimeoutInMinutes: number
-parallel: number  # maximum number of agents to use at once when running this job; also see `matrix`
-matrix: { string: { string: string } }  ## see below
+vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and
@@ -286,6 +285,7 @@ For example:
 ```yaml
 pool:
   vmImage: 'Ubuntu 16.04'
+  
 strategy:
   matrix:
     x64_debug:
@@ -307,13 +307,8 @@ steps:
 of the same YAML properties as a normal `pool`.
 
 ```yaml
-server: true
-timeoutInMinutes: number
-cancelTimeoutInMinutes: number
-parallel: number  # maximum number of agents to use at once when running this job; also see `matrix`
-matrix: { string: { string: string } }  ## see `matrix` in the `pool` section
+pool: server
 ```
-
 ## Script
 
 `script` is a shortcut for the [command line task](tasks/utility/command-line.md).

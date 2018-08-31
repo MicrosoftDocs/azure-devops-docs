@@ -109,13 +109,13 @@ referencing environment variables.
 jobs:
 - job: LinuxOrMacOs
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
   steps:
   - bash: echo $AGENT_HOMEDIRECTORY
 
 - job: Windows
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: vs2017-win2016'
   steps:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
@@ -133,7 +133,8 @@ variables:
 
 # use the patch variable as part of your pipeline naming scheme
 name: $(Date:yyyyMMdd).$(patch)
-queue: 'Hosted Linux Preview'
+pool:
+  vmImage: ubuntu-16.04
 
 steps:
 
@@ -150,7 +151,7 @@ variable available to downstream steps within the same job.
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: ubuntu-16.04
 
 steps:
 
@@ -175,7 +176,7 @@ jobs:
 # Set an output variable from job A
 - job: A
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: vs2017-win2016
   steps:
   - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep
@@ -186,7 +187,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
   steps:
@@ -205,7 +206,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
   strategy:
     maxParallel: 2
     matrix:
@@ -225,7 +226,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -239,7 +240,7 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
     parallel: 2 # Two slices
   steps:
   - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
@@ -251,7 +252,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: ubuntu-16.04
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
