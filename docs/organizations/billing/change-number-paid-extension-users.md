@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -33,10 +33,23 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
     ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users** > **...** > **Manage extensions**.
+3. Select **Users**. Choose **Summary** if you don't already see the summary to the right of the page.
 
-   ![Select users and manage extensions](_img/_shared/select-users-and-manage-extensions.png)
+   ![Select users](_img/_shared/select-users-and-summary.png)
 
+4. Below the summary to the right of your screen, choose **Change quantity**. If you don't see the summary, choose the Summary 
+
+   ![Change quantity of extensions](_img/_shared/change-quantity-extensions.png)
+
+5. Select **Get**. You might be prompted to enter your credentials for the Marketplace. 
+
+   ![Select Get in the Marketplace for the extension](_img/_shared/marketplace-extension.png)
+
+4. Update the total number of paid users. Then select **Update**.
+
+    <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
+
+The number of paid extension users is updated.
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -55,6 +68,8 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
     <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
 
 The number of paid extension users is updated.
+
+---
 
 > [!NOTE]
 > To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for an Azure DevOps Services extension](#change-the-number-of-paid-users-for-a-vsts-extension).
