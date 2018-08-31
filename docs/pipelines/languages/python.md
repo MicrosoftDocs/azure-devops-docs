@@ -8,7 +8,7 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/23/2018
+ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
@@ -40,7 +40,7 @@ For the exact versions of Python that are preinstalled, refer to [Microsoft-host
 Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# /azure/devops/pipelines/languages/python
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
 pool:
   vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 

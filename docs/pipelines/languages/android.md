@@ -8,7 +8,7 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/17/2018
+ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -44,7 +44,7 @@ To get started using your own code, add the following YAML to a file named **azu
 Change values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# /azure/devops/pipelines/languages/android
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
   vmImage: 'macOS 10.13'
 
