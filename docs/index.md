@@ -230,6 +230,24 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Create pipelines to build and deploy applications to any platform, cloud, or app store.</h2>
                                 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
+                                        <a href="/azure/devops/pipelines/languages/dotnet-core.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_aspnetcore.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_aspnetcore.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>.NET Core</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="/azure/devops/pipelines/languages/android">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
@@ -241,61 +259,6 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>Android</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_net.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_net.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_net.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3><br/>.NET</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/azure/devops/pipelines/apps/c-cpp/gcc">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3><br/>C/C++ with GCC</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/pipelines/apps/windows/cpp">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_visual-studio.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3><br/>C/C++ with VC++</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -321,7 +284,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/apps/go/go">
+                                        <a href="/azure/devops/pipelines/languages/go">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -439,7 +402,115 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Nuget</h3>
+                                                            <h3><br/>NuGet</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/languages/php.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_php.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>PHP</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/languages/python.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_python.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Python</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/languages/ruby.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_ruby.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Ruby</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/apps/windows/universal.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_uwp.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_uwp.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>UWP</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/languages/xamarin.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xamarin.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Xamarin</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/pipelines/languages/xcode.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Xcode</h3>
                                                         </div>
                                                     </div>
                                                 </div>
