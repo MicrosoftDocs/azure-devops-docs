@@ -134,24 +134,6 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h2 style="float: left; display: flex;">Build your app</h2>
                                 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="apps/aspnet/build-aspnet-4.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3><br/>.NET</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="languages/dotnet-core.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
@@ -181,6 +163,24 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>Android</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps/aspnet/build-aspnet-4.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>ASP.NET</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,17 +260,17 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="languages/dotnet-core.md">
+                                        <a href="languages/java.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_net.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external" data-hoverimage="_img/index/logo_net.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_java.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_java.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>.NET Desktop</h3>
+                                                            <h3><br/>Java</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -485,8 +485,8 @@ Tutorials, references, and other documentation show you how to configure and man
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_linux-color.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -638,7 +638,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Selenium Test</h3>
+                                                            <h3><br/>Selenium tests</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -697,7 +697,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Continuous Builds with your GitHub projects using Azure Pipelines</h3>
+                                                    <h3>Continuously build GitHub projects with Azure Pipelines</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -715,7 +715,7 @@ Tutorials, references, and other documentation show you how to configure and man
                     <div class="cardText">
                         <h3>Step-by-step tutorials</h3>
                         <p>
-                        <a href="build/ci-public.md">Build open-source projects</a><br/>
+                        <a href="build/ci-public.md">Build open source projects</a><br/>
                         <a href="build/ci-build-git.md">Build multiple branches</a><br/>
                         <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br/>
                         </p>
