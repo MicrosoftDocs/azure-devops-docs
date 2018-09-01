@@ -68,7 +68,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="get-started/pipelines-get-started.md">
+                                        <a href="get-started-yaml.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
