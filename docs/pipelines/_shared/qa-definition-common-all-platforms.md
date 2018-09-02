@@ -13,7 +13,7 @@ ms.topic: include
 
 ### How do we protect our codebase from build breaks?
 
-* Git: [Improve code quality with branch policies](../../repos/git/branch-policies.md) with an option to require that code builds before it can be merged to a branch.  This option is not available for GitHub repos.
+* Git: [Improve code quality with branch policies](../../repos/git/branch-policies.md) with an option to require that code builds before it can be merged to a branch.  For GitHub repositories, similar policies are available in GitHub's repository settings under _Branches_.
 
 * TFVC: [Use gated check-in](../build/triggers.md#gated).
 

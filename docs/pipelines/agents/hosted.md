@@ -37,20 +37,25 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 
 # [YAML](#tab/yaml)
 
-In Yaml you will be defaulted to the Microsoft-hosted agent pool, you simply need to specify which virtual machine image you want to use.
+YAML-based pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
 ```yaml
 jobs:
-- job: Windows
+- job: Linux
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'ubuntu-16.04'
   steps:
-  - script: echo hello from Windows
+  - script: echo hello from Linux
 - job: macOS
   pool:
     vmImage: 'xcode9-macos10.13'
   steps:
   - script: echo hello from macOS
+- job: Windows
+  pool:
+    vmImage: 'vs2017-win2016'
+  steps:
+  - script: echo hello from Windows
 ```
 
 # [Web](#tab/web)
@@ -65,7 +70,7 @@ This option affects where your data is stored. [Learn more](https://www.microsof
 To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS**.
 To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS**.
 
-You can manually select of tool versions on macOS images. [See below](#mac-pick-tools).
+You can manually select from tool versions on macOS images. [See below](#mac-pick-tools).
 
 <h2 id="software">Software</h2>
 
@@ -81,9 +86,9 @@ Software on Microsoft-hosted agents is updated once each month.
 
 Microsoft-hosted agents:
 
-* Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
+* Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
-* Can run jobs for up to 6 hours (30 minutes on the free tier).
+* Can run jobs for up to 6 hours (30 minutes on the free plan).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 
@@ -92,7 +97,6 @@ Microsoft-hosted agents do not offer:
 * The ability to log on.
 * The ability to [drop artifacts to a UNC file share](../build/artifacts.md#unc-file-share).
 * The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
-
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 
 If Microsoft-hosted agents don't meet your needs, then you can [deploy your own self-hosted agents](agents.md#install).
@@ -126,7 +130,7 @@ By default, all project contributors in an organization have access to the Micro
 
 ### I need more agents. What can I do?
 
-A: All Azure DevOps organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job in parallel, then you can buy [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+A: All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs-vsts.md) for private projects.
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 
@@ -151,15 +155,15 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
+  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
+  To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
 
   ```
   SYMLINK=5_4_1
