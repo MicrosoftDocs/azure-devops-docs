@@ -9,5 +9,5 @@
     href: pipelines-get-started.md
   - name: Create your first pipeline (YAML)
     href: ../get-started-yaml.md?toc=/vsts/pipelines/get-started/toc.json&bc=/vsts/pipelines/get-started/breadcrumb/toc.json
-  - name: Key Concepts
+  - name: Key concepts
     href: key-pipelines-concepts.md
