@@ -21,14 +21,6 @@
     href: add-run-manual-tests.md
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-- name: Tutorials for users
-  items:
-  - name: Set favorites
-    href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Follow work & pull requests
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Get started as a Stakeholder
-    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Quickstarts for admins
   items:
   - name: Sign up for Azure DevOps
@@ -42,7 +34,15 @@
   - name: Get started as an admin
     href: project-admin-tutorial.md
   - name: Install a Marketplace extension
-    href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+- name: Tutorials for users
+  items:
+  - name: Set favorites
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: Follow work & pull requests
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: Get started as a Stakeholder
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Tutorials for admins
   items:
   - name: Change individual permissions 
