@@ -1,6 +1,6 @@
 ---
-title: Deploy to Azure index to content | Microsoft Docs    
-description: Learn how to deploy to Azure using VSTS. Tutorials, references, and other documentation.  
+title: Deploy to Azure with Azure DevOps Services and TFS| Microsoft Docs    
+description: Learn how to deploy to Azure using Azure Pipelines and TFS Build & Release. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2013'
 
 # Deploy to Azure
 
-Visual Studio Team Services (VSTS in the cloud) and Team Foundation Services (TFS on-premises) are  Microsoft's DevOps solutions for Azure. Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether you are targeting app services, virtual machines, or containers in Azure, VSTS helps you set up a highly customizable continuous integration (CI) and continuous delivery (CD) pipeline. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app of your choice to Azure services.
+Azure DevOps Services (in the cloud) and Team Foundation Services (on-premises) are  Microsoft's DevOps solutions for Azure. Azure Pipelines (Build & Release in TFS) is the service for automated build and deployment for all cloud providers, especially Azure.
+
+Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether you are targeting app services, virtual machines, or containers in Azure, Azure Pipelines (Build & Release) helps you set up a highly customizable continuous integration (CI) and continuous delivery (CD) pipeline. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app of your choice to Azure services.
 
 ## 5-Minute Quickstarts
 
@@ -68,7 +70,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)
 - [What is the Azure DevOps Project?](/azure/devops-project/overview)
-- [Build and release in VSTS](../pipelines/index.md)
+- [Azure Pipelines](../pipelines/index.md)
 
 ::: moniker-end
 
