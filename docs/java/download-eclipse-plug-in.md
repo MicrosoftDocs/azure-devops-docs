@@ -1,5 +1,5 @@
 ---
-title: Get the Eclipse Plug-in for VSTS & TFS support
+title: Get the Eclipse Plug-in for Azure DevOps Services & TFS support
 description: Information and download links for Team Explorer Everywhere for Eclipse
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,13 +14,13 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Visual Studio Team Explorer Everywhere for Eclipse (VSTS and TFS)
+# Visual Studio Team Explorer Everywhere for Eclipse (Azure DevOps Services and TFS)
 
 Visual Studio Team Explorer Everywhere (TEE) is a plug-in for [Eclipse](https://www.eclipse.org/) that enables
-you to work with Team Foundation Server (TFS) and Visual Studio Team Services (VSTS) using both Team Foundation Version Control (TFVC) 
+you to work with Team Foundation Server (TFS) and Azure DevOps using both Team Foundation Version Control (TFVC) 
 and Git version control systems. 
 
-For information on connecting to a VSTS Git repo from Eclipse with TEE, read [Share your code with Eclipse and VSTS Git](/azure/devops/repos/git/share-your-code-in-git-eclipse).
+For information on connecting to a Azure DevOps Services Git repo from Eclipse with TEE, read [Share your code with Eclipse and Azure DevOps Services Git](/azure/devops/repos/git/share-your-code-in-git-eclipse).
 
 ## Eclipse Update Site for Latest Release
 The latest release of [TEE](https://marketplace.eclipse.org/content/team-explorer-everywhere) can always be installed in Eclipse using this update site URL:

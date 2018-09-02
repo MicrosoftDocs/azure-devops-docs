@@ -1,6 +1,6 @@
 ---
-title: Create a Java project release pipeline for deployment with VSTS
-description: Tutorial lab for creating a Java project release pipeline for Azure Container deployment with Visual Studio Team Services (VSTS)
+title: Create a Java project release pipeline for deployment with Azure DevOps Services
+description: Tutorial lab for creating a Java project release pipeline for Azure Container deployment with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Create a Java project release pipeline for continuous deployment with VSTS
+# Create a Java project release pipeline for continuous deployment with Azure DevOps Services
 
 In this exercise, you are going to create a release pipeline that will start the container images from the build lab. You will then create an Azure Container Service (ACS) and modify the Release to start containers in ACS.
 
@@ -24,15 +24,15 @@ In this exercise, you are going to create a release pipeline that will start the
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private VSTS agent. You should also have set up Maven package management and have a MyShuttleCalc package in the feed and created a build that creates and publishes Docker images to the Azure Container Registry. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private Azure DevOps Services agent. You should also have set up Maven package management and have a MyShuttleCalc package in the feed and created a build that creates and publishes Docker images to the Azure Container Registry. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Install a Marketplace Extension
 
-In this task you will install a VSTS extension from the [VSTS Marketplace](https://marketplace.visualstudio.com/vsts). This extension contains build and release tasks - you are going to use the ReplaceTokens task in the Release.
+In this task you will install a Azure DevOps Services extension from the [Azure DevOps Services Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services). This extension contains build and release tasks - you are going to use the ReplaceTokens task in the Release.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
-1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in VSTS).
+1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in Azure DevOps Services).
 
 1. Click on the shopping bag icon on the upper right and select "Browse Marketplace".
 
@@ -46,7 +46,7 @@ In this task you will install a VSTS extension from the [VSTS Marketplace](https
 
     ![Install the extension](../_img/releasemanagement/install-extension.png)
 
-1. In the dialog that appears, ensure that your VSTS account is selected and click Continue. Once your permissions have been verified, click the Confirm button.
+1. In the dialog that appears, ensure that your Azure DevOps Services organization is selected and click Continue. Once your permissions have been verified, click the Confirm button.
 
 ## Create a Release Pipeline
 
@@ -54,7 +54,7 @@ In this task you will create a release pipeline with a single environment called
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
-1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in VSTS).
+1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in Azure DevOps Services).
 
 1. Click on the `jdev` team project to navigate to it.
 

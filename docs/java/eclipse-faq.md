@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Eclipse Plug-in for VSTS & TFS Frequently Asked Questions (FAQ)
+# Eclipse Plug-in for Azure DevOps Services & TFS Frequently Asked Questions (FAQ)
 
 * [Is there a Beginner's Guide for TEE?](#is-there-a-beginners-guide-for-tee)
 * [Is there a way to view local repos in TEE 2015 in Eclipse (Mars) or is it assumed one would use the other Git tooling for Eclipse?](#is-there-a-way-to-view-local-repos-in-tee-2015-in-eclipse-mars-or-is-it-assumed-one-would-use-the-other-git-tooling-for-eclipse)
-* [Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to VSTS? Or is the Git command-line the way to do it?](#also-is-there-an-easy-way-using-tee-to-import-a-local-git-repo-and-push-it-up-to-vsts-or-is-the-git-command-line-the-way-to-do-it)
+* [Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to Azure DevOps Services? Or is the Git command-line the way to do it?](#also-is-there-an-easy-way-using-tee-to-import-a-local-git-repo-and-push-it-up-to-vsts-or-is-the-git-command-line-the-way-to-do-it)
 * [Where can I learn more about the Azure Toolkit for Eclipse?](#where-can-i-learn-more-about-the-azure-toolkit-for-eclipse)
 * [The TEE Command Line Client has removed the "tf profile" command. How can I connect to TFS without having to repeatedly type my credentials?](#the-tee-command-line-client-has-removed-the-tf-profile-command-how-can-i-connect-to-tfs-without-having-to-repeatedly-type-my-credentials)
 * [How can I fix the "Authentication not supported" error when using Eclipse to perform Git operations with TFS?](#how-can-i-fix-the-authentication-not-supported-error-when-using-eclipse-to-perform-git-operations-with-tfs)
@@ -32,7 +32,7 @@ Absolutely.  You can find it on MSDN at [Team Foundation Server Plug-in for Ecli
 
 It is expected that one would use the standard eGit tooling in Eclipse to view local repos, but TEE does have a "Repositories" view in which you can see which repos are available on the server.
 
-### Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to VSTS? Or is the Git command-line the way to do it?
+### Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to Azure DevOps Services? Or is the Git command-line the way to do it?
 
 There's documentation on how to do it in TEE at [Sharing Eclipse Projects in Team Foundation Server](https://msdn.microsoft.com/en-us/library/hh568708(v=vs.120).aspx).
 That article specifically shows TFVC but when you go to Share the project, you'll be prompted to choose a repository type (Git or TFVC).

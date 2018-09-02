@@ -20,12 +20,12 @@ monikerRange: '>= tfs-2013'
 
 With most Azure DevOps Services or Team Foundation Server (TFS) applications, you can start using any service and configure resources as you go. No up front work is required. Most settings define defaults.  
 
-As an organization owner or a project admin, there are a few items you may want to attend to at the start, to ensure a smooth operational experience. The larger your organization, you'll want to consider additional tasks to structure your project to support multiple teams or software development apps. 
+As an organization owner or a project admin, there are a few items you may want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps. 
 
 ## Add users  
 
 ::: moniker range="vsts"  
-The first task is to ensure that all members of your organization or group are added to your organization and project. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
+The first task is to ensure that all members of your organization or group are added to your Azure DevOps organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
 
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
 - [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md)
@@ -40,7 +40,7 @@ Larger organizations will want to consider using Active Directory to keep the ma
 
 * [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 * [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
-- 
+
 ::: moniker-end 
 
 ## Grant or restrict permissions 
@@ -88,7 +88,7 @@ For example, here we show that **Test Plans** has been disabled.
 ::: moniker range=">= tfs-2015" 
 ## Set code, test, and other policies 
 
-There are several policies you can set to support collaboration across your teams, secure your project, and to automatically remove files no longer needed. You'll want to review these articles to set policies. 
+There are several policies you can set to support collaboration across your teams, secure your projects, and to automatically remove files no longer needed. You'll want to review these articles to set policies. 
 
 ::: moniker-end 
 

@@ -1,6 +1,6 @@
 ---
-title: Build Docker images for your Java project with VSTS 
-description: Tutorial lab for building and publishing Java Docker images with Visual Studio Team Services (VSTS)
+title: Build Docker images for your Java project with Azure DevOps Services 
+description: Tutorial lab for building and publishing Java Docker images with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Create a Docker build for Java in VSTS and publish it to ACR
+# Create a Docker build for Java in Azure DevOps Services and publish it to ACR
 
-In this exercise, you are going to create a Docker Registry in Azure as well as a VSTS build that builds two Docker container images and publishes them to the Azure Container Registry (ACR). In a later lab ([Continuous Deployment](../releasemanagement/index.md)) you will configure a Release in VSTS to run the containers.
+In this exercise, you are going to create a Docker Registry in Azure as well as a Azure DevOps Services build that builds two Docker container images and publishes them to the Azure Container Registry (ACR). In a later lab ([Continuous Deployment](../releasemanagement/index.md)) you will configure a Release in Azure DevOps Services to run the containers.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -24,7 +24,7 @@ In this exercise, you are going to create a Docker Registry in Azure as well as 
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to [create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private VSTS agent](../dockerbuildagent/index.md). You should also have set up Maven package management and have a MyShuttleCalc package in the feed. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to [create a Team Project](../settingAzure DevOps Servicesproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have set up Maven package management and have a MyShuttleCalc package in the feed. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 > **Note**: You don't have to use the Azure container registry - you can use whatever registry you choose. You can also create an equivalent build using Jenkins.
 
@@ -50,15 +50,15 @@ This exercise assumes you have completed the exercises to [create a Team Project
 
 In this task you will update the pom.xml file for the MyShuttle2 application so that it can consume the MyShuttleCalc package from the Maven package feed.
 
-1. In Chrome navigate to your VSTS account and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
+1. In Chrome navigate to your Azure DevOps Services organization and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
-    ![Get the package repository settings from VSTS](../_img/builddocker/maven-packagefeed-settings.png)
+    ![Get the package repository settings from Azure DevOps Services](../_img/builddocker/maven-packagefeed-settings.png)
 
 1. Open the MyShuttle2 project.
 
 1. Click on the pom.xml file.
 
-1. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from VSTS.
+1. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from Azure DevOps Services.
 
 1. Find the `<dependency>` with `<groupId>com.microsoft.exampledep</groupId>` and update the version number to match the version number of the MyShuttleCalc package in your package feed. This may look something like:
 
@@ -108,13 +108,13 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
 
 1. Commit and push your changes through Team Explorer Everywhere.
 
-## Create a VSTS Build to Build Docker Images
+## Build Docker images with Azure Pipelines
 
-In this task you will create a VSTS build pipeline that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
+In this task you will create a Azure Pipelines build pipeline that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
-1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in VSTS).
+1. Open Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in Azure DevOps Services).
 
 1. Click on the `jdev` project and navigate to the "Build & Release" Hub.
 
@@ -138,7 +138,7 @@ In this task you will create a VSTS build pipeline that will create two containe
     | Server URL | `http://10.0.0.4:8080`  | Selects JaCoCo as the coverage tool |
     | Source Files Directory | `src/main` | Sets the source files directory for JaCoCo |
 
-    ![Maven task settings](../_img/builddocker/vsts-maven.png)
+    ![Maven task settings](../_img/builddocker/Azure DevOps Services-maven.png)
 
 1. Click on the "Copy Files" task. Set the Contents property to:
 
@@ -148,7 +148,7 @@ In this task you will create a VSTS build pipeline that will create two containe
     *.release.*
     ```
 
-    ![Copy Files task settings](../_img/builddocker/vsts-copyfiles.png)
+    ![Copy Files task settings](../_img/builddocker/Azure DevOps Services-copyfiles.png)
 
     The Publish Build Artifacts task publishes everything in the artifact staging directory. The Copy Files task copies the following artifacts into this directory so that they are available for Release (which you will create in a later lab):
 
