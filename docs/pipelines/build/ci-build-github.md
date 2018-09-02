@@ -63,7 +63,7 @@ Follow the steps below to configure GitHub as a source for your Azure Pipelines 
 
 ## Get the status badge
 
-1. In the Azure pipelines page, navigate to the list of pipelines.
+1. In the Azure Pipelines page, navigate to the list of pipelines.
 
 1. Select the pipeline that was created for you.
 

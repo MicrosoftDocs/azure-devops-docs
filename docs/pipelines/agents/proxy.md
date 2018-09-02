@@ -140,8 +140,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 
 ## Specify proxy bypass URLs
 
-Create a `.proxybypass` file under agent root to specify proxy bypass Url's Regex (ECMAScript syntax).  
-For example:
+Create a `.proxybypass` file in the agent's root directory that specifies regular expressions (in ECMAScript syntax) to match URLs that should bypass the proxy. For example:
 
 ```
 github\.com

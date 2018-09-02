@@ -47,8 +47,8 @@ This example shows how to build a Docker image and push it to a registry.
   The sample repos include a `Dockerfile` at the root of the repository. You must first have a working build pipeline before continuing on.
 
 1. Define two variables in your build pipeline in the web UI.
-   * **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
-   * **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
+   * **dockerId:** Your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
+   * **dockerPassword:** Password for Docker Hub or admin password for Azure Container Registry
 
   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
 
@@ -111,10 +111,10 @@ YAML builds are not yet available on TFS.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
    * **imageName:** `$(Build.DefinitionName).$(Build.BuildId)`
-   * **dockerId:** Your Docker Id.
+   * **dockerId:** Your Docker ID.
    * **dockerPassword:** Your Docker password. Mark this variable as a secret variable.
 
-   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
+   If you use Azure Container Registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the user ID and password from the **Access keys** section of the registry in Azure portal.
 
 Save the pipeline and queue a build to see it in action.
 

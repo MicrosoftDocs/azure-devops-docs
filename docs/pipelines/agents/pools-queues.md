@@ -41,11 +41,11 @@ In TFS 2015 agent pools are scoped to project collections.
 
 ![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
 
-You create and manage pools from the Agent pools tab.
+You create and manage organization agent pools from the agent pools tab in admin settings.
 
 [!INCLUDE [agent-pools](_shared/agent-pools-tab.md)]
 
-You create and manage pools from the Project agent pools tab.
+You create and manage project agent pools from the agent pools tab in project settings.
 
 [!INCLUDE [agent-pools](_shared/agent-queues-tab.md)]
 
@@ -53,7 +53,7 @@ You create and manage pools from the Project agent pools tab.
 
 ## Default agent pools
 
-We provide the following organization agent pools by default:
+The following organization agent pools are provided by default:
 
 * **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
@@ -81,9 +81,9 @@ If you've got a lot of agents intended for different teams or purposes, you migh
 
 Here are some typical situations when you might want to create agent pools:
 
-* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You're  a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pookl for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pookl for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First create a project agent pool in one of the projects and select the option to **Create a new organization agent pool** while creating that pool. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing organization agent pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 
@@ -103,7 +103,7 @@ In Azure Pipelines and TFS 2017 and newer, **roles** are defined on each agent p
 | Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the guidelines above for creating new project agent pools, you typically do not have to add any members here. |
 | Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when creating a project agent pool in a project. Finally, they can also manage membership for all roles of the organization agent pool. The user that created the organization agent pool is automatically added to the Administrator role for that pool. |
 
-The **All organization agent pools** node in the Organization Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All organization agent pools' node. By default, TFS administrators are also administrators of the 'All organization agent pools' node.
+The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. By default, TFS administrators are also administrators of the 'All agent pools' node.
 
 Roles are also defined on each organization agent pool, and memberships in these roles govern what operations you can perform on an agent pool.
 
@@ -113,7 +113,7 @@ Roles are also defined on each organization agent pool, and memberships in these
 | User | Members of this role can use the project agent pool when authoring build or release pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. The user that created the pool is automatically added to the Administrator role for that pool.
 
-The **All project agent pools** node in the Project agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All project agent pools' node. By default, the following groups are added to the Administrator role of 'All project agent pools': Build Administrators, Release Administrators, Project Administrators.
+The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
-* [Deploy your own on-premises agents](agents.md).
+* [Host your own agents on infrastructure that you manage](agents.md).
 * [Buy additional parallel jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
 
 ::: moniker-end
