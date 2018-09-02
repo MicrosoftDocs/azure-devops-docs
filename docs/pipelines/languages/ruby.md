@@ -12,7 +12,7 @@ ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# PHP
+# Ruby
 
 This guidance explains how to build Ruby projects.
 
