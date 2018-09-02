@@ -1,6 +1,6 @@
 ---
-title: Manage your Java project backlog with VSTS 
-description: Tutorial lab for managing Java projects with Visual Studio Team Services (VSTS) Agile tools
+title: Manage your Java project backlog with Azure Boards
+description: Tutorial lab for managing Java projects with Azure DevOps Agile tools
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -12,10 +12,9 @@ ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
 
+# Manage your Java project with Azure Boards
 
-# Manage your Java project with VSTS Agile tools
-
-In this exercise, you are going to examine the various Agile planning features of VSTS to group and manage your Java project work and that of your team using backlogs. 
+In this exercise, you are going to examine the various Agile planning features of Azure DevOps Services to group and manage your Java project work and that of your team using backlogs. 
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -24,7 +23,7 @@ In this exercise, you are going to examine the various Agile planning features o
 
 ## Prerequisites
 
-This exercise assumes you have completed [setting up your VSTS Java project](../settingvstsproject/index.md), and have created a Team Project using the Scrum template with a Git repo.
+This exercise assumes you have completed [setting up your Azure DevOps Services Java project](../settingAzure DevOps Servicesproject/index.md), and have created a Team Project using the Scrum template with a Git repo.
 
 ## Managing your team project backlog
 
@@ -34,7 +33,7 @@ previous exercise). For this first part, you will create work items for
 you in the lab. Later, you will create some more work items as you work
 through the MyShuttle scenario.
 
-1. Login to your VSTS account and navigate to your project
+1. Login to your Azure DevOps Services organization and navigate to your project
 
 1. Click the **Work** link.
 
@@ -232,4 +231,4 @@ through the MyShuttle scenario.
 
 This is a quick introduction to the Agile Planning tools and Work Items. You'll work with them
 some more later. If you want to read more about the Agile Planning tools, Sprint Planning, and the Scrum
-template, read [Sprint planning with VSTS](/azure/devops/boards/sprints/assign-work-sprint).
+template, read [Sprint planning with Azure DevOps Services](/azure/devops/boards/sprints/assign-work-sprint).
