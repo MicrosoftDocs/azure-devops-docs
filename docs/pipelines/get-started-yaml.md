@@ -20,13 +20,6 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
-* You must have the following preview features enabled in your Azure DevOps organization:
-  * **New builds hub**
-  * **New YAML pipeline creation experience**
-
-  You can check the preview features by selecting your profile in your Azure DevOps organization.  
-  ![Open Preview Features](../project/navigation/_img/manage-features/choose-preview-features-vert.png)
-
 * You need a GitHub account, where you can create a repository.
 
 ## Get the sample code
@@ -36,9 +29,10 @@ Azure Pipelines can be used to build an app written in any language. Select a la
 | Programming language | Repository with a sample app |
 |----------------------|----------------------------|
 | .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
-| NodeJS | `https://github.com/MicrosoftDocs/pipelines-javascript` |
-| Python |  `https://github.com/MicrosoftDocs/pipelines-python-django` |
-| Java | `https://github.com/adventworks/java-sample` |
+| Go | `https://github.com/MicrosoftDocs/pipelines-go` |
+| Java | `https://github.com/MicrosoftDocs/pipelines-java` |
+| Node.js | `https://github.com/MicrosoftDocs/pipelines-javascript` |
+| Python | `https://github.com/MicrosoftDocs/pipelines-python-django` |
 
 You should now have a sample app in your GitHub account.
 
@@ -99,7 +93,7 @@ Back in Azure Pipelines, observe that a new build is queued. Its status might be
 You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow the track for the language of your choice:
 
 * [.NET Core](languages/dotnet-core.md)
-* [NodeJS](languages/javascript.md)
-* [Java](languages/java.md)
-* [Python](languages/python.md)
 * [Go](languages/go.md)
+* [Java](languages/java.md)
+* [Node.js](languages/javascript.md)
+* [Python](languages/python.md)

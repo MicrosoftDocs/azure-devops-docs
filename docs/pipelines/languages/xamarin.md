@@ -94,7 +94,56 @@ steps:
     buildForSimulator: true
 ```
 
-<!-- ## Build Xamarin.Android and Xamarin.iOS apps with one pipeline -->
+### Set the Xamarin SDK version on macOS
+
+To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent pool, add the following snippet before the `XamariniOS` task in your `azure-piplines.yml` file. For details on properly formatting the version number (shown as **5_4_1** below), see [How can I manually select versions of tools on the Hosted macOS agent?](../agents/hosted.md#how-can-i-manually-select-versions-of-tools-on-the-hosted-macos-agent).
+
+```yaml
+- script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1
+  displayName: 'Select Xamarin SDK version'
+```
+
+## Build Xamarin.Android and Xamarin.iOS apps with one pipeline
+
+You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining [multiple jobs](../process/multiple-phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
+
+```yaml
+# https://docs.microsoft.com/vsts/pipelines/languages/xamarin
+jobs:
+- job: Android
+  pool:
+    vmImage: 'VS2017-Win2016'
+  variables:
+    buildConfiguration: 'Release'
+    outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+  steps:
+  - task: NuGetToolInstaller@0
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: '**/*.sln'
+  - task: XamarinAndroid@1
+    inputs:
+      projectFile: '**/*droid*.csproj'
+      outputDirectory: '$(outputDirectory)'
+      configuration: '$(buildConfiguration)'
+
+- job: iOS
+  pool:
+    vmImage: 'macOS 10.13'
+  variables:
+    buildConfiguration: 'Release'
+  steps:
+  - task: NuGetToolInstaller@0
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: '**/*.sln'
+  - task: XamariniOS@2
+    inputs:
+      solutionFile: '**/*.sln'
+      configuration: '$(buildConfiguration)'
+      buildForSimulator: true
+      packageApp: false
+```
 
 ### Next steps
 

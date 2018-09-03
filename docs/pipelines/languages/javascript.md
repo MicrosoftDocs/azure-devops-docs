@@ -374,7 +374,7 @@ All the dependencies for your Vue app are captured in your *package.json* file, 
 
 ## Build task runners
 
-It is common to use **gulp**, **grunt**, or **maven** as a task runner to build and test a JavaScript app.
+It is common to use **gulp**, **Grunt**, or **Maven** as a task runner to build and test a JavaScript app.
 
 ### Gulp
 
@@ -388,7 +388,7 @@ Gulp is pre-installed on Microsoft-hosted agents. To run the gulp command in the
 - script: gulp                       # include any additional options that are needed
 ```
 
-If the steps in your gulpfile require authentication with a npm registry:
+If the steps in your gulpfile.js require authentication with a npm registry:
 
 ```yaml
 - task: npmAuthenticate@0
@@ -424,7 +424,9 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Gulp** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts. In the task, select **Enable Code Coverage** to enable Code Coverage using istanbul.
+The simplest way to create a build pipeline if your app uses gulp is to use the **Node.js with gulp** build template when creating the pipeline.
+This will automatically add various tasks to invoke gulp commands and to publish artifacts.
+In the task, select **Enable Code Coverage** to enable code coverage using istanbul.
 
 ---
 
@@ -439,7 +441,7 @@ Grunt is pre-installed on Microsoft-hosted agents. To run the grunt command in t
 - script: grunt                      # include any additional options that are needed
 ```
 
-If the steps in your `Gruntfile` require authentication with a npm registry:
+If the steps in your `Gruntfile.js` require authentication with a npm registry:
 
 ```yaml
 - task: npmAuthenticate@0
@@ -456,13 +458,13 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts. In the task, select **Publish to TFS/Team Services** option to publish test results and **Enable Code Coverage** to enable Code Coverage using istanbul.
+The simplest way to create a build pipeline if your app uses gulp is to use the **Node.js with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts. In the task, select **Publish to TFS/Team Services** option to publish test results and **Enable Code Coverage** to enable Code Coverage using istanbul.
 
 ---
 
 ## Package and deliver your code
 
-Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a npm or maven package,
+Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a npm or Maven package,
 or package the build output into a zip file to be deployed to a web application.
 
 # [YAML](#tab/yaml)
@@ -549,9 +551,9 @@ You can build a Docker container image after you build your project. For more in
 
 If you are able to build your project on your development machine, but are having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
 
-* Check that the versions of **node** and task runner on your development machine match those on the agent.
+* Check that the versions of **Node.js** and task runner on your development machine match those on the agent.
   You can include command line scripts such as `node --version` in your build pipeline to check what is installed on the agent.
-  Either use the **.Node Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
+  Either use the **Node Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
   or run `npm install` commands to update the tools to desired versions.
 
 * If your builds fail intermittently while restoring packages, either npm registry is having issues or there are
