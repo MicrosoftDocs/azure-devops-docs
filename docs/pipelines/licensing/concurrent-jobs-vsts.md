@@ -23,8 +23,8 @@ If you want to run your builds and releases on machines that Microsoft manages, 
 
 We provide a *free tier* of service by default in your Azure DevOps Services organization:
 
-- Public project: 10 free Microsoft-hosted parallel jobs with no time limits.
-- Private project: One free parallel job that can run for up to 30 minutes each time. Your jobs will run until you've used 1,800 minutes per month.
+- Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 30 minutes each time, with no overall time limit per month.
+- Private project: One free parallel job that can run for up to 30 minutes each time, until you've used 1,800 minutes (30 hours) per month.
  
 When the free tier is no longer sufficient:
 
@@ -73,10 +73,12 @@ The term *job* can refer to multiple concepts, and its meaning depends on the co
 
 ## Determine how many parallel jobs you need
 
-You can begin by seeing if the free tier offered in your Azure DevOps Services organization is enough for your teams. When you've reached the 1,800-minute limit for the free tier of Microsoft-hosted parallel jobs, you can start by buying one parallel job to remove this monthly time limit before deciding to purchase additional ones.
+You can begin by seeing if the free tier offered in your Azure DevOps Services organization is enough for your teams.
+When you've reached the 1,800-minute per month limit for the free tier of Microsoft-hosted parallel jobs,
+you can start by buying one parallel job to remove this monthly time limit (from both the free and purchased parallel job) before deciding to purchase more.
 
-As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, 
-you can purchase additional parallel jobs as needed.
+As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer.
+When you find the queue delays are too long, you can purchase additional parallel jobs as needed.
 
 ### Simple estimate
 

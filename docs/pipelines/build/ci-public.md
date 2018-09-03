@@ -35,15 +35,159 @@ If you already use an Azure Pipelines public project to manage your code, you're
 
 ---
 
+### Access restrictions
+
+Be aware of the following access restrictions when you're running builds in an Azure Pipelines public project:
+
+* **Cross-project access:** All builds in a public project run with an access token restricted to the project. Builds in a public project can access resources such as code, work items, or test results only within the project and not from other projects of the Azure DevOps organization.
+* **Package management:** If your builds need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
+
 ## Create a build pipeline
 
 # [GitHub repo](#tab/github)
 
 Set up a build pipeline and add a build badge to the `Readme.md` file at the root of your repository. Follow the steps in [Create your first pipeline](../get-started-yaml.md).
+Then, return here for additional details.
 
 # [Azure Repos Git repo](#tab/gitvsts)
 
 Set up a build and release pipeline. Follow the steps in [Your first build and release](../get-started-designer.md).
+
+---
+
+## Authorize access to your repositories
+
+Azure Pipelines must be granted access to your repositories to display them, trigger their builds, and fetch their code during builds.
+
+# [GitHub repo](#tab/github)
+
+There are 3 authentication types for granting Azure Pipelines access to your GitHub repositories while creating a pipeline.
+
+| Authentication type            | Builds run using              | Works with the [GitHub Checks API](https://developer.github.com/changes/2018-05-07-new-checks-api-public-beta/) |
+|--------------------------------|-------------------------------|-----|
+| 1. GitHub App                  | The Azure Pipelines identity  | Yes |
+| 2. OAuth                       | Your personal GitHub identity | No  |
+| 3. Personal access token (PAT) | Your personal GitHub identity | No  |
+
+### 1. GitHub App
+
+The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub organization, your pipeline can run without using your personal GitHub identity.
+Builds and GitHub status updates will be performed on behalf of the Azure Pipelines identity.
+Additionally, the GitHub App works with the [GitHub Checks API](https://developer.github.com/changes/2018-05-07-new-checks-api-public-beta/)
+to display build, test, and code coverage results in GitHub.
+
+#### Using the GitHub App
+
+To use the GitHub App, install it in your GitHub account or organization. The app can be installed and uninstalled from 2 locations:
+
+1. The app's [homepage](https://github.com/apps/azure-pipelines) - recommended when no parallel jobs are being purchased.
+1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories,
+but where cancelation of the price plan may result in several days before the app is completely uninstalled.
+
+To install the GitHub App, GitHub policies require one of the following:
+
+1. You are an owner of the account or organization in which the app will be installed.
+1. You are an admin of the repository in the organization, and you seek approval from an organization owner to install the app.
+
+#### Permissions
+
+The GitHub App requests the following permissions during installation:
+
+| Permission | What Azure Pipelines does with it |
+|------------|-----------------------------------|
+| Write access to code | Upon your deliberate action, Azure Pipelines will simplify creating a pipeline by committing a YAML file to a selected branch of your GitHub repository. |
+| Read access to metadata | Azure Pipelines will retrieve GitHub metadata for displaying the repository, branches, and issues associated with a build in the build's summary. |
+| Read and write access to checks | Azure Pipelines will read and write its own build, test, and code coverage results to be displayed in GitHub. |
+| Read and write access to pull requests | Upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Azure Pipelines will retrieve GitHub metadata for displaying any pull request associated with a build in the build's summary. |
+| Read and write access to team discussions | Azure Pipelines will allow triggering builds and performing other actions when specific keywords are posted by collaborators to team discussions such as in pull requests. |
+
+<!--
+Detailed permissions not displayed to the user during installation:
+| Checks (read & write)
+| Repository contents (read & write
+| Deployments (read & write)
+| Issues (read & write)
+| Repository metadata (read)
+| Pull requests (read & write)
+| Commit statuses (read & write)
+| Team discussions (read & write)
+ -->
+
+### 2. OAuth
+
+[OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is simplest authentication type to get started with. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
+
+#### Using OAuth
+
+To use OAuth, click **Authorize** on the repository step while creating a pipeline. The OAuth connection will be saved in your Azure Pipelines project for later use.
+
+#### Revoking OAuth access
+
+After authorizing Azure Pipelines to use OAuth, to later revoke it and prevent further use, visit [OAuth Apps](https://github.com/settings/developers) in your GitHub settings.
+You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure Pipelines project settings.
+
+### 3. Personal access token (PAT)
+
+[PATs](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) are effectively the same as OAuth, but allow you to control which permissions are granted to Azure Pipelines.
+Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
+
+#### Using a PAT
+
+To create a PAT, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
+The required permissions are `repo`, `admin:repo_hook`, `read:user`, and `user:email`. These are the same permissions required when using OAuth, above.
+Copy the generated PAT to the clipboard and paste it into a new GitHub [service connection](../library/service-endpoints.md) in your Azure Pipelines project settings.
+For future recall, name the service connection after your GitHub username. It will be available in your Azure Pipelines project for later use.
+
+#### Revoking PAT access
+
+After authorizing Azure Pipelines to use a PAT, to later delete it and prevent further use, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
+You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure Pipelines project settings.
+
+# [Azure Repos Git repo](#tab/gitvsts)
+
+If the repository that you wish to build is in the same project as your build pipeline, you're all set. Your builds will automatically have access to the repository.
+
+---
+
+## Choose a repository to build
+
+Your code can be in a GitHub public repository or in an Azure Repos public project.
+
+# [GitHub repo](#tab/github)
+
+To create a pipeline for your repository with continuous integration and pull request triggers, you must have the required GitHub permissions configured.
+Otherwise, **the repository will not appear** in the repository list while creating a pipeline. Depending on the authentication type and ownership of the repository, ensure that the following access is configured.
+
+| Authentication type         | If the repo is in your personal GitHub account | If the repo is in someone else's personal GitHub account | If you own the repo's GitHub organization | If you don't own the repo's GitHub organization |
+|-----------------------------|-|-|-|-|
+| 1. GitHub App                  | You must install the Azure Pipelines GitHub App in your personal GitHub account. You can do so from [here](https://github.com/apps/azure-pipelines). | **1.** The other person must install the Azure Pipelines GitHub App in their personal GitHub account. They can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator in the repository's settings under "Collaborators". You must accept the invitation to be a collaborator using the link that is emailed to you. | **1.** You must install the Azure Pipelines GitHub App in the GitHub organization. You can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". You must accept the invitation to be a collaborator using the link that is emailed to you. | **1.** A GitHub organization owner or repository admin must install the Azure Pipelines GitHub App in the organization. Repository admins will require approval from an organization owner. The app can be installed from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams".  You must accept the invitation to be a collaborator using the link that is emailed to you. |
+| 2. OAuth                       | **1.** At least once, you must authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure Pipelines under Project settings > Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** You must grant Azure Pipelines access to your repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). | **1.** At least once, the other person must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure Pipelines under Project settings > Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.**  The other person must grant Azure Pipelines access to their repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator in the repository's settings under "Collaborators". You must accept the invitation to be a collaborator using the link that is emailed to you. | **1.** At least once, you must authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure Pipelines under Project settings > Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** You must grant Azure Pipelines access to your organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** At least once, a GitHub organization owner must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure Pipelines under Project settings > Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** The organization owner must grant Azure Pipelines access to the organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". You must accept the invitation to be a collaborator using the link that is emailed to you. |
+| 3. Personal access token (PAT) | The PAT must have the required access scopes (`repo`, `admin:repo_hook`, `read:user`, and `user:email`) under [Personal access tokens](https://github.com/settings/tokens). | **1.**  The PAT must have the required access scopes (`repo`, `admin:repo_hook`, `read:user`, and `user:email`) under [Personal access tokens](https://github.com/settings/tokens). <br/><br/> **2.** You must be added as a collaborator in the repository's settings under "Collaborators". You must accept the invitation to be a collaborator using the link that is emailed to you. | **1.** The PAT must have the required access scopes (`repo`, `admin:repo_hook`, `read:user`, and `user:email`) under [Personal access tokens](https://github.com/settings/tokens). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** The PAT must have the required access scopes (`repo`, `admin:repo_hook`, `read:user`, and `user:email`) under [Personal access tokens](https://github.com/settings/tokens). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". You must accept the invitation to be a collaborator using the link that is emailed to you. |
+
+# [Azure Repos Git repo](#tab/gitvsts)
+
+While creating a pipeline, to choose the repository to build, first select the project to which the repository belongs. Then, select the repository. You must have read access to the project and repository.
+
+---
+
+## Protect branches with validation builds
+
+You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
+
+# [GitHub repo](#tab/github)
+
+To configure validation builds for a GitHub repository, you must be the owner or have admin access to the repository.
+
+1. First, build the repository at least once so that the build result is posted to GitHub, thereby making GitHub aware of the pipeline's name.
+1. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+
+# [Azure Repos Git repo](#tab/gitvsts)
+
+To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+
+1. First, from the Azure Repos **Branches** page, make sure that your repository is selected.
+1. Next, hover over the branch you wish to protect, click `...` to display its context menu, and then select **Branch policies**.
+1. Finally, click **Add build policy** and choose the pipeline and methods of protecting the branch as detailed in the Azure Repos documentation [here](../../repos/git/branch-policies.md#build-validation).
 
 ---
 
@@ -85,9 +229,16 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ---
 
-## Other restrictions
+## Parallel jobs and time limits
 
-Be aware of the following restrictions when you're running builds in an Azure Pipelines public project:
+If you use a public project with a public repository, then Azure Pipelines builds are free.
+If you use a private project or a private repository, then you can run up to 1,800 minutes (30 hours) of pipeline jobs for free every month.
+Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs-vsts.md).
 
-* **Cross-project access:** All builds in a public project run with an access token restricted to the project. Builds in a public project can access resources such as code, work items, or test results only within the project and not from other projects of the Azure DevOps organization.
-* **Package management:** If your builds need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
+## FAQs
+
+<a name="missing-repo"></a>
+#### Q: Why isn't a GitHub repository displayed for me to choose in Azure Pipelines
+
+**A**: Depending on the authentication type and ownership of the repository, specific permissions are required.
+See [Choose a repository to build](#choose-a-repository-to-build) for details.

@@ -25,7 +25,8 @@ For more details about building GitHub repositories, see [Build open source proj
 
 ## Get the sample code
 
-Azure Pipelines can be used to build an app written in any language. Select a language of your choice from the following sample repositories and fork it into your own GitHub account:
+Azure Pipelines can be used to build an app written in any language.
+Select a sample repository of your choice from the following languages and fork it into your own GitHub user account:
 
 | Programming language | Repository with a sample app |
 |----------------------|----------------------------|
@@ -91,7 +92,7 @@ Back in Azure Pipelines, observe that a new build is queued. Its status might be
 
 ## Next steps
 
-You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow the track for the language of your choice:
+You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow a track for the language of your choice:
 
 * [.NET Core](languages/dotnet-core.md)
 * [Go](languages/go.md)
