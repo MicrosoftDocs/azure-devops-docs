@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to build Java projects. See [Android](android.md) for Android projects.
+This guidance explains how to build Java projects. See [Android](android.md) for Android-specific projects.
 
 ## Example
 
@@ -69,15 +69,15 @@ steps:
 
 ### Customize Maven
 
-#### Adjust the build path
+#### Customize the build path
 
 Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/pom.xml` or `$(system.defaultWorkingDirectory)/IdentityService/pom.xml`.
 
-#### Adjust Maven goals
+#### Customize Maven goals
 
 Set the **goals** value to a space-separated list of goals for Maven to execute, such as `clean package`.
 
-For details about common Java phases and goals, see the [Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
+For details about common Java phases and goals, see [Apache's Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
 
 ## Build your code with Gradle
 

@@ -72,17 +72,17 @@
       href: agents/pools-queues.md
     - name: Microsoft-hosted agents
       href: agents/hosted.md
+    - name: Self-hosted Linux agents
+      href: agents/v2-linux.md
+    - name: Self-hosted macOS agents
+      href: agents/v2-osx.md
     - name: Self-hosted Windows agents
       href: agents/v2-windows.md
     - name: Windows agents (TFS 2015)
       href: agents/v1-windows.md
-    - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
-    - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
     - name: Running behind a proxy
       href: agents/proxy.md
-    - name: Using self-signed certificate
+    - name: Using a self-signed certificate
       href: agents/certificate.md
   - name: Builds
     items:
@@ -174,7 +174,7 @@
       href: build/ci-public.md
     - name: Build multiple branches
       href: build/ci-build-git.md
-    - name: Build GitHub repo using designer
+    - name: Build a GitHub repo using the designer
       href: build/ci-build-github.md
     - name: Use YAML CI (config as code)
       href: build/yaml.md
