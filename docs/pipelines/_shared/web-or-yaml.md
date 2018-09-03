@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-## Config as code or use designer
+## Config-as-code or visual designer
 
-Do you want to configure your build pipeline as code in YAML or by using the designer in your web browser?
+Do you want to configure your build pipeline as code in YAML, or by using the visual designer in your web browser?
 
 # [YAML](#tab/yaml)
 

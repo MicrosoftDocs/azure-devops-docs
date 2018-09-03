@@ -27,6 +27,6 @@ Check out the [What is Azure Pipelines](what-is-azure-pipelines.md) to find out 
 Quickly learn the different ways you can [use Azure Pipelines](pipelines-get-started.md) to automate your builds and releases.
 
 
-## Key Concepts for Azure Pipelines
+## Key concepts for Azure Pipelines
 
-The [Key Concepts for Azure Pipelines guide](key-pipelines-concepts.md) explains how Azure Pipelines works and explains key terms and concepts.  
+The [Key concepts for Azure Pipelines guide](key-pipelines-concepts.md) explains how Azure Pipelines works and explains key terms and concepts.  

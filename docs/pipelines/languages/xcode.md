@@ -25,7 +25,7 @@ For a working example of how to build an app with Xcode, import (into Azure Repo
 https://github.com/MicrosoftDocs/pipelines-xcode
 ```
 
-The sample code includes a `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
 Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 

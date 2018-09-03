@@ -24,7 +24,7 @@ For a working example of how to build a Python app with Django, import (into Azu
 https://github.com/MicrosoftDocs/pipelines-python-django
 ```
 
-The sample code includes a `azure-pipelines.yml` file at the root of the repository.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the project.
 
 Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample project.
@@ -143,16 +143,28 @@ Add the following YAML to install the `scipy` package in the conda environment n
 
 ## Test
 
+### Run lint tests with Flake8
+
+Add the following YAML to install or upgrade `flake8` and use it to run lint tests.
+
+```yaml
+
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+```
+
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format and code coverage results in Cobertura XML format.
+Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
 
 ```yaml
 - script: |
     pip install pytest
     pip install pytest-cov
     pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-  displayName: 'pytest'
+  displayName: 'Test with pytest'
 ```
 
 ### Publish test results
@@ -163,7 +175,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 - task: PublishTestResults@2
   inputs:
     testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Test results for Python $(python.version)'
+    testRunTitle: 'Publish test results for Python $(python.version)'
 ```
 
 ### Publish code coverage results
@@ -186,7 +198,7 @@ First, build an sdist of your package.
 
 ```yaml
 - script: 'python setup.py sdist'
-  displayName: Build sdist
+  displayName: 'Build sdist'
 ```
 
 Then, add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
@@ -195,8 +207,8 @@ Then, add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact: dist'
   inputs:
-    pathtoPublish: dist
-    artifactName: dist
+    pathtoPublish: 'dist'
+    artifactName: 'dist'
 ```
 
 ### Deploy to a PyPI-compatible index

@@ -10,7 +10,7 @@ ms.date: 07/06/2018
 monikerRange: 'vsts'
 ---
 
-# Key Concepts for New Azure Pipelines Users
+# Key concepts for new Azure Pipelines users
 
 Learn about the key concepts and components that are used in Pipelines. Understanding the basic terms and parts of Pipelines will help you further explore how it can help you deliver better code more efficiently and reliably.
 
@@ -54,18 +54,8 @@ When you use the visual designer, you create a release pipeline in addition to a
 
 ## Task
 
-A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks. Each task runs a specific job in the **pipeline**.
+A **task** is the building block of a pipeline. For example, a build pipeline may consist of build tasks and test tasks, while a release pipeline will consist of deployment tasks. Each task runs a specific job in the **pipeline**.
 
 ## Triggers
 
-A **trigger** is something that is set up to tell the pipeline when it should be run. You can configure a pipeline to be run upon a push to a repository, at a particular point of time, or upon the completion of another build. All of these are known as **triggers**.
-
-
-
-
-
-
-
-
-
-
+A **trigger** is something that is set up to tell the pipeline when it should be run. You can configure a pipeline to be run upon a push to a repository, at scheduled times, or upon the completion of another build. All of these are known as **triggers**.

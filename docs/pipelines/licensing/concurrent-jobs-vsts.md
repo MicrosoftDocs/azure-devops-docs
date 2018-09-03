@@ -24,7 +24,7 @@ If you want to run your builds and releases on machines that Microsoft manages, 
 We provide a *free tier* of service by default in your Azure DevOps Services organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs with no time limits.
-- Private project: One free parallel job that can run for up to 30 minutes. Your jobs will run until you've used 1,800 minutes.
+- Private project: One free parallel job that can run for up to 30 minutes each time. Your jobs will run until you've used 1,800 minutes per month.
  
 When the free tier is no longer sufficient:
 
@@ -67,7 +67,7 @@ The term *job* can refer to multiple concepts, and its meaning depends on the co
 
 * When you define a build or release, you can define it as a collection of [jobs](../process/phases.md). When a build or release runs, you can run multiple jobs as part of that build or release.
 
-* Each job consumes a *parallel job*. If there aren't enough parallel jobs, then the jobs are queued up and run one after the other.
+* Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, then the jobs are queued up and run one after the other.
 
 * When you run a [server job](../process/server-phases.md) or deploy to a [deployment group](../process/deployment-group-phases.md), you don't consume any parallel jobs.
 
@@ -94,19 +94,19 @@ In the following scenarios, you might need multiple parallel jobs:
 
 ## View available parallel jobs
 
-1. Browse to **Organization settings** > **Pipelines** > **Resource limits**.
+1. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
 
-   ![Location of resource limits in the organization settings](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
+   ![Location of parallel jobs in organization settings](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
 
 1. View the maximum number of parallel jobs that are available in your organization.
 
-1. Select **Pipelines queue** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
+1. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
 
 ## Sharing of parallel jobs across projects in a collection
 
-Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. We don't yet offer a way to partition or dedicate parallel job capacity to a specific project or agent pool. For example:
+Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. Currently, there isn't a way to partition or dedicate parallel job capacity to a specific project or agent pool. For example:
 
 1. You purchase two parallel jobs in your organization.
 
@@ -114,16 +114,14 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 1. You queue a build in the second project. That build won't start until one of the builds in your first project is completed.
 
-In the future, we plan to support finer control on allocation of parallel jobs.
-
 ## Q&A
 
 ### How do I qualify for the free tier of public projects?
 
 We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
 
-* Your pipelines are part of an Azure Pipelines [public project](../../organizations/public/index.md). 
-* The repository that you build comes from a public repository in GitHub or from the same public project in Azure DevOps Services.
+* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md). 
+* Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
 
 ### Are there limits on who can use Azure Pipelines?
 
@@ -146,6 +144,6 @@ Some of our earlier customers are still on a per-minute plan for the hosted agen
 
 ### I use XAML build controllers with my organization. How am I charged for those?
 
-You can register one XAML build controller for each self-hosted parallel job in your organization. Your organization gets at least one free self-hosted parallel job, so you can register one 
-XAML build controller for no additional charge. For each additional XAML build controller, you'll need an additional self-hosted parallel job.
-
+You can register one XAML build controller for each self-hosted parallel job in your organization.
+Your organization gets at least one free self-hosted parallel job, so you can register one XAML build controller for no additional charge.
+For each additional XAML build controller, you'll need an additional self-hosted parallel job.

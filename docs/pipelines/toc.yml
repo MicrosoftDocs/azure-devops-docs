@@ -6,7 +6,7 @@
     href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
-  - name: Use the designer
+  - name: Use the visual designer
     href: get-started-designer.md
   - name: Use the Azure portal
     href: get-started-azure-devops-project.md
@@ -170,11 +170,11 @@
   items:
   - name: Build
     items:
-    - name: Build open-source projects
+    - name: Build open source projects
       href: build/ci-public.md
     - name: Build multiple branches
       href: build/ci-build-git.md
-    - name: Build a GitHub repo using the designer
+    - name: Build a repo using the visual designer
       href: build/ci-build-github.md
     - name: Use YAML CI (config as code)
       href: build/yaml.md
@@ -252,7 +252,7 @@
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
   - name: Administer
     items:
-    - name: "Set build and release permissions (Security)"
+    - name: "Set build and release permissions (security)"
       href: policies/set-permissions.md 
 
 - name: Troubleshooting
