@@ -1,5 +1,5 @@
 ---
-title: Use the designer to create a CI/CD pipeline
+title: Use the visual designer to create a CI/CD pipeline
 titleSuffix: Azure Pipelines & TFS
 description: Use the designer in Azure Pipelines to create a pipeline
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 08/23/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Use the designer
+# Use the visual designer
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
@@ -25,9 +25,14 @@ monikerRange: '>= tfs-2017'
 > This guidance applies to TFS version 2017.3 and newer.
 ::: moniker-end
 
+::: moniker range="> tfs-2018"
+> [!TIP]
+> For build pipelines, we recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
+::: moniker-end
+
 ::: moniker range="vsts"
 
-We'll show you how to use the designer in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the designer, then see [Create your first pipeline](get-started-yaml.md) instead. 
+We'll show you how to use the visual designer in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the visual designer, then see [Create your first pipeline](get-started-yaml.md) instead.
 
 ::: moniker-end
 
@@ -612,7 +617,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 <a name="next-steps"></a>
 ## Next steps
 
-You've just learned the basics of using the designer to create and run an Azure Pipelines build and release pipeline.
+You've just learned the basics of using the visual designer to create and run a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 

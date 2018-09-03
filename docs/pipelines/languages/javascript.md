@@ -43,7 +43,7 @@ The sample code in this repo is a Node server implemented with Express JS framew
 
 ::: moniker range="vsts"
 
-The sample code includes a `azure-pipelines.yml` file at the root of the repository.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
 
 Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.

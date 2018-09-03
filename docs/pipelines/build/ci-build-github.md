@@ -1,5 +1,5 @@
 ---
-title: Build your GitHub repository using visual designer in Azure Pipelines
+title: Build your GitHub repository using the visual designer in Azure Pipelines
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -16,10 +16,12 @@ ms.date: 06/29/2018
 monikerRange: 'vsts'
 ---
 
-# Build your GitHub repo by using the designer
+# Build a repo using the visual designer
 
+::: moniker range="> tfs-2018"
 > [!TIP]
-> We recommend that you use YAML instead of the visual designer that we explain below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).
+> We recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).
+::: moniker-end
 
 ## Prerequisites
 
@@ -35,7 +37,7 @@ Azure Pipelines can be used to build an app written in any language. For this gu
 
 You should now have a sample app in your GitHub account.
 
-## Set up CI for your GitHub repository
+## Set up CI for your repository
 
 Follow the steps below to configure GitHub as a source for your Azure Pipelines build.
 
