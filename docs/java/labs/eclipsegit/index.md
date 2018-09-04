@@ -1,6 +1,6 @@
 ---
-title: Clone a Azure DevOps Services Git repository with Eclipse
-description: Tutorial lab for cloning a Azure DevOps Git repo with Eclipse
+title: Clone an Azure DevOps Services Git repository with Eclipse
+description: Tutorial lab for cloning an Azure DevOps Git repo with Eclipse
 ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: conceptual
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Clone a Azure DevOps Services Git repo using Eclipse
+# Clone an Azure DevOps Services Git repo using Eclipse
 
 In this exercise, you are going to import the MyShuttle2 repo in your Azure DevOps Services organization into to your VM for editing in Eclipse.
 
@@ -56,17 +56,17 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
 1. When Eclipse restarts, the Welcome dialog will appear again. Choose Windows > Show View and select Other...
 
-    ![Checkout from Team Services Git](../_img/eclipsegit/showtee.png)
+    ![Checkout from Azure DevOps Services Git](../_img/eclipsegit/showtee.png)
 
 1. Search for Team Explorer, select the Team Explorer View, and select OK.
 
-    ![Checkout from Team Services Git](../_img/eclipsegit/showtee2.png)
+    ![Checkout from Azure DevOps Services Git](../_img/eclipsegit/showtee2.png)
 
-1. Click on "Connect to Team Services ..." to sign in to your Azure DevOps Services organization.
+1. Click on "Connect to Azure DevOps Services ..." to sign in to your Azure DevOps Services organization.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-vsts-signin.png)
 
-1. Choose the radio button next to "Connect to a Team Foundation Server or Team Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps Services organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
+1. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps Services organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/browseAzure DevOps Services.png)
 

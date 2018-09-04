@@ -22,9 +22,9 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Prerequisites
 
- - You already have a Azure DevOps Services organization. If you do not already have a Azure DevOps Services organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
+ - You already have an Azure DevOps Services organization. If you do not already have an Azure DevOps Services organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
- - You have already [cloned a Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
+ - You have already [cloned an Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
 
 > [!VIDEO https://www.youtube.com/embed/HnDNdm1WCIo]
 
@@ -41,7 +41,7 @@ If you do not have a personal access token yet, you will need to [create one on 
 
 ## Connect to your Azure DevOps Services Git repo
 
-Once you have installed the extension, open either the root folder or a sub-folder of the cloned Git repository. Once a Azure DevOps Services or Team Foundation Server 2015 Update 2 (or later) repository is detected by the extension, provide your credentials (if credentials weren't already found). If you are required to provide your credentials, there will be an indicator in the status bar whose message will indicate that you need to login in.
+Once you have installed the extension, open either the root folder or a sub-folder of the cloned Git repository. Once an Azure DevOps Services or Team Foundation Server 2015 Update 2 (or later) repository is detected by the extension, provide your credentials (if credentials weren't already found). If you are required to provide your credentials, there will be an indicator in the status bar whose message will indicate that you need to login in.
 
 The indicator looks like this:
 
@@ -49,7 +49,7 @@ The indicator looks like this:
 ![Azure DevOps Services VS Code extension login indicator](_img/team-error.png)
 
 
-To log in to your account, run the `team signin` command. If your repository is a Azure DevOps Services repository, you will be prompted to enter your personal access token. When you do, it will be stored securely on your computer and used to connect to Azure DevOps Services. 
+To log in to your account, run the `team signin` command. If your repository is an Azure DevOps Services repository, you will be prompted to enter your personal access token. When you do, it will be stored securely on your computer and used to connect to Azure DevOps Services. 
 
 > [!NOTE]
 > If your repository is on Team Foundation Server 2015 Update 2 or later, you will be prompted to enter your username and password.
@@ -89,8 +89,8 @@ In addition to the status bar integrations, the extension also provides several 
 - `team view blame`- If a file in the repository is opened in the editor, it will open your browser to the blame page for that file in the current branch in the server repository.
 - `team view build summary` - Same behavior as clicking on the Build Status status bar item.
 - `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
-- `team signin` - Use this command to log in to a Azure DevOps Services organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
-- `team signout` - Use this command to log out from a Azure DevOps Services organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
+- `team signin` - Use this command to log in to an Azure DevOps Services organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
+- `team signout` - Use this command to log out from an Azure DevOps Services organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
 - `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
 - `team view website` - Same behavior as clicking on the team project status bar item.
 - `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.

@@ -1,4 +1,4 @@
-- name: Java with VSTS
+- name: Java with Azure DevOps Services
   href: index.md
 - name: Overview
   items:
@@ -23,7 +23,7 @@
 - name: Hands-on Labs
   href: labs/index.md
   items:
-  - name: 1 - Set up VSTS
+  - name: 1 - Set up Azure DevOps Services
     href: labs/settingvstsproject/index.md
   - name: 2 - Agile for Java
     href: labs/agile/index.md

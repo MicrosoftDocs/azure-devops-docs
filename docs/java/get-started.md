@@ -24,9 +24,9 @@ The first account you will need is a Microsoft account, otherwise known as a Liv
 
 [Create a free Microsoft account](https://signup.live.com/signup/)
 
-## Create a Azure DevOps Services organization
+## Create an Azure DevOps Services organization
 
-Once you have a Microsoft account, you can create a Azure DevOps Services organization. If you already have one, you can use it. Otherwise, create a new one:
+Once you have a Microsoft account, you can create an Azure DevOps Services organization. If you already have one, you can use it. Otherwise, create a new one:
 
 [Create a free Azure DevOps Services organization](https://go.microsoft.com/fwlink/?LinkId=307137&wt.mc_id=o~msft~java~almsite~gettingstartedintro)
 
@@ -49,7 +49,7 @@ You are now ready to use the quickstarts, tutorials, and hands-on labs for imple
 ## Frequently asked questions (FAQ)
 
 **Q: How many free Azure DevOps Services organizations can I create and own?**
-**A:** You can create multiple free Team Services accounts for every Microsoft Account you own.
+**A:** You can create multiple free Azure DevOps Services accounts for every Microsoft Account you own.
 
 **Q: How long does my free Azure DevOps Services organization remain valid?**
 **A:** Your free Azure DevOps Services organization does not expire.

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 # Share your code in Git using Eclipse
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
-Share your Eclipse project with your team in a Azure DevOps Services/TFS Git repo.
+Share your Eclipse project with your team in an Azure DevOps Services/TFS Git repo.
 
 ## Prerequisites
 

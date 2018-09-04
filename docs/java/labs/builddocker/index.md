@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create a Docker build for Java in Azure DevOps Services and publish it to ACR
 
-In this exercise, you are going to create a Docker Registry in Azure as well as a Azure DevOps Services build that builds two Docker container images and publishes them to the Azure Container Registry (ACR). In a later lab ([Continuous Deployment](../releasemanagement/index.md)) you will configure a Release in Azure DevOps Services to run the containers.
+In this exercise, you are going to create a Docker Registry in Azure as well as an Azure DevOps Services build that builds two Docker container images and publishes them to the Azure Container Registry (ACR). In a later lab ([Continuous Deployment](../releasemanagement/index.md)) you will configure a Release in Azure DevOps Services to run the containers.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -110,7 +110,7 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
 
 ## Build Docker images with Azure Pipelines
 
-In this task you will create a Azure Pipelines build pipeline that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
+In this task you will create an Azure Pipelines build pipeline that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 

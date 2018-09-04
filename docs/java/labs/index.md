@@ -1,6 +1,6 @@
 ---
 title: DevOps with Azure DevOps Services for Java - Hands-on-Labs
-description: DevOps with Visual Studio Team Services for Java - Hands-on-Labs
+description: DevOps with Azure DevOps Services for Java - Hands-on-Labs
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -33,7 +33,7 @@ Our partner [NorthWest Cadence](https://www.nwcadence.com/) has built a virtual 
 
 ## Target Audience
 
-The image and the accompanying hand-on-labs is for a technical audience. As such, familiarity with Visual Studio Team Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
+The image and the accompanying hand-on-labs is for a technical audience. As such, familiarity with Azure DevOps Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
 
 ## Provisioning an Azure DevOps project using Azure DevOps Demo Generator
 
@@ -59,10 +59,10 @@ The labs should be followed in the following order, though there are some equiva
       <td><a href="dockerbuildagent/index.md">Set up a Docker build agent</a></td>
    </tr>
    <tr>
-      <td><a href="intellijgit/index.md">Cloning a Azure DevOps Services Repo - IntelliJ</a></td>
+      <td><a href="intellijgit/index.md">Cloning an Azure DevOps Services Repo - IntelliJ</a></td>
    </tr>
    <tr>
-      <td><a href="eclipsegit/index.md">Cloning a Azure DevOps Services Repo - Eclipse</a></td>
+      <td><a href="eclipsegit/index.md">Cloning an Azure DevOps Services Repo - Eclipse</a></td>
    </tr>
    <tr>
       <td><a href="mavenpmjenkins/index.md">Maven Package Management with Azure DevOps Services and Jenkins</a></td>

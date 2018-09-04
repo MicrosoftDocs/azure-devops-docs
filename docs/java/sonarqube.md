@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Use SonarQube with Azure DevOps or Team Foundation Server (TFS) for Java development
 
-Configure a Azure DevOps Services or TFS Maven or Gradle build task to use SonarQube for code project and technical debt analysis.
+Configure an Azure DevOps Services or TFS Maven or Gradle build task to use SonarQube for code project and technical debt analysis.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ After setting up a [Maven build task](/azure/devops/pipelines/tasks/build/maven)
 
 **Q: What versions of TFS support SonarQube analysis in builds?**
 
-**A:** At this moment, SonarQube analysis is available for both Maven and Gradle build tasks on Team Services. Additionally, it is also present for the Maven build task in TFS 2015 Update 1 or later.
+**A:** At this moment, SonarQube analysis is available for both Maven and Gradle build tasks on Azure DevOps Services. Additionally, it is also present for the Maven build task in TFS 2015 Update 1 or later.
 
 
 

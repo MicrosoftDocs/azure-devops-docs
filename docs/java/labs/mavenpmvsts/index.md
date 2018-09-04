@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Configure Azure DevOps Services for Maven package management
 
-In this exercise, you are going to set up package management with Maven in Azure DevOps Services. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a Azure DevOps Services build to publish the MyShuttleCalc package to a Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
+In this exercise, you are going to set up package management with Maven in Azure DevOps Services. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure an Azure DevOps Services build to publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -119,7 +119,7 @@ Click VCS->Commit Changes to commit your changes to the repo.
 
 1. **Important**: If you have the MyShuttle2 project already open in IntelliJ or Eclipse, close the instance of the IDE and reopen it.
 
-## Creating a Azure DevOps Services Build for Publishing a Maven Package
+## Creating an Azure DevOps Services Build for Publishing a Maven Package
 
 In this task you will create a build that will publish the MyShuttleCalc library to the Maven feed.
 

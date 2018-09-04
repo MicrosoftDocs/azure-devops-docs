@@ -85,7 +85,7 @@ Learn more:
 [Create and manage your work in branches](branches.md)   
 [Managing your Git branches in Azure DevOps Services/TFS](manage-your-branches.md)   
 [Delete a Git branch on your Azure DevOps Services/TFS repo](delete-branch.md)   
-[Lock and unlock a Azure DevOps Services/TFS branch](lock-branches.md)
+[Lock and unlock an Azure DevOps Services/TFS branch](lock-branches.md)
 
 ## Commits
 
