@@ -24,7 +24,7 @@ ms.date: 04/26/2018
 
 With publish code as wiki, you have two options for maintaining wiki content.  
 - The first option is to [provision a wiki for your team project](wiki-create-repo.md). This option supports one and only one wiki for the team project. 
-- The second option supports [publishing markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs. 
+- The second option supports [publishing markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs. This is available only if Azure Repos service is enabled.
 
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs. 
 
