@@ -684,12 +684,6 @@ In wiki pages, you can also create rich content using HTML tags.
 </video>
 ```
 
-Or,  
-```HTML
-<video src="_media/vstswiki_mid.mp4" width=400 controls>
-</video>
-```
-
 </br>
 **Result:**
 </br>
