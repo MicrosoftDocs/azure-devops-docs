@@ -74,7 +74,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 	![Open Work hub when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
 
-1. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 	<img src="../boards/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
 

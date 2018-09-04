@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Code coverage | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with code coverage programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Code coverage | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with code coverage programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 459B4485-EAFB-445D-BAA1-EF7A913BD282
 ms.manager: douge
 ms.topic: article

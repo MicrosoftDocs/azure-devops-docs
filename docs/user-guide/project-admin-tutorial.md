@@ -30,7 +30,7 @@ The first task is to ensure that all members of your organization or group are a
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
 - [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md)
 - [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md) 
-- 
+
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
@@ -195,7 +195,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-- [Manage projects](../organizations/projects/index.md)
+- [Project management](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
 - [Manage organizations](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)

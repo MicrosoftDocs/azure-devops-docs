@@ -1,6 +1,6 @@
 ---
-title: Work Items | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Items | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 2762B459-BD46-493C-998F-A14EE1DA4C94
 ms.prod: devops
 ms.technology: devops-ecosystem

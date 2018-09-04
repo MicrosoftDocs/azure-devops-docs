@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Projects and Teams Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with teams, projects, and project collections programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Projects and Teams Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with teams, projects, and project collections programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 2FFBCD08-28E6-4EB4-86E4-557E416E4380
 ms.manager: douge
 ms.topic: article

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Results | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test results programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Results | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test results programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 70243742-BBC4-4586-AD22-A7756675A767
 ms.manager: douge
 ms.topic: article

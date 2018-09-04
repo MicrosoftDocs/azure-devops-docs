@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Permissions and security with VSTS | REST API Reference for Visual Studio Team Services and Team Foundation Server
+title: Permissions and security with VSTS | REST API Reference for Azure DevOps Services and Team Foundation Server
 description: Permissions reference fpr integrating with VSTS
 ms.assetid: ede350bd-bdf7-4360-90ac-e5be3fe24266
 ms.manager: douge

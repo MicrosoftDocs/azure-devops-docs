@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 # Repository settings
 #### Azure Repos | TFS 2018 Update 2
 
-Git repositories can be customized to a great extent on Visual Studio Team Services and Team Foundation Server.
+Git repositories can be customized to a great extent on Azure DevOps Services and Team Foundation Server.
 Global options for entire repositories are configured by repository settings.
 There are also user-specific and branch-specific controls, covered by [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.
 

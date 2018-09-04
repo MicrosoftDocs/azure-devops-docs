@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: XAML Build Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with xaml builds programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: XAML Build Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with xaml builds programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: f92b9363-6b36-4576-98ad-6c2fbf09d536
 ms.manager: douge
 ms.topic: article

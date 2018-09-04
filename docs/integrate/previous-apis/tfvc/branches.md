@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: TFVC Branches | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with TFVC branches programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: TFVC Branches | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with TFVC branches programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 9C1923A9-4887-4DC4-9C20-153C19D453CE
 ms.manager: douge
 ms.topic: article

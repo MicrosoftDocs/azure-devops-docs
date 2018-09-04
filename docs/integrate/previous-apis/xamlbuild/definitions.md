@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Build Definitions (XAML Build) | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Get build definitions programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Build Definitions (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Get build definitions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: d0424288-2fbd-4a65-8a60-0d272a42eca7
 ms.manager: douge
 ms.topic: article

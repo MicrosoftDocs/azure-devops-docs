@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: WIT Attachments | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item attachments programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: WIT Attachments | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item attachments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
 ms.manager: douge
 ms.topic: article

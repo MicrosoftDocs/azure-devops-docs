@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Policy Types | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with policy types programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Policy Types | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with policy types programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: c7025882-81ca-4d4a-a879-416560546992
 ms.manager: douge
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
-title: Kanban boards | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Kanban boards programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Kanban boards | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Kanban boards programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: B7F1D3A8-8D3D-4538-945A-9D45EB81885D
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -113,7 +113,7 @@ user's credential information is never shared directly with Azure DevOps Service
 each Azure DevOps Services resource the user attempts to access, permissions are validated
 based on the user's explicit permissions as well as permissions
 inherited through group membership. Administrators can leverage access
-controls to protect access to account, team project collection, team
+controls to protect access to account, project collection, team
 project, and team scoped data and functionality, as well as to more
 specific assets like version control folders and work item area paths.
 
@@ -168,7 +168,7 @@ incorrect, the sentiment is right.  The good news is that we regularly
 practice restoring various data sets from backup.  The geo-redundant 
 storage that we get from Azure is tested regularly. In addition, from 
 time to time we restore from backups to recover from human error, 
-such as when a customer has inadvertently deleted a Azure DevOps Services team project. We have the capability of restoring your account data to any point in time over the last 30 days.
+such as when a customer has inadvertently deleted an Azure DevOps Services project. We have the capability of restoring your account data to any point in time over the last 30 days.
 While our turnaround time sometimes takes more than day, we have always 
 been able to restore the customer's data given enough time.  Since 
 there are many permutations of disaster and data corruption 
@@ -459,7 +459,7 @@ confidence in Azure DevOps Services.
 ## Internal adoption
 
 Teams across Microsoft have begun adopting Azure DevOps Services internally. 
-The Azure DevOps Services team moved into a Azure DevOps Services account in 2014 and
+The Azure DevOps Services team moved into an Azure DevOps Services account in 2014 and
 uses it extensively. More broadly,
 we have established guidelines to enable the adoption plans for other
 teams. Obviously large teams move more gradually than smaller ones,

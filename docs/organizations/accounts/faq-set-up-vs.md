@@ -79,7 +79,7 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 <a name="WhatIsVSO"></a>
 
-#### Q: How can I create a Azure DevOps Services organization later?
+#### Q: How can I create an Azure DevOps Services organization later?
 
 A:	Learn how to [sign up for Azure DevOps Services](create-organization-msa-or-work-student.md).
 

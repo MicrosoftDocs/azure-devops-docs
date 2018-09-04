@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Items | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git items (files and folders) programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Items | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git items (files and folders) programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
 ms.manager: douge
 ms.topic: article

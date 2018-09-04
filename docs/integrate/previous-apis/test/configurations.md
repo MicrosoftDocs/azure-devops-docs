@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Configurations | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test configurations programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Configurations | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test configurations programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: b551e771-0315-4cfc-a3bd-ddfa3bb6b71f
 ms.manager: douge
 ms.topic: article

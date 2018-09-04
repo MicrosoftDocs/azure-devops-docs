@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Templates | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item templates programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Templates | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item templates programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 0FF507EB-0E59-45F9-8A04-E3E95BA3DA58
 ms.manager: douge
 ms.topic: article

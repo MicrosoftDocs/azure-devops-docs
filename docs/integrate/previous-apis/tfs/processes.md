@@ -1,6 +1,6 @@
 ---
-title: Processes | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with processes programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Processes | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with processes programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 118682B4-1067-4F9C-A38F-26B02F235334
 ms.prod: devops
 ms.technology: devops-ecosystem

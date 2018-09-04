@@ -144,7 +144,7 @@ Use pipelines to implement continuous integration and continuous delivery.
 To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
 
 
-## Manaual, exploratory, and load testing  
+## Manual, exploratory, and load testing  
 
 Test features support manual and exploratory testing, load or performance testing, and continuous testing.  
 

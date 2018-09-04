@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work item tracking artifact link types | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Work item tracking artifact link types | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.manager: douge
 ms.topic: article

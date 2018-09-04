@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Team Days Off | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team days off programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Team Days Off | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with team days off programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: b1bfef41-c787-40dd-be4d-6ed981e55fdd
 ms.manager: douge
 ms.topic: article

@@ -82,7 +82,7 @@ Stakeholder access essentially provides free access to a limited set of feature 
 
 A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
 
-The main tasks are grouped here by membership within a security group or role:
+The main tasks are grouped as follows by membership within a security group or role:
 
 ### Team administrators
 

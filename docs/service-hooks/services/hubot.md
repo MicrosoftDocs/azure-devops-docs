@@ -52,7 +52,7 @@ for deploying a Hubot instance to an Azure web site.
 ## Subscribe Hubot to team room messages in Azure DevOps
 
 Now that you've set up Hubot, create a service hook subscription
-that will forward messages in a Azure DevOps team room
+that will forward messages in an Azure DevOps team room
 to your Hubot instance.
 
 0. Go to your Azure DevOps project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`

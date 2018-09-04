@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Commits | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git commits programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Commits | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git commits programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: DD768682-3DC8-4E00-85E8-699633A93EB2
 ms.manager: douge
 ms.topic: article

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-With an Azure DevOps Services organization, you gain access to the platform in which you can:
+With an Azure DevOps Services organization, you gain access to the platform in which you can do the following:
 
 * Collaborate with others to develop applications by using our cloud service.
 * Plan and track your work as well as code defects and issues.

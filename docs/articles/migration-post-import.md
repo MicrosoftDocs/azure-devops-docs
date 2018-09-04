@@ -1,6 +1,6 @@
 ---
 title: Post Import
-description: Guidance on how to validate and configure a Azure DevOps Services organization after it has been imported.
+description: Guidance on how to validate and configure an Azure DevOps Services organization after it has been imported.
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
@@ -22,7 +22,7 @@ A Azure DevOps Services organization is ready for use once an import has complet
 ## Immediately After Import
 Immediately after the organization becomes available you will want to take a small team and perform spot checks on the organization. It's recommended that this team consists of the project collection administrators. This shouldn't be an in-depth check, but rather making sure that major pieces from your collection were brought over. Did your source code get imported? Are you seeing your build history? Are all of our area paths still present? It's best to confirm these artifacts are present before opening the organization to the entirety of your user base. 
 
-After spot checking the organization you will want to consider if you want to rename it. [Renaming a Azure DevOps organization](../organizations/accounts/rename-vsts-organization.md) is a simple operation, but it has [large impacts](https://support.microsoft.com/en-us/kb/2793597) on users currently using the organization. Some examples being Team Explore connections breaking or bookmarks no longer working. Getting a rename out of the way while it's just a small group of users using the organization allows the rest of the users to come in and configure their connections once. 
+After spot checking the organization you will want to consider if you want to rename it. [Renaming an Azure DevOps organization](../organizations/accounts/rename-vsts-organization.md) is a simple operation, but it has [large impacts](https://support.microsoft.com/en-us/kb/2793597) on users currently using the organization. Some examples being Team Explore connections breaking or bookmarks no longer working. Getting a rename out of the way while it's just a small group of users using the organization allows the rest of the users to come in and configure their connections once. 
 
 ## Set up Billing
 
@@ -34,7 +34,7 @@ Your Azure DevOps organization includes 5 free users with [Basic](https://visual
 
 This means that you shouldn't have to take any other import steps if your identity mapping file has just 5 users with Basic access, Visual Studio subscriptions, and Stakeholder access. If you have more than 5 users with Basic access, you'll need to [pay for these users in your Azure DevOps organization](../organizations/billing/buy-basic-access-add-users.md). Just make sure to do this before the end of the calendar month when you import. Otherwise, these users' feature access will change from Basic to Stakeholder on the 1st day of the next calendar month. To find out how many additional users you'll need to pay for, visit your Azure DevOps organization (```https://dev.azure.com/{yourorganization}/_user```) so you can find the number of paid users that you've assigned:
 
-![User Summary on a Azure DevOps organization](_img/migration-post-import/UserSummary.png)
+![User Summary on an Azure DevOps organization](_img/migration-post-import/UserSummary.png)
 
 Dry run imports do not have their licenses reset on the 1st of the month. Unlike production imports, their grace period extends for the life of the organization. So you don't need to worry about purchasing licenses while testing out an import. 
 
