@@ -21,12 +21,12 @@ This exercise will walk you through the steps to creating your Azure DevOps acco
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a Azure DevOps Services organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
+1. Login to your Azure DevOps Services organization - `https://{your account name}.visualstudio.com`. If you do not have an Azure DevOps Services organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
 
    > [!div class="mx-imgBorder"]
-   > ![Sign up for a Azure DevOps Services organization](../_img/settingAzure DevOps Servicesproject/newaccount.png)
+   > ![Sign up for an Azure DevOps Services organization](../_img/settingAzure DevOps Servicesproject/newaccount.png)
 
-## (Optional) Generate a Azure DevOps Services Personal Access Token (PAT)
+## (Optional) Generate an Azure DevOps Services Personal Access Token (PAT)
 
 In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate Azure DevOps Services with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your Azure DevOps Services organization.
 

@@ -98,7 +98,7 @@ through the MyShuttle scenario.
 
     ![](../_img/agile/image11.png)
 
-1. Click **OK**. Visual Studio Team Services opens up the New Product
+1. Click **OK**. Azure DevOps Services opens up the New Product
     Backlog Item screen. Feel free to add a description.
 
 1. When ready click **Save and close**.

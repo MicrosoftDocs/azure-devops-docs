@@ -22,10 +22,10 @@ monikerRange: '>= tfs-2015'
   * [TFVC support](#tfvc-support)
   * [TFVC setup requirements](#tfvc-setup-requirements)
   * [Setting TFVC as the version control system](#setting-tfvc-as-the-version-control-system)
-* [How can I import my IntelliJ project into Azure DevOps Services?](#how-can-i-import-my-intellij-project-into-vsts)
-* [How can I checkout a Azure DevOps Services Git repo from within IntelliJ?](#how-can-i-checkout-a-vsts-git-repo-from-within-intellij)
+* [How can I import my IntelliJ project into Azure DevOps Services?](#how-can-i-import-my-intellij-project-into-azure-devops-services)
+* [How can I checkout an Azure DevOps Services Git repo from within IntelliJ?](#how-can-i-checkout-an-azure-devops-services-git-repo-from-within-intellij)
 * [How can I create a pull request using the IntelliJ plugin?](#how-can-i-create-a-pull-request-using-the-intellij-plugin)
-* [Where can I learn more about the Azure DevOps Services Pull Request feature?](#where-can-i-learn-more-about-the-vsts-pull-request-feature)
+* [Where can I learn more about the Azure Repos Pull Request feature?](#where-can-i-learn-more-about-the-azure-repos-pull-request-feature)
 * [What if I can't see any repositories after signing in?](#what-if-i-cant-see-any-repositories-after-signing-in)
 * [When I test the tf executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?](#when-i-test-the-tf-executable-i-get-a-warning-that-the-version-detected-is-000-how-can-i-make-it-detect-the-actual-version)
 * [How do I collect logs to help troubleshoot an issue?](#how-do-i-collect-logs-to-help-troubleshoot-an-issue)
@@ -46,7 +46,7 @@ Yes, TFVC support is available in the IntelliJ plug-in.
  The current TFVC features supported are:
 
 TFVC support is available in the IntelliJ plug-in. The current features supported are:
-* Checkout a TFVC repository from Team Services or Team Foundation Server 2015+.
+* Checkout a TFVC repository from Azure DevOps Services or Team Foundation Server 2015+.
 * Execute all basic version control actions such as add, delete, rename, move, etc.
 * View local changes and history for your files.
 * Create, view, and edit your workspace.
@@ -91,7 +91,7 @@ and select `Enable Version Control Integration`. Select TFVC from the dropdown m
 
 Watch a how-to video on importing projects on our [YouTube channel](https://www.youtube.com/watch?v=D7bpC6KwrA4).
 
-### How can I checkout a Azure DevOps Services Git repo from within IntelliJ?
+### How can I checkout an Azure DevOps Services Git repo from within IntelliJ?
 
 Watch a how-to video on checking out projects on our [YouTube channel](https://www.youtube.com/watch?v=dzGVkna-Nzs).
 
@@ -99,7 +99,7 @@ Watch a how-to video on checking out projects on our [YouTube channel](https://w
 
 Watch a how-to video on pull requests on our [YouTube channel](https://www.youtube.com/watch?v=lcSXH23xrY8).
 
-### Where can I learn more about the Azure DevOps Services Pull Request feature?
+### Where can I learn more about the Azure Repos Pull Request feature?
 
 This [Conduct a Git pull request](/azure/devops/repos/git/pullrequest) tutorial provides more details.
 

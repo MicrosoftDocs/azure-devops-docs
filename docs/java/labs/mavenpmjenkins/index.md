@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Build a Maven package using Jenkins and Azure DevOps Services
 
-In this exercise, you are going to clone a GitHub repo into Azure DevOps Services, if you have not already done so. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a Jenkins build to get the source code from the Azure DevOps Services repo, build and then publish the MyShuttleCalc package to a Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
+In this exercise, you are going to clone a GitHub repo into Azure DevOps Services, if you have not already done so. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a Jenkins build to get the source code from the Azure DevOps Services repo, build and then publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -139,7 +139,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 1. Add a new post-build action - this time select "Archive the artifacts". Set "Files to archive" to `**/MyShuttleCalc*.jar`. This saves the MyShuttleCalc jar file as an artifact from this job.
 
-1. Add a new post-build action - this time select "Collect results for TFS/Team Services". This step allows Jenkins to collect test results and coverage results so that they are available to Azure DevOps Services. Click the Add button twice to add 2 collectors:
+1. Add a new post-build action - this time select "Collect results for TFS/Azure DevOps Services". This step allows Jenkins to collect test results and coverage results so that they are available to Azure DevOps Services. Click the Add button twice to add 2 collectors:
 
     - **Type**: JUnit, **Files to include**: `**/TEST-*.xml`
     - **Type**: JaCoCo, **Files to include**: `**/jacoco/**`
@@ -168,7 +168,7 @@ In this task you will run the build to ensure that it runs successfully.
 
 ## Integrate Azure DevOps Services Team Build and Jenkins
 
-In this task you will configure a Azure DevOps Services Team Build in Azure DevOps Services that will trigger the Jenkins job and collect the results. This technique offers the integration from source control, work item tracking, test and release that you get in Azure DevOps Services but allows the build itself to be in Jenkins.
+In this task you will configure an Azure DevOps Services Team Build in Azure DevOps Services that will trigger the Jenkins job and collect the results. This technique offers the integration from source control, work item tracking, test and release that you get in Azure DevOps Services but allows the build itself to be in Jenkins.
 
 1. In Jenkins, click on the Jenkins logo to navigate to the dashboard.
 

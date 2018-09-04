@@ -1,6 +1,6 @@
 ---
-title: Clone a Azure DevOps Services Git repository with IntelliJ
-description: Tutorial lab for cloning a Azure DevOps Git repo with IntelliJ
+title: Clone an Azure DevOps Services Git repository with IntelliJ
+description: Tutorial lab for cloning an Azure DevOps Git repo with IntelliJ
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Clone a Azure DevOps Services Git repo using IntelliJ
+# Clone an Azure DevOps Services Git repo using IntelliJ
 
 In this exercise, you are going to open the MyShuttle2 repo from your Azure DevOps Services organization in your VM for editing in IntelliJ.
 
@@ -40,7 +40,7 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Click on Configure to configure Plugins](../_img/intellijgit/intellij-config-plugins.png)
 
-1. In the search box type `visual studio team services` and click the "Search in repositories" link in the main window.
+1. In the search box type `Azure DevOps Services` and click the "Search in repositories" link in the main window.
 
     ![Search for the Azure DevOps Services plugin](../_img/intellijgit/intellij-search-vsts.png)
 
@@ -48,9 +48,9 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Install the plugin and restart IntelliJ](../_img/intellijgit/intellij-click-install.png)
 
-1. When IntelliJ restarts, the Welcome dialog will appear again. Click "Check out from Version Control" and select "Team Services Git".
+1. When IntelliJ restarts, the Welcome dialog will appear again. Click "Check out from Version Control" and select "Azure DevOps Services Git".
 
-    ![Checkout from Team Services Git](../_img/intellijgit/intellij-open-from-vsts.png)
+    ![Checkout from Azure DevOps Services Git](../_img/intellijgit/intellij-open-from-vsts.png)
 
 1. Click on "Sign in..." to sign in to your Azure DevOps Services organization.
 
@@ -88,9 +88,9 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
 ## Clone MyShuttleCalc from Azure DevOps Services with IntelliJ
 
-1. While the MyShuttle2 project is open in IntelliJ, in the toolbar at the top of IntelliJ, select File -> New -> Project from Version Control -> Team Services Git.
+1. While the MyShuttle2 project is open in IntelliJ, in the toolbar at the top of IntelliJ, select File -> New -> Project from Version Control -> Azure DevOps Services Git.
 
-    ![New Team Services Git project](../_img/intellijgit/intellij-new-myshuttlecalc-project.png)
+    ![New Azure DevOps Services Git project](../_img/intellijgit/intellij-new-myshuttlecalc-project.png)
 
 1. Enter "MyShuttleCalc" into the search bar and select the MyShuttleCalc repo from your team project. Click the Clone button to clone the repo to the VM.
 

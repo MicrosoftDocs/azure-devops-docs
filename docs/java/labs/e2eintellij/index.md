@@ -155,7 +155,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Commit your changes by selecting VCS->Git->Commit File. Enter "Fixing totals bug" as the Commit message.
 
-1. On the upper right of the Commit message box there is a Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
+1. On the upper right of the Commit message box there is an Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
 
     > **Note**: In this case we don't need to associate the checkin with the Bug since the branch is already associated with the Bug.
 
