@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Types | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item types programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Types | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item types programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: C58D078F-9310-4BE9-95A5-715CB70370FD
 ms.manager: douge
 ms.topic: article

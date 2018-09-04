@@ -42,7 +42,7 @@ Supports tracking a piece of information about the work to perform. Values you a
 [!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
 
 ## Inheritance process model 
-The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Azure DevOps Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
 ## Iteration paths (aka sprints)

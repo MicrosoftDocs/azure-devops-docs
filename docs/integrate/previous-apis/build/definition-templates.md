@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Build Definition Templates | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Get build definition templates programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Build Definition Templates | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Get build definition templates programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: E7D635DE-CDAB-449A-80C5-EC89610A5A5A
 ms.manager: douge
 ms.topic: article

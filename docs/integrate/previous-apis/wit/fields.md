@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Fields | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item fields programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Fields | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item fields programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96
 ms.manager: douge
 ms.topic: article

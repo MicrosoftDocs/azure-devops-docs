@@ -97,12 +97,12 @@ To give other users access to your organization, add their email addresses.
 
    ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
 
-2. Select **Users** > **Add new users** to open the form.
+3. Select **Users** > **Add new users** to open the form.
 
    > [!div class="mx-imgBorder"]  
    >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
 
-3. Complete the form.
+4. Complete the form.
 
    ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
 
@@ -111,7 +111,7 @@ To give other users access to your organization, add their email addresses.
    * **Add to projects**: Select the project that you named in the previous procedure.
    * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
-4. Select **Add** to complete your invitation.
+5. Select **Add** to complete your invitation.
 
 <!---
 Go to the User Hub:

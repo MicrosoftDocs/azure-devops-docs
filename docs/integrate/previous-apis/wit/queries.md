@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Queries | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item queries programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Queries | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item queries programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: F91A2D76-3586-4552-A9F4-AC9E5CBB46D4
 ms.manager: douge
 ms.topic: article

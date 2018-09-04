@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Plans | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test plans programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Plans | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test plans programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: B07716A0-0420-49F8-95B9-880105FADDA3
 ms.manager: douge
 ms.topic: article

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Iterations | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team iterations programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Iterations | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with team iterations programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 8a5b43ab-7d3c-4342-b738-65c310a556cc
 ms.manager: douge
 ms.topic: article

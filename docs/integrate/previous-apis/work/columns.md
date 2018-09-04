@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Columns for Kanban boards | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with the columns on boards programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Columns for Kanban boards | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with the columns on boards programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: D2B3A527-C95C-4E56-ADC5-D53FEF16025D
 ms.manager: douge
 ms.topic: article

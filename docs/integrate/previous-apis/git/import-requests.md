@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Import Requests | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git import requests programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Import Requests | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git import requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.contentid: 95B4933F-8191-4073-835A-3A0E218987D3
 ---
 

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Tracking Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item tracking programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Tracking Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item tracking programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 4b6ac3ad-7de0-4137-8b80-8a4b44f4107f
 ms.manager: douge
 ms.topic: article

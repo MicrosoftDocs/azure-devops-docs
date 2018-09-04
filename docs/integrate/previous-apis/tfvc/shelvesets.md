@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: TFVC Shelvesets | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with TFVC shelvesets programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: TFVC Shelvesets | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with TFVC shelvesets programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 01032D9F-ECAA-401A-8ECA-C857073876B9
 ms.manager: douge
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
-title: REST API Overview for Visual Studio Team Services and Team Foundation Server
-description: Overview of REST APIs and their references for Visual Studio Team Services and Team Foundation Server.
+title: REST API Overview for Azure DevOps Services and Team Foundation Server
+description: Overview of REST APIs and their references for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 5C49CA02-A8C1-4B8D-AE52-B955FAFC7B06
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# REST API Overview for Visual Studio Team Services and Team Foundation Server
+# REST API Overview for Azure DevOps Services and Team Foundation Server
 
-The Visual Studio Team Services and Team Foundation Server APIs are based on REST, OAuth, Json and service hooks -
+The Azure DevOps Services and Team Foundation Server APIs are based on REST, OAuth, Json and service hooks -
 all standard web technologies broadly supported in the industry.
 
 If you're new to REST APIs, take a look at the information on [getting started](../get-started/rest/basics.md) with these APIs,

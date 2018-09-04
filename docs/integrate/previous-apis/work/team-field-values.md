@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Team Field Values | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team field values programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Team Field Values | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with team field values programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: eb99bcf1-7f2b-4db5-bfdf-f2b923ff9d5a
 ms.manager: douge
 ms.topic: article

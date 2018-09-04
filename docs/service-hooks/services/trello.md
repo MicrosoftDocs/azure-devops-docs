@@ -31,7 +31,7 @@ For example, when code is pushed, or a build occurs.
 
    <img alt="Trello athorization token" src="./_img/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
 
-Create a Trello card or list from a Azure DevOps event
+Create a Trello card or list from an Azure DevOps event.
 
 0. Go to your Azure DevOps project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 

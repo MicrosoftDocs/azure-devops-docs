@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: CloneOperation | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with cloning test plans and test suites programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: CloneOperation | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with cloning test plans and test suites programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: FF42473B-F1B6-45F2-89C8-A0F8169ACAC5
 ms.manager: douge
 ms.topic: article

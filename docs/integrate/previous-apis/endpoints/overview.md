@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Service Endpoints Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
+title: Service Endpoints Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
 description: Overview of service endpoints API
 ms.ContentId: 77294d8c-ba71-4755-85d4-27a97d8809ce
 ---

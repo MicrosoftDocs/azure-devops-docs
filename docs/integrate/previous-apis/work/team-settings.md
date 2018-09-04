@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Team Settings | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team settings programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Team Settings | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with team settings programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
 ms.manager: douge
 ms.topic: article

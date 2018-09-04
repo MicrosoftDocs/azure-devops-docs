@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Runs | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test runs programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Runs | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test runs programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: D2ABEFCD-11BE-4155-BA82-3B39A9593505
 ms.manager: douge
 ms.topic: article

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Variables | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test variables programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Variables | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test variables programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 0ac1da87-798b-47cf-8426-8fc08d230e7f
 ms.manager: douge
 ms.topic: article

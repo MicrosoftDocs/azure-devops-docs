@@ -12,14 +12,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
 
-# Migrate data from TFS to Azure DevOps Services
+# Migrate data from TFS to Azure DevOps Services 
 
-> [!Note]
-> Visual Studio Team Services (VSTS) was recently rebranded to Azure DevOps. The rebranding has no impact to the TFS Database Import Service. You can continue to use it to migrate to Azure DevOps. As part of this rebrand, the term 'account' has been updated to be 'organization'.  
-
+>[!Note]
+>[ Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
 
 ## TFS Database Import Service
-The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walkthrough of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps. 
+The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps. 
 
 
 ## Supported TFS Versions for Import

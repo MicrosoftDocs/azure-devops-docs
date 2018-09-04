@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Sessions| REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test sessions programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Sessions| REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test sessions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 98502210-26d4-4b47-9d42-087c8e62782f
 ms.manager: douge
 ms.topic: article

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Blobs | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git blobs programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Blobs | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git blobs programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 681BE5A9-6228-4A4B-AD90-0E79277394B9
 ms.manager: douge
 ms.topic: article

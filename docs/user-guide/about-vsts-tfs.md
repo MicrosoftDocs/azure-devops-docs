@@ -165,7 +165,7 @@ of these changes was recently introduced, and more changes are on the way.
 With these new Azure DevOps Services process customization capabilities, you can make customizations directly within the 
 Azure DevOps Services Web UI. If you want to customize your processes programmatically, you can also make customizations
 through REST endpoints. When you customize projects in this way, those projects will continue to update
-automatically when we release new versions of their base processes with Azure DevOps Services updgrades. 
+automatically when we release new versions of their base processes with Azure DevOps Services upgrades. 
 
 To learn more, see [Customize your work tracking experience](../reference/customize-work.md).
 
@@ -212,7 +212,7 @@ And, available today only in Azure DevOps Services:
 * [Analytics](/azure/devops/report/analytics/) which is the reporting platform for Azure DevOps Services, which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the Azure DevOps Services suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related articles
- 
+
 - [Key concepts](concepts.md)  
 - [Essential services](services.md)
 - [Client-server tools](tools.md)

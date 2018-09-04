@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Cases | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test cases programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Cases | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test cases programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 17A2D523-0FEA-47EE-9C61-98D016F4F91D
 ms.manager: douge
 ms.topic: article

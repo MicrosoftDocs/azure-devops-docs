@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Updates | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with updates to work items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Updates | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with updates to work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: B4C07EF4-535A-4479-803D-C181553613EE
 ms.manager: douge
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access for Azure Boards
 titleSuffix: Azure DevOps Services & TFS 
-description: Default permissions and access levels to support work tracking tasks in Visual Studio Team Services & Team Foundation Server
+description: Default permissions and access levels to support work tracking tasks in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 

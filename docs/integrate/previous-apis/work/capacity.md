@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Capacity | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with capacity programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Capacity | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with capacity programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: bfcad439-f8a2-4a73-9276-485fdf01aaaf
 ms.manager: douge
 ms.topic: article

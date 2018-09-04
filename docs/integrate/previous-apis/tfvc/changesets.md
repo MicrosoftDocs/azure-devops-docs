@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: TFVC Changesets | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with TFVC changesets programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: TFVC Changesets | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with TFVC changesets programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 27A32DF1-E6D8-47E1-93FB-7FB812F2B47D
 ms.manager: douge
 ms.topic: article

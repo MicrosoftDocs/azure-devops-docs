@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Team Room Messages | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with messages in team rooms programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Team Room Messages | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with messages in team rooms programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: FBA6437B-1A08-4762-A91C-B1F7777366E8
 ms.manager: douge
 ms.topic: article

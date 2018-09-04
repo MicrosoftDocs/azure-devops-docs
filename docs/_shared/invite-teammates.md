@@ -8,7 +8,7 @@ You provide others access to your organization by adding their email addresses t
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose the ![](/azure/devops/_img/icons/gear-icon.png) gear icon to open **Admin settings**.
+2. Choose ![gear icon](/azure/devops/_img/icons/gear-icon.png) **Admin settings**.
 
    ![Open Admin Settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)
 

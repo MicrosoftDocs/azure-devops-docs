@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Team Room Users | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with users in team rooms programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Team Room Users | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with users in team rooms programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 6452FEDA-E518-4983-B37B-C50BB17E0047
 ms.manager: douge
 ms.topic: article

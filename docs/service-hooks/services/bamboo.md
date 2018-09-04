@@ -18,7 +18,7 @@ If you use Bamboo to build your apps, you can store your code in Azure DevOps
 and continue to use Bamboo for your continuous integration builds.
 You can trigger a Bamboo build when you push code to your project's
 Git repository,  when you check code in to Team Foundation version control,
-or when a Azure DevOps build finishes.
+or when an Azure DevOps build finishes.
 
 ## Configure Bamboo
 
@@ -42,7 +42,7 @@ to connect Azure DevOps to Bamboo.
 2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in Azure DevOps.
 The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git/{projectName}```.
 
-3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) of a Azure DevOps organization with read access to the repository. 
+3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) of an Azure DevOps organization with read access to the repository. 
 
    <img alt="Repository settings with Git selected" src="./_img/bamboo/repository-management-settings.png" style="border: 1px solid #CCCCCC" />
 

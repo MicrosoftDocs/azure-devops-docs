@@ -372,7 +372,7 @@ AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /Source
 **VS403316**
 
 ```cmdline
-VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Visual Studio Team Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
+VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
 ```
 
 An inconsistency was detected in some TFVC files within your collection. To resolve the error you will need to work Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). Please open a support ticket and they will assist you with correcting the error. 
@@ -380,9 +380,9 @@ An inconsistency was detected in some TFVC files within your collection. To reso
 **VS403366**
 
 ```cmdline
-VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Visual Studio Team Services have been provided exceptions for your machines firewall.
+VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
 
-List of Visual Studio Team Services IPs:
+List of Azure DevOps Services IPs:
 ```
 
 The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for VSTS. VSTS's IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 

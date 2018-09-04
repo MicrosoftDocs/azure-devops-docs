@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Recycle Bin | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with deleted work items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Recycle Bin | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with deleted work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: A4633743-4644-421E-9B4F-3C906F9D4D42
 ms.manager: douge
 ms.topic: article

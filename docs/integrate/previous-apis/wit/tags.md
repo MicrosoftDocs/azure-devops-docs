@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Tags | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item tags programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Tags | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item tags programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: DDD158EB-BCCB-48AE-8C2F-5409D2326E48
 ms.manager: douge
 ms.topic: article

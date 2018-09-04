@@ -1,6 +1,6 @@
 ---
-title: Rows for Kanban Boards | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Kanban board rows programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Rows for Kanban Boards | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Kanban board rows programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 01F3FEF0-DCCA-4CB0-B723-A546CE0935B0
 ms.prod: devops
 ms.technology: devops-ecosystem

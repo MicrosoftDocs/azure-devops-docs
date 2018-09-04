@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Points | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test points programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Points | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test points programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 70C0FE8E-1A6B-4C0A-BC8A-46DAF75A9418
 ms.manager: douge
 ms.topic: article

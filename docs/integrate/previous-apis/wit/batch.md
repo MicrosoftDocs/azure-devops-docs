@@ -1,6 +1,6 @@
 ---
-title: WIT Batch | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Edit or change multiple work items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: WIT Batch | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Edit or change multiple work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 0f4a6185-6518-4bda-a5b6-2eddf0319afe
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Build Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
+title: Build Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
 description: Work with VSTS builds programmatically using the REST APIs.
 ms.assetid: 6C2E7900-891E-4C9E-9FD1-4798E37019FB
 ms.manager: douge

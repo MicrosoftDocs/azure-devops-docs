@@ -1,6 +1,6 @@
 ---
-title: Delivery Timeline | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with delivery timeline plans programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Delivery Timeline | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with delivery timeline plans programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.contentid: D7B8FEC4-75F9-432E-8140-091C535C514B
 ms.prod: devops
 ---

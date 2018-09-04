@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Build Qualities (XAML Build) | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Configure a project's build qualities programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Build Qualities (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Configure a project's build qualities programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 0C352988-B949-4515-A89F-5562F86E937F
 ms.manager: douge
 ms.topic: article

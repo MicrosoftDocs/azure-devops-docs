@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Attachments | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test attachments programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Attachments | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test attachments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 17331F93-DD6A-459E-A3E6-D4A0FABAAC9B
 ms.manager: douge
 ms.topic: article

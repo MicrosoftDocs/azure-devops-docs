@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Reporting Work Item Links | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Report on work item links programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Reporting Work Item Links | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Report on work item links programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 56c1dc20-c204-4550-8294-8d88b6a54aec
 ms.manager: douge
 ms.topic: article

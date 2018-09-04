@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Areas and Iterations | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item areas and iterations programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Areas and Iterations | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item areas and iterations programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
 ms.manager: douge
 ms.topic: article
