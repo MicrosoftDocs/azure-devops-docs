@@ -30,7 +30,8 @@ monikerRange: '>= tfs-2015'
 
 1. [Set up the plug-in for your test framework](/visualstudio/test/getting-started-with-unit-testing#frameworks), if you haven't already.
 
-1. Create a folder that has the custom binaries for your plug-in. (The plug-in package for your framework is a .vsix file. Change the extension to .zip so that you can unzip it.)
+1. Create a folder that has the custom binaries for your plug-in. (The plug-in package for your framework is a .vsix file.
+   Change the extension to .zip so that you can unzip it.)
 
 1. Add these assemblies to version control and [let the build controller know where to get them](../../pipelines/overview.md).
 
