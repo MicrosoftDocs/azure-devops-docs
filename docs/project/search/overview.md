@@ -47,4 +47,4 @@ You can narrow down your results and focus in on what you need by using filters.
 See also:
 
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
+* [Search your Wiki](https://devblogs.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)

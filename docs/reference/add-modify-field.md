@@ -383,7 +383,7 @@ In addition to the attributes that you can change for a work item field, there a
 
 ![Work Item Field Explorer](_img/IC633020.png)
 
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
+For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://devblogs.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="integration-fields">  </a>

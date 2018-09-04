@@ -155,7 +155,7 @@
     - name: Manual test posts
       href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
     - name: Test management posts
-      href: https://blogs.msdn.microsoft.com/devops/?s=test+management
+      href: https://devblogs.microsoft.com/devops/?s=test+management
     - name: "Test & Feedback posts"
       href: https://social.msdn.microsoft.com/Search?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
     - name: Load test posts

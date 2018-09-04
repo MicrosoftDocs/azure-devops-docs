@@ -6,7 +6,7 @@ A: Who to contact depends on the support you need:
 
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support).
 
-* Help with Azure DevOps Services - [Azure DevOps Services support](https://visualstudio.microsoft.com/team-services/support-visual-studio-team-services).
+* Help with Azure DevOps Services - [Azure DevOps Services support](https://azure.microsoft.com/support/devops-visual-studio-team-services).
 
 * Help with Microsoft Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support). 
 

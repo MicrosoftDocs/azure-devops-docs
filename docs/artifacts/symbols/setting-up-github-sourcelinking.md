@@ -73,6 +73,6 @@ No, currently the Source Link implementation in Visual Studio is not designed to
 
 ## Reference Information
 
-- [Azure DevOps Services is now a Symbol Server](https://blogs.msdn.microsoft.com/devops/2017/11/15/vsts-is-now-a-symbol-server/)
+- [Azure DevOps Services is now a Symbol Server](https://devblogs.microsoft.com/devops/2017/11/15/vsts-is-now-a-symbol-server/)
 - [Publish Symbols for Debugging](/azure/devops/pipelines/symbols/)
 - [Build: Index & Publish Symbols](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)

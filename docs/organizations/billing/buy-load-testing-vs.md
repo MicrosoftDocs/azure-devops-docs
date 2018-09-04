@@ -83,4 +83,4 @@ To turn off paid cloud-based load testing, go to your organization in the Azure 
 ## Related articles
 
 * [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps Services billing support](https://azure.microsoft.com/support/devops/)

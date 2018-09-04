@@ -29,7 +29,7 @@ Each Azure DevOps organization starts out with the free tier of Microsoft-hosted
 
 ### Public projects
 
-If your pipelines are in a [public project](../public/index.md), then you run up to 10 free parallel jobs with unlimited minutes on Microsoft-hosted agents. If you need more, simply [contact us](https://visualstudio.microsoft.com/team-services/support/).
+If your pipelines are in a [public project](../public/index.md), then you run up to 10 free parallel jobs with unlimited minutes on Microsoft-hosted agents. If you need more, simply [contact us](https://azure.microsoft.com/support/devops/).
 
 ### Private projects
 
@@ -44,7 +44,7 @@ Azure Pipelines also offers you a way to run the agent on machines that you mana
 
 ### Public projects
 
-If your pipelines are in a [public project](../public/index.md), then you run up to 10 free parallel jobs with self-hosted agents. If you need more, simply [contact us](https://visualstudio.microsoft.com/team-services/support/).
+If your pipelines are in a [public project](../public/index.md), then you run up to 10 free parallel jobs with self-hosted agents. If you need more, simply [contact us](https://azure.microsoft.com/support/devops/).
 
 ### Private projects
 

@@ -58,7 +58,7 @@ As an alternative, consider:
 * If you use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
   task you can deploy and run unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
   and run tests on platforms that don't have Visual Studio installed by using the 
-  [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
+  [Visual Studio Test Platform](https://devblogs.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
   In this case, you can use [deployment groups](../release/deployment-groups/index.md)
   to define your target machines. For more details, see
   [Testing with unified agents and jobs](test-with-unified-agent-and-phases.md).
@@ -102,7 +102,7 @@ Parallel test execution:
 * Is easy to implement, it requires no changes to existing test code and does not break existing test runs.
 * Works with the test code where it already resides.
 * Is OFF by default, users must explicitly opt in.
-* Is supported at [assembly level](https://blogs.msdn.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/).
+* Is supported at [assembly level](https://devblogs.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/).
 
 Not all existing test code might be parallel-safe; for example, tests may assume exclusive use of global resources.
 In general, use the following iterative approach to leverage the feature:
@@ -144,7 +144,7 @@ The value for **MaxCpuCount** has the following semantics:
 
 ![Using a runsettings file](_img/run-tests-in-parallel/processparallel.png)
 
-[More information about test processes for parallel execution](https://blogs.msdn.microsoft.com/devops/2016/10/10/parallel-test-execution/).
+[More information about test processes for parallel execution](https://devblogs.microsoft.com/devops/2016/10/10/parallel-test-execution/).
 
 ### Enable parallel tests in Visual Studio 2017 Update 2 and later
 
@@ -378,8 +378,8 @@ job, the tests will be replicated to each of the machines.
 
 ## See Also
 
-* [MSTest V2 in-assembly parallel test execution](https://blogs.msdn.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/)
-* [Parallel Test Execution](https://blogs.msdn.microsoft.com/devops/2016/10/10/parallel-test-execution/)
+* [MSTest V2 in-assembly parallel test execution](https://devblogs.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/)
+* [Parallel Test Execution](https://devblogs.microsoft.com/devops/2016/10/10/parallel-test-execution/)
 * [Create a virtual network isolated environment for build-deploy-test scenarios](../targets/create-virtual-network.md)
 * [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
 

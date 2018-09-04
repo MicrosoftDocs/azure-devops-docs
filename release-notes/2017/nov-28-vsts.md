@@ -53,7 +53,7 @@ Why should you care? Have you ever run into build breaks or unexpected outcomes 
 
 A YAML build definition follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies. This way you can much more easily identify and fix (or avoid) this kind of problem because the change is in version control with the rest of your code base.
 
-See [Chris Patterson’s blog post](https://blogs.msdn.microsoft.com/devops/2017/11/15/pipeline-as-code-yaml-preview/) for his perspective on YAML builds, including how we went about making decisions on how this feature works.
+See [Chris Patterson’s blog post](https://devblogs.microsoft.com/devops/2017/11/15/pipeline-as-code-yaml-preview/) for his perspective on YAML builds, including how we went about making decisions on how this feature works.
 
 You can try it right now. Just add a new file called **.vsts-ci.yml** to the root of your Git repo in VSTS. Then put this in the file:
 
@@ -363,7 +363,7 @@ You can also now see the GitHub commits associated with the Jenkins builds in th
 
 ### Save packages from NuGet.org in your feed
 
-NuGet.org as an upstream source is now available, which enables you to use packages from NuGet.org through your VSTS feed. Check out the [announcement blog post](https://blogs.msdn.microsoft.com/devops/?p=37276) to learn more.
+NuGet.org as an upstream source is now available, which enables you to use packages from NuGet.org through your VSTS feed. Check out the [announcement blog post](https://devblogs.microsoft.com/devops/?p=37276) to learn more.
 
 > [!div class="mx-imgBorder"]
 ![NuGet upstream source](_img/126_17.png)

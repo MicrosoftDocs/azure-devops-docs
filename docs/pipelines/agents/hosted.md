@@ -119,7 +119,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 
 We publish a [weekly XML file](https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://<your_organization>.visualstudio.com/_admin/_home/settings`. Under **Account**, you will see a field indicating your region.
 
-*This information is maintained by the [Azure DevOps support team](https://visualstudio.microsoft.com/team-services/support/ip-addresses-used-hosted-build/).*
+*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/ip-addresses-used-hosted-build/).*
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

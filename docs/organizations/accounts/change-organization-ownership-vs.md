@@ -24,7 +24,7 @@ When your team's roles and responsibilities change, change your Azure DevOps Ser
 
 To change the organization owner, you must have Azure DevOps Services [*project collection administrator* or *organization owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
 If no one in the organization has these permissions, contact
-[Azure DevOps Services Support](https://visualstudio.microsoft.com/team-services/support).
+[Azure DevOps Services Support](https://azure.microsoft.com/support/devops).
 
 Make sure that the new owner:
 

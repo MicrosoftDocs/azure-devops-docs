@@ -545,7 +545,7 @@ Azure DevOps is available in multiple [regions](https://azure.microsoft.com/regi
 |    Canada Central               |    Canada Central              |
 |    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
-While Azure DevOps is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps. Customers will not be able to import their data into other United States Azure regions at this time.  
+While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps. Customers will not be able to import their data into other United States Azure regions at this time.  
 
 [Creating a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 * Collection DACPAC 
@@ -617,7 +617,7 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
 > [!NOTE]
-> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps [Customer Support](https://visualstudio.microsoft.com/team-services/support/) before queuing another import.
+> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.

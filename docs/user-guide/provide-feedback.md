@@ -32,7 +32,7 @@ Do you need to do any of the following?:
 
 The primary support hubs for Azure DevOps Services and TFS are:
 
-* [Azure DevOps Services Support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
 * [TFS Support](https://visualstudio.microsoft.com/team-services/tfs-support/)
 
 For technical support:
