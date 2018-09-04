@@ -46,9 +46,7 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 2. In the Azure Portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
 
-3. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix
-
-   ![Creating AKS Cluster](_img/create-aks-cluster.png)
+3. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix.
 
 4. Click on **Review + Create** and then once validation passes, click on **Create** button.
 
@@ -68,8 +66,6 @@ The build pipeline used to set up CI has already built a Docker image and pushed
    start a new release pipeline from there by choosing the **+** icon.
 
 3. Select the **Empty Process**.
-
-   ![Adding the App Service Deployment task](_img/add-empty-process.png)
 
 4. Go to **Environment 1** and click on **+** icon to add new task
 5. Add **Helm tool installer** task to ensure that the agent which runs the subsequent tasks has Helm and Kubectl installed on it.
