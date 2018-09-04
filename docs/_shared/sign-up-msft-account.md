@@ -2,11 +2,11 @@
 ms.topic: include
 ---
 
-## Sign up for Azure DevOps with a personal Microsoft account
+## Sign up for Azure DevOps Services with a personal Microsoft account
 
-1. Select the sign-up link for [**Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=307137).
+1. Select the sign-up link for [**Azure DevOps Services**](https://go.microsoft.com/fwlink/?LinkId=307137).
 
-2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and get DevOps as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
+2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and get Azure DevOps Services as a benefit, use the Microsoft account associated with your subscription. Choose **Next**.
 
    ![Sign in with your Microsoft account](../_shared/_img/sign-in-with-microsoft-account.png)
 
@@ -16,9 +16,9 @@ ms.topic: include
 
    ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
 
-4. To get started with Azure DevOps, choose **Continue**.
+4. To get started with Azure DevOps Services, choose **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](../_shared/_img/sign-up-azure-devops.png)
+   ![Choose Continue to sign up for Azure DevOps Services](../_shared/_img/sign-up-azure-devops.png)
 
 5. Enter a name for your organization. The name you enter cannot contain spaces or special characters
  (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Choose **Continue**.
