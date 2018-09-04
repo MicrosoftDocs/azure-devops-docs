@@ -28,7 +28,17 @@ Docker Hub or Azure Container Registry.
 > 
 > This guidance applies to TFS version 2017.3 and newer.
 
+> [!NOTE]
+> 
+> This document helps you start using Azure Pipelines by using Docker commands. As an alternative, Azure Pipelines also has built-in [Docker task](../tasks/build/docker.md)  which can be used for 
+> building and pushing the container images to a Container Registry. Know more about how the task helps in with Docker best practises and standards [here](../tasks/build/docker.md)
+
+
 ::: moniker-end
+
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]
 
 <a name="example"></a>
 ## Example
@@ -47,8 +57,8 @@ This example shows how to build a Docker image and push it to a registry.
   The sample repos include a `Dockerfile` at the root of the repository. You must first have a working build pipeline before continuing on.
 
 1. Define two variables in your build pipeline in the web UI.
-   * **dockerId:** Your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
-   * **dockerPassword:** Password for Docker Hub or admin password for Azure Container Registry
+   * **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
+   * **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
 
   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
 
@@ -111,10 +121,10 @@ YAML builds are not yet available on TFS.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
    * **imageName:** `$(Build.DefinitionName).$(Build.BuildId)`
-   * **dockerId:** Your Docker ID.
+   * **dockerId:** Your Docker Id.
    * **dockerPassword:** Your Docker password. Mark this variable as a secret variable.
 
-   If you use Azure Container Registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the user ID and password from the **Access keys** section of the registry in Azure portal.
+   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
 
 Save the pipeline and queue a build to see it in action.
 
@@ -177,7 +187,7 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ## Build an image
 
-You can build a Docker image by running the `docker build` command in a script or by using the **Docker** task.
+You can build a Docker image by running the `docker build` command in a script or by using the [**Docker task**](../tasks/build/docker.md).
 
 # [YAML](#tab/yaml)
 
@@ -190,6 +200,7 @@ To run the command in a script, add the following snippet to your `azure-pipelin
 ```
 
 You can run any docker commands as part of the script block in your YAML file. If your Dockerfile depends on another image from a protected registry, you have to first run a `docker login` command in your script.
+The [**Docker task**](../tasks/build/docker.md) which uses service connection for 'docker login' can be used in case you want to avoid managing username and password as secret. Plus, once you have used the [Docker task](../tasks/build/docker.md) to login, the session is maintained for the duration of the job thus allowing you to use follow-up tasks to execute any scripts .
 
 ```yaml
 - script: docker login -u $(dockerId) -p $(pswd) <docker-registry-url>
@@ -207,7 +218,15 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the job.
+
+1. Select **Tasks** in your build pipeline, and then add the [**Docker task**](../tasks/build/docker.md) to the job.
+> [!NOTE]
+> The [Docker task](../tasks/build/docker.md) supports:
+> * Docker best practices: By writing minimal yaml you can build and push an image which is tagged and labelled with rich metadata (for example, build, commit etc.)
+> * Docker standards: Work with private registry like Azure Container Registry (ACR) easily by tagging and naming image with the registry hostname and port. The task helps you to follow Docker naming convention, for example, converting upper case character to lower case and removes spaces in image name.
+> * Secret management: The Task makes it easy to use a Service Connection for connecting to any private container registry. For example, in case of ACR this helps you avoid enabling 'admin user' and subsequently managing username and password as secret. 
+> Plus, once you have used the [Docker task](../tasks/build/docker.md) to login, the session is maintained for the duration of the job thus allowing you to use follow-up tasks to execute any scripts which use the login done by the Docker task. 
+
 
 1. Select the task, and then for **Action**, select **Build an image**.
 
@@ -270,13 +289,13 @@ YAML builds are not yet available on TFS.
 
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
-1. Add a **Docker** task, and then for **Action** select **Build an image**.
+1. Add a [**Docker task**](../tasks/build/docker.md), and then for **Action** select **Build an image**.
 
 ---
 
 ## Push an image
 
-Once you've built a Docker image, you can push it to a Docker registry or to Azure Container Registry (ACR). You can do this using either `docker push` command or using `Docker` task. The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
+Once you've built a Docker image, you can push it to a Docker registry or to Azure Container Registry (ACR). You can do this using either `docker push` command or using `Docker` task. The [**Docker task**](../tasks/build/docker.md) makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
 
 # [YAML](#tab/yaml)
 
@@ -306,7 +325,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. In your build pipeline, select **Tasks**, and then add a **Docker** task to the job that runs your build tasks.
+1. In your build pipeline, select **Tasks**, and then add a [**Docker task**](../tasks/build/docker.md) to the job that runs your build tasks.
 
 1. Select the **Docker** task, and then for **Action** select **Push an image**.
 
