@@ -99,7 +99,7 @@ featureFlags:
 														<p><a href="/azure/devops/organizations/accounts/index">Manage organizations</a></p>
 														<p><a href="/azure/devops/billing/index">Billing</a></p>
 														<p><a href="/azure/devops/notifications/index">Manage notifications</a></p>
-														<p><a href="/tfs/server/index">Team Foundation Server</a></p>
+														<p><a href="/tfs/index">Team Foundation Server</a></p>
 														<p><a href="/azure/devops/articles">Technical articles</a></p>
                                                     </div>
                                                 </div>

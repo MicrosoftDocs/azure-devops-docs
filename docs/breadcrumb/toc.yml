@@ -147,11 +147,11 @@
     topicHref: /azure/devops/report/extend-analytics/index
 - name: Team Foundation Server
   tocHref: /azure/devops/
-  topicHref: /azure/devops/index-tfs
+  topicHref: /tfs/index
   items:
   - name: "TFS administation"
     tocHref: /tfs/server/
-    topicHref: /azure/devops/index-tfs
+    topicHref: /tfs/index
   - name: Project Server integration
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
