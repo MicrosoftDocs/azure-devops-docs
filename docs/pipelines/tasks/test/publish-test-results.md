@@ -38,7 +38,7 @@ The following example shows a Maven task configured to publish test results.
 
 ![Open the test history page](_img/publish-test-result-maven.png)
 
-The published test results are displayed in the [Tests page](../../test/review-continuous-test-results-after-build.md)
+The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
 in a build or release summary.
 
 <a name="demands"></a>
@@ -60,7 +60,7 @@ When using VSTest as the **testRunner**, the **testResultsFiles** option should
 be changed to `**/TEST-*.trx`. 
 
 To publish test results for Python using YAML, see [Python](../../languages/python.md)
-in the **Languages** section of these topics, which includes examples for other languages. 
+in the **Languages** section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 
@@ -87,23 +87,22 @@ in the **Languages** section of these topics, which includes examples for other 
 
 ## Result formats mapping
 
-This table lists the fields reported in the [Tests page](../../test/review-continuous-test-results-after-build.md)
+This table lists the fields reported in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
 in a build or release summary, and the corresponding mapping with the attributes in the supported test result formats. 
 
 | Scope | Field | Visual Studio Test (TRX) | JUnit | NUnit 2 | NUnit 3 | xUnit 2 |
 | ----------------- | ----- | ------------------------ | ----- | ------- | ------- | ------- |
 | [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task |
-| | Date started | /TestRun/Times.Attributes["**start**"].Value | /testsuites/testsuite.Attributes["**timestamp**"] | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-run/**start-time** | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
+| | Date started | /TestRun/Times.Attributes["**start**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-run/**start-time** | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
 | | Date completed | /TestRun/Times.Attributes["**finish**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value + SUM(/testsuites/testsuite/testcase.Attributes["**time**"].Value) for all test cases in the test suite | Date started + /test-results/results/test-case.Attributes["**time**"].Value for all test cases  | /test-run/**end-time** | Date started + /assemblies/assembly/**time** |
 | | Duration | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started |
 | | Attachments | Refer to **Attachments support** section below | Results file, used to publish test results | Results file used to publish test results | Refer to **Attachments support** section below | Results file used to publish test results |
-| [**Test result**](../../test/test-glossary.md) | Test list | /TestRun/Results/**UnitTestResult** Or /TestRun/Results/**WebTestResult** Or /TestRun/Results/**TestResultAggregation** | /testsuites/testsuite/**testcase** | /test-results/results/**test-case** | /test-suite[@type='Assembly']/**test-case** | /assemblies/assembly/collection/**test** |
-| | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value | /testsuites/testsuite/testcase/Attributes["**name**"].Value | /test-results/results/test-case.Attributes["**name**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["name"].Value | /assemblies/assembly/collection/test.Attributes["**method**"].Value |
+| [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value | /testsuites/testsuite/testcase/Attributes["**name**"].Value | /test-results/results/test-case.Attributes["**name**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**name**"].Value | /assemblies/assembly/collection/test.Attributes["**method**"].Value |
 | | Duration | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite/testcase/.Attributes["**time**"].Value | /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
 | | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**start-time**"].Value | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
-| | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"] | Date started + /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value |
-| | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value | testsuites/testsuite/testcase/Attributes["**owner**"].Value | build or release requested for user | build or release requested for user | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value |
-| | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error** <br/>**Not Executed**: if exists Testsuites/testsuite/testcase/**skipped** <br/>**Passed**: for all other cases | **Failed**: if exists /test-results/results/test-case/**failure** <br/>**Not Executed**: if exists /test-results/results/test-case.Attributes["result"].Value=="Ignored" <br/>**Passed**: for all other cases | /test-results/test-suite/results/test-case.Attributes["**result**"].Value | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value |
+| | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"].Value | Date started + /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value |
+| | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value | /testsuites/testsuite/testcase/Attributes["**owner**"].Value | build or release requested for user | build or release requested for user | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value |
+| | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error** <br/>**Not Executed**: if exists Testsuites/testsuite/testcase/**skipped** <br/>**Passed**: for all other cases | **Failed**: if exists /test-results/results/test-case/**failure** <br/>**Not Executed**: if exists /test-results/results/test-case.Attributes["**result**"].Value=="Ignored" <br/>**Passed**: for all other cases | /test-results/test-suite/results/test-case.Attributes["**result**"].Value | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value |
 | | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** | /Testsuites/testsuite/testcase/failure.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/error.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/skipped.Attributes["**message**"].Value | /test-results/results/test-casefailure/**message.InnerText** | /test-suite[@type='Assembly']/test-case/failure/**message** | /assemblies/assembly/collection/test/failure/**message** |
 | | Stack trace | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**StackTrace.InnerText** | /Testsuites/testsuite/testcase/failure.**InnerText** Or /Testsuites/testsuite/testcase/error.**InnerText** | /test-results/results/test-case/failure/**stack-trace.InnerText** | /test-suite[@type='Assembly']//test-case/failure/**stack-trace** | /assemblies/assembly/collection/test/failure/**stack-trace** |
 | | Attachments | Refer to **Attachments support** section below | - | - | Refer to **Attachments support** section below | - |
@@ -120,8 +119,8 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 For Docker based apps there are many ways to build your application and run tests:
 
-* [Build and test in a build pipeline](../../languages/docker.md): results from the build and tests executed in the pipeline are published using the **Publish Test Results** task.
-* [Build and test with a multi-stage Docker file](../../languages/docker.md): build and tests execute inside the container using a multi-stage Docker file, so test results are not published back to the pipeline.
+* [Build and test in a build pipeline](../../languages/docker.md): build and tests execute in the pipeline and test results are published using the **Publish Test Results** task.
+* [Build and test with a multi-stage Docker file](../../languages/docker.md): build and tests execute inside the container using a multi-stage Docker file, as such test results are not published back to the pipeline.
 * [Build, test, and publish results with a Docker file](#publishtestindocker): build and tests execute inside the container and results are published back to the pipeline. See the example below.
 
 <a name="publishtestindocker"></a>
@@ -264,9 +263,9 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Create a new build pipeline using the **.NET Core** build template.
+1. Create a new build pipeline using the **Empty job**.
 
-1. Select **Process** on the **Tasks** page of the build pipeline editor and edit its properties as follows
+1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
    * **Agent queue**: `Hosted Linux Preview`
 
@@ -333,7 +332,7 @@ The Publish Test Results task provides support for attachments for both test run
 | ----- | ---- | ---- |
 | **Test run** | Data Collector | /TestRun/ResultSummary/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value |
 | | Test Result | /TestRun/ResultSummary/ResultFiles/ResultFile.Attributes["**path**"].Value |
-| | Code Coverage | /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**binaryFile**"].Value And /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["pdbFile"].Value |
+| | Code Coverage | /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**binaryFile**"].Value And /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**pdbFile**"].Value |
 | **Test result** | Data Collectors | /TestRun/Results/UnitTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/WebTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/TestResultAggregation/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value |
 | | Test Result | /TestRun/Results/UnitTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/WebTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/TestResultAggregation/ResultFiles/ResultFile.Attributes["**path**"].Value |
 
@@ -342,11 +341,11 @@ The Publish Test Results task provides support for attachments for both test run
 
 | Scope | Path |
 | ----- | ---- |
-| **Test run** | //test-suite/attachments/attachment/filePath |
-| **Test run** | //test-suite[@type='Assembly']//test-case/attachments/attachment/filePath |
+| **Test run** | /test-suite/attachments/attachment/**filePath** |
+| **Test run** | /test-suite[@type='Assembly']/test-case/attachments/attachment/**filePath** |
 
 > [!NOTE]
-> The option to upload the test results file as an attachment is a default option in the task applicable to all formats.
+> The option to upload the test results file as an attachment is a default option in the task, applicable to all formats.
 
 ## Related tasks
 
@@ -356,14 +355,5 @@ The Publish Test Results task provides support for attachments for both test run
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
-
-::: moniker range="< vsts"
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
