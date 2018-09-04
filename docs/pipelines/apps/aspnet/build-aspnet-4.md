@@ -33,7 +33,7 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 This example shows how to build a ASP.NET project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/aspnet4-sample
+https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
 ```
 
 The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
