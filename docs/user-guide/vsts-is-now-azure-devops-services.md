@@ -1,6 +1,6 @@
 ---
-title: What happened to VSTS?
-description: What happened to Visual Studio Team Services (VSTS)? Where did it go? What's Azure DevOps?
+title: Visual Studio Team Services is now Azure DevOps Services
+description: Visual Studio Team Services is now Azure DevOps Services. What's Azure DevOps?
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -11,7 +11,7 @@ author: erickson-doug
 monikerRange: '>= vsts'
 ---
 
-# What happened to VSTS?
+# Visual Studio Team Services is now Azure DevOps Services
 
 On September 5th, 2018, Microsoft changed Visual Studio Team Services (VSTS) to "Azure DevOps Services". The individual features of VSTS are now branded as separate Azure DevOps services, as follows:
 

@@ -21,7 +21,7 @@ In this quickstart, you'll learn how to buy self-hosted or Microsoft-hosted CI/C
 With Azure Pipelines you can run builds and deploy releases using the Microsoft-hosted agents, your own machines, or both.
 We offer a **free tier** for each.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
 
 ## Microsoft-hosted CI/CD
 

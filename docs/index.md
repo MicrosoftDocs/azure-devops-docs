@@ -20,7 +20,7 @@ featureFlags:
         <h1>Azure DevOps Documentation</h1>
         <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing.</p> 
         <p>For the on-premises platform (TFS), see [Visual Studio Team Foundation Server Documentation](/azure/devops/index-tfs).</p>
-        <p><i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
+        <p><i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/vsts-is-now-azure-devops-services.md)</i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
