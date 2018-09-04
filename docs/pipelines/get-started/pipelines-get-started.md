@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: overview
 ms.manager: douge
 ms.author: douge
 ms.date: 07/06/2018
