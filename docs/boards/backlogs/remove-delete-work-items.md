@@ -78,9 +78,9 @@ You can access the following actions for which you have permissions. If you are 
 ::: moniker range="vsts"
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Contributors|Project Administrators|  
+> |Contributors & Stakeholders for public projects|Project Administrators|  
 > |-------------|----------|---------|  
-> |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal) <br/>- [Restore work items](#restore) (web portal)|- [Move a work item to another project](#move) <br/>- [Permanently delete work items](#restore) (web portal)<br/>- [Permanently delete test artifacts](#delete-test) |  
+> |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) <br/>- [Restore work items](#restore) |- [Move a work item to another project](#move) <br/>- [Permanently delete work items](#restore) <br/>- [Permanently delete test artifacts](#delete-test) |  
 
 
 You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
@@ -128,10 +128,12 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 ::: moniker range="vsts"
 ## Prerequisites  
   
-* To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
+* To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access for a public project](../../organizations/security/access-levels.md#stakeholder-access) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to Allow. The Contributors group does not have this permission set at the project-level by default.
+* To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to **Allow**. The Contributors group does not have this permission set at the project-level by default.
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
+
+To set these permissions, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md) 
 
 ::: moniker-end
 

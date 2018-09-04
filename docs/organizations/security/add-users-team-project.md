@@ -29,7 +29,7 @@ Once users have been added to a project, you can browse for that name by display
 ## Prerequisites
 
 * You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).
-* To add users to a project, you must be a member of the [Project Administrators Group or have your **Edit project-level information** set to Allow](set-project-collection-level-permissions.md).
+* To add users to a project, you must be a member of the [Project Administrators group or have your **Edit project-level information** set to Allow](set-project-collection-level-permissions.md). Note that you can add Stakeholders to the Project Administrators group and then they can add users to an organization or project. 
 * To add users to a team, you must have been [added as a team administrator for the team](../../organizations/settings/add-team-administrator.md), or you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.
 
 <a name="add-users-team-project"></a>

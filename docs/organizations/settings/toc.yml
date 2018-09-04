@@ -8,6 +8,8 @@
     href: ../projects/about-projects.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
 - name: Quickstarts
   items:
+  - name: Get started as an administrator
+    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
   - name: Set area paths
     href: set-area-paths.md
   - name: Set iteration paths or sprints

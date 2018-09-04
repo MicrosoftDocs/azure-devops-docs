@@ -16,7 +16,7 @@ ms.date: 08/06/2018
 
 # Review team Delivery Plans 
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017.2</b> 
+**Azure DevOps Services | TFS 2018 | TFS 2017.2**
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -41,7 +41,7 @@ In this topic you'll learn:
 ## Prerequisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access for a private project can't add or view plans; users with Stakeholder access for a public project can add and view plans.)  
 - [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
 - [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  

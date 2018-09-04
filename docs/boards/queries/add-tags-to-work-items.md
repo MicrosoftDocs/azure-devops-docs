@@ -48,17 +48,16 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 
 
 > [!NOTE]   
-> By default, all Contributors are granted permissions to create and modify 
-> tags. Stakeholders can add tags that are already defined, but not create 
+> By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
+> tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or  
-> project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+> more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 	
 
 
 <a id="bulk-modify"></a>
-##Bulk add or remove tags 
+## Bulk add or remove tags 
 ::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
@@ -167,7 +166,7 @@ If you misspell a tag, don't assign the misspelled tag to any work item and the 
 
 ::: moniker range=">= tfs-2018" 
 
-Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Work** to manage tags. 
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
 ::: moniker-end
 

@@ -21,6 +21,11 @@ ms.date: 07/27/2018
 
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
+If you're just getting started as a project administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+
+> [!NOTE]  
+> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
@@ -148,13 +153,7 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
-
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
 
 
 # [New navigation](#tab/new-nav)  
@@ -312,11 +311,6 @@ From the administrative pages for a project, you can configure the settings show
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
 
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
-
 # [New navigation](#tab/new-nav)  
 
 ::: moniker range="vsts"   
@@ -436,7 +430,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Notifications**</td>
 <td><ul>
-<li>Manage collection-level notifications </li>
+<li>[Manage collection-level notifications](../../notifications/howto-manage-organization-notifications.md) </li>
 </ul></td>
 <td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>

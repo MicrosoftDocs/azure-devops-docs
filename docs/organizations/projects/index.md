@@ -17,19 +17,24 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-Add, rename, and delete team projects as you scale your organization.  
+Structure your projects by adding area paths, iteration paths, and teams.  
 
 ## 5-Minute Quickstarts
 
-- [View permissions](../security/view-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Look up a project administrator](../security/lookup-organization-owner-admin.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Share your project vision](../../project/wiki/project-vision-status.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Define area paths](../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Define iteration paths or sprints](../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Add a team](../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
 - [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
+
 
 ## Step-by-Step Tutorials
 
 - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+-  [Customize a project](../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
 
 ## Concepts
