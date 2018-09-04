@@ -52,7 +52,7 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 5. Wait until the new AKS cluster has been created. Then you can create a release pipeline as shown in the next section.
 
-The build pipeline used to set up CI has already built a Docker image and pushed it to a Azure Container Registry. It has also packaged and published a Helm chart as an artifact. In the release pipleine we will deploy the container image as a Helm application to the AKS cluster.
+The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry. It has also packaged and published a Helm chart as an artifact. In the release pipleine we will deploy the container image as a Helm application to the AKS cluster.
 
 
 ## Create a release pipeline
