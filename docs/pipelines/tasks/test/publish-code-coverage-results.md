@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
-ms.author: dastahel
-ms.date: 05/17/2018
+ms.author: vinojos
+ms.date: 08/31/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,7 +16,11 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![icon](_img/publish-code-coverage-results-icon.png)
-Publishes code coverage results that were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
+This task publishes code coverage results to Azure pipelines or TFS, which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. In addition there are built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md) that provide the option to publish code coverage data to the pipeline.
+
+Example below shows **Ant** task with the option to publish code coverage data in Cobertura or JaCoCo format.
+
+![Publish code coverage results ant](_img/publish-code-coverage-result-ant.png)
 
 ## Demands
 
@@ -25,12 +29,17 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
+
+The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
+
+To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages. 
+
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Code coverage tool</td><td>(Required) The tool with which code coverage results are generated.</td></tr>
+<tr><td>Code coverage tool</td><td>(Required) The tool with which code coverage results are generated. The supported formats include Cobertura and JaCoCo.</td></tr>
 <tr><td>Summary file</td><td>(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`</td></tr>
 <tr><td>Report directory</td><td>(Optional) Path of the code coverage HTML report directory. The report directory is published for later viewing as an artifact of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura`</td></tr>
 <tr><td>Additional files</td><td>(Optional) File path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/**/*.exec`</td></tr>
@@ -38,9 +47,11 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## More Information
+## Docker
+For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipleine, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
 
-* [Continuous testing scenarios and capabilities](../../test/index.md)
+## View results
+In order to view the code coverage results in the pipleine, see [Review code coverage results](../../test/review-code-coverage-results.md)
 
 ## Related tasks
 
