@@ -14,10 +14,12 @@ monikerRange: '>= tfs-2015'
 
 # Test analytics
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-header-ap](_shared/version-header-ap.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
@@ -25,6 +27,9 @@ Test analytics provides near real-time visibility into your test data for builds
 It helps improve the efficiency of your pipeline by identifying repetitive, high impact quality issues.
 
 > Read the [glossary](./test-glossary.md) to understand test reports terminology.
+
+> [!NOTE]
+> Test analytics is currently available only with Azure Pipelines.
 
 <a name="viewinbuild"></a>
 
