@@ -28,12 +28,6 @@ You have to set up billing when you need more than the *free tier* of resources 
 
 You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-<a name="why-no-team-projects-in-Azure-portal"></a>
-
-### Q: Why do I no longer see Team Projects in the Azure portal?
-
-A: Starting September 28th, you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to access any Team Projects you’ve created via the Azure portal through your Azure DevOps organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
-
 ### Q: Can I buy Azure DevOps Services by using a purchase order?
 
 A: No. Azure DevOps Services must be purchased through an Azure subscription. (Think of it as your Azure billing account.)
@@ -115,6 +109,12 @@ A: When the Azure subscription used for billing on your Azure DevOps Services or
 A: If you're the owner or contributor for the Azure subscription used for billing your Azure DevOps Services organization, you can view your billing details in the [Azure portal](https://account.azure.com/).
 
 ## Other questions
+
+<a name="why-no-team-projects-in-Azure-portal"></a>
+
+### Q: Why do I no longer see Team Projects in the Azure portal?
+
+A: Starting September 28th, you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to access any Team Projects you’ve created via the Azure portal through your Azure DevOps organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
 
 ### Q: Why is my Azure DevOps Services organization already linked to an Azure subscription?
 
