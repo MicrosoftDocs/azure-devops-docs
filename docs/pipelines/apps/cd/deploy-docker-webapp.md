@@ -23,6 +23,14 @@ For example, you can continuously deliver your app to a Windows VM hosted in Azu
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
+## Example
+
+If you want some sample code that works with this guidance, import (into Azure DevOps or Azure DevOps Server) or fork (into GitHub) this repo:
+
+```
+https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/container/Application
+
+```
 ## Define your CI build pipeline
 
 You'll need a continuous integration (CI) build pipeline that publishes a Docker container image.
