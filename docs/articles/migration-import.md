@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 **Azure DevOps Services | TFS**
 
 > [!Note]
-> Visual Studio Team Services (VSTS) is now Azure DevOps Services.
+> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
 > 
 > We recommend that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation, as needed.
 >
