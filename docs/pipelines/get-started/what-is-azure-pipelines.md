@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: overview
 ms.manager: douge
 ms.author: douge
 ms.date: 07/06/2018

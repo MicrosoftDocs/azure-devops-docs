@@ -11,7 +11,7 @@ ms.date: 05/09/2018
 ---
 # Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator
 
-1. Browse to the [Azure DevOps Generator site](https://vstsdemogenerator.azurewebsites.net/) by click the link, or copy `https://vstsdemogenerator.azurewebsites.net/` into your browser's URL field.
+1. Browse to the [Azure DevOps Demo Generator site](https://vstsdemogenerator.azurewebsites.net/) by click the link, or copy `https://vstsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
 1. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, Click on **Get Started for Free** to create one and then log in with your credentials.
 
@@ -24,7 +24,7 @@ ms.date: 05/09/2018
     > [!div class="mx-imgBorder"]
 ![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)
 
-1. Select the Azure DevOps organization you will use to host the Azure DevOps Services project created by the Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
+1. Select the Azure DevOps organization you will use to host the Azure DevOps Services project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
     > [!div class="mxImage"]
 ![Image of VSTS Demo Generator template selection screen](_img/choose_template.png)
@@ -41,12 +41,12 @@ ms.date: 05/09/2018
 1. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
 
     > [!div class="mxImage"]
-![Image of VSTS Demo Generator project created screen](_img/projectcreated.png)
+![Image of Azure DevOps Demo Generator project created screen](_img/projectcreated.png)
 
 1. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
 
     > [!div class="mxImage"]
-![Image of VSTS Demo Generator provision confirmation screen](_img/projecthomepage.png)
+![Image of Azure DevOps Demo Generator provision confirmation screen](_img/projecthomepage.png)
 
 > [!NOTE]
 > You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 

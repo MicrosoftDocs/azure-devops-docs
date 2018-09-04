@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: Sign up and get started using Azure Pipelines 
 ms.prod: devops
 ms.technology: devops-new-user
+ms.topic: overview
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

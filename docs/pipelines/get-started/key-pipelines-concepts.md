@@ -2,6 +2,7 @@
 title: Azure Pipelines New User Guide - Key Concepts
 titleSuffix: Azure DevOps Services
 description: Learn how Azure Pipelines works with your code and tools to automate build and deploy, and the key concepts behind it.
+ms.topic: overview
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: douge
