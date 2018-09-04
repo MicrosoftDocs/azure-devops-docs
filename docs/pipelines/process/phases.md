@@ -73,14 +73,17 @@ The full syntax to specify an agent job is:
 
 jobs:
 - job: string
+  timeoutInMinutes: number
+  cancelTimeoutInMinutes: number
+  strategy:
+    parallel: number
+    maxParallel: number
+    matrix: { string: { string: string } }
   pool:
     name: string
     demands: string | [ string ]
     container: string
-    timeoutInMinutes: number
-    cancelTimeoutInMinutes: number
-    parallel: number
-    matrix: { string: { string: string } }
+  
   steps:
     - script: echo Hello world
 ```
