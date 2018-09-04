@@ -46,7 +46,7 @@
     href: targets/azure-stack.md
   - name: Azure SQL database
     href: targets/azure-sqldb.md
-  - name: Azure Web App
+  - name: Azure Web App on Windows
     href: targets/webapp.md
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
@@ -58,7 +58,7 @@
     href: targets/scvmm.md
   - name: VMware
     href: targets/vmware.md
-  - name: Web App for Containers
+  - name: Azure Web App for Containers
     href: apps/cd/deploy-docker-webapp.md
   - name: Windows VM
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
@@ -477,7 +477,7 @@
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
       - name: IIS Web App Management on Machine Group
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
-      - name: Kubernetes
+      - name: Kubernetes (kubectl)
         href: tasks/deploy/kubernetes.md
       - name: Packer Build
         href: tasks/deploy/packer-build.md
