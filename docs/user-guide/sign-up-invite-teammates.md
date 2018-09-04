@@ -1,7 +1,7 @@
 ---
-title: Sign up for Azure DevOps
+title: Sign up for Azure DevOps Services
 titleSuffix: Azure DevOps Services   
-description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps
+description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps Services
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart

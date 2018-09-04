@@ -19,9 +19,9 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="vsts"
 
-## Troubleshoot Azure DevOps connectivity
+## Troubleshoot Azure DevOps Services connectivity
 
-As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
+As a first step in resolving connectivity issues with Azure DevOps Services, complete the following steps:
 
 1. Sign out of your browser. To do this, select the [Visual Studio sign-out](http://aka.ms/VsSignout) link.
 
@@ -31,16 +31,16 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 4. Close all browsers and close the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection to Azure DevOps. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps, and then readd it.
+5. Use a private browser session to retry the connection to Azure DevOps Services. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps Services, and then readd it.
 
-## Troubleshoot signing in to Azure DevOps
+## Troubleshoot signing in to Azure DevOps Services
 
-Two types of identities can sign in to Azure DevOps: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
+Two types of identities can sign in to Azure DevOps Services: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
 
 > 401 - Not Authorized
 
 > [!div class="mx-imgBorder"]
-![Troubleshoot Azure DevOps connection 401 error1](_img/troubleshoot-connection/401_notauthorized.png)
+![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
 
 The most common error page is the *401 Not Authorized* error. This occurs when your identity doesn't have permissions to enter an Azure DevOps organization. Common reasons for this include:
 
@@ -56,7 +56,7 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps connection 401 error2](_img/troubleshoot-connection/401_AAD.png)
+![troubleshoot Azure DevOps Services connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
 
 This is a highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You have signed in with your work or school account, but your personal account is the identity that has access to the Azure DevOps organization.
 
@@ -75,7 +75,7 @@ Your personal Microsoft account doesn't have access but your Azure AD account do
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps Services connection 401 error3](_img/troubleshoot-connection/401_MSA.png)
+![troubleshoot Azure DevOps Services connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
 
 ### Mitigation
 
