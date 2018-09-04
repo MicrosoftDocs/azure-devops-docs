@@ -35,7 +35,7 @@ Currently, you can access the following data from the Analytics Service. This in
 > | Packaging | Under investigation |  |  |  |
 
 
-As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
+As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/tag/reporting/).
 
 <a id="q-a">  </a>
 ## Try this next

@@ -158,7 +158,7 @@ We’ve made it easy for administrators to manage large groups of users by enabl
 > [!div class="mx-imgBorder"]
 ![Group licensing](_img/130_07.png)
 
-See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
+See the [large account user management roadmap post](https://devblogs.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
 
 ### Reduced latency for AAD group membership changes
 

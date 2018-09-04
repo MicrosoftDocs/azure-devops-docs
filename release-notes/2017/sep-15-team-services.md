@@ -196,7 +196,7 @@ This is especially useful for large accounts that have multiple stakeholders for
 > [!div class="mx-imgBorder"]
 ![Release notifications](_img/09_15_13.png)
 
-See the [post for managing release notifications](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/) for more information.
+See the [post for managing release notifications](https://devblogs.microsoft.com/devops/2017/09/04/managing-release-notifications/) for more information.
 
 ### Manage variables using the List and Grid views in the new release definition editor
 

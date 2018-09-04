@@ -28,7 +28,7 @@ We provide a *free tier* of service by default in your Azure DevOps Services org
  
 When the free tier is no longer sufficient:
 
-- Public project: [Contact us](https://visualstudio.microsoft.com/team-services/support/) to get your free tier limits increased.
+- Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
 - Private project: You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 6 hours. [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 
 ## Self-hosted CI/CD
@@ -42,7 +42,7 @@ We provide a *free tier* of service by default in your Azure DevOps Services org
 
 When the free tier is no longer sufficient:
 
-- Public project: [Contact us](https://visualstudio.microsoft.com/team-services/support/) to get your free tier limits increased.
+- Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
 - Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 There are no time limits on self-hosted jobs.

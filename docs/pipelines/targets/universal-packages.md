@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 # Publish Universal Packages in Pipelines
 
 > [!NOTE]
-> Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
+> Universal Packages are currently in private preview. See the [announcement blog post](https://devblogs.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
 When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 

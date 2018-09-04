@@ -139,7 +139,7 @@ Release gates enable automatic evaluation of health criteria before a release is
 
 ### Azure DevOps Projects now generally available
 
-Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project-release-tagimgrelease-notes-tagreleasepng) we introduced DevOps Projects, which helps ou get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project-release-tagimgrelease-notes-tagreleasepng) we introduced DevOps Projects, which helps ou get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://devblogs.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 
@@ -161,14 +161,14 @@ A Project Collection Administrator (PCA) can now [connect or disconnect their or
 > [!IMPORTANT]
 > To use this capability, an organization administrator must [enable public projects](/azure/devops/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
 
-As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
+As we [announced back in April](https://devblogs.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
 
 > [!IMPORTANT]
 > If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.
 
 ### Adopt the word "organization" when referring to a collection of projects in VSTS
 
-We've made a change to our terminology when it comes to referring to a collection of projects in VSTS. Previously we used the term "account" but have found that this has caused a lot of confusion for the broader developer and open source community. We've chosen to replace the term "account" with "organization". You'll start seeing this change rollout in documentation and in-product with this Update. See the [Adopting the word “organization” post](https://blogs.msdn.microsoft.com/devops/2018/07/19/adopting-the-word-organization/) on the Microsoft DevOps Blog for more information.
+We've made a change to our terminology when it comes to referring to a collection of projects in VSTS. Previously we used the term "account" but have found that this has caused a lot of confusion for the broader developer and open source community. We've chosen to replace the term "account" with "organization". You'll start seeing this change rollout in documentation and in-product with this Update. See the [Adopting the word “organization” post](https://devblogs.microsoft.com/devops/2018/07/19/adopting-the-word-organization/) on the Microsoft DevOps Blog for more information.
 
 ## Feedback
 

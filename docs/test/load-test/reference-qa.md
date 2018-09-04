@@ -26,7 +26,7 @@ monikerRange: 'vsts'
 ### Q: How do I learn more about Cloud-based Load Testing?
 
 **A**: Watch this video, or check out the 
-[Cloud-based Load Testing blog](https://blogs.msdn.microsoft.com/devops/?s=clt). 
+[Cloud-based Load Testing blog](https://devblogs.microsoft.com/devops/?s=clt). 
 
 <iframe src="//channel9.msdn.com/Events/Visual-Studio/Launch-2013/QE103/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
@@ -702,7 +702,7 @@ See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-setting
 * VS1550082
 * VS1550083
 
-[Contact Azure DevOps Support](https://visualstudio.microsoft.com/team-services/support). 
+[Contact Azure DevOps support](https://azure.microsoft.com/support/devops). 
 You will have to give them your test run id.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?

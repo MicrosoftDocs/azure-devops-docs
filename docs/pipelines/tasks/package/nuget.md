@@ -212,7 +212,7 @@ None
     <tr>
         <td>Automatic package versioning</td>
         <td>
-            [This blog post](https://blogs.msdn.microsoft.com/devops/2016/05/03/versioning-nuget-packages-cd-1/) provides an overview of the automatic package versioning available here.
+            [This blog post](https://devblogs.microsoft.com/devops/2016/05/03/versioning-nuget-packages-cd-1/) provides an overview of the automatic package versioning available here.
         </td>
     </tr>
     <tr>

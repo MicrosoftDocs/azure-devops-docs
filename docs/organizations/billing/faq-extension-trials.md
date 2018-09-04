@@ -70,4 +70,4 @@ A: After a trial expires, only those users to whom the extension or feature has 
 - [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)
+- [Azure DevOps Services billing support](https://azure.microsoft.com/support/devops/)

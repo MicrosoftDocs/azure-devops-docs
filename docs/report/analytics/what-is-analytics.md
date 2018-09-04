@@ -22,7 +22,7 @@ The Analytics Service provides the reporting platform for Azure DevOps. Use it t
 To gain access to the Analytics Service for your Azure DevOps Services organization, install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available Azure DevOps Services data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 
 > [!NOTE]
-> **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. Analytics is also available in all regions. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
+> **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. Analytics is also available in all regions. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/tag/reporting/).
 
 You can access the Analytics Service through dashboard widgets, OData, and Power BI.
 

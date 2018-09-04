@@ -14,7 +14,7 @@ ms.date: 05/14/2018
 ---
 
 > [!NOTE]
-> Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
+> Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://devblogs.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
 
 # Public project support by Azure DevOps Services extensions
 

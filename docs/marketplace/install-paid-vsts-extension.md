@@ -92,4 +92,4 @@ To assign extensions, you'll need Azure DevOps Services [project collection admi
 - [Change the Azure subscription for billing](../organizations/billing/change-azure-subscription.md)
 - [Azure DevOps Services billing FAQ](../organizations/billing/vsts-billing-faq.md)
 - [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)
+- [Azure DevOps Services billing support](https://azure.microsoft.com/support/devops/)

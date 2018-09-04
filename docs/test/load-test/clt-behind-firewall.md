@@ -237,7 +237,7 @@ it later if required. See
 
 **A:** We support only default proxy scenario, when the proxy settings are controlled through your web browser and
 it uses the current user's credentials to connect to the proxy server. In other cases, please see our
-[help and support forum](https://visualstudio.microsoft.com/team-services/support/).
+[help and support forum](https://azure.microsoft.com/support/devops/).
 
 ### Q: Where can I find the log files to debug issues?
 

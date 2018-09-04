@@ -47,10 +47,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Test Failures report for Build pipelines|Test|2019|
 |Analytics - Test Failures report for Release pipelines|Test|2019|
 |Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
-|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
+|[Encryption at rest for disks used by code and work item search](https://devblogs.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
+|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://devblogs.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
+|[Improved Alternate Authentication experience](https://devblogs.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Azure Active Directory users in Microsoft Account-backed organization](https://devblogs.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
 |Connect your VSTS organizations to Azure Active Directory from within VSTS|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
@@ -68,7 +68,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Available for TFS|Reporting|2019|
 |Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
-|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|[Bring multiple organizations under an enterprise](https://devblogs.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 
