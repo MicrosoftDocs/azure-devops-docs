@@ -66,7 +66,8 @@ In some cases, you might not know you have two identities with the same sign-in 
 
 To resolve this, select the **Sign in with your personal MSA account** link to sign out of your current work or school Azure AD account, and then sign in by using the personal Microsoft account. After authentication, you should have access to the Azure DevOps organization.
 
-> [!TIP] To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
+> [!TIP] 
+> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
 
 ### Scenario 2
 
