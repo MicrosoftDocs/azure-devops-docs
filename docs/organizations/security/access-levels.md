@@ -52,11 +52,6 @@ Assign **Basic** access to all users with a Visual Studio subscriptions and paid
 ::: moniker range="vsts"
 Assign **Stakeholder** access to an unlimited number of users for free.
 
-<!---
-> [!NOTE]   
-> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [Default roles and access for public projects](../public/default-roles-access-public.md#pipelinesbuild-and-release).
--->
-
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
 | Service, application, or setting | Private project | Public project|
@@ -84,7 +79,7 @@ Assign **Stakeholder** access to those users who need to enter bugs, view backlo
 <a id="feature-access">  </a>
 
 ::: moniker range="vsts"
-### Stakeholder access to user features for Private projects
+### Stakeholder access to user features for private projects
 
 The following features are available to Stakeholders from the web portal for private projects.
 
@@ -104,7 +99,7 @@ The following features are available to Stakeholders from the web portal for pri
 7. Have read-only permissions to wiki pages. These permissions can't be changed. 
 8. When the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all **Pipeline (Build and Release)** features. If it is disabled, Stakeholders have access to [View releases](../../pipelines/release/approvals/index.md) and [Approve releases](../../pipelines/release/approvals/index.md) only.
 
-### Stakeholder access to user features for Public projects
+### Stakeholder access to user features for public projects
 From the web portal for private projects, Stakeholders have access to the following features in full, similar to those granted to users who were granted Basic access.  
 
 > [!div class="mx-tdBreakAll"]

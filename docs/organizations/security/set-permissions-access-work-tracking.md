@@ -19,12 +19,15 @@ ms.date: 08/06/2018
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, team project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
 
+> [!NOTE]   
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+
 > [!div class="mx-tdBreakAll"]
 > | Role or permission level | Functional areas set  |
 > |-----------------------|-----------------------------------|
-> |**Team administrator role** | - Configure team settings<br/>- Define and edit team dashboards<br/>- Define and edit team-level work item templates<br/>- Add team members and team administrators|
+> |**Team administrator role** | - [Configure team settings](../settings/configure-team-settings.md)<br/>- [Define and edit team dashboards](../../report/dashboards/dashboards.md)<br/>- [Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Add team administrators](../settings/add-team-administrator.md)|
 > |**Object-level permissions** |- [Modify work items under an area path](#set-permissions-area-path)<br/>- [Create and edit nodes under an area path or iteration path](#set-permissions-area-path)<br/>- [Define and edit queries or query folders](#work-item-queries)<br/>- [Define and edit Delivery Plans](#plan-permissions) | 
-> |**Project-level permissions** |- Create work item tags<br/>- Delete and restore work items<br/>- [Move work items out of a team project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a team project (On-premises XML  or Hosted process models) | 
+> |**Project-level permissions** |- [Create work item tags](../../boards/queries/add-tags-to-work-items.md)<br/>- [Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)<br/>- [Move work items out of a team project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a team project (On-premises XML  or Hosted process models) | 
 > |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, Azure DevOps only)<br/>- Delete field from account(Inheritance process model, Azure DevOps only)<br/>- Manage process permissions (Inheritance process model, Azure DevOps only)<br/>- Edit collection level permissions | 
 
 Project collection-level permissions include all permissions you can set at the project-level.

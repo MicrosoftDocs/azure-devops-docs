@@ -22,7 +22,8 @@ Define area and iteration paths, add teams, and configure additional team, proje
 For articles specific to teams, projects, organizations, and billing, see [Scale & configure teams](scale/index.md), [Manage projects](../projects/index.md), [Manage organizations](../accounts/index.md), and [Billing](../billing/index.md).
 
 ## 5-Minute Quickstarts    
-- [Set area paths](set-area-paths.md)
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
+- - [Set area paths](set-area-paths.md)
 - [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
 - [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 

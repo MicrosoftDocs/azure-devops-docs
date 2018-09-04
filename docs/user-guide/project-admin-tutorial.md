@@ -43,6 +43,9 @@ Larger organizations will want to consider using Active Directory to keep the ma
 
 ::: moniker-end 
 
+> [!NOTE]  
+> You can delegate the task to add users to an organization by adding a user with Stakeholder or Basic access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
+ 
 ## Grant or restrict permissions 
 
 Access to features and functions is controlled by access level assignments and permissions. We recommend you review the following articles to understand the core concepts involved:  
@@ -123,7 +126,7 @@ If you support several products or feature areas, you can assign work items by f
 While you and your teams can start using all work tracking tools immediately after you create a project, oftentimes one or more users will want to customize the experience to meet one or more business needs. While you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests. 
 
 > [!NOTE]   
-> By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work tracking experience. If you want to lock down who is able to perform these tasks, then you can set the permissions at the organization level to **Deny**.  
+> By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work tracking experience. If you want to lock down who is able to perform these tasks, then you can set their permissions at the organization level to **Deny**.  
 
 To learn more, see: 
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)  

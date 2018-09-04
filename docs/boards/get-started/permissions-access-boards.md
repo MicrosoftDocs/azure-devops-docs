@@ -19,7 +19,12 @@ ms.date: 09/05/2018
 
 As a member of an Azure Boards project, you can use the majority of work tracking functions and features. All project members are added to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
-## Default permissions and access 
+## Default permissions and access to work tracking tools
+
+
+> [!NOTE]   
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](../../organizations/security/access-levels.md#stakeholder-access).
+
 
 [!INCLUDE [temp](../../organizations/security/_shared/work.md)]
 

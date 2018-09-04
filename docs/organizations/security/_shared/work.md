@@ -154,7 +154,7 @@ ms.topic: include
 </tbody>
 </table>
 
-**Notes: **
+**Notes:**
 1. Public project Stakeholders have full access. 
 2. Public project Stakeholders have full access to all features. 
 3. Public project Stakeholders can create new tags. 
