@@ -25,7 +25,7 @@ Code coverage helps you determine the proportion of your project's code that is 
 ::: moniker-end
 
 ## Example
-To view an example of publishing code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages.
+To view an example of publishing code coverage results for Javascript with istanbul using YAML, see [JavaScript](../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages.
 
 ## View results 
 The code coverage summary can be viewed in the build timeline view as shown below.
@@ -47,6 +47,6 @@ The code coverage artifacts published during the build can be viewed under the *
 
 ## Tasks
 * [**Publish Code Coverage Results**](): publishes code coverage results to Azure pipelines or TFS, which were produced by a build in [Cobertura] (http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. 
-* **Other Tasks**: Built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md) provide the option to publish code coverage data to the pipeline.
+* **Other Tasks**: Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md), [.NET Core](../tasks/build/dotnet-core.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md) and [Gradle](../tasks/build/gradle.md) provide the option to publish code coverage data to the pipeline.
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -25,9 +25,6 @@ You can define, version, share, install, and upgrade even the most complex Kuber
 A Helm chart consists of metadata, definitions, config and documentation. This can be either stored in the same code repository as your application code or in a separate repository. 
 Helm can package these files into a chart archive (*.tgz file), which gets deployed to a Kubernetes cluster. 
 
-A typical Continuous integration flow with Helm will have the following structure: 
-![Helm Chart CI Flow](_img/Helmchart_CIflow.png)
-
 The steps required to build a container image and pushing it to a container registry remains the same. Once that has been the done, we start creating a Helm Chart archive package. 
 
 Azure Pipelines has built-in support for Helm charts:
@@ -49,12 +46,12 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 You'll need a Docker container image published to a Kubernetes Cluster (for example: Azure Kubernetes Service). 
 To set up a continuous integration (CI) build process, see:
 
-* [Build and publish a Docker image](../../languages/docker.md).
+* [Build and publish a Docker image](docker.md).
 
 
 ## Package and publish a Helm chart
 
-1. In the **Build &amp; Release** hub, open the the [build pipeline](../../languages/docker.md) created to build and publish a Docker image.
+1. In the **Build &amp; Release** hub, open the the [build pipeline](docker.md) created to build and publish a Docker image.
 
 2. Select Tasks tab and click on **+** icon  to add **Helm tool installer** task  to ensure that the agent which runs the subsequent tasks has Helm and Kubernetes installed on it.
 3. Click on **+** icon again to add new **Package and deploy Helm charts** task.
@@ -63,7 +60,7 @@ Configure the properties as follows:
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you are using Azure DevOps Server or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
 
    - **Resource Group**: Enter or select the resource group of your **AKS cluster**.  
    
