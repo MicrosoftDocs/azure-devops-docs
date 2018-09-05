@@ -12,17 +12,17 @@ ms.date: 07/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Review continuous testing results
+# Test Report
 
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
 
 Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
-Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
+Test report provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
 
-> Read the [glossary](./test-glossary.md) to understand test reports terminology.
+> Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
 
@@ -30,10 +30,10 @@ In addition, it provides many advanced reporting capabilities explored in the fo
 
 ::: moniker-end
 
-Published test results can be viewed in the **Tests** page in a build or release summary.
+Published test results can be viewed in the **Tests** tab in a build or release summary.
 
 > [!NOTE]
-> Test Reports are available in TFS 2015 and above, however the new experience
+> Test Report is available in TFS 2015 and above, however the new experience
 > described in this document is available only with Azure Pipelines at present.
 
 <a name="viewbuildresults"></a>  
@@ -60,9 +60,9 @@ a consistent experience across build and release.
 
 <a name="teststab"></a> 
 
-## Tests page
+## Tests tab
 
-Both the build and release summaries provide details of test execution. Choose **Test summary** to view the details in the **Tests** page.
+Both the build and release summaries provide details of test execution. Choose **Test summary** to view the details in the **Tests** tab.
 This page has the following sections
 
 * **Summary**: provides key quantitative metrics for the test execution such as the total test count, failed tests, pass percentage, and more.
@@ -81,7 +81,7 @@ Select any test run or result to view the details pane that displays additional 
 
 ![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
 
-The following capabilities of the **Tests** page help to improve productivity and troubleshooting experience.
+The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 
 <a name="teststab"></a>
 
@@ -90,7 +90,7 @@ The following capabilities of the **Tests** page help to improve productivity an
 Over time, tests accrue and, for large applications, can easily grow to tens of thousands of tests.
 For these applications with very many tests, it can be hard to navigate through the results to identify test failures,
 associate root causes, or get ownership of issues. Filters make it easy to quickly navigate to the test results of your interest.
-You can filter on **Test Name**, **Outcome** (failed, passed, an more), **Test Files** (files holding tests) and **Owner** (for test files).
+You can filter on **Test Name**, **Outcome** (failed, passed, and more), **Test Files** (files holding tests) and **Owner** (for test files).
 All of the filter criteria are cumulative in nature.
 
 ![Filter large test result set](_img/review-continuous-test-results-after-build/filter-large-test-results.png)
@@ -114,7 +114,7 @@ able to perform the required operations in context, such as bug creation or requ
 
 History of test execution can provide meaningful insights into reliability or performance of tests.
 When troubleshooting a failure, it is valuable to know how a test has performed in the past.
-The **Tests** page provides test history in context with the test results.
+The **Tests** tab provides test history in context with the test results.
 The test history information is exposed in a progressive manner starting with the current build pipeline to other branches,
 or the current stage to other stages, for build and release respectively.
 
@@ -154,11 +154,11 @@ or tests having different instances based on an input parameter (data driven tes
 <!-- see also [rerun](./test-reliability.md) -->
 
 As these tests are related, they must be reported together with the overall outcome derived from the individual instances or tests.
-These test results are reported as a summarized test result in the **Test** page:
+These test results are reported as a summarized test result in the **Tests** tab:
 
 * **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](../tasks/test/vstest.md) task.
   During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
-  Test reporting provides a combined view for all the attempts of a rerun, along with the overall test outcome as a derived unit.
+  Test report provides a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
   Additionally the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0)
   now support the ability to publish and query summarized test results.
 
@@ -174,15 +174,15 @@ These test results are reported as a summarized test result in the **Test** page
 
 > [!NOTE]
 > Metrics in the test summary section, such as the total number of tests, passed, failed, or other are
-> computed using the root level of the summarized test result. This is based on the individual attempts or iterations of the test.
+> computed using the root level of the summarized test result.
 
 <a name="abortedtest"></a>
 
 ### View aborted tests
 
-Test execution can abort due for several reasons such as bad test code, errors in the source under test, or environmental issues.
+Test execution can abort due to several reasons such as bad test code, errors in the source under test, or environmental issues.
 Irrespective of the reason for the abort, it is important to be able to diagnose the behavior and identify the root cause.
-The aborted tests and test runs can be viewed alongside the completed runs in the **Tests** page. 
+The aborted tests and test runs can be viewed alongside the completed runs in the **Tests** tab. 
 
 ![Data driven test](_img/review-continuous-test-results-after-build/aborted-test-run.png)
 
@@ -193,9 +193,9 @@ The aborted tests and test runs can be viewed alongside the completed runs in th
 > [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0). 
 > It will be available for Single Agent jobs in a future release.
 
-## Surface test results in the Tests page 
+## Surface test results in the Tests tab 
 
-Tests results can be surfaced in the **Tests** page using one of the following options:
+Tests results can be surfaced in the **Tests** tab using one of the following options:
 
 * **Test execution tasks**: built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
   that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
@@ -207,13 +207,13 @@ Tests results can be surfaced in the **Tests** page using one of the following o
 
 * **API(s)**: test results published directly using the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0).
 
-## Surface test information beyond the Tests page
+## Surface test information beyond the Tests tab
 
-The **Tests** page provides a detailed summary of the test execution.
+The **Tests** tab provides a detailed summary of the test execution.
 This is helpful in tracking the quality of the pipeline, as well as troubleshooting failures.
 Azure DevOps also provides other ways to surface the test information: 
 
-* The [Dashboard](../../report/dashboards/dashboards.md) helps visibility into how your team is progressing.
+* The [Dashboard](../../report/dashboards/dashboards.md) provides visibility into your team's is progress.
   Add one or more widgets that surface test related information:
 
   - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
