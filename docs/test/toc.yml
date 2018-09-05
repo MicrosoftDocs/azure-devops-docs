@@ -62,10 +62,10 @@
       href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
       href: associate-automated-test-with-test-case.md
-    - name: Run tests from the Test hub
+    - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
     - name: Associate results with requirements
-      href: associate-automated-results-with-requirements.md
+      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items
