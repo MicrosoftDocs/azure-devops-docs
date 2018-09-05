@@ -53,7 +53,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_dev-ops.svg
         title: Create organizations
-      - href: ../projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../organizations/projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_management.svg
