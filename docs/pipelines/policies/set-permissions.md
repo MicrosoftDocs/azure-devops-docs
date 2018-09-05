@@ -10,16 +10,12 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 02/12/18
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2017 < vsts'
 ---
 
 # Set build and release permissions
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
-
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).
 
