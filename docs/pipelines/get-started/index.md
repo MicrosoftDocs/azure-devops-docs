@@ -14,10 +14,7 @@ ms.date: 09/05/2018
 
 # Start using Azure Pipelines  
 
-**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015**
-
 Use this guide to sign up and start using Azure Pipelines. 
-
 
 ## What is Azure Pipelines?
 
