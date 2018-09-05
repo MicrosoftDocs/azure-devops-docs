@@ -1,7 +1,7 @@
 ---
 title: Use the visual designer to create a CI/CD pipeline
 titleSuffix: Azure Pipelines & TFS
-description: Use the designer in Azure Pipelines to create a pipeline
+description: CI/CD novice? Create an automated build and release definition in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -29,6 +29,7 @@ monikerRange: '>= tfs-2017'
 > [!TIP]
 > For build pipelines, we recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
 ::: moniker-end
+
 
 ::: moniker range="vsts"
 
@@ -61,7 +62,13 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 
 Create a PowerShell script that prints `Hello world`.
 
+::: moniker range="vsts"
+1. Go to the **Repos** hub.
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
 1. Go to the **Code** hub.
+::: moniker-end
 
 1. Add a file.
 
@@ -113,7 +120,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="vsts"
 
-1. Select the **Pipelines** hub in your Azure Pipelines project, and then choose **Builds**.
+1. Select the **Pipelines** hub in your Azure Pipelines project, it should automatically take you to the **Builds** page.
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -139,20 +146,36 @@ Create a build pipeline that prints "Hello world."
 
 1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
-1. Start with an **empty pipeline**.
+1. Start with an **Empty job**.
 
 1. On the left side, select **Pipeline** and specify whatever **Name** you want to use. For the **Agent pool**, select **Hosted VS2017**.
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
+   ---
+   
 1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![PowerShell task](_img/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018-2.png)
 
+   ---
+   
 1. Select **Save & queue**, and then select **Save**.
 
  ::: moniker-end
@@ -282,7 +305,7 @@ Save and queue a build manually and test your build pipeline.
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/build-console-link-to-new-build-newnav-tfs-2018-2.png)
+   > ![build console](_img/get-started-designer/build-console-link-to-new-build-azure-devops-newnavon.png)
    >
 
    # [Previous navigation](#tab/previous-nav)
@@ -292,19 +315,28 @@ Save and queue a build manually and test your build pipeline.
 
    Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
+   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/build-console-vsts.png)
+   > ![build console](_img/get-started-designer/build-console-azure-devops-newnavon.png)
    >
 
-1. Go to the build summary.
+   # [Previous navigation](#tab/previous-nav)
+   ![build console](_img/get-started-designer/build-console-vsts.png)
 
+   ---
+
+1. Go to the build summary. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
+
+   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/build-console-link-to-build-summary-vsts.png)
+   > ![build console](_img/get-started-designer/artifacts-explorer-azure-devops-newnavon.png)
    >
 
-1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
-
+   # [Previous navigation](#tab/previous-nav)
+   ![build console](_img/get-started-designer/build-console-vsts.png)
    ![artifacts explorer](_img/get-started-designer/artifacts-explorer-vsts.png)
+
+   ---
 
 ::: moniker-end
 
@@ -367,7 +399,14 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 1. Add these arguments.
 
  ::: moniker range="vsts"
- ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
+  # [New navigation](#tab/new-nav)
+  > [!div class="mx-imgBorder"] 
+  > ![build console](_img/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
+  >
+
+  # [Previous navigation](#tab/previous-nav)
+  ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
+  ---
  ::: moniker-end
  ::: moniker range=">= tfs-2017 < vsts"
  ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
@@ -404,15 +443,27 @@ Write-Host Trigger: $trigger
 
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
-   ::: moniker range="vsts"
+
+  ::: moniker range="vsts"
+
+  # [New navigation](#tab/new-nav)
+  > [!div class="mx-imgBorder"] 
+  > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
+  >
+
+  # [Previous navigation](#tab/previous-nav)
    > [!div class="mx-imgBorder"]
-   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log-vsts.png)
+   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
    >
-   ::: moniker-end
+  ---
+
+  ::: moniker-end
+
    ::: moniker range="< vsts"
    > [!div class="mx-imgBorder"]
    > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
    >
+
    ::: moniker-end
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
@@ -425,13 +476,13 @@ You've just created a build pipeline that automatically builds and validates wha
 
 Define the process for running the script in two stages.
 
-::: moniker range=">= tfs-2018 <= vsts"
+::: moniker range="vsts"
 
 1. Go to the **Pipelines** tab, and then select **Releases**.
 
-1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create release pipeline**.
+1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create a release pipeline**.
 
-1. Select the action to start with an **empty pipeline**.
+1. Select the action to start with an **Empty job**.
 
 1. Name the stage **QA**.
 
@@ -439,7 +490,16 @@ Define the process for running the script in two stages.
 
 1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
+
+   ---
+   
 
 1. Select the **Tasks** tab and select your **QA** stage.
 
@@ -459,13 +519,82 @@ Define the process for running the script in two stages.
 
 1. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![clone-release-environment](_img/get-started-designer/clone-release-environment-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![clone-release-environment](_img/get-started-designer/clone-release-environment-tfs-2018-2.png)
+
+   ---
+   
 
 1. Rename the cloned stage **Production**.
 
 1. Rename the release pipeline **Hello world**.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![rename release pipeline](_img/get-started-designer/rename-release-pipeline-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![rename release pipeline](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
+
+   ---
+
+1. Save the release pipeline.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Go to the **Pipelines** tab, and then select **Releases**.
+
+1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create a release definition**.
+
+1. Select the action to start with an **Empty definition**.
+
+1. Name the stage **QA**.
+
+1. In the Artifacts panel, select **+ Add** and specify a **Source (Build pipeline)**. Select **Add**.
+
+1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
+
+   > [!div class="mx-imgBorder"] 
+   > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
+   >
+
+1. Select the **Tasks** tab and select your **QA** stage.
+
+1. Select the plus sign **( + )** for the job to add a task to the job.
+
+1. On the **Add tasks** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button.
+
+1. On the left side, select your new **PowerShell** script task.
+
+1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+
+1. Add these **Arguments**:
+
+   ```
+   -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
+   ```
+
+1. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![clone-release-environment](_img/get-started-designer/clone-release-environment-tfs-2018-2.png)
+   >
+   
+1. Rename the cloned stage **Production**.
+
+1. Rename the release pipeline **Hello world**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![rename release pipeline](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
+   >   
 
 1. Save the release pipeline.
 
@@ -525,17 +654,42 @@ Run the script in each stage.
 
 1. Create a new release.
 
- ![create release](_img/get-started-designer/create-release-tfs-2018-2.png)
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![create release](_img/get-started-designer/create-release-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+  ![create release](_img/get-started-designer/create-release-tfs-2018-2.png)
+
+   ---
 
 1. Define the trigger settings and artifact source for the release and then select **Create**.
 
 1. Open the release that you just created.
 
- ![release created](_img/get-started-designer/release-created-tfs-2018-2.png)
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![release created](_img/get-started-designer/release-created-azure-devops-newnavon.png)
+   >
 
+   # [Previous navigation](#tab/previous-nav)
+  ![release created](_img/get-started-designer/release-created-tfs-2018-2.png)
+
+   ---
+ 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/get-started-designer/release-logs-tfs-2018-2.png)
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![release logs](_img/get-started-designer/release-logs-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![release logs](_img/get-started-designer/release-logs-tfs-2018-2.png)
+
+   ---
+
 
  ::: moniker-end
 
@@ -599,17 +753,36 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
  Your new code automatically is deployed in the **QA** stage, and then in the **Production** stage.
 
-   ::: moniker range=">= tfs-2018 <= vsts"
+   ::: moniker range="vsts"
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![release script step final log](_img/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
+
+   ---
 
    ::: moniker-end
 
- ::: moniker range="tfs-2017"
+   ::: moniker range="tfs-2018"
 
- ![release script step final log](_img/get-started-designer/release-script-step-final-log.png)
+   > [!div class="mx-imgBorder"] 
+   > ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
+   >
+   
+   ---
 
- ::: moniker-end
+   ::: moniker-end
+
+
+   ::: moniker range="tfs-2017"
+
+   ![release script step final log](_img/get-started-designer/release-script-step-final-log.png)
+
+   ::: moniker-end
 
 > In many cases, you probably would want to edit the release pipeline so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
@@ -626,7 +799,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
 | [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
-| [Go](languages/go.md) | Go |
+| [Go](apps/go/go.md) | Go |
 | [Java](languages/java.md) | Gradle |
 | [JavaScript](languages/javascript.md) | Node.js |
 | [Xcode](languages/xcode.md) | Xcode |
@@ -675,9 +848,29 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 ### How do I replicate a pipeline?
 
-If your pipeline has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
+If your pipeline has a pattern that you want to replicate in other pipelines, clone it, export it, or save it as a template.
+
+
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+> ![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
+>
+
+# [Previous navigation](#tab/previous-nav)
+![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
 
 ![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
+
+::: moniker-end
+
 
 After you clone a pipeline, you can make changes and then save it.
 
@@ -693,15 +886,69 @@ After you create a template, your team members can use it to follow the pattern 
 
 If you're editing a build pipeline and you want to test some changes that are not yet ready for production, you can save it as a draft.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+> ![save-as-draft](_img/get-started-designer/save-as-draft-newnav.png)
+>
+
+# [Previous navigation](#tab/previous-nav)
 ![save-as-draft](_img/get-started-designer/save-as-draft.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+![save-as-draft](_img/get-started-designer/save-as-draft.png)
+
+::: moniker-end
 
 You can edit and test your draft as needed.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+> ![edit draft](_img/get-started-designer/edit-draft-newnav.png)
+>
+
+# [Previous navigation](#tab/previous-nav)
 ![edit draft](_img/get-started-designer/edit-draft.png)
+
+---
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+![edit draft](_img/get-started-designer/edit-draft.png)
+
+::: moniker-end
 
 When you're ready you can publish the draft to merge the changes into your build pipeline.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+> [!div class="mx-imgBorder"] 
+> ![publish draft](_img/get-started-designer/publish-draft-newnav.png)
+>
+
+# [Previous navigation](#tab/previous-nav)
 ![publish draft](_img/get-started-designer/publish-draft.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+![publish draft](_img/get-started-designer/publish-draft.png)
+
+::: moniker-end
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
@@ -753,6 +1000,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/vsts/overview?view=vsts-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 
 <!-- ENDSECTION -->
+
