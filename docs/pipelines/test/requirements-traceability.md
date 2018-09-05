@@ -26,7 +26,7 @@ Requirements traceability help teams to get insights into indicators such as
 **quality of requirements** or **readiness to ship the requirement**.
 A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
 
-> Read the [glossary](./test-glossary.md) to understand test reports terminology.
+> Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 <a name="agileteams"></a>
 ## Agile teams running automated tests 
@@ -38,7 +38,7 @@ Agile teams have characteristics including, but not limited to the following
 * Negligible manual testing footprint; limited to exploratory testing
 * High degree of automation
 
-The following sections explore traceability from **Quality**, **Bug** and **Source** standpoints.
+The following sections explore traceability from **Quality**, **Bug** and **Source** standpoints for Agile teams.
 
 <a name="qualitytraceability"></a>
 
@@ -47,14 +47,14 @@ The following sections explore traceability from **Quality**, **Bug** and **Sour
 To ensure user requirements meet the quality goals, the requirements
 in a project can be linked to test results, which can then be viewed on the
 team's dashboard. This enables end-to-end traceability with a simple way to monitor test results.
-To link automated tests with requirements, see [Review continuous testing results](review-continuous-test-results-after-build.md) in build or release.
+To link automated tests with requirements, visit [Test report](review-continuous-test-results-after-build.md) in build or release.
 
-1. In the results section under **Tests** page of a build or release summary,
+1. In the results section under **Tests** tab of a build or release summary,
    select the test(s) to be linked to requirements and choose **Link**. 
 
    ![Select tests to be linked to requirements](_img/requirements-traceability/link-results-to-requirements.png)
 
-2. Choose a work item to be linked to the selected test(s):
+2. Choose a work item to be linked to the selected test(s) in one of the specified way:
 
    * Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
    * Specify a work item ID.
@@ -84,7 +84,7 @@ To link automated tests with requirements, see [Review continuous testing result
 
 6. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
    along with the **Pass Rate** for the tests and count of Failed tests. Selecting a **Failed** test
-   count opens the **Tests** page for the selected build or release.
+   count opens the **Tests** tab for the selected build or release.
    The widget also helps to track the requirements without any associated test(s).
 
    ![Track requirements without tests](_img/requirements-traceability/requirements-quality-widget.png)
@@ -95,11 +95,11 @@ To link automated tests with requirements, see [Review continuous testing result
 
 Testing gives a measure of the confidence to ship a change to users. A test  failure signals an issues with the change.
 Failures can happen for many reasons such as errors in the source under test, bad test code, environmental issues,
-[unreliable (flaky) tests](review-continuous-test-results-after-build.md), and more.
+[flaky tests](test-glossary.md), and more.
 Bugs provide a robust way to track test failures and drive accountability in the team to take the required remedial actions.
-To associate bugs with test results, see [Review continuous testing results](review-continuous-test-results-after-build.md) in build or release.
+To associate bugs with test results, visit [Test report](review-continuous-test-results-after-build.md) in build or release.
 
-1. In the results section of the **Tests** page select the tests against which the bug should be created
+1. In the results section of the **Tests** tab select the tests against which the bug should be created
    and choose **Bug**. Multiple test results can be mapped to a single bug.
    This is typically done when the reason for the failures is attributable to a single cause such as
    the unavailability of a dependent service, a database connection failure, or similar issues.
@@ -111,20 +111,20 @@ To associate bugs with test results, see [Review continuous testing results](rev
 
    ![Capture bug details](_img/requirements-traceability/capture-bug-details.png)
 
-3. View the bug with the test result, directly in context, within the **Tests** page.
+3. View the bug with the test result, directly in context, within the **Tests** tab.
    The **Work Items** tab also lists any linked requirements for the test result.
 
    ![View bug in Tests Tab](_img/requirements-traceability/view-bug-in-tests-tab.png)
 
 4. From a work item, navigate directly to the associated test results.
-   Both the test and the specific test result are linked to the bug.
+   Both the [test case](test-glossary.md) and the specific [test result](test-glossary.md) are linked to the bug.
 
    ![Test links in bug](_img/requirements-traceability/test-link-in-bug.png)
 
-5. In the work item, select **Test** or **Test result** to go directly to the **Tests** page
+5. In the work item, select **Test case** or **Test result** to go directly to the **Tests** page
    for the selected build or release. You can troubleshoot the failure, update your analysis
    in the bug, and make the changes required to fix the issue as applicable.
-   While both the links take you to the **Tests Tab**, the default section shown are **History** and **Debug** respectively.
+   While both the links take you to the **Tests tab**, the default section shown are **History** and **Debug** respectively.
 
    ![Tests Tab full page view](_img/requirements-traceability/redirect-to-tests-tab.png)
 
@@ -136,18 +136,18 @@ When troubleshooting test failures that occur consistently over a period of time
 it is important to trace back to the initial set of changes - where the failure originated.
 This can help significantly to narrow down the scope for identifying the problematic test or
 source under test. To discover the first instance of test failures and trace it back to the associated code changes,
-see [Review continuous testing results](review-continuous-test-results-after-build.md) in build or release.
+visit [Tests tab](review-continuous-test-results-after-build.md) in build or release.
 
-1. In the **Tests** page, select a test failure to be analyzed.
+1. In the **Tests** tab, select a test failure to be analyzed.
    Based on whether it's a build or release, choose the **Failing build** or **Failing release** column for the test. 
 
    ![View Failing release](_img/requirements-traceability/view-failing-release.png)
 
-2. This opens **Tests** page in a new window, showing the first instance of consecutive failures for the test originated.
+2. This opens another instance of the **Tests** tab in a new window, showing the first instance of consecutive failures for the test.
 
    ![originating test failure](_img/requirements-traceability/view-originating-test.png)
 
-3. Based on the build or release pipeline, you can choose the timeline or pipeline view to see where the code changes were committed.
+3. Based on the build or release pipeline, you can choose the timeline or pipeline view to see what code changes were committed.
    You can analyze the code changes to identify the potential root cause of the test failure.
 
    ![View code commits](_img/requirements-traceability/view-code-commits.png)
@@ -157,7 +157,7 @@ see [Review continuous testing results](review-continuous-test-results-after-bui
 ## Traditional teams using planned testing
 
 Teams that are moving from manual testing to continuous (automated) testing, and have a subset of tests already automated,
-can execute them as part of the pipeline or on demand (see [Review continuous testing results](review-continuous-test-results-after-build.md)).
+can execute them as part of the pipeline or on demand (see [Test report](review-continuous-test-results-after-build.md)).
 Referred to as **Planned testing**, automated tests can be [associated to the test cases](../../test/associate-automated-test-with-test-case.md)
 in a test plan and executed from **Azure Test Plans**.
 Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
