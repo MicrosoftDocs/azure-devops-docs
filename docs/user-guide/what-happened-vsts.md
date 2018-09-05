@@ -13,7 +13,9 @@ monikerRange: '>= vsts'
 
 # Visual Studio Team Services is now Azure DevOps Services
 
-On September 5th, 2018, Microsoft changed Visual Studio Team Services (VSTS) to "Azure DevOps Services". The individual features of VSTS are now branded as separate Azure DevOps services, as follows:
+On September 5th, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to "Azure DevOps Services". 
+
+The individual features of VSTS are now separate services:
 
 | VSTS feature         | Azure DevOps service |
 |----------------------|----------------------|
@@ -31,15 +33,16 @@ Currently, you can acquire **Azure Pipelines** separately. In the future, you'll
 
 Follow the [Azure DevOps release notes](/vsts/release-notes/index) to get news on the latest updates!
 
-## Do I have to use dev.azure.com now?
+## Can I still use visualstudio.com
 
-Although the service URLs for Azure DevOps are now `https://dev.azure.com/{your organization}/{your project}`, Microsoft will support servicing from the visualstudio.com domain (`https://{your organization}.visualstudio.com/{your project}`) for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until a to-be-determined date.
+Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. (Specifically, `https://dev.azure.com/{your organization}/{your project}`.) If you'd like to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can change this from the organization settings page.
 
- We will post news about this transition on the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
+Microsoft will continue to support servicing from the visualstudio.com domain (`https://{your organization}.visualstudio.com/{your project}`) for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until a to-be-determined date.
 
-We will also update this page as status changes.
+We will post news about this transition on the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
 
-## I preferred the old user interface. How do I go back?
+
+## Can I still use the old interface?
 
 At this time, you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
