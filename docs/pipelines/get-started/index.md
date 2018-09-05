@@ -14,11 +14,15 @@ ms.date: 09/05/2018
 
 # Start using Azure Pipelines  
 
-Use this guide to sign up and start using Azure Pipelines. 
+Azure Pipelines is a fully-featured continuous integration (CI) and continuous delivery (CD) service that works with your preferred Git provider and can deploy to most major cloud services, including Azure services. Start with your code on GitHub, GitLab, BitBucket, or [Azure Repos](/azure/devops/repos/index) and automate the build, test, and deployment of your code to Microsoft Azure, Google Cloud, or Amazon cloud services.
+
+Azure Pipelines enables you to configure and automate your build and delivery tools and environments in YAML (as Infrastructure-as-Code) or through the visual designer in your Azure DevOps web portal at [https://dev.azure.com](https://dev.azure.com). Our docs will step you through both approaches.
+
+Follow the links in this short guide to sign up and start using Azure Pipelines. 
 
 ## What is Azure Pipelines?
 
-Check out [What is Azure Pipelines](what-is-azure-pipelines.md) to find out what Azure Pipelines is, and how you could benefit from using it to streamline your code building, testing, and deploying. 
+Check out [What is Azure Pipelines](what-is-azure-pipelines.md) from more detail on Azure Pipelines, and how you benefit from using it to automate and streamline the build, test, and deploy of your code projects. 
 
 ## How to use Azure Pipelines
 
