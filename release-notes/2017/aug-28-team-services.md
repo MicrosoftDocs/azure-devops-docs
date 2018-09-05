@@ -326,7 +326,7 @@ The **Graph REST API** resources allow developers to write applications that man
 
 We want to promote better connections between users within VSTS. As a part of this effort, we’re updating the user profile card, which allows you to interact with, and learn more about others within your VSTS account. Through integration with your default email and IM client, you can send emails and start chats directly from the profile card. Profile cards can be activated within work items, pull requests, and security settings by clicking on the contact card icon, profile picture, or a user’s name within comments.
 
-Azure Active Directory (AAD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
+Azure Active Directory (Azure AD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
 
 > [!div class="mx-imgBorder"]
 ![profile card](_img/08_28_21.png)

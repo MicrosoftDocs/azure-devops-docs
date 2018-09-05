@@ -14,11 +14,11 @@ monikerRange: 'vsts'
 ---
 
 
-# Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+In this quickstart, you learn how to add, run, and update inline tests. A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
@@ -76,8 +76,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests. 
 
-> [!IMPORTANT]  
-> Prior to running the test, you must add details.  
+Prior to running the test, you must add details.  
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -103,8 +102,7 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests.
 
-> [!IMPORTANT]  
-> Prior to running the test, you must add details.
+Prior to running the test, you must add details.
 
 ---
 

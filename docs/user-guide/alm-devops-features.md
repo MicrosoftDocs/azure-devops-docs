@@ -75,7 +75,7 @@ Use features supported by these familiar clients to manage your project and illu
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
-<p><b>Azure Active Directory (AAD) (Azure DevOps Services)</b></p>
+<p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
 <p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md). </p>
 
 </td>

@@ -67,14 +67,14 @@ The Azure DevOps platform associated with a URL (for example, `https://dev.azure
 <!---
 ## Organizational User	
 
-An authenticated user of a project who is a member of an Azure DevOps organization   (Azure Active Directory (AAD) tenant) but not a member of Azure DevOps.
+An authenticated user of a project who is a member of an Azure DevOps organization   (Azure Active Directory (Azure AD) tenant) but not a member of Azure DevOps.
 
-Signed in. Member or guest of the AAD tenant. 
+Signed in. Member or guest of the Azure AD tenant. 
 
 -->
 
 <!---
-Org Project	Projects that are visible to everyone in the Organization (AAD tenant).
+Org Project	Projects that are visible to everyone in the Organization (Azure AD tenant).
 	Everyone in the Organization can discover them and perform limited operations.
 	Admins control who gets to fully contribute.
 -->

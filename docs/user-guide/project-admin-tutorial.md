@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Get started as an administrator
+# Quickstart: Get started as an administrator
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -42,9 +42,8 @@ Larger organizations will want to consider using Active Directory to keep the ma
 * [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 
 ::: moniker-end 
-
-> [!NOTE]  
-> You can delegate the task to add users to an organization by adding a user with Stakeholder or Basic access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
+ 
+You can delegate the task to add users to an organization by adding a user with Stakeholder or Basic access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
  
 ## Grant or restrict permissions 
 
@@ -91,7 +90,7 @@ For example, here we show that **Test Plans** has been disabled.
 ::: moniker range=">= tfs-2015" 
 ## Set code, test, and other policies 
 
-There are several policies you can set to support collaboration across your teams, secure your projects, and to automatically remove files no longer needed. You'll want to review these articles to set policies. 
+There are several policies you can set to support collaboration across your teams, secure your projects, and to automatically remove files no longer needed. You'll want to review the following articles to set policies. 
 
 ::: moniker-end 
 
@@ -169,7 +168,7 @@ We recommend you add teams as your organization grows. Each team gets [access to
 
 ![Agile tools, team assets](../organizations/settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)
 
-To learn more, see: 
+To learn more, see the following: 
 - [About projects and scaling your organziation](../organizations/projects/about-projects.md)  
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)  
 - [Add team administrator](../organizations/settings/add-team-administrator.md)  
@@ -189,18 +188,24 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ::: moniker-end 
 
+## Next steps  
+
+> [!div class="nextstepaction"]
+> [Project management](../organizations/projects/index.md)
+
+
 ## Related articles
 ::: moniker range="vsts"  
-- [Manage projects](../organizations/projects/index.md)
+
 - [Security & identity](../organizations/security/index.md)
-- [Manage organizations](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 - [Project management](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
-- [Manage organizations](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 - [TFS administration](/tfs/server/index)
 ::: moniker-end 

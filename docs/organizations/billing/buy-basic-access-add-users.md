@@ -46,29 +46,29 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
    > [!div class="mx-imgBorder"]
 ![Go to Visual Studio Marketplace, Other, Azure DevOps Services Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
 
-1. Select your Azure DevOps Services organization (if you have multiple organizations) and then choose **Buy**.
+2. Select your Azure DevOps Services organization (if you have multiple organizations) and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
 ![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
-1. Confirm the Azure subscription where your Azure DevOps Services charges are billed and then choose **Continue**.
+3. Confirm the Azure subscription where your Azure DevOps Services charges are billed and then choose **Continue**.
 
    If you have multiple Azure subscriptions, select the Azure subscription that you want to use. If you don't have an Azure subscription, you can create a new one.
 
    > [!div class="mx-imgBorder"]
 ![Confirm or select your Azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.png)
 
-1. Enter the number of paid Azure DevOps Services users and then choose **Continue**. You also see the number of free users that are included, which is separate.
+4. Enter the number of paid Azure DevOps Services users and then choose **Continue**. You also see the number of free users that are included, which is separate.
 
    > [!div class="mx-imgBorder"]
 ![Enter the number of paid Azure DevOps Services users](_img/buy-more-basic-access/marketplace-select-number-of-users.png)
 
-1. Review your order and then choose **Confirm**.
+5. Review your order and then choose **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-1. Choose **Manage users** to go to your Azure DevOps Services organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
+6. Choose **Manage users** to go to your Azure DevOps Services organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 

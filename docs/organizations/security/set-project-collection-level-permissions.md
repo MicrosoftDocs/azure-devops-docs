@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2013'
 ms.date: 08/06/2017
 ---
 
-# Set permissions at the project-level or project collection-level
+# Quickstart: Set permissions at the project- or collection-level
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Several permissions are set at the team project or at the organization/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.    
+Several permissions are set at the team project or at the organization/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -67,9 +67,9 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="vsts"  
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-0. Choose **Project Settings** and then **Security**.
+2. Choose **Project Settings** and then **Security**.
 
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
@@ -229,7 +229,12 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 
 ::: moniker-end 
 
-## Related notes
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Project management](../projects/index.md)
+
+## Related articles
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)

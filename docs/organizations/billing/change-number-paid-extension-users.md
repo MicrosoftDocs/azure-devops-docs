@@ -21,7 +21,7 @@ To scale with your team's needs, you can increase or decrease the number of paid
 
 ## Prerequisites 
 
-You must have [access to billing](add-backup-billing-managers.md) for your organization Azure subscription.
+You must have [access to billing](add-backup-billing-managers.md) for your organization's Azure subscription.
 
 [!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
@@ -29,50 +29,41 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select the shopping bag icon and **Browse Marketplace**.
 
-    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Select **Users**. Choose **Summary** if you don't already see the summary to the right of the page.
-
-   ![Select users](_img/_shared/select-users-and-summary.png)
-
-4. Below the summary to the right of your screen, choose **Change quantity**. If you don't see the summary, choose the Summary 
-
-   ![Change quantity of extensions](_img/_shared/change-quantity-extensions.png)
-
-5. Select **Get**. You might be prompted to enter your credentials for the Marketplace. 
-
-   ![Select Get in the Marketplace for the extension](_img/_shared/marketplace-extension.png)
-
-4. Update the total number of paid users. Then select **Update**.
-
-    <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
-
-The number of paid extension users is updated.
+   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace.png)
 
 # [Previous navigation](#tab/prev-nav)
 
 1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
-2. Go to **Extensions**. Then select the extension you want to update.
+2. Select the shopping bag icon and **Browse Marketplace**.
 
-   ![Select the Extensions tab](_img/_shared/choose-extensions-tab.png)
-
-3. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
-
-   ![Select Get in the Marketplace for the extension](_img/_shared/marketplace-extension.png)
-
-4. Update the total number of paid users. Then select **Update**.
-
-    <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
-
-The number of paid extension users is updated.
+   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace-prev-nav.png)
 
 ---
 
-> [!NOTE]
-> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for an Azure DevOps Services extension](#change-the-number-of-paid-users-for-a-vsts-extension).
+3. Choose the extension you want to update.
+
+   ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
+
+4. Select **Get**. You might be prompted to enter your credentials for the Marketplace. 
+
+   ![Select Get in the Marketplace for the extension](_img/_shared/package-management-extension.png)
+
+5. Select **Change quantity**.
+
+   ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
+
+6. Update the total number of paid users. Then select **Continue**.
+
+   ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
+7. Review and then **Confirm** the update.
+
+   ![confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
+
+The number of paid extension users is updated.
+
 
 ## Next steps
 

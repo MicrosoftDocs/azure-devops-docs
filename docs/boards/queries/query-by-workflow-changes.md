@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -126,9 +127,9 @@ To filter on items assigned to someone who belongs to a team or security group, 
 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Active Directory groups, and work item categories.
 
-
 > [!NOTE]    
->**In Group** clauses don't support references to Azure Active Directory (AAD) groups. 
+> Azure Active Directory (Azure AD)
+> **In Group** clauses don't support references to Azure Active Directory (Azure AD) groups.
 
 <a id="workflow-change"/> 
 
@@ -454,7 +455,7 @@ For information about data types and default field attributes, see [Work item da
 #### Notes
   
 <a id="sync">  </a>
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).    

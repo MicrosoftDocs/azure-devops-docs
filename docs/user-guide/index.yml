@@ -83,7 +83,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: View permissions
-      - href:  index.md
+      - href:  project-admin-tutorial.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_account-management.svg
@@ -221,7 +221,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_management.svg
-        title: Manage projects
+        title: Project management
       - href: ../organizations/billing/index.md
         html: <p></p>
         image:

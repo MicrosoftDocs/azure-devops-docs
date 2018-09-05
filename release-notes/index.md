@@ -240,7 +240,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Manage entity-specific security</td><td>*2018.2*</td></tr>
         <tr><td>Share deployment status using a badge</td><td>*2018.2*</td></tr>
         <tr><td>Deploy selectively based on the artifact triggering a release</td><td>*2018.2*</td></tr>
-        <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td>N/A</td></tr>
+        <tr><td>Leverage your existing subscription using an Azure AD-based alternate email account</td><td>N/A</td></tr>
         <tr>
             <td rowspan="20">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
@@ -262,7 +262,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Share your packages using a badge</td><td>*2018.2*</td></tr>
         <tr><td>Recycle and restore packages</td><td>*2018.2*</td></tr>
         <tr><td>Manage access and extensions for large numbers of users using groups</td><td>N/A</td></tr>
-        <tr><td>Reduced latency for AAD group membership changes</td><td>N/A</td></tr>
+        <tr><td>Reduced latency for Azure AD group membership changes</td><td>N/A</td></tr>
         <tr><td>Manage users with Graph REST APIs Public Preview</td><td>N/A</td></tr>
         <tr><td>Leave account</td><td>N/A</td></tr>
         <tr>
@@ -1058,7 +1058,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>AAD sign in address rename</td>
+            <td>Azure AD sign in address rename</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -1411,7 +1411,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>2017.2</td>
         </tr>
         <tr>
-            <td>Support for AAD conditional access</td>
+            <td>Support for Azure AD conditional access</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -1733,7 +1733,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td>Email support for AAD groups</td>
+            <td>Email support for Azure AD groups</td>
             <td>N/A</td>
         </tr>
         <tr>

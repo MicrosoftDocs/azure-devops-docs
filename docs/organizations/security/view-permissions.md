@@ -14,11 +14,11 @@ ms.date: 07/27/2018
 ---
 
 
-# View permissions for yourself or others
+# Quickstart: View permissions for yourself or others
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
+In this quickstart, you learn how to view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 

@@ -162,11 +162,11 @@ See the [large account user management roadmap post](https://devblogs.microsoft.
 
 ### Reduced latency for AAD group membership changes
 
-If you are managing permissions through Azure Active Directory (AAD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
+If you are managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
 
 ### Manage users with Graph REST APIs Public Preview
 
-The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (AAD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](https://visualstudio.microsoft.com/en-us/docs/integrate/api/graph/overview) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
+The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (Azure AD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](https://visualstudio.microsoft.com/en-us/docs/integrate/api/graph/overview) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
 
 ### Leave account
 

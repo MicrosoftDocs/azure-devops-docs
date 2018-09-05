@@ -35,7 +35,7 @@ For anyone to access a team project, you must add them to a security group. For 
 ## Tutorials 
   
 - [Set up Active Directory or Azure Active Directory](setup-ad-aad.md)
-- [Add AD/AAD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
+- [Add AD/Azure AD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
 - [Change individual permissions, grant select access to specific functions](change-individual-permissions.md)
 - [Grant or restrict permissions to select tasks](restrict-access.md)
 - [Remove user accounts](remove-users-prohibit-access.md)  

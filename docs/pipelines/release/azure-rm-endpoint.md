@@ -35,8 +35,8 @@ list of your subscriptions.
 
 When you choose **OK**, the system:
 
-1. Connects to the Azure Active Directory (AAD) tenant for to the selected subscription
-1. Creates an application in AAD on behalf of the user
+1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription
+1. Creates an application in Azure AD on behalf of the user
 1. After the application has been successfully created, assigns the application as a contributor to the selected subscription
 1. Creates an Azure Resource Manager service connection using this application's details
 
@@ -54,7 +54,7 @@ Errors that may occur when the system attempts to create the service connection 
 ### Insufficient privileges to complete the operation
 
 This typically occurs when the system attempts to create an
-application in AAD on your behalf.
+application in Azure AD on your behalf.
 
 This is a permission issue that may be due to the following causes:
 

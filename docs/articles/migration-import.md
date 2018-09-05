@@ -81,12 +81,12 @@ simply open the ```ProjectProcessMap.log``` file to see everything that was run 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps and can be ignored. 
 
 ## Generating Import Files
-By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (AAD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
+By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare Command
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to AAD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
 
-Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to AAD in order to populate the identity map log file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
+Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
 ```cmdline
 TfsMigrator prepare /help
@@ -110,19 +110,19 @@ TfsMigrator prepare /collection:http://fabrikam:8080/tfs/DefaultCollection /tena
 ```
 
 Upon executing this command, TfsMigrator will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
-If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an AAD login window will appear. 
-You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the AAD tenant specified 
+If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an Azure AD login window will appear. 
+You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
 is the one you want your future Azure DevOps organization to be backed with. For our Fabrikam example the user would enter something similar to what's shown in the below image.
 
 > [!IMPORTANT] 
-> Do NOT use a test AAD tenant for a test import and your production AAD tenant for the production run. Using a test AAD tenant can result in identity import issues when you begin your production run with your organization's production AAD tenant.
+> Do NOT use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
 
-![AAD login prompt](_img/migration-import/aadLogin.png)
+![Azure AD login prompt](_img/migration-import/aadLogin.png)
 
 A successful run of TfsMigrator prepare will result in a set of logs and two import files. 
 
 After opening the log directory noted in TfsMigrator's output you will notice that there are two files and a Logs folder. ```IdentityMapLog.csv``` 
-contains the generated mapping of AD to AAD identities. ```import.json``` is the import specification file which needs to be filled out. 
+contains the generated mapping of AD to Azure AD identities. ```import.json``` is the import specification file which needs to be filled out. 
 It's recommended that you take time to fill out the import specification file, ```import.json```, and review the identity map log file, ```IdentityMapLog.csv```, for completeness before kicking off an import. 
 
 ### Import Specification File
@@ -190,29 +190,29 @@ The table below explains what each column is used for.
 
 
 > [!NOTE]   
-> Users marked as "No Match Found (Check AAD Sync)" who you wanted to be added as full organization members will need to be investigated with your AAD admin to see why they aren't part of your Azure AD Connect sync. 
+> Users marked as "No Match Found (Check Azure AD Sync)" who you wanted to be added as full organization members will need to be investigated with your Azure AD admin to see why they aren't part of your Azure AD Connect sync. 
 
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    AD - User (TFS)                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
 |    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
-|    AAD - Expected Import User (Azure DevOps)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check AAD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
-|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and AAD or "Historical" if we could not match the AD identity in your AAD.                                                                                                                                                                                                        |
+|    Azure AD - Expected Import User (Azure DevOps)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
+|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
 Reading through the file you will notice the Expected Import Status column has either 'Active' or 'Historical'. Active indicates that it's expected that the identity on this row will map correctly on import and will become active. Historical will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
-> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your AAD that was imported actively, recreating a new user in AAD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created AAD identity, but it will cause an import failure as this isn't supported. 
+> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your Azure AD that was imported actively, recreating a new user in Azure AD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created Azure AD identity, but it will cause an import failure as this isn't supported. 
 
-Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct AAD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
+Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct Azure AD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
 
-Next, review the identities that are labeled as 'Historical'. This implies that a matching AAD identity couldn't be found. This could be for one of four reasons.
+Next, review the identities that are labeled as 'Historical'. This implies that a matching Azure AD identity couldn't be found. This could be for one of four reasons.
 
 1. The identity hasn't been setup for sync between on-premises AD and Azure AD. 
-2. The identity hasn't been populated in your AAD yet; new employee scenario. 
-3. The identity simply doesn't exist in your AAD.
+2. The identity hasn't been populated in your Azure AD yet; new employee scenario. 
+3. The identity simply doesn't exist in your Azure AD.
 4. The user that owned that identity no longer works at the company.
 
 In the first three cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps. The final case can generally be ignored as employees no longer at your company should be imported historically. 
@@ -224,7 +224,7 @@ In cases where the Azure AD Connect hasn't been configured, you will notice that
 
 > Running an import with all historical identities has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
 
-To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the organization as the organization owner. All other users will be imported historically. The organization owner will then be able to [add users](../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) back in using their AAD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the AAD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
+To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the organization as the organization owner. All other users will be imported historically. The organization owner will then be able to [add users](../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) back in using their Azure AD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the Azure AD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
 
 TfsMigrator will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
@@ -651,9 +651,9 @@ Here is an example of a completed import command:
 TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 ```
 
-Once the validation passes you will be asked to sign into to AAD. It's important that you sign in with an identity that is a member of the same AAD as the identity map log file was built against. The user that signs in will become the owner of the imported organization. 
+Once the validation passes you will be asked to sign into to Azure AD. It's important that you sign in with an identity that is a member of the same Azure AD as the identity map log file was built against. The user that signs in will become the owner of the imported organization. 
 
 > [!NOTE]
-> Imports are limited to 5 against a single AAD tenant per 24 hour period. Only imports that are queued count against this cap.
+> Imports are limited to 5 against a single Azure AD tenant per 24 hour period. Only imports that are queued count against this cap.
 
 After the import starts the user that queued the import will receive an email. Around 5-10 minutes after queueing the import your team will be able to navigate to the organization to check on the status. Once the import completes your team will be directed to sign in. The owner of the organization will also receive an email when the import finishes. 
