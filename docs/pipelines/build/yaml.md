@@ -127,4 +127,4 @@ For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md)
 
 ## Learn more
 
-To learn more about what you can do with YAML builds, see https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md.
+To learn more about what you can do with YAML builds, see [YAML schema reference](../yaml-schema.md).

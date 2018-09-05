@@ -15,7 +15,6 @@ monikerRange: '> tfs-2018'
 # Create your first pipeline
 
 This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
-For more details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
 
 ## Prerequisites
 
@@ -99,3 +98,5 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 * [Java](languages/java.md)
 * [Node.js](languages/javascript.md)
 * [Python](languages/python.md)
+
+For more details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
