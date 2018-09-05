@@ -55,7 +55,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/devopsiconpipelines96.svg" alt="" />
+                                                                <img src="../_img/index/devopsiconpipelines96.svg" alt="Azure Pipelines logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -74,7 +74,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GetHub logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -93,7 +93,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_kanban.svg" alt="" />
+                                                                <img src="../_img/index/i_kanban.svg" alt="designer" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -112,7 +112,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_scrum.svg" alt="" />
+                                                                <img src="../_img/index/i_scrum.svg" alt="azure portal" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -140,7 +140,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_aspnetcore.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="_img/index/logo_aspnetcore.svg">
+                                                                <img style="display: none;" alt=".NET Core icon" src="_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="_img/index/logo_aspnetcore.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -158,7 +158,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_android.svg">
+                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -176,7 +176,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_net.svg" data-linktype="external">
+                                                                <img style="display: none;" alt="ASP.NET logo" src="_img/index/logo_net.svg" data-linktype="external">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -194,7 +194,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
+                                                                <img style="display: none;" alt="C++ logo" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -212,7 +212,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_visual-studio.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+                                                                <img style="display: none;" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -230,7 +230,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_dockercontainer.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_dockercontainer.svg" data-linktype="external" data-hoverimage="_img/index/logo_dockercontainer.svg">
+                                                                <img style="display: none;" alt="Docker logo" src="_img/index/logo_dockercontainer.svg" data-linktype="external" data-hoverimage="_img/index/logo_dockercontainer.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -248,7 +248,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_go.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_go.svg" data-linktype="external" data-hoverimage="_img/index/logo_go.svg">
+                                                                <img style="display: none;" alt="Go logo" src="_img/index/logo_go.svg" data-linktype="external" data-hoverimage="_img/index/logo_go.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -266,7 +266,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_java.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_java.svg">
+                                                                <img style="display: none;" alt="Java logo" src="https://docs.microsoft.com/media/logos/logo_java.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_java.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -284,7 +284,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_nodejs.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_nodejs.svg" data-linktype="external" data-hoverimage="_img/index/logo_nodejs.svg">
+                                                                <img style="display: none;" alt="Javascript VM logo" src="_img/index/logo_nodejs.svg" data-linktype="external" data-hoverimage="_img/index/logo_nodejs.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -302,7 +302,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_php.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
+                                                                <img style="display: none;" alt="PHP logo" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -320,7 +320,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_python.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
+                                                                <img style="display: none;" alt="Python logo" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -338,7 +338,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_ruby.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
+                                                                <img style="display: none;" alt="Ruby logo" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -356,7 +356,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_uwp.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="_img/index/logo_uwp.svg">
+                                                                <img style="display: none;" alt="UWP logo" src="_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="_img/index/logo_uwp.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -374,7 +374,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xamarin.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
+                                                                <img style="display: none;" alt="Xamarin logo" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -392,7 +392,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                                                <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -414,7 +414,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/containerservice.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/containerservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/containerservice.svg">
+                                                                <img style="display: none;" alt="Azure Kubernetes Service logo" src="https://docs.microsoft.com/azure/media/index/containerservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/containerservice.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -432,7 +432,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/azure-stack.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
+                                                                <img style="display: none;" alt="Azure Stack logo" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -450,7 +450,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/sqldatabase.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
+                                                                <img style="display: none;" alt="Azure SQL Database icon" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -468,7 +468,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/app-service-web.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
+                                                                <img style="display: none;" alt="Azure Web Apps logo" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -486,7 +486,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_linux-color.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
+                                                                <img style="display: none;" alt="Linux VM logo" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -504,7 +504,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_npm.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
+                                                                <img style="display: none;" alt="npm logo" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -522,7 +522,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_nuget.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
+                                                                <img style="display: none;" alt="NuGet logo" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -540,7 +540,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                                <img style="display: none;" alt="Virtual Machine Manager icon" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -558,7 +558,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                                <img style="display: none;" alt="VMWare icon" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -576,7 +576,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/appservice.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/appservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/appservice.svg">
+                                                                <img style="display: none;" alt="Web App for Containers icon" src="https://docs.microsoft.com/azure/media/index/appservice.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/appservice.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -594,7 +594,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/virtualmachine.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+                                                                <img style="display: none;" alt="Windows VM icon" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -616,7 +616,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_code-quality.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="../_img/index/i_code-quality.svg" data-linktype="external" data-hoverimage="../_img/index/i_code-quality.svg">
+                                                                <img style="display: none;" alt="Test reports icon" src="../_img/index/i_code-quality.svg" data-linktype="external" data-hoverimage="../_img/index/i_code-quality.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -634,7 +634,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_analytics.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="../_img/index/i_analytics.svg" data-linktype="external" data-hoverimage="../_img/index/i_analytics.svg">
+                                                                <img style="display: none;" alt="Test Analytics icon" src="../_img/index/i_analytics.svg" data-linktype="external" data-hoverimage="../_img/index/i_analytics.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -652,7 +652,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_load-testing.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="../_img/index/i_load-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_load-testing.svg">
+                                                                <img style="display: none;" alt="Parallel testing icon" src="../_img/index/i_load-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_load-testing.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -670,7 +670,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_unit-testing.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="../_img/index/i_unit-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_unit-testing.svg">
+                                                                <img style="display: none;" alt="Test icon" src="../_img/index/i_unit-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_unit-testing.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

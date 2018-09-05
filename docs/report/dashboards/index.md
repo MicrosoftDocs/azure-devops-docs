@@ -113,14 +113,14 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 ::: moniker range="vsts" 
 
 ## Resources 
-- [Azure Boards](/azure/devops/#pivot=services&panel=agile)
-- [Azure Test Plans](/azure/devops/#pivot=services&panel=testing)
+- [Azure Boards](/azure/devops/boards/index)
+- [Azure Test Plans](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
 ## Resources 
-- [Agile](/azure/devops/#pivot=services&panel=agile)
-- [Test](/azure/devops/#pivot=services&panel=testing)
+- [Agile](/azure/devops/boards/index)
+- [Testing](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
 ::: moniker-end

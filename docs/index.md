@@ -38,7 +38,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GitHub logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -57,7 +57,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsSuite.png" alt="" />
+                                                                <img src="_img/index/DevOpsSuite.png" alt="Azure DevOps logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -76,7 +76,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="what's new" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -95,7 +95,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="web portal" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -117,7 +117,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
+                                                                <img src="_img/index/DevOpsIconPipelines96.svg" alt="Azure Pipelines logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -136,7 +136,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
+                                                                <img src="_img/index/DevOpsIconRepos96.svg" alt="Azure Repos logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -155,7 +155,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
+                                                                <img src="_img/index/DevOpsIconBoards96.svg" alt="Azure Boards logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -174,7 +174,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
+                                                                <img src="_img/index/DevOpsIconArtifacts96.svg" alt="Azure Artifacts logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -193,7 +193,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconTestPlans96.svg" alt="" />
+                                                                <img src="_img/index/DevOpsIconTestPlans96.svg" alt="Azure Test Plans logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -212,7 +212,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="Settings" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -235,7 +235,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_aspnetcore.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_aspnetcore.svg">
+                                                                <img style="display: none;" alt=".NET Core " src="pipelines/_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_aspnetcore.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -253,7 +253,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
+                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -271,7 +271,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_docker.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_docker.svg">
+                                                                <img style="display: none;" alt="Docker logo" src="https://docs.microsoft.com/media/logos/logo_docker.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_docker.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -289,7 +289,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_go.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_go.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_go.svg">
+                                                                <img style="display: none;" alt="Go logo" src="pipelines/_img/index/logo_go.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_go.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -307,7 +307,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_java.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_java.svg">
+                                                                <img style="display: none;" alt="Java logo" src="https://docs.microsoft.com/media/logos/logo_java.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_java.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -325,7 +325,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_kubernetes.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_kubernetes.svg">
+                                                                <img style="display: none;" alt="Kubernetes logo" src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_kubernetes.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -343,7 +343,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_linux-color.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
+                                                                <img style="display: none;" alt="Linux logo" src="https://docs.microsoft.com/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_linux-color.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -361,7 +361,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_nodejs.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nodejs.svg">
+                                                                <img style="display: none;" alt="Node Javascript logo" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nodejs.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -379,7 +379,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_npm.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
+                                                                <img style="display: none;" alt="npm logo" src="https://docs.microsoft.com/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_npm.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -397,7 +397,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_nuget.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
+                                                                <img style="display: none;" alt="NuGet logo" src="https://docs.microsoft.com/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_nuget.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -415,7 +415,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_php.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
+                                                                <img style="display: none;" alt="PHP logo" src="https://docs.microsoft.com/media/logos/logo_php.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_php.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -433,7 +433,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_python.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
+                                                                <img style="display: none;" alt="Python logo" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -451,7 +451,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_ruby.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
+                                                                <img style="display: none;" alt="Ruby logo" src="https://docs.microsoft.com/media/logos/logo_ruby.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_ruby.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -469,7 +469,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("pipelines/_img/index/logo_uwp.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="pipelines/_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_uwp.svg">
+                                                                <img style="display: none;" alt="UWP logo" src="pipelines/_img/index/logo_uwp.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_uwp.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -487,7 +487,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xamarin.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
+                                                                <img style="display: none;" alt="Xamarin logo" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -505,7 +505,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                                                <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -527,7 +527,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_dashboard.svg" alt="" />
+                                                                <img src="_img/index/i_dashboard.svg" alt="Dashboards icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -546,7 +546,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_analytics.svg" alt="" />
+                                                                <img src="_img/index/i_analytics.svg" alt="Analytics views icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -565,7 +565,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Wikis icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -584,7 +584,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
