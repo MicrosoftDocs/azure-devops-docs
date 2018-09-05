@@ -610,17 +610,53 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h2 style="float: left; display: flex;">Test your app</h2>
                                 <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="test/getting-started-with-continuous-testing.md">
+                                        <a href="test/review-continuous-test-results-after-build.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_visual-studio.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_code-quality.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="../_img/index/i_code-quality.svg" data-linktype="external" data-hoverimage="../_img/index/i_code-quality.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Visual Studio Test</h3>
+                                                            <h3><br/>Test Reports</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="test/test-analytics.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_analytics.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="../_img/index/i_analytics.svg" data-linktype="external" data-hoverimage="../_img/index/i_analytics.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Test Analytics</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="test/parallel-testing-any-test-runner.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card ready x-hidden-focus">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_load-testing.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="../_img/index/i_load-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_load-testing.svg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3><br/>Parallel testing for efficient pipelines</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -633,30 +669,12 @@ Tutorials, references, and other documentation show you how to configure and man
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("tasks/test/_img/visual-studio-test-icon.png"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="tasks/test/_img/visual-studio-test-icon.png" data-linktype="external" data-hoverimage="tasks/test/_img/visual-studio-test-icon.png">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_unit-testing.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="../_img/index/i_unit-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_unit-testing.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>Selenium tests</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="test/review-continuous-test-results-after-build.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("tasks/test/_img/run-functional-tests-icon.png"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="tasks/test/_img/run-functional-tests-icon.png" data-linktype="external" data-hoverimage="tasks/test/_img/run-functional-tests-icon.png">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3><br/>Review results</h3>
+                                                            <h3><br/>Run Selenium tests</h3>
                                                         </div>
                                                     </div>
                                                 </div>
