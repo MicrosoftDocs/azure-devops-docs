@@ -1,5 +1,5 @@
 ---
-title: Build and release permissions
+title: Build and release permissions and security roles
 titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
@@ -13,13 +13,9 @@ ms.date: 02/12/18
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and release permissions and roles (Security)
+# Build and release permissions and security roles
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
-
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Pipelines** hub of the web portal, either from the user or admin context.
 

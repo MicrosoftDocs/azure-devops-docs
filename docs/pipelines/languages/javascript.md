@@ -58,7 +58,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="< vsts"
 > [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure Pipelines account. Then [try this with Azure Pipelines](#example?view=vsts&tabs=designer).
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure Pipelines account. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end
 
 * After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **Empty process** template.

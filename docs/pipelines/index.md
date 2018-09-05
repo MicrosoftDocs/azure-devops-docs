@@ -60,7 +60,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Get started</h3>
-                                                            <p>Are you looking to know the basics? Find them here.</p>
+                                                            <p>Sign up and get started using Azure Pipelines</p>
                                                         </div>
                                                     </div>
                                                 </div>
