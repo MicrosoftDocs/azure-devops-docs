@@ -21,7 +21,7 @@ Use this guide to sign up and start using Azure Pipelines.
 
 ## What is Azure Pipelines?
 
-Check out the [What is Azure Pipelines](what-is-azure-pipelines.md) to find out what Azure Pipelines is, and how you could benefit from using it to streamline your code building, testing, and deploying. 
+Check out [What is Azure Pipelines](what-is-azure-pipelines.md) to find out what Azure Pipelines is, and how you could benefit from using it to streamline your code building, testing, and deploying. 
 
 ## How to use Azure Pipelines
 
