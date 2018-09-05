@@ -28,13 +28,13 @@ monikerRange: 'vsts'
 
 [!INCLUDE [invite-teammates](../_shared/invite-teammates.md)]
 
-For more information on managing users and organization access, see [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md).
+For more information about managing users and organization access, see [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md).
 
 ## Next steps  
  
 > [!div class="nextstepaction"]
-> [Add code to your Git repository](code-with-git.md) 
-> or 
+> [Add code to your Git repository](code-with-git.md)
+>
 > [Plan and track work](plan-track-work.md) 
 
 
