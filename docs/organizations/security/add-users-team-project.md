@@ -13,11 +13,11 @@ ms.date: 07/27/2018
 ---
 
 
-# Add users to a project or specific team
+# Quickstart: Add users to a project or specific team
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
+In this quickstart, you learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
 
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 

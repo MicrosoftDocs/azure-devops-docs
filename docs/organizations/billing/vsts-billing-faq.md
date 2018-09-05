@@ -21,7 +21,7 @@ Make sure to review [Azure DevOps Services pricing](https://azure.microsoft.com/
 You have to set up billing when you need more than the *free tier* of resources in your Azure DevOps Services organization: 
 
 * 5 Azure DevOps Services users (Basic)
-* 5 Package Management users
+* 5 Azure Artifacts users
 * Free tier of Microsoft-hosted continuous integration/continuous development (CI/CD) (1 concurrent job, up to 30 hours per month)
 * 1 self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
@@ -85,7 +85,7 @@ The only exclusion is for Azure DevOps Services extensions offered by partners i
 
 ## How charges are processed
 
-### Q: How are user charges (Azure DevOps Services User/Basic, Test Manager, and Package Management) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+### Q: How are user charges (Azure DevOps Services User/Basic, Test Manager, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
 A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units will be billed.
 
@@ -161,7 +161,7 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
 * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
 * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-* [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+* [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
 ## Related articles
 

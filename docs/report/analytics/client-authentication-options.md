@@ -17,11 +17,11 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
+In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**Azure AD**) then Personal Access Tokens (**PAT**s).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-## Azure Active Directory (AAD) 
+## Azure Active Directory (Azure AD) 
 
 "Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
 
@@ -29,13 +29,13 @@ When connecting with Power BI Desktop you will be prompted to enter your credent
 
 <img src="../powerbi/_img/power-bi-organizational.png" alt="Organizational account prompt" style="border: 2px solid #C3C3C3;" /> 
 
-Choose the Sign in button and you will be prompted to enter your AAD credentials. After that, you're done.
+Choose the Sign in button and you will be prompted to enter your Azure AD credentials. After that, you're done.
 
-To change an existing URL to use AAD instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this topic.
+To change an existing URL to use Azure AD instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this topic.
 
 ### Publish to PowerBI.com
 
-After you have created the model and loaded it with data you can [publish it to Power BI](../powerbi/publish-power-bi-desktop-to-power-bi.md). When using AAD, make sure to select
+After you have created the model and loaded it with data you can [publish it to Power BI](../powerbi/publish-power-bi-desktop-to-power-bi.md). When using Azure AD, make sure to select
 the **oAuth2** option. 
 
 ## Create a Personal Access Token  

@@ -213,7 +213,7 @@ public static void MixedSample()
 ```cs
 public static void AADRestSample()
 {
-    // Create instance of VssConnection using AAD Credentials for AAD backed account
+    // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential());
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
@@ -264,7 +264,7 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a AAD-backed Azure DevOps Services organization)
+	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed Azure DevOps Services organization)
 	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
 	{
 		tpc.Authenticate();

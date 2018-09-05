@@ -257,7 +257,7 @@ Azure Resource Manager service connection from Azure Pipelines.
 That experience only worked in accounts that are backed by
 Azure Active Directory. In this deployment, we are bringing
 the same simplified experience for all the other accounts
-not backed by an AAD. So, if you have a Microsoft account
+not backed by an Azure AD. So, if you have a Microsoft account
 and an Azure subscription that you would like to deploy to
 from Azure Pipelines, you can create an Azure Resource Manager
 endpoint without needing to run tedious PowerShell scripts

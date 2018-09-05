@@ -13,11 +13,11 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-# Code with Git
+# Quickstart: Code with Git
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-After you create a new organization and project in Azure DevOps Services, you can begin sharing your code with others.
+In this quickstart, you learn how to code with Git. After you create a new organization and project in Azure DevOps Services, you can begin sharing your code with others.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -92,27 +92,27 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
 # [New navigation](#tab/new-nav)
 
-0. Switch back to the web portal and select **History** from the Code page to view your new commit. 
+1. Switch back to the web portal and select **History** from the Code page to view your new commit. 
 
    ![Select Code, then History to view commits](_img/code-history-vert.png)
 
-0. Switch to the **Files** tab and select the README file to view your changes.
+2. Switch to the **Files** tab and select the README file to view your changes.
 
    ![Files tab, view changes in README file](_img/first-edit-readme-file.png)
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
+1. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
 
    >![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
-0. Switch to the **Files** tab and select the README file to view your changes.
+2. Switch to the **Files** tab and select the README file to view your changes.
 
    >![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
 
 ---
 
-## Try this next  
+## Next steps  
 
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)

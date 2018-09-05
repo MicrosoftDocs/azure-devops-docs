@@ -23,7 +23,7 @@ After selecting __for this account__, switch on the __Team expansion for notific
 
 ![team notification preview](_img/02_15_09.png)
 
-In a future release, we’ll be adding support for PRs assigned to Azure Active Directory (AAD) groups and teams containing AAD groups.
+In a future release, we’ll be adding support for PRs assigned to Azure Active Directory (Azure AD) groups and teams containing AAD groups.
 
 ##Improved CTAs for PR author and reviewers
 For teams using branch policies, it can sometimes be hard to know exactly what action is required when you view a pull request. If the main call to action is the __Complete__ button, does that mean it’s ready to complete? Using information about the person viewing the page and the state of configured branch policies, the PR view will now present the call to action that makes the most sense for that user.
@@ -112,7 +112,7 @@ We’ve updated the Package Management user experience to make it faster, addres
 ![package management](_img/02_15_19.png)
 
 ##Support for AAD conditional access
-Team Services can now be explicitly selected as the target for Azure Active Directory (AAD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
+Team Services can now be explicitly selected as the target for Azure Active Directory (Azure AD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
 
 NOTE: CAP is enforced when a user signs into VSTS with their AAD credentials. Therefore, subsequent accesses to VSTS via mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys do not fall under conditional access policy.
 

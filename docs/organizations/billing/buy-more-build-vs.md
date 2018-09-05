@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you'll learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this quickstart, you learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines you can run builds and deploy releases using the Microsoft-hosted agents, your own machines, or both.
 We offer a **free tier** for each.

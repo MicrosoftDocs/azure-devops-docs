@@ -12,13 +12,13 @@ ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
-# Create your Azure DevOps Services organization with a personal Microsoft account or a work or school account
+# Quickstart: Create your Azure DevOps Services organization with a personal Microsoft account or a work or school account
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
 
-With Azure DevOps Services, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
+In this quickstart, you learn how to upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? [Get Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs), or learn [how to install and set up Team Foundation Server](/tfs/server/install/get-started). 
 
@@ -137,6 +137,8 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
 
-* [Create your backlog](../../boards/backlogs/create-your-backlog.md), 
-	[manage your process](../../organizations/settings/work/manage-process.md), 
-	or [customize your process](../../organizations/settings/work/customize-process.md).
+## Related articles
+
+* [Create your backlog](../../boards/backlogs/create-your-backlog.md)
+* [Manage your process](../../organizations/settings/work/manage-process.md)
+* [Customize your process](../../organizations/settings/work/customize-process.md).

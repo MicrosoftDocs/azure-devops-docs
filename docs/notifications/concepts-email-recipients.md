@@ -119,7 +119,7 @@ Let's look at a few scenarios. For these examples, we will use these symbols to 
 
 * `I` denotes an individual user
 * `T` denotes a nested team or group
-* `A` denotes a mail-enabled Azure Active Directory (AAD) group.
+* `A` denotes a mail-enabled Azure Active Directory (Azure AD) group.
 
 ### Scenario 1: A member with _Do not deliver_ preference
 
@@ -139,7 +139,7 @@ The team has members `I1`, `I2`, and `T1`. `T1` has members `I2`, `I3`, and `T2`
 
 What happens: because `T1` is not expanded (because its delivery preference is "do not deliver"), only `I1` and `I2` are notified via their preferred email addresses.
 
-### Scenario 4: A member that is an AAD group
+### Scenario 4: A member that is an Azure AD group
 
 The team has members `I1`, `I2`, and `A1`. 
 

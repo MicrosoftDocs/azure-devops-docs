@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
 ms.date: 05/31/2018
@@ -115,8 +116,8 @@ You can add fields and specify the group and page where they should appear. Also
 
 <a id="identity">  </a>
 ### Add an Identity field  
-
-Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (AAD), then the system synchronizes Identity fields with the names defined in AAD and are valid users of the project. 
+Azure Active Directory (Azure AD)
+Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (Azure AD), then the system synchronizes Identity fields with the names defined in Azure AD and are valid users of the project. 
 
 1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 

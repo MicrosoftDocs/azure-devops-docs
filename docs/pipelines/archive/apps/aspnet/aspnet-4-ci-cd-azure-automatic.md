@@ -222,7 +222,7 @@ may encounter the following known issues:
 * There is a known issue where users are able to see their Azure Pipelines information within the [Azure classic portal](https://manage.windowsazure.com/),
   but not in the [Azure dashboard](https://portal.azure.com/). You may see a
   "No accounts found" message in this situation. To resolve this, you can
-  configure Azure Pipelines to be backed by an Azure Active Directory (AAD) instance. For information on how to do this, see
+  configure Azure Pipelines to be backed by an Azure Active Directory (Azure AD) instance. For information on how to do this, see
   [Azure Pipelines - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
 ## Q&A

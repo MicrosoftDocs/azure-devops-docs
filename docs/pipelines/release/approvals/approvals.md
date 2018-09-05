@@ -44,7 +44,7 @@ for the deployment to occur or the release to move forward.
 
    * If you are using **Azure Pipelines**, you
      can use local groups managed in Azure Pipelines or
-     Azure Active Directory (AAD) groups if they have been
+     Azure Active Directory (Azure AD) groups if they have been
      added into Azure Pipelines.
    * If you are using **Team Foundation Server** (TFS),
      you can use local groups managed in TFS or Active

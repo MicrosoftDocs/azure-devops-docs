@@ -48,7 +48,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 0. Select the appropriate authentication option (as discussed in [Client Authentication Options](../analytics/client-authentication-options.md)). 
 
-	* Use **oAuth2**  for Azure Active Directory (AAD) credentials.
+	* Use **oAuth2**  for Azure Active Directory (Azure AD) credentials.
 
     <img src="_img/aad-auth-power-bi.png" alt="vt" style="border: 2px solid #C3C3C3;" />
  
