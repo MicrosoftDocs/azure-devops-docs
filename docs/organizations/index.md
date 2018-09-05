@@ -38,7 +38,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Management icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -57,7 +57,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security & identity icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -76,7 +76,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_account-management.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_account-management.svg" alt="manage organizations icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -95,7 +95,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -114,7 +114,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_configure-teams.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_configure-teams.svg" alt="Scale and configure team icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -133,7 +133,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_billing.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_billing.svg" alt="Billing icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -152,7 +152,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_extensions.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_extensions.svg" alt="Extensions icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -171,7 +171,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_alert.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_alert.svg" alt="Notifications icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -190,7 +190,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -209,7 +209,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_service-hooks.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_service-hooks.svg" alt="Service hooks icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -228,7 +228,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="All settings icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -247,7 +247,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -268,7 +268,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
+                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -279,7 +279,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Video icon" />DevOps at Microsoft</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,18 +290,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
                                                     </div>
                                                 </div>
                                             </div>

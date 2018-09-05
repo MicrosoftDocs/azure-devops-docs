@@ -37,7 +37,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_nuget.svg" alt="" />
+                                                                <img src="_img/index/logo_nuget.svg" alt="NuGet logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -56,7 +56,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_npm.svg" alt="" />
+                                                                <img src="_img/index/logo_npm.svg" alt="npm logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -75,7 +75,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_maven.svg" alt="" />
+                                                                <img src="_img/index/logo_maven.svg" alt="Maven logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -94,7 +94,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Project management icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -115,7 +115,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                       <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a> 
+                                                       <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,7 +126,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="video icon" />DevOps at Microsoft</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />Technical articles</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
                                                     </div>
                                                 </div>
                                             </div>

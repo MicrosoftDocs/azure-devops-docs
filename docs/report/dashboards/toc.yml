@@ -55,7 +55,7 @@
   - name: Add a chart widget 
     href: ../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Add an Analytics widget  
-    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json    
+    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Widget catalog
@@ -74,7 +74,7 @@
     href: ../analytics/index.md
   - name: Azure Boards
     href: /azure/devops/boards/index
-  - name: Testing
+  - name: Azure Test Plans
     href: /azure/devops/test/index-tp 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance

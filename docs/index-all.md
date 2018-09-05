@@ -264,7 +264,7 @@ featureFlags:
 														<p><a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a></p>
 														<p><a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a></p>
 														<p><a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to large teams</a></p>
-														<p><a href="//azure/devops/learn/git/git-at-scale">Git at scale</a></p>
+														<p><a href="/azure/devops/learn/git/git-at-scale">Git at scale</a></p>
 														<p><a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a></p>
 														<p><a href="/azure/devops/learn/events-and-talks/">Events and talks</a></p>
                                                     </div>

@@ -37,7 +37,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -56,7 +56,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="Work items icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -75,7 +75,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_kanban.svg" alt="" />
+                                                                <img src="../_img/index/i_kanban.svg" alt="Kanban icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -94,7 +94,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_backlog.svg" alt="" />
+                                                                <img src="../_img/index/i_backlog.svg" alt="Backlogs icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -114,7 +114,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_scrum.svg" alt="" />
+                                                                <img src="../_img/index/i_scrum.svg" alt="Sprints icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -133,7 +133,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_queries.svg" alt="" />
+                                                                <img src="../_img/index/i_queries.svg" alt="Queries icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -152,7 +152,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_agile.svg" alt="" />
+                                                                <img src="../_img/index/i_agile.svg" alt="Agile at scale icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -172,7 +172,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="Feedback icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -191,7 +191,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="../_img/index/i_config-tools.svg" alt="Customization icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -210,7 +210,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="Settings icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -231,7 +231,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
+                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -242,7 +242,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Video icon" />DevOps at Microsoft</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,7 +253,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />Technical articles</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -264,7 +264,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
                                                     </div>
                                                 </div>
                                             </div>

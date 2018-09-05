@@ -40,7 +40,7 @@ By default, all project contributors have read and edit access of the wiki repos
 
 ::: moniker range="tfs-2018"    
 > [!NOTE]  
-> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes).    
+> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes).    
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2018"

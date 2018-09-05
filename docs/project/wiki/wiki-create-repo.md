@@ -24,7 +24,7 @@ Each team project can be provisioned with a wiki. Use it to share information wi
 
 ::: moniker range="tfs-2018"
 >[!NOTE] 
->The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
+>The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
 
 ::: moniker-end
 
