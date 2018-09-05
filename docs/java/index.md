@@ -26,7 +26,7 @@ Built with Java teams in mind, Azure DevOps Services offers an open, cloud-hoste
 
 Get started with Azure DevOps Services and Java using your IDE and your tools.
 
- - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Android Studio plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Eclipse plugin](../repos/git/share-your-code-in-git-eclipse.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
  - [IntelliJ IDEA plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
@@ -59,7 +59,7 @@ Check out the [Java ALM channel on YouTube](https://www.youtube.com/channel/UCJX
 
 Learn the basics of CI/CD for your Java app using Azure DevOps Services and a variety of tools.
 
- - [Use Azure DevOps Services with GitHub for Azure DevOps](/azure/devops-project/azure-devops-project-github.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Use Azure DevOps Services with GitHub for Azure DevOps](/azure/devops-project/azure-devops-project-github?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
 
 ## Reference
 

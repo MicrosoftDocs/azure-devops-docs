@@ -233,7 +233,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Create pipelines to build and deploy applications to any platform, cloud, or app store.</h2>
                                 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/dotnet-core.md">
+                                        <a href="/azure/devops/pipelines/languages/dotnet-core">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -413,7 +413,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/php.md">
+                                        <a href="/azure/devops/pipelines/languages/php">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -431,7 +431,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/python.md">
+                                        <a href="/azure/devops/pipelines/languages/python">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -449,7 +449,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/ruby.md">
+                                        <a href="/azure/devops/pipelines/languages/ruby">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -467,7 +467,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/apps/windows/universal.md">
+                                        <a href="/azure/devops/pipelines/apps/windows/universal">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -485,7 +485,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/xamarin.md">
+                                        <a href="/azure/devops/pipelines/languages/xamarin">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -503,7 +503,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/languages/xcode.md">
+                                        <a href="/azure/devops/pipelines/languages/xcode">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
