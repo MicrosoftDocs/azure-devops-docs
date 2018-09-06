@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-# Organization management
+# Manage organizations
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Sign up for an Azure DevOps organization. Add users and manage permissions and access.
 
-## 5-Minute quickstarts
+## 5-minute quickstarts
 
 * [Create your Azure DevOps organization](create-organization-msa-or-work-student.md)
 * [Pay for users](../billing/buy-basic-access-add-users.md)
@@ -45,8 +45,8 @@ Sign up for an Azure DevOps organization. Add users and manage permissions and a
 ## Resources
 
 * [Start using Azure DevOps](../../user-guide/index.yml)
-* [Project management](../projects/index.md)
+* [Manage projects](../projects/index.md)
 * [Billing](../billing/index.md)
 * [Security and identity](../../organizations/security/index.md)
-* [Extensions management](../../marketplace/index.md)
+* [Manage extensions](../../marketplace/index.md)
 * [Service hooks](../../service-hooks/index.md)

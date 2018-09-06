@@ -1,6 +1,6 @@
 ---
 title: Git permissions prior to TFS 2017 Update 1
-description: Git repository team project permissions in usage for TFS 2017 update 1 and earlier versions 
+description: Git repository project permissions in usage for TFS 2017 update 1 and earlier versions 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
@@ -20,7 +20,7 @@ In TFS 2017 Update 1 (and Azure DevOps), Git repository permissions have changed
 For those customers using previous versions of TFS, here are the old permissions.
 Those using TFS 2017 Update 1 or Azure DevOps should see the [latest list of permissions](permissions.md#git-repository).
 
-These permissions appear only for a team project including a Git repository.
+These permissions appear only for a project including a Git repository.
 
 <img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #C3C3C3;" />
 
@@ -30,7 +30,7 @@ Individual repositories inherit permissions from the top-level **Git Repositorie
 
 Branches inherit permissions from assignments made at the repository level.   
 
-By default, the team project level and collection level Readers groups have only Read permissions.
+By default, the project level and collection level Readers groups have only Read permissions.
 
 <table valign="top" width="100%">
 <tbody valign="top">

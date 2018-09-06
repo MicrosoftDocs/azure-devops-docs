@@ -220,7 +220,7 @@ To review  stories and short videos on how Microsoft transitioned from waterfall
 <a id="clients">  </a>
 ## Clients that support connection to a project
 
-In addition to connecting through a web browser, you can connect to a team project from these clients:
+In addition to connecting through a web browser, you can connect to a project from the following clients:
 
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
@@ -243,8 +243,8 @@ See also, [Compatibility with TFS versions](/tfs/server/compatibility).
 <!--- Various blog resources 
 
 - [](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx)  
-- [One team project to rule them out](https://nkdagility.com/one-team-project/)  
-- [Working within a single Team Project with Team Foundation Server 2012](https://nkdagility.com/working-within-a-single-team-project-with-team-foundation-server-2012/)
+- [One project to rule them out](https://nkdagility.com/one-team-project/)  
+- [Working within a single Project with Team Foundation Server 2012](https://nkdagility.com/working-within-a-single-team-project-with-team-foundation-server-2012/)
 
 
 -->

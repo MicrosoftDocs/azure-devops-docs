@@ -16,7 +16,7 @@
     href: ../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Define iteration paths or sprints
     href: ../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Add users to a team project or team 
+  - name: Add users to a project or team 
     href: ../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: "Add a team & team members"
     href: ../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json

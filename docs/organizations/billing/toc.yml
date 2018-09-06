@@ -34,7 +34,7 @@
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
       href: vsts-billing-faq.md
-  - name: Marketplace extension management
+  - name: Manage extensions (Marketplace)
     items:
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
@@ -72,7 +72,7 @@
   items:
   - name: Start using Azure DevOps
     href: ../../user-guide/index.yml
-  - name: Organization management
+  - name: Manage organizations
     href: ../accounts/index.md
   - name: "Security & identity"
     href: ../../security/index.md

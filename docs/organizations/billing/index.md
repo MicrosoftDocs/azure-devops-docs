@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 # Billing 
@@ -89,7 +89,7 @@ Guidance for Cloud Solution Providers
 ## Other resources
 
 * [Start using Azure DevOps](../../user-guide/index.yml)
-* [Organization management](../accounts/index.md)
+* [Manage organizations](../accounts/index.md)
 * [TFS Server Administration documentation](/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

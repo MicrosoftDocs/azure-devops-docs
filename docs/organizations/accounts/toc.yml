@@ -1,4 +1,4 @@
-- name: "Organization management"
+- name: "Manage organizations"
   href: index.md
 - name: Overview
   items:
@@ -136,13 +136,13 @@
   items:
   - name: Start using Azure DevOps
     href: ../../user-guide/index.yml
-  - name: Project management
+  - name: Manage projects
     href: ../projects/index.md
   - name: "Security & identity"
     href: ../../organizations/security/index.md
   - name: Billing
     href: ../billing/index.md
-  - name: Extensions management
+  - name: Manage extensions
     href: ../../marketplace/index.md
   - name: Service hooks
     href: ../../service-hooks/index.md

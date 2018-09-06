@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 

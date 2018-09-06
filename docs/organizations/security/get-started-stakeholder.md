@@ -190,7 +190,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	> [!NOTE]  
 	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. 
 	
-	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).  
+	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -201,7 +201,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
 ::: moniker-end
 ---
 
@@ -302,7 +302,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 <!---
 ::: moniker range=">= tfs-2017"
 > [!TIP]    
-> If you don't see the team or team project you want, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/work-across-projects.md). 
+> If you don't see the team or project you want, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/work-across-projects.md). 
 ::: moniker-end
 
 To add a new item, select the type and then name it. Your items are added to the bottom of the list.  
@@ -392,7 +392,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	> [!div class="mx-imgBorder"]
 	> ![Work hub, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
 
-	You can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
 ::: moniker-end  
@@ -411,7 +411,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	> [!div class="mx-imgBorder"]
 	> ![Work hub, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
 
-	You can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).  
 ::: moniker-end  

@@ -101,7 +101,7 @@ Azure DevOps and TFS are pre-configured with default security groups. Default pe
 > [!div class="mx-tdBreakAll"]
 > | Security groups | Permission levels | Permission States  |
 > |-------------|----------| ----------| 
-> |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
+> |- Project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
@@ -109,7 +109,7 @@ You can populate these groups by using individual users. However, for ease of ma
 
 Azure DevOps and TFS control access through these three inter-connected functional areas:
 
--   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the team project.
+-   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the project.
 
 -   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
 

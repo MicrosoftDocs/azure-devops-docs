@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -184,28 +184,28 @@ You'll want to let your users know about extensions and that they can [request a
 
 ::: moniker range="vsts"  
 ## Set up billing
-All organizations can add up to five users with Basic access and unlimited users with Stakeholder access. If you need to add more users, pay for additional services or extensions, then you'll want to [set up billing to manage that](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
+All organizations can add up to five users with Basic access and unlimited users with Stakeholder access. If you need to add more users or pay for additional services or extensions, then you'll want to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
 
 ::: moniker-end 
 
 ## Next steps  
 
 > [!div class="nextstepaction"]
-> [Project management](../organizations/projects/index.md)
+> [Manage projects](../organizations/projects/index.md)
 
 
 ## Related articles
 ::: moniker range="vsts"  
 
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Manage organizations](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-- [Project management](../organizations/projects/index.md)
+- [Manage projects](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Manage organizations](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 - [TFS administration](/tfs/server/index)
 ::: moniker-end 

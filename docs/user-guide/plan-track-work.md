@@ -11,7 +11,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 ---
 
 # Plan and track work

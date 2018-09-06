@@ -124,7 +124,7 @@ Items with a ![](_img/icons/checkmark.png) checkmark are granted permission by d
 | Permission | Private project | Public project|
 |------------|-----------------|---------------|
 |Bypass rules on work item updates | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
-|Change process of team project | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
+|Change process of project | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
 |Create work item tag definition | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
 |Delete and restore work items | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
 |Move work items out of a project | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
@@ -200,7 +200,7 @@ If you need access to the following features&mdash;which support the daily work 
 ::: moniker range="vsts"
 **For Private projects:**
 - Change the priority of an item within a backlog  
-- Delete work items or move work items to another team project
+- Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
 - Access the full set of features under **Pipelines (Build and Release)**, **Repos (Code)** or **Test Plans (Test)**.  
@@ -213,7 +213,7 @@ If you need access to the following features&mdash;which support the daily work 
 
 ::: moniker range="tfs-2018"
 - Change the priority of an item within a backlog  
-- Delete work items or move work items to another team project
+- Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
 - Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  
@@ -221,7 +221,7 @@ If you need access to the following features&mdash;which support the daily work 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 - Change the priority of an item within a backlog  
-- Delete work items or move work items to another team project
+- Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
 - Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  

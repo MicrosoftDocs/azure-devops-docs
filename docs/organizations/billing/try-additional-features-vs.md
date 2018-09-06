@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -76,7 +76,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Go to your Azure DevOps Services **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 3. Select **Extensions** and then select your extension or **Browse Marketplace**.

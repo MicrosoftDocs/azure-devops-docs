@@ -155,14 +155,14 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New team project...**.
+	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![New Team Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
+	> ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
 	Select the collection administration page for the collection you want to create the project in from the left pane, and choose **Create a new project...**.
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
+1. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
@@ -228,7 +228,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
-6.  Open the New Team Project Wizard.
+6.  Open the New Project Wizard.
 
     ![New link on Connect page (Team Explorer)](_img/IC779380.png)
 
@@ -291,7 +291,7 @@ You can create and retrieve projects and other objects from the command line or 
 ::: moniker range=">= tfs-2015"
 
 ## Add a repository
-From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same team project](../../repos/git/team-projects.md). 
+From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md). 
 
 ::: moniker-end
 
