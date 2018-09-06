@@ -51,10 +51,7 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 1. Choose **Review + Create** and then, after validation, choose **Create**.
 
-1. Wait until the new AKS cluster has been created. Then you can create a release pipeline as shown in the next section.
-
-The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
-It has also packaged and published a Helm chart as an artifact. In the release pipeline we'll deploy the container image as a Helm application to the AKS cluster.
+1. Wait until the new AKS cluster has been created.
 
 ## Configure authentication
 
@@ -68,6 +65,9 @@ you must establish an authentication mechanism. This can be achieved in two ways
 
 ## Create a release pipeline
 
+The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
+It also packaged and published a Helm chart as an artifact. In the release pipeline we'll deploy the container image as a Helm application to the AKS cluster.
+
 1. In **Azure Pipelines**, or the **Build &amp; Release** hub in TFS, open the summary for your build.
 
 1. In the build summary, choose the **Release** icon to start a new release pipeline.
@@ -80,10 +80,10 @@ you must establish an authentication mechanism. This can be achieved in two ways
 
 1. Open the **Tasks** page and select **Agent job**.
 
-1. Choose **+** to add new task and add a **Helm tool installer** task.
-   This ensures the agent which runs the subsequent tasks has Helm and Kubectl installed on it.
+1. Choose **+** to add a new task and add a **Helm tool installer** task.
+   This ensures the agent that runs the subsequent tasks has Helm and Kubectl installed on it.
 
-1. Choose **+** again and add the **Package and deploy Helm charts** task.
+1. Choose **+** again and add a **Package and deploy Helm charts** task.
    Configure the settings for this task as follows:
 
    - **Connection Type**: Select **Azure Resource Manager** to connect to an AKS cluster by using
@@ -93,7 +93,7 @@ you must establish an authentication mechanism. This can be achieved in two ways
      an Azure subscription for the following setting.
  
    - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using Azure DevOps and if you see an **Authorize** button next to the input, use it to authorize the connection to your Azure subscription.
+     If you see an **Authorize** button next to the input, use it to authorize the connection to your Azure subscription.
      If you do not see the required Azure subscription in the list of subscriptions, see [Create an Azure service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
    - **Resource group**: Enter or select the resource group containing your AKS cluster.  
@@ -103,13 +103,13 @@ you must establish an authentication mechanism. This can be achieved in two ways
    - **Command**: Select **init** as the Helm command. This will install Tiller to your running Kubernetes cluster.
      It will also set up any necessary local configuration.
      Tick **Use canary image version** to install the latest pre-release version of Tiller.
-     You could also choose to upgrade tiller if it is pre-installed by ticking on **Upgrade Tiller**.
+     You could also choose to upgrade Tiller if it is pre-installed by ticking **Upgrade Tiller**.
      If these options are enabled, the task will run `helm init --canary-image --upgrade`
    
 1. Choose **+** in the **Agent job** and add another **Package and deploy Helm charts** task.
    Configure the settings for this task as follows:
    
-   - **Kubernetes cluster**: Enter or select the AKS cluster you have created.  
+   - **Kubernetes cluster**: Enter or select the AKS cluster you created.  
    
    - **Namespace**: Enter your Kubernetes cluster namespace where you want to deploy your application.
      Kubernetes supports multiple virtual clusters backed by the same physical cluster.
@@ -118,8 +118,7 @@ you must establish an authentication mechanism. This can be achieved in two ways
 
    - **Command**: Select **upgrade** as the Helm command.
      You can run any Helm command using this task and pass in command options as arguments.
-
-   - When you select the **upgrade** as the Helm command, the task shows some additional fields:
+     When you select the **upgrade**, the task shows some additional fields:
 
      * **Chart Type**: Select **File Path**. Alternatively, you can specify **Chart Name** if you want to
        specify a URL or a chart name. For example, if the chart name is `stable/mysql`, the task will execute
@@ -129,17 +128,17 @@ you must establish an authentication mechanism. This can be achieved in two ways
        In this example you are publishing the chart using a CI build, so select the file package using file picker
        or enter `$(System.DefaultWorkingDirectory)/**/*.tgz`
    
-     * **Release Name**: Enter a name to your release; for example `azuredevops`
+     * **Release Name**: Enter a name for your release; for example `azuredevops`
    
      * **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with the new configuration.
 
      * **Reset Values**: Tick this checkbox if you want the values built into the chart to override all values provided by the task.
 
      * **Force**: Tick this checkbox if, should conflicts occur, you want to upgrade and rollback to delete, recreate the resource, and reinstall the full release.
-       This is useful in scenarios where applying patches can fail (foir example, for services because the cluster IP address is immutable). 
+       This is useful in scenarios where applying patches can fail (for example, for services because the cluster IP address is immutable). 
 
      * **Arguments**: Enter the Helm command arguments and their values; for this example
-       `--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)`. 
+       `--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)` 
        See [this section](#argument-details) for a description of why we are using these arguments. 
    
      * **Enable TLS**: Tick this checkbox to enable strong TLS-based connections between Helm and Tiller.
@@ -151,7 +150,7 @@ you must establish an authentication mechanism. This can be achieved in two ways
      * **Key**: Specify the Tiller Key or Helm client key
 
 1. In the **Variables** page of the pipeline, add a variable named **imageRepoName** and set the value
-   to the name of your Helm image repository. Typically this is typically in format `name.azurecr.io/coderepository`
+   to the name of your Helm image repository. Typically, this is in the format `name.azurecr.io/coderepository`
 
 1. Save the release pipeline.
 
