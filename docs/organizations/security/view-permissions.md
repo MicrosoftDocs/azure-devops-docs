@@ -24,7 +24,7 @@ Permissions are set at the collection, project, and object level as described in
 
 ## Prerequisites
 
-* You must have a team project to connect to. If you don't have a team project yet, [create one](../projects/create-project.md).
+* You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
 > [!NOTE]

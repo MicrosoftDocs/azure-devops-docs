@@ -91,7 +91,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md).  
 
-You set [test permissions at the team project level](set-project-collection-level-permissions.md) from **Project Settings>Security**.  
+You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**.  
 
 [!INCLUDE [temp](_shared/test.md)]
 

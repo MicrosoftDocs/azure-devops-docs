@@ -81,9 +81,9 @@ On the group's identity card, check the group's source.
 
 ![Screenshot of group identity card](_img/manage-azure-ad-groups/checkidentitysourceaad.png)
 
-### Why doesn't the Users hub show all Azure AD group members?
+### Why doesn't Users show all Azure AD group members?
 
-These users have to sign in to your Azure DevOps Services organization before they appear in the Users hub. 
+These users have to sign in to your Azure DevOps Services organization before they appear in Users. 
 
 <a name="AssignLicenses"></a>
 
@@ -117,11 +117,11 @@ The team room shows Azure AD group members, but only when they're online.
 
 ### Why doesn't Azure DevOps Services reclaim access levels from users who aren't Azure AD group members anymore?
 
-Azure DevOps Services doesn't automatically reclaim access levels from these users. To manually remove their access, go to the **Users** hub.
+Azure DevOps Services doesn't automatically reclaim access levels from these users. To manually remove their access, go to **Users**.
 
 ### Can I assign work items to Azure AD group members who haven't signed in?
 
-You can assign work items to any Azure AD member who has permissions for your Azure DevOps Services organization. This also adds that member to your Azure DevOps Services organization. When you add users this way, they'll automatically appear in the Users hub, with the best available
+You can assign work items to any Azure AD member who has permissions for your Azure DevOps Services organization. This also adds that member to your Azure DevOps Services organization. When you add users this way, they'll automatically appear in Users, with the best available
 access level. They'll also appear in the security settings.
 
 ### Can I use Azure AD groups to query work items by using the "In Group" clause?

@@ -349,7 +349,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 
 ### Process and process templates 
 
-A process defines the building blocks of the work item tracking system as well as other sub-systems you access when you connect to a team project.  
+A process defines the building blocks of the work item tracking system as well as other sub-systems you access when you connect to a project.  
 
 > [!NOTE]   
 >  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   

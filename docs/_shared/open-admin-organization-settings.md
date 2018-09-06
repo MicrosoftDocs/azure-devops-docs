@@ -11,15 +11,15 @@ Admin settings configure resources for all projects or the entire organization. 
 
 ::: moniker range="vsts"
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. From there, you can choose a hub from the sidebar. Settings are organized based on the service they support. Expand or collapse the major sections such as **Work** and **CI/CD** to select a hub. 
+2. Select a setting, as they are organized based on the service they support. Expand or collapse the major sections such as **Work** and **CI/CD** to choose. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Projects](/azure/devops/_shared/_img/settings/admin-organization-settings.png) 
+	> ![Organization settings, Projects](../_shared/_img/settings/admin-organization-settings.png) 
 
 ::: moniker-end
 
@@ -29,12 +29,12 @@ Admin settings configure resources for all projects or the entire organization. 
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear-icon.png) gear icon to open **Organization Settings**.
+1. Choose the ![](/azure/devops/_img/icons/gear-icon.png) gear icon to open **Organization Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](/azure/devops/_shared/_img/settings/open-organization-settings.png) 
 
-0. From there, you can choose a hub. Settings are organized based on the service they support. 
+2. Select a setting. Settings are organized based on the service they support. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Projects](/azure/devops/_shared/_img/settings/open-admin-settings-horizontal.png) 

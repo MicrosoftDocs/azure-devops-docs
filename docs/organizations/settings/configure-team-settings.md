@@ -5,10 +5,10 @@ description: Manage team-specific tools such as sprint settings, backlogs, Kanba
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
-ms.prod: devops
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 07/27/2018
 ---
@@ -43,9 +43,9 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range="vsts"  
 
-0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+1. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
-0. Choose the product or portfolio backlog from the board-selection menu. 
+2. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
 

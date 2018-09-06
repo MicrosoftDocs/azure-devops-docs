@@ -68,13 +68,13 @@ You can start adding work items once you connect to a project. If you don't have
 
 2.	Select **Work** > **New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
 
-	<img src="../boards/backlogs/_img/add-work-items-choose-user-story.png" alt="Azure DevOps Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/backlogs/_img/add-work-items-choose-user-story.png" alt="Azure DevOps Services, TFS 2017, Work, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
-	If you don't see the **Work** hub, your screen size may be reduced. Select the three dots (![elipses](../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work** > **New Work Items**, and then choose the work item type you want.
+	If you don't see **Work**, your screen size may be reduced. Select the three dots (![elipses](../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work** > **New Work Items**, and then choose the work item type you want.
 
-	![Open Work hub when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
+	![Open Work when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
 
-3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+1. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 	<img src="../boards/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
 
@@ -103,9 +103,9 @@ Create as many work items as you need of the type you need to track the work you
 
 1. Select the **Work** > **Work Items** > **My activity**. This page lists all work items you've recently viewed, created, or modified.
 
-	<img src="_img/plan-track-work/view-work-item-activity.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/plan-track-work/view-work-item-activity.png" alt="Work, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
 
-4. To view any work item listed, select the title.
+2. To view any work item listed, select the title.
 
 ---
 

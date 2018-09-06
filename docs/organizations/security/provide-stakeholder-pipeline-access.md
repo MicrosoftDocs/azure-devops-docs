@@ -60,7 +60,7 @@ Create a custom security group at the project-level or the collection-level. The
 > [!TIP]    
 > You only need to create a project-level security group if you are going to limit CI/CD tasks at the project level. 
 
-To create a project-level security group, open the web portal and choose the team project where you want to add users or groups. 
+To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 

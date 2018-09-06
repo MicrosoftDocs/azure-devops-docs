@@ -27,11 +27,11 @@ Azure DevOps Services is a cloud service for collaborating on code development. 
 
 In addition, the Azure DevOps Services ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
-Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights.
+Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock-solid security. You'll also have access to cloud load testing, cloud build servers, and application insights.
 
 ## Where do I start?
 
-We've made it easy for you to start for free and try out our service.
+We've made it easy for you to start for free and try out our services.
 
 Sign up for free by creating an organization and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods.
 

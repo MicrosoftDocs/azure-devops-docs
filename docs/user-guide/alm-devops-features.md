@@ -54,7 +54,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [IntelliJ](/../java/download-intellij-plug-in)   
 - [Visual Studio Code](/../java/vscode-extension)   
  
-To learn how to connect, see [Connect to a team project](../organizations/projects/connect-to-projects.md).  
+To learn how to connect, see [Connect to a project](../organizations/projects/connect-to-projects.md).  
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
@@ -68,7 +68,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage users and groups</b></p>
-<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
+<p>Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
 <p>To share and contribute to your project, add users to [Azure DevOps Services](../organizations/accounts/add-team-members-vs.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
@@ -83,7 +83,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Azure DevOps Services organization or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your Azure DevOps Services organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
@@ -143,8 +143,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 </td>
 <td width="320">
-<p><b>Move work item to a different team project (Azure DevOps Services)</b></p>
-<p>Choose the ![Change team project icon](../boards/_img/icons/change-team-project-icon.png) Change team project menu option ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different team project](../boards/backlogs/remove-delete-work-items.md#move). </p>
+<p><b>Move work item to a different project (Azure DevOps Services)</b></p>
+<p>Choose the ![Change project icon](../boards/_img/icons/change-team-project-icon.png) Change project menu option ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move). </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose ![full screen icon](../boards/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
@@ -329,7 +329,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/features/customize-vsts-process.png)   
 <br/>
 
@@ -337,7 +337,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 <p><b>Customize a process</b></p>
-<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
+<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
 <ul>
 <li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
 <li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
@@ -346,11 +346,11 @@ Use features supported by these familiar clients to manage your project and illu
 <li>[Add a custom control](../organizations/settings/work/custom-controls-process.md) </li>
 </ul>
 
-<p><b>Change the process used by a team project</b></p>
+<p><b>Change the process used by a project</b></p>
 <p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../organizations/settings/work/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).  </p>
 
 
 
@@ -888,7 +888,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../repos/git/branch-policies.md).</p>
 
 <p><b>Create Git repositories </b></p>
-<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
+<p>When you create a project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 
 <p><b>Rename a Git repository </b></p>
@@ -998,7 +998,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Subscribe to alerts when check-ins occur</b></p>
-<p>Get notified when someone checks in code to your TFVC team project by [subscribing to receive email alerts](https://msdn.microsoft.com/library/ms181407.aspx#alerts).</p>
+<p>Get notified when someone checks in code to your TFVC project by [subscribing to receive email alerts](https://msdn.microsoft.com/library/ms181407.aspx#alerts).</p>
 
 <p><b>Version control locks</b></p>
 <p>[Lock files or folders](https://msdn.microsoft.com/library/ms181418.aspx) when you need to prevent them from being checked out or modified. </p>
@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>TFVC permissions</b></p>
-<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
+<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the project.</p>
 
 
 </td>
@@ -1492,10 +1492,10 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Reporting Services reports</b></p>
-<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) - that you choose.   </p>
+<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
-<p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
+<p>If you need to add reporting services to a project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
 
 <p><b>Manage the data warehouse</b></p>
 <p>The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md). You manage it through the following activities:</p>
@@ -2099,7 +2099,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Switch team context</b></p>
-<p>Navigate to a different team or team project from the top row.</p>
+<p>Navigate to a different team or project from the top row.</p>
 ![Switch team context](_img/features/alm-feature-switch-team-context.png)  
 <br/>
 
@@ -2171,8 +2171,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 
-<p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p><b>Project admin context</b></p>
+<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2252,7 +2252,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li style="margin-bottom:0px">Delete</li>
 <li style="margin-bottom:0px">Link to a new or existing work item </li>
 <li style="margin-bottom:0px">Change work item type </li>
-<li style="margin-bottom:0px">Move to another team project</li>
+<li style="margin-bottom:0px">Move to another project</li>
 <li style="margin-bottom:0px">Create a new Git branch</li>
 </ul>
 <br/>
@@ -2285,7 +2285,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage users and groups</b></p>
-<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
 <p>Understand how [Allow, Deny, Not set and other permissions states](../organizations/security/about-permissions.md) control access to features and objects. </p>
@@ -2328,7 +2328,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../boards/queries/set-query-permissions.md)</li>
 <li>[Work item tags](../organizations/security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Move work items to another project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Permanently delete work items](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Provide feedback through the Microsoft Feedback client](../project/feedback/give-permissions-feedback.md)</li>
 </ul>
@@ -2342,7 +2342,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Manage administrative permissions </b></p>
 <p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
 <ul>
-<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
+<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a project </li>
 <li>[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage collection-level features </li>
 <li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
@@ -2372,7 +2372,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Permission reference</b></p>
-<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
+<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
@@ -2459,11 +2459,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process?</b></p>
-<p>A [process defines the building blocks](../boards/work-items/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
+<p>A [process defines the building blocks](../boards/work-items/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your project.  </p>
 
 
 <p><b>Compare and choose a process</b></p>
-<p>Compare the three core system processes--[Agile, Scrum, CMMI](../boards/work-items/guidance/choose-process.md)--before you choose one to create a team project. </p>
+<p>Compare the three core system processes--[Agile, Scrum, CMMI](../boards/work-items/guidance/choose-process.md)--before you choose one to create a project. </p>
 
 
 <p><b>Agile process </b></p>
@@ -2472,7 +2472,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Customize a process (Azure DevOps Services) </b></p>
-<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
+<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
 <ul>
 <li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
 <li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
@@ -2491,7 +2491,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Kanban process tools</b></p>
-<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](../boards/boards/kanban-basics.md), [adding task checklists](../boards/boards/add-task-checklists.md), [setting WIP limits](../boards/boards/wip-limits.md), [custom columns](../boards/boards/add-columns.md), [split columns](../boards/boards/split-columns.md), [custom swimlanes](../boards/boards/expedite-work.md), and [customizing cards](../boards/boards/customize-cards.md). </p>
+<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Kanban tools support working with the [Kanban board](../boards/boards/kanban-basics.md), [adding task checklists](../boards/boards/add-task-checklists.md), [setting WIP limits](../boards/boards/wip-limits.md), [custom columns](../boards/boards/add-columns.md), [split columns](../boards/boards/split-columns.md), [custom swimlanes](../boards/boards/expedite-work.md), and [customizing cards](../boards/boards/customize-cards.md). </p>
 
 
 <p><b>Scrum process</b></p>
@@ -2512,11 +2512,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../boards/sprints/assign-work-sprint.md), [capacity planning](../boards/sprints/set-capacity.md), [task boards](../boards/sprints/task-board.md), and [burndown charts](../boards/sprints/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Scrum tools support [sprint planning](../boards/sprints/assign-work-sprint.md), [capacity planning](../boards/sprints/set-capacity.md), [task boards](../boards/sprints/task-board.md), and [burndown charts](../boards/sprints/sprint-burndown.md).  </p>
 
 
 <p><b>Manage processes (Azure DevOps Services) </b></p>
-<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
 <p>Choose [CMMI](../boards/work-items/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
@@ -2546,7 +2546,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process template?</b></p>
-<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your team project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
+<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
 
 <p><b>Manage process templates </b></p>
 <p>[Download and upload process templates](../boards/work-items/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
@@ -2594,17 +2594,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 
-<p><b>What is a team project?</b></p>
-<p>A [team project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p><b>What is a project?</b></p>
+<p>A [project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A project lives within a project collection. You can grant permissions to and customize a project to support your business needs. </p>
 
-<p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (Azure DevOps Services)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/projects/create-project.md).</p>
+<p><b>Create a project </b></p>
+<p>You can [create a project hosted in the cloud (Azure DevOps Services)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a project on an on-premises TFS](../organizations/projects/create-project.md).</p>
 
 
-<p><b>Rename a team project</b></p>
-<p>[Rename a team project](../organizations/projects/rename-project.md) as needed to reflect changes that occur within your org.</p>
+<p><b>Rename a project</b></p>
+<p>[Rename a project](../organizations/projects/rename-project.md) as needed to reflect changes that occur within your org.</p>
 
-<p><b>Delete a team project</b></p>
+<p><b>Delete a project</b></p>
 <p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/projects/delete-project.md). </p>
 
 </td>
@@ -2616,7 +2616,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Change the process (Azure DevOps Services) </b></p>
-<p>You [change the process of a team project](../organizations/settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../organizations/settings/work/customize-process.md) defined for that process.  </p>
+<p>You [change the process of a project](../organizations/settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../organizations/settings/work/customize-process.md) defined for that process.  </p>
 
 
 </td>
@@ -2625,15 +2625,15 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>View your work across teams and team projects</b></p>
 <p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
-<p><b>Customize a team project (TFS) </b></p>
-<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md).  </p>
+<p><b>Customize a project (TFS) </b></p>
+<p>You customize a project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md).  </p>
 
-<p><b>Update a team project after an upgrade (TFS)</b></p>
+<p><b>Update a project after an upgrade (TFS)</b></p>
 <p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](../reference/configure-features-after-upgrade.md). </p>
 
 
 <p><b>Upload reports (TFS) </b></p>
-<p>[Upload the latest reports provided for your process](../report/admin/upload-reports.md) or add reports after you've already created a team project by adding SQL Server Reporting Services.  </p>
+<p>[Upload the latest reports provided for your process](../report/admin/upload-reports.md) or add reports after you've already created a project by adding SQL Server Reporting Services.  </p>
 </td>
 </tr>
 </tbody>

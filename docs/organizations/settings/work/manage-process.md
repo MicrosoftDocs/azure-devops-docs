@@ -103,7 +103,7 @@ You can change the process a project uses from a system process or inherited pro
 <a id="create-team-project">  </a>
 ## Create a project from a process 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
+0. Open the &hellip; context menu for the process you want to use and choose **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 

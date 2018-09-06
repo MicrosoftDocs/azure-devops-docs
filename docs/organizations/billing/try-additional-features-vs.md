@@ -87,7 +87,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
 
-    ![User hub, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
+    ![Users, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
 
 2. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
 
