@@ -8,7 +8,7 @@ ms.topic: include
 
 1. In the Azure Portal, choose **Create a resource**, **Web**, then choose **Web App for Containers**.    
 
-1. Enter a name for your new web app, and select or create a new Resource Group.
+1. Enter a name for your new web app, and select or create a new Resource Group. For the **OS**, choose **Linux**.
 
 1. Choose **Configure container** and select **Azure Container Registry**.
    Use the drop-down lists to select the registry you created earlier, and the
