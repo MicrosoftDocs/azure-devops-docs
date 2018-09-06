@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/11/2017
 ---
 
-# Groom your backlog  
+# Refine your backlog  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
  
@@ -84,7 +84,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 
 
-<a id="groom">  </a>
+<a id="refine">  </a>
 ## Refine your backlog
   
 Backlog refinement supports your sprint planning efforts and helps minimize these often seen challenges:

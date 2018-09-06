@@ -53,13 +53,13 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 > [!div class="mx-imgBorder"]  
 > ![Open project summary, new nav](_img/share-project/welcome-page-new-nav.png)  
 
-Choose: 
+You can select one of the following tasks to get started: 
 - **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members-vs.md). 
-- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-readme) for your project summary page.
-- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
-- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
-- Choose [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
+- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-readme) for your project summary page.
+- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+- [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
 To support your project vision, you can choose a README file that you maintain in a project repository, or the [project Wiki](wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 

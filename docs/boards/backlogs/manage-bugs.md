@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 # Manage bugs
 
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -68,7 +68,7 @@ The new web form is only available from TFS 2017 and later versions.
 
 # [Old web form](#tab/old-web-form)  
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
 ::: moniker range=">= tfs-2013 <= tfs-2017"  
@@ -296,7 +296,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 > [Triage work items](../queries/triage-work-items.md)
 
 
-## Related topics 
+## Related articles 
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 

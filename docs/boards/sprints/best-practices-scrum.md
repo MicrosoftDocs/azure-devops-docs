@@ -25,7 +25,7 @@ Much of sprint planning involves a negotiation between the product owner and the
 
 In the first part of the meeting, your product owner meets with your team to discuss the user stories that might be included in the sprint. Your product owner will share information and answer any questions that your team has about those stories. This conversation might reveal details such as data sources, user interface layout, response time expectations, and considerations for security and usability. Your team should capture these details within the backlog items form. During this part of the meeting, your team learns what it must build.
 
-As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [groom and refine your backlog](../backlogs/best-practices-product-backlog.md#groom) to make sure that it is well defined and in priority order. 
+As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [refine your backlog](../backlogs/best-practices-product-backlog.md#refine) to make sure that it is well defined and in priority order. 
 
 Also, setting a sprint goal as part of your planning efforts can help the team stay focused on what's most important for each sprint. 
 

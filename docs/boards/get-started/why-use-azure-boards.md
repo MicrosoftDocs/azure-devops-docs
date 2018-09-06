@@ -71,13 +71,15 @@ Work items are designed to track all the information you need to track. This inc
 
 In addition, you can link work items within a hierarchy or simple related links. Each work item form maintains a history of changes, so you can review what changed, by whom, and when.
 
-## 7. Quickly find what you need 
+## 7. Quickly find what you need, get notified of changes 
 
 As your project grows, the number of work items used to track it grows. To support your ability to quickly find a specific work item, Azure Boards provides you with easy-to-use tools: 
 
-- [Pivot views](plan-track-work.md#pivot-views) that show you work items assigned to you, that you elected to follow, that was recently modified, and more    
+- Choose to [follow work items](../work-items/follow-work-items.md) to monitor updates and changes
+- - [Pivot views](plan-track-work.md#pivot-views) that show you work items assigned to you, that you elected to follow, that was recently modified, and more  
 - Powerful [query engine](../queries/example-queries.md) to filter work item lists based on any field and use to update or triage work items
 - Fast, flexible [adhoc search](../queries/search-box-queries.md) with quick inline filters 
+- [Personalize the alerts](../../notifications/howto-manage-personal-notifications.md) you receive for when work items are assigned to you, are changed, or other filter criteria
 
 
 ## 8. Monitor status and progress with built-in dashboards and analytics  
