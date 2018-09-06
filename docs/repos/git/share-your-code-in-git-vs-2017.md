@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 03/08/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -32,7 +32,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ## Prerequisites
 
-* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ##  Create a local Git repo for your project
 

@@ -88,7 +88,7 @@ Over the next couple weeks, the public preview of our new navigation will be rol
 > [!IMPORTANT]
 > To use this capability, you must have the **New Navigation** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
-Along with the public preview of our new navigation, we’re also introducing the new Work hubs. Here, you’ll find favorites and quick search support for all your boards, backlogs, and sprints as well as new features such as Sprint Planning. See the [New Work Hubs post](https://devblogs.microsoft.com/devops/2018/06/22/new-work-hubs/) on the Microsoft DevOps Blog for more information.
+Along with the public preview of our new navigation, we’re also introducing the new Work hubs. Here, you’ll find favorites and quick search support for all your boards, backlogs, and sprints as well as new features such as Sprint Planning. See the [New Work Hubs post](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) on the Microsoft DevOps Blog for more information.
 
 > [!div class="mx-imgBorder"]
 ![New Work hubs](_img/136_20.png)
@@ -101,7 +101,7 @@ While the new **Queries** hub was in preview, we worked to respond to your feedb
 - Breadcrumb with unique URLs for folders to bookmark important groups of queries
 - Quick access to your favorite queries from the results page
 
-Read more about these exciting updates on our [DevOps blog](https://devblogs.microsoft.com/devops/2018/06/18/queries-hub-updates-generally-available).
+Read more about these exciting updates on our [DevOps blog](https://blogs.msdn.microsoft.com/devops/2018/06/18/queries-hub-updates-generally-available).
 
 ### Easily find existing work items in linking and mention experiences
 

@@ -2792,7 +2792,6 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 - [Azure DevOps Services - Features update](/azure/devops/release-notes/)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 
-
 <br/>
 Get started today using our cloud offering, [Azure DevOps Services](https://visualstudio.microsoft.com/team-services/), or our [on-premises TFS server](https://visualstudio.microsoft.com/downloads/).  
 

@@ -9,18 +9,17 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 04/19/2018
+ms.date: 09/10/2018
 layout: LandingPage
 monikerRange: '>= tfs-2018'
 ---
-
 
 # Forks
 
 #### Azure Repos | TFS 2018
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests-overview.md) to push the changes back to the original repository.
 
 ## The forking workflow
 

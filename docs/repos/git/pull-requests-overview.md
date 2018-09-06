@@ -9,11 +9,10 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 04/19/2018
+ms.date: 09/10/2018
 layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Get feedback with pull requests
 
@@ -99,6 +98,25 @@ Sometimes a suggestion is good, but the changes are outside the scope of the pul
 Take these suggestions and create new work items and feature branches separate from the pull request to make those changes.
 
 <ul class="panelContent cardsFTitle">
+        <li>
+        <a href="pull-request-templates.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Provide reviewer guidance with pull request templates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <li>
         <a href="pull-requests.md#leave-comments">
         <div class="cardSize">
@@ -251,7 +269,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="/azure/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">

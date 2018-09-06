@@ -155,7 +155,7 @@ You can also run tests using Microsoft Test Manager (MTM) and a
   Version 1 of the MSTest framework **can** be associated with a test case.
 * Unit tests that use the.NET Core framework **cannot** be
   associated with a test case.
-* Tests that use other test frameworks such as [Version 2 of the MSTest framework](https://devblogs.microsoft.com/devops/2016/06/17/taking-the-mstest-framework-forward-with-mstest-v2/),
+* Tests that use other test frameworks such as [Version 2 of the MSTest framework](https://blogs.msdn.microsoft.com/devops/2016/06/17/taking-the-mstest-framework-forward-with-mstest-v2/),
   xUnit, nUnit, Chutzpah, and others **cannot** be associated with a test case.
 * Associating ordered tests and generic tests **may** work, but running these tests is not supported.
 

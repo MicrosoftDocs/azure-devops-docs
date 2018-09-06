@@ -257,7 +257,7 @@ To open a team room, choose **Projects>Rooms**. You'll see all the team rooms de
 To learn more about team rooms, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).
 
 > [!NOTE]  
-> Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
+> Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
  
 ::: moniker-end
 
