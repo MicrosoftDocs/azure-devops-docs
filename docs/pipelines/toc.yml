@@ -208,20 +208,26 @@
     items:
     - name: Test glossary
       href: test/test-glossary.md
+    - name: Set up environments
+      href: test/set-up-continuous-test-environments-builds.md
     - name: Unit test with builds
       href: test/getting-started-with-continuous-testing.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
       href: test/review-continuous-test-results-after-build.md
-    - name: Set up environments
-      href: test/set-up-continuous-test-environments-builds.md
-    - name: Test analytics
+    - name: Analyze test results
       href: test/test-analytics.md
-    - name: Requirements traceability
+    - name: Review code coverage
+      href: test/review-code-coverage-results.md
+    - name: Trace test requirements
       href: test/requirements-traceability.md
-    - name: Test impact analysis
+    - name: Use Test Impact Analysis
       href: test/test-impact-analysis.md
+    - name: Run tests in parallel
+      href: test/parallel-testing-any-test-runner.md
+    - name: Parallel test with VSTest
+      href: test/parallel-testing-vstest.md
     - name: FAQs for testing
       href: test/reference-qa.md
   - name: Package
