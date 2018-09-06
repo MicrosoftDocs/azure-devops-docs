@@ -40,8 +40,6 @@
     href: languages/xcode.md
 - name: Deployments
   items:
-  - name: Azure Kubernetes Service
-    href: apps/cd/azure/deploy-container-kubernetes.md
   - name: Azure Stack
     href: targets/azure-stack.md
   - name: Azure SQL database
@@ -188,6 +186,8 @@
       href: library/connect-to-azure.md
     - name: CD to Azure Web App
       href: apps/cd/deploy-webdeploy-webapps.md
+    - name: Azure Kubernetes Service
+      href: apps/cd/deploy-aks.md
     - name: Set up a multi-stage release
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
