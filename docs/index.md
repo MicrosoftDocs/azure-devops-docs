@@ -319,7 +319,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes">
+                                        <a href="/azure/devops/pipelines/apps/cd/deploy-aks">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
