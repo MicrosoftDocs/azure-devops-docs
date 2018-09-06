@@ -25,11 +25,11 @@ Access Web services through the following areas, as shown in the following image
 
 # [New navigation](#tab/new-nav)
 
-![Azure DevOps Services, main hubs](_img/services-hubs-vert.png)
+![Azure DevOps Services, main](_img/services-hubs-vert.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-![Azure DevOps Services, main hubs](../_img/services-hubs.png)  
+![Azure DevOps Services, main](../_img/services-hubs.png)  
 
 ---
 
@@ -49,11 +49,11 @@ From **Dashboards** you gain access to user-configurable dashboards.
 
 # [New navigation](#tab/new-nav)
 
-![Azure DevOps Services, main hubs](_img/dashboard-overview.png)
+![Azure DevOps Services, main](_img/dashboard-overview.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-<img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" />
+<img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
 
 ---
 
@@ -77,7 +77,7 @@ From **Repos**, you gain access to your source control Git-based or TFVC reposit
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
-<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" />
+<img src="_img/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
 
 ---
 
@@ -104,7 +104,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
-<img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
+<img src="_img/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
 ---
 
@@ -132,7 +132,7 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 **Build and release** provides an integrated set of features to support building and deploying your applications.
 
-<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build pipelines page" style="border: 2px solid #C3C3C3;" />
+<img src="_img/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 
 ---
 
@@ -158,7 +158,7 @@ Test features support manual and exploratory testing, load or performance testin
 
 **Test** supports creating and managing manual tests. 
 
-<img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" />
+<img src="_img/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
 
 ---
 

@@ -31,7 +31,7 @@ Use this topic to learn:
 
 
 > [!TIP]    
-> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your team project will determine the areas you can open up or close down. 
+> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down. 
 
 
 ## Recommended method for granting and restricting permissions 
@@ -110,7 +110,7 @@ Delete and restore work items, Move work items out of this project, Permanently 
 <tr>
 <td>Process template manager ([Inheritance process model](../settings/work/inheritance-process-model.md))</td>
 <td>Work tracking customization </td>
-<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete team project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
 </tr>
 
 <tr>
@@ -120,15 +120,15 @@ Delete and restore work items, Move work items out of this project, Permanently 
 </tr>
 
 <tr>
-<td>Team project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))</td>
+<td>Project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))</td>
 <td>Work tracking customization </td>
 <td>Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
 </tr>
 
 <tr>
 <td>Permissions manager</td>
-<td>Manage permissions for a team project, account, or collection </td>
-<td>For a team project, Edit project-level information<br/> 
+<td>Manage permissions for a project, account, or collection </td>
+<td>For a project, Edit project-level information<br/> 
 For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To grant permissions, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).<br/><br/>You can also grant permissions to manage permissions for the following objects:
 <ul>
 <li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
@@ -202,7 +202,7 @@ Should we have a Concepts topic about restricting -- address things that we supp
 User Voice requests: 
 * Hide Work Item Types (WITs) based on permission/security group
 
-If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate team project where you restrict access. 
+If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate project where you restrict access. 
 
 What you can do on TFS differs from what is available  from Azure DevOps 
 -->

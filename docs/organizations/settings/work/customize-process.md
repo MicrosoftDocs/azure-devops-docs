@@ -202,7 +202,7 @@ We recommend that you create a test project and apply your customized inherited 
 <a id="test-project-copy-process" />
 ### Create a test project and copy of your customized process
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 

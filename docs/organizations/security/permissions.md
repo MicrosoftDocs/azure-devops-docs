@@ -26,7 +26,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
 
 ::: moniker-end
@@ -55,7 +55,7 @@ Permissions can be granted directly to an individual, or to a group.
 Using groups can make things a lot simpler,
 and TFS sets up some built-in groups for that purpose.
 These groups and the permissions they're assigned to exist at several different levels:
-server (TFS deployment), team project collection, team project, and specific objects.
+server (TFS deployment), project collection, project, and specific objects.
 You can also create your own groups and grant them the specific set of permissions
 that are appropriate for certain roles in your organization.
 
@@ -325,10 +325,10 @@ Release Administrators (TFS 2017, Azure DevOps)
 
 ## Project-level groups
 
-For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
+For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{team project name}]\{group name}**.
-> For example, the contributors group for a team project called "My Project" is 
+> The full name of each of these groups is **[{project name}]\{group name}**.
+> For example, the contributors group for a project called "My Project" is 
 > **[My Project]/Contributors**.
 
 <!---
@@ -344,17 +344,17 @@ For each team project that you create, the system creates the followings team pr
 	</tr>
 	<tr>
 		<td>Build Administrators</td>
-		<td>Has permissions to administer build resources and build permissions for the team project. Members can manage test environments, create test runs, and manage builds.</td>
+		<td>Has permissions to administer build resources and build permissions for the project. Members can manage test environments, create test runs, and manage builds.</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>Contributors</td>
-		<td>Has permissions to contribute fully to the team project code base and work item tacking.</td>
-		<td>By default, the team group created when you create a team project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a team project will be added to this group by default, unless you choose a different group from the list.</td>
+		<td>Has permissions to contribute fully to the project code base and work item tacking.</td>
+		<td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
 	</tr>
 	<tr>
 		<td>Readers</td>
-		<td>Has permissions to view the team project but not modify it.</td>
+		<td>Has permissions to view the project but not modify it.</td>
 		<td>
 			Assign to [stakeholders](../../organizations/security/get-started-stakeholder.md)
 			who want to be able to view work in progress.
@@ -362,21 +362,21 @@ For each team project that you create, the system creates the followings team pr
 	</tr>
 	<tr>
 		<td>Project Administrators</td>
-		<td>Has permissions to administer all aspects of teams and team project, although they can't create team projects.</td>
+		<td>Has permissions to administer all aspects of teams and project, although they can't create team projects.</td>
 		<td>Assign to users who will manage user permissions, create or edit teams, modify team settings, define area an iteration paths, or customize work item tracking.</td>
 	</tr>
 	<tr>
 		<td>Project Valid Users</td>
-		<td><p>Has permissions to access the team project.</p>
+		<td><p>Has permissions to access the project.</p>
 			<blockquote>
 				If you set the <strong>View collection-level information</strong> permission
 				to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-				no users will be able to access the team project.
+				no users will be able to access the project.
 			</blockquote>
 		</td>
 		<td>
 			<p>
-				Contains all users and groups that have been added anywhere within the team project.
+				Contains all users and groups that have been added anywhere within the project.
 				You cannot modify the membership of this group.
 			</p>
 		</td>
@@ -384,9 +384,9 @@ For each team project that you create, the system creates the followings team pr
 	<tr>
 		<td id="team-group">{team name}</td>
 		<td>
-			Has permissions to contribute fully to the team project code base and work item tacking.
-			The default Team group is created when you create a team project,
-			and by default is added to the Contributors group for the team project.
+			Has permissions to contribute fully to the project code base and work item tacking.
+			The default Team group is created when you create a project,
+			and by default is added to the Contributors group for the project.
 			Any new teams you create will also have a group created for them and added to the Contributors group.
 			<blockquote>
 				You can grant permissions to administer team assets by
@@ -454,11 +454,11 @@ You manage server-level permissions through the [Team Foundation Administration 
 		</td>
 	</tr>
 	<tr>
-		<td id="create-team-project-collection-permission">Create team project collection</td>
+		<td id="create-team-project-collection-permission">Create project collection</td>
 		<td>Can create and administer collections.</td>
 	</tr>
 	<tr>
-		<td id="delete-team-project-collection-permission">Delete team project collection</td>
+		<td id="delete-team-project-collection-permission">Delete project collection</td>
 		<td>
 			Can delete a collection from the deployment.
 			<blockquote>
@@ -480,7 +480,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 					<li>Create and modify areas and iterations</li>
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
-					<li>Edit team project level and collection level permission ACLs</li>
+					<li>Edit project level and collection level permission ACLs</li>
 					<li>Create and modify global lists</li>
 					<li>Edit [event subscriptions](#alerts) (email or SOAP).</li>
 				</ul>
@@ -621,14 +621,14 @@ You manage collection-level permissions through the [web portal admin context](.
 		</td>
 	</tr>
 	<tr>
-		<td id="delete-team-project-permission">Delete team project</td>
+		<td id="delete-team-project-permission">Delete project</td>
 		<td>
 			Can [delete team projects](../projects/delete-project.md).
 			<blockquote>
-				Deleting a team project will delete all data that is associated with the team project.
-				You cannot undo the deletion of a team project except
+				Deleting a project will delete all data that is associated with the project.
+				You cannot undo the deletion of a project except
 				by restoring the collection to a point
-				before the team project was deleted.
+				before the project was deleted.
 			</blockquote>
 		</td>
 	</tr>
@@ -647,11 +647,11 @@ You manage collection-level permissions through the [web portal admin context](.
 					<li>Create and modify areas and iterations</li>
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
-					<li>Edit team project level and collection level permission ACLs</li>
+					<li>Edit project level and collection level permission ACLs</li>
 					<li>Manage process templates</li>
-					<li>Customize a team project or process</li>
+					<li>Customize a project or process</li>
 					<li>Create and modify global lists</li>
-					<li>Edit [event subscriptions](#alerts) (email or SOAP) on team project or collection level events.</li>
+					<li>Edit [event subscriptions](#alerts) (email or SOAP) on project or collection level events.</li>
 				</ul>
 
 				<p>
@@ -696,7 +696,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="trigger-events-permission">Trigger events</td>
 		<td>
-			Can trigger team project alert events within the collection. Assign only to service accounts.
+			Can trigger project alert events within the collection. Assign only to service accounts.
 			<blockquote>
 				Users with this permission can't remove built-in collection level groups
 				such as Project Collection Administrators.
@@ -750,8 +750,8 @@ You manage project-level permissions from the [web portal admin context](../../p
 		<p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
 	</tr>
 	<tr>
-		<td id="change-process-team-project-permission">Change process of team project</td>
-		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. </td>
+		<td id="change-process-team-project-permission">Change process of project</td>
+		<td>Can change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. </td>
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
@@ -777,31 +777,31 @@ You manage project-level permissions from the [web portal admin context](../../p
 that have been saved under the Shared area. Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
-		<td id="delete-team-project-permission">Delete team project</td>
-		<td>Can [delete the team project](../projects/delete-project.md) from the collection.</td>
+		<td id="delete-team-project-permission">Delete project</td>
+		<td>Can [delete the project](../projects/delete-project.md) from the collection.</td>
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
 		<td>Can delete a scheduled test.</td>
 	</tr>
 	<tr>
-		<td id="edit-team-project-level-information-permission">Edit team project-level information</td>
+		<td id="edit-team-project-level-information-permission">Edit project-level information</td>
 		<td>
-			Can edit team project level permissions for users and groups.
+			Can edit project level permissions for users and groups.
 			<blockquote>
 				<p>
 					**Edit project-level information** includes the ability
-					to perform these tasks for the team project:
+					to perform these tasks for the project:
 				</p>
 				<ul>
 					<li>Create and modify areas and iterations</li>
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
-					<li>Edit team project level permission ACLs</li>
+					<li>Edit project level permission ACLs</li>
 					<li>Manage process templates</li>
-					<li>Customize a team project</li>
+					<li>Customize a project</li>
 					<li>Create and modify global lists</li>
-					<li>Edit [event subscriptions](#alerts) (email or SOAP) on team project level events.</li>
+					<li>Edit [event subscriptions](#alerts) (email or SOAP) on project level events.</li>
 				</ul>
 			</blockquote>
 		</td>
@@ -813,7 +813,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
 		<td>
-			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/vsts/core/projects/set%20project%20properties). 
+			Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/vsts/core/projects/set%20project%20properties). 
 		</td>
 	</tr>
 	<tr>
@@ -826,7 +826,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-		<td>Can [move a work item from one team project to another team project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps Services only. Users granted Stakeholder access for a public project are granted this permission by default.
+		<td>Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps Services only. Users granted Stakeholder access for a public project are granted this permission by default.
 		</td>
 	</tr>
 	<tr>
@@ -834,8 +834,8 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 		<td>Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. Users granted Stakeholder access for a public project are granted this permission by default.</td>
 	</tr>
 	<tr>
-		<td id="rename-team-project-permission">Rename team project</td>
-		<td>Can [change the name of the team project](../projects/rename-project.md).</td>
+		<td id="rename-team-project-permission">Rename project</td>
+		<td>Can [change the name of the project](../projects/rename-project.md).</td>
 	</tr>
 	<tr>
 		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
@@ -851,12 +851,12 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps Services only.</td>
 	</tr>
 	<tr>
-		<td id="view-team-project-level-information-permission">View team project-level information</td>
-		<td>Can view team project level group membership and permissions.</td>
+		<td id="view-team-project-level-information-permission">View project-level information</td>
+		<td>Can view project level group membership and permissions.</td>
 	</tr>
 	<tr>
 		<td id="view-test-runs-permission">View test runs</td>
-		<td>Can view test plans under the team project area path.</td>
+		<td>Can view test plans under the project area path.</td>
 	</tr>
 </tbody>
 </table>
@@ -914,7 +914,7 @@ You manage build permissions [for each build defined in the web portal](../../pi
 <img src="_img/permissions/build-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
 
-Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the team project level and can be overridden on an individual build definition.
+Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
 
 To set the permissions at project level for all build definitions in a project, choose **Security** from the action bar on the main page of Builds hub.
 
@@ -956,7 +956,7 @@ Commenting this section out as it duplicates that defined in the following table
 	</tr>
 	<tr>
 		<td id="delete-build-definition-permission">Delete build definition</td>
-		<td>Can delete build definitions for this team project.</td>
+		<td>Can delete build definitions for this project.</td>
 	</tr>
 	<tr>
 		<td id="delete-builds-permission">Delete builds</td>
@@ -969,7 +969,7 @@ Commenting this section out as it duplicates that defined in the following table
 	<tr>
 		<td id="edit-build-definition-permission">Edit build definition</td>
 		<td>
-			Can create and modify build definitions for this team project.
+			Can create and modify build definitions for this project.
 			<blockquote>
 				<p>
 					You turn Inheritance Off for a build definition
@@ -977,13 +977,13 @@ Commenting this section out as it duplicates that defined in the following table
 				</p>
 				<p>
 					When inheritance is On, the build definition respects the build permissions
-					defined at the team project level or a group or user.
-					For example, a custom Build Managers group has permissions set to manually queue a build for team project Fabrikam.
-					Any build definition with inheritance On for team project Fabrikam would allow a member of the Build Managers group
+					defined at the project level or a group or user.
+					For example, a custom Build Managers group has permissions set to manually queue a build for project Fabrikam.
+					Any build definition with inheritance On for project Fabrikam would allow a member of the Build Managers group
 					the ability to manually queue a build.
 				</p>
 				<p>
-					However, by turning Inheritance Off for team project Fabrikam,
+					However, by turning Inheritance Off for project Fabrikam,
 					you can set permissions that only allow Project Administrators
 					to manually queue a build for a specific build definition.
 					This would then allow me to set permissions for that build definition specifically.
@@ -1041,11 +1041,11 @@ Commenting this section out as it duplicates that defined in the following table
 	</tr>
 	<tr>
 		<td id="view-build-definition-permission">View build definition</td>
-		<td>Can view the build definitions that have been created for the team project.</td>
+		<td>Can view the build definitions that have been created for the project.</td>
 	</tr>
 	<tr>
 		<td id="view-builds-permission">View builds</td>
-		<td>Can view the queued and completed builds for this team project.</td>
+		<td>Can view the queued and completed builds for this project.</td>
 	</tr>
 </tbody>
 </table>
@@ -1078,7 +1078,7 @@ Rename Repository
 > These permissions have changed in TFS 2017 Update 1 and Azure DevOps.
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 ::: moniker range="vsts" 
 
@@ -1096,7 +1096,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 
 Individual repositories inherit permissions from  the top-level **Git Repositories** entry. Branches inherit permissions from assignments made at the repository level.   
 
-By default, the team project level and collection level Readers groups have only Read permissions.
+By default, the project level and collection level Readers groups have only Read permissions.
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1229,7 +1229,7 @@ By default, the team project level and collection level Readers groups have only
 
 
 >[!NOTE]  
-> Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the team project level and collection-level Readers groups only have Read permissions.
+> Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level and collection-level Readers groups only have Read permissions.
 
 To manage Git repo and branch permissions, see [Set branch permissions](../../repos/git/branch-permissions.md).
 
@@ -1238,9 +1238,9 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a team project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
-These permissions appear only for a team project set up to use Team Foundation Version Control as the source control system.
+These permissions appear only for a project set up to use Team Foundation Version Control as the source control system.
 
 <img src="_img/permissions/tfvc-repo-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
@@ -1269,7 +1269,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Pending changes are committed at check-in.
 			<blockquote>
 				Consider adding these permissions to any manually added users or groups
-				that contributes to the development of the team project;
+				that contributes to the development of the project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
 				or revise any committed change set comments.
@@ -1298,7 +1298,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			to share their changes with the team. 
 			<blockquote>
 				Consider adding these permissions to any manually added users or groups
-				that contributes to the development of the team project;
+				that contributes to the development of the project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
 				or revise any committed change set comments.
@@ -1343,9 +1343,9 @@ In version control permissions, explicit deny takes precedence over administrato
 			Can manage other users' permissions for folders and files in version control. 
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
-				that contributes to the development of the team project
+				that contributes to the development of the project
 				and that must be able to create private branches,
-				unless the team project is under more restrictive development practices.
+				unless the project is under more restrictive development practices.
 			</blockquote>
 		</td>
 	</tr>
@@ -1357,9 +1357,9 @@ In version control permissions, explicit deny takes precedence over administrato
 			Can merge changes into this path. 
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
-				that contribute to the development of the team project
+				that contribute to the development of the project
 				and that must be able to merge source files,
-				unless the team project is under more restrictive development practices.
+				unless the project is under more restrictive development practices.
 			</blockquote>
 		</td>
 	</tr>
@@ -1382,7 +1382,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Can edit the comments on checked-in files, even if another user checked in the file. 
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
-				that are responsible for supervising or monitoring the team project
+				that are responsible for supervising or monitoring the project
 				and that might or must change the comments on checked-in files,
 				even if another user checked in the file.
 			</blockquote>
@@ -1396,7 +1396,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Can undo a pending change made by another user. 
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
-				that are responsible for supervising or monitoring the team project
+				that are responsible for supervising or monitoring the project
 				and that might or must change the comments on checked-in files,
 				even if another user checked in the file.
 			</blockquote>
@@ -1410,7 +1410,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Can unlock files locked by other users.
 			<blockquote>
 				Consider adding this permission to any manually added users or groups
-				that are responsible for supervising or monitoring the team project
+				that are responsible for supervising or monitoring the project
 				and that might or must change the comments on checked-in files,
 				even if another user checked in the file.
 			</blockquote>
@@ -1429,11 +1429,11 @@ Area path permissions grant or restrict access to branches of the area hierarchy
 and to the work items in those areas.
 You manage the security of each area path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
-Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
+Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
 
 > [!NOTE]  
-> Multiple teams may contribute to a team project.
+> Multiple teams may contribute to a project.
 > When that's the case, you can set up teams that are associated with an area.
 > Permissions for the team's work items are assigned by assigning permissions to the area.
 > There are other [team settings](../settings/configure-team-settings.md)
@@ -1542,7 +1542,7 @@ Members of the Project Administrators group are automatically granted permission
 
 Iteration path permissions grant or restrict access to create and manage iteration paths.
 
-Multiple teams may contribute to a team project. 
+Multiple teams may contribute to a project. 
 When that's the case, you can set up teams that are associated with an area. 
 Permissions for the team's work items are assigned by assigning permissions to the area. 
 There are other [team settings](../settings/configure-team-settings.md) 
@@ -1551,7 +1551,7 @@ To learn more, see [Set permissions to restrict access to work items](../../orga
 
 You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#iteration-permissions). 
 
-Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a team project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
+Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
 
 <img src="_img/permissions/iteration-path-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
@@ -1617,11 +1617,11 @@ permissions to create, edit, or delete iteration nodes.
 
 ## Work item query and folder (object-level)
 
-You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the team project.
+You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
 <img src="_img/permissions/query-folder-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
-Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the team project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
+Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
 > To create query charts [you need Basic access](change-access-levels.md).
 
@@ -1745,7 +1745,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 		<td id="create-tag-definition-permission">Create tag definition</td>
 		<td>
 			Can create new tags and apply them to work items.
-			Users without this permission can only select from the existing set of tags for the team project.
+			Users without this permission can only select from the existing set of tags for the project.
 			<blockquote>
 				<p>
 					Readers and Contributors inherit the **Create tag definition** permission
@@ -1753,11 +1753,11 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 				</p>
 				<p>
 					Although the **Create tag definition** permission appears
-					in the security settings at the team project level,
+					in the security settings at the project level,
 					tagging permissions are actually collection level permissions that are scoped
-					at the team project level when they appear in the user interface.
-					To scope tagging permissions to a single team project when using the TFSSecurity command,
-					you must provide the GUID for the team project as part of the command syntax.
+					at the project level when they appear in the user interface.
+					To scope tagging permissions to a single project when using the TFSSecurity command,
+					you must provide the GUID for the project as part of the command syntax.
 					Otherwise, your change will apply to the entire collection.
 					Keep this in mind when changing or setting these permissions.
 				</p>
@@ -1767,7 +1767,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 	<tr>
 		<td id="delete-tag-definition-permission">Delete tag definition</td>
 		<td>
-			Can remove a tag from the list of available tags for that team project.
+			Can remove a tag from the list of available tags for that project.
 			<blockquote>
 				<p>
 					This permissions does not appear in the UI.
@@ -1784,7 +1784,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 	<tr>
 		<td id="enumerate-tag-definition-permission">Enumerate tag definition</td>
 		<td>
-			Can view a list of tags available for the work item within the team project.
+			Can view a list of tags available for the work item within the project.
 			Users without this permission will not have a list of available tags
 			from which to choose in the work item form or in the query editor.
 			<blockquote>
@@ -1843,11 +1843,11 @@ If you are working with the Release Management client and server supported for T
 
 ## Release (object-level) 
 
-You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
+You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 In addition, you can assign approvers to specific steps within a release definition to ensure that the applications being deployed meet quality standards.
 
-The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release definition, or environment level.
+The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release definition, or environment level.
 
 | Permission | Description | Scopes |
 |------------|-------------|--------|
@@ -1865,7 +1865,7 @@ The following permissions are defined in Release Management. The scope column ex
 | **View releases** | Can view releases belonging to release definition(s). | Project, Release definition |
 
 Default values for all of these permissions are set for team
-project collections and team project groups. For example,
+project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
 default. **Contributors** are given all permissions except
@@ -1879,7 +1879,7 @@ are denied all permissions except **View release definition** and
 
 ## Task group (Build and Release) permissions
 
-You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
+You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
@@ -1899,7 +1899,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
 You can set these permissions by using the [TFSLabConfig permissions command-line tool](/tfs/server/ref/command-line/tfslabconfig-cmd#permissions).
 
-By default, the team project level and collection-level Readers groups have only View lab resources (Read) permissions.
+By default, the project level and collection-level Readers groups have only View lab resources (Read) permissions.
 
 > [!NOTE]  
 > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
@@ -1948,14 +1948,14 @@ By default, the team project level and collection-level Readers groups have only
 	<tr>
 		<td>Manage Child Permissions</td>
 		<td>
-			Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a team project host group, the user can change permissions for all the environments under that team project host group. 
+			Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a project host group, the user can change permissions for all the environments under that project host group. 
 		</td>
 	</tr>
 
 	<tr>
 		<td>Manage Lab Locations</td>
 		<td>
-			 Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create team project level locations (project host group and project library share).
+			 Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create project level locations (project host group and project library share).
 		</td>
 	</tr>
 
@@ -2006,13 +2006,13 @@ By default, the team project level and collection-level Readers groups have only
 There are no UI permissions associated with [managing email notifications or alerts](../../boards/queries/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 
-- By default, members of the team project level **Contributors** group can subscribe to alerts for themselves.
+- By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
 - Members of the **Project Collection Administrators** group,
   or users who have the **Edit collection-level information**
   can set alerts in that collection for others or for a team.
 - Members of the **Project Administrators** group,
   or users who have the **Edit project-level information**
-  can set alerts in that team project for others or for a team.
+  can set alerts in that project for others or for a team.
 
 You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd).
 
@@ -2020,7 +2020,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
 |---|---|---|:---:|
 |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![](_img/checkmark.png)|
-|GENERIC_READ|EventSubscription|Can view subscription events defined for a team project.|![](_img/checkmark.png)|
+|GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![](_img/checkmark.png)|
 |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![](_img/checkmark.png)|
 |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![](_img/checkmark.png)|
 
@@ -2029,8 +2029,8 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Add users to a team project](../accounts/add-team-members-vs.md) (Azure DevOps)   
-- [Add users to a team project](../../organizations/security/add-users-team-project.md) (TFS)   
+- [Add users to a project](../accounts/add-team-members-vs.md) (Azure DevOps)   
+- [Add users to a project](../../organizations/security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../settings/configure-team-settings.md)  
 - [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)

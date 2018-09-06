@@ -38,7 +38,7 @@ ms.topic: include
     ![Create a project to get started](/azure/devops/_shared/_img/create-project-to-get-started.png)
 
 <!---
-For more information about organizations and projects, see these articles: 
+For more information about organizations and projects, see the following articles: 
 - [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
 - [About projects and scaling your organization](/azure/devops//organizations/about-projects)
 - [Create a project](/azure/devops/organizations/projects/create-project).

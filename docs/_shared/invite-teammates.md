@@ -8,11 +8,11 @@ Give a team member access to your organization by adding their email address to 
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select the ![Gear icon](/azure/devops/_img/icons/gear-icon.png) gear icon to open **Admin settings**.
+2. Select ![](../_img/icons/gear-icon.png) **Admin settings**.
 
    ![Open Admin settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users**, and then select **Add new users**.
+3. Select **Users** > **Add new users**.
 
    ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 

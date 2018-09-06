@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
 ms.date: 05/31/2018
@@ -84,7 +85,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 
 # [New navigation](#tab/new-nav)
-
+project
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -112,7 +113,7 @@ We recommend that you create a test project and apply your customized  inherited
 	
 
 # [Previous navigation](#tab/previous-nav)
-
+project
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  

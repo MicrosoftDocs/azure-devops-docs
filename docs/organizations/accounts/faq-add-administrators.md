@@ -16,13 +16,13 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-#### Q: When do I need to add someone to the team project collection administrator role in TFS?
+#### Q: When do I need to add someone to the project collection administrator role in TFS?
 
 A: It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
 
-#### Q: What are the optimal permissions to administer a team project collection across all of its components and dependencies?
+#### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
-A: Team project collection administrators for TFS must be members of the following groups or have the following permissions:
+A: Project collection administrators for TFS must be members of the following groups or have the following permissions:
 
 - Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
 
@@ -30,7 +30,7 @@ A: Team project collection administrators for TFS must be members of the followi
 
 - Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
 
-#### Q: I'm an admin, but I don't have permission to add a team project collection administrator. What do I need?
+#### Q: I'm an admin, but I don't have permission to add a project collection administrator. What do I need?
 
 A: The following permissions are required:
 
@@ -41,19 +41,19 @@ A: The following permissions are required:
 - To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
 
 > [!Important]
-> To perform administrative tasks like creating team project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
+> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
 
 #### Q: Where can I find information about each individual permission? 
 
 A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md).
 
-## Team project
+## Project
 
 1. From the team page, select the settings icon ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
-1. Add the user to the **Project Administrators** group.
+2. Add the user to the **Project Administrators** group.
 
-1. If you use SharePoint with TFS, go to the team project portal and choose **Share** to give the user **Full Control**.
+3. If you use SharePoint with TFS, go to the project portal and choose **Share** to give the user **Full Control**.
 
    ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)
 

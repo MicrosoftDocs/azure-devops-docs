@@ -30,7 +30,7 @@ Do you need to do any of the following?:
 
 ## Azure DevOps Services and TFS Product Support
 
-The primary support hubs for Azure DevOps Services and TFS are:
+The primary support venues for Azure DevOps Services and TFS are as follows:
 
 * [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
 * [TFS Support](https://visualstudio.microsoft.com/team-services/tfs-support/)

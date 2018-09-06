@@ -70,7 +70,7 @@ Additionally, we will merge organizations and their single
 project collections into a single entity. The organization will be similar to the TFS deployment,
 and the organization will be similar to the TFS collection.
 
-To you prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
+To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
 problems, but we plan to address these problems when the organization entity is introduced. In particular:
 
 * You purchase Azure DevOps Services users per organization, meaning that paid users have access only to the Azure DevOps Services organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, because subscribers can be added to any number of Azure DevOps Services organizations at no charge. We are also considering other ways to make access available to multiple organizations that are grouped into a single organization.
@@ -115,7 +115,7 @@ Visual Studio subscribers can have either Basic or Advanced access, depending on
 > TFS does not attempt to verify these licenses or enforce compliance. 
 
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users-from-user-hub.md)
-to each user in your organization's Users hub. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
+to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 
 To give Basic access to more users, you'll need to set up billing for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md). 
 Otherwise, all other users get Stakeholder access.

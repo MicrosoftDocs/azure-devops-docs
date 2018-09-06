@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to code with Git. After you create a new organization and project in Azure DevOps Services, you can begin sharing your code with others.
+In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps Services, you can begin coding with Git.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -44,7 +44,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and select the **Code** hub. If you don't have a project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps Services organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
 
@@ -57,14 +57,14 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   >```
   >git clone >https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
   >```
-  Git downloads a copy of the code, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
+  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
 
 
 ## Work with the code
 
-In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
+In the following steps, we'll make a change to the files on your computer, commit the changes locally, push the commit to the repo that is stored on the server, and view the changes there.
 
 1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
 
@@ -88,7 +88,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
     >git push
     >```
 
-## View History 
+## View history 
 
 # [New navigation](#tab/new-nav)
 

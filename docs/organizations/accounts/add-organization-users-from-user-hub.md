@@ -114,9 +114,9 @@ To give other users access to your organization, add their email addresses.
 5. Select **Add** to complete your invitation.
 
 <!---
-Go to the User Hub:
+Go to Users:
 
-![go to the user hub](_img/_shared/users-hub-updated.png)
+![go to users](_img/_shared/users-hub-updated.png)
 
 Choose **Add new users** below "Manage users".
 
@@ -135,5 +135,5 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps Services](delete-organization-users.md)
-* [Troubleshoot adding and deleting organization users in the Azure DevOps Services user hub](faq-add-delete-users.md)
+* [Troubleshoot adding and deleting organization users in Azure DevOps Services](faq-add-delete-users.md)
 * [Troubleshoot adding members to projects in Azure DevOps Services](faq-add-team-members.md)

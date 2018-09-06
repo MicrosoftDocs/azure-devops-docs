@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot adding and deleting organization users in the Azure DevOps Users hub
+title: Troubleshoot adding and deleting organization users in the Azure DevOps Users
 description: Permissions required to manage users and user access, find project collection administrator or organization owner, and manage Visual Studio subscriptions.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -12,7 +12,7 @@ ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding and deleting organization users in the Azure DevOps Users hub
+# Troubleshoot adding and deleting organization users in Azure DevOps Users
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 #### Q: Why can't I manage users?
 
-A: To access the Users hub and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
+A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
 
 
 <a name="find-owner"></a>

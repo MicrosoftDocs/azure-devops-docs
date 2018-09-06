@@ -113,7 +113,7 @@ An Azure Active Directory used to manage access or billing. To learn more, see [
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps or TFS as being able to connect to the account or a team project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
+Valid users are users that are recognized by Azure DevOps or TFS as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
 
 
 

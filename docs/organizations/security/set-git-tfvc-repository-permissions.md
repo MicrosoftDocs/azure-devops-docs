@@ -22,14 +22,14 @@ You can grant or restrict access to a repository by setting the permission state
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
+* You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
 * You must be a member of the [Project Administrators Group](set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories or the TFVC repository.  
 
 <a id="git-repository">  </a>
 
 ## Set Git repository permissions
 
-You can set the permissions for all Git repositories for a team project, or for a single repository. 
+You can set the permissions for all Git repositories for a project, or for a single repository. 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
@@ -40,7 +40,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
 
-0. To set the set the permissions for all Git repositories for a team project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+0. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 
@@ -68,7 +68,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 	
 0. Choose **Version Control**.
 
-0. To set the set the permissions for all Git repositories for a team project, (1) choose **Git Repositories** and then (2) choose the security group whose permissions you want to manage. 
+0. To set the set the permissions for all Git repositories for a project, (1) choose **Git Repositories** and then (2) choose the security group whose permissions you want to manage. 
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
@@ -91,7 +91,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 
 ::: moniker range="vsts"  
 
-0. To set the set the permissions for all Git repositories for a team project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+0. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Contributors** group, and then (5) the permission for **Manage branch**.
 
