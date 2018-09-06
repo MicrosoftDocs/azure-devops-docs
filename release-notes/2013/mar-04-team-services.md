@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Mar 4
 description: VSTS release notes for March 4 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: d95cc29e-4ccf-4c6d-a661-96eed05ad7c5
 ms.date: 06/01/2016

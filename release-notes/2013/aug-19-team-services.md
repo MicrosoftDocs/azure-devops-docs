@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Aug 19
 description: VSTS release notes for August 19 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 220217d7-1206-4845-b11b-7a7b0573ac73
 ms.date: 06/01/2016

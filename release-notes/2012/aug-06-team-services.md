@@ -3,7 +3,7 @@ title: Team Foundation Service updates - Aug 6
 description: VSTS release notes for August 6 2012
 ms.assetid: 23fc5dd7-6fc3-4e95-b518-9ae63ec8fbcd
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.date: 06/01/2016
 ms.author: douge

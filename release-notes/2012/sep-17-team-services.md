@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Sep 17
 description: VSTS release notes for September 27 2012
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 8b7d5798-e6f4-4757-b743-0e9ea276fa1c
 ms.date: 06/01/2016

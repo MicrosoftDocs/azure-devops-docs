@@ -2,7 +2,7 @@
 title: Visual Studio Online Updates - Jul 1
 description: VSTS release notes for July 1 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: eba4333e-0b1c-4f8a-9465-842eecb18210
 ms.date: 06/01/2016

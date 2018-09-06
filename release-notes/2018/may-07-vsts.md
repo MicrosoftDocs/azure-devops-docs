@@ -2,6 +2,8 @@
 title: Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS Sprint 134 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 5/7/2018
 description: The Sprint 134 Update of Visual Studio Team Services (VSTS) brings better support for Ruby, Python, and Java languages in Build and even more deployment options to Release.
 ---

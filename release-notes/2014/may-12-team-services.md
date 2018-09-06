@@ -2,7 +2,7 @@
 title: Visual Studio Online Updates - May 12
 description: VSTS release notes for May 12 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: c2b37732-0483-4345-9832-b0cda35b8c5e
 ms.date: 06/01/2016

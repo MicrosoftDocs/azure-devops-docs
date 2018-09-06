@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Feb 11
 description: VSTS release notes for February 11 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 566cb23b-4e26-4e37-8494-8791fcce6317
 ms.date: 06/01/2016

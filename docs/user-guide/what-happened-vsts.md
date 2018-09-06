@@ -41,7 +41,6 @@ Microsoft will continue to support servicing from the visualstudio.com domain (`
 
 We will post news about this transition on the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
 
-
 ## Can I still use the old interface?
 
 At this time, you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
