@@ -7402,7 +7402,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-container-kubernetes.md",
-      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-aks",
       "redirect_document_id": true
     },
     {

@@ -408,7 +408,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h2 style="float: left; display: flex;">Deploy your app</h2>
                                 <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="apps/cd/azure/deploy-container-kubernetes.md">
+                                        <a href="apps/cd/deploy-aks.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">

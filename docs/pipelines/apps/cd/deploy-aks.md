@@ -21,7 +21,7 @@ After you commit and push a code change, it will be automatically built and depl
 
 ## Example
 
-If you want some sample code that works with this guidance, import (into Azure DevOps or Azure DevOps Server) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, import (into Azure DevOps) or fork (into GitHub) this repo:
 
 ```
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/kubernetes/Application
@@ -34,6 +34,7 @@ https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcor
 You'll need a continuous integration (CI) build process that publishes a container image to a container registry (for example: Azure Container Registry) and packages a Helm chart.
 
 To set up a CI build process, see:
+
 * [Build Docker image and publish Helm chart](../../languages/docker.md).
 
 ## Prerequisites
@@ -44,103 +45,141 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
-2. In the Azure Portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
+1. In the Azure Portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
 
-3. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix.
+1. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix.
 
-4. Click on **Review + Create** and then once validation passes, click on **Create** button.
+1. Choose **Review + Create** and then, after validation, choose **Create**.
 
-5. Wait until the new AKS cluster has been created. Then you can create a release pipeline as shown in the next section.
+1. Wait until the new AKS cluster has been created. Then you can create a release pipeline as shown in the next section.
 
-The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry. It has also packaged and published a Helm chart as an artifact. In the release pipleine we will deploy the container image as a Helm application to the AKS cluster.
+The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
+It has also packaged and published a Helm chart as an artifact. In the release pipeline we'll deploy the container image as a Helm application to the AKS cluster.
 
+## Configure authentication
+
+When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
+you must establish an authentication mechanism. This can be achieved in two ways:
+
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
+
+1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
+   An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
 
 ## Create a release pipeline
 
-1. In the **Build &amp; Release** hub, open the build summary for your build.
+1. In **Azure Pipelines**, or the **Build &amp; Release** hub in TFS, open the summary for your build.
 
-2. In the build summary page, choose the **Release** icon to start a new release pipeline.
+1. In the build summary, choose the **Release** icon to start a new release pipeline.
 
    If you have previously created a release pipeline that uses these build artifacts, you will
-   be prompted to create a new release instead. In that case, go to the **Releases** tab page and
+   be prompted to create a new release instead. In that case, go to the **Releases** page and
    start a new release pipeline from there by choosing the **+** icon.
 
-3. Select the **Empty Process**.
+1. Select the **Empty job** template.
 
-4. Go to **Environment 1** and click on **+** icon to add new task
-5. Add **Helm tool installer** task to ensure that the agent which runs the subsequent tasks has Helm and Kubectl installed on it.
-6. Click on **+** icon again to add new **Package and deploy Helm charts** task
-   Configure the properties as follows:
+1. Open the **Tasks** page and select **Agent job**.
 
-   - **Connection Type**: Select ‘Azure Resource Manager’ to connect to an AKS cluster by using Azure Service Connection.  Select ‘Container registry’ to connect to any Kubernetes cluster by using kubeconfig or Service Account.
+1. Choose **+** to add new task and add a **Helm tool installer** task.
+   This ensures the agent which runs the subsequent tasks has Helm and Kubectl installed on it.
+
+1. Choose **+** again and add the **Package and deploy Helm charts** task.
+   Configure the settings for this task as follows:
+
+   - **Connection Type**: Select **Azure Resource Manager** to connect to an AKS cluster by using
+     an Azure service connection. If, alternatively, you want to connect to any Kubernetes
+     cluster by using kubeconfig or a service account, you can select **Kubernetes Service Connection**.
+     In this case, you will need to create and select a Kubernetes service connection instead of
+     an Azure subscription for the following setting.
  
-   - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you are using Azure DevOps Server or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
+   - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+     If you are using Azure DevOps and if you see an **Authorize** button next to the input, use it to authorize the connection to your Azure subscription.
+     If you do not see the required Azure subscription in the list of subscriptions, see [Create an Azure service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
-   - **Resource Group**: Enter or select the resource group of your **AKS cluster**.  
+   - **Resource group**: Enter or select the resource group containing your AKS cluster.  
    
-   - **Kubernetes cluster**: Enter or select the **AKS cluster** you have created.  
+   - **Kubernetes cluster**: Enter or select the AKS cluster you created.  
    
-   - **Command**: Select **init** as Helm command. This will install Tiller to your running Kubernetes cluster. It will also set up any necessary local configuration. Tick **Use canary image version** to install the latest pre-release version of Tiller. You could also choose to upgrade tiller if it is pre-installed by ticking on **Upgrade Tiller**. If these options are enabled, the task will run 'helm init --canary-image --upgrade'
+   - **Command**: Select **init** as the Helm command. This will install Tiller to your running Kubernetes cluster.
+     It will also set up any necessary local configuration.
+     Tick **Use canary image version** to install the latest pre-release version of Tiller.
+     You could also choose to upgrade tiller if it is pre-installed by ticking on **Upgrade Tiller**.
+     If these options are enabled, the task will run `helm init --canary-image --upgrade`
    
-7. Again click on **+** icon to add another **Package Helm charts** task
-   Configure the properties as follows:
+1. Choose **+** in the **Agent job** and add another **Package and deploy Helm charts** task.
+   Configure the settings for this task as follows:
    
-   - **Kubernetes cluster**: Enter or select the **AKS cluster** you have created.  
+   - **Kubernetes cluster**: Enter or select the AKS cluster you have created.  
    
-   - **Namespace**: Enter your Kubernetes cluster namespace where you want to deploy your application. Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. You can use Namespace to create diferent environments like dev/test/staging in the same cluster. 
+   - **Namespace**: Enter your Kubernetes cluster namespace where you want to deploy your application.
+     Kubernetes supports multiple virtual clusters backed by the same physical cluster.
+     These virtual clusters are called _namespaces_.
+     You can use namespaces to create different environments such as dev, test, and staging in the same cluster. 
 
-   - **Command**: Select **upgrade** as Helm command. You can run any Helm command by using the task and passing command options as arguments.
+   - **Command**: Select **upgrade** as the Helm command.
+     You can run any Helm command using this task and pass in command options as arguments.
 
-   When you select the **upgrade** as helm command, the task recognizes it and shows some additional fields.
+   - When you select the **upgrade** as the Helm command, the task shows some additional fields:
 
-   - **Chart Type**: Select **File Path** as Chart type. You can also specify **Chart Name** which can be a url or a chart name. For example: If Chart name is ‘stable/mysql’, the task will run ‘helm upgrade stable/mysql’. 
+     * **Chart Type**: Select **File Path**. Alternatively, you can specify **Chart Name** if you want to
+       specify a URL or a chart name. For example, if the chart name is `stable/mysql`, the task will execute
+       `helm upgrade stable/mysql` 
    
-   Since in our build pipeline we packaged and published the chart, we will use File Path.   
+     * **Chart Path**: This can be a path to a packaged chart or a path to an unpacked chart directory.
+       In this example you are publishing the chart using a CI build, so select the file package using file picker
+       or enter `$(System.DefaultWorkingDirectory)/**/*.tgz`
    
-   - **Chart Path**: Chart path can be a path to a packaged chart or a path to an unpacked chart directory. If you are publishing it using CI build, you can pick the file package by clicking on file picker.  Or simply enter $(System.DefaultWorkingDirectory)/**/*.tgz
+     * **Release Name**: Enter a name to your release; for example `azuredevops`
    
-   For example if ‘./redis’ is specified the task will run ‘helm upgrade ./redis’.
+     * **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with the new configuration.
 
-   - **Release Name**: Give any name to your release. For example **azuredevops**
+     * **Reset Values**: Tick this checkbox if you want the values built into the chart to override all values provided by the task.
+
+     * **Force**: Tick this checkbox if, should conflicts occur, you want to upgrade and rollback to delete, recreate the resource, and reinstall the full release.
+       This is useful in scenarios where applying patches can fail (foir example, for services because the cluster IP address is immutable). 
+
+     * **Arguments**: Enter the Helm command arguments and their values; for this example
+       `--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)`. 
+       See [this section](#argument-details) for a description of why we are using these arguments. 
    
-   - **Arguments**: Enter the Helm command arguments and their values here. In the build pipeline we tagged the container image with $(Build.BuildId) and pushed it to an Azure Container Registry. 
-   
-   In the Helm chart you can parameterize the container image details like name and tag because the same Helm chart can be used for deploying to different environments. These values can also be specified in the values.yaml file of the chart or be overridden by a user-supplied values file, which can in turn be overridden by --set parameters during helm install or helm upgrade.
-   
-   For our sample app we will pass the following:   
-    ```
-    --set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId) 
-   
-    ```
-   > Either set the values of $(imageRepoName) in the variable section or replace it with your image repository name, which is typically of format `name.azurecr.io/coderepository`
-   
-   Here the assumption is that your Helm chart uses variables to be passed into your templates for image name and tag. For example the values.yaml file will have the following
-   ```
-   image:
-     repository: VALUE_TO_BE_OVERRIDDEN
-     tag: latest
-   ```
-   
- - **Set Values**: You could also specify the values in this field as comma separated key-value pairs or provide a **Value File** which can be a YAML file or a URL.
+     * **Enable TLS**: Tick this checkbox to enable strong TLS-based connections between Helm and Tiller.
+
+     * **CA certificate**: Specify a CA certificate to be uploaded and used to issue certificates for Tiller and Helm client.
  
-     ```
-    When you're using Azure Container Registry (ACR) with Azure Kubernetes Service (AKS), an authentication mechanism needs to be established. this can be achieved in two ways: Either by granting AKS access to ACR https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr. Or by using [Kubernetes image pull secret](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret). Image pull secret can be created by using Kubernetes deploy task.
-   
-    ```
- - **Reset Values**: Tick this checkbox if you need the values built into the chart to override all values provided from the task.
- - **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with new configuration
- - **Force**: Tick this checkbox if you want to upgrade and rollback to delete, recreate the resource and re-install the full release when there are any conflicts. This is useful in scenarios where applying patches can fail (e.g., for services, because clusterIp is immutable). 
- 
- If the above options are chosen, then the task will run ‘helm upgrade --reset-values --recreate-pods --force’
- 
- - **Enable TLS**: Tick this checkbox to enable strong TLS based connections between Helm and Tiller. When this option is enabled, the task recognizes it and shows some additional fields.
- - **CA certificate**: Upload a CA cert used to issue certificate for tiller and helm client.
- - **Certificate**: Specify Tiller certificate or Helm client certificate
- - **Key**: Specify Tiller Key or Helm client key
+     * **Certificate**: Specify the Tiller certificate or Helm client certificate
 
-8. Save the release pipeline.
+     * **Key**: Specify the Tiller Key or Helm client key
+
+1. In the **Variables** page of the pipeline, add a variable named **imageRepoName** and set the value
+   to the name of your Helm image repository. Typically this is typically in format `name.azurecr.io/coderepository`
+
+1. Save the release pipeline.
+
+<a name="argument-details"></a>
+
+### Arguments used in the Helm upgrade task
+
+In the build pipeline, the container image is tagged with `$(Build.BuildId)` and this is pushed to an Azure Container Registry. 
+In a Helm chart you can parameterize the container image details such as the name and tag
+because the same chart can be used to deploy to different environments.
+These values can also be specified in the **values.yaml** file or be overridden by a user-supplied values file,
+which can in turn be overridden by `--set` parameters during the Helm install or upgrade.
+   
+In this example, we pass the following arguments:   
+
+`--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)` 
+   
+The value of `$(imageRepoName)` was set in the **Variables** page (or the **variables** section of your YAML file).
+Alternatively, you can directly replace it with your image repository name in the `--set` arguments value or **values.yaml** file.
+For example:
+
+```
+  image:
+    repository: VALUE_TO_BE_OVERRIDDEN
+    tag: latest
+```
+
+Another alternative is to set the **Set Values** option of the task to specify the argument values as comma separated key-value pairs.
 
 ## Create a release to deploy your app
 
