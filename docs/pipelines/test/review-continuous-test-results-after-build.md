@@ -12,13 +12,13 @@ ms.date: 07/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test Report
+# Review test results
 
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
 
 Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
-Test report provide an effective and consistent way to view the tests results executed using different test frameworks,
+Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
 
@@ -33,7 +33,7 @@ In addition, it provides many advanced reporting capabilities explored in the fo
 Published test results can be viewed in the **Tests** tab in a build or release summary.
 
 > [!NOTE]
-> Test Report is available in TFS 2015 and above, however the new experience
+> Test report is available in TFS 2015 and above, however the new experience
 > described in this document is available only with Azure Pipelines at present.
 
 <a name="viewbuildresults"></a>  
@@ -158,7 +158,7 @@ These test results are reported as a summarized test result in the **Tests** tab
 
 * **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](../tasks/test/vstest.md) task.
   During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
-  Test report provides a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
+  Test reports provide a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
   Additionally the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0)
   now support the ability to publish and query summarized test results.
 

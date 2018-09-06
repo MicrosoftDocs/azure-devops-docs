@@ -47,7 +47,7 @@ The following sections explore traceability from **Quality**, **Bug** and **Sour
 To ensure user requirements meet the quality goals, the requirements
 in a project can be linked to test results, which can then be viewed on the
 team's dashboard. This enables end-to-end traceability with a simple way to monitor test results.
-To link automated tests with requirements, visit [Test report](review-continuous-test-results-after-build.md) in build or release.
+To link automated tests with requirements, visit [test report](review-continuous-test-results-after-build.md) in build or release.
 
 1. In the results section under **Tests** tab of a build or release summary,
    select the test(s) to be linked to requirements and choose **Link**. 
@@ -97,7 +97,7 @@ Testing gives a measure of the confidence to ship a change to users. A test  fai
 Failures can happen for many reasons such as errors in the source under test, bad test code, environmental issues,
 [flaky tests](test-glossary.md), and more.
 Bugs provide a robust way to track test failures and drive accountability in the team to take the required remedial actions.
-To associate bugs with test results, visit [Test report](review-continuous-test-results-after-build.md) in build or release.
+To associate bugs with test results, visit [test report](review-continuous-test-results-after-build.md) in build or release.
 
 1. In the results section of the **Tests** tab select the tests against which the bug should be created
    and choose **Bug**. Multiple test results can be mapped to a single bug.
@@ -157,7 +157,7 @@ visit [Tests tab](review-continuous-test-results-after-build.md) in build or rel
 ## Traditional teams using planned testing
 
 Teams that are moving from manual testing to continuous (automated) testing, and have a subset of tests already automated,
-can execute them as part of the pipeline or on demand (see [Test report](review-continuous-test-results-after-build.md)).
+can execute them as part of the pipeline or on demand (see [test report](review-continuous-test-results-after-build.md)).
 Referred to as **Planned testing**, automated tests can be [associated to the test cases](../../test/associate-automated-test-with-test-case.md)
 in a test plan and executed from **Azure Test Plans**.
 Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
