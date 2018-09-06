@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= tfs-2017"
-Start planning your project by quickly adding user stories or requirements to your product backlog. From your product backlog, you can then start driving your code development efforts. 
+Start planning your project by quickly adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving your code development efforts. 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -54,7 +54,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## Concepts 
   
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)  
-- [Groom your backlog](best-practices-product-backlog.md)         
+- [Refine your backlog](best-practices-product-backlog.md)         
 - [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
 - [Share work plans](../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)

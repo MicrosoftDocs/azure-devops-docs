@@ -80,18 +80,18 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 	See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-0. Upon successful completion, the welcome page displays.
+0. When your project has been created, the welcome page appears. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
 
-	Choose: 
+	Select one of the following tasks to get started: 
 	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
-	- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
-	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
-	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
-	- Choose [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
+	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+	- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+	- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+	- [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 
 ::: moniker-end
 

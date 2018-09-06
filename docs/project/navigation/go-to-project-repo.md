@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 07/21/2018
+ms.date: 09/05/2018
 ---
 
 # Switch project, repository, team 
@@ -139,7 +139,12 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 # [New navigation](#tab/new-nav)  
 ::: moniker range="vsts"
 
-You can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
+From a user page, one under&mdash;**Boards**, **Repos**, **Pipelines**, or **Test Plans**&mdash;you can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
+
+From a **Project Settings>Work>Team configuration** page, you select a team from the team selector breadcrumb. 
+
+> [!div class="mx-imgBorder"]  
+> ![Select team from the breadcrumb](_img/breadcrumbs/choose-team-selector.png)
 
 ::: moniker-end
 ::: moniker range=">= tfs-2017  <= tfs-2018"

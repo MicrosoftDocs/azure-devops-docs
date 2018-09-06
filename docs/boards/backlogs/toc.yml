@@ -35,7 +35,7 @@
   items:
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Groom your backlog
+  - name: Refine your backlog
     href: best-practices-product-backlog.md
   - name: "Backlog items & multi-team ownership"
     href: work-multi-team-ownership-backlogs.md

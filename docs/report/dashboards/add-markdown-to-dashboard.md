@@ -109,11 +109,11 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	<img src="_img/add-markdown-configure.png" alt="Configure markdown" style="border: 1px solid #C3C3C3;" /> 
 
-	To link to a wiki page, repository file, or page within the  project, use this format: 
-
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_wiki?pagePath=%2FHome`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_git/Fabrikam%20Fiber?path=%2FREADME.md`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_backlogs?level=Backlog%20items&showParents=false&_a=backlog`
+	> [!TIP]  
+	> To link to a wiki page,use the following syntax:<br/>
+	> `/ProjectName/_wiki/wikis/WikiRepositoryName?pagePath=/FileName` 
+	> 
+	> To link to a repository file, page, or image within the project, rich-click the file and use the full URL.
 
 	This renders the following widget: 
 
@@ -122,7 +122,8 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported. This restriction has been implemented for security purposes.
 	
-0. Optionally, you can choose to point to a file in your repository. 
+0. Optionally, you can choose to point to a file in your repository.  
+
 	<img src="_img/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker-end
