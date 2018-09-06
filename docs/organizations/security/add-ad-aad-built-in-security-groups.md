@@ -60,11 +60,11 @@ The method for adding a user or group to a built-in security group is the same, 
 	> [!div class="mx-imgBorder"]  
 	> ![Admin context, Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and all other teams you add to the team project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
+	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-0. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+1. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+2. Enter the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
@@ -100,11 +100,11 @@ The method for adding a user or group to a built-in security group is the same, 
 	> [!div class="mx-imgBorder"]  
 	> ![Admin context, Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and all other teams you add to the team project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
+	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-0. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+1. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+2. Enter the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 

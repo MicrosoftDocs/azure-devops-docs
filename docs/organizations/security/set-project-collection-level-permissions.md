@@ -232,7 +232,7 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Project management](../projects/index.md)
+> [Manage projects](../projects/index.md)
 
 ## Related articles
 

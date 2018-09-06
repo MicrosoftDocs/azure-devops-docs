@@ -8,7 +8,7 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-With Azure DevOps Services and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking can also be managed through a client.  
+With Azure DevOps Services and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
 Access Web services through the following areas, as shown in the following image.
 
@@ -33,7 +33,7 @@ Access Web services through the following areas, as shown in the following image
 
 ---
 
-Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as needed basis.  
+Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as-needed basis.  
 
 For information about client tools, see [Tools](tools.md).
 
@@ -124,13 +124,13 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 # [New navigation](#tab/new-nav)
 
-**Pipelines** provides an integrated set of features to support building and deploying your applications.
+**Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Pipelines page](_img/builds-pipelines-page.png)
+![Builds, Azure Pipelines page](_img/builds-pipelines-page.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-**Build and release** provides an integrated set of features to support building and deploying your applications.
+**Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
 <img src="_img/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 

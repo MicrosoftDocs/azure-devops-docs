@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 

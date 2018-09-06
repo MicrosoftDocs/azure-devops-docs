@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 <a id="security-roles" />
 While the majority of features and functional tasks are managed by [individual permissions](about-permissions.md), there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  
 
-Many role-based permissions can be set for all artifacts of a specific type in a team project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items  automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
+Many role-based permissions can be set for all artifacts of a specific type in a project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items  automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
 
 <!---
 You manage the security for the following artifacts and features by adding a user or group to the roles which are described in the following sections. 
@@ -31,7 +31,7 @@ You manage the security for the following artifacts and features by adding a use
  
 ##Default role assignments
 
-By default, all contributors in a team project are members of the User role on each hosted queue.  This allows every contributor in a team project to author and run build and release pipelines using hosted queues.
+By default, all contributors in a project are members of the User role on each hosted queue.  This allows every contributor in a project to author and run build and release pipelines using hosted queues.
 -->
 
 ## Agent queue security roles

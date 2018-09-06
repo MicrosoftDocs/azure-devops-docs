@@ -8,11 +8,11 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Create your Azure DevOps Services organization with a personal Microsoft account or a work or school account
+# Quickstart: Create your Azure DevOps Services organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -28,21 +28,22 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 
 ## Prerequisites
 
-Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md) and before you begin, do either of the following:
+* Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md).
+*  Before you begin, do either of the following:
 
-* To use only Microsoft accounts with your Azure DevOps Services organization, complete these steps. Ignore the Azure Active Directory (Azure AD) callouts.
+   * Complete the following steps to use only Microsoft accounts with your Azure DevOps Services organization. Ignore the Azure Active Directory (Azure AD) callouts.
 
-   * If you don't have a Microsoft account, create one when you sign up for Azure DevOps Services.
+      1. If you don't have a Microsoft account, create one when you sign up for Azure DevOps Services.
 
-   * Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your Azure DevOps Services organization with a Microsoft account.
+      2. Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your Azure DevOps Services organization with a Microsoft account.
 
-* Alternatively, to authenticate users and control organization access through your Azure AD, complete these steps. Pay attention to the Azure AD callouts.
+   * Complete the following steps to authenticate users and control organization access through your Azure AD. Pay attention to the Azure AD callouts.
 
-	* Use your work or school account to *automatically connect* your Azure DevOps Services organization to your Azure AD. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+	  1. Use your work or school account to *automatically connect* your Azure DevOps Services organization to your Azure AD. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
-	* You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+	  2. You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
-	* To use existing on-premises identities with Azure DevOps Services, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+	  3. To use existing on-premises identities with Azure DevOps Services, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 
 ## How does Azure AD control access to Azure DevOps Services?
@@ -123,22 +124,16 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 > [!div class="nextstepaction"]
 > [Create project](../projects/create-project.md)
 
-* Add code to Git or Team Foundation Version Control:
+   or
 
-	* **Git**: Use [Eclipse](../../java/download-eclipse-plug-in.md),
-	[Xcode](../../repos/git/share-your-code-in-git-xcode.md), 
-	[Android Studio](/../../java/download-android-studio-plug-in), 
-	[IntelliJ](/../../java/download-intellij-plug-in), 
-	[Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or 
-	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
+Add code to Git or Team Foundation Version Control:
 
-	* **Team Foundation Version Control**: Use [Eclipse](/../../java/download-eclipse-plug-in), 
-	[Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
-	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
+* **Git**: Use [Eclipse](../../java/download-eclipse-plug-in.md), [Xcode](../../repos/git/share-your-code-in-git-xcode.md), [Android Studio](/../../java/download-android-studio-plug-in), [IntelliJ](/../../java/download-intellij-plug-in), [Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
+
+* **Team Foundation Version Control**: Use [Eclipse](/../../java/download-eclipse-plug-in), [Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), [Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
 
 ## Related articles
 
 * [Create your backlog](../../boards/backlogs/create-your-backlog.md)
 * [Manage your process](../../organizations/settings/work/manage-process.md)
-* [Customize your process](../../organizations/settings/work/customize-process.md).
+* [Customize your process](../../organizations/settings/work/customize-process.md)

@@ -156,5 +156,5 @@
 
 #### Notes
 0. Team (chat) rooms have been deprecated for Azure DevOps Services and TFS 2018 and later versions. 
-0. Can view team project READMEs, but not READMEs defined for a repository.
+1. Can view project READMEs, but not READMEs defined for a repository.
 

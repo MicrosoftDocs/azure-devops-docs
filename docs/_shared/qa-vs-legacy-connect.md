@@ -5,4 +5,4 @@ but you'll need to install [Service Pack 1](https://www.microsoft.com/en-us/down
 and [KB2662296](http://support.microsoft.com/kb/2662296) first. Or, you can use Visual 
 Studio 2008 SP1, with [this GDR update](http://support.microsoft.com/kb/2673642). 
 Launch Visual Studio, then connect to Azure DevOps  
-and select your team project.
+and select your project.

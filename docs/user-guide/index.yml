@@ -4,7 +4,7 @@ title: Azure DevOps Services user guide
 metadata:
   title: Azure DevOps Services user guide documentation
   description: Learn the basics of the Azure DevOps interface and some common tasks.
-  ms.date: 09/05/2018
+  ms.date: 09/10/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -280,7 +280,7 @@ sections:
           title: Manage Azure DevOps projects
           alt: management logo
           src: https://docs.microsoft.com/media/common/i_management.svg
-        title: Project management
+        title: Manage projects
       - href: ../organizations/billing/index.md
         html: <p></p>
         image:

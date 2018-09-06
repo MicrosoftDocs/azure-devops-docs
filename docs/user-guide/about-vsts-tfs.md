@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 ---
 
 # Understand differences between Azure DevOps Services and TFS
