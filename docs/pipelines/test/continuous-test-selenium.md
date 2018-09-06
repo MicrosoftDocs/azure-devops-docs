@@ -12,7 +12,7 @@ ms.ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Get started with Selenium testing in a CD pipeline
+# UI test with Selenium
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 

@@ -12,7 +12,7 @@ ms.date: 08/22/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Requirements traceability
+# Trace test requirements
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
