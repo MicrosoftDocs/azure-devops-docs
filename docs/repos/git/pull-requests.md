@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 04/03/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 #  Review code with pull requests
 
@@ -84,7 +83,7 @@ Initiate pull requests directly from Visual Studio.
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps Services Project.
+  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps Services project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
 
@@ -311,7 +310,7 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 ![A banner displays when your pull request is in auto-complete state](./_img/pull-requests/pr_banner_autocomplete.png)
 
 >[!NOTE]
->The **Auto-complete** option is available in Azure DevOps Services and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
+>The **Auto-complete** option is available in Azure Repos and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
 ::: moniker-end 
 

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 05/16/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -22,7 +22,7 @@ A fork is a complete copy of a repository, including all files, commits, and (op
 Forks are a great way to support an Inner Source workflow: you can create a
 fork to suggest changes to a project when you don't have permissions to 
 write to the original project directly.
-Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests.md).
+Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests-overview.md).
 
 ## What's in a fork
 
@@ -41,7 +41,7 @@ The destination repository's permissions, policies, builds, and work items will 
 ## Choosing between branches and forks
 
 For a very small team (2-5 developers), we recommend working in a single repo.
-Everyone should work in topic branches, and master should be protected with [branch policies](branch-policies.md).
+Everyone should work in topic branches, and master should be protected with [branch policies](branch-policies-overview.md).
 As your team grows larger, you may find yourself outgrowing this arrangement and prefer to switch to a forking workflow.
 
 If your repository has a large number of casual or infrequent committers (similar to an open source project), we recommend the forking workflow.

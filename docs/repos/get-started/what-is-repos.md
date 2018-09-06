@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 09/05/2018
+ms.date: 09/10/2018
 ms.topic: overview
 layout: LandingPage
 monikerRange: 'vsts'
@@ -314,7 +314,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="/azure/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">

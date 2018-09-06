@@ -10,6 +10,8 @@
     href: branch-policies-overview.md
   - name: Learn about forks
     href: forks-overview.md 
+  - name: Start using Azure Repos
+    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Create repo - Web

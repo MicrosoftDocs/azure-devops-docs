@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 03/08/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Get started with Git from the command line
 
@@ -27,7 +26,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -68,7 +67,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
     cd /home/fabrikam/fiber
     ```
 
-0. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next step.
+0. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
 
     ```
     git init .

@@ -26,7 +26,7 @@ monikerRange: 'vsts'
 ### Q: How do I learn more about Cloud-based Load Testing?
 
 **A**: Watch this video, or check out the 
-[Cloud-based Load Testing blog](https://devblogs.microsoft.com/devops/?s=clt). 
+[Cloud-based Load Testing blog](https://blogs.msdn.microsoft.com/devops/?s=clt). 
 
 <iframe src="//channel9.msdn.com/Events/Visual-Studio/Launch-2013/QE103/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 

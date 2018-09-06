@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/08/2017
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -27,7 +27,7 @@ In this guide, we show you how to create a Git repo using the Azure DevOps Servi
 ## Prerequisites
 To complete the steps in this guide you need:
 
-* An Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
 * The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
@@ -35,9 +35,11 @@ To complete the steps in this guide you need:
   * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
 
 ## Create a repo
-0. Navigate to your Azure DevOps Services project by browsing to `https://<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
+0. Navigate to your Azure DevOps Services project by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/create-repo-intellij/select-vsts-project.png) 
+
+  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
   
 0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
@@ -56,7 +58,7 @@ To complete the steps in this guide you need:
 0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
     ```
-    git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/DeepSpace
+    git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/DeepSpace
     ```
 
 0. Switch to the DeepSpace folder by running the following command.

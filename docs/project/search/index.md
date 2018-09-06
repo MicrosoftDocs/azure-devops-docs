@@ -37,7 +37,7 @@ using just a web browser.
 ## Resources
 
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [Search your Wiki](https://devblogs.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
+* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
 * [Code Search blog posts](https://social.msdn.microsoft.com/Search/?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 * [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)

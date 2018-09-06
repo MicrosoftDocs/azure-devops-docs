@@ -39,7 +39,7 @@ Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for n
 
 Microsoft will continue to support servicing from the visualstudio.com domain (`https://{your organization}.visualstudio.com/{your project}`) for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until a to-be-determined date.
 
-We will post news about this transition on the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
+We will post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
 
 ## Can I still use the old interface?
 

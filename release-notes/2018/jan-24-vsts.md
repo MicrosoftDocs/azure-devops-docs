@@ -143,7 +143,7 @@ Over time, test assets accrue. For large applications, they can easily grow to t
 
 ### Run Functional Tests and Deploy Test Agent tasks are now deprecated
 
-Last year, we started on the journey to [unify agents across build, release, and test](https://devblogs.microsoft.com/devops/2017/03/26/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/).
+Last year, we started on the journey to [unify agents across build, release, and test](https://blogs.msdn.microsoft.com/devops/2017/03/26/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/).
 This was intended to address various pain points associated with using WinRM based **Deploy Test Agent** and **Run Functional Tests** tasks. It also enables you to use the **Visual Studio Test** (VSTest) task for all your testing needs, including:
 
 * Unit tests
@@ -177,7 +177,7 @@ Users can now delete Test Plans / Test suites if they the following permisssions
 
 ### Wiki Search now Generally Available
 
-After a [public preview of Wiki search in December](https://devblogs.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/), we are now making it generally available. You can search for your favorite wiki pages by title or content right alongside code and work items.
+After a [public preview of Wiki search in December](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/), we are now making it generally available. You can search for your favorite wiki pages by title or content right alongside code and work items.
 
 ### Print Wiki pages
 

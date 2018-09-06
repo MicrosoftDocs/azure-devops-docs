@@ -67,7 +67,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Available for Azure DevOps Server|Reporting|2019|
 |Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
-|[Bring multiple organizations under an enterprise](https://devblogs.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 

@@ -70,7 +70,7 @@ At present, TIA is **not** supported for:
 * .NET Core
 * UWP
 
-[More information about TIA scope and applications](https://devblogs.microsoft.com/devops/2017/05/16/accelerated-continuous-testing-with-test-impact-analysis-part-2/)
+[More information about TIA scope and applications](https://blogs.msdn.microsoft.com/devops/2017/05/16/accelerated-continuous-testing-with-test-impact-analysis-part-2/)
 
 <a name="enabletia"></a>
 
@@ -118,7 +118,7 @@ TIA is integrated into existing test reporting at both the summary and details l
 
 ![Reporting Tests page includes TIA integration](_img/test-impact-analysis/tia-reports-2.png)
 
-[More information about TIA and Azure Pipelines integration](https://devblogs.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
+[More information about TIA and Azure Pipelines integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
 
 ## Manage Test Impact Analysis behavior
 
@@ -139,7 +139,7 @@ To evaluate whether TIA is selecting the appropriate tests:
 * Manually validate the selection. A developer who knows how the SUT and tests are architected could manually validate the test selection using the [TIA reporting capabilities](#tiareports).
 * Run TIA selected tests and then all tests in sequence. In a build pipeline, use two test tasks - one that runs only impacted Tests (T1) and one that runs all tests (T2). If T1 passes, check that T2 passes as well. If there was a failing test in T1, check that T2 reports the same set of failures.
 
-[More information about TIA advanced configuration](https://devblogs.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
+[More information about TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 
 ## Provide custom dependency mappings
 
@@ -166,13 +166,13 @@ The XML file should be checked into your repository, typically at the root level
 For example, if the file is named **TIAmap.xml**,
 set the variable to **$(System.DefaultWorkingDirectory)/TIAmap.xml**.
 
-For an example of the XML file format, see [TIA custom dependency mapping](https://devblogs.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/).
+For an example of the XML file format, see [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/).
 
 ## See Also
 
-* [TIA overview and VSTS integration](https://devblogs.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
-* [TIA scope and applications](https://devblogs.microsoft.com/devops/2017/05/16/accelerated-continuous-testing-with-test-impact-analysis-part-2/)
-* [TIA advanced configuration](https://devblogs.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
-* [TIA custom dependency mapping](https://devblogs.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
+* [TIA overview and VSTS integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
+* [TIA scope and applications](https://blogs.msdn.microsoft.com/devops/2017/05/16/accelerated-continuous-testing-with-test-impact-analysis-part-2/)
+* [TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
+* [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 # Quickstart: Publish and then download a Universal Package
 
 > [!NOTE]
-> Universal Packages are currently in private preview. See the [announcement blog post](https://devblogs.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
+> Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
 Universal Packages store one or more files together in a single unit that has a name and version. Universal Packages can be published from the command line using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest). This quickstart shows you how to publish your first Universal Package using the CLI and how to download it using the CLI. To see your package, you can navigate to your feed in Azure Artifacts.
 
@@ -58,7 +58,7 @@ vsts package universal publish --instance https://fabrikam.visualstudio.com --fe
 
 ## View the package in your feed
 
-To see the package you just published, navigate to the organization you specified in the publish command, select any project, then select the **Packages** hub under the **Build & Release** hub group. Or, if you've enabled the [new navigation preview](https://devblogs.microsoft.com/devops/2018/06/19/new-navigation/), just select Packages on the left side.
+To see the package you just published, navigate to the organization you specified in the publish command, select any project, then select the **Packages** hub under the **Build & Release** hub group. Or, if you've enabled the [new navigation preview](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/), just select Packages on the left side.
 
 ![Universal Package listing in a sample feed](_img/universal-in-feed.png)
 

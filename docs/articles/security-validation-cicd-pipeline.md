@@ -41,7 +41,7 @@ The CI build should be executed as part of the pull request (PR-CI) process disc
 
 * [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 
-* [Other 3rd party tools](https://devblogs.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
+* [Other 3rd party tools](https://blogs.msdn.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
 
 Many of the tools seamlessly integrate into the Azure Pipelines build process. Visit the VSTS Marketplace for more information on the integration capabilities of these tools.
 

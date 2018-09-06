@@ -98,7 +98,7 @@ We’ve added an option to make it faster to publish artifacts from Windows agen
 ###New Release Definition Editor (Preview)
 > **Preview feature**
 >
-> To use this capability, enable [**New Release Definition Editor**](https://devblogs.microsoft.com/devops/2017/05/26/new-release-definition-editor-in-team-services/) for yourself or your account. See [Enable preview features](/azure/devops/project/navigation/preview-features) for more details.
+> To use this capability, enable [**New Release Definition Editor**](https://blogs.msdn.microsoft.com/devops/2017/05/26/new-release-definition-editor-in-team-services/) for yourself or your account. See [Enable preview features](/azure/devops/project/navigation/preview-features) for more details.
 
 Have you ever struggled to create a mental model of how the deployments to your environments would progress? We are introducing the pipeline view for your release definitions that will show how your deployments flow. Approvals, environment and deployment settings are now in-context and easily configurable.
 
