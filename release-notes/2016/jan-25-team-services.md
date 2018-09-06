@@ -2,7 +2,7 @@
 title: Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
 description: VSTS release notes for January 25 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 5f275e4c-86c9-44fa-8d53-cf7a0d1d792a
 ms.date: 06/01/2016

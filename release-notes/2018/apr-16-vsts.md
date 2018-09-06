@@ -2,6 +2,8 @@
 title: Deployment for Azure Database for MySQL, Kubernetes with Helm, and Ruby on Rails – VSTS Sprint 133 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 4/16/2018
 description: In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue to expand on the languages and platforms we support for build and release.
 ---

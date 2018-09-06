@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 126 Update on November 28, 2017.
 hide_comments: true

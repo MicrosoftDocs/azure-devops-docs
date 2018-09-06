@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: In the Sprint 127 Update of Visual Studio Team Services (VSTS) on December 11, 2017, you’ll find new features to help you manage your test results and execution, plus a set of new Marketplace experiences to help you get even more value out of the ecosystem.
 hide_comments: true

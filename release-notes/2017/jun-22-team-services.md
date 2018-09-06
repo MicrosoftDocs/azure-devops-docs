@@ -3,7 +3,7 @@ title: Git Tags web view, build definition import/export, and improved user mana
 description: VSTS release notes for June 22 2017
 ms.ContentId: b94f1350-a53f-4d0b-af2d-a31832ee7799
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
 ---

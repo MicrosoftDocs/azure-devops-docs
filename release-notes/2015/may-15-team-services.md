@@ -2,7 +2,7 @@
 title: Build preview, updated backlog navigation, branch policies, and more... – May 15
 description: VSTS release notes for May 15 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
 ms.date: 06/01/2016

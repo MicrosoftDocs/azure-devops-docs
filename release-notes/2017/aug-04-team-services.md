@@ -3,7 +3,7 @@ title: Visual Studio Team Services (VSTS) Sprint 121 Update
 description: Visual Studio Team Services (VSTS) release notes for Sprint 121 Update on August 4 2017 including Wiki in Public Preview and Ansible Integration
 ms.ContentId: 63246e8f-c7a0-4f3a-8c75-a30c30502139
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
 ---
