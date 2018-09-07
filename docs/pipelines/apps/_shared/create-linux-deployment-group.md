@@ -44,7 +44,8 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
 
 1. When you're prompted to configure tags for the agent, press _Enter_ (you don't need any tags).
 
-1. Wait for the script to finish and display the message *Started Azure Pipelines Agent*. Type "q" to exit the file editor and return to the shell prompt.
+1. Wait for the script to finish and display the message *Started Azure Pipelines Agent*.
+   Type "q" to exit the file editor and return to the shell prompt.
 
-1. Back in Azure Pipelines or TFS, on the **Deployment groups** page in Azure Pipelines, open the **myNginx** deployment group.
+1. Back in Azure Pipelines or TFS, on the **Deployment groups** page, open the **myNginx** deployment group.
    On the **Targets** tab, verify that your VM is listed.
