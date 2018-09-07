@@ -177,7 +177,11 @@ To learn more, see the following:
 ## Install and manage extensions 
 
 An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
-
+::: moniker-end 
+::: moniker range=">= tfs-2017" 
+For example, to support [code search](../project/search/code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+::: moniker-end 
+::: moniker range=">= tfs-2015"  
 You'll want to let your users know about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization owner, be a member of the Project Collection Administrators group, or be added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
 ::: moniker-end 

@@ -50,11 +50,11 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 	* Use **oAuth2**  for Azure Active Directory (Azure AD) credentials.
 
-    <img src="_img/aad-auth-power-bi.png" alt="vt" style="border: 2px solid #C3C3C3;" />
+    ![Configure Areas dialog](_img/aad-auth-power-bi.png)
  
 	* Use **Basic** for PAT credentials.   
 
-    ![Enter credentials](_img/publish-5.png)
+    ![Configure Fabrikam Data dialog, Enter credentials](_img/publish-5.png)
 
 	See [Client Authentication Options](../analytics/client-authentication-options.md) for more information on acquiring credentials.  
 

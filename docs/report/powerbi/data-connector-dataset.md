@@ -71,7 +71,7 @@ You can select the following Analytics-based fields in an Analytics view:
 > | Is Current (included automatically with history) | Supports filtering the data to view the most recent snapshot of the filtered set of work items by setting the value to `True` | 
 > | Lead Time | Time for a work item to move from a state category of "Proposed" to "Completed" | 
 > | Parent Work Item Id | The Work Item Id for the parent of a work item | 
-> | Project Name | Equivalent to the Team Project field  | 
+> | Project Name | Equivalent to the project field  | 
 > | Revision | A number that is assigned to the historical revision of a work item  | 
 > | Tags | Semicolon delimited list of Tags | 
 > | WorkItemRevisionSK | The Analytics unique key for the work item revision, used to join related entities | 

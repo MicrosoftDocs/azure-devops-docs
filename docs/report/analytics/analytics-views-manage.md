@@ -19,6 +19,8 @@ ms.date: 04/04/2018
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps. 
 
+[!INCLUDE [temp](../_shared/boards-disabled.md)]
+
 Use this article to learn how to:
 
 > [!div class="checklist"]
@@ -57,7 +59,7 @@ The creator of a view and all members of the Project Administrators and Project 
 <a id="share-view" />
 ## Share a view 
 
-All contributors to a team project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
+All contributors to a project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
 
 To share a private view, simply edit the view and change the sharing option to **Shared**. To unshare a view, switch the sharing option to **Private**.
 

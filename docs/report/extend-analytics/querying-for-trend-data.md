@@ -19,7 +19,7 @@ ms.date: 11/13/2017
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
 
-Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
+Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an organization with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
 
 What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
 
@@ -46,7 +46,7 @@ With this in mind, the query to create a bug trend report looks like the followi
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
   $apply=
     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
     groupby((DateValue,State), aggregate($count as Count))
@@ -59,7 +59,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,
@@ -87,7 +87,7 @@ To construct that query, do the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
   $apply=
     filter(WorkItemType eq 'Bug')/
     filter(Iteration/IterationName eq 'Sprint 99')/
@@ -101,7 +101,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,

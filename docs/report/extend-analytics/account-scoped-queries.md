@@ -36,7 +36,7 @@ Project-scope queries help answer questions about a single project whereas organ
 Base URL for project level queries:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
 
 The following project-scoped query will return the count of work items for a specific project:  
@@ -46,19 +46,19 @@ The following project-scoped query will return the count of work items for a spe
 
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/ProjectA/_odata/v1.0/WorkItems/$count
+https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/WorkItems/$count
 ```
 
 Likewise, this query string will return the areas for a specific project:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/ProjectA/_odata/v1.0/Areas
+https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/Areas
 ```
 
 This is equivalent to the following filter on an organization-scoped query:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $filter=Project/ProjectName eq 'ProjectA'
 ```
 
@@ -67,14 +67,14 @@ When using a project-scoped query with an ```$expand``` option you are not requi
 For example, the following project-scoped filter:
 
 ``` odata
-https://{OrganizationName}.analytics.visualstudio.com/ProjectA/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/WorkItems?
   $expand=Parent
 ```
 
 is filtered automatically to enforce security:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Parent($filter=ProjectName eq 'ProjectA')
 ```
@@ -83,7 +83,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 The Base URL for organization level queries is as shown:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0
+https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0
 ```
 
 When using an organization-scoped query with an ```$expand``` option you must provide an additional filter.
@@ -91,7 +91,7 @@ When using an organization-scoped query with an ```$expand``` option you must pr
 For example, the following organization-scoped query, which uses an ```$expand``` to retrieve the children of all work items&hellip;
 	
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
   &$expand=Children
 ```
@@ -99,7 +99,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 &hellip;requires an additional filter to verify the children are limited to the specified project:
 	
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
   &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
 ```
@@ -107,7 +107,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 The following query, which uses an ```$expand``` option to retrieve the parent of all work items&hellip;
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
   &$expand=Parent
 
@@ -116,7 +116,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 requires an additional filter to verify the parent is limited to the specified project:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
   &$expand=Parent($filter=Project/ProjectName eq 'ProjectA')
 ```
@@ -133,14 +133,14 @@ The `any` or `all` filters apply to the base Entity on an `$expand`.  For filter
 For example, the following query&hellip;
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
 ```
 
 &hellip;is interpreted as:
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Children
 ```
@@ -150,7 +150,7 @@ and will fail if you don€™t have access to all projects.
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
   &$expand=Children
 ```
@@ -158,14 +158,14 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Using `$level` is only supported if you have access to all projects in the collection or when using a project-scoped query:
 	
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
 Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item€™s ProjectName using $it alias, which isn€™t supported:
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Links(
     $expand=TargetWorkItem;
     $filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)

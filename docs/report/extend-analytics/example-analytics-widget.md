@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: 'vsts'
-ms.date: 11/13/2017
+ms.date: 09/10/2018
 ---
 
 # Create an Analytics widget for Azure DevOps

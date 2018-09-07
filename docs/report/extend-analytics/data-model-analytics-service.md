@@ -26,7 +26,7 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -36,7 +36,7 @@ The data model contains the following entity sets:
 |Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
 |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
 |Dates | The dates used to filter and group other entities using relationships |  
-|Projects | All projects defined for the account or collection |
+|Projects | All projects defined for an organization |
 |Process | Backlog information - used to expand or filter work items and work item types|  
 |Tags | All work item tags for each project |  
 |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
@@ -81,15 +81,15 @@ The following table provides a partial list of the WorkItemRevision entity prope
 |WorkItemType | String | The work item type (e.g. Bug, Task, User Story).
 |StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum.
 | Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
-|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the time zone for the account. Commonly used for filtering and for display.
-|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
-|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
+|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display.
+|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone defined for the organization. Used by external tools to join related entities.
+|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements.
 
 >[!NOTE]
->Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of this field. 
+>Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of the new field. 
 
 
-##Related articles 
+## Related articles 
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

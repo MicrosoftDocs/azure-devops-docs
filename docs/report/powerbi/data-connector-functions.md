@@ -97,8 +97,8 @@ This will also inform Power BI that these requests are referencing the same data
 
 Use `VSTS.Feed` function to count the number of work items in a project.
 
-1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor.
-2. In the editor add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
+1. Create a new blank query and choose "Advanced Editor" in the Power BI Query Editor.
+2. In the editor add the text below to load the feed for the `fabrikam-fiber-inc` organization and `Fabrikam-Fiber-Git` for the project name using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case select `Count`.
 
 Basic Query:
@@ -123,7 +123,7 @@ in
 Use `VSTS.Feed` function to load a count of User Stories for each Iteration Path.
 
 1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor.
-2. In the editor add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
+2. In the editor add the text below to load the feed for the `fabrikam-fiber-inc` organization and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case expand 'Iteration' and select 'Iteration Path' then select `Count`.
 
 Basic Query:
@@ -149,7 +149,7 @@ in
 Use VSTS.Feed function to load detailed information about bugs.
 
 1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor
-2. In the editor, add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
+2. In the editor, add the text below to load the feed for the `fabrikam-fiber-inc` organization and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case select `WorkItemID` and `State`.
 
 Basic Query:

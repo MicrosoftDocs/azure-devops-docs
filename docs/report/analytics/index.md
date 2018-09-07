@@ -17,7 +17,7 @@ ms.date: 3/29/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Azure DevOps. 
+Analytics provides advanced widgets you can add to a dashboard, [Power BI integration](../powerbi/index.md) for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Azure DevOps. 
 
 For more information, read [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](./reporting-roadmap.md).
 

@@ -10,14 +10,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'vsts'
-ms.date: 11/13/2017
+ms.date: 09/10/2018
 ---
 
 # Connect using the Power BI OData feed
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
+You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any Azure DevOps organization that has alternate credentials enabled. OAuth is currently not supported. 
 
 ## Access the Analytics service OData feed
 1. Make sure you have installed the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).  
@@ -28,7 +28,7 @@ You can access the Analytics service data through the Power BI Desktop OData fee
 
 4. Choose **Get Data** from either the welcome page or the Home ribbon.  
 
-	![Power BI Desktop Get Data ](_img/access-analytics-pbi-get-data.png)  
+	![Power BI Desktop Get Data ](_img/access-analytics-pbi-get-data.png) 
 
 5. Next, select **Other>OData Feed** and choose **Connect**.  
 
@@ -37,15 +37,17 @@ You can access the Analytics service data through the Power BI Desktop OData fee
 6.	In a supported browser, enter the URL in the following format:  
 
 	```OData
-	https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0-preview
+	https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/
 	```  
+
+	If the *OrganizationName* is **fabrikam** and the *version* is **v1.0**, then the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
 	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
 
-	If the *OrganizationName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
-
-	> [!NOTE]  
-	> Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>[!NOTE]  
+	>Alternatively, you can enter the URL with the *ProjectName* specified which will trim the results by the specified project across all entities related to that project. 
+	>
+	>`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/` 
 
 7. You'll see a prompt to authenticate against the service. If you have not done so previously, see [Client Authentication Options](../analytics/client-authentication-options.md).  
 

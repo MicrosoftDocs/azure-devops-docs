@@ -11,28 +11,23 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 2/8/2018
+ms.date: 09/10/2018
 ---
 
 # Connect to the Analytics service with Power BI Data Connector
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-> The Azure DevOps Power BI Data connector works with Analytics Views. For more information, see [what are Analytics Views](../analytics/what-are-analytics-views.md).
+The Azure DevOps Power BI Data connector works with Analytics views. For more information, see [what are Analytics Views](../analytics/what-are-analytics-views.md).
 
 Follow the steps below to get started using the Azure DevOps Power BI Data Connector:
 
-1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-
-2. Install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
-
-3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
-
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).
-
-5. If you are not familiar with the Analytics Service, we recommend you read "[what is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
-
-6. **Launch Power BI Desktop and get your data**. Select *Get Data* using one of the two options to access the Data Connector. 
+1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).  
+2. Install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).  
+3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).  
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).  
+5. If you are not familiar with the Analytics Service, we recommend you read "[what is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.  
+6. **Launch Power BI Desktop and get your data**. Select *Get Data* using one of the two options to access the Data Connector.  
 
 	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
 
@@ -51,7 +46,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	![](./_img/data-connector-parameters.png)
 
 	- For *Account*, enter the Azure DevOps organization name (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
-	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
+	- For *project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
 
 	> [!IMPORTANT]  
 	> Don't confuse the team name with the project name, a common mistake. 
@@ -61,7 +56,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 	Choose between these two authentication options: 
 	- Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
-	- Select *Basic* if you are connecting to a personal account or you want to use personal access token. This option also support alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
+	- Select *Basic* if you are connecting to a personal organization or you want to use a personal access token. This option also support alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
 
 	![](./_img/data-connector-get-data-6.png)
 
@@ -69,7 +64,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 	![](./_img/data-connector-get-data-7.png)
 
-10. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user account has the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
+10. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
 
 	![](./_img/data-connector-get-data-8.png)
 
@@ -77,7 +72,8 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 	Azure DevOps provides a set of [default Analytics Views](../analytics/analytics-default-views.md). You can also [create custom Analytics Views](../analytics/analytics-views-create.md). The image below shows the default Analytics views. Your list of views may differ.
 
-	![Navigator dialog, default views](../analytics/_img/default-views/navigator-dialog-default-views.png)
+	> [!div class="mx-imgBorder"]
+	> ![Navigator dialog, default views](../analytics/_img/default-views/navigator-dialog-default-views.png)
 
 	> [!NOTE]
 	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and will not impact the full data refresh.
@@ -147,7 +143,7 @@ This error typically occurs when your project has a lot of work items. The size 
 
 > The user was not authorized.
 
-**A:** You can encounter this error if you try to access a team project to which you don't have permissions.
+**A:** You can encounter this error if you try to access a project to which you don't have permissions.
 
 ![The user was not authorized.](_img/AccessDeniedError.png)
 
@@ -167,7 +163,7 @@ For more information about the security model, see [Analytics Service security](
 > We encountered an error while trying to connect. <br>
 > Details: Invalid "Project" parameter. **Project "X" does not exist or you do not have permissions to access it.**.
 
-**A:** This error indicates that the value you entered for *Project name* does not correspond to any project. A common mistake users can make is to confuse the team project name with a team name.  
+**A:** This error indicates that the value you entered for *Project name* does not correspond to any project. A common mistake users can make is to confuse the project name with a team name.  
 
 If the URL you use on a daily basis is "`https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name and it should be used in the parameter, whereas `Device` is the team name.
 

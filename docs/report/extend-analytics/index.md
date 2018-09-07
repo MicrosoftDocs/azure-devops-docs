@@ -17,12 +17,12 @@ ms.date: 3/29/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Azure DevOps account.   
+Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire Azure DevOps organization.   
 
 ## 5-Minute Quickstarts
 
 - [Query work item tracking data](wit-analytics.md)
-- [Project & account-scoped queries](account-scoped-queries.md)
+- [Project and organization-scoped queries](account-scoped-queries.md)
 
 
 ## Step-by-Step Tutorials

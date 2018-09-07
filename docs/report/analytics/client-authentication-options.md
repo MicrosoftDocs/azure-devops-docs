@@ -54,7 +54,7 @@ the **oAuth2** option.
 0. Enter the required information: 
 	- Add a description  
 	- Set the expiration period  
-	- Select the account 
+	- Select the organization 
 	- Choose Selected scopes
 	- Check the **Analytics (read)**
 	
@@ -82,13 +82,13 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 3. Click **OData Feed** (or **More>Other>OData Feed**).  
 
-4. Enter the URL for the OData endpoint and click **OK**.  
+4. Enter the URL for the OData endpoint and choose **OK**.  
 
 	<img src="_img/authentication-6.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />  
 
 5. In the authentication dialog, click Basic, enter your credentials, and then click **Connect**:  
 	- If you are using an AAC, enter your username and password  
-	- If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.      
+	- If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
 
 	<img src="_img/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 

@@ -35,6 +35,11 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
+::: moniker range="vsts"
+> [!NOTE]  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
+
 ## Connect to the web portal for your project 
 
 To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
@@ -274,7 +279,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 ### Disabled Marketplace widget 
 
-If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
 
