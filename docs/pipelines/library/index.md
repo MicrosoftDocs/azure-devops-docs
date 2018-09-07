@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 *Library* is a collection of _shared_ build and release assets for a project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.
-The **Library** tab can be accessed directly in the **Pipelines** hub in Azure Pipelines and Team Foundation Server (TFS).
+The **Library** tab can be accessed directly in Azure Pipelines and Team Foundation Server (TFS).
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 

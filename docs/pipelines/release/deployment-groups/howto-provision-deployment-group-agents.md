@@ -40,7 +40,7 @@ For information about agents and pipelines, see:
 
 ## Run the installation script on the target servers
 
-1. In the **Deployment groups** tab of the **Pipelines** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
@@ -67,13 +67,13 @@ For information about agents and pipelines, see:
 
    - Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
 
-1. In the **Deployment groups** page of the **Pipelines** hub, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
+1. In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
  
 <a name="azureext"></a>
 
 ## Install the Azure Pipelines Agent Azure VM extension
 
-1. In the **Deployment groups** tab of the **Pipelines** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
@@ -163,11 +163,11 @@ For more information about ARM templates, see [Define resources in Azure Resourc
 
 To use the template:
 
-1. In the **Deployment groups** tab of the **Pipelines** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
    location, and template information, then save the release pipeline.
@@ -176,11 +176,11 @@ To use the template:
 
 ### Install agents using the advanced deployment options
 
-1. In the **Deployment groups** tab of the **Pipelines** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:

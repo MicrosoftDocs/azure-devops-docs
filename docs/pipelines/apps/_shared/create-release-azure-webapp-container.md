@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Create a release pipeline
 
-1. In the **Pipelines** hub, open the build summary for your build and choose **Release** to start a new release pipeline.
+1. In **Azure Pipelines**, open the build summary for your build and choose **Release** to start a new release pipeline.
 
    If you have previously created a release pipeline that uses these build artifacts, you will
    be prompted to create a new release instead. In that case, go to the **Releases** tab page and

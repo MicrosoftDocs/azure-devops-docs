@@ -337,7 +337,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 Now you can create release from this release pipeline. Each release will dynamically provision your
 isolated virtual network and run your deploy and test tasks in the environment. You can find the test
 results in the release summary. After your tests are completed, you can automatically decommission your
-environments. You can create as many environments as you need with just a click from the **Pipelines** hub.
+environments. You can create as many environments as you need with just a click from **Azure Pipelines**.
 
 [Back to list of tasks](#task-list)
 

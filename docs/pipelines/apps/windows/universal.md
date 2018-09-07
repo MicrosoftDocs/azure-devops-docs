@@ -60,11 +60,11 @@ https://github.com/Microsoft/UWPQuickStart
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Pipelines** hub and asked to **Select a template** for the new build pipeline.
+ You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+ Navigate to the **Builds** tab Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
  ---
 

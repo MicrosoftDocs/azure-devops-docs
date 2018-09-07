@@ -50,7 +50,7 @@ To import the sample app into a Git repo in Azure Repos:
 
 Set up CI for your ASP.NET application and Cosmos DB to build and create deployable artifacts.
 
-1. On the **Pipelines** hub for your project in Azure Pipelines, select **builds**.
+1. In **Azure Pipelines**, select **Builds**.
 
 1. On the right-side of the screen, select **+ NEW** to create a new build.
 

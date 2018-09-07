@@ -27,8 +27,8 @@ You can:
 
 ... and much more.
 
-The **[current version](../../overview.md)** of Release Management is integrated into the **Pipelines** hub in
-Team Foundation Server (TFS) and Azure Pipelines.
+The **[current version](../../overview.md)** of Release Management is integrated into **Azure Pipelines** and
+Team Foundation Server (TFS).
 For more information, see **[Build and Release in Azure Pipelines and TFS](../../overview.md)**.
 
 The **previous versions** of Release Management are deprecated. No new features will be added to these versions:

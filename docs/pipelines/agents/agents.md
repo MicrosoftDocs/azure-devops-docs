@@ -96,7 +96,7 @@ The agent software automatically determines various system capabilities such as 
 
 When you author a build or release pipeline, or when you queue a build or deployment, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the demands [specified in the pipeline](../build/options.md). As a result, agent capabilities allow you to direct builds and deployments to specific agents.
 
-You can view the system capabilities of an agent, and manage its user capabilities by navigating to the **Agent pools** hub and selecting the **Capabilities** tab for the desired agent.
+You can view the system capabilities of an agent, and manage its user capabilities by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
 [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 
@@ -269,7 +269,7 @@ We update the agent software every few weeks in Azure Pipelines, and with every 
 
 If you run the agent interactively, or if there is a newer major version of the agent available, then you have to manually upgrade the agents. You can do this easily from the agent pools tab under your project collection or organization.
 
-You can view the version of an agent by navigating to the **Agent pools** hub and selecting the **Capabilities** tab for the desired agent.
+You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
 [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 

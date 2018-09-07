@@ -34,7 +34,7 @@ Before you begin, you need a CI build that creates your Azure RM template. To se
 
 Carry out the following steps to deploy the Azure Resource Group.
 
-1. Open the **Releases** tab of the **Pipelines** hub and choose the
+1. Open the **Releases** tab of **Azure Pipelines** and choose the
    "**+**" icon to create a new release pipeline.
 
 2. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.

@@ -120,7 +120,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="vsts"
 
-1. Select the **Pipelines** hub in your Azure Pipelines project, it should automatically take you to the **Builds** page.
+1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -182,7 +182,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="tfs-2018"
 
-1. Select the **Pipelines** hub in your Azure Pipelines project, and then choose **Builds**.
+1. Select **Azure Pipelines**, and then choose **Builds**.
 
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
@@ -210,7 +210,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="tfs-2017"
 
-1. Select the **Pipelines** hub in your Azure Pipelines project, and then the **Builds** tab.
+1. Select **Azure Pipelines**, and then the **Builds** tab.
 
  ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab.png)
 
@@ -386,7 +386,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in the **Pipelines** hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Azure Pipelines**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
 ## Add some variables and commit a change to your script
 
@@ -437,7 +437,7 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-1. Go to the **Pipelines** hub and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
+1. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
 1. Select the new build that was created and view its log.
 
@@ -602,7 +602,7 @@ Define the process for running the script in two stages.
 
 ::: moniker range="tfs-2017"
 
-1. Go to the **Pipelines** hub, and then to the **Releases** tab.
+1. Go to **Azure Pipelines**, and then to the **Releases** tab.
 
 1. Select the action to create a **New pipeline**.
 

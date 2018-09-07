@@ -112,7 +112,7 @@ use to create an Azure Virtual Machine on demand.
 Carry out the following steps to create the 
 release pipeline in Release Management.
 
-1. Open the **Releases** tab of the **Pipelines** hub and choose the
+1. Open the **Releases** tab of **Azure Pipelines** and choose the
    "**+**" icon to create a new release pipeline.
 
 1. In the **Create release pipeline** dialog, 

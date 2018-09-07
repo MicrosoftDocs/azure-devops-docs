@@ -84,7 +84,7 @@ Benefits of using the visual designer:
 The visual designer is great for users that are new to the world of CI and CD.
 
 * The visual representation of the pipelines makes it easier to get started. 
-* The visual designer is located in the same hub as the build results, making it easier to switch back and forth and make changes if needed.
+* The visual designer is located in the same section as the build results, making it easier to switch back and forth and make changes if needed.
 
 If you think the designer workflow is best for you, take the next step by [creating your first pipeline using the visual designer](get-started-designer.md).
 

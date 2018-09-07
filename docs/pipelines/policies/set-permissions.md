@@ -69,7 +69,7 @@ Permissions for [variable groups](../library/variable-groups.md), [secure files]
 > [!NOTE]
 > **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.
 
-You can set the security for all artifacts for a project, as well as set the security for individual artifacts. The method is similar for all three artifact types. You set the security for variable groups and secure files from the **Pipelines** hub, **Library** page, and for deployment groups, from the **Deployment groups** page.
+You can set the security for all artifacts for a project, as well as set the security for individual artifacts. The method is similar for all three artifact types. You set the security for variable groups and secure files from **Azure Pipelines**, **Library** page, and for deployment groups, from the **Deployment groups** page.
 
 For example, here we show how to set the security for variable groups.  
 
@@ -97,7 +97,7 @@ For example, here we show how to set the security for variable groups.
 
 ## Manage task group permissions
 
-Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Pipelines** hub.
+Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of **Azure Pipelines**.
 
 > [!NOTE]
 > **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.

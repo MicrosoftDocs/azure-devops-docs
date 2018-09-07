@@ -6,7 +6,7 @@ ms.topic: include
 
 Deployment groups in Azure Pipelines make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
-1. Open the Azure Pipelines web portal, navigate to the **Pipelines** hub, and then click **Deployment groups**.
+1. Open the Azure Pipelines web portal and choose **Deployment groups**.
 
 1. Click **Add Deployment group** (or **New** if there are already deployment groups in place).
 
@@ -29,4 +29,4 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
-1. On the **Deployment groups** page of the **Pipelines** hub in Azure Pipelines, open the *myIIS* deployment group. On the **Targets** tab, verify that your VM is listed.
+1. On the **Deployment groups** page in Azure Pipelines, open the *myIIS* deployment group. On the **Targets** tab, verify that your VM is listed.
