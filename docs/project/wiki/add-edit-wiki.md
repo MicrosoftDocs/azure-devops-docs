@@ -40,7 +40,7 @@ As you continue editing the page, save the page by entering **Ctrl+S**. To save 
 Use this topic to learn how to:  
 
 > [!div class="checklist"]
-> * Open the **Wiki** hub
+> * Open **Wiki**
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -60,7 +60,7 @@ Use this topic to learn how to:
 <a id="add-page" />
 ## Add a wiki page
 
-To add another page, click **New page**. Or, to add a sub-page, open the context menu of an existing page and click **Add sub-page**.
+To add another page, choose **New page**. Or, to add a sub-page, open the context menu of an existing page and select **Add sub-page**.
 
 You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming). 
 

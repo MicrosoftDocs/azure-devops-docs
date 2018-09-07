@@ -5,10 +5,10 @@ ms.topic: include
 
 <a id="kanban-board-shortcuts"></a>
 
-You can use the following keyboard shortcuts from any Kanban board, that is, when working in the **Work** hub, **Board** page.  
+You can use the following keyboard shortcuts from any Kanban board, that is, when working from **Repos>Boards** or **Work>Board** page.  
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
+> [!NOTE]  
+> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
 
 <table width="70%">
 <tbody valign="top">

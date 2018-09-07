@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 When a user with access to Azure DevOps Services or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This will automatically void their user account and remove their ability to access or connect to Azure DevOps or TFS. 
 
 ::: moniker range="vsts"  
-If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), then you'll need to [remove their account from the Users hub](../accounts/delete-organization-users.md). 
+If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), then you'll need to [remove their account](../accounts/delete-organization-users.md). 
 
 In this topic you'll find:
 > [!div class="checklist"]
@@ -40,7 +40,7 @@ In this topic you'll find:
 
 ## Consider when removing users
 
-* Have you granted users any paid extensions? You'll want to transfer those extensions to another user from the **Users** hub. 
+* Have you granted users any paid extensions? You'll want to [transfer those extensions to another user](../accounts/delete-organization-users.md). 
 * Do users have any tokens that you need to revoke?
 * Have you granted individual user accounts special permissions that need to be revoked? 
 * Have you reassigned work users you are removing to current team members? 
@@ -67,7 +67,7 @@ For information on removing users from AD or Azure AD, see one of these topics:
 * [Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)
 
 > [!NOTE]
-> To access the **Users** hub and manage users, you must be a member of the [Project Collection Administrator group](set-project-collection-level-permissions.md).
+> To manage users, you must be a member of the [Project Collection Administrator group](set-project-collection-level-permissions.md).
 
 ::: moniker-end 
 

@@ -61,7 +61,8 @@ The following example shows how to find all closed bugs by modifying the
 0.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
 	::: moniker range="vsts"	
-	![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
+	> [!div class="mx-imgBorder"]
+	> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 

@@ -55,7 +55,7 @@ To add a board to support an additional portfolio backlog, see [Add a portfolio 
 To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add a new item on Kanban board, agile hub](_img/quickstart/add-new-item-agile.png) 
+> ![Add a new item on Kanban board, new nav](_img/quickstart/add-new-item-agile.png) 
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want using this method. 
 
@@ -70,7 +70,7 @@ The system automatically saves the work item with the title you entered. You can
 To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add a new item on Kanban board, standard hub](_img/quickstart/add-new-item-standard.png)
+> ![Add a new item on Kanban board, prev nav](_img/quickstart/add-new-item-standard.png)
 
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want using this method. 

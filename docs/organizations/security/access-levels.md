@@ -216,7 +216,7 @@ If you need access to the following features&mdash;which support the daily work 
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
-- Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  
+- Access the full set of features provided under **Code**, **Build and Release**, and **Test**   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -224,7 +224,7 @@ If you need access to the following features&mdash;which support the daily work 
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
-- Access the full set of features of the **Code**, **Build and Release**, and **Test** hubs  
+- Access the full set of features provided under **Code**, **Build and Release**, and **Test**   
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 ::: moniker-end
 
@@ -261,7 +261,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 **TFS 2017.1**
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 ![Advanced access features](_img/access-levels-2015-advanced.png)  
 
 > [!NOTE]   
-> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the **Advanced** access level and the Test Manager extension.  
+> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension.  
  
 ::: moniker-end
 

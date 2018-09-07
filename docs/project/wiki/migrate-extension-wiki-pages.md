@@ -21,7 +21,7 @@ ms.date: 03/01/2018
 With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a Git repo in your team project.  
 
 > [!NOTE]  
-> Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project Wiki. The **Wiki** hub is available for TFS 2018 and later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
+> Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project Wiki. The **Wiki** feature is available for TFS 2018 and later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
 
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with these steps:  
 1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool

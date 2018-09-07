@@ -3,14 +3,14 @@ ms.topic: include
 ---
 
 <a id="open-process-wit">  </a>
-## Open Settings>Process hub
+## Open Settings>Process
 
 > [!NOTE]
 > Choose **Previous navigation** when you see a top-level, blue-bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar along with other navigational features are enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps Services organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).    
 
 # [New navigation](#tab/new-nav)
 
-You create, manage, and make customizations to processes from the **Organization Settings>Process** hub. 
+You create, manage, and make customizations to processes from **Organization Settings>Process**. 
 
 0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -29,7 +29,7 @@ You create, manage, and make customizations to processes from the **Organization
 
 # [Previous navigation](#tab/previous-nav)
 
-You create, manage, and make customizations to processes from the **Settings>Process** hub. 
+You create, manage, and make customizations to processes from **Settings>Process**. 
 
 0. To open the admin context from the user context, choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and choose **Organization settings**.
  

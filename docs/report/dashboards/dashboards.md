@@ -120,7 +120,7 @@ All dashboards are associated with a team.
 	For example, here we choose to view the Work in Progress dashboard. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards hub, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
+	> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
 
 ::: moniker-end  
 
@@ -131,7 +131,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="vsts"
 
-1. From the **Dashboards** hub, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
+1. From **Dashboards**, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
@@ -156,7 +156,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-From the **Dashboards** hub, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
+From **Dashboards**, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 

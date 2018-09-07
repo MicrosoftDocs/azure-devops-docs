@@ -155,6 +155,8 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
+::: moniker range="vsts"  
+
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -184,6 +186,11 @@ To learn more, see [Search code](../search/code-search.md).
 1. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)  
 

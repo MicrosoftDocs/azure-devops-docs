@@ -26,7 +26,7 @@ Each view defines a dataset designed to support viewing, sharing, and publishing
 ## Analytics Marketplace extension 
 
 When you install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), the following actions occur: 
-- An **Analytics** hub appears in your web portal Azure DevOps Services account
+- The **Analytics views** pages appear in your web portal Azure DevOps Services account
 - Several [Analytics widgets](analytics-widgets.md) become available for use on your Azure DevOps Services dashboards 
 - Several default Analytics views are created as described in the next section. 
 

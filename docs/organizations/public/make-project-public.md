@@ -86,12 +86,12 @@ Before you can change a private project, to a public project, you must enable an
 0. To switch from private to public, choose the **Public** icon.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
+	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
 
 0. Review the information provided, and choose **Change** to confirm your action.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
+	> ![Change project visibility confirmation dialog](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -101,17 +101,17 @@ Before you can change a private project, to a public project, you must enable an
 0. Choose the **Specific People** link. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/open-private-public-form.png) 
+	> ![Open Change project visibility](_img/make-public-private/open-private-public-form.png) 
 
 0. To switch from private to public, choose the **Public** icon.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
+	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
 
 0. Review the information provided, and choose **Change** to confirm your action.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
+	> ![Change project visibility confirmation dialog](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
 
 ---
@@ -120,7 +120,7 @@ Before you can change a private project, to a public project, you must enable an
 
 # [New navigation](#tab/new-nav)
 
-0. Choose **Project Settings** in the sidebar.
+0. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](_img/make-public-private/open-project-settings-public-vert-brn.png)  
@@ -133,12 +133,12 @@ Before you can change a private project, to a public project, you must enable an
 0. To switch from public to private, choose the **Private** icon.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-public.png)  
+	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-public.png)  
 
 0. Choose **Change** to confirm your action.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
+	> ![Change project visibility confirmation dialog](_img/make-public-private/change-project-visilibity-public-to-private.png)  
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -148,17 +148,17 @@ Before you can change a private project, to a public project, you must enable an
 0. Choose the **Public** link. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/make-public-project-private-link.png) 
+	> ![Open Change project visibility](_img/make-public-private/make-public-project-private-link.png) 
 
 0. To switch from public to private, choose the **Private** icon.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-public.png)  
+	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-public.png)  
 
 0. Choose **Change** to confirm your action.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
+	> ![Change project visibility confirmation dialog](_img/make-public-private/change-project-visilibity-public-to-private.png)  
 
 
 

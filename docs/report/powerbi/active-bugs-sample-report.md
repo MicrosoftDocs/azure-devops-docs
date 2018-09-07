@@ -52,7 +52,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ## Create a view to only include Active bugs
 
-From the **Analytics** hub, choose ![plus icon](../_img/icons/blue-plus.png) **New View** to create a custom view. Fill out the forms provided in each tab as shown in the steps below. 
+From the web portal, **Analytics view**, choose ![plus icon](../_img/icons/blue-plus.png) **New View** to create a custom view. Fill out the forms provided in each tab as shown in the steps below. 
 
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
 

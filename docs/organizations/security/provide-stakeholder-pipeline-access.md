@@ -32,7 +32,7 @@ To enable the **Free access to Pipelines for Stakeholders** feature, see [Enable
 > [!div class="mx-imgBorder"]  
 > ![Preview feature, account level](_img/stakeholder-security/preview-feature.png)
 
-When the feature is turned on, all Stakeholders in your account will have full access to the **Build and Release** hub and it's associated features. This includes the ability to view, create, and delete automated test runs. For a complete list of associated features and tasks, see [Build and release permissions and roles](../../pipelines/policies/permissions.md). 
+When the feature is turned on, all Stakeholders in your account will have full access to **Pipelines** or **Build and Release** and it's associated features. This includes the ability to view, create, and delete automated test runs. For a complete list of associated features and tasks, see [Build and release permissions and roles](../../pipelines/policies/permissions.md). 
 
 Stakeholders are still subject to the permissions set for their security group. For example, if they are in the Project Readers security group they will have Read-only access to **Build and Release**.  If you need more fine grained control over what features Stakeholders can access, you can create a custom security group and set more fine grained permissions to certain groups of users as described in the next section. 
 

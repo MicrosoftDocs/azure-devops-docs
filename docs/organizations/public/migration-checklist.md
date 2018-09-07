@@ -95,7 +95,7 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 Are any extensions vital to your project's experience?
 For instance, do you have a control on your work item form which renders data in a particular way?
-Are there custom hubs which expose important details?
+Are there custom extensions which expose important details?
 
 * Confirm that each extension's author has made it available for non-members by testing it.
 * If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md). 

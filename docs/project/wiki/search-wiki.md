@@ -62,7 +62,7 @@ English language stemming support helps you find the most relevant wiki pages. F
 
 
 > [!TIP]    
-> When you search from the **Wiki** hub, you'll automatically navigate to wiki search results. If you initiate a search from another hub, such as **Code** or **Work**, then first select the **Search wiki** option from the search box menu options. 
+> When you search from **Wiki**, you'll automatically navigate to wiki search results. If you initiate a search from another page, such as one under **Repos/Code** or **Boards/Work**, then first select the **Search wiki** option from the search box menu options. 
 
 
 ## Related articles

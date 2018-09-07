@@ -56,20 +56,20 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-0. From the **Analytics** hub **All** page, choose the ![](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a team project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+0. From the **Analytics view>All** page, choose the ![](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a team project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)  
 
 0. Choose the **Verification** tab and then the **Verify view** button. 
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verify-view.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\verify-view.png)  
 
 	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verified-view.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\verified-view.png)  
 
 0. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
@@ -98,7 +98,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 	Need help connecting? See [Connect with Power BI Data Connector](data-connector-connect.md).
 
 	> [!NOTE]  
-	> Because you verified the view in the previous section, the view should load. However, if the view won't load, it is most likely because the dataset is too large. Return to the view in the Analytics hub and adjust the filters to decrease the size of the dataset. 
+	> Because you verified the view in the previous section, the view should load. However, if the view won't load, it is most likely because the dataset is too large. Return to the view under the **Analytics view** in the web portal and adjust the filters to decrease the size of the dataset. 
 
 ## Create a daily trend report 
 

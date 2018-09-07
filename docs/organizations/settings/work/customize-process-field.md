@@ -48,7 +48,7 @@ Fields listed correspond to all those defined for the organization. For descript
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
+0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
 	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).

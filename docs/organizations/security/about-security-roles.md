@@ -29,7 +29,7 @@ You manage the security for the following artifacts and features by adding a use
 [Agent queues](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools](../../pipelines/policies/set-permissions.md)<br/>- [Deployment groups](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools](../../pipelines/policies/set-permissions.md#deployment-group) - [Secure files](../../pipelines/policies/set-permissions.md#library)<br/>- [Service connections](../../pipelines/policies/set-permissions.md)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#library)
 
  
-##Default role assignments
+## Default role assignments
 
 By default, all contributors in a project are members of the User role on each hosted queue.  This allows every contributor in a project to author and run build and release pipelines using hosted queues.
 -->
@@ -48,7 +48,7 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Deployment group security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
+You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
 
 [!INCLUDE [temp](_shared/deployment-group-roles.md)]
 
@@ -60,7 +60,7 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 ## Library asset security roles: Variable groups and secure files
 
-You [add users to a library role](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
+You [add users to a library role](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](_shared/library-roles.md)]
 

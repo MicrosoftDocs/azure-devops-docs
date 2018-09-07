@@ -19,10 +19,10 @@ If you don't see the team or team project you want, choose the ![](/azure/devops
 
 # [Previous navigation](#tab/previous-nav)
 
-From a web browser, connect to your team project, choose  **Analytics**, and then **All**.  
+From a web browser, connect to your team project, choose  **Analytics views**, and then **All**.  
 
 > [!div class="mx-imgBorder"]
-> ![Analytics hub](/azure/devops/report/analytics/_img/editable-views/directory-top.png)   
+> ![Analytics views](/azure/devops/report/analytics/_img/editable-views/directory-top.png)   
 
 If you don't see the team or team project you want, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](/azure/devops/project/navigation/work-across-projects).  
 

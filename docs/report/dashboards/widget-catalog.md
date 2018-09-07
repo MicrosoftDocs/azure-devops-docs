@@ -36,9 +36,9 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
-> |Analytics  |Team-scoped  |User-focused |  Build, test, release |Other |
-> |-------------|----------|---------|---------|---------|
-> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
+> |Analytics  |Team-scoped  | Other |
+> |-------------|----------|---------|
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 
 ::: moniker-end
 
@@ -63,6 +63,10 @@ The following widgets are available to you. Team-scoped widgets display data bas
 > |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |   
 ::: moniker-end
 
+::: moniker range="vsts"
+> [!NOTE]  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 ## Azure Boards/Work widgets 
@@ -244,6 +248,8 @@ Provides quick access to open the following Agile tools and team resources:
 ## Analytics widgets
 
 To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+
+For an overview of each of these widgets, see [Widgets based on the Analytics Service](../analytics/analytics-widgets.md).
 
 ###Burndown chart 
 <a id="burndown-analytics-widget"></a>  

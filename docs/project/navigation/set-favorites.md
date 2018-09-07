@@ -88,7 +88,6 @@ You can set favorites for the following artifacts from the indicated page.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
@@ -131,6 +130,9 @@ You can set favorites for the following artifacts from the indicated page.
 <a id="view-favorites">  </a>
 ## View personal favorites   
 
+> [!NOTE]  
+> Favorite groups specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, then the favorite groups&mdash;Plans, Boards, Backlogs, Analytics views, Sprints, and Queries item and all Analytics widgets&mdash;are disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+
 
 # [New navigation](#tab/new-nav)
 
@@ -164,9 +166,8 @@ Access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon
 ---
 
 
-::: moniker range="vsts"
-## Favorite an Agile tool 
-::: moniker-end
+
+## Favorite a team's backlog, Kanban board, or other artifact
 
 # [New navigation](#tab/new-nav)
 
@@ -200,9 +201,8 @@ Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in
 
 ---
 
-::: moniker range="vsts"  
+
 ## Favorite a dashboard 
-::: moniker-end
 
 # [New navigation](#tab/new-nav)
 
@@ -260,9 +260,7 @@ Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-Favoriting a dashboard isn't supported for TFS 2018 and earlier versions.
-::: moniker-end  
+Favoriting a dashboard isn't supported in  previous navigation.  
 
 ---
 

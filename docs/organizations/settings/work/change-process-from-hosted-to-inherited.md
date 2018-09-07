@@ -25,7 +25,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
 <a id="open-process-wit">  </a>
-## Open Settings>Process hub
+## Open Settings>Process
 
 You create, manage, and make customizations to processes from the **Settings>Process** pages. 
 
@@ -45,7 +45,7 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 
 After you've verified your customizations, you can now apply the inherited process to your existing project. 
 
-0. From the Process hub, choose the orignal Hosted XML process, then choose the **Projects** page. 
+0. From **Process**, choose the original Hosted XML process, then choose the **Projects** page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)

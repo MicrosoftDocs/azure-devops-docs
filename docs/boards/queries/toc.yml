@@ -1,7 +1,6 @@
 - name: Queries
   href: index.md
 - name: Overview
-  expanded: true
   items:
   - name: About managed queries
     href: example-queries.md
@@ -28,6 +27,7 @@
   - name: "Link types & relationships"
     href: link-work-items-support-traceability.md
 - name: Samples
+  expanded: true
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 

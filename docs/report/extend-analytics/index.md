@@ -15,7 +15,6 @@ ms.date: 3/29/2018
 
 #  Extend Analytics with OData (Preview) 
 
-
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Azure DevOps account.   
@@ -38,7 +37,7 @@ Using OData, you can directly query the Analytics Service for Azure DevOps from 
 - [Create an Analytics widget](example-analytics-widget.md)
 
 <!---
-- [Build a hub extension](building-extension-against-analytics-service.md)
+- [Build a hub extension against the analytics service](building-extension-against-analytics-service.md)
 - [Build a dashboard widget extension](widget-extensions-against-analytics-service.md)
 - [Add widget configuration to an extension](widget-extension-against-analytics-service-configuration.md)
 -->
@@ -57,7 +56,6 @@ Understand Agile process data
 
 ## How-to Guides
 - [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
-
 
 
 ## Reference

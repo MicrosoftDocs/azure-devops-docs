@@ -60,6 +60,12 @@ This feature isn't available from the previous navigation settings. However, you
 
 ---
 
+## Disabled objects and features 
+If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled and won't appear in the [widget catalog](../../report/dashboards/widget-catalog.md). 
+
+If you disable **Boards**, you also disable [**Analytics views**](../../report/analytics/what-are-analytics-views.md).
+
+
 ## Related articles
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [Change the project visibility, public or private](../public/make-project-public.md)

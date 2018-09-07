@@ -82,7 +82,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 - [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
-- [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
+- [New Work Items](../../boards/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 

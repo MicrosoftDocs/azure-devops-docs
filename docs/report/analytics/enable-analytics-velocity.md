@@ -28,6 +28,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 - You must have a project defined for an Azure DevOps Services organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
+- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
 
 ## Install the Analytics extension 
@@ -65,7 +66,7 @@ To add a widget to a dashboard, you connect to your team project using a [suppor
 
 0. Connect to the web portal for your team project and choose **Dashboards**.  
 
-	![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)
+	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
 
 0. Select any dashboard or [create a new dashboard](../dashboards/dashboards.md).  
 

@@ -17,12 +17,12 @@ You can use the following keyboard shortcuts from the web portal.
 &nbsp;&nbsp;**?**&nbsp;&nbsp;&nbsp;Show shortcuts<br/>
 &nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Projects and teams<br/>
 <br/>
-**g,h**&nbsp;&nbsp;&nbsp;Go to the [Dashboards hub](/azure/devops/report/dashboards/dashboards)<br/>
-**g,w**&nbsp;&nbsp;&nbsp;Go to the [Work hub](/azure/devops/boards/get-started/what-is-azure-boards)<br/>
-**g,c**&nbsp;&nbsp;&nbsp;Go to the [Code hub](/azure/devops/repos/git/overview)<br/>
-**g,b**&nbsp;&nbsp;&nbsp;Go to the [Build-Release hub](/azure/devops/pipelines/overview)<br/>
-**g,t**&nbsp;&nbsp;&nbsp;Go to the [Test hub](/azure/devops/test/index)<br/>
-**g,s**&nbsp;&nbsp;&nbsp;Go to [Settings (Admin context)](/azure/devops/organizations/settings/configure-team-settings)<br/>
+**g,h**&nbsp;&nbsp;&nbsp;Go to [**Dashboards**](/azure/devops/report/dashboards/dashboards)<br/>
+**g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](/azure/devops/boards/get-started/what-is-azure-boards)<br/>
+**g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos** or **Code**](/azure/devops/repos/git/overview)<br/>
+**g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](/azure/devops/pipelines/overview)<br/>
+**g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans** or **Test**](/azure/devops/test/index)<br/>
+**g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](/azure/devops/organizations/settings/about settings)<br/>
 
 <br/>
 **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>

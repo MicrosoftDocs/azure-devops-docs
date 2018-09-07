@@ -23,7 +23,7 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 > * Meet prerequisites to access Analytics views
-> * Open the Analytics hub
+> * Open **Analytics views**
 > * Edit an existing view
 > * Share a view
 > * Favorite a view
@@ -72,7 +72,7 @@ To share a private view, simply edit the view and change the sharing option to *
 ## Favorite a view
 
 Favoriting an item provides a quick way to navigate to items you regularly visit. 
-To favorite a view, hover over the view in the Analytics hub and choose the ![star icon](../../_img/icons/icon-favorite-star.png).
+To favorite a view, hover over the view and choose the ![star icon](../../_img/icons/icon-favorite-star.png).
     
 > [!div class="mx-imgBorder"]
 > ![Favorite a view](_img/editable-views/directory-favorite.png)

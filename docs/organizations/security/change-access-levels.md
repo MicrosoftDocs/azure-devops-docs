@@ -99,32 +99,60 @@ If you're managing access for a large group of users, a best practice is to firs
 
 You can learn more about each of the features you have access to from the following topics. Basic  includes all features supported by Stakeholder, and Advanced includes access to all features supported by Basic.
 
+###Stakeholder access
+With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.) Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 
-> [!div class="mx-tdBreakAll"]
-> | Stakeholder access<sup> 1</sup> | Basic access<sup> 5</sup> | Advanced access (TFS 2017, TFS 2015, TFS 2013) |
-> |-------------|----------| ----------| 
-> | - View My [Work items](../../boards/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../../report/dashboards.md) & [Queries](../../boards/queries/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../../boards/backlogs/create-your-backlog.md), [Kanban](../../boards/boards/kanban-basics.md) & [Task](../../boards/sprints/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../../pipelines/release/index.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../../boards/sprints/assign-work-sprint.md)<br/>- [Request and manage feedback](../../project/feedback/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../../report/charts.md)<br/>- Code: [Git](../../repos/git/overview.md) and [TFVC](../../repos/tfvc/overview.md)<br/>- [Build](../../pipelines/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../../boards/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../../test/run-manual-tests.md)<br/>- Create and manage releases<sup> 4</sup><br/>- [Author release pipelines](../../pipelines/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../../boards/backlogs/define-features-epics.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../../test/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017.2, TFS 2018)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
+To learn more, see [About access levels](access-levels.md).
 
-### Notes:
+- View My [Work items](../../boards/backlogs/add-work-items.md)
+- Standard features: [Dashboards](../../report/dashboards.md) & [Queries](../../boards/queries/using-queries.md)<sup> 1</sup>
+- Agile boards: [Backlogs](../../boards/backlogs/create-your-backlog.md), [Kanban](../../boards/boards/kanban-basics.md) & [Task](../../boards/sprints/task-board.md) <sup> 2</sup>
+- [View releases and manage approvals](../../pipelines/release/index.md)<sup> 3</sup> 
 
-1.	With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.)
-Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
-2.	Standard features include access to the Home and Work hubs.
-3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../organizations/security/get-started-stakeholder.md) for details.
-4. 	Release Management is in preview and available when you [upgrade your application server to TFS 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).   
-5.	Basic access allows you to access the Code, Build, and Test hubs in addition to the Home and Work hubs.
-6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
-7.	You can open the Admin context and view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
-8.	Advanced home page allows you to configure and view the Welcome page in addition to team dashboards.  
-9.	You can [purchase Test Manager extensions and assign to user accounts](access-levels.md#test-manager) to gain full access to web-based Test case management tools.
-10.	With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).    
+**Notes:**
+1. Standard features include access to **Dashboards** or **Home** and **Work**.
+2. Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../organizations/security/get-started-stakeholder.md) for details.
+3. Requires TFS 2015.2 or later version.   
+
+### Basic access
+Basic access allows users to access **Code**, **Build**, and **Test**  in addition to **Dashboards/Home** and **Work**.
+- [Basic & Advanced backlog and sprint planning tools](../../boards/sprints/assign-work-sprint.md)  
+- [Request and manage feedback](../../project/feedback/get-feedback.md)<sup> 1</sup>  
+- [Chart viewing & Chart authoring](../../report/charts.md)  
+- **Code**: [Git](../../repos/git/overview.md) and [TFVC](../../repos/tfvc/overview.md)  
+- [Build](../../pipelines/overview.md)  
+- [Administer account](#administer-account)<sup> 2</sup>
+- [Advanced home page](../../project/wiki/project-vision-status.md)<sup> 3</sup>
+- [Author release pipelines](../../pipelines/release/index.md)<sup> 4</sup>
+- [Advanced portfolio management](../../boards/backlogs/define-features-epics.md) 
+- [Team rooms](../../notifications/collaborate-in-a-team-room.md)
+- [Analyze test results and manage machine groups](../../test/test-different-configurations.md) 
+
+**Notes:**
+
+1.	Requires TFS 2015.1 or later version.
+2.	You can open Team settings, Project settings, and Collection level settings to view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
+3.	Advanced home page allows you to configure and view the Project summary page in addition to team dashboards.  
+4.	Requires TFS 2015.2 or later version.    
+
+Within the admin context, there are several pages which support administrating features at the team, project, project collection/organization level. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md).
+
+
+::: moniker range=">= tfs-2013  <= tfs-2017"  
+###Advanced access (TFS 2017, TFS 2015, TFS 2013)
+
+- [Web-based test case management](../../test/create-a-test-plan.md)  
+	Users assigned Advanced access can manage test cases when you have [purchased Test Manager extensions and assigned to the user accounts](access-levels.md#test-manager) to gain full access to web-based Test case management tools.
+
+::: moniker-end  
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+###VS Enterprise (TFS 2017.2, TFS 2018)
+- Microsoft published TFS Extensions  
+	With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
+::: moniker-end  
 
 <a id="administer-account" >  </a>
 
-Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
-
-- [Permissions and group reference](permissions.md)   
-- [About teams and team tools](../settings/about-teams-and-settings.md)   
 
 ## Related articles
 
@@ -132,6 +160,6 @@ Within the admin context, there are several hubs which support administrating fe
 
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
-- [Permissions & access](permissions-access.md)  
+- [Default permissions and access](permissions-access.md)  
 - [Web portal navigation](../../project/navigation/index.md)  
 
