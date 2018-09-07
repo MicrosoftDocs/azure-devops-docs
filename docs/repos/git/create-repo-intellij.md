@@ -39,7 +39,7 @@ To complete the steps in this guide you need:
 
   ![Select project](_img/create-repo-intellij/select-vsts-project.png) 
 
-  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
   
 0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
