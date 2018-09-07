@@ -71,7 +71,7 @@ There are 3 authentication types for granting Azure Pipelines access to your Git
 
 ### 1. GitHub App
 
-The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub organization, your pipeline can run without using your personal GitHub identity.
+The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity.
 Builds and GitHub status updates will be performed on behalf of the Azure Pipelines identity.
 Additionally, the GitHub App works with the [GitHub Checks API](https://developer.github.com/changes/2018-05-07-new-checks-api-public-beta/)
 to display build, test, and code coverage results in GitHub.
@@ -82,12 +82,9 @@ To use the GitHub App, install it in your GitHub account or organization. The ap
 
 1. The app's [homepage](https://github.com/apps/azure-pipelines) - recommended when no parallel jobs are being purchased.
 1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories,
-but where cancelation of the price plan may result in several days before the app is completely uninstalled.
+but where cancelation of the price plan may delay uninstallation until the end of your billing period, even for the free plan.
 
-To install the GitHub App, GitHub policies require one of the following:
-
-1. You are an owner of the account or organization in which the app will be installed.
-1. You are an admin of the repository in the organization, and you seek approval from an organization owner to install the app.
+To install the GitHub App, you must be a repository admin or GitHub organization owner.
 
 #### Permissions
 
@@ -99,7 +96,6 @@ The GitHub App requests the following permissions during installation:
 | Read access to metadata | Azure Pipelines will retrieve GitHub metadata for displaying the repository, branches, and issues associated with a build in the build's summary. |
 | Read and write access to checks | Azure Pipelines will read and write its own build, test, and code coverage results to be displayed in GitHub. |
 | Read and write access to pull requests | Upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Azure Pipelines will retrieve GitHub metadata for displaying any pull request associated with a build in the build's summary. |
-| Read and write access to team discussions | Azure Pipelines will allow triggering builds and performing other actions when specific keywords are posted by collaborators to team discussions such as in pull requests. |
 
 <!--
 Detailed permissions not displayed to the user during installation:
@@ -110,12 +106,11 @@ Detailed permissions not displayed to the user during installation:
 | Repository metadata (read)
 | Pull requests (read & write)
 | Commit statuses (read & write)
-| Team discussions (read & write)
  -->
 
 ### 2. OAuth
 
-[OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is simplest authentication type to get started with. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
+[OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is simplest authentication type to get started with for repositories in your personal GitHub account. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
 
 #### Using OAuth
 
@@ -162,7 +157,7 @@ Otherwise, **the repository will not appear** in the repository list while creat
 
 | If the repo is in your personal GitHub account | If the repo is in someone else's personal GitHub account | If the repo is in a GitHub organization that you own | If the repo is in a GitHub organization that someone else owns |
 |-----------------------------|-|-|-|
-| Install the Azure Pipelines GitHub App in your personal GitHub account. You can do so from [here](https://github.com/apps/azure-pipelines). | **1.** The other person must install the Azure Pipelines GitHub App in their personal GitHub account. They can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator in the repository's settings under "Collaborators". Accept the invitation to be a collaborator using the link that is emailed to you. | **1.** Install the Azure Pipelines GitHub App in the GitHub organization. You can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** A GitHub organization owner or repository admin must install the Azure Pipelines GitHub App in the organization. Repository admins will require approval from an organization owner. The app can be installed from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". Accept the invitation to be a collaborator using the link that is emailed to you. |
+| Install the Azure Pipelines GitHub App in your personal GitHub account. You can do so from [here](https://github.com/apps/azure-pipelines). | **1.** The other person must install the Azure Pipelines GitHub App in their personal GitHub account. They can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator in the repository's settings under "Collaborators". Accept the invitation to be a collaborator using the link that is emailed to you. | **1.** Install the Azure Pipelines GitHub App in the GitHub organization. You can do so from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** A GitHub organization owner or repository admin must install the Azure Pipelines GitHub App in the organization. The app can be installed from [here](https://github.com/apps/azure-pipelines). <br/><br/> **2.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". Accept the invitation to be a collaborator using the link that is emailed to you. |
 
 ### Repository permissions for OAuth authentication
 
