@@ -25,7 +25,7 @@ If you are just adding an Analytics widget to a dashboard or viewing an Analytic
 
 ## Set permissions 
 
-You grant or restrict permissions to a user by setting one or more permissions for the Analytics service to **Allow** or **Deny** through the team project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics service data.  
+You grant or restrict permissions to a user by setting one or more permissions for the Analytics service to **Allow** or **Deny** through the project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics service data.  
   
 0. Open **Project Settings>Security**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
   
@@ -39,7 +39,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
 	To learn more about working with permissions, see [Security & identity](../../organizations/security/index.md).
 
 > [!NOTE]  
-> The Analytics Service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a team project.  
+> The Analytics Service does not support security at the area path level. Therefore, if a user has access to a project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a project.  
 
 
 [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]

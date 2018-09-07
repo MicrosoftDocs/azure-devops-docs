@@ -22,6 +22,8 @@ You create a custom Analytics view to define the filtered set of data and other 
 
 You create custom views in the web portal for Azure DevOps Services, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
+[!INCLUDE [temp](../_shared/boards-disabled.md)]
+
 Use this article to learn how to:
 
 > [!div class="checklist"]
@@ -39,7 +41,7 @@ Use this article to learn how to:
 
 ## Browse your views
 
-From the **All** page as shown in the following image, you can access all Analytics views defined for the team project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the team project. Anyone on your team can connect and use shared views in Power BI.
+From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
 > ![Analytics Views directory](_img\editable-views\directory-actions.png)
@@ -81,7 +83,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 * **Add Teams or Area Path filters**
 
-   By default, a view includes all the teams defined in the current team project. You can specifically select teams in the current team project or add additional team projects defined in the account to the filter. 
+   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add additional projects defined in the organization to the filter. 
 
  You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
 > [!div class="mx-imgBorder"]
@@ -204,9 +206,3 @@ Choose the **Edit** link to edit a view.
 - [Grant permissions to access the Analytics service](./analytics-security.md)
 - [Power BI integration overview](../powerbi/overview.md)
 
-
-<!---
-Each default Analytics view returns a filtered set of data in a team project along with a common set of fields. These views work well for customers with small dataset sizes and general scenarios. With larger accounts, the volume of data may be too much for Power BI to load.
-
-To fine tune the fields, scope or history of views, you create a custom Analytics view. 
--->

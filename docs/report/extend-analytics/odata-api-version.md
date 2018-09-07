@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 11/13/2017
+ms.date: 09/10/2018
 ---
 
 # OData API versioning
@@ -23,7 +23,7 @@ The API version follows the _odata element in the request path and is formatted 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
@@ -103,10 +103,10 @@ Once a preview version matures enough for release it will be made available with
 ### 3 - Deprecated
 Deprecated versions are no longer supported, and requests made to them will not be fulfilled. If you attempt to request a deprecated or unsupported version you will receive an HTTP 410 response code and a message like:
 
-
+<!--- This FWLINK points back to the topic 
 > *The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818*
 
-
+-->
 
 ## Preview versions
 None

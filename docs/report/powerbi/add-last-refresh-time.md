@@ -36,7 +36,7 @@ The steps below show how to add a column to your model which will contain the la
 	 
     ```Query 
     let
-        Source = VSTS.AnalyticsViews("{OrganizationName}", "{project}", null),
+        Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", null),
         #"{tableid}_Table" = Source{[Id="{tableid}",Kind="Table"]}[Data],
     in
         #"{tableid}_Table"

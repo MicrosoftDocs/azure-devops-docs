@@ -41,7 +41,7 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a team project, except stakeholders, can view **Analytics views**.
+* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 * Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
@@ -67,12 +67,12 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. From the **Work items** tab, select the Project and Team that contain the data you want to report on.  
  
-	Here we choose the FabrikamFiber team project and the Fiber Suite App team.
+	Here we choose the FabrikamFiber project and the Fiber Suite App team.
     
     > [!div class="mx-imgBorder"]
     > ![Filter by team](_img/active-bugs-report/active-bugs-team.png)
 
-	To add additional projects or teams, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row and then select the team project and team. 
+	To add additional projects or teams, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row and then select the project and team. 
 
 0. Under **Backlogs and work items**, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row, and then select **Bug** from the list of work items types.
 
@@ -86,7 +86,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 	Choose **Continue** to move to the next tab. 
 
-0. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your team project.  
+0. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your project.  
     
     > [!div class="mx-imgBorder"]
     > ![Fields](_img/active-bugs-report/fields-common.png)

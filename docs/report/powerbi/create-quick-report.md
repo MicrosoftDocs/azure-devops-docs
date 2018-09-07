@@ -16,7 +16,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Azure DevOps team project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
+With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Azure DevOps project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
 
 If you don't have Power BI Desktop, you can [download](https://powerbi.microsoft.com/desktop) and install it for free.
 
@@ -43,8 +43,8 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the team project, except stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the project, except stakeholders, can view Analytics views.
+* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
@@ -56,7 +56,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-0. From the **Analytics view>All** page, choose the ![](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a team project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+0. From the **Analytics view>All** page, choose the ![](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)  
@@ -85,7 +85,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > [!div class="mx-imgBorder"]  
     > ![Connect to data](_img/create-report/get-data-2.png)  
 
-0. Enter your account name and a team project for the data you want to report on.  
+0. Enter your organization name and project name for the data you want to report on.  
 
 	![Organization and project name](_img/create-report/specify-account.png) 
 

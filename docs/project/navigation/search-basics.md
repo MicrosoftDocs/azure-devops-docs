@@ -17,7 +17,7 @@ ms.date: 07/21/2018
 
 # Search across your code base, work items, or wiki
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -31,11 +31,13 @@ With the search box, you can quickly find a code file or work item.
 <a name="start-search"></a>
 ## Initiate a code search 
 
+Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-vsts-extension.md#install-extension).  
+
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
-To start your search, choose **Code>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](../../organizations/public/_img/search/code-search-vert.png) 
@@ -172,7 +174,7 @@ To learn more, see [Search code](../search/code-search.md).
  
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](..//search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../search/_img/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 

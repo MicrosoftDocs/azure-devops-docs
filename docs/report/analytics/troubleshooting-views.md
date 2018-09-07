@@ -30,7 +30,7 @@ This warning appears when Power BI determines that it may not be able to load al
 
 To resolve this warning, specify additional [work items filters](analytics-views-create.md#specify-wi-filters) or modify the [History or Granularity](analytics-views-create.md#select-trend-data) to scope the view's results. 
 
-Views that pull a large amount of data, might take a long time to refresh and load in Power BI. For large accounts, it might even fail to load. To make sure your view will successfully load in Power BI, [Verify](analytics-views-create.md#verify-and-save) your view before saving it. 
+Views that pull a large amount of data, might take a long time to refresh and load in Power BI. For organizations with a large amount of data, it might even fail to load. To make sure your view will successfully load in Power BI, [Verify](analytics-views-create.md#verify-and-save) your view before saving it. 
 
 ## Resolve verification errors
 
@@ -42,7 +42,7 @@ To resolve this error, rename your custom field.
 
 ### **Error: Field doesn't exists anymore**
 
-This error means that one of your [work items filters](analytics-views-create.md#2-specify-work-items-filters) or [view fields](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report) references a field that was removed from your [team project process](../../organizations/settings/work/customize-process-field.md). 
+This error means that one of your [work items filters](analytics-views-create.md#2-specify-work-items-filters) or [view fields](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report) references a field that was removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
 
 To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existing-view) and remove the filter or field from the view's definition. 
 

@@ -103,7 +103,7 @@ For example, the following query fetches work items that belong to projects name
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectSK eq {projectSK1} or ProjectSK eq {projectSK2}
   &$select=WorkItemId, Title
 ```
@@ -116,7 +116,7 @@ You can do this in the regular `$filter` clause for simple navigation properties
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
   $filter=ProjectSK eq {projectSK} and TargetWorkItem/ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($select=WorkItemId, Title)
@@ -126,7 +126,7 @@ Alternatively, you can move the filter to `$filter` expand option in the `$expan
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
   $filter=ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
@@ -136,7 +136,7 @@ You'll find that the `$filter` expand option is very useful when you use the exp
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectSK eq {projectSK}
   &$select=WorkItemId, Title
   &$expand=Children($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
@@ -149,13 +149,13 @@ You'll need to specify the filter if you expand one of the following properties:
 <a name="project-scoped-endpoint"></a>
 ### ✔️ CONSIDER querying using the project-scoped endpoint
 
-If you're interested in data from a single project, we recommend you use the project-scoped OData endpoint (`/{project}/_odata/v1.0`). This avoids the problems described in the preceeding two sections, and implicitly filters data to the one project, the referenced entity set, as well as all the expanded navigation properties.
+If you're interested in data from a single project, we recommend you use the project-scoped OData endpoint (`/{ProjectName}/_odata/v1.0`). This avoids the problems described in the preceeding two sections, and implicitly filters data to the one project, the referenced entity set, as well as all the expanded navigation properties.
 
 With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause dissapear, but also there's no need for the filter on the main entity set.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemLinks?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemLinks?
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($select=WorkItemId, Title)
 ```
@@ -164,7 +164,7 @@ The query for work item children is also much shorter and simpler.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   &$select=WorkItemId, Title
   &$expand=Children($select=WorkItemId, Title)
 ```
@@ -198,7 +198,7 @@ For example, the query below gets the number of work items as by date to observe
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
   $apply=
     filter(DateSK ge 20170101 and DateSK le 20170131)/
     groupby((DateSK), aggregate($count as Count))
@@ -231,7 +231,7 @@ For example, the following query gets a single work item by its identifier.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
 ```
@@ -266,7 +266,7 @@ For example, the following query returns all the revisions of a work item with t
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
 ```
@@ -275,7 +275,7 @@ If you care about the full history for all the work items that match certain cri
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
   $filter=WorkItem/State eq 'Active'
   &$select=WorkItemId, Title
 ```
@@ -335,7 +335,7 @@ Another scenario that tends to generate long queries occurs when you include a l
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedOn/DayOfWeek eq 2
   &$select=WorkItemId, Title, State
 ```
@@ -344,15 +344,15 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 <a id="restrict-time-zone"> </a>
 ### ✔️ DO specify time zone when filtering on date columns
 
-The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches account time zone settings. This data is precise and simple to interpret at the same time. Another non-obvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you'll get the following error message.
+The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-organization-location.md). This data is precise and simple to interpret at the same time. Another non-obvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you'll get the following error message.
 
 > *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
 
-To solve this problem, add the time zone information. For example, assuming that the account is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
+To solve this problem, add the time zone information. For example, assuming that the organization is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
   &$select=WorkItemId, Title, State
 ```
@@ -361,20 +361,20 @@ The same solution works for time zones with positive offsets, however, the plus 
 
 > *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2017-01-01T0000 08:00'.*
 
-To solve it, replace the `+` character with its encoded version, `%2B`. For example, assuming that the account is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query returns all the work items created since the beginning of 2017.
+To solve it, replace the `+` character with its encoded version, `%2B`. For example, assuming that the organization is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query returns all the work items created since the beginning of 2017.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
   &$select=WorkItemId, Title, State
 ```
 
-An alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query returns all the work items created since the beginning of 2017 regardless the account settings.
+An alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query returns all the work items created since the beginning of 2017 regardless of the organization's settings.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedDateSK ge 20170101
   &$select=WorkItemId, Title, State
 ```
@@ -439,12 +439,12 @@ For example, the following query specifies the columns for work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $select=WorkItemId, Title, State
 ```
 
 > [!NOTE]
-> Azure DevOps supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
+> Azure DevOps supports process customization. Some administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
 
 <a id="specify-columns-select"> </a>
 ### ✔️ DO specify columns in the `$select` expand option inside the `$expand` clause
@@ -454,7 +454,7 @@ For example, the query below specifies the columns for both the work item and it
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $select=WorkItemId, Title, State
   &$expand=Parent($select=WorkItemId, Title, State)
 ```
@@ -483,7 +483,7 @@ https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 ```
 
 > [!NOTE]
-> We came up with this recommendation when we were working on Burndown widgets. Initially we defined filters only for `DateSK` but we couldn't get this query to scale well to very large accounts. During query profiling, we noticed that `DateSK` doesn't filter revisions well. Only after we added a filter on `RevisedDateSK` were we able to get great performance at scale.<br/>
+> We came up with this recommendation when we were working on Burndown widgets. Initially we defined filters only for `DateSK` but we couldn't get this query to scale well for organizations with large datasets. During query profiling, we noticed that `DateSK` doesn't filter revisions well. Only after we added a filter on `RevisedDateSK` were we able to get great performance at scale.<br/>
 > ~ *Product Team*
 
 <a id="perf-snapshots"> </a>
@@ -523,7 +523,7 @@ For example, the following query returns a count of work items that were defined
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
   $apply=
     filter(IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month')/
     groupby(
@@ -543,7 +543,7 @@ For example, the following query gets all the work items which were tagged with 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State
 ```
@@ -552,7 +552,7 @@ This approach also works great when you need to filter on multiple tags. For exa
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
 ```
@@ -561,7 +561,7 @@ You can also combine these filters with an "and" operator. For example, the foll
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
 ```
@@ -574,7 +574,7 @@ For example, the following query gets all the work items which were tagged with 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State, TagNames
 ```
@@ -591,7 +591,7 @@ For example, the following query gets all the work items tagged with "QUALITY", 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Tags/any(t:t/TagName eq 'quality')
   &$select=WorkItemId, Title, State, TagNames
 ```
@@ -599,7 +599,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 <a id="perf-unbounded"> </a>
 ### ❌ DO NOT use unbounded expansion with `$levels=max`
 
-OData has the capability to expand all the levels of an hierarchical structure. For example, work item tracking has some entities where an unbounded expansion could be applied. This operation does work only for accounts with a small amount of data. It doesn't scale well for larger datasets. Don't use it at all if you are working with large datasets or you're developing a widget and you have no control over where the widget will be installed.
+OData has the capability to expand all the levels of an hierarchical structure. For example, work item tracking has some entities where an unbounded expansion could be applied. This operation does work only for organizations with a small amount of data. It doesn't scale well for larger datasets. Don't use it at all if you are working with large datasets or you're developing a widget and you have no control over where the widget will be installed.
 
 <a id="perf-paging"> </a>
 ### ✔️ DO use server-driven paging
@@ -610,11 +610,11 @@ The link to the next page is included in the `@odata.nextLink` property.
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(*)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(*)",
   "value": [
     ...
   ],
-  "@odata.nextLink":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
+  "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?$skiptoken=12345"}
 ```
 
 > [!NOTE]
@@ -650,7 +650,7 @@ For example, the following query gets all the work items created since the begin
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedDateSK ge 20170101
 ```
 
@@ -664,7 +664,7 @@ For example, the following query filters `WorkItems` using `ProjectSK` property 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectSK eq {projectSK}
 ```
 
@@ -687,7 +687,7 @@ This option is particularly helpful in data export scenarios. To use it you have
 For example, the following query returns work items provided that the dataset is smaller or equal to 1000 records.
 
 ```http
-GET https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
+GET https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems HTTP/1.1
 User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
@@ -717,7 +717,7 @@ For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -729,7 +729,7 @@ For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -741,7 +741,7 @@ For example, the following query uses `@createdDateSK` parameter to separate the
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=CreatedDateSK ge @createdDateSK
   &$select=WorkItemId, Title, State
   &@createdDateSK=20170101
@@ -757,7 +757,7 @@ For example, the following query first filters work items by `StoryPoint gt 5`, 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=StoryPoints gt 2
   $apply=
     filter(StoryPoints gt 5)/

@@ -26,15 +26,17 @@ Each view defines a dataset designed to support viewing, sharing, and publishing
 ## Analytics Marketplace extension 
 
 When you install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), the following actions occur: 
-- The **Analytics views** pages appear in your web portal Azure DevOps Services account
+- The **Analytics views** pages appear in your web portal for your Azure DevOps projects
 - Several [Analytics widgets](analytics-widgets.md) become available for use on your Azure DevOps Services dashboards 
 - Several default Analytics views are created as described in the next section. 
+
+[!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 ## Default Analytics views
 
 The default Analytics views shown in the following image provide a great way to get started and are immediately accessible from Power BI. These views are automatically created when you install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). The view you select determines the set of records, fields, and history that are pulled into Power BI.  
 
-Here we show the default views created for a team project based on the Agile process. 
+Here we show the default views created for a project based on the Agile process. 
 
 > [!div class="mx-imgBorder"] 
 > ![Default Analytics views](./_img/default-views/default-views.png)

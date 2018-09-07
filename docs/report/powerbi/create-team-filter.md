@@ -50,7 +50,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
     > [!div class="mx-imgBorder"]    
     > ![Advanced Editor](_img/AdvancedEditor.png) 
 
-5. Add the following query code, substituting account information and team names to match your Analytics view. 
+5. Add the following query code, substituting organization information and team names to match your Analytics view. 
    
     ```Query
     let
@@ -67,7 +67,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 7. From the **Home** tab, choose **New Source** to add another blank query and rename it to 
  *Areas*. 
 
-8. Open **Advanced Editor** and add the following query code, substituting account information to match your view.
+8. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
 
     ```Query
     let
@@ -79,7 +79,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
 9. From the **Home** tab, choose **New Source** to add another blank query and rename it to *AreaToTeam*.
 
-10. Open **Advanced Editor** and add the following query code, substituting account information to match your view.
+10. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
 
     ```Query
     let

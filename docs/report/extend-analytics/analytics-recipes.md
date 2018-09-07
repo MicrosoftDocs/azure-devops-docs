@@ -20,14 +20,14 @@ ms.date: 3/16/2018
 You can query your Azure DevOps work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
-For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
+For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For organization-level scoping, see [Project and organization-scoped queries](account-scoped-queries.md).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 **Retrieve the history of a work item**
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemRevisions?
   $filter=WorkItemId eq {Id}
   &$select=WorkItemId, Title, State
 ```
@@ -35,7 +35,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 **Retrieve all work items in a given iteration**
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}'
   &$select=WorkItemId, Title, State
 ```
@@ -43,25 +43,25 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 **Retrieve all work items in a given area**
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=Area/AreaPath eq '{area path}'
   &$select=WorkItemId, Title, State
 ```
 
 **Get the count of work items in each project**
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
-This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](account-scoped-queries.md).
+This query will fail when the user does not have access to all the projects. Read more about [project and organization-scoped queries](account-scoped-queries.md).
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
 Here your query is constrained by data contained within the work tracking data. 
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}' 
     and ChangedDate ge Iteration/StartDate 
     and ChangedDate le Iteration/EndDate
@@ -75,7 +75,7 @@ From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field 
 but following this format keeps it simple.
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=Tags/any(d:d/TagName eq '{tag name}')
   &$select=WorkItemId, Title, State
 ```
@@ -83,7 +83,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 **Retrieve all work items for a specific team**
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=Teams/any(d:d/TeamName eq '{team name}')
   &$select=WorkItemId, Title, State
 ```
@@ -91,7 +91,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 **Retrieve all work items that at one time had a field set to a specific value (Similar to Work Item query "was ever")**
 
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
   $filter=WorkItemType eq '{Type}'
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}')
 ```

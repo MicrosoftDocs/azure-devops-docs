@@ -550,7 +550,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics views</h3>
+                                                            <h3>Analytics views (Power BI)</h3>
                                                             <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
                                                         </div>
                                                     </div>
