@@ -12,7 +12,7 @@ ms.ms.date: 09/01/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Speed up testing by running tests in parallel for any test runner
+# Run tests in parallel for any test runner
 
 **Azure Pipelines | TFS 2018.2 and later**
 

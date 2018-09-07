@@ -12,7 +12,7 @@ ms.ms.date: 09/01/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Speed up testing by running tests in parallel using the Visual Studio Test task
+# Run tests in parallel using the Visual Studio Test task
 
 **Azure Pipelines | TFS 2017.1 and later**
 
