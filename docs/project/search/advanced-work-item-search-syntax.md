@@ -39,7 +39,7 @@ By using Work Item Search you can:
   State:Active** finds all active bugs assigned to a user named Chris. 
 
 * **Take advantage of integration with work item tracking**:
-  The Work Item Search interface integrates with familiar controls in the **Work** hub,
+  The Work Item Search interface integrates with familiar controls for managing your work items;
   letting you view, edit, comment, share, and much more.
 
 <a name="acrossfield"></a>

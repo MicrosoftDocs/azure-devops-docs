@@ -60,7 +60,7 @@ Work Item Search is available in TFS 2017 Update 2 and later.
 Wiki Search is available in TFS 2018 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
+afterwards by running the TFS Configuration Wizard again or launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 ### Hardware recommendations
@@ -69,7 +69,7 @@ Search can be used on any size physical server or virtual machine that runs
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
-you must consider the existing CPU utlization
+you must consider the existing CPU utilization
 factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**
@@ -104,7 +104,7 @@ following recommendations:
 
 The amount of disk space taken up by Search depends mainly on the type of
 code files in version control that will be indexed. As a general guideline,
-allocate upto 35% of the size of all the collections that will be indexed.
+allocate up to 35% of the size of all the collections that will be indexed.
 
 ### Software Dependencies
 
@@ -175,16 +175,16 @@ Consider the following when configuring Search:
 
 * The Code Search extension must be installed for each TFS collection where you want to use it. 
   When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
-  for existing and new Tem Project Collections** to automate this process.
+  for existing and new Project Collections** to automate this process.
 
 * If you do not set the checkbox to install the Code Search extension for all your Project Collection, while 
   configuring Search, your Project Collection administrator can install it from Visual Studio Marketplace. Make 
   sure you navigate to the Marketplace from your TFS portal page. 
 
 * The search index folder should be located on a separate fast hard drive backed by fast storage such
-  as Solid State Drive (SSD) or Storage Area Network (SAN) to maximize search performance.
+  as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
   As a general guide, the Search index for a collection can be a maximum of 35% the size of the collection itself. 
-  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items and wiki pages in that collection.
+  That is the worst-case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items and wiki pages in that collection.
 
 * Unless specified, the indexing service and Elasticsearch engine use the network service account during 
   installation to create and access the index files. If you choose a different account, it must have **Log on as a service**
@@ -199,14 +199,14 @@ Consider the following when configuring Search:
   you must use the Configuration wizard on the same AT where configuration was done.
 
 * If you are performing a **pre-production upgrade** on a TFS server where Search is already configured, you must fully
-  reconfigure Search again to avoid corrupting your production instance of Search. For this reason there is no option to configure 
+  reconfigure Search again to avoid corrupting your production instance of Search. For this reason, there is no option to configure 
   Search as part of a pre-production upgrade. Instead, configure it after the pre-production upgrade is complete. 
   As this is a pre-production upgrade, you can choose to uncheck **Automatically install and configure Code Search for all existing and new collections**
   during configuration, and instead install the Code Search extension for just one or two of your collections after configuration is complete.
 
 * If you are performing a **production upgrade** on a TFS server where Search is already configured, and want to retain the Search feature, 
   you must set the checkbox to **Install and Configure Search**. At this point the wizard will detect your existing Search instance and 
-  automatically select the **Use existing Search instance** option, and pre-populate your current Search service URL.
+  automatically select the **Use existing Search instance** option and pre-populate your current Search service URL.
   Use the **Install a new Search instance** option only if you want to set up a new instance of Search on the same TFS server.
   Setting up a new instance causes all your code to be indexed again, which - depending on the size of the collections - can take some time.
   During indexing, users may see partial search results. 
@@ -267,7 +267,7 @@ Elasticsearch does not perform authentication or authorization, and it does not 
 so it is vital you configure appropriate security settings
 based on your corporate security and compliance requirements.
 
-Typically you should aim to limit access to both searching and indexing 
+Typically, you should aim to limit access to both searching and indexing 
 to specific users or user groups - we recommend using encryption through IPSec.
 
 When the Elasticsearch service is installed locally on the TFS server, 
@@ -300,7 +300,7 @@ Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network 
 This ensures encryption and integrity protection 
 are applied along with authentication. It requires 
 both client-side and service-side rules (firewall rules
-on the server running Elasticsearch and all of 
+on the server running Elasticsearch and all
 TFS App Tier servers).
 
 **Prerequisite**: TFS must be configured with a domain account.
@@ -526,7 +526,7 @@ In cases such as a pre-production upgrade, production upgrade, new hardware migr
 or other maintenance operation, the TFS wizard will unconfigure Code Search in a way that makes it easy to re-configure it after the TFS 
 maintenance operation is complete.
 
-However, there might be cases where you no longer want to use Code Search, or want to perform a new and clean
+However, there might be cases where you no longer want to use Code Search or you want to perform a new and clean
 install. This requires multiple steps, depending on whether Code Search is configured
 [on the same server as TFS ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
 
@@ -603,7 +603,7 @@ your Team Foundation Server.
 
 1. Remove the Elasticsearch service and data
 
-   1. Open **Powershell** as an administrator
+   1. Open **PowerShell** as an administrator
    1. Go to the folder where **ConfigureTFSSearch.ps1** is installed along with the rest of the files required for a remote install of Search.
    1. Run the script again with the remove option: 
    
@@ -642,7 +642,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 <a name="no-results-install"></a>
 **No search results are shown after installing or configuring Search**
 
-1. Wait until you are sure a sufficient time has elapsed
+1. Wait until you are sure sufficient time has elapsed
    after installing or configuring Search. It typically takes
    less than one hour for Search to index a collection, but 
    it may take up to 12 hours depending on 
