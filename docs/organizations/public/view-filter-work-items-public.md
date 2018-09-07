@@ -33,7 +33,7 @@ When viewing a public project, you're able to view work items defined for that p
 To view **Work Items**, choose **Boards**. You can view recently created, updated, and completed work items.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page ](_img/view-work-items/open-work-items-vert-brn.png)
+![Boards>Work Items page ](_img/view-work-items/open-work-items-vert-brn.png)
 
 By default, completed work items are hidden. To show them, choose the ![](../../_img/icons/view-options-icon.png) view options icon, and switch the slider to show **Completed Work Items**.
   
@@ -45,7 +45,7 @@ To view a work item, choose its title. As an anonymous user (one not signed into
 Open **Work** located in the top navigation bar. From the **Work Items** page, you can view recently created, updated, and completed work items.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page ](_img/view-work-items/view-recently-updated-work-items.png)
+![Work, Work Items page ](_img/view-work-items/view-recently-updated-work-items.png)
 
 By default, completed work items are hidden. To show them, choose the ![](../../_img/icons/view-options-icon.png) view options icon, and switch the slider to show **Completed Work Items**.
   
@@ -62,7 +62,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 <tbody valign="top">
 <tr>
 <td>
-![Work hub, Work Items page, Menu options](_img/view-work-items/view-recently-changed-items.png)
+![Work Items page, Menu options](_img/view-work-items/view-recently-changed-items.png)
 </td>
 <td>
 <ul>
@@ -82,7 +82,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 Choose the ![](../../_img/icons/filter-icon.png) filter icon to view the filters available to you. You can filter each view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page ](_img/view-work-items/filter-bug.png)
+![Work Items page, filter by work item type ](_img/view-work-items/filter-bug.png)
 
 > [!NOTE]  
 > Depending on the process chosen when the project was created&mdash;[Agile](../../boards/work-items/guidance/agile-process-workflow.md), [Scrum](../../boards/work-items/guidance/scrum-process-workflow.md), or [CMMI](../../boards/work-items/guidance/cmmi-process-workflow.md)&mdash;the types of work items shown will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.

@@ -1,6 +1,7 @@
 - name: All settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
 - name: Overview
+  expanded: true
   items:
   - name: About settings
     href: about-settings.md

@@ -75,7 +75,7 @@ Before you can create a public project, you must enable anonymous access for you
 0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](../../_shared/_img/settings/open-projects-hub-vert-brn.png)  
+	> ![Open organizational settings](../../_shared/_img/settings/open-projects-hub-vert-brn.png)  
 
 0. Choose **Create Project**.
 
@@ -92,21 +92,22 @@ Before you can create a public project, you must enable anonymous access for you
 	> [!div class="mx-imgBorder"]  
 	> ![Project creation confirmation dialog, new nav](../projects/_img/create-project/project-creation-complete-new-nav.png)
 
-	Choose: 
-	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
-	- Choose **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
-	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
-	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
-	- Choose [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
+	Select one of the following tasks to get started:  
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, if this is your first project, then you must first [invite users to your organization](../accounts/add-team-members-vs.md). 
+	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+	- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+	- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+	- [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 
+To get started managing your project, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). 
 
 # [Previous navigation](#tab/previous-nav)
 
 0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/create-public-project/open-org-hub.png)  
+	> ![Open organizational settings, prev nav](_img/create-public-project/open-org-hub.png)  
 
 0. Choose **New Project**.
 

@@ -32,7 +32,7 @@ You primarily customize a process by adding or modifying a work item type (WIT) 
 Learn how to perform these tasks:  
 
 > [!div class="checklist"] 
-> * Open the **Settings>Process** hub
+> * Open **Settings>Process**
 > * Create an  inherited process to customize   
 > * Add or modify a field 
 > * Add or modify a rule for a work item type 
@@ -98,7 +98,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 

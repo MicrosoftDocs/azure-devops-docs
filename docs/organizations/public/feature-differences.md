@@ -26,7 +26,7 @@ This page walks through features that non-members can't access or that work diff
 
 ## Access levels and unavailable features 
 
-A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members: 
+A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members.  
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
@@ -37,8 +37,8 @@ A project member has access to features based on the access level assigned to th
 * **Pipelines**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
 	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
-* **Test Plans**: The **Test Plans** hub and its associated manual and cloud load testing features are hidden.
-* **Analytics**: The **Analytics** hub is hidden, and the Analytics OData feed is not supported for non-members. 
+* **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
+* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members. 
 * Settings and administrative pages are hidden. 
 * Paid extensions are hidden.
 
@@ -50,8 +50,8 @@ A project member has access to features based on the access level assigned to th
 * **Build and Release**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
 	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
-* **Test**: The **Test** hub and its associated manual and cloud load testing features are hidden.
-* **Analytics**: The **Analytics** hub is hidden, and the Analytics OData feed is not supported for non-members. 
+* **Test**: **Test** and its associated manual and cloud load testing features are hidden.
+* **Analytics**: **Analytics view** is hidden, and the Analytics OData feed is not supported for non-members. 
 * Settings and administrative pages are hidden. 
 * Paid extensions are hidden.
 

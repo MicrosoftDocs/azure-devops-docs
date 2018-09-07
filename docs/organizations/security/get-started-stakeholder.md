@@ -179,9 +179,9 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 ::: moniker range="tfs-2017"
 
-0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
+0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
 
-	![Web portal, project page, Work hub, Add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
+	![Work, Add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
@@ -352,7 +352,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](../../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
-	![Open Work hub when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
+	![Open Work when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 	::: moniker range=">= tfs-2017"
@@ -390,7 +390,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 0. Choose **Boards>Work Items**, and then select **Assigned to me**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work hub, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
+	> ![Work, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
 
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
@@ -409,7 +409,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 0. Choose **Work>Work Items**, and then select **Assigned to me**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work hub, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
+	> ![Work, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
 
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 

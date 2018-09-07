@@ -27,7 +27,7 @@ For a complete reference of all built-in groups and permissions, see [Permission
 <a id="agile-tools-and-work-tracking" />
 ## Boards/Work 
 
-You can connect to work items from the web portal **Boards** or **Work** hub and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
+You can connect to work items from the web portal, **Boards** or **Work**, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
 
 
 ::: moniker range=">= tfs-2013  <= tfs-2018"  
@@ -54,7 +54,7 @@ Users granted Stakeholder access are granted different access to features depend
 
 ## Repos/Code  
 
-You can connect to your code from the **Repos** or **Code** hub or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. For an overview of code features and functions, see [Git](../../repos/git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md). Stakeholders have no access to the **Repos** or **Code** hub and its features.
+You can connect to your code from the web portal, **Repos** or **Code**, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. For an overview of code features and functions, see [Git](../../repos/git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md). Stakeholders for private projects have no access to **Repos** or **Code** features.
 
 From **Project Settings**, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
 
@@ -107,7 +107,7 @@ To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/f
 ::: moniker range=">= tfs-2015"  
 ## Charts, dashboards, and other web portal features 
 
-You can define and manage dashboards from the web portal, **Dashboard** hub. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). 
+You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). 
 
 You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
 ::: moniker-end 
@@ -124,12 +124,11 @@ Users granted Stakeholder access are granted different access to features depend
 
 ## Analytics
 
-From the **Analytics** hub, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/analytics/what-is-analytics.md). 
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/analytics/what-is-analytics.md). 
 
 You set [permissions](../../report/analytics/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. 
 
 [!INCLUDE [temp](_shared/analytics.md)]
-
 
 ::: moniker-end
 

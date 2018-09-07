@@ -26,7 +26,7 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 > * Meet prerequisites to access Analytics views
-> * Open the Analytics hub 
+> * Open **Analytics views**
 > * Browse your Analytics views
 > * Create a custom Analytics view
 > * Review filter criteria for a view 

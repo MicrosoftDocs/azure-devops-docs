@@ -36,7 +36,12 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 
 ## Open a service or page
 
-Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on. 
+Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
+::: moniker range="vsts"
+> [!NOTE]  
+> Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
+
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"

@@ -5,10 +5,10 @@ ms.topic: include
 
 <a id="wiki-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [managing or editing Wiki pages](/azure/devops/project/wiki/add-edit-wiki). To view the valid shortcuts, enter **Shift+?** from the **Wiki** hub or when editing a wiki page. 
+You can use the following keyboard shortcuts when [managing or editing Wiki pages](/azure/devops/project/wiki/add-edit-wiki). To view the valid shortcuts, enter **Shift+?** from a **Wiki** page. 
 
 > [!NOTE]  
-> **Feature availability**: The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2018.2 and later versions.  
+> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2018.2 and later versions.  
 
 <table width="70%">
 <tbody valign="top">

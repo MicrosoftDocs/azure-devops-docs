@@ -35,7 +35,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 > [!NOTE]
-> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in thr [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) blog post. >
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in the [New Work Hubs](https://devblogs.microsoft.com/devops/2018/06/22/new-work-hubs/) blog post. >
 > For on-premises TFS users, choose **Previous navigation** for guidance. 
 
 # [New navigation](#tab/new-nav)
@@ -112,7 +112,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 For example, choose **My activity** to list all work items you've recently viewed, created, or modified. 
 
 > [!div class="mx-imgBorder"]  
-> ![Work hub, Work Items page, Add a work item](_img/plan-track-work/view-work-item-activity.png)  
+> ![Work>Work Items, Add a work item](_img/plan-track-work/view-work-item-activity.png)  
 
 To view any work item listed, choose the title. 
 

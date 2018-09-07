@@ -41,7 +41,7 @@ To add extensions or edit a process, you must be a member of the Project Collect
 
 ## Review installed Marketplace extensions   
 
-From the **Settings** context, **Extensions** hub, you can view the extensions that are already installed. You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
+From the **Settings** context, **Extensions**, you can view the extensions that are already installed. You may need to choose ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
 
 ![Organization settings, Extensions page](_img/process/custom-controls-extensions-admin-page-ts.png)   
 
@@ -78,7 +78,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 0. Install the [custom control](#add-extension) as discussed in the previous section.  
   
-0. Open the **Settings>Work>Process** hub from a work item form. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
+0. Open **Settings>Work>Process** from a work item form. For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
 
 0. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the custom control. Alternatively, you can specify an existing field, inherited or custom. 
 

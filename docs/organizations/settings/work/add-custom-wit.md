@@ -6,8 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
 ms.date: 05/31/2018
@@ -45,7 +44,7 @@ To learn more about what you can customize, see [About process customization and
 
 0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
@@ -95,7 +94,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 # [New navigation](#tab/new-nav)
 
-project
+
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
 	> [!div class="mx-imgBorder"]  
@@ -126,7 +125,7 @@ project
 
 
 # [Previous navigation](#tab/previous-nav)
-project
+
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
 	> [!div class="mx-imgBorder"]  

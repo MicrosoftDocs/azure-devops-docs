@@ -23,8 +23,7 @@ Prior to adding an artifact, make sure that you've [selected the project and rep
 
 ## Add work items, queries, or other work tracking artifacts 
 
-You can quickly add a query or work item when working from a **Work** page. 
-
+You can quickly add a query or work item when working from a **Boards** or **Work** page. 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 

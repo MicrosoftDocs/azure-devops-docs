@@ -76,7 +76,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 0. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Admin context, Security hub, Add member](_img/project-level-permissions-add-member.png) 
+	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
 0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
 
@@ -106,7 +106,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 0. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Admin context, Security hub, Add member](_img/project-level-permissions-add-member.png) 
+	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
 0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
 

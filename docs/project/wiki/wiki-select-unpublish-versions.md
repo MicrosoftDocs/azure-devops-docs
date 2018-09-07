@@ -77,14 +77,14 @@ When your published wiki corresponds to a product version, you can publish new v
 
 ## Select a wiki version
 
-To select a wiki version, choose the version from the branch options from your **Wiki** hub.
+To select a wiki version, choose the version from the branch options from the **Wiki** page.
 
 > [!div class="mx-imgBorder"]  
 > ![Select wiki version](_img/wiki/publish-wiki-select-version.png)
 
 ## Unpublish a published wiki
 
-If you no longer want a repository to be published as a wiki, you can choose to unpublish it from the **Wiki** hub. Unpublishing a wiki unpublishes all versions of the repository that you have published previously. 
+If you no longer want a repository to be published as a wiki, you can choose to unpublish it from **Wiki**. Unpublishing a wiki unpublishes all versions of the repository that you have published previously. 
 
 0. Simply select the wiki you want to unpublish, pen the context menu, and choose **Unpublish wiki**. 
 

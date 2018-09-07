@@ -31,7 +31,7 @@ When viewing a public project, you can view the status of build and release pipe
 To view the status of recent builds, choose **Pipelines>Builds**. To view a summary or history of any build, choose a build. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Recent Builds, new navigation ](_img/pipelines/view-build-vert-brn.png)
+> ![Pipelines>Recent Builds, new navigation ](_img/pipelines/view-build-vert-brn.png)
 
 
 # [Previous navigation](#tab/previous-nav)  
@@ -39,7 +39,7 @@ To view the status of recent builds, choose **Pipelines>Builds**. To view a summ
 To view the status of recent builds, choose **Build and Release>Builds**. To view a summary or history of any build, choose a build. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Recent Builds page ](_img/pipelines/view-build-status.png)
+> ![Build and Release>Recent Builds page ](_img/pipelines/view-build-status.png)
 
 
 ---
@@ -52,12 +52,12 @@ To view the status of recent builds, choose **Build and Release>Builds**. To vie
 To view active release pipelines, choose **Pipelines>Releases**. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release, Recent Releases, new navigation ](_img/pipelines/view-releases-vert.png)
+> ![Pipelines, Recent Releases, new navigation ](_img/pipelines/view-releases-vert.png)
 
 From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.   
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Build status page ](_img/pipelines/release-chart.png)
+> ![Pipelines, Build status page ](_img/pipelines/release-chart.png)
 
 
 # [Previous navigation](#tab/previous-nav)  
@@ -65,12 +65,12 @@ From there, you can drill into the details of a release. For example, here we sh
 To view active release pipelines, choose **Build and Release>Releases**. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Recent releases page ](_img/pipelines/view-releases.png)
+> ![Build and Release>Recent releases page ](_img/pipelines/view-releases.png)
 
 From there, you can drill into the details of a release. For example, here we show the **Release-3** pipeline.   
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Build status page ](_img/pipelines/release-chart.png)
+> ![Build and Release>Build status page ](_img/pipelines/release-chart.png)
 
 
 

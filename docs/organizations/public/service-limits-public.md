@@ -20,10 +20,12 @@ monikerRange: 'vsts'
 
 Public projects are subject to the limits documented in this article. 
 
- 
+<!---
 ## Pipelines
 
 TBD
+
+-->
 
 ## Work items
 - A long text field can contain 1M characters.

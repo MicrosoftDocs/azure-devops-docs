@@ -41,7 +41,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, choose Boards>Queries>ll page](_img/view-run-queries/queries-all.png)  
+	> ![Web portal, choose Boards>Queries>All page](_img/view-run-queries/queries-all.png)  
 
 0. Choose **My Queries** as needed. 
 	- To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  

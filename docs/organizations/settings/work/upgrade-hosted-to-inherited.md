@@ -30,7 +30,7 @@ Before you clone a Hosted XML process, we recommend that you review [Supported o
 ## Sequence of steps
 
 The general sequence of steps to support clone are:  
-0. Open the **Settings>Process** hub 
+0. Open **Settings>Process** 
 0. Choose the Hosted XML process you want to clone and select **Clone process to inheritance** from its context menu
 0. Verify the customizations that are present in the inherited process created as part of the clone
 0. Manually reapply customizations that were ignored during clone

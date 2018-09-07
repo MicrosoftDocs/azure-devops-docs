@@ -32,7 +32,7 @@ By publishing your markdown files to a wiki, you gain these benefits:
 Use this topic to learn how to:  
 
 > [!div class="checklist"]
-> * Open the **Wiki** hub
+> * Open **Wiki**
 > * Publish a Git repo to a wiki 
 > * Edit pages of a published wiki
 > * Add pages to a published wiki
@@ -56,7 +56,7 @@ In order to perform these steps, you'll want to understand the underlying struct
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 
 
-## Open the Wiki hub  
+## Open Wiki  
 
 Begin by connecting to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.  
 
@@ -78,12 +78,12 @@ If you need to switch your team project, choose the ![](/azure/devops/boards/_im
 Choose **Wiki**.
 
 > [!div class="mx-imgBorder"]  
-> ![Open Wiki hub](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
+> ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
 
 - If you need to switch your team project, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
-- If you don't see the **Wiki** hub, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), then choose **Wiki>Wiki**.
+- If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), then choose **Wiki>Wiki**.
 
-![Open wiki hub, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
+![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
 ---
 
@@ -135,7 +135,7 @@ With the Wiki provisioned with the markdown files you've added, you can now add 
 
 ## Edit, rename, or delete pages  
 
-0. To edit, rename, or delete a page, open the **Code** hub, **Files** page. 
+0. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**. 
 
 0. Choose the page you want, open the ![](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
 
@@ -186,7 +186,7 @@ You can add pages to your published wiki as follows:
 - Upload files to a root folder or sub-folder 
 - Add or update a .order file to specify the page sequence in the wiki TOC 
 
-Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** hub for your published repo to review the changes.  
+Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 
 ### Add a page from the web portal 
 

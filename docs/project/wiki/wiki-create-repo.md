@@ -41,7 +41,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 Use this topic to learn how to:  
 
 > [!div class="checklist"]
-> * Open the **Wiki** hub
+> * Open **Wiki**
 > * Provision a Git repo for your wiki 
 
 
@@ -112,7 +112,7 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 
 ### Why is the Git repository hidden?
 
-The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories in the **Code** hub, nor in the list provided in the team project administration context, **Version Control** page.  
+The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**, nor in the list provided from the **Project Settings>Code>repositories** or **Project Settings>Version Control** pages.  
  
 However, you can navigate to it from the following URL:
 

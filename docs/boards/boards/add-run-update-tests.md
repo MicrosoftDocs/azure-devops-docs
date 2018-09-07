@@ -69,7 +69,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
-	![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
+	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

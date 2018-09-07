@@ -5,15 +5,15 @@ ms.topic: include
 
 <a id="test-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Test** hub.  
+You can use the following keyboard shortcuts when working in **Test Plans** or **Test**.  
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 or later versions. 
+> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 or later versions. 
 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Test hub shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-shortcuts.png)</td>
+<td>![Test shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-shortcuts.png)</td>
 <td>
 **Test**<br/><br/>
 &nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;Open test plans<br/>

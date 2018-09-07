@@ -80,13 +80,13 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 	See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-0. When your project has been created, the welcome page appears. 
+0. Upon successful completion, the welcome page appears.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
 
-	Select one of the following tasks to get started: 
-	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
+	Select one of the following tasks to get started:  
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, if this is your first project, then you must first [invite users to your organization](../accounts/add-team-members-vs.md).  
 	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
 	- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
@@ -155,14 +155,14 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
+	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New team project...**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
+	> ![New Team Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
 	Select the collection administration page for the collection you want to create the project in from the left pane, and choose **Create a new project...**.
 
-1. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
+0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
@@ -228,7 +228,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
-6.  Open the New Project Wizard.
+6.  Open the New Team Project Wizard.
 
     ![New link on Connect page (Team Explorer)](_img/IC779380.png)
 

@@ -5,6 +5,7 @@
   - name: About security and identity  
     href: about-security-identity.md
 - name: Quickstart
+  expanded: true
   items:
   - name: View permissions 
     href: view-permissions.md
@@ -110,11 +111,11 @@
     href: faq-trace-permissions.md  
 - name: Reference
   items:
-  - name: Default permissions and access 
+  - name: Default permissions & access 
     href: permissions-access.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
-  - name: Permissions and groups reference
+  - name: Permissions & groups 
     href: permissions.md
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  

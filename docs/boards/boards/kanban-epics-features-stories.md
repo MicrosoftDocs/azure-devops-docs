@@ -86,7 +86,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
-	![Open Work hub when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
+	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 	::: moniker range=">= tfs-2017"

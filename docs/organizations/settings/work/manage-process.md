@@ -30,7 +30,7 @@ To learn more about what you can customize, see [About process customization and
 In this article, learn how to perform these tasks:  
 
 > [!div class="checklist"] 
-> * Open the **Settings>Process** hub
+> * Open **Settings>Process**
 > * Create an inherited process   
 > * Customize an inherited process  
 > * Copy an inherited process   

@@ -62,9 +62,12 @@ Here's what you need to know to get up and running using the web portal.
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
 
-
 ---
 
+::: moniker range="vsts"
+> [!NOTE]  
+> Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"

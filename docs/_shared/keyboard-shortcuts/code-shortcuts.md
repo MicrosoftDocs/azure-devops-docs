@@ -5,10 +5,10 @@ ms.topic: include
 
 <a id="code-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Code** hub. To view the valid shortcuts, enter **Shift+?** from the **Code** hub or when editing a wiki page. 
+You can use the following keyboard shortcuts when working from a page under **Repos** or **Code**. To view the valid shortcuts, enter **Shift+?** to access  Global and service-specific shortcuts.. 
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
+> [!NOTE]  
+> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
 
 <table width="70%">
 <tbody valign="top">

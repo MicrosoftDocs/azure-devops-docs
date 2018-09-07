@@ -28,10 +28,9 @@ To enable users to contribute to your project, you must add them as a member.
 > the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
 
 
-## Open Settings>Users hub
+## Open Organization Settings>Users
 
 [!INCLUDE [temp](_shared/navigation.md)] 
-
 
 
 # [New navigation](#tab/new-nav)
