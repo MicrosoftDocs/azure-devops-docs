@@ -63,16 +63,9 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 Create a PowerShell script that prints `Hello world`.
 
 ::: moniker range="vsts"
-1. Go to the **Repos** hub.
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < vsts"
-1. Go to the **Code** hub.
-::: moniker-end
+1. Go to **Azure Repos**.
 
 1. Add a file.
-
-   ::: moniker range="vsts"
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -83,6 +76,26 @@ Create a PowerShell script that prints `Hello world`.
    ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018-2.png) 
 
    ---
+
+1. In the dialog box, name your new file and create it.
+ ```
+HelloWorld.ps1
+```
+
+1. Copy and paste this script.
+ ```ps
+Write-Host "Hello world"
+ ```
+
+1. **Commit** (save) the file.
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+1. Go to the **Code** hub.
+ 
+2. Add a file.
 
    ::: moniker-end
 
@@ -98,6 +111,8 @@ Create a PowerShell script that prints `Hello world`.
 
    ::: moniker-end
 
+::: moniker range=">=tfs-2017 < vsts"
+
 1. In the dialog box, name your new file and create it.
  ```
 HelloWorld.ps1
@@ -109,6 +124,8 @@ Write-Host "Hello world"
  ```
 
 1. **Commit** (save) the file.
+
+::: moniker-end
 
 > In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in an Azure Repos Git repository directly in your web browser.
 >

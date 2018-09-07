@@ -28,7 +28,7 @@ You cannot upload a newer revision package with that same version number, or del
 
 You must be a **contributor** to unlist and an **owner** to delete.
 
-Choose the package from the **Packages** hub in the **Build and Release** hub group and select the appropriate option from the menu:
+Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 ![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package.png)
 

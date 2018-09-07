@@ -166,7 +166,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 | `id`          | Identifier of the contribution. Must be unique within the extension. Does not need to match the name of the build or release task, but typically the build or release task name is included in the ID of the contribution. | 
 | `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
 | `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
-| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task definition. |
+| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task pipeline. |
 
 ### Files
 | Property     | Description            |

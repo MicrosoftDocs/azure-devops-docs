@@ -19,7 +19,7 @@ For more in-depth information on the concepts and best practices regarding upstr
 
 ## Create a new feed that uses upstream sources
 
-Navigate to the Package hub and select "New Feed".
+Navigate to the **Packages** page and select "New Feed".
 
 Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
 

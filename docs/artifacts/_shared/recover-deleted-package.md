@@ -4,7 +4,7 @@ ms.topic: include
 
 If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../feeds/immutability.md).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
 
-1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** hub in Azure DevOps Services: 
+1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** page group in Azure DevOps Services: 
 
     ![Azure DevOps Services Recycle Bin](../_img/recycle-bin/find-recycle-bin.png)
 

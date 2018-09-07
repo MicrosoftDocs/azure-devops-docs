@@ -36,10 +36,23 @@ Each organization gets five (5) free licenses. If you need more than 5 licenses,
 
 You will need to assign your licenses by following the instructions below:
 
-1. Go to your organization, select **Admin settings** in the bottom left of the UX:
-2. Select **Users**
-3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**
-4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**
+# [New navigation](#tab/new-nav)
+
+1. Go to your organization, select **Admin settings** in the bottom left of the UX.
+2. Select **Users**.
+3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**.
+4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**.
+
+If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Go to your account, navigate to the **Users** page, and select Package Management.
+2. Select **Assign**, type the users you want to assign licenses to, then select **Ok**.
+
+If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+
+---
 
 ::: moniker-end
 
@@ -51,9 +64,9 @@ Each organization gets five (5) free licenses. If you need more than 5 licenses,
 
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-1. From any collection in TFS, hover over the settings menu and select the **Users** hub. Then select **Azure Artifacts**.
+1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then select **Package Management**.
 
-   ![Users hub in TFS](_img/users-hub-tfs.png)
+   ![Users page in TFS](_img/users-hub-tfs.png)
 
 1. Select **Assign**, type the user(s) you want to assign licenses, then select **Ok.**
 
@@ -67,13 +80,13 @@ Each organization gets five (5) free licenses. If you need more than 5 licenses,
 
 #### Q: How do I know if I'll still be able to use Azure Artifacts after my trial expires?
 
-A:  All users who show up under the Azure Artifacts section of the Users hub will have access to Azure Artifacts after the trial expires. 
+A:  All users who show up under the Azure Artifacts section of the Users page will have access to Azure Artifacts after the trial expires. 
 You'll need either a Azure Artifacts license or Visual Studio Enterprise subscription to show up in this list.  
 
 #### Q:  I am one of my organization's 5 free Basic users. Does that mean I can use Azure Artifacts as well?
 
 A:  Your organization's 5 free Basic users are separate from your 5 free Azure Artifacts users. 
-The free Azure Artifacts licenses must be bought from the Marketplace and assigned in the Azure Artifacts section of the Users hub.
+The free Azure Artifacts licenses must be bought from the Marketplace and assigned in the Azure Artifacts section of the Users page.
 
 #### Q: I have a Visual Studio Professional subscription. Can I use Azure Artifacts for free?
 

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Jenkins with Azure DevOps
-description: Use Jenkins with your Azure DevOps organization
+title: Jenkins with Azure DevOps Services
+description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Jenkins with Azure DevOps
+# Jenkins with Azure DevOps Services
 
-If you use Jenkins to build your apps, you can store your code in Azure DevOps
+If you use Jenkins to build your apps, you can store your code in Azure DevOps Services
 and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your project's
 Git repository or when you check code in to Team Foundation version control.
@@ -35,20 +35,20 @@ Git repository or when you check code in to Team Foundation version control.
 
    <img alt="Build name and type in Jenkins" src="./_img/jenkins/my-build.png" style="border: 1px solid #CCCCCC" />
 
-3. Set the URL for your Git repository in Azure DevOps.
+3. Set the URL for your Git repository in Azure DevOps Services.
 The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git/{projectName}```.
 
    <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
-## Trigger Jenkins from Azure DevOps 
+## Trigger Jenkins from Azure DevOps Services 
 
-1. If you haven't already, enable alternate credentials in your Azure DevOps profile.
+1. If you haven't already, enable alternate credentials in your Azure DevOps Services profile.
 Be sure to set a secondary user name because you won't be able to use your email account
-to connect Azure DevOps to Jenkins.
+to connect Azure DevOps Services to Jenkins.
 
    <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
-0. Go to your Azure DevOps project service hooks page: `https://dev.azure.com/{orgName}/{projectName}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{projectName}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -58,7 +58,7 @@ to connect Azure DevOps to Jenkins.
 
    <img alt="Select target service dialog box, Jenkins selected" src="./_img/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
-5. Pick the event from Azure DevOps that you want to trigger a Jenkins build.
+5. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
 
    <img alt="Configure event dialog box" src="./_img/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -66,19 +66,19 @@ to connect Azure DevOps to Jenkins.
 
    <img alt="New service hook subscription dialog box" src="./_img/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 
-Now, when that event occurs in Azure DevOps, your Jenkins build will be triggered.
+Now, when that event occurs in Azure DevOps Services, your Jenkins build will be triggered.
 
 ## Pricing
-Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: Can I build part of my app in Azure DevOps and part in Jenkins?
+#### Q: Can I build part of my app in Azure DevOps Services and part in Jenkins?
 
-A: Yes. You can trigger a Jenkins build when your Azure DevOps build is completed so that you use both systems to build your app.
+A: Yes. You can trigger a Jenkins build when your Azure DevOps Services build is completed so that you use both systems to build your app.
 
 #### Q: Can I programmatically create subscriptions?
 

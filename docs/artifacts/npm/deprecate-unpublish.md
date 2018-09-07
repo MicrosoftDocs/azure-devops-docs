@@ -26,7 +26,7 @@ Deprecating a version can help you discourage new usage of it by presenting a wa
 
 You must be a **contributor** to deprecate and an **owner** to unpublish.
 
-Choose the package from the **Packages** hub in the **Build and Release** hub group and select the appropriate option from the menu:
+Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 ![Unpublish npm package Azure DevOps Services](../_img/delete/deprecate-unpublish-npm-package.png)
 

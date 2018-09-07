@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 ## Manage the default delivery setting
 Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. This is a default setting which applies only if the team or group has not explicitly set the option.
 
-1. Navigate to the organization notifications setings hub.  Click [here](navigating-the-ux.md#navigating-to-the-organization-level-notifications-hub) to learn how.
+1. Navigate to the organization notifications setings page.  Click [here](navigating-the-ux.md#navigating-to-the-organization-level-notifications-page) to learn how.
 1. Click the *Settings* tab.
 1. Configure the default delivery setting
 

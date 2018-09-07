@@ -250,7 +250,7 @@ Individual widget instances can also indicate that its settings are project-spec
 
 ## Build and release considerations
 
-If your extension contributes a build or release task, no change is required to make use of that task from a definition in a public project.
+If your extension contributes a build or release task, no change is required to make use of that task from a pipeline in a public project.
 
 ## Work item tracking considerations
 

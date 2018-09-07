@@ -59,7 +59,7 @@ Find out more information about [upstream sources](upstream-sources.md) and [how
 
 The feed locator uses the following syntax:
 
-`vsts-feeds://<account>/<feed>@<view>`
+`vsts-feeds://<organization>/<feed>@<view>`
 
 ### Ensure that the order of the sources matches your desired package resolution order
 

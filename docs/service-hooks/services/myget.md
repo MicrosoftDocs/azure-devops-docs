@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: MyGet with Azure DevOps
-description: Use MyGet with your Azure DevOps organization
+title: MyGet with Azure DevOps Services
+description: Use MyGet with your Azure DevOps Services organization
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,12 +12,12 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# MyGet with Azure DevOps
+# MyGet with Azure DevOps Services
 
-Use a MyGet feed for the following integration scenarios with Azure DevOps:
+Use a MyGet feed for the following integration scenarios with Azure DevOps Services:
 
-- When code is pushed to a Git repository in Azure DevOps, MyGet pulls the code, builds it, and adds any resulting NuGet packages to a feed. 
-- When a NuGet package is built in Azure DevOps, MyGet downloads the package and adds it to a feed.
+- When code is pushed to a Git repository in Azure DevOps Services, MyGet pulls the code, builds it, and adds any resulting NuGet packages to a feed. 
+- When a NuGet package is built in Azure DevOps Services, MyGet downloads the package and adds it to a feed.
 
 ## Create and configure a MyGet feed
 
@@ -33,15 +33,15 @@ Use a MyGet feed for the following integration scenarios with Azure DevOps:
 
 ## Build and deploy a package when code is pushed
 
-2. Add Azure DevOps to your feed as a build source.
+2. Add Azure DevOps Services to your feed as a build source.
 
-   <img alt="Add Azure DevOps Git" src="./_img/myget/add-build-source.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add Azure DevOps Services Git" src="./_img/myget/add-build-source.png" style="border: 1px solid #CCCCCC" />
 
-3. Use your Azure DevOps organization.
+3. Use your Azure DevOps Services organization.
 
-   <img alt="Enter the name of your Azure DevOps organization" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter the name of your Azure DevOps Services organization" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access you Azure DevOps organization.
+4. Authorize MyGet to access you Azure DevOps Services organization.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
@@ -53,17 +53,17 @@ Use a MyGet feed for the following integration scenarios with Azure DevOps:
 
     <img alt="Triggered build" src="./_img/myget/triggered-build.png" style="border: 1px solid #CCCCCC" />
 
-## Deploy a package built on Azure DevOps
+## Deploy a package built on Azure DevOps Services
  
-2. Add the Azure DevOps build pipeline as a package source for your feed.
+2. Add the Azure DevOps Services build pipeline as a package source for your feed.
 
-   <img alt="Choose Azure DevOps build pipeline" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Choose Azure DevOps Services build pipeline" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
 
-3. Use your Azure DevOps organization.
+3. Use your Azure DevOps Services organization.
 
-   <img alt="Enter your Azure DevOps organization name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter your Azure DevOps Services organization name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access your Azure DevOps organization.
+4. Authorize MyGet to access your Azure DevOps Services organization.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
@@ -76,7 +76,7 @@ Use a MyGet feed for the following integration scenarios with Azure DevOps:
     <img alt="The name and source appear in the new feed" src="./_img/myget/completed-feed.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

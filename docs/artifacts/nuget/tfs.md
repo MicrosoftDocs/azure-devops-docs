@@ -26,7 +26,15 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 
-[!INCLUDE [](../_shared/nuget/nuget-consume-endpoint.md)]
+1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+
+1. Select **Connect to feed**:
+
+    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+   
+1. Copy the NuGet package source URL:
+
+    ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
 
 Then, run the following command (replacing {values} where applicable):
 

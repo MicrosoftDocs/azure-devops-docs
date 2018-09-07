@@ -16,7 +16,8 @@ ms.date: 08/22/2016
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
-> _Service endpoints_ are called _service endpoints_ in TFS 2018 and in older versions.
+> _Service endpoints_ are called _service connections_ in TFS 2018 and in older versions.
+> _Pipelines_ are called _definitions_ in TFS 2018 and older versions.
 ::: moniker-end
 
 Service endpoints are a way for Azure DevOps Services to connect to external systems or services. They are a bundle of properties securely stored by Azure DevOps Services which includes but is not limited to:
@@ -40,7 +41,7 @@ This article walks through developing a service endpoint by creating an example 
 
 The steps involved in completing this task are:
 - [Step 1: Creating the extension manifest file](#step1)
-- [Step 2: The build task definition, in the task.json file](#step2)
+- [Step 2: The build task pipeline, in the task.json file](#step2)
 
 > [!NOTE]
 > This tutorial will refer to the home directory for your project as "home". 
@@ -85,7 +86,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 > You will need to update the `publisher` property.
 
 > [!NOTE]
-> "BuildTaskFolder" is the path where we'll eventually place our build task definition
+> "BuildTaskFolder" is the path where we'll eventually place our build task pipeline
 
 <a name="customendpoint" />
 
@@ -272,7 +273,7 @@ This is the second field. It's a picklist
   -	The endpointId is the name of the build task field containing the custom endpoint type
   -	The REST call is chosen by the dataSourceName
 
-If you've added the Build Task successfully, you should now see the Build Task when adding tasks to a build definition
+If you've added the Build Task successfully, you should now see the Build Task when adding tasks to a build pipeline
 <img src="./_img/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Once you've added the Build Task to your pipeline, confirm that it can see the Fabrikam endpoint you created. 

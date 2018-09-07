@@ -20,41 +20,67 @@ This tutorial is an end-to-end guide on using npm to store JavaScript packages u
 
 ## Step 1: License the Azure Artifacts extension
 
-### Install Azure Artifacts extension
+::: moniker range=">= tfs-2017 < vsts" 
 
-Azure Artifacts is an extension that comes pre-installed from the Marketplace. 
+### Install Azure Artifacts in TFS
 
-::: moniker range=">=tfs-2017"
+Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Azure Artifacts.
 
-> If your organization doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+> If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 
-If you're using the new navigation UX for Azure DevOps Services, select the **Artifacts** hub to access Azure Artifacts.
+::: moniker range="vsts" 
 
-If you're using the previous navigation UX or TFS, go to any project in your organization and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
+### Assign Artifacts in Azure DevOps Services
 
-### Assign licenses
+Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  
 
-You will need to assign your licenses by following the instructions below: 
-
-> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
+You will need to assign your licenses by following the instructions below:
 
 # [New navigation](#tab/new-nav)
-1. Go to your organization, select **Admin settings** in the bottom left of the UX:
-2. Select **Users**
-3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**
-4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**
+
+1. Go to your organization, select **Admin settings** in the bottom left of the UX.
+2. Select **Users**.
+3. Select the user or users you wish to assign the Azure Artifacts extension to, and choose **Manage extensions**.
+4. If selecting multiple users, click **Assign extensions** and choose the Azure Artifacts extension. If only selecting one user, check the Azure Artifacts box under _Extensions_ and select **Save changes**.
+
+If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 # [Previous navigation](#tab/previous-nav)
-1. Go to your organization, select the **Users** hub, and select **Package Management**.
-1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
+
+1. Go to your account, navigate to the **Users** page, and select Package Management.
+2. Select **Assign**, type the users you want to assign licenses to, then select **Ok**.
+
+If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 ---
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts" 
+
+### Assign licenses in TFS
+
+Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your organization will be granted access to Azure Artifacts for 30 days.  After the 30-day trial period your organization will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+
+> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
+
+1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then select **Package Management**.
+
+   ![Users page in TFS](_img/users-hub-tfs.png)
+
+1. Select **Assign**, type the user(s) you want to assign licenses, then select **Ok.**
+
+   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free.  [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
+
+   * Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
+
+::: moniker-end
+
 ## Step 2: Create a feed
 
-On your first visit to the **Artifacts** hub, you'll be welcomed with an image telling you to create a new feed, click the **+ New feed** button.
+On your first visit to **Azure Artifacts**, you'll be welcomed with an image telling you to create a new feed, click the **+ New feed** button.
 
 In the dialog:
 * Give the feed a name.
@@ -76,7 +102,7 @@ In the dialog:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range=">=tfs-2017 < vsts"
 
 ![New feed dialog](_shared/_img/new-feed-dialog.png)
 
@@ -84,20 +110,19 @@ In the dialog:
 
 You can change these settings later by [editing the feed](./feeds/edit-feed.md).
 
-
 ## Step 3: Set up your npmrc
 
 All Azure Artifacts feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ### Where are my **_.npmrc_** files?
 
-Azure DevOps Services recommends using two **_.npmrc_** files:
+It is recommended to use two **_.npmrc_** files:
 
 1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
     ::: moniker range="vsts"
 
-    1. From your **Artifacts** page, click _Connect to Feed_
+    1. From **Azure Artifacts**, click _Connect to Feed_
 
         # [New navigation](#tab/new-nav)
         > [!div class="mx-imgBorder"] 
@@ -168,7 +193,7 @@ There are two options for setting up authentication in a build task:
 #### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in Azure DevOps Services under the **Pipelines** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Pipelines** page.
 
     ::: moniker range="vsts"
 
@@ -266,7 +291,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in Azure DevOps Services under **Pipelines** hub.
+1. Add a build pipeline in Azure DevOps Services under **Pipelines** page.
     
     ::: moniker range="vsts"
 
