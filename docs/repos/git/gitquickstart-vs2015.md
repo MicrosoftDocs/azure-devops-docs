@@ -43,12 +43,12 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
   ![Cloning Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
-0. Choose **Connect**, select your Azure DevOps Services organization, choose the projects you want to work on, then
+0. Choose **Connect**, select your Azure DevOps organization, choose the projects you want to work on, then
 click **Connect**.   
 
 0. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
    
-   ![Cloning a Git Repository from a connected Azure DevOps Services organization](_shared/_img/cloneVsRepo.png)
+   ![Cloning a Git Repository from a connected Azure DevOps organization](_shared/_img/cloneVsRepo.png)
 
 # [Command Line](#tab/command-line)
 
@@ -142,7 +142,7 @@ team, you complete the pull request through the web browser.
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git push -u origin <font color="#b5bd68">dev</font></pre>
 
-0. Open up the Azure DevOps Services project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
+0. Open up the Azure DevOps project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
    ![Creating a new Pull Request in Azure Repos](_shared/_img/vstsCreatePullReq.png)   
 

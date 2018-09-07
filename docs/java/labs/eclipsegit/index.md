@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Clone an Azure DevOps Services Git repo using Eclipse
 
-In this exercise, you are going to import the MyShuttle2 repo in your Azure DevOps Services organization into to your VM for editing in Eclipse.
+In this exercise, you are going to import the MyShuttle2 repo in your Azure DevOps organization into to your VM for editing in Eclipse.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -62,11 +62,11 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Checkout from Azure DevOps Services Git](../_img/eclipsegit/showtee2.png)
 
-1. Click on "Connect to Azure DevOps Services ..." to sign in to your Azure DevOps Services organization.
+1. Click on "Connect to Azure DevOps Services ..." to sign in to your Azure DevOps organization.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-vsts-signin.png)
 
-1. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps Services organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
+1. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/browseAzure DevOps Services.png)
 
@@ -80,7 +80,7 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Device login](../_img/eclipsegit/browser-deviceloggedin.png)
 
-1. Back in Eclipse, press the OK button in the device login window. The Azure DevOps Services organization should now show up in the list of servers to connect to. Press the "Close" button to close the current window.
+1. Back in Eclipse, press the OK button in the device login window. The Azure DevOps organization should now show up in the list of servers to connect to. Press the "Close" button to close the current window.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-tfslist.png "Sign in to Azure DevOps Services")
 

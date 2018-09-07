@@ -135,7 +135,7 @@ To share the changes in your topic branch, you'll need to publish it to the serv
 ## Conduct a pull request
 Pull Requests are a common workflow for reviewing code created in a topic branch and merging changes.  Let's create a pull request to see how it works.
 
-0. In your browser, open the **CODE** hub and click **Pull Requests** to view the Pull Requests hub.
+0. In your browser, open the **Code** page and click **Pull requests** to view the **Pull Requests** page.
 
 	![Click CODE, then Pull Requests](_img/get-started/WebPullRequestHub.png)
 
@@ -188,7 +188,7 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the Repos hub in Azure DevOps Services.
+* Get the clone URL from the Repos page in Azure DevOps Services.
 
 For the Fabrikam project on Azure DevOps Services, the command to clone would look like this:
 

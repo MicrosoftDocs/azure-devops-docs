@@ -1,7 +1,7 @@
 ---
 title: Use TFVC and Git repos in the same project
 titleSuffix: Azure Repos
-description: Using Version Control in Your Azure DevOps Services project
+description: Using Version Control in Your Azure DevOps project
 ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
 toc: show
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14//2018 
+ms.date: 09/10/2018 
 monikerRange: '>= tfs-2015'
 ---
 

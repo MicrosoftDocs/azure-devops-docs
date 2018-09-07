@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-0.  Sign in to your Azure DevOps Services organization 
+0.  Sign in to your Azure DevOps organization 
 (```http://{youraccount}.visualstudio.com```).
 
 0.  From your home page, open your profile. Go to your security details.
@@ -16,7 +16,7 @@ ms.topic: include
 0.  Name your token. Select a lifespan for your token.
 
 	If you're using Azure DevOps Services, and you have more than one organization, 
-	you can also select the Azure DevOps Services organization where you want to use the token.
+	you can also select the Azure DevOps organization where you want to use the token.
 
    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 

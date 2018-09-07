@@ -22,7 +22,7 @@ Share your code with your team with Azure DevOps Services and Eclipse.
 
 [!INCLUDE [include](_shared/connect-eclipse-to-vso.md)]
 
-If your project uses TFVC in your Azure DevOps Services organization, read on. However, if your project uses Git in your Azure DevOps Services organization,then read [Share your code in Git using Eclipse](../../repos/git/share-your-code-in-git-eclipse.md)
+If your project uses TFVC in your Azure DevOps organization, read on. However, if your project uses Git in your Azure DevOps organization,then read [Share your code in Git using Eclipse](../../repos/git/share-your-code-in-git-eclipse.md)
 
 <a name="tfvc"></a>
 ## Share using TFVC

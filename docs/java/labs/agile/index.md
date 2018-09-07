@@ -33,7 +33,7 @@ previous exercise). For this first part, you will create work items for
 you in the lab. Later, you will create some more work items as you work
 through the MyShuttle scenario.
 
-1. Login to your Azure DevOps Services organization and navigate to your project
+1. Login to your Azure DevOps organization and navigate to your project
 
 1. Click the **Work** link.
 

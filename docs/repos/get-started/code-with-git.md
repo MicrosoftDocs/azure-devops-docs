@@ -75,7 +75,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the team project for your Azure DevOps Services organization and choose **Repos>Files**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
+1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, **Files**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
   ![Repos files](_img/clone-repo/repos-files.png)
 
@@ -101,9 +101,9 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the team project for your Azure DevOps Services organization and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
+1. From your web browser, open the team project for your Azure DevOps organization and click the **Code** page. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
-1. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
+1. Select Clone in the upper-right corner of the **Code** page and copy the **Clone URL**.
 
   ![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
 
@@ -198,7 +198,7 @@ This example shows the basic steps of creating and completing a pull request.
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the team project for your Azure DevOps Services organization and choose **Repos>Files**. If you kept your browser open after getting the clone URL you can just switch back to it.
+1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, **Files**. If you kept your browser open after getting the clone URL you can just switch back to it.
 
   ![Repos files](_img/clone-repo/repos-files.png)
 
@@ -232,9 +232,9 @@ This example shows the basic steps of creating and completing a pull request.
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the team project for your Azure DevOps Services organization and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
+1. From your web browser, open the team project for your Azure DevOps organization and click the **Code** page. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
-1. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
+1. Select Clone in the upper-right corner of the **Code** page and copy the **Clone URL**.
 
   ![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
 

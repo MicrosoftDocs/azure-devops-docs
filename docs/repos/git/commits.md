@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Save work with commits
 

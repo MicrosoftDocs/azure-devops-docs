@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps Services - Data Protection
-description: Learn how Microsoft protects your Azure DevOps Services projects and data. Microsoft is committed to making sure that your Azure DevOps Services projects stay safe and secure, without exception. 
+description: Learn how Microsoft protects your Azure DevOps projects and data. Microsoft is committed to making sure that your Azure DevOps projects stay safe and secure, without exception. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -24,9 +24,9 @@ much more. Azure DevOps Services uses Microsoft Azure's Platform as a Service
 infrastructure and many of Azure's services, including Azure SQL
 databases, to deliver a reliable, globally available service for your
 development projects. Because important data is at stake, this white
-paper discusses the steps that Microsoft takes to keep your Azure DevOps Services projects
+paper discusses the steps that Microsoft takes to keep your Azure DevOps projects
 safe, available, secure, and private. In addition, it describes the role
-you play in keeping your Azure DevOps Services projects safe and secure.
+you play in keeping your Azure DevOps projects safe and secure.
 
 This white paper is part of our effort to illuminate how we manage and
 protect your data and is intended for account administrators and IT
@@ -37,7 +37,7 @@ Azure DevOps Services.
 
 ## Our commitment
 
-Microsoft is committed to ensuring that your Azure DevOps Services projects remain safe
+Microsoft is committed to ensuring that your Azure DevOps projects remain safe
 and secure, without exception. When stored in Azure DevOps Services, your projects benefit
 from multiple layers of security and governance technologies,
 operational practices, and compliance policies. We enforce data privacy
@@ -86,10 +86,10 @@ details surrounding Azure DevOps Services approach to data protection, some back
 in these elements is important.
 
 **Azure Blob storage** is generally used to store large chunks of
-unstructured data. All Azure DevOps Services projects use the Azure Blob storage service.
+unstructured data. All Azure DevOps projects use the Azure Blob storage service.
 This data includes potentially sensitive or private information such as
 the contents of source files and the attachments on work items. For most
-Azure DevOps Services projects, the majority of storage in use is this type of
+Azure DevOps projects, the majority of storage in use is this type of
 unstructured blob storage. For more information, see documentation on
 [Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
@@ -168,7 +168,7 @@ incorrect, the sentiment is right.  The good news is that we regularly
 practice restoring various data sets from backup.  The geo-redundant 
 storage that we get from Azure is tested regularly. In addition, from 
 time to time we restore from backups to recover from human error, 
-such as when a customer has inadvertently deleted an Azure DevOps Services project. We have the capability of restoring your account data to any point in time over the last 30 days.
+such as when a customer has inadvertently deleted an Azure DevOps project. We have the capability of restoring your account data to any point in time over the last 30 days.
 While our turnaround time sometimes takes more than day, we have always 
 been able to restore the customer's data given enough time.  Since 
 there are many permutations of disaster and data corruption 
@@ -557,7 +557,7 @@ on which Windows and your data reside, keeping everything safe. Once
 BitLocker is enabled, it will automatically encrypt any file you save on
 that drive. If your laptop or desktop machine were to fall into the
 wrong hands, BitLocker prevents unauthorized access of local copies of
-data from your Azure DevOps Services projects.
+data from your Azure DevOps projects.
 
 ### Limit use of Alternate Authentication Credentials
 

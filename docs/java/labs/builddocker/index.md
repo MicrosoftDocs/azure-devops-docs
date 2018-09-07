@@ -50,7 +50,7 @@ This exercise assumes you have completed the exercises to [create a Team Project
 
 In this task you will update the pom.xml file for the MyShuttle2 application so that it can consume the MyShuttleCalc package from the Maven package feed.
 
-1. In Chrome navigate to your Azure DevOps Services organization and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
+1. In Chrome navigate to your Azure DevOps organization and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
     ![Get the package repository settings from Azure DevOps Services](../_img/builddocker/maven-packagefeed-settings.png)
 

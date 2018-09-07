@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-0.  Sign in to your Azure DevOps Services organization 
+0.  Sign in to your Azure DevOps organization 
 (```http://{youraccount}.visualstudio.com```).
 
 0.  From your home page, open your profile. Go to your security details.

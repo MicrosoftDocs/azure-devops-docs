@@ -38,7 +38,7 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps Services organization URL and click Next.
+1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps organization URL and click Next.
 
     ![Connect to Azure DevOps Services](../_img/e2eeclipse/connect-to-vsts.png)
 
@@ -129,7 +129,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Open Eclipse if it is not already open. Open the MyShuttle2 project.
 
-1. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your Azure DevOps Services organization via the Team Explorer Home page.
+1. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your Azure DevOps organization via the Team Explorer Home page.
 
 1. If there are no queries saved in Azure DevOps Services, a query can be created in Eclipse (but not saved at this time). Right-click on the My Queries folder and select "New Query."
 

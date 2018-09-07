@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Clone an Azure DevOps Services Git repo using IntelliJ
 
-In this exercise, you are going to open the MyShuttle2 repo from your Azure DevOps Services organization in your VM for editing in IntelliJ.
+In this exercise, you are going to open the MyShuttle2 repo from your Azure DevOps organization in your VM for editing in IntelliJ.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -52,7 +52,7 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Checkout from Azure DevOps Services Git](../_img/intellijgit/intellij-open-from-vsts.png)
 
-1. Click on "Sign in..." to sign in to your Azure DevOps Services organization.
+1. Click on "Sign in..." to sign in to your Azure DevOps organization.
 
     ![Sign in to Azure DevOps Services](../_img/intellijgit/intellij-vsts-signin.png)
 
