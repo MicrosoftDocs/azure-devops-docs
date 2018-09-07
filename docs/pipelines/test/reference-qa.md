@@ -61,19 +61,19 @@ A merged summary is not currently available for coverage files published using m
 
 1. Run **unit tests** in the CI pipeline, as demonstrated in the example above. The **Visual Studio Test** task
    automatically runs tests included in the app assemblies, but there is a wide range of configuration options
-   you can specify, such as running only specific tests. See [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md).
+   you can specify, such as running only specific tests. See [Visual Studio Test task](../tasks/test/vstest.md).
  
 1. Run **functional tests** in the early stages of the CD pipeline. These are typically 
    [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](/visualstudio/test/use-ui-automation-to-test-your-code) tests.
-   To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
-   and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTestsV1/README.md)**
-   tasks to your release pipeline. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
-
+   Use version 2.x or higher of the [Visual Studio Test task](../tasks/test/vstest.md) together with [jobs](../process/phases.md)
+   to run unit and functional tests on the universal agent.
+   See [Run tests in parallel using the Visual Studio Test task](parallel-testing-vstest.md).
+   
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
    The example shown above is just a simple test that accesses a single page in the web app to validate that 
    deployment succeeded and the app is running successfully. You can perform must more comprehensive load testing
    to validate the entire app by running [cloud-based load tests](../../pipelines/tasks/test/cloud-based-load-test.md)
-   and [Apache JMeter load tests](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest).
+   and [Apache JMeter load tests](../tasks/test/run-jmeter-load-test.md).
 
 ### Q: Can I find a specific test run?
 
@@ -108,7 +108,7 @@ after the load tests have run and before the app is swapped from staging to prod
 to pass values as parameters to your test code. For example, in a release that contains
 several stages, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.  
+[Visual Studio Test task](../tasks/test/vstest.md).  
 
 ![Passing parameters to test code in a build or release pipeline](_img/pass-params-to-test-code.png)
 

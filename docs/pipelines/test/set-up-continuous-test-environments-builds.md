@@ -55,7 +55,7 @@ to install your agents.
 
 As an alternative, consider:
 
-* If you use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
+* If you use version 2.x or higher of the [Visual Studio Test](../tasks/test/vstest.md)
   task you can deploy and run unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
   and run tests on platforms that don't have Visual Studio installed by using the 
   [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
@@ -128,7 +128,7 @@ Parallel Test Execution is **not** supported in the following cases:
 
 Configure a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 in the app source repository for Visual Studio IDE or the CLI, and in Azure Pipelines when using
-version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+version 1.x of the  [Visual Studio Test](../tasks/test/vstest.md)
 task.
 
 <a name="runsettings"></a>
@@ -162,7 +162,7 @@ For the CLI, **vstest.console.exe** supports a **/Parallel** command line switch
 ### Enable parallel tests in Azure Pipelines with VS Test task v2.x
 
 Enable parallel test execution by setting the **Run Tests in Parallel...** checkbox
-in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.
+in the settings for the [Visual Studio Test](../tasks/test/vstest.md) task.
 
 ![Using parallel execution in Azure Pipelines](_img/run-tests-in-parallel/parallel-vsts.png)
 
