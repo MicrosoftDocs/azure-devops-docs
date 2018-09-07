@@ -16,9 +16,6 @@ Check out the [Features](#features) list below for more.
 
 ## Next steps
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
-
 Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
