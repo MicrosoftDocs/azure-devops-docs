@@ -343,6 +343,8 @@
         href: tasks/utility/download-secure-file.md
       - name: Download Build Artifacts
         href: tasks/utility/download-build-artifacts.md
+      - name: Download Fileshare Artifacts
+        href: tasks/utility/download-fileshare-artifacts.md
       - name: Download Package
         href: tasks/utility/download-package.md
       - name: Extract Files

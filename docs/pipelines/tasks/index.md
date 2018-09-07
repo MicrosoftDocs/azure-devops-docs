@@ -65,6 +65,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the pipeline for a fixed delay time. | Azure Pipelines |
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](utility/_img/downloadbuildartifacts.png) [Download Build Artifacts](utility/download-build-artifacts.md). Download build artifacts. | Azure Pipelines |
+| ![icon](utility/_img/downloadbuildartifacts.png) [Download Fileshare Artifacts](utility/download-fileshare-artifacts.md). Download fileshare artifacts. | Azure Pipelines |
 | ![icon](utility/_img/downloadpackage.png) [Download Package](utility/download-package.md). Download a package from a Package Management feed in Azure Pipelines or TFS.  Requires the Package Management extension. | Azure Pipelines |
 | ![icon](utility/_img/secure-file.png) [Download Secure File](utility/download-secure-file.md). Download a secure file to a temporary location on the build or release agent. | Azure Pipelines |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | Azure Pipelines, TFS 2017 and newer |
