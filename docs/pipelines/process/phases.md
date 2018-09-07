@@ -89,7 +89,7 @@ jobs:
 ```
 
 The above syntax is necessary only if you want to define multiple jobs or change the properties for a job. You can skip the job syntax if you need only a single job with the standard options.
-For example, the following YAML file runs a single job on the Hosted VS2017 pool.
+For example, the following YAML file runs a single job to print `Hello world`.
 
 ```yaml
 steps:
