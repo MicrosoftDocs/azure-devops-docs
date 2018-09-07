@@ -63,7 +63,7 @@ You manage the security for a deployment group by
 
 Every target machine in the deployment group requires the build and release agent
 to be installed. You can do this using the script that is generated in the
-**Deployment Groups** tab of the **Pipelines** hub. You can choose the
+**Deployment Groups** tab of **Azure Pipelines**. You can choose the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
 

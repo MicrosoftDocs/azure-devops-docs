@@ -26,7 +26,7 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
    The libraries this command installs are pre-requisites for installing the build and release agent
    onto a Ubuntu 16.04 VM. Pre-requisites for other versions of Linux can be found [here](../../agents/v2-linux.md).
 
-1. Open the Azure Pipelines web portal, navigate to the **Pipelines** hub,
+1. Open the Azure Pipelines web portal, navigate to **Azure Pipelines**,
    and choose **Deployment groups**.
 
 1. Choose **Add Deployment group** (or **New** if you have existing deployment groups).
@@ -46,5 +46,5 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
 
 1. Wait for the script to finish and display the message *Started Azure Pipelines Agent*. Type "q" to exit the file editor and return to the shell prompt.
 
-1. Back in Azure Pipelines or TFS, on the **Deployment groups** page of the **Pipelines** hub in Azure Pipelines, open the **myNginx** deployment group.
+1. Back in Azure Pipelines or TFS, on the **Deployment groups** page in Azure Pipelines, open the **myNginx** deployment group.
    On the **Targets** tab, verify that your VM is listed.

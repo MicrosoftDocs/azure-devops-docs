@@ -61,7 +61,7 @@ Your code changes automatically appear on your site:
 
  ![Screenshot showing button to set up build for a repository](../../../apps/_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Pipelines** hub in Azure Pipelines and asked to **Choose a template**.
+ You are taken to Azure Pipelines and asked to **Choose a template**.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 

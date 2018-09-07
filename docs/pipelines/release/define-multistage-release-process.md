@@ -55,7 +55,7 @@ You'll need:
 
 In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
 
-1. In the **Pipelines** hub, open the **Releases** tab. Select your release pipeline and, in
+1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline and, in
    the right pane, choose **Edit**.
 
    ![Opening the release pipeline for editing](_img/define-multistage-release-process/open-for-edit.png)

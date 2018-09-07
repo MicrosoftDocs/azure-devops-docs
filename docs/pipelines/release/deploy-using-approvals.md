@@ -58,7 +58,7 @@ Gates allow you to configure automated calls to external services, where the res
 are used to approve or reject a deployment. You can use gates to ensure that the release
 meets a wide range or criteria, without requiring user intervention.
 
-1. In the **Releases** tab of the **Pipelines** hub, select your release
+1. In the **Releases** tab of **Azure Pipelines**, select your release
    pipeline and choose **Edit** to open the pipeline editor.
 
    ![Opening the release pipeline](_img/deploy-using-approvals/open-pipeline.png)
@@ -159,7 +159,7 @@ granted. The comprehensive logging capabilities provide this information.
 
 1. Open the release summary for the release you just created. You can do this by choosing the
    link in the information bar in the release editor after you create the release,
-   or directly from the **Releases** tab of the **Pipelines** hub.
+   or directly from the **Releases** tab of **Azure Pipelines**.
 
    ![Opening the release summary](_img/deploy-using-approvals/open-summary.png)
 

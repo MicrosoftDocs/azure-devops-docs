@@ -11,7 +11,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    * If you've just completed a CI build (see above), choose the link (for example, _Build 20170815.1_)
      to open the build summary. Then choose **Release** to start a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
+   * Open the **Releases** tab in **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.

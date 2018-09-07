@@ -58,7 +58,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
      ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
-   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)

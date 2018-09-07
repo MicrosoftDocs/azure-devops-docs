@@ -9,8 +9,8 @@ ms.topic: include
 ![information](../_img/info1.png)
 **A newer version of Release Management is available**
 
-Release Management features have been integrated into the **Pipelines** hub in
-Team Foundation Server (TFS) and Azure Pipelines.
+Release Management features have been integrated into **Azure Pipelines** and
+Team Foundation Server (TFS).
 For more information, see [Build and Release in Azure Pipelines and TFS](../../../overview.md).
 
 The newer web-based version is the recommended alternative 

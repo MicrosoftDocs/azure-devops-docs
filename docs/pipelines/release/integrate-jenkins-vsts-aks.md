@@ -339,7 +339,7 @@ Before you create the release pipeline, you need to install an Azure Pipelines e
 
 ## Create an Azure Pipelines release pipeline for CD to Azure
 
-1. Open the **Releases** on the **Pipelines** hub, and choose **Create release pipeline**.
+1. Open **Releases** in **Azure Pipelines**, and choose **Create release pipeline**.
 
 1. Select the **Empty** template by choosing **Start with an empty pipeline**.
 

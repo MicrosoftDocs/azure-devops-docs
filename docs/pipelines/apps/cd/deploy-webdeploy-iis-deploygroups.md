@@ -65,7 +65,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    * If you've just completed a CI build then, in the build's **Summary** tab choose **Release**. This creates a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Select the **IIS Website Deployment** template and choose **Apply**.

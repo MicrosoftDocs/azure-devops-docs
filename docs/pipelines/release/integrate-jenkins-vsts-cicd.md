@@ -187,7 +187,7 @@ A release pipeline specifies the process Azure Pipelines executes to deploy the 
 
 To create the release pipeline in Azure Pipelines:
 
-1. Open **Releases** on the **Pipelines** hub in Azure Pipelines, and choose **Create release pipeline**.
+1. Open **Releases** in Azure Pipelines, and choose **Create release pipeline**.
 
 1. Select the **Empty** template by choosing **Start with an empty pipeline**.
 
@@ -237,7 +237,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Navigate to your **Azure DevOps organization**.
 
-1. Open **Builds** on the **Pipelines** hub in Azure Pipelines, and choose **+ New** to create a new build pipeline.
+1. Open **Builds** in Azure Pipelines, and choose **+ New** to create a new build pipeline.
 
 1. Ensure **Azure Repos Git** is selected for the source, and then select **Continue**.
 
@@ -257,7 +257,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Select the **Queue Jenkins Job** task.  **Capture console output and wait for completion** is enabled to help provide the Jenkins logging information to Azure Pipelines, and also it will cause the Azure Pipelines build to wait for this step to complete successfully in Jenkins before proceeding.  This causes the Azure Pipelines build to succeed for fail based on the Jenkins result.  **Capture pipeline output and wait for completion** is similarly enabled to ensure Azure Pipelines succeeds or fails based on the entire Jenkins pipeline result.  These two options help you view Jenkins logging information in a single place (Azure Pipelines) for the entire CI/CD pipeline.
 
-1. Open **Releases** on the **Pipelines** hub in Azure Pipelines, and choose the **release pipeline** you created earlier. Select the **ellipsis** and choose **Edit**.
+1. Open **Releases** in Azure Pipelines, and choose the **release pipeline** you created earlier. Select the **ellipsis** and choose **Edit**.
 
 1. **Delete** the artifact you used earlier.  **Add** a new artifact by choosing your Azure Pipelines build pipeline.  The Azure Pipelines build pipeline will now provide the artifact for the CD part of the pipeline.
 

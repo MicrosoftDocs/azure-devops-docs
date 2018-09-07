@@ -142,7 +142,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
      This starts a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Choose **Start with an empty pipeline**.

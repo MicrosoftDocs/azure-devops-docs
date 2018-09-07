@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Pipelines** hub of the web portal, either from the user or admin context.
+To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** if the web portal, either from the user or admin context.
 
 This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](set-permissions.md).
 
@@ -149,7 +149,7 @@ Task group permissions follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group pipeline.
 
-You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Pipelines** hub.
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab if **Azure Pipelines**.
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | 
@@ -161,7 +161,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ## Library roles and permissions
 
-Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab of the **Pipelines** hub.
+Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab if **Azure Pipelines**.
 
 [!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
 

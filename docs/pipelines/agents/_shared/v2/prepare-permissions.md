@@ -61,7 +61,7 @@ Otherwise:
 
 <li>If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-add-delete-users.md#find-owner), or a [TFS server administrator](/tfs/server/admin/add-administrator-tfs).
 If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-add-delete-users.md#find-owner), or a [TFS server administrator](/tfs/server/admin/add-administrator-tfs).
-You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page of the **Pipelines** hub.</li>
+You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page in **Azure Pipelines**.</li>
 </ol>
 
 > If you see a message like this: _Sorry, we couldn't add the identity. Please try a different identity._, you probably followed the above steps for an organization owner or TFS server administrator. You don't need to do anything; you already have permission to administer the agent queue.
