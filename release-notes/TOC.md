@@ -1,6 +1,6 @@
 # [Features timeline](index.md)
 # 2018
-## [September 5](2018/sep-05-azure-devops-launch.md)
+## [September 10](2018/sep-10-azure-devops-launch.md)
 ## [August 21](2018/aug-21-vsts.md)
 ## [August 3](2018/aug-03-vsts.md)
 ## [July 10](2018/jul-10-vsts.md)

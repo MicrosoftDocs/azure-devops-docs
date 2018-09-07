@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 9/5/2018
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -84,7 +84,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="15">[5 September 2018](2018/sep-05-azure-devops-launch.md)</td>
+            <td rowspan="15">[10 September 2018](2018/sep-10-azure-devops-launch.md)</td>
             <td>Azure DevOps Services</td><td>*2019*</td>
         </tr>
         <tr><td>Add Azure Pipelines from the GitHub Marketplace</td><td>N/A</td></tr>
