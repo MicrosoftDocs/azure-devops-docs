@@ -111,7 +111,7 @@ repositories {
 } 
 ```
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services organization. You can configure
-publishing and downloading to use separate Azure DevOps Services accounts, if you prefer.
+publishing and downloading to use separate Azure DevOps Services organizations, if you prefer.
 
 Replace the following fields with your own values:
 

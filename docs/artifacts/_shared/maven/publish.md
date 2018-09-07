@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-Publish Maven artifacts to a feed in Azure Artifacts to share them with your team and organization.
+Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
 
 To publish a Maven artifact, you'll need to have a Maven artifact to publish on your local machine. 
 If you don't have one, you can generate one by running the following command:

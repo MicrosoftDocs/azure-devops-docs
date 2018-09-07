@@ -8,7 +8,9 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
 **90-day token:**
 
-1. From the **Packages** hub, select _Connect to feed_
+::: moniker range="vsts"
+
+1. From **Azure Artifacts**, select _Connect to feed_
 
 1. Select _npm_.
 
@@ -23,6 +25,20 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
     ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
 
    ---
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+1. From the **Packages** page, select _Connect to feed_
+
+1. Select _npm_.
+
+1. Click _Generate npm credentials_ and copy them to add them to your user **_.npmrc_** manually:
+
+    ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
+
+::: moniker-end
 
 **Create a token that lasts longer than 90 days:**
 

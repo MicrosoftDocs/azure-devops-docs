@@ -35,7 +35,7 @@ Please perform the following step to determine if any of these resolve the issue
 Ensure the email was not delivered to a different email folder.
 
 ## Step 2: Locate the subscription and ensure it is enabled.
-Navigate to your personal subscriptions and locate the subscription which you feel should have produced an email, but didn't. Click [here](navigating-the-ux.md#navigating-to-the-personal-notifications-hub) to learn how to navigate to your personal subscriptions.
+Navigate to your personal subscriptions and locate the subscription which you feel should have produced an email, but didn't. Click [here](navigating-the-ux.md#navigating-to-the-personal-notifications-page) to learn how to navigate to your personal subscriptions.
 
 If the subscription is greyed-out in the user interface, then it is disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
@@ -50,7 +50,7 @@ An email is only generated if an Azure DevOps Services event matches _all_ of th
 The `Skip initiator` checkbox option on a subscription will cause the initiator of the Azure DevOps Services event to be excluded from the recipient list of the generated email, while all others will receive the event. For example, consider a subscription for a _work item changed_ event. You can choose `Skip initiator` to avoid being emailed for changes you make to the work item. [Learn more about excluding the initator from notifications](howto-exclude-self-from-email.md).
 
 ## Step 5: Check "Do not deliver" setting for the organization
-Navigate to the organization level notifications hub and click the `Settings` tab (click [here](howto-manage-organization-notifications-settings.md) to see how). If the delivery setting is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings will inherit this value. This setting alone doesn't necessarily indicate an email wasn't delivered but it could contibute to the problem, continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+Navigate to the organization level notifications page and click the `Settings` tab (click [here](howto-manage-organization-notifications-settings.md) to see how). If the delivery setting is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings will inherit this value. This setting alone doesn't necessarily indicate an email wasn't delivered but it could contibute to the problem, continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
 
 ## Step 6: Check "Do not deliver" setting for your team or group
 If the team or group defines a delivery setting for **Deliver to individual members**, it's still possible that the team contains other groups which have a different delivery setting. Click [here](concepts-email-recipients.md) to learn how team membership is expanded and how some members of the team could receive an email while others do not.

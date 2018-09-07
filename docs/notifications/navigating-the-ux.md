@@ -1,7 +1,7 @@
 ---
 title: Navigating the notifications UX
 titleSuffix: Azure DevOps Services & TFS 
-description: Navigate and explore the notifications hubs in Azure DevOps Servicesand Team Foundation Server (TFS)  
+description: Navigate and explore the notifications pages in Azure DevOps Servicesand Team Foundation Server (TFS)  
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -21,19 +21,19 @@ monikerRange: '>= tfs-2017'
 > [!NOTE]  
 > This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
-## The notifications hubs
-There are three notifications hubs in the UX:
-* Organization notifications hub
-* Team notifications hub
-* Personal notifications hub
+## The notifications pages
+There are three notifications pages in the UX:
+* Organization notifications page
+* Team notifications page
+* Personal notifications page
 
-Permissions to manage notification at each hub default as follows:
+Permissions to manage notification at each page default as follows:
 * Organization administrators can manage accuont notifications
 * Organization and team administrators can manage team notifications
 * Each user can manage their personal notifications
 
 
-## Direct navigation to notifications hubs using URL
+## Direct navigation to notifications pages using URL
 
 Organization:
 ```
@@ -51,24 +51,24 @@ https://dev.azure.com/{organization}/_notifications
 ```
 
 
-## Navigating to the organization level notifications hub
-Choose the Notifications hub under organization settings.
+## Navigating to the organization level notifications page
+Choose the Notifications page under organization settings.
 
-![Navigate to organization notifications hub](_img/nav-organization-notifications-hub.png)
+![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)
 
-![View organization level notifications hub](_img/view-organization-notification-hub.png)
+![View organization level notifications page](_img/view-organization-notification-hub.png)
 
-## Navigating to the team level notifications hub
-Choose the Notifications hub under project settings.
+## Navigating to the team level notifications page
+Choose the Notifications page under project settings.
 
-![Navigate to team notifications hub](_img/nav-team-notifications-hub.png)
+![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
 
-![View team level notifications hub](_img/view-team-notification-hub.png)
+![View team level notifications page](_img/view-team-notification-hub.png)
 
-## Navigating to the personal notifications hub
-Choose Notifications hub under your profile
+## Navigating to the personal notifications page
+Choose Notifications page under your profile
 
-![Navigate to personal notifications hub](_img/nav-personal-notifications-hub.png)
+![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
 
-![View personal notifications hub](_img/view-personal-notification-hub.png)
+![View personal notifications page](_img/view-personal-notification-hub.png)
 

@@ -112,7 +112,7 @@ There are two options for setting up authentication in a build task:
 ### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** page.
 
     ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
@@ -155,7 +155,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** page.
 
     ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 

@@ -22,7 +22,7 @@ Deleting a version of an artifact makes it unavailable for install. After deleti
 
 You must be an **owner** to delete an artifact.
 
-Choose the artifact from the **Packages** hub in the **Build and Release** hub group and select the appropriate option from the menu:
+Choose the artifact from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 ![Delete Maven artifact Azure DevOps Services](../_img/delete/delete-maven-package.png)
 

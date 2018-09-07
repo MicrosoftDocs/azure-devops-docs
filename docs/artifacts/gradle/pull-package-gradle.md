@@ -117,7 +117,7 @@ The Gradle wrapper is created in the directory where you ran the above command. 
 
 `git push` an update that contains the wrapper (gradlew) from your cloned (local) repo to `origin`. Team Build requires this file on the remote repo for Gradle to build your project.
 
-Go to the **Build and Release** hub for your project, and then select **Builds**.
+Go to the **Build and Release** page for your project, and then select **Builds**.
 
 Select the **+ New** button. Scroll down and select the **Gradle** template.
 

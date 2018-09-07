@@ -20,7 +20,7 @@ With your feed selected, select **Edit feed** (the gear icon).
 
 ::: moniker range=">= tfs-2017 < vsts"
 
-[Edit feed button](_img/editfeed.png)
+![Edit feed button](_img/editfeed.png)
 
 ::: moniker-end
 

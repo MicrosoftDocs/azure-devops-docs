@@ -1,6 +1,6 @@
 ---
-title: Integrate with service hooks | Azure DevOps
-description: Perform tasks with other services when events happen in Azure DevOps projects
+title: Integrate with service hooks | Azure DevOps Services
+description: Perform tasks with other services when events happen in Azure DevOps Services projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Integrate with service hooks
 
-Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps
+Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps Services
 projects. For example, create a card in Trello when a work item is created 
 or send a push notification to your team's mobile devices when a build fails. Service hooks 
 can also be used in custom apps and services as a more efficient way to drive activities 
@@ -22,7 +22,7 @@ when events happen in your projects.
 
 ## Available services
 
-> These services are available as the target of service hooks. To learn about others apps and services that integrate with Azure DevOps, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#Azure DevOps)
+> These services are available as the target of service hooks. To learn about others apps and services that integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#Azure DevOps Services)
 
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
@@ -34,7 +34,7 @@ Build and release                  |  Collaborate 	                    | Custome
 
 ## Create a subscription
 
-When you integrate one of these services with Azure DevOps, 
+When you integrate one of these services with Azure DevOps Services, 
 you have to create a new subscription, something like this. In many cases, 
 you have to do some work in the other service, too. For specific details, 
 look at the information on the service that you're interested in.

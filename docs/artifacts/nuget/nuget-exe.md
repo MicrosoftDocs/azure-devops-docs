@@ -24,7 +24,31 @@ monikerRange: 'vsts'
 ## Add a feed to NuGet 3 or later
 NuGet 3 and later supports the Credential Provider, which automatically acquires feed credentials when needed.
 
-[!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
+1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+
+1. Select **Connect to feed**:
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+
+   ---
+
+1. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl.png)
+
+   ---
 
 Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
@@ -33,7 +57,31 @@ NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
 
-[!INCLUDE [get-endpoint-URL](../_shared/nuget/nuget-consume-endpoint.md)]
+1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+
+1. Select **Connect to feed**:
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+
+   ---
+   
+1. Copy the NuGet package source URL:
+
+    # [New navigation](#tab/new-nav)
+    > [!div class="mx-imgBorder"] 
+    >![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url-azure-devops-newnav.png)
+    > 
+
+    # [Previous navigation](#tab/previous-nav)
+    ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
+
+   ---
 
 Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
 

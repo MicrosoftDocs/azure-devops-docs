@@ -18,6 +18,6 @@ monikerRange: '>= tfs-2017'
 **Azure DevOps Services | TFS 2017**
 
    > [!NOTE] 
-   > If you don't see the Packages hub, ask your organization owner to install the [Azure Artifacts extension](https://marketplace.visualstudio.com/items?itemName=ms.feed) from the [Visual Studio Marketplace](../../marketplace/install-vsts-extension.md).
+   > If you don't see the **Packages** page, ask your organization owner to install the [Azure Artifacts extension](https://marketplace.visualstudio.com/items?itemName=ms.feed) from the [Visual Studio Marketplace](../../marketplace/install-vsts-extension.md).
 
 [!INCLUDE [](../_shared/create-feed.md)]

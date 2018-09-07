@@ -16,7 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-Azure Artifacts is an extension to VSTS and TFS. The Package Management extension comes pre-installed in both VSTS and TFS (2017 and 2018).
+Azure Artifacts is an extension to Azure DevOps Services and Team Foundation Server (TFS). The extension comes pre-installed in both Azure DevOps Services and TFS (2017 and 2018).
+
+> [!NOTE]
+> **Azure Artifacts** is the new home of the **Packages** page under the **Build and release** page group in the previous navigation UX of Azure DevOps Services and Team Foundation Server (TFS).
 
 ## Azure Artifacts Overview
 
@@ -28,7 +31,7 @@ A note on terminology: you may also have heard feeds called package *repositorie
 
 Get up and running with NuGet, npm, and Maven in Azure DevOps Services and TFS in just a few minutes with the [NuGet quick start](get-started-nuget.md), [npm quick start](get-started-npm.md), and [Maven quick start](get-started-maven.md).
 
-If you haven't used packages before, see the [conceptual introduction](index.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your Azure DevOps organization.
+If you haven't used packages before, see the [conceptual introduction](index.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your Azure DevOps Services organization.
 
 <a name="versions-compatibility"></a>
 

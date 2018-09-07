@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Zendesk with Azure DevOps
-description: Use Zendesk with your Azure DevOps organization
+title: Zendesk with Azure DevOps Services
+description: Use Zendesk with your Azure DevOps Services organization
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,15 +12,15 @@ author: elbatk
 ms.date: 02/08/2017
 ---
 
-# Zendesk with Azure DevOps
+# Zendesk with Azure DevOps Services
    
 If you use Zendesk to support your customers, 
-you can create work items in Azure DevOps directly from your Zendesk tickets.
-Then you can configure Azure DevOps to update the Zendesk ticket when the work item is updated.
+you can create work items in Azure DevOps Services directly from your Zendesk tickets.
+Then you can configure Azure DevOps Services to update the Zendesk ticket when the work item is updated.
 
-## Install the Azure DevOps app for Zendesk
+## Install the Azure DevOps Services app for Zendesk
 
-1. Download the .zip file that contains the Azure DevOps for Zendesk app from [GitHub](https://github.com/Microsoft/vsts-zendesk-app).
+1. Download the .zip file that contains the Azure DevOps Services for Zendesk app from [GitHub](https://github.com/Microsoft/vsts-zendesk-app).
 
 2. If you don't have a Zendesk account, [get one](http://zendesk.com/).
 
@@ -28,21 +28,21 @@ Then you can configure Azure DevOps to update the Zendesk ticket when the work i
 
    <img alt="Zendesk administer page, manage button" src="./_img/zendesk/zendesk-manage-apps.png" style="border: 1px solid #CCCCCC" />
 
-4. Upload the Azure DevOps for Zendesk app .zip file
+4. Upload the Azure DevOps Services for Zendesk app .zip file
 
    <img alt="Upload app button on Zendesk manage apps page" src="./_img/zendesk/zendesk-upload-app.png" style="border: 1px solid #CCCCCC" />
 
 5. Install and configure the app
 
-   <img alt="Azure DevOps for Zendesk installation page with the work item tag" src="./_img/zendesk/install.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Azure DevOps Services for Zendesk installation page with the work item tag" src="./_img/zendesk/install.png" style="border: 1px solid #CCCCCC" />
 
    If you use a work item tag, work items you create from Zendesk will have that tag. Later, you can use it to find items that were created from Zendesk.
 
 ## Authenticating
 
-Each user of the app must provide credentials so that the Azure DevOps app can create and query work items as that user. Creating a personal access token is recommended.
+Each user of the app must provide credentials so that the Azure DevOps Services app can create and query work items as that user. Creating a personal access token is recommended.
 
-1. Navigate to the Azure DevOps organization you associated with your Zendesk account (from step 5 above)
+1. Navigate to the Azure DevOps Services organization you associated with your Zendesk account (from step 5 above)
 
 2. Open the profile menu and select Security
 
@@ -58,7 +58,7 @@ Each user of the app must provide credentials so that the Azure DevOps app can c
    * Scope the token to the organization associated with Zendesk
    * Limit to at least **Work item (read and write)**
 
-4. Copy the token and paste it into the **Password** field of the Azure DevOps app in Zendesk
+4. Copy the token and paste it into the **Password** field of the Azure DevOps Services app in Zendesk
 
    <img alt="Profile menu" src="./_img/zendesk/login.png" style="border: 1px solid #CCCCCC" />
 
@@ -66,29 +66,29 @@ Each user of the app must provide credentials so that the Azure DevOps app can c
 
 ## Create a work item from Zendesk
 
-1. Go to a ticket in Zendesk and log in to the Azure DevOps for Zendesk app.
+1. Go to a ticket in Zendesk and log in to the Azure DevOps Services for Zendesk app.
 
    <img alt="Zendesk ticket page, Apps button, login" src="./_img/zendesk/visual-studio-online-app-login.png" style="border: 1px solid #CCCCCC" />
 
-2. Add a work item to Azure DevOps based on this ticket.
+2. Add a work item to Azure DevOps Services based on this ticket.
 
-   <img alt="Azure DevOps for Zendesk, new work item" src="./_img/zendesk/new-work-item.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Azure DevOps Services for Zendesk, new work item" src="./_img/zendesk/new-work-item.png" style="border: 1px solid #CCCCCC" />
 
 3. Create the work item.
 
    <img alt="Create work item dialog box" src="./_img/zendesk/create-work-item.jpg">
 
-4. Open the work item in Azure DevOps directly from Zendesk.
+4. Open the work item in Azure DevOps Services directly from Zendesk.
 
    <img alt="Zendesk ticket with work item" src="./_img/zendesk/ticket-with-work-item.png" style="border: 1px solid #CCCCCC" />
 
-   In Azure DevOps, the work item is tagged with the tag you set up , and it's linked back to the ticket in Zendesk.
+   In Azure DevOps Services, the work item is tagged with the tag you set up , and it's linked back to the ticket in Zendesk.
 
-   <img alt="Work item in Azure DevOps with tag and link to Zendesk ticket" src="./_img/zendesk/work-item.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Work item in Azure DevOps Services with tag and link to Zendesk ticket" src="./_img/zendesk/work-item.png" style="border: 1px solid #CCCCCC" />
 
-## Configure Azure DevOps to update Zendesk tickets
+## Configure Azure DevOps Services to update Zendesk tickets
 
-Close the loop by configuring Azure DevOps to update the Zendesk tickets whenever there's a change in the work items that were created from Zendesk.
+Close the loop by configuring Azure DevOps Services to update the Zendesk tickets whenever there's a change in the work items that were created from Zendesk.
 
 1. Go to the your Zendesk API administration page.
 
@@ -98,7 +98,7 @@ Close the loop by configuring Azure DevOps to update the Zendesk tickets wheneve
 
    <img alt="Channels/tokens with token access enabled" src="./_img/zendesk/token-access.png" style="border: 1px solid #CCCCCC" />
 
-0. Go to your Azure DevOps project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -126,7 +126,7 @@ and only those comments will be reflected back to Zendesk.
 Now when you comment on the work item, a private comment will be added to the Zendesk ticket.
 
 ## Pricing
-Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
@@ -135,7 +135,7 @@ for pricing related to their services.
 
 #### Q:  Why do I keep getting prompted for a user name and password?
 
-A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible organizations" or to the specific Azure DevOps organization configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
+A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible organizations" or to the specific Azure DevOps Services organization configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
 
 Also make sure the token has not expired and that it has the **Work items (read and write)** scope.
 

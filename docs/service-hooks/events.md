@@ -1,6 +1,6 @@
 ---
-title: Service hooks event reference | Azure DevOps
-description: Events supported by Azure DevOps and Team Foundation Server
+title: Service hooks event reference | Azure DevOps Services
+description: Events supported by Azure DevOps Services and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.prod: devops
 ms.technology: devops-collab
@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Azure DevOps service hooks events
+# Azure DevOps Services service hooks events
 
 ## Available event types
 
@@ -44,7 +44,7 @@ Deprecated event types:
 * [Team room message posted](#message.posted)
 
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.Azure DevOps) provides support for receiving WebHooks from Azure DevOps.
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.Azure DevOps Services) provides support for receiving WebHooks from Azure DevOps Services.
 
 ## Build and release
 
@@ -1633,7 +1633,7 @@ Filter events to include only newly created work items.
       "System.ChangedDate": "2014-07-15T17:42:44.663Z",
       "System.ChangedBy": "Jamal Hartnett",
       "System.Title": "Some great new idea!",
-      "Microsoft.Azure DevOps.Common.Severity": "3 - Medium",
+      "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
       "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
     },
     "_links": {
@@ -1715,7 +1715,7 @@ Filter events to include only newly deleted work items.
       "System.ChangedDate": "2014-07-15T17:42:44.663Z",
       "System.ChangedBy": "Jamal Hartnett",
       "System.Title": "Some great new idea!",
-      "Microsoft.Azure DevOps.Common.Severity": "3 - Medium",
+      "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
       "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
     },
     "_links": {
@@ -1791,7 +1791,7 @@ Filter events to include only newly restored work items.
       "System.ChangedDate": "2014-07-15T17:42:44.663Z",
       "System.ChangedBy": "Jamal Hartnett",
       "System.Title": "Some great new idea!",
-      "Microsoft.Azure DevOps.Common.Severity": "3 - Medium",
+      "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
       "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
     },
     "_links": {
@@ -1903,7 +1903,7 @@ Filter events to include only changed work items.
         "oldValue": "2",
         "newValue": "5"
       },
-      "Microsoft.Azure DevOps.Common.Severity": {
+      "Microsoft.Azure DevOps Services.Common.Severity": {
         "oldValue": "3 - Medium",
         "newValue": "2 - High"
       }
@@ -1935,7 +1935,7 @@ Filter events to include only changed work items.
         "System.ChangedDate": "2014-07-15T16:48:44.663Z",
         "System.ChangedBy": "Jamal Hartnett",
         "System.Title": "Some great new idea!",
-        "Microsoft.Azure DevOps.Common.Severity": "3 - Medium",
+        "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
         "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
       },
       "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
@@ -2003,7 +2003,7 @@ Filter events to include only work items commented on.
       "System.ChangedDate": "2014-07-15T17:42:44.663Z",
       "System.ChangedBy": "Jamal Hartnett",
       "System.Title": "Some great new idea!",
-      "Microsoft.Azure DevOps.Common.Severity": "3 - Medium",
+      "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
       "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New",
       "System.History": "This is a great new idea"
     },
@@ -2109,5 +2109,5 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
-* **Azure DevOps**: includes project and collection (account). Includes `baseUrl` for each.
+* **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
 
