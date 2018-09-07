@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 
 These hands-on labs are provided to give you a first-hand, technical experience on how you can leverage the Microsoft DevOps platform for Java development. The labs cover:
 
-- Creating a new Azure DevOps Services organization
+- Creating a new Azure DevOps organization
 - Using the Agile Boards to plan and track work items
 - Using Azure DevOps Services with your Eclipse and IntelliJ
 - Running Junit tests and analyzing code coverage with Jacoco and Cobertura
@@ -37,7 +37,7 @@ The image and the accompanying hand-on-labs is for a technical audience. As such
 
 ## Provisioning an Azure DevOps project using Azure DevOps Demo Generator
 
-You can use [Azure DevOps Demo Generator](https://vstsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps Services organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
+You can use [Azure DevOps Demo Generator](https://vstsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
 
 ## Hands on Labs
 

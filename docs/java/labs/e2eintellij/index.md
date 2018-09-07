@@ -36,7 +36,7 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps Services organization URL and click Next.
+1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps organization URL and click Next.
 
     ![Connect to Azure DevOps Services](../_img/e2eintellij/connect-to-vsts.png)
 

@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/13/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Set branch permissions
 
@@ -25,13 +24,19 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Use the branches view to configure security
 
-0. Open the **Branches** view while viewing your repo on the web.
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-   ![Access the branches view on the web](_img/branches/branches_nav.png)
+  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-0. Locate the branch on the **Branches** view. You can search for your branch using the **Search all branches** box in the upper right.
+  If you're not using the new navigation preview, select **Code**, **Branches**.
 
-0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu. 
+  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+
+1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+
+  ![Branches page](_img/branches/branches-page.png)
+
+0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
    ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
 

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 # Import a Git repo
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
-This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps Services project.
+This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -41,7 +41,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 

@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/13/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Improve code quality with branch policies
 
@@ -23,23 +22,25 @@ Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies
 
-0. Open the **Branches** view in the **Code** area on the web portal while viewing your repo.
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-	![Open up the Branches view on the web](_img/branches/branches_nav.png)
+  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-0. Locate your branch in the view. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+  If you're not using the new navigation preview, select **Code**, **Branches**.
 
-0. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
+  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
 
-	![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)   
+1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-0. Configure your desired policies in the **Policies** tab. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
+  ![Branches page](_img/branches/branches-page.png)
+
+1. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
+
+  ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
+
+1. Configure your desired policies in the **Policies** page. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
 
   ![Policies tab](_img/branch-policies/save-policy-changes.png)  
-
-
-
-
 
 <a name="require_reviewers"></a>
    
@@ -83,8 +84,6 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 ![Check for comment resolution](_img/branch-policies/comment-resolution.png)
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
-
-
 
 ## Enforce a merge strategy
 
@@ -199,7 +198,6 @@ In some cases, you need to bypass policy requirements so you can push changes to
 
 ## Q & A
 
-ms
 - [Can I push changes directly to a branch after a branch policy is configured?](#can-i-push-changes-directly-to-a-branch-after-a-branch-policy-is-configured)
 - [What is auto-complete?](#what-is-auto-complete)
 - [When are the conditions set in branch policies checked?](#when-are-the-conditions-set-in-branch-policies-checked)
@@ -221,7 +219,6 @@ No. After you set up a branch policy, you cannot directly push changes to the br
 
 When a pull request is made into a branch with branch policies configured, the **Set auto-complete** button is enabled for the pull request. If you don't expect any problems with your changes and you want your pull request to complete once all policies are met, you can set the pull request to [automatically complete](pull-requests.md#complete-the-pull-request). 
 
-
 <a name="how_works"></a>
 
 #### When are the conditions set in branch policies checked?
@@ -231,8 +228,6 @@ If there is a build triggered by the policy, the build status is set to waiting 
 
 #### Can I use XAML build definitions in branch policies?
 You cannot use [XAML build definitions](https://msdn.microsoft.com/library/ms181715%28v=vs.120%29.aspx) in branch policies.
-
-
 
 #### What type of wildcard characters are supported when configuring required code reviewers?
 Single asterisks (`*`) are supported, and will match any number of characters, including both forward-slashes (`/`) and back-slashes (`\`).  Question marks (`?`) will match any single character.  
@@ -246,8 +241,6 @@ Examples:
 
 #### Are the required code reviewer paths case-sensitive?
 No, branch policies are not case-sensitive at this time.
-
-
 
 #### How can I configure multiple users as required reviewers, but only require that one of them approve?
 You can [add the users to a group](../../organizations/accounts/add-team-members-vs.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.

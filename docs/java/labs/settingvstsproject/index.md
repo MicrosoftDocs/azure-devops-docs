@@ -21,14 +21,14 @@ This exercise will walk you through the steps to creating your Azure DevOps acco
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-1. Login to your Azure DevOps Services organization - `https://{your account name}.visualstudio.com`. If you do not have an Azure DevOps Services organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
+1. Login to your Azure DevOps organization - `https://{your account name}.visualstudio.com`. If you do not have an Azure DevOps organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
 
    > [!div class="mx-imgBorder"]
-   > ![Sign up for an Azure DevOps Services organization](../_img/settingAzure DevOps Servicesproject/newaccount.png)
+   > ![Sign up for an Azure DevOps organization](../_img/settingAzure DevOps Servicesproject/newaccount.png)
 
 ## (Optional) Generate an Azure DevOps Services Personal Access Token (PAT)
 
-In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate Azure DevOps Services with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your Azure DevOps Services organization.
+In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate Azure DevOps Services with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your Azure DevOps organization.
 
 > [!TIP]
 > If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).
@@ -51,7 +51,7 @@ In this task you will generate a personal access token for yourself. PATs essent
 
 ## Create a new project with Azure DevOps Services Demo Generator...
 
-Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your Azure DevOps Services organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
+Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your Azure DevOps organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
 
 The steps below use Azure DevOps Services Demo Generator to provision a demo Java project for you.
 
@@ -74,7 +74,7 @@ The steps below use Azure DevOps Services Demo Generator to provision a demo Jav
 
 If you have not provisioned the team project using the Azure DevOps Services demo generator in the previous exercise, you can follow the steps in this exercise to manually create a team project and import code from a GitHub repository.
 
-1. From your Azure DevOps Services organization home page, select **New Project**.
+1. From your Azure DevOps organization home page, select **New Project**.
 
 1. Use `jdev-labs` for the new **Project Name**. Select **Scrum** as the **Work item process**. Click **Create**.
 

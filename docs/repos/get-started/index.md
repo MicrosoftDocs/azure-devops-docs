@@ -22,7 +22,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
-After signing up, learn how to [Code with Git](code-with-git.md). Whether your code is in your Azure DevOps project, a GitHub repo, or on your local computer, this guide shows you how to get started.
+After signing up, learn how to [Code with Git](code-with-git.md). Whether your code is in Azure Repos, a GitHub repo, or on your local computer, this guide shows you how to get started.
 
 Other resources to get you up and running:
 

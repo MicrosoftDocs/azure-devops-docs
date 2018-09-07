@@ -13,7 +13,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-#  Review code with pull requests
+# Review code with pull requests
 
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
@@ -83,7 +83,7 @@ Initiate pull requests directly from Visual Studio.
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps Services project.
+  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
 

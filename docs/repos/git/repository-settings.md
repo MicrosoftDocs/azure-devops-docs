@@ -9,12 +9,12 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Repository settings
+
 #### Azure Repos | TFS 2018 Update 2
 
 Git repositories can be customized to a great extent on Azure DevOps Services and Team Foundation Server.

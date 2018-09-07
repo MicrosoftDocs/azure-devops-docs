@@ -21,7 +21,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 
 ## Prerequisites
 
-* An Azure DevOps Services organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 <a name="git"></a>
 
@@ -39,10 +39,10 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 
 0. In the Team Explorer Everywhere view, select **Connect to VSTS or a Team Foundation Server** . 
 
-   ![Select Connect to Team Foundation Server to connect your TFS or Azure DevOps Services organization](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
+   ![Select Connect to Team Foundation Server to connect your TFS or Azure DevOps organization](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
    
 
-0. If you know your Azure DevOps Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Azure DevOps Services organization** to add your TFS server or account to the drop-down list. 
+0. If you know your Azure DevOps Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Azure DevOps organization** to add your TFS server or account to the drop-down list. 
 If you don't know your account information for Azure DevOps Services, select **Browse Visual Studio Services** and select **Next**.
 
    ![Add Existing Project Dialog](_img/share-your-code-in-git-eclipse/tee_existing_team_project.png)

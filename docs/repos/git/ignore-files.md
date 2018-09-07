@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Ignore file changes with Git
 
@@ -61,7 +60,7 @@ you can create a empty .gitignore from the command line by navigating to your Gi
 
 Git applies a .gitignore to the folder and any child folders where it's located. We strongly recommended to place your .gitignore in the root folder of your repo to prevent confusion.
 
-### Customize your .gitignore 
+### Customize your .gitignore
 
 Modify your .gitignore to include files types, paths, and file patterns in your repo. Git starts ignoring these files as soon as the .gitignore is updated, but be sure to 
 commit the changes if others on your team need the same set of ignored files.

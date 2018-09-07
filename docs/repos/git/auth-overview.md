@@ -9,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Authentication overview
 
@@ -30,17 +29,15 @@ Limit the scope of access and revoke these credentials from the web when they ar
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
 | Personal access tokens | When you need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
 | SSH | When you already have SSH keys set up | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |    
-| Alternate credentials | When you can't use personal access tokens or SSH |  Least secure | Easy | No |    
+| Alternate credentials | When you can't use personal access tokens or SSH |  Least secure | Easy | No |
 
 ## Personal access tokens
 
 Personal access tokens let you create a password for use with the command line or other Git client without using your Azure DevOps Services username and password directly.
 An expiration date is set on these tokens when they are created and you can restrict the scope of the data they can access.
-Use personal access tokens to authenticate if you don't already have SSH keys set up on your system or if you need to restrict the permissions granted by the credential. 
+Use personal access tokens to authenticate if you don't already have SSH keys set up on your system or if you need to restrict the permissions granted by the credential.
 
-![Animated GIF showing creation of PAT in Azure Repos](_img/pat_creation.gif)
-
-[Learn more about personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+* [Learn more about personal access tokens and how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
 ### Use credential managers to generate tokens
 
@@ -50,7 +47,10 @@ Normally you'd need to log into the Azure DevOps Services web portal, generate a
 Personal access tokens are generated on demand when you have the credential manager installed. 
 The credential manager creates the token in Azure DevOps Services and saves it locally for use with the Git command line or other client. 
 
-> Current versions of [Git for Windows](https://git-for-windows.github.io/) include the Git credential manager as an optional feature during installation. 
+>[!NOTE]
+>Current versions of [Git for Windows](https://git-for-windows.github.io/) include the Git credential manager as an optional feature during installation.
+>
+>![Select Enable Git Credential Manager during Git for Windows install](_img/install-with-gcm.png)
 
 ## SSH key authentication
 
