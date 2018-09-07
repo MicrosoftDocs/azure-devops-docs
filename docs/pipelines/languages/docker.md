@@ -157,19 +157,19 @@ In the build pipeline, select **Tasks**, then select the **Pipeline** node, and 
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux Preview** agent pool to build Linux container images. When you use this pool, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build don't directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+When you use the Microsoft-hosted Linux agents, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host.
 
 ### Microsoft-hosted VS2017 (Windows) agents
 
-Use the **Hosted VS2017** agent pool to build Windows container images. When you use this pool, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
+Use the Windows agents (**win2016-vs2017** image if you use YAML, **Hosted VS2017** if you use the designer) to build Windows container images. When you use this pool, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
 
 > [!NOTE]
-> * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
+> * Using Windows agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
 > * We don't yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
 
 ### Microsoft-hosted MacOS agents
 
-You cannot use **Hosted macOS** to build container images as Docker is not installed on these agents.
+You cannot use macOS agents to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 

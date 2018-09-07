@@ -288,7 +288,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3><br/>JavaScript VM</h3>
+                                                            <h3><br/>JavaScript and Node.js</h3>
                                                         </div>
                                                     </div>
                                                 </div>
