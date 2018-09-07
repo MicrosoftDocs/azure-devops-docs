@@ -78,7 +78,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
    
    ![Cloning a Git Repository from a connected Azure DevOps Services organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
 
-  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 
 1. Verify the location of the cloned repo on your PC and select **Clone**.

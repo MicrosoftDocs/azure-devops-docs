@@ -47,7 +47,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
    
    ![Cloning a Git Repository from a connected Azure DevOps Services organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
 
-  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 
 0. Verify the location of the cloned repo on your PC and select **Clone**.
@@ -60,7 +60,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 
   ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_img/gitquickstart-vs2017/clone-url.png)
 
-  [!INCLUDE [project-urls](../../_shared//project-urls.md)]
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
