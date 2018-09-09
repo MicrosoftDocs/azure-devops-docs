@@ -94,7 +94,7 @@ Write-Host "Hello world"
 ::: moniker range=">=tfs-2017 < vsts"
 
 1. Go to the **Code** hub.
- 
+
 2. Add a file.
 
    ::: moniker-end
@@ -199,7 +199,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="tfs-2018"
 
-1. Select **Azure Pipelines**, and then choose **Builds**.
+1. Select **Build and Release**, and then choose **Builds**.
 
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
@@ -381,6 +381,8 @@ Save and queue a build manually and test your build pipeline.
 
    ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
+> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Azure Pipelines**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
@@ -401,9 +403,9 @@ Save and queue a build manually and test your build pipeline.
 
    ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
-::: moniker-end
+> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Build and Release**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Azure Pipelines**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+::: moniker-end
 
 ## Add some variables and commit a change to your script
 
@@ -454,7 +456,13 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
+::: moniker range="vsts"
 1. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
+::: moniker-end
+
+::: moniker range="< vsts"
+1. Go to the **Build and Release** page and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
+::: moniker-end
 
 1. Select the new build that was created and view its log.
 
@@ -567,7 +575,7 @@ Define the process for running the script in two stages.
 
 ::: moniker range="tfs-2018"
 
-1. Go to the **Pipelines** tab, and then select **Releases**.
+1. Go to the **Build and Release** tab, and then select **Releases**.
 
 1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create a release definition**.
 
