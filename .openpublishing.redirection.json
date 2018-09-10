@@ -872,7 +872,7 @@
     },
     {
       "source_path": "docs/accounts/delete-account-users-users-hub.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-account-users",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-organization-users",
       "redirect_document_id": false
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-account-ownership-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership-vs",
       "redirect_document_id": false
     },
     {
@@ -1137,7 +1137,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-azure-active-directory-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/change-azure-active-directory-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -1162,7 +1162,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -1812,7 +1812,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -1827,7 +1827,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -2067,7 +2067,7 @@
     },
     {
       "source_path": "docs/tfs-server/account-preferences.md",
-      "redirect_url": "/azure/devops/organizations/accounts/account-management",
+      "redirect_url": "/azure/devops/organizations/accounts/organization-management",
       "redirect_document_id": false
     },
     {
@@ -2127,7 +2127,7 @@
     },
     {
       "source_path": "docs/tfs-server/restrict-access-tfs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/restrict-access",
+      "redirect_url": "/azure/devops/organizations/security/restrict-access",
       "redirect_document_id": false
     },
     {
@@ -2162,7 +2162,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-account-ownership-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership-vs",
       "redirect_document_id": false
     },
     {
@@ -2172,7 +2172,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/disconnect-account-from-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
       "redirect_document_id": false
     },
     {
@@ -2192,7 +2192,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -2232,12 +2232,12 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-vso-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -2257,17 +2257,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -2962,7 +2962,7 @@
     },
     {
       "source_path": "docs/delete-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-account",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -2992,7 +2992,7 @@
     },
     {
       "source_path": "docs/get-started/setup/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -8363,7 +8363,7 @@
     {
       "source_path": "docs/billing/set-up-billing-for-your-organization-vs.md",
       "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/try-additional-features-vs.md",
@@ -8382,7 +8382,7 @@
     },
     {
       "source_path": "docs/billing/set-up-billing-for-your-account.md",
-      "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization",
+      "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": true
     },
     {
