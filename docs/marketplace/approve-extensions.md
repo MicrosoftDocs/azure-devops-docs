@@ -1,6 +1,6 @@
 ---
-title: Approve extension requests in Visual Studio Team Services and Team Foundation Server
-description: Approve extension requests for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Approve extension requests in Azure DevOps Services and Team Foundation Server
+description: Approve extension requests for Azure DevOps Services and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -16,14 +16,14 @@ monikerRange: '>= tfs-2013'
 
 # Approve extensions for a project collection
 
-**VSTS** | **TFS**
+**Azure DevOps Services** | **TFS**
 
-As a project collection administrator, you'll get an email when another project member requests an extension. When you approve the request, Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) automatically installs the extension.
+As a project collection administrator, you'll get an email when another project member requests an extension. When you approve the request, Azure DevOps Services or Team Foundation Server (TFS) automatically installs the extension.
 
 To approve extensions, you must also have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
-0.	Go to your VSTS or TFS home page, then go to your project:
-    * VSTS:```https://{account-name}.visualstudio.com/{team-project}```
+0.	Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
 0.	Manage your extensions:

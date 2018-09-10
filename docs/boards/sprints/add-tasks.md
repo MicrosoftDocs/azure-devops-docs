@@ -1,6 +1,6 @@
 ---
 title: Add tasks to support sprint planning
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Add tasks to user stories assigned to a sprint or iteration working with Scrum methods 
 ms.technology: devops-agile
 ms.prod: devops
@@ -18,7 +18,7 @@ ms.date: 06/21/2018
 <a id="define-tasks">  </a>
 # Add tasks to backlog items 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
@@ -45,7 +45,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -76,7 +76,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

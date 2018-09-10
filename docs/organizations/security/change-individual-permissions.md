@@ -42,7 +42,7 @@ If you are new to administrating permissions and groups, review [About permissio
 
 Create a custom security group at the project-level or the collection-level. The method for creating a custom security group is the same, no matter at what level you add it. 
 
-To create a project-level security group, open the web portal and choose the team project where you want to add users or groups. 
+To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
@@ -51,7 +51,7 @@ To create a project-level security group, open the web portal and choose the tea
 
 ::: moniker range="vsts"  
 
-0. Choose **Project Settings** and then **Security**.
+1. Choose **Project Settings** > **Security**.
 
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 

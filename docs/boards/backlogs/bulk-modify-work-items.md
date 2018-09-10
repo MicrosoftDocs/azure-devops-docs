@@ -1,7 +1,7 @@
 ---
 title: Bulk modify work items
-titleSuffix: VSTS & TFS
-description: Bulk edit/modify/update several/multiple work items, backlog items, tasks, or bugs or linked parent-child items for Visual Studio Team Services or Team Foundation Server    
+titleSuffix: Azure Boards and TFS
+description: Bulk edit/modify/update several/multiple work items, backlog items, tasks, or bugs or linked parent-child items for Azure Boards or Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
@@ -43,11 +43,6 @@ In this topic you'll learn:
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
 ::: moniker-end
-
-<!---
-> [!NOTE]  
->**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
--->
 
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
@@ -118,7 +113,7 @@ You can use bulk modify by selecting work items from the backlog page or query r
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
 
 ::: moniker range=">= tfs-2018"
-<!---#### VSTS and TFS 2018-->
+<!---#### Azure Boards and TFS 2018-->
 
 <table valign="top">
 <tr valign="top">
@@ -181,9 +176,9 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
 ::: moniker range=">= tfs-2017"
-<!---#### VSTS and TFS 2017 -->
+<!---#### Azure Boards and TFS 2017 -->
 
-<img src="_img/bulk-modify-multi-select-ts.png" alt="VSTS, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
+<img src="_img/bulk-modify-multi-select-ts.png" alt="Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -217,15 +212,15 @@ To learn more about the Assign To and Iteration Path fields, see [Query by assig
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
 ::: moniker range=">= tfs-2017"
-<!---#### VSTS and TFS 2017 -->
+<!---#### Azure Boards and TFS 2017 -->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-	<img src="_img/bulk-modify-edit-fields-ts.png" alt="VSTS and TFS 2017, Query results page, bulk edit fields" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/bulk-modify-edit-fields-ts.png" alt="Azure Boards and TFS 2017, Query results page, bulk edit fields" style="border: 2px solid #C3C3C3;" />
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-	<img src="_img/bulk-modify-save-ts.png" alt="VSTS and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

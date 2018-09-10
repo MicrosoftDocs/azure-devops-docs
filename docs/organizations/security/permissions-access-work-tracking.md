@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access for work tracking 
-titleSuffix: VSTS & TFS 
-description: Default permissions and access levels to support work tracking tasks in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS 
+description: Default permissions and access levels to support work tracking tasks in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.topic: conceptual
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
+You can use the majority of work tracking functions and features that Azure DevOps or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions and groups reference](permissions.md). 
 
@@ -33,7 +33,7 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Test management permissions   
 
-Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -52,9 +52,9 @@ The **Manage test plans** permission enables users to:
 - Change test plan properties such as build and test settings 
 
 
-## Resources defined for the team project
+## Resources defined for the project
 
-You set project-level information permissions from the admin page for a team project. You set permissions for area and iteration paths under the admin context **Work** hub for their respective objects. These resources are defined for a team project which all valid users of the team project can view. 
+You set project-level information permissions from the admin page for a project. You set permissions for area and iteration paths under under **Project Settings**>**Work**. These resources are defined for a project which all valid users of the project can view. 
 
 <table>
 <tr valign="bottom">
@@ -111,20 +111,20 @@ You set project-level information permissions from the admin page for a team pro
 </table>
 
 
-The **Edit project-level information** permission includes the ability to perform these tasks for the team project:
+The **Edit project-level information** permission includes the ability to perform these tasks for the project:
 - Create and modify areas and iterations  
 - Edit check-in policies  
 - Edit shared work item queries  
-- Edit team project level permission ACLs  
+- Edit project level permission ACLs  
 - Create and modify global lists  
-- Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on team project level events.
+- Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on project level events.
 
 
 
 
 ## Team administrator role and permissions  
 
-The following table summarizes a subset of the default permissions assigned to the team project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the team project.
+The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the project.
 
 
 <table>
@@ -203,7 +203,7 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-organization-users-from-user-hub.md)
+- **Azure DevOps**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users-from-user-hub.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
 
@@ -217,7 +217,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
 - [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).  
  
-By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git team project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
 ![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
 

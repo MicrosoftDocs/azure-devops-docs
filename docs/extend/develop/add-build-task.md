@@ -1,6 +1,6 @@
 ---
-title: Add a Build or Release Task | Extensions for VSTS
-description: Add a custom build or release task in an extension for Visual Studio Team Services
+title: Add a Build or Release Task | Extensions for Azure DevOps Services
+description: Add a custom build or release task in an extension for Azure DevOps Services
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,19 +14,19 @@ ms.date: 08/22/2016
 
 # Add a build or release task
 
-Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into a VSTS account. 
+Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into an Azure DevOps Services organization. 
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 
-![Build task catalog for extensions in VSTS](_img/build-task-ext-choose-task.png)
+![Build task catalog for extensions in Azure DevOps Services](_img/build-task-ext-choose-task.png)
 
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
 > **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
+In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
 
-- A **VSTS account**, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **Azure DevOps Services organization**, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />
@@ -166,7 +166,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 | `id`          | Identifier of the contribution. Must be unique within the extension. Does not need to match the name of the build or release task, but typically the build or release task name is included in the ID of the contribution. | 
 | `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
 | `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
-| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task definition. |
+| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task pipeline. |
 
 ### Files
 | Property     | Description            |
@@ -225,15 +225,15 @@ You can optionally use ```--share-with``` to share your extension with one or mo
 You'll need a personal access token, too.
 
 ```no-highlight
-tfx extension publish --manifest-globs your-manifest.json --share-with youraccount
+tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
 ### Share your extension
 
 Now that you've uploaded your extension, it's in the Marketplace, but no one can see it. 
-Share it with your account so that you can install and test it.
+Share it with your organization so that you can install and test it.
 
-1. Right click your extension and select <b>Share...</b>, and enter your account information. You can share it with other accounts that you want to have access to your extension, too.
+1. Right click your extension and select <b>Share...</b>, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 >[!IMPORTANT]
 >Publishers must be verified in order to share extensions publicly, to learn more visit [Package/Publish/Install](../publish/overview.md)
@@ -244,13 +244,13 @@ Now that your extension is in the marketplace and shared, anyone who wants to us
 ## Optional: Install and test your extension
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
-1. From your account control panel (`https://{account}.visualstudio.com/_admin`), go to the project collection administraton page.
+1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administraton page.
 2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, click on the extension link.
 3. Install the extension!
 
-If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://{account}.visualstudio.com/_admin`) and not the administration page for a project.
+If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
-If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your account. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
+If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 ## Helpful links
 * [Extension Manifest Reference](./manifest.md)

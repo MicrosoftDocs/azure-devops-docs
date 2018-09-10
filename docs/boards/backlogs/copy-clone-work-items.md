@@ -1,6 +1,6 @@
 ---
 title: Copy work items 
-description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
+description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Azure Boards or Team Foundation Server (TFS)  
 ms.global_help.title: Copy or clone a work item 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 4  
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Copy or clone work items  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]    
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
@@ -41,14 +41,14 @@ Copy a work item when you want to create another instance of it and optionally c
 
 
 ::: moniker range=">= tfs-2018"
-<!---#### VSTS and TFS 2018-->
+<!---#### Azure Boards and TFS 2018-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
-	<img src="_img/copy-wi-copy-clone-ts.png" alt="VSTS, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-clone-ts.png" alt="web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-	<img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="VSTS, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 
 ::: moniker-end
 
@@ -87,10 +87,6 @@ Copy a work item when you want to create another instance of it and optionally c
 ::: moniker range="vsts"
 ## Change the work item type  
 
-<!---
-[!NOTE]  
-**Feature availability:**&#160;&#160;The **Change the work item type** option is only available from VSTS.--> 
-
 If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end
 
@@ -105,7 +101,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
-<!---#### VSTS and TFS 2018-->
+<!---#### Azure Boards and TFS 2018-->
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
@@ -113,7 +109,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 	Here we multi-select from the product backlog and choose <b>Copy to clipboard</b>.
 
-	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="VSTS, backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
 
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts TeamProject API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts TeamProject API | Extensions for Azure DevOps Services
 description: Represents a Project object.
 ms.assetid: 148745ef-ce48-34c7-69eb-5dc2720a15ee
 ms.prod: devops

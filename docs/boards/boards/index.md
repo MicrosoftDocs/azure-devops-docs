@@ -1,7 +1,7 @@
 ---
-title: Use Kanban boards 
-titleSuffix: VSTS & TFS
-description: Work with Kanban boards in Visual Studio Team Services & Team Foundation Server   
+title: Use Kanban boards to add, update, and review work items
+titleSuffix: Azure Boards and TFS
+description: Work with Kanban boards in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
+Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
 
 
 ## 5-Minute Quickstarts  
@@ -32,7 +32,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
 - [Add inline tests](add-run-update-tests.md)
-- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -41,7 +41,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Kanban basics](kanban-basics.md)
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
-- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -49,13 +49,13 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 - [Kanban basics](kanban-basics.md)
 - [Features](kanban-epics-features-stories.md)
-- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 ::: moniker-end
 
 ## Concepts 
       
 - [Kanban best practices](best-practices-kanban.md)      
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)  
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 
 
 
@@ -64,7 +64,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## How-to Guides
 
 - [Add columns](add-columns.md) 
-- [Customize cards](../../boards/boards/customize-cards.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)    
+- [Customize cards](../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
 - [Split columns](split-columns.md)  
 - [Expedite work (swimlanes)](expedite-work.md)  
@@ -76,7 +76,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## How-to Guides
 
 - [Add columns](add-columns.md) 
-- [Customize cards](../../boards/boards/customize-cards.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)    
+- [Customize cards](../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
@@ -85,15 +85,15 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 - [Kanban board controls](kanban-board-controls.md) 
 - [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json) 
-- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)      
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
+- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)      
 ::: moniker-end  
   
 ::: moniker range="tfs-2013"
 ## Reference   
 
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json) 
-- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json)      
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
+- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)      
 ::: moniker-end  
 
 ## Resources 
@@ -102,8 +102,8 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Scrum](../sprints/index.md)
 - [Work item queries](../queries/index.md)
 - [Work item customization](../../reference/index.md) 
-- [What is Agile?](/azure/devops/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
 
 
 <!--- 

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test management programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test management programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 82EB89BA-B237-453B-8F15-E2747458C790
 ms.manager: douge
 ms.topic: article

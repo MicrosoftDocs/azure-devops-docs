@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Diffs | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git differences programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Diffs | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git differences programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 920FAC3A-471D-412C-BC6B-CA767CFC3645
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter         | Type                         | Default | Notes
 |:------------------|:-----------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string                       |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                       |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project           | string                       |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string                       |         | ID of the [repository](./repositories.md).
 | Query

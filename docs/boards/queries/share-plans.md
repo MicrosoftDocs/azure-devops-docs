@@ -1,7 +1,7 @@
 ---
 title: Share work plans 
-titleSuffix: VSTS & TFS 
-description: Email links, Copy URL, and share information about work items, queries, and more in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Share work plans and progress 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere </b>  
+**Azure Boards | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -44,7 +44,7 @@ The specific set of formatting features differs depending on the client you use.
 # [Browser](#tab/browser) 
 
 ::: moniker range=">= tfs-2017"
-<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
+<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar" style="border: 2px solid #C3C3C3;" />
 
 You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
 
@@ -110,14 +110,14 @@ For example, you can attach a screen image that illustrates a problem, a line of
 #### Attachment control toolbar 
 ::: moniker range=">= tfs-2017"
 
-<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal" style="border: 1px solid #C3C3C3;" />  
 
 > [!TIP]    
 > You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
-<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  VSTS" style="border: 2px solid #C3C3C3;" />   
+<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
 
 ::: moniker-end 
 
@@ -183,7 +183,7 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
 > [!NOTE]  
-> **Feature availability:**  Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
+> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
@@ -194,7 +194,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 ::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
-<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
 
 To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 ::: moniker-end 

@@ -1,11 +1,7 @@
-- name: VSTS & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Collaboration
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=apps&panel=collaboration
-    items:
-    - name: Navigation Basics
-      tocHref: /vsts/
-      topicHref: /vsts/overview/navigation/index
+  - name: Web portal navigation
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/project/navigation/index

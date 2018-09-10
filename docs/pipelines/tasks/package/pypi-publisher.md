@@ -1,6 +1,6 @@
 ---
 title: PyPI Publisher
-description: How to upload a package to PyPI when building code in VSTS and TFS
+description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52

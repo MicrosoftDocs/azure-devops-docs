@@ -7,7 +7,7 @@ ms.topic: include
 This task uses [Windows Remote Management](https://msdn.microsoft.com/library/aa384426.aspx)
 (WinRM) to access 
 on-premises physical computers or virtual computers that are
-domain-joined or workgroup-joined. 
+domain-joined or workgroup-joined.
 
 **To set up WinRM for on-premises physical computers or virtual machines**
 
@@ -15,7 +15,7 @@ Follow the steps described in [domain-joined](../../apps/cd/deploy-webdeploy-iis
 
 **To set up WinRM for Microsoft Azure Virtual Machines**
 
-Azure Virtual Machines require WinRM to use the HTTPS protocol. 
+Azure Virtual Machines require WinRM to use the HTTPS protocol.
 You can use a self-signed Test Certificate. In this case, the
 automation agent will not validate the authenticity of the 
 certificate as being issued by a trusted certification authority.
@@ -34,7 +34,7 @@ task.
 [Azure Resource Group](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hero-tutorial/)
 already defined in the Azure portal, you must configure it to use the WinRM HTTPS 
 protocol. You need to open port 5986 in the firewall, and install a 
-self-signed certificate. 
+self-signed certificate.
 
 To dynamically deploy Azure Resource Groups that contain virtual machines, use the 
 [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)

@@ -1,6 +1,6 @@
 ---
 title: .NET Core build and release task
-description: How to use npm packages build and release task for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: How to use npm packages build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
@@ -167,7 +167,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Why is my build or publish step failing to restore packages?
 
-Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used. 
+Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used.
 
 To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionStep API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildDefinitionStep API | Extensions for Azure DevOps Services
 ms.assetid: 83081eda-4b23-35dd-c8b0-e9b4b1287951
 ms.prod: devops
 ms.technology: devops-ecosystem

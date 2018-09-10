@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitRefUpdate API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitRefUpdate API | Extensions for Azure DevOps Services
 ms.assetid: 3abdaf50-adb0-d091-6e5e-1dc5096b46d8
 ms.prod: devops
 ms.technology: devops-ecosystem

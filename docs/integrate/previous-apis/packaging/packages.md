@@ -1,6 +1,6 @@
 ---
-title: Packages | REST API Reference for Visual Studio Team Services 
-description: Work with packages programmatically using the REST APIs for Visual Studio Team Services .
+title: Packages | REST API Reference for VSTS 
+description: Work with packages programmatically using the REST APIs for VSTS .
 ms.assetid: 1f8825e8-7916-488b-b71e-c807f1f5234d
 ms.manager: douge
 ms.date: 09/29/2016
@@ -29,7 +29,7 @@ GET https://{account}.feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feed                  | string  |           | Name or ID of the feed
 | Query
 | packageNameQuery      | string  |           | Include packages where the display name includes this query
@@ -55,7 +55,7 @@ GET https://{account}.feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feed                  | string  |           | Name or ID of the feed
 | packageId             | guid    |           | ID of the package
 | Query
@@ -75,7 +75,7 @@ GET https://{account}.feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feed                  | string  |           | Name or ID of the feed
 | packageId             | guid    |           | ID of the package
 | Query
@@ -94,7 +94,7 @@ GET https://{account}.feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feed                  | string  |           | Name or ID of the feed
 | packageId             | guid    |           | ID of the package
 | versionId             | guid    |           | ID of the package version
@@ -113,10 +113,10 @@ For example, consider this feed response:
 
 [!code-REST [GET__packaging_feeds_feedName_json](./_data/feeds/GET__packaging_feeds__feedName_.json)]
 
-To construct the [NuGet v3](http://docs.nuget.org/) endpoint URL, take the account name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
+To construct the [NuGet v3](http://docs.nuget.org/) endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
 
 For example, the NuGet v3 endpoint for the feed shown above is `https://contoso.pkgs.visualstudio.com/DefaultCollection/_packaging/EngineeringInternal/nuget/v3/index.json`.
 
-To construct the NuGet v2 endpoint URL, take the account name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v2`
+To construct the NuGet v2 endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v2`
 
 For example, the NuGet v2 endpoint for the feed shown above is `https://contoso.pkgs.visualstudio.com/DefaultCollection/_packaging/EngineeringInternal/nuget/v2`.

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test Overview | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test Overview | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: a0cb6688-27ee-4f40-8430-94b9f06b5110
 ms.manager: douge
 ms.topic: article
@@ -19,7 +19,7 @@ This API provides a test infrastructure in the cloud to execute web load tests a
 
 ### Prerequisites
 * Add `.vsclt` to your account name to get redirected to the Cloud Load Test (CLT) service under visualstudio.com.
-For example, if your Visual Studio Team Services account URL is `https://fabrikam.visualstudio.com/`, then use `https://fabrikam.vsclt.visualstudio.com/` as endpoint for CLT REST APIs.
+For example, if your VSTS organization URL is `https://fabrikam.visualstudio.com/`, then use `https://fabrikam.vsclt.visualstudio.com/` as endpoint for CLT REST APIs.
 * To get started quickly you can refer to the API sample [here][2].
 
 ### How to use the APIs
@@ -50,7 +50,7 @@ The following steps are essential to be successful with these APIs. These are de
 * [APM Plugins](apm-plugins.md) - available Application Performance Management ([APM][5]) plugins, such as [Application Insights][6], which can be used to pull Application-side performance counters during the load test run. This resource allows query for plugin configuration.
 * [APM Applications](apm-applications.md) - applications configured in the APM service. These application references can be used in the load test authoring to enable APM counter integration during the load test run.
 * [APM Counters](apm-counters.md) - application counters configured and available for query in the APM service, such as [Metrics in Application Insights][7].
-* [Configuration](configuration.md) - get configuration details applicable at an account level, such as permitted target geo-locations ([Azure regions][8]) for the load agents.
+* [Configuration](configuration.md) - get configuration details applicable at an organization level, such as permitted target geo-locations ([Azure regions][8]) for the load agents.
 
 [1]:http://visualstudio.microsoft.com/en-us/integrate/get-started/get-started-auth-introduction-vsi
 [2]:http://code.msdn.microsoft.com/Cloud-Load-Testing-API-b333e778

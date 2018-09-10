@@ -1,7 +1,7 @@
 ---
 title: Add, edit, or print wiki pages defined in your team project
-titleSuffix: VSTS & TFS  
-description: Add, edit, reorder, and manage pages for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps & TFS  
+description: Add, edit, reorder, and manage pages for your built-in team project wiki in Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
@@ -23,7 +23,8 @@ Once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your te
 
 You author pages using [markdown format](../../reference/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links.  
 
-<img src="_img/wiki/wiki-edit-2.png" alt="Create first page" style="border: 1px solid #C3C3C3;" />  
+> [!div class="mx-imgBorder"]  
+> ![Wiki home page](_img/wiki/wiki-edit-2.png) 
 
 As you continue editing the page, save the page by entering **Ctrl+S**. To save with a custom revision message, click the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
@@ -39,7 +40,7 @@ As you continue editing the page, save the page by entering **Ctrl+S**. To save 
 Use this topic to learn how to:  
 
 > [!div class="checklist"]
-> * Open the **Wiki** hub
+> * Open **Wiki**
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -59,7 +60,7 @@ Use this topic to learn how to:
 <a id="add-page" />
 ## Add a wiki page
 
-To add another page, click **New page**. Or, to add a sub-page, open the context menu of an existing page and click **Add sub-page**.
+To add another page, choose **New page**. Or, to add a sub-page, open the context menu of an existing page and select **Add sub-page**.
 
 You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming). 
 

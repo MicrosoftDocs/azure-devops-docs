@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestResultsDetailsForGroup API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestResultsDetailsForGroup API | Extensions for Azure DevOps Services
 ms.assetid: 05b989c5-d83d-0086-9911-b696f383cc8b
 ms.prod: devops
 ms.technology: devops-ecosystem

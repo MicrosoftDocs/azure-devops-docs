@@ -2,7 +2,7 @@
 title: Quick code editing, backlog filtering, and more – Dec 17
 description: VSTS release notes for Decemeber 17 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: b3b83314-3e24-4e41-a94d-02fda9d458a4
 ms.date: 06/01/2016
@@ -70,13 +70,13 @@ And, you might have noticed in the screenshot above that we made a small change 
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](http://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](http://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.
 
-To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://visualstudio.microsoft.com/en-us/explore/vso-integrations-directory-vs).
+To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://marketplace.visualstudio.com/vsts).
 
 ##Preview APIs for adding and updating files in source control
 
 REST APIs for adding, editing, renaming, and deleting files in TF Version Control and Git projects are now available for preview. These JSON-based APIs (which are used by the new quick code editing feature) enable you to create Changeset and Push resources via POST operations. For Git, you can add and update files in an existing branch or create a new branch. You can also rename, move, and delete files. One limitation, which will be addressed in the next deployment, is that these APIs are currently only callable when using basic authentication (not OAuth).
 
-To learn more about these APIs, see [Visual Studio Online REST API Versions and History](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1#where-are-the-earlier-versions-of-rest-apis-before-41).
+To learn more about these APIs, see [Visual Studio Online REST API Versions and History](/rest/api/vsts/?view=vsts-rest-4.1#where-are-the-earlier-versions-of-rest-apis-before-41).
 
 ##CodeLens for Visual Studio Online in Preview
 

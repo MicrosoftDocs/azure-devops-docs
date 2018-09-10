@@ -1,7 +1,7 @@
 ---
 title: Add artifact or team
-titleSuffix: VSTS & TFS
-description: How to add a new artifact, view, or team within the web portal in Visual Studio Team Services and Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: How to add a new artifact, view, or team within the web portal in Azure DevOps Services and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -17,16 +17,13 @@ ms.date: 07/21/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-<!--- Need to define what i mean by artifact or object as artifact now has a specific meaning --> 
-
-Select the service of interest to get started adding new artifacts. For example, to add work items, choose **Work**. Some artifacts&mdash;such as a product backlog, Kanban board, portfolio backlogs&mdash;are added when you add a team.  
+Select the service of interest to get started adding new artifacts or objects. For example, to add work items, choose **Boards** or **Work**. Some artifacts&mdash;such as a product backlog, Kanban board, portfolio backlogs&mdash;are added when you add a team.  
 
 Prior to adding an artifact, make sure that you've [selected the project and repository](go-to-project-repo.md) that you want to work in.  
 
 ## Add work items, queries, or other work tracking artifacts 
 
-You can quickly add a query or work item when working from a **Work** page. 
-
+You can quickly add a query or work item when working from a **Boards** or **Work** page. 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
@@ -34,7 +31,7 @@ You can quickly add a query or work item when working from a **Work** page.
 
 ::: moniker range="vsts"
 
-Choose a **Work** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 ![Work, add artifact](_img/add-artifact/add-work-item-query-vert.png)
@@ -72,7 +69,7 @@ You can quickly add a pull request, Git repository, or work item using the **Add
 
 ::: moniker range="vsts"
 
-Choose a **Code** service&mdash;such as **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
+Expand the **Repos** service and choose **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 ![Add artifact](_img/add-artifact/add-repo-vert.png)
@@ -107,13 +104,11 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 
 ## Add build and release pipelines 
 
-From a **Build and Release** page, you can add build and release pipelines. 
-
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-Choose a **Build and Release** page, such as **Builds** or **Releases**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
+Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 ![Work, add artifact](_img/add-artifact/add-pipeline-vert.png)
@@ -126,7 +121,7 @@ Choose a **Build and Release** page, such as **Builds** or **Releases**. Then ch
 
 # [Previous navigation](#tab/previous-nav)
 
-From a **Build and Release** page, open one of the functional pages to add a artifact associated with that page.
+From **Build and Release**, choose **Builds**, **Releases**, or other page to add an artifact associated with that page.
  
 > [!div class="mx-imgBorder"]
 > 
@@ -207,5 +202,5 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ## Related articles
 
-- [Package Management](../../package/index.md)  
+- [Package Management](../../artifacts/index.md)  
 - [Exploratory & Manual Testing](../../test/index.md)  

@@ -1,6 +1,6 @@
 ---
-title: Add VSTS organization users to your Azure Active Directory
-description: Add VSTS organization users to your Azure Active Directory
+title: Add Azure DevOps Services organization users to your Azure Active Directory
+description: Add Azure DevOps Services organization users to your Azure Active Directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
@@ -8,59 +8,41 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
 <a name="SetUpCurrentUsers"></a>
 
-# Add VSTS organization users to your Azure Active Directory
+# Add Azure DevOps Services organization users to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If your VSTS organization was created with a Microsoft account, 
-you can connect your VSTS organization to your 
-organization's directory (tenant) in 
-[Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
-You can then sign in to VSTS with the same username 
-and password that you use with these Microsoft services. 
-You can also enforce policies for accessing 
-your team's critical resources and key assets.
+If your Azure DevOps Services organization was created with a Microsoft account, you can connect your Azure DevOps Services organization to your organization's directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then you can sign in to Azure DevOps Services with the same user name and password that you use with these Microsoft services. You can also enforce policies for accessing your team's critical resources and key assets.
 
-For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
+For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with Azure DevOps Services.
 
-If your users do not already exist in Azure AD:
+If your users don't already exist in Azure AD:
 
-0.  Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
-or the [Azure portal](https://portal.azure.com) 
-as global administrator for your organization's directory. 
-See these topics for how to:
+1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See the following topics for information about signing in:
 
-	*	[Add users in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-create-users).
-	*	[Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-users-create-azure-portal).
+   * [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
+   * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
+   * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
+2. Add the sign-in addresses for all of your Azure DevOps Services organization users to your directory. Include yourself as the Azure DevOps Services organization owner, if you're not already in the directory.
 
-0.	Add the sign-in addresses for all your VSTS organization users to your directory, 
-including yourself as the VSTS organization owner, if not in the directory already. 
-
-  What does an example directory look like?
+   What does an example directory look like?
   
-  Suppose Jamal is an Azure AD global administrator at Fabrikam and is in the Fabrikam directory with his 
-  work account (jamalhartnett@fabrikam.com). He's also the VSTS organization owner and a user with his Microsoft 
-  account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the 
-  Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with VSTS. To free up the access used by his Microsoft account, he must change the VSTS organization owner to his work account. 
+   Suppose Jamal is an Azure AD global administrator at Fabrikam and is listed in the Fabrikam directory with his work account (jamalhartnett@fabrikam.com). He's also the Azure DevOps Services organization owner and a user with a Microsoft account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with Azure DevOps Services. To free up the access used by his Microsoft account, he must change the Azure DevOps Services organization owner to his work account.
 
-  Nicole, another user, has a work organization (nicolezamora@fabrikam.com) that shares the same sign-in address as her 
-  Microsoft account, so she will continue to work seamlessly with the same sign-in address.
+   Nicole is user at Fabrikam. She has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address as her Microsoft account. Nicole continues to work seamlessly with the same sign-in address.
 
-  Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
-  VSTS organization.
+   Here's what the Fabrikam directory might look like in the Azure portal after Jamal adds users from his Azure DevOps Services organization:
     
-  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
+   ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
-  [More questions about setting up users?](faq-azure-access.md#faq-users)
+   For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
 
-0.  After adding your organization users to your directory, 
-connect your VSTS organization to your directory. 
+3. After adding your organization users to your directory, connect your Azure DevOps Services organization to your directory.
 

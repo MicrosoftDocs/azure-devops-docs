@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Extension Points | Extensions for VSTS
+title: Extension Points | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.manager: douge
@@ -12,22 +12,22 @@ monikerRange: '>= tfs-2017'
 ms.date: 05/10/2018
 ---
 
-# VSTS extensibility points
+# Azure DevOps Services extensibility points
 
-Extensions extend and enhance the Visual Studio Team Services (VSTS) user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
+Extensions extend and enhance the Azure DevOps Services user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
 
 >[!NOTE]
->To learn more about the VSTS extensibility model, see [contribution model](../../develop/contributions-overview.md) for an overview.
+>To learn more about the Azure DevOps Services extensibility model, see [contribution model](../../develop/contributions-overview.md) for an overview.
 
 ## Other useful references
 
-The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension that you can install into your account to see the extensibility points that are available. It is recommended to install this extension into a personal or test account. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available.
+The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension that you can install into your organization to see the extensibility points that are available. It is recommended to install this extension into a personal or test organization. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available.
 </div>
 
 <a name="hubs"></a>
 ## Hubs and hub groups
 
-Hubs and hub groups are the primary navigation elements in VSTS. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the account (also known as a collection) level or the project level, but most extensions will contribute to the project level.
+Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions will contribute to the project level.
 
 Extensions can contribute both hubs and hub groups. A common extensibility scenario is to contribute a hub to an existing hub group. For example:
 

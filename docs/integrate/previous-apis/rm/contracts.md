@@ -1,5 +1,5 @@
 ---
-title: Release API Contracts | Visual Studio Team Services
+title: Release API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem

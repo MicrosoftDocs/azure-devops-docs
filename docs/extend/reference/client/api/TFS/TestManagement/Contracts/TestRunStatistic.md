@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestRunStatistic API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestRunStatistic API | Extensions for Azure DevOps Services
 ms.assetid: 47639bdc-2643-3fd8-2383-db703f5616c5
 ms.prod: devops
 ms.technology: devops-ecosystem

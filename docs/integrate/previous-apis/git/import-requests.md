@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Import Requests | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git import requests programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Import Requests | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git import requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.contentid: 95B4933F-8191-4073-835A-3A0E218987D3
 ---
 
@@ -21,7 +21,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project           | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  |         | ID of the [repository](./repositories.md).
 | Query
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter         | Type    | Notes
 |:------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project           | string  | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  | ID of the [repository](./repositories.md).
 | importRequestId   | int     | ID of the import request.
@@ -76,15 +76,15 @@ POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories
 | Parameter                                          | Type     | Notes
 |:---------------------------------------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance                                           | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance                                           | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project                                            | string   | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository                                         | string   | ID of the [repository](./repositories.md).
 | Query
 | api-version                                        | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | parameters.gitSource.url                           | string   | Url of the source Git repository to import from
-| parameters.serviceEndpointId                       | string   | [Service connection](../endpoints/overview.md) ID. Required if source repository is private.
-| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service connection after import is done.
+| parameters.serviceEndpointId                       | string   | [Service endpoint](../endpoints/overview.md) ID. Required if source repository is private.
+| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service endpoint after import is done.
 
 [!code-REST [POST__git_repositories__repositoryId__importRequests_json](./_data/importRequests/POST__git_repositories__repositoryId__importRequests.json)]
 
@@ -104,7 +104,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositorie
 | Parameter            | Type                       | Notes
 |:---------------------|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance             | string                     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string                     | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project              | string                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository           | string                     | ID of the [repository](./repositories.md).
 | importRequestId      | int                        | ID of the import request.

@@ -1,22 +1,23 @@
 ---
 title: Code with Git
-titleSuffix: VSTS & TFS 
-description: Share code in a Git repo and new team project 
+titleSuffix: Azure DevOps Services & TFS 
+description: Share code in a Git repo and new project 
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/08/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 09/10/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-# Code with Git
+# Quickstart: Code with Git
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-After you create a new organization and team project in VSTS, you can begin sharing your code with others.
+In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps Services, you can begin coding with Git.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -25,7 +26,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 1. Install one of the following Git command line tools:
 
   >- To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows)
-  >- To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../repos/git/set-up-credential-managers.md#macos-and-linux)
+  >- To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](../repos/git/set-up-credential-managers.md#macos-and-linux)
 
 ## Clone the repo to your computer
 
@@ -33,21 +34,21 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your VSTS organization and select **Code**. If you don't have a team project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps Services organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
-   ![Project, select Code to clone URL](_img/project-select-code-vert.png)
+   ![Project, select Repos to clone URL](_img/project-select-repos-vert.png)
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
   
-   ![Open project and select Code to clone URL](_img/code-with-git-clone-repo-vert.png)
+   ![Open project and select Code to clone URL](_img/code-with-git-clone-repo.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your VSTS organization and select the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps Services organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
 
-	<img src="_img/code-with-git-clone-repo.png" alt="Retrieve the clone URL" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/code-with-git-clone-repo-prev.png" alt="Retrieve the clone URL" style="border: 2px solid #C3C3C3;" />
 
 ---
 
@@ -56,14 +57,14 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   >```
   >git clone >https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
   >```
-  Git downloads a copy of the code, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
+  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
 
 
 ## Work with the code
 
-In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
+In the following steps, we'll make a change to the files on your computer, commit the changes locally, push the commit to the repo that is stored on the server, and view the changes there.
 
 1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
 
@@ -86,31 +87,35 @@ In this step, we'll make a change to the files on your computer, commit the chan
     >```
     >git push
     >```
-# New navigation(#tab/new-nav)
 
-5. Switch back to the web portal and select **History** from the Code page to view your new commit. 
+## View history 
+
+# [New navigation](#tab/new-nav)
+
+1. Switch back to the web portal and select **History** from the Code page to view your new commit. 
 
    ![Select Code, then History to view commits](_img/code-history-vert.png)
 
-6. Switch to the **Files** tab and select the README file to view your changes.
+2. Switch to the **Files** tab and select the README file to view your changes.
 
    ![Files tab, view changes in README file](_img/first-edit-readme-file.png)
 
-# Previous navigation(#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
-5. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
+1. Switch back to the web portal and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
 
    >![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
-6. Switch to the **Files** tab and select the README file to view your changes.
+2. Switch to the **Files** tab and select the README file to view your changes.
 
    >![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
+
 ---
 
-## Try this next  
+## Next steps  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 > or
 > [Plan & track work](plan-track-work.md)
 

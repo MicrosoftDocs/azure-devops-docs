@@ -1,7 +1,7 @@
 ---
 title: Add built-in charts to a team dashboard
-titleSuffix: VSTS & TFS
-description: Add system-generated charts or query-based charts to a team dashboard in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: Add system-generated charts or query-based charts to a team dashboard in Azure DevOps & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Add charts to a dashboard
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
@@ -52,7 +52,7 @@ Each time a build is run, it logs information about the build, including the run
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open **Build and Release>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Build and Release>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -77,9 +77,16 @@ Each time a release is deployed, it logs information about the release to each o
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open **Build and Release>Releases** to add a release definition chart to a team dashboard.   
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Build and Release>Releases** to add a release definition chart to a team dashboard.   
 
-	![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
+    # [New navigation](#tab/new-nav)
+	> [!div class="mx-imgBorder"]  
+	> ![Add a Release pipeline chart to a dashboard, new nav](_img/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
+
+    # [Previous navigation](#tab/previous-nav)
+    ![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
+    
+    ---
 
 	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
@@ -89,7 +96,7 @@ Each time a release is deployed, it logs information about the release to each o
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
@@ -99,15 +106,14 @@ As you create and run tests, you can track your status by defining [lightweight 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
-2. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
-
-	![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
+![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
@@ -123,13 +129,13 @@ You can add trends to the dashboard of the failures and duration of those [tests
 Requires TFS 2017.2 or later version. 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
 	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
 
-3. Click the ![Actions icon](_img/icons/actions-icon.png) Actions menu and choose the dashboard to add the chart to.  
+3. Open the ![](_img/icons/actions-icon.png) actions menu and choose the dashboard to add the chart to.  
 
 	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
 
@@ -147,7 +153,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 >[!NOTE]  
 ><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) as needed.  
 
 2. If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 

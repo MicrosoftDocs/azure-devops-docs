@@ -1,5 +1,6 @@
 ---
 title: Clean Up Files When Users Leave
+titleSuffix: Azure Repos
 description: Clean Up Files When Users Leave
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Clean Up Files When Users Leave
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When a member leaves a team, version control administrators must correctly dispose of that member's files.
 

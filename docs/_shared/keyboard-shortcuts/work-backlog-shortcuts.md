@@ -5,13 +5,13 @@ ms.topic: include
 
 <a id="work-backlog-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Work** hub, **Backlogs** pages. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.    
+You can use the following keyboard shortcuts when working from a **Boards>Backlogs** or **Work**>**Backlogs** page. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.    
 
 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work Backlogs page shortcuts](/vsts/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
+<td>![Work Backlogs page shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
 <td>
 **Backlogs**<br/><br/>
 

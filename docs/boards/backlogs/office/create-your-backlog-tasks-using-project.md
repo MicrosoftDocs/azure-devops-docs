@@ -1,7 +1,7 @@
 ---
 title: Create your backlog and tasks using Project
-titleSuffix: VSTS & TFS
-description: Add items, plan, order, and estimate your backlog of deliverables in Visual Studio Team Services or Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
@@ -16,7 +16,7 @@ ms.date: 07/21/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
+If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
 
@@ -24,7 +24,7 @@ Use this topic to learn how to:
 
 >[!div class="checklist"]      
 > * Connect a Project plan to a project  
-> * Add tasks to Project and publish them as work items to VSTS or TFS       
+> * Add tasks to Project and publish them as work items 
 > * Indent tasks to create parent-child links 
 > * Link tasks to create predecessor-successor links  
 > * View how Project columns map to work item fields    
@@ -35,15 +35,15 @@ Use this topic to learn how to:
 
 ## Add tasks and publish work items
 
-1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017 and later versions, you'll need Project 2010 or later version.  
+1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For Azure Boards and TFS 2017 and later versions, you'll need Project 2010 or later version.  
  
 	> [!NOTE]  
-	>You can't use Office Project 365 to connect to VSTS and TFS. 
+	>You can't use Office Project 365 to connect to Azure Boards and TFS. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 
 	> [!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -108,21 +108,21 @@ When you link two tasks and publish your plan, TFS creates predecessor-successor
 
 Although the work tracking system tracks predecessor-successor dependencies as work item links, it does not track dependency types, lead and lag time, or other constraints that Project does.
 
-## Specify data for other VSTS/TFS fields 
+## Specify data for other work tracking fields 
 
-To enter data into other VSTS/TFS fields, switch to the Team Foundation Task Sheet.
+To enter data into other work tracking fields, switch to the Team Foundation Task Sheet.
 
 ![Open Team Foundation Task View in Project](_img/create-your-backlog-tasks-using-project/IC660422.png)  
 
-This view displays all the VSTS/TFS fields that have been mapped to Project.
+This view displays all the work tracking fields that have been mapped to Project.
 
 ![Team Foundation Task Sheet view](_img/create-your-backlog-tasks-using-project/IC697756.png)  
   
-Optionally, you can add a mapped TFS field as a column to the Team Foundation Gantt view. To see which TFS fields are mapped, open **Column Mappings**.
+Optionally, you can add a mapped work tracking field as a column to the Team Foundation Gantt view. To see which work tracking fields are mapped, open **Column Mappings**.
 
-![View which VSTS/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
+![View of work tracking fields mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
-To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/library/ms404686.aspx). This feature is available for both on-premises TFS and cloud-hosted VSTS. 
+To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/library/ms404686.aspx). This feature is available for both Azure Boards and TFS. 
 
 ## Tips for working in Project and other Team Foundation clients
 

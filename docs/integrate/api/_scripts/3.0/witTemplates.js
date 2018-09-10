@@ -27,11 +27,11 @@ exports.submitRequests = function() {
 						"fields": {
 							"System.AreaPath": "Fabrikam-Fiber-Git",
 							"System.IterationPath": "Fabrikam-Fiber-Git",
-							"Microsoft.VSTS.Common.Priority": "2",
+							"Microsoft.Azure DevOps Services.Common.Priority": "2",
 							"System.Reason": "New",
 							"System.State": "New",
 							"System.Title": "<Enter title here>",
-							"Microsoft.VSTS.Common.ValueArea": "Business"
+							"Microsoft.Azure DevOps Services.Common.ValueArea": "Business"
 						}
 					}
         },
@@ -50,7 +50,7 @@ exports.submitRequests = function() {
 						"id": null,
 						"workItemTypeName": "Task",
 						"fields": {
-							"Microsoft.VSTS.Common.Priority": "1",
+							"Microsoft.Azure DevOps Services.Common.Priority": "1",
 							"System.Reason": "Active",
 							"System.State": "Active"
 						}
@@ -82,7 +82,7 @@ exports.submitRequests = function() {
 						"fields": {
 							"System.AreaPath": "Fabrikam-Fiber-Git",
 							"System.IterationPath": "Fabrikam-Fiber-Git",
-							"Microsoft.VSTS.Common.Priority": "2",
+							"Microsoft.Azure DevOps Services.Common.Priority": "2",
 							"System.Reason": "New",
 							"System.State": "New",
 							"System.Title": "<Enter Title Here>"

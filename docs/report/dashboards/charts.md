@@ -1,7 +1,7 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: VSTS & TFS  
-description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS  
+description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
@@ -13,7 +13,7 @@ ms.date: 03/20/2018
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
@@ -25,7 +25,7 @@ For example, the following image illustrates four different charts created from 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ## Prerequisites
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 - All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
@@ -185,7 +185,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range="vsts"
 ### Widgets and the Analytics Service 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
+The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets.md).  
  
 ::: moniker-end
 

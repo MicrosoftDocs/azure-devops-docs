@@ -2,6 +2,8 @@
 title: Ease customization by migrating projects to the Inheritance process model – VSTS Sprint 139 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 8/21/2018
 description: In the Sprint 139 Update of Visual Studio Team Services (VSTS), you can now migrate Hosted XML projects to the Inheritance process model to ease customization.
 ---
@@ -13,9 +15,6 @@ In the **Sprint 139 Update** of Visual Studio Team Services (VSTS), you can now 
 Check out the [Features](#features) list below for more.
 
 ## Next steps
-
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
 
 Read about the new features below and head over to VSTS to try them for yourself.
 
@@ -46,7 +45,7 @@ Build and release:
 
 ### Create table of contents for wiki pages
 
-Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](https://docs.microsoft.com/en-us/vsts/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a [suggestion from UserVoice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/32366560-wiki-table-contents).
+Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a [suggestion from UserVoice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/32366560-wiki-table-contents).
 
 > [!div class="mx-imgBorder"]
 ![Wiki table of contents](_img/139_03.png)
@@ -65,7 +64,7 @@ After you validate the process, you can then change projects to use the newly cr
 > [!div class="mx-imgBorder"]
 ![Change process for project](_img/139_05.png)
 
-See the [Clone a Hosted XML process to Inheritance](/vsts/organizations/settings/work/upgrade-hosted-to-inherited?view=vsts&tabs=new-nav) documentation for more information.
+See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=vsts&tabs=new-nav) documentation for more information.
 
 ### Chat about the latest status using the improved Microsoft Teams integration
 
@@ -87,7 +86,7 @@ In addition to supporting a default PR description template, teams can add multi
 
 Branch-specific templates are also supported if you want to apply a different template for a PR into a specific branch, or branch folder. For example, if you want to have a template specific to all branches that begin with "hotfix/" you can add a template that will be used for all PRs into those branches.  
 
-See the [pull request templates](/vsts/repos/git/pull-request-templates) documentation to learn more about how to create and use templates.
+See the [pull request templates](/azure/devops/repos/git/pull-request-templates) documentation to learn more about how to create and use templates.
 
 ## Build and release
 
@@ -102,7 +101,7 @@ You've been able to trigger a build based on a pull request (PR) and get that qu
 
 [DevOps Projects](https://azure.microsoft.com/features/devops-projects/) makes it easy to get started in Azure. It helps you launch an application, on the Azure service of your choice, in a few steps. DevOps Projects provides everything you need for developing, deploying, and monitoring your app.
 
-We have now added support for Azure Kubernetes Service (AKS) targeting Go Language on DevOps Projects. See the tutorial documentation for [AKS](https://docs.microsoft.com/azure/devops-project/azure-devops-project-aks) for more information.
+We have now added support for Azure Kubernetes Service (AKS) targeting Go Language on DevOps Projects. See the tutorial documentation for [AKS](/azure/devops-project/azure-devops-project-aks) for more information.
 
 ### The build status reported to GitHub is more succinct
 

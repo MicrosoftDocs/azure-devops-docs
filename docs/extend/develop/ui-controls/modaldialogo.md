@@ -1,6 +1,6 @@
 ---
-title: Use the Dialog Control | Extensions for VSTS
-description: Use the modal dialog control to collect user input or display message in your app for VSTS.
+title: Use the Dialog Control | Extensions for Azure DevOps Services
+description: Use the modal dialog control to collect user input or display message in your app for Azure DevOps Services.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: devops
 ms.technology: devops-ecosystem

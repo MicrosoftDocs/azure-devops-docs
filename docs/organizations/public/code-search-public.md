@@ -1,6 +1,6 @@
 ---
 title: Search the code base of a public project  
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Search across all reposities defined in a public project to find specific types of code   
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -27,10 +27,10 @@ With code search, you can locate specific types of code and easily narrow or wid
 
 # [New navigation](#tab/new-nav)
 
-To start your search, choose **Code>Files** or other hub under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Work Item Search box, new navigation](_img/search/code-search-vert.png)    
+> ![Code Search box, new navigation](_img/search/code-search-vert.png)    
 
 # [Previous navigation](#tab/previous-nav)  
 
@@ -45,7 +45,7 @@ To start your search, choose **Code>Files** or other hub under **Code**, enter a
 
 ---
 
-## Work with search results  
+## View and work with search results  
 
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
@@ -58,7 +58,7 @@ To start your search, choose **Code>Files** or other hub under **Code**, enter a
    list, and type the criteria value.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/code-search-filters.png)     
+	> ![Search from the title bar](_img/search/code-search-filters.png)     
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 

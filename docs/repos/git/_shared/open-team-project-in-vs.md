@@ -15,4 +15,4 @@ and then open Visual Studio to connect to your project.
 
 	![On your project overview page, click Open in Visual Studio](../../../_shared/_img/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to VSTS from Visual Studio. 
+0. Sign in to Azure DevOps Services from Visual Studio. 

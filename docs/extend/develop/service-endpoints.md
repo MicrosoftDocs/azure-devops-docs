@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Service Connections | Extensions for VSTS
+title: Service Endpoints | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
@@ -12,14 +12,15 @@ author: elbatk
 ms.date: 08/22/2016
 ---
 
-# Service Connections in VSTS
+# Service Endpoints in Azure DevOps Services
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
-> _Service connections_ are called _service endpoints_ in TFS 2018 and in older versions.
+> _Service endpoints_ are called _service connections_ in TFS 2018 and in older versions.
+> _Pipelines_ are called _definitions_ in TFS 2018 and older versions.
 ::: moniker-end
 
-Service connections are a way for VSTS to connect to external systems or services. They are a bundle of properties securely stored by VSTS which includes but is not limited to:
+Service endpoints are a way for Azure DevOps Services to connect to external systems or services. They are a bundle of properties securely stored by Azure DevOps Services which includes but is not limited to:
 
 - Service name
 - Description
@@ -27,20 +28,20 @@ Service connections are a way for VSTS to connect to external systems or service
 - Certificates or tokens
 - User names and passwords
   
-Extensions are then able to leverage the service connection to acquire the stored details to perform the necessary operations on that service. 
+Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service. 
 Follow this guide to create a new Service Point contribution and leverage it in your extension.
 
 ## Task overview
 
-This article walks through developing a service connection by creating an example extension for VSTS that includes:
--	A custom service connection with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
--	A build task which defines 2 properties: The service connection & a picklist which has values populated from the REST endpoint data source.
+This article walks through developing a service endpoint by creating an example extension for Azure DevOps Services that includes:
+-	A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
+-	A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
-> Note: Service connections created by users will be created at the project level, not the account level. 
+> Note: Service endpoints created by users will be created at the project level, not the organization level. 
 
 The steps involved in completing this task are:
 - [Step 1: Creating the extension manifest file](#step1)
-- [Step 2: The build task definition, in the task.json file](#step2)
+- [Step 2: The build task pipeline, in the task.json file](#step2)
 
 > [!NOTE]
 > This tutorial will refer to the home directory for your project as "home". 
@@ -65,8 +66,8 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 "manifestVersion": 1,
   "id": "service-endpoint-tutorial",
   "version": "0.1.1",
-  "name": "Sample extension that leverages a service connection",
-  "description": "A sample VSTS extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
+  "name": "Sample extension that leverages a service endpoint",
+  "description": "A sample Azure DevOps Services extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
   "publisher": "francistotten",
   "targets": [
     {
@@ -85,7 +86,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 > You will need to update the `publisher` property.
 
 > [!NOTE]
-> "BuildTaskFolder" is the path where we'll eventually place our build task definition
+> "BuildTaskFolder" is the path where we'll eventually place our build task pipeline
 
 <a name="customendpoint" />
 
@@ -96,7 +97,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
   "contributions": [
     {
       "id": "service-endpoint",
-      "description": "Service connection type for Fabrikam connections",
+      "description": "Service endpoint type for Fabrikam connections",
       "type": "ms.vss-endpoint.service-endpoint-type",
       "targets": [ "ms.vss-endpoint.endpoint-types" ],
       "properties": {
@@ -156,10 +157,10 @@ Add the following `contributions` array underneath the `targets` array of the ba
 > Below is what your endpoint will look like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
 
 
-If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service connection to your VSTS account.
+If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service endpoint to your Azure DevOps Services organization.
 <img src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
-Go ahead and create a service connection using the Fabrikam endpoint.
+Go ahead and create a service endpoint using the Fabrikam endpoint.
 <img src="./_img/service-endpoint-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 <a name="buildtask" />
@@ -199,7 +200,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you have not c
 {
   "id": "6557a6d2-4caf-4247-99ea-5131286a8753",
   "name": "build-task",
-  "friendlyName": "Build Task that uses the service connection",
+  "friendlyName": "Build Task that uses the service endpoint",
   "description": "Task with a dynamic property getting data from an endpoint REST data source",
   "author": "francistotten",
   "helpMarkDown": "Replace with markdown to show in help",
@@ -215,7 +216,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you have not c
     "Patch": "1"
   },
   "minimumAgentVersion": "1.95.0",
-  "instanceNameFormat": "Service Connection Build Task $(project)",
+  "instanceNameFormat": "Service Endpoint Build Task $(project)",
   "inputs": [
     {
       "name": "FabrikamService",
@@ -223,7 +224,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you have not c
       "label": "Fabrikam service/server end point",
       "defaultValue": "",
       "required": true,
-      "helpMarkDown": "Select the Fabrikam end point to use. If needed, click on 'manage', and add a new service connection of type 'Fabrikam server connection'"
+      "helpMarkDown": "Select the Fabrikam end point to use. If needed, click on 'manage', and add a new service endpoint of type 'Fabrikam server connection'"
     },
     {
       "name": "project",
@@ -281,7 +282,7 @@ Once you replace Fabrikam with your service, replace the Projects call with your
 <img src="./_img/service-endpoint-build-task-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 ## Authentication Documentation
-The authentication scheme in a service connection determines the credentials that would be used to connect to the external service. Check out the
+The authentication scheme in a service endpoint determines the credentials that would be used to connect to the external service. Check out the
 [authentication schemes documentation](./auth-schemes.md) for more information and to see the following authentication schemes:
 - Basic authentication
 - Token based authentication

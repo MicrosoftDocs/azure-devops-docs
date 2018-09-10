@@ -25,12 +25,12 @@ monikerRange: 'vsts'
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Enable IIS</td><td>(Optional) Check this if you want to install IIS on the machine.</td></tr>
 <tr><td>Configuration type</td><td>(Required) You can create or update sites, applications, virtual directories, and application pools.</td></tr>
-<tr><td>Action</td><td>(Required) Select the appropriate action that you want to perform on an IIS website. 
+<tr><td>Action</td><td>(Required) Select the appropriate action that you want to perform on an IIS website.
 
 "Create Or Update" will create a website or update an existing website.
 
  Start, Stop will start or stop the website respectively.</td></tr>
-<tr><td>Action</td><td>(Required) Select the appropriate action that you want to perform on an IIS Application Pool. 
+<tr><td>Action</td><td>(Required) Select the appropriate action that you want to perform on an IIS Application Pool.
 
 "Create Or Update" will create app-pool or update an existing one.
 
@@ -63,7 +63,7 @@ Start, Stop, Recycle will start, stop or recycle the application pool respective
 <tr><td>Basic authentication</td><td>(Optional) Select the option to enable basic authentication for website.</td></tr>
 <tr><td>Windows authentication</td><td>(Optional) Select the option to enable windows authentication for website.</td></tr>
 <tr><td>Parent website name</td><td>(Required) Provide the name of the parent Website of the virtual directory.</td></tr>
-<tr><td>Virtual path</td><td>(Required) Provide the virtual path of the virtual directory. 
+<tr><td>Virtual path</td><td>(Required) Provide the virtual path of the virtual directory.
 
 Example: To create a virtual directory Site/Application/VDir enter /Application/Vdir. The parent website and application should be already existing.</td></tr>
 <tr><td>Physical path</td><td>(Required) Provide the physical path where the virtual directory's content will be stored. The content can reside on the local Computer, or in a remote directory, or on a network share, like C:\Fabrikam or \\\\ContentShare\Fabrikam.</td></tr>
@@ -71,7 +71,7 @@ Example: To create a virtual directory Site/Application/VDir enter /Application/
 <tr><td>Username</td><td>(Required) Provide the user name that will be used to access the virtual directory's physical path.</td></tr>
 <tr><td>Password</td><td>(Optional) Provide the user's password that will be used to access the virtual directory's physical path. <br/>The best practice is to create a variable in the Build or Release pipeline, and mark it as 'Secret' to secure it, and then use it here, like '$(userCredentials)'. <br> Note: Special characters in password are interpreted as per <a href="https://go.microsoft.com/fwlink/?linkid=843470">command-line arguments</a></td></tr>
 <tr><td>Parent website name</td><td>(Required) Provide the name of the parent Website under which the application will be created or updated.</td></tr>
-<tr><td>Virtual path</td><td>(Required) Provide the virtual path of the application. 
+<tr><td>Virtual path</td><td>(Required) Provide the virtual path of the application.
 
 Example: To create an application Site/Application enter /Application. The parent website should be already existing.</td></tr>
 <tr><td>Physical path</td><td>(Required) Provide the physical path where the application's content will be stored. The content can reside on the local Computer, or in a remote directory, or on a network share, like C:\Fabrikam or \\\\ContentShare\Fabrikam.</td></tr>

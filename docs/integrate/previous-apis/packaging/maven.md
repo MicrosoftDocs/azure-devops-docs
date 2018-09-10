@@ -1,6 +1,6 @@
 ---
-title: Maven | REST API Reference for Visual Studio Team Services
-description: Work with Maven packages programmatically using the REST APIs for Visual Studio Team Services.
+title: Maven | REST API Reference for VSTS
+description: Work with Maven packages programmatically using the REST APIs for VSTS.
 ms.assetid:
 ms.manager: andrusj
 ms.topic: article
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feed                  | string  |           | Name or ID of the feed.
 | groupId               | string  |           | Group Id of the package
 | artifactId            | string  |           | Artifact Id of the package.
@@ -39,7 +39,7 @@ GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feed                  | string  |           | Name or ID of the feed.
 | groupId               | string  |           | Group Id of the package
 | artifactId            | string  |           | Artifact Id of the package.
@@ -57,7 +57,7 @@ GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feed                  | string  |           | Name or ID of the feed.
 | groupId               | string  |           | Group Id of the package
 | artifactId            | string  |           | Artifact Id of the package.
@@ -76,7 +76,7 @@ GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feed                  | string  |           | Name or ID of the feed.
 | groupId               | string  |           | Group Id of the package
 | artifactId            | string  |           | Artifact Id of the package.

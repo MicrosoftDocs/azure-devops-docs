@@ -1,6 +1,6 @@
 ---
-title: Get the Android Studio VSTS plug-in
-description: Information and download links for the Android Studio VSTS plug-in
+title: Get the Android Studio Azure DevOps Services plug-in
+description: Information and download links for the Android Studio Azure DevOps Services plug-in
 ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: conceptual
@@ -14,23 +14,23 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Visual Studio Team Services Plugin for Android Studio
+# Azure DevOps Services Plugin for Android Studio
 
-The Visual Studio Team Services Plugin for Android Studio allows you to connect to your Git repositories on Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) in a seamless and intuitive way. You can also use this plugin to import your android development projects into VSTS or create pull requests in your VSTS/TFS Git repository.
+The Azure DevOps Services Plugin for Android Studio allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way. You can also use this plugin to import your android development projects into Azure DevOps Services or create pull requests in your Azure DevOps Services/TFS Git repository.
 
 *The plugin is compatible with `Android Studio 1.2 and up`.*
 
 
 **Android Studio** is the official IDE for Android app development, based on IntelliJ IDEA. You can find out more about it at [http://developer.android.com/tools/studio/index.html](http://developer.android.com/tools/studio/index.html). 
 
-The Team Services plugin for Android Studio is available in the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
+The Azure DevOps Services plugin for Android Studio is available in the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
 The plugin can be installed from Android Studio by browsing the Plugin Repository.
 
 1. In Android Studio, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `Android Studio` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
+1. Click the `Browse repositories...` button and search for "Azure DevOps Services". 
 1. Click the `Install plugin` button and restart Android Studio. 
 
  You can also download the plugin to disk from the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
@@ -41,12 +41,12 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
 1. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
 1. Click the `Install plugin` button and restart Android Studio. 
- 
- ## Next Steps 
 
-* Learn more about the Android Studio plugin by reading [Create a Git repo with IntelliJ or Android Studio](/vsts/repos/git/create-repo-intellij).
- 
- ## Frequently Asked Questions (FAQ)
+## Next Steps
+
+- Learn more about the Android Studio plugin by reading [Create a Git repo with IntelliJ or Android Studio](/azure/devops/repos/git/create-repo-intellij).
+
+## Frequently Asked Questions (FAQ)
 
 **Q:  What versions of Android Studio are supported?**
 

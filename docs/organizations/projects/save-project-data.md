@@ -1,7 +1,7 @@
 ---
 title: Save project data 
-titleSuffix: VSTS & TFS
-description: Save project data, like source code, custom build templates, build data, and work items, for Visual Studio Team Services (VSTS)
+titleSuffix: Azure DevOps Services & TFS
+description: Save project data, like source code, custom build templates, build data, and work items, for Azure DevOps Services
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops
 ms.technology: devops-accounts

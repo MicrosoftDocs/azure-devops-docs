@@ -1,5 +1,6 @@
 ---
 title: Use Team Foundation Version Control
+titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.prod: devops
@@ -15,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 # Use Team Foundation Version Control
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-VSTS and TFS provide two models of version control: [Git](../../repos/git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of VSTS/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
+Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
 
 ## Why use version control?
 

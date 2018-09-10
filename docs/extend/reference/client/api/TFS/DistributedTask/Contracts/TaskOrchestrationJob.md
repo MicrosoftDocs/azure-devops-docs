@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts TaskOrchestrationJob API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts TaskOrchestrationJob API | Extensions for Azure DevOps Services
 ms.assetid: bc2745cb-f361-3236-4452-af1266debcee
 ms.prod: devops
 ms.technology: devops-ecosystem

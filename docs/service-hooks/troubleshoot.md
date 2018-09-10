@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Troubleshoot your service hooks integrations | VSTS
-description: Troubleshoot problems with the services you have integrated with your VSTS account
+title: Troubleshoot your service hooks integrations | Azure DevOps Services
+description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -68,10 +68,10 @@ A: Check these:
 A: Use tfssecurity.exe from the command line, for example:
 
 ````
-    tfssecurity /a+ /collection: https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
+    tfssecurity /a+ /collection: https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-**Note:** The GUID represents the project ID which can be retrieved using the [Projects](/vsts/integrate/previous-apis/tfs/projects) REST API.
+**Note:** The GUID represents the project ID which can be retrieved using the [Projects](/azure/devops/integrate/previous-apis/tfs/projects) REST API.
 
 #### Q: Can I programmatically create subsciptions? 
 

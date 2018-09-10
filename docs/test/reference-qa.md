@@ -1,6 +1,6 @@
 ---
 title: FAQs and problem solutions for manual testing   
-description: FAQs for manual testing topics for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for manual testing
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](_shared/version-inc-vs.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -51,10 +51,10 @@ Drag and drop tests to reorder them.
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
 
-### Q: Can I edit other properties of a test plan from the test hub?
+### Q: Can I edit other properties of a test plan?
 
 **A:** You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the Test hub. 
+Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 (The most recently installed version of MTM is launched.)
 
 ![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
@@ -84,7 +84,7 @@ into a Word document, if you want. All the formatting in the report is retained.
 **A:** You can only do this if you are using an on-premises Team Foundation Server. 
 You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
 
-### Q: Can I track changes to test plans and test suites that I create with VSTS?
+### Q: Can I track changes to test plans and test suites that I create with Azure DevOps?
 
 **A:** Yes, you can track changes to test plans and test suites. Open the work item 
 for the test plan or test suite, then view the work item history.
@@ -212,13 +212,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from the Test hub. 
+Then you can filter on that tag from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In Test hub, on the Test Plan tab, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -246,12 +246,12 @@ After you create a shared parameter set, open another test case,
 and add the shared parameter set to that test case. Find out more about 
 [sharing parameters](repeat-test-with-different-data.md#share-parameters-between-test-cases).
 
-Add, edit, and rename your shared parameter sets on the Parameters tab. 
+Add, edit, and rename your shared parameter sets on the Parameters page. 
 In the test cases pane, view the test cases that use those parameters.
 
-![On the Parameters tab, turn on the test cases pane to view tests cases with shared parameters](_img/create-test-cases/ManageSharedParameters.png)
+![On the Parameters page, turn on the test cases pane to view tests cases with shared parameters](_img/create-test-cases/ManageSharedParameters.png)
 
-Each shared parameter set is a work item. On the Properties tab, 
+Each shared parameter set is a work item. On the Properties page, 
 you can view or make changes to this work item. For example, 
 you can assign owners and track changes.
 
@@ -270,7 +270,7 @@ this test case. This includes all projects.
 Click the associated test suite to view it. To view the project and the test 
 plan for that test suite, move your pointer over the test suite.
 
-![On Tests tab, click details pane. Select test suites in the test details pane](_img/create-test-cases/TestSuites.png) 
+![On Tests Plans page, click details pane. Select test suites in the test details pane](_img/create-test-cases/TestSuites.png) 
 
 ### Q: What happens when I delete a test case from a requirement-based test suite?
 
@@ -282,8 +282,8 @@ longer linked to the backlog item for that test suite.
 ### Q: Why do I see the wrong test suite and tests when I click 'View Tests' from the notification email about tests that are assigned to me?
 
 **A:** This might happen if you were prompted to enter sign-in 
-credentials for VSTS when you clicked this link. 
-Without signing out of VSTS, click 'View Tests' 
+credentials for Azure DevOps when you clicked this link. 
+Without signing out of Azure DevOps, click 'View Tests' 
 again to see the correct test suite and tests.
 
 *****
@@ -322,7 +322,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for VSTS. 
+**A:** Yes, if you have the Test Manager for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -442,11 +442,11 @@ your grid back into Excel if you need to.
 ### Q: What are the default retention limits?
 
 **A**: For projects created before October 2015, 
-VSTS doesn't delete results from automated tests 
+Azure DevOps doesn't delete results from automated tests 
 and manual tests unless you change the retention limit. 
 
 For new projects created after October 2015, 
-VSTS deletes all test results after one year (365 days),
+Azure DevOps deletes all test results after one year (365 days),
 unless you chose to indefinitely retain a build associated with those results. 
 
 ### Q: What is the default test retention policy for XAML builds?
@@ -589,9 +589,9 @@ test suites, or test plans.
 **A:** Action recording works best for apps in which each user 
 interface field has a unique ID, and for basic actions such as keystrokes, 
 clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).
+see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 

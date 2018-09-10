@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/28/2017
 ms.topic: 
 ---
@@ -52,4 +53,4 @@ http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2f
 1. Save your changes to the PageViewer web part.
 
 ## Related articles
-* [SSRS Report URL Access Parameter Reference](https://docs.microsoft.com/sql/reporting-services/url-access-parameter-reference)
+* [SSRS Report URL Access Parameter Reference](/sql/reporting-services/url-access-parameter-reference)

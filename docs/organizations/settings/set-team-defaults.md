@@ -1,7 +1,7 @@
 ---
 title: Set team defaults 
-titleSuffix: VSTS & TFS
-description: Configure the default area and iteration paths or sprints for a team in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Configure the default area and iteration paths or sprints for a team in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
@@ -112,7 +112,7 @@ The default area path determines the default area path assigned to work items th
 
 	In this instance, we choose to activate all three sub-area paths for the project. This allows the management team to track progress across all three teams.  
 
-	![Multiple area paths assigned to team, VSTS platform](_img/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
+	![Multiple area paths assigned to team](_img/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
 
 0.	When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
 
@@ -126,7 +126,7 @@ The default area path determines the default area path assigned to work items th
 
 	Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
 
-	![Work, Area page forWeb  team, VSTS platform](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
+	![Work, Area page forWeb  team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
 
 0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
 

@@ -1,5 +1,6 @@
 ---
-title: Git branching guidance | VSTS & TFS
+title: Git branching guidance
+titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.prod: devops
@@ -8,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/20/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Adopt a Git branching strategy
 
@@ -21,7 +21,7 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others. 
 Adopt a branching strategy for your team so that you collaborate better and spend less time managing version control and more time developing code. 
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 ## Keep your branch strategy simple
 
