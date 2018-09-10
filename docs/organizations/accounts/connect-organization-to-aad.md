@@ -1,6 +1,6 @@
 ---
-title: Connect your Azure DevOps Services organization to Azure Active Directory (Azure AD)
-description: Learn how to connect your Azure DevOps Services organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
+title: Connect your Azure DevOps organization to Azure Active Directory (Azure AD)
+description: Learn how to connect your organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
@@ -12,11 +12,11 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Tutorial: Connect your Azure DevOps Services organization to Azure AD
+# Tutorial: Connect your Azure DevOps organization to Azure AD
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If your Azure DevOps Services organization was created with a Microsoft account, you can connect it to the organization's directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
+If your organization was created with a Microsoft account, you can connect it to the organization's directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
 
 You can then sign in to Azure DevOps Services with the same username and password that you use with the Microsoft services.
 
@@ -25,9 +25,9 @@ your team's critical resources and key assets.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Connect your Azure DevOps Services organization to your Azure Active Directory.
+> * Connect your organization to your Azure Active Directory.
 > * Close the temporary Microsoft account (MSA), if you created one.
-> * Update the Azure subscription that your Azure DevOps Services organization uses for billing.
+> * Update the Azure subscription that your organization uses for billing.
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) about using Azure AD with Azure DevOps Services.
 
@@ -51,14 +51,14 @@ Before you begin, do the following:
 2. Ensure that the following is true about each user who performs the connection:
 
 * The user exists in Azure AD as a member.
-* The user is a *project collection administrator* or *owner* of [the Azure DevOps Services organization](../security/lookup-organization-owner-admin.md).
+* The user is a *project collection administrator* or *owner* of [the organization](../security/lookup-organization-owner-admin.md).
 * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email.
 
-    If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your Azure DevOps Services organization to your Azure AD.
+    If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
 
   a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
 
-    b. Sign in to your Azure DevOps Services organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
+    b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
 
     c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  
         An email invitation is sent to the new user.
@@ -67,24 +67,24 @@ Before you begin, do the following:
     
     e. Select **Next/Continue** on a few pages to fully register the new user.
 
-    f. Sign in to your Azure DevOps Services organization as the new user.
+    f. Sign in to your organization as the new user.
 
-    g. Go to **Settings** in Azure DevOps Services as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
+    g. Go to **Settings** as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
 
     h. As the new user, complete the migration.
 
-3. Ensure that all Azure DevOps Services users are in Azure AD by doing the following:  
+1. Ensure that all Azure DevOps users are in Azure AD by doing the following:  
     Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-a. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+a. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-b. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+b. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
  
 c. Select **Users**.
 
@@ -108,7 +108,7 @@ d. Compare the list of email addresses in Azure DevOps Services with the list of
 
 # [Previous navigation](#tab/prev-nav)
 
-a. Sign in to your Azure DevOps Services organization and go to **Organization settings**.
+a. Sign in to your Azure DevOps organization and go to **Organization settings**.
 
 ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
 
@@ -134,7 +134,7 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
 ---
 
-## Connect your Azure DevOps Services organization to your Azure AD
+## Connect your Azure DevOps organization to your Azure AD
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with the Microsoft account that you chose in the previous section.
 
@@ -142,14 +142,14 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
     ![Confirm Azure AD connection](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Select **All services** > **Azure DevOps Services organization**.
+2. Select **All services** > **Azure DevOps organization**.
 
-   ![All services, Azure DevOps Services organization](_img/_shared/azure-portal-team-services-administration.png)
+   ![All services, Azure DevOps organization](_img/_shared/azure-portal-team-services-administration.png)
 
-3. Select your Azure DevOps Services organization.  
-    If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the Azure DevOps Services organization.
+3. Select your organization.  
+    If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the organization.
 
-   ![Select your Azure DevOps Services organization](_img/_shared/azure-portal-select-organization.png)
+   ![Select your organization](_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Connect AAD**.
 
@@ -161,15 +161,15 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
 6. Your organization is now connected to your Azure AD.
 
-7. To confirm that the process has been completed, open your browser in a private session, and sign in to your Azure DevOps Services organization with your Azure AD or work credentials.
+7. To confirm that the process has been completed, open your browser in a private session, and sign in to your organization with your Azure AD or work credentials.
 
-8. If you created a temporary user to complete the migration, change the owner of the Azure DevOps Services organization back to the initial user, and delete the temporary Microsoft account, which is no longer needed.
+8. If you created a temporary user to complete the migration, change the owner of the organization back to the initial user, and delete the temporary Microsoft account, which is no longer needed.
 
 ## Inform users of the completed change
 
 Visual Studio subscription administrators assign subscriptions to users' corporate email so that they'll receive the subscription welcome email and notifications. If the identity and subscription email messages match, users can access the benefits of that subscription. As your organization transitions from Microsoft accounts to Azure AD identities, your users' benefits continue to work with their new Azure AD identity, provided that the email addresses match.
 
-When you inform your users of the completed change, include the tasks that each user in the Azure DevOps Services organization must complete:
+When you inform your users of the completed change, include the tasks that each user in the organization must complete, as follows:
 
 1. If you use the Git command-line tool, you might need to clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory).  
     Deleting the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine will resolve the issue.
@@ -200,7 +200,7 @@ When you inform your users of the completed change, include the tasks that each 
 
    [More questions about connecting?](faq-azure-access.md#faq-connect)
 
-### Update the Azure subscription that your Azure DevOps Services organization uses for billing
+### Update the Azure subscription that your organization uses for billing
 
 After you connect your organization to Azure AD, you might need to update the Azure subscription that you've been using to pay for Azure DevOps Services.
 

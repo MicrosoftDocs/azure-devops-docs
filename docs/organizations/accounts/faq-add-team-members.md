@@ -20,9 +20,9 @@ monikerRange: 'vsts'
 
 **Q: Why can't I add any more members to my project?** 
 
-A: Your Azure DevOps Services organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers.
+A: Your organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers.
 
-To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your Azure DevOps Services organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time. 
+To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time. 
 
 If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
 
@@ -30,7 +30,7 @@ If you need more Visual Studio subscriptions, learn [how to buy subscriptions](.
 
 **Q: Why can't some users sign in?**
 
-A: This problem might happen because users must sign in with Microsoft accounts unless your Azure DevOps Services organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access. See [How do I find out if my organization uses Azure Active Directory (Azure AD)?](#ConnectedDirectory) 
+A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access. See [How do I find out if my organization uses Azure Active Directory (Azure AD)?](#ConnectedDirectory) 
 
 If you're an Azure AD administrator, you can add users to the directory. If you're not, work with the directory administrator to add them. Learn [how to control organization access with Azure AD](access-with-azure-ad.md).
 
@@ -48,17 +48,17 @@ A: Loss of access might happen for [different reasons](faq-add-delete-users.md#s
 
 <a name="RemovePeople"></a>
 
-**Q: How do I remove users from my Azure DevOps Services organization?**
+**Q: How do I remove users from my organization?**
 
-A: Learn [how to delete users](delete-organization-users.md) across all projects in your Azure DevOps Services organization. If you paid for more users but don't need their organization access anymore, you must reduce your paid users to avoid charges.
+A: Learn [how to delete users](delete-organization-users.md) across all projects in your organization. If you paid for more users but don't need their organization access anymore, you must reduce your paid users to avoid charges.
 
 **Q: Why can't I find members from my connected Azure AD, even though I'm the Azure AD global admin?**
 
-A: You're probably a guest in the Azure AD instance that backs Azure DevOps Services. By default, Azure AD guests can't search in Azure AD. That's why you aren't finding users in your connected Azure AD to add to your Azure DevOps Services organization.
+A: You're probably a guest in the Azure AD instance that backs Azure DevOps Services. By default, Azure AD guests can't search in Azure AD. That's why you aren't finding users in your connected Azure AD to add to your organization.
 
 First, check to see if you're an Azure AD guest:
 
-1. Go to the **Settings** section of your Azure DevOps Services organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your Azure DevOps Services organization.
+1. Go to the **Settings** section of your organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your organization.
 2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
 
    > [!div class="mx-imgBorder"] 

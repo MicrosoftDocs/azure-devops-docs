@@ -1,5 +1,5 @@
 ---
-title: Change app access policies for your Azure DevOps Services organization
+title: Change app access policies for your Azure DevOps organization
 description: Answers to frequently asked questions (FAQs), like what apps integrate with Azure DevOps Services and how personal access tokens differ from alternate authentication credentials.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -20,9 +20,9 @@ monikerRange: 'vsts'
 
 #### Q: How do personal access tokens differ from alternate authentication credentials?
 
-A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an Azure DevOps Services organization, and to [scopes](/azure/devops/integrate/) of activities that the token authorizes. Learn more about [personal access tokens](use-personal-access-tokens-to-authenticate.md).
+A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](/azure/devops/integrate/) of activities that the token authorizes. Learn more about [personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
-#### Q: If I deny access to one authentication method in one Azure DevOps Services organization, does that affect all the organizations that I own?
+#### Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
 
 A:  No, you can still use that method in all the other Azure DevOps Services organizations that you own. [Personal access tokens](use-personal-access-tokens-to-authenticate.md) apply to specific organizations or to all organizations, based on your selection when you created the token.
 

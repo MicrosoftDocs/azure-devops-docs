@@ -1,7 +1,7 @@
 #### Q: Why can't users access some features?
 
 A:	Make sure that users have the correct [access level](https://visualstudio.microsoft.com/team-services/compare-features/) assigned to them.  
-* Learn [how to manage users and access levels for Azure DevOps Services](/azure/devops/organizations/accounts/add-account-users-assign-access-levels).
+* Learn [how to manage users and access levels for Azure DevOps](/azure/devops/organizations/accounts/add-account-users-assign-access-levels).
 
 * Learn [how to change access levels for Team Foundation Server](/azure/devops/organizations/security/change-access-levels). 
 

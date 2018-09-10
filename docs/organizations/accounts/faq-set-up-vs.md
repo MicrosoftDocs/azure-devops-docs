@@ -37,7 +37,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create an Azure DevOps Services organization. 
+you can also create an organization.
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
@@ -79,7 +79,7 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 <a name="WhatIsVSO"></a>
 
-#### Q: How can I create an Azure DevOps Services organization later?
+#### Q: How can I create an organization later?
 
 A:	Learn how to [sign up for Azure DevOps Services](create-organization-msa-or-work-student.md).
 
@@ -93,7 +93,7 @@ A:	Learn how to [sign up for Azure DevOps Services](create-organization-msa-or-w
 
 <a name="change-location"></a>
 
-#### Q: Can I change my Azure DevOps Services organization location?
+#### Q: Can I change my organization location?
 
 A:	Yes. For a better experience, 
 you can change your organization's location during sign-up

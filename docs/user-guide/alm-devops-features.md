@@ -83,7 +83,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Azure DevOps Services organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your Azure DevOps Services organization once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your Azure DevOps organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your Azure DevOps Services organization](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your Azure DevOps organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1839,7 +1839,7 @@ when events happen in your Visual Studio Online projects</p>
 <p><b>Create integrations</b></p>
 <p>Integrate other services like [HipChat](../service-hooks/services/hipchat.md),
 [Slack](../service-hooks/services/slack.md),
-and [UserVoice](../service-hooks/services/uservoice.md) with Azure DevOps Services
+and [UserVoice](../service-hooks/services/uservoice.md) with Azure DevOps
 using [service hooks](../service-hooks/overview.md).</p>
 
 
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your Azure DevOps Services organization using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your Azure DevOps organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md) and set your web portal preferences which include language (currently only English is supported for Azure DevOps Services), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md) and set your web portal preferences which include language (currently only English is supported for Azure DevOps), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 

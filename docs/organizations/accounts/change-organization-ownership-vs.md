@@ -1,6 +1,6 @@
 ---
-title: Change the Azure DevOps Services organization owner 
-description: Learn how to assign a different user as the owner for your Azure DevOps Services organization, and learn what permissions are required to make updates.
+title: Change the Azure DevOps organization owner 
+description: Learn how to assign a different user as the owner for your organization, and learn what permissions are required to make updates.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
@@ -12,39 +12,39 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Change the organization owner for Azure DevOps Services
+# Change the organization owner for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, change your Azure DevOps Services organization owner to another user.
+When your team's roles and responsibilities change, change your Azure DevOps organization owner to another user.
 
 <a name="ChangeOwner"></a>
 
 ## Prerequisites
 
-To change the organization owner, you must have Azure DevOps Services [*project collection administrator* or *organization owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
+To change the organization owner, you must have [*project collection administrator* or *organization owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
 If no one in the organization has these permissions, contact
-[Azure DevOps Services Support](https://azure.microsoft.com/support/devops).
+[Azure DevOps Support](https://azure.microsoft.com/support/devops).
 
 Make sure that the new owner:
 
-* Has been added and invited to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
-* Has signed in to your Azure DevOps Services organization, created a profile, and agreed to the Terms of Service.
+* Has been added and invited to your organization (`https://<yourorganization>.visualstudio.com`).
+* Has signed in to your organization, created a profile, and agreed to the Terms of Service.
 * Has accessed the organization at least once after creating an initial profile.
 
    ![Last access date](_img/change-organization-ownership/user-last-access.png)
 
-## Change Azure DevOps Services organization owner
+## Change organization owner
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select (![gear icon](../../_img/icons/gear-icon.png)) **Admin settings** .
+2. Select (![gear icon](../../_img/icons/gear-icon.png)) **Organization settings** .
 
-   ![Select "Admin settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Select "Organization settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**. The organization owner is listed under **Organization information**.
 
@@ -60,11 +60,11 @@ Make sure that the new owner:
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md)
 
-2. To find the current organization owner, go to your Azure DevOps Services **Organization settings**.
+2. To find the current organization owner, go to **Organization settings**.
 
    ![Organization settings pane](../../_shared/_img/settings/open-account-settings.png)
 
@@ -88,4 +88,4 @@ Make sure that the new owner:
 
 ---
 
-   You have successfully changed your Azure DevOps Services organization owner.
+   You have successfully changed your organization owner.

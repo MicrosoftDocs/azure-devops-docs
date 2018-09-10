@@ -19,9 +19,9 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="vsts"
 
-## Troubleshoot Azure DevOps Services connectivity
+## Troubleshoot Azure DevOps connectivity
 
-As a first step in resolving connectivity issues with Azure DevOps Services, complete the following steps:
+As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 
 1. Sign out of your browser. To do this, select the [Visual Studio sign-out](http://aka.ms/VsSignout) link.
 
@@ -31,11 +31,11 @@ As a first step in resolving connectivity issues with Azure DevOps Services, com
 
 4. Close all browsers and close the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection to Azure DevOps Services. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps Services, and then readd it.
+5. Use a private browser session to retry the connection to Azure DevOps. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps, and then re-add it.
 
-## Troubleshoot signing in to Azure DevOps Services
+## Troubleshoot signing in to Azure DevOps
 
-Two types of identities can sign in to Azure DevOps Services: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
+Two types of identities can sign in to Azure DevOps: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
 
 > 401 - Not Authorized
 
@@ -56,7 +56,7 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps Services connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
+![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
 
 This is a highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You have signed in with your work or school account, but your personal account is the identity that has access to the Azure DevOps organization.
 
@@ -71,16 +71,16 @@ To resolve this, select the **Sign in with your personal MSA account** link to s
 
 ### Scenario 2
 
-Your personal Microsoft account doesn't have access but your Azure AD account does. This is the opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the Azure DevOps Services organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
+Your personal Microsoft account doesn't have access but your Azure AD account does. This is the opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the Azure DevOps organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
 
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps Services connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
+![troubleshoot Azure DevOps connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
 
 ### Mitigation
 
-If you enter your credentials correctly but  instead of redirecting to your Azure DevOps Services organization you're redirected back to the original sign-in page, we recommend clearing all cookies and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
+If you enter your credentials correctly but  instead of redirecting to your Azure DevOps organization you're redirected back to the original sign-in page, we recommend clearing all cookies and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
 
 ::: moniker-end
 
@@ -106,9 +106,9 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ::: moniker range="vsts"
 
-## Switch organizations in Azure DevOps Services
+## Switch organizations in Azure DevOps
 
-When you use two or more Azure DevOps Services organizations that are linked to Azure AD, such as organizations that are created in the Azure portal, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
+When you use two or more organizations that are linked to Azure AD, such as organizations that are created in the Azure portal, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
 When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
 

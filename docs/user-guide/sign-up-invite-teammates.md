@@ -1,7 +1,7 @@
 ---
-title: Sign up for Azure DevOps Services
-titleSuffix: Azure DevOps Services   
-description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps Services
+title: Sign up for Azure DevOps
+titleSuffix: Azure DevOps   
+description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
@@ -13,9 +13,9 @@ monikerRange: 'vsts'
 ---
 
 
-# Quickstart: Sign up for a free Azure DevOps Services organization
+# Quickstart: Sign up for a free Azure DevOps organization
 
-In this quickstart, you learn how to sign up for a free Azure DevOps Services organization with a Microsoft account and how to invite your teammates.
+In this quickstart, you learn how to sign up for a free Azure DevOps organization with a Microsoft account and how to invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
@@ -29,7 +29,7 @@ In this quickstart, you learn how to sign up for a free Azure DevOps Services or
 
 [!INCLUDE [invite-teammates](../_shared/invite-teammates.md)]
 
-For more information about managing users and organization access, see [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md).
+For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users-from-user-hub.md).
 
 ## Next steps  
  
