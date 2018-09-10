@@ -3,5 +3,4 @@
 A:  In both Azure portals, you must have 
 [Azure Service Administrator or Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
 permissions for the Azure subscription that's linked to your Azure DevOps organization. 
-Also, in the [Azure portal](https://portal.azure.com), you must have Azure DevOps 
-project collection administrator or organization owner permissions.
+Also, in the [Azure portal](https://portal.azure.com), you must have project collection administrator or organization owner permissions.

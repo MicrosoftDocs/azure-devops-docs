@@ -1,6 +1,6 @@
 ---
-title: Add project members in Azure DevOps Services
-description: How to add members to projects in Azure DevOps Services so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
+title: Add project members in Azure DevOps
+description: How to add members to projects in Azure DevOps so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
@@ -40,7 +40,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
@@ -59,7 +59,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, *or organization owner*.
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, *or organization owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
@@ -90,21 +90,21 @@ To add members to projects, you need [*project administrator*](../security/set-p
  Enter the email addresses of the new users, separated by semicolons. Otherwise, enter the display names of the existing users. Add them one at a time or all at once.
 
 Which email addresses can I add?
-* If your Azure DevOps Services organization is Azure Active Directory-backed, you can add only email addresses that are internal to the directory.
+* If your Azure DevOps organization is Azure Active Directory-backed, you can add only email addresses that are internal to the directory.
 	
-* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your Azure DevOps Services organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
+* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
-* If your Azure DevOps Services organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](/azure/devops/organizations/accounts/add-external-user?view=vsts).
+* If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](/azure/devops/organizations/accounts/add-external-user?view=vsts).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
 
-	After you add members to your project, each member gets an invitation email that links to your Azure DevOps Services organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
+	After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
 
     What if new team members don't receive or lose the invitation email?
 
-    * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the Azure DevOps Services organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+    * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
-  * **MSA-backed organizations**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the Azure DevOps Services organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
+  * **MSA-backed organizations**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 

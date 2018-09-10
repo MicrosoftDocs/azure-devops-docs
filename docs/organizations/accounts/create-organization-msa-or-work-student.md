@@ -1,6 +1,6 @@
 ---
-title: Create your Azure DevOps Services organization with a Microsoft account or a work account
-description: Create your Azure DevOps Services organization with a personal Microsoft account or a work or school account
+title: Create your Azure DevOps organization with a Microsoft account or a work account
+description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
@@ -12,11 +12,11 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Create your Azure DevOps Services organization
+# Quickstart: Create your Azure DevOps morganization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
+To create an Azure DevOps organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
 
 In this quickstart, you learn how to upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
@@ -31,15 +31,15 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 * Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md).
 *  Before you begin, do either of the following:
 
-   * Complete the following steps to use only Microsoft accounts with your Azure DevOps Services organization. Ignore the Azure Active Directory (Azure AD) callouts.
+   * Complete the following steps to use only Microsoft accounts with your organization. Ignore the Azure Active Directory (Azure AD) callouts.
 
-      1. If you don't have a Microsoft account, create one when you sign up for Azure DevOps Services.
+      1. If you don't have a Microsoft account, create one when you sign up for Azure DevOps.
 
-      2. Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your Azure DevOps Services organization with a Microsoft account.
+      2. Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your organization with a Microsoft account.
 
    * Complete the following steps to authenticate users and control organization access through your Azure AD. Pay attention to the Azure AD callouts.
 
-	  1. Use your work or school account to *automatically connect* your Azure DevOps Services organization to your Azure AD. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+	  1. Use your work or school account to *automatically connect* your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 	  2. You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
@@ -48,9 +48,9 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 
 ## How does Azure AD control access to Azure DevOps Services?
 
-Azure DevOps Services authenticates users through your Azure AD, so that only users who are members in that directory can access your Azure DevOps Services organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your Azure DevOps Services organization.
+Azure DevOps Services authenticates users through your Azure AD, so that only users who are members in that directory can access your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your organization.
 
-Without Azure AD, you're solely responsible for controlling Azure DevOps Services organization access. And all users must sign in with their Microsoft account. 
+Without Azure AD, you're solely responsible for controlling Azure DevOps organization access. And all users must sign in with their Microsoft account. 
 [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
 
 <a name="SignIn"></a>
@@ -80,13 +80,13 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 
 	  [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-3. Under **Host my projects at**, enter the name of your Azure DevOps Services organization and then, under **Manage code using**, select **Git** or **Team Foundation Version Control**.
+3. Under **Host my projects at**, enter the name of your organization and then, under **Manage code using**, select **Git** or **Team Foundation Version Control**.
 
 	![Name your organization, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-organization-directory.png)
 
 	Learn which version control works bests for you: [Git](../../repos/git/overview.md) or [Team Foundation Version Control](../../repos/tfvc/overview.md).
 
-4. Confirm your organization's location and, if you're using **Azure AD**, confirm the directory that you're connecting to your Azure DevOps Services organization. 
+4. Confirm your organization's location and, if you're using **Azure AD**, confirm the directory that you're connecting to your organization. 
 
 	![Rename project, change organization location, or select another process](_img/sign-up-visual-studio-team-services/check-organization-location-standard.png)
 	
@@ -102,16 +102,16 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 	
 	**Azure AD**: 
 
-    After you create your account, only members of the directory shown here can access your Azure DevOps Services organization, or you must use [Azure AD business-to-business (B2B) collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations. 
+    After you create your account, only members of the directory shown here can access your organization, or you must use [Azure AD business-to-business (B2B) collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations. 
 
-    If you belong to multiple directories, ensure that you want to connect this directory to your Azure DevOps Services organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
+    If you belong to multiple directories, ensure that you want to connect this directory to your organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
 
-5. After Azure DevOps Services creates your organization and project, add code, work items, or more users.
+5. After your organization and project are created, add code, work items, or more users.
 
     ![Add code or work items](_img/_shared/project-created.png)
-	Congratulations, you're now an Azure DevOps Services organization owner! 
+	Congratulations, you're now an organization owner! 
 
-	To sign in to your Azure DevOps Services organization at any time, go to `https://<yourorganization>.visualstudio.com`.
+	To sign in to your organization at any time, go to `https://<yourorganization>.visualstudio.com`.
 
 	> [!NOTE]
 	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Azure DevOps Services as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in Azure DevOps Services.

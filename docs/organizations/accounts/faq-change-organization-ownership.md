@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot changing organization owner for Azure DevOps Services
-description: Troubleshoot changing Azure DevOps Services organization owner and organization name (URL), learn about the difference between an organization owner and an organization user, and read frequently asked questions.
+description: Troubleshoot changing Azure DevOps organization owner and organization name (URL), learn about the difference between an organization owner and an organization user, and read frequently asked questions.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
@@ -12,7 +12,7 @@ ms.date: 10/09/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot changing organization owner for Azure DevOps Services
+# Troubleshoot changing organization owner for Azure DevOps 
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -28,7 +28,7 @@ monikerRange: 'vsts'
 
 A: This might happen for one of the following reasons:
 
-*	The user isn't in your Azure DevOps Services organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users-from-user-hub.md).  
+*	The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users-from-user-hub.md).  
 *	The user hasn't created a Visual Studio profile and agreed to the Terms of Service.  
 *	If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.  
 *	If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements described in this article.

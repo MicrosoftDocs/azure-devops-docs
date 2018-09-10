@@ -1,6 +1,6 @@
 ---
-title: Plan, code, collaborate, and ship your applications faster with Azure DevOps Services 
-description: What do you get when you sign up to use Azure DevOps Services   
+title: Plan, code, collaborate, and ship your applications faster with Azure DevOps 
+description: What do you get when you sign up to use Azure DevOps  
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
@@ -25,7 +25,7 @@ Azure DevOps Services is a cloud service for collaborating on code development. 
 - Highly customizable dashboards for sharing progress and trends
 - Built-in wiki for sharing information with your team
 
-In addition, the Azure DevOps Services ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
+In addition, the Azure DevOps ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
 Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock-solid security. You'll also have access to cloud load testing, cloud build servers, and application insights.
 
@@ -48,7 +48,7 @@ Sign up for free by creating an organization and then, either upload your code t
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - Azure DevOps Services](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Pricing - Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/)
 
 
 <!---

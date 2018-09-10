@@ -1,7 +1,7 @@
 ---
 title: Plan and track work 
-titleSuffix: Azure DevOps Services
-description: Begin planning and tracking work in your new project on Azure DevOps Services 
+titleSuffix: Azure DevOps
+description: Begin planning and tracking work in your new project in Azure DevOps 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
@@ -26,7 +26,7 @@ Learn how to add work items from the web portal and view work items you've creat
 
 ## Prerequisites
 
-You can start adding work items once you connect to a project. If you don't have an organization or project yet, create one in [Azure DevOps Services](sign-up-invite-teammates.md).
+You can start adding work items once you connect to a project. If you don't have an organization or project yet, create one in [Azure DevOps](sign-up-invite-teammates.md).
 
 ## Add a work item
 
@@ -34,13 +34,13 @@ You can start adding work items once you connect to a project. If you don't have
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The web browser URL follows the following pattern: ```https://dev.azure.com/{yourorganization}/{yourproject}```  
 
 	You can use this URL to quickly open the project, substituting {yourorganization} and {yourproject} with your specific organization and project name (remove braces).
 
-	If you don't see the project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 	![Browse all projects](_img/plan-track-work/browse-all-projects-vert.png)
 
@@ -58,13 +58,13 @@ You can start adding work items once you connect to a project. If you don't have
 
 # [Previous navigation](#tab/prev-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The web browser URL follows this pattern: ```https://dev.azure.com/{yourorganization}/{yourproject}```  
 
 	You can use this URL to quickly open the project, substituting the {organization name} and {project name} with your specific organization and project name (remove braces). 
 
-	If you don't see the team or project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2.	Select **Work** > **New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
 

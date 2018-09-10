@@ -1,6 +1,6 @@
 ---
 title: Migrate to group-based resource management
-description: Migrate Azure DevOps Services to group-based resource (user) management
+description: Migrate Azure DevOps to group-based resource (user) management
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid:
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-All current users in your Azure DevOps Services organization are considered to have resources via "explicit assignment" instead of implicit group assignment. To use group-based licensing to manage licenses in your organization, you need a migration plan to seamlessly replace existing solutions with group-based licensing.
+All current users in your organization are considered to have resources via "explicit assignment" instead of implicit group assignment. To use group-based licensing to manage licenses in your organization, you need a migration plan to seamlessly replace existing solutions with group-based licensing.
 
 The most important thing is to avoid a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
 
@@ -28,9 +28,9 @@ The most important thing is to avoid a situation where migration to group-based 
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Users** > **Group rules**.
 
@@ -49,11 +49,11 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Open admin settings.
+2. Open Organization settings.
 
-   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
 
 3. Select **Users** > **Group rules**.
 

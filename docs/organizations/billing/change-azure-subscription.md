@@ -1,6 +1,6 @@
 ---
-title: Change the Azure subscription your Azure DevOps Services organization uses for billing
-description: Steps for how to unlink the Azure subscription your Azure DevOps Services organization uses for billing via the Visual Studio Marketplace
+title: Change the Azure subscription your Azure DevOps organization uses for billing
+description: Steps for how to unlink the Azure subscription your organization uses for billing via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -13,11 +13,11 @@ monikerRange: 'vsts'
 ---
 
 
-# Change the Azure subscription your Azure DevOps Services organization uses for billing
+# Change the Azure subscription your Azure DevOps organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you want to use a different Azure subscription to bill purchases for your Azure DevOps Services organization, you can either move it to a different Azure subscription that you have access to, or remove the current Azure subscription and then buy again using a new subscription.
+If you want to use a different Azure subscription to bill purchases for your organization, you can either move it to a different Azure subscription that you have access to, or remove the current Azure subscription and then buy again using a new subscription.
 
 ## Move to a different subscription
 
@@ -28,7 +28,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
    ![Select Azure Resource groups](_img/change-azure-subscription/azure-resource-groups.png)
 
-3. Select the resource group containing your Azure DevOps Services organization.
+3. Select the resource group containing your organization.
 4. Choose **Move** > **Move to another subscription**.
 
    ![Choose Move > Move to another resource group](_img/change-azure-subscription/select-move-to-another-subscription.png)
@@ -40,24 +40,24 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Prerequisites
 
-1. [Azure DevOps Services project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Azure DevOps Services Basic, Package Management users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month will continue uninterrupted until the 1st of next month, but your organization will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
+> When you remove the billing subscription from your organization, any paid quantities of Basic, Package Management users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month will continue uninterrupted until the 1st of next month, but your organization will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
 
 [Remove billing subscription](#remove-billing-subscription)
 
 ### Remove billing subscription
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as Azure DevOps Services organization owner and as Azure subscription co-administrator or greater.
+1. [Sign in to the Azure portal](https://portal.azure.com/) as organization owner and as Azure subscription co-administrator or greater.
 
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Azure DevOps Services organizations**. 
+2. Go to **All services** > **Azure DevOps organizations**. 
 
-   ![Choose All services and Azure DevOps Services organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization and **Remove billing**.
 
@@ -69,7 +69,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 >[!NOTE]
 > You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.
-If you wait until the 1st of next month to make your purchases again, your Azure DevOps Services organization reverts to the Free Tier and users in excess of the free limits will appear as expired.
+If you wait until the 1st of next month to make your purchases again, your organization reverts to the Free Tier and users in excess of the free limits will appear as expired.
 
 ## Related articles
 

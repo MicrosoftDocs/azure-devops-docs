@@ -19,15 +19,15 @@ Do you want an easier way to control who can access your team's
 critical resources and key business assets in Azure DevOps Services? 
 If you already use Microsoft services like Office 365 or 
 [Azure Active Directory (Azure AD)](https://www.microsoft.com/server-cloud/products/azure-active-directory/), 
-you can use the same identities with your Azure DevOps Services organization.
-[Azure AD works with your Azure DevOps Services organization](access-with-azure-ad.md) 
+you can use the same identities with your organization.
+[Azure AD works with your organization](access-with-azure-ad.md) 
 to control access and authenticate users. 
 
 When you organize directory members with 
 [Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups), 
 you can reuse those groups to manage permissions 
-in bulk for your Azure DevOps Services organization. 
-Just add those groups to the Azure DevOps Services group that you want. 
+in bulk for your Aorganization. 
+Just add those groups to the group that you want. 
 For example, add them to built-in groups like 
 Project Collection Administrators or Contributors, 
 or manually created groups like your project management team. 
@@ -38,12 +38,12 @@ Not familiar with Azure AD,
 but want to check it out? Learn more about 
 [Azure AD benefits](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)
 and differences in how you 
-[control Azure DevOps Services organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
+[control organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
 
 ## Prerequisites
 
-* Your Azure DevOps Services organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA)
+* Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA)
 * You must be an Azure DevOps Services project administrator, project collection administrator, or organization owner. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you must have Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes might take up to 24 hours to be visible in Azure DevOps Services.
@@ -54,13 +54,13 @@ and differences in how you
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2.  Go to your Azure DevOps Services **Admin settings**.
+2.  Go to **Organization settings**.
 
-    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Choose **Security**, select the Azure DevOps Services group you want to add a member to, select **Members**, and then select **Add**.
 
@@ -78,7 +78,7 @@ and differences in how you
 
 # [Previous navigation](#tab/prev-nav)
 
-1.	Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1.	Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 

@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about trials for Azure DevOps Services
-description:  Frequently asked questions about extensions and trials for Azure DevOps Services, including number of allowed users, get status, and how to cancel 
+title: Frequently asked questions about trials for Azure DevOps
+description:  Frequently asked questions about extensions and trials for Azure DevOps, including number of allowed users, get status, and how to cancel 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Frequently asked questions about trials for Azure DevOps Services  
+# Frequently asked questions about trials for Azure DevOps  
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -21,10 +21,10 @@ monikerRange: 'vsts'
 
 ## Trial basics 
 
-### Q: Is there an Azure DevOps Services organization trial? 
+### Q: Is there an organization trial? 
 
-A: Instead of offering an organization trial, Azure DevOps Services provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
-* 5 Azure DevOps Services users: Basic.
+A: Instead of offering an organization trial, Azure DevOps provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
+* 5 Azure DevOps users: Basic.
 * 5 Package Management users. 
 * Free tier of Microsoft-hosted continuous integration/continuous deployment (CI/CD): one concurrent job, up to 30 hours per month. 
 * One self-hosted CI/CD concurrent job. 
@@ -45,11 +45,11 @@ When the trial is over and you choose to purchase, then you can [assign the feat
 
 ### Q: Who can start a trial?
 
-A: You must be the Azure DevOps Services [organization owner or project collection administrator](vsts-billing-faq.md#find-owner) to start a trial. If you don't have permissions, you can [request the extension](../../marketplace/request-vsts-extension.md) instead.
+A: You must be the Azure DevOps [organization owner or project collection administrator](vsts-billing-faq.md#find-owner) to start a trial. If you don't have permissions, you can [request the extension](../../marketplace/request-vsts-extension.md) instead.
 
 ### Q: How do I cancel my trial?
 
-A: To stop your trial, just [uninstall the extension](../../marketplace/uninstall-disable-vsts-extensions.md) from your Azure DevOps Services organization.
+A: To stop your trial, just [uninstall the extension](../../marketplace/uninstall-disable-vsts-extensions.md) from your organization.
 
 <a name="check-trial"></a>
 
@@ -69,5 +69,5 @@ A: After a trial expires, only those users to whom the extension or feature has 
 - [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md)
 - [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [Azure DevOps Services billing support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

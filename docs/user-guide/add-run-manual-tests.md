@@ -1,7 +1,7 @@
 ---
 title: Add, run, and update inline tests
-titleSuffix: Azure DevOps Services
-description: Add, run, and update manual test cases when working in Azure DevOps Services  
+titleSuffix: Azure DevOps
+description: Add, run, and update manual test cases when working in Azure DevOps
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
@@ -28,11 +28,11 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
-	If you don't see the team or project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Boards** to open the Kanban board.
 
@@ -40,11 +40,11 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [Previous navigation](#tab/prev-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 
-	If you don't see the team or project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Board** to open the Kanban board.
 

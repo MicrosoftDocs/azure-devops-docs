@@ -29,9 +29,9 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 
@@ -46,7 +46,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Go to your Azure DevOps Services **Users** settings.
 
