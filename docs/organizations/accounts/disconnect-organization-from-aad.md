@@ -1,6 +1,6 @@
 ---
-title: Disconnect your VSTS organization from your Azure AD
-description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your VSTS account from your directory
+title: Disconnect your Azure DevOps organization from your Azure AD
+description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your Azure DevOps Services account from your directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
@@ -11,70 +11,58 @@ author: chcomley
 ms.date: 12/11/2017
 monikerRange: 'vsts'
 ---
-# Disconnect your VSTS organization from your directory
+# Disconnect your organization from your directory
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="DisconnectDirectory"></a>
 
-To stop using your organization's directory and return to signing in with Microsoft accounts, 
-you can disconnect your VSTS organization from your directory. 
+To stop using your organization's directory and return to signing in with Microsoft accounts, you can disconnect your organization from your directory.
 
-For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
+For more information, see the [Conceptual overview](access-with-azure-ad.md) for using Azure Active Directory (Azure AD) with Azure DevOps.
 
-You'll need:
+You need the following prerequisites:
 
-*	[Microsoft accounts](https://signup.live.com/) 
-for all users in your VSTS organization, 
-including yourself as VSTS organization owner.
+* [Microsoft accounts](`https://signup.live.com/`) for all users in your organization, including yourself as organization owner.
 
-*	[VSTS organization ownership](faq-change-app-access.md#find-owner) for your Microsoft account. 
+* [Organization ownership](faq-change-app-access.md#find-owner) for your Microsoft account. 
 
-*	Global administrator permissions in your Azure AD 
-for your Microsoft account as the VSTS organization owner. You'll need both 
-because Azure AD users can't disconnect VSTS organizations from directories. 
-You can add Microsoft accounts to a directory as external users. 
-Learn about [managing Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+* Global administrator permissions in your Azure AD for your Microsoft account as the organization owner. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
 
-**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts 
-that share the same sign-in addresses that they use now.
-Otherwise, they won't have access until you add them to 
-VSTS as new users. They can migrate everything except work history, 
-can relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
+Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-0.	[Sign in to the Azure portal](https://portal.azure.com/) 
-with your Microsoft account as the VSTS organization owner.
+**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps Services as new users. Users can migrate everything except work history. They can relink Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
-	[Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
+1. [Sign in to the Azure portal](https://portal.azure.com/) with your Microsoft account as the organization owner.
 
-0.	Browse to your VSTS organization by selecting **All services**, typing **Team Services** into the **Filter** box, and choosing **Team Services organizations**. If you have recently browsed to **Team Services organizations** you can select it from the recently accessed services on the left.
+   [Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-    ![Azure Portal, Team Services organizations](_img/manage-work-access/browse-to-team-services.png)
+2. Browse to your organization. Select **All services**, and then enter **Team Services** in the **Filter** box. Choose **Team Services organizations**. If you recently browsed to **Team Services organizations**, you can select it from the recently accessed services on the left.
 
-0. Select your organization.
+   ![Select Team Services organizations in the Azure portal](_img/manage-work-access/browse-to-team-services.png)
 
-    ![Azure portal, VSTS, select your organization](_img/manage-work-access/select-team-services-organization.png)
+3. Select your organization.
 
-0.	Choose **Disconnect**.
+   ![Select your organization in Azure portal](_img/manage-work-access/select-team-services-organization.png)
 
-	![Configure organization](_img/manage-work-access/azure-configure-disconnect.png)
+4. Select **Disconnect**.
 
-0. Choose **Yes** to confirm.
+   ![Configure the organization](_img/manage-work-access/azure-configure-disconnect.png)
 
-	![Disconnect organization from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
+5. Select **Yes** to confirm.
 
-0.	Your VSTS organization is disconnected from your organization's directory.
+   ![Disconnect the organization from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
 
-	![Organization is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
+6. Your organization is disconnected from your organization's directory.
 
-	Only users with Microsoft accounts can sign in.
-	**Before you disconnect your VSTS organization from your directory**, 
-	make sure to **change the VSTS organization owner to a Microsoft account**, 
-	and not to a school or work account. If you don't do this, 
-	you can't sign in to your VSTS organization unless your work or school 
-	account has the same email address as your Microsoft account.
+   ![Organization is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
 
-	[More questions about disconnecting?](faq-azure-access.md#faq-disconnect)
+   Only users with Microsoft accounts can sign in.
+	
+   > [!Important]
+   > Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+
+   For answers to questions about disconnecting, see the [FAQ](faq-azure-access.md#faq-disconnect).
 
 
 

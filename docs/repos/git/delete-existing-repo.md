@@ -1,6 +1,7 @@
 ---
-title: Delete a Git repo from your project | VSTS & TFS
-description: Remove an existing Git repo in VSTS or Team Foundation Server project
+title: Delete a Git repo from your project
+titleSuffix: Azure Repos
+description: Remove an existing Git repo in an Azure DevOps Services or Team Foundation Server project
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 
 # Delete a Git repo from your project
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 Remove unused Git repos from your project when they are no longer needed. 
 
@@ -38,7 +39,7 @@ Remove unused Git repos from your project when they are no longer needed.
 
 0. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
 
-   ![remove the VSTS repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
+   ![remove the Azure DevOps Services repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
 
    >[!NOTE]
    >If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.

@@ -2,7 +2,7 @@
 title: Visual Studio Online updates – Jan 22
 description: VSTS release notes for January 21 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 6ca7d730-1127-4b8f-8fa6-8357f999ac0f
 ms.date: 06/01/2016

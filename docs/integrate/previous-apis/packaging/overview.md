@@ -1,6 +1,6 @@
 ---
-title: Overview | REST API Reference for Visual Studio Team Services
-description: Work with feeds and packages programmatically using the REST APIs for Visual Studio Team Services .
+title: Overview | REST API Reference for VSTS
+description: Work with feeds and packages programmatically using the REST APIs for VSTS .
 ms.assetid: 71d1eb9d-fd02-4ecd-8194-547ed07b8a44
 ms.manager: douge
 ms.date: 09/29/2016

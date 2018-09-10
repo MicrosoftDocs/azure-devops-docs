@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test Runs | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test Runs | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: d013dd8a-b392-4669-98dd-1af1205c03b1
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns
 | Parameter                    | Type                    | Default | Notes                                                    |
 |:-----------------------------|:------------------------|:--------|:---------------------------------------------------------|
 |URL
-| account                      | string                  |         | Visual Studio Team Services account.
+| account                      | string                  |         | VSTS organization.
 | Query
 | name                         | string                  |         | Name for the test run. Names are not unique. Test runs with same name are assigned sequential rolling numbers. |
 | requestedBy                  | string                  | "@Me"   | Filter by the user who requested the test run. Here requestedBy should be the display name of the user. |
@@ -67,7 +67,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns/{testrunid}
 | Parameter                    | Type                    | Default | Notes |
 |:-----------------------------|:------------------------|:---------|:------------|
 |URL
-| account                      | string                  |         | Visual Studio Team Services account.
+| account                      | string                  |         | VSTS organization.
 | testRunId                    | string                  |         | Unique ID of the test run |
 
 [!code-REST [GET__TestRuns__testRunId__json](./_data/testruns/GET__TestRuns__testRunId_.json)]
@@ -86,7 +86,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/testruns/{testRunId}/resu
 | Parameter      | Type | Notes |
 |:--------|:-----|:-----|:------------|
 | URL
-| account         | string  | Visual Studio Team Services account.
+| account         | string  | VSTS organization.
 | testrunid       | string  | ID of the test run.
 
 [!code-REST [GET__TestResults__json](./_data/testresults/GET__TestResults_.json)]
@@ -103,7 +103,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns/{testRunId}/erro
 | Parameter                    | Type                    | Default | Notes |
 |:-----------------------------|:------------------------|:---------|:------------|
 |URL
-| account                      | string                  |          |Your Visual Studio Team Services account.
+| account                      | string                  |          |Your VSTS organization.
 | testRunId                    | string                  |          |ID of the test run.
 |Query
 | detailed                     | boolean                 | false    | To include the details of test errors such as messagetext, request, stacktrace, testcasename, scenarioname, and lasterrordate.
@@ -141,7 +141,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns/{testRunId}/mess
 | Parameter      | Type | Notes |
 |:--------|:-----|:-----|:------------|
 | URL
-| account   | string | Visual Studio Team Services account.
+| account   | string | VSTS organization.
 | testRunId | string | ID of the test run.
 
 
@@ -173,7 +173,7 @@ PATCH https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns/{testrunid}
 | Parameter                    | Type                    | Required  | Notes |
 |:-----------------------------|:------------------------|:----------|:------------|
 |URL
-| account                      | string                  | Yes       | Visual Studio Team Services account.
+| account                      | string                  | Yes       | VSTS organization.
 | testRunId                    | string                  | Yes       | ID of the test run. |
 |Payload
 | state                        | enum                    | Yes       | ```queued```
@@ -189,7 +189,7 @@ PATCH https://{account}.vsclt.visualstudio.com/_apis/clt/TestRuns/{testrunid}
 | Parameter                    | Type                    | Required  | Notes |
 |:-----------------------------|:------------------------|:----------|:------------|
 |URL
-| account                      | string                  | Yes       | Visual Studio Team Services account.
+| account                      | string                  | Yes       | VSTS organization.
 | testRunId                    | string                  | Yes       | ID of the test run. |
 |Payload
 | state                        | enum                    | Yes       | ```aborted```

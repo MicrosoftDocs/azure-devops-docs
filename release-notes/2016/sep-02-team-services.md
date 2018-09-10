@@ -2,7 +2,7 @@
 title: Custom work item types and stakeholder support for exploratory testing – Sept 2
 description: VSTS release notes for September 02 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 6dacf469-d201-4cc9-8fd4-4fab64c975bc
 ms.date: 06/01/2016

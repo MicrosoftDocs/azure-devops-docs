@@ -1,7 +1,7 @@
 ---
 title: Default and supported notifications
-titleSuffix: VSTS & TFS
-description: Reference of out of the box or default notifications set in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Reference of out of the box or default notifications set in Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Default and supported notifications
 
-**VSTS | TFS 2018 | TFS 2017.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017.1**
 
 Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item. 
 
@@ -53,7 +53,7 @@ Within the personal notifications page, OOB subscriptions appear with the follow
 
 ## Supported subscriptions 
 
-You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](manage-personal-notifications.md).    
+You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](howto-manage-personal-notifications.md).    
 
 | Category | 	Template |
 |-----------------------|-------------------|
@@ -85,7 +85,7 @@ You can create subscriptions using the following templates for yourself, a team,
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md) 
+- [Manage personal notifications](howto-manage-team-notifications.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 

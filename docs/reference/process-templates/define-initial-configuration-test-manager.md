@@ -1,6 +1,6 @@
 ---
 title: Define the initial configuration of Test Manager 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Use the plug-in for Microsoft Test Manager to define the project's initial test management setup for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

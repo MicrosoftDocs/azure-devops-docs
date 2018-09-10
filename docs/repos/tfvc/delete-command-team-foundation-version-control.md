@@ -1,5 +1,6 @@
 ---
 title: Delete Command (Team Foundation Version Control)
+titleSuffix: Azure Repos
 description: Delete Command (Team Foundation Version Control)
 ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete Command (Team Foundation Version Control)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Removes files and folders from the Team Foundation version control server and deletes them from the disk.
 

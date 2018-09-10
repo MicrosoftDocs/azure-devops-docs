@@ -1,5 +1,7 @@
 # [Features timeline](index.md)
 # 2018
+## [September 10](2018/sep-10-azure-devops-launch.md)
+## [August 21](2018/aug-21-vsts.md)
 ## [August 3](2018/aug-03-vsts.md)
 ## [July 10](2018/jul-10-vsts.md)
 ## [June 19](2018/jun-19-vsts.md)
@@ -122,4 +124,4 @@
 ## [August 27](2012/aug-27-team-services.md)
 ## [August 13](2012/aug-13-team-services.md)
 ## [August 6](2012/aug-06-team-services.md)
-# [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
+# [Subscribe to updates](https://azure.microsoft.com/updates/?product=azure-devops)

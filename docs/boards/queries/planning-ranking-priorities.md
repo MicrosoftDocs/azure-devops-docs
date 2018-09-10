@@ -1,13 +1,12 @@
 ---
 title: Pick list queries
-titleSuffix: VSTS & TFS
-description: Create queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 ms.date: 04/14/2017  
 ---
@@ -158,7 +157,7 @@ The following table describes the fields that you can use to plan and prioritize
 <tr>
 	<td><p>Value Area  <sup>1</sup></p></td>
 	<td><p>The area of customer value addressed by the epic, feature, or backlog item. Values include:</p><ul><li><p><strong>Architectural</strong> &mdash; technical services to implement business features that deliver solution</p></li><li><p><strong>Business</strong> &mdash; services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)</p></li></ul>
-<p>Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String</p>  </td>
+<p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=String</p>  </td>
 
 	<td>Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)</td>
 </tr>
@@ -181,10 +180,13 @@ The following table describes the fields that you can use to plan and prioritize
 
 The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).
 
-To add the field to the form: 
+::: moniker range="vsts"  
+To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 
-- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
-- **TFS**: [Modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
 
@@ -192,5 +194,5 @@ To add the field to the form:
 
 	`<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
 
-
+::: moniker-end  
  

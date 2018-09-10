@@ -39,12 +39,12 @@ ms.date: 09/05/2017
 
 - [Configure SharePoint integration](configure-sharepoint-tfs-2017-earlier.md)    
 - [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md )
-- [Set permissions to access a SharePoint project portal](../../organizations/security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Set permissions to access a SharePoint project portal](../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json) 
 
 
 ## Reference
 - [Project portal dashboards](project-portal-dashboards.md)
-- [Excel reports](../excel/excel-reports.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Excel reports](../excel/excel-reports.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json) 
 
 
 ## Resources

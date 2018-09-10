@@ -1,0 +1,74 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="CodexIconTest40" clip-path="url(#clip0)">
+<g id="Group">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="0" width="36" height="40">
+<g id="Union">
+<path d="M 22.0746 3L 22.0746 15L 33.7782 35.7656C 34.2831 36.6387 34.2848 37.7139 33.7817 38.5889C 33.2786 39.4619 32.3473 40 31.3394 40L 2.81854 40C 1.8106 40 0.879328 39.4619 0.376216 38.5889C -0.126836 37.7139 -0.125127 36.6387 0.379695 35.7656L 12.0746 15L 12.0746 3L 11.5746 3C 10.7462 3 10.0746 2.32812 10.0746 1.5C 10.0746 0.671875 10.7462 0 11.5746 0L 22.5746 0C 23.403 0 24.0746 0.671875 24.0746 1.5C 24.0746 2.32812 23.403 3 22.5746 3L 22.0746 3Z" transform="translate(2.92542 0)" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<g id="Vector">
+<path d="M 22.0746 15L 22.0746 0L 12.0746 0L 12.0746 15L 0.379695 35.7659C -0.12513 36.6388 -0.126842 37.7139 0.376242 38.5886C 0.879326 39.4615 1.81061 39.9999 2.81852 39.9999L 31.3394 39.9999C 32.3473 39.9999 33.2787 39.4615 33.7817 38.5886C 34.2848 37.7139 34.2831 36.6388 33.7782 35.7659L 22.0746 15Z" transform="translate(2.92542 0)" fill="#854CC7"/>
+</g>
+<g id="Vector 2 (Stroke)" filter="url(#filter0_f)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 14 3L 0 3L 0 0L 14 0L 14 3Z" transform="translate(13 0)" fill="#5F1FAA"/>
+</g>
+<g id="Vector 2 (Stroke).1">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 14 1.5C 14 2.32843 13.3284 3 12.5 3L 1.5 3C 0.671573 3 0 2.32843 0 1.5C 0 0.671573 0.671573 0 1.5 0L 12.5 0C 13.3284 0 14 0.671573 14 1.5Z" transform="translate(13 0)" fill="#A676DF"/>
+</g>
+<g id="Vector 2.1">
+<path d="M 0 0L 10 0" stroke-width="3" transform="translate(15 1.5)" stroke="#8E57CE"/>
+</g>
+<g id="Vector_2" opacity="0.05">
+<path d="M 10 12L 10 0L 0 0L 0 12L 10 12Z" transform="translate(15 3)" fill="black"/>
+</g>
+<g id="Intersect">
+<path d="M 29.5746 0L 4.57458 0L 0.379692 7.76611C -0.12512 8.63932 -0.126849 9.71435 0.376233 10.5888C 0.879341 11.462 1.81061 12.0003 2.81853 12.0003L 31.3394 12.0003C 32.3473 12.0003 33.2787 11.462 33.7817 10.5888C 34.2848 9.71435 34.2831 8.63932 33.7782 7.76611L 29.5746 0Z" transform="translate(2.92542 28)" fill="#5F1FAA"/>
+</g>
+<g id="Union_2" opacity="0.5" filter="url(#filter1_f)">
+<path d="M 11.9998 2.5C 11.9998 3.88086 10.8806 5 9.49982 5C 8.11914 5 6.99982 3.88086 6.99982 2.5C 6.99982 1.11914 8.11914 0 9.49982 0C 10.8806 0 11.9998 1.11914 11.9998 2.5Z" transform="translate(13.0001 17.999)" fill="#4D008A"/>
+<path d="M 7.99982 10C 7.99982 12.209 6.20905 14 3.99994 14C 1.79083 14 0 12.209 0 10C 0 7.79102 1.79083 6 3.99994 6C 6.20905 6 7.99982 7.79102 7.99982 10Z" transform="translate(13.0001 17.999)" fill="#4D008A"/>
+</g>
+<g id="Group_2">
+<g id="Vector_3">
+<path d="M 2.4999 5C 3.88061 5 4.9999 3.88071 4.9999 2.5C 4.9999 1.11929 3.88061 0 2.4999 0C 1.11919 0 -9.76562e-05 1.11929 -9.76562e-05 2.5C -9.76562e-05 3.88071 1.11919 5 2.4999 5Z" transform="translate(20 18) scale(1)" fill="#BB8FED"/>
+</g>
+<g id="Vector_4">
+<path d="M 4.99976 10C 7.76112 10 9.99964 7.76142 9.99964 5C 9.99964 2.23858 7.76112 0 4.99976 0C 2.2384 0 -0.000117185 2.23858 -0.000117185 5C -0.000117185 7.76142 2.2384 10 4.99976 10Z" transform="translate(13.0002 24) scale(0.8)" fill="#BB8FED"/>
+</g>
+<g id="Intersect_2">
+<path d="M 7.9998 0C 7.9998 2.20923 6.20898 4 3.9999 4C 1.79082 4 0 2.20923 0 0L 7.9998 0Z" transform="translate(13 28)" fill="#9B60DB" style="mix-blend-mode:overlay"/>
+</g>
+</g>
+<g id="Union_3" opacity="0.25">
+<path d="M 22.0746 3L 22.0746 15L 33.7782 35.7656C 34.2831 36.6387 34.2848 37.7139 33.7817 38.5889C 33.2786 39.4619 32.3473 40 31.3394 40L 2.81854 40C 1.8106 40 0.879328 39.4619 0.376216 38.5889C -0.126836 37.7139 -0.125127 36.6387 0.379695 35.7656L 12.0746 15L 12.0746 3L 11.5746 3C 10.7462 3 10.0746 2.32812 10.0746 1.5C 10.0746 0.671875 10.7462 0 11.5746 0L 22.5746 0C 23.403 0 24.0746 0.671875 24.0746 1.5C 24.0746 2.32812 23.403 3 22.5746 3L 22.0746 3Z" transform="translate(2.92542 0)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="9" y="-4" width="22" height="11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="5.00006" y="9.99902" width="27.9998" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur"/>
+</filter>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 40 -34.1579 0 34.1579 0)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+
+<clipPath id="clip0">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+
+</defs>
+</svg>
+

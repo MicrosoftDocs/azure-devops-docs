@@ -4,15 +4,15 @@ ms.topic: include
 
 <a id="work-item-form-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a work item form](/vsts/boards/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.
+You can use the following keyboard shortcuts when [interacting with a work item form](/azure/devops/boards/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.
 
 >[!NOTE]
-><b>Feature availability: </b>The following shortcuts are available from VSTS.
+><b>Feature availability: </b>The following shortcuts are available from Azure DevOps Services.
 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work item form keyboard shortcuts](/vsts/_shared/_img/keyboard-shortcuts/work-item-form.png)</td>
+<td>![Work item form keyboard shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-item-form.png)</td>
 <td>
 **Work Item Form**<br/> 
 **Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>
@@ -27,7 +27,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 </table>
 
 
-Also, you can use the following keyboard shortcuts when working within the work item form in the web portal, both VSTS and TFS.
+Also, you can use the following keyboard shortcuts when working within the work item form in the web portal, both Azure DevOps Services and TFS.
 
 <table width="70%">
 <tbody valign="top">

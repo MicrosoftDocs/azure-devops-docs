@@ -1,6 +1,6 @@
 ---
 title: Automate field assignments 
-titleSuffix: VSTS & TFS
+titleSuffix: TFS
 description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
@@ -13,9 +13,9 @@ ms.date: 02/14/2017
 
 # Automate field assignments based on State, Transition, or Reason
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)] 
 
-You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your VSTS and TFS project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
+You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your TFS project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
   
  If you have code that changes the state of a work item, you can generalize that code by associating your action with the appropriate state transition by using the **ACTION** element. You can pass the value of your action to the [WorkItem.GetNextState](assetId:///WorkItem.GetNextState?qualifyHint=False&autoUpgrade=True) method to get the post-action state of that work item. The version control check-in dialog box uses this method to resolve bugs and close tasks that are associated with the check-in.  
   

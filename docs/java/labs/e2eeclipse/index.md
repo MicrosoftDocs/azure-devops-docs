@@ -1,6 +1,6 @@
 ---
-title: Eclipse end-to-end workflow for your Java project with VSTS 
-description: Tutorial lab for an end-to-end Eclipse workflow with Visual Studio Team Services (VSTS)
+title: Eclipse end-to-end workflow for your Java project with Azure DevOps Services 
+description: Tutorial lab for an end-to-end Eclipse workflow with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Build and deploy a Java project with Eclipse and VSTS
+# Build and deploy a Java project with Eclipse and Azure DevOps Services
 
 In this exercise, you are going to see a typical end-to-end workflow for a Java developer using Eclipse. You should have completed the labs that set up automated build and release (this is a CI/CD pipeline). 
 
-In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in VSTS. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
+In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in Azure DevOps Services. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -26,7 +26,7 @@ In this scenario, you will open the running MyShuttle application and discover a
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private VSTS agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private Azure DevOps Services agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Install the Exploratory Testing Extension for Chrome
 
@@ -38,9 +38,9 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your VSTS account URL and click Next.
+1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps organization URL and click Next.
 
-    ![Connect to VSTS](../_img/e2eeclipse/connect-to-vsts.png)
+    ![Connect to Azure DevOps Services](../_img/e2eeclipse/connect-to-vsts.png)
 
 1. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
 
@@ -52,7 +52,7 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 In this task you will enforce quality on the master branch by creating branch policies.
 
-1. In Chrome, connect to your VSTS Team Project. Click on Code to open the Code Hub.
+1. In Chrome, connect to your Azure DevOps Services Team Project. Click on Code to open the Code Hub.
 1. Click the Repo dropdown and select "Manage Repositories".
 
     ![Manage Repositories](../_img/e2eeclipse/manage-repos.png)
@@ -73,7 +73,7 @@ In this task you will enforce quality on the master branch by creating branch po
 
 ## Log a Bug using the Exploratory Test Extension
 
-In this task you will start a test session, discover a bug in the MyShuttle app and log it to VSTS.
+In this task you will start a test session, discover a bug in the MyShuttle app and log it to Azure DevOps Services.
 
 1. In the Test extension toolbar of the Exploratory Test extension, click the Play icon to start a testing session.
 
@@ -105,11 +105,11 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Log the Bug](../_img/e2eeclipse/log-bug.png)
 
-    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". VSTS checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
+    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
 
 1. Once the bug has been created, click the Stop button in the Test Extension toolbar to end the test session.
 
-1. Navigate to your VSTS team project. Click Work to navigate to the Work Hub. In the toolbar, enter "driver" into the Search Work Items box and press enter or click the magnifying glass icon.
+1. Navigate to your Azure DevOps Services team project. Click Work to navigate to the Work Hub. In the toolbar, enter "driver" into the Search Work Items box and press enter or click the magnifying glass icon.
 
     ![Search for the Bug](../_img/e2eeclipse/search-bug.png)
 
@@ -129,15 +129,15 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Open Eclipse if it is not already open. Open the MyShuttle2 project.
 
-1. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your VSTS account via the Team Explorer Home page.
+1. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your Azure DevOps organization via the Team Explorer Home page.
 
-1. If there are no queries saved in VSTS, a query can be created in Eclipse (but not saved at this time). Right-click on the My Queries folder and select "New Query."
+1. If there are no queries saved in Azure DevOps Services, a query can be created in Eclipse (but not saved at this time). Right-click on the My Queries folder and select "New Query."
 
     ![New query](../_img/e2eeclipse/newquery.png)
 
 1. Run an existing query by double clicking it to find the bug. Or, right click in the New Query panel and select "Run Query." The output of the query will show the bug. Note the ID value of the bug.
 
-    ![Confirm the bug is correctly assigned and in VSTS](../_img/e2eeclipse/findbug.png)
+    ![Confirm the bug is correctly assigned and in Azure DevOps Services](../_img/e2eeclipse/findbug.png)
 
     > **Note**: If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
 
@@ -162,7 +162,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
         session.setAttribute("driverFeeTotal", totalDriverFee);
     ```
 
-1. Commit your changes by right clicking the file and selecting Team->Commit. Enter "Fixing totals bug #{ID of bug}" as the commit message. By putting the # symbol followed by an ID of a work item in a commit message, VSTS will automatically associate the work item with the commit when it's pushed to VSTS. In the example of the screenshot, the ID is #698. Click "Commit and Push" to push the changes to VSTS.
+1. Commit your changes by right clicking the file and selecting Team->Commit. Enter "Fixing totals bug #{ID of bug}" as the commit message. By putting the # symbol followed by an ID of a work item in a commit message, Azure DevOps Services will automatically associate the work item with the commit when it's pushed to Azure DevOps Services. In the example of the screenshot, the ID is #698. Click "Commit and Push" to push the changes to Azure DevOps Services.
 
     ![Commit and Push](../_img/e2eeclipse/eclipse-newcommit.png)
 
@@ -170,14 +170,14 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     | Name | Value |
     |---|---|
-    | User | `_VSTS_Code_Access_Token` |
+    | User | `_Azure DevOps Services_Code_Access_Token` |
     | Password | `{PAT that you copied earlier}` |
 
     ![Login to Eclipse](../_img/e2eeclipse/eclipse-login.png)
 
     In the Push commits dialog click the Push button.
 
-1. Now that the fix has been pushed to VSTS on a branch, you can create a Pull Request. This will be done in VSTS following the standard process for pull requests. Under the Code hub, click on Files in the MyShuttle2 repo and there should be a notification that you updated the `totalsBug` branch. Click the link next to it, "Create a pull request."
+1. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. This will be done in Azure DevOps Services following the standard process for pull requests. Under the Code hub, click on Files in the MyShuttle2 repo and there should be a notification that you updated the `totalsBug` branch. Click the link next to it, "Create a pull request."
 
     ![Create Pull Request](../_img/e2eeclipse/pullrequest.png)
 
@@ -189,7 +189,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![Build is running to validate the PR](../_img/e2eeclipse/pr-overview.png)
 
-    > **Note**: If there was a merge conflict, VSTS would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
+    > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
 
     > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 

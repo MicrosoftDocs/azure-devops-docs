@@ -1,6 +1,6 @@
 ---
 title: Search for work items in a public project
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -55,7 +55,7 @@ With work item search, you can quickly find work items defined within a public p
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the VSTS title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search. 
@@ -89,7 +89,7 @@ With work item search, you can quickly find work items defined within a public p
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
+	> ![Search from the title bar](_img/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -121,7 +121,7 @@ With work item search, you can quickly find work items defined within a public p
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from the title bar](_img/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 

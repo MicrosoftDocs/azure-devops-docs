@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IMessageDialogButton API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IMessageDialogButton API | Extensions for Azure DevOps Services
 description: Represents a button used in IHostDialogService.openMessageDialog().
 ms.assetid: b07f3d2b-4b81-73ef-4b9c-0a6fd2249e8c
 ms.prod: devops

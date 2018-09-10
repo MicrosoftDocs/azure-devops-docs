@@ -1,6 +1,6 @@
 ---
 title: Build pipeline source repositories
-description: Specify the sources and repository that contains the code you want to build on VSTS and Team Foundation Server (TFS)
+description: Specify the sources and repository that contains the code you want to build on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,25 +14,25 @@ monikerRange: '>= tfs-2015'
 
 # Build pipeline source repositories
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
+At the beginning of the build pipeline, the agent downloads files from your remote repository into a local sources directory.
 
-[//]: # (TODO: confirm 2018 was version of multiple phases)
+[//]: # (TODO: confirm 2018 was version of multiple jobs)
 
 ::: moniker range=">= tfs-2018"
 
-If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build process. 
+If your build consists of multiple jobs, the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
-**VSTS and TFS 2018:** To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
+**Azure Pipelines and TFS 2018:** To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
 ::: moniker-end
 
@@ -56,12 +56,12 @@ If your build consists of multiple jobs (for example, because of multiple phases
 
 You can choose from the following repository types:
 
-| Repository type               | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+| Repository type               | Azure Pipelines (YAML) | Azure Pipelines | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-------------------------------|-------------|------|--------------------------------|--------------|
 | Git repo in a project    |Yes|Yes|Yes|Yes|
 | Git repo in Bitbucket Cloud   |No|Yes|No|No|
 | Git repo in GitHub            |Yes|Yes|No|No|
-| Git repo in GitHub Enterprise |No|Yes|No|No|
+| Git repo in GitHub Enterprise |No|Yes|TFS 2018.2|No|
 | Git repo (external/remote)    |No|Yes|Yes|Yes|
 | Subversion                    |No|Yes|Yes|No|
 | Team Foundation Version Control (TFVC) repo in a project |No|Yes|Yes|Yes|
@@ -73,7 +73,7 @@ You can choose from the following repository types:
 
 When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo), you've got the following options.
 
-| Feature | VSTS | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
+| Feature | Azure Pipelines | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
 |Branch|Yes|Yes|Yes|Yes|Yes|Yes|
 |Clean|Yes|Yes|Yes|Yes|Yes|Yes|
@@ -89,8 +89,8 @@ When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo)
 ::: moniker range=">= tfs-2017"
 
 > [!NOTE]
-> **VSTS, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
-> **VSTS (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
+> **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
+> **Azure Pipelines (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
 
 ::: moniker-end
 
@@ -127,13 +127,13 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range=">= tfs-2017"
 
-#### VSTS, TFS 2018, TFS 2017.2, TFS 2017.3
+#### Azure Pipelines, TFS 2018, TFS 2017.2, TFS 2017.3
 
 [//]: # (TODO: build.clean variable still works and overrides if clean is set to false)
 
 Select one of the following options:
 
-* **Sources**: The build process performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
  ```
  git clean -fdx
  git reset --hard HEAD
@@ -151,7 +151,7 @@ Select one of the following options:
 
 #### TFS 2017 RTM
 
-If you select **True** then the build process performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
+If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -161,7 +161,7 @@ If you select **True** then the build process performs an undo of any changes. I
 
 #### TFS 2015.4
 
-If you select **True** then the build process performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
+If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -179,11 +179,11 @@ Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
-After the sources are tagged by your build process, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
 
 ::: moniker-end
 
@@ -191,24 +191,24 @@ After the sources are tagged by your build process, an artifact with the Git ref
 
 ::: moniker range=">= tfs-2017"
 
-### Report build status (VSTS, TFS 2017 and newer)
+### Report build status (Azure Pipelines, TFS 2017 and newer)
 
 You've got the option to give your team a view of the build status from your remote source repository.
 
-If your sources are in a Git repository in your project, then this option displays a badge in the **Code** hub to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
+If your sources are in an Azure Repos Git repository in your project, then this option displays a badge on the **Code** page to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
 * **Files**: Indicates the status of the latest build for the selected branch.
-* **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
+* **Commits**: Indicates the build status of the each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge in the **Code** hub indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
+If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge on the **Code** page indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
 ::: moniker-end
 
 ::: moniker range="vsts"
 
-#### GitHub (VSTS)
+#### GitHub (Azure Pipelines)
 
-If your sources are in GitHub, then this option publishes the status of your build to GitHub using [GitHub status APIs](https://developer.github.com/v3/repos/statuses/). If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull request page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
+If your sources are in GitHub, then this option publishes the status of your build to GitHub using [GitHub status APIs](https://developer.github.com/v3/repos/statuses/). If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull requests page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ If your sources are in GitHub, then this option publishes the status of your bui
 
 #### Other types of Git remote repositories
 
-If your source is in any other type of remote repository, then you cannot use VSTS or TFS to automatically publish the build status. However, you can use a [build badge](options.md) as a way to integrate and show build status within your version control experiences.
+If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status. However, you can use a [build badge](options.md) as a way to integrate and show build status within your version control experiences.
 
 ::: moniker-end
 
@@ -227,7 +227,7 @@ If your source is in any other type of remote repository, then you cannot use VS
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 
-The build process will check out your Git submodules as long as they are:
+The build pipeline will check out your Git submodules as long as they are:
 
 * **Unauthenticated:**  A public, unauthenticated repo with no credentials required to clone or fetch.
 
@@ -235,14 +235,14 @@ The build process will check out your Git submodules as long as they are:
 
  - Contained in the same project, GitHub organization, or Bitbucket account as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
+ - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 > [!NOTE]
-> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
+> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build pipeline. In effect, the build pipeline runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
 
 ::: moniker-end
 
@@ -253,9 +253,9 @@ The build process will check out your Git submodules as long as they are:
 > [!NOTE]
 > Make sure that you have registered your submodules using HTTPS and not using SSH.
 
-The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. 
+The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
 
-If your main repository and submodules are in a Git repository in your VSTS project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
+If your main repository and submodules are in an Azure Repos Git repository in your Azure DevOps project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
 
 * **Project collection** to use the Project Collection Build service account
 
@@ -267,7 +267,7 @@ If your main repository and submodules are in the same GitHub organization, then
 
 #### Alternative to using the Checkout submodules option
 
-In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in VSTS and your submodules are in GitHub, if your main repository is in GitHub and your submodules are in VSTS, or if your submodules are in a different VSTS organization than your main repository.
+In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in Azure Repos and your submodules are in GitHub, or if your main repository is in GitHub and your submodules are in Azure Repos, or if your submodules are in a different Azure DevOps organization than your main repository.
 
 If you can't use the Checkout submodules option, then you can instead use a custom script with the following Git command to get the sources for submodules onto your agent.
 
@@ -275,7 +275,7 @@ If you can't use the Checkout submodules option, then you can instead use a cust
 git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init --recursive
 ```
 
-Use a secret variable in your project or build pipeline to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
+Use a secret variable in your project or build pipeline to store the personal access token (PAT) that you generate in Azure Pipelines or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
 
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
@@ -292,7 +292,7 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2017"
 
-* **VSTS, TFS 2017.3 and newer:** Select the check box to enable this option.
+* **Azure Pipelines, TFS 2017.3 and newer:** Select the check box to enable this option.
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using VSTS with a self-hosted agent, then you must install git-lfs on the agent to make this option work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install git-lfs on the agent to make this option work.
 
 ::: moniker-end
 
@@ -316,11 +316,11 @@ Use this option if you want to skip fetching new commits. This option can be use
 
 * Git init, config, and fetch using your own custom options.
 
-* Use a build process to just run automation (for example some scripts) that do not depend on code in version control.
+* Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
 
 If you want to disable downloading sources:
 
-* **VSTS, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+* **Azure Pipelines, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
 
 * **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
 
@@ -333,7 +333,7 @@ If you want to disable downloading sources:
 
 ### Shallow fetch
 
-Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build process more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
+Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
 
@@ -348,7 +348,7 @@ In these cases this option can help you conserve network and storage resources. 
 
 ::: moniker range=">= tfs-2017"
 
-#### VSTS, TFS 2018, TFS 2017.2
+#### Azure Pipelines, TFS 2018, TFS 2017.2
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
@@ -368,14 +368,14 @@ On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set it
 
 ## TFVC options
 
-| Feature | VSTS, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+| Feature | Azure Pipelines, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |---------|--------------------------------------|--------------|
 | Clean   |Yes|Yes|
 | Specify local path |Yes|No|
 | Label sources|Yes|No|
 
 > [!NOTE]
-> **VSTS, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
+> **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
 
 ### Repository name
 
@@ -383,11 +383,11 @@ Ignore this text box (**TFS 2017 RTM** or older).
 
 ### Mappings (workspace)
 
-Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**.
+Include with a type value of **Map** only the folders that your build pipeline requires. If a subfolder of a mapped folder contains files that the build pipeline does not require, map it with a type value of **Cloak**.
 
-Make sure that you **Map** all folders that contain files that your build process requires. For example, if you add another project, you might have to add another mapping to the workspace.
+Make sure that you **Map** all folders that contain files that your build pipeline requires. For example, if you add another project, you might have to add another mapping to the workspace.
 
-**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
+**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build pipeline by downloading large amounts of data that it does not require.
 
 When you remove projects, look for mappings that you can remove from the workspace.
 
@@ -408,11 +408,11 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 ::: moniker range=">= tfs-2017"
 
-#### VSTS, TFS 2018, TFS 2017.2
+#### Azure Pipelines, TFS 2018, TFS 2017.2
 
 If you want to clean the repo, then select **true**, and then select one of the following options:
 
-* **Sources**: The build process performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
+* **Sources**: The build pipeline performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
 
@@ -426,7 +426,7 @@ If you want to clean the repo, then select **true**, and then select one of the 
 
 #### TFS 2017 RTM, TFS 2015.4
 
-If you select **True** then the build process performs an undo of any changes and scorches the workspace.
+If you select **True** then the build pipeline performs an undo of any changes and scorches the workspace.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -442,7 +442,7 @@ Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
+The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
 
 ::: moniker-end
 
@@ -458,9 +458,9 @@ Reference directories using build variables such as `$(Build.SourcesDirectory)` 
 
 ### What protocols can the build agent use with Git?
 
-We support HTTPS.
+The agent supports HTTPS.
 
-We don't yet support SSH. See [User Voice: Allow build to use ssh authentication while checking out git sub modules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
+The agent does not yet support SSH. See [User Voice: Allow build to use SSH authentication while checking out Git submodules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
 
 ### What is scorch?
 

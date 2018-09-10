@@ -1,8 +1,8 @@
 ---
 title: Triage work items using a work item query 
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Boards and TFS  
 ms.global_help.title: Triage work items
-description: Review and update work items use the triage mode from the query results view in Visual Studio Team Services & Team Foundation Server
+description: Review and update work items use the triage mode from the query results view in Azure Boards & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
@@ -45,7 +45,7 @@ In this topic you'll learn how to:
 
 The buttons to move up or down within the query results list are outside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off. 
 
-![Web portal, choose Work>Queries](_img/triage-queries/triage-buttons-new-exp.png)
+![Web portal, choose Boards>Queries](_img/triage-queries/triage-buttons-new-exp.png)
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ Choose **Save items** to save all work items you've modified.
 
 Choose the ![double-save-icon](../_img/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 
-![VSTS and TFS 2017, Query results page, save bulk modified items](../backlogs/_img/bulk-modify-save-ts.png)  
+![Azure Boards and TFS 2017, Query results page, save bulk modified items](../backlogs/_img/bulk-modify-save-ts.png)  
 
 ::: moniker-end
 

@@ -1,6 +1,7 @@
 ---
-title: Extract Files | VSTS or Team Foundation Server
-description: Learn how you can extract files from archives to a target folder using minimatch patterns on VSTS and Team Foundation Server TFS
+title: Extract Files
+titleSuffix: Azure Pipelines & TFS
+description: Learn how you can extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

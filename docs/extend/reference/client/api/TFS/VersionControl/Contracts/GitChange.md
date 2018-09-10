@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitChange API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitChange API | Extensions for Azure DevOps Services
 ms.assetid: 135fb0e3-0069-781b-ff58-49d40c86fd5c
 ms.prod: devops
 ms.technology: devops-ecosystem

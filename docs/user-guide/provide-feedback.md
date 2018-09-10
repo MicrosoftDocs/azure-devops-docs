@@ -1,38 +1,38 @@
 ---
 title: Get support, provide feedback
-titleSuffix: VSTS & TFS
-description: Guide to providing product and content feedback as well as accessing support resources in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Guide to providing product and content feedback as well as accessing support resources in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
-ms.manager: douge
-ms.author: douge
+ms.manager: chcomley
+ms.author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/19/2017
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Get VSTS and TFS product support and provide feedback
+# Get Azure DevOps Services and TFS product support and provide feedback
 
-[!INCLUDE [temp](../boards/_shared/dev15-version-header.md)] 
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-We're always working to improve VSTS, and we want you to be part of the process! Share your feedback and ideas with us, or join our communities.
+We're always working to improve Azure DevOps Services, and we want you to be part of the process! Share your feedback and ideas with us, or join our communities.
 
-Do you need to:
+Do you need to do any of the following?:
 
-* **Get advice?** Visit StackOverflow for [VSTS](http://stackoverflow.com/questions/tagged/vsts) or [TFS](http://stackoverflow.com/questions/tagged/tfs).
+* **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [TFS](http://stackoverflow.com/questions/tagged/tfs).
 
-* **Report a bug?** Submit it through our Developer Community for [VSTS](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
+* **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
-* **Suggest a feature or a fix?** Submit your idea or issue through [UserVoice for VSTS](https://visualstudio.uservoice.com/forums/330519-team-services).
+* **Suggest a feature or a fix** Submit your idea or issue through [UserVoice for Azure DevOps Services](https://visualstudio.uservoice.com/forums/330519-team-services).
 
-* **Find out what's new in VSTS?** Check out the [current VSTS Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
+* **Find out what's new in Azure DevOps Services** Check out the [current Azure DevOps Services Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 
-## VSTS and TFS Product Support
+## Azure DevOps Services and TFS Product Support
 
-The primary support hubs for VSTS and TFS are:
+The primary support venues for Azure DevOps Services and TFS are as follows:
 
-* [VSTS Support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
 * [TFS Support](https://visualstudio.microsoft.com/team-services/tfs-support/)
 
 For technical support:
@@ -42,7 +42,7 @@ For technical support:
 
 For billing support:
 
-* [VSTS](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) (from the Azure Support Portal)
+* [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) (from the Azure Support Portal)
 
 ## Documentation feedback
 
@@ -60,7 +60,7 @@ If you just want to vent about the product or the docs, that's okay. It helps us
 
 The best feedback we get is clear and precise. For example:
 
-* Product feedback: "I'm a project manager for a small start-up. I am using VSTS. I am trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
+* Product feedback: "I'm a project manager for a small start-up. I am using Azure DevOps Services. I am trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
 * Doc feedback: "I'm a dev in a big organization that works on Java apps. I tried to use Maven with your build system in TFS 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
 
 The more details, the better!
@@ -69,19 +69,19 @@ The more details, the better!
 
 ## What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to VSTS or TFS. 
+You can tell what platform you use from the URL you use to connect to Azure DevOps Services or TFS. 
 
-**VSTS**
+**Azure DevOps Services**
 
-A VSTS URL consists of an organization name and visual studio.com, for example: ```https://{yourorganization}.visualstudio.com```.  
+An Azure DevOps Services URL consists of an organization name and dev.azure.com, for example: ```https://dev.azure.com/{yourorganization}```.  
 
 To learn the version number, enter the following address in a web browser:
 ```
-https://OrganizationName.visualstudio.com/_home/About
+https://dev.azure.com/{yourorganization/_home/About
 ```
 A page similar to the one shown will open showing the version number.
 
-<img src="../_img/version-team-services.png" alt="VSTS About page, version number" style="border: 1px solid #CCCCCC;" />
+![Learn the version number of Azure DevOps Services](_img/version-team-services.png)
 
 **TFS**
 
@@ -142,4 +142,4 @@ A page similar to the one shown will open showing the version number.
 
 ## Related articles
 
-* [Report a problem with Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

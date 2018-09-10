@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Security with Visual Studio Team Services | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Security overview for integrating with Visual Studio Team Services
+title: Security with VSTS | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Security overview for integrating with VSTS
 ms.assetid: ae811730-f033-4d5a-b3a6-6cbb0743cada
 ms.manager: douge
 ms.topic: article

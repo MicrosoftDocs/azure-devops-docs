@@ -1,7 +1,7 @@
 ---
 title: Add an Analytics widget to a dashboard
-titleSuffix: VSTS
-description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Visual Studio Team Services 
+titleSuffix: Azure DevOps Services
+description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
@@ -17,37 +17,38 @@ ms.date: 08/06/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
  
-The [Analytics Service](what-is-analytics.md) is the reporting platform for Visual Studio Team Services (VSTS). 
+The [Analytics Service](what-is-analytics.md) is the reporting platform for Azure DevOps. 
 Using Analytics, you and your team can gain new insights into the health and status of your work.
 Follow this short guide to get started in a few simple steps.
 
-In this topic we walk you through the steps for adding the Analytics-based Velocity widget to a dashboard. For a review of all Analytics-based widgets, see [Widgets based on the Analytics Service](analytics-widgets-vsts.md) 
+In this topic we walk you through the steps for adding the Analytics-based Velocity widget to a dashboard. For a review of all Analytics-based widgets, see [Widgets based on the Analytics Service](analytics-widgets.md) 
 
 
 ## Prerequisites
 
-- You must have a project defined for a VSTS organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
+- You must have a project defined for an Azure DevOps Services organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
+- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
 
-## Install the Analytics extension on your VSTS account
-1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in VSTS Market place. 
-0.	Click to **Install** the Analytics extension. You might need to log in with your VSTS account.
-0. Select a VSTS account where you would like to install this extension and confirm. Learn more about [Installing extensions for VSTS](../../marketplace/install-vsts-extension.md).
+## Install the Analytics extension 
+1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
+0.	Choose to **Install** the Analytics extension. You might need to sign in with your Azure DevOps Services organization credentials.
+0. Select the Azure DevOps Services organization where you would like to install this extension and confirm. Learn more about [Install extensions](../../marketplace/install-vsts-extension.md).
 
 
 ## Add the Velocity widget to your dashboard 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a team project, see [Create a team project](../../organizations/projects/create-project.md)
+To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a project, see [Create a project](../../organizations/projects/create-project.md)
 
 # [New navigation](#tab/new-nav)
 
-0. Connect to the web portal for your team project and choose **Overview>Dashboards**. 
+0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](../dashboards/_img/dashboards/open-dashboards-vert.png)
 
-	If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+	If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 0. [Choose the dashboard](../dashboards/dashboards.md#choose-dashboard) that you want to modify. 
 
@@ -63,9 +64,9 @@ To add a widget to a dashboard, you connect to your team project using a [suppor
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Connect to the web portal for your team project and choose **Dashboards**.  
+0. Connect to the web portal for your project and choose **Dashboards**.  
 
-	![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)
+	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
 
 0. Select any dashboard or [create a new dashboard](../dashboards/dashboards.md).  
 
@@ -104,4 +105,4 @@ Learn more about the Velocity widget in [Configure and view Velocity charts](../
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Configure and view Velocity charts](../dashboards/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+> [Configure and view Velocity charts](../dashboards/team-velocity.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)

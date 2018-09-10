@@ -1,5 +1,5 @@
 ---
-title: Notification API Contracts | Visual Studio Team Services
+title: Notification API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -480,7 +480,7 @@ A subscription defines criteria for matching events and how the subscription's s
 | <code>lastModifiedBy</code> | [IdentityRef](#IdentityRef) | User that last modified (or created) the subscription.
 | <code>modifiedDate</code> | [date-time](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) | Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created.
 | <code>permissions</code> | [SubscriptionPermissions](#SubscriptionPermissions) | The permissions the user have for this subscriptions.
-| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
+| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an organization or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
 | <code>status</code> | [SubscriptionStatus](#SubscriptionStatus) | Status of the subscription. Typically indicates whether the subscription is enabled or not.
 | <code>statusMessage</code> | string | Message that provides more details about the status of the subscription.
 | <code>subscriber</code> | [IdentityRef](#IdentityRef) | User or group that will receive notifications for events matching the subscription's filter criteria.
@@ -500,7 +500,7 @@ Parameters for creating a new subscription. A subscription defines criteria for 
 | <code>channel</code> | [ISubscriptionChannel](#ISubscriptionChannel) | Channel for delivering notifications triggered by the new subscription.
 | <code>description</code> | string | Brief description for the new subscription. Typically describes filter criteria which helps identity the subscription.
 | <code>filter</code> | [ISubscriptionFilter](#ISubscriptionFilter) | Matching criteria for the new subscription.
-| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
+| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically an organization or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
 | <code>subscriber</code> | [IdentityRef](#IdentityRef) | User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
 
 
@@ -531,7 +531,7 @@ Parameters for updating an existing subscription. A subscription defines criteri
 | <code>channel</code> | [ISubscriptionChannel](#ISubscriptionChannel) | Channel for delivering notifications triggered by the subscription.
 | <code>description</code> | string | Updated description for the subscription. Typically describes filter criteria which helps identity the subscription.
 | <code>filter</code> | [ISubscriptionFilter](#ISubscriptionFilter) | Matching criteria for the subscription.
-| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically the current account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
+| <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically the current organization or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
 | <code>status</code> | [SubscriptionStatus](#SubscriptionStatus) | Updated status for the subscription. Typically used to enable or disable a subscription.
 | <code>statusMessage</code> | string | Optional message that provides more details about the updated status.
 | <code>subscriber</code> | [IdentityRef](#IdentityRef) | User or group that will receive notifications for events matching the subscription's filter criteria.
@@ -723,7 +723,7 @@ Flags that influence the result set of a subscription query.
 <a id="SubscriptionScope"></a>
 
 ## SubscriptionScope
-A resource, typically an account or project, in which events are published from.
+A resource, typically an organization or project, in which events are published from.
 
 
 Extends: [EventScope](#EventScope)

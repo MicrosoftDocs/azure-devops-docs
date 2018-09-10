@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Jun 26
 description: VSTS release notes for June 26 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: de8ae787-f7be-4567-a0fc-a82b9bff98bb
 ms.date: 06/01/2016
@@ -28,7 +28,7 @@ With today’s changes, you can now paste images directly from your clipboard in
 
 ##Opening Microsoft Test Runner
 
-Customers can now easily transition from the Test Hub in web access to the Microsoft Test Runner (MTR) by clicking the Run using client button/context menu.  Doing so opens MTR and loads the selected test cases for data collection during manual testing. To use this capability, you need an updated MTR client from [Visual Studio Update 3](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2012-update2-vs) (also released today).
+Customers can now easily transition from the Test Hub in web access to the Microsoft Test Runner (MTR) by clicking the Run using client button/context menu.  Doing so opens MTR and loads the selected test cases for data collection during manual testing. To use this capability, you need an updated MTR client from [Visual Studio Update 3](/visualstudio/releasenotes/vs2012-update2-vs) (also released today).
 
 ![Opening MTR from the web](_img/6_26_02.png)
 

@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Modal Dialog | Extensions for VSTS
+title: Modal Dialog | Extensions for Azure DevOps Services
 description: Use the modal dialog provided by the host
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual

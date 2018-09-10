@@ -1,6 +1,6 @@
 ---
-title: Run manual tests - manual testing in VSTS TestTools
-description: Test tools - Run manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Run manual tests - manual testing in Azure DevOps TestTools
+description: Test tools - Run manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run manual tests
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
@@ -22,7 +22,7 @@ use Test Runner to create a bug. Test steps, screenshots, and comments
 are automatically included in the bug. 
 
 > You just need [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) 
-to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
+to run tests that have been assigned to you with Azure DevOps. 
 Learn more about the [access](https://visualstudio.microsoft.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
@@ -67,7 +67,7 @@ that you need for more advanced testing features.
    ![Bugs logged](_img/run-manual-tests/RunTest_5.png)
 
 1. When you've run all your tests, save the results and close Test Runner. 
-   All the test results are stored in VSTS.
+   All the test results are stored in Azure DevOps.
    [How do I resume testing, or run one or more tests again?](reference-qa.md#qanda)
 
 1. View the testing status for your test suite.
@@ -94,7 +94,7 @@ However, if you want to collect more types of data, run your tests using
 [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 1. Launch the test runner 
-   client from the **Test** hub by choosing **Run with options**
+   client from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by choosing **Run with options**
    from the **Run** menu.
 
    ![Launching the test runner client](_img/_shared/collect-diagnostic-data-16.png)

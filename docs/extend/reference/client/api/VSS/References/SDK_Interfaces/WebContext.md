@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces WebContext API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces WebContext API | Extensions for Azure DevOps Services
 description: Context information for all web access requests
 ms.assetid: 6092465a-6730-ae0b-adc8-dda13b52522d
 ms.prod: devops

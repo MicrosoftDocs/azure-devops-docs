@@ -1,7 +1,7 @@
 ---
 title: Resolve validation errors
-titleSuffix: VSTS  
-description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
+titleSuffix: Azure DevOps Services  
+description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
@@ -14,12 +14,12 @@ ms.date: 03/20/2018
 
 # Resolve validation errors for process import
 
-<b>VSTS (Hosted XML)</b>  
+**Azure DevOps Services (Hosted XML)**
 
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
 >
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
+> If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
  
@@ -301,7 +301,7 @@ The WorkItems.xml file has been updated to contain the correct configuration ```
 
 <a id="TF402577"></a>  
 ### TF402577: Field *[refName]* specifies friendly name *[friendlyName]*  which is already in use by  fields *[refName]* in processes *[processNames]*.  
-Friendly names must be unique across all field definitions for all WIT definitions specified for all processes imported to VSTS.
+Friendly names must be unique across all field definitions for all WIT definitions specified for all processes imported to Azure DevOps Services.
 
 The named processes contain WITs that define a field that uses the friendly name. 
 
@@ -1031,7 +1031,7 @@ You've defined more WITs that are allowed in the process. Review your WorkItems.
 ### TF402573: Work item type WIT doesn't specify required ```refname``` attribute.  
 
 Work item types (Bug, User Story, Task, etc.) require the ```refname``` attribute. The refname value must be unique and cannot contain any reserved namespaces.
-The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by VSTS. 
+The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by Azure DevOps. 
 
 See [All WITD XML elements reference](../../../../reference/xml/all-witd-xml-elements-reference.md) for more information.
 
@@ -1082,7 +1082,7 @@ Edit the ```refname``` attribute of the named WIT to meet naming requirements..
 ### TF402538: Field rule *[ruleName]* isn't supported.  
 
 Edit your WIT definitions to remove the named rule. 
-The following rules are **not** supported for import to VSTS: 
+The following rules are **not** supported for import to Azure DevOps: 
 ```MATCH```, ```CANNOTLOSEVALUE```, ```PROHIBITED VALUES```, and ```NOTSAMEAS```.
 
 <a id="TF402539"></a>
@@ -1334,7 +1334,7 @@ UserStory.xml
 
 <a id="TF402558"></a>
 ### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
-Fields must be defined consistently across processes that have been or that you plan to import to VSTS. 
+Fields must be defined consistently across processes that have been or that you plan to import to Azure DevOps Services. 
 The system will not allow you to import a process that contains a ```FIELD``` element which is defined 
 one way in Process A and another way in Process B.  All ```FIELD``` element attributes must match.
 
@@ -1361,7 +1361,7 @@ Notice how different values are specified for ```name``` and ```type``` attribut
 
 ### Resolution
 Ensure that fields of the same ```refname``` are defined the same across all processes that  
-have been imported or that you plan to import to VSTS.
+have been imported or that you plan to import to Azure DevOps Services.
 
 <a id="TF402559"></a>
 ### TF402559: The definition for field *[refName]* is inconsistent with an existing field. The ```type``` is *[typeName]* but should be *[typeName]*.
@@ -1422,7 +1422,7 @@ notice the bug and user story ```refname``` values are different
 
 <a id="TF402584"></a>
 ### TF402584: Field rule attributes "for" or "not" aren't supported.
-The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to VSTS.  
+The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to Azure DevOps Services.  
 Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"``` and ```"not"``` attributes and remove them. 
 #### Error example
 ```xml
@@ -1565,7 +1565,7 @@ To resolve this, create two separate groups that contain one control each.
 #### Error example
 ```
   <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
-    <Link UrlRoot="http://www.visualstudio.com/team-services" />
+    <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />
   </Control>
 ```
 
@@ -1574,7 +1574,7 @@ To resolve this, create two separate groups that contain one control each.
   <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1">
     <LabelText>  
         <Text>  
-          <Link UrlRoot="http://www.visualstudio.com/team-services" />  
+          <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />  
               Title 2  
         </Text>  
     </LabelText>  
@@ -1625,7 +1625,7 @@ Process B, Bug.xml
 ```
 Because both fields share the same reference name, ```refname="MyCompany.CustomFields.Foo" ```, 
 they must also specify the same friendly name ``` <FIELD name="Foo"  ``` across all processes 
-that have been imported or will be imported to VSTS. 
+that have been imported or will be imported to Azure DevOps Services. 
 
 <a id="TF402580"></a>
 ### TF402580: You can only use the name *[witName]* for a single work item type.
@@ -1682,7 +1682,7 @@ UserStory.xml
 
 <a id="TF402582"></a>
 ### TF402582: Work item type *[witName]* contains custom control *[controlName]* which is not supported.  
-Custom controls are not supported in VSTS. Review the ```FORM``` section for the named WIT and remove any custom controls that are defined. 
+Custom controls are not supported in Azure DevOps Services. Review the ```FORM``` section for the named WIT and remove any custom controls that are defined. 
 
 #### Error example 
 ```Type="OneViewMultiValueControl"``` specifies a custom control. This must be removed or replaced to a supported control.    

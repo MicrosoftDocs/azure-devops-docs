@@ -5,7 +5,7 @@ Below is a list of **requirements** that must be checked before publishing to th
 <li>**Include a thorough `overview.md` file to describe your listing in the Marketplace.**</li>
 <li>**Include an icon for your extension which is at least 128x128 pixels in size.**</li>
 <li>**When referring to Microsoft products, use full names in place of abbreviations.**</li>
-  <ul><li>**e.g. Visual Studio Team Services vs. VSTS.**</li></ul>
+  <ul><li>**e.g. Azure DevOps Services vs. Azure DevOps Services.**</li></ul>
 <li>**Refrain from using brand names in your extension's name.**</li>
 </ul>
 

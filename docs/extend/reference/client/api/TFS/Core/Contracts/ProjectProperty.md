@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts ProjectProperty API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts ProjectProperty API | Extensions for Azure DevOps Services
 ms.assetid: d020e562-5229-c07e-f8a6-769169452734
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,7 +1,7 @@
 ---
-title: Explore Analytics OData metadata for VSTS  
-titleSuffix: VSTS  
-description: How to guide to explore the entity model OData metadata defined for the Analytics service in Visual Studio Team Services  
+title: Explore the OData metadata for the Analytics service 
+titleSuffix: Azure DevOps Services  
+description: Understand the entity model OData metadata defined for the Analytics service in Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
@@ -22,22 +22,22 @@ Understanding the metadata associated with the entity model for the Analytics se
 In this topic you'll learn how to:
 >[!div class="checklist"]
 
->* Query the metadata on a specific team project
->* Query the metadata on a Account
+>* Query the metadata on a specific project
+>* Query the metadata on an organization
 >* Identify the keys, properties, and navigational properties associated with an Entity
 >* Identify the capabilities of the Analytics OData endpoint
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## How to query the service for metadata
-Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [team project or an entire VSTS account](account-scoped-queries.md).
+Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire Azure DevOps organization](account-scoped-queries.md).
 
-### Query for metadata on a specific team project
-You construct the service root URL for a team project as shown:
+### Query for metadata on a specific project
+You construct the service root URL for a project as shown:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata
 ```
 
 ### Query for metadata on an organization
@@ -45,7 +45,7 @@ The service root URL at the organization-level is constructed as:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata
 ```
 
 ## Interpret the metadata response

@@ -1,7 +1,7 @@
 ---
 title: Define query as a hyperlink
-titleSuffix: VSTS & TFS
-description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Construct a URL for a query in Azure Boards & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
@@ -14,8 +14,6 @@ ms.topic: conceptual
 ms.date: 09/29/2017  
 ---
 
-
-
 # Define a query as a hyperlink  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -24,15 +22,14 @@ ms.date: 09/29/2017
 
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 
-VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
-
-TFS 2013 and previous versions didn't require encoding.  
 
 > [!NOTE]    
->Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
+> Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
+::: moniker range=">= tfs-2017"  
+## Query hyperlink syntax 
 
-## Syntax for VSTS, TFS 2018, TFS 2017 
+You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 ```  
 https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -54,7 +51,18 @@ SELECT [System.ID], [System.Title]
    AND [System.AreaPath]='FabrikamFiber\Web'
 ```
 
-## Syntax for TFS 2015   
+::: moniker-end  
+
+
+::: moniker range="vsts"  
+
+> [!NOTE]  
+> For queries made against Azure Boards, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+
+::: moniker-end  
+
+::: moniker range="tfs-2015"  
+## Query hyperlink syntax for TFS 2015   
 
 ```  
 https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -79,7 +87,10 @@ SELECT [System.ID], [System.Title], [System.State]
    AND [System.AreaPath]='FabrikamFiber\Web'   
 ```
 
-## Syntax for TFS 2013 and previous versions 
+::: moniker-end 
+
+::: moniker range="tfs-2013"   
+## Query hyperlink syntax for TFS 2013 and previous versions 
 
 ```  
 https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
@@ -95,11 +106,11 @@ SELECT [System.ID], [System.Title], [System.State]
 	AND [System.FoundIn]='9.0.30304' 
 ```
 
+::: moniker-end 
+
 
 ## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
-- [REST API, Wiql](https://docs.microsoft.com/rest/api/vsts/wit/wiql)
+- [REST API, Wiql](/rest/api/vsts/wit/wiql)
  
-> [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

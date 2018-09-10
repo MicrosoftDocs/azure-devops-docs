@@ -1,7 +1,7 @@
 ---
 title: Add a widget to a team dashboard 
-titleSuffix: VSTS & TFS
-description: Choose and configure widgets that you add to a team dashboard in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Add widgets to a dashboard
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
@@ -35,6 +35,11 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
+::: moniker range="vsts"
+> [!NOTE]  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
+
 ## Connect to the web portal for your project 
 
 To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
@@ -50,7 +55,7 @@ Open a web browser and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -65,7 +70,7 @@ Open a web browser and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 
 ---
@@ -243,7 +248,7 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 ::: moniker range="vsts"
 ## Analytics Service widgets 
 The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 
@@ -274,7 +279,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 ### Disabled Marketplace widget 
 
-If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
 

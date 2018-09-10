@@ -1,7 +1,7 @@
 ---
 title: Clone and update wiki content offline 
-titleSuffix: VSTS & TFS 
-description: Add and update pages offline for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Add and update pages offline for your built-in team project wiki in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -62,7 +62,7 @@ You can perform these steps to migrate markdown pages from another wiki to your 
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of these articles: 
 	- [Clone an existing Git repo](../../repos/git/clone.md) 
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and VSTS](../../repos/git/gitquickstart.md?view=vsts&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=vsts&tabs=visual-studio)
 
 
 ## Add pages to your local Git repository

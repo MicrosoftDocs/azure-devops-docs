@@ -106,7 +106,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
-3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
+3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. You'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
 
         > [!div class="tabbedCodeSnippets"]
 		```XML

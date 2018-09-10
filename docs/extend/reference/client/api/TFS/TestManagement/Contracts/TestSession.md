@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestSession API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestSession API | Extensions for Azure DevOps Services
 ms.contentid: f3237c96-537c-44cb-9d91-f58316534d20
 ms.prod: devops
 ms.technology: devops-ecosystem

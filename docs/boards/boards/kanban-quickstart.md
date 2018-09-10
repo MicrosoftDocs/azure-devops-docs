@@ -1,7 +1,7 @@
 ---
 title: Kanban quickstart 
-titleSuffix: VSTS & TFS
-description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
 ms.global_help.title: View or add a Kanban board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
 ms.topic: get-started-article
@@ -14,7 +14,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.date: 06/21/2018
 ---
 
-# Get started using your Kanban board
+# Start using your Kanban board
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -55,7 +55,7 @@ To add a board to support an additional portfolio backlog, see [Add a portfolio 
 To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add a new item on Kanban board, agile hub](_img/quickstart/add-new-item-agile.png) 
+> ![Add a new item on Kanban board, new nav](_img/quickstart/add-new-item-agile.png) 
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want using this method. 
 
@@ -70,7 +70,7 @@ The system automatically saves the work item with the title you entered. You can
 To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add a new item on Kanban board, standard hub](_img/quickstart/add-new-item-standard.png)
+> ![Add a new item on Kanban board, prev nav](_img/quickstart/add-new-item-standard.png)
 
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want using this method. 
@@ -114,26 +114,6 @@ To get the full power of the Kanban board working for you, you'll want to config
 > [Kanban basics](kanban-basics.md)  
 
 
-<!---
-
-
-If you're new to VSTS or TFS and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
-
-Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by dragging and dropping it to a downstream stage.
-
-Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
-
-Here are some useful tips when working with the Kanban board:
-- To quickly assign items to a team member, add the Assign To field to display on the cards (see [Customize cards](../../boards/boards/customize-cards.md))   
-- Customize cards to show the fields you most care about  
-- Add a swimlane to track high-priority work or track work which falls into different service level agreements (see [Swimlanes](expedite-work.md))   
-- Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../../boards/boards/customize-cards.md)) 
-- If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
-
-
--->
-
- 
 
 
  

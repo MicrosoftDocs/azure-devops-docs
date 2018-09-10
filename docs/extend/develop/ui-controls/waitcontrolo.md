@@ -1,6 +1,6 @@
 ---
-title: Use the Wait Control | Extensions for VSTS
-description: Use the wait control to display progress message for long running operations in your app for VSTS.
+title: Use the Wait Control | Extensions for Azure DevOps Services
+description: Use the wait control to display progress message for long running operations in your app for Azure DevOps Services.
 ms.assetid: 175EDE3B-6989-4485-8FEC-014F6380D44F
 ms.prod: devops
 ms.technology: devops-ecosystem

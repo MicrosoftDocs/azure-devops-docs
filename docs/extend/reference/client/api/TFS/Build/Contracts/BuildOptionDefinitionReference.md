@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildOptionDefinitionReference API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildOptionDefinitionReference API | Extensions for Azure DevOps Services
 ms.assetid: b13a80d3-865d-d828-249e-ee23fa7871dd
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -6,11 +6,11 @@ ms.topic: include
 
 |Query editor   |Action  |Query results |  Action  |
 |-------------|----------|---------|---------|
-|![Left/right arrow](/vsts/boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/vsts/boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png) |Scroll left/right |
-|![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png) ![ ](/vsts/boards/_img/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
-|**Shift+**![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png)![ ](/vsts/boards/_img/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png)![ ](/vsts/boards/_img/icons/Arrow_Down.png) | Highlight consecutive rows|
-|**Shift+**![Left arrow](/vsts/boards/_img/icons/Arrow_Next.png) |Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
-|**Shift+**![Right arrow](/vsts/boards/_img/icons/Arrow_Previous.png) |Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
+|![Left/right arrow](/azure/devops/boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/azure/devops/boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png) |Scroll left/right |
+|![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
+|**Shift+**![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)![ ](/azure/devops/boards/_img/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)![ ](/azure/devops/boards/_img/icons/Arrow_Down.png) | Highlight consecutive rows|
+|**Shift+**![Left arrow](/azure/devops/boards/_img/icons/Arrow_Next.png) |Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
+|**Shift+**![Right arrow](/azure/devops/boards/_img/icons/Arrow_Previous.png) |Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
 |**End** |Move focus to end of current clause | **End** |Move focus to bottom of list|
 |**Enter** |Move focus down |**Enter** |Open selected work item |
 |**Tab** |Move focus right, one field at a time |**Home** |Move focus to top of list |
@@ -28,11 +28,11 @@ ms.topic: include
 </tr>
 </thead>
 <tr>
-<td>![Left/right arrow](/vsts/boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png)</td>
+<td>![Left/right arrow](/azure/devops/boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png)</td>
 <td>Move focus left/right</td> 
 </tr>
 <tr>
-<td>![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png) ![ ](/vsts/boards/_img/icons/Arrow_Down.png)</td>  
+<td>![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)</td>  
 <td>Move focus up/down</td> 
 </tr>
 <tr> 
@@ -44,11 +44,11 @@ ms.topic: include
 <td>Move focus right, one field at a time</td> 
 </tr>
 <tr> 
-<td>**Shift+**![Left arrow](/vsts/boards/_img/icons/Arrow_Next.png)</td>  
+<td>**Shift+**![Left arrow](/azure/devops/boards/_img/icons/Arrow_Next.png)</td>  
 <td>Move focus left one field at a time</td> 
 </tr>
 <tr>   
-<td>**Shift+**![Right arrow](/vsts/boards/_img/icons/Arrow_Previous.png)</td>  
+<td>**Shift+**![Right arrow](/azure/devops/boards/_img/icons/Arrow_Previous.png)</td>  
 <td>Move focus right one field at a time</td> 
 </tr>
 <tr>   
@@ -68,7 +68,7 @@ ms.topic: include
 <td>Paste copied clause</td> 
 </tr>
 <tr>     
-<td>**Shift+**![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png)![ ](/vsts/boards/_img/icons/Arrow_Down.png)</td>  
+<td>**Shift+**![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)</td>  
 <td>Highlight consecutive clauses</td> 
 </tr>
 <tr>   
@@ -90,7 +90,7 @@ ms.topic: include
 <td>Refresh</td> 
 </tr>
 <tr>      
-<td>**Shift+**![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png)![ ](/vsts/boards/_img/icons/Arrow_Down.png)</td>  
+<td>**Shift+**![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)</td>  
 <td>Highlight consecutive rows</td> 
 </tr>
 <tr>      
@@ -118,7 +118,7 @@ ms.topic: include
 <td>Scroll up/down</td> 
 </tr>
 <tr>        
-<td>![Left/right arrow](/vsts/boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png)</td>  
+<td>![Left/right arrow](/azure/devops/boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png)</td>  
 <td>Scroll left/right</td> 
 </tr>
 <tr>      

@@ -1,6 +1,7 @@
 ---
-title: Manage branches in your Git repo | VSTS & TFS
-description: Find your work and search for branches using the branches page in VSTS/TFS
+title: Manage branches in your Git repo
+titleSuffix: Azure Repos
+description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -15,9 +16,9 @@ monikerRange: '>= tfs-2017'
 
 # Manage branches
 
-#### VSTS | TFS 2018 | TFS 2017
+#### Azure Repos | TFS 2018 | TFS 2017
 
-Manage the work in your team's VSTS Git repo from the **Branches** view on the web. 
+Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.    
@@ -85,7 +86,7 @@ This is useful when you want to use a branch other than `master` for the main li
 
 0. Select the settings icon while you have your project open to bring up the project administration page.
 
-   ![open up the administrative area of the VSTS web portal for your project](_img/pull-requests/gear_icon_settings.png)
+   ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png)
    
 0. Select **Version Control**.
 
@@ -93,6 +94,6 @@ This is useful when you want to use a branch other than `master` for the main li
 
 0. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.   
 
-   ![Set a default branch for a Git repo in VSTS or TFS](_img/pull-requests/set_default_branch.png)
+   ![Set a default branch for a Git repo in Azure DevOps Services or TFS](_img/pull-requests/set_default_branch.png)
 
 

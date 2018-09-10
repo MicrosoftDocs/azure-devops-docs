@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Test configurations: specifying test platforms
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 Your users will probably install or run your app on a wide variety of configurations, such as different operating systems, web browsers, and other variations. You will want to run at least some of your tests in environments that have those different configurations. Use your test plan to decide which tests you want to run on which configurations. You have to make sure that when you run your tests that you have set up your environments for the configurations that you need.
 

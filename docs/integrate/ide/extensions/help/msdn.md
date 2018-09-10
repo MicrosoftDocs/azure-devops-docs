@@ -16,4 +16,4 @@ ms.date: 08/04/2016
 
 The Microsoft Developer Network (MSDN) has an encyclopedia's worth of curated content with 20+ years worth of Microsoft expertise. And it's all free for your use.
 
-Start with [Starting to Develop Visual Studio Extensions](https://docs.microsoft.com/en-au/visualstudio/extensibility/starting-to-develop-visual-studio-extensions).
+Start with [Starting to Develop Visual Studio Extensions](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions).

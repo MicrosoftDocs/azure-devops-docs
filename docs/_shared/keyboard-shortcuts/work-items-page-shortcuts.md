@@ -5,23 +5,23 @@ ms.topic: include
 
 <a id="work-items-page-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Work** hub, **Work Items** page which is currently in preview. To enable it, see [Enable preview features](/vsts/project/navigation/preview-features).  
+You can use the following keyboard shortcuts when working from the **Repos>Work Items** or **Work>Work Items** page. 
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS. 
+> [!NOTE]  
+> The following shortcuts are available from the web portal for Azure DevOps Services. 
 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work items page shortcuts](/vsts/_shared/_img/keyboard-shortcuts/work-items-shortcuts.png)</td>
+<td>![Work items page shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-items-shortcuts.png)</td>
 <td>
 <p>**Work**</p>
 <br/>
-**l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/vsts/boards/backlogs/create-your-backlog)<br/>
-**b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/vsts/boards/boards/kanban-quickstart)<br/>
-**i**&nbsp;&nbsp;&nbsp;&nbsp;Open [current iteration](/vsts/boards/sprints/assign-work-sprint)<br/>
-**t**&nbsp;&nbsp;&nbsp;&nbsp;Open [task board](/vsts/boards/sprints/task-board)<br/>
-**q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/vsts/boards/queries/using-queries)<br/>
+**l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)<br/>
+**b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)<br/>
+**i**&nbsp;&nbsp;&nbsp;&nbsp;Open [current iteration](/azure/devops/boards/sprints/assign-work-sprint)<br/>
+**t**&nbsp;&nbsp;&nbsp;&nbsp;Open [task board](/azure/devops/boards/sprints/task-board)<br/>
+**q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)<br/>
 **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
 <br/><br/><br/><br/> 
 <p>**Work items**</p>

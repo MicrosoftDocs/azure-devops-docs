@@ -1,7 +1,7 @@
 ---
 title: Practices that scale
-titleSuffix: VSTS & TFS
-description: Scaling Agile recommended practices for working in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Boards and TFS
+description: Scaling Agile recommended practices for working in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
@@ -119,8 +119,8 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaled Agile Framework](scaled-/azure/devops/agile/scale-agile-large-teams
-- [Scaling Agile to large teams] (/azure/devops/agile/scale-agile-large-teams)
+- [Scaled Agile Framework](scaled-/azure/devops/learn/agile/scale-agile-large-teams
+- [Scaling Agile to large teams] (/azure/devops/learn/agile/scale-agile-large-teams)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

@@ -1,5 +1,5 @@
 ---
-title: Use the Splitter Control | Extensions for VSTS
+title: Use the Splitter Control | Extensions for Azure DevOps Services
 description: Use the splitter control to have splitted and resizable containers for other controls.
 ms.assetid: 1EE1DD70-0C64-4B65-8F7F-175A9385041A
 ms.prod: devops

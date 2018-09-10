@@ -1,6 +1,6 @@
 ---
 title: Use Python Version
-description: Use Python version for VSTS and TFS
+description: Use Python version for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3

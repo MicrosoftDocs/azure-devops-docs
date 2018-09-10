@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work tooling programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work tooling programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: fe538cca-d062-445e-8dc2-852a6758f5c3
 ms.manager: douge
 ms.topic: article

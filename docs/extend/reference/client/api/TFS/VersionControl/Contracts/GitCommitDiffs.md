@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitCommitDiffs API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitCommitDiffs API | Extensions for Azure DevOps Services
 ms.assetid: 33802f05-4241-2ebd-3316-825e85dce0b5
 ms.prod: devops
 ms.technology: devops-ecosystem
