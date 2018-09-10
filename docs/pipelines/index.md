@@ -683,20 +683,46 @@ Tutorials, references, and other documentation show you how to configure and man
                                     </li>
                                 </ul>
         </ul>
-
-<h2> Videos</h2>
-<div style="float:left">
-   <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" wwidth="480" height="270"  allowFullScreen frameBorder="0"></iframe>
-   <h3>Build and deploy your code with Azure Pipelines</h3>
-</div>
-<div style="float:left;width:40px;margin:40px">
-</div>
-<div style="float:left">
-   <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe> 
-   <h3>Continuously build GitHub projects with Azure Pipelines</h3>
-</div>
-<div style="clear:left">
-</div>
+                                <a href="#index1-1" data-linktype="self-bookmark"></a>
+                                <h2 style="float: left; display: flex;">Videos</h2>
+                                <ul id="index2" class="cardsH panelContent singlePanelContent cols cols2" style="float: left; display: flex!important;">
+                                    <li>
+                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="_img/index/video-get-started-aspnet.png" alt="" data-linktype="external">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build and deploy your code with Azure Pipelines</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="_img/index/video-github-marketplace.png" alt="" data-linktype="external">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuously build GitHub projects with Azure Pipelines</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                </ul>
 <h2> More information</h2>
 
 <ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
