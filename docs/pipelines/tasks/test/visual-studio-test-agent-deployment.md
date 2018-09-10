@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Test: Visual Studio Test Platform Installer
 
-**Azure DevOps | TFS 2018 Update 1**
+**Azure DevOps Services | TFS 2018 Update 1**
 
 ::: moniker range="<= tfs-2018"
 

@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 
 # Tool: Visual Studio Test Platform Installer
 
-**Azure DevOps | TFS 2018 Update 1**
+**Azure DevOps Services | TFS 2018 Update 1**
 
 ![](_img/visualstudiotestplatforminstaller.png)
 Acquires the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
