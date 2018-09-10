@@ -38,15 +38,15 @@ appropriate nicknames. Choose the subscription name, enter a new subscription ni
 
 Now you're ready to buy Visual Studio. To purchase Visual Studio for a customer, choose the appropriate customer. Then choose **service management**. If you haven't added an Azure subscription for the customer, the **Visual Studio Marketplace** and **Manage Visual Studio Subscriptions** links won't appear.
 
-Go to the Visual Studio Marketplace to purchase Visual Studio cloud subscriptions and Azure DevOps Services resources for your customers. Choose **Manage Visual Studio Subscriptions** to assign subscriptions you've already purchased for your
+Go to the Visual Studio Marketplace to purchase Visual Studio cloud subscriptions and Azure DevOps resources for your customers. Choose **Manage Visual Studio Subscriptions** to assign subscriptions you've already purchased for your
 customer's end users. You can also delete existing assigned subscriptions or reassign them to a different user.
 
 ## Convert your customers from other Azure billing to CSP
-If your customers have been buying Azure DevOps Services, Visual Studio cloud subscriptions, or Xamarin University directly through Microsoft, and they want to transition to paying through you as a CSP, they'll need to take the following steps:
+If your customers have been buying Azure DevOps, Visual Studio cloud subscriptions, or Xamarin University directly through Microsoft, and they want to transition to paying through you as a CSP, they'll need to take the following steps:
 1. Reduce their paid amounts to zero.
 2. Let you know the ongoing paid amounts of each service and product to start billing on the first day of the next calendar month. For Visual Studio annual cloud subscriptions, customers need to tell you the month, or months, to start purchases of these subscriptions. Then they can continue coverage from the date it will expire from their existing annual cloud subscription purchases.
 
-For Azure DevOps Services, see additional details about [buying Azure DevOps Services through CSP](buy-csp-vsts.md).
+For Azure DevOps, see additional details about [buying Azure DevOps Services through CSP](buy-csp-vsts.md).
 
 ## Convert your customers from CSP billing
 

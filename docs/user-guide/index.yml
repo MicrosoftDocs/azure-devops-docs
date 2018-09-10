@@ -1,8 +1,8 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Azure DevOps Services user guide
+title: Azure DevOps user guide
 metadata:
-  title: Azure DevOps Services user guide documentation
+  title: Azure DevOps user guide documentation
   description: Learn the basics of the Azure DevOps interface and some common tasks.
   ms.date: 09/10/2018
   ms.prod: devops
@@ -170,7 +170,7 @@ sections:
       - href: concepts.md
         html: <p></p>
         image:
-          title: Concepts Azure DevOps Services user guide
+          title: Concepts Azure DevOps user guide
           alt: Learn about logo
           src: https://docs.microsoft.com/media/common/i_learn-about.svg
         title: Key concepts
@@ -184,14 +184,14 @@ sections:
       - href: source-control.md
         html: <p></p>
         image:
-          title: Source control Azure DevOps Services
+          title: Source control Azure DevOps
           alt: Code logo
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
       - href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Agile tools, backlogs, and boards Azure DevOps Services
+          title: Agile tools, backlogs, and boards Azure DevOps
           alt: Kanban logo
           src: https://docs.microsoft.com/media/common/i_kaban.svg
         title: Boards, backlogs, & Agile tools

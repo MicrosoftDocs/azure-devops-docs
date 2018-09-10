@@ -1,6 +1,6 @@
 ---
-title: Delete your Azure DevOps Services organization
-description: How to delete your Azure DevOps Services organization, and what happens to users when you do.
+title: Delete your Azure DevOps organization
+description: How to delete your organization, and what happens to users when you do.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
@@ -12,14 +12,14 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Delete your Azure DevOps Services organization
+# Delete your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you don't need your Azure DevOps Services organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
+If you don't need your Azure DevOps organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 30 days, your organization and data are permanently deleted.
 
-When you delete your Azure DevOps Services organization, note the following:
+When you delete your organization, note the following:
 
 * All users lose access to organization services and resources immediately.
 
@@ -31,18 +31,18 @@ When you delete your Azure DevOps Services organization, note the following:
 
   You're still charged for any paid users and Azure DevOps Services that your organization uses during this billing cycle. Billing stops after the current cycle ends.
 
-To delete your Azure DevOps Services organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
 ## Prerequisites
 
-If your Azure DevOps Services organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your  organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your  organization in Azure DevOps.
 
 To remove billing from your organization, you must be a project collection administrator.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. In the search box, enter *Azure DevOps Services*. In the list, select **Azure DevOps Services organizations**.
 3. Select the organization you are deleting.
-4. Choose **Remove billing**. Your Azure subscription is removed from your Azure DevOps Services organization.
+4. Choose **Remove billing**. Your Azure subscription is removed from your organization.
 
    ![Screenshot of the Azure portal, with Remove billing highlighted](_img/_shared/azure-portal-remove-billing.png)
 
@@ -50,16 +50,16 @@ To remove billing from your organization, you must be a project collection admin
 
 ## Delete your organization
 
-To delete your Azure DevOps Services organization, you need at least Basic access and Azure DevOps Services organization owner
+To delete your organization, you need at least Basic access and organization owner
 permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 
 3. Select **Overview** > **Delete**.
@@ -76,11 +76,11 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), and  **Organization settings**.
 
-   ![Screenshot of Open admin settings](../../_shared/_img/settings/open-account-settings.png)
+   ![Screenshot of Open Organization settings](../../_shared/_img/settings/open-account-settings.png)
 
 3. Select **Overview** > **Delete**.
 

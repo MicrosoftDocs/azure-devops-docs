@@ -1,5 +1,5 @@
 ---
-title: Create and manage your Azure DevOps Services organization 
+title: Create and manage your Azure DevOps organization 
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-With an Azure DevOps Services organization, you gain access to the platform in which you can do the following:
+With an Azure DevOps organization, you gain access to the platform in which you can do the following:
 
 * Collaborate with others to develop applications by using our cloud service.
 * Plan and track your work as well as code defects and issues.
@@ -26,15 +26,15 @@ With an Azure DevOps Services organization, you gain access to the platform in w
 
 ## Create your organization
 
-Before you get started, read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your Azure DevOps Services organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
+Before you get started, read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
-so that Azure DevOps Services can create your project for code and other assets,
+so that Azure DevOps can create your project for code and other assets,
 like builds, tests, and work items. If you're starting with Visual Studio
-as your development environment, you can create your Azure DevOps Services organization when you
+as your development environment, you can create your organization when you
 [set up Visual Studio](set-up-vs.md).
 
-Your Azure DevOps Services organization includes five free users
+Your Azure DevOps organization includes five free users
 with Basic access, plus unlimited Visual Studio
 subscribers and stakeholders at no extra charge.
 Your organization also includes free monthly amounts
@@ -68,7 +68,7 @@ and let Azure DevOps Services assign the next available access to them.
 ## Try extensions for free
 
 Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/).
-For example, Azure DevOps Services organization owners can
+For example, organization owners can
 try the Test Manager extension free for 90 days.
 During the trial, all users with Basic access can
 [try Test Manager for free](../billing/try-additional-features-vs.md).
@@ -87,7 +87,7 @@ Azure DevOps Services works with Azure Active Directory (Azure AD),
 so that you can control access the same way that you do
 with Microsoft services like Office 365 and Microsoft Azure.
 If your enterprise uses a directory managed by Azure AD,
-your Azure DevOps Services organization can also
+your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.

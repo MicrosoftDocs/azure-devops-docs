@@ -83,13 +83,13 @@ On the group's identity card, check the group's source.
 
 ### Why doesn't Users show all Azure AD group members?
 
-These users have to sign in to your Azure DevOps Services organization before they appear in Users. 
+These users have to sign in to your organization before they appear in Users. 
 
 <a name="AssignLicenses"></a>
 
 ### How do I assign organization access to Azure AD group members?
 
-When these group members sign in to your Azure DevOps Services organization for the first time, Azure DevOps Services assigns an access level to them automatically. If they have
+When these group members sign in to your organization for the first time, Azure DevOps Services assigns an access level to them automatically. If they have
 [Visual Studio subscriptions](faq-add-delete-users.md#EligibleMSDNSubscriptions),
 Azure DevOps Services assigns the respective access level to them. Otherwise, Azure DevOps Services assigns them the next "best available"
 [access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs), in this order: Basic, Stakeholder.
@@ -98,30 +98,30 @@ If you don't have enough access levels for all Azure AD group members, those mem
 
 ### Why doesn't the Security tab show all members when I select an Azure AD group?
 
-The Security tab shows Azure AD group members only after they sign in to your Azure DevOps Services organization, and have an access level assigned to them.
+The Security tab shows Azure AD group members only after they sign in to your organization, and have an access level assigned to them.
 
 To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), MIM, or the group management tools that your organization supports.
 
 ### Why doesn't the team members widget show all Azure AD group members?
 
-The team members widget shows only users who previously signed in to your Azure DevOps Services organization.
+The team members widget shows only users who previously signed in to your organization.
 
 ### Why doesn't the team capacity pane show all Azure AD group members?
 
-The team capacity pane shows only users who previously signed in to your Azure DevOps Services organization.
+The team capacity pane shows only users who previously signed in to your organization.
 To set capacity, manually add users to your team.
 
 ### Why doesn't the team room show offline users?
 
 The team room shows Azure AD group members, but only when they're online.
 
-### Why doesn't Azure DevOps Services reclaim access levels from users who aren't Azure AD group members anymore?
+### Why doesn't Azure DevOps reclaim access levels from users who aren't Azure AD group members anymore?
 
-Azure DevOps Services doesn't automatically reclaim access levels from these users. To manually remove their access, go to **Users**.
+Azure DevOps doesn't automatically reclaim access levels from these users. To manually remove their access, go to **Users**.
 
 ### Can I assign work items to Azure AD group members who haven't signed in?
 
-You can assign work items to any Azure AD member who has permissions for your Azure DevOps Services organization. This also adds that member to your Azure DevOps Services organization. When you add users this way, they'll automatically appear in Users, with the best available
+You can assign work items to any Azure AD member who has permissions for your organization. This also adds that member to your organization. When you add users this way, they'll automatically appear in Users, with the best available
 access level. They'll also appear in the security settings.
 
 ### Can I use Azure AD groups to query work items by using the "In Group" clause?
@@ -134,17 +134,17 @@ No, but you might be interested in our [process customization plans](https://blo
 
 <a name="remove-user-azure-ad-group"></a>
 
-### Why am I asked to remove a user from an Azure AD group when I delete that user from my Azure DevOps Services organization?
+### Why am I asked to remove a user from an Azure AD group when I delete that user from my organization?
 
-Users can belong to your Azure DevOps Services organization, both as individuals and as members of Azure AD groups that were added to Azure DevOps Services groups. These users can still access your Azure DevOps Services organization while they're members of these Azure AD groups.
+Users can belong to your organization, both as individuals and as members of Azure AD groups that were added to Azure DevOps groups. These users can still access your organization while they're members of these Azure AD groups.
 
-To block all access for these users, remove them from Azure AD groups in your Azure DevOps Services organization, or remove these groups from your Azure DevOps Services organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps Services doesn't currently have this capability.
+To block all access for these users, remove them from Azure AD groups in your organization, or remove these groups from your organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps doesn't currently have this capability.
 
 ### How do I remove an Azure AD group from Azure DevOps Services?
 
 Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
 
-Find the Azure AD group, and delete it from your Azure DevOps Services organization.
+Find the Azure AD group, and delete it from your organization.
 
 ![Screenshot of project, with Delete option highlighted](_img/manage-azure-ad-groups/deleteaadgroupfromvso.png)
 
@@ -158,7 +158,7 @@ Find the Azure AD group, and delete it from your Azure DevOps Services organizat
 
 ### Can I switch current users from Microsoft accounts to work accounts in Azure DevOps Services?
 
-No. Although you can add new work accounts to your Azure DevOps Services organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your Azure DevOps Services organization was connected to your Azure AD.
+No. Although you can add new work accounts to your organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your organization was connected to your Azure AD.
 You can do this by adding your Microsoft account as a member to your Azure AD.
 
 ### Why can't I add users from other directories to my Azure AD?
@@ -172,7 +172,7 @@ If you used a Microsoft account to activate a [Visual Studio with MSDN subscript
 
 <a name="guest-access"></a>
 
-### Can I control access to my Azure DevOps Services organization for external users in the connected directory?
+### Can I control access to my organization for external users in the connected directory?
 
 Yes, but only for external users who are [added as guests through Office 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
 or [added using B2B collaboration by your Azure AD administrator](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/). These external users are managed outside the connected directory. To learn more, contact your Azure AD administrator. The following setting doesn't affect [users who are added directly to your organization's directory](https://azure.microsoft.com/documentation/articles/active-directory-create-users/).
@@ -181,7 +181,7 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 
 #### To control organization access for external users added through Office 365 or Azure AD B2B collaboration
 
-1. Go to your Azure DevOps Services organization **Admin settings**.
+1. Go to your **Organization settings**.
 
    ![Screenshot of project with gear icon highlighted](../../_shared/_img/settings/open-admin-settings-vert.png)
 
@@ -195,7 +195,7 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 
 <a name="connect-o365-azure-ad"></a>
 
-### Can I connect my Azure DevOps Services organization to an Azure AD created from Office 365?
+### Can I connect my organization to an Azure AD created from Office 365?
 
 Yes. If you can't find your Azure AD created from Office 365, see
 [Why don't I see the directory that I want to connect?](#why-not-my-directory).
@@ -206,7 +206,7 @@ Yes. If you can't find your Azure AD created from Office 365, see
 
 To make your directory appear in the Azure portal, you need an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/). This subscription should be associated with your organization's Azure AD, and you need at least co-administrator permissions for your subscription.
 
-With these, you can link your subscription and connect your Azure AD to your Azure DevOps Services organization. Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
+With these, you can link your subscription and connect your Azure AD to your organization. Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 <a name="why-not-my-directory"></a>
 
@@ -214,7 +214,7 @@ With these, you can link your subscription and connect your Azure AD to your Azu
 
 This might happen because:
 
-* You don't have [Azure DevOps Services organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
+* You don't have [organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
 * You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) associated with your organization's Azure AD. (This problem is described in the preceding question.) 
 
@@ -230,7 +230,7 @@ This might happen because:
 
 <a name="remove-spending-limit"></a>
 
-* Your Azure DevOps Services organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link them](../billing/set-up-billing-for-your-organization-vs.md).
+* Your organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link them](../billing/set-up-billing-for-your-organization-vs.md).
 
   >[!IMPORTANT]
   This link also sets up organization billing, so you can bill Azure DevOps Services purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the
@@ -244,32 +244,32 @@ This might happen because:
 
 <a name="subscription-linked-already"></a>
 
-### What if my Azure DevOps Services organization is already linked to an Azure subscription?
+### What if my organization is already linked to an Azure subscription?
 
-You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your Azure DevOps Services organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Azure DevOps Services billing FAQ](../billing/vsts-billing-faq.md).
+You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Azure DevOps billing FAQ](../billing/vsts-billing-faq.md).
 
-### What happens if I unlink my Azure subscription while my Azure DevOps Services organization is connected to a directory?
+### What happens if I unlink my Azure subscription while my organization is connected to a directory?
 
-See the [Azure DevOps Services billing FAQ](../billing/vsts-billing-faq.md).
+See the [Azure DevOps billing FAQ](../billing/vsts-billing-faq.md).
 
 <a name="AlreadyConnected"></a>
 
-### Why is my Azure DevOps Services organization already connected to a directory? Can I change that directory?
+### Why is my organization already connected to a directory? Can I change that directory?
 
-Your Azure DevOps Services organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create an Azure DevOps Services organization with a work or school account, your Azure DevOps Services organization is automatically connected to the directory that manages that work or school account. You can [disconnect your Azure DevOps Services organization](disconnect-organization-from-aad.md) from this directory, and reconnect to another directory. You might have to migrate some users.
+Your organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. You can [disconnect your organization](disconnect-organization-from-aad.md) from this directory, and reconnect to another directory. You might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 
 ### My alternate credentials don't work anymore. What do I do?
 
-This happens after you connect your Azure DevOps Services organization to a directory. You must
+This happens after you connect your organization to a directory. You must
 [set up your credentials](http://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 <a name="CantSignIn"></a>
 
-### Why can't users sign in after my Azure DevOps Services organization is connected to a directory?
+### Why can't users sign in after my organization is connected to a directory?
 
-Make sure their sign-in addresses are in the connected directory, and in your Azure DevOps Services organization. If they're not directory members, and you have at least [user administrator permissions](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/),
+Make sure their sign-in addresses are in the connected directory, and in your organization. If they're not directory members, and you have at least [user administrator permissions](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/),
 you can [add them to the directory](https://azure.microsoft.com/documentation/articles/active-directory-create-users/).
 
 Some users have sign-in addresses that are shared by their Microsoft account and their work or school account. These are treated as separate identities with different profiles, security settings, and permissions. When they're asked to choose which account they want to use when they sign in, they should choose the identity that's a member in your directory. Only directory members can get access to your organization.
@@ -280,11 +280,11 @@ If you have a Visual Studio with MSDN subscription that [includes Azure DevOps S
 
 ## Disconnect from directory
 
-### Why can't users sign in after my Azure DevOps Services organization is disconnected?
+### Why can't users sign in after my organization is disconnected?
 
 They must now use Microsoft accounts to sign in. They can continue working seamlessly if they have Microsoft accounts with the same sign-in addresses that they use now.
 
-If they must create Microsoft accounts with different sign-in addresses, you must add those addresses to your Azure DevOps Services organization, and reassign access to them. They can migrate work that they want to keep, except work history. They might also have to re-link their MSDN
+If they must create Microsoft accounts with different sign-in addresses, you must add those addresses to your organization, and reassign access to them. They can migrate work that they want to keep, except work history. They might also have to re-link their MSDN
 subscriptions. They can use any email address to create a Microsoft account.
 
 <a name="get-support"></a>

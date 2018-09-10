@@ -1,5 +1,5 @@
 ---
-title: Restore your Azure DevOps Services organization after being deleted
+title: Restore your organization after being deleted
 description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization owner permissions
 ms.prod: devops
 ms.technology: devops-accounts
@@ -12,7 +12,7 @@ ms.date: 05/08/2018
 monikerRange: 'vsts'
 ---
 
-# Restore your Azure DevOps Services organization
+# Restore your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -21,17 +21,17 @@ After you delete your organization, it's disabled but available for 30 days. If 
 ## Prerequisites
 
 * An organization deleted within the last 30 days.
-* Azure DevOps Services organization owner permissions to restore your Azure DevOps Services organization. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+* Organization owner permissions to restore your organization. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-organization.md#ChooseOrgAcctMSAcct)
 
-1. On your profile page, go to the **Organizations Pending Deletion** section at the bottom. You see a link to restore your organization.
+2. On your profile page, go to the **Organizations Pending Deletion** section at the bottom. You see a link to restore your organization.
 
    ![Restore your deleted organization](_img/delete-organization/restore-organization.png)
 
-1. Select **Restore**.
+3. Select **Restore**.
 
    * If your organization URL is still available, you can restore it.
 
@@ -41,7 +41,7 @@ After you delete your organization, it's disabled but available for 30 days. If 
 
       ![Rename your deleted organization](_img/delete-organization/rename-deleted-organization.png)
 
-1. After you restore your organization:
+4. After you restore your organization:
 
    * If billing was set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
 

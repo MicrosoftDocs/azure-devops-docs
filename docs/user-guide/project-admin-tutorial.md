@@ -1,7 +1,7 @@
 ---
 title: Get started as a project admin or organization owner
 description: Learn how to structure a project, manage users, and more to support your software development teams
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
@@ -28,7 +28,7 @@ As an organization owner or a project admin, there are a few items you may want 
 The first task is to ensure that all members of your organization or group are added to your Azure DevOps organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
 
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
-- [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md)
+- [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users-from-user-hub.md)
 - [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md) 
 
 ::: moniker-end 

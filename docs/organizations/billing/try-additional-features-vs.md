@@ -1,6 +1,6 @@
 ---
-title: Free trials for paid Azure DevOps Services features and extensions | Azure DevOps Services
-description: How to get free trials for Test Manager, Package Management, and for Azure DevOps Services extensions offered by other publishers (Azure DevOps Services, Visual Studio Online, VSO)
+title: Free trials for paid Azure DevOps  features and extensions | Azure DevOps
+description: How to get free trials for Test Manager, Package Management, and for Azure DevOps extensions offered by other publishers (Azure DevOps)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
@@ -12,19 +12,19 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Start free trials for paid Azure DevOps Services features and extensions
+# Quickstart: Start free trials for paid features and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to start a trial for your Azure DevOps Services organization and how to keep using your extension after the trial ends.
+In this quickstart, you learn how to start a trial for your Azure DevOps organization and how to keep using your extension after the trial ends.
 
-There are two paid features in Azure DevOps Services that are offered by Microsoft that you can use free for a 30-day trial:
+There are two paid features in Azure DevOps that are offered by Microsoft that you can use free for a 30-day trial:
 
 - [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers).
 
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
-During the trial, any user in your Azure DevOps Services organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
+During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
 This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including:
 
@@ -38,7 +38,7 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Prerequisites
 
-As the Azure DevOps Services [organization owner or project collection administrator](vsts-billing-faq.md#find-owner), you can start trials for your Azure DevOps Services organization. 
+As the [organization owner or project collection administrator](vsts-billing-faq.md#find-owner), you can start trials for your organization.
 All other users can [request extensions](../../marketplace/install-vsts-extension.md).
 
 ## Start a trial for your organization
@@ -51,11 +51,11 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
     ![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
 
-3. Select your Azure DevOps Services organization to install this extension.
+3. Select your organization to install this extension.
 
-    ![Select your Azure DevOps Services organization for extension trial](_img/try-additional-features/select-organization.png)
+    ![Select your organization for extension trial](_img/try-additional-features/select-organization.png)
 
-4. After your extension finishes installing, go to your Azure DevOps Services organization to use your extension.
+4. After your extension finishes installing, go to your organization to use your extension.
 
     Let your team know that they also have access.
 
@@ -76,12 +76,12 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 3. Select **Extensions** and then select your extension or **Browse Marketplace**.
 
-   ![Admin settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
+   ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -105,4 +105,4 @@ To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md),
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

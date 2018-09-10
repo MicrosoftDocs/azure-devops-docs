@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps Services, you can begin coding with Git.
+In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -34,7 +34,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
    ![Project, select Repos to clone URL](_img/project-select-repos-vert.png)
 
@@ -44,7 +44,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
 

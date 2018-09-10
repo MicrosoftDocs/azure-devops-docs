@@ -91,7 +91,7 @@ and the organization will be similar to the TFS collection.
 To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
 problems, but we plan to address these problems when the organization entity is introduced. In particular:
 
-* You purchase Azure DevOps Services users per organization, meaning that paid users have access only to the Azure DevOps Services organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, because subscribers can be added to any number of Azure DevOps Services organizations at no charge. We are also considering other ways to make access available to multiple organizations that are grouped into a single organization.
+* You purchase Azure DevOps Services users per organization, meaning that paid users have access only to the organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, because subscribers can be added to any number of Azure DevOps Services organizations at no charge. We are also considering other ways to make access available to multiple organizations that are grouped into a single organization.
 
 * You currently have to administer organizations one at a time, a process that can be cumbersome when you have many organizations.
 <!---We're working to support enterprise-wide policies.-->
@@ -106,7 +106,7 @@ With TFS, you connect to an intranet server (for example, ```https://tfs.corp.co
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You'll either 
 authenticate with [Microsoft Organization](http://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis)  
-credentials, depending on your Azure DevOps Services organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
+credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
 We recommend that organizations configure their Azure DevOps Services organizations to use Azure AD rather than 
 Microsoft Accounts. This provides a better experience in many scenarios and more options for enhanced security.
@@ -210,7 +210,7 @@ Both TFS and Azure DevOps Services have a variety of tools to give you insight i
 In addition, Azure DevOps Services gives you access to the following services:
 * [The Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 * [PowerBI integration](../report/powerbi/overview.md), which supports getting Analytics data into PowerBI reports, providing a combination of simplicity and power. 
-* [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser and then use the returned JSON data as you want. Enterprise organizations can generate queries that span multiple projects or their entire Azure DevOps Services organization.
+* [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser and then use the returned JSON data as you want. Enterprise organizations can generate queries that span multiple projects or their entire Azure DevOps organization.
 
 We plan to make these services available in TFS in a future release. See [Reporting roadmap](../report/analytics/reporting-roadmap.md). 
 

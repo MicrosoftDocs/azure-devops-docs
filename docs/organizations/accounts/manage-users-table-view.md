@@ -15,9 +15,9 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to add users to your Azure DevOps Services organization and specify the level of features they can use, such as Basic or Stakeholder.
+Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
 
-These types of users can join your Azure DevOps Services organization for free:
+These types of users can join your organization for free:
 
 *	Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 *	Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
@@ -28,7 +28,7 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 > [!NOTE]
 > You can add people to projects instead of to your organization. Azure DevOps Services automatically assigns the users [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members-vs.md).
 >
-> When people don't need access to your Azure DevOps Services organization anymore, [delete them](delete-organization-users.md) from your organization. 
+> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
 ## Prerequisites
 
@@ -48,13 +48,13 @@ The Users view shows key information per user in a table. In this view, you can 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Users** > **Add new users**.
 
@@ -78,11 +78,11 @@ The Users view shows key information per user in a table. In this view, you can 
 
 # [Previous navigation](#tab/prev-nav)
  
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Open admin settings.
+2. Open **Organization settings**.
 
-   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
 
 3. Select **Users** > **Add new users** to open the form.
 

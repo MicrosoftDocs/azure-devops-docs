@@ -1,6 +1,6 @@
 ---
-title: Start to set up billing for Azure DevOps Services
-description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for Azure DevOps Services
+title: Start to set up billing for Azure DevOps
+description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
@@ -13,36 +13,36 @@ monikerRange: 'vsts'
 ---
 
 
-# Quickstart: Set up billing for your Azure DevOps Services organization
+# Quickstart: Set up billing for your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn to set up billing for your Azure DevOps Services organization in advance of making purchases, so that you'll have this in place once you're ready to buy, however the preferred method is to simply make an initial purchase. Make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to set up billing for your Azure DevOps Services organization. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+In this quickstart, you learn to set up billing for your Azure DevOps organization in advance of making purchases, so that you'll have this in place once you're ready to buy, however the preferred method is to simply make an initial purchase. Make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to set up billing for your organization. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
 
-**All Azure DevOps services are billed via Azure**, and you are not required to use any other Azure services.
+**All services are billed via Azure**, and you are not required to use any other Azure services.
 
 If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 
-The first time you set up billing for your Azure DevOps Services organization, whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you must have the following:
+The first time you set up billing for your organization, whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you must have the following:
 
-* [Azure DevOps Services project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your Azure DevOps Services organization, you only need have access to [purchase on the Azure subscription](add-backup-billing-managers.md).
+To make subsequent edits to paid quantities in your organization, you only need have access to [purchase on the Azure subscription](add-backup-billing-managers.md).
 
 ## Set up billing via the Azure Portal
 
 If you'd like to set up billing for your organization prior to buying something in the Visual Studio Marketplace, you can do so from within the Azure portal.
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as Azure DevOps Services organization owner and as a user who can [make purchases on an Azure subscription](add-backup-billing-managers.md).
+1. [Sign in to the Azure portal](https://portal.azure.com/) as organization owner and as a user who can [make purchases on an Azure subscription](add-backup-billing-managers.md).
 
     [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
 2. Choose **All services** and then select **Team Services administration**.
 
-   ![More services, Developer tools, Azure DevOps Services organizations, select your organization](_img/set-up-billing/azure-portal-team-services.png)
+   ![More services, Developer tools, organizations, select your organization](_img/set-up-billing/azure-portal-team-services.png)
 
 3. Select your organization.
 
@@ -56,9 +56,9 @@ If you'd like to set up billing for your organization prior to buying something 
 
    ![Select an Azure subscription](_img/set-up-billing/azure-portal-link-your-organization.png)
 
- After Azure sets up the link, your Azure DevOps Services organization appears linked to your Azure subscription.
+ After Azure sets up the link, your organization appears linked to your Azure subscription.
 
-![Your Azure DevOps Services organization is now linked to your Azure subscription](_img/set-up-billing/azure-portal-billing-set-up-complete.png)
+![Your organization is now linked to your Azure subscription](_img/set-up-billing/azure-portal-billing-set-up-complete.png)
 
 ## Next steps
 

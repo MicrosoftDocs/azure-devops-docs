@@ -1,10 +1,10 @@
-#### Q: How do I find the region where my Azure DevOps organization is located? 
+#### Q: How do I find the region where my organization is located? 
 
 A: [Find your organization's region](../organizations/accounts/change-organization-location.md).
 
 #### Q: How do I change my project name, organization location, or process? 
 
-A:	Change these when you sign up for your Azure DevOps organization. 
+A:	Change these when you sign up for your organization. 
 
 <img alt="Change organization details" src="../_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 
@@ -14,6 +14,6 @@ If a new Azure DevOps region or location opens later, you can [change your organ
 
 <img alt="Rename project, change organization location, or select another process" src="../_shared/_img/change-details-standard2.png" style="border: 1px solid #CCCCCC">
 
-If you connected your Azure DevOps organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
+If you connected your organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
 
 <img alt="Change your directory" src="../_shared/_img/change-details-standard2-with-directory.png" style="border: 1px solid #CCCCCC">
