@@ -44,7 +44,7 @@
     - name: Set working days
       href: ../set-working-days.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Switch team context
-    href: ../../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Manage team notifications
     href: ../../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Set team favorites
