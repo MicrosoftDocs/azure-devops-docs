@@ -302,7 +302,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/service-account-dependencies-tfs.md",
-      "redirect_url": "/tfs/server/admin/service-account-dependencies-tfs",
+      "redirect_url": "/tfs/server/admin/service-accounts-dependencies-tfs",
       "redirect_document_id": false
     },
     {
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/modify-remove-access-sharepoint-tfs.md",
-      "redirect_url": "/tfs/server/admin/modify-remove-access-sharepoint-tfs",
+      "redirect_url": "/tfs/server/admin/modify-remove-access-shareport-tfs",
       "redirect_document_id": false
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "source_path": "docs/tfs-server/command-line/tfs-labconfig-cmd.md",
-      "redirect_url": "/tfs/server/ref/command-line/tfs-labconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfslabconfig-cmd",
       "redirect_document_id": false
     },
     {
@@ -472,7 +472,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/config-lab/scvmm-envs.md",
-      "redirect_url": "/tfs/server/admin/config-lab/scvmm-envs",
+      "redirect_url": "/tfs/server/admin/config-lab-scvmm-envs",
       "redirect_document_id": false
     },
     {
@@ -502,7 +502,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/split-team-project-collections.md",
-      "redirect_url": "/tfs/server/admin/split-team-project-collections",
+      "redirect_url": "/tfs/server/admin/split-team-project-collection",
       "redirect_document_id": false
     },
     {
@@ -647,7 +647,7 @@
     },
     {
       "source_path": "docs/tfs-server/install/sql-server/reporting-service-roles.md",
-      "redirect_url": "/tfs/server/install/sql-server/reporting-service-roles",
+      "redirect_url": "/tfs/server/install/sql-server/reporting-services-roles",
       "redirect_document_id": false
     },
     {
@@ -687,37 +687,37 @@
     },
     {
       "source_path": "docs/tfs-server/upgrade/background-job-agent.md",
-      "redirect_url": "/tfs/server/upgrade/background-job-agent",
+      "redirect_url": "/tfs/server/architecture/background-job-agent",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/sql-server-databases.md",
-      "redirect_url": "/tfs/server/upgrade/sql-server-databases",
+      "redirect_url": "/tfs/server/architecture/sql-server-databases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/examples-complex-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-complex-topo",
+      "redirect_url": "/tfs/server/architecture/examples-complex-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/examples-moderate-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-moderate-topo",
+      "redirect_url": "/tfs/server/architecture/examples-moderate-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/examples-simple-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-simple-topo",
+      "redirect_url": "/tfs/server/architecture/examples-simple-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/upgrade.md",
-      "redirect_url": "/tfs/server/upgrade/upgrade",
+      "redirect_url": "/tfs/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade/tfs-concepts.md",
-      "redirect_url": "/tfs/server/upgrade/tfs-concepts",
+      "redirect_url": "/tfs/server/architecture/tfs-concepts",
       "redirect_document_id": false
     },
     {
@@ -747,7 +747,7 @@
     },
     {
       "source_path": "docs/package/nuget/remove.md",
-      "redirect_url": "/azure/devops/package/unlist-delete",
+      "redirect_url": "/azure/devops/artifacts/nuget/unlist-delete",
       "redirect_document_id": false
     },
     {
@@ -857,7 +857,7 @@
     },
     {
       "source_path": "docs/marketplace/rating-and-review.md",
-      "redirect_url": "/azure/devops/extend/publish/manage-ratings-review.md",
+      "redirect_url": "/azure/devops/extend/publish/manage-ratings-reviews",
       "redirect_document_id": false
     },
     {
@@ -1627,7 +1627,7 @@
     },
     {
       "source_path": "docs/package/symbol/setup.md",
-      "redirect_url": "/azure/devops/package/symbols/debug-with-symbols",
+      "redirect_url": "/azure/devops/artifacts/symbols/debug-with-symbols",
       "redirect_document_id": false
     },
     {
@@ -2287,7 +2287,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/backup-db-upgrade.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/backup/backup-db-upgrade",
+      "redirect_url": "tfs/server/admin/backup/back-up-restore-tfs",
       "redirect_document_id": false
     },
     {
@@ -2322,7 +2322,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/restore-data-same-location.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/backup/restore-data-same-location",
+      "redirect_url": "tfs/server/admin/backup/restore-data-same-location",
       "redirect_document_id": false
     },
     {
@@ -2347,7 +2347,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/",
+      "redirect_url": "/tfs/server/admin/config-tfs-resources",
       "redirect_document_id": false
     },
     {
@@ -2387,7 +2387,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/config-lab-scvmm-envs.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/config-lab-scvmm-envs",
+      "redirect_url": "/tfs/server/admin/config-lab-scvmm-envs",
       "redirect_document_id": false
     },
     {
@@ -2407,7 +2407,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/modify-remove-access-shareport-tfs.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/modify-remove-access-shareport-tfs",
+      "redirect_url": "/tfs/server/admin/modify-remove-access-shareport-tfs",
       "redirect_document_id": false
     },
     {
@@ -2432,7 +2432,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/service-accounts-dependencies-tfs.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/service-accounts-dependencies-tfs",
+      "redirect_url": "/tfs/server/admin/service-accounts-dependencies-tfs",
       "redirect_document_id": false
     },
     {
@@ -2452,7 +2452,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/split-team-project-collection.md",
-      "redirect_url": "/azure/devops/tfs-server/admin/split-team-project-collection",
+      "redirect_url": "/tfs/server/admin/split-team-project-collection",
       "redirect_document_id": false
     },
     {
@@ -2462,47 +2462,47 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade.md",
-      "redirect_url": "/tfs/server/upgrade/upgrade",
+      "redirect_url": "/tfs/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/background-job-agent.md",
-      "redirect_url": "/tfs/server/upgrade/background-job-agent",
+      "redirect_url": "/tfs/server/architecture/background-job-agent",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-complex-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-complex-topo",
+      "redirect_url": "/tfs/server/architecture/examples-complex-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-moderate-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-moderate-topo",
+      "redirect_url": "/tfs/server/architecture/examples-moderate-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-simple-topo.md",
-      "redirect_url": "/tfs/server/upgrade/examples-simple-topo",
+      "redirect_url": "/tfs/server/architecture/examples-simple-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/extend-vs-for-alm.md",
-      "redirect_url": "/azure/devops/tfs-server/upgrade/extend-vs-for-alm",
+      "redirect_url": "/tfs/server/upgrade/extend-vs-for-alm",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/required-ports.md",
-      "redirect_url": "/azure/devops/tfs-server/upgrade/required-ports",
+      "redirect_url": "/tfs/server/upgrade/required-ports",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/sql-server-databases.md",
-      "redirect_url": "/tfs/server/upgrade/sql-server-databases",
+      "redirect_url": "/tfs/server/architecture/sql-server-databases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/tfs-concepts.md",
-      "redirect_url": "/tfs/server/upgrade/tfs-concepts",
+      "redirect_url": "/tfs/server/architecture/tfs-concepts",
       "redirect_document_id": false
     },
     {
@@ -2522,7 +2522,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfslabconfig-cmd.md",
-      "redirect_url": "/azure/devops/tfs-server/command-line/tfslabconfig-cmd",
+      "redirect_url": "/tfs/server/command-line/tfslabconfig-cmd",
       "redirect_document_id": false
     },
     {
@@ -2627,7 +2627,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sql-server/reporting-services-roles.md",
-      "redirect_url": "/azure/devops/tfs-server/install/sql-server/reporting-services-roles",
+      "redirect_url": "/tfs/server/install/sql-server/reporting-services-roles",
       "redirect_document_id": false
     },
     {
@@ -3017,7 +3017,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-team-personal-notifications",
+      "redirect_url": "/azure/devops/notifications//howto-manage-team-notifications",
       "redirect_document_id": false
     },
     {
@@ -7597,7 +7597,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-team-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/howto-manage-personal-notifications",
       "redirect_document_id": false
     },
     {
