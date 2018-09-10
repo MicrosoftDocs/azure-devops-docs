@@ -1,7 +1,7 @@
 ---
 title: Add and manage team dashboards
-titlesuffix: VSTS & TFS  
-description: View progress and trends by defining dashboards in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services and TFS  
+description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Add and manage dashboards
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
@@ -59,7 +59,7 @@ Open a web browser window and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -75,7 +75,7 @@ Open a web browser window and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 ::: moniker-end 
 
@@ -120,7 +120,7 @@ All dashboards are associated with a team.
 	For example, here we choose to view the Work in Progress dashboard. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards hub, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
+	> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
 
 ::: moniker-end  
 
@@ -131,12 +131,12 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="vsts"
 
-1. From the **Dashboards** hub, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
+1. From **Dashboards**, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json). 
+	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
@@ -156,11 +156,11 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-From the **Dashboards** hub, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
+From **Dashboards**, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../../boards/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json). 
+If you don't see the ![plus icon](../../boards/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test pages](add-charts-to-dashboard.md).
 
@@ -286,5 +286,5 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/rest/api/vsts/dashboard/dashboards).  
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/vsts/dashboard/dashboards).  
 

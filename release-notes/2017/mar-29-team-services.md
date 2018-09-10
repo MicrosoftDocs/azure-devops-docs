@@ -3,7 +3,7 @@ title: PR filtering by people and improved Azure resource group template paramet
 description: VSTS release notes for Mar 29 2017
 ms.ContentId: 524ad78c-8313-4e3b-aa2e-3bd2981f3f61
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---
@@ -107,7 +107,7 @@ After some additional tuning and some bug fixes, we’ve made the [updated __Pac
 ![package experience](_img/03_29_14.png)
 
 ##Override template parameters in Azure resource group deployments
-Currently in Azure resource group deployment tasks, users select the template.json and the parameters.json and provide the override parameter values in a text box, following a specific syntax. This experience is now enhanced so the template parameters are rendered in a grid which allows them to be edited and overridden. Users can access this feature by clicking the __...__ next to the override parameters field, which opens a dialog with the template parameters along with their default values and allowed values (if defined in the template and parameter .json files). This feature requires that CORS rules are enabled at the source. If template and parameter json files are in Azure storage blob, refer to [this documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS.
+Currently in Azure resource group deployment tasks, users select the template.json and the parameters.json and provide the override parameter values in a text box, following a specific syntax. This experience is now enhanced so the template parameters are rendered in a grid which allows them to be edited and overridden. Users can access this feature by clicking the __...__ next to the override parameters field, which opens a dialog with the template parameters along with their default values and allowed values (if defined in the template and parameter .json files). This feature requires that CORS rules are enabled at the source. If template and parameter json files are in Azure storage blob, refer to [this documentation](/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS.
 
 ![Azure RD parameters](_img/03_29_10.png)
 

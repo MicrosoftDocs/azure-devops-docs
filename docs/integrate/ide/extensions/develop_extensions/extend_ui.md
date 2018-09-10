@@ -15,10 +15,10 @@ ms.date: 08/04/2016
 # I want to extend the UI
 
 There are many reasons you may want to customize (or extend) the UI, either for yourself or your workgroup. You may just need to add a button here or there, or you may want to create an entirely custom interface. These links are a good starting place:
-* [Extending Menus and Commands](https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/legacy-language-service-essentials)
-* [Adding a Button to a Toolbar](https://docs.microsoft.com/en-us/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar)
-* [Adding Commands to Toolbars](https://docs.microsoft.com/en-us/visualstudio/extensibility/adding-commands-to-toolbars)
-* [Extending and Customizing Tool Windows](https://docs.microsoft.com/en-us/visualstudio/extensibility/extending-and-customizing-tool-windows)
+* [Extending Menus and Commands](/visualstudio/extensibility/internals/legacy-language-service-essentials)
+* [Adding a Button to a Toolbar](/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar)
+* [Adding Commands to Toolbars](/visualstudio/extensibility/adding-commands-to-toolbars)
+* [Extending and Customizing Tool Windows](/visualstudio/extensibility/extending-and-customizing-tool-windows)
 
 # See Also
 

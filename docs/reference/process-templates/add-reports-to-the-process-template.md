@@ -18,7 +18,7 @@ ms.date: 04/10/2018
 
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
-When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS uses the [Analytics Service](../../report/analytics/what-is-analytics.md) to provide in-depth reporting.) 
+When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services.  
   
 > [!IMPORTANT]  
 > When you create a project from the web portal, the ReportsTasks.xml  

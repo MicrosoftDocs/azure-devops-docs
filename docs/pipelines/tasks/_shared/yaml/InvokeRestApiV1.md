@@ -1,6 +1,6 @@
 ```YAML
 # Invoke REST API
-# Invoke REST API as a part of your process.
+# Invoke a REST API as a part of your pipeline.
 - task: InvokeRESTAPI@1
   inputs:
     #connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM

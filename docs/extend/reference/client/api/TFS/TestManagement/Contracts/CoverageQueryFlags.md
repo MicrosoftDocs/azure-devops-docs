@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CoverageQueryFlags API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CoverageQueryFlags API | Extensions for Azure DevOps Services
 ms.assetid: 476ff80c-6476-0fdf-f882-3bae243851dc
 ms.prod: devops
 ms.technology: devops-ecosystem

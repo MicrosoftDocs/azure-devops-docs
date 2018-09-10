@@ -1,7 +1,7 @@
 ---
 title: About teams & Agile tools
-titleSuffix: VSTS & TFS 
-description: Guide to adding and configuring teams in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS 
+description: Guide to adding and configuring teams in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
@@ -31,7 +31,7 @@ For example, each feature team can be associated with a single feature area path
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts WorkspaceMappingType API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts WorkspaceMappingType API | Extensions for Azure DevOps Services
 ms.assetid: 6a841a57-39aa-06c2-6d96-21b8ed465aec
 ms.prod: devops
 ms.technology: devops-ecosystem

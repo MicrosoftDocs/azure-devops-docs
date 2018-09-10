@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ConfigurationContextPaths API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ConfigurationContextPaths API | Extensions for Azure DevOps Services
 description: Paths to server resources
 ms.assetid: 55de63c3-844c-658e-d9b9-1ebf29a3400c
 ms.prod: devops

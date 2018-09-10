@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts JsonWebToken API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts JsonWebToken API | Extensions for Azure DevOps Services
 ms.assetid: ce564ac7-bfef-1768-ebec-def2d9793402
 ms.prod: devops
 ms.technology: devops-ecosystem

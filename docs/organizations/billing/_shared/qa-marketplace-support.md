@@ -1,24 +1,24 @@
-### Q: How do I get support for the Visual Studio Marketplace?
+### Q: How do I get support for the Visual Studio Marketplace?  
 
-A: Who to contact depends on the support you need:
+A: Who to contact depends on the support you need: 
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support).
 
-* Help with Visual Studio Team Services (VSTS) - [VSTS support](https://visualstudio.microsoft.com/team-services/support-visual-studio-team-services).
+* Help with Azure DevOps Services - [Azure DevOps Services support](https://azure.microsoft.com/support/devops-visual-studio-team-services).
 
-* Help with Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support).
+* Help with Microsoft Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support). 
 
-* General marketplace help - [the Visual Studio Marketplace team](mailto:vsmarketplace@microsoft.com).
-
-
-### Q: Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
-
-A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases to the Azure subscription created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
+* General marketplace help - [the Visual Studio Marketplace team](mailto:vsmarketplace@microsoft.com).  
 
 
-### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement?
+### Q: Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace? 
+
+A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases to the Azure subscription created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller. 
+
+
+### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement? 
 
 A: To find out if you have the right privileges, select the **Buy** button for a service offered in the Visual Studio Marketplace. Then select an Azure subscription, which is a billing account, from the list of Azure subscriptions that are currently linked to your user name and password. The name of the Azure subscription defaults to the type of billing account. Examples are **Pay-As-You-Go** and **Enterprise Agreement**. So it's often clear if the Azure subscription is part of your Enterprise Agreement.
 

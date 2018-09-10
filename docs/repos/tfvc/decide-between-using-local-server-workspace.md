@@ -1,5 +1,6 @@
 ---
 title: Decide between using a local or a server workspace
+titleSuffix: Azure Repos
 description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Decide between using a local or a server workspace
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. In most cases, local is best because it provides several advantages. Most notably, you can perform core version control operations even when you're not connected to your Team Foundation Server.
 

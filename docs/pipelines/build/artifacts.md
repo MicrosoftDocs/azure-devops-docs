@@ -1,6 +1,7 @@
 ---
-title: Artifacts in Team Build | VSTS or Team Foundation Server
-description: Understand build artifacts in Team Build (TFBuild) for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Artifacts in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
+description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.prod: devops
@@ -12,9 +13,9 @@ ms.date: 10/12/2017
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Team Build
+# Artifacts in Azure Pipelines
 
-**VSTS | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
+**Azure Pipelines | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -22,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 
-Release Management can pick up and use your build artifacts as part of a continuous integration (CI)/ continuous deployment (CD) process. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release process picks up the .ZIP (ASP.NET or Node.js) or .WAR (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
+Release Management can pick up and use your build artifacts as part of a continuous integration (CI)/continuous deployment (CD) pipeline. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release pipeline picks up the .ZIP (ASP.NET or Node.js) or .WAR (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
 
 ## Examples
 
@@ -46,7 +47,7 @@ $(Build.SourcesDirectory)/README.md
 drop
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ### Two sets of artifacts
 
@@ -65,7 +66,7 @@ $(Build.SourcesDirectory)/README.md
 drop1
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
@@ -81,13 +82,13 @@ $(Build.SourcesDirectory)/README.md
 drop2
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 The completed build delivers two sets of artifacts.
 
 ![Artifacts tab of a build with two artifacts](_img/artifacts/build-with-two-artifacts.png)
 
-> You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment process.
+> You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
 
 ### C++ app
 
@@ -125,17 +126,17 @@ $(Build.ArtifactStagingDirectory)
 drop
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ## Tips
 
-* **Artifact publish location** argument: **Visual Studio Team Services/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in VSTS or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
+* **Artifact publish location** argument: **Azure Artifacts/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Artifacts or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
 
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On VSTS and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
+* On Azure Pipelines and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 

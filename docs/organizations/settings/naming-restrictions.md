@@ -1,6 +1,6 @@
 ---
 title: Naming restrictions and conventions 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
 ms.technology: devops-collab
 ms.prod: devops
@@ -16,7 +16,8 @@ ms.date: 06/26/2018
 # Naming restrictions and conventions  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
-Most components in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
+
+Most components in Azure DevOps Services and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
@@ -348,7 +349,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 
 ### Process and process templates 
 
-A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
+A process defines the building blocks of the work item tracking system as well as other sub-systems you access when you connect to a project.  
 
 > [!NOTE]   
 >  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   

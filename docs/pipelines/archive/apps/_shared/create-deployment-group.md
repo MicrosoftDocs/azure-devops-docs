@@ -4,9 +4,9 @@ ms.topic: include
 
 ## Create a deployment group
 
-Deployment groups in VSTS make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app.
+Deployment groups in Azure Pipelines make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
-1. Open the VSTS web portal, navigate to the **Build and Release** hub, and then click **Deployment groups**.
+1. Open the Azure Pipelines web portal, navigate to **Azure Pipelines**, and then click **Deployment groups**.
 
 1. Click **Add Deployment group** (or **New** if there are already deployment groups in place.
 
@@ -26,6 +26,6 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
-1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
+1. On the **Deployment groups** page of Azure Pipelines, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
 
  ![Screenshot showing update to code](../../../apps/_shared/_img/windows-deployment-group.png)

@@ -31,7 +31,7 @@
   - name: Exclude yourself from notification of events initiated by you
     href: howto-exclude-self-from-email.md
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
@@ -55,7 +55,7 @@
   - name: Events
     href: oob-supported-event-types.md
   - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
 - name: Resources    

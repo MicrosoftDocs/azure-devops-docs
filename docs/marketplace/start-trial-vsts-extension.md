@@ -1,5 +1,5 @@
 ---
-title: Start your free trial for a paid extension in VSTS | VSTS (Visual Studio Online)
+title: Start your free trial for a paid extension in Azure DevOps Services | Azure DevOps Services (Visual Studio Online)
 description: Find paid extensions in the Marketplace and learn how to install them and start your free trial period. 
 ms.topic: conceptual
 ms.prod: devops
@@ -14,26 +14,26 @@ monikerRange: 'vsts'
 
 
 
-# Start the free trial for a paid extension in VSTS
+# Start the free trial for a paid extension in Azure DevOps Services
 
-**VSTS**
+**Azure DevOps Services**
 
-To add new features and capabilities to your Visual Studio Team Services (VSTS) account, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions, this Quickstart covers starting the free trial for a preview extension. 
+To add new features and capabilities to your Azure DevOps Services organization, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions, this Quickstart covers starting the free trial for a preview extension. 
 
 > [!TIP]
-> To learn about building your own VSTS extensions, see [developing](http://aka.ms/vsoextensions) and 
+> To learn about building your own Azure DevOps Services extensions, see [developing](http://aka.ms/vsoextensions) and 
 > [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="install-extension"></a>
-## Install an extension for your VSTS account
+## Install an extension for your Azure DevOps Services organization
 
 ### What do I need to install an extension?
-* Only VSTS [project collection administrators or account owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead. 
-* Private extensions must be shared with your VSTS account to be installed. Check out the
+* Only Azure DevOps Services [project collection administrators or organization owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead. 
+* Private extensions must be shared with your Azure DevOps Services organization to be installed. Check out the
 [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 
-0.  Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to the [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/vsts).
 	
 	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
@@ -43,23 +43,23 @@ To add new features and capabilities to your Visual Studio Team Services (VSTS) 
 
 	![Get preview extension](_img/get-vsts-extensions/get-preview-extension.png)
 
-0.  Select your VSTS account and click to start your free trial. 
+0.  Select your Azure DevOps Services organization and click to start your free trial. 
 
     > You can check the Permissions this extension requires and read the Terms of Services from this page. 
 
-	![Select VSTS account for this extension](_img/get-vsts-extensions/click-start-trial.png)
+	![Select Azure DevOps Services organization for this extension](_img/get-vsts-extensions/click-start-trial.png)
 
-	*	[Why don't I see any VSTS accounts?](./faq-extensions.md#no-accounts) 
+	*	[Why don't I see any Azure DevOps Services organizations?](./faq-extensions.md#no-organizations) 
 
 	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
-0. Your trial is now started and you can go to your VSTS account to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
+0. Your trial is now started and you can go to your Azure DevOps Services organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
 
 
 ## Next steps
 
 ### Remaining trial period
-You can check how many days are remaining in the trial period by revisiting the extension, clicking *Get*, and choosing your account.
+You can check how many days are remaining in the trial period by revisiting the extension, clicking *Get*, and choosing your organization.
 
 ![Check trial period](_img/get-vsts-extensions/check-trial-period.png)
 
@@ -68,7 +68,7 @@ Once the trial has ended, you will receive an email notifying you of the end of 
 ![Extension trial period ended](_img/get-vsts-extensions/trial-expired.png)
 
 ### Purchase the extension
-You can buy the extension during the trial period, or you can buy it after its ended. Check out [Install paid VSTS extension](./install-paid-vsts-extension.md) to learn how.
+You can buy the extension during the trial period, or you can buy it after its ended. Check out [Install paid Azure DevOps Services extension](./install-paid-vsts-extension.md) to learn how.
 
 ### Get help
 You can find answers to common problems on the [troubleshooting](faq-extensions.md) page.

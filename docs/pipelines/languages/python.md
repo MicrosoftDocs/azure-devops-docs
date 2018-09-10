@@ -8,49 +8,60 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/03/2018
+ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
 # Python
 
-This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+This guidance explains how to build Python apps.
 
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
+## Example
 
-## Get started
+For a working example of how to build a Python app with Django, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+```
+https://github.com/MicrosoftDocs/pipelines-python-django
+```
 
-Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository.
+You can use this file to build the project.
 
-## Use a specific Python version
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample project.
 
-Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This sample sets subsequent pipeline tasks to use Python 3.6.
+## Build environment
+
+You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
+
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
+
+### Use a specific Python version
+
+Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# https://aka.ms/yaml
-queue: 'Hosted Linux Preview'
-steps:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+pool:
+  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 
+steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.6'
     architecture: 'x64'
 ```
 
-## Use multiple Python versions
+### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
-phases:
-- phase: 'Test'
-  queue:
-    name: 'Hosted Linux Preview'
-    parallel: 1
+jobs:
+- job: 'Test'
+  pool:
+    vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  strategy:
     matrix:
       Python27:
         python.version: '2.7'
@@ -58,8 +69,9 @@ phases:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-  steps:
+    maxParallel: 3
 
+  steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
@@ -68,7 +80,7 @@ phases:
   # Add additional tasks to run using each Python version in the matrix above
 ```
 
-## Activate an Anaconda environment
+### Activate an Anaconda environment
 
 As an alternative to the **Use Python Version** task, create and activate a conda environment and Python version using the [Conda Environment](../tasks/package/conda-environment.md) task. Add the following YAML to activate an environment named `myEnvironment` with the Python 3 package.
 
@@ -81,19 +93,15 @@ As an alternative to the **Use Python Version** task, create and activate a cond
 
 ## Run a Python script
 
-Run a Python script in your pipeline by adding the [Python Script](../tasks/utility/python-script.md) task. The script can be defined in a file or in-line with the task.
-
-Add the following YAML to run a Python script file named `myPythonScript.py`.
+If you have a Python script checked into the repo, you can run it using **script**.
+Add the following YAML to run a Python file named `example.py`.
 
 ```yaml
-- task: PythonScript@0
-  inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
-    arguments: ''
+- script: python src/example.py
 ```
 
-Alternatively, set the **targetType** to `inline` to define the script in YAML.
+If you want to write a Python script inline in the YAML file, use the [Python Script](../tasks/utility/python-script.md) task.
+Set the **targetType** to `inline` and put your code in the **script** section.
 
 ```yaml
 - task: PythonScript@0
@@ -102,19 +110,9 @@ Alternatively, set the **targetType** to `inline` to define the script in YAML.
     script: |
       print('Hello world 1')
       print('Hello world 2')
-    arguments: ''
 ```
 
 ## Install dependencies
-
-### Install requirements with pip
-
-Add the following YAML to install or upgrade `pip` and requirements specified in `requirements.txt`.
-
-```yaml
-- script: python -m pip install --upgrade pip && pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
 
 ### Install specific PyPI packages with pip
 
@@ -122,7 +120,16 @@ Add the following YAML to install or upgrade `pip` and two specific packages: `s
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
-  displayName: 'Install dependencies'
+  displayName: 'Install tools'
+```
+
+### Install requirements with pip
+
+After updating `pip` and friends, a typical next step is to install from `requirements.txt`.
+
+```yaml
+- script: pip install -r requirements.txt
+  displayName: 'Install requirements'
 ```
 
 ### Install Anaconda packages with conda
@@ -136,13 +143,28 @@ Add the following YAML to install the `scipy` package in the conda environment n
 
 ## Test
 
-### Test with pytest
+### Run lint tests with Flake8
 
-Add the following YAML to install `pytest`, run tests, and output results in JUnit format.
+Add the following YAML to install or upgrade `flake8` and use it to run lint tests.
 
 ```yaml
-- script: pip install pytest && pytest tests --doctest-modules --junitxml=junit/test-results.xml
-  displayName: 'pytest'
+
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+```
+
+### Test with pytest and collect coverage metrics with pytest-cov
+
+Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
+
+```yaml
+- script: |
+    pip install pytest
+    pip install pytest-cov
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+  displayName: 'Test with pytest'
 ```
 
 ### Publish test results
@@ -153,10 +175,41 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 - task: PublishTestResults@2
   inputs:
     testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Test results for Python $(python.version)'
+    testRunTitle: 'Publish test results for Python $(python.version)'
 ```
 
-## Deploy
+### Publish code coverage results
+
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
+
+```yaml
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
+```
+
+## Package and deliver your code
+
+### Retain artifacts with the build record
+
+First, build an sdist of your package.
+
+```yaml
+- script: 'python setup.py sdist'
+  displayName: 'Build sdist'
+```
+
+Then, add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+
+```yaml
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact: dist'
+  inputs:
+    pathtoPublish: 'dist'
+    artifactName: 'dist'
+```
 
 ### Deploy to a PyPI-compatible index
 
@@ -170,20 +223,14 @@ Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and
     alsoPublishWheel: false
 ```
 
-## Retain artifacts
+## Build a container image
 
-Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
-
-```yaml
-- task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
-```
+You can also build and publish a Docker container image for your app. For more information, see [Docker](docker.md).
 
 ## Related extensions
 
-[Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
-[PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-[Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
-[VSTS Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-[Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  
-[VSTS extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) (Microsoft)  
+- [Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
+- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
+- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
+- [Azure Pipelines Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
+- [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  

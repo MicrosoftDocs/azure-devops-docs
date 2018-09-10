@@ -1,7 +1,7 @@
 ---
 title: Notifications FAQs
-titleSuffix: VSTS & TFS
-description: General q and a about notifications set in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: General q and a about notifications set in Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab
 toc: show
@@ -17,10 +17,10 @@ monikerRange: '>= tfs-2015'
 
 # FAQs on notifications
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**
 
 ## Can I receive emails in plain text? 
-No. This was supported in earlier versions of VSTS and TFS, but all emails are now HTML formatted.
+No. This was supported in earlier versions of Azure DevOps Services and TFS, but all emails are now HTML formatted.
 
 ## How can I avoid receiving any notifications for activity in an organization? 
 Because of custom subscriptions created by other users and admins, there is no way to completely avoid receiving any notifications, but you can do these two actions to minimize the number you receive: 

@@ -114,7 +114,7 @@ exports.submitRequests = function()
 		 return {
 			 "suiteType": "DynamicTestSuite", 
 			 "name": "AllTestCases",
-			 "queryString": "SELECT [System.Id],[System.WorkItemType],[System.Title],[Microsoft.VSTS.Common.Priority],[System.AssignedTo],[System.AreaPath] FROM WorkItems WHERE [System.WorkItemType] IN GROUP 'Microsoft.TestCaseCategory'"
+			 "queryString": "SELECT [System.Id],[System.WorkItemType],[System.Title],[Microsoft.Azure DevOps Services.Common.Priority],[System.AssignedTo],[System.AreaPath] FROM WorkItems WHERE [System.WorkItemType] IN GROUP 'Microsoft.TestCaseCategory'"
 		 },
 		  function(context, result) {
 			  context.suiteId = result.responseBody.id;

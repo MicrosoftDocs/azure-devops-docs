@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Service Hook Consumers | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with service hook consumers programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Service Hook Consumers | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with service hook consumers programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: B05297FC-F542-42FD-ACDA-E9734974ACBC
 ms.manager: douge
 ms.topic: article

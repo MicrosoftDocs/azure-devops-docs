@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/RestClient TestHttpClient2_2 API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/RestClient TestHttpClient2_2 API | Extensions for Azure DevOps Services
 ms.assetid: f94cc434-0936-ae2b-eddc-54eb9c5d21ea
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,9 +1,9 @@
 ---
 title: Create & manage bugs using Agile tools
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Boards and TFS 
 ms.global_help.title: Manage bugs
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 5
-description: Manage technical debt and triage bugs using Agile tools in Visual Studio Team Services & Team Foundation Server
+description: Manage technical debt and triage bugs using Agile tools in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 # Manage bugs
 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -33,10 +33,10 @@ In a nutshell, you manage bugs through the following tasks:
 
 
 > [!NOTE]  
->Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+> Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
->By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+>By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
 
@@ -55,7 +55,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
-![Scrum bug work item form, VSTS](_img/manage-bugs-scrum-bug-from-ts.png)  
+![Scrum bug work item form](_img/manage-bugs-scrum-bug-from-ts.png)  
 
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
@@ -68,11 +68,11 @@ The new web form is only available from TFS 2017 and later versions.
 
 # [Old web form](#tab/old-web-form)  
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
 ::: moniker range=">= tfs-2013 <= tfs-2017"  
-To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md).  
+To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items.md).  
 
 ![Scrum bug work item form, TFS 2015 or earlier versions](_img/scrum-bug-wi-form.png)  
 ::: moniker-end  
@@ -296,7 +296,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 > [Triage work items](../queries/triage-work-items.md)
 
 
-## Related topics 
+## Related articles 
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 
@@ -310,14 +310,14 @@ To track your bugs and integrate with other resources available to you, see thes
 ### Integrate & Test resources
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
-- [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
+- [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
 ::: moniker range="vsts"  
 
 ### Use the Analytics service to create bug reports
-You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
+You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
 ::: moniker-end  
 

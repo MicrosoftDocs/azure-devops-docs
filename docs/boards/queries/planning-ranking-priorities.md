@@ -1,7 +1,7 @@
 ---
 title: Pick list queries
-titleSuffix: VSTS & TFS
-description: Create queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
@@ -180,10 +180,13 @@ The following table describes the fields that you can use to plan and prioritize
 
 The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).
 
-To add the field to the form: 
+::: moniker range="vsts"  
+To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 
-- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
-- **TFS**: [Modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
 
@@ -191,5 +194,5 @@ To add the field to the form:
 
 	`<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
 
-
+::: moniker-end  
  

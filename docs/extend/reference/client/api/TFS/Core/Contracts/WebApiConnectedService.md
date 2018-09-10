@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts WebApiConnectedService API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts WebApiConnectedService API | Extensions for Azure DevOps Services
 ms.assetid: c1f1584a-301d-5e9b-e325-6e65169a6522
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -23,7 +23,7 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnected
 
 * `description`: string. Extra description on the service.
 
-* `friendlyName`: string. Friendly Name of service connection
+* `friendlyName`: string. Friendly Name of service endpoint
 
 * `id`: string. Id/Name of the connection service. For Ex: Subscription ID for Azure Connection
 

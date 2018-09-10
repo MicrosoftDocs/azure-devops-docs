@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: CloneOperation | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with cloning test plans and test suites programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: CloneOperation | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with cloning test plans and test suites programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: FF42473B-F1B6-45F2-89C8-A0F8169ACAC5
 ms.manager: douge
 ms.topic: article
@@ -36,7 +36,7 @@ Content-Type: application/json
 | Parameter   | Type            | Default                     | Notes
 |:------------|:---------       |:----------------------------|:---------------------
 | URL
-| instance    | string          |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string          |                             | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string          |                             | Name or ID of the project.
 | planId      | int             |                             | ID of the test plan in which suite to be cloned is present
 | suiteId      | int             |                             | ID of the test suite to be cloned
@@ -70,7 +70,7 @@ Content-Type: application/json
 | Parameter   | Type     | Default                     | Notes
 |:------------|:---------|:----------------------------|:---------------------
 | URL
-| instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string   |                             | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string   |                             | Name or ID of the project.
 | planId      | int      |                             | ID of the test plan to be cloned
 | api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -92,7 +92,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/cloneOperation/{op
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:---------------------
 | URL
-| instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project            | string  | Name or ID of the project.
 | operationID        | int     | Operation ID returned when we queue a clone operation
 | Query

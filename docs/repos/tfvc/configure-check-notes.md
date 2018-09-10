@@ -1,5 +1,6 @@
 ---
 title: Configure Check-In Notes
+titleSuffix: Azure Repos
 description: Configure Check-In Notes
 ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure Check-In Notes
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 

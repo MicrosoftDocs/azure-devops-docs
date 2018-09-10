@@ -28,7 +28,7 @@ As a starting point take a look at these open source examples on GitHub
 
 The Visual Studio Common Project System (CPS) is a unified, extensible, scalable, and performant project system that ships in the box with Visual Studio. It is also rehostable to other hosts such as console apps and Azure web applications. It provides a rich, managed API that offers clients the ability to query and manipulate project data, as well as an extensible framework for project type authors to customize project behavior to suit their needs. For more information, see [Visual Studio Project System Extensibility Documentation](https://github.com/Microsoft/VSProjectSystem).
 
-For additional information about adding a new language to Visual Studio, see [Language Service Essentials.](https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/legacy-language-service-essentials)
+For additional information about adding a new language to Visual Studio, see [Language Service Essentials.](/visualstudio/extensibility/internals/legacy-language-service-essentials)
 
 # See also
 

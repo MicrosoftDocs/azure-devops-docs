@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts IssueType API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts IssueType API | Extensions for Azure DevOps Services
 ms.assetid: 11e3f923-203f-f656-3993-da62fd2f34b2
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,7 +1,7 @@
 ---
 title: Default and supported notifications
-titleSuffix: VSTS & TFS
-description: Reference of out of the box or default notifications set in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Reference of out of the box or default notifications set in Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Default and supported notifications
 
-**VSTS | TFS 2018 | TFS 2017.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017.1**
 
 Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item. 
 

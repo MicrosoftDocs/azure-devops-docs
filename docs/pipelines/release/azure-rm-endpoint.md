@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Azure Resource Manager service connections in VSTS and TFS
-description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in VSTS and Team Foundation Server (TFS)
+title: Troubleshooting Azure Resource Manager service connections in Azure Pipelines and TFS
+description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Troubleshoot Azure Resource Manager service connections
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -35,8 +35,8 @@ list of your subscriptions.
 
 When you choose **OK**, the system:
 
-1. Connects to the Azure Active Directory (AAD) tenant for to the selected subscription
-1. Creates an application in AAD on behalf of the user
+1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription
+1. Creates an application in Azure AD on behalf of the user
 1. After the application has been successfully created, assigns the application as a contributor to the selected subscription
 1. Creates an Azure Resource Manager service connection using this application's details
 
@@ -54,9 +54,7 @@ Errors that may occur when the system attempts to create the service connection 
 ### Insufficient privileges to complete the operation
 
 This typically occurs when the system attempts to create an
-application in AAD on your behalf.
-
-![Insufficient privileges to complete the operation error](_img/azure-rm-endpoint/azure-rm-endpoint-02.png)
+application in Azure AD on your behalf.
 
 This is a permission issue that may be due to the following causes:
 
@@ -70,9 +68,9 @@ The best approach to resolve this issue, while granting only the minimum additio
 to the user, is to increase the Guest user permissions as follows:
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
-   The account should be an [owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
+   The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
+   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
+   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator).
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -88,9 +86,9 @@ Alternatively, if you are prepared to give the user additional (administrator-le
 you can make the user a member of the **Global administrator** role as follows:
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
-   The account should be an [owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
+   The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
+   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
+   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator).
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -128,11 +126,9 @@ The directory administrator has permission to change this setting, as follows:
 
 These errors typically occur when your session has expired.
 
-![Errors when the users session has expired](_img/azure-rm-endpoint/azure-rm-endpoint-08.png)
-
 To resolve these issues:
 
-* Sign out of VSTS or TFS.
+* Sign out of Azure Pipelines or TFS.
 * Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
@@ -148,9 +144,7 @@ This error typically occurs when you do not have **Write** permission
 for the selected Azure subscription when the system attempts to assign
 the **Contributor** role.
 
-![Failed to assign Contributor role error](_img/azure-rm-endpoint/azure-rm-endpoint-09.png)
-
 To resolve this issue, ask the subscription administrator to
-[configure your identity in an **Admin Access** role](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+[configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

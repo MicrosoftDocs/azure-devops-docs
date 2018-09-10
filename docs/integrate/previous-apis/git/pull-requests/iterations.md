@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Pull Request Iterations | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git pull requests programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Pull Request Iterations | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git pull requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: EF349F15-C2BD-4338-9DB8-3FF7DECC5801
 ms.manager: douge
 ms.topic: article
@@ -20,7 +20,7 @@ ms.date: 11/3/2016
 [!INCLUDE [GET_STARTED](../../_data/get-started.md)]
 
 Iterations contain the history of the pull request.  Every time commits are pushed to the source branch and when the pull
-request is created, an iteration is created.  Each iteraction can contain more than one commit.
+request is created, an iteration is created.  Each iteration can contain more than one commit.
 
 ## Get a list of iterations
 
@@ -31,7 +31,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -51,7 +51,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -71,7 +71,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -90,7 +90,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.

@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/ExtensionContracts IWorkItemNotificationListener API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/ExtensionContracts IWorkItemNotificationListener API | Extensions for Azure DevOps Services
 description: Interface defining notifications provided by the ActiveWorkItemService
 ms.assetid: 89693eba-80ca-e407-7b8f-b9c39a568861
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts IdentityData API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts IdentityData API | Extensions for Azure DevOps Services
 ms.assetid: 7b70d742-006c-58f1-8a6f-55db6b94e704
 ms.prod: devops
 ms.technology: devops-ecosystem

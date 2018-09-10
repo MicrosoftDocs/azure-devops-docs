@@ -2,7 +2,7 @@
 
 <a name="which-azure-sub-for-billing"></a>
 
-#### Q: Which Azure subscriptions can I link to my VSTS organization and use for billing?
+#### Q: Which Azure subscriptions can I link to my Azure DevOps organization and use for billing?
 
 A: You can use an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
 that's not the following:
@@ -17,7 +17,7 @@ instead.
 **Important for Visual Studio subscribers and Visual Studio Dev Essentials members**:
 
 *	You can't use [monthly credits for Visual Studio subscriptions](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) 
-or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/offers/ms-azr-0022p/) to pay for VSTS purchases. 
+or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/offers/ms-azr-0022p/) to pay for Azure DevOps purchases. 
 You can still use these types of Azure subscriptions for billing, 
 but the monthly credits won't apply, so your credit card will be billed for charges instead.
  
@@ -26,7 +26,7 @@ but the monthly credits won't apply, so your credit card will be billed for char
     This prevents disabling your Azure subscription 
     when your monthly charges are billed the next month. 
     Otherwise, all resources billed to this subscription 
-    will be suspended, including VSTS purchases,
+    will be suspended, including Azure DevOps purchases,
     Visual Studio Marketplace purchases, and Azure resources.
 
     <img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />

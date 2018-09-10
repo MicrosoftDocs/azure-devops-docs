@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts BoardColumn API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts BoardColumn API | Extensions for Azure DevOps Services
 ms.assetid: 4cfeaa4a-2181-a85c-5833-bf446d5be1cf
 ms.prod: devops
 ms.technology: devops-ecosystem

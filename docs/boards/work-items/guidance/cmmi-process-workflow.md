@@ -1,7 +1,7 @@
 ---
 title: CMMI process work item types & workflow
-titleSuffix: VSTS & TFS
-description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
@@ -15,7 +15,7 @@ ms.date: 12/19/2017
 # CMMI process work item types and workflow
 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -432,7 +432,7 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   

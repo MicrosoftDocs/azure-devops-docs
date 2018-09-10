@@ -31,8 +31,8 @@ monikerRange: 'vsts'
 <tr><td>Publish test results</td><td>(Optional) Enabling this option will generate a test results TRX file in `$(Agent.TempDirectory)` and results will be published to the server. <br>This option appends `--logger trx --results-directory $(Agent.TempDirectory)` to the command line arguments.</td></tr>
 <tr><td>Zip Published Projects</td><td>(Optional) If true, folder created by the publish command will be zipped.</td></tr>
 <tr><td>Add project name to publish path</td><td>(Optional) If true, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.</td></tr>
-<tr><td>Feeds to use</td><td>(Required) You can either select a feed from VSTS and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path here.</td></tr>
-<tr><td>Use packages from this VSTS/TFS feed</td><td>(Required) Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
+<tr><td>Feeds to use</td><td>(Required) You can either select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path here.</td></tr>
+<tr><td>Use packages from this Azure Artifacts/TFS feed</td><td>(Required) Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
 <tr><td>Use packages from NuGet.org</td><td>(Required) Include NuGet.org in the generated NuGet.config.</td></tr>
 <tr><td>Path to NuGet.config</td><td>(Required) The NuGet.config in your repository that specifies the feeds from which to restore packages.</td></tr>
 <tr><td>Credentials for feeds outside this organization/collection</td><td>(Optional) Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.</td></tr>

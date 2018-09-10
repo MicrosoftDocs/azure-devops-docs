@@ -1,6 +1,6 @@
 ---
-title: File matching patterns reference for VSTS and TFS
-description: A reference guide that can help you to understand the file matching patterns for VSTS and Team Foundation Server (TFS).
+title: File matching patterns reference for Azure Pipelines and TFS
+description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

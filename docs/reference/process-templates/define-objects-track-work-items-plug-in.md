@@ -1,6 +1,6 @@
 ---
 title: Define work item types for a process template 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Use the plug-in for tracking work items and defining a project's initial objects for tracking work for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
