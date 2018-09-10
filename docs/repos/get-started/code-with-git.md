@@ -46,7 +46,7 @@ If you're just getting started with Azure Repos, your code might be in one of se
 
 ### I just created my Azure DevOps organization so I don't have any code
 
-If you just signed up for Azure DevOps services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo you can [clone it](#clone-the-repo) and then add your code to that repo.
+If you just signed up for Azure DevOps Services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo you can [clone it](#clone-the-repo) and then add your code to that repo.
 
 If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then [clone](#clone-the-repo) the new repo and add your code there.
 
