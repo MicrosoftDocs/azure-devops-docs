@@ -693,7 +693,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="_img/index/video-build-deploy-placeholder.png" alt="" data-linktype="external">
+                                                        <img src="_img/index/video-get-started-aspnet.png" alt="" data-linktype="external">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -711,7 +711,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="_img/index/video-continuous-builds-placeholder.png" alt="" data-linktype="external">
+                                                        <img src="_img/index/video-github-marketplace.png" alt="" data-linktype="external">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
