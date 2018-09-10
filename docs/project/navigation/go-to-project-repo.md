@@ -132,7 +132,8 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 ---
 
-
+switch-to-a-different-team
+<a id="switch-to-a-different-team">  </a>
 <a id="switch-team-context">  </a>
 ## Switch to a different team 
 

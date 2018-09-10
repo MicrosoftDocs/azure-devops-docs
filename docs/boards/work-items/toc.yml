@@ -129,7 +129,7 @@
   - name: Email/print work items
     href: email-work-items.md  
   - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: "Manage permissions (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
 - name: Reference
