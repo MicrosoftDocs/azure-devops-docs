@@ -105,8 +105,8 @@ To avoid those certificate warnings and errors, you can export the root certific
 including:
 
 * Using the Certificates MMC snap-in to manually [export the certificate](https://technet.microsoft.com/library/cc730988.aspx) on the server and then import it on each client.
-* Using the [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate) powershell cmdlet, available in Windows 8 / Windows Server 2012 and later 
-operating systems, to export the certificate. [Import-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/import-certificate) can then be used to import it on each client.
+* Using the [Export-Certificate](/powershell/module/pkiclient/export-certificate) powershell cmdlet, available in Windows 8 / Windows Server 2012 and later 
+operating systems, to export the certificate. [Import-Certificate](/powershell/module/pkiclient/import-certificate) can then be used to import it on each client.
 * Using [Group Policy](https://technet.microsoft.com/library/dd807084.aspx) to automate distribution to clients. 
 
 ### Internal and external Certificate Authorities

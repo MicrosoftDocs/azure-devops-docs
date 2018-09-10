@@ -1,6 +1,6 @@
 ---
 title: Adjust sprint plan based on team capacity 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Change work items assigned to a sprint or iteration working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
@@ -18,7 +18,7 @@ ms.date: 06/21/2018
 <a id="adjust-work">  </a>
 # 4. Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 After you've defined all the tasks for all the sprint backlog items, you'll want to check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
@@ -44,7 +44,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker range="vsts"
 
-0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -75,7 +75,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -103,7 +103,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
-> ![Turn work details on](_img//adjust-work/work-details-on.png)
+> ![Turn work details on](_img/adjust-work/work-details-on.png)
 
 ::: moniker-end
 

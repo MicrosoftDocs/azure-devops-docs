@@ -1,0 +1,313 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure DevOps user guide
+metadata:
+  title: Azure DevOps user guide documentation
+  description: Learn the basics of the Azure DevOps interface and some common tasks.
+  ms.date: 09/10/2018
+  ms.prod: devops
+  ms.technology: vs-ide-code-analysis
+  ms.topic: landing-page
+  ms.author: chcomley
+  author: chcomley
+  manager: douge
+abstract:
+  description: New to Azure DevOps? Welcome! We'll walk you through the basics and some common tasks.
+  aside:
+    image:
+      title: Get started with Azure DevOps
+      alt: Get started logo
+      height: 133
+      width: 48
+      src: https://docs.microsoft.com/media/illustrations/biztalk-get-started-get-started.svg
+    title:
+sections:
+- title:
+  items:
+  - html: <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps Services</a> 
+- title: 
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../pipelines/get-started/pipelines-get-started.md
+        html: <p></p>
+        image:
+          title: Start using Azure Pipelines
+          alt: Azure Pipelines logo
+          src: ../_img/index/DevOpsIconPipelines40.svg
+        title: Start using Azure Pipelines  
+- title: 5-minute quickstarts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: sign-up-invite-teammates.md
+        html: <p></p>
+        image:
+          title: Sign up for Azure DevOps
+          alt: Cloud security logo
+          src: https://docs.microsoft.com/media/common/i_cloud-security.svg
+        title: Sign up for Azure DevOps
+      - href: ../organizations/accounts/create-organization-msa-or-work-student.md
+        html:
+        image:
+          title: Azure DevOps
+          alt: DevOps logo 
+          src: https://docs.microsoft.com/media/common/i_dev-ops.svg
+        title: Create organizations
+      - href: ../organizations/projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Create a project
+          alt: Management logo
+          src: https://docs.microsoft.com/media/common/i_management.svg
+        title: Create a project
+      - href: code-with-git.md
+        html: <p></p>
+        image:
+          title: Code with Git
+          alt: Git logo
+          src: https://docs.microsoft.com/media/logos/logo_git-color.svg
+        title: Code with Git
+      - href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+        html: <p></p>
+        image:
+          title: Quickstart plan and track work
+          alt: Quick start logo
+          src: https://docs.microsoft.com/media/common/i_quick-start.svg
+        title: Plan & track work
+      - href: add-run-manual-tests.md
+        html: <p></p>
+        image:
+          title: Add and run manual tests
+          alt: Test logo
+          src: https://docs.microsoft.com/media/common/i_test.svg
+        title: Add & run manual tests
+      - href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Install an extension
+          alt: Extensions logo
+          src: https://docs.microsoft.com/media/common/i_extensions.svg
+        title: Install a Marketplace extension
+      - href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: View permissions
+          alt: Configure teams logo
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: View permissions
+      - href:  project-admin-tutorial.md
+        html: <p></p>
+        image:
+          title: Get started administrator
+          alt: Account management logo
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Get started as an admin
+
+- title: Step-by-step tutorials
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Set your favorites
+          alt: Set up logo
+          src: https://docs.microsoft.com/media/common/i_setup.svg
+        title: Set favorites
+      - href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Follow pull requests
+          alt: Pull request logo
+          src: https://docs.microsoft.com/media/common/i_pull-request.svg
+        title: Follow work & pull requests
+      - href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Get started stakeholder
+          alt: Account management logo
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Get started as a Stakeholder
+      - href: ../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Configure teams, manage users
+          alt: Configure teams logo
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: Add & manage users
+      - href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Change permissions for users
+          alt: Configure teams logo
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: Change individual permissions
+      - href: ../organizations/security/restrict-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Restrict and grant permissions
+          alt: Security management logo
+          src: https://docs.microsoft.com/media/common/i_security-management.svg
+        title: Grant or restrict permissions to select tasks
+
+- title: Concepts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: concepts.md
+        html: <p></p>
+        image:
+          title: Concepts Azure DevOps user guide
+          alt: Learn about logo
+          src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        title: Key concepts
+      - href: define-organizations-and-projects.md
+        html: <p></p>
+        image:
+          title: Define projects and organizations
+          atl: Guidelines logo
+          src: https://docs.microsoft.com/media/common/i_guidelines.svg
+        title: Define organizations and projects
+      - href: source-control.md
+        html: <p></p>
+        image:
+          title: Source control Azure DevOps
+          alt: Code logo
+          src: https://docs.microsoft.com/media/common/i_xplat-code.svg
+        title: Source control
+      - href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Agile tools, backlogs, and boards Azure DevOps
+          alt: Kanban logo
+          src: https://docs.microsoft.com/media/common/i_kaban.svg
+        title: Boards, backlogs, & Agile tools
+      - href: tools.md
+        html: <p></p>
+        image:
+          title: Tools and clients Azure DevOps
+          alt: Tools logo
+          src: https://docs.microsoft.com/media/common/i_tools.svg
+        title: Clients & tools
+      - href: roles.md
+        html: <p></p>
+        image:
+          title: Role in software development Azure DevOps
+          alt: Configure teams logo
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: Software development roles
+      - href: about-vsts-tfs.md
+        html: <p></p>
+        image:
+          title: Differences in Team Foundation Server and Azure DevOps Services
+          alt: Article logo
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "Feature differences: Azure DevOps Services and TFS"
+
+- title: How-to guides
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Sign in to web or client Azure DevOps
+          alt: Http logo
+          src: https://docs.microsoft.com/media/common/i_http.svg
+        title: Sign in to a web or a client
+
+- title: Reference
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Default access and permissions Azure DevOps
+          alt: Overview logo
+          src: https://docs.microsoft.com/media/common/i_overview.svg
+        title: Default permissions & access
+      - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Users access levels Azure DevOps
+          alt: Protect logo
+          src: https://docs.microsoft.com/media/common/i_protect.svg
+        title: About access levels
+- title: Resources
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../project/navigation/index.md
+        html: <p></p>
+        image:
+          title: Navigation in Azure DevOps web portal
+          alt: Portal logo
+          src: https://docs.microsoft.com/media/common/i_portal.svg
+        title: Web portal navigation
+      - href: ../organizations/security/index.md
+        html: <p></p>
+        image:
+          title: Azure DevOps security and identity
+          alt: Security management logo
+          src: https://docs.microsoft.com/media/common/i_security-management.svg
+        title: Security & identity
+      - href: ../organizations/projects/index.md
+        html: <p></p>
+        image:
+          title: Manage Azure DevOps projects
+          alt: management logo
+          src: https://docs.microsoft.com/media/common/i_management.svg
+        title: Manage projects
+      - href: ../organizations/billing/index.md
+        html: <p></p>
+        image:
+          title: Azure DevOps billing
+          alt: Billing logo
+          src: https://docs.microsoft.com/media/common/i_billing.svg
+        title: Billing
+      - href: https://docs.microsoft.com/visualstudio
+        html: <p></p>
+        image:
+          title: Visual Studio 2017 
+          alt: Visual Studio logo
+          src: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+        title: Visual Studio 2017
+      - href: https://code.visualstudio.com/docs
+        html: <p></p>
+        image:
+          title: Visual Studio Code
+          alt: Visual Studio Code logo
+          src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+        title: Visual Studio Code
+      - href: https://visualstudio.microsoft.com/vs/mac/
+        html: <p></p>
+        image:
+          title: Visual Studio for Mac
+          alt: Visual Studio for Mac logo
+          src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+        title: Visual Studio for Mac
+
+    

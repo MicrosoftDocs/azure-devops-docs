@@ -1,6 +1,6 @@
 ---
 title: Differences and limitations for non-members
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Differences and limitations for non-members
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -26,19 +26,39 @@ This page walks through features that non-members can't access or that work diff
 
 ## Access levels and unavailable features 
 
-A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members: 
+A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members.  
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)  
+
+* **Boards**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
+* **Repos**: Team Foundation Version Control (TFVC) repositories are hidden 
+* **Pipelines**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
+	* Pipeline and task editors for build and release pipelines are unavailable  
+	* Only the new **Releases*** page, which is in Public preview, is available.
+* **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
+* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members. 
+* Settings and administrative pages are hidden. 
+* Paid extensions are hidden.
+
+
+# [Previous navigation](#tab/previous-nav)
 
 * **Code**: Team Foundation Version Control (TFVC) repositories are hidden 
 * **Work**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
 * **Build and Release**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
 	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
-* **Test**: The **Test** hub and its associated manual and cloud load testing features are hidden.
-* **Analytics**: The **Analytics** hub is hidden, and the Analytics OData feed is not supported for non-members. 
+* **Test**: **Test** and its associated manual and cloud load testing features are hidden.
+* **Analytics**: **Analytics view** is hidden, and the Analytics OData feed is not supported for non-members. 
 * Settings and administrative pages are hidden. 
 * Paid extensions are hidden.
 
-<!--- TBD, A note should be entered here when the Free access to pipelines for Stakeholders account-level preview feature is available --> 
+---
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Pipeline** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md). 
 
 
 In addition, non-members have no access or limited access to the following features: 
@@ -50,7 +70,7 @@ In addition, non-members have no access or limited access to the following featu
 
 ## Feature and functional support based on permissions 
 
-VSTS has a permissions-driven user interface. For an overview of the main permissions assigned by default to security groups and access levels, see [Default permissions and access](../security/permissions-access.md). 
+Azure DevOps has a permissions-driven user interface. For an overview of the main permissions assigned by default to security groups and access levels, see [Default permissions and access](../security/permissions-access.md). 
 
 If a user doesn't have the permissions needed to complete an action, the feature will either be hidden or disabled. By default, inaccessible commands are disabled, minimizing the layout changes that would be needed if elements could appear and disappear.
 For example, a user who lacks permission to create pull requests, will see a disabled  **Create pull request** button.

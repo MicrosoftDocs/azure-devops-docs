@@ -23,9 +23,9 @@
   - name: Compare TFVC and Git 
     href: comparison-git-tfvc.md
   - name: Use Git and TFVC
-    href: ../../repos/git/team-projects.md?toc=/vsts/repos/tfvc/toc.json&bc=/vsts/repos/tfvc/breadcrumb/toc.json
+    href: ../../repos/git/team-projects.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: Map TFVC actions to Git
-    href: ../../repos/git/mapping-my-tfvc-actions-to-git.md?toc=/vsts/repos/tfvc/toc.json&bc=/vsts/repos/tfvc/breadcrumb/toc.json
+    href: ../../repos/git/mapping-my-tfvc-actions-to-git.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: Develop in branches
     items:
     - name: Use branches to isolate risk
@@ -109,11 +109,11 @@
     - name: Lock and unlock folders or files
       href: lock-unlock-folders-files.md
   - name: "Set TFVC permissions (Security)"
-    href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/repos/tfvc/toc.json&bc=/vsts/repos/tfvc/breadcrumb/toc.json
+    href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Default TFVC permissions (Security)"
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/vsts/repos/tfvc/toc.json&bc=/vsts/repos/tfvc/breadcrumb/toc.json
+    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: TFVC command reference
     items:
     - name: Use Team Foundation version control commands

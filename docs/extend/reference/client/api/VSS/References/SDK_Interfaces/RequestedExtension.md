@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces RequestedExtension API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces RequestedExtension API | Extensions for Azure DevOps Services
 description: A request for an extension (to be installed or have a license assigned)
 ms.assetid: 652df4ba-6caf-fb8b-faf8-261aebd431f3
 ms.prod: devops

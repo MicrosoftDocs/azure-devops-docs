@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/UIContracts ChangeListSourceItemContext API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/UIContracts ChangeListSourceItemContext API | Extensions for Azure DevOps Services
 ms.assetid: 3c0677a9-46c5-9502-177d-bae977d5aed2
 ms.prod: devops
 ms.technology: devops-ecosystem

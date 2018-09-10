@@ -1,6 +1,7 @@
 ---
-title: Migration options for migrating from TFS to VSTS
-description: Learn about migrating from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS)
+title: Migration options for migrating from TFS to Azure DevOps Services
+titleSuffix: Azure DevOps Services & TFS
+description: Learn about migrating from Team Foundation Server (TFS) to Azure DevOps Services
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -15,19 +16,21 @@ monikerRange: '>= tfs-2013'
 
 # Migration options
 
-When you decide to make the move from TFS to VSTS, you might start fresh with an empty account. Often, however,
+**Azure DevOps Services | TFS**
+
+When you decide to make the move from TFS to Azure DevOps, you might start fresh with an empty organization. Often, however,
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
 which vary in both the fidelity of the data transfer and the complexity of the process.
 
-Prior to migrating data, review the differences that exist between [TFS and VSTS](../user-guide/about-vsts-tfs.md).
+Prior to migrating data, review the differences that exist between [TFS and Azure DevOps](../user-guide/about-vsts-tfs.md).
 
 ## Option 1: Copy the most important assets manually
 
-By far the easiest option for moving data into VSTS is to manually copy your most important assets and start relatively fresh. 
+By far the easiest option for moving data into Azure DevOps Services is to manually copy your most important assets and start relatively fresh. 
 This can be difficult when you are in the middle of a large project, but you can make it easier if you do some advance planning
 and schedule your move when it makes sense for your team.
 
-For example, when the Visual Studio Team Services (VSTS) team chose to move from TFS to VSTS, we also decided to 
+For example, when the Azure DevOps team chose to move from TFS to Azure DevOps Services, we also decided to 
 move from Team Foundation Version Control (TFVC) to Git. This required a fair bit of planning, but when we actually
 performed our migration, we created a new Git repo using the "tip" version of our TF VC sources, and left our history
 behind in TFS. We also moved our active work items, and left behind all our old bugs, completed user stories and tasks,
@@ -38,13 +41,13 @@ Here's the general process:
 1.	Identify the most important assets that you need to migrate - typically source code, work items, or both. Other assets in TFS - 
 build pipelines, test plans, and so forth - are harder to manually migrate. 
 2.	Identify a good time to make the transition.
-3.	Prepare your target VSTS accounts. Create the accounts and team projects that you need, provision users, and so on.
+3.	Prepare your target Azure DevOps organizations. Create the organizations and team projects that you need, provision users, and so on.
 4.	Migrate your data.
 5.	Consider making the source TFS deployments read-only. 
 
 ## Option 2: High fidelity database migration.
 
-The TFS/VSTS product team provides a high fidelity TFS Database Import Service. A downloadable Migration
+The TFS & Azure DevOps product team provides a high fidelity TFS Database Import Service. A downloadable Migration
 Guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">
@@ -52,7 +55,7 @@ Guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportDat
 </a>
 
 Because the TFS Database Import Service operates at a database level, it can provide a very high fidelity migration. 
-If you want to move your existing TFS data into VSTS, we strongly recommend using this option.
+If you want to move your existing TFS data into Azure DevOps, we strongly recommend using this option.
 
 ## Option 3: Using public API-based tools for higher fidelity migration
 
@@ -69,25 +72,25 @@ take this approach, you might consider hiring a consultant who has experience wi
 You should definitely consider doing a test migration before doing your final migration.
 
 Many organizations need a very high fidelity migration for only a subset of their work. New work could 
-potentially start directly in VSTS. Other work, with less stringent fidelity requirements, 
+potentially start directly in Azure DevOps. Other work, with less stringent fidelity requirements, 
 could be migrated using one of the other approaches. You will have to weigh the pros and cons of the 
-various approaches against your motivations for moving into VSTS and decide for yourself what 
+various approaches against your motivations for moving into Azure DevOps and decide for yourself what 
 is the right strategy.
 
 ## Migration scopes
 
-As described in [About VSTS and TFS, Scope and scale data](../user-guide/about-vsts-tfs.md#scope-scale-data), the long term 
-direction for VSTS is to support grouping of accounts within organizations. This would lead to:   
-- VSTS accounts that serve as the equivalent of TFS project collections and 
-- VSTS organizations that serve as the equivalent of TFS deployments.  
+As described in [About Azure DevOps and TFS, Scope and scale data](../user-guide/about-vsts-tfs.md#scope-scale-data), the long term 
+direction for Azure DevOps is to support grouping of organizations within an enterprise. This would lead to:   
+- Azure DevOps organizations that serve as the equivalent of TFS project collections and 
+- Azure DevOps enterprises that serve as the equivalent of TFS deployments.  
 
 This is why the TFS Database Import Service only supports 
-importing single TFS collections as single VSTS accounts. If you need to migrate individual team projects you will need to use one of the other options&mdash;manual copy or public API 
+importing single TFS collections as single Azure DevOps organization. If you need to migrate individual team projects you will need to use one of the other options&mdash;manual copy or public API 
 based migrations.
 
 ## Related notes 
-- [About VSTS and Team Foundation Server](../user-guide/about-vsts-tfs.md)  
-- [Pricing, VSTS](https://visualstudio.microsoft.com/team-services/pricing/)
+- [About Azure DevOps and Team Foundation Server](../user-guide/about-vsts-tfs.md)  
+- [Pricing, Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/)
 - [Pricing, TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---

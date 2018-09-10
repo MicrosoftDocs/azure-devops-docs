@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts TaskDefinition API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts TaskDefinition API | Extensions for Azure DevOps Services
 ms.assetid: b97e4da3-d37b-5440-e737-f454204b4d8b
 ms.prod: devops
 ms.technology: devops-ecosystem

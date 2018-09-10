@@ -1,0 +1,34 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="DevOpsIconWiki40">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<path id="Union" d="M38.3334 0C39.2538 0 40 0.746094 40 1.66699V18.333C40 19.2539 39.2538 20 38.3334 20H28V38.333C28 39.2539 27.2538 40 26.3334 40H1.66663C0.746216 40 0 39.2539 0 38.333V9.66699C0 8.74609 0.746216 8 1.66663 8H16V1.66699C16 0.746094 16.7462 0 17.6666 0H38.3334Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path id="Rectangle" d="M0 1.66667C0 0.746192 0.746192 0 1.66667 0H26.3333C27.2538 0 28 0.746192 28 1.66667V30.3333C28 31.2538 27.2538 32 26.3333 32H1.66667C0.746192 32 0 31.2538 0 30.3333V1.66667Z" transform="translate(0 8)" fill="#0078D7"/>
+<path id="Union_2" d="M16 0H0V2H16V0Z" transform="translate(6 13)" fill="#48A6F0"/>
+<path id="Union_3" d="M16 0H0V2H16V0Z" transform="translate(6 18)" fill="#48A6F0"/>
+<path id="Union_4" d="M16 0H0V2H16V0Z" transform="translate(6 23)" fill="#48A6F0"/>
+<path id="Union_5" d="M16 0H0V2H16V0Z" transform="translate(6 28)" fill="#48A6F0"/>
+<path id="Union_6" d="M9.77778 0H0V2H9.77778V0Z" transform="translate(6 33)" fill="#48A6F0"/>
+<g id="Union_7" opacity="0.75" filter="url(#filter0_f)">
+<path d="M22.3334 0C23.2538 0 24 0.746094 24 1.66699V18.333C24 19.2539 23.2538 20 22.3334 20H12L6 26V20H1.66663C0.746216 20 0 19.2539 0 18.333V1.66699C0 0.746094 0.746216 0 1.66663 0H22.3334Z" transform="translate(16)" fill="#0039A8"/>
+</g>
+<path id="Union_8" fill-rule="evenodd" clip-rule="evenodd" d="M1.66663 0C0.746216 0 0 0.746094 0 1.66699V18.333C0 19.2539 0.746216 20 1.66663 20H12L18 26V20H22.3334C23.2538 20 24 19.2539 24 18.333V1.66699C24 0.746094 23.2538 0 22.3334 0H1.66663Z" transform="translate(40) scale(-1 1)" fill="#96D1FF"/>
+<path id="Intersect" opacity="0.5" d="M12 12V1.66699C12 0.746094 11.2538 0 10.3334 0H0V10.333C0 11.2539 0.746216 12 1.66663 12H6V18L12 12Z" transform="translate(16 8)" fill="#6ABEFF"/>
+<rect id="Rectangle 2.1" width="6" height="2" transform="translate(16 13)" fill="#96D1FF"/>
+<path id="Rectangle 3" d="M0 0H6V2H1.7C0.761116 2 0 1.23888 0 0.3V0Z" transform="translate(16 18)" fill="#96D1FF"/>
+<path id="Union_9" opacity="0.25" d="M38.3334 0C39.2538 0 40 0.746094 40 1.66699V18.333C40 19.2539 39.2538 20 38.3334 20H28V38.333C28 39.2539 27.2538 40 26.3334 40H1.66663C0.746216 40 0 39.2539 0 38.333V9.66699C0 8.74609 0.746216 8 1.66663 8H16V1.66699C16 0.746094 16.7462 0 17.6666 0H38.3334Z" fill="url(#paint0_linear)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="12" y="-4" width="32" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40) scale(40) rotate(90)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

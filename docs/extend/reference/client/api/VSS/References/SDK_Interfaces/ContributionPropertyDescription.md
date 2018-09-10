@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ContributionPropertyDescription API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ContributionPropertyDescription API | Extensions for Azure DevOps Services
 description: Description about a property of a contribution type
 ms.assetid: bd340d00-0fe8-7461-8eaa-1092c96a6d07
 ms.prod: devops

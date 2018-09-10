@@ -1,6 +1,6 @@
 ---
-title: Create a project in VSTS or Team Foundation Server (TFS)
-description: Add a project in VSTS or on-premises Team Foundation Server (TFS)
+title: Create a project in Azure DevOps Services or Team Foundation Server (TFS)
+description: Add a project in Azure DevOps Services or on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -9,32 +9,38 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 07/12/2018
+ms.date: 09/05/2018
 ---
 
 # Create a project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-
 You add another project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Each project you add provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to add one, see [About projects and scaling your organization](about-projects.md).
 
+> [!NOTE]   
+> This article is about adding a project to an Azure DevOps organization or a Team Foundation Service project collection. If instead you want to create an Azure DevOps Project, see [Azure DevOps Project](/azure/devops-project/).
+
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
+
+
+If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can 
-[sign up for VSTS and create a project](../accounts/create-organization-msa-or-work-student.md). 
+[sign up for Azure DevOps Services and create a project](../accounts/create-organization-msa-or-work-student.md). 
 ::: moniker-end
 
-If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
-
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2015"
 ## Add a project from the web portal 
 ::: moniker-end
 
 ::: moniker range="vsts"
+
+To create a project, you must first have [signed up for an Azure DevOps Services organiation](../../user-guide/sign-up-invite-teammates.md). 
+
 > [!IMPORTANT]  
 > To create a Public project, or to make a private project public, see [Create a public project](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects. 
 
@@ -66,17 +72,30 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **Create Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
-
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+0. Fill out the form provided. Provide a name for your project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
+	> ![Create new project form, latest vsts](_img/create-project/create-new-project-form-new-nav.png)  
+
+	See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+
+0. When your project has been created, the welcome page appears. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
+
+	Select one of the following tasks to get started: 
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
+	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+	- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+	- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+	- [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 
 ::: moniker-end
 
@@ -90,26 +109,28 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **New Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
+0. Fill out the form provided. Provide a name for your new project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form, previous nav](_img/create-project/create-project-form-prev-nav.png)  
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
+0. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](../../project/wiki/project-vision-status.md). 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]   
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **New Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
@@ -138,14 +159,14 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New team project...**.
+	Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![New Team Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
+	> ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
 	Select the collection administration page for the collection you want to create the project in from the left pane, and choose **Create a new project...**.
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
+1. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
@@ -164,7 +185,7 @@ Adding a project from the web portal isn't supported for TFS 2015 and earlier ve
 
 <a id="te"> </a>
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 ## Add a project from Team Explorer 
 You can create a project from Team Explorer after you have connected to an on-premises server. 
@@ -179,7 +200,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To create projects you must have the **Create new projects** permission set to **Allow**.
 
@@ -211,7 +232,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
-6.  Open the New Team Project Wizard.
+6.  Open the New Project Wizard.
 
     ![New link on Connect page (Team Explorer)](_img/IC779380.png)
 
@@ -260,31 +281,21 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Add a project from the command line or scripts
 
-You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and retrieve projects and other objects from the command line or scripts using the CLI. Check out the [CLI documentation](/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> The VSTS CLI is supported for TFS 2017.2 and later versions. 
+> The CLI is supported for TFS 2017.2 and later versions. 
 
 ::: moniker-end
 
-## Try this next 
-
-Once you've added a project, you'll have a default repository in which to add code. You'll want to add team members and structure your project to support your business needs. See these resources: 
-
-- [Add team members](../../organizations/security/add-users-team-project.md) to enable other users to connect to your project.
-- Start [developing your app in Team Foundation version control](../../repos/tfvc/index.md) or [use Git](../../repos/git/overview.md).
-- [Additional project structure activities](about-projects.md#project-structure)
-
-
-<a id="git-and-tfvs-repos" />
 
 ::: moniker range=">= tfs-2015"
 
-### Add repositories
-From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same team project](../../repos/git/team-projects.md). 
+## Add a repository
+From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md). 
 
 ::: moniker-end
 
@@ -307,3 +318,12 @@ Name the repository and choose **Create**.
 > The ability to work from both Git and TFVC repositories from the same project is supported when you connect to TFS 2015.1 and later versions. 
 
 ::: moniker-end
+
+## Try this next 
+
+- [Add team members](../../organizations/security/add-users-team-project.md)  
+- [Use Git](../../repos/git/overview.md)
+- [Develop your app in TFVC](../../repos/tfvc/index.md) 
+- [Additional project structure activities](about-projects.md#project-structure)
+
+

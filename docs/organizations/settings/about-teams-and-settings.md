@@ -1,7 +1,7 @@
 ---
 title: About teams & Agile tools
-titleSuffix: VSTS & TFS 
-description: Guide to adding and configuring teams in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS 
+description: Guide to adding and configuring teams in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
@@ -31,7 +31,7 @@ For example, each feature team can be associated with a single feature area path
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
@@ -49,7 +49,7 @@ These tools reference the team's default area path, iteration path, and selected
 > [!div class="mx-tdCol2BreakAll"]
 > |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
 > |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Delivery plans](../../boards/plans/review-team-plans.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../notifications/manage-team-notifications.md) |   
+> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Delivery plans](../../boards/plans/review-team-plans.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../notifications/howto-manage-team-notifications.md) |   
 ::: moniker-end
  
 ::: moniker range="tfs-2015"

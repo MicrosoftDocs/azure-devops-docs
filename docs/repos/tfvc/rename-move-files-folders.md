@@ -1,5 +1,6 @@
 ---
 title: Rename or move files and folders | Team Foundation Version Control 
+titleSuffix: Azure Repos
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) commands
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.prod: devops
@@ -15,17 +16,17 @@ monikerRange: '>= tfs-2015'
 
 # Rename or move files and folders in TFVC
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!IMPORTANT]
-> If you're not using TFVC for version control, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to
+> If you're not using TFVC for version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to
 > move and rename files in your current open Visual Studio solutions or projects.
 
 ## Move an item in TFVC
 
 You can use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to move one file or folder at a time.
 You should not use Source Control Explorer to move folders or files that are referenced by a Visual Studio project or solution. 
-Move these files with [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) instead and check in the move in a new changeset.
+Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) instead and check in the move in a new changeset.
 
 1.  In Source Control Explorer, select the item that you want to move, open its shortcut menu, and choose **Move**.
 

@@ -3,7 +3,7 @@ title: Getting personal – Jan 5
 description: VSTS release notes for Jan 5 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---

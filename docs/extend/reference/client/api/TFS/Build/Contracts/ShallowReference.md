@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ShallowReference API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts ShallowReference API | Extensions for Azure DevOps Services
 description: An abstracted reference to some other resource. This class is used to provide the build data contracts with a uniform way to reference other resources in a way that provides easy traversal through links.
 ms.assetid: 06d77d3e-a866-3b91-f7e5-8160ea7eefd0
 ms.prod: devops

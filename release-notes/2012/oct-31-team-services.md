@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Oct 31
 description: VSTS release notes for October 31 2012
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 0ac905d5-e2a5-4418-af6d-1aa5e17b1581
 ms.date: 06/01/2016

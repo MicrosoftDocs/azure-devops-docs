@@ -1,12 +1,13 @@
 ---
 title: Add a custom field to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add a custom field to the web form of a work item type for an Inheritance process model and apply to a project 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
 ms.date: 05/31/2018
@@ -21,6 +22,9 @@ You add a custom field to support tracking data requirements you have that aren'
 > To customize a single project, always start by [creating an inherited process and migrating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
+
+> [!IMPORTANT]  
+> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -81,7 +85,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 
 # [New navigation](#tab/new-nav)
-
+project
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -109,7 +113,7 @@ We recommend that you create a test project and apply your customized  inherited
 	
 
 # [Previous navigation](#tab/previous-nav)
-
+project
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  

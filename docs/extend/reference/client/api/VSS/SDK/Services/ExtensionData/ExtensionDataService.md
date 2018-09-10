@@ -1,5 +1,5 @@
 ---
-title: VSS/SDK/Services/ExtensionData ExtensionDataService API | Extensions for Visual Studio Team Services
+title: VSS/SDK/Services/ExtensionData ExtensionDataService API | Extensions for Azure DevOps Services
 description: Provides a wrapper around the REST client for getting and saving extension setting values
 ms.assetid: 40a987e0-ade7-1b69-b246-fe2a259e59bc
 ms.prod: devops
@@ -109,7 +109,7 @@ Returns a promise for getting a document with the provided ID in the provided co
 
 * `collectionName`: string. The name of the collection where the document lives
 * `id`: string. The ID of the document in the collection
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
@@ -128,7 +128,7 @@ Returns a promise for getting all of the documents in the provided collection
 #### Parameters
 
 * `collectionName`: string. The name of the collection where the document lives
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
@@ -148,7 +148,7 @@ Returns a promise for creating a document in the provided collection
 
 * `collectionName`: string. The name of the collection where the document lives
 * `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
@@ -169,7 +169,7 @@ Creates the document if it does not exist, otherwise updates the existing docume
 
 * `collectionName`: string. The name of the collection where the document lives
 * `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
@@ -190,7 +190,7 @@ A document with the ID provided must exist
 
 * `collectionName`: string. The name of the collection where the document lives
 * `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
@@ -210,7 +210,7 @@ Returns a promise for deleting the document at the provided scope, collection an
 
 * `collectionName`: string. The name of the collection where the document lives
 * `id`: string. The ID of the document in the collection
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is account-wide
+* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 

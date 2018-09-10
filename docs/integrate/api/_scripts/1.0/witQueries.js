@@ -45,7 +45,7 @@ exports.submitRequests = function () {
         function (context, result) {
             return {
                 "name": context.queryName,
-                "wiql": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Bug' order by [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc"
+                "wiql": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Bug' order by [Microsoft.Azure DevOps Services.Common.Priority] asc, [System.CreatedDate] desc"
             }
         },
         function (context, result) {
@@ -95,7 +95,7 @@ exports.submitRequests = function () {
     apiwriter.patchJson('/wit/queries/Shared Queries/{folderName}/{queryNameNew}',
         function (context, result) {
             return {
-                "wiql": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Bug' AND [System.State] = 'Active' order by [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc"
+                "wiql": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Bug' AND [System.State] = 'Active' order by [Microsoft.Azure DevOps Services.Common.Priority] asc, [System.CreatedDate] desc"
             }
         }
     );

@@ -1,6 +1,6 @@
 ---
 title: Xcode Package iOS build and release task
-description: Xcode Package iOS build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Xcode Package iOS build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298

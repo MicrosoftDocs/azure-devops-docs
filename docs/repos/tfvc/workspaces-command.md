@@ -1,5 +1,6 @@
 ---
 title: Workspaces Command
+titleSuffix: Azure Repos
 description: Workspaces Command
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Workspaces Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about workspaces in the system and updates cached information about a user name or computer name change on the server that is running Visual Studio Team Foundation Server.
 

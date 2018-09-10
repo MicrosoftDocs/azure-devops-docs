@@ -1,7 +1,7 @@
 ---
 title: Set query permissions
-titleSuffix: VSTS & TFS
-description: How to set permissions on work item queries and folders when working in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: How to set permissions on work item queries and folders when working in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  

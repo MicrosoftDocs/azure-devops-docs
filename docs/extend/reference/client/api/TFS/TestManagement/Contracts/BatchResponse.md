@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts BatchResponse API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts BatchResponse API | Extensions for Azure DevOps Services
 ms.assetid: f0ac0a97-2752-a706-fe3c-274d86104705
 ms.prod: devops
 ms.technology: devops-ecosystem

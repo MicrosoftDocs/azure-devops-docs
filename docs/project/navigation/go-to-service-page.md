@@ -1,6 +1,6 @@
 ---
 title: Navigate to an application or functional area
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure DevOps Services & TFS   
 description: Access the application area or change your view
 ms.prod: devops
 ms.technology: devops-collab
@@ -18,17 +18,17 @@ ms.date: 07/21/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-From a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox&mdash;you access the services supported by Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
+From a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox&mdash;you access the services supported by Azure DevOps Services or Team Foundation Server (TFS). The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
 You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
 ::: moniker range="vsts"
-If you don't have a project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigationbreadcrumb/toc.json). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
+If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigationbreadcrumb/toc.json). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-If you don't have a project yet, create one in your [on-premises TFS](../../organizations/projects/create-project.md). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
+If you don't have a project yet, [create one](../../organizations/projects/create-project.md). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -36,13 +36,18 @@ If you don't have a project yet, create one in your [on-premises TFS](../../orga
 
 ## Open a service or page
 
-Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on. 
+Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
+::: moniker range="vsts"
+> [!NOTE]  
+> Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
+
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 You open a service by choosing the service from the sidebar and then selecting from the available pages. 
 
-For example, here we select **Work>Backlogs**. 
+For example, here we select **Boards>Backlogs**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open a service, new navigation gif](_img/go-to-app/work-backlogs-selection.gif)
@@ -103,9 +108,9 @@ From a user context, open **Settings** by choosing the ![](../../_img/icons/gear
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
  
-Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
-![VSTS, Admin context, team project level](../../_shared/_img/settings/open-project-settings-horz.png) 
+![Project Settings](../../_shared/_img/settings/open-project-settings-horz.png) 
 
 ::: moniker-end
 
@@ -113,21 +118,21 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 
 <a id="admin-intro-tfs-2017-1" />
 
-Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 **TFS 2017.2**
 
-![VSTS, Admin context, team project level](_img/go-to-app/work-web-portal_admin-context-project-level-team-services.png)  
+![TFS 2017.2, Project Settings](_img/go-to-app/work-web-portal_admin-context-project-level-team-services.png)  
 
 **TFS 2017.1**  
 
-![TFS 2017.1, Web portal, Admin context, team project level](_img/go-to-app/work-web-portal_admin-context-project-level-tfs-2017-1.png)  
+![TFS 2017.1,Project Settings](_img/go-to-app/work-web-portal_admin-context-project-level-tfs-2017-1.png)  
  
 <a id="admin-intro-tfs-2017" /> 
 
 **TFS 2017**
 
-![TFS 2017, Web portal, admin context](_img/go-to-app/web-portal-admin-project-settings-new-nav.png)
+![TFS 2017, Project Settings](_img/go-to-app/web-portal-admin-project-settings-new-nav.png)
 
 ::: moniker-end
 
@@ -136,7 +141,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 <a id="collection-admin-context" /> 
 
 ::: moniker range="vsts"
-## Open Admin settings 
+## Open Admin or Organization settings 
 
 Account owners and members of the Project Collection Administators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
@@ -154,10 +159,10 @@ Account owners and members of the Project Collection Administators group configu
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_img/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Work** and **CI/CD** to select a page from the list. 
 
@@ -172,7 +177,7 @@ Account owners and members of the Project Collection Administators group configu
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Organization Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-organization-settings.png) 
@@ -189,5 +194,5 @@ Account owners and members of the Project Collection Administators group configu
 
 ## Related articles 
 
-- [Project Management](../../organizations/projects/index.md)
+- [Manage projects](../../organizations/projects/index.md)
 - [About team, project, and admin settings ](../../organizations/settings/about-settings.md)

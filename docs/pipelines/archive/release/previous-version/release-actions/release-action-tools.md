@@ -1,6 +1,6 @@
 ---
 title: Release Management deployment tools for Release Management
-description: Learn about the release Management tools to deploy an app in Release Management for VSTS and Team Foundation Server (TFS.
+description: Learn about the release Management tools to deploy an app in Release Management for Azure Pipelines and Team Foundation Server (TFS.
 ms.assetid: 0FD15EFD-35AA-4F56-9603-64D3302C0941
 ms.prod: devops
 ms.technology: devops-cicd
@@ -295,7 +295,7 @@ configuration variables of this tool are:
 | -InconclusiveFailsTests | N/A | No | When this flag is set, the existence of inconclusive tests will fail the deployment. By default, an inconclusive test will not fail the deployment. |
 | -RemoveIncludeParameter | N/A | No | When this flag is set, the /include parameter will not be appended to the test creation command. This means that any tests that have a status different than Active will not be included in the test run. |
 <p />
-If the automated tests are included in the same build process as the 
+If the automated tests are included in the same build pipeline as the 
 application being deployed, it is possible to use metadata as the variable 
 value and it will be automatically replaced at release time. The following is 
 the currently available metadata that can be used with configuration 

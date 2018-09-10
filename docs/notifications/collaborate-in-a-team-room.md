@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2013 <=tfs-2017'
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms are deprecated for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> **Feature availability:** Team Rooms are deprecated for Azure DevOps Servicesand Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in Azure DevOps Services and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 > 
-> Several good solutions are available that integrate well with VSTS and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/).
+> Several good solutions are available that integrate well with Azure DevOps Services and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](/microsoftteams/platform/).
 
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.    
 
@@ -37,9 +37,9 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [(Azure DevOps Services) ask your organization administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [(Azure DevOps Services) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list. 
 
@@ -53,7 +53,7 @@ Members of the Project Administrators groups can create and administer team room
 
 * Include a hyperlink to a work item: type `#`*Id*. For example: `@Jamal, can you take a look at bugs #564, #588, and #592?`
 
-* Open a linked object, such as a work item, changeset, build pipeline, and more. 
+* Open a linked object, such as a work item, changeset, build definition, and more. 
 
 * Add an emoticon: choose: ![Emoticon image selection](_img/ALM_CT_SmileIcon.png). 
 
@@ -63,17 +63,17 @@ Members of the Project Administrators groups can create and administer team room
 
 <a id="addmembers"></a> 
 ## Add members
-You can invite others who have access to the account or project to participate in your team room. 
+You can invite others who have access to the organization or project to participate in your team room. 
 
 1. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). 
 
 2. Open **Manage Members**.
 	
-	![Click manage users to add accounts to a team room](_img/ALM_CT_ManageMembers.png) 
+	![Click manage users to add organizations to a team room](_img/ALM_CT_ManageMembers.png) 
 	
 	Only team administrators can see the links for manage users and manage events.
 
-3. Add a user account or group.
+3. Add a user organization or group.
 	
 	![Add menu on the Manage Members dialog](_img/ALM_CT_AddMembers.png) 
 
@@ -97,7 +97,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 	
 | Event category | Event  |  
 | ---- | ------ |  
-| Build completions | Anytime a build completes for a specified build pipeline    |  
+| Build completions | Anytime a build completes for a specified build definition    |  
 | Code changes | Anytime code is pushed or checked in from a specified repo or branch   |  
 | Work item updates | Anytime a work item is added or modified in or under a specified area path   |  
 | Code reviews| Anytime a code review is created in or under a specified area path  |  
@@ -116,7 +116,7 @@ Adding other rooms provides areas for ad hoc discussions, cross-team interaction
 2. Add members to the room as described earlier in this topic.
 
 ##Related articles
-A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage team assets](../organizations/settings/configure-team-settings.md).  
+A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Configure team settings](../organizations/settings/configure-team-settings.md).  
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
@@ -133,7 +133,7 @@ You can grant permissions to users to administer a team room.
 
 	![Open team room permissions](_img/open-security-team-room.png)  
 
-2. Add an account, set the permissions for Administer to **Allow**, and save the changes.   
+2. Add an organization, set the permissions for Administer to **Allow**, and save the changes.   
 
 	![Add menu on Permissions page for a team room](../organizations/settings/_img/add-team/team-admin-dialog.png) 
 
@@ -141,7 +141,7 @@ You can grant permissions to users to administer a team room.
 <a id="team-room-event-permissions">  </a>
 ### Permissions to open team room events
                
-Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build pipelines, or source code that have alerts enabled in the team room. 
+Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room. 
 
 
 ### Ways other teams use team rooms 

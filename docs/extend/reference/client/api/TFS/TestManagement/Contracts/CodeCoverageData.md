@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CodeCoverageData API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CodeCoverageData API | Extensions for Azure DevOps Services
 description: Represents the build configuration (platform, flavor) and coverage data for the build
 ms.assetid: c3b58257-ba88-89df-4a81-285219d8be16
 ms.prod: devops

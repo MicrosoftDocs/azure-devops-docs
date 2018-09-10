@@ -1,8 +1,8 @@
 ---
 title: Expedite work with swimlanes
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services & Team Foundation Server 
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Expedite work with swimlanes
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
@@ -97,7 +97,7 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"		
 ### Tracking lane moves  
 
-<!---**VSTS and TFS 2015.1 and later versions**-->
+<!---**Azure Boards and TFS 2015.1 and later versions**-->
 You can track Kanban board swimlane moves using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md
 
 
 ###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
+To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 
 
 

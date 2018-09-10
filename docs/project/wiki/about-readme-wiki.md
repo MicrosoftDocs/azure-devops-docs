@@ -1,7 +1,7 @@
 ---
 title: Search Wiki content defined in your team project
-titleSuffix: VSTS & TFS
-description: Share information using a project or repo README or Wiki in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS
+description: Share information using a project or repo README or Wiki in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 ::: moniker range=">= tfs-2018"
-# About READMes and Wikis
+# About Wikis and READMes
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
@@ -129,11 +129,11 @@ The following features are supported for the team project wiki.
 - [Search Wiki content](search-wiki.md)  
 - [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
 - [Clone and update wiki content offline](wiki-update-offline.md)   
-- [Filter or print Wiki content](filter-print-wiki.md) <sup>1</sup> 
 - [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)   
+- [Filter or print Wiki content](filter-print-wiki.md) <sup>1</sup>  
 
-	*Note:*
-	1. The print feature may not be available from the Firefox web browser. 
+**Note:**
+1. The print feature may not be available from the Firefox web browser. 
 
 **Format wiki content**
 - [Markdown format](markdown-guidance.md)  
@@ -142,6 +142,7 @@ The following features are supported for the team project wiki.
 - [Link to work items using #](markdown-guidance.md#link-work-items)     
 - [Attach files](markdown-guidance.md#attach)  
 - [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)  
+- [Table of contents (TOC) for Wiki pages](markdown-guidance.md#toc-wiki)  
 
 ::: moniker-end
 

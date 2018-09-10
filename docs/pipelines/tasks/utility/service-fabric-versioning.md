@@ -1,6 +1,6 @@
 ---
 title: Update Service Fabric App Versions task
-description: Learn all about how you can update the Service Fabric App Versions build task VSTS and Team Foundation Server (TFS). 
+description: Learn all about how you can update the Service Fabric App Versions build task Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

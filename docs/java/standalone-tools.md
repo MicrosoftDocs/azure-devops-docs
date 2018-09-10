@@ -1,6 +1,6 @@
 ---
-title: Use standalone static analysis with VSTS and TFS
-description: Learn how to use PMD, Checkstyle, and FindBugs with VSTS and TFS for Java development
+title: Use standalone static analysis with Azure DevOps Services and TFS
+description: Learn how to use PMD, Checkstyle, and FindBugs with Azure DevOps Services and TFS for Java development
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,13 +13,13 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Use PMD, Checkstyle, and FindBugs with VSTS and TFS for Java development
+# Use PMD, Checkstyle, and FindBugs with Azure DevOps Services and TFS for Java development
 
-Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.net/), and [FindBugs](http://findbugs.sourceforge.net/) standalone static analysis during a Maven or Gradle build using TFS 2017+ or VSTS. 
+Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.net/), and [FindBugs](http://findbugs.sourceforge.net/) standalone static analysis during a Maven or Gradle build using TFS 2017+ or Azure DevOps Services. 
 
 ## Enabling analysis
 
-To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/maven) or [Gradle build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/gradle).
+To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](/azure/devops/pipelines/tasks/build/maven) or [Gradle build task](/azure/devops/pipelines/tasks/build/gradle).
 
 > [!div class="mx-imgBorder"]
 ![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)
@@ -36,7 +36,7 @@ Detailed issue logs are available under the build artifact tab of the build summ
 > [!div class="mx-imgBorder"]
 ![Build summary details for artifacts](_img/details-in-artifacts.png)
 
-PDM, CheckStyle and FindBugs support for Maven and Gradle is currently available in VSTS  or TFS 2017 Update 1 or later.
+PDM, CheckStyle and FindBugs support for Maven and Gradle is currently available in Azure DevOps Services  or TFS 2017 Update 1 or later.
 
 ## Next Steps
 

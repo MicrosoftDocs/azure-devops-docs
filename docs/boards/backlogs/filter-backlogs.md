@@ -1,6 +1,6 @@
 ---
 title: Filter backlogs and queries based on keywords, tabs, or other fields
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Filter your backlog or query based on keywords, tags, or other fields   
 ms.technology: devops-agile
 ms.prod: devops

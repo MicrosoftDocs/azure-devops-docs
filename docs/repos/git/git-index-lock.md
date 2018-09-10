@@ -1,5 +1,6 @@
 ---
-title: Git index.lock file | VSTS & TFS
+title: Git index.lock file
+titleSuffix: Azure Repos
 description: Learn more about the Git index.lock file in Visual Studio
 ms.assetid: d7f960e7-7132-4ee3-ba27-5bb5fd60e625
 ms.prod: devops
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 
 #  Git index.lock file
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ## What is a Git index.lock file?
 

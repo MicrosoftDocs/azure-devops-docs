@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts TeamFieldValuesPatch API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts TeamFieldValuesPatch API | Extensions for Azure DevOps Services
 description: Expected data from PATCH
 ms.assetid: aaa16b45-f7b8-02a0-a3b2-652dfeb1b446
 ms.prod: devops

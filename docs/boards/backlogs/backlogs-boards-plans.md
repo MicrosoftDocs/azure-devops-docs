@@ -1,7 +1,7 @@
 ---
 title: Backlogs, boards, & plans
-titleSuffix: VSTS & TFS
-description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
@@ -56,7 +56,7 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 ::: moniker-end
 
 
-You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
+You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
@@ -65,7 +65,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -103,7 +103,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Work>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Boards>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -113,9 +113,9 @@ To choose another team, open the project/team selector and select a different te
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-From your web browser, open your team's product backlog. Select **Work>Backlogs**. 
+From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
-![Work>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -336,11 +336,11 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 ## Related articles  
 
 ::: moniker range=">= tfs-2017"  
-Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](overview.md).
+Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
-Now that you understand how backlogs and boards work, [get started using them to plan and track your work](overview.md).
+Now that you understand how backlogs and boards work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 
 A few things to keep in mind...
@@ -379,11 +379,11 @@ These reasons can cause work items that belong to the Task Category to not appea
 
  <!---
 > [!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS.
+>Appearance of task and child items on the task board may differ depending on whether you work in Azure Boards and TFS.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
+>In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+>In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
 -->

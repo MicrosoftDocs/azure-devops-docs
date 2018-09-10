@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: TFVC Items | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with TFVC items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: TFVC Items | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with TFVC items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items/{path}?api-version={ve
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | path      | string  | Path to the file in TFVC. `$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml`
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

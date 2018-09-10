@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run automated tests with Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 ## Set up your test plan to use your build  
  
@@ -74,7 +73,7 @@ To run your automated tests, you must use a standard or an SCVMM environment. Yo
 You must create an environment that contains the roles in your test
 settings and then use this environment in your test plan. For more
 information about how to create your environment and roles and test settings, see
-[Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Use a lab environment for your devops](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="run-test"></a>
 ## Run the automated test using Microsoft Test Manager
@@ -137,8 +136,8 @@ To view and update the test results:
   
 ## See Also  
 
-* [Run automated tests from test plans in the Test hub](../run-automated-tests-from-test-hub.md)
-* [Test with unified agents and phases](../../pipelines/test/set-up-continuous-test-environments-builds.md)
+* [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
+* [Test with unified agents and jobs](../../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](../../pipelines/index.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

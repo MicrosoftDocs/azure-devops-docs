@@ -1,13 +1,12 @@
 ---
 title: Background to Capability Maturity Model Integration (CMMI)
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
-ms.author: kaelli  
-author: KathrynEE  
+ms.author: kaelli  author: KathrynEE  
 ms.manager: douge
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
@@ -15,7 +14,7 @@ ms.date: 01/20/2017
 
 # Background to CMMI
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The definitive guide to the Capability Maturity Model Integration (CMMI) for Development is published by the Software Engineering Institute as "CMMI: Guidelines for Process Integration and Product Improvement." This book specifically describes the CMMI for Development (CMMI-DEV) version 1.3, which is one of the models within the current CMMI product suite at the time of this writing. This model is extremely stable and should continue to be current well beyond 2010. You may also find "CMMI Distilled: A Practical Introduction to Integrated Process Improvement" to be a useful and accessible book about the topic.   
   
@@ -48,7 +47,7 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
  The second, the Continuous Representation, models process capability within each of the 22 process areas individually, allowing the organization to tailor their improvement efforts to the processes that offer the highest business value. This representation is more in line with Crosby's original model. Appraisals against this model result in profiles of capability rather than a single number. Of course, because the organizational maturity level is the level that most managers and executives understand, there are ways of mapping the results of a continuous model assessment into the five stages.  
   
- ![CMMI Continuous Representation](_img/cmmi_contrepresentation.png "CMMI_ContRepresentation")  
+ ![CMMI Continous Representation](_img/cmmi_contrepresentation.png "CMMI_ContRepresentation")  
   
  Using the staged model as a basis for a process improvement program can be dangerous because implementers may forget that the CMMI is not a process or workflow model but provides goals for process and workflow to achieve. Meeting those goals will improve the maturity of the organization and the likelihood that events unfold as planned. Perhaps the biggest failure mode is making achieving a level the goal and then creating processes and infrastructure simply to pass the appraisal. The goal of any process improvement activity should be measurable improvement, not a number.  
   

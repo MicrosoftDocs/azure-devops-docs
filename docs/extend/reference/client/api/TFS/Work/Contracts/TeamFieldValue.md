@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts TeamFieldValue API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts TeamFieldValue API | Extensions for Azure DevOps Services
 description: Represents a single TeamFieldValue
 ms.assetid: 5245558e-e3be-14d8-0d58-7c2826e0fd7e
 ms.prod: devops

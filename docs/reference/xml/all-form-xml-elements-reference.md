@@ -1,6 +1,6 @@
 ---
 title: All FORM XML elements reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

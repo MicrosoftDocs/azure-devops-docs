@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-marketplace
-title: Index for installing VSTS and Team Foundation Server extensions from the Visual Studio Marketplace
-description: Index of Visual Studio Marketplace information for VSTS and Team Foundation Server extensions.
+title: Index for installing Azure DevOps Services and Team Foundation Server extensions from the Visual Studio Marketplace
+description: Index of Visual Studio Marketplace information for Azure DevOps Services and Team Foundation Server extensions.
 ms.assetid: afd7c3b8-a09f-4a38-8207-bc84e678a39b
 ms.manager: douge
 ms.author: elbatk
@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2013'
 
 # Manage Extensions
 
-Extensions for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+Extensions for Azure DevOps Services and Team Foundation Server (TFS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ## 5-minute Quickstarts 
-* [Install VSTS extensions](install-vsts-extension.md)
+* [Install Azure DevOps Services extensions](install-vsts-extension.md)
 * [Get extensions for TFS](./get-tfs-extensions.md)
 * [Assign paid extensions to users](./assign-paid-extensions.md)
 
