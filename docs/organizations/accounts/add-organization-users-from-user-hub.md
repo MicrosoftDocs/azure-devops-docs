@@ -1,6 +1,6 @@
 ---
-title: Add organization users for Azure DevOps Services
-description: How to add users for an Azure DevOps Services organization or project
+title: Add organization users for Azure DevOps
+description: How to add users for an Azure DevOps organization or project
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
@@ -12,12 +12,12 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Add users to your Azure DevOps Services organization or project
+# Add users to your Azure DevOps organization or project
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add users to your Azure DevOps Services organization and specify the level of features they can use, such as Basic or Stakeholder.
-These kinds of users can join your Azure DevOps Services organization for free:
+Add users to your Azure DevOps organization and specify the level of features they can use, such as Basic or Stakeholder.
+These kinds of users can join your organization for free:
 
 * Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
 such as version control, tools for Agile, Java, build, release management, and more
@@ -31,13 +31,13 @@ who also get Basic features, and in some cases, additional features with specifi
 
 > [!NOTE]
 > You can add people to projects,
-> rather than to your organization. Azure DevOps Services automatically assigns them
+> rather than to your organization. Azure DevOps automatically assigns them
 > [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
 > if your organization has seats available,
 > or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
 > if not. Learn [how to add members to projects](add-team-members-vs.md).
 >
-> When people don't need access to your Azure DevOps Services organization anymore, [delete them](delete-organization-users.md) from your organization.
+> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
 
 ## How *access* differs from *permissions*
 
@@ -45,9 +45,9 @@ Access levels control which features are available to users - that is, the full 
 
 ## Prerequisites
 
-You need Azure DevOps Services project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You need Azure DevOps project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
-## Add users to your Azure DevOps Services organization
+## Add users to your organization
 
 Administrators can now add users to an organization, grant access to appropriate tooling extensions and service access level,
 and add users to groups all in one view. You can add up to 50 users at once. You can add more than 50 users by repeatedly
@@ -55,10 +55,10 @@ using this Users view. When you add users, each receives a notification email wi
 link to the organization page.
 
  > [!NOTE]
- > If you have an Azure Active Directory (Azure AD)-backed Azure DevOps Services organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md) to
+ > If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md) to
  > Azure AD. On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an
  > existing Microsoft account**. After you complete those steps, use the following steps to add the external Azure AD
- > user to Azure DevOps Services.
+ > user to Azure DevOps.
 
 To give other users access to your organization, add their email addresses.
 
@@ -66,11 +66,11 @@ To give other users access to your organization, add their email addresses.
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
  
 3. Select **Users** and then select **Add new users** to open the form.
 
@@ -84,14 +84,14 @@ To give other users access to your organization, add their email addresses.
    * **Users**: Enter the Microsoft account's email address for the user organization. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
    * **Access level**: Leave the access level at **Basic** for users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+   * **Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
 5. Select **Add** to complete your invitation.
 
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
 
 2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
 
@@ -109,7 +109,7 @@ To give other users access to your organization, add their email addresses.
    * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
    * **Access level**: Leave the access level at **Basic** for users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+   * **Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
 5. Select **Add** to complete your invitation.
 
@@ -134,6 +134,6 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-* [Delete users from Azure DevOps Services](delete-organization-users.md)
-* [Troubleshoot adding and deleting organization users in Azure DevOps Services](faq-add-delete-users.md)
-* [Troubleshoot adding members to projects in Azure DevOps Services](faq-add-team-members.md)
+* [Delete users from Azure DevOps](delete-organization-users.md)
+* [Troubleshoot adding and deleting organization users in Azure DevOps](faq-add-delete-users.md)
+* [Troubleshoot adding members to projects in Azure DevOps](faq-add-team-members.md)

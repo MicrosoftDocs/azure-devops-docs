@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Team Services is now Azure DevOps Services
-description: Visual Studio Team Services is now Azure DevOps Services. What's Azure DevOps?
+description: Visual Studio Team Services (VSTS) is now Azure DevOps Services
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -41,7 +41,7 @@ We will continue to post news about this transition on the [Microsoft DevOps blo
 
 ## Can I still use the old interface?
 
-You can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
+Yes. While Azure DevOps Services features [a redesigned navigation](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.msdn.microsoft.com%2Fdevops%2F2018%2F06%2F19%2Fnew-navigation%2F&data=02%7C01%7C%7Cdf018290c8a646863ded08d614f21833%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636719427348139788&sdata=5pJH93e4i2IYZqgBp48uHTKZDkG5iQnvhFt6fe3qTGE%3D&reserved=0), you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
 > [!div class="mx-imgBorder"]  
 > ![Open Preview Features](../project/navigation/_img/manage-features/choose-preview-features-vert.png)

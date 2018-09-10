@@ -74,12 +74,12 @@ and then enter your password.
 
 	![Create your profile](_img/set-up-vs/profile-organization-details.png)
 
-5.	Give your Azure DevOps Services organization a name, 
+5.	Give your organization a name, 
 and confirm its location. 
 
 	![Name your organization, confirm its location](_img/set-up-vs/profile-organization-details2.png)
 
-	[How can I create an Azure DevOps Services organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
+	[How can I create an organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
 
 6.	Create your first project to store your code, 
 work items, backlog, builds, tests, and other assets. 
@@ -102,15 +102,15 @@ or change them later in Visual Studio options.
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 
 
-8.	To view your new Azure DevOps Services organization, 
+8.	To view your new organization, 
 	sign in to ```https://dev.azure.com/{yourorganization}```. 
 
-    [Having browser problems with Azure DevOps Services?](faq-set-up-vs.md#browser-problems)
+    [Having browser problems with Azure DevOps?](faq-set-up-vs.md#browser-problems)
 
 ###	Next steps
 
 > [!div class="nextstepaction"]
-   > [Add users to your Azure DevOps Services organization](add-organization-users-from-user-hub.md)
+   > [Add users to your organization](add-organization-users-from-user-hub.md)
 
 ### Related articles
 

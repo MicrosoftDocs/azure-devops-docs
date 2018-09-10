@@ -25,8 +25,8 @@ You use Team Explorer to manage work that is assigned to you, your team, or your
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Additional options for connecting to Azure DevOps Services or TFS include:
 
 > - [Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
-> - [Azure DevOps Services Plugin for Android Studio](/../java/download-android-studio-plug-in.md)  
-> - [Azure DevOps Services Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
+> - [Azure DevOps Plugin for Android Studio](/../java/download-android-studio-plug-in.md)  
+> - [Azure DevOps Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
 > - [Visual Studio Code](/../java/vscode-extension.md)
 >For information about compatibility among client and server versions, see [Requirements and compatibility](/tfs/server/requirements).
 

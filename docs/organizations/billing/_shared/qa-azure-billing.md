@@ -23,7 +23,7 @@ You can't use these funds to pay for Visual Studio cloud subscriptions and non-M
 
 ### Q:	Can I use the Azure free account to buy from the Visual Studio Marketplace?
 
-A:	No. You can't use the [Azure free account](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases, which applies to Azure DevOps Services, Xamarin University, and so on. Instead, set up a separate Pay-As-You-Go Azure subscription, which you can do before or during your purchase. 
+A:	No. You can't use the [Azure free account](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases, which applies to Azure DevOps, Xamarin University, and so on. Instead, set up a separate Pay-As-You-Go Azure subscription, which you can do before or during your purchase. 
 
 ### Q:	Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
 

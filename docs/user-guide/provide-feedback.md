@@ -42,7 +42,7 @@ For technical support:
 
 For billing support:
 
-* [Azure DevOps Services](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) (from the Azure Support Portal)
+* [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) (from the Azure Support Portal)
 
 ## Documentation feedback
 

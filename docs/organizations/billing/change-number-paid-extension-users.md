@@ -1,6 +1,6 @@
 ---
-title: Change the number of paid users for an Azure DevOps Services extension
-description: Increase or decrease the number of paid users for an Azure DevOps Services feature or extension as your team grows or gets smaller
+title: Change the number of paid users for an Azure DevOps extension
+description: Increase or decrease the number of paid users for a feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for an Azure DevOps Services extension
+# Change the number of paid users for an Azure DevOps extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -27,7 +27,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Browse Marketplace**.
 
@@ -35,7 +35,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Browse Marketplace**.
 
@@ -73,4 +73,4 @@ The number of paid extension users is updated.
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

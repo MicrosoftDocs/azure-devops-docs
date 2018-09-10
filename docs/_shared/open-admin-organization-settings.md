@@ -3,15 +3,15 @@ ms.topic: include
 ---
 
 
-## Open Admin settings 
+## Open Organization settings 
 
-Admin settings configure resources for all projects or the entire organization. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](/azure/devops/organizations/settings/about-settings#admin).
+Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](/azure/devops/organizations/settings/about-settings#admin).
 
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
