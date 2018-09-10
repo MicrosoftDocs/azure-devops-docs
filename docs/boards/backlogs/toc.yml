@@ -64,7 +64,7 @@
   - name: "Create backlog items & tasks (Project)"
     href: office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
+    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: Share work plans
     href: ../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: Storyboard your ideas
