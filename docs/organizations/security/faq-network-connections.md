@@ -13,9 +13,9 @@ monikerRange: 'vsts'
 ---
 # Troubleshoot network connections and whitelist addresses
 
-**VSTS**
+**Azure DevOps**
 
-If you are having network connection issues to VSTS, using NuGet, or connecting from Visual Studio 2015 and 
+If you are having network connection issues to Azure DevOps, using NuGet, or connecting from Visual Studio 2015 and 
 later versions, it may be because your security appliances are blocking connections now that Visual Studio uses TLS 1.2.
 
 To fix this issue, update the security appliances in order to support TLS 1.2 for the following connections:
@@ -28,14 +28,14 @@ List of URLs for sign-in and licensing connections:
 * `https://graph.windows.net`
 * `https://app.vsspsext.visualstudio.com`
 
-A more general list of URLs for signing in to VSTS and Azure:
+A more general list of URLs for signing in to Azure DevOps and Azure:
 * *.windows.net
 * *.microsoftonline.com
 * *.visualstudio.com
 * *.microsoft.com
 * *.live.com
 * cdn.vsassets.io -- hosts our CDN content
-* *.gallerycdn.vsassets.io -- hosts VSTS extensions
+* *.gallerycdn.vsassets.io -- hosts Azure DevOps extensions
 * static2.sharepointonline.com -- hosts some resources that we use in "office fabric" UI kit (fonts, etc). 
 
 

@@ -1,5 +1,6 @@
 ---
 title: View file changes using annotate
+titleSuffix: Azure Repos
 description: View file changes using annotate
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # View file changes using annotate
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can annotate a file to learn who made changes and what changes they made in all earlier versions of the file.
 

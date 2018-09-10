@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Git Repositories | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git repositories programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Git Repositories | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with Git repositories programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: BCB55CB9-4E2B-4D8B-ABC8-A503254F2FE9
 ms.manager: douge
 ms.topic: article
@@ -29,14 +29,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories?
 | Parameter         | Type   | Notes
 |:------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project           | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### In your account
 
-Get all the repositories in your Visual Studio Team Services account, rather than a specific project.
+Get all the repositories in your VSTS organization, rather than a specific project.
 
 [!code-REST [GET__git_repositories_json](./_data/repositories/GET__git_repositories.json)]
 
@@ -50,7 +50,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID or name of the repository.
 | Query
@@ -94,7 +94,7 @@ Content-Type: application/json
 | Parameter    | Type   | Notes
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID in the body.*
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -122,7 +122,7 @@ Content-Type: application/json
 | Parameter      | Type   | Notes
 |:---------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID of the repository.
 | Query
@@ -145,7 +145,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositori
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID of the repository.
 | Query

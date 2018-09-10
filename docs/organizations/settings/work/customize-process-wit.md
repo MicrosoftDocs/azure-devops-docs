@@ -1,6 +1,6 @@
 ---
 title: Customize a work item type for an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a work item type for a project 
 ms.technology: devops-agile
 ms.prod: devops
@@ -34,7 +34,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 0. From the **Work Item Types** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
@@ -112,7 +112,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
  
 ### WIT extensibility
 
-To work with WITs programmatically, see [Work Item Types REST API](https://docs.microsoft.com/rest/api/vsts/processdefinitions/work%20item%20types). 
+To work with WITs programmatically, see [Work Item Types REST API](/rest/api/vsts/processdefinitions/work%20item%20types). 
 
 
 ## Related articles  

@@ -25,7 +25,7 @@ The Editor provides extension points that you can extend as Managed Extensibilit
 * Options
 * IntelliSense
 
-To learn more about each point category, see [Editor Extension Points](https://docs.microsoft.com/en-us/visualstudio/extensibility/language-service-and-editor-extension-points). 
+To learn more about each point category, see [Editor Extension Points](/visualstudio/extensibility/language-service-and-editor-extension-points). 
 
 # See Also
 

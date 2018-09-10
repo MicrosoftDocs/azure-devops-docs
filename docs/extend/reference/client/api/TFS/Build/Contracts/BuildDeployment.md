@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDeployment API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildDeployment API | Extensions for Azure DevOps Services
 ms.assetid: 1effa397-e5db-0297-1c4e-5c47afcb02a5
 ms.prod: devops
 ms.technology: devops-ecosystem

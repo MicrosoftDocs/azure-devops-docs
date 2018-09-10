@@ -1,7 +1,7 @@
 ---
 title: Work across projects 
-titleSuffix: VSTS & TFS 
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
@@ -25,7 +25,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
-- **Projects**: Team projects and teams within the projects that you work in  
+- **Projects**: Projects defined for an Azure DevOps organization  
 - **Work items**: Work items assigned to you
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
 - **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
@@ -98,7 +98,10 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 # [Previous navigation](#tab/previous-nav)
 
-Choose the ![](../../_img/icons/Project-icon.png) VSTS icon to open **Projects**. 
+Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
 
 ::: moniker range="vsts"
 Choose **My work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all projects that you work in.
@@ -241,9 +244,7 @@ To remove an item from your favorites list, choose the favorited icon.
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item.
 
-
 ---
-
 
 
 ::: moniker range="tfs-2017"
@@ -256,7 +257,7 @@ To open a team room, choose **Projects>Rooms**. You'll see all the team rooms de
 To learn more about team rooms, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).
 
 > [!NOTE]  
-> Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
+> Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
  
 ::: moniker-end
 
@@ -265,29 +266,5 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 - [Enable preview features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
-- [View and update work items via the mobile browser](mobile-work.md)  
+  
 
-<!---
-
-
-::: moniker range="vsts"
-
-To access these pages, sign in to your VSTS organization and choose the ![](../../_img/icons/project-icon.png) VSTS icon. The URL follows this pattern: 
-<b>https://<i>AccountName</i>.visualstudio.com/_projects</b>
-
-You'll see something similar to the following welcome page.
-
-
-> [!div class="mx-imgBorder"]  
-![Account home welcome page](_img/projects-page/account-home-welcome.png) 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-To access these pages, sign in to your TFS server and choose the ![](../../_img/icons/project-icon.png) VSTS icon. The URL follows this pattern: 
-
-> [!div class="mx-imgBorder"]  
-> ![Account home welcome page](_img/org-hub-tfs/account-home-welcome.png)
-::: moniker-end
-
--->

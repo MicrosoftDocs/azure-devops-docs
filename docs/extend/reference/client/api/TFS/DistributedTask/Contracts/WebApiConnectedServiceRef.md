@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts WebApiConnectedServiceRef API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts WebApiConnectedServiceRef API | Extensions for Azure DevOps Services
 ms.assetid: d39dec56-a196-15bb-45e9-22587ed672a9
 ms.prod: devops
 ms.technology: devops-ecosystem

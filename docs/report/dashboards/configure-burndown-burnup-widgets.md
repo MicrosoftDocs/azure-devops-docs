@@ -1,7 +1,7 @@
 ---
-title: Configure Bundown/Burnup widgets
-titleSuffix: VSTS   
-description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Visual Studio Team Services
+title: Configure Burndown & Burnup widgets
+titleSuffix: Azure DevOps Services   
+description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
@@ -15,14 +15,14 @@ ms.date: 06/30/2018
 
 # Configure a Burndown or Burnup widget 
  
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 The Burndown and Burnup widgets provide the flexibility to create burndown or burnup charts for any type of scope, worked on by any number of teams, within any defined period of time. Burndown charts focus on remaining work within a specific time period, while Burnup charts focus on completed work. 
 
 <!---You can use the Burndown widget to create a Release Burndown, a Bug Burndown, or a burndown of a specific type of work.--> 
 
 > [!NOTE]   
-> **Feature availability:** The Burndown and Burnup widgets are available only for VSTS at this time. For on-premises TFS, you can add the [Sprint Burndown widget](../dashboards/widget-catalog.md#sprint-burndown-widget) to your dashboard. 
+> **Feature availability:** The Burndown and Burnup widgets are available only for Azure DevOps at this time. For on-premises TFS, you can add the [Sprint Burndown widget](../dashboards/widget-catalog.md#sprint-burndown-widget) to your dashboard. 
 
 Both burndown and burnup charts help answer the question: **Are we on track to complete this set of work by the end date?**
 

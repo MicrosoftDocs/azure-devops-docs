@@ -1,11 +1,11 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Collaboration
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+  - name: Settings
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
     items:
     - name: Notifications
-      tocHref: /vsts/notifications/
-      topicHref: /vsts/notifications/index
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/index

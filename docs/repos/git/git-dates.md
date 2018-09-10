@@ -1,5 +1,6 @@
 ---
-title: Dates in Git | VSTS & TFS
+title: Dates in Git
+titleSuffix: Azure Repos
 description: How dates work in Git
 ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
 ms.prod: devops
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2013'
 # How dates work in Git
 
 Git tracks two dates in commits: author date and commit date.
-In addition, VSTS and TFS track when a commit was first pushed to the server.
+In addition, Azure DevOps Services and TFS track when a commit was first pushed to the server.
 
 * **Author date**: when a commit was originally authored. Typically, when someone first ran `git commit`.
 * **Commit date**: when a commit was applied to the branch. In many cases it is the same as the author date. Sometimes it differs: if a commit was amended, rebased, or  applied by someone other than the author as part of a patch. In those cases, the date will be when the rebase happened or the patch was applied.

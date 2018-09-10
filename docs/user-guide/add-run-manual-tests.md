@@ -1,23 +1,24 @@
 ---
 title: Add, run, and update inline tests
-titleSuffix: VSTS 
-description: Add, run, and update manual test cases when working in Visual Studio Team Services  
+titleSuffix: Azure DevOps
+description: Add, run, and update manual test cases when working in Azure DevOps
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/01/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 09/10/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
 
-# Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md). 
+In this quickstart, you learn how to add, run, and update inline tests. A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
@@ -27,23 +28,27 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your VSTS organization and select the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
-	The URL follows this pattern: ```https://{organization name}.visualstudio.com/{project name}/_backlogs```  
+	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
-	If you don't see the team or project you want, choose the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Boards** to open the Kanban board.
 
+   ![Azure Boards](_img/azure-devops-boards-board.png)
+
 # [Previous navigation](#tab/prev-nav)
 
-1. From your web browser, open the team project for your VSTS organization and choose the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
-	The URL follows this pattern: ```https://{organization name}.visualstudio.com/{project name}/_backlogs```  
+	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 
-	If you don't see the team or project you want, choose the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Board** to open the Kanban board.
+
+    ![Azure DevOps backlogs board](_img/azure-devops-backlogs-board.png)
 
 ---
 
@@ -71,8 +76,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests. 
 
-> [!IMPORTANT]  
-> Prior to running the test, you must add details.  
+Prior to running the test, you must add details.  
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -98,8 +102,7 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests.
 
-> [!IMPORTANT]  
-> Prior to running the test, you must add details.
+Prior to running the test, you must add details.
 
 ---
 
@@ -129,7 +132,7 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu. 
 
-<img src="../boards/boards/_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 2px solid #C3C3C3;" /> 
+![Update status of tests](_img/test-update-status.png)
  
 Updating the status of tests enable you to [track test results](../test/track-test-status.md).
 
@@ -149,7 +152,7 @@ Updating the status of tests enable you to [track test results](../test/track-te
 
 Upon first opening the Kanban board, you'll see an un-expanded view of checklists and tests.
 
-   ![Inline tests collapsed](_img/open-board-collapsed-tests.png)
+   ![Inline tests collapsed](_img/azure-devops-boards-board.png)
 
 Simply select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list.
 

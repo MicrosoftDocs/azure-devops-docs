@@ -1,6 +1,7 @@
 ---
-title: Batch script | VSTS or Team Foundation Server
-description: Learn all about how you can execute .bat or .cmd scripts when building your code in VSTS and Team Foundation Server (TFS).
+title: Batch script
+titleSuffix: Azure Pipelines & TFS
+description: Learn all about how you can execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
+![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the stage.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -50,7 +51,7 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../bu
 <tr>
 <tr>
 <td>Modify environment</td>
-<td>Select this check box if you want environment variable modifications in the script to affect subsequent tasks.</td>
+<td>Select this check box if you want stage variable modifications in the script to affect subsequent tasks.</td>
 </tr>
 <th style="text-align: center" colspan="2">Advanced</th>
 </tr>

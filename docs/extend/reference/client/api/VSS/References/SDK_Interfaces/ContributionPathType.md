@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ContributionPathType API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ContributionPathType API | Extensions for Azure DevOps Services
 description: Type of the contribution path
 ms.assetid: 045e39d0-51a6-ca06-fe48-9414dfb9242b
 ms.prod: devops

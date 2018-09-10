@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts TimelineRecordState API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts TimelineRecordState API | Extensions for Azure DevOps Services
 ms.assetid: 4d6b435d-66d3-8dbb-ad86-114a436c84be
 ms.prod: devops
 ms.technology: devops-ecosystem

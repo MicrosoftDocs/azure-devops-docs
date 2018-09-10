@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DefinitionType API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts DefinitionType API | Extensions for Azure DevOps Services
 ms.assetid: 3b938c73-2d2f-4ef8-c091-43f5e88657b8
 ms.prod: devops
 ms.technology: devops-ecosystem

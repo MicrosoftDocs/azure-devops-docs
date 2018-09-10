@@ -1,0 +1,41 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="DevOpsIconTestPlans96">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="94" height="96">
+<path id="Mask" d="M26.8538 2C26.8538 0.894531 27.7559 0 28.8685 0H65.1316C66.2442 0 67.1462 0.894531 67.1462 2V6C67.1462 7.10547 66.2442 8 65.1316 8H63.117V27.7109L92.3624 78C97.0151 86 91.1994 96 81.8944 96H12.1057C2.80063 96 -3.01501 86 1.63741 78L30.8831 27.7109V8H28.8685C27.7559 8 26.8538 7.10547 26.8538 6V2Z" transform="translate(1)" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="Beaker">
+<path id="Polygon" d="M36.5317 6C41.1843 -2 52.8157 -2 57.4683 6L92.3625 66C97.0151 74 91.1993 84 81.8942 84H12.1058C2.80062 84 -3.01508 74 1.63748 66L36.5317 6Z" transform="translate(1 12)" fill="#854CC7"/>
+<path id="Vector" d="M32.2339 20V0H0V20H32.2339Z" transform="translate(31.8831 8)" fill="url(#paint0_linear)"/>
+<path id="Rectangle 2.1" d="M0 2.0073C0 0.898697 0.898697 0 2.0073 0H38.2851C39.3937 0 40.2924 0.898697 40.2924 2.0073V5.9927C40.2924 7.1013 39.3937 8 38.2851 8H2.0073C0.898699 8 0 7.1013 0 5.9927V2.0073Z" transform="translate(27.8538)" fill="#A676DF"/>
+<path id="Vector 2 (Stroke).1" fill-rule="evenodd" clip-rule="evenodd" d="M32.2339 8H0V0H32.2339V8Z" transform="translate(31.8831)" fill="#854CC7"/>
+</g>
+<path id="Liquid" fill-rule="evenodd" clip-rule="evenodd" d="M86.5468 0L92.3625 10C97.0151 18 91.1994 28 81.8942 28H12.1058C2.80061 28 -3.01506 18 1.63746 10L7.4532 0H86.5468Z" transform="translate(0.999756 68)" fill="#5F1FAA"/>
+<g id="Union" opacity="0.5" filter="url(#filter0_f)">
+<path d="M31.698 19.8945C36.5605 19.1836 40.2929 15.0234 40.2929 10C40.2929 4.47656 35.7831 0 30.2198 0C25.1586 0 20.9696 3.70312 20.2544 8.53125C18.934 8.18359 17.5473 8 16.117 8C7.21569 8 0 15.1641 0 24C0 32.8359 7.21569 40 16.117 40C25.0182 40 32.2339 32.8359 32.2339 24C32.2339 22.582 32.0477 21.207 31.698 19.8945Z" transform="translate(23.8239 44)" fill="#4D008A"/>
+</g>
+<g id="Bubbles">
+<path id="Vector_2" d="M10.0731 20C15.6363 20 20.1462 15.5228 20.1462 10C20.1462 4.47715 15.6363 0 10.0731 0C4.50988 0 0 4.47715 0 10C0 15.5228 4.50988 20 10.0731 20Z" transform="translate(43.9705 44)" fill="#B68CE6"/>
+<path id="Vector_3" d="M20.1462 40C31.2726 40 40.2924 31.0457 40.2924 20C40.2924 8.9543 31.2726 0 20.1462 0C9.01976 0 0 8.9543 0 20C0 31.0457 9.01976 40 20.1462 40Z" transform="translate(23.8239 52) scale(0.8)" fill="#C9A4F3"/>
+<path id="Intersect" d="M32.2339 0C32.2339 8.83691 25.0181 16 16.1169 16C7.21582 16 0 8.83691 0 0H32.2339Z" transform="translate(23.8239 68)" fill="#9B60DB"/>
+<path id="Intersect_2" fill-rule="evenodd" clip-rule="evenodd" d="M11.5514 11.3613C11.0689 11.4316 10.5753 11.4678 10.0731 11.4678C4.50989 11.4678 0 6.99023 0 1.46777C0 0.96875 0.0368042 0.479492 0.107788 0C5.68402 1.46582 10.0748 5.82519 11.5514 11.3613Z" transform="translate(43.9705 52.5322)" fill="#E3CCFE"/>
+</g>
+<path id="Overlay gradient" opacity="0.25" d="M26.8538 2C26.8538 0.895386 27.7559 0 28.8684 0H65.1316C66.2441 0 67.1462 0.895386 67.1462 2V6C67.1462 7.10461 66.2441 8 65.1316 8H63.117V27.7131L92.3624 78C97.0153 86 91.1992 96 81.8943 96H12.1057C2.80084 96 -3.01529 86 1.63761 78L30.883 27.7131V8H28.8684C27.7559 8 26.8538 7.10461 26.8538 6V2Z" transform="translate(1)" fill="url(#paint1_linear)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-8.29289" y="11.8833" width="104.526" height="104.233" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="16.0584" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.01437 7.99976) scale(16.117 8) rotate(-89.9991)">
+<stop stop-color="#7B3FC0"/>
+<stop offset="1" stop-color="#6724B4"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(94) scale(94 96) rotate(90)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

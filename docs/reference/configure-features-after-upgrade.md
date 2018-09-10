@@ -15,7 +15,7 @@ ms.date: 03/16/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT] 
->**Feature availability**: This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).  
+>**Feature availability**: This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index).  
 
 After a TFS upgrade, you'll want to use the new features that were installed. Some of these features might require updates to your project. The Configure Features wizard is the easiest way to make this happen. 
 

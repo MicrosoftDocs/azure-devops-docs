@@ -1,6 +1,6 @@
 ---
 title: .NET Core
-description: Building .NET Core projects using VSTS and TFS
+description: Building .NET Core projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 06/14/2018
+ms.date: 08/15/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -29,33 +29,22 @@ This guidance explains how to build .NET Core projects.
 
 ::: moniker-end
 
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-
-::: moniker-end
-
-<br/>
-
->[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
-
 ## Example
 
-This example shows how to build a .NET Core project. To start, import (into VSTS or TFS) or fork (into GitHub) this repo:
+This example shows how to build a .NET Core project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-The sample code includes a `.vsts-ci.yml` file at the root of the repository.
-You can use this file to build the app. 
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository.
+You can use this file to build the app.
+
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a pipeline for the sample app.
 
 ::: moniker-end
 
@@ -69,41 +58,37 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="< vsts"
 > [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free VSTS account. Then [try this with VSTS](#example?view=vsts&tabs=designer).
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end
 
-* After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository. 
+* After you have the sample code in your own repository, create a pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
-* Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
-  * **Projects to test:** `**/*[Tt]ests/*.csproj`
-
-* Save the pipeline and queue a build to see it in action. 
+* Save the pipeline and queue a build to see it in action.
 
 ---
 
-Read through the rest of this topic to learn some of the common ways to customize your .NET Core build process.
+Read through the rest of this topic to learn some of the common ways to customize your .NET Core pipeline.
 
 ## Build environment
 
 ::: moniker range="vsts"
 
-You can use VSTS to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own.
-The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have several released versions of the .NET Core SDKs preinstalled.
-Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux Preview** agent queue, or the **Hosted macOS Preview** queue.
-
+You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own.
+The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
 # [YAML](#tab/yaml)
 
-Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
+Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
+pool:
+  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
 ```
 
 # [Designer](#tab/designer)
 
-To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Linux Preview** agent pool, or the **Hosted macOS Preview** pool.
+To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
 
 ---
 
@@ -112,7 +97,7 @@ They also don't typically include prerelease versions. If you need these kinds o
 
 # [YAML](#tab/yaml)
 
-If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, add the following snippet to your `.vsts-ci.yml` file:
+If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: DotNetCoreInstaller@0
@@ -124,7 +109,7 @@ If you need a version of the .NET Core SDK that is not already installed on the 
 
 If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent:
 
-1. In the build pipeline, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
+1. In the pipeline, select **Tasks**, choose the job that runs your build tasks, and then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core Tool Installer** task.
 
@@ -151,11 +136,11 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running
 the `dotnet restore` command either through the
-[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your build pipeline.
+[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your pipeline.
 
 ::: moniker range=">= tfs-2018"
 
-You can download NuGet packages from VSTS Package Management, NuGet.org, or some other external or internal NuGet repository.
+You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository.
 The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
 
 ::: moniker-end
@@ -171,7 +156,7 @@ If you also have a .NET Framework project in your solution or use `package.json`
 
 ::: moniker range="< tfs-2018"
 
-In .NET Core SDK version 2.0 and newer, packages are restored automatically when running other commands such as `dotnet build`. 
+In .NET Core SDK version 2.0 and newer, packages are restored automatically when running other commands such as `dotnet build`.
 
 ::: moniker-end
 
@@ -185,9 +170,9 @@ However, you might still need to use the **.NET Core** task to restore packages 
 ::: moniker range=">= tfs-2018"
 
 If your builds occasionally fail when restoring packages from NuGet.org due to connection issues,
-you can use VSTS Package Management in conjunction with [upstream sources](../../package/concepts/upstream-sources.md),
-and cache the packages in VSTS. The credentials of the build pipeline are automatically used when connecting
-to VSTS Package Management. These credentials are typically derived from the **Project Collection Build Service**
+you can use Azure Artifacts in conjunction with [upstream sources](../../artifacts/concepts/upstream-sources.md),
+and cache the packages. The credentials of the pipeline are automatically used when connecting
+to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service**
 account.
 
 If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository.
@@ -198,7 +183,7 @@ If your feed is authenticated, manage its credentials by creating a NuGet servic
 ::: moniker range="vsts"
 
 If you're using Microsoft-hosted agents, you get a new machine every time your run a build - which means restoring the packages every time.
-This can take a significant amount of time. To mitigate this you can either use VSTS Package Management or a self-hosted agent, in which case
+This can take a significant amount of time. To mitigate this you can either use Azure Artifacts or a self-hosted agent, in which case
 you'll get the benefit of using the package cache.
 
 ::: moniker-end
@@ -218,7 +203,7 @@ Or, to restore packages from a custom feed, use the **.NET Core** task:
 - task: DotNetCoreCLI@2
   inputs:
     command: restore
-    projects: "**/*.csproj"
+    projects: '**/*.csproj'
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
     externalFeedCredentials: <Name of the NuGet service connection>
@@ -233,7 +218,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -249,19 +234,19 @@ YAML builds are not yet available on TFS.
 
 ## Build your project
 
-You build your .NET Core project by running `dotnet build` command in your build process.
+You build your .NET Core project by running `dotnet build` command in your pipeline.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-To build your project using .NET Core task, add the following snippet to your `.vsts-ci.yml` file:
+To build your project using .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - script: dotnet build # Include additional options such as --configuration to meet your need
 ```
 
-You can run any `dotnet` command in your build process. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
+You can run any `dotnet` command in your pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
 
 ```yaml
 - script: dotnet tool install -g dotnetsay
@@ -280,7 +265,7 @@ YAML builds are not yet available on TFS.
 
 ### Build
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -306,21 +291,21 @@ To install a .NET Core global tool such as [dotnetsay](https://www.nuget.org/pac
 ## Run your tests
 
 Use the **.NET Core** task to run unit tests in your .NET Core solution using testing frameworks such as MSTest, xUnit, and NUnit.
-One benefit of using this built-in task (instead of a script) to run your tests is that the results of the tests are automatically published to VSTS or TFS.
-These results are then made available to you in the build summary.
+One benefit of using this built-in task (instead of a script) to run your tests is that the results of the tests are automatically published to the server.
+These results are then made available to you in the build summary and can be used for troubleshooting failed tests and test timing analysis.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-Add the following snippet to your `.vsts-ci.yml` file:
+Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: DotNetCoreCLI@2
   inputs:
     command: test
-    projects: **/*Tests/*.csproj
-    arguments: '--configuration $(BuildConfiguration)'
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
 ```
 
 An alternative is to run the `dotnet test` command with a specific logger, and then to use **Publish Test Results** task.
@@ -348,14 +333,77 @@ Use the **.NET Core** task with **Command** set to **test**.
 
 ---
 
-## Package and deliver your code
+## Collect code coverage 
 
-The output of the `dotnet build` command is generally not transferable.
-To prepare your code to run on another machine, you must package the code.
+If you are building on the Windows platform, code coverage metrics can be collected using the built-in coverage data collector. For this functionality the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
+If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The .coverage file can be downloaded from the build summary for viewing in Visual Studio.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
+
+Add the following snippet to your `azure-pipelines.yml` file:
+
+```yaml
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+```
+
+If you choose to run the `dotnet test` command, specify the test results logger and coverage options, and then use the [Publish Test Results](../tasks/test/publish-test-results.md) task.
+
+```yaml
+- script: dotnet test <test-project> --logger trx --collect "Code coverage"
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+1. Add .NET Core task to your build job and set the following properties:
+
+  * **Command:** test
+  * **Path to projects:** _Should refer to the test projects in your solution_
+  * **Arguments:** `--configuration $(BuildConfiguration) --collect "Code coverage"`
+
+2. Ensure that the **Publish test results** option remains selected.
+
+---
+
+> [!TIP]
+> If you are building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+> Code coverage results can be published to the server using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage formats.
+
+## Package and deliver your code
+
+Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package,
+or package the build output into a zip file to be deployed to a web application.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+### Publish artifacts to Azure Pipelines
+
+To simply publish the output of your build to Azure Pipelines, add the following to your `azure-pipelines.yml` file.
+
+```yaml
+- task: PublishBuildArtifacts@1
+```
+
+This will take all the files in `$(Build.ArtifactStagingDirectory)` and upload them as an artifact of your build. For this to work, you must have already published the output of your build to this directory using `dotnet publish --output $(Build.ArtifactStagingDirectory)` command. To copy additional files to this directory before publishing, see [Copy Files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
 
@@ -388,7 +436,7 @@ To create a .zip file archive that is ready for publishing to a web app, add the
     zipAfterPublish: True
 ```
 
-To publish this archive to a web app, see [Azure web app deployment](../targets/webapp.md).
+To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -398,6 +446,10 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 # [Designer](#tab/designer)
+
+### Publish artifacts to Azure Pipelines
+
+To simply publish the output of your build to Azure Pipelines of TFS, use the **Publish Artifacts** task.
 
 ### Publish to a NuGet feed
 
@@ -413,7 +465,7 @@ If you want to publish your code to a NuGet feed:
 
 1. Make sure you've selected the option to create a .zip file archive.
 
-1. To publish this archive to a web app, see [Azure web app deployment](../targets/webapp.md).
+1. To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 
 ---
 
@@ -424,32 +476,32 @@ You can build a Docker container image after you build your project. For more in
 <a name="troubleshooting"></a>
 ## Troubleshooting
 
-If you are able to build your project on your development machine, but are having trouble building it on VSTS or TFS, explore the following potential causes and corrective actions:
+If you are able to build your project on your development machine, but are having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
 
 ::: moniker range="vsts"
 * We don't install pre-release versions of .NET Core SDK on Microsoft-hosted agents. Once a new version of .NET Core SDK is released,
-  it can take a few weeks for us to roll it out to all the data centers that VSTS runs on. You don't have to wait for us to complete
+  it can take a few weeks for us to roll it out to all the data centers that Azure Pipelines runs on. You don't have to wait for us to complete
   this rollout. You can use the **.NET Core Tool Installer** (as explained in this guidance) to install the desired version of .NET Core SDK
   on Microsoft-hosted agents.
 ::: moniker-end
 
 * Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
-  You can include a command line script `dotnet --version` in your build pipeline to print the version of .NET Core SDK.
+  You can include a command line script `dotnet --version` in your pipeline to print the version of .NET Core SDK.
   Either use the **.NET Core Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
   or update your projects and development machine to the newer version of .NET Core SDK.
 
-* You may be using some logic in Visual Studio IDE that is not encoded in your build pipeline.
-  VSTS or TFS run each of the commands you specify in the tasks one after the other in a new process.
-  Look at the logs from the VSTS or TFS build to see the exact commands that ran as part of the build.
+* You may be using some logic in Visual Studio IDE that is not encoded in your pipeline.
+  Azure Pipelines or TFS run each of the commands you specify in the tasks one after the other in a new process.
+  Look at the logs from the Azure Pipelines or TFS build to see the exact commands that ran as part of the build.
   Repeat the same commands in the same order on your development machine to locate the problem.
 
 * If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects,
   you should also use the **NuGet** task to restore packages specified in `package.json` files.
   Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
 
-* If your builds fail intermittently while restoring packages, either Nuget.org is having issues or there are
-  networking problems between the Azure data center and Nuget.org. These are not under our control, and you may
-  need to explore whether using VSTS Package Management with Nuget.org as an upstream source improves the reliability
+* If your builds fail intermittently while restoring packages, either NuGet.org is having issues or there are
+  networking problems between the Azure data center and NuGet.org. These are not under our control, and you may
+  need to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability
   of your builds.
 
 * Occasionally, when we roll out an update to the hosted images with a new version of .NET Core SDK or Visual Studio,
@@ -459,9 +511,9 @@ If you are able to build your project on your development machine, but are havin
 
 ## Q&A
 
-### Where can I learn more about the VSTS and TFS Package Management service?
+### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in VSTS and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
 
 ### Where can I learn more about .NET Core commands?
 

@@ -1,5 +1,6 @@
 ---
 title: Administering Team Foundation Version Control
+titleSuffix: Azure Repos
 description: Administering Team Foundation Version Control
 ms.assetid: 0d96b6d2-f00a-4d28-98b9-83fe75cde284
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Administering Team Foundation Version Control
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Topics in this section describe how to complete common administrative version control tasks using Team Foundation.
 ## In This Section

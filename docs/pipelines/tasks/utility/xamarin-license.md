@@ -1,6 +1,7 @@
 ---
-title: Xamarin license | VSTS or Team Foundation Server
-description: Learn how you can activate or deactivate a Xamarin license when building code in VSTS and Team Foundation Server (TFS).
+title: Xamarin license
+titleSuffix: Azure Pipelines & TFS
+description: Learn how you can activate or deactivate a Xamarin license when building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

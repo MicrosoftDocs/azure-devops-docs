@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Developing extensions for VSTS vertical web navigation | VSTS
-description: Guidance for developing VSTS extensions that will be used in the new vertical web navigation
+title: Developing extensions for Azure DevOps Services vertical web navigation | Azure DevOps Services
+description: Guidance for developing Azure DevOps Services extensions that will be used in the new vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: douge
@@ -20,7 +20,7 @@ Our new vertical navigation preview brings with it changes that impact some exte
 
 In traditional horizontal navigation, a user could navigate into a project or team by selecting it from a picker located in the top left of the page header. This picker presented a list of recent teams and a way to browse for all teams. In the new vertical navigation, a user can only navigate into a project (and not into a team). This change was made to simplify the overall experience, but it introduces a challenge for web extensions that rely on users being able to switch teams using the traditional team picker in the page header.
 
-`VSS.getWebContext()` is a client-side API provided by the VSS SDK that provides information about the current account, project, and team the user is operating in:
+`VSS.getWebContext()` is a client-side API provided by the VSS SDK that provides information about the current organization, project, and team the user is operating in:
 
 ```json
 {

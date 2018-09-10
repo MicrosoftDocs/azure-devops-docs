@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Jan 7
 description: VSTS release notes for January 7 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: f0935abb-f6e4-4301-9d04-397b1c83b246
 ms.date: 06/01/2016

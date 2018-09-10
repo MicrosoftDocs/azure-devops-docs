@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts ServiceEndpoint API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts ServiceEndpoint API | Extensions for Azure DevOps Services
 description: Represents an endpoint which may be used by an orchestration job.
 ms.assetid: 38c251e5-9a98-d26d-2167-73b385234785
 ms.prod: devops
@@ -23,7 +23,7 @@ Module path: `TFS/DistributedTask/Contracts`
 
 * `authorization`: [EndpointAuthorization](../../../TFS/DistributedTask/Contracts/EndpointAuthorization.md). Gets or sets the authorization data for talking to the endpoint.
 
-* `createdBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). The Gets or sets Identity reference for the user who created the service connection
+* `createdBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). The Gets or sets Identity reference for the user who created the service endpoint
 
 * `data`: {[key: string]: string}. 
 

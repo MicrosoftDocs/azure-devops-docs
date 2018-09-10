@@ -1,7 +1,7 @@
 ---
 title: Add a time-in-state measure to a PowerBI report 
-titleSuffix: VSTS
-description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for VSTS 
+titleSuffix: Azure DevOps Services
+description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
@@ -47,7 +47,7 @@ This article provides a series of recipes using DAX calculations to evaluate tim
 
 To simplify quickly generating reports, we designed Analytics views to work with default aggregations in Power BI. To illustrate the difference between a default aggregation and a measure, we start with a simple work item count measure.
 
-1. Load the Power BI pbix file associated with your view in Power BI Desktop. For details, see [Connect to VSTS with Power BI Data Connector](data-connector-connect.md).
+1. Load the Power BI pbix file associated with your view in Power BI Desktop. For details, see [Connect with Power BI Data Connector](data-connector-connect.md).
 
 2. From the Modeling tab **Calculations** section of the ribbon, choose **New Measure**.
 
@@ -492,7 +492,7 @@ Additional information is provided in this section for the DAX functions used to
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md)

@@ -15,6 +15,7 @@
     #allowUpgrade: true 
     #simultaneousUpgrade: false # Optional
     #forceUpgrade: false # Optional
+    #verifyRoleInstanceStatus: false # Optional
     #diagnosticStorageAccountKeys: # Optional
     #newServiceCustomCertificates: # Optional
     #newServiceAdditionalArguments: # Optional

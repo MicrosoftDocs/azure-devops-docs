@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts XamlBuildDefinition API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts XamlBuildDefinition API | Extensions for Azure DevOps Services
 ms.assetid: f6cbd2c1-a6f0-0bb3-425f-8242bb8385f4
 ms.prod: devops
 ms.technology: devops-ecosystem

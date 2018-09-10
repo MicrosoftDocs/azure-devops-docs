@@ -1,5 +1,6 @@
 ---
-title: gitconfig files | Team Services, TFS, and Visual Studio
+title: gitconfig files
+titleSuffix: Azure Repos
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
 ms.prod: devops
@@ -8,12 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Git preferences and settings in Visual Studio
-#### VSTS | TFS 2018
+
+#### Azure Repos | TFS 2018
 
 Visual Studio allows you to configure and view common Git settings and preferences, such as your name and email address, your preferred diff and merge tools, and more. These preferences and settings can be viewed and configured in **Team Explorer** on either the **Global Settings** page (applies to all your repositories) or the **Repository Settings** page (applies to the current repository).
 
@@ -172,9 +174,6 @@ git config --global http.sslBackend [openssl|schannel]
 ```
 
 ---
-
-
-
 
 ### Ignore & attributes files
 

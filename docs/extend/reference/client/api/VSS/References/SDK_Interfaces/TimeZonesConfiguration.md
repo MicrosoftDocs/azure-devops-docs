@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces TimeZonesConfiguration API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces TimeZonesConfiguration API | Extensions for Azure DevOps Services
 ms.assetid: 20d40e63-0384-781d-60d0-0ac6aef3203c
 ms.prod: devops
 ms.technology: devops-ecosystem

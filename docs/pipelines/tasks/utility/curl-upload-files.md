@@ -1,6 +1,7 @@
 ---
-title: cURL Upload Files | VSTS or Team Foundation Server
-description: Learn all about how you can use cURL to upload files with supported protocols in VSTS and Team Foundation Server (TFS). 
+title: cURL Upload Files
+titleSuffix: Azure Pipelines & TFS
+description: Learn all about how you can use cURL to upload files with supported protocols in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -77,7 +78,7 @@ Arguments to pass to cURL.
 <td>Redirect Standard Error to Standard Out</td>
 <td>
 <p>In most cases you should leave this selected.</p>
-<p>Select if you want to add **--stderr -** as an argument to cURL. Otherwise, if you clear this check box, cURL will write its progress bar to stderr, which is interpreted by the build process as error output, which could cause the build to fail.</p>
+<p>Select if you want to add **--stderr -** as an argument to cURL. Otherwise, if you clear this check box, cURL will write its progress bar to stderr, which is interpreted by the build pipeline as error output, which could cause the build to fail.</p>
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

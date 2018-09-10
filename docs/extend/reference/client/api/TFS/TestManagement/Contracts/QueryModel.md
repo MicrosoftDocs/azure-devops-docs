@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts QueryModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts QueryModel API | Extensions for Azure DevOps Services
 ms.assetid: 542c4be1-3eb9-2841-591e-2197b410b36d
 ms.prod: devops
 ms.technology: devops-ecosystem

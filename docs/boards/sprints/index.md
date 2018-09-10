@@ -1,7 +1,7 @@
 ---
 title: Define and plan sprints and work with scrum tools
-titleSuffix: VSTS & TFS 
-description: Define sprints, update your taskboard, and implement scrum in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS 
+description: Define sprints, update your taskboard, and implement scrum in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -15,16 +15,16 @@ ms.date: 07/07/2018
 
 # Sprints (Scrum)
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/agile/what-is-scrum). 
+With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/learn/agile/what-is-scrum). 
 
 ## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
   
 - [Schedule sprints](define-sprints.md)
-- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)    
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)    
 
 ## Step-by-Step Tutorials
 
@@ -41,21 +41,21 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 ## Concepts 
 - [Scrum best practices](best-practices-scrum.md) 
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)  
-- [About areas and iterations](../../organizations/settings/about-areas-iterations.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)
-- [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)
-- [Share work plans](../queries/share-plans.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json) 
+- [About areas and iterations](../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
+- [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
+- [Share work plans](../queries/share-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json) 
 
 
 ## How-to Guides
 
-* [Filter backlogs & queries](../backlogs/filter-backlogs.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)
-* [Copy list of work items](../backlogs/copy-list.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)  
-* [Bulk add or modify (Web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)   
+* [Filter backlogs & queries](../backlogs/filter-backlogs.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
+* [Copy list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)  
+* [Bulk add or modify (Web)](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)   
 
 
 ## Reference   
-- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
 - [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md)
 
 
@@ -64,6 +64,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../boards/index.md)
 - [Work item queries](../queries/index.md)
 - [Work item customization](../../reference/index.md)
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
 

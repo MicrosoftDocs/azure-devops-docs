@@ -1,6 +1,7 @@
 ---
 title: Git and TFVC version control 
-description: Choosing which version control to use in VSTS
+titleSuffix: Azure Repos
+description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.prod: devops
 ms.technology: devops-code-tfvc
@@ -16,9 +17,9 @@ monikerRange: '>= tfs-2015'
 
 # Choosing the right version control for your project
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Whether your software project is large or small, using version control as soon as possible is a good idea. VSTS supports two types of version control: [Git](../../repos/git/gitquickstart.md)
+Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
@@ -33,9 +34,9 @@ You can use TFVC repos with Git in the same Project so it's easy to add TFVC lat
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. When you need to switch contexts, you can create a private local branch. You can quickly switch from one branch to another to pivot among different variations of your codebase. Later, you can merge, publish, or dispose of the branch. 
 
 >[!NOTE]
->Git in Visual Studio, VSTS, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
+>Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
  
-To learn more, see [Git and VSTS](../../repos/git/overview.md).
+To learn more, see [Git and Azure Repos](../../repos/git/overview.md).
 
 ### TFVC (centralized)
  
@@ -109,7 +110,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>File storage</td>
 <td>You can check in large binary files. You might also want to use [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) in combination or as an alternative.</td>
-<td>You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in VSTS.</td>
+<td>You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in Azure Repos.</td>
 </tr>
 <tr>
 <td>History</td>
@@ -150,8 +151,8 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>Server</td>
-<td>VSTS, TFS</td>
-<td>VSTS, TFS and Git third-party services</td>
+<td>Azure DevOps Services, TFS</td>
+<td>Azure DevOps Services, TFS and Git third-party services</td>
 </tr>
 <tr>
 <td>Alerts</td>

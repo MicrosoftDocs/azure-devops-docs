@@ -1,7 +1,7 @@
 ---
 title: Code review and feedback field reference
-titleSuffix: VSTS & TFS
-description: Definition of fields used to track code review and feedback requests and responses for Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Definition of fields used to track code review and feedback requests and responses for Azure Boards & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
@@ -13,10 +13,10 @@ ms.date: 01/20/2017
 
 # Code review and feedback field reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for VSTS and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
+You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for Azure Boards and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
   
 > [!NOTE]  
 >  If your TFS application server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](../../../reference/configure-features-after-upgrade.md)  

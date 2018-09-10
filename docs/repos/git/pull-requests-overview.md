@@ -1,6 +1,7 @@
 ---
-title: Pull requests | VSTS & TFS  
-description: Learn about pull requests in VSTS & TFS  
+title: Pull requests
+titleSuffix: Azure Repos  
+description: Learn about pull requests in Azure DevOps Services & TFS  
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
@@ -8,21 +9,20 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 04/19/2018
+ms.date: 09/10/2018
 layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Get feedback with pull requests
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Pull requests combine the review and merge of your code into a single collaborative process.
 Once you're done fixing a bug or new feature in a branch, create a new pull request.
 Add the members of the team to the pull request so they can review and vote on your changes.
 
-VSTS has a [rich pull request experience](pull-requests.md) that's easy to use and scales to your needs.
+Azure Repos has a [rich pull request experience](pull-requests.md) that's easy to use and scales to your needs.
 Use pull requests to review works in progress and get early feedback on changes.
 There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 
@@ -98,6 +98,25 @@ Sometimes a suggestion is good, but the changes are outside the scope of the pul
 Take these suggestions and create new work items and feature branches separate from the pull request to make those changes.
 
 <ul class="panelContent cardsFTitle">
+        <li>
+        <a href="pull-request-templates.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Provide reviewer guidance with pull request templates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <li>
         <a href="pull-requests.md#leave-comments">
         <div class="cardSize">
@@ -204,7 +223,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
 
 ## Extend pull request workflows with pull request status
 
-Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
+Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -250,7 +269,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">

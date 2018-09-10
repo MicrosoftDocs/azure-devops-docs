@@ -1,6 +1,6 @@
 ---
 title: Maven build and release task
-description: Maven build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Maven build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -57,8 +57,8 @@ The build agent must have the following capability:
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
 </tr>
 <tr>
-<td>Publish to VSTS/TFS </td>
-<td>Select this option to publish JUnit Test results produced by the Maven build to VSTS/TFS.</td>
+<td>Publish to Azure Pipelines/TFS </td>
+<td>Select this option to publish JUnit Test results produced by the Maven build to Azure Pipelines/TFS.</td>
 </tr>
 <tr>
 <td>Test Results Files</td>
@@ -96,7 +96,7 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 
 ## Example
 
-[Build and Deploy your Java application to an Azure web app](../../apps/java/build-maven.md)
+[Build and Deploy your Java application to an Azure Web App](../../apps/java/build-maven.md)
 
 
 ## Open source

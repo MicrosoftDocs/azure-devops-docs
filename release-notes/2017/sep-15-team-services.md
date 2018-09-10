@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 123 Update on September 15, 2017 with multi-phase builds and new Queries experience.
 ---
@@ -28,7 +28,7 @@ Some of the other key feature highlights include:
 ### New Queries experience
 
 > [!TIP]
-> To use this capability you must have the **New Queries Experience** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability you must have the **New Queries Experience** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile.
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 
@@ -136,7 +136,7 @@ You will observe similar behavior in all code navigation panes as well. For exam
 * Same page: `[text to display](#section-name)`
 * Another page: `[text to display](/page-name#section-name)`
 
-See the [documentation for Markdown syntax guidance](/vsts/reference/markdown-guidance#links) for more information.
+See the [documentation for Markdown syntax guidance](/azure/devops/reference/markdown-guidance#links) for more information.
 
 ### Move page in Wiki using keyboard
 
@@ -247,7 +247,7 @@ This capability is dependent on changes in the Visual Studio test platform and r
 
 Similarly, webtests can be run using the **Run Functional Test** task. This capability is dependent on changes in the Test Agent, that will be available with the Visual Studio 2017 Update 5.
 
-See the [Load test your app in the cloud using Visual Studio and VSTS quickstart](https://docs.microsoft.com/en-us/vsts/load-test/getting-started-with-performance-testing) as an example of how you can use this together with load testing.
+See the [Load test your app in the cloud using Visual Studio and VSTS quickstart](/azure/devops/load-test/getting-started-with-performance-testing) as an example of how you can use this together with load testing.
 
 ### Chart widget for test plans and test suites
 

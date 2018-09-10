@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts Operation API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts Operation API | Extensions for Azure DevOps Services
 ms.assetid: 4e1b2f22-5fa9-2b2d-f1b9-f22270477f6a
 ms.prod: devops
 ms.technology: devops-ecosystem

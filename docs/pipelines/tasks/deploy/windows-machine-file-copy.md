@@ -1,6 +1,6 @@
 ---
 description: Windows Machine File Copy build task
-title: Windows Machine File Copy task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
+title: Windows Machine File Copy task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 

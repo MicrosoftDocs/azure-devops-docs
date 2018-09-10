@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work item type (WIT) 
-titleSuffix: VSTS & TFS 
-description: Modify or add a work item type to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
@@ -170,8 +170,8 @@ Other related topics or resources:
 ### Required permissions
 
 - To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
-- (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
+- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
+- (Azure DevOps Services, Hosted XML)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
   
 To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
@@ -218,7 +218,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 ### Rename a WIT (On-premises XML) 
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise **witadmin renamewitd** only from an on-premises TFS. 
+> You can exercise **witadmin renamewitd** only from an on-premises TFS. 
 
 To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."
 

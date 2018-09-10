@@ -1,6 +1,6 @@
 ---
 title: Configure initial groups, teams, members, and permissions
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Configure the initial security settings for a project using the plug-in file for Groups and Permissions in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -272,7 +272,7 @@ The following table describes the permissions that you can assign to control acc
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)   
-- [Permission reference](/vsts/repos/tfvc/permission-command)
+- [Permission reference](/azure/devops/repos/tfvc/permission-command)
 - [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 - [tf permission Command](../../repos/tfvc/permission-command.md).  
   

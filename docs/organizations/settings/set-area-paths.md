@@ -1,7 +1,7 @@
 ---
 title: Define area paths for a project
-titleSuffix: VSTS & TFS
-description: Group work items based on team, product, or feature area by defining area paths for Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Group work items based on team, product, or feature area by defining area paths for Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
@@ -69,7 +69,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 1. From the web portal for the project, choose the ![](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, VSTS, Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
+	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
 
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 

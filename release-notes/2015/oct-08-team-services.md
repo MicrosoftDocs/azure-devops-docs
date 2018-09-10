@@ -2,7 +2,7 @@
 title: AAD Group Support – Oct 8
 description: VSTS release notes for October 8 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.manager: douge
 ms.date: 06/01/2016

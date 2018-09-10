@@ -1,34 +1,32 @@
 ---
-title: VSTS Features Timeline
+title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 8/3/2018
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
-description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
+description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
 
-# VSTS Features Timeline
+# Azure DevOps Features Timeline
 
 ## Features under development
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Azure DevOps Services, the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
 ### 2018 Q3
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|Work Item support for Markdown editing|Work|2019|
+|Cross organization linking for Work Items|Work|TBD|
 |GVFS - Performance improvements for status|Code|2019|
 |Git Pull Requests – Change target branch for an active pull request|Code|TBD|
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
-|Work Item support for Markdown editing|Work|2019|
-|Cross organization linking for Work Items|Work|TBD|
-|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
-|Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
@@ -40,7 +38,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for VSTS feeds across organizations with the same Azure Active Directory|Package|2019|
+|Package Management – Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
 |Package Management – Maven Upstream support|Package|TBD|
 |PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
@@ -48,12 +46,11 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Test Failures report for Build pipelines|Test|2019|
 |Analytics - Test Failures report for Release pipelines|Test|2019|
 |Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
 |[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
-|Connect your VSTS organizations to Azure Active Directory from within VSTS|Admin|N/A|
+|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
 |Notification feed|Notifications|2019|
@@ -62,18 +59,19 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|GVFS for Mac - Public Preview|Code|N/A|
+|Azure DevOps Server Support for Move work item to another team project / Change work item type|Work|2019|
 |A discussion-centric Work Item form|Work|TBD|
-|TFS Support for Move work item to another team project / Change work item type|Work|2019|
+|GVFS for Mac - Public Preview|Code|N/A|
 |Extensible Pool Providers|Build|TBD|
-|Upstreams sources for VSTS feeds across organizations in an enterprise|Package|TBD|
+|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Package|N/A|
+|Analytics - Available for Azure DevOps Server|Reporting|2019|
 |Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
-|Analytics - Available for TFS|Reporting|2019|
+|Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 
-The features timeline lists significant features delivered to VSTS and the corresponding version of TFS.
+The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
 Versions in the “Server” column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers). Versions in italics are planned for the future and subject to change.
 
 <table>
@@ -85,6 +83,33 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="15">[10 September 2018](2018/sep-10-azure-devops-launch.md)</td>
+            <td>Azure DevOps Services</td><td>*2019*</td>
+        </tr>
+        <tr><td>Add Azure Pipelines from the GitHub Marketplace</td><td>N/A</td></tr>
+        <tr><td>Build open source projects with Azure Pipelines for free</td><td>N/A</td></tr>
+        <tr><td>Configure builds using YAML</td><td>*2019*</td></tr>
+        <tr><td>Create YAML build pipelines using the new wizard</td><td>*2019*</td></tr>
+        <tr><td>Manage build pipelines using the new Builds page</td><td>*2019*</td></tr>
+        <tr><td>Rebuild GitHub pull request builds</td><td>*2019*</td></tr>
+        <tr><td>New build status badge URL</td><td>*2019*</td></tr>
+        <tr><td>Leverage even more tools on Microsoft-hosted Linux agents</td><td>N/A</td></tr>
+        <tr><td>Track GitHub commits and associated issues in releases</td><td>*2019*</td></tr>
+        <tr><td>Manage build and deployment completion emails better using improved formatting</td><td>*2019*</td></tr>
+        <tr><td>Follow the new unified Azure Pipelines terminology</td><td>*2019*</td></tr>
+        <tr><td>Leverage the latest extension categories</td><td>N/A</td></tr>
+        <tr><td>Switch existing organizations to use the new domain name URL</td><td>N/A</td></tr>
+        <tr><td>Add Stakeholder users to save on Azure Pipelines license costs</td><td>N/A</td></tr>
+        <tr>
+            <td rowspan="6">[21 August 2018](2018/aug-21-vsts.md)</td>
+            <td>Create table of contents for wiki pages</td><td>*2019*</td>
+        </tr>
+        <tr><td>Ease customization by migrating projects to the Inheritance process model</td><td>N/A</td></tr>
+        <tr><td>Chat about the latest status using the improved Microsoft Teams integration</td><td>2017.2</td></tr>
+        <tr><td>Standardize pull request descriptions using templates</td><td>*2019*</td></tr>
+        <tr><td>Perform additional testing using a pull request release trigger</td><td>*2019*</td></tr>
+        <tr><td>Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects</td><td>N/A</td></tr>
         <tr>
             <td rowspan="9">[3 August 2018](2018/aug-03-vsts.md)</td>
             <td>Surface metadata for wiki pages and code preview using YAML tags</td><td>*2019*</td>
@@ -215,7 +240,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Manage entity-specific security</td><td>*2018.2*</td></tr>
         <tr><td>Share deployment status using a badge</td><td>*2018.2*</td></tr>
         <tr><td>Deploy selectively based on the artifact triggering a release</td><td>*2018.2*</td></tr>
-        <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td>N/A</td></tr>
+        <tr><td>Leverage your existing subscription using an Azure AD-based alternate email account</td><td>N/A</td></tr>
         <tr>
             <td rowspan="20">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
@@ -237,7 +262,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Share your packages using a badge</td><td>*2018.2*</td></tr>
         <tr><td>Recycle and restore packages</td><td>*2018.2*</td></tr>
         <tr><td>Manage access and extensions for large numbers of users using groups</td><td>N/A</td></tr>
-        <tr><td>Reduced latency for AAD group membership changes</td><td>N/A</td></tr>
+        <tr><td>Reduced latency for Azure AD group membership changes</td><td>N/A</td></tr>
         <tr><td>Manage users with Graph REST APIs Public Preview</td><td>N/A</td></tr>
         <tr><td>Leave account</td><td>N/A</td></tr>
         <tr>
@@ -1033,7 +1058,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>AAD sign in address rename</td>
+            <td>Azure AD sign in address rename</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -1386,7 +1411,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>2017.2</td>
         </tr>
         <tr>
-            <td>Support for AAD conditional access</td>
+            <td>Support for Azure AD conditional access</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -1708,7 +1733,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td>Email support for AAD groups</td>
+            <td>Email support for Azure AD groups</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -2890,7 +2915,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 April 2015](https://visualstudio.microsoft.com/integrate/extensions/overview)</td>
+            <td>[29 April 2015](/azure/devops/integrate/)</td>
             <td>Extensions</td>
             <td>2015.2</td>
         </tr>
@@ -3816,6 +3841,6 @@ Versions in the “Server” column are linked to the appropriate download locat
 We would love to hear what you think about these features. Report any problems through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) or provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) if you have ideas on things you’d like to see us prioritize.
 
 > [!div class="mx-imgBorder"]
-![Feedback options](2017/_img/125_00.png)
+![Make a suggestion](_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).

@@ -1,7 +1,7 @@
 ---
 title: Use Agile tools to organize your backlog
-titleSuffix: VSTS & TFS  
-description:  Map backlog items to features, and features to epics in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure Boards and TFS  
+description:  Map backlog items to features, and features to epics in Azure Boards or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
@@ -61,7 +61,7 @@ From your web browser, open your product backlog from **Work**, **Backlogs** pag
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -99,7 +99,7 @@ From your web browser, open your product backlog from **Work**, **Backlogs** pag
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Work>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Boards>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -109,9 +109,9 @@ To choose another team, open the project/team selector and select a different te
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-From your web browser, open your team's product backlog. Select **Work>Backlogs**. 
+From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
-![Work>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ From your web browser, open your team's product backlog. Select **Work>Backlogs*
 0. To view Parents or a tree hierarchy, choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
+	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
 
 	The hierarchical view displays. From this view, you can reparent items by drag and drop, moving a child item to a new parent. 
 
@@ -175,7 +175,7 @@ If you've already created your backlog, and now you want to organize it, you can
 0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
+	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 

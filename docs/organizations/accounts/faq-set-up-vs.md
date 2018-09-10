@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot setting up Visual Studio with VSTS
+title: Troubleshoot setting up Visual Studio with Azure DevOps Services
 description: Having problems installing Visual Studio, signing in, creating an organization, or handling an expired subscription? Read these frequently asked questions and answers. 
 ms.prod: devops
 ms.technology: devops-accounts
@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
-# Troubleshoot setting up Visual Studio with VSTS
 
-**VSTS**
+# Troubleshoot setting up Visual Studio with Azure DevOps Services
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Visual Studio
 
@@ -36,7 +37,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create a Visual Studio Team Services (VSTS) organization. 
+you can also create an organization.
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
@@ -74,13 +75,13 @@ A:	Learn more about:
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
-## VSTS
+## Azure DevOps Services
 
 <a name="WhatIsVSO"></a>
 
-#### Q: How can I create a VSTS organization later?
+#### Q: How can I create an organization later?
 
-A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
+A:	Learn how to [sign up for Azure DevOps Services](create-organization-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 
@@ -92,7 +93,7 @@ A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
 
 <a name="change-location"></a>
 
-#### Q: Can I change my VSTS organization location?
+#### Q: Can I change my organization location?
 
 A:	Yes. For a better experience, 
 you can change your organization's location during sign-up
@@ -102,7 +103,7 @@ so that your organization is closest to most users.
 
 Your organization's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/regions) 
-where VSTS is available. 
+where Azure DevOps Services is available. 
 
 [!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
 

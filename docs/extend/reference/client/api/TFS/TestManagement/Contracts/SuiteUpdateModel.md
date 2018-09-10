@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts SuiteUpdateModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts SuiteUpdateModel API | Extensions for Azure DevOps Services
 ms.assetid: 03003214-866a-6220-339a-5eb66b597621
 ms.prod: devops
 ms.technology: devops-ecosystem

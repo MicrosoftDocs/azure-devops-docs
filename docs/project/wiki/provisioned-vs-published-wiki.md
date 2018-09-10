@@ -1,7 +1,7 @@
 ---
 title: Differences between provisioned and published wikis  
-titleSuffix: VSTS  
-description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository   in Visual Studio Team Services
+titleSuffix: Azure DevOps  
+description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps Services  
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -24,19 +24,19 @@ ms.date: 04/26/2018
 
 With publish code as wiki, you have two options for maintaining wiki content.  
 - The first option is to [provision a wiki for your team project](wiki-create-repo.md). This option supports one and only one wiki for the team project. 
-- The second option supports [publishing markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs. 
+- The second option supports [publishing markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs. This is available only if Azure Repos service is enabled.
 
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs. 
 
 > [!NOTE]  
-> The publish code as wiki feature is currently available on VSTS only. For TFS 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
+> The publish code as wiki feature is currently available on Azure DevOps Services . For TFS 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
 
 
 ## Wiki page menu options
 
-One of the first things you'll notice is that with a provisioned wiki, you add and edit pages directly within the **Wiki** hub. All content updates to a provisioned wiki occur within the **Wiki** hub. 
+One of the first things you'll notice is that with a provisioned wiki, you add and edit pages directly within the **Wiki**. All content updates to a provisioned wiki occur within the **Wiki**. 
 
- With a publish code as wiki, you add and edit pages from the **Code** hub. All content updates are made through the **Code** hub.   
+ With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**. 
 
 This is reflected in the menu options that are unavailable for the wiki pages as shown in the following illustrations. As you can see, several options aren't supported for the publish as code wiki pages. 
 
@@ -68,10 +68,10 @@ The following table summarizes those operations or features that may differ depe
 > |Operation |    Provisoned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
 > |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![](_img/checkmark.png) |
-> |[Add or edit pages from the **Wiki** hub](add-edit-wiki.md) |![](_img/checkmark.png) |  |
-> |[Add or edit pages from the **Code>Files** hub](publish-repo-to-wiki.md) |  |![](_img/checkmark.png)  |
-> |[Revert to an earlier revision from the **Wiki** hub](wiki-view-history.md#revert-provision) |![](_img/checkmark.png) |  |
-> |[Revert to an earlier revision from the **Code** hub](wiki-view-history.md#revert-publish) |  |![](_img/checkmark.png)  |
+> |[Add or edit pages from the **Wiki**](add-edit-wiki.md) |![](_img/checkmark.png) |  |
+> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |![](_img/checkmark.png)  |
+> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |![](_img/checkmark.png) |  |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |![](_img/checkmark.png)  |
 > |[Update content offline](wiki-update-offline.md) | ![](_img/checkmark.png) | ![](_img/checkmark.png) |
 > |[Maintain versioned wikis](#versioning) |  | ![](_img/checkmark.png) |
 > |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ![](_img/checkmark.png) |
@@ -100,7 +100,7 @@ To learn more about working with **.order** files, see  [Wiki Git repository fil
 <a id="revisions"></a>
 ## Page revisions and reverting to a previous version
 
-From the **Wiki** hub, you can view the revisions of any wiki page by choosing **Revisions** or selecting the **View revisions** menu option. 
+From the **Wiki**, you can view the revisions of any wiki page by choosing **Revisions** or selecting the **View revisions** menu option. 
 
 However, the revert process differs depending on the wiki page type.  
 

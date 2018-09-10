@@ -1,6 +1,6 @@
 ---
 title: Run the agent with a self-signed certificate
-description: Learn how to run the build and release agent with a self-signed certificate for VSTS and Team Foundation Server (TFS)
+description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,7 @@ ms.date: 01/25/2018
 monikerRange: '>= tfs-2017 < vsts'
 ---
 
-# Run the agent with self-signed certificate
+# Run the agent with a self-signed certificate
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 
@@ -53,7 +53,7 @@ The agent version 2.125.0 or above has the ability to ignore SSL server certific
 
 > [!IMPORTANT]
 > 
-> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store. 
+> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store.
 
 Pass `--sslskipcertvalidation` during agent configuration
 ```
@@ -66,7 +66,7 @@ Pass `--sslskipcertvalidation` during agent configuration
 > The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation. 
+We ship git.exe as part of windows agent, we use this git.exe for all Git related operation.
 When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
 There are 2 approach to solve the problem.
 
@@ -102,20 +102,20 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
   - Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key  
 
 - Install CA certificate(s) into machine certificate store
-  - Windows: Windows certificate store
   - Linux: OpenSSL certificate store
   - macOS: System or User Keychian
+  - Windows: Windows certificate store
 
 - Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.   
  ```
  .\config.cmd/sh --sslcacert ca.pem --sslclientcert clientcert.pem --sslclientcertkey clientcert-key-pass.pem --sslclientcertarchive clientcert-archive.pfx --sslclientcertpassword "mypassword"
  ```
 
- We store your client cert private key password securely on each platform.  
+ Your client certificate private key password is securely stored on each platform.  
  ```
- Windows: Windows Credential Store
- macOS: macOS Keychain
  Linux: Encrypted with a symmetric key based on the machine ID
+ macOS: macOS Keychain
+ Windows: Windows Credential Store
  ```
 
-Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more detail information about agent client certificate support.
+Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more information about agent client certificate support.

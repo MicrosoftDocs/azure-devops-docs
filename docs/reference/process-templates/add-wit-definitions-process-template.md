@@ -1,6 +1,6 @@
 ---
 title: Add type definitions for work items to a process template
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in for Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile

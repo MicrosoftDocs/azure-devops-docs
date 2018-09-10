@@ -1,7 +1,7 @@
 ---
 title: Set work tracking permissions 
-titleSuffix: VSTS & TFS 
-description: How to grant or restrict access to work tracking tasks for Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS 
+description: How to grant or restrict access to work tracking tasks for Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
@@ -17,15 +17,18 @@ ms.date: 08/06/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, team project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
+You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
+
+> [!NOTE]   
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 
 > [!div class="mx-tdBreakAll"]
 > | Role or permission level | Functional areas set  |
 > |-----------------------|-----------------------------------|
-> |**Team administrator role** | - Configure team settings<br/>- Define and edit team dashboards<br/>- Define and edit team-level work item templates<br/>- Add team members and team administrators|
+> |**Team administrator role** | - [Configure team settings](../settings/configure-team-settings.md)<br/>- [Define and edit team dashboards](../../report/dashboards/dashboards.md)<br/>- [Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Add team administrators](../settings/add-team-administrator.md)|
 > |**Object-level permissions** |- [Modify work items under an area path](#set-permissions-area-path)<br/>- [Create and edit nodes under an area path or iteration path](#set-permissions-area-path)<br/>- [Define and edit queries or query folders](#work-item-queries)<br/>- [Define and edit Delivery Plans](#plan-permissions) | 
-> |**Project-level permissions** |- Create work item tags<br/>- Delete and restore work items<br/>- [Move work items out of a team project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a team project (On-premises XML  or Hosted process models) | 
-> |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, VSTS only)<br/>- Delete field from account(Inheritance process model, VSTS only)<br/>- Manage process permissions (Inheritance process model, VSTS only)<br/>- Edit collection level permissions | 
+> |**Project-level permissions** |- [Create work item tags](../../boards/queries/add-tags-to-work-items.md)<br/>- [Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)<br/>- [Move work items out of a project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a project (On-premises XML  or Hosted process models) | 
+> |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, Azure DevOps only)<br/>- Delete field from account(Inheritance process model, Azure DevOps only)<br/>- Manage process permissions (Inheritance process model, Azure DevOps only)<br/>- Edit collection level permissions | 
 
 Project collection-level permissions include all permissions you can set at the project-level.
 
@@ -38,7 +41,7 @@ The **Edit project-level information** and **Edit instance-level information** (
 > [!div class="mx-tdBreakAll"]
 > | Edit project-level information | Edit instance-level information  |
 > |-----------------------|-----------------------------------|
-> - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit team project level permission ACLs<br/>- Manage process templates<br/>- Customize a team project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit team project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a team project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project or collection level events. |
+> - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit project level permission ACLs<br/>- Manage process templates<br/>- Customize a project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on project or collection level events. |
 
 
 <a name="set-permissions-area-path" /> 
@@ -139,7 +142,7 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 <a id="plan-permissions">  </a>
 ## Manage or edit Delivery Plans 
 
-Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../boards/queries/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
+Plans are an object within a project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../boards/queries/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
 
 To learn more about Delivery Plans, see [Review team delivery plans](../../boards/plans/review-team-plans.md).
 ::: moniker-end
@@ -174,9 +177,9 @@ To learn more about Delivery Plans, see [Review team delivery plans](../../board
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
 
-In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another team project and to permanently delete work items.   
+In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another project and to permanently delete work items.   
 
 > [!div class="mx-imgBorder"]  
 > ![Set project-level permissions for a custom group, Team Admin](_img/set-permissions-project-level-dialog.png)  
@@ -192,11 +195,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 [Open the **Security** page for area paths](#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the team project](../../boards/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
+![Open Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the team project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
+![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
@@ -214,14 +217,14 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 	![Process, Open security dialog](_img/process/mprocess-open-security-dialog-inherited.png)  
 
-2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. 
+2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then choose **Save changes**. 
 
 	Here we add Christie Church and allow her to edit the process.  
  
 	![Permissions for a process dialogue](_img/process/mprocess-security-dialog-inherited.png)    
 
 >[!NOTE]  	  
-> Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
+> Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts TeamSetting API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts TeamSetting API | Extensions for Azure DevOps Services
 description: Data contract for TeamSettings
 ms.assetid: 75062086-9d67-3e18-5afb-276bb5e99746
 ms.prod: devops
