@@ -1627,7 +1627,7 @@
     },
     {
       "source_path": "docs/package/symbol/setup.md",
-      "redirect_url": "/azure/devops/artifacts/symbols/debug-with-symbols",
+      "redirect_url": "/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio",
       "redirect_document_id": false
     },
     {
@@ -2287,7 +2287,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/backup-db-upgrade.md",
-      "redirect_url": "tfs/server/admin/backup/back-up-restore-tfs",
+      "redirect_url": "/tfs/server/admin/backup/back-up-restore-tfs",
       "redirect_document_id": false
     },
     {
@@ -2322,7 +2322,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/restore-data-same-location.md",
-      "redirect_url": "tfs/server/admin/backup/restore-data-same-location",
+      "redirect_url": "/tfs/server/admin/backup/restore-data-same-location",
       "redirect_document_id": false
     },
     {
@@ -2487,12 +2487,12 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/extend-vs-for-alm.md",
-      "redirect_url": "/tfs/server/upgrade/extend-vs-for-alm",
+      "redirect_url": "/tfs/server/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/required-ports.md",
-      "redirect_url": "/tfs/server/upgrade/required-ports",
+      "redirect_url": "/tfs/server/architecture/architecture#default-network-settings",
       "redirect_document_id": false
     },
     {
@@ -2522,7 +2522,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfslabconfig-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfslabconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfslabconfig-cmd",
       "redirect_document_id": false
     },
     {
