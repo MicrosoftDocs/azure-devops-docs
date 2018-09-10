@@ -1,6 +1,6 @@
 ---
 title: Add a custom rule to a work item type to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
 ms.technology: devops-agile
 ms.prod: devops

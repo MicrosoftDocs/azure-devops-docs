@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Teams | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with teams programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Teams | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with teams programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 5DF98D4C-7E59-4C44-B495-D664AC2AC71B
 ms.manager: douge
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams?api-vers
 | Parameter  | Type    | Default | Notes
 |:-----------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string  |         | Name or ID of the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -56,7 +56,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}?a
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
@@ -79,7 +79,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:-----------------------------------------------------
 | URL
-| instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   |         | Name or ID of the project.
 | team       | string   |         | Name or ID of the team. 
 | Query

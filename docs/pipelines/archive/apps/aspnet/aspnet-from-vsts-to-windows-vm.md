@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Build and Deploy a ASP.NET app | VSTS
-description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using VSTS
+title: Quick Start - Build and Deploy a ASP.NET app | Azure Pipelines
+description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,20 +21,20 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
 
 
-# Implement a CI/CD process to build and deploy your ASP.NET app to Azure
+# Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
-VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
+Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET app
 to a Windows virtual machine in Azure.
-You create the virtual machine using Azure Powershell, and then you set up CI/CD in VSTS. In the CI process, you build the app using MSBuild and run tests using VSTest.
+You create the virtual machine using Azure Powershell, and then you set up CI/CD in Azure Pipelines. In the CI pipeline, you build the app using MSBuild and run tests using VSTest.
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
 [!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
-On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
+On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
 [!INCLUDE [temp](../_shared/create-azure-windows-vm.md)]
 
@@ -62,9 +62,9 @@ In the right panel, select **ASP.NET**, and then click **Apply**.
 
 ![Screenshot showing build summary](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-build-summary.png)
 
-In the dialog that prompts to **Create release definition**, select **Yes**.
+In the dialog that prompts to **Create release pipeline**, select **Yes**.
 
-In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
+In the **Create release pipeline** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
 ![Screenshot showing IIS template](_img/aspnet-from-vsts-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
@@ -76,13 +76,13 @@ Select the **IIS Web App Manage** task; click 'X' to delete this task. We will n
 
 Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
 
-![Screenshot showing release definition](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-release-definition.png)
+![Screenshot showing release pipeline](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-release-definition.png)
 
 [!INCLUDE [temp](../_shared//set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
-Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
+Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
 ![Screenshot showing update to code](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
@@ -91,7 +91,7 @@ Add the following line of text as indicated in the image above:
 <h1>Demo of CI/CD!!</h1>
 ```
 
-Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure Web App.
 
 ## Browse to the app
 

@@ -1,7 +1,7 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: VSTS & TFS 
-description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Choose how bugs appear on Agile tools in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
@@ -25,22 +25,22 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 
 1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings.  
 	::: moniker range=">= tfs-2017"  
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
 	**TFS 2015.1**
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	**TFS 2015**
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
 	::: moniker range="tfs-2013"
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page. Requires TFS 2013.4 or later version.  
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
@@ -57,7 +57,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
 	
 	::: moniker range=">= tfs-2018"  	
-	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/show-bugs-settings-ts.png" alt=web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range="tfs-2017"     
 	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
@@ -66,10 +66,10 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 
-3. To see the changes, open or refresh the team's [backlog]((../../boards/backlogs/create-your-backlog.md), [sprint backlog pages]((../../boards/sprints/assign-work-sprint.md), or [Kanban board]((../../boards/boards/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md), [sprint backlog pages](../../boards/sprints/assign-work-sprint.md), or [Kanban board](../../boards/boards/kanban-basics.md).
 
 > [!TIP]  
-> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items]((../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
 
 
 <a id="add-other-wits" /> 

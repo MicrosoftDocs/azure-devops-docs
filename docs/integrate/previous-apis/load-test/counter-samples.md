@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test Counter Samples | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test Counter Samples | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: 77c82d0a-99e9-48ba-a027-b216fddabe76
 ms.manager: douge
 ms.topic: article
@@ -45,7 +45,7 @@ Returns a list of counter samples that are collected by the load test run matchi
 | Parameter            | Type    | Notes
 |:---------------------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account              | string  | Visual Studio Team Services account.
+| account              | string  | VSTS organization.
 | testrunId            | string  | The test run identifier.
 | Request Body
 | fromInterval         | int     | The offset in seconds from start of the run from which samples are required. Default indicates the beginning.

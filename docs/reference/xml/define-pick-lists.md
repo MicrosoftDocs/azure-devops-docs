@@ -1,5 +1,6 @@
 ---
-title: Define pick lists | VSTS & TFS
+title: Define pick lists 
+titleSuffix: Azure DevOps Services & TFS
 description: Syntax and Usage for the ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES elements to enumerate the drop-down menu for a field - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -10,7 +11,8 @@ ms.date: 05/10/2017
 ---
 
 # Define pick lists
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
+
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 > [!IMPORTANT]  
@@ -195,6 +197,6 @@ You can enumerate a set of values for a field by defining a pick list as part of
 
 -  [Apply a field rule](apply-rule-work-item-field.md)
 -  [Modify a field or add a custom field](../add-modify-field.md)  
--  [Customize a process for import into VSTS(Hosted XML)](../../organizations/settings/work/import-process/customize-process.md)
+-  [Customize a process for import (Hosted XML)](../../organizations/settings/work/import-process/customize-process.md)
 -  [Manage global lists for work item types](../witadmin/manage-global-lists-for-work-item-types.md)
 -  [Index to XML elements](xml-element-reference.md)   

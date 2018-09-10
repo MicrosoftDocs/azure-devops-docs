@@ -1,7 +1,7 @@
 ---
 title: Resolve backlog issues 
-titleSuffixe: VSTS & TFS
-description: Resolve error messages when working in backlogs or boards in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+titleSuffix: Azure Boards and TFS
+description: Resolve error messages when working in backlogs or boards in Azure Boards and Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
@@ -18,7 +18,7 @@ ms.date: 09/29/2017
 <a id="display-hierarchy">  </a>
 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 <!--- Supports FWLINK 529135 --> 
 

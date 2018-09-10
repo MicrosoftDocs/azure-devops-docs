@@ -1,6 +1,6 @@
 ---
-title: VSTS and Team Foundation Server Build and Test - Xamarin Test Cloud
-description: Learn all about how you can use Xamarin Test Cloud when you are building your code in VSTS and Team Foundation Server (TFS) 
+title: Azure Pipelines and Team Foundation Server Build and Test - Xamarin Test Cloud
+description: Learn all about how you can use Xamarin Test Cloud when you are building your code in Azure Pipelines and Team Foundation Server (TFS) 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -45,7 +45,7 @@ None
 | **Advanced - System Language** | Select your language. If it isn't displayed, select Other and then enter its locale below. For example: `en_AU`. |
 | **Advanced - test-cloud.exe Location** | Location of test-cloud.exe. In most cases leave this set to the default value. |
 | **Advanced - Optional Arguments** | (Optional) Arguments passed to test-cloud.exe. See [Submitting UITests at the Command Line](https://developer.xamarin.com/guides/testcloud/uitest/working-with/submitting-tests-at-command-line/). |
-| **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
+| **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or Azure Pipelines. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## Example

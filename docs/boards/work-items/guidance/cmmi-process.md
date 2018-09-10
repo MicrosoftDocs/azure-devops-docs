@@ -1,7 +1,7 @@
 ---
 title: CMMI process template artifacts
-titleSuffix: VSTS & TFS  
-description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS  
+description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
@@ -46,7 +46,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 <meta name="description" content="CMMI project management" />
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../backlogs/overview.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -115,7 +115,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### CMMI process versions  
 
-As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |

@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Project inception
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Arrange the basic resources of the project in an initial stage.
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Project inception
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 You arrange the basic resources of the project in an initial stage that is named Project Inception.  
   

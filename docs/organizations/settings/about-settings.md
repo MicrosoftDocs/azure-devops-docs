@@ -1,7 +1,7 @@
 ---
-title: About team, project & organizational-level settings
-titleSuffix: VSTS & TFS
-description: Overview of configuring team, project, and organizational-level settings in VSTS Agile & Team Foundation Server
+title: About user, team, project, collection, & organizational-level settings
+titleSuffix: Azure DevOps Services & TFS
+description: Overview of configuring team, project, collection, and organizational-level settings in Azure DevOps & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -20,6 +20,11 @@ ms.date: 07/27/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+
+If you're just getting started as a project administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+
+> [!NOTE]  
+> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
 
 ::: moniker-end  
 
@@ -56,7 +61,7 @@ Individual contributors can set their user preferences, enable features that are
 <td>**Security**</td>
 <td><ul>
 <li>[View permissions](../security/view-permissions.md)</li>
-<li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)</li>
+<li>[Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)</li>
 </ul></td>
 <td>For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md).</td>
 </tr>
@@ -83,13 +88,14 @@ Individual contributors can set their user preferences, enable features that are
 <li>[Change your preferred email address](../../notifications/change-email-address.md)</li>
 <li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
 </ul></td>
-<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an VSTS project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
+<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
 </tr>
 </tbody>
 </table>
  
 
+<a id="team" />
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
@@ -115,9 +121,9 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <tr>
 <td>**Work, Team configuration**</td>
 <td><ul>
-<li>[Backlog levels](select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Set working days](set-working-days.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Configure default area and iteration paths](set-team-defaults.md)</li>
 <li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
 <li>[Define work item templates](../../boards/backlogs/work-item-template.md)</li>
@@ -147,13 +153,7 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
-
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
 
 
 # [New navigation](#tab/new-nav)  
@@ -195,12 +195,12 @@ From the administrative pages for a project, you can configure the settings show
 <td>**General**</td>
 <td><ul>
 <li>Set project description</li>
-<li>[Change the project visibility, public or private](../public/make-project-public.md) (VSTS only) </li>
+<li>[Change the project visibility, public or private](../public/make-project-public.md) (Azure DevOps Services only) </li>
 </ul></td>
 <td>Update the project description or change it's visibility.</p></td>
 </tr>
 <tr>
-<td>**Services** (VSTS only)</td>
+<td>**Services** (Azure DevOps Services only)</td>
 <td><ul>
 <li>[Turn a service on or off ](set-services.md)</li>
 </ul></td>
@@ -248,7 +248,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**</td>
+<td><a id="work" />**Work, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -257,7 +257,7 @@ From the administrative pages for a project, you can configure the settings show
 </td>
 </tr>
 <tr>
-<td>**CI/CD** </td>
+<td><a id="pipelines" />**CI/CD** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
@@ -267,7 +267,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** </td>
+<td><a id="repos" />**Code** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -277,7 +277,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>You can manage code using [Git repositories](../../repos/git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** </td>
+<td><a id="test-center" />**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../../test/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>
@@ -290,7 +290,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>**Wiki**</td>
 <td><ul>
 <li>[Create a wiki for your project](../../project/wiki/wiki-create-repo.md)</li>
-<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (VSTS only)</li>
+<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (Azure DevOps Services only)</li>
 <li>[Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 </ul></td>
 <td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).</td>
@@ -310,11 +310,6 @@ From the administrative pages for a project, you can configure the settings show
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
-
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
 
 # [New navigation](#tab/new-nav)  
 
@@ -407,7 +402,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
 </ul></td>
-<td>VSTS owners can set policies to allow or disallow access by other applications or services to their VSTS account. </td>
+<td>Set policies to allow or disallow access by other applications or services to the  Azure DevOps Services organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
@@ -435,7 +430,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Notifications**</td>
 <td><ul>
-<li>Manage collection-level notifications </li>
+<li>[Manage collection-level notifications](../../notifications/howto-manage-organization-notifications.md) </li>
 </ul></td>
 <td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
@@ -449,7 +444,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 </td>
 </tr>
 <tr>
@@ -465,7 +460,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Customize a project](./work/customize-process.md)</li>
 <li>[Add and manage processes](./work/manage-process.md)</li>
 </ul></td>
-<td>Process customization applies to VSTS Agile only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md). </td>
+<td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
 </tr>
 <tr>
 <td>**CI/CD**</td>
@@ -537,7 +532,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 </td>
 </tr>
 <tr>

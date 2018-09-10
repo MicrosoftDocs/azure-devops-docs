@@ -2,7 +2,7 @@
 title: Kanban split columns, inline adding and editing – Feb 18
 description: VSTS release notes for February 18 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: b6ba0a5e-3260-4dd0-937d-9491c29e01b8
 ms.date: 06/01/2016

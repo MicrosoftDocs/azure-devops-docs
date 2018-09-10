@@ -1,6 +1,7 @@
 ---
-title: Ant build and release task | VSTS or Team Foundation Server
-description: Learn how to build with Apache Ant for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Ant build and release task
+titleSuffix: Azure Pipelines & TFS
+description: Learn how to build with Apache Ant for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -58,8 +59,8 @@ The build agent must have the following capability:
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
 </tr>
 <tr>
-<td>Publish to VSTS/TFS </td>
-<td>Select this option to publish JUnit test results produced by the Ant build to VSTS or your on-premises Team Foundation Server. Each test result file that matches Test Results Files is published as a test run.</td>
+<td>Publish to Azure Pipelines/TFS </td>
+<td>Select this option to publish JUnit test results produced by the Ant build to Azure Pipelines or your on-premises Team Foundation Server. Each test result file that matches Test Results Files is published as a test run.</td>
 </tr>
 <tr>
 <td>Test Results Files</td>

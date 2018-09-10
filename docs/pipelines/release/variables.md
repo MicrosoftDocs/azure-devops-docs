@@ -1,6 +1,6 @@
 ---
 title: Variables in Release Management
-description: Understand variables in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand variables in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,17 +20,17 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
+As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
 
-* Define a more generic deployment process once, and then
-customize it easily for each environment. For example, a variable
+* Define a more generic deployment pipeline once, and then
+customize it easily for each stage. For example, a variable
 can be used to represent the connection string for web deployment,
-and the value of this variable can be changed from one environment
+and the value of this variable can be changed from one stage
 to another. These are **custom variables**.
 
 * Use information about the context of the particular release,
-[environment](environments.md), [artifacts](artifacts.md), or
-[agent](../agents/agents.md) in which the deployment process is
+[stage](environments.md), [artifacts](artifacts.md), or
+[agent](../agents/agents.md) in which the deployment pipeline is
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
@@ -45,23 +45,23 @@ Custom variables can be defined at various scopes.
 * Share values across all of the definitions
   in a project by using [variable groups](../library/variable-groups.md). Choose a variable
   group when you need to use the same values across all
-  the definitions, environments,
+  the definitions, stages,
   and tasks in a project, and you want to be able to change
   the values in a single place. You define and manage variable groups in the **Library** tab.
 
-* Share values across all of the environments by using
+* Share values across all of the stages by using
   **release pipeline variables**. Choose a release pipeline
   variable when you need to use the same value across all
-  the environments and tasks in the release pipeline, and you
+  the stages and tasks in the release pipeline, and you
   want to be able to change the value in a single place. You define and manage these variables in the **Variables** tab in a release pipeline.
 
-* Share values across all of the tasks within one specific environment by using
-  **environment variables**.
-  Use an environment-level variable for values that vary
-  from environment to environment (and are the same for
-  all the tasks in an environment). You define and manage these variables in the **Variables** tab of an environment in a release pipeline.
+* Share values across all of the tasks within one specific stage by using
+  **stage variables**.
+  Use an stage-level variable for values that vary
+  from stage to stage (and are the same for
+  all the tasks in an stage). You define and manage these variables in the **Variables** tab of an stage in a release pipeline.
 
-Using custom variables at project, release pipeline, and environment scope helps you to:
+Using custom variables at project, release pipeline, and stage scope helps you to:
 
 * Avoid duplication of values, making it easier to update
   all occurrences as one operation.
@@ -91,7 +91,7 @@ For more details, see [Approvals](approvals/index.md#scenarios).
 
 ## Default variables
 
-Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, environment, or agent they are running in.
+Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, stage, or agent they are running in.
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
 Some of the most significant variables are described in the following tables.
 
@@ -100,8 +100,8 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or VSTS. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/dev.azure.com/fabrikam/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
 > | System.TeamProjectId | The ID of the project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
@@ -115,7 +115,7 @@ Some of the most significant variables are described in the following tables.
 [SYSTEM_PLANID] -> [9d8b6571-8a09-468c-9ca7-69b4768e0c4e]
 [SYSTEM_CULTURE] -> [en-US]
 [SYSTEM_PARALLELEXECUTIONTYPE] -> [MultiConfiguration]
-[SYSTEM_TASKDEFINITIONSURI] -> [https://adventwrks.visualstudio.com/]
+[SYSTEM_TASKDEFINITIONSURI] -> [https://dev.azure.com/adventwrks/]
 [SYSTEM_TIMELINEID] -> [885d77a9-1452-4e4c-8666-df15cd011b6e]
 [SYSTEM_JOBID] -> [09ebba6f-89ed-4f55-bad9-db561b40ec8c]
 [SYSTEM_HOSTTYPE] -> [release]
@@ -145,29 +145,32 @@ Some of the most significant variables are described in the following tables.
 > | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement/Release/118 | |
 > | Release.ReleaseDescription | The text description provided at the time of the release. | Critical security patch | |
 > | Release.RequestedFor | The display name of identity that triggered the release. | Mateo Escobedo | |
+> | Release.RequestedForEmail | The email address of identity that triggered the release. | mateo@fabrikam.com | |
 > | Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | |
-> | Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
-> | Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
-> | Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
-> | Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release pipeline. | 1 | TFS 2015 |
-> | Release.AttemptNumber | The number of times this release is deployed in this environment. | 1 | TFS 2015 |
+> | Release.EnvironmentName | The name of stage to which deployment is currently in progress. | Dev | |
+> | Release.EnvironmentId | The ID of the stage instance in a release to which the deployment is currently in progress. | 276 | |
+> | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
+> | Release.DefinitionEnvironmentId | The ID of the stage in the corresponding release pipeline. | 1 | TFS 2015 |
+> | Release.AttemptNumber | The number of times this release is deployed in this stage. | 1 | TFS 2015 |
 > | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. | Mateo Escobedo | TFS 2015 |
 > | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | TFS 2015 |
+> | Release.DeploymentID | The ID of the deployment. Unique per job. | 254 |
+> | Release.DeployPhaseID | The ID of the phase where deployment is running. | 127 |
+> | Release.Environments.{stage-name}.status | The deployment status of the stage. | InProgress |
+> | Release.ReleaseWebURL | The URL for this release. | https:&#47;/dev.azure.com/fabrikam/f3325c6c/\_release?releaseId=392&_a=release-summary |
+> | Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent. | FALSE |
+> | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually. | fabrikam\_app |
 
 <!-- Other hidden variables
-[RELEASE_DEPLOYMENTID] -> [276]
-[RELEASE_RELEASEWEBURL] -> [https://adventwrks.visualstudio.com/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
-[RELEASE_SKIPARTIFACTSDOWNLOAD] -> [False]
-[RELEASE_DEPLOYPHASEID] -> [276]
-[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] -> [mateoe@microsoft.com]
+[RELEASE_RELEASEWEBURL] -> [https://dev.azure.com/adventwrks/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
 -->
 
-### Release environment variables
+### Release stage variables
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|------------------|
-> | Release.Environments.{Environment name}.Status | The status of deployment of this release within a specified environment. | NotStarted | TFS 2015 |
+> | Release.Environments.{stage name}.Status | The status of deployment of this release within a specified stage. | NotStarted | TFS 2015 |
 
 ### Agent variables
 
@@ -182,7 +185,7 @@ Some of the most significant variables are described in the following tables.
 > | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
 > | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
 > | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | |
-> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group phases. | 1 | TFS 2018 U1 |
+> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. | 1 | TFS 2018 U1 |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]
@@ -195,10 +198,10 @@ Some of the most significant variables are described in the following tables.
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
 variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
-it implies that the variable is not populated for that artifact type. 
+it implies that the variable is not populated for that artifact type.
 
 > [!div class="mx-tdBreakAll"]
-> | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
+> | Variable name | Description | Azure Pipelines example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
 > |---------------|-------------|--------------------|---------------------------|------------------|---------------|
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build pipeline or repository. | 1 |  |  | fabrikam/asp |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build pipeline or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
@@ -257,10 +260,14 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 ### View the current values of all release variables
 
-In the **Logs** page of a release summary, choose the **Initialize Job** step.
-The log pane includes a list of all the variables and their values for this release.
+1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
+   In the list of steps, choose **Initialize job**.
 
-![Viewing the values of the variables in a release](_img/view-variable-values.png)
+   ![Opening the log for a release](_img/view-variable-values-link.png)
+
+1. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
+
+   ![Viewing the values of the variables in a release](_img/view-variable-values.png)
 
 <a name="debug-mode"></a>
 
@@ -268,15 +275,15 @@ The log pane includes a list of all the variables and their values for this rele
 
 Show additional information as a release executes and in the log files
 by running the entire release, or just the tasks in an individual
-release environment, in debug mode. This can help you resolve issues and failures.
+release stage, in debug mode. This can help you resolve issues and failures.
 
 * To initiate debug mode for an entire release, add a variable
   named `System.Debug` with the value `true` to the **Variables**
   tab of a release pipeline.
 
-* To initiate debug mode for a single environment, open the
-  **Configure environment** dialog from the shortcut menu
-  of the environment and add a variable named `System.Debug`
+* To initiate debug mode for a single stage, open the
+  **Configure stage** dialog from the shortcut menu
+  of the stage and add a variable named `System.Debug`
   with the value `true` to the **Variables** tab.
 
 * Alternatively, create a [variable group](../library/variable-groups.md)

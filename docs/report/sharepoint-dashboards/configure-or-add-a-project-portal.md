@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
+monikerRange: '>=tfs-2013'
 ms.topic: tutorial
 ---
 
@@ -18,7 +19,7 @@ ms.topic: tutorial
 
 The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
   
- If your team project was created using the Basic configuration or is hosted on Visual Studio Team Services (VSTS), you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](share-information-using-the-project-portal.md) independently of each other.  
+ If your team project was created using the Basic configuration or is hosted on Azure DevOps, you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](share-information-using-the-project-portal.md) independently of each other.  
   
  Choose one of the following options based on your deployment configuration and team requirements:  
   
@@ -28,7 +29,7 @@ The project portal is a site associated with a team project for the purposes of 
   
 -   [Configure a Web site for your portal](#simple).  
   
-     Choose this option if you want to use a website that doesn't require SharePoint integration or if your team project is hosted on VSTS.  
+     Choose this option if you want to use a website that doesn't require SharePoint integration or if your team project is hosted on Azure DevOps Services.  
   
 -   [Configure a prepared SharePoint site for your portal](#validtfs).  
   
@@ -52,9 +53,9 @@ The project portal is a site associated with a team project for the purposes of 
      ![Project Portal Settings dialog box](_img/procguid_projectportalsettings.png "ProcGuid_ProjectPortalSettings")  
   
 ##  <a name="simple"></a> Configure a Web site for your portal  
- Configure this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
+ Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings.  
   
@@ -65,7 +66,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
  Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   
@@ -133,7 +134,7 @@ The project portal is a site associated with a team project for the purposes of 
   
      ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8.  From your project portal, [add team member accounts to the Contributors group](/vsts/organizations/security/set-sharepoint-permissions) for the SharePoint site.  
+8.  From your project portal, [add team member accounts to the Contributors group](/azure/devops/organizations/security/set-sharepoint-permissions) for the SharePoint site.  
   
 ## Related notes 
 

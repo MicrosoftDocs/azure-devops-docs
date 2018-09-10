@@ -2,6 +2,8 @@
 title: Deployment Groups and Build completion trigger – VSTS Sprint 132 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 4/3/2018
 description: The Sprint 132 Update of Visual Studio Team Services (VSTS) brings a few key features to help you scale your build and release pipeline.
 ---
@@ -74,14 +76,14 @@ Formerly part of the TFS Power tools, the tool has been released as a [standalon
 
 Large products have several components that are dependent on each other. These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated. Teams typically manage these dependencies manually.
 
-Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/vsts/pipelines/build/triggers#BuildCompletion) documentation for more information.
+Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/build/triggers#BuildCompletion) documentation for more information.
 
 This feature was prioritized based on what is currently the #2 highest voted [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu) with 1,129 votes.
 
 > [!div class="mx-imgBorder"]
 ![Setup build chaining](_img/132_03.png)
 
-Keep in mind that in some cases, a single [multi-phase build](/vsts/pipelines/process/phases) could meet your needs. However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
+Keep in mind that in some cases, a single [multi-phase build](/azure/devops/pipelines/process/phases) could meet your needs. However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
 
 ### Scale deployments to VMs using Deployment Groups
 
@@ -112,7 +114,7 @@ Use the enhanced **Azure Resource Group** task to dynamically bootstrap agents o
 
 When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You’ll now find a more consistent interface that feels like the rest of the product.
 
-See the [Deployment Groups](/vsts/pipelines/release/deployment-groups/) documentation for more information about getting started.
+See the [Deployment Groups](/azure/devops/pipelines/release/deployment-groups/) documentation for more information about getting started.
 
 ### Build applications written in Go
 
@@ -124,7 +126,7 @@ The **Go** task helps you download dependencies, build, or test your application
 
 ### Extend release gates with task extensions
 
-[Release gates](/vsts/pipelines/release/approvals/gates) bring health signals information right into your release pipeline. A gate collects a set of health signals repeatedly, prior to or after a deployment, to determine whether the release should proceed to the next stage or not. A set of built-in gates are provided, and the **Invoke Azure Function** option has been the recommended one for integrating other services thus far.
+[Release gates](/azure/devops/pipelines/release/approvals/gates) bring health signals information right into your release pipeline. A gate collects a set of health signals repeatedly, prior to or after a deployment, to determine whether the release should proceed to the next stage or not. A set of built-in gates are provided, and the **Invoke Azure Function** option has been the recommended one for integrating other services thus far.
 
 Now, gates can come in the form of an extension, which makes it easier for you&#8212;or extension authors&#8212;to integrate new or custom services and configure the gate.
 
@@ -136,7 +138,7 @@ See the [authoring gate tasks](https://github.com/Microsoft/vsts-tasks/blob/mast
 
 We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project’s configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
 
-We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/vsts/package/concepts/upstream-sources) documentation for more information.
+We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Upstream sources list](_img/132_01.png)

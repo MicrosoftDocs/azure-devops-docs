@@ -100,9 +100,9 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
    * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
 
-###Q: Can I create reports if I'm working in VSTS?
+###Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../analytics/index.md). 
 
 ###Q: How do I refresh the report to show the most recent data?
 

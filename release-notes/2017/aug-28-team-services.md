@@ -3,7 +3,7 @@ title: Customizable work item rules – VSTS Sprint 122 Update
 description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Update on August 28 2017 with customizable work item rules, forks, and work items hub.
 ms.ContentId: 1d14aa73-d447-4d5e-8ea4-f1890b1d5c29
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
 ---
@@ -27,7 +27,7 @@ Some of the other key feature highlights include:
 
 > **Preview feature**
 >
-> To use this capability you must have the **New Work Items Hub** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile and/or account.
+> To use this capability you must have the **New Work Items Hub** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile and/or account.
 
 The **Work Items** hub allows you to focus on relevant items inside a team project via 5 pivots:
 
@@ -112,7 +112,7 @@ New feature ideas can arrive at any moment, so we’ve made it easier to add new
 
 > **Preview feature**
 >
-> This capability is enabled through the **Git Forks** [preview feature](/vsts/project/navigation/preview-features) on your account.
+> This capability is enabled through the **Git Forks** [preview feature](/azure/devops/project/navigation/preview-features) on your account.
 >
 > With this update you can fork and push changes back **within an account**. This is the 1st step on our journey with forks. The next step will be to enable you to fork a repository into a different VSTS account.
 
@@ -187,7 +187,7 @@ For new repositories and new projects, administrators will no longer be granted 
 
 ### CI builds for Bitbucket repositories
 
-It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/vsts/pipelines/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
+It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/azure/devops/pipelines/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
 
 > [!div class="mx-imgBorder"]
 ![get sources bitbucket repo](_img/08_28_25.png)
@@ -212,9 +212,9 @@ Read more about the goals and usage on the [vsts-tasks repo page](https://github
 
 > **Preview feature**
 >
-> This capability is enabled through the **New Release Definition Editor** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
+> This capability is enabled through the **New Release Definition Editor** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
-Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/vsts/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/vsts/project/navigation/preview-features) in their account profile menu.
+Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/azure/devops/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
 
 ### Enhancements in new Release Definition editor
 
@@ -286,7 +286,7 @@ Cloud load testing agents are now able to run the JMeter 3.2 engine. Load tests 
 
 > **Preview feature**
 >
-> This capability is enabled through the **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
+> This capability is enabled through the **Streamlined User Management** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
 Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](https://visualstudio.microsoft.com/docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
 
@@ -326,7 +326,7 @@ The **Graph REST API** resources allow developers to write applications that man
 
 We want to promote better connections between users within VSTS. As a part of this effort, we’re updating the user profile card, which allows you to interact with, and learn more about others within your VSTS account. Through integration with your default email and IM client, you can send emails and start chats directly from the profile card. Profile cards can be activated within work items, pull requests, and security settings by clicking on the contact card icon, profile picture, or a user’s name within comments.
 
-Azure Active Directory (AAD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
+Azure Active Directory (Azure AD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
 
 > [!div class="mx-imgBorder"]
 ![profile card](_img/08_28_21.png)

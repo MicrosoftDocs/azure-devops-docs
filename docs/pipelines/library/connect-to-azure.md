@@ -1,6 +1,6 @@
 ---
 title: Connect to Microsoft Azure
-description: Use an ARM service connection to connect VSTS or TFS to Microsoft Azure
+description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Create an Azure service connection
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -25,8 +25,8 @@ to Microsoft Azure resources. It starts by showing the simple case where you sel
 subscription, and optionally the Azure Resource Group, to which you want to connect. Use this
 approach:
 
-* If you are connecting from VSTS, and not from TFS. 
-* If you are the owner of both the Azure and the VSTS subscriptions you are connecting from, and both accept the same credentials as you are currently signed into VSTS with.
+* If you are connecting from Azure Pipelines, and not from TFS.
+* If you are the owner of both the Azure and the Azure DevOps subscriptions you are connecting from, and both accept the same credentials as you are currently signed into Azure Pipelines with.
 * You do not need to further limit the permissions for Azure resources accessed through the service connection.
 * You are not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 
@@ -35,11 +35,10 @@ or if you want to further limit users' permissions, you can do so by using a ser
 
 ## Create an Azure Resource Manager service connection
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
-
-1. Choose **+ New service connection** and select **Azure Resource Manager**. 
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
    ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
@@ -48,8 +47,10 @@ or if you want to further limit users' permissions, you can do so by using a ser
    | Parameter | Description |
    | --------- | ----------- |
    | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
-   | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   | Resource Group | Leave empty to allow users to access all resources defined within the subscription - users will be able to access only the resources defined within that group. Or select a resource group to which you want to restrict the users' access - users will be able to access only the resources defined within that group. |
+   | Scope level | Select Subscription or Management Group. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. |
+   | Subscription | If you selected Subscription for the scope, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+   | Management Group | If you selected Management Group for the scope, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict the users' access (users will be able to access only the resources defined within that group). |
 
 1. After the new service connection is created:
 
@@ -64,14 +65,13 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
-
-1. Choose **+ New service connection** and select **Azure Resource Manager**. 
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
    ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
@@ -79,11 +79,16 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 
    ![Opening the full version of the service  dialog](_img/rm-endpoint-link.png)
 
-1. Enter a user-friendly name to use when referring to this service connection.
+1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
-1. Select the Environment name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
+1. Select the **Environment** name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
 
-1. Enter the Environment URL if required. For Azure Stack, this will be something like `https://management.local.azurestack.external`
+1. If you _do not_ select **Azure Cloud**, enter the Environment URL. For Azure Stack, this will be something like `https://management.local.azurestack.external`
+
+1. Select the **Scope level** you require: 
+   
+   * If you choose **Subscription**, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+   * If you choose **Management Group**, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
 
 1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
    When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
@@ -96,13 +101,15 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
    * Service Principal Key
    * Tenant ID<p/>
 
+1. Choose **Verify connection** to ensure the information you entered is valid, then choose **OK**.
+
 1. After the new service connection is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
-   [Use Role-Based Access Control to manage access to your Azure subscription resources](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
    [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
 
@@ -114,7 +121,7 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 For information about connecting to an Azure Government Cloud, see:
 
-* [Connecting from Visual Studio Team Services (Azure Government Cloud)](https://docs.microsoft.com/azure/azure-government/documentation-government-get-started-connect-with-vsts)
+* [Connecting from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts)
 
 <a name="connect-stack"></a>
 
@@ -122,8 +129,8 @@ For information about connecting to an Azure Government Cloud, see:
 
 For information about connecting to Azure Stack, see:
 
-* [Connect to Azure Stack](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure using VPN](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure using ExpressRoute](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-expressroute)
+* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
+* [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Projects | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with projects programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Projects | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with projects programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 537E1A1F-DAE8-4110-AF0F-63D5D52F2AB6
 ms.manager: douge
 ms.topic: article
@@ -31,7 +31,7 @@ GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&s
 | Parameter          | Type                                                     | Default    | Notes                                                                                                                       
 |:-------------------|:---------------------------------------------------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance           | string                                                   |            | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string                                                   |            | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query                                                                                                                                                         
 | api-version        | string                                                   |            | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | stateFilter        | enum {<br/>&nbsp;&nbsp;WellFormed,<br/>&nbsp;&nbsp;CreatePending,<br/>&nbsp;&nbsp;Deleting,<br/>&nbsp;&nbsp;New,<br/>&nbsp;&nbsp;All<br/>}   | WellFormed | Return projects in a specific [project state](#Bystate). 
@@ -77,7 +77,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}?api-version={v
 | Parameter          | Type    | Default | Notes                                                                                                                       
 |:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance           | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project            | string  |         | Name or ID of the project.   
 | Query                                                                                                                                                         
 | api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -96,7 +96,7 @@ Get metadata on a project, including its capabilities.
 
 ## Create a project
 <a name="createateamproject" />
-Create a project in a Visual Studio Team Services account. Use the [GetOperation](#GetOperation) to periodically check for create project status.
+Create a project in a VSTS organization. Use the [GetOperation](#GetOperation) to periodically check for create project status.
 
 ```no-highlight
 POST https://{instance}/defaultcollection/_apis/projects?api-version={version}
@@ -105,7 +105,7 @@ POST https://{instance}/defaultcollection/_apis/projects?api-version={version}
 | Parameter   | Type  | Notes
 |:------------|:--------:|:---------------------------------------------------
 | URL
-| instance    | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request Body
@@ -143,7 +143,7 @@ Content-Type: application/json
 | Parameter  | Type  | Notes
 |:-----------|:--------:|:---------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | projectID  | string | ID for the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -181,7 +181,7 @@ GET https://{instance}/defaultcollection/_apis/operations/{operationid}?api-vers
 | Parameter          | Type                                                     | Default    | Notes                                                                                                                       
 |:-------------------|:---------------------------------------------------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance           | string                                                   |            | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string                                                   |            | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | operationId        | string                                                   |            | ID of the operation. 
 | Query                                                                                                                                                         
 | api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -204,7 +204,7 @@ DELETE https://{instance}/defaultcollection/_apis/projects/{id}?api-version={ver
 | Parameter  | Type  | Notes
 |:-----------|:--------:|:---------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | id         | string | ID for the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

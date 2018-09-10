@@ -1,5 +1,6 @@
 ---
-title: FIELD (Workflow) element reference | VSTS & TFS
+title: FIELD (Workflow) element reference 
+titleSuffix: TFS
 description: Syntax and usage of the FIELD element used to specify rules and conditions on fields within the workflow of a work item type 
 ms.prod: devops
 ms.technology: devops-agile

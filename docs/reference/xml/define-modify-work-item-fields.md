@@ -5,7 +5,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/08/2017
 ---
 
@@ -71,7 +72,7 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p> <strong>PlainText</strong> </p></td>
-	<td><p>Supports entry of a text string that can contain more than 255 Unicode characters, such as the <strong>Title</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](../../boards/queries/query-operators-variables.md#full-text).</p>
+	<td><p>Supports entry of a text string that can contain more than 255 Unicode characters. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](../../boards/queries/query-operators-variables.md#full-text).</p>
 <p>Add a **PlainText** field to a work item form by using either the **FieldControl** type attribute. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](../../boards/queries/titles-ids-descriptions.md).</p>
 
 </td></tr>

@@ -1,6 +1,6 @@
 ---
 title: Filter your Kanban board 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
 ms.global_help.title: Filter your board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 4    
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Filter your Kanban board
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 <!---
 > [!NOTE]   

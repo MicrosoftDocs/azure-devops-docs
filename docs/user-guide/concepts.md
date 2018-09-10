@@ -1,6 +1,6 @@
 ---
-title: Key concepts for working with both VSTS & TFS
-description: Understand the key concepts for Visual Studio Team Services & Team Foundation Server  
+title: Key concepts for working with both Azure DevOps Services & TFS
+description: Understand the key concepts for Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
@@ -9,19 +9,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ---
 
 
-# Key concepts for working with VSTS and TFS
+# Key concepts for working with Azure DevOps Services and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-The set of platforms, services, and tools you have access to through Visual Studio Team Services (VSTS) can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.
+The set of platforms, services, and tools you have access to through Azure DevOps Services can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.
 
 ## Collaborative, integrated software development
 
-VSTS, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
+Azure DevOps Services, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
 
 The three main areas that support software development include:
 
@@ -40,7 +40,7 @@ With Git, each developer has a copy on their dev machine of the source repositor
 Developers can commit each set of changes and perform version control operations such as history and compare without a network connection. Branches are lightweight. When developers need to switch contexts, they create a private local branch. Developers can quickly switch from one branch to another to pivot among different variations of the codebase. Later, they can merge, publish, or dispose of the branch.
 
 >[!NOTE]
->Git in VSTS and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
+>Git in Azure DevOps Services and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
 
 With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
@@ -72,7 +72,7 @@ Rapid and reliable release of software comes from automating as many processes a
 
 ## Scaling
 
-Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
+Both Azure DevOps Services and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. Azure DevOps Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
 To learn more, see [About projects and scaling your organization](../organizations/projects/about-projects.md). Also, for stories and short videos on how Microsoft transitioned from waterfall to Agile, see [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
 
@@ -85,7 +85,7 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../report/dashboards/dashboards.md) to share information and monitor their progress. 
 - **Source control**: For each [Git repository](../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../organizations/settings/work/inheritance-process-model.md). 
-- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
+- **Build and release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Azure Pipelines](../pipelines/index.md).  
 - **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md).
 
 ::: moniker-end
@@ -95,7 +95,7 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../reference/on-premises-xml-process-model.md).
-- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
+- **Build and release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Azure Pipelines](../pipelines/index.md).  
 - **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md).
 
 ::: moniker-end
@@ -106,8 +106,8 @@ You can configure and customize most services and applications to support your b
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways:
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your organization, server, or Visual Studio client
-- [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
-- [REST APIs](https://docs.microsoft.com/rest/api/vsts/): Provide the ability to create custom extensions that plug into VSTS or TFS
+- [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your project hosted on Azure DevOps Services or TFS 
+- [REST APIs](/rest/api/vsts/): Provide the ability to create custom extensions that plug into Azure DevOps Services or TFS
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace.
 
 ## Resources

@@ -1,7 +1,7 @@
 ---
 title: Publish markdown files from a Git repository to a wiki 
-titleSuffix: VSTS  
-description: Maintain markdown files in a Git code repository and publish them to your team project wiki in Visual Studio Team Services
+titleSuffix: Azure DevOps  
+description: Maintain markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps Services 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -17,7 +17,7 @@ ms.date: 04/26/2018
 
 # Publish a Git repository to a wiki 
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Content that you already maintain in a Git repository can be published to a wiki. For example, content written to support a software development kit (SDK), product documentation, or README files can quickly be published to a wiki. Multiple wikis can be published within a single team project. 
 
@@ -32,7 +32,7 @@ By publishing your markdown files to a wiki, you gain these benefits:
 Use this topic to learn how to:  
 
 > [!div class="checklist"]
-> * Open the **Wiki** hub
+> * Open **Wiki**
 > * Publish a Git repo to a wiki 
 > * Edit pages of a published wiki
 > * Add pages to a published wiki
@@ -49,25 +49,56 @@ In order to perform these steps, you'll want to understand the underlying struct
 <a id="prereq">  </a>
 ## Prerequisites  
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md).  
+* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps Services](../../organizations/accounts/set-up-vs.md).  
+* You must have enabled Azure Repos service for your project.
 * You must have a Git repository defined in your team project. Ideally, this repository contains at least one markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md). 
 * You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 
-[!INCLUDE  [temp](_shared/open-wiki-hub.md)]
+
+## Open Wiki  
+
+Begin by connecting to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.  
+
+
+> [!NOTE]
+> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+# [New navigation](#tab/new-nav)  
+
+Choose **Overview>Wiki**.
+
+> [!div class="mx-imgBorder"]  
+> ![Create wiki, provision a Git repo for your wiki or publish existing repo markdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)
+
+If you need to switch your team project, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+
+# [Previous navigation](#tab/previous-nav)
+
+Choose **Wiki**.
+
+> [!div class="mx-imgBorder"]  
+> ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
+
+- If you need to switch your team project, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
+- If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), then choose **Wiki>Wiki**.
+
+![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
+
+---
 
 
 ## Publish a Git repository to a wiki
 
 Choose this option when you maintain markdown files in an existing Git repo and you want to publish them to a wiki.   
 
-1. On the Wiki landing page, choose **Publish code as Wiki**.  
+1. Choose **Publish code as Wiki**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create wiki, publish existing repo markdown files](_img/wiki/create-wiki-or-publish-publish-option.png) 
 
 	> [!NOTE]   
-	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md) and then return and refresh this page.  
+	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md) and then return and refresh this page. 
 
 	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code as wiki** menu option.
 
@@ -104,7 +135,7 @@ With the Wiki provisioned with the markdown files you've added, you can now add 
 
 ## Edit, rename, or delete pages  
 
-0. To edit, rename, or delete a page, open the **Code** hub, **Files** page. 
+0. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**. 
 
 0. Choose the page you want, open the ![](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
 
@@ -155,14 +186,14 @@ You can add pages to your published wiki as follows:
 - Upload files to a root folder or sub-folder 
 - Add or update a .order file to specify the page sequence in the wiki TOC 
 
-Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** hub for your published repo to review the changes.  
+Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 
 ### Add a page from the web portal 
 
-0. From the **Code>Files** page for the published repo, open the ![](../../_img/icons/actions-icon.png) actions icon and choose **File**. 
+0. From **Repos>Files** or **Code>Files** for the published repo, open the ![](../../_img/icons/actions-icon.png) actions icon and choose **File**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Filter wiki TOC](_img/wiki/publish-code-add-edit-files-folder.png)
+	> ![Add a page to the wiki from the web portal](_img/wiki/publish-code-add-edit-files-folder.png)
 
 0. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](#page-title-names). 
 

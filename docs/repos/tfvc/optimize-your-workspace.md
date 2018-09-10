@@ -1,5 +1,6 @@
 ---
 title: Optimize your workspace
+titleSuffix: Azure Repos
 description: Optimize your workspace
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Optimize your workspace
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 

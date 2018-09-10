@@ -1,5 +1,6 @@
 ---
-title: Author names in Git | VSTS & TFS
+title: Author names in Git
+titleSuffix: Azure Repos
 description: How Git stores author names
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
 ms.prod: devops
@@ -17,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 When you commit to your local repo, Git includes your name and email address as part of the commit.
 This can sometimes lead to confusion.
-The name and email on your commits may not match the identity you log in with on a Git host like VSTS.
+The name and email on your commits may not match the identity you log in with on a Git host like Azure Repos.
 Further, you may have commits under several different names and email addresses even though you were the author for each of them.
 
 ## Why are there multiple names for me in my repo?
@@ -40,14 +41,14 @@ When you set up Git for the first time on a new machine, you may create a commit
 Git will prompt you to set an explicit name and email address, and the new settings will be used for subsequent commits.
 This is a frequent source of one author having multiple names.
 
-## Where does VSTS get your name and email?
+## Where does Azure DevOps Services get your name and email?
 
-Your details in VSTS come from your [profile](https://app.vssps.visualstudio.com/profile/view).
+Your details in Azure DevOps Services come from your [profile](https://app.vssps.visualstudio.com/profile/view).
 Your profile was originally populated from details in your Microsoft Account or Azure Active Directory account, but you may change these details yourself.
-When you edit a file in the web or complete a PR, VSTS supplies your profile details as the author of the commit.
+When you edit a file in the web or complete a PR, Azure Repos supplies your profile details as the author of the commit.
 This is another opportunity for your name or email address to be specified differently.
 
-## How do I change my information in Git and VSTS?
+## How do I change my information in Git and Azure DevOps Services?
 
 In Git, you can run two commands to change your name and email address:
 
@@ -56,7 +57,7 @@ git config --global user.name "Frances Totten"
 git config --global user.email "frances_t@fabrikam.com"
 ```
 
-In VSTS, you can update your profile by clicking your picture in the upper right corner and choosing [My profile](../../organizations/settings/set-your-preferences.md).
+In Azure DevOps Services, you can update your profile by clicking your picture in the upper right corner and choosing [My profile](../../organizations/settings/set-your-preferences.md).
 
 ## How do I change the author displayed for past commits?
 

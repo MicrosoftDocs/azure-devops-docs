@@ -1,7 +1,7 @@
 ---
 title: Review team delivery plans 
-titleSuffix: VSTS & TFS
-description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: Add & use plans to review scheduled multi-team deliverables in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
@@ -16,7 +16,7 @@ ms.date: 08/06/2018
 
 # Review team Delivery Plans 
 
-<b>VSTS | TFS 2018 | TFS 2017.2</b> 
+**Azure DevOps Services | TFS 2018 | TFS 2017.2**
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -41,7 +41,7 @@ In this topic you'll learn:
 ## Prerequisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access for a private project can't add or view plans; users with Stakeholder access for a public project can add and view plans.)  
 - [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
 - [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
@@ -69,7 +69,7 @@ Some questions you might address during the review:
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
 - *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features that we add to VSTS. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
@@ -84,7 +84,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 ::: moniker range="vsts"  
 
-0. Open **Work>Plans**. 
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
@@ -103,12 +103,12 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Open **Work>Plans**. 
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 
@@ -243,7 +243,7 @@ For additional resources for working with multiple teams, see these additional t
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans using the [REST API, Plans](https://docs.microsoft.com/rest/api/vsts/work/plans).
+You can manage plans using the [REST API, Plans](/rest/api/vsts/work/plans).
 
 
  

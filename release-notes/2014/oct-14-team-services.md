@@ -2,7 +2,7 @@
 title: Test artifacts as work items – Oct 14
 description: VSTS release notes for October 14 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: cfb7eacd-1d58-492d-83a2-c645ceae76cf
 ms.date: 06/01/2016
@@ -24,7 +24,7 @@ And below you’ll see the new Test Suite work item opened directly from this vi
 
 ![Test Suite work item opened directly from this view](_img/10_14_02.png)
 
-Do note that any changes you make to these work items, including destroy, will be reflected across all the associated test artifacts. You can read more about how these artifacts work together at our Get Started topic [Create a test plan](https://docs.microsoft.com/vsts/manual-test/getting-started/create-a-test-plan?view=vsts).
+Do note that any changes you make to these work items, including destroy, will be reflected across all the associated test artifacts. You can read more about how these artifacts work together at our Get Started topic [Create a test plan](/azure/devops/manual-test/getting-started/create-a-test-plan?view=vsts).
 
 ##Copy and paste query results
 

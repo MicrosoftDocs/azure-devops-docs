@@ -1,6 +1,6 @@
 ---
 title: Install Apple Provisioning Profile
-description: Learn how you can install an Apple provisioning profile required to build on a macOS agent in VSTS and Team Foundation Server TFS
+description: Learn how you can install an Apple provisioning profile required to build on a macOS agent in Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2018'
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.
 
 You can install an Apple provisioning profile that is:
-- Stored as a [secure file](../../library/secure-files.md) on the server. 
-- (**VSTS**) Committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
+- Stored as a [secure file](../../library/secure-files.md) on the server.
+- (**Azure Pipelines**) Committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
 
 ## Demands
 
@@ -36,6 +36,6 @@ xcode
 
 | Argument | Description |
 | -------- | ----------- |
-| Provisioning Profile Location (**VSTS**) | Select the location of the provisioning profile to install. The provisioning profile can be uploaded to **Secure Files** or stored in your source repository or a local path on the agent. |
+| Provisioning Profile Location (**Azure Pipelines**) | Select the location of the provisioning profile to install. The provisioning profile can be uploaded to **Secure Files** or stored in your source repository or a local path on the agent. |
 | Provisioning Profile | Select the provisioning profile that was uploaded to **Secure Files** to install on the macOS agent (or) Select the provisioning profile from the source repository or specify the local path to a provisioning profile on the macOS agent.|
 | Remove Profile After Build | Select to specify that the provisioning profile should be removed from the agent after the build or release is complete. |

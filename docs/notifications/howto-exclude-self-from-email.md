@@ -1,7 +1,7 @@
 ---
 title: How to prevent notification emails to yourself from events you initiated
-titleSuffix: VSTS & TFS 
-description: Learn how to exclude the initiator of an event in Visual Studio Team Services (VSTS) from receiving notification emails
+titleSuffix: Azure DevOps Services & TFS 
+description: Learn how to exclude the initiator of an event in Azure DevOps Servicesfrom receiving notification emails
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2017'
 
 # How to exclude yourself from notification emails from events you initiated
 
-<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
-> This topic applies to VSTS, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 The option _Skip initiator_ is available when creating a team role-based notification subscription.  This option causes emails to be skipped for the initiator of the event which triggered the email.
 

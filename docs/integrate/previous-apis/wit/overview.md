@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Work Item Tracking Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item tracking programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Item Tracking Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with work item tracking programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: 4b6ac3ad-7de0-4137-8b80-8a4b44f4107f
 ms.manager: douge
 ms.topic: article
@@ -40,7 +40,7 @@ Work items can also be [tagged](./tags.md).
 ## Work item metadata resources
 
 Work items are governed by metadata.
-Some of the metadata is scoped to a specific project, and other metadata is scoped to a project collection (like your Visual Studio Team Services account's default collection).
+Some of the metadata is scoped to a specific project, and other metadata is scoped to a project collection (like your VSTS organization's default collection).
 
 ### Project-scoped metadata
 

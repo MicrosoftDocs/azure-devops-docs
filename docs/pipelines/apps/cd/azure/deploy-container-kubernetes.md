@@ -1,3 +1,3 @@
 ---
-redirect_url: https://almvm.azurewebsites.net/labs/vstsextend/kubernetes/
+redirect_url: /azure/devops/pipelines/apps/cd/deploy-aks
 ---

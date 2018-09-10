@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/RestClient BuildHttpClient2_2 API | Extensions for Visual Studio Team Services
+title: TFS/Build/RestClient BuildHttpClient2_2 API | Extensions for Azure DevOps Services
 ms.assetid: 77299e6b-d4c4-266f-9462-71d97b981c56
 ms.prod: devops
 ms.technology: devops-ecosystem

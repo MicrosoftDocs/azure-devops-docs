@@ -1,6 +1,6 @@
 ---
 title: npm
-description: How to use npm packages when building code in VSTS
+description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -65,7 +65,7 @@ monikerRange: '>= tfs-2015'
                 <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control.</li>
                 <ul><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li></ul>
             </ul>
-            **Use packages from this VSTS/TFS registry:**
+            **Use packages from this Azure Artifacts/TFS registry:**
             <ul>
                 <li>Select this option to use one Package Management feed in the same organization/collection as the build.</li>
             </ul>
@@ -117,7 +117,7 @@ monikerRange: '>= tfs-2015'
             <ul>
                 <li>**Registry I select here** publishes to a Package Management registry in the same organization/collection as the build. After you select this option, select the target registry from the dropdown.
                 </li>
-                <li>**External npm registry (including other organizations/collections)** publishes to an external server such as [npm](https://www.npmjs.com/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS organization or TFS collection. After you select this option, create and select an [npm service connection](../../library/service-endpoints.md#sep-npm).
+                <li>**External npm registry (including other organizations/collections)** publishes to an external server such as [npm](https://www.npmjs.com/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an [npm service connection](../../library/service-endpoints.md#sep-npm).
                 </li>
             </ul>
         </td>
@@ -183,7 +183,7 @@ monikerRange: '>= tfs-2015'
                 <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control.</li>
                 <li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li>
             </ul>
-            **Use packages from this VSTS/TFS registry:**
+            **Use packages from this Azure Artifacts/TFS registry:**
             <ul>
                 <li>Select this option to use one Package Management feed in the same organization/collection as the build.</li>
             </ul>
@@ -194,9 +194,9 @@ monikerRange: '>= tfs-2015'
 
 ## Examples
 
-[Build: Gulp](../build/gulp.md)
+[Build: gulp](../build/gulp.md)
 
-[Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
+[Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Open source
 

@@ -1,6 +1,6 @@
 ---
 title: Use @mentions in work items and pull requests 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: Alert team members using the @mention control in work items and pull requests 
 ms.prod: devops
 ms.technology: devops-collab
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Use &#64;mentions
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.2**
 
 The **@mention** control allows you to quickly pull someone into a work item or pull request.
 

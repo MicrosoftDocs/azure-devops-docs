@@ -1,6 +1,6 @@
 ---
 title: Artifacts in Release Management
-description: DevOps CI CD - Understand build artifacts in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -26,18 +26,18 @@ and stored in different types of artifact repositories.
 
 When **authoring a release pipeline**, you link the
 appropriate **artifact sources** to your release pipeline.
-For example, you might link a Team Build build pipeline or
+For example, you might link an Azure Pipelines build pipeline or
 a Jenkins project to your release pipeline.
 
 When **creating a release**, you specify the exact
 version of these artifact sources; for example, the number of a
-build coming from Team Build, or the version of a
+build coming from Azure Pipelines, or the version of a
 build coming from a Jenkins project.
 
 After a release is created, you cannot change these versions. A release is
 fundamentally defined by the versioned artifacts that make up the release.
-As you deploy the release to various environments, you will be deploying
-and validating the same artifacts in all environments.
+As you deploy the release to various stages, you will be deploying
+and validating the same artifacts in all stages.
 
 A single release pipeline can be linked to
 **multiple artifact sources**, of which one is the [primary source](#art-primary).
@@ -58,7 +58,7 @@ on the linking of artifacts to a release pipeline are:
   is available for only some artifact sources.
 
 * **Trigger conditions**. You can configure a release to be created
-  automatically, or the deployment of a release to an environment
+  automatically, or the deployment of a release to a stage
   to be triggered automatically, when only specific conditions on the
   artifacts are met. For example, you can configure releases to be
   automatically created only when a new build is produced from a certain branch.
@@ -80,7 +80,7 @@ on the linking of artifacts to a release pipeline are:
 * **Work items and commits**. The work items or commits
   that are part of a release are computed from the
   versions of artifacts. For example, each build in
-  Team Build is associated with a set of work items and
+  Azure Pipelines is associated with a set of work items and
   commits. The work items or commits in a release are
   computed as the union of all work items and commits of
   all builds between the current release and the
@@ -90,11 +90,11 @@ on the linking of artifacts to a release pipeline are:
   certain artifact sources.
 
 * **Artifact download**. Whenever a release is
-  deployed to an environment, by default Release Management
+  deployed to a stage, by default Release Management
   automatically downloads all the artifacts in that
   release to the [agent](../agents/agents.md) where the deployment job runs.
   The procedure to download artifacts depends on the
-  type of artifact. For example, Team Build artifacts
+  type of artifact. For example, Azure Pipelines artifacts
   are downloaded using an algorithm that downloads
   multiple files in parallel. Git artifacts are
   downloaded using Git library functionality. For more details, see
@@ -105,7 +105,7 @@ on the linking of artifacts to a release pipeline are:
 There are several types of tools you might use in your
 application lifecycle process to produce or store
 artifacts. For example, you might use continuous
-integration systems such as Team Build, Jenkins, or
+integration systems such as Azure Pipelines, Jenkins, or
 TeamCity to produce artifacts. You might also use version control systems such as Git or
 TFVC to store your artifacts. Or you can use
 repositories such as Package Management in Visual Studio Team
@@ -129,7 +129,7 @@ If you link more than one set of artifacts, you can specify which is the primary
 The following sections describe how to work with the different types of artifact
 sources.
 
-* [Team Build](#teambuild)
+* [Azure Pipelines](#teambuild)
 * [TFVC, Git, and GitHub](#tfvc)
 * [Jenkins](#jenkins)
 * [Azure Container Registry, Docker, and Kubernetes](#container)
@@ -142,35 +142,35 @@ sources.
 
 <a name="teambuild"></a>
 
-### Team Build
+### Azure Pipelines
 
 You can link a release pipeline to any of
-the build pipelines in VSTS or TFS project collection.
+the build pipelines in Azure Pipelines or TFS project collection.
 
 > [!NOTE]
 > You must include a **Publish Artifacts** task in your build
 pipeline. For XAML build pipelines, an artifact with the name **drop**
 is published implicitly.
 
-Some of the differences in capabilities between different versions of TFS and VSTS are:
+Some of the differences in capabilities between different versions of TFS and Azure Pipelines are:
 
 * **TFS 2015**: You can link build pipelines only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build pipelines are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build pipelines from any of the projects in VSTS or TFS.
+* **TFS 2017 and newer** and **Azure Pipelines**: You can link build pipelines from any of the projects in Azure Pipelines or TFS.
   You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
-The following features are available when using Team Build sources:
+The following features are available when using Azure Pipelines sources:
 
-| Feature | Behavior with Team Build sources |
+| Feature | Behavior with Azure Pipelines sources |
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build pipeline. See the notes above for differences between version of TFS.|
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Team Build. |
-| Work items and commits | Team Build integrates with work items in TFS and VSTS. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
-| Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
-| Deployment section in build | The build summary includes a **Deployment** section, which lists all the environments to which the build was deployed. |
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Azure Pipelines. |
+| Work items and commits | Azure Pipelines integrates with work items in TFS and Azure Pipelines. These work items are also shown in the details of releases. Azure Pipelines integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
+| Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
 ----
 
@@ -180,15 +180,15 @@ The following features are available when using Team Build sources:
 
 There are scenarios in which you may want to
 consume artifacts stored in a version control system
-directly, without passing them through a build process.
+directly, without passing them through a build pipeline.
 For example:
 
 * You are developing a PHP or a JavaScript application
-  that does not require an explicit build process.
+  that does not require an explicit build pipeline.
 
-* You manage configurations for various environments
+* You manage configurations for various stages
   in different version control repositories, and you want
-  to consume these configuration files directly from version control as part of the deployment process.
+  to consume these configuration files directly from version control as part of the deployment pipeline.
 
 * You manage your infrastructure and configuration as
   code (such as Azure Resource Manager templates) and
@@ -230,7 +230,7 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
 | Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
-| Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
 ----
 
@@ -254,7 +254,7 @@ The following features are available when using Jenkins sources:
 | Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Jenkins. |
 | Work items and commits | Release Management cannot show work items or commits for Jenkins builds. |
-| Artifact download | By default, Jenkins builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, Jenkins builds are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 Artifacts generated by Jenkins builds are typically propagated to storage repositories for archiving and sharing.
@@ -264,7 +264,7 @@ Azure to the agents. In this configuration, connectivity between the agent and t
 Microsoft-hosted agents can be used without exposing the server to internet.
 
 > [!NOTE]
-> Release Management in VSTS may
+> Release Management in Azure Pipelines may
 not be able to contact your Jenkins server if,
 for example, it is within your enterprise network.
 In this case you can integrate
@@ -275,7 +275,7 @@ projects when linking to a build, but you can type
 this into the link dialog field.
 
 For more information about Jenkins integration capabilities, see
-[VSTS Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 ----
 
@@ -296,7 +296,7 @@ The following features are available when using Azure Container Registry, Docker
 | Auto-trigger releases | You can configure a continuous deployment trigger for images. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds. |
 | Work items and commits | Release Management cannot show work items or commits. |
-| Artifact download | By default, builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, builds are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 ----
@@ -305,19 +305,16 @@ The following features are available when using Azure Container Registry, Docker
 
 <h3 id="nugetsource">NuGet and npm packages from Package Management</h3>
 
-To integrate with NuGet, or npm (Maven is not currently supported), you must first install the
-[Package Management](../../package/install.md)
-extension from the Marketplace. For more information, see
-[Package Management Overview](../../package/overview.md).
+To integrate with NuGet, or npm (Maven is not currently supported), you must first [assign licenses for the Package Management extension](../../artifacts/install.md) from the Marketplace. For more information, see the [Package Management Overview](../../artifacts/overview.md).
 
 Scenarios where you may want to consume Package Management artifacts are:
 
-1.	You have your application build (such as TFS, VSTS, TeamCity, Jenkins) published as a package (NuGet or npm) to Package Management and you want to consume the artifact in a release.
+1.	You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package (NuGet or npm) to Package Management and you want to consume the artifact in a release.
 2.	As part of your application deployment, you need additional packages stored in Package Management.
 
 When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
 You can choose to pick up the latest version of the package, use a specific version, or select the version at the time of release creation.
-During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the phase execution. 
+During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the job execution.
 
 The following features are available when using Package Management sources:
 
@@ -326,7 +323,7 @@ The following features are available when using Package Management sources:
 | Auto-trigger releases | You can configure a continuous deployment trigger for packages. This can automatically trigger a release when a package is updated. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for packages. |
 | Work items and commits | Release Management cannot show work items or commits. |
-| Artifact download | By default, packages are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, packages are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 ----
@@ -335,17 +332,17 @@ The following features are available when using Package Management sources:
 
 <h3 id="onpremtfssource">External or on-premises TFS</h3>
 
-You can use the Release Management service in VSTS to deploy artifacts
+You can use the Release Management service in Azure Pipelines to deploy artifacts
 published by an on-premises TFS server. You don't need to make the TFS
 server visible on the Internet; you just set up an on-premises
 automation agent. Builds from an on-premises TFS server are downloaded directly into the
 on-premises agent, and then deployed to the specified target servers. They
 will not leave your enterprise network. This allows you to leverage all of
 your investments in your on-premises TFS server, and take advantage of the
-Release Management capabilities in VSTS.
+Release Management capabilities in Azure Pipelines.
 
 >Using this mechanism, you can also deploy artifacts published in one
-VSTS subscription from another VSTS, or deploy artifacts
+Azure Pipelines subscription in another Azure Pipelines, or deploy artifacts
 published in one Team Foundation Server from another Team Foundation Server.
 
 To enable these scenarios, you must install the
@@ -365,11 +362,11 @@ The following features are available when using external TFS sources:
 | Auto-trigger releases | You cannot configure a continuous deployment trigger for external TFS sources in a release pipeline. To automatically create a new release when a build is complete, you would need to add a script to your build pipeline in the external TFS server to invoke REST APIs of Release Management and to create a new release.|
 | Artifact variables | A number of [artifact variables](variables.md) are supported for external TFS sources. |
 | Work items and commits | Release Management cannot show work items or commits for external TFS sources.|
-| Artifact download | By default, External TFS artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, External TFS artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 > [!NOTE]
-> Release Management in VSTS may
+> Release Management in Azure Pipelines may
 > not be able to contact an on-premises TFS server if,
 > for example, it is within your
 > enterprise network. In this case you can integrate
@@ -378,7 +375,7 @@ The following features are available when using external TFS sources:
 > You will not be able to see the name of your TFS
 > projects or build pipelines when linking to a build, but you can type
 > these into the link dialog fields. In addition, when you
-> create a release, VSTS may not be able to
+> create a release, Azure Pipelines may not be able to
 > query the TFS server for the build numbers. Instead,
 > type the **Build ID** (not the build number) of the
 > desired build into the appropriate field, or select
@@ -410,11 +407,11 @@ The following features are available when using TeamCity sources:
 | Auto-trigger releases | You cannot configure a continuous deployment trigger for TeamCity sources in a release pipeline. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Release Management REST APIs to create a new release. |
 | Artifact variables | A number of [artifact variables](variables.md) are supported for builds from TeamCity. |
 | Work items and commits | Release Management cannot show work items or commits for TeamCity builds. |
-| Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 > [!NOTE]
->  Release Management in VSTS may
+>  Release Management in Azure Pipelines may
 > not be able to contact your TeamCity server if,
 > for example, it is within your
 > enterprise network. In this case you can integrate
@@ -438,16 +435,16 @@ supported in Release Management, you can start using
 it without waiting for support for a specific source
 type. Simply skip the linking of artifact sources in
 a release pipeline, and add custom tasks to your
-environments that download the artifacts directly
+stages that download the artifacts directly
 from your source.
 
 ----
 
 <h2 id="download">Artifact download</h2>
 
-When you deploy a release to an environment, the versioned artifacts from
+When you deploy a release to a stage, the versioned artifacts from
 each of the sources are, by default, downloaded to the automation agent
-so that tasks running within that environment can deploy these artifacts.
+so that tasks running within that stage can deploy these artifacts.
 The artifacts downloaded to the agent are not deleted when a release is
 completed. However, when you initiate the next release, the downloaded artifacts are
 deleted and replaced with the new set of artifacts.
@@ -465,8 +462,8 @@ perform incremental downloads to the agent.
 ::: moniker range="< vsts"
 
 You can, however, instruct Release Management to [skip the automatic download](../process/phases.md#artifact-download)
-of artifacts to the agent for a specific phase and environment of the deployment if you
-wish. Typically, you will do this when the tasks in that phase do not
+of artifacts to the agent for a specific job and stage of the deployment if you
+wish. Typically, you will do this when the tasks in that job do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
 
@@ -474,10 +471,10 @@ download the artifacts you require.
 
 ::: moniker range="vsts"
 
-In VSTS, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
-to the agent for a specific phase and environment of the deployment.
+In Azure Pipelines, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
+to the agent for a specific job and stage of the deployment.
 Typically, you will do this to improve the efficiency of the deployment
-process when the tasks in that phase do not
+pipeline when the tasks in that job do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
 
@@ -497,7 +494,7 @@ can be accessed through the variable:
 
 This uniqueness also ensures that, if you later rename a linked
 artifact source in its original location (for example,
-rename a build pipeline in Team Build or a project
+rename a build pipeline in Azure Pipelines or a project
 in Jenkins), you don't need to edit the task
 properties because the download location defined in
 the agent does not change.
@@ -542,6 +539,6 @@ information about each of these. For a list of all pre-defined artifact variable
 ## Related topics
 
 * [Release pipelines](index.md)
-* [Environments](environments.md)
+* [Stages](environments.md)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts PlanEnvironment API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts PlanEnvironment API | Extensions for Azure DevOps Services
 ms.assetid: 0e70ae54-5dda-3635-5740-de5d24900890
 ms.prod: devops
 ms.technology: devops-ecosystem

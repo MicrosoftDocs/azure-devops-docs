@@ -2,6 +2,8 @@
 title: Modernizing the UI – VSTS Sprint 136 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 6/22/2018
 description: In the Sprint 136 Update of Visual Studio Team Services (VSTS), we introduce a more modern UI.
 ---
@@ -70,7 +72,7 @@ Read about the new features below and head over to VSTS to try them for yourself
 > [!VIDEO https://www.youtube.com/embed/uMkHegKLrcA?rel=0]
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Navigation** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
 Over the next couple weeks, the public preview of our new navigation will be rolling out and available to everyone that uses VSTS. Once it’s available in your account, a feature announcement banner will show and you can turn it on for any project using the Preview Features panel. Read our [blog post](https://aka.ms/vstsnewnav) for more details about the design refresh and why we’re doing it.
 
@@ -84,7 +86,7 @@ Over the next couple weeks, the public preview of our new navigation will be rol
 > [!VIDEO https://www.youtube.com/embed/-NjzRMcjqis?rel=0]
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Navigation** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
 Along with the public preview of our new navigation, we’re also introducing the new Work hubs. Here, you’ll find favorites and quick search support for all your boards, backlogs, and sprints as well as new features such as Sprint Planning. See the [New Work Hubs post](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) on the Microsoft DevOps Blog for more information.
 
@@ -113,7 +115,7 @@ When you want to link two existing work items together, you can now easily find 
 ### New build results page
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New build result page** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New build result page** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
 In TFS 2015 we rolled out a new build system, enabling you to drag and drop scripts and a growing library of open-sourced tasks. We've gradually improved the editor experience, and today we're refreshing the experience for viewing a build.
 
@@ -137,9 +139,9 @@ This enables two scenarios:
 ### Ignore a release gate for a deployment
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New release progress views** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New release progress views** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
-Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release pipeline progresses only when all gates are healthy at the same time. In certain situations, such as when expediting a release or after manually checking health, an approver may want to ignore a gate and allow the release to progress even if that gate has yet to evaluate as healthy. The [release gates](/vsts/pipelines/release/approvals/gates) documentation for more information.
+Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release pipeline progresses only when all gates are healthy at the same time. In certain situations, such as when expediting a release or after manually checking health, an approver may want to ignore a gate and allow the release to progress even if that gate has yet to evaluate as healthy. The [release gates](/azure/devops/pipelines/release/approvals/gates) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Ignore gates](_img/135_10.png)
@@ -159,7 +161,7 @@ The value provided for the variable when the release is created is only used for
 ### Organize your release definitions in folders
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Releases Hub** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Releases Hub** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
 Organizing your release definitions just got simpler and easier. You can now create folders and move your definitions within them. Security can be also be managed directly at the folder level. Folders can be viewed in the **Releases*** hub (it will show up next to the **Releases** hub when you opt-in).
 
@@ -185,7 +187,7 @@ In order to enhance end-to-end traceability, you can see all the commits that we
 
 ### Use upstream sources in legacy feeds
 
-Until now, [legacy feeds](https://docs.microsoft.com/en-us/vsts/package/reference/feed-upgrade-learn-more?view=vsts) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
+Until now, [legacy feeds](/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=vsts) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
 
 ### Use arbitrary public npm feeds as upstream sources
 
@@ -197,9 +199,9 @@ Previously, you had been able to use npmjs.com, and other VSTS feeds, as npm ups
 
 > [!IMPORTANT]
 > Enable the **New build hub** and **New release progress views**
-[preview features](https://docs.microsoft.com/en-us/vsts/project/navigation/preview-features?view=vsts) to use these new capabilities.
+[preview features](/azure/devops/project/navigation/preview-features?view=vsts) to use these new capabilities.
 
-Along with the new **Builds** hub and new [Release](https://docs.microsoft.com/en-us/vsts/release-notes/2018/may-30-vsts#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
+Along with the new **Builds** hub and new [Release](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
 
 > [!div class="mx-imgBorder"]
 ![New Test hub](_img/136_01.png)
@@ -243,7 +245,7 @@ Test execution can abort due to multiple reasons such as bad test code, source u
 
 ### Exclude items completed before a certain date in analytics views
 
-The [Analytics service](https://docs.microsoft.com/en-us/vsts/report/analytics/what-is-analytics?view=vsts) stores all work item history, including work items that are closed. Customers often don’t want to report on older, closed work items. We have updated [Analytics views](https://docs.microsoft.com/en-us/vsts/report/analytics/what-are-analytics-views?view=vsts) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](https://docs.microsoft.com/en-us/vsts/report/powerbi/create-timeinstate-report?view=vsts), much more performant. You set this option on the **History** tab.
+The [Analytics service](/azure/devops/report/analytics/what-is-analytics?view=vsts) stores all work item history, including work items that are closed. Customers often don’t want to report on older, closed work items. We have updated [Analytics views](/azure/devops/report/analytics/what-are-analytics-views?view=vsts) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](/azure/devops/report/powerbi/create-timeinstate-report?view=vsts), much more performant. You set this option on the **History** tab.
 
 > [!div class="mx-imgBorder"]
 ![Exclude completed items](_img/136_18.png)

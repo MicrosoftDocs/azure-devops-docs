@@ -1,6 +1,6 @@
 ---
 title: Customize the workflow of an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add workflow states to a work item type for an inherited process for a project
 ms.technology: devops-agile
 ms.prod: devops

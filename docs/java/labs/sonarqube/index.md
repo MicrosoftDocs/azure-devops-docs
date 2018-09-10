@@ -1,6 +1,6 @@
 ---
-title: Configuring SonarQube for VSTS for a Java project 
-description: Tutorial lab for configuring SonarQube with Java build using Visual Studio Team Services (VSTS)
+title: Configuring SonarQube for Azure DevOps Services for a Java project 
+description: Tutorial lab for configuring SonarQube with Java build using Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Configure SonarQube for your VSTS Java project
+# Configure SonarQube for your Azure DevOps Services Java project
 
 In this exercise, you are going to configure integration between the build system and SonarQube. [SonarQube](https://www.sonarqube.org/) is a well established technical debt management system. Keeping tabs on your technical debt gives you objective measures that you can use to make informed decisions about maintenance, refactoring and enhancements to your code base.
 
@@ -24,14 +24,14 @@ In this exercise, you are going to configure integration between the build syste
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises [to create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private VSTS agent](../dockerbuildagent/index.md). You should also have [created a VSTS Team Build for MyShuttle2](../builddocker/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises [to create a Team Project](../settingAzure DevOps Servicesproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have [created an Azure DevOps Services Team Build for MyShuttle2](../builddocker/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
 > [!NOTE]
 > SonarQube is running in a docker container on your VM. It is only accessible from within the VM. It is therefore not secure - this is not a recommended production configuration.
 
-## Create a SonarQube Endpoint in VSTS
+## Create a SonarQube Endpoint in Azure DevOps Services
 
-In this task you will create a Generic SonarQube Endpoint in VSTS. This endpoint abstracts authentication from the build tasks themselves. After obtaining a token from SonarQube, you will create the endpoint in VSTS.
+In this task you will create a Generic SonarQube Endpoint in Azure DevOps Services. This endpoint abstracts authentication from the build tasks themselves. After obtaining a token from SonarQube, you will create the endpoint in Azure DevOps Services.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
@@ -41,7 +41,7 @@ In this task you will create a Generic SonarQube Endpoint in VSTS. This endpoint
 
 1. Log in as the administrator using username `admin` and password `admin`.
 
-1. Open a new tab in Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in VSTS).
+1. Open a new tab in Chrome and browse to `http://<youraccount>.visualstudio.com` (where `youraccount` is the account you created in Azure DevOps Services).
 
 1. Click on the `jdev` team project to navigate to it.
 
@@ -76,7 +76,7 @@ In this task you will create a SonarQube project.
 
 In this task you will modify the MyShuttle2 build to integrate with SonarQube.
 
-1. In VSTS in your browser, click on Build & Release and then Builds to view your builds. Click on the MyShuttle2 build. Click on the "..." to the right of the build pipeline, then click the "Edit" button.
+1. In Azure DevOps Services in your browser, click on Build & Release and then Builds to view your builds. Click on the MyShuttle2 build. Click on the "..." to the right of the build pipeline, then click the "Edit" button.
 
     ![Edit build pipeline](../_img/sonarqube/edit-builddefinition.png)
 
@@ -123,7 +123,7 @@ In this task you will update a quality gate in SonarQube and see that failing th
 
     ![Update the Quality Gate](../_img/sonarqube/config-coverage-fail.png)
 
-1. Back in VSTS, queue another MyShuttle2 build.
+1. Back in Azure DevOps Services, queue another MyShuttle2 build.
 
 1. When the build completes, it should have a failed result. Click on the build number and look for the SonarQube section in the summary page.
 

@@ -1,5 +1,6 @@
 ---
 title: Lock and unlock folders or files | TFVC 
+titleSuffix: Azure Repos
 description: Lock and unlock folders or files using Team Foundation Version Control 
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Lock and unlock folders or files in Team Foundation Version Control
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!NOTE]
 > This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/en-us/sysinternals/bb896655.aspx) and

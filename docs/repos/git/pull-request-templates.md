@@ -1,5 +1,6 @@
 ---
-title: Improve your pull request descriptions using pull request templates | VSTS & TFS
+title: Improve your pull request descriptions using pull request templates
+titleSuffix: Azure Repos
 description:  Learn how to standardize pull request descriptions using pull request templates
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
@@ -8,13 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 04/03/2018
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
 # Improve pull request descriptions using templates
 
-#### VSTS 
+#### Azure Repos 
 
 Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation. Pull request templates can help your developers create great pull request descriptions that meet your organization's standards.
 
@@ -36,7 +37,7 @@ Before submitting this PR, please make sure:
 - [ ] You have added unit tests
 ```
 
-VSTS allows you to create the following type of pull request templates:
+Azure Repos allows you to create the following type of pull request templates:
 
 - A **default** pull request template that is automatically applied for all new pull requests in the repository, unless overridden by a branch specific pull request template
 - **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
@@ -52,7 +53,7 @@ Default pull request templates are automatically applied to the description fiel
 - A folder named `docs` that is contained in the root folder of the repository
 - The root folder of the repository
 
-Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
+Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, Azure Repos searches the designated folders in the order given, and uses the first default pull request template it finds.
 
 When a new pull request is created in the repository, unless a [branch specific pull request template](#branch-specific-pull-request-templates) applies, the contents of the default pull request template are used to pre-populate the description field in the pull request.
 
@@ -79,7 +80,7 @@ For example, a branch specific pull request template that should apply to all pu
 - `<repository root>/docs/pull_request_template/branches/`
 - `<repository root>/pull_request_template/branches/`
 
-Just like default pull request templates, multiple locations are provided to give you flexibility in where you store branch specific pull request templates. When a pull request is created, VSTS searches the designated folders in the order given for a branch specific pull request template, and uses the first one it finds that matches the branch name. If no branch specific pull request template is found, VSTS then searches for a default pull request template as described in the previous [Default pull request templates](#default-pull-request-templates) section.
+Just like default pull request templates, multiple locations are provided to give you flexibility in where you store branch specific pull request templates. When a pull request is created, Azure Repos searches the designated folders in the order given for a branch specific pull request template, and uses the first one it finds that matches the branch name. If no branch specific pull request template is found, Azure Repos then searches for a default pull request template as described in the previous [Default pull request templates](#default-pull-request-templates) section.
 
 ![Branch specific pull request template](_img/pull-request-templates/branch-specific-pull-request-template.png)
 

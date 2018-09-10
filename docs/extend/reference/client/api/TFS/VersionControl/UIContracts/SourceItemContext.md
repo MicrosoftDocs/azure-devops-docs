@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/UIContracts SourceItemContext API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/UIContracts SourceItemContext API | Extensions for Azure DevOps Services
 ms.assetid: 5a9cb361-f804-4787-d04e-a37f66330be9
 ms.prod: devops
 ms.technology: devops-ecosystem

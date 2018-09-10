@@ -1,6 +1,6 @@
 ---
-title: Rename a project in VSTS or TFS
-description: You can rename your project in VSTS or TFS, and then there are some things you need to do to work with the renamed project.
+title: Rename a project in Azure DevOps Services or TFS
+description: You can rename your project in Azure DevOps Services or TFS, and then there are some things you need to do to work with the renamed project.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac

@@ -1,6 +1,6 @@
 ---
 title: Add type definitions for work item categories to a process template
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Add categories to your process template for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,6 +1,6 @@
 ---
-title: Release Definitions | Visual Studio Team Services REST API Reference
-description: Get release definitions programmatically using the REST APIs for Visual Studio Team Services.
+title: Release Definitions | VSTS REST API Reference
+description: Get release definitions programmatically using the REST APIs for VSTS.
 ms.assetid: e61ec615-19fb-4ce9-a704-5b5e27221d5e
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -26,7 +26,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your Visual Studio Team Services account.
+| account       | string | Your VSTS organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -49,7 +49,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| account      | string | Your Visual Studio Team Services account.
+| account      | string | Your VSTS organization.
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the release definition.
 | Query
@@ -66,7 +66,7 @@ POST https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/r
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| account      | string | Your Visual Studio Team Services account.
+| account      | string | Your VSTS organization.
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -90,7 +90,7 @@ DELETE https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your Visual Studio Team Services account.
+| account       | string | Your VSTS organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
@@ -107,7 +107,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your Visual Studio Team Services account.
+| account       | string | Your VSTS organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
@@ -124,7 +124,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your Visual Studio Team Services account.
+| account       | string | Your VSTS organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | revisionId  | int    | ID of the revision

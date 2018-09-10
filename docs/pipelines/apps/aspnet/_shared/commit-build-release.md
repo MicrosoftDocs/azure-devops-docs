@@ -13,17 +13,17 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 
         ![Location of the changes button on the Visual Studio status bar](./_img/commit-change-in-vs.png)
 
-        Then enter a commit message, click **Commit All**, click the **Sync** link, then click **Outgoing Commits > Push**. This will push the changes to respiratory on VSTS.
+        Then enter a commit message, click **Commit All**, click the **Sync** link, then click **Outgoing Commits > Push**. This will push the changes to a repository in Azure Repos.
 
     * If you're using Team Foundation version control (TFVC), switch to the Team Explorer pane, then to Pending Changes where you should see About.cshtml listed. Enter a comment and click **Check In**.
 
-1. Once the push/check-in is complete, switch to VSTS in your browser.
+1. Once the push/check-in is complete, switch to Azure Pipelines in your browser.
 1. Navigate to **Builds** and click on your build pipeline. You should see a build in progress:
 
-    ![A continuous integration build running in VSTS](./_img/ci-build-running.png)
+    ![A continuous integration build running in Azure Pipelines](./_img/ci-build-running.png)
 
 1. When the build has completed, navigate to **Releases** and you should see that a release has started for that build:
 
-    ![A continuous deployment release running in VSTS](./_img/cd-release-running.png)
+    ![A continuous deployment release running in Azure Pipelines](./_img/cd-release-running.png)
 
 1. When the release has completed, browse to your web site, refresh the page, and see that the change has been deployed.

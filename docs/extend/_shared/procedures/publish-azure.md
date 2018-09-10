@@ -17,7 +17,7 @@ You can use the [free trial](http://azure.microsoft.com/en-us/pricing/free-trial
 
 	![Select existing web site dialog box with the web site selected](./_img/publish-azure/select-website.png)
 
-	If your web site doesn't show up, use the **Manage subscriptions** dialog to connect your Visual Studio account to your Microsoft Azure subscription.
+	If your web site doesn't show up, use the **Manage subscriptions** dialog to connect your Visual Studio organization to your Microsoft Azure subscription.
 
 1. Publish your extension.
 

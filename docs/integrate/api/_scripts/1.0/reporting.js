@@ -37,7 +37,7 @@ exports.submitRequests = function () {
             return {
                 "name": "Active tasks",
                 "parentId": context.myQueriesGuid,
-                "wiql": "Select [System.Id], [System.Title], [System.State], [System.AssignedTo], [Microsoft.VSTS.Scheduling.RemainingWork] From WorkItems Where [System.WorkItemType] = 'Task' AND ([System.State] = 'Active' OR [System.State] = 'In Progress') order by [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc"
+                "wiql": "Select [System.Id], [System.Title], [System.State], [System.AssignedTo], [Microsoft.Azure DevOps Services.Scheduling.RemainingWork] From WorkItems Where [System.WorkItemType] = 'Task' AND ([System.State] = 'Active' OR [System.State] = 'In Progress') order by [Microsoft.Azure DevOps Services.Common.Priority] asc, [System.CreatedDate] desc"
             }
         },
         function (context, result) {
@@ -126,7 +126,7 @@ exports.submitRequests = function () {
                     },
                     "measure": {
                         "aggregation": "sum",
-                        "propertyName": "Microsoft.VSTS.Scheduling.RemainingWork"
+                        "propertyName": "Microsoft.Azure DevOps Services.Scheduling.RemainingWork"
                     },
                 },
                 "userColors": null

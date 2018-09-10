@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts JobEnvironment API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts JobEnvironment API | Extensions for Azure DevOps Services
 description: Represents the context of variables and vectors for a job request.
 ms.assetid: 5a9745a3-b105-894f-214a-4953d6bb4e4c
 ms.prod: devops

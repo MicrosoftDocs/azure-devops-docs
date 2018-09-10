@@ -2,7 +2,7 @@
 title: Build preview, updated backlog navigation, branch policies, and more... – May 15
 description: VSTS release notes for May 15 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
 ms.date: 06/01/2016
@@ -80,7 +80,7 @@ Code review policies can be used to set a minimum number of reviewers for pull r
 
 ##OAuth support for accessing Git repos on VSO
 
-Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](https://visualstudio.microsoft.com/integrate/get-started/auth/oauth) for more details.
+Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](/azure/devops/integrate/) for more details.
 
 ##New filtering options for Git service hook events
 

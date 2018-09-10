@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: TFVC Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Use the REST APIs for Visual Studio Team Services and Team Foundation Server to access TFVC resources like changesets, shelvesets, and TFVC items.
+title: TFVC Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Use the REST APIs for Azure DevOps Services and Team Foundation Server to access TFVC resources like changesets, shelvesets, and TFVC items.
 ms.assetid: F279AADC-016F-4A89-BBFC-EFA9363D3DC0
 ms.manager: douge
 ms.topic: article
