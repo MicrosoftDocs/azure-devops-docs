@@ -30,10 +30,20 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [Repor
  - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
 ## Videos
-| | |
-| --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Build/2018/THR2020/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> |
-| | |
+
+
+<div style="float:left">
+   <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe>
+</div>
+<div style="float:left;width:40px;margin:40px">
+</div>
+<div style="float:left">
+   <iframe src="https://www.youtube.com/embed/VXdgjRdtBQI" width="560" height="314"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen frameBorder="0"></iframe>
+</div>
+
+
+<div style="clear:left">
+</div>
 
 ## Step-by-Step Tutorials
 - [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
