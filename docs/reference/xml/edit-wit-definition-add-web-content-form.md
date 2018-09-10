@@ -1,5 +1,6 @@
 ---
-title: Edit a WIT definition to add web content to a work item form | VSTS & TFS
+title: Edit a WIT definition to add web content to a work item form
+titleSuffix: TFS
 description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -12,7 +13,7 @@ ms.date: 02/14/2017
 
 # Edit a WIT definition to add web content to a work item form
 
-<p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!IMPORTANT]  
 > This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).

@@ -2,7 +2,7 @@
 title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
 description: VSTS release notes for February 16 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 8356f67c-3c1a-4094-a8af-e1c63b3b39aa
 ms.date: 06/01/2016
@@ -60,7 +60,7 @@ By simply logging from your tasks in a special way, you can publish new sections
 
 Write-Verbose ##vso[Task.UploadSummary] Attachments.md
 
-You can also add new sections or new tabs in Release summary using UI contribution points. Documentation and contracts for these contribution pointes will be found [here](https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview) soon.
+You can also add new sections or new tabs in Release summary using UI contribution points. Documentation and contracts for these contribution pointes will be found [here](/azure/devops/integrate/) soon.
 
 ##SCVMM support
 

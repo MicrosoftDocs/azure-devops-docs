@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test APM Counters | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test APM Counters | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: 95d612be-2069-4a36-8b1d-7a4c287abae7
 ms.manager: douge
 ms.topic: article
@@ -32,7 +32,7 @@ Returns counters for application component that can be monitored by load test ru
 
 | Parameter     | Type    | Notes
 |:--------------|:--------|:-------------------------------------------------------------------------------------------------------------
-| account       | string  | Visual Studio Team Services account.
+| account       | string  | VSTS organization.
 | Query
 | applicationId | string  | Filter by APM application identifier. See [APM Applications](./apm-applications.md). applicationId should be of the form pluginType~YourSpecificApplicationId
 

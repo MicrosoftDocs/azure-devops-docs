@@ -1,6 +1,6 @@
 ---
-title: NuGet | REST API Reference for Visual Studio Team Services 
-description: Work with NuGet packages programmatically using the REST APIs for Visual Studio Team Services.
+title: NuGet | REST API Reference for VSTS 
+description: Work with NuGet packages programmatically using the REST APIs for VSTS.
 ms.assetid: 8D402655-CA86-4673-B091-244C0B2B673B
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{account}.pkgs.visualstudio.com/DefaultCollection/_apis/packaging/fe
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feedName              | string  |           | Name or ID of the feed
 | packageName           | string  |           | Normalized Name or ID of the package
 | packageVersion        | string  |           | Version of the package or Version ID
@@ -54,7 +54,7 @@ Content-Type: application/json
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feedName              | string  |           | Name or ID of the feed
 | packageName           | string  |           | Normalized name or ID of the package
 | packageVersion        | string  |           | Version or version ID of the package
@@ -73,7 +73,7 @@ DELETE https://{account}.pkgs.visualstudio.com/DefaultCollection/_apis/packaging
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feedName              | string  |           | Name or ID of the feed
 | packageName           | string  |           | Normalized name or ID of the package
 | packageVersion        | string  |           | Version or version ID of the package
@@ -92,7 +92,7 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | feedname   | string  | Name or Id of the feed
 | packageName   | string  | Normalized Name or ID of the package
 | packageversion   | string  | Version of the package or Version ID
@@ -121,7 +121,7 @@ Content-Type: application/json
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account
+| account               | string  |           | VSTS organization
 | feedName              | string  |           | Name or ID of the feed
 | packageName           | string  |           | Normalized name or ID of the package
 | packageVersion        | string  |           | Version or version ID of the package

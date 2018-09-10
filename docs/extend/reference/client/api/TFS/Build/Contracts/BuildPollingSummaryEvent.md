@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildPollingSummaryEvent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildPollingSummaryEvent API | Extensions for Azure DevOps Services
 ms.assetid: ec6f9008-0cf4-bc9d-0619-73100ac348f8
 ms.prod: devops
 ms.technology: devops-ecosystem

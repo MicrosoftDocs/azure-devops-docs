@@ -1,5 +1,6 @@
 ---
 title: Properties Command
+titleSuffix: Azure Repos
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Properties Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about items under version control.
 

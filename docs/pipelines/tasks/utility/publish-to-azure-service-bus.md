@@ -1,6 +1,6 @@
 ---
 title: Publish To Azure Service Bus task 
-description: Build and release task to send a message to an Azure Service Bus with a build or release pipeline in VSTS and TFS.
+description: Build and release task to send a message to an Azure Service Bus with a build or release pipeline in Azure Pipelines and TFS.
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

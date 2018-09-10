@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestVariable API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestVariable API | Extensions for Azure DevOps Services
 ms.assetid: 69bc738a-2ac5-f7dc-fa48-1263b24ca7ec
 ms.prod: devops
 ms.technology: devops-ecosystem

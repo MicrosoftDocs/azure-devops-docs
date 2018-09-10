@@ -5,7 +5,7 @@ ms.topic: include
 ## Agent variables
 
 > [!NOTE]
-> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks. 
+> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks.
 > You cannot use them to customize the build number or to apply a version control label or tag.
 
 <table>
@@ -274,6 +274,14 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
+<td>Build.SourceVersionMessage</td>
+<td>The comment of the commit or changeset.
+
+Note: This variable is available in TFS 2015.4.
+</td>
+</tr>
+
+<tr>
 <td>Build.StagingDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-artifacts-directory.md)]
@@ -318,7 +326,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.CollectionId</td>
-<td>The GUID of the TFS collection or VSTS organization</td>
+<td>The GUID of the TFS collection or Azure DevOps organization</td>
 </tr>
 
 <tr>
@@ -335,7 +343,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to `build` if the process is a build or `release` if the process is a release.</td>
+<td>Set to `build` if the pipeline is a build or `release` if the pipeline is a release.</td>
 <tr>
 
 <tr>
@@ -350,7 +358,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
+<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
 </tr>
 
 <tr>

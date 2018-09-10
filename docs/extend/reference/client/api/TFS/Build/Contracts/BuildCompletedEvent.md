@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildCompletedEvent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildCompletedEvent API | Extensions for Azure DevOps Services
 ms.assetid: 06de63cd-ad97-c30a-dd30-5591e09dbe58
 ms.prod: devops
 ms.technology: devops-ecosystem

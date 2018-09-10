@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestAttachmentRequestModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestAttachmentRequestModel API | Extensions for Azure DevOps Services
 ms.assetid: 47ce9d7c-2401-174a-6314-1d121d72ce4d
 ms.prod: devops
 ms.technology: devops-ecosystem

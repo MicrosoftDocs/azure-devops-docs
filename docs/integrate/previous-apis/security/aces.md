@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Access control entries (ACEs) | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Access control entries reference for integrating with Visual Studio Team Services
+title: Access control entries (ACEs) | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Access control entries reference for integrating with VSTS
 ms.assetid: ca6693b0-1982-4f8b-9b25-41b903fad3ca
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ POST https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-vers
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | Query
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -63,7 +63,7 @@ DELETE https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-ve
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | Query 
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

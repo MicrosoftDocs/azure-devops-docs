@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitItem API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitItem API | Extensions for Azure DevOps Services
 ms.assetid: 262cc83b-45ff-7673-da17-24bd936cda2a
 ms.prod: devops
 ms.technology: devops-ecosystem

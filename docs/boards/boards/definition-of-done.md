@@ -1,6 +1,6 @@
 ---
 title: Definition of Done on the Kanban board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Definition of Done
 description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
 ms.technology: devops-agile
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Definition of Done
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range=">= tfs-2015"
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 

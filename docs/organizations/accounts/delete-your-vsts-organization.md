@@ -1,6 +1,6 @@
 ---
-title: Delete your VSTS organization
-description: How to delete your Visual Studio Team Services organization and what happens to users
+title: Delete your Azure DevOps organization
+description: How to delete your organization, and what happens to users when you do.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
@@ -8,91 +8,89 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Delete your VSTS organization
+# Delete your organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you don't need your  VSTS organization, you can delete it.
-If you change your mind within 30 days,
-you can [recover your organization](recover-your-vsts-organization.md).
+If you don't need your Azure DevOps organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 30 days, your organization and data are permanently deleted.
 
-When you delete your VSTS organization:
+When you delete your organization, note the following:
 
 * All users lose access to organization services and resources immediately.
 
-* Your organization URL becomes available for anyone to use. But it might take up to 1 hour before your organization URL becomes available again.
+* Your organization URL becomes available for anyone to use. (It might take up to one hour before your organization URL becomes available again.)
 
-* Your organization is disabled and appears deleted in your profile for 30 days.
+* Your organization is disabled, and appears deleted in your profile for 30 days.
 
 * If your organization is linked to an Azure subscription for billing purchases, you must unlink your organization before you delete your organization.
 
-  You're still charged for any paid users and
-  VSTS that your organization uses during this billing cycle.
-  Billing will stop after the current cycle ends.
+  You're still charged for any paid users and Azure DevOps Services that your organization uses during this billing cycle. Billing stops after the current cycle ends.
 
-To delete your VSTS organization, you'll need VSTS organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
-## Before you delete your VSTS organization
+## Prerequisites
 
-If your VSTS organization uses an Azure subscription to bill purchases, you must first unlink your organization from your Azure subscription before deleting your organization.
+If your organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your  organization in Azure DevOps.
 
-To disconnect Azure AD from your organization, you'll need VSTS organization owner permissions and at least Azure subscription co-administrator permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner) Or learn more about [Azure subscription administrators](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator/).
+To remove billing from your organization, you must be a project collection administrator.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Enter *team services* in the search box and then choose **Team Services organizations** in the resulting menu.
-3. Select the organization you will be deleting.
-4. Choose **Disconnect AAD**.
-  Your VSTS organization is disconnected from your Azure subscription.
+2. In the search box, enter *Azure DevOps Services*. In the list, select **Azure DevOps Services organizations**.
+3. Select the organization you are deleting.
+4. Choose **Remove billing**. Your Azure subscription is removed from your organization.
 
-**Azure portal**
-
-  ![Unlink your organization from an Azure subscription](_img/delete-organization/app_unlinkvsoorganization2.png)
+   ![Screenshot of the Azure portal, with Remove billing highlighted](_img/_shared/azure-portal-remove-billing.png)
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
 ## Delete your organization
 
-You'll need at least Basic access and VSTS organization owner
-permissions to delete your VSTS organization.
-[How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+To delete your organization, you need at least Basic access and organization owner
+permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
-2. Highlight the organization that you want to delete and then choose ![gear icon](../../_img/icons/gear-icon.png), **Admin settings**.
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-   ![Choose Admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-3. Choose **Overview** and then **Delete**.
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   ![Choose Overview, and then Delete](_img/delete-vsts-organization/organization-overview-settings.png)
 
-4. In the resulting popup, choose your reason for deleting the organization from the dropdown menu, enter the name of your organization, and then choose **Delete**.
+3. Select **Overview** > **Delete**.
 
-   ![Select reason for deletion, and then select delete](_img/delete-vsts-organization/delete-organization-popup.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
-5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted organization.
+4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
+
+   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
+
+5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
    [Need help?](faq-delete-restore-vsts-organization.md#get-support)
----
+
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), the  admin settings icon.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), and  **Organization settings**.
 
-   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+   ![Screenshot of Open Organization settings](../../_shared/_img/settings/open-account-settings.png)
 
-3. Choose **Delete **.
+3. Select **Overview** > **Delete**.
 
-   ![Choose Delete](_img/delete-vsts-organization/organization-settings-delete.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
-4. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted organization.
+4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
+
+   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
+
+5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 

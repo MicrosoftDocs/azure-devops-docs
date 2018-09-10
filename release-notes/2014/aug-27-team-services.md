@@ -2,7 +2,7 @@
 title: Stakeholder licensing – Aug 27
 description: VSTS release notes for August 27 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 7cabae70-f736-4013-a69a-9df0a2c2b59b
 ms.date: 06/01/2016
@@ -30,7 +30,7 @@ This includes the ability to view the backlog, add and edit items, run work item
 
 *(click to zoom)*
 
-I hope and expect that enabling this will eliminate a lot of the friction in enabling the entire organization to participate in projects. Learn more about what you can do with a [stakeholder license](https://docs.microsoft.com/en-us/vsts/organizations/security/get-started-stakeholder?view=vsts).
+I hope and expect that enabling this will eliminate a lot of the friction in enabling the entire organization to participate in projects. Learn more about what you can do with a [stakeholder license](/azure/devops/organizations/security/get-started-stakeholder?view=vsts).
 
 Enjoy!
 

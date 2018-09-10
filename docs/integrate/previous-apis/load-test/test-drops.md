@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test Drops | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test Drops | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: c97501dd-e51d-41ba-a1c0-345c738e7bc0
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{account}.vsclt.visualstudio.com/_apis/clt/testdrops/{testdropid}
 | Parameter      | Type     | Required | Description |
 |:---------------|:---------|:---------|:------------|
 |URL
-| account        | string   | Yes      | Visual Studio Team Services account.
+| account        | string   | Yes      | VSTS organization.
 | testDropId     | string   | Yes      | Identifier of the test drop. |
 
 [!code-REST [GET__TestDrops__testDropId__json](./_data/testdrops/GET__TestDrops__testDropId_.json)]
@@ -45,7 +45,7 @@ POST https://{account}.vsclt.visualstudio.com/_apis/clt/testdrops
 | Parameter      | Type    | Required | Description |
 |:---------------|:--------|:---------|:------------|
 |URL
-| account        | string  | Yes      | Visual Studio Team Services account.
+| account        | string  | Yes      | VSTS organization.
 |Payload
 | dropType       | string  | No       | The type of the test drop. Currently, only ```TestServiceBlobDrop``` is supported. |
 

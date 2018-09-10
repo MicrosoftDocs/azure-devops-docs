@@ -3,7 +3,7 @@ title: Microsoft Teams integration, repo favorites, and new package management a
 description: VSTS release notes for Nov 2 2016
 ms.ContentId: 171e69be-42f9-48f1-af6d-c08ed0093f92
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---

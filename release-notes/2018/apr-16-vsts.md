@@ -2,6 +2,8 @@
 title: Deployment for Azure Database for MySQL, Kubernetes with Helm, and Ruby on Rails – VSTS Sprint 133 Update
 author: alexcnichols
 ms.author: alexn
+ms.prod: devops
+ms.technology: devops-release-notes
 ms.date: 4/16/2018
 description: In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue to expand on the languages and platforms we support for build and release.
 ---
@@ -107,7 +109,7 @@ You can now continuously deploy to [Azure Database for MySQL](https://azure.micr
 
 [Helm](https://github.com/kubernetes/helm/) is a tool that streamlines installing and managing Kubernetes applications. It has also gained a lot of popularity and community support in the last year. A Helm task in **Release** is now available for packaging and deploying Helm charts to [Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) or any other Kubernetes cluster.
 
-VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/vsts/pipelines/apps/cd/azure/deploy-container-kubernetes?view=vsts) documentation for more information.
+VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![helm tasks](_img/133_09.png)
@@ -118,7 +120,7 @@ A new **Azure App Service** release definition template now includes the tasks n
 
 ### Configure Go and Ruby applications using Azure DevOps Projects
 
-Azure DevOps Projects makes it easy to get started on Azure. It helps you launch an application on the Azure service of your choice in just a few steps. DevOps Projects sets up everything you need for developing, deploying, and monitoring your app. Now you can setup an entire DevOps pipeline for Go and Ruby applications too. See the [Deploy to Azure](/vsts/deploy-azure) documentation for more information.
+Azure DevOps Projects makes it easy to get started on Azure. It helps you launch an application on the Azure service of your choice in just a few steps. DevOps Projects sets up everything you need for developing, deploying, and monitoring your app. Now you can setup an entire DevOps pipeline for Go and Ruby applications too. See the [Deploy to Azure](/azure/devops/deploy-azure) documentation for more information.
 
 ### Continuously deploy builds tagged by post-build processing
 
@@ -146,16 +148,16 @@ This feature was prioritized based on a [suggestion](https://visualstudio.uservo
 
 ### Use upstream NuGet packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/vsts/package/concepts/upstream-sources?view=vsts#benefits-of-upstream-sources) documentation for more information.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=vsts#benefits-of-upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![NuGet upstreams](_img/133_05.png)
 
 ### Enable nuget.org upstream sources in more feeds
 
-Previously, only feeds created after the [Sprint 130 Update](/vsts/release-notes/2018/feb-14-vsts#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
+Previously, only feeds created after the [Sprint 130 Update](/azure/devops/release-notes/2018/feb-14-vsts#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
 
-Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/vsts/package/concepts/upstream-sources?view=vsts#saving-packages-from-upstream-sources-continuity) documentation for more information.
+Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=vsts#saving-packages-from-upstream-sources-continuity) documentation for more information.
 
 ## Wiki
 
@@ -170,7 +172,7 @@ This feature was prioritized based on a [suggestion](http://visualstudio.uservoi
 
 ### Filter search results by Wiki name
 
-Publishing markdown files from a Git repository as a Wiki, which we [released last Update](/vsts/release-notes/2018/apr-03-vsts#publish-markdown-files-from-a-git-repository-as-a-wiki), will mean you’ll start seeing multiple wikis in the same project. When searching, it may be difficult to wade through similar documents and find what you’re looking for. Now, when you search for your wiki page you will be able to scope down your results by applying the **Wiki** name filter on the search results pages to help you find your content faster.
+Publishing markdown files from a Git repository as a Wiki, which we [released last Update](/azure/devops/release-notes/2018/apr-03-vsts#publish-markdown-files-from-a-git-repository-as-a-wiki), will mean you’ll start seeing multiple wikis in the same project. When searching, it may be difficult to wade through similar documents and find what you’re looking for. Now, when you search for your wiki page you will be able to scope down your results by applying the **Wiki** name filter on the search results pages to help you find your content faster.
 
 > [!div class="mx-imgBorder"]
 ![wiki names in search](_img/133_03.png)

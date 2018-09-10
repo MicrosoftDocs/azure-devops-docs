@@ -12,7 +12,7 @@
 | <code>vso.code_manage</code> | Code (read, write, and manage) | Grants the ability to read, update, and delete source code, access metadata about commits, changesets, branches, and other version control artifacts. Also grants the ability to create and manage code repositories, create and manage pull requests and code reviews, and to receive notifications about version control events via service hooks. |  |
 | <code>vso.dashboards_manage</code> | Team dashboards (manage) | Grants the ability to manage team dashboard information |  |
 | <code>vso.dashboards</code> | Team dashboards (read) | Grants the ability to read team dashboard information |  |
-| <code>vso.entitlements</code> | Entitlements (Read) | Provides read only access to VSTS licensing entitlements endpoint to get account entitlements. |  |
+| <code>vso.entitlements</code> | Entitlements (Read) | Provides read only access to Azure DevOps Services licensing entitlements endpoint to get organization entitlements. |  |
 | <code>vso.extension</code> | Extensions (read) | Grants the ability to read installed extensions. | vso.extension_manage |
 | <code>vso.extension_manage</code> | Extensions (read and manage) | Grants the ability to install, uninstall, and perform other administrative actions on installed extensions. |  |
 | <code>vso.extension.data</code> | Extension data (read) | Grants the ability to read data (settings and documents) stored by installed extensions. | vso.extension.data_write |
@@ -30,7 +30,7 @@
 | <code>vso.packaging</code> | Packaging (read) | Grants the ability to read feeds and packages. | vso.packaging_write<br>vso.packaging_manage |
 | <code>vso.packaging_write</code> | Packaging (read and write) | Grants the ability to create and read feeds and packages. | vso.packaging_manage |
 | <code>vso.packaging_manage</code> | Packaging (read, write, and manage) | Grants the ability to create, read, update, and delete feeds and packages. |  |
-| <code>vso.profile</code> | User profile (read) | Grants the ability to read your profile, accounts, collections, projects, teams, and other top-level organizational artifacts. | vso.extension<br>vso.extension_manage<br>vso.extension.data<br>vso.extension.data_write<br>vso.gallery<br>vso.gallery_acquire<br>vso.gallery_publish<br>vso.gallery_manage<br>vso.notification<br>vso.notification_write<br>vso.notification_manage<br>vso.packaging<br>vso.packaging_write<br>vso.packaging_manage<br>vso.profile_write<br>vso.release<br>vso.release_execute<br>vso.release_manage<br>vso.test<br>vso.test_write |
+| <code>vso.profile</code> | User profile (read) | Grants the ability to read your profile, organizations, collections, projects, teams, and other top-level organizational artifacts. | vso.extension<br>vso.extension_manage<br>vso.extension.data<br>vso.extension.data_write<br>vso.gallery<br>vso.gallery_acquire<br>vso.gallery_publish<br>vso.gallery_manage<br>vso.notification<br>vso.notification_write<br>vso.notification_manage<br>vso.packaging<br>vso.packaging_write<br>vso.packaging_manage<br>vso.profile_write<br>vso.release<br>vso.release_execute<br>vso.release_manage<br>vso.test<br>vso.test_write |
 | <code>vso.profile_write</code> | User profile (write) | Grants the ability to write to your profile. |  |
 | <code>vso.project</code> | Project and team (read) | Grants the ability to read projects and teams. | vso.project_write<br>vso.project_manage |
 | <code>vso.project_write</code> | Project and team (read and write) | Grants the ability to read and update projects and teams. | vso.project_manage |

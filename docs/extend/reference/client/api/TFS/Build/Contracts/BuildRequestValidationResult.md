@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildRequestValidationResult API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildRequestValidationResult API | Extensions for Azure DevOps Services
 ms.assetid: 0a87872a-dfd9-25e8-f352-faa3709aa63c
 ms.prod: devops
 ms.technology: devops-ecosystem

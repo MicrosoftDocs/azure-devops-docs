@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildStartedEvent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildStartedEvent API | Extensions for Azure DevOps Services
 ms.assetid: f8d00352-4572-ef1f-471b-b0e72c5af56d
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,6 +1,6 @@
 ---
 title: Create and manage an inherited process 
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add custom fields, work item types, and more by creating and applying an inherited process to a project  
 ms.technology: devops-agile
 ms.prod: devops
@@ -22,12 +22,15 @@ ms.date: 05/31/2018
 
 You customize your project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a project, you select the process you want your project to use. 
 
+> [!IMPORTANT]  
+> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 In this article, learn how to perform these tasks:  
 
 > [!div class="checklist"] 
-> * Open the **Settings>Process** hub
+> * Open **Settings>Process**
 > * Create an inherited process   
 > * Customize an inherited process  
 > * Copy an inherited process   
@@ -100,7 +103,7 @@ You can change the process a project uses from a system process or inherited pro
 <a id="create-team-project">  </a>
 ## Create a project from a process 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
+0. Open the &hellip; context menu for the process you want to use and choose **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -151,7 +154,7 @@ Set an inherited process as the default to have it pre-selected for any addition
 
 To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
 
-VSTS owners and Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
+Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -169,7 +172,7 @@ VSTS owners and Project Collection Administrators can [add projects](../../proje
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/vsts/processes/processes).
 
 
 

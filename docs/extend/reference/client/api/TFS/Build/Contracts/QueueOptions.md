@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts QueueOptions API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts QueueOptions API | Extensions for Azure DevOps Services
 ms.assetid: 4f11cd63-5d8e-0e12-6ce8-9fd479b15fa1
 ms.prod: devops
 ms.technology: devops-ecosystem

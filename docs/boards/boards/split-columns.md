@@ -1,8 +1,8 @@
 ---
 title: Split columns on your Kanban board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Split columns
-description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services or Team Foundation Server  
+description: Implement Kanban pull model by dividing each column into Doing and Done when working in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 ---
 
 # Split columns
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 

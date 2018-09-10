@@ -1,6 +1,6 @@
 ---
 title: View & add work items from the Work Items page
-titleSuffix: VSTS  
+titleSuffix: Azure Boards and TFS
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 ms.global_help.title: View & add work items
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 1 
@@ -19,18 +19,18 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**VSTS | TFS 2018.2**  
+**Azure Boards | TFS 2018.2**  
 
-View work items that you created or are assigned to you. The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Boards>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]     
-> **Feature availability:** The **Work Items** page is in preview and currently available from TFS 2018.2 and later versions. 
+> The **Work Items** page is available from TFS 2018.2 and later versions. 
 ::: moniker-end  
 
 ## Prerequisites 
 
-- You must connect to a project. If you don't have an account or project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
+- You must connect to a project. If you don't have a project yet, [create one](../get-started/index.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
 - To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the project, ask the [organization owner or project administrator](../../organizations/security/lookup-organization-owner-admin.md) to add you.
 
 
@@ -44,10 +44,10 @@ You can start viewing and adding work items once you connect to a project.
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
 
 ::: moniker-end
 
@@ -60,12 +60,12 @@ You can start viewing and adding work items once you connect to a project.
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items ](_img/view-add/work-items-hub.png)
+![Boards>Work Items ](_img/view-add/work-items-hub.png)
 
 ---
 
 > [!NOTE]    
->Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
@@ -79,7 +79,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](_img/view-add/view-menu.png)
+![Boards>Work Items ](_img/view-add/view-menu.png)
 </td>
 <td>
 <ul>
@@ -104,10 +104,11 @@ Adding a work item is just one click away. Simply choose the work item type from
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
-![Work>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
+![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
 
+<!---
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -121,7 +122,7 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
+![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 
@@ -136,7 +137,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](_img/view-add/view-options.png)
+![Boards>Work Items ](_img/view-add/view-options.png)
 </td>
 <td>
 <ul>
@@ -155,7 +156,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)), and then choose the option you want from the menu. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
+![Boards>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
 
 
 ## Open a view as a query  
@@ -170,7 +171,7 @@ Queries provide additional features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
 
 
 <a id="page-controls">  </a>
@@ -186,12 +187,12 @@ Use the following three controls to manage your views.
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Related articles
-- [Move, change, or delete work items (REcycle Bin)](../backlogs/remove-delete-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+- [Move, change, or delete work items (REcycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 - [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
+> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](/cli/vsts/overview?view=vsts-cli-latest).
 

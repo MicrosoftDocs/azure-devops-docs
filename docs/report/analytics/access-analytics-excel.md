@@ -1,7 +1,7 @@
 ---
 title: Access Analytics Service data through Excel
-titleSuffix: VSTS    
-description: How to guide for accessing the Analytics Service OData from Excel for Visual Studio Team Services 
+titleSuffix: Azure DevOps Services    
+description: How to guide for accessing the Analytics Service OData from Excel for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 11/13/2017
+ms.date: 09/10/2018
 ---
 
 # Access data through Excel 
@@ -35,18 +35,21 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 4. Enter the URL in the format below and choose **OK**:  
 
 	```
-	https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0-preview
+	https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/
 	```  
+
+	If the *OrganizationName* is **fabrikam** and the *version* is **v1.0**, then the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
 	![Select OData Feed ](../powerbi/_img/pbi3.png)  
 
-	If the *OrganizationName* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
-
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL with the *ProjectName* specified which will trim the results by the specified project across all entities related to that project. 
+	>
+	>`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/` 
+	
+5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).
 
-5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md)
-6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return
+6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return.
 
     ![Excel Navigator](_img/excel2.png)
 

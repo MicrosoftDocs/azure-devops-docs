@@ -1,6 +1,6 @@
 ---
 title: Cumulative flow charts
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
 ms.prod: devops  
 ms.technology: devops-analytics  
@@ -9,12 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
+monikerRange: '>= tfs-2013' 
 ms.date: 03/23/2018  
 ---
 
 # Configure a cumulative flow chart
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
 
@@ -51,11 +52,11 @@ A few options are available for you to [configure your chart](#configure) or [co
 <a id="configure-widget"></a>
 ## Configure the CFD widget    
 
->[!NOTE]   
-><b>Feature availability:</b> For VSTS, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+> [!NOTE]   
+> **Feature availability**: For Azure DevOps, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
-[Manage team assets](../../organizations/settings/add-team-administrator.md)to get added as a team admin. 
+[Configure team settings](../../organizations/settings/add-team-administrator.md) to get added as a team admin. 
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
@@ -65,7 +66,7 @@ You will need to be a team administrator or a member of the Project Administrato
 
 	![Cumulative flow diagram widget](_img/cfd-choose-widget.png)  
 
-4. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Choose the ![](../_img/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />    
 
@@ -77,19 +78,38 @@ You will need to be a team administrator or a member of the Project Administrato
 
 6. Choose the color. You can distinguish the CFD for different teams by choosing different colors.
 
-7. Click Save when done. The following image shows an example CFD chart showing 30 days of data. 
+7. Choose **Save** when done. The following image shows an example CFD chart showing 30 days of data. 
    
 	<img src="_img/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" />    
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2013"
+::: moniker range=">= tfs-2013"
 
-## View the built-in cumulative flow chart   
+## View the built-in cumulative flow chart 
 
-You open the built-in (work tracking datastore) cumulative flow chart for your backlog or portfolio backlog by clicking the image in the upper-right corner of your **Work>Backlogs** page. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-<img src="../../boards/boards/_img/ALM_KB_Board5.png" alt="Open the cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
+::: moniker range="vsts"  
+
+You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Boards>Boards** page. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open CFD, new nav](_img/open-cfd-new-nav.png)
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Work>Backlogs** page. 
+
+![Open CFD, prev nav](/azure/devops/boards/boards/_img/kanban-basics-open-cfd.png)
+
+--- 
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
 
@@ -102,21 +122,42 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 
 Each team can set their preferences for the built-in cumulative flow charts.  
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
+For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../boards/boards/kanban-basics.md). 
+
+::: moniker range="vsts"  
+
+1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Board settings](_img/cfd/open-cfd-settings-new-nav.png)
+
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban boards and CFD charts.  
+
+2. Choose **Cumulative flow** and specify the team's preferences.  
+
+	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 
-2. Click the Cumulative flow tab and specify the team's preferences.  
+2. Choose **Cumulative flow** and specify the team's preferences.  
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
 
-3. Repeat steps 1 and 2 for each backlog level you want to configure.  
+---
 
-For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../boards/boards/kanban-basics.md). 
 
-::: moniker-end
 
 ## Try this next
  

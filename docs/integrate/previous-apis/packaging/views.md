@@ -1,6 +1,6 @@
 ---
-title: Release Views | REST API Reference for Visual Studio Team Services
-description: Work with release views programmatically using the REST APIs for Visual Studio Team Services .
+title: Release Views | REST API Reference for VSTS
+description: Work with release views programmatically using the REST APIs for VSTS .
 ms.assetid: AED5CC40-4B11-447E-BAE6-D9806687736E
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -24,7 +24,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | feed      | string  | Name or ID of the feed.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -40,7 +40,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | feed        | string | Name or ID of the feed.
 | view        | string | Name or ID of the release view.
 | Query
@@ -59,7 +59,7 @@ POST https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of the feed.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -78,7 +78,7 @@ PATCH https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of feed to be updated.
 | view        | string | Name or ID of the release view to be updated.
 | Query
@@ -97,7 +97,7 @@ DELETE https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packagin
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of the feed to be deleted.
 | view        | string | Name or ID of the release view to be deleted.
 | Query

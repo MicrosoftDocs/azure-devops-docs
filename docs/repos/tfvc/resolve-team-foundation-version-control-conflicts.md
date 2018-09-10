@@ -1,5 +1,6 @@
 ---
 title: Resolve Team Foundation Version Control conflicts
+titleSuffix: Azure Repos
 description: Resolve Team Foundation Version Control conflicts
 ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Resolve Team Foundation Version Control conflicts
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
 

@@ -1,8 +1,8 @@
 ---
 title: Search across your code base, work items, or wiki
-titleSuffix: VSTS & TFS   
-description: Find code or work items quickly in (VSTS) and Team Foundation Server (TFS)  
-ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
+titleSuffix: Azure DevOps Services & TFS   
+description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
+ms.assetid: 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -10,13 +10,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2017'
 ms.date: 07/21/2018
 ---
 
 
 # Search across your code base, work items, or wiki
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -30,11 +31,13 @@ With the search box, you can quickly find a code file or work item.
 <a name="start-search"></a>
 ## Initiate a code search 
 
+Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-vsts-extension.md#install-extension).  
+
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
-To start your search, choose **Code>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](../../organizations/public/_img/search/code-search-vert.png) 
@@ -68,7 +71,7 @@ To start your search, choose **Code>Files** or other page under **Code**, enter 
    list, and type the criteria value.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/code-search-filters.png)     
+	> ![Code search bar](_img/search/code-search-filters.png)     
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -95,7 +98,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range="vsts"  
 
-0. Choose any **Work** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
@@ -126,7 +129,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the VSTS title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work Item Search textbox in the title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search. 
@@ -154,11 +157,13 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
+::: moniker range="vsts"  
+
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
+	> ![Search from the title bar](_img/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -169,7 +174,7 @@ To learn more, see [Search code](../search/code-search.md).
  
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](..//search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../search/_img/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
@@ -183,6 +188,11 @@ To learn more, see [Search code](../search/code-search.md).
 1. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)  
 
@@ -190,7 +200,7 @@ To learn more, see [Search code](../search/code-search.md).
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from the title bar](_img/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 
@@ -228,20 +238,22 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
+> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
 
+Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, new navigation](_img/search/search-wiki-vert.png)   
+> ![Wiki search option, new navigation](../wiki/_img/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results, new navigation](_img/search/wiki-search-results-vert.png)   
+> ![Wiki search results, new navigation](../wiki/_img/search/wiki-search-example-vert.png)   
 > 
 ::: moniker-end  
 
@@ -253,13 +265,15 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ::: moniker range=">= tfs-2018"  
 
+Open **Wiki** and type your keyword or phrase into the search box. 
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, previous navigation](../wiki/_img/wiki/wiki-search.png)   
+> ![Wiki search option, previous navigation](../wiki/_img/search/search-wiki-horz.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/_img/wiki/wiki-search-example.png)
+> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
 ::: moniker-end
 

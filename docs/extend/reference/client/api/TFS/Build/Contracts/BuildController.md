@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildController API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildController API | Extensions for Azure DevOps Services
 ms.assetid: c5f8000a-00fd-8ae0-bf26-1e1ef0aa5ecf
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,7 +1,7 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: VSTS & TFS 
-description: Index to topics for planning and tracking work in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS 
+description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -11,7 +11,7 @@ ms.author: kaelli
 ms.date: 03/20/2018
 ---
 
-# Work Items
+# Work items
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
@@ -27,23 +27,23 @@ Track the features and requirements you're developing, code defects or bugs, and
 ## 5-Minute Quickstarts  
  
 - [View and add work items](view-add-work-items.md)  
-- [Add work items](../backlogs/add-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json) 
+- [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## 5-Minute Quickstarts  
   
-- [Add work items](../backlogs/add-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json) 
+- [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ## 5-Minute Quickstarts  
 
-- [Add work items](../backlogs/add-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+- [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 ::: moniker-end
 
 
@@ -51,22 +51,22 @@ Track the features and requirements you're developing, code defects or bugs, and
 ## Step-by-Step Tutorials
 
 - [Follow work](follow-work-items.md)
-- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Link work items](../backlogs/add-link.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+- [Manage bugs](../backlogs/manage-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Link work items](../backlogs/add-link.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Step-by-Step Tutorials
 
-- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Remove or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Link work items](../backlogs/add-link.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+- [Manage bugs](../backlogs/manage-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Remove or delete items](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Link work items](../backlogs/add-link.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 
 ::: moniker-end
 
@@ -80,23 +80,23 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## How-to Guides
-- [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
-- [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/vsts/boards/work-items/toc.json)
-- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/boards/work-items/toc.json)
+- [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
+- [Use work item templates](../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
 ## How-to Guides
-- [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/vsts/boards/work-items/toc.json)
-- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/boards/work-items/toc.json)
+- [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
+- [Use work item templates](../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json)
 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Reference
-- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Work item form controls](work-item-form-controls.md) 
 - [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)       
 - [Work item field index](guidance/work-item-field.md)
@@ -105,7 +105,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Reference
-- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)  
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)  
 - [Work item field index](guidance/work-item-field.md)
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ContributionType API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ContributionType API | Extensions for Azure DevOps Services
 description: A contribution type, given by a json schema
 ms.assetid: 0d52efa3-ec43-6dd7-1da8-2f0024d31aff
 ms.prod: devops

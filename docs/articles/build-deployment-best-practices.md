@@ -1,6 +1,6 @@
 ---
-title: VSTS - A Build and Deployment Automation Case Study for World Wide Time Keeping
-description: Automate builds and releases with Visual Studio Team Services (VSTS), a case study for World Wide Time Keeping
+title: Azure DevOps - A Pipeline Automation Case Study for World Wide Time Keeping
+description: Automate build and release pipelines with Azure DevOps, a case study for World Wide Time Keeping
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers

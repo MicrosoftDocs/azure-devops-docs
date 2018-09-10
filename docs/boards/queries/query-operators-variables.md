@@ -1,7 +1,7 @@
 ---
 title: Query fields, operators, and macros/variables 
-titleSuffix: VSTS & TFS
-description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
@@ -93,7 +93,7 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. </p>
-<blockquote style="font-size: 13px">**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px">The Boolean data type field is only supported for Azure Boards and TFS 2017 and later versions.    
 </blockquote>
 </td></tr>
 
@@ -222,7 +222,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is available from VSTS. and TFS 2018.2 and later versions.</blockquote>
+<blockquote>The <strong>Not In</strong> operator is available from Azure Boards and TFS 2018.2 and later versions.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
@@ -231,7 +231,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong> that matches the name of a team, security group, or category defined in the system.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
@@ -285,7 +285,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 </td>
 </tr>
 
@@ -340,13 +340,13 @@ You can use the macros described in the following table to filter your queries b
 </table>
  
 ####Notes:
-0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
-0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
-0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
-0. The **@TeamAreas** macro is supported for VSTS only at this time.
+0. The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. 
+0. The **@CurrentIteration +/- n** macro is supported for Azure Boards and only when run from the web portal. 
+0. The **@Follow** macro is supported for Azure Boards and TFS 2017 and later versions.
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
+0. The **@TeamAreas** macro is supported for Azure Boards only at this time.
  
 
 <a id="full-text" /> 
@@ -389,6 +389,6 @@ In addition to the full-text search index, a query index is created. It is based
 
 By default, the following fields are indexed: **Assigned To**, **Created Date**, **Changed By**, **State**, **Reason**, **Area ID**, **Iteration ID**, and **Work Item Type**. If there are other fields that your team frequently uses in their queries, you can add them to the query index.
 
-You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json).
+You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).
 
 --> 

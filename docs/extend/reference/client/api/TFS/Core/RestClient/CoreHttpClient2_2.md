@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/RestClient CoreHttpClient2_2 API | Extensions for Visual Studio Team Services
+title: TFS/Core/RestClient CoreHttpClient2_2 API | Extensions for Azure DevOps Services
 ms.assetid: 2b219dd2-1698-e399-b245-ee9a500e79d5
 ms.prod: devops
 ms.technology: devops-ecosystem

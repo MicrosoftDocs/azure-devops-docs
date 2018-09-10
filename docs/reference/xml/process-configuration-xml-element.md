@@ -1,12 +1,13 @@
 ---
 title: ProcessConfiguration syntax 
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 12/15/2017  
 ---
 
@@ -155,7 +156,7 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 
 #### Implementation notes
 ::: moniker range="vsts"
--   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for VSTS.  
+-   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 -   By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
@@ -793,7 +794,7 @@ The supported set of icons you can specify for a work item type are shown below.
 ![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
 
 > [!NOTE]    
->Icons noted with an asterisk are supported on VSTS and TFS 2017.3 and later versions.
+> Icons noted with an asterisk are supported on Azure DevOps Services and TFS 2017.3 and later versions.
 
 
 The system applies the color defined for the work item type to the icon. Colors and icons appear in the web portal where ever work items are displayed. This includes under **Related work** in PRs, list of links, the **Project** pages as well as **Work** backlogs, boards, queries, and plans.  

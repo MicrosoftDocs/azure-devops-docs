@@ -47,22 +47,22 @@ The content pack contains a complete analytic data model (tables, relationships 
 
     ![Login with oAuth2](_img/connect-to-vs-team-services-auth.png)  
 
-	**Important**: You won't be able to connect if your account administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
+	**Important**: You won't be able to connect if your organization administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
 	![Third-party oAuth enabled](_img/Screen5.png)  
 
-	Contact your account administrator to determine if it needs to be enabled. 
+	Contact your organization administrator to determine if it needs to be enabled. 
 
-8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
+8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your organization. Scroll down to the bottom and click **Accept**.
 
-	![VS VSTS Authorization page](_img/Screen6.png)  
+	![VS Azure DevOps Services Authorization page](_img/Screen6.png)  
 
 9. Once Power BI is authorized, data will begin to load and you'll be presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher will be downloaded. 
 
 
 ##Available data and reports 
 
-After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/vsts/extend/extension-report). 
+After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/azure/devops/extend/extension-report). 
 
 The power BI content pack gives data for all extensions and you can use the filters to view data for an extension or use the extension report to compare data between extensions. 
 

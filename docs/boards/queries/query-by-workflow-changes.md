@@ -1,7 +1,7 @@
 ---
 title: Query by account, user name, workflow or board changes 
-titleSuffix: VSTS & TFS
-description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
@@ -41,7 +41,6 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 
 <a id="me"/>
-
 ## Query by assignment and account-specific fields 
 
 You can use the search box or query editor to quickly find work items based on assignment.  Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further which can help with performance. 
@@ -128,9 +127,9 @@ To filter on items assigned to someone who belongs to a team or security group, 
 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Active Directory groups, and work item categories.
 
-
 > [!NOTE]    
->**In Group** clauses don't support references to Azure Active Directory (AAD) groups. 
+> Azure Active Directory (Azure AD)
+> **In Group** clauses don't support references to Azure Active Directory (Azure AD) groups.
 
 <a id="workflow-change"/> 
 
@@ -190,7 +189,6 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </table>
 
 <a id="workflow-change-who"/> 
-
 ## Query by who made workflow changes
 
 You can quickly find items that you changed, resolved or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
@@ -227,9 +225,7 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 <a id="kanban_query_fields">  </a>
 ::: moniker range=">= tfs-2015"
-
-## Query by Kanban board changes
-
+## Query by Kanban board changes  
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 ::: moniker-end
 
@@ -438,7 +434,7 @@ For information about data types and default field attributes, see [Work item da
 <tr>
   <td>State  <sup>2, 3</sup>  </td>
   <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
-   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to VSTS, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).</p>
+   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to Azure Boards, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
   <td>All</td>
@@ -459,7 +455,7 @@ For information about data types and default field attributes, see [Work item da
 #### Notes
   
 <a id="sync">  </a>
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).    

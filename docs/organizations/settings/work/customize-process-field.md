@@ -1,12 +1,13 @@
 ---
 title: Add and manage fields to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a project
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
 ms.date: 05/31/2018
@@ -47,7 +48,7 @@ Fields listed correspond to all those defined for the organization. For descript
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
+0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
 	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
@@ -115,8 +116,8 @@ You can add fields and specify the group and page where they should appear. Also
 
 <a id="identity">  </a>
 ### Add an Identity field  
-
-Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (AAD), then the system synchronizes Identity fields with the names defined in AAD and are valid users of the project. 
+Azure Active Directory (Azure AD)
+Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (Azure AD), then the system synchronizes Identity fields with the names defined in Azure AD and are valid users of the project. 
 
 1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 

@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Discover menu group identifiers | Extensions for VSTS
-description: Discover the group IDs for existing menus in VSTS.
+title: Discover menu group identifiers | Extensions for Azure DevOps Services
+description: Discover the group IDs for existing menus in Azure DevOps Services.
 ms.assetid: ca1b49b5-d36c-4742-a85b-fe9ad83a7a9a
 ms.topic: conceptual
 ms.manager: douge
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Discover menu group identifiers
 
-Many VSTS context menus have named groups of actions. This helps ensure related actions are grouped together when the context menu is presented to the user. When you [contribute an action to a menu](../develop/add-action.md), you can optionally specify a `groupId` property, which will place the action within that group.
+Many Azure DevOps Services context menus have named groups of actions. This helps ensure related actions are grouped together when the context menu is presented to the user. When you [contribute an action to a menu](../develop/add-action.md), you can optionally specify a `groupId` property, which will place the action within that group.
 
 To discover the possible group identifiers for a context menu:
 

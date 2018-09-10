@@ -8,56 +8,53 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Guidance on Microsoft Test Manager usage
 
-[!INCLUDE [version-header-ts-tfs15](../_shared/version-header-ts-tfs15.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
+Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
-* The **Test hub** in VSTS and TFS is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
+* The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track stages of Manual testing.
 
-*****
-To use the Test hub you must have either a [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
-subscription, or have installed the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-available from Visual Studio Marketplace.
-*****
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
-Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
-we **recommend** you use the **Test hub** over Microsoft Test Manager for
+Because the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully featured Test management solution which works across all platforms and with all browsers, 
+we **recommend** you use this over Microsoft Test Manager for
 all your test management requirements.
 You can use Microsoft Test Manager to test your desktop applications by
-[launching the Microsoft Test Runner (client) from the **Test hub**](../run-manual-tests.md#run-desktop). Microsoft Test Manager 2017 is the last shipped version. 
+[launching the Microsoft Test Runner client](../run-manual-tests.md#run-desktop). 
 
-This topic will help you understand why the **Test hub** is a more comprehensive
+This topic will help you understand why the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive
 solution for manual testing compared to Microsoft Test Manager.
 
-## Manual Testing with the Test hub 
+## Manual Testing 
 
-The **Test hub** in VSTS and TFS is a fully-featured test
-management solution spanning all phases of the testing lifecycle.
-The **Test hub** works on all platforms (such as Linux, macOS,
+The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully-featured test
+management solution spanning all stages of the testing lifecycle.
+Itworks on all platforms (such as Linux, macOS,
 Windows, and others) and all browsers (such as Edge, Chrome, Firefox,
 and others). You can easily get started with using manual testing
-features right from your Kanban board, and use the **Test hub**
-for more advanced manual testing capabilities. 
-This topic shows new capabilities introduced in the **Test hub**. 
+features right from your Kanban board, and use it for more advanced manual testing capabilities. 
+This topic shows the capabilities included in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ### Test planning
 
-Create and manage test plans and test suites for your teams with ease with Test hub. Export and share the test plans and test suites with your team or assign multiple testers to execute tests. See below the comparison matrix to know more about the features introduced in Test hub.
+Create and manage test plans and test suites for your teams with ease.
+Export and share the test plans and test suites with your team or assign multiple testers to execute tests.
+See the comparison matrix below for more information about these features.
 
 **Comparison of 
-[test planning with the Test hub](../create-a-test-plan.md)
+[test planning with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-a-test-plan.md)
 and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**:
 
-| Test planning capability | Web-based Test hub | Client-based MTM |
+| Test planning capability | Web-based test features | Client-based MTM |
 | --- | --- | --- |
 | Create test plan | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create/Manage suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
@@ -66,26 +63,26 @@ and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**
 | Create/edit/assign configurations | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Clone test plan/test suite\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Add tests from other test suites\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Order manual tests within suites (RBS, QBS, Static)](/vsts/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [Order manual tests within suites (RBS, QBS, Static)](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Export test plans and test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [View test case references across test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Assign multiple testers to test plans and test suites for user acceptance testing](../user-acceptance-testing.md#assign-and-invite-testers) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-\* These capabilities are included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
+\* These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
 extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Test authoring
 
 You can easily get started creating test cases right from your Kanban board in the **Work hub**.
 Easily add, view, interact with, and execute tests from your Kanban cards,
-and create multiple test cases using a grid in the **Test hub**.
+and create multiple test cases using a grid in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 Create shared parameters and use them in multiple test cases for data driven testing.
 
 **Comparison of 
-[test authoring with the Test hub](../create-test-cases.md)
+[test authoring with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-test-cases.md)
 and [test authoring with MTM](plan-manual-tests-with-microsoft-test-manager.md)**:
 
-| Test authoring capability | Web-based Test hub | Client-based MTM |
+| Test authoring capability | Web-based test features | Client-based MTM |
 | --- | --- | --- |
 | Create and edit test cases using WIT form | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create and edit shared steps | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
@@ -99,7 +96,7 @@ Test your web apps and your desktop apps.
 
 #### Web apps
 
-The **Test hub** provides a browser based Test Runner you can use to test your web apps; for
+The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] provides a browser based Test Runner you can use to test your web apps; for
 example, by marking test steps and test outcomes as pass or fail, and collecting diagnostic
 information such as system information, image action logs, screen recordings and screen captures
 during your tests. 
@@ -111,7 +108,7 @@ apps if you only want to mark test steps and test outcomes as pass or fail,
 or collect screen recordings during your tests.
 If you need other data collection capabilities when testing desktop apps,
 you can use the Microsoft Test Runner client that is part of Microsoft Test Manager.
-You can launch Microsoft Test Runner client directly from the **Test hub**. 
+You can launch Microsoft Test Runner client directly from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 
 **Comparison of 
 [test execution with web based Test Runner](../run-manual-tests.md)
@@ -135,22 +132,22 @@ and [test execution with Microsoft Test Runner (client)](run-manual-tests-with-m
 
 \* The web-based Test Runner currently does not support Action Recording (fast-forward test steps)
 or Advanced Data collection (code coverage, IntelliTrace, and test impact) during your tests.
-You can use the Microsoft Test Runner client, launched from the **Test hub**, for these requirements.
+You can use the Microsoft Test Runner client, launched from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], for these requirements.
 
 ### Test tracking
 
 You can easily track your manual testing results using your chosen light-weight chart
 types, and pin them to your dashboard to quickly analyze the test results.
 View test case result history across test suites and test plans easily by using the
-right-hand pane in the **Test plans** tab of the **Test hub**. 
+right-hand pane in the **Test plans** page of the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 You can also select a retention policy to specify how long you want to keep your
 manual testing results.
 
 **Comparison of 
-[test result tracking with the Test hub](../track-test-status.md)
+[test result tracking with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../track-test-status.md)
 and [test result tracking with MTM](https://msdn.microsoft.com/library/hh553099%28v=vs.110%29.aspx)**:
 
-| Test tracking capability | Web-based Test hub | Client-based MTM |
+| Test tracking capability | Web-based test features | Client-based MTM |
 | --- | --- | --- |
 | Test run and results analysis | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | [Create, configure, and pin light-weight test result charts](../track-test-status.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
@@ -165,12 +162,12 @@ to perform exploratory testing on your web applications.
 You can collect rich diagnostic data such as screen captures,
 screen recording, and image action logs using this extension.
 The extension also has the capability to capture page load data for your
-web applications. In the **Test hub** you can view completed exploratory
+web applications. In the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] you can view completed exploratory
 testing sessions and derive meaningful insights at team or individual level,
 and for a specific period.
 
 To explore your desktop applications, you can use the Exploratory Test Runner
-client in Microsoft Test Manager by launching it from the **Test hub**.
+client in Microsoft Test Manager by launching it from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 
 **Comparison of 
 [exploratory testing with the Test &amp; Feedback extension](../perform-exploratory-tests.md)
@@ -185,15 +182,15 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 | [Capture page load performance data](../connected-mode-exploratory-testing.md#create-bugs-or-tasks) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
 
-## Why the Test hub over Microsoft Test Manager?
+## Conclusion
 
-As clearly shown above, the **Test hub** is a much richer, faster, and easier-to-use
-solution for manual testing compared to the Test Center in MTM. The **Test hub** works on
+As clearly shown above, the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a much richer, faster, and easier-to-use
+solution for manual testing compared to the Test Center in MTM. It works on
 all platforms and all browsers, and has a rich and modern web UI that improves your testing
-experience across all phases of manual testing. 
+experience across all stages of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in VSTS or TFS, so existing
-MTM users can easily get started using the **Test hub**.
+using MTM are stored in Azure DevOps or TFS, so existing
+MTM users can easily get started using the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

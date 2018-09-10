@@ -3,7 +3,7 @@ title: New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
 description: VSTS release notes for October 12 2016
 ms.ContentId: 6f6e8dae-afd4-485f-acb2-63b71913dfaa
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---

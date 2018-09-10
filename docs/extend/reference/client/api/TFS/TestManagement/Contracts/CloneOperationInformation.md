@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CloneOperationInformation API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CloneOperationInformation API | Extensions for Azure DevOps Services
 ms.assetid: fa068d85-c81b-76b0-007b-6cb3d4f5c223
 ms.prod: devops
 ms.technology: devops-ecosystem

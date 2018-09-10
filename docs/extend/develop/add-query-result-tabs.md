@@ -1,6 +1,6 @@
 ---
-title: Add tabs on query results | Extensions for VSTS
-description: Extend VSTS with your own query results tab.
+title: Add tabs on query results | Extensions for Azure DevOps Services
+description: Extend Azure DevOps Services with your own query results tab.
 ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,10 +14,10 @@ ms.date: 05/15/2018
 
 # Add tabs on query result pages
 
-If you have a web page that can be hosted in an iframe, it can be hosted in VSTS as a tab on the query result pages.
+If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
-![Tab location on the VSTS Query Results](../reference/targets/vss/work/web/_img/queryResultsPivotTab.png)
+![Tab location on the Azure DevOps Services Query Results](../reference/targets/vss/work/web/_img/queryResultsPivotTab.png)
 
 ## Create your web page
 

@@ -1,6 +1,6 @@
 ---
 title: Xcode build and release task
-description: Xcode build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Xcode build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
@@ -12,7 +12,7 @@ monikerRange: 'vsts'
 
 # Build: Xcode
 
-**VSTS | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
+**Azure Pipelines | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
 
 ![icon](_img/xcode.png) Build, test, or archive an Xcode workspace on macOS. Optionally package an app.
 
@@ -211,13 +211,13 @@ The default value includes variables. When these are used, make sure to specify 
 <tr>
 <td>Use xcpretty</td>
 <td>
-Specify whether to use xcpretty to format xcodebuild output and generate JUnit test results. Enabling this requires xcpretty to be installed on the agent machine. It is preinstalled on VSTS hosted build agents. See [xcpretty](https://github.com/supermarin/xcpretty) on GitHub.
+Specify whether to use xcpretty to format xcodebuild output and generate JUnit test results. Enabling this requires xcpretty to be installed on the agent machine. It is preinstalled on Microsoft-hosted build agents. See [xcpretty](https://github.com/supermarin/xcpretty) on GitHub.
 </td>
 </tr>
 <tr>
-<td>Publish test results to VSTS/TFS</td>
+<td>Publish test results to Azure Pipelines/TFS</td>
 <td>
-If xcpretty is enabled above, specify whether to publish JUnit test results to VSTS/TFS.
+If xcpretty is enabled above, specify whether to publish JUnit test results to Azure Pipelines/TFS.
 </td>
 </tr>
 
@@ -226,7 +226,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 
 ## Example
 
-[Build your Xcode app](../../apps/mobile/xcode-ios.md)
+[Build your Xcode app](../../languages/xcode.md)
 
 ## Open source
 

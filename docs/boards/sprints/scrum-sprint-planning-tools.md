@@ -1,7 +1,7 @@
 ---
 title: Scrum and sprint planning tools
-titleSuffix: VSTS & TFS 
-description: Understand the tools available to you to support Scrum and working in sprints in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -15,7 +15,7 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 
 
@@ -138,23 +138,29 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
 
 <a id="ts-sprints" /> 
-**VSTS, TFS 2017**
+
+::: moniker range=">= tfs-2017"  
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
-**TFS 2015**
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+
 <a id="tfs2015-sprints" />
 
 For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
+::: moniker-end  
+
 ## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../../organizations/settings/set-team-defaults.md) .  
 
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Configure team settings](../../organizations/settings/configure-team-settings.md)  

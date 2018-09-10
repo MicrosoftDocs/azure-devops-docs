@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 **TFS**
 
-We recommend you keep [IIS Basic Authentication]( https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
+We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
 off at all times when using TFS.  Only if absolutely necessary should you enable IIS Basic Authentication. When IIS 
 Basic Authentication is enabled on your windows machine, it prevents your using personal access tokens (PATs) as an 
 authentication mechanism. 

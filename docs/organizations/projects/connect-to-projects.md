@@ -1,7 +1,7 @@
 ---
 title: Connect to a project from a web browser or supported client
-titleSuffix: VSTS & TFS
-description: Connect a client to the cloud service Visual Studio Team Services or on-premises Team Foundation Server (TFS) 
+titleSuffix: Azure DevOps Services & TFS
+description: Connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Connect to a project on VSTS or TFS
+# Connect to a project on Azure DevOps Services or TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -23,14 +23,14 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the VSTS Plugin for Android Studio](../../java/download-android-studio-plug-in.md)  
-- [IntelliJ with the VSTS Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../../java/download-android-studio-plug-in.md)  
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
 - [Visual Studio Code](../../java/vscode-extension.md)    
 
 > [!NOTE]
 > A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
 
-If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
+If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
 From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -45,7 +45,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 0.  Open a browser window and type a URL that uses the following form:  
 
 	::: moniker range="vsts"
-	<pre><code>https://<i>OrganizationName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
+	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
 	::: moniker-end
 
 	::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -62,7 +62,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
     > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
  
 ::: moniker range=">= tfs-2017"   
-0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![](../../_img/icons/project-icon.png) VSTS icon.  
+0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-horz.png)  
@@ -75,7 +75,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
 ::: moniker-end   
 
-To learn more about each page and the tasks you can perform, see [Navigation basics](../../project/navigation/index.md).
+To learn more about each page and the tasks you can perform, see [Web portal navigation](../../project/navigation/index.md).
 
 
 <a name="logindifferentcred"></a>
@@ -163,7 +163,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 ::: moniker-end
 
-### Change sign-in credentials when connecting to VSTS
+### Change sign-in credentials
  
 ::: moniker range="tfs-2017"
 
@@ -178,9 +178,9 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	Select a different user from the drop-down or select **Add an account...** to access a project using different sign-in credentials.
 
-	![Connect with VS 2017 TFS or VSTS using different sign-in credentials](_img/connect-projects-tfs/choose-different-user-vs2017.png) 
+	![Connect with VS 2017 using different sign-in credentials](_img/connect-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign in using a valid Microsoft account &mdash; an account that is associated with a VSTS or TFS project.
+2. Sign in using a valid Microsoft account &mdash; an account that is associated with an Azure DevOps Services or TFS project.
 
 ::: moniker-end
 
@@ -192,11 +192,11 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![connect to projects](_img/te-connect-page-connect-to-team-project.png)  
 
-	The **Switch User** link appears only when you are actively connected to a project hosted on VSTS.  
+	The **Switch User** link appears only when you are actively connected to a project on Azure DevOps Services.  
 
 	![Connect to Team Foundation Server dialog box](_img/connect-projects-tfs/IC719958.png) 
 
-2. Sign in using a valid Microsoft account &mdash; an account that is associated with a VSTS or TFS project. 
+2. Sign in using a valid Microsoft account &mdash; an account that is associated with Azure DevOps Services or a TFS project. 
 
 ::: moniker-end
 
@@ -214,19 +214,19 @@ You can locate the executable in the following folder: *Drive*:\\Program Files (
 
 ## Connect from Microsoft Excel or Project
 
-To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the VSTS organization or selected TFS, project collection, and project to exchange information. 
+To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps Services organization or selected TFS, project collection, and project to exchange information. 
  
 
 > [!NOTE]  
-> You can't use Office Project 365 to connect to VSTS or TFS.
+> You can't use Office Project 365 to connect to Azure DevOps Services or TFS.
  
 ### Connect from a worksheet or project plan
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure DevOps Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises TFS. 
 
 	> [!NOTE]  
 	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   
@@ -236,13 +236,13 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     ![Create a list connection between Excel and the data store](../../boards/backlogs/office/_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
-    > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://docs.microsoft.com/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
-4.  Connect to a VSTS organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
+4.  Connect to an Azure DevOps Services organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
 
     ![Connect to server](../../boards/backlogs/office/_img/IC680074.png)
 
-    If it is your first time connecting from Excel or Project, you might have to add the VSTS organization or TFS server to the list of recognized servers.
+    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps Services organization or TFS server to the list of recognized servers.
 
     ![Add organization or server](../../boards/backlogs/office/_img/IC658167.png)
 
@@ -306,19 +306,19 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/backlogs/overview.md). 
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 
 
 ### User accounts and licensing
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (VSTS)](../accounts/add-organization-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="vsts"
-VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../../billing/buy-basic-access-add-users.md). 
+Azure DevOps Services provides access to the first 5 account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 ::: moniker-end
 
@@ -345,13 +345,13 @@ If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-
 To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
 
 
-### What other clients support connection to VSTS and TFS?
+### What other clients support connection to Azure DevOps Services and TFS?
 
 In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a  project from these clients: 
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
 - [Microsoft Test Manager](../../test/mtm/guidance-mtm-usage.md)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
