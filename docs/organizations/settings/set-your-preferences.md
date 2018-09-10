@@ -1,7 +1,7 @@
 ---
 title: View and change your user preferences 
-titleSuffix: VSTS & TFS
-description: Change picture, set preferred email, or other user preferences from your profile defined for Visual Studio Team Services or Team Foundation Serer 
+titleSuffix: Azure DevOps Services & TFS
+description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps Services or Team Foundation Serer 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -103,7 +103,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 <!---
 
 
-![VSTS, Profile page](_img/account-prefs/team-services-profile-dialog-co.png)
+![Profile page](_img/account-prefs/team-services-profile-dialog-co.png)
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 

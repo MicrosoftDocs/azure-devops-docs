@@ -1,6 +1,6 @@
 ---
-title: Permissions | REST API Reference for Visual Studio Team Services
-description: Work with feeds programmatically using the REST APIs for Visual Studio Team Services .
+title: Permissions | REST API Reference for VSTS
+description: Work with feeds programmatically using the REST APIs for VSTS .
 ms.assetid: 72a0f637-2b25-4532-a1d3-1e4d446b3aba
 ms.manager: douge
 ms.date: 09/29/2016
@@ -27,7 +27,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | feed        | string | Name or ID of the feed.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -43,7 +43,7 @@ PATCH https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of feed to be updated
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -62,7 +62,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/g
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -77,7 +77,7 @@ PATCH https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account            | string  | Visual Studio Team Services account.
+| account            | string  | VSTS organization.
 | Query
 | api-version        | string  | [Version../../concepts/rest-api-versioning.md) of the API to use.
 | Body

@@ -3,7 +3,7 @@ title: Git Tags web view, build definition import/export, and improved user mana
 description: VSTS release notes for June 22 2017
 ms.ContentId: b94f1350-a53f-4d0b-af2d-a31832ee7799
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
 ---
@@ -259,7 +259,7 @@ The OAuth permissions page has been updated to make it easy for a user to see wh
 
 > **Preview feature**
 >
-> To use this capability, you must be a Project Collection Administrator and enable **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) for yourself or your account. 
+> To use this capability, you must be a Project Collection Administrator and enable **Streamlined User Management** [preview feature](/azure/devops/project/navigation/preview-features) for yourself or your account. 
 
 Based on feedback from you, we’re releasing a set of updates to our new user management experiences that continue to make your life easier when trying to get your teammates up and running. 
 
@@ -296,7 +296,7 @@ Both acquisition and sales tab also share the transaction details which gives pu
 ![enhanced publisher experience](_img/06_22_25.png)
 
 ###Setup Power BI Content Pack
-Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [docs.microsoft.com](https://docs.microsoft.com/vsts/extend/extension-statistics-powerbi-contentpack). 
+Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [docs.microsoft.com](/azure/devops/extend/extension-statistics-powerbi-contentpack). 
 
 ![extension statistics Power BI content pack](_img/06_22_26.png)
 

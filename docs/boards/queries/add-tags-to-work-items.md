@@ -1,7 +1,7 @@
 ---
 title: Add tags to work items 
-titleSuffix: VSTS & TFS
-description: Add work item tags to categorize and filter lists & boards when working in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
@@ -33,7 +33,7 @@ Tags should be 400 characters or less and not contain separators such as a `,` (
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
 > [!div class="mx-imgBorder"]
-> ![VSTS, TFS 2018-Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
+> ![Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -48,17 +48,16 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 
 
 > [!NOTE]   
-> By default, all Contributors are granted permissions to create and modify 
-> tags. Stakeholders can add tags that are already defined, but not create 
+> By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
+> tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or  
-> project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+> more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 	
 
 
 <a id="bulk-modify"></a>
-##Bulk add or remove tags 
+## Bulk add or remove tags 
 ::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
@@ -67,12 +66,6 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 > [!div class="mx-imgBorder"]
 > ![Bulk add to several work items](_img/add-tags/bulk-add-tags.png) 
 
-<!---
-> [!NOTE]    
-><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions.
-
-![Edit work items - Add tags](_img/tags-bulk-add.png)  
--->
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -87,12 +80,6 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 <a id="query"></a>
 ## Query for work items based on tags  
-
-<!---
-> [!NOTE]    
-><b>Feature availability: </b>To add tags to a query clause, you must work from VSTS and TFS 2013.2 or later versions.  
--->
-
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 
@@ -179,7 +166,7 @@ If you misspell a tag, don't assign the misspelled tag to any work item and the 
 
 ::: moniker range=">= tfs-2018" 
 
-Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Work** to manage tags. 
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
 ::: moniker-end
 
@@ -190,20 +177,6 @@ Tags are a shared resource, they're associated with a project and not a team. If
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
-
-<!---
-### Filter backlogs or boards using tags  
-
-If you've added tags to your backlog or board items, you can filter your backlog list using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter.   
-
-To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../../boards/boards/customize-cards.md).  
-
-> [!NOTE]    
-><b>Feature availability: </b>This feature is currently supported only on the Kanban board from VSTS or the web portal for TFS 2015 Update 1 or later version. 
-
-To learn more about filtering, see [Filter your backlog or board](../backlogs/filter-backlogs.md).  
-
--->
 
 ### Limits on number of tags
 While no hard limit exists, creating more than 100K tags for a project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  

@@ -1,6 +1,6 @@
 ---
 title: Add markdown content to a team dashboard 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,7 +14,7 @@ ms.date: 07/21/2018
 
 # Add Markdown to a dashboard
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 
 <a id="markdown-widget">  </a> 
@@ -57,7 +57,7 @@ Open a web browser window and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -72,7 +72,7 @@ Open a web browser window and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 ---
 
@@ -109,11 +109,11 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	<img src="_img/add-markdown-configure.png" alt="Configure markdown" style="border: 1px solid #C3C3C3;" /> 
 
-	To link to a wiki page, repository file, or page within the  project, use this format: 
-
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_wiki?pagePath=%2FHome`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_git/Fabrikam%20Fiber?path=%2FREADME.md`
-	`/DefaultCollection/Fabrikam%20Fiber/Voice/_backlogs?level=Backlog%20items&showParents=false&_a=backlog`
+	> [!TIP]  
+	> To link to a wiki page,use the following syntax:<br/>
+	> `/ProjectName/_wiki/wikis/WikiRepositoryName?pagePath=/FileName` 
+	> 
+	> To link to a repository file, page, or image within the project, rich-click the file and use the full URL.
 
 	This renders the following widget: 
 
@@ -122,7 +122,8 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported. This restriction has been implemented for security purposes.
 	
-0. Optionally, you can choose to point to a file in your repository. 
+0. Optionally, you can choose to point to a file in your repository.  
+
 	<img src="_img/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker-end

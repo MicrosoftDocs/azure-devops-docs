@@ -2,7 +2,7 @@
 title: SSH connections to Git repos, Docker integration, and more – June 1
 description: VSTS release notes for June 1 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 97422998-d25a-4e10-a77a-28cca7641dd4
 ms.date: 06/01/2016
@@ -29,7 +29,7 @@ This public API allows users to get the process configuration of a given project
 -**TypeFields:** abstractions of customizable fields that are used in the agile tooling. For example, the type of the "Story points" field is "Effort". 
 -**Backlog definitions:** define what work item types are on each of the backlogs.
 
-This is a frequently requested API from customers building extensions. With this data, an extension can know how to leverage process-specific fields to enable common scenarios in the agile tools (such as changing the activity or effort of a work item, knowing what work items are included at a given backlog level, or determining whether teams are identified by area path or a custom field). The documentation is available here: [https://visualstudio.microsoft.com/integrate/api/work/overview](https://visualstudio.microsoft.com/integrate/api/work/overview)
+This is a frequently requested API from customers building extensions. With this data, an extension can know how to leverage process-specific fields to enable common scenarios in the agile tools (such as changing the activity or effort of a work item, knowing what work items are included at a given backlog level, or determining whether teams are identified by area path or a custom field). The documentation is available here: [/azure/devops/integrate/](/azure/devops/integrate/)
 
 ###Default iteration path for new work items
 
@@ -63,8 +63,8 @@ Share code references easily with code links. Just select text in a file and cli
 
 We’re shipping two updates to our API to help you understand and manage the contents of your feeds.
 
-1. New additions to the [Packages API](https://visualstudio.microsoft.com/integrate/api/packaging/packages) enable you to get details about all the packages in a feed, about a particular package, and about all the versions of a package. This means you can now retrieve your packages programmatically without using NuGet.
-2. A new [Polling API](https://visualstudio.microsoft.com/integrate/api/packaging/polling) lets you check for updates to feeds and the packages in them. This can help you keep tabs on frequently-updated feeds and react to newly-added packages.
+1. New additions to the [Packages API](/azure/devops/integrate/) enable you to get details about all the packages in a feed, about a particular package, and about all the versions of a package. This means you can now retrieve your packages programmatically without using NuGet.
+2. A new [Polling API](/azure/devops/integrate/) lets you check for updates to feeds and the packages in them. This can help you keep tabs on frequently-updated feeds and react to newly-added packages.
 
 ##Test
 

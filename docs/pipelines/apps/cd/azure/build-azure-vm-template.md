@@ -1,6 +1,6 @@
 ---
 title: Build an Azure Virtual Machine using Azure RM templates
-description: How to build an Azure Virtual Machine using ARM templates in Release Management in VSTS and Team Foundation Server (TFS).
+description: How to build an Azure Virtual Machine using ARM templates in Release Management in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -59,14 +59,14 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 1. Save the entire solution (not just the project) and 
    commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
-   [VSTS Git](../../../../repos/git/index.md) repository.
+   [Azure Repos Git](../../../../repos/git/index.md) repository.
 
 ### Create the build pipeline
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
 1. Make sure that the template files from the **HelloWorldARM**
-   project are included in the artifacts published by Build. 
+   project are included in the artifacts published by Build.
 
 1. Queue a new build and verify that the artifact contains 
    the **Templates** folder containing the template files

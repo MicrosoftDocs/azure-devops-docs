@@ -1,5 +1,5 @@
 ---
-title: VSS/Common/Contracts/FormInput InputFilter API | Extensions for Visual Studio Team Services
+title: VSS/Common/Contracts/FormInput InputFilter API | Extensions for Azure DevOps Services
 description: Defines a filter for subscription inputs. The filter matches a set of inputs if any (one or more) of the groups evaluates to true.
 ms.assetid: 8bdeba51-36b0-bca3-be02-c15a6e14777d
 ms.prod: devops

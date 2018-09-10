@@ -1,18 +1,19 @@
 ---
 title: LinksControlOptions XML elements reference 
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2017'
 ms.date: 02/02/2018
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-<b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
+**Azure DevOps Services (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)**
 
 
 > [!IMPORTANT]  
@@ -140,10 +141,8 @@ These controls appear on all default work item types, except the following:
 
 The Development links control displays all of your development links, whether based on a git or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).  
 
-The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.  
+The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.
 
-> [!NOTE]    
->The link types, `Found in build` and `Integrated in build` are valid for VSTS.  
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildSummary API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildSummary API | Extensions for Azure DevOps Services
 ms.assetid: 59316f9f-7d1d-921c-437e-ad7beb6c584a
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -2,18 +2,18 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Service Connection Types | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Get the available service connection types
+title: Service Endpoint Types | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Get the available service endpoint types
 ms.ContentId: 81A52B66-E3EB-4212-91A0-60B4430B64BC
 ---
 
-# Service connection types
+# Service endpoint types
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-## Get a list of service connection types
+## Get a list of service endpoint types
 
 ```no-highlight
 GET https://{instance}/defaultcollection/_apis/distributedtask/serviceendpointtypes?[api-version={version}]
@@ -22,7 +22,7 @@ GET https://{instance}/defaultcollection/_apis/distributedtask/serviceendpointty
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

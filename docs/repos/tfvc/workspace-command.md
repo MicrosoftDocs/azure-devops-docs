@@ -1,5 +1,6 @@
 ---
 title: Workspace Command
+titleSuffix: Azure Repos
 description: Workspace Command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Workspace Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Lets you create, delete, view, or modify properties and mappings associated with a workspace.
 

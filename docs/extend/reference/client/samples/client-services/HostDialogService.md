@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: VSTS Host Dialog Service Example
-description: A sample that shows how to use a host dialog service with a VSTS extension
+title: Azure DevOps Services Host Dialog Service Example
+description: A sample that shows how to use a host dialog service with an Azure DevOps Services extension
 ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3
 ms.manager: douge
 ms.author: elbatk
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-# VSTS Host Dialog Service Example
+# Azure DevOps Services Host Dialog Service Example
 
 ```js
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {

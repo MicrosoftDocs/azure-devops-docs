@@ -1,7 +1,7 @@
 ---
 title: Link and attachment queries 
-titleSuffix: VSTS & TFS
-description: Query work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
@@ -183,7 +183,7 @@ The following table describes fields associated with links and attachments. Most
 
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
-For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+For Azure Boards, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 </blockquote> 
 </td>
 <td><p>All</p></td>

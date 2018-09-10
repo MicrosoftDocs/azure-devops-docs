@@ -1,6 +1,6 @@
 ---
 title: Configure the Velocity widget based on Analytics data
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the Analytics-based velocity widget       
 ms.technology: devops-analytics  
 ms.prod: devops
@@ -25,7 +25,7 @@ Teams track their velocity to help them determine how much work they can perform
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
 > [!NOTE]   
-> **Feature availability:** The Velocity widget is available only for VSTS at this time. For on-premises TFS, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
+> **Feature availability:** The Velocity widget is available for Azure DevOps at this time. For on-premises TFS, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
 
 Use this topic to learn: 
 
@@ -39,7 +39,7 @@ There are two velocity charts, the one you access by adding the Velocity widget 
  
 ### Prerequisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 

@@ -30,14 +30,14 @@
       href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
-    - name: Add a new service connection
+    - name: Add a new service endpoint
       href: develop/service-endpoints.md
     - name: Add a service hook
       href: develop/add-service-hook.md
     - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
     - name: Store data and settings
@@ -62,6 +62,8 @@
       href: develop/public-project.md
     - name: New navigation (preview)
       href: develop/web-navigation.md
+    - name: Work with URLs
+      href: develop/work-with-urls.md      
     - name: Use a platform UI control
       items:
       - name: Configure
@@ -188,6 +190,6 @@
   - name: Manage Extensions
     href: ../marketplace/index.md
   - name: Build Visual Studio extensions
-    href: /vsts/integrate/ide/extensions/overview
+    href: /azure/devops/integrate/ide/extensions/overview
 
 

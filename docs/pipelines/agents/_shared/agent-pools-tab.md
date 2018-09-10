@@ -2,8 +2,9 @@
 ms.topic: include
 ---
 
+<!--TODO: when the new UI becomes the default, change this to https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools -->
 <ul>
-<li>VSTS: <code>https:&#x2F;&#x2F;{your_organization}.visualstudio.com/_admin/_AgentPool</code></li>
+<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_admin/_AgentPool</code></li>
 
 <li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
 

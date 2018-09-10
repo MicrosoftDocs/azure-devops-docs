@@ -1,6 +1,6 @@
 ---
-title: Change the number of paid users for a VSTS extension
-description: Increase or decrease the number of paid users for a Visual Studio Team Services (VSTS) feature or extension as your team grows or gets smaller
+title: Change the number of paid users for an Azure DevOps Services extension
+description: Increase or decrease the number of paid users for an Azure DevOps Services feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -8,41 +8,62 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for a Visual Studio Team Services (VSTS) extension
+# Change the number of paid users for an Azure DevOps Services extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
+To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.  
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+## Prerequisites 
 
-## Prerequisites
+You must have [access to billing](add-backup-billing-managers.md) for your organization's Azure subscription.
 
-You need VSTS [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
-1. Sign in to your VSTS organization, ```https://{yourorganization}.visualstudio.com```.
+# [New navigation](#tab/new-nav)
 
-2. Go to **Extensions**. Then select the extension you want to update.
+1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
-   ![Select the Extensions tab](_img/_shared/choose-extensions-tab.png)
+2. Select the shopping bag icon and **Browse Marketplace**.
 
-3. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
+   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace.png)
 
-   ![Select Get in the Marketplace for the extension](_img/_shared/marketplace-extension.png)
+# [Previous navigation](#tab/prev-nav)
 
-4. Update the total number of paid users. Then select **Update**.
+1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
-    <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
+2. Select the shopping bag icon and **Browse Marketplace**.
+
+   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace-prev-nav.png)
+
+---
+
+3. Choose the extension you want to update.
+
+   ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
+
+4. Select **Get**. You might be prompted to enter your credentials for the Marketplace. 
+
+   ![Select Get in the Marketplace for the extension](_img/_shared/package-management-extension.png)
+
+5. Select **Change quantity**.
+
+   ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
+
+6. Update the total number of paid users. Then select **Continue**.
+
+   ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
+7. Review and then **Confirm** the update.
+
+   ![confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
 
 The number of paid extension users is updated.
 
-> [!NOTE]
-> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for a VSTS extension](#change-the-number-of-paid-users-for-a-vsts-extension).
 
 ## Next steps
 
@@ -52,4 +73,4 @@ The number of paid extension users is updated.
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

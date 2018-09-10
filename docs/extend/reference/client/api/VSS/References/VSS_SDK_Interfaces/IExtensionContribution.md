@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IExtensionContribution API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IExtensionContribution API | Extensions for Azure DevOps Services
 description: A Contribution with its containing extension
 ms.assetid: c7bd5e1d-ebae-a92b-4801-be8c1b1f14e0
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces DiagnosticsContext API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces DiagnosticsContext API | Extensions for Azure DevOps Services
 ms.assetid: 94e99ee9-ba85-9b1c-31f3-dcb9c21e98a0
 ms.prod: devops
 ms.technology: devops-ecosystem

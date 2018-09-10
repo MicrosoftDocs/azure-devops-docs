@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestPlan API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestPlan API | Extensions for Azure DevOps Services
 ms.assetid: a0c2fddb-19cd-e875-8e86-6b9685937fb2
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Build Definitions (XAML Build) | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Get build definitions programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Build Definitions (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Get build definitions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: d0424288-2fbd-4a65-8a60-0d272a42eca7
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-v
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query

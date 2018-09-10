@@ -1,5 +1,6 @@
 ---
-title: Git command reference | VSTS & TFS
+title: Git command reference
+titleSuffix: Azure Repos
 description: Commands reference for common Git tasks in Visual Studio or the command line
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 
 #  Git command reference 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 ## Overview
 
@@ -27,17 +28,17 @@ Open Team Explorer through the **View** menu in Visual Studio, or with the **Ctr
 
 Team Explorer and the Git command line work great together. When you make updates and perform commands through one interface, you'll see those changes reflected in the other.
 
-[Git Installation instructions](/azure/devops/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
+[Git Installation instructions](/azure/devops/learn/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
-> Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with your VSTS repos.
+> Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
 
 While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
 ![Open a command prompt to a repo from inside Visual Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
-> Some commands require having [specific Git permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) in VSTS to complete.
+> Some commands require having [specific Git permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) in Azure Repos to complete.
 
 ## Repos
 
@@ -46,20 +47,20 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
 | Create a repo in a new folder | git init *foldername* | Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](_img/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
 | Create a repo with code in an existing folder | git init *foldername*<br>git add --all<br>git commit -m "Initial commit" | Create the repo from the command line, then open Team Explorer's **Connect** view and select **Add** under **Local Git repositories**
 | Create a repo from an existing Visual Studio solution | git init *foldername*<br>cd *foldername*<br>git add --all<br>git commit -m "Initial commit" | Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](_img/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right. 
-| Create a new repo in your Project | Not applicable | From the web, select **Code**, then select the drop-down next to the current repo name and choose **New Repository...**    
+| Create a new repo in your Project | Not applicable | From the web, select **Repos** (or **Code** if you haven't enabled the new navigation preview), then select the drop-down next to the current repo name and choose **New Repository...**    
 | Clone a repo into a local folder | git clone *URL* *foldername* | Select **Clone** under **Local Git repositories** in Team Explorer's **Connect** view 
 | Clone a repo in your Project | git clone *URL* *foldername* | Open the **Connect** view in Team Explorer and right click the Git repo in your Project under the account name. Select **Clone...**    
 | Add an existing repo to Visual Studio | Not applicable | Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view 
 | Delete the Git repo and history, but keep the current version of the files | Delete the hidden .git folder created at the root of the repo | Delete the hidden .git folder created at the root of the repo from Windows Explorer or the command line
 | Delete a local repo and all files | Delete the folder containing your repo from your computer's filesystem |  Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem. 
-| Delete a repo in your Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in VSTS](_img/command-prompt/settings_icon.png) ) in VSTS/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
+| Delete a repo in your Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in Azure DevOps Services](_img/command-prompt/settings_icon.png) ) in Azure DevOps Services/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
 | Add a remote | git remote add *name* *url* | Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Add** under **Remotes** 
 | Update a remote | git remote set-url *name* *url* |  Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Edit** under **Remotes** 
 
 Learn more:  
 
-[Create a new repo | VSTS Git tutorial](creatingrepo.md)
-[Clone an existing repo | VSTS Git tutorial](clone.md)   
+[Create a new repo](creatingrepo.md)
+[Clone an existing repo](clone.md)   
 [Share your code in Git with the command line](share-your-code-in-git-cmdline.md)   
 [Share your code in Git with Visual Studio 2015](share-your-code-in-git-vs.md)   
 [Share your code in Git with Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
@@ -76,15 +77,15 @@ Learn more:
 | Delete a local branch | git branch -d *branchname* | Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. You must be checked out to a different branch than the one you want to delete.
 | Delete a remote branch | git push origin --delete *branchname* | Open the **Branches** view in Team Explorer, expand the remote that has the branch you want to delete. Right-click the remote and select **Delete Branch from Remote**
 | Lock a branch, preventing updates to it  | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock** | Same as command line
-| Set a default branch in your VSTS/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in VSTS](_img/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
-| Set a compare branch for pull requests in your VSTS/TFS repo | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch** | Same as command line
+| Set a default branch in your Azure DevOps Services/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](_img/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
+| Set a compare branch for pull requests in your Azure DevOps Services/TFS repo | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch** | Same as command line
 
 Learn more:  
 
-[Create and manage your work in branches | VSTS Git tutorial](branches.md)   
-[Managing your Git branches in VSTS/TFS](manage-your-branches.md)   
-[Delete a Git branch on your VSTS/TFS repo](delete-branch.md)   
-[Lock and unlock a VSTS/TFS branch](lock-branches.md)
+[Create and manage your work in branches](branches.md)   
+[Managing your Git branches in Azure DevOps Services/TFS](manage-your-branches.md)   
+[Delete a Git branch on your Azure DevOps Services/TFS repo](delete-branch.md)   
+[Lock and unlock an Azure DevOps Services/TFS branch](lock-branches.md)
 
 ## Commits
 
@@ -101,7 +102,7 @@ Learn more:
 
 Learn more:   
 
-[Save your work with commits | VSTS Git tutorial](commits.md)
+[Save your work with commits](commits.md)
 
 ## Compare files and versions
 
@@ -113,7 +114,7 @@ Learn more:
 
 Learn more:   
 
-[Compare versions and review history | VSTS Git tutorial](review-history.md)
+[Compare versions and review history](review-history.md)
 
 ## Sync changes
 
@@ -127,9 +128,9 @@ Learn more:
    
 Learn more:   
  
-[Share code with push | VSTS Git tutorial](pushing.md)   
-[Update your code with fetch and pull | VSTS Git tutorial](pulling.md)   
-[Resolve merge conflicts | VSTS Git tutorial](merging.md)
+[Share code with push](pushing.md)   
+[Update your code with fetch and pull](pulling.md)   
+[Resolve merge conflicts](merging.md)
 
 ## Merge and rebase
 
@@ -143,9 +144,9 @@ Learn more:
    
 Learn more:   
 
-[Resolve merge conflicts | VSTS Git tutorial](merging.md)   
-[Catch up and replay changes with rebase | VSTS Git tutorial](rebase.md)   
-[Copy changes with cherry-pick | VSTS Git tutorial](cherry-pick.md)
+[Resolve merge conflicts](merging.md)   
+[Catch up and replay changes with rebase](rebase.md)   
+[Copy changes with cherry-pick](cherry-pick.md)
 
 ## Undo
 
@@ -162,4 +163,4 @@ Learn more:
    
 Learn more: 
    
-[Undo changes and commits | VSTS Git tutorial](undo.md)
+[Undo changes and commits](undo.md)

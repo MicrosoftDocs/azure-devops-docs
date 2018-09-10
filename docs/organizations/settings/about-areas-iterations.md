@@ -1,7 +1,7 @@
 ---
 title: Understand how area and iteration paths are used in projects
-titleSuffix: VSTS & TFS
-description: Understand how areas and iterations are used in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: Understand how areas and iterations are used in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

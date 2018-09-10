@@ -1,7 +1,7 @@
 ---
 title: Wiki keyboard shortcuts 
-titleSuffix: VSTS 
-description: Use keyboard shortcuts to manage, add, and edit pages in your built-in team project wiki in Visual Studio Team Services
+titleSuffix: Azure DevOps 
+description: Use keyboard shortcuts to manage, add, and edit pages in your built-in team project wiki in Azure DevOps Services 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -17,11 +17,11 @@ ms.date: 03/01/2018
 
 # Keyboard shortcuts to manage Wiki pages 
 
-**VSTS | TFS 2018.2** 
+**Azure DevOps Services | TFS 2018.2** 
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
+> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
  
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wiki-shortcuts.md)]

@@ -1,7 +1,7 @@
 ---
 title: Understand the components of security and identity
-titleSuffix: VSTS & TFS
-description: Understand how VSTS and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
+titleSuffix: Azure DevOps Services & TFS
+description: Understand how Azure DevOps and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -18,10 +18,10 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Visual Studio Team Services (VSTS), our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support development projects, from planning through deployment. 
-VSTS uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
+Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support software development projects, from planning through deployment. 
+Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 
-This topic introduces the main security concepts employed by VSTS and TFS. To learn more about the steps Microsoft takes to keep your VSTS projects safe, available, secure, and private, see this white paper, [Visual Studio Team Services (VSTS) Data Protection Overview](../../articles/team-services-security-whitepaper.md).    
+This topic introduces the main security concepts employed by Azure DevOps and TFS. To learn more about the steps Microsoft takes to keep your Azure DevOps projects safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).    
 
 The main security concepts to understand are
 
@@ -34,24 +34,24 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into VSTS or TFS. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies a user's identify based on the credentials provided when they sign into Azure DevOps or TFS. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. For additional information, see [Access VSTS with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your Azure DevOps organization, you can simply use Microsoft accounts. For additional information, see [Access Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
 For on-premises TFS, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
+Other applications and services can integrate with Azure DevOps and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
 *	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
-[REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md), 
+[REST APIs for Azure DevOps and TFS](../../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
 *	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
@@ -61,11 +61,11 @@ to generate tokens for:
 	*	Clients like Xcode and Nuget that require usernames and passwords 
 		as basic credentials and don't support Microsoft account 
 		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md)
+	*	Accessing [REST APIs for Azure DevOps and TFS](../../integrate/get-started/rest/basics.md)
 
-*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/vsts/integrate/get-started/rest/basics). The [Accounts](/vsts/integrate/api/shared/accounts) 
-and [Profiles](/vsts/integrate/api/shared/profiles) 
+*	[OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
+to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/azure/devops/integrate/api/shared/accounts) 
+and [Profiles](/azure/devops/integrate/api/shared/profiles) 
 APIs support only OAuth. 
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
@@ -90,26 +90,26 @@ Authorization verifies that the identity which is attempting to connect has the 
 
 Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
 
-Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more VSTS/TFS security groups. These users and groups can be Azure AD or AD users and groups. For TFS, they can also be local Windows users and groups.
+Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more Azure DevOps/TFS security groups. These users and groups can be Azure AD or AD users and groups. For TFS, they can also be local Windows users and groups.
 
 Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
 
 ## Security groups and permissions
 
-VSTS and TFS are pre-configured with default security groups. Default permissions are assigned to the default security groups.   
+Azure DevOps and TFS are pre-configured with default security groups. Default permissions are assigned to the default security groups.   
 
 > [!div class="mx-tdBreakAll"]
 > | Security groups | Permission levels | Permission States  |
 > |-------------|----------| ----------| 
-> |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
+> |- Project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
 ![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) 
 
-VSTS and TFS control access through these three inter-connected functional areas:
+Azure DevOps and TFS control access through these three inter-connected functional areas:
 
--   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the team project.
+-   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the project.
 
 -   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
 
@@ -158,7 +158,7 @@ Certain features are only available to users who have the appropriate licensing 
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
 
-VSTS and TFS security concepts fall into three general categories: topology, authentication, and authorization. Topology includes where and how Team Foundation servers are deployed, the network traffic that passes between Team Foundation Server and Team Foundation clients, and the services that must run on Team Foundation Server. Authentication includes the determination of the validity of Team Foundation Server users, groups, and services. Authorization includes the determination of whether valid Team Foundation Server users, groups, and services have the appropriate permissions to perform actions. Also, you must consider Team Foundation Server dependencies on other components and services in order to optimize the security of Team Foundation Server in the network.
+Azure DevOps and TFS security concepts fall into three general categories: topology, authentication, and authorization. Topology includes where and how Team Foundation servers are deployed, the network traffic that passes between Team Foundation Server and Team Foundation clients, and the services that must run on Team Foundation Server. Authentication includes the determination of the validity of Team Foundation Server users, groups, and services. Authorization includes the determination of whether valid Team Foundation Server users, groups, and services have the appropriate permissions to perform actions. Also, you must consider Team Foundation Server dependencies on other components and services in order to optimize the security of Team Foundation Server in the network.
 When you consider Team Foundation Server security, you must understand the difference between authentication and authorization.
 
 

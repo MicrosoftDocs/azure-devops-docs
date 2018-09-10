@@ -1,7 +1,7 @@
 ---
 title: Forecasting 
-titleSuffix: VSTS & TFS   
-description: Determine how much work your team can deliver across several sprints by forecasting in Visual Studio Team Services & Team Foundation Server     
+titleSuffix: Azure Boards and TFS   
+description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
@@ -15,7 +15,7 @@ ms.date: 06/19/2018
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/velocity-chart-data-store.md), the forecast tool will show which items in the backlog can be completed within future sprints. Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -66,7 +66,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -88,14 +88,14 @@ To forecast your product backlog, perform the following actions.
 0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Forecast** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
+	> ![Boards>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
 3. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work>Backlog, Set Forecast velocity](_img/forecast/set-forecast-velocity.png)
+	> ![Boards>Backlog, Set Forecast velocity](_img/forecast/set-forecast-velocity.png)
 
 	> [!TIP]    
 	> If your team has been working for several sprints, you can gain an idea of your team's velocity from the [Velocity widget](../../report/dashboards/team-velocity.md).
@@ -117,7 +117,7 @@ To forecast your product backlog, perform the following actions.
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	You can only forecast the product backlog of Stories, Backlog items, or Requirements.
 
@@ -133,7 +133,7 @@ To forecast your product backlog, perform the following actions.
 
 0. Set **Forecast** to **On** and enter your team's predicted velocity. If the Forecasting bar doesn't appear, set **Parents** to **Hide**. 
 
-	![Web portal, Work>Backlog, Forecast On](_img/forecast-tool-settings.png)
+	![Web portal, Boards>Backlog, Forecast On](_img/forecast-tool-settings.png)
 
 0. Set **In progress** items to **Hide** to hide those items that that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
 
@@ -159,7 +159,7 @@ The forecast tool shows between two and four items can be worked on during Itera
 - **Iteration 6**: 23 Story points, items 13 through 16 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
+	> ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
 	> 
 ::: moniker-end
 

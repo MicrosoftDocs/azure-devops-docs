@@ -1,6 +1,6 @@
 ---
 title: Speed up testing with Test Impact Analysis (TIA) - test automation tools
-description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in VSTS or TFS with a build or release pipeline
+description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/16/2018
+ms.ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-**Visual Studio 2015.3 and later | TFS 2017.1 and later | VSTS**
+**Visual Studio 2015.3 and later | TFS 2017.1 and later | Azure Pipelines**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,11 +23,11 @@ monikerRange: '>= tfs-2017'
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
 However, as the codebase grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours.
-This slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration. 
+This slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration.
 In order to have a CI pipeline that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
 However, this only serves to further defeat continuous integration.
 
-Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
+Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](../tasks/test/vstest.md)
 task in a build pipeline. TIA performs incremental validation by automatic test selection.
 It will automatically select only the subset of tests required to validate the code being committed.
 For a given code commit entering the CI/CD pipeline, TIA will select and run only the relevant tests required to validate that commit.
@@ -50,8 +50,8 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 
 At present, TIA is supported for:
 
-* TFS 2017 Update 1 onwards, and VSTS
-* Version 2.* of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task in the build pipeline
+* TFS 2017 Update 1 onwards, and Azure Pipelines
+* Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task in the build pipeline
 * Build vNext, with multiple VSTest Tasks
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
@@ -76,7 +76,7 @@ At present, TIA is **not** supported for:
 
 ## Enable Test Impact Analysis
 
-TIA is supported through Version 2.* of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.
+TIA is supported through Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task.
 If your app is a single tier application, all you need to do is to check **Run only impacted tests** in the task UI.
 The Test Impact data collector is automatically configured. No additional steps are required.
 
@@ -114,9 +114,11 @@ Here is a sample that creates this configuration:
 
 TIA is integrated into existing test reporting at both the summary and details levels, including notification emails.
 
-![Reporting includes TIA integration](_img/test-impact-analysis/tia-reports.png)
+![Reporting Summary includes TIA integration](_img/test-impact-analysis/tia-reports-1.png)
 
-[More information about TIA and VSTS integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
+![Reporting Tests page includes TIA integration](_img/test-impact-analysis/tia-reports-2.png)
+
+[More information about TIA and Azure Pipelines integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
 
 ## Manage Test Impact Analysis behavior
 

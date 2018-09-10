@@ -1,6 +1,6 @@
 ---
-title: Service hooks in VSTS REST APIs
-description: Learn about service hooks and how to set up actions to take when specific events occur in VSTS.
+title: Service hooks in Azure DevOps Services REST APIs
+description: Learn about service hooks and how to set up actions to take when specific events occur in Azure DevOps Services.
 ms.assetid: ec039cf9-2731-4451-b9b8-5711b229c0ff
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Service hooks in VSTS
+# Service hooks in Azure DevOps Services
 Using the [Subscriptions](https://visualstudio.microsoft.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:

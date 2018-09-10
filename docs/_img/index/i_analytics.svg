@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><title>Analytics</title><path d="M0,72V0H72V72" fill="#f6f6f6" opacity="0"/><path d="M64.007,8v55.99H64V19.47l-8.214-8.119L33.459,33.677,25.468,25.59,11,38.149V8.03H9.434V8Z" fill="#f3f3f3"/><path d="M60,61.1H11.042V45.361L33.555,56.7,60,39.939Z" fill="#8562ad"/><path d="M60,36,33.364,52.452,12.433,41.986,25.277,30.728l8.182,8.214L55.786,16.616,60,21Z" fill="#40cdf5"/><path d="M33.525,38.933l22.26-22.317L58,19,35.917,41.333ZM12.433,41.986l3.278,1.639L27.66,33.12l-2.382-2.392Z" fill="#8ce1f9"/><path d="M33.384,56.695,60,39.939v3.644L36.833,58Z" fill="#a996f0"/><path d="M55.786,11.351,33.459,33.677,25.468,25.59,11,38.149V8.03H7.074V65.006H64V19.47ZM60,61.1H11.133v-15.6L33.555,56.7,60,39.939ZM60,36,33.364,52.452,12.433,41.986,25.277,30.728l8.182,8.214L55.786,16.615,60,21Z" fill="#282828"/></svg>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" fill="black" fill-opacity="0"/>
+<path d="M0 62H64V64H0V62Z" fill="#556A8A"/>
+<rect x="2" y="46" width="12" height="16" fill="#2BC7F4"/>
+<rect x="18" y="30" width="12" height="32" fill="#2BC7F4"/>
+<rect x="34" y="38" width="12" height="24" fill="#2BC7F4"/>
+<rect x="50" y="22" width="12" height="40" fill="#2BC7F4"/>
+<path d="M14 46V55L5 46H14Z" fill="#55D2F6"/>
+<path d="M30 30V39L21 30H30Z" fill="#55D2F6"/>
+<path d="M46 38V47L37 38H46Z" fill="#55D2F6"/>
+<path d="M62 22V31L53 22H62Z" fill="#55D2F6"/>
+<path d="M8 29L24 13L40 21L56 5" stroke="#556A8A" stroke-width="2"/>
+<circle cx="56" cy="5" r="4" fill="#E5E5E5" stroke="#556A8A" stroke-width="2"/>
+<circle cx="40" cy="21" r="4" fill="#E5E5E5" stroke="#556A8A" stroke-width="2"/>
+<circle cx="24" cy="13" r="4" fill="#E5E5E5" stroke="#556A8A" stroke-width="2"/>
+<circle cx="8" cy="29" r="4" fill="#E5E5E5" stroke="#556A8A" stroke-width="2"/>
+</svg>

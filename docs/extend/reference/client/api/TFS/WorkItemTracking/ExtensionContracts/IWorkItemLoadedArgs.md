@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/ExtensionContracts IWorkItemLoadedArgs API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/ExtensionContracts IWorkItemLoadedArgs API | Extensions for Azure DevOps Services
 description: Interface defining the arguments for the &#x27;onLoaded&#x27; notification sent by the ActiveWorkItemService
 ms.assetid: 963f7b3a-f0de-f879-f801-84a820ceb50b
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Contracts WorkItemRevisionReference API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Contracts WorkItemRevisionReference API | Extensions for Azure DevOps Services
 ms.assetid: 6eee18fb-3309-dc60-2e9a-9bcca94ad67a
 ms.prod: devops
 ms.technology: devops-ecosystem

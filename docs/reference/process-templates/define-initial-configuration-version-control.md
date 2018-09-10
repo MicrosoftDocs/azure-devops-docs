@@ -1,6 +1,6 @@
 ---
 title: Define the initial configuration of Team Foundation version control (TFVC) or Git
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Configure the project's initial security permissions, check-out policies, and check-in notes for version control in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -18,7 +18,7 @@ ms.date: 10/11/2017
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!NOTE]  
->  For VSTS and for TFS 2017.3 and later versions, you create projects from the web 
+>  For TFS 2017.3 and later versions, you create projects from the web 
 >  portal, which ignores this plug-in. Instead, default permissions are set for 
 >  project-level and collection-level security groups. After you create a project, 
 >  you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or 

@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: TFS/Dashboards/WidgetContracts CustomSettings API | Extensions for Visual Studio Team Services
+title: TFS/Dashboards/WidgetContracts CustomSettings API | Extensions for Azure DevOps Services
 description: Documentation for the CustomSettings contract.
 ms.assetid: 19CB39FF-952A-4071-BED8-48F4DE45F082
 ms.manager: douge

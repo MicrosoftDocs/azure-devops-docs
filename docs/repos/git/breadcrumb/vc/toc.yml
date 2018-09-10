@@ -3,16 +3,16 @@
   topicHref: /
   items:
   - name: Visual Studio
-    tocHref: /vsts/repos/git/
+    tocHref: /azure/devops/repos/git/
     topicHref: /visualstudio
     items:
     - name: Documentation
-      tocHref: /vsts/repos/git/
+      tocHref: /azure/devops/repos/git/
       topicHref: /visualstudio/welcome-to-visual-studio
       items:
       - name: Version Control
-        tocHref: /vsts/repos/git/
+        tocHref: /azure/devops/repos/git/
         topicHref: /visualstudio/version-control/index
       - name: Version Control
-        tocHref: /vsts/repos/tfvc/
+        tocHref: /azure/devops/repos/tfvc/
         topicHref: /visualstudio/version-control/index

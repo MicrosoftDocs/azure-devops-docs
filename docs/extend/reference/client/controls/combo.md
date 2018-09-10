@@ -1,5 +1,5 @@
 ---
-title: Combo Control | Extensions for VSTS
+title: Combo Control | Extensions for Azure DevOps Services
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 830B76D7-FE6F-CE63-0689-7DA663207A51
 ms.prod: devops

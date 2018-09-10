@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: In the Sprint 127 Update of Visual Studio Team Services (VSTS) on December 11, 2017, you’ll find new features to help you manage your test results and execution, plus a set of new Marketplace experiences to help you get even more value out of the ecosystem.
 hide_comments: true
@@ -47,20 +47,20 @@ The **Blame** view is great for identifying the last person to change a line of 
 > [!IMPORTANT]
 > If you are using SSH with VSTS, read this section carefully. You need to update your SSH URLs if you haven’t recently.
 
-We are moving our SSH implementation to use Azure Traffic Manager for more efficient routing. In our tests, we have found that this new approach can yield up to 5X performance improvements on many Git operations when accessing a distant VSTS instance. It does this by relying on Azure Traffic Manager to route connections to a nearby VSTS instance and then use the high-speed Azure backbone to get to distant data centers. We [added support for the new SSH URLs](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/) that support Azure Traffic Manager some time ago and this sprint, we are removing support for the older URLs - hence the urgent need for you to update your SSH remotes. You can read the [docs on updating your SSH URLs](https://docs.microsoft.com/en-us/vsts/git/use-ssh-keys-to-authenticate) for more detail.
+We are moving our SSH implementation to use Azure Traffic Manager for more efficient routing. In our tests, we have found that this new approach can yield up to 5X performance improvements on many Git operations when accessing a distant VSTS instance. It does this by relying on Azure Traffic Manager to route connections to a nearby VSTS instance and then use the high-speed Azure backbone to get to distant data centers. We [added support for the new SSH URLs](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/) that support Azure Traffic Manager some time ago and this sprint, we are removing support for the older URLs - hence the urgent need for you to update your SSH remotes. You can read the [docs on updating your SSH URLs](/azure/devops/git/use-ssh-keys-to-authenticate) for more detail.
 
 ## Build and Release
 
 ### Generate YAML templates from existing build definitions
 
-Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/build-release/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
+Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/azure/devops/build-release/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
 
 This can also be used as a good way to learn YAML quickly. You can create a new build definition using the appropriate template for your app and examine the YAML to understand the mapping between what you’re used to and the new YAML constructs.
 
 ### Enhancements to multi-phase builds
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use this capability, you must have the **Build with multiple queues** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your account.
 
 A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
 
@@ -74,7 +74,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
 
-To learn more, see [Phases in Build and Release Management](/vsts/pipelines/process/phases).
+To learn more, see [Phases in Build and Release Management](/azure/devops/pipelines/process/phases).
 
 ### Hide empty contributed sections in build results page
 
@@ -96,7 +96,7 @@ Agents of version 125 or newer are based on ASP.NET Core 2.0. Previously you cou
 
 ### Release trigger for a Package Management artifact
 
-Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/pipelines/release/triggers#release-triggers) for more information.
+Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/azure/devops/pipelines/release/triggers#release-triggers) for more information.
 
 ### Default artifact versions
 
@@ -169,8 +169,8 @@ This includes:
 
 The following pre-requisites are needed:
 
-1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
-2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
+1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/azure/devops/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
+2. Create a [PAT](/azure/devops/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 
 Note that tests that use TestCase as a data source cannot be used with the **Run Functional Tests** task.

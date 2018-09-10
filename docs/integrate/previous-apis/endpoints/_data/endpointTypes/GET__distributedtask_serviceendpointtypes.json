@@ -273,7 +273,7 @@
             ],
             "name": "azure",
             "displayName": "Azure Classic",
-            "description": "Service connection type for all Azure connections",
+            "description": "Service endpoint type for all Azure connections",
             "endpointUrl": {
                "displayName": "Server Url",
                "helpText": "",
@@ -397,7 +397,7 @@
             ],
             "name": "azurerm",
             "displayName": "Azure Resource Manager",
-            "description": "Service connection type for Azure Resource Manager connections",
+            "description": "Service endpoint type for Azure Resource Manager connections",
             "endpointUrl": {
                "displayName": "Server Url",
                "helpText": "",
@@ -450,7 +450,7 @@
             ],
             "name": "chef",
             "displayName": "Chef",
-            "description": "Service connection type for all Chef connections",
+            "description": "Service endpoint type for all Chef connections",
             "helpMarkDown": "<a href=\"https://msdn.microsoft.com/Library/vs/alm/Release/author-release-definition/understanding-tasks#serviceconnections\" target=\"_blank\"><b>Learn More</b></a>"
          },
          {
@@ -527,7 +527,7 @@
             ],
             "name": "jenkins",
             "displayName": "Jenkins",
-            "description": "Service connection type for all Jenkins connections",
+            "description": "Service endpoint type for all Jenkins connections",
             "helpMarkDown": "<a href=\"https://msdn.microsoft.com/Library/vs/alm/Release/author-release-definition/understanding-tasks#serviceconnections\" target=\"_blank\"><b>Learn More</b></a>"
          }
       ]

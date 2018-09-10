@@ -1,7 +1,7 @@
 ---
 title: What are Analytics views?
-titleSuffix: VSTS
-description: Describes how Analytics views work with Visual Studio Team Services (VSTS) and Power BI integration 
+titleSuffix: Azure DevOps Services
+description: Describes how Analytics views work with Azure DevOps and Power BI integration 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
@@ -17,24 +17,26 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS).
+An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps.
 
-Each view defines a dataset designed to support viewing, sharing, and publishing work tracking data for VSTS through Power BI. You can use default Analytics views or create custom views and open the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). You create custom views in the web portal for VSTS. 
+Each view defines a dataset designed to support viewing, sharing, and publishing work tracking data for Azure DevOps Services through Power BI. You can use default Analytics views or create custom views and open the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). You create custom views in the web portal for Azure DevOps Services. 
 
 [!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
 ## Analytics Marketplace extension 
 
 When you install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), the following actions occur: 
-- An **Analytics** hub appears in your web portal VSTS account
-- Several [Analytics widgets](analytics-widgets-vsts.md) become available for use on your VSTS dashboards 
+- The **Analytics views** pages appear in your web portal for your Azure DevOps projects
+- Several [Analytics widgets](analytics-widgets.md) become available for use on your Azure DevOps Services dashboards 
 - Several default Analytics views are created as described in the next section. 
+
+[!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 ## Default Analytics views
 
 The default Analytics views shown in the following image provide a great way to get started and are immediately accessible from Power BI. These views are automatically created when you install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). The view you select determines the set of records, fields, and history that are pulled into Power BI.  
 
-Here we show the default views created for a team project based on the Agile process. 
+Here we show the default views created for a project based on the Agile process. 
 
 > [!div class="mx-imgBorder"] 
 > ![Default Analytics views](./_img/default-views/default-views.png)

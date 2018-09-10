@@ -1,11 +1,7 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Reporting
-    tocHref: /vsts/report/
-    topicHref: /vsts/index#pivot=services&panel=reporting
-    items:
-    - name: Dashboards
-      tocHref: /vsts/report/dashboards
-      topicHref: /vsts/report/dashboards/index
+  - name: Dashboards
+    tocHref: /azure/devops/report/dashboards/
+    topicHref: /azure/devops/report/dashboards/index

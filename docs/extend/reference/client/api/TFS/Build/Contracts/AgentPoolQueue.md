@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts AgentPoolQueue API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts AgentPoolQueue API | Extensions for Azure DevOps Services
 ms.assetid: f28d1c93-dc54-cfcb-4659-90a9c2a6f33b
 ms.prod: devops
 ms.technology: devops-ecosystem

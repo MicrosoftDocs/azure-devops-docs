@@ -1,6 +1,6 @@
 ---
 title: Define groups, teams, and permissions for a process template
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Customizes Groups and Permission plug-in to preconfigure  groups, teams, and user permissions
 ms.prod: devops
 ms.technology: devops-agile

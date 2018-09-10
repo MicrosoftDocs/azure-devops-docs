@@ -1,5 +1,5 @@
 ---
-title: VSS/Operations/Contracts OperationStatus API | Extensions for Visual Studio Team Services
+title: VSS/Operations/Contracts OperationStatus API | Extensions for Azure DevOps Services
 ms.assetid: d909c9e0-da63-6ccc-0a30-4a86699da444
 ms.prod: devops
 ms.technology: devops-ecosystem

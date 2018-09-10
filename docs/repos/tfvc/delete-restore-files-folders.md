@@ -1,5 +1,6 @@
 ---
 title: Delete or restore files and folders using TFVC 
+titleSuffix: Azure Repos
 description: Delete or restore files and folders using Team Foundation Version control
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can delete files and folders from TFVC and also restore them, from both in the workspace on your dev machine or on the server.
 
@@ -49,7 +50,7 @@ Before you delete an item:
 
 > [!NOTE] 
 > If you're already checked in the delete of an item in TFVC, you can restore the deleted item from the server long as no one on your team has [destroyed](destroy-command-team-foundation-version-control.md) it.  
-> If you're not using TFVC, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
+> If you're not using TFVC, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
 > Files deleted through Solution Explorer are moved to the Recycle Bin on your computer, where they can be restored.
 > Once restored from the Recycle Bin, right-click your solution in Solution Explorer and select **Add..** and then **Existing item...** to restore the file into your solution.
 

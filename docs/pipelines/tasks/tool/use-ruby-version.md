@@ -1,6 +1,6 @@
 ---
 title: Use Ruby Version
-description: Use Ruby version for VSTS and TFS
+description: Use Ruby version for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
