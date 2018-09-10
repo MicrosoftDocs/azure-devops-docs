@@ -26,13 +26,7 @@ Then, read [Plan and track work](plan-track-work.md) to get familiar with work i
 Next, to develop your product backlog, read [Create your backlog](../backlogs/create-your-backlog.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../boards/kanban-quickstart.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json).
 
 ### Video: Plan your work with Azure Boards
-
-<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
-
-<!---
-video-plan-work-azure-boards
 > [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105]
--->
 
 ### Additional resources
 Other resources to get you up and running: 
