@@ -66,13 +66,12 @@ Control branch permission settings from the branch permission view. Users and gr
 >
 > ![Documentation version selector](../../_img/documentation-version-selector.png)
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 ### Permissions in TFS 2017 Update 1 through TFS 2018 Update 2
 
-| Permission | Description                                                                                                 |
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Permission | Description |
+|------------|-------------|
 | Contribute                                       | Users with this permission can push new commits to the branch and lock the branch.                          |
 | Edit Policies                                    | Can edit [branch policies](branch-policies.md).                                                                                   |
 | Exempt from policy enforcement                   | Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch when completing pull requests and can override the policies by checking **Override branch policies and enable merge** when completing a PR. Users with this permission can also push to a branch that has branch policies enabled. |
