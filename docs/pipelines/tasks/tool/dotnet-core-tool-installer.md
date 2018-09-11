@@ -1,6 +1,6 @@
 ---
 title: .NET Core Tool Installer
-description: Acquires a specific version of .NET Core from internet or the tools cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
+description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
