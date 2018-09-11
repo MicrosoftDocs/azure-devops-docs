@@ -27,7 +27,7 @@ Access Web services through the following areas, as shown in the following image
 
 ![Azure DevOps Services, main](_img/services-hubs-vert.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 ![Azure DevOps Services, main](../_img/services-hubs.png)  
 
@@ -51,7 +51,7 @@ From **Dashboards** you gain access to user-configurable dashboards.
 
 ![Azure DevOps Services, main](_img/dashboard-overview.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 <img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
 
@@ -73,7 +73,7 @@ From **Repos**, you gain access to your source control Git-based or TFVC reposit
 
 ![Azure Repos, Git files page](_img/repos-git-hub.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
@@ -100,7 +100,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 ![Azure Boards backlogs](_img/boards-backlogs.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
@@ -128,7 +128,7 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 ![Builds, Azure Pipelines page](_img/builds-pipelines-page.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
@@ -154,7 +154,7 @@ Test features support manual and exploratory testing, load or performance testin
 
 ![Test Plans](_img/test-plans-vert.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 **Test** supports creating and managing manual tests. 
 
@@ -266,7 +266,7 @@ There are a number of features and tasks associated with administrating a collab
 
 ![Project settings](_img/project-settings.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 <img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
