@@ -47,7 +47,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
    ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 

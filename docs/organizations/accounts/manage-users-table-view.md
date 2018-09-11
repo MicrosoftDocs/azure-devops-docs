@@ -76,7 +76,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
  
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 

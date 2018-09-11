@@ -112,29 +112,59 @@ There are two options for setting up authentication in a build task:
 ### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** page.
+ ::: moniker range="vsts"
 
-    ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   >
 
-1. Select _Empty process_ at the top of the form
+   # [Previous navigation](#tab/previous-nav)
+   ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
+   ---
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/add-task-build-definition.png)
+1. Create a new pipeline.
 
-1. Select **Package** or search for _npm_ in the search bar, select **npm** and select _Add_:
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   >
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-task.png)
+   # [Previous navigation](#tab/previous-nav)
+   ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
-1. Select the **npm install** task underneath **Phase 1**:
+   ---
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-install.png)
+1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
-1. Browse to and select your **Working folder with package.json**:
+1. Start with an **Empty job**.
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-working-folder.png)
+1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
+
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+
+   ---
+
+1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
+
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-install-newnav.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-install.png)
+
+   ---
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
@@ -149,27 +179,139 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
         ![Add task to build pipeline](../_shared/_img/build-definition/registry-i-select-here.png)
 
         When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+   
+1. Select **Save & queue**, and then select **Save**.
+
+ ::: moniker-end
+
+ ::: moniker range=">= tfs-2017 < vsts"
+
+1. Select **Build and Release**, and then choose **Builds**.
+
+   ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+
+1. Create a new pipeline.
+
+   ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
+
+1. Start with an **Empty job**.
+
+1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
+
+   ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+
+1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
+
+   ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-install.png)
+
+1. Expand **Custom registries and authentication**, here you have a few options: 
+
+    * Registries in my **_.npmrc_**
+
+        ![Add task to build pipeline](../_shared/_img/build-definition/registries-in-my-npmrc.png)
+
+        > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+
+    * Registry I select here
+
+        ![Add task to build pipeline](../_shared/_img/build-definition/registry-i-select-here.png)
+
+        When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+   
+1. Select **Save & queue**, and then select **Save**.
+
+ ::: moniker-end
+
+
 
 
 ### With a Task Runner (e.g. make gulp work)
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** page.
+ ::: moniker range="vsts"
 
-    ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   >
 
-1. Select _Empty process_ at the top of the form
+   # [Previous navigation](#tab/previous-nav)
+   ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
+   ---
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/add-task-build-definition.png)
+1. Create a new pipeline.
 
-1. Select **Package** or search for _npm_ in the search bar, select **npm Authenticate** and select _Add_:
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   >
 
-    ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-auth-task.png)
+   # [Previous navigation](#tab/previous-nav)
+   ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+   ---
+
+1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
+
+1. Start with an **Empty job**.
+
+1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
+
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+
+   ---
+
+1. Select the **npm Authenticate** task underneath **Phase 1**:
+
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-auth-task-phase-newnav.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
+
+   ---
+
+1. Browse to and select your **.npmrc file to authenticate**:
+
+    ![Add task to build pipeline](../_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
+
+    > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+
+1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
+
+ ::: moniker-end
+
+ ::: moniker range=">= tfs-2017 < vsts"
+
+1. Select **Build and Release**, and then choose **Builds**.
+
+   ![navigate to builds tab](../../pipelines/_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+
+1. Create a new pipeline.
+
+   ![builds-tab-mine-new-button](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
+
+1. Start with an **Empty job**.
+
+1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
+
+   ![builds-tab-add-task-to-job](../../pipelines/_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
@@ -182,6 +324,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
     > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
+
+ ::: moniker-end
 
 ## Troubleshooting `vsts-npm-auth`
 

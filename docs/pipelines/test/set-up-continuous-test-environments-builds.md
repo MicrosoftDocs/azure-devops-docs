@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
 To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your
 builds in Azure Pipelines or Team Foundation Server (TFS).
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Set up machines to run your app and tests
 

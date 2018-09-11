@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: 'vsts || tfs-2017'
 ms.date: 03/16/2017
 ---
 

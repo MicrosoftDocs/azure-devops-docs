@@ -44,6 +44,8 @@
     href: analytics-security.md
   - name: Connect using Excel
     href: access-analytics-excel.md
+  - name: Analyze test results
+    href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
