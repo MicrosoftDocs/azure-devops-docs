@@ -32,7 +32,7 @@ To learn about building your own Azure DevOps extensions, see [developing](http:
 
 ## Install the extension
 
-1.  Sign in to the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio).
+1.  Sign in to the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
    
     ![Extensions marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
 
