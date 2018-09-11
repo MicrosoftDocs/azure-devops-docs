@@ -26,6 +26,8 @@ To gain access to the Analytics Service for your Azure DevOps Services organizat
 
 You can access the Analytics Service through dashboard widgets, OData, and Power BI.
 
+In addition, you can [analyze test results](../../pipelines/test/test-analytics.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json) via the test analytic charts for builds and releases. 
+
 ## Dashboard widgets
 
 In Azure DevOps Services, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](analytics-widgets.md). These widgets take advantage of the power of the Analytics Service. 
