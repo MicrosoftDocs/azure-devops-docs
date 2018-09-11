@@ -912,12 +912,12 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-nodejs-docker.md",
-      "redirect_url": "/azure/devops/pipelines/apps/containers/build",
+      "redirect_url": "/azure/devops/pipelines/languages/javascript",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/azure/devops/pipelines/apps/containers/build",
+      "redirect_url": "/azure/devops/pipelines/languages/docker",
       "redirect_document_id": false
     },
     {
@@ -2722,7 +2722,12 @@
     },
     {
       "source_path": "docs/build-release/test/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/continuous-test-java.md",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
       "redirect_document_id": false
     },
     {
@@ -2752,7 +2757,7 @@
     },
     {
       "source_path": "docs/build-release/test/set-up-automated-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3992,7 +3997,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/set-up-automated-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -4007,7 +4012,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
       "redirect_document_id": false
     },
     {
@@ -6457,7 +6462,7 @@
     },
     {
       "source_path": "docs/build-release/packages/npm.md",
-      "redirect_url": "/azure/devops/pipelines/packages/",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7072,7 +7077,7 @@
     },
     {
       "source_path": "docs/build-release/test/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7132,7 +7137,12 @@
     },
     {
       "source_path": "docs/build-release/test/set-up-continuous-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/test/set-up-continuous-testing-builds.md",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7222,7 +7232,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/azure-devops-project-python.md",
-      "redirect_url": "/azure/devops-project/azure/azure-devops-project-python",
+      "redirect_url": "/azure/devops-project/azure-devops-project-python",
       "redirect_document_id": true
     },
     {
@@ -7402,6 +7412,11 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-container-kubernetes.md",
+      "redirect_url": "/azure/devops/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/deploy-container-kubernetes.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-aks",
       "redirect_document_id": true
     },
