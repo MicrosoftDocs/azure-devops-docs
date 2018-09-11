@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestSettings API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestSettings API | Extensions for Azure DevOps Services
 description: Represents the test settings of the run. Used to create test settings and fetch test settings
 ms.assetid: a2b0a8ed-ea29-47a2-53ac-7c256459d756
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
-title: REST API samples for VSTS and Team Foundation Server
-description: REST API samples for VSTS and Team Foundation Server.
+title: REST API samples for Azure DevOps Services and Team Foundation Server
+description: REST API samples for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -16,7 +16,7 @@ ms.date: 08/25/2016
 
 ## Personal Access Tokens
 
-When using the REST APIs or .NET Libraries, you need to authenticate with Visual Studio Team Services (VSTS). Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+When using the REST APIs or .NET Libraries, you need to authenticate with Azure DevOps Services. Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 To get started with these samples [create a personal access token](../authentication/PATs.md).
 
@@ -31,7 +31,7 @@ Authorization: Basic BASE64PATSTRING
 
 ## REST API
 
-Here is an example getting a list of projects for your account. 
+Here is an example getting a list of projects for your organization. 
 
 ````cs
 using System.Net.Http;
@@ -47,7 +47,7 @@ ListofProjectsResponse.Projects viewModel = null;
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://{accountname}.visualstudio.com");  //url of our account
+    client.BaseAddress = new Uri("https://dev.azure.com/{OrgName}");  //url of your organization
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 
@@ -75,7 +75,7 @@ In this example we are using two of the .Net Client Libraries. Make sure these a
 
 [Microsoft Visual Studio Services Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 
-Here is a simple example getting a list of projects for your account. 
+Here is a simple example getting a list of projects for your organization. 
 
 ````cs
 using Microsoft.TeamFoundation.Core.WebApi;

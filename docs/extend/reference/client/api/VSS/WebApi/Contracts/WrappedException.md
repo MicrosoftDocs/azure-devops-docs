@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts WrappedException API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts WrappedException API | Extensions for Azure DevOps Services
 ms.assetid: 20683c0c-1d95-9933-3992-79096b769375
 ms.prod: devops
 ms.technology: devops-ecosystem

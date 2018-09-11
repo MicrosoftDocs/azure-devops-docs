@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Service Hook Subscriptions | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with service hook subscriptions programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Service Hook Subscriptions | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with service hook subscriptions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 249F8AEB-0E5C-41D5-9B67-C8AC6A22A98D
 ms.manager: douge
 ms.topic: article

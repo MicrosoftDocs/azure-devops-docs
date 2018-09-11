@@ -1,6 +1,6 @@
 ---
 title: Change request field reference (CMMI)
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Track change requests for CMMI work items, provide description and reference name  
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Change request  field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can track change requests for CMMI work items by using these six fields: Justification, Impact on Architecture, Impact on User Experience, Impact on Test, Impact on Development, and Impact on Technical Publications. A description and a reference name for each of the change request fields are provided in the following table. When you open a work item form for a change request, the **Justification** field appears on the **Justification** tab, and all other fields appear on the **Analysis** tab.  
   

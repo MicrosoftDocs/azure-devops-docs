@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: How to Use a Control | Extensions for VSTS
-description: How to use a control in your extension for VSTS.
+title: How to Use a Control | Extensions for Azure DevOps Services
+description: How to use a control in your extension for Azure DevOps Services.
 ms.assetid: eadb8d03-0664-4810-a6e8-62d64e834d33
 ms.topic: conceptual
 ms.manager: douge

@@ -2,7 +2,7 @@
 title: Swim lanes, #mention, Build test steps – Jun 3
 description: VSTS release notes for June 3 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 6f3afec0-bf60-46c0-82d5-48f8d60edc30
 ms.date: 06/01/2016
@@ -42,7 +42,7 @@ We’ve also released a new hub dedicated to browsing and analyzing test runs ac
 
 ##Team settings API
 
-And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [https://visualstudio.microsoft.com/integrate/api/work/overview](https://visualstudio.microsoft.com/integrate/api/work/overview).
+And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [/azure/devops/integrate/](/azure/devops/integrate/).
 
 If you have any questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see us do next, head over to UserVoice to add your idea or vote for an existing one.
 

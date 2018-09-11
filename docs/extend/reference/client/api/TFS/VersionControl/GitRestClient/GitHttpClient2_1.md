@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/GitRestClient GitHttpClient2_1 API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/GitRestClient GitHttpClient2_1 API | Extensions for Azure DevOps Services
 ms.assetid: 10881dce-71aa-3fb9-93ca-174e9fc3a462
 ms.prod: devops
 ms.technology: devops-ecosystem

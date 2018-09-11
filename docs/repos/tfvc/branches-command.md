@@ -1,5 +1,6 @@
 ---
 title: Branches Command
+titleSuffix: Azure Repos
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branches Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays the history of a branch for a specified file or folder.
 

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ExtensionAuditLog API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ExtensionAuditLog API | Extensions for Azure DevOps Services
 description: Audit log for an extension
 ms.assetid: 1d37786b-55b0-6943-8f47-184018335716
 ms.prod: devops

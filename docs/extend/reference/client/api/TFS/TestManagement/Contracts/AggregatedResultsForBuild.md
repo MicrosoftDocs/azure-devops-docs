@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts AggregatedResultsForBuild API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts AggregatedResultsForBuild API | Extensions for Azure DevOps Services
 ms.assetid: 7d886f9e-3fde-e43d-77eb-dcae015d8cc5
 ms.prod: devops
 ms.technology: devops-ecosystem

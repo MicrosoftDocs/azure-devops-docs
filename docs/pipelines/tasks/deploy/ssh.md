@@ -1,6 +1,6 @@
 ---
-title: SSH deployment task for Microsoft VSTS and TFS
-description: SSH task for use in the phases of all of your build and release pipelines in Microsoft VSTS and Team Foundation Server (TFS)
+title: SSH deployment task for Azure Pipelines and TFS
+description: SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,7 +26,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## Prerequisites
 
-* The task supports use of an SSH key pair to connect to the remote machine(s). 
+* The task supports use of an SSH key pair to connect to the remote machine(s).
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"

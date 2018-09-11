@@ -1,6 +1,6 @@
 ---
 title: Customize the web form to an  inherited process
-titleSuffix: VSTS  
+titleSuffix: Azure DevOps Services  
 description: Customize the web form for a work item type and Inheritance process model for a project     
 ms.technology: devops-agile
 ms.prod: devops

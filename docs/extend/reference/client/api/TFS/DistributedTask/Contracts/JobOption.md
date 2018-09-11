@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts JobOption API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts JobOption API | Extensions for Azure DevOps Services
 description: Represents an option that may affect the way an agent runs the job.
 ms.assetid: 2b602069-72e1-f74a-5911-bb64d5b97e58
 ms.prod: devops

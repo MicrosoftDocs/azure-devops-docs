@@ -1,7 +1,7 @@
 ---
 title: Sprint burndown
-titleSuffix: VSTS & TFS
-description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Review Scrum progress during and at the end of a sprint when working in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
@@ -15,7 +15,7 @@ ms.date: 06/21/2018
 
 # Monitor sprint burndown 
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
 
@@ -62,7 +62,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 1. 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -93,7 +93,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

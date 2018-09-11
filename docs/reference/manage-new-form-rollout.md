@@ -1,7 +1,7 @@
 ---
 title: Manage new form roll out
 titleSuffix: TFS    
-description: Enable the new work item form for customizing the work tracking experience in Visual Studio Team Services & Team Foundation Server  
+description: Enable the new work item form for customizing the work tracking experience in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
@@ -9,22 +9,21 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2017 <= tfs-2018'
+monikerRange: 'vsts || tfs-2017'
 ms.date: 03/16/2017
 ---
 
 # Manage roll out of the new web form
 
-
-**TFS 2018 | TFS 2017**  
+[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.
 >  
-> - For users of VSTS that use the [Inheritance process model](../organizations/settings/work/manage-process.md), the switch to the new form is automatic.
-> - For users of VSTS that use [Hosted XML process model](../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](#enable).
-> - For on-premises TFS 2017 users, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) 
-> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
+> - For users of Azure DevOps Services that use the [Inheritance process model](../organizations/settings/work/manage-process.md), the switch to the new form is automatic.
+> - For users of Azure DevOps Services that use [Hosted XML process model](../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](#enable).
+> - For on-premises TFS 2017 and later versions, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) 
+> - For TFS 2015 and earlier versions, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
 

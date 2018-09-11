@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Test Attachments | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with test attachments programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Test Attachments | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with test attachments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 17331F93-DD6A-459E-A3E6-D4A0FABAAC9B
 ms.manager: douge
 ms.topic: article
@@ -39,7 +39,7 @@ Content-Type: application/json
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run against which attachment has to be uploaded.
 | Query
@@ -75,7 +75,7 @@ Content-Type: application/json
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|-------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test results against which attachment has to be uploaded.
@@ -98,7 +98,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | attachment     | int    |                   | ID of the test run attachment to be downloaded
@@ -128,7 +128,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 
@@ -158,7 +158,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | Query
@@ -175,7 +175,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 

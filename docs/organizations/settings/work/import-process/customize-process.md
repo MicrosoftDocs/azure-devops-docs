@@ -1,6 +1,6 @@
 ---
 title: Customize a process to import using Hosted XML
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,19 +14,19 @@ ms.date: 03/20/2018
 
 # Customize a process when using Hosted XML
 
-<b>VSTS (Hosted XML)</b>   
+**Azure DevOps Services (Hosted XML)**
  
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >To learn more about customization and process models, see [Customize work tracking](../../../../reference/customize-work.md). 
 
-VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
+Azure DevOps Services supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more projects from it. 
 You can update the process at any time by importing the process again. 
 The changes made to the process template are then applied to all projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS. Some building blocks will update existing projects, while others only apply to new projects. See the table below for the full list.
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in Azure DevOps Services. Some building blocks will update existing projects, while others only apply to new projects. See the table below for the full list.
 
 <table>
 <tbody>
@@ -66,7 +66,7 @@ A process is a zip file containing a set of interdependent files used to define 
 
 ![Supported process plug-ins and objects for process import](_img/ALM_IP_SupportedPlugins.png)
 
-For a summary of differences between what's supported in VSTS versus an on-premises TFS, see [Differences between VSTS and TFS process template customizations](differences.md).  
+For a summary of differences between what's supported in Azure DevOps Services versus an on-premises TFS, see [Process template customizations differences](differences.md).  
  
 ## How to customize a process
 It's easiest to customize a process by starting with a well-defined process rather than building one from scratch.   
@@ -121,7 +121,7 @@ Refer to the [restrictions](#restrictions) below for a list of limitations impos
 <a id="rule-summary"></a>
 
 ## Restrictions
-You can import up to 32 processes to VSTS. Your custom process must conform to all rules summarized below, otherwise a validation error message may occur upon import.
+You can import up to 32 processes to Azure DevOps Services. Your custom process must conform to all rules summarized below, otherwise a validation error message may occur upon import.
 * [Process](#process)
   * [Process configuration](#process-configuration)
   * [Categories](#categories) 

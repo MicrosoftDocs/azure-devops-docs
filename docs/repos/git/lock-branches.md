@@ -1,6 +1,7 @@
 ---
-title: Lock a branch in your Git repo | VSTS & TFS
-description: Use the branches page to lock a branch in VSTS or TFS, preventing pushes to the branch.
+title: Lock a branch in your Git repo
+titleSuffix: Azure Repos
+description: Use the branches page to lock a branch in Azure DevOps Services or TFS, preventing pushes to the branch.
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 
 # Lock a branch
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 Prevent updates to a Git [branch](branches.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildOptionInputType API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildOptionInputType API | Extensions for Azure DevOps Services
 ms.assetid: d7c41fc4-a16d-6e28-022a-96a1ba9bdbba
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts TeamSettingsPatch API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts TeamSettingsPatch API | Extensions for Azure DevOps Services
 description: Data contract for what we expect to receive when PATCH
 ms.assetid: e0082c04-07fb-af61-5cfa-c1a0d78cb608
 ms.prod: devops

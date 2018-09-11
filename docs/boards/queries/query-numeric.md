@@ -1,13 +1,12 @@
 ---
 title: Query by numeric field
-titleSuffix: VSTS & TFS
-description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 ms.date: 02/05/2018  
 ---
@@ -112,7 +111,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 ### Sum of story points and their status   
 
 > [!NOTE]    
->**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on Azure Boards and TFS 2013.4 and later versions.
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
@@ -153,7 +152,7 @@ Based on the process your project references, you can assign the following field
 ### Sum of remaining work per developer 
 
 > [!NOTE]    
->**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on Azure Boards and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
@@ -222,7 +221,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
 <p>Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double</p>
 </td>
-<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)</td>
+<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)<p>Feature, Epic</p></td>
 </tr>
 <tr>
 	<td><p>Story Points</p></td>
@@ -249,7 +248,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
-<b>Note:</b> For VSTS, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label.  
+<b>Note:</b> For Azure Boards, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
 </blockquote>
 <p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
 </td>
@@ -319,7 +318,7 @@ For more information on using work items and queries, see:
 <a id="rollup"/>
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)

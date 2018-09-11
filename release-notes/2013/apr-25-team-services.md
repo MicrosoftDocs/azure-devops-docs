@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Apr 25
 description: VSTS release notes for April 25 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 7696bc78-b73a-40ba-b1db-8c13ff4aa111
 ms.date: 06/01/2016

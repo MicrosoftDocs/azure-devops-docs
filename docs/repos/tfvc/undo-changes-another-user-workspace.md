@@ -1,5 +1,6 @@
 ---
 title: Undo Changes in Another User's Workspace
+titleSuffix: Azure Repos
 description: Undo Changes in Another User's Workspace
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Undo Changes in Another User's Workspace
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Updated: October 2011
 

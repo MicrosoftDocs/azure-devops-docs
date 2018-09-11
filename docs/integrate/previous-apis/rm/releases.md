@@ -1,6 +1,6 @@
 ---
-title: Releases | Visual Studio Team Services REST API Reference
-description: Get Releases programmatically using the REST APIs for Visual Studio Team Services.
+title: Releases | VSTS REST API Reference
+description: Get Releases programmatically using the REST APIs for VSTS.
 ms.assetid: 3eb13243-f504-4cfd-a97e-638d8a0690d2
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -26,7 +26,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| account       | string   | Your Visual Studio Team Services account.
+| account       | string   | Your VSTS organization.
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | definitionId  | int   | Releases for this definition.
@@ -54,7 +54,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| account   | string | Your Visual Studio Team Services account.
+| account   | string | Your VSTS organization.
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId   | int    | ID of the release.
 | Query
@@ -90,7 +90,7 @@ Content-Type: application/json
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| account   | string | Your Visual Studio Team Services account.
+| account   | string | Your VSTS organization.
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -122,7 +122,7 @@ Content-Type: application/json
 | Parameter   | Type    | Notes
 |:------------|:--------|:------------
 | URL
-| account     | string  | Your Visual Studio Team Services account.
+| account     | string  | Your VSTS organization.
 | project     | string  | [Project](../tfs/projects.md) ID or name.
 | releaseId     | int     | ID of the release.
 | Query
@@ -153,7 +153,7 @@ Content-Type: application/json
 | Parameter   | Type    | Notes
 |:------------|:--------|:------------
 | URL
-| account     | string  | Your Visual Studio Team Services account.
+| account     | string  | Your VSTS organization.
 | project     | string  | [Project](../tfs/projects.md) ID or name.
 | releaseId     | int     | ID of the release.
 | Query
@@ -175,7 +175,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| account   | string | Your Visual Studio Team Services account.
+| account   | string | Your VSTS organization.
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId | int    | Logs for this release.
 | Query
@@ -193,7 +193,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| account   | string | Your Visual Studio Team Services account.
+| account   | string | Your VSTS organization.
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId | int |	Release ID for which this approval belongs to.
 | environmentId | string |	Environment ID for which this approval belongs to.

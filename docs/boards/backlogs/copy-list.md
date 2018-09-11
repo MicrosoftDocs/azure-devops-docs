@@ -1,7 +1,7 @@
 ---
 title: Copy a list of work items
-titleSuffix: VSTS & TFS   
-description: Copy a list of work items from a backlog or query in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure Boards and TFS   
+description: Copy a list of work items from a backlog or query in Azure Boards or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -38,7 +38,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 	Here we multi-select from the product backlog and choose <b>Copy to clipboard</b>.
 
-	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="VSTS, backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
 ::: moniker-end 
 
 ::: moniker range="tfs-2017"

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ExtensionDataCollection API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ExtensionDataCollection API | Extensions for Azure DevOps Services
 description: Represents a single collection for extension data documents
 ms.assetid: 034c7657-f8e2-1ca0-7e05-2ae082032417
 ms.prod: devops

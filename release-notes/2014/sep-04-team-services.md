@@ -2,7 +2,7 @@
 title: Query usability, Hubot, new charts, and more - Sep 4
 description: VSTS release notes for September 04 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 9d658d0e-70f2-4703-b4c1-5d36b5accd75
 ms.date: 06/01/2016
@@ -59,7 +59,7 @@ You all gave us a ton of feedback on our first preview of the v1.0 REST APIs tha
 -New metadata APIs to enumerate work item types, link types, categories and fields
 -Less verbose JSON objects
 
-[Documentation](https://visualstudio.microsoft.com/integrate/reference/reference-vso-work-item-overview-vsi) has been updated so give it a try and let us know what you think.
+[Documentation](/azure/devops/integrate/) has been updated so give it a try and let us know what you think.
 
 ##Event and resource versioning within service hooks
 

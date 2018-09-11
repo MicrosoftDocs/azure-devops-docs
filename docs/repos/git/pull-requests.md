@@ -1,6 +1,7 @@
 ---
-title: Review and merge code with pull requests | VSTS & TFS
-description:  Conduct a code review in a Git with VSTS or TFS, create a pull request.
+title: Review and merge code with pull requests
+titleSuffix: Azure Repos
+description:  Conduct a code review in a Git with Azure DevOps Services or TFS, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 04/03/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
+# Review code with pull requests
 
-#  Review code with pull requests
-
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before
@@ -24,7 +24,7 @@ topic branches within the same repository or from a branch in a
 [fork](forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-New to pull requests? [Learn more](/azure/devops/git/git-pull-requests) about how to get feedback with Git pull requests.
+New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) about how to get feedback with Git pull requests.
 
 ## Create a new pull request
 
@@ -34,16 +34,16 @@ Create a new pull request from:
 - [The **Development** section in a linked work item](#from-a-linked-work-item)
 - [The **Pull Requests** tab in the **Code** view on the web](#from-the-code-view-on-the-web)
 - [Team Explorer in Visual Studio](#from-visual-studio) 
-- [Using the VSTS CLI (Preview)](#from-the-vsts-cli-preview)   
+- [Using the Azure DevOps Services CLI (Preview)](#from-the-vsts-cli-preview)   
 
 
 ### After pushing a branch
 
-When you publish or update a feature branch in your VSTS Git repo, you get a prompt asking if would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
+When you publish or update a feature branch in Azure Repos, you get a prompt asking if would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
 
-![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create-pr-from-push.png)
+![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push.png)
 
-![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create-pr-from-push-files-tab.png)
+![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push-files-tab.png)
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -67,7 +67,7 @@ Create pull requests from any branch from the **Pull Request** tab in the **Code
 Select **New pull request** in the upper right to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 Pick the branch you wish to have reviewed and the branch you want to merge the changes into, such as the master branch.  
 
-![Choosing source and target branches for a pull request in VSTS](_img/pull-requests/pr-branch-targets.png)
+![Choosing source and target branches for a pull request in Azure Repos](_img/pull-requests/pr-branch-targets.png)
 
 ### From Visual Studio
 
@@ -79,21 +79,21 @@ Initiate pull requests directly from Visual Studio.
 
   ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal.
+0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your VSTS Project.
+  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
 
-### From the VSTS CLI (Preview)
+### From the Azure DevOps Services CLI (Preview)
 
-You can now manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI](https://docs.microsoft.com/cli/vsts/overview)**.
+You can now manage pull requests and other resources in Azure DevOps Services and Team Foundation Server 2017 Update 2 or later from the command line with the **[Azure DevOps Services CLI](/cli/vsts/overview)**.
 
-For a list of commands to create and manage pull requests, see [Manage pull requests](https://docs.microsoft.com/cli/vsts/code/pr).
+For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
-For more information about working with the VSTS CLI, see [Get started with the VSTS CLI](https://docs.microsoft.com/cli/vsts/get-started).
+For more information about working with the Azure DevOps Services CLI, see [Get started with the Azure DevOps Services CLI](/cli/vsts/get-started).
 
 
 
@@ -160,7 +160,7 @@ This only removes the link between a work item to a pull request; links created 
 
 Update the title of a pull request by clicking the current title and updating the text. Choose the save icon to save changes or select undo to discard your changes.
 
-![Editing details in an existing VSTS pull request](_img/pull-requests/edit_pr_information.png)
+![Editing details in an existing Azure Repos pull request](_img/pull-requests/edit_pr_information.png)
 
 Edit the pull request description by selecting the edit link that appears when you hover over the existing description.
 
@@ -184,7 +184,7 @@ Select **Active** to show all active pull requests for the current repo.
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
-![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
+![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png) 
 
 ::: moniker-end 
 
@@ -209,7 +209,7 @@ Select the **Files** tab to view the changes made to the source branch relative 
 ![Pull request files](_img/pull-requests/pull-request-files.png)
 
 Review previous versions of the code pushed to the source branch of the pull request from the **All updates** drop-down. 
-A new version is added to the list in the drop-down and on the **Updates** tab every time the branch is updated in VSTS. 
+A new version is added to the list in the drop-down and on the **Updates** tab every time the branch is updated in Azure Repos. 
 
 The diff view updates as you select different changes, showing the differences between the files in the currently selected and previous version in the pull request. 
 Catch up with a pull request after being away from it for awhile by stepping through changes made since your last review.
@@ -231,15 +231,15 @@ Comment inline in the **Files** tab in your pull request by selecting the commen
 Leave feedback not tied to a specific code change by commenting in the **Overview** tab. 
 Reply directly to the author or other reviewers by using `@username` and reference work items using `#workitemID` in your comments. You can also reference other pull requests using `!pullrequestID`.
 
-![Reviewing comments in VSTS pull requests](./_img/pull-requests/pr_comments_summary.png)
+![Reviewing comments in Azure Repos pull requests](./_img/pull-requests/pr_comments_summary.png)
 
 Update comment status to let reviewers know what you are doing to address the concerns brought up in their review. New comments start in **Active** status and can be updated in the conversation using the **Resolve** and **Reply &amp; resolve** buttons.
 
-![Reviewing comments in VSTS pull requests](./_img/pull-requests/pr-comments-reply-and-resolve.png)
+![Reviewing comments in Azure Repos pull requests](./_img/pull-requests/pr-comments-reply-and-resolve.png)
 
 Additional options are available in the comment resolution drop-down.
 
-![Reviewing comments in VSTS pull requests](./_img/pull-requests/pr-comment-resolution.png)
+![Reviewing comments in Azure Repos pull requests](./_img/pull-requests/pr-comment-resolution.png)
 
 - **Active**: Comment is still under review.
 - **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
@@ -262,16 +262,16 @@ Vote on the changes in a pull request by choosing an option from the button on t
 
 The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes. Votes in a pull request can optionally be reset when new code is pushed to the branch by checking **Reset code reviewer votes when there are new changes** when configuring the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
-![List of Pull Request voters in VSTS ](./_img/pull-requests/Approval.png)
+![List of Pull Request voters in Azure Repos](./_img/pull-requests/Approval.png)
 
 Best practice: At least two reviewers should review and approve the changes in a significant pull request.  
 
 ## Update code in response to feedback
 
-Update your code in response to comments by creating a new [commit](commits.md) with the changes and [pushing](pushing.md) the updates to the branch in your VSTS repo. 
+Update your code in response to comments by creating a new [commit](commits.md) with the changes and [pushing](pushing.md) the updates to the branch in your Git repo. 
 You can make quick updates to your branch directly from the **Files** tab in the **Code** view on the web.
 
-![Updating code directly during a pull request in VSTS](./_img/pull-requests/pr_editing_changes.png)
+![Updating code directly during a pull request in Azure Repos](./_img/pull-requests/pr_editing_changes.png)
 
 ## Complete the pull request
 
@@ -310,7 +310,7 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 ![A banner displays when your pull request is in auto-complete state](./_img/pull-requests/pr_banner_autocomplete.png)
 
 >[!NOTE]
->The **Auto-complete** option is available in VSTS and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
+>The **Auto-complete** option is available in Azure Repos and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
 ::: moniker-end 
 
@@ -333,7 +333,7 @@ Subscribe to email alerts to get notified when changes are made to your pull req
 
 0. Select the settings icon while you have your project open to bring up the project administration page.
 
-   ![open up the administrative area of the VSTS web portal for your project](_img/pull-requests/gear_icon_settings.png) 
+   ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png) 
 
 0. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
 
@@ -376,7 +376,7 @@ This is useful when you want to use a branch other than `master` for new changes
 
 0. Select the settings icon while you have your project open to bring up the project administration page.
 
-   ![open up the administrative area of the VSTS web portal for your project](_img/pull-requests/gear_icon_settings.png)
+   ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png)
    
 0. Select **Version Control**.
 
@@ -384,5 +384,5 @@ This is useful when you want to use a branch other than `master` for new changes
 
 0. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.   
 
-   ![Set a default branch for a Git repo in VSTS or TFS](_img/pull-requests/set_default_branch.png)
+   ![Set a default branch for a Git repo in Azure DevOps Services or TFS](_img/pull-requests/set_default_branch.png)
 

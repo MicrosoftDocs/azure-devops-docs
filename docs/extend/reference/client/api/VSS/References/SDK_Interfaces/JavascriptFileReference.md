@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces JavascriptFileReference API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces JavascriptFileReference API | Extensions for Azure DevOps Services
 description: Reference to a javascript file to include on a page
 ms.assetid: ad7fc48f-2880-f1cb-dcfd-c9aebf7ae5f0
 ms.prod: devops

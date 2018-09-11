@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts TaskExecution API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts TaskExecution API | Extensions for Azure DevOps Services
 ms.assetid: a3374279-ec5b-de03-3609-3650d3610de5
 ms.prod: devops
 ms.technology: devops-ecosystem

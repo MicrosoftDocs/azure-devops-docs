@@ -1,6 +1,6 @@
 ---
 title: File transforms and variable substitution
-description: File transforms and variable substitution for tasks in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -46,11 +46,11 @@ configuration files (for example, **FabrikamService.exe.config**).
 ### Configuration transform file naming conventions
  
 XML transformation will be run on the `*.config` file for
-transformation configuration files named `*.Release.config` or `*.<Environment>.config`
+transformation configuration files named `*.Release.config` or `*.<stage>.config`
 and will be executed in the following order:
 
 1. `*.Release.config` (for example, **fabrikam.Release.config**)
-1. `*.<Environment>.config` (for example, **fabrikam.Production.config**)
+1. `*.<stage>.config` (for example, **fabrikam.Production.config**)
 
 For example, if your package contains the following files:
 
@@ -59,7 +59,7 @@ For example, if your package contains the following files:
 * Web.Release.config
 * Web.Production.config
 
-and your environment name is **Production**, the transformation is applied
+and your stage name is **Production**, the transformation is applied
 for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.  
 
 ### XML transformation example
@@ -116,9 +116,9 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with an stage named **Release**.
  
-1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option. 
+1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
    ![Release pipeline for XML transformation](_img/release-definition2.png)
  
@@ -148,7 +148,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 **Note**:
 
-* You can use this technique to create a default package and deploy it to multiple environments.
+* You can use this technique to create a default package and deploy it to multiple stages.
 
 * XML transformation takes effect only when the configuration file and transform file
   are in the same folder within the specified package.
@@ -203,7 +203,7 @@ As an example, consider the task of changing the following values in `Web.config
         <!-- Change AdminUserName in this line: --> 
         <add key="AdminUserName" value="__AdminUserName__" />
         <!-- Change AdminPassword in this line: --> 
-        <add key="AdminPassword" value="__AdminPassword__" />
+        <add key="AdminPassword" value="__AdminPasword__" />
     </appSettings>
     <entityFramework>
         <defaultConnectionFactory type="System.Data.Entity.LocalDbConnectionFactory">
@@ -218,9 +218,9 @@ As an example, consider the task of changing the following values in `Web.config
 ```
 <p />
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with a stage named **Release**.
  
-1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option. 
+1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
    ![Release pipeline for XML variable substitution](_img/release-definition.png)
 
@@ -280,10 +280,10 @@ As an example, consider the task of changing the following values in `Web.config
 This feature substitutes values in the JSON configuration files.
 It overrides the values in the specified JSON configuration files
 (for example, `appsettings.json`) with the values matching names of release pipeline
-and environment variables.
+and stage variables.
 
 To substitute variables in specific JSON files, provide newline-separated
-list of JSON files. File names must be specified relative to the root folder. 
+list of JSON files. File names must be specified relative to the root folder.
 For example, if your package has this structure:
 
 ```Folders
@@ -315,7 +315,7 @@ As an example, consider the task of overriding values in this JSON file:
     },
     "DebugMode": "enabled",
     "DBAccess": {
-      "Administrators": ["Admin-1", "Admin-2"],
+      "Admininstrators": ["Admin-1", "Admin-2"],
       "Users": ["Vendor-1", "vendor-3"]
     },
     "FeatureFlags": {
@@ -335,26 +335,26 @@ As an example, consider the task of overriding values in this JSON file:
 <p />
 
 The task is to override the values of **ConnectionString**, **DebugMode**,
-the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy. 
+the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with a stage named **Release**.
  
 1. Add an **Azure App Service Deploy** task and enter a newline-separated
-   list of JSON files to substitute the variable values in the **JSON variable substitution** textbox. 
-   Files names must be relative to the root folder. 
+   list of JSON files to substitute the variable values in the **JSON variable substitution** textbox.
+   Files names must be relative to the root folder.
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 
    ![Release pipeline for JSON variable substitution](_img/json-setting.png)
 
-1. Define the required substitution values in release pipeline or environment variables.
+1. Define the required substitution values in release pipeline or stage variables.
  
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |
-   | DebugMode | disabled | No | Release |
+   | Data.DebugMode | disabled | No | Release |
    | Data.DefaultConnection.ConnectionString | Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf; | No | Release |
-   | DBAccess.Users.0 | Admin-3 | Yes | Release |
-   | FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
+   | Data.DBAccess.Users.0 | Admin-3 | Yes | Release |
+   | Data.FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
    
 1. Save the release pipeline and start a new release.
 
@@ -368,7 +368,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
        },
        "DebugMode": "disabled",
        "DBAccess": {
-         "Administrators": ["Admin-1", "Admin-2"],
+         "Admininstrators": ["Admin-1", "Admin-2"],
          "Users": ["Admin-3", "vendor-3"]
        },
        "FeatureFlags": {

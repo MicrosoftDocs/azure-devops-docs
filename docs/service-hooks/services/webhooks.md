@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: WebHooks with VSTS
-description: Use WebHooks with your VSTS account
+title: WebHooks with Azure DevOps Services
+description: Use WebHooks with your Azure DevOps Services organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -20,13 +20,13 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 ## Send JSON representation to a service
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 
-0.  Select and configure the VSTS event:
+0.  Select and configure the Azure DevOps Services event:
 
 	![Configure the event dialog box](./_img/webhooks/configure-event.png)
 
@@ -46,7 +46,7 @@ Now the Web hook is set up. Go to the target service to view the JSON representa
 
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
@@ -63,7 +63,7 @@ The default is **All**, but you can also choose to send **Minimal** (only sends 
 **None** and **Minimal** are useful in scenarios where the caller doesn't actually need much,
 if anything, about the resource because it is relying on the message or detailed message.
 **None** and **Minimal** are also useful for security reasons, for example,
-the caller needs to call back into VSTS and go through normal security/permission checks 
+the caller needs to call back into Azure DevOps Services and go through normal security/permission checks 
 in order to get more details about the resource.
 
 Sample JSON:

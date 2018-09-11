@@ -2,7 +2,7 @@
 title: Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
 description: VSTS release notes for March 3 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 66042038-4458-4bd3-8257-91e3cd7c7ee4
 ms.date: 06/01/2016

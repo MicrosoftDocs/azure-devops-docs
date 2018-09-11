@@ -1,5 +1,5 @@
 ---
-title: VSS/Common/Contracts/FormInput InputValues API | Extensions for Visual Studio Team Services
+title: VSS/Common/Contracts/FormInput InputValues API | Extensions for Azure DevOps Services
 description: Information about the possible/allowed values for a given subscription input
 ms.assetid: 628a9dff-b218-4f25-71ad-239e7090a07e
 ms.prod: devops

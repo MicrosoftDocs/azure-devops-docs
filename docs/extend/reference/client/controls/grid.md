@@ -1,6 +1,6 @@
 ---
-title: Grid Control | Extensions for VSTS
-description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for VSTS.
+title: Grid Control | Extensions for Azure DevOps Services
+description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for Azure DevOps Services.
 ms.assetid: d0b0cded-3e7f-4972-95bb-8b634fb13f94
 ms.prod: devops
 ms.technology: devops-ecosystem

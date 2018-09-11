@@ -1,6 +1,6 @@
 ---
-title: VSS/References/SDK.Interfaces ContributedServiceContext API | Extensions for Visual Studio Team Services
-description: Page context configuration that can be contributed by remote services (different VSTS services delivering content to the page)
+title: VSS/References/SDK.Interfaces ContributedServiceContext API | Extensions for Azure DevOps Services
+description: Page context configuration that can be contributed by remote services (different Azure DevOps Services services delivering content to the page)
 ms.assetid: 342d593c-8248-6e29-40dc-b61354481a0c
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 Defined in vss.d.ts
 
 
-Page context configuration that can be contributed by remote services (different VSTS services delivering content to the page) 
+Page context configuration that can be contributed by remote services (different Azure DevOps Services services delivering content to the page) 
 
 ### Members
 

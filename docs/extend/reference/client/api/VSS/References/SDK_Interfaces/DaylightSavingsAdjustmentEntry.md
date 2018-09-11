@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces DaylightSavingsAdjustmentEntry API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces DaylightSavingsAdjustmentEntry API | Extensions for Azure DevOps Services
 ms.assetid: 432de2b0-314a-6694-2911-d44cc495865d
 ms.prod: devops
 ms.technology: devops-ecosystem

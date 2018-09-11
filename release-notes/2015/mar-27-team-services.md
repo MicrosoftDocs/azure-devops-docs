@@ -2,7 +2,7 @@
 title: Application Insights - save search page, pause export and alerts on export fail - Mar 27
 description: VSTS release notes for March 27 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: dedb8bbf-6bf8-44c6-a101-9144f60d4781
 ms.date: 06/01/2016

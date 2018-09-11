@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts SvnMappingDetails API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts SvnMappingDetails API | Extensions for Azure DevOps Services
 ms.assetid: 4a072e3e-cc22-d3c6-60f0-85fcc3838efe
 ms.prod: devops
 ms.technology: devops-ecosystem

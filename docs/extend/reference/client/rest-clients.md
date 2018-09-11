@@ -1,6 +1,6 @@
 ---
-title: REST Clients | Extensions for Visual Studio Team Services
-description: Libraries for calling Visual Studio Team Services REST APIs.
+title: REST Clients | Extensions for Azure DevOps Services
+description: Libraries for calling Azure DevOps Services REST APIs.
 ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](./api/_data/disclaimer.md)]
 
-A REST client simplifies calling [Visual Studio Team Services REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts/) from your client-side (JavaScript/TypeScript) extension code.
+A REST client simplifies calling [Azure DevOps Services REST APIs](/rest/api/vsts/) from your client-side (JavaScript/TypeScript) extension code.
 
 ### Get started
 

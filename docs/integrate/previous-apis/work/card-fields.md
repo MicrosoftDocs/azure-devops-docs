@@ -1,6 +1,6 @@
 ---
-title: Card Fields for Kanban Boards | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with the fields on the cards in Kanban boards programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Card Fields for Kanban Boards | REST API Reference for Azure DevOps Services and Team Foundation Server
+description: Work with the fields on the cards in Kanban boards programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
 ms.assetid: C2E9062C-3C18-42BC-A057-794FD2F2BA35
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team ID | Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -55,7 +55,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team ID | Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.

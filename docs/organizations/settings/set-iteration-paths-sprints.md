@@ -1,7 +1,7 @@
 ---
 title: Define iteration paths or sprint for a project 
-titleSuffix: VSTS & TFS
-description: Define the iterations or sprints to use when assigning work items in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Define the iterations or sprints to use when assigning work items in Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
@@ -74,7 +74,7 @@ From the web portal, open **Project settings**.
 1. From the web portal for the project context, choose the ![](../../_img/icons/gear-icon.png) gear icon..  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, VSTS, Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
+	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
 	
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 

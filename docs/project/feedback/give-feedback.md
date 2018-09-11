@@ -1,7 +1,7 @@
 ---
 title: Give feedback using Microsoft Feedback Client 
-titleSuffix: VSTS & TFS  
-description: Respond to a request for feedback using the Microsoft Feedback Client in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps Services & TFS  
+description: Respond to a request for feedback using the Microsoft Feedback Client in Azure DevOps Services & Team Foundation Server   
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.date: 08/31/2017
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Visual Studio Team Services (VSTS) or an on-premises Team Foundation Server (TFS).  
+You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
 
 The Microsoft Feedback Client is installed automatically with the latest versions of Visual Studio, or you can download for free from the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142). 
 
@@ -161,7 +161,7 @@ After you enter your feedback for each item, you can review, make corrections or
 
 ### Requirements to provide feedback 
 
-- To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to VSTS or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).  
+- To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to Azure DevOps Services or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).  
 - Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142).
 
 

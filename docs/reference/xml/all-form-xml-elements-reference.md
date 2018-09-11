@@ -1,6 +1,6 @@
 ---
 title: All FORM XML elements reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -81,7 +81,7 @@ You can specify how information and work item fields are grouped and appear in a
 <tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form's regions into columns.</p>
 <code>
 &lt;Column PercentWidth="WidthPerceOfContainingElement" FixedWidth="WidthInPixels"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group  
+&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
 &#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
 &#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
 &#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
@@ -140,7 +140,7 @@ Margin="(left, top, right, bottom)" ControlSpacing="Distance" LabelSpacing="Dist
 <tr><td data-th="Element"><p><strong>Tab</strong></p></td><td data-th="Description"><p>Defines the layout of a single tab in a tab group.</p>
 <code>
 &lt;Tab Label="LabelText" Padding="(top, bottom, left, right)" Margin="(top, bottom, left, right)"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group  
+&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
 &#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
 &#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
 &#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  

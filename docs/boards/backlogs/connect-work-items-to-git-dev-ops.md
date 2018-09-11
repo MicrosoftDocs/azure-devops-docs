@@ -1,6 +1,6 @@
 ---
 title: Drive Git or TFVC development from a work item
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Boards and TFS 
 description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.technology: devops-agile
 ms.prod: devops
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 # Drive Git development from a work item   
 
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -98,7 +98,8 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 6. Upon completion, you should see a similar screen as follows.   
 
-	<img src="_img/git-dev-pr-completed.png" alt="Pull request, completed notification" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]
+	> ![Pull request, completed notification](_img/git-dev-pr-completed.png)
 
 7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../_img/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
 
@@ -152,7 +153,7 @@ Learn more about tracking work with work items and developing with Git from thes
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
 
 > [!NOTE]   
-> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
+> The Development section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
 ### Associated work items in build 
 

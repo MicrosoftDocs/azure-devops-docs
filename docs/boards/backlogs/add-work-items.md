@@ -1,9 +1,9 @@
 ---
 title: Add work items
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Boards and TFS 
 ms.global_help.title: View & add work items
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 2 
-description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Visual Studio Team Services or Team Foundation Server  
+description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
@@ -27,12 +27,6 @@ You add work items to plan and manage your project. You use different types of w
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
-<!---
-> [!IMPORTANT]   
-><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../../reference/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../../reference/process/new-work-item-experience.md#switch-new). 
-
--->
-
 ::: moniker range=">= tfs-2017"
 
 <a id="define-new-work">  </a>
@@ -43,20 +37,15 @@ Here we show how to add work items from the web portal.
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work>Add a work item" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]  
-	>Depending on the process chosen when the project was created&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
-	[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+	>Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+	or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 	>
 	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 	
 	Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
-<!---
-	Or, from the Queries page, click the New menu and select the work item type. 
-
-	<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 2px solid #C3C3C3;" />
--->
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -64,7 +53,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
 That's it! 
 
@@ -81,7 +70,7 @@ You can start adding work items once you connect to a project. Here we show how 
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -161,7 +150,7 @@ To find work items based on their history, see [History & auditing](../queries/h
 
 When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.   
 
-<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
@@ -186,10 +175,10 @@ From **Work** you can add the most common types of work items. To quickly add ba
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 
-For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/howto-manage-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
-For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json).
+For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 

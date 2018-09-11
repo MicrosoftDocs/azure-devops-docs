@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Contracts WorkItemFieldUpdate API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Contracts WorkItemFieldUpdate API | Extensions for Azure DevOps Services
 ms.assetid: 5a71d783-16da-5ab1-7a70-8db9243c8640
 ms.prod: devops
 ms.technology: devops-ecosystem
