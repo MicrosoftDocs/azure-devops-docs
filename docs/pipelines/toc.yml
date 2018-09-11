@@ -2,7 +2,7 @@
   href: index.md
 - name: Quickstarts
   items:
-  - name: Get started
+  - name: Overview
     href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
