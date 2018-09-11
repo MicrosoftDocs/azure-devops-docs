@@ -16,15 +16,15 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | TFS 2017.1 and later**
 
+When running automated tests in the CI/CD pipeline, you may need a special configuration
+in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
+the typical considerations for running UI tests. 
+
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 ::: moniker-end
-
-When running automated tests in the CI/CD pipeline, you may need a special configuration
-in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
-the typical considerations for running UI tests. 
 
 ## Pre-requisites
 
