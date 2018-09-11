@@ -57,7 +57,7 @@ If users no longer require access to a project or your organization, you can rem
    To reduce or cancel users for the next month, you must make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization: ```https://dev.azure.com/{yourorganization}```.
 
@@ -96,7 +96,7 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 ![Remove a user from a security group, previous navigation](_img/delete-user/remove-user-prev.png)
 

@@ -76,7 +76,7 @@ and differences in how you
 
 5.	Add more users or groups, or save your changes if you're done.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1.	Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 

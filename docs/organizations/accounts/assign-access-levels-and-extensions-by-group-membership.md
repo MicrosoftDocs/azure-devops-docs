@@ -55,7 +55,7 @@ A notification is displayed that shows the status and outcome of the rule. If th
 
 ![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
 
