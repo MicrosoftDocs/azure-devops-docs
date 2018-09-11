@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 **TFS 2017 | TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]
-> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for VSTS, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 
+> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 
 
 ## Add users to SharePoint site
 
@@ -56,44 +56,3 @@ or they won't be able to view or edit those reports.
 	![Follow instructions for your version of SharePoint](/tfs/server/admin/_img/add-administrator-tfs/people-and-groups.png)
 
 
-
-<!---
-	### Reporting Services
-
-	2.  Go to `http://{ReportServer}/Reports/Pages/Folder.aspx`, where {ReportServer} is the name of the server
-		that's running Reporting Services.
-
-		> If you are using a named instance, include its name in the path of the reports, like this:
-		> `http://{ReportServer}/Reports_{InstanceName}/Pages/Folder.aspx`
-
-	3.  Choose **Folder Settings**, and then choose **New Role Assignment**.
-
-	4.  Add the account name of the user or group to whom you want grant administrative permissions
-		and grant them membership in the Team Foundation Content Manager role.
-
-		![Click and choose, or tab, spacebar, and enter](../accounts/_img/add-administrator-tfs/rs-role-assignment.png)
-
-
-## Add users to Reporting Services
-
-1.  Open Internet Explorer or another browser compatible with Reporting Services administration,
-and navigate to the following address,
-where *ReportServer* represents the name of the server that is running SQL Server Reporting Services:
-
-    **http://** *ReportServer* **/Reports/Pages/Folder.aspx**
-
-2.  On the **Home** page, choose **Folder Settings**, and in Security, choose **New Role Assignment** and add users.
-
-    -   To add users who can act as readers of or contributors to the project, select the **Browsers** check box.
-
-        ![Click or tab to selection and spacebar to check](_img/add-users-team-project/assign-rs-browser.png)
-
-    -   To add users who will act as project leads, select the **Team Foundation Content Manager** check box.
-
-        ![Choose the role assignment for the user or group](../accounts/_img/add-users-team-project/assign-rs-role.png)
-
-If you're a member of [Team Foundation Administrators](/tfs/server/admin/add-administrator-tfs),
-you can verify what features are available for your users by default,
-and see whether any users are members of groups that have access outside of the default level.
-
--->

@@ -1,5 +1,6 @@
 ---
-title: Support bug update status using My Work | VSTS & TFS
+title: Support bug update status using My Work 
+titleSuffix: TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,6 +9,8 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
+
+
 # Support bug update status using My Work  
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 

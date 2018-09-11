@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - July 29
 description: VSTS release notes for July 29 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 0847839d-1513-46fa-a8e6-41c5cf5ec0f5
 ms.date: 06/01/2016

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Flowdock with VSTS
-description: Use Flowdock with your VSTS account
+title: Flowdock with Azure DevOps Services
+description: Use Flowdock with your Azure DevOps Services organization
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Notifications and Flowdock
 
-VSTS can post messages to your flow in Flowdock
+Azure DevOps Services can post messages to your flow in Flowdock
 so everyone will know when code has been pushed or checked in, 
 a build has finished, or a work item has been created or updated.
 
@@ -44,7 +44,7 @@ a build has finished, or a work item has been created or updated.
 
 ## Use a service hook to push messages
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -54,7 +54,7 @@ a build has finished, or a work item has been created or updated.
 
    <img alt="Flowdock selected in the service dialog box" src="./_img/flowdock/flowdock-service.png" style="border: 1px solid #CCCCCC" />
 
-1. Configure the VSTS event that will push a message to Flowdock. 
+1. Configure the Azure DevOps Services event that will push a message to Flowdock. 
 
    <img alt="Configure event" src="./_img/flowdock/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -71,7 +71,7 @@ Now messages will be posted to your flow in Flowdock.
 <img alt="Messages appear in flow" src="./_img/flowdock/chat-messages.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

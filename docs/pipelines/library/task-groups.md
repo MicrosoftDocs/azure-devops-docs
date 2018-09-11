@@ -1,6 +1,6 @@
 ---
-title: Task Groups in VSTS and Team Foundation Server
-description: Understand Task Groups in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS) Release Management
+title: Task Groups in Azure Pipelines and Team Foundation Server
+description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS) Release Management
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Task groups for builds and releases
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -30,7 +30,7 @@ The new task group is automatically added to the task catalogue, ready to be add
 to other release and build pipelines. Task groups are stored at the project level,
 and are not accessible outside the project scope.
 
-Task groups are a way to standardize and centrally manage deployment steps for all your applications. 
+Task groups are a way to standardize and centrally manage deployment steps for all your applications.
 When you include a task group in your definitions, and then make a change centrally to the task group,
 the change is automatically reflected in all the definitions that use the task group. There is no need
 to change each one individually.
@@ -65,8 +65,13 @@ to change each one individually.
 
 ## Create a task group
 
+1. Ensure that all the tasks you intent to incude do not contain linke parameters. The easy
+   way to do this is to choose **Unlink all** in the settings panel for the entire process.
+
+   ![Unlinking parameters for all tasks](_img/unlink-task-group.png)
+
 1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
-   checkmarks of each one). Then open the shortcut menu and choose **Create task group**. 
+   checkmarks of each one). Then open the shortcut menu and choose **Create task group**.
 
    ![Creating a task group from a release pipeline list of tasks](_img/create-task-group.png)
 
@@ -79,7 +84,7 @@ to change each one individually.
 ## Manage task groups
 
 All the task groups you create in the current project are listed in
-the **Task Groups** tab of the **Build &amp; Release** hub.
+the **Task Groups** page of **Azure Pipelines**.
 
 ![Listing task groups](_img/list-task-group.png)
 
@@ -107,9 +112,9 @@ Select a task group name to open the details page.
 
 ## Create previews and updated versions of task groups
 
-All of the built-in tasks in VSTS and TFS are [versioned](../process/tasks.md#task-versions).
+All of the built-in tasks in Azure Pipelines and TFS are [versioned](../process/tasks.md#task-versions).
 This allows build and release pipelines to continue to use the existing version of a task while
-new versions are developed, tested, and released. In VSTS, you can version your own custom
+new versions are developed, tested, and released. In Azure Pipelines, you can version your own custom
 task groups so that they behave in the same way and provide the same advantages.  
 
 1. After you finish editing a task group, choose **Save as draft** instead of **Save**.
@@ -146,6 +151,6 @@ task groups so that they behave in the same way and provide the same advantages.
 ## Related topics
 
 * [Tasks](../process/tasks.md)
-* [Task phases](../process/phases.md)
+* [Task jobs](../process/phases.md)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

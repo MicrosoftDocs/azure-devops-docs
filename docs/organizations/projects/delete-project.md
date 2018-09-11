@@ -1,7 +1,7 @@
 ---
 title: Delete or remove a project
-titleSuffix: VSTS & TFS
-description: Delete or remove a project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Services & TFS
+description: Delete or remove a project from Azure DevOps Services or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
@@ -17,7 +17,7 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-If you find that you have a project you no longer use, you can delete it. Deleting a project helps simplify the navigation to projects that are in use. You can delete a project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
+If you find that you have a project you no longer use, you can delete it. Deleting a project helps simplify the navigation to projects that are in use. You can delete a project from Azure DevOps Services or from an on-premises deployment of Team Foundation Server (TFS).
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
@@ -34,7 +34,7 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Delete menu option](_img/delete-project/choose-delete-menu-option.png)
 
-    If you don't see the actions icon ![actions icon image](../../_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
+    If you don't see the actions icon ![actions icon image](../../_img/icons/actions-icon.png), either you're not accessing Azure DevOps Services or you're not a member of the Project Collection Administrators group. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
 0. You must type the name of the project in order to initiate the delete operation. 
 
@@ -101,7 +101,7 @@ If your on-premises project used reporting, and you didn't choose to delete exte
 
 ## Remove the project portal
 
-If your on-premises project had a project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
+If your on-premises project had a project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
 
 ::: moniker-end
 

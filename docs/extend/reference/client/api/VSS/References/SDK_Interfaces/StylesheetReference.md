@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces StylesheetReference API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces StylesheetReference API | Extensions for Azure DevOps Services
 description: Reference to a CSS file to include on a page
 ms.assetid: 6a8c8b05-d14a-27f7-1ba9-d66d3342670a
 ms.prod: devops

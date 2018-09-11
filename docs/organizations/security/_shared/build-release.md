@@ -1,6 +1,8 @@
+---
+ms.topic: include
+---
 
-
-
+<!--- TFS version only -->
 
 <table>
 <tr valign="bottom">
@@ -9,19 +11,19 @@
 <th>Readers</th>
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
-<th>Account Owner/<br/>Project Admins</th>
+<th>Project Admins</th>
 <th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View build and release pipelines 
 </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -29,9 +31,9 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -40,21 +42,21 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Approve releases
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -62,10 +64,10 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 
@@ -75,9 +77,9 @@
 </td>
 <td>  </td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -87,8 +89,8 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -97,9 +99,9 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -110,8 +112,8 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -122,8 +124,8 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -131,10 +133,10 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -143,20 +145,20 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -165,12 +167,12 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
-
-
 
 </tbody>
 </table>
+
+

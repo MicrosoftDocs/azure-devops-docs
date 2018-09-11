@@ -19,10 +19,10 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 
 ::: moniker range="vsts"
 
-Choose the ![](/vsts/_img/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
+Choose the ![](/azure/devops/_img/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board](/vsts/boards/boards/_img/turn-live-updates-on-agile.png) 
+> ![Kanban board](/azure/devops/boards/boards/_img/turn-live-updates-on-agile.png) 
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ Choose the ![](/vsts/_img/icons/view-options-icon.png) view options icon and mov
 
 # [Previous navigation](#tab/previous-nav)
 
-Choose the ![](/vsts/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
+Choose the ![](/azure/devops/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
 
 ![Kanban board, live updates icon](../_shared/_img/kanban-live-updates.png)  
 

@@ -1,7 +1,7 @@
 ---
 title: Understand and configure your Kanban board 
-titleSuffix: VSTS & TFS
-description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
 ms.global_help.title: Kanban basics
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 2  
 ms.topic: get-started-article
@@ -132,7 +132,7 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 ::: moniker range="vsts"
 
 In addition to the above chart, you can add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../../report/analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../../report/analytics/what-is-analytics.md)
 

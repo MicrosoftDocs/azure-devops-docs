@@ -1,5 +1,6 @@
 ---
 title: Check in to a folder that is controlled by a gated check-in build process
+titleSuffix: Azure Repos
 description: Check in to a folder that is controlled by a gated check-in build process
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 

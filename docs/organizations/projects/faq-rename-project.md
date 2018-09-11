@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ### Q: What permission do I need to rename a project?
 
-If you're using VSTS or Team Foundation Server 2017 or later, project rename requires the **Rename project** permission for a project.
+If you're using Azure DevOps Services or Team Foundation Server 2017 or later version, project rename requires the **Rename project** permission for a project.
 If you're using Team Foundation Server 2015, users require **Edit project-level information** permission on a project to rename it. To learn more, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md#change-the-permission-level-for-a-project-level-group)
 
 ### Q: Can I use a project name again?

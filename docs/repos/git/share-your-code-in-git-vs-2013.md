@@ -1,5 +1,6 @@
 ---
-title: Share your code with Git using Visual Studio 2013 | VSTS & TFS
+title: Share your code with Git using Visual Studio 2013
+titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
 ms.prod: devops
@@ -14,20 +15,20 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Share your code with Visual Studio 2013 and VSTS Git
+# Share your code with Visual Studio 2013 and Azure Repos Git
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015  
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015  
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
 as early as possible. Here, we'll show you how to get started with 
 Git, a distributed system. If you want to work in a centralized system, 
-you can instead use [TFVC with VSTS](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
+you can instead use [TFVC with Azure Repos](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
 [!INCLUDE [temp](_shared/open-team-project-in-vs.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts TfvcMergeSource API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts TfvcMergeSource API | Extensions for Azure DevOps Services
 ms.assetid: 8e6d55eb-e2c1-8a15-642e-ddee351c217d
 ms.prod: devops
 ms.technology: devops-ecosystem

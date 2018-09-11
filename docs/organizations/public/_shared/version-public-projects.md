@@ -3,4 +3,4 @@ ms.topic: include
 ---
 
 
-**VSTS Public Projects**
+**Azure DevOps Services - Public Projects**

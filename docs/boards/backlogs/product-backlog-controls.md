@@ -1,7 +1,7 @@
 ---
 title: Product backlog controls
-titleSuffix: VSTS & TFS 
-description: Switch views and turn controls on or off from your product or portfolio backlogs for Visual Studio Team Services (VSTS) and Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

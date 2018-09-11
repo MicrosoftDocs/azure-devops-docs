@@ -1,6 +1,7 @@
 ---
-title: Restore a deleted branch in your Git repo | VSTS & TFS
-description: Use the branches page to restore a deleted Git branch in VSTS or Team Foundation Server
+title: Restore a deleted branch in your Git repo
+titleSuffix: Azure Repos
+description: Use the branches page to restore a deleted Git branch in Azure DevOps Services or Team Foundation Server
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -15,12 +16,12 @@ monikerRange: '>= tfs-2018'
 
 # Restore a deleted Git branch from the web portal
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
 >[!IMPORTANT]
-> This topic covers restoring a deleted Git branch via the web in VSTS and TFS 2018.
+> This topic covers restoring a deleted Git branch via the web in Azure Repos and TFS 2018.
 If you need to restore a Git branch in your own repo from Visual Studio or the command line,
-[push](pushing.md) your branch from your local repo to VSTS to restore it. 
+[push](pushing.md) your branch from your local repo to Azure Repos to restore it. 
 
 0. Open your repo on the web and select the **Branches** view.
 
@@ -30,13 +31,13 @@ If you need to restore a Git branch in your own repo from Visual Studio or the c
 If there is a deleted branch that matches your search, you will be able to see which commit it pointed to when it was deleted,
 who deleted it, and when it was deleted.
 
-    ![Search for exact match in deleted branches in the VSTS/TFS web portal](_img/branches/search_deleted_branches.png)
+    ![Search for exact match in deleted branches in the Azure DevOps Services/TFS web portal](_img/branches/search_deleted_branches.png)
 
 0. To restore the branch, select the **...** icon next to the branch name and then select **Restore branch** from the menu.
 The branch will be recreated at the last commit to which it pointed.
 Note that branch policies and permissions will **not** be restored.
 
-    ![Restore your deleted branch in the VSTS/TFS web portal](_img/branches/restore_deleted_branch.png)
+    ![Restore your deleted branch in the Azure DevOps Services/TFS web portal](_img/branches/restore_deleted_branch.png)
 
 If you've re-used the same branch name for different commits, you may not see all the commits you're expecting when you restore the deleted branch. In that case, navigate to the **Pushes** page of the restored branch to see the entire history of the branch.
 

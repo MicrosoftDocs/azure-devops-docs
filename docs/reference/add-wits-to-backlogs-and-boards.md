@@ -1,7 +1,7 @@
 ---
 title: Add work item types to backlogs and boards   
-titleSuffix: VSTS & TFS
-description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
@@ -18,9 +18,9 @@ ms.date: 12/15/2017
 
 
 > [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
+> This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
 >
->For an overview of process models, see [Customize your work tracking experience](customize-work.md).   
+> For an overview of process models, see [Customize your work tracking experience](customize-work.md).   
 
 To satisfy other business processes, your team may want to track additional work item types (WITs) as requirements or as tasks. This way, you can add them and track them within the product and sprint backlogs or Kanban and task boards. 
 
@@ -51,9 +51,7 @@ You'll make your changes to your process definition files, and then import that 
 
 - If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
 - [Export the process you want to update](../organizations/settings/work/import-process/import-process.md) 
--  If you're new to customizing a process, familiarize yourself with the following resources:
-	- [Customize a process for import to VSTS](../organizations/settings/work/import-process/customize-process.md)
-
+-  If you're new to customizing a process, read [Customize a process for import](../organizations/settings/work/import-process/customize-process.md).
 
 
 ###On-premises XML process model customization sequence 

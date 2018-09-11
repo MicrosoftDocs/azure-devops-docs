@@ -113,7 +113,7 @@ When the project manager rejects an update to a work item, you must address the 
   
 
 ## Related articles  
--  [Agile tools and work tracking](../../boards/backlogs/overview.md)    
+-  [Agile tools and work tracking](../../boards/get-started/what-is-azure-boards.md)    
 
 <a name="demos"></a>  
 ###  Demonstration videos  

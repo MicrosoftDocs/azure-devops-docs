@@ -179,7 +179,7 @@ Now, instead of panicking, you know that:
 * History simplification for files is turned on by default
 * The `--full-history` flag will give you a more comprehensive file history
 
-**Update**: Since I wrote this article, [VSTS has introduced a number of awesome history viewing options on the web](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
+**Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
 What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you will be presented with the below history filter where you can specify simple or non-simple history views:
 
 ![Git Filters](./_img/git-log-history-simplification/Filters.png)

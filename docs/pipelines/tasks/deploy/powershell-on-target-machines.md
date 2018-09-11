@@ -1,6 +1,6 @@
 ---
 description: PowerShell on Target Machines build task
-title: PowerShell on Target Machines task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
+title: PowerShell on Target Machines task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 ![icon](_img/powershell-on-target-machines-icon.png) Execute PowerShell scripts on remote machine(s).
 
-This task can run both PowerShell scripts and PowerShell-DSC scripts. 
+This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 * For PowerShell scripts, the computers must have PowerShell 2.0 or higher installed.
 * For PowerShell-DSC scripts, the computers must have 

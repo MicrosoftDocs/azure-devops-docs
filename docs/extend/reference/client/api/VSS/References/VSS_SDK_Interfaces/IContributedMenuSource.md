@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IContributedMenuSource API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IContributedMenuSource API | Extensions for Azure DevOps Services
 description: Interface for a registered object that contributes menu item(s)
 ms.assetid: 3575f71f-0dbe-679d-bb31-4b54bf5bb2e3
 ms.prod: devops

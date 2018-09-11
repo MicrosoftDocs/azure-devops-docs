@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IExtensionHandshakeData API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IExtensionHandshakeData API | Extensions for Azure DevOps Services
 description: Data passed to the host from an extension frame via the initial handshake
 ms.assetid: 2eaf803e-d682-7903-eaf2-456f59913a4d
 ms.prod: devops

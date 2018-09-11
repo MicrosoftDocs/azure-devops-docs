@@ -5,7 +5,7 @@ ms.topic: include
 <h3 id="set-in-script">Define and modify your variables in a script</h3>
 
 To define or modify a variable from a script, use the `task.setvariable` logging command.
-Note that the updated variable value is scoped to the phase being executed, and does not flow across phases or environments. 
+Note that the updated variable value is scoped to the job being executed, and does not flow across jobs or stages.
 Variable names are transformed to uppercase, and the characters "." and " " are replaced by "_".
 
 For example, `Agent.WorkFolder` becomes `AGENT_WORKFOLDER`.

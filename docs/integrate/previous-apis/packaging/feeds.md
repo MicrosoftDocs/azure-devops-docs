@@ -1,6 +1,6 @@
 ---
-title: Feeds | REST API Reference for Visual Studio Team Services 
-description: Work with feeds programmatically using the REST APIs for Visual Studio Team Services .
+title: Feeds | REST API Reference for VSTS 
+description: Work with feeds programmatically using the REST APIs for VSTS .
 ms.assetid: 47944084-6828-4908-bf7f-86988390b673
 ms.manager: douge
 ms.author: elbatk
@@ -29,7 +29,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -44,7 +44,7 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account   | string  | Visual Studio Team Services account.
+| account   | string  | VSTS organization.
 | feed        | string | Name or ID of the feed.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -71,7 +71,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -98,7 +98,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of feed to be updated
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -120,7 +120,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account     | string | Visual Studio Team Services account.
+| account     | string | VSTS organization.
 | feed        | string | Name or ID of the feed to be deleted.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

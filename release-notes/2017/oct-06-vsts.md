@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 10/06/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Update on October 6, 2017.
 ---
@@ -31,7 +31,7 @@ Some of the other key feature highlights include:
 ### Updated experience for code and work items search
 
 > [!TIP]
-> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and **New User Experience in Code & Work Item Search** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and **New User Experience in Code & Work Item Search** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile.
 
 The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on the search experience and helped us make the product better.
 
@@ -90,7 +90,7 @@ Now you can reference work items in wiki pages by pressing the '#' key to get a 
 
 **Wiki** has rich formatting and layout capabilities, like HTML support and inline videos. You can now leverage these capabilities to create beautiful project description pages by choosing to show the wiki home page on the **Project** description page.
 
-See the [documentation for add and edit wiki pages](/vsts/project/wiki/add-edit-wiki) for more information.
+See the [documentation for add and edit wiki pages](/azure/devops/project/wiki/add-edit-wiki) for more information.
 
 ### Custom Project image on Project description page
 
@@ -114,7 +114,7 @@ Many of you care about a specific plan or set of plans and use favorites for qui
 
 You can now leverage Azure’s highly secure storage to manage the secrets you use in your build process. Simply create a variable group that points to the key vault and use that variable group in your build definition.
 
-See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/vsts/pipelines/library/variable-groups) for more information.
+See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/azure/devops/pipelines/library/variable-groups) for more information.
 
 ### New software updates available on hosted VS2017 agents
 
@@ -136,7 +136,7 @@ The process parameters that existed in build templates is now available for all 
 > [!div class="mx-imgBorder"]
 ![Process parameters for deployment templates](_img/124_07.png)
 
-See the [documentation for the new build editor](/vsts/pipelines/archive/preview/2017-user-experience#parameters) for more information.
+See the [documentation for the new build editor](/azure/devops/pipelines/archive/preview/2017-user-experience#parameters) for more information.
 
 ### Default properties for Git and GitHub artifact types are now editable
 

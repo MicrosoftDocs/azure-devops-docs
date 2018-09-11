@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>=tfs-2013 <= tfs-2017'
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Features removed when disabling SharePoint integration
@@ -29,7 +29,7 @@ Customers can create a SharePoint site using SharePoint's own interface. SharePo
 
 Additionally, Microsoft has introduced [Microsoft Teams](https://products.office.com/microsoft-teams) which allows teams to collaborate on a set of shared resources. Every Team gets a shared SharePoint site, OneNote, and Documents library. 
 
-We already offer [integration with Microsoft Teams](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/microsoft-teams-integration-with-team-services/) for both TFS and VSTS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
+We already offer [integration with Microsoft Teams](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/microsoft-teams-integration-with-team-services/) for both Azure DevOps Services and TFS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
  
 ## TFS web parts on Classic SharePoint sites
 SharePoint web parts display TFS data such as work item summary, recent builds, recent check-ins, and work item queries. These web parts display on classic SharePoint sites but will not display on the latest versions of SharePoint sites offered in SharePoint 2016 or SharePoint Online. Going forward, we will no longer support these SharePoint web parts.
@@ -46,9 +46,9 @@ After upgrading to TFS 2018 or to SharePoint 2016, your TFS SharePoint sites wil
 
 ![Discontinued Features as part of disabling SharePoint integration - SharePoint Site After upgrade](./_img/sharepoint-2016-upgrade-after-upgrade-site-example.png)
 
-VSTS and TFS offer [built-in dashboards](../../../report/dashboards.md). Each VSTS and TFS team can create any number of dashboards to meet their needs. Here is an example:
+Azure DevOps Services and TFS offer [built-in dashboards](../../dashboards.md). Each Azure DevOps Services and TFS team can create any number of dashboards to meet their needs. Here is an example:
 
-![TFS/VSTS Dashboards](./_img/tfsdashboard.jpg)
+![TFS/Azure DevOps Services dashboards](./_img/tfsdashboard.jpg)
 
 We will continue to invest in our built-in dashboards solution. We continue to develop widgets to provide instant insights into your data. Additionally, you can find widgets developed by our partners in the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance). 
 
@@ -100,7 +100,7 @@ Quick links are listed on the left side navigation pane of a TFS SharePoint site
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 
 ## Manage a Documents library using the Team Explorer Documents pane
-If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
+If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
 
 Going forward, the Documents pane within Team Explorer will no longer be supported. 
 

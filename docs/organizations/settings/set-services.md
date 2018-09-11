@@ -1,6 +1,6 @@
 ---
-title: Turn a service on or off, change the visibility of a service
-titleSuffix: VSTS
+title: Turn an Azure DevOps service on or off, change the visibility of a service
+titleSuffix: Azure DevOps Services
 description: Determines which services are available for a project from the the web portal  
 ms.technology: devops-settings
 ms.prod: devops
@@ -14,21 +14,20 @@ monikerRange: 'vsts'
 ms.date: 07/27/2018
 ---
 
-# Turn a service on or off 
+# Turn an Azure DevOps service on or off 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can control which services are available through the web portal by turning a service on or off. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on.  
 
-
 ## Prerequisites
 
-- You must have a VSTS organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
-- As a VSTS organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- You must have an Azure DevOps Services organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 
 ## Change the visibility for a service  
 
-The ability to turn services on or off is supported when you [enable **New Navigation** preview feature](../../project/navigation/preview-features.md). For more information on **New Navigation**, see this [blog post](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/).  
+The ability to turn services on or off is supported when you [enable **New Navigation** preview feature](../../project/navigation/preview-features.md). 
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
@@ -60,6 +59,12 @@ The ability to turn services on or off is supported when you [enable **New Navig
 This feature isn't available from the previous navigation settings. However, you can enable **New Navigation**, change the service visibility, and then disable **New Navigation** to return to previous navigation. The services you change will be added or removed from the previous navigation user interface. 
 
 ---
+
+## Disabled objects and features 
+If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled and won't appear in the [widget catalog](../../report/dashboards/widget-catalog.md). 
+
+If you disable **Boards**, you also disable [**Analytics views**](../../report/analytics/what-are-analytics-views.md).
+
 
 ## Related articles
 - [About projects and scaling the organization](../projects/about-projects.md)  

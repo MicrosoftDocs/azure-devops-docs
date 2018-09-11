@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts ItemDetailsOptions API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts ItemDetailsOptions API | Extensions for Azure DevOps Services
 description: Optional details to include when returning an item model
 ms.assetid: 79e2e4d9-0734-6683-2ea5-8c1a58db8f0b
 ms.prod: devops

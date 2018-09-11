@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts BoardSuggestedValue API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts BoardSuggestedValue API | Extensions for Azure DevOps Services
 ms.assetid: 8e36fd2b-01f1-d9e8-e972-4ef3902a5bed
 ms.prod: devops
 ms.technology: devops-ecosystem

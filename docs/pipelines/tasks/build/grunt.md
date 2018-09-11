@@ -1,6 +1,6 @@
 ---
 title: Grunt build and release task
-description: Grunt build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Grunt build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -41,7 +41,7 @@ The build agent must have the following capability:
 </thead>
 <tr>
 <td>Grunt File Path</td>
-<td>Relative path from the repo root to the grunt script that you want to run. The default value is ```gruntfile.js```
+<td>Relative path from the repo root to the Grunt script that you want to run. The default value is ```gruntfile.js```
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The build agent must have the following capability:
 <tr>
 <td>Arguments</td>
 <td>
-<p>Additional arguments passed to grunt. See [Using the CLI](http://gruntjs.com/using-the-cli).</p><p>Tip: ```--gruntfile``` is not needed. This argument is handled by the Grunt file path argument shown above.</p>
+<p>Additional arguments passed to Grunt. See [Using the CLI](http://gruntjs.com/using-the-cli).</p><p>Tip: ```--gruntfile``` is not needed. This argument is handled by the Grunt file path argument shown above.</p>
 </td>
 </tr>
 <tr>

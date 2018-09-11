@@ -1,6 +1,6 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: devops
@@ -16,18 +16,9 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can grant or restrict access to resources that you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
+You can grant or restrict access to resources that you manage in Azure DevOps Services or Team Foundation Server (TFS). Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
-
-<!--- 
-This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 
-
-Maybe consider this in a 2 or 3 step process: 
-- what areas to open up/close down
-- Role and delegation 
-- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
--->
 
 Use this topic to learn: 
 
@@ -40,7 +31,7 @@ Use this topic to learn:
 
 
 > [!TIP]    
-> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your team project will determine the areas you can open up or close down. 
+> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down. 
 
 
 ## Recommended method for granting and restricting permissions 
@@ -57,8 +48,7 @@ If you manage a small number of users, then you may find changing individual per
 As an administrator or account owner, it's a good idea to delegate administrative tasks to those team members who lead or manage an area. Several of the main built-in roles which come with default permissions and role assignments are:
 - Readers 
 - Contributors 
-- Stakeholders (access role)  
-- Team administrator role 
+- Team Administrator (role) 
 - Project Administrators
 - Project Collection Administrators  
 
@@ -120,7 +110,7 @@ Delete and restore work items, Move work items out of this project, Permanently 
 <tr>
 <td>Process template manager ([Inheritance process model](../settings/work/inheritance-process-model.md))</td>
 <td>Work tracking customization </td>
-<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete team project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
 </tr>
 
 <tr>
@@ -130,15 +120,15 @@ Delete and restore work items, Move work items out of this project, Permanently 
 </tr>
 
 <tr>
-<td>Team project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))</td>
+<td>Project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))</td>
 <td>Work tracking customization </td>
 <td>Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
 </tr>
 
 <tr>
 <td>Permissions manager</td>
-<td>Manage permissions for a team project, account, or collection </td>
-<td>For a team project, Edit project-level information<br/> 
+<td>Manage permissions for a project, account, or collection </td>
+<td>For a project, Edit project-level information<br/> 
 For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To grant permissions, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).<br/><br/>You can also grant permissions to manage permissions for the following objects:
 <ul>
 <li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
@@ -152,7 +142,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 
 ## Restrict access to view or modify objects  
 
-VSTS and TFS are designed to enable all valid users to be able to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
+Azure DevOps and TFS are designed to enable all valid users to be able to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
 
 
 <table>
@@ -198,7 +188,7 @@ For the [Hosted XML process model](../settings/work/hosted-xml-process-model.md)
 You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group). 
 
 > [!NOTE]   
-> These restriction types aren't available for VSTS accounts and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
+> These restriction types aren't available for Azure DevOps organizations and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
 <!---STEPS TO CONSIDER
 What do you want to restrict access to? Look up the permission associated with that feature - you can use the Reverse Lookup to determine if it is at the object-level, project-level, or collection-level. 
@@ -212,9 +202,9 @@ Should we have a Concepts topic about restricting -- address things that we supp
 User Voice requests: 
 * Hide Work Item Types (WITs) based on permission/security group
 
-If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate team project where you restrict access. 
+If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate project where you restrict access. 
 
-What you can do on TFS differs from what is available  from VSTS 
+What you can do on TFS differs from what is available  from Azure DevOps 
 -->
  
 ## Try this next
@@ -229,3 +219,12 @@ What you can do on TFS differs from what is available  from VSTS
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
  
+
+<!--- 
+This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 
+
+Maybe consider this in a 2 or 3 step process: 
+- what areas to open up/close down
+- Role and delegation 
+- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
+-->

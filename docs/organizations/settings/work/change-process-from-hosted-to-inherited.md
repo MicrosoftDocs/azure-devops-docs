@@ -1,7 +1,7 @@
 ---
 title: Change a project from a Hosted XML process to an inherited process
-titleSuffix: VSTS     
-description: Upgrade a project that uses a Hosted XML process model to an inherited process in Visual Studio Team Services
+titleSuffix: Azure DevOps Services     
+description: Upgrade a project that uses a Hosted XML process model to an inherited process in Azure DevOps Services
 ms.technology: devops-agile
 ms.prod: devops
 ms.manager: douge
@@ -16,9 +16,6 @@ ms.date: 05/30/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-> [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
-
 Once you've [cloned your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
 
 > [!CAUTION] 
@@ -28,14 +25,14 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
 <a id="open-process-wit">  </a>
-## Open Settings>Process hub
+## Open Settings>Process
 
 You create, manage, and make customizations to processes from the **Settings>Process** pages. 
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
+0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
 	
 	> [!div class="mx-imgBorder"]  
-	> ![VSTS web portal, open Organization Settings](_img/process/open-account-settings.png)   
+	> ![Open Organization Settings](_img/process/open-account-settings.png)   
 
 0. Choose **Process**. 
    
@@ -48,7 +45,7 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 
 After you've verified your customizations, you can now apply the inherited process to your existing project. 
 
-0. From the Process hub, choose the orignal Hosted XML process, then choose the **Projects** page. 
+0. From **Process**, choose the original Hosted XML process, then choose the **Projects** page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)

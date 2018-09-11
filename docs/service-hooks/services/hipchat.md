@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: HipChat with VSTS
-description: Use HipChat with your VSTS account
+title: HipChat with Azure DevOps Services
+description: Use HipChat with your Azure DevOps Services organization
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# HipChat with VSTS
+# HipChat with Azure DevOps Services
 
-Post messages to a room in HipChat in response to events from VSTS.
+Post messages to a room in HipChat in response to events from Azure DevOps Services.
 For example, when code is pushed, or a build occurs.
 
 Get a HipChat authorization token
@@ -31,7 +31,7 @@ Get a HipChat authorization token
 
 ## Post a message to a room
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -41,7 +41,7 @@ Get a HipChat authorization token
 
    <img alt="Select service dialog, HipChat selected" src="./_img/hipchat/hipchat-service.png" style="border: 1px solid #CCCCCC" />
 
-3. Configure the VSTS event that you want to post a message in HipChat.
+3. Configure the Azure DevOps Services event that you want to post a message in HipChat.
 
    <img alt="Configure the event" src="./_img/hipchat/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -58,7 +58,7 @@ Now the messages are setup. Go to HipChat and see the messages appear.
 <img alt="HipChat room" src="./_img/hipchat/hipchat-room.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

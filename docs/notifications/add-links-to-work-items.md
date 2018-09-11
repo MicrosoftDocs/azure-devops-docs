@@ -1,6 +1,6 @@
 ---
 title: Use #ID to link work items in discussions & pull requests 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Link to work items in discussions and pull requests 
 ms.prod: devops
 ms.technology: devops-collab
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 # Use #ID to link to work items  
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 ::: moniker range=">= tfs-2015"
 Use the **#ID** control to quickly link objects to work items.     
@@ -29,7 +29,7 @@ Use the **#ID** control to quickly link objects to work items.
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 > [!NOTE]  
-> The **#ID** special control feature is available from TFS 2015.1 and later versions.    
+> The **#ID** special control feature is available from TFS 2015 Update 1 and later versions.    
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
-> Requires TFS 2015.2 or a later version.   
+> Requires TFS 2015 Update 2 or a later version.   
 
 ::: moniker-end
 

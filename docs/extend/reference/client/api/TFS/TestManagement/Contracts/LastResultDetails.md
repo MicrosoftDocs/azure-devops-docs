@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts LastResultDetails API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts LastResultDetails API | Extensions for Azure DevOps Services
 ms.assetid: ea3af6de-5d6c-9ec1-c82d-8050062055e7
 ms.prod: devops
 ms.technology: devops-ecosystem

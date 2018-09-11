@@ -1,6 +1,7 @@
 ---
-title: NuGet Tool Installer | VSTS or Team Foundation Server
-description: Learn how to use the NuGet Tool Installer for VSTS and TFS to find, download, and cache the specified version of NuGet.
+title: NuGet Tool Installer
+titleSuffix: Azure Pipelines & TFS
+description: Learn how to use the NuGet Tool Installer for Azure Pipelines and TFS to find, download, and cache the specified version of NuGet.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
@@ -30,7 +31,7 @@ None
 | Argument | Description |
 |----------|-------------|
 | Version Spec | Specify which [NuGet version](https://dist.nuget.org/tools.json) you want to use. Examples: `4.1.0`, `3.x`, `>2.x`, `>=3.5` |
-| Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `3.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [our Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
+| Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `3.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [the Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
 
 ## Open source

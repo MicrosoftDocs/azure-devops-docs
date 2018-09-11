@@ -1,6 +1,6 @@
 ---
 title: Apply a field rule
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 # Add a rule to a work item type  
  
-<p><b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b></p>
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  

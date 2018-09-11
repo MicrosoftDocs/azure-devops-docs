@@ -1,6 +1,6 @@
 ---
 title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,14 +14,13 @@ monikerRange: '>= tfs-2015'
 ms.date: 08/09/2018
 ---
 
-# Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
+# Syntax guidance for for markdown usage 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, readme files, dashboards, and pull request comments.   
 
 You can provide guidance to your team in these places using markdown: 
-
 
 ::: moniker range="vsts"   
 - [Team project wiki (provisioned wiki)](add-edit-wiki.md)
@@ -50,7 +49,10 @@ You can provide guidance to your team in these places using markdown:
     
 In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
-## Headers
+
+## Basic format elements 
+
+### Headers
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -69,7 +71,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 <img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
-## Paragraphs and line breaks
+### Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
@@ -122,7 +124,7 @@ Add two spaces prior to the end of the line.
 This adds space in between paragraphs.
 
 
-## Quotes
+### Block quotes
 
 Quote previous comments or text to set context for your comment or text.
 
@@ -133,7 +135,7 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 
 <pre>
 > Single line quote
->> Nested quote
+>> Nested    
 >> multiple line
 >> quote
 </pre>
@@ -143,7 +145,7 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 ![quoting in markdown](_img/markdown-guidance/markdown_quote2.jpg)
 
 
-## Horizontal rules
+### Horizontal rules
 
 Add a horizontal rule by adding a new line that's just a series of dashes `---`. There must be a blank line above the line containing the `---`.
 
@@ -165,6 +167,134 @@ above
 -----    
 
 below    
+
+
+### Emphasis (bold, italics, strikethrough)  
+
+You can emphasize text by applying bold, italics, or strikethrough to characters: 
+- To apply italics: surround the text with an asterisk `*` or underscore `_`   
+- To apply bold: surround the text with double asterisks `**`.    
+- To apply strikethrough: surround the text with double tilde characters `~~`.   
+
+Combine these elements to apply multiple emphasis to text. 
+
+> [!NOTE]  
+> There is no markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` will yield <u>underlined text`</u>.
+
+**Example:**
+
+<pre>
+Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
+**_Bold, italizied text_**  
+**~~Bold, strike-through text~~**
+</pre>
+
+<br/>
+**Result:**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italizied text_**   
+**~~Bold, strike-through text~~**  
+
+
+### Code highlighting
+
+Highlight suggested code segments using code highlight blocks. 
+To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>). 
+
+**Example:**
+
+<pre>&#96;&#96;&#96;
+$ sudo npm install vsoagent-installer -g  
+&#96;&#96;&#96;
+</pre>  
+ 
+<br/>
+**Result:**
+```
+$ sudo npm install vsoagent-installer -g
+```
+<br/>
+**Example:**
+
+<pre>
+To install the Microsoft Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
+</pre>   
+
+<br/>
+**Result:**
+To install the Microsoft Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`.  
+
+<br/>
+Within a markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
+
+Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases). 
+
+
+<pre>
+``` language
+code
+```
+</pre>
+
+
+<br/>
+**Additional examples:**
+
+<pre>
+``` js
+const count = records.length;
+```
+</pre>
+
+
+``` js
+const count = records.length;
+```
+
+
+<br/>
+<pre>
+``` csharp
+Console.WriteLine("Hello, World!");
+```
+</pre>
+
+
+
+``` csharp
+Console.WriteLine("Hello, World!");
+```
+
+
+## Tables
+
+Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has 
+a clear name to description mapping. You can format tables in pull requests, wiki, and markdown files such as READMe files and markdown widgets.  
+
+- Place each table row on its own line 
+- Separate table cells using the pipe character `|` 
+- The first two lines of a table set the column headers and the alignment of elements in the table
+- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
+- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
+- Make sure to end each row with a CR or LF. 
+
+**Example:**
+
+```
+| Heading 1 | Heading 2 | Heading 3 |  
+|-----------|:-----------:|-----------:|  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+```
+
+<br/>
+**Result:**  
+
+| Heading 1 | Heading 2 | Heading 3 |  
+|-----------|:---------:|-----------:|  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+
 
 
 ## Lists
@@ -257,8 +387,8 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 </ul>
 
 
->[!NOTE]  
->Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
+> [!NOTE]  
+> Links to documents on file shares using `file://` are not supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links). 
 
@@ -355,15 +485,15 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
-!&#91;Let's use this flow for the login experience](http://dev.fabrikam.net/images/uxflow.png)
+![Illustration to use for new users](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
 </pre>
 
 <br/>
 **Result:** 
 
-![Sample flowchart with three items](../../repos/git/_img/pull-requests/markdown_sample_image.png)
+![Illustration of linked image](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
 
-The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
+The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
 <ul>
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
@@ -374,35 +504,6 @@ The path to the image file can be a relative path or the absolute path in Git or
 > [!NOTE]   
 > **Feature availability**: The syntax to support image resizing is only supported in pull requests and the Wiki.    
 
-## Tables
-
-Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has 
-a clear name to description mapping. You can format tables in pull requests, wiki, and markdown files such as READMe files and markdown widgets.  
-
-- Place each table row on its own line 
-- Separate table cells using the pipe character `|` 
-- The first two lines of a table set the column headers and the alignment of elements in the table
-- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
-- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
-- Make sure to end each row with a CR or LF. 
-
-**Example:**
-
-```
-| Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
-```
-
-<br/>
-**Result:**  
-
-| Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
-
 
 ::: moniker range=">= tfs-2017"
 ## Checklist or task list in pull requests or markdown 
@@ -411,7 +512,7 @@ Lightweight task lists are a great way to track progress on a list of todos as e
 
 You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
-**Example - Apply the task list markdown to a highlighted list**
+**Example - Apply the task list markdown to a higlighted list**
 
 > [!div class="mx-imgBorder"]  
 > ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png) 
@@ -442,102 +543,6 @@ Once you've added a task list, you can simply check the boxes to mark items as c
 > A checklist within a table cell isn't supported. 
  
 ::: moniker-end
-
-## Emphasis (bold, italics, strikethrough)  
-
-You can emphasize text by applying bold, italics, or strikethrough to characters: 
-- To apply italics: surround the text with an asterisk `*` or underscore `_`   
-- To apply bold: surround the text with double asterisks `**`.    
-- To apply strikethrough: surround the text with double tilde characters `~~`.   
-
-Combine these elements to apply multiple emphasis to text. 
-
-> [!NOTE]  
-> There is no markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` will yield <u>underlined text`</u>.
-
-**Example:**
-
-<pre>
-Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
-**_Bold, italicized text_**  
-**~~Bold, strike-through text~~**
-</pre>
-
-<br/>
-**Result:**  
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**   
-**~~Bold, strike-through text~~**  
-
-
-## Code highlighting
-
-Highlight suggested code segments using code highlight blocks. 
-To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>). 
-
-**Example:**
-
-<pre>&#96;&#96;&#96;
-$ sudo npm install vsoagent-installer -g  
-&#96;&#96;&#96;
-</pre>  
- 
-<br/>
-**Result:**
-```
-$ sudo npm install vsoagent-installer -g
-```
-<br/>
-**Example:**
-
-<pre>
-To install the Microsoft VSTS Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
-</pre>   
-
-<br/>
-**Result:**
-To install the Microsoft VSTS Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`.  
-
-<br/>
-Within a markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
-
-Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases). 
-
-
-<pre>
-``` language
-code
-```
-</pre>
-
-
-<br/>
-**Additional examples:**
-
-<pre>
-``` js
-const count = records.length;
-```
-</pre>
-
-
-``` js
-const count = records.length;
-```
-
-
-<br/>
-<pre>
-``` csharp
-Console.WriteLine("Hello, World!");
-```
-</pre>
-
-
-
-``` csharp
-Console.WriteLine("Hello, World!");
-```
 
 ::: moniker range=">= tfs-2017"
 ## Emoji
@@ -679,12 +684,6 @@ In wiki pages, you can also create rich content using HTML tags.
 </video>
 ```
 
-Or,  
-```HTML
-<video src="_media/vstswiki_mid.mp4" width=400 controls>
-</video>
-```
-
 </br>
 **Result:**
 </br>
@@ -787,6 +786,23 @@ $$
 
 ::: moniker-end
 
+<a id="toc-wiki" />
+## Table of contents (TOC) for Wiki pages
+
+You can now just add a tag [[\_TOC\_]] to enable table of contents in your page. The TOC is generated when the tag is added to the page and there is at least one heading in the page.
+
+![Table of contents](_img/toc_sample.png)
+
+The [[\_TOC\_]] can be placed anywhere in the page to render the Table of Contents.
+Only Markdown headings are considered for TOC (HTML heading tags are not).
+
+All HTML and markdown tags are stripped from the headings while adding it inside the TOC block. 
+For example: Adding bold and italics to a heading text will render the TOC as follows.
+
+![Tags for Toc](_img/toc_tags.png)
+ 
+This is to maintain consistency in the formatting in TOC.
+Note: The tag [[\_TOC\_]] is case sensitive i.e. [[\_toc\_]] may not render the TOC.
 
 ## Related articles  
 

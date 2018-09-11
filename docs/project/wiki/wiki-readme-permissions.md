@@ -1,7 +1,7 @@
 ---
 title: Default permissions set for notifications, READMEs, Wiki, and feedback 
-titleSuffix: VSTS & TFS 
-description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Default permissions and access set for collaboration tools 
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and semantic search.  
 
@@ -30,12 +30,12 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 ## Manage permissions
 
 To manage permissions for a collaboration tool, see these topics:
-- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json)
-- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/wiki/project/feedback/toc.json )
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/wiki/project/feedback/toc.json )
 
 To manage notifications, see: 
-- [Manage personal notifications](../../notifications/manage-personal-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Manage team notifications](../../notifications/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Manage team notifications](../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
 
 >[!NOTE]
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).

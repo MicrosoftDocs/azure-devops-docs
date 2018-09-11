@@ -1,5 +1,6 @@
 ---
 title: Use labels to take a snapshot of your files
+titleSuffix: Azure Repos
 description: Use labels to take a snapshot of your files
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use labels to take a snapshot of your files
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Labels let you take a snapshot of your files so that at a later date you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
 

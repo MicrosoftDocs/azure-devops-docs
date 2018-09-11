@@ -5,15 +5,15 @@ ms.topic: include
 
 <a id="test-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Test** hub.  
+You can use the following keyboard shortcuts when working in **Test Plans** or **Test**.  
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 or later versions. 
+> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 or later versions. 
 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Test hub shortcuts](/vsts/_shared/_img/keyboard-shortcuts/test-shortcuts.png)</td>
+<td>![Test shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-shortcuts.png)</td>
 <td>
 **Test**<br/><br/>
 &nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;Open test plans<br/>
@@ -23,7 +23,7 @@ You can use the following keyboard shortcuts when working in the **Test** hub.
 <!---&nbsp;&nbsp;**l**&nbsp;&nbsp;&nbsp;&nbsp;Open load test    --> 
 </td>
 <tr>    
-<td>![Test Plan shortcuts](/vsts/_shared/_img/keyboard-shortcuts/test-plan-shortcuts.png)</td>
+<td>![Test Plan shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-plan-shortcuts.png)</td>
 <td>
 
 **Test plan**<br/><br/>
@@ -44,7 +44,7 @@ You can use the following keyboard shortcuts when working in the **Test** hub.
 </td> 
 </tr>
 <tr>   
-<td>![Test parameter shortcuts](/vsts/_shared/_img/keyboard-shortcuts/test-parameters-shortcuts.png)</td>
+<td>![Test parameter shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-parameters-shortcuts.png)</td>
 <td>
 **Parameters**<br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;View parameter set grid<br/>
@@ -56,7 +56,7 @@ You can use the following keyboard shortcuts when working in the **Test** hub.
 </td> 
 </tr> 
 <tr>    
-<td>![Test run shortcuts](/vsts/_shared/_img/keyboard-shortcuts/test-run-shortcuts.png)</td>
+<td>![Test run shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-run-shortcuts.png)</td>
 <td>
 **Test runs**<br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;Test runs<br/>

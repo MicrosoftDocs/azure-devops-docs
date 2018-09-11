@@ -4,13 +4,13 @@ ms.topic: include
 
 ## Edit the code and see it deployed
 
-Now that you have a completely automated CI/CD pipeline, any changes that you make to the app are automatically built and deployed by VSTS. To try this, make a change to the app and commit that change to the Git repository.
+Now that you have a completely automated CI/CD pipeline, any changes that you make to the app are automatically built and deployed by Azure Pipelines. To try this, make a change to the app and commit that change to the Git repository.
 
-1. Both VSTS and GitHub feature a full code editor within the web browser. Using the browser, navigate to **Views/Homes/Index.cshtml** file in your repository.
+1. Both Azure Repos and GitHub feature a full code editor within the web browser. Using the browser, navigate to **Views/Homes/Index.cshtml** file in your repository.
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
- In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file.
+ In the Azure Repos **Code** hub, edit the **Views/Home/Index.cshtml** file.
 
  ![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
 

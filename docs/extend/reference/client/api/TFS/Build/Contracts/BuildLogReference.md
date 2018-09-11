@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildLogReference API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildLogReference API | Extensions for Azure DevOps Services
 description: Data representation of a build log reference
 ms.assetid: c4458e12-098b-5248-27f1-10428225978d
 ms.prod: devops

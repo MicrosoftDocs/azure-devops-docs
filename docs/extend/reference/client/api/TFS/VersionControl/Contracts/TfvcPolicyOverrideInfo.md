@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts TfvcPolicyOverrideInfo API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts TfvcPolicyOverrideInfo API | Extensions for Azure DevOps Services
 ms.assetid: f29da4fc-ab21-2c81-d398-6100fbff4faa
 ms.prod: devops
 ms.technology: devops-ecosystem

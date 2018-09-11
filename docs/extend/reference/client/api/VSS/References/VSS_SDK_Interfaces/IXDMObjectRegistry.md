@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IXDMObjectRegistry API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IXDMObjectRegistry API | Extensions for Azure DevOps Services
 description: Registry of XDM objects that can be invoked by an XDM channel
 ms.assetid: 3b16f27d-4e16-ddd2-b85d-d5553b04efb6
 ms.prod: devops

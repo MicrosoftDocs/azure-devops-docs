@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Build and Deploy a ASP.NET Core app | VSTS
-description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using VSTS
+title: Quick Start - Build and Deploy a ASP.NET Core app | Azure Pipelines
+description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -21,14 +21,14 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
 
 
-# Implement a CI/CD process to build and deploy your ASP.NET Core app to Azure
+# Implement a CI/CD pipeline to build and deploy your ASP.NET Core app to Azure
 
-VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
-ASP.NET Core apps. 
+Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+ASP.NET Core apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET Core app
-to an Azure web app. 
-You create the web app using the Azure CLI, then set up CI/CD in VSTS.
+to an Azure Web App.
+You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
 
 ![Screenshot showing ASP.NET Core web app](../../../apps/cd/azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
@@ -39,7 +39,7 @@ You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 [!INCLUDE [temp](../_shared/import-code-1.md)]
 
 ```bash
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
 [!INCLUDE [temp](../_shared/import-code-2.md)]
@@ -64,7 +64,7 @@ In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
 ## Update to redeploy the code
 
-Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
+Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
 ![Screenshot showing update to code](../../../apps/cd/azure/_shared/_img/aspnet-core-code-change.png)
 
@@ -73,7 +73,7 @@ Add the following line of text above the carousel display in the page:
 <h1>Demo of ASP.NET Core CI/CD!!</h1>
 ```
 
-Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure Web App.
 
 [!INCLUDE [temp](../_shared/browse-to-web-app.md)]
 

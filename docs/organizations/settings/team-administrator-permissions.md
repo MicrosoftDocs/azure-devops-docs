@@ -1,7 +1,7 @@
 ---
 title: Team administrator permissions
-titleSuffix: VSTS & TFS
-description: Understand  permissions team administrator permissions in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Understand  permissions team administrator permissions in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -21,7 +21,7 @@ While most permissions are governed by belonging to a security group or defined 
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team Agile tools](about-teams-and-settings.md).  
 
-In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administrators. 
+In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administors. 
 
 ## Set team defaults 
 
@@ -78,7 +78,7 @@ Sprint planning and tracking tools automatically consider days off when calculat
 
 ## Manage team alerts 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/manage-team-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/howto-manage-team-notifications.md).
 
 ::: moniker range="vsts" 
 > [!NOTE]  
@@ -101,7 +101,7 @@ Team administrators can add and modify alerts so that the team can receive email
 Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  
 
 > [!NOTE]  
-> Team Rooms are deprecated for TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
+> Team Rooms are deprecated for TFS 2018 and later versions as described in [Deprecation of team rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
 
 ::: moniker-end
 

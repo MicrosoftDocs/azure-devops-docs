@@ -1,6 +1,6 @@
 ---
 title: Publishing npm packages | Microsoft Docs
-description: Publishing npm packages to VSTS package management or other npm registries
+description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
@@ -20,36 +20,19 @@ monikerRange: '>= tfs-2017'
 
 You can publish npm packages produced by your build to:
 
-* The VSTS or TFS Package Management service
+* Azure Artifacts or the TFS Package Management service
 * Other registries such as `https://registry.npmjs.org/`
 
 Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
-# [Web](#tab/web)
-
-To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
-
-- **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
-- **npm command:** `publish`
-
-![Team Build npm publish task configuration](_img/npm/team-build-npm-publish.png)
-
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
-
-To publish to a external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
-
 # [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-YAML is not supported in TFS.
-::: moniker-end
 
 ::: moniker range="vsts"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
 
 To publish to a external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
 
-To publish a package to a npm registry, add the following snippet to your .vsts-ci.yml file.
+To publish a package to a npm registry, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
 - task: Npm@1
@@ -61,6 +44,24 @@ To publish a package to a npm registry, add the following snippet to your .vsts-
 For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
+
+- **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
+- **npm command:** `publish`
+
+![Azure Pipelines npm publish task configuration](_img/npm/team-build-npm-publish.png)
+
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+
+To publish to a external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
+
 ---
 
 > [!NOTE]
@@ -68,6 +69,6 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ## Q&A
 
-### Where can I learn about the VSTS and TFS Package management service?
+### Where can I learn about the Azure Pipelines and TFS Package management service?
 
-[Package Management service](../../package/index.md) 
+[Package Management service](../../artifacts/index.md) 

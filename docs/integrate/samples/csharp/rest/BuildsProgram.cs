@@ -13,7 +13,7 @@ public partial class Program
     	using(var client = new HttpClient())
         {
 			var project = "Fabrikam-Fiber-Git";
-    		var baseUrl = "https://fabrikam-fiber-inc.visualstudio.com/defaultcollection/" + project + "/_apis/build/builds";
+    		var baseUrl = "https://dev.azure.com/fabrikam-fiber-inc/" + project + "/_apis/build/builds";
 
 			// Get the current user's ID
 			using(var request = new HttpRequestMessage(HttpMethod.Get, baseUrl + "?$top=10") 

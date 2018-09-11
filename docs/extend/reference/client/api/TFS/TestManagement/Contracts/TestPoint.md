@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestPoint API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestPoint API | Extensions for Azure DevOps Services
 ms.assetid: 71ca5336-a130-7a63-0174-db148efb0730
 ms.prod: devops
 ms.technology: devops-ecosystem

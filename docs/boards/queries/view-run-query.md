@@ -1,7 +1,7 @@
 ---
 title: View or run a query 
-titleSuffix: VSTS & TFS
-description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: View, run, or favorite a query in Azure Boards & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
@@ -41,7 +41,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, choose Work>Queries>ll page](_img/view-run-queries/queries-all.png)  
+	> ![Web portal, choose Boards>Queries>All page](_img/view-run-queries/queries-all.png)  
 
 0. Choose **My Queries** as needed. 
 	- To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
@@ -67,7 +67,7 @@ With this change, some functionality has been added and some has changed. Here a
 Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**.    
 
 ### Where can I find recent work item activity?**
-- Open **Work>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+- Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
 
 - You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#query-macros-or-variables). 
 
@@ -106,7 +106,7 @@ For shared queries, you can also choose to perform one of these tasks:
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 Choose the ![](../_img/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
 
-![Web portal, Work>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)
+![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-- [Change column options](../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md)  
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 

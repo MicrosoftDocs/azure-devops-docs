@@ -1,5 +1,6 @@
 ---
 title: Folderdiff Command
+titleSuffix: Azure Repos
 description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Folderdiff Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **folderdiff** command to display and compare a visual representation of the differences between files in two server folders, in a server folder and a local folder, or in two local folders.
 

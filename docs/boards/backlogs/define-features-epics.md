@@ -1,6 +1,6 @@
 ---
 title: Define features and epics
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description:  Define features and epics to group backlog items and track high level items 
 ms.technology: devops-agile
 ms.prod: devops
@@ -55,7 +55,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -88,7 +88,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs>Features](_img/features-epics/open-features-epics.png) 
+	> ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

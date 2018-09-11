@@ -1,6 +1,6 @@
 ---
 title: Code and Work Item Search set up
-description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: devops
 ms.technology: devops-collab
@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Set up and administer Microsoft Code Search and Work Item Search
+# Set up and administer Code Search and Work Item Search
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 In this topic:
 
-* **Configure Code Search in VSTS**
+* **Configure Code Search in Azure DevOps Services**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
 
@@ -39,16 +39,16 @@ Stakeholders do not have access to code, and therefore no access to Code Search.
 All users have access to Work Item Search.
 
 <a name="config-ts"></a>
-## Install Code Search in VSTS
+## Install Code Search in Azure DevOps Services
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in VSTS as an administrator.
-Non-administrative users can also go here to request the extension be added to VSTS. 
+to install the extension in Azure DevOps as an administrator.
+Non-administrative users can also go here to request the extension be added to Azure DevOps. 
 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 
 <a name="uninstall-ts"></a>
-## Uninstall Code Search in VSTS
+## Uninstall Code Search in Azure DevOps Services
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
@@ -175,16 +175,16 @@ Consider the following when configuring Search:
 
 * The Code Search extension must be installed for each TFS collection where you want to use it. 
   When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
-  for existing and new Tem Project Collections** to automate this process.
+  for existing and new Project Collections** to automate this process.
 
 * If you do not set the checkbox to install the Code Search extension for all your Project Collection, while 
   configuring Search, your Project Collection administrator can install it from Visual Studio Marketplace. Make 
   sure you navigate to the Marketplace from your TFS portal page. 
 
 * The search index folder should be located on a separate fast hard drive backed by fast storage such
-  as Solid State Drive (SSD) or Storage Area Network (SAN) to maximize search performance.
+  as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
   As a general guide, the Search index for a collection can be a maximum of 35% the size of the collection itself. 
-  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items and wiki pages in that collection.
+  That is the worst-case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items and wiki pages in that collection.
 
 * Unless specified, the indexing service and Elasticsearch engine use the network service account during 
   installation to create and access the index files. If you choose a different account, it must have **Log on as a service**
@@ -199,14 +199,14 @@ Consider the following when configuring Search:
   you must use the Configuration wizard on the same AT where configuration was done.
 
 * If you are performing a **pre-production upgrade** on a TFS server where Search is already configured, you must fully
-  reconfigure Search again to avoid corrupting your production instance of Search. For this reason there is no option to configure 
+  reconfigure Search again to avoid corrupting your production instance of Search. For this reason, there is no option to configure 
   Search as part of a pre-production upgrade. Instead, configure it after the pre-production upgrade is complete. 
   As this is a pre-production upgrade, you can choose to uncheck **Automatically install and configure Code Search for all existing and new collections**
   during configuration, and instead install the Code Search extension for just one or two of your collections after configuration is complete.
 
 * If you are performing a **production upgrade** on a TFS server where Search is already configured, and want to retain the Search feature, 
   you must set the checkbox to **Install and Configure Search**. At this point the wizard will detect your existing Search instance and 
-  automatically select the **Use existing Search instance** option, and pre-populate your current Search service URL.
+  automatically select the **Use existing Search instance** option and pre-populate your current Search service URL.
   Use the **Install a new Search instance** option only if you want to set up a new instance of Search on the same TFS server.
   Setting up a new instance causes all your code to be indexed again, which - depending on the size of the collections - can take some time.
   During indexing, users may see partial search results. 
@@ -267,7 +267,7 @@ Elasticsearch does not perform authentication or authorization, and it does not 
 so it is vital you configure appropriate security settings
 based on your corporate security and compliance requirements.
 
-Typically you should aim to limit access to both searching and indexing 
+Typically, you should aim to limit access to both searching and indexing 
 to specific users or user groups - we recommend using encryption through IPSec.
 
 When the Elasticsearch service is installed locally on the TFS server, 
@@ -300,7 +300,7 @@ Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network 
 This ensures encryption and integrity protection 
 are applied along with authentication. It requires 
 both client-side and service-side rules (firewall rules
-on the server running Elasticsearch and all of 
+on the server running Elasticsearch and all
 TFS App Tier servers).
 
 **Prerequisite**: TFS must be configured with a domain account.
@@ -526,7 +526,7 @@ In cases such as a pre-production upgrade, production upgrade, new hardware migr
 or other maintenance operation, the TFS wizard will unconfigure Code Search in a way that makes it easy to re-configure it after the TFS 
 maintenance operation is complete.
 
-However, there might be cases where you no longer want to use Code Search, or want to perform a new and clean
+However, there might be cases where you no longer want to use Code Search or you want to perform a new and clean
 install. This requires multiple steps, depending on whether Code Search is configured
 [on the same server as TFS ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
 
@@ -537,7 +537,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
    Do this by navigating to the **Manage Extensions** page of each collection in
    your Team Foundation Server:
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -576,7 +584,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
 1. Uninstall the Code Search extension for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in
 your Team Foundation Server.
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -587,7 +603,7 @@ your Team Foundation Server.
 
 1. Remove the Elasticsearch service and data
 
-   1. Open **Powershell** as an administrator
+   1. Open **PowerShell** as an administrator
    1. Go to the folder where **ConfigureTFSSearch.ps1** is installed along with the rest of the files required for a remote install of Search.
    1. Run the script again with the remove option: 
    
@@ -620,15 +636,13 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
 
-   ![The Code Search textbox in the VSTS title bar](_img/code-search-get-started/title-bar-search-box-empty-outlined.png)    
-
 1. If the search box is not shown, verify that the extension is installed for the collection. 
    If not, [install](#config-ts) or [configure](#config-tfs) the extension.
 
 <a name="no-results-install"></a>
 **No search results are shown after installing or configuring Search**
 
-1. Wait until you are sure a sufficient time has elapsed
+1. Wait until you are sure sufficient time has elapsed
    after installing or configuring Search. It typically takes
    less than one hour for Search to index a collection, but 
    it may take up to 12 hours depending on 
