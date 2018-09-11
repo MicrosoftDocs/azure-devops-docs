@@ -11,3 +11,7 @@
     href: ../get-started-yaml.md?toc=/vsts/pipelines/get-started/toc.json&bc=/vsts/pipelines/get-started/breadcrumb/toc.json
   - name: Key concepts
     href: key-pipelines-concepts.md
+  - name: Resources
+    items:
+    - name: Azure Pipelines Docs
+      href: ../index.md
