@@ -10,34 +10,34 @@ ms.author: alewis
 author: andyjlewis
 ms.date: 08/31/2018
 ms.topic: overview
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ---
 
-# Get started with Azure Pipelines
+# Overview
+
+::: moniker range="vsts"
 
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
 Pipelines combines both **Continuous Integration (CI)** and **Continuous Deployment (CD)** to constantly and consistently test and build your code and ship it to any target. 
 
-## Does Azure Pipelines work with my language and tools?
-
-### Languages
+## Languages
 
 You can use practically any language with Azure Pipelines, including **Python, Java, PHP, Ruby, C#, and Go.**
 
-### Version control systems
+## Version control systems
 
 The starting point for using CI and CD practices for your applications is to have your source code in a version control system. Azure Pipelines integrates with **GitHub, Azure Repos, BitBucket,** and **Subversion**.
 
-### Application types
+## Application types
 
 You can use Azure Pipelines with most application types, including **Java, JavaScript, Python, .NET, PHP, Go, XCode, and C++**.
 
-### Deployment targets
+## Deployment targets
 
 Azure Pipelines can be used to deploy your code to multiple targets, such as **container registries, virtual machines, Azure services, or to any on-premises or cloud target.**
 
-### Package formats
+## Package formats
 
 If your goal is to produce packages that can be consumed by others, you can publish **NuGet, npm, or Maven packages** to the built-in package management repository in Azure Pipelines or any other package management repository of your choice.
 
@@ -69,7 +69,7 @@ If you think the YAML workflow is best for you, take the next step by [creating 
 
 ### Use Azure Pipelines in the visual designer
 
-You can create and configure your build and release pipelines in the Azure DevOps web poral with the visual designer. 
+You can create and configure your build and release pipelines in the Azure DevOps web portal with the visual designer. 
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Use the Azure Pipelines visual designer to create  and configure your build and release pipelines.
@@ -133,3 +133,40 @@ A **trigger** is something that is set up to tell the pipeline when it should be
 ## Next steps
 
 Now that you understand the basics, follow the quickstart to [create your first pipeline](get-started-yaml.md).
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+Team Foundation Server (TFS) is the on-premises version of Azure DevOps. TFS includes Build and Release and can be installed and managed on your own servers.
+
+![A typical CI and CD process for web applications](./_img/pipeline-concept-end-to-end.png)
+
+Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments. The Build service in TFS helps you set up and manage CI for your applications.
+
+Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments.  Deploying and testing in multiple environments drives quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release processes consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in TFS helps you set up and manage CD for your applications.
+
+Continuous Testing (CT) on-premises or in the cloud is the use of automated build-deploy-test workflows, with a choice of technologies and frameworks, that test your changes continuously in a fast, scalable, and efficient manner.
+
+## Version control systems
+
+The starting point for configuring CI and CD for your applications is to have your source code in a version control system. TFS supports two forms of version control - Git and Team Foundation Version Control. The Build service integrates with both of these version control systems. Once you have configured CI, any changes you push to your version control repository will be automatically built and validated. You can also manage your source code in Subversion, Bitbucket, GitHub, or any other Git repository. The Build service integrates with all of these version control systems.
+
+## Application types
+
+To configure CI, you create a build definition. A build definition is a representation of the automation process that you want to run to build and test your application. The automation process is defined as a collection of tasks. TFS has a number of tasks to build and test your application. For example, tasks exist to build .Net, Java, Node, Android, Xcode, and C++ applications. Similarly, there are tasks to run tests using a number of testing frameworks and services. You can also run command line, PowerShell, or Shell scripts in your automation.
+
+## Deployment targets
+
+Once you have continuous integration in place, the next step is to create a release definition to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. TFS supports deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+
+## Continuous testing
+
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](test/getting-started-with-continuous-testing.md) in a fast, scalable, and efficient manner. 
+
+* Maintain quality and find problems as you develop. Continuous testing with TFS ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
+* Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.
+* Rich analytics and reporting. When your build is done, review your test results to start resolving the problems you find. Rich and actionable build-on-build reports 
+let you instantly see if your builds are getting healthier. But it's not just about speed - detailed and customizable test results measure the quality of your app.
+
+::: moniker-end
