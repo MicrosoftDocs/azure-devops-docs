@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: 'vsts'
 ---
 
@@ -23,7 +23,7 @@ You can then sign in to Azure DevOps Services with the same username and passwor
 You can also [enforce conditional access policies](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
 your team's critical resources and key assets.
 
-In this tutorial, you learn how to:
+In this tutorial, you learn how to do the following:
 > [!div class="checklist"]
 > * Connect your organization to your Azure Active Directory.
 > * Close the temporary Microsoft account (MSA), if you created one.
@@ -34,7 +34,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 > [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
 
 >[!Note]
->Azure DevOps Services was previously called Visual Studio Team Services or VSTS.
+>Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
 
 We offer a path to connect to an Azure Active Directory where the users' email addresses are the same before and after the connection. For example, if users currently sign in to their MSA with the email address *jamalhartnett@fabrikam.com*, they'll sign in with the same email address as their Azure AD identity.
 
@@ -56,22 +56,22 @@ Before you begin, do the following:
 
     If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
 
-  a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
+  > a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
 
-    b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
+    > b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
 
-    c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  
+    > c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  
         An email invitation is sent to the new user.
 
-     d. Go to your email invitations from Azure and select **Call-To-Action** in each message.  
+    > d. Go to your email invitations from Azure and select **Call-To-Action** in each message.  
     
-    e. Select **Next/Continue** on a few pages to fully register the new user.
+    > e. Select **Next/Continue** on a few pages to fully register the new user.
 
-    f. Sign in to your organization as the new user.
+    > f. Sign in to your organization as the new user.
 
-    g. Go to **Settings** as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
+    > g. Go to **Settings** as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
 
-    h. As the new user, complete the migration.
+    > h. As the new user, complete the migration.
 
 1. Ensure that all Azure DevOps users are in Azure AD by doing the following:  
     Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.
@@ -144,7 +144,7 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
 2. Select **All services** > **Azure DevOps organization**.
 
-   ![All services, Azure DevOps organization](_img/_shared/azure-portal-team-services-administration.png)
+   ![All services, Azure DevOps Services organizations](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.  
     If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the organization.
@@ -161,7 +161,7 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
 6. Your organization is now connected to your Azure AD.
 
-7. To confirm that the process has been completed, open your browser in a private session, and sign in to your organization with your Azure AD or work credentials.
+7. To confirm that the process has been completed, open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
 
 8. If you created a temporary user to complete the migration, change the owner of the organization back to the initial user, and delete the temporary Microsoft account, which is no longer needed.
 

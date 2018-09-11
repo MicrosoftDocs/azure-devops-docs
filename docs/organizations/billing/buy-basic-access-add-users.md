@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: 'vsts'
 ---
 
@@ -41,10 +41,10 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
 ## Increase number of paid users
 
-1. Sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and choose **Get**.
+1. Sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and choose **Get**.
 
-   > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
+
+   ![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 
 1. Select your organization (if you have multiple organizations) and then choose **Buy**.
 

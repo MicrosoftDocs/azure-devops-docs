@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or TFS Azure Test Plans
@@ -73,7 +73,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
     > 
     > If you stop paying for these users, your TFS administrator should remove those users from TFS.
 
-## Related information
+## Related articles
 
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
