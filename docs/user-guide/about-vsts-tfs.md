@@ -86,6 +86,8 @@ organizations could be grouped within an organization.
 Additionally, we will merge organizations and their single 
 project collections into a single entity. The organization will be similar to the TFS deployment,
 and the organization will be similar to the TFS collection.
+
+See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 -->
 
 To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 

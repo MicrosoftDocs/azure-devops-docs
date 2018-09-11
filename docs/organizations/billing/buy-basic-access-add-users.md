@@ -78,7 +78,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
    ![Azure DevOps number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)

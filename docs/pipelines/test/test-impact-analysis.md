@@ -16,10 +16,6 @@ monikerRange: '>= tfs-2017'
 
 **Visual Studio 2015.3 and later | TFS 2017.1 and later | Azure Pipelines**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
 However, as the codebase grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours.
@@ -45,6 +41,10 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 
 * **Running tests in parallel**. In this case, tests will run serially.
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Test Impact Analysis supported scenarios
 

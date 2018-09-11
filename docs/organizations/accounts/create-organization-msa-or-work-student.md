@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Create your Azure DevOps morganization
+# Quickstart: Create your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

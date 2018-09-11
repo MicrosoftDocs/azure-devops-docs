@@ -56,7 +56,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 	That's it!
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, open the project for your Azure DevOps organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -99,7 +99,7 @@ Create as many work items as you need of the type you need to track the work you
    ![In your project, select Work and Work Items](_img/plan-track-work/project-select-work-items-vert.png)
 2. To view any work item listed, select the title.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Select the **Work** > **Work Items** > **My activity**. This page lists all work items you've recently viewed, created, or modified.
 
