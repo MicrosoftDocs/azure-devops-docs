@@ -16,10 +16,6 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | TFS 2018.2 and later**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
 that is run with every build. However, as the codebase grows, the regression test suite tends to
@@ -31,6 +27,10 @@ cannot process builds quickly enough.
 Running tests in parallel is a great way to improve the efficiency of CI/CD pipelines.
 This can be done easily by employing the additional capacity offered by the cloud.
 This article discusses how you can parallelize tests by using multiple agents to process jobs.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Pre-requisite
 

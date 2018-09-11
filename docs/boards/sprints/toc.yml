@@ -60,7 +60,7 @@
   - name: "Manage permissions & access (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
   - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
+    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Default permissions & access (Security)"

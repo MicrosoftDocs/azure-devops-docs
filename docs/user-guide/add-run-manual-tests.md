@@ -38,7 +38,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
    ![Azure Boards](_img/azure-devops-boards-board.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, open the project for your Azure DevOps organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -78,7 +78,7 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 Prior to running the test, you must add details.  
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. To start adding tests, open the menu for the work item.
 
@@ -116,7 +116,7 @@ Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run 
 
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../test/run-manual-tests.md).
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) Run test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -136,7 +136,7 @@ You can update the status of the test from the ![Actions icon](../boards/_img/ic
  
 Updating the status of tests enable you to [track test results](../test/track-test-status.md).
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -158,7 +158,7 @@ Simply select the inline test summary to expand a collapsed set of tests. Select
 
 ![Inline tests expanded](_img/test-expanded-test-list.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 Upon first opening the Kanban board, you'll see an un-expanded view of checklists.
 

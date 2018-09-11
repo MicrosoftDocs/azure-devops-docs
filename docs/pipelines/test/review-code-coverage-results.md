@@ -19,7 +19,11 @@ monikerRange: '>= tfs-2015'
 Code coverage helps you determine the proportion of your project's code that is
 actually being tested by tests such as unit tests. To increase your confidence
 of the code changes, and guard effectively against bugs, your tests should
-exercise - or cover - a large proportion of your code.
+exercise - or cover - a large proportion of your code. 
+
+Reviewing the code coverage result helps to identify code path(s) that are not
+covered by the tests. This information is important to improve the test collateral
+over time by reducing the test debt.
 
 ::: moniker range="<= tfs-2018"
 
@@ -29,20 +33,20 @@ exercise - or cover - a large proportion of your code.
 
 ## Example
 
-For an example of publishing code coverage results for JavaScript with Istanbul
-using YAML, see [JavaScript](../languages/javascript.md) in the Languages section of these topics,
-which also includes examples for other languages.
+To view an example of publishing code coverage results for your choice of language,
+see the **Languages** section of the Pipelines topics. For example, collect and publish
+code coverage for [JavaScript](../languages/javascript.md) using Istanbul.
 
 ## View results 
 
 The code coverage summary can be viewed in the build timeline view.
+The summary shows the overall percentage of line coverage for each platform. 
 
 ![View code coverage results](_img/review-code-coverage-results/view-code-coverage-summary.png)
 
 > [!NOTE]
-> Merging of code coverage from multiple [test runs](test-glossary.md) is
-> limited to .NET and .NET Core at present. This will be supported for other
-> formats in future.
+> Merging code coverage results from multiple [test runs](test-glossary.md) is
+> limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
 
 ## Artifacts
 
@@ -51,15 +55,24 @@ The code coverage artifacts published during the build can be viewed under the
 
 ![View code coverage artifact](_img/review-code-coverage-results/view-code-coverage-artifact.png)
 
+* If you use the [Visual Studio Test]() task to collect coverage for .NET and .NET Core apps, the artifact contains
+  **.coverage** files that can be downloaded and used for further analysis in Visual Studio.
+
+  ![View .coverage reports](_img/review-code-coverage-results/view-dot-coverage-report.png)
+
+* If you publish code coverage using Cobertura or JaCoCo coverage formats, the code coverage artifact contains
+  an HTML file that can be viewed offline for further analysis.
+
+  ![View html reports](_img/review-code-coverage-results/view-html-report.png)
+
 > [!NOTE]
-> For .NET and .NET Core the link to download the artifact is availble on
-> click of the Code coverage milestone
+> For .NET and .NET Core, the link to download the artifact is available by choosing the code coverage milestone in the build summary.
 
 ## Tasks
 
-* [**Publish Code Coverage Results**](): publishes code coverage results to Azure Pipelines or TFS,
+* [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) publishes code coverage results to Azure Pipelines or TFS,
   which were produced by a build in [Cobertura] (http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. 
-* **Other Tasks**: Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
+* Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
   [.NET Core](../tasks/build/dotnet-core.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)
   provide the option to publish code coverage data to the pipeline.
