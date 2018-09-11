@@ -44,7 +44,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 5. To confirm that you want to remove the direct assignments, select **Remove**.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
