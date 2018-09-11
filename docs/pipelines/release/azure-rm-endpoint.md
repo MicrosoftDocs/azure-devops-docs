@@ -80,7 +80,11 @@ to the user, is to increase the Guest user permissions as follows:
 
 1. Choose **User settings**.
 
-1. In the **External users** section, change **Guest user permissions are limited** to **No**.
+1. In the **External users** section, choose **Manage external collaboration settings**.
+
+1. The **External collaboration settings** blade opens.
+
+1. Change **Guest user permissions are limited** to **No**.
 
 Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
 you can make the user a member of the **Global administrator** role as follows:
