@@ -349,7 +349,7 @@ For each project that you create, the system creates the followings project-leve
 	</tr>
 	<tr>
 		<td>Contributors</td>
-		<td>Has permissions to contribute fully to the project code base and work item tacking.</td>
+		<td>Has permissions to contribute fully to the project code base and work item tracking.</td>
 		<td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
 	</tr>
 	<tr>
@@ -384,7 +384,7 @@ For each project that you create, the system creates the followings project-leve
 	<tr>
 		<td id="team-group">{team name}</td>
 		<td>
-			Has permissions to contribute fully to the project code base and work item tacking.
+			Has permissions to contribute fully to the project code base and work item tracking.
 			The default Team group is created when you create a project,
 			and by default is added to the Contributors group for the project.
 			Any new teams you create will also have a group created for them and added to the Contributors group.

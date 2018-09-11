@@ -116,7 +116,7 @@ To run the agent interactively:
 
 ## Run as a launchd service
 
-We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. The service has access to the UI to run your UI tests.
+We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. This script will be generated after you configure the agent. The service has access to the UI to run your UI tests.
 
 > [!NOTE]
 > If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service_files).

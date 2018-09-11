@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: 'vsts'
 ---
 # Add project members in Azure DevOps Services
@@ -44,7 +44,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the landing page, which is your Projects page, select Select ![gear icon](../../_img/icons/gear-icon.png) **Project settings**.
+2. On the landing page, which is your Projects page, select  ![gear icon](../../_img/icons/gear-icon.png) **Project settings**.
 
    ![The Projects page](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
@@ -52,7 +52,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
    ![On your project home page, select Invite a friend](_img/add-team-members/add-member-to-project.png)
 
-4. Enter user and team information, and then select **Add**.
+4. Add users or groups.
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
 
@@ -73,15 +73,15 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
     Adding members from the project page adds them to the default team for the project.
 
-    a. To add a member to a different team, select **Project settings** (gear icon) and then select **Security**.
+    > a. To add a member to a different team, select **Project settings** > **Security**.
 
-    b. On the **Security** page, in the left pane, select the team.
+    > b. On the **Security** page, in the left pane, select the team.
 
-    c. In the right pane, select the **Members** view (next to **Permissions**), and then select **Add**.
+    > c. In the right pane, select the **Members** view (next to **Permissions**), and then select **Add**.
 
     ![Security page, manage project members](_img/add-team-members/security-manage-project-members.png)
 
-4. Add your team members.
+4. Add users or groups to teams.
 
    ![The Add button](_img/add-team-members/invite-members.png)
 

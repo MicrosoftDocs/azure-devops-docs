@@ -8,14 +8,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2013'
 ms.date: 09/10/2018
 ---
 
 
 # Key concepts for working with Azure DevOps Services and TFS
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The set of platforms, services, and tools you have access to through Azure DevOps Services can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.
 

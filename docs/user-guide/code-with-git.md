@@ -10,12 +10,12 @@ ms.author: chcomley
 author: chcomley
 ms.date: 09/10/2018
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ---
 
 # Quickstart: Code with Git
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 

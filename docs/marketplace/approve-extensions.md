@@ -30,7 +30,7 @@ To approve extensions, you must have [**Edit collection-level information** perm
 
 # [New navigation](#tab/new-nav)
 
-1. Select the shopping bag icon and **Manage extensions**.
+2. Select the shopping bag icon and **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
 

@@ -28,7 +28,7 @@ For information on region availability, see [Products available by region](https
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), **Organization settings**.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 3. Select **Overview**. The region is listed under Organization information.
