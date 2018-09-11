@@ -33,7 +33,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
    ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
 

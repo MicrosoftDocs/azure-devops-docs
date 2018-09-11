@@ -22,9 +22,9 @@ Don't have permissions to install extensions? You can request extensions instead
 
 0. Try to install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-0. Select the project collection (TFS) or project (Azure DevOps Services) where you want to install the extension. If you don't have permissions to install the extension, you can request it now.
+1. Select the project collection (TFS) or project (Azure DevOps Services) where you want to install the extension. If you don't have permission to install the extension, you can request it now.
 
-You can review your requests after the Visual Studio Marketplace sends the request to the project collection or project administrator.	
+You can review your requests after the Visual Studio Marketplace sends the request to the project collection or project administrator.
 
 Your requests appear on your manage extensions page.
 

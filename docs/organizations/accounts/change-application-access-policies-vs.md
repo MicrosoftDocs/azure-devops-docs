@@ -59,7 +59,7 @@ To continue, you'll need at least Basic access and organization owner permission
    > [!Note] 
    > Anonymous access is used to access both private and public repos. Go [here](../public/make-project-public.md) to learn more.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in as the organization owner to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
