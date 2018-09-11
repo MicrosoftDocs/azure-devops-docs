@@ -83,7 +83,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
 

@@ -106,7 +106,7 @@ d. Compare the list of email addresses in Azure DevOps Services with the list of
 
 * If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 a. Sign in to your Azure DevOps organization and go to **Organization settings**.
 
