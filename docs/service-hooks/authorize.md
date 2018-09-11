@@ -56,7 +56,7 @@ To ensure an authorization request is legitimate:
 
 - Look for the VSTS branding across the top of the authorization approval page.
 
-- Ensure the authorization approval page URL begins with ```https://app.vssps.visualstudio.com```.
+- Ensure the authorization approval page URL begins with ```https://app.vssps.visualstudio.com/```.
 
 - Pay attention to any HTTPS-related security warnings in your browser.
 
