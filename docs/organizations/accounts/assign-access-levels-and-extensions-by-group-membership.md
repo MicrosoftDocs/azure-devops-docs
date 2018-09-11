@@ -31,7 +31,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Go to your Azure DevOps **Organization settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
