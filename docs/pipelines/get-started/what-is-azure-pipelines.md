@@ -53,7 +53,7 @@ If you use private projects, then you can run up to 1,800 minutes (30 hours) of 
 Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs-vsts.md).
 
 ## Why use CI/CD and Azure Pipelines?
-Implementing [Continous Integation (CD)](#continuous-integration) and [Continuous Delivery (CD)](#continuous-delivery) pipelines helps ensure consistent and quality code that is readily available to users.
+Implementing Continuous Integration (CI) and Continuous Delivery (CD) pipelines helps ensure consistent and quality code that is readily available to users.
 
 Azure Pipelines is the quickest, easiest, and safest way to automate building your projects and making them available to users.
 
