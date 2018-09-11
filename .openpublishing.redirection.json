@@ -257,7 +257,7 @@
     },
     {
       "source_path": "docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-team-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
       "redirect_document_id": true
     },
     {
@@ -1137,7 +1137,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-azure-active-directory-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
       "redirect_document_id": false
     },
     {
@@ -3022,7 +3022,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications//howto-manage-team-notifications",
+      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
       "redirect_document_id": false
     },
     {
@@ -5417,7 +5417,7 @@
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-archtecture",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
@@ -7817,7 +7817,7 @@
     },
     {
       "source_path": "docs/security/lookup-account-owner-admin.md",
-      "redirect_url": "/azure/devops/organizations/security/lookup-account-owner-admin",
+      "redirect_url": "/azure/devops/organizations/security/lookup-organization-owner-admin",
       "redirect_document_id": false
     },
     {
@@ -9467,7 +9467,7 @@
     },
     {
       "source_path": "docs/work/customize/process/new-work-item-experience.md",
-      "redirect_url": "/azure/devops/reference/customize/process/new-work-item-experience",
+      "redirect_url": "/azure/devops/reference/process/new-work-item-experience",
       "redirect_document_id": false
     },
     {
