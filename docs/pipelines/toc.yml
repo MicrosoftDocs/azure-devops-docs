@@ -145,6 +145,8 @@
       href: process/conditions.md
     - name: Variables
       href: process/variables.md
+    - name: Resources
+      href: process/resources.md
   - name: Licensing
     items:
     - name: Parallel jobs
