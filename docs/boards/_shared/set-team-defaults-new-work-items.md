@@ -8,7 +8,7 @@ ms.topic: include
 
 The system automatically assigns new work items the default area and iteration paths based on the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration.  
 
-To learn more or to change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).  
+To learn more or to change team defaults, see [Set team defaults](/azure/devops/organizations/settings/set-team-defaults).  
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
@@ -34,7 +34,7 @@ To learn more or to change team defaults, see [Set team defaults](../../organiza
 <div id="new-nav" class="tab-pane fade in active"> 
 
 > [!TIP]  
->To enable or disable the new navigation experience, open your user account menu. For more information, see [Work in the web portal, Admin context](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#admin-context).   
+>To enable or disable the new navigation experience, open your user account menu. For more information, see [Work in the web portal, Admin context](/azure/devops/project/navigation/index#admin-context).   
 
 <p>You navigate to your team context from the top navigation bar as shown. Choose Browse All if the name you want doesn't appear in the list. </p>
 

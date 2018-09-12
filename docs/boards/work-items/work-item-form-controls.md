@@ -8,6 +8,7 @@ ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2017'
 ms.date: 02/14/2018 
 ---
 
@@ -153,7 +154,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 > [!IMPORTANT]  
 > For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
 ::: moniker-end  

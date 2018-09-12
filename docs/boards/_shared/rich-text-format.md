@@ -9,18 +9,18 @@ To improve the readability of your work items and convey detailed information, y
 
 The formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
-You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type and if you've [customized the process](../../organizations/settings/work/customize-process.md). 
+You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type and if you've [customized the process](/azure/devops/organizations/settings/work/customize-process). 
 
 You can format text and insert images inline using the web portal or Team Explorer. The specific set of formatting features differs between the two clients. 
 
 **Rich text formatting toolbar - Web portal**  
 
-![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png)   
+![Rich text tool bar - web portal](/azure/devops/boards/queries/_img/rich-text-ui-web-portal.png)   
 
 
 **Rich text formatting toolbar - Team Explorer**  
 
-![Rich text tool bar - Team Explorer](_img/rich-text-ui-te.png)
+![Rich text tool bar - Team Explorer](/azure/devops/boards/queries/_img/rich-text-ui-te.png)
 
 For example, using Team Explorer you can choose the font, font size, and text and background colors in addition to applying formats of bold, italics, underline, lists, and hyperlinks that are available with web portal.
 
