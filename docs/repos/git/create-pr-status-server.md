@@ -180,16 +180,16 @@ Now that your server can receive service hook events when new PRs are created,up
     app.use(bodyParser.json());
     ```
 
-3. To simplify making REST API calls to Azure Repos, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
+3. To simplify making REST API calls to Azure Repos, install the [azure-devops-node-api](https://www.npmjs.com/package/azure-devops-node-api) package.
 
     ```
-    npm install vso-node-api 
+    npm install azure-devops-node-api 
     ```
 
-4. Update `app.js` to use the vso-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
+4. Update `app.js` to use the azure-devops-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
 
     ``` javascript
-    const vsts = require("vso-node-api");
+    const vsts = require("azure-devops-node-api");
 
     const collectionURL = process.env.COLLECTIONURL;    
     const token = process.env.TOKEN;
@@ -197,7 +197,7 @@ Now that your server can receive service hook events when new PRs are created,up
     var authHandler = vsts.getPersonalAccessTokenHandler(token);
     var connection = new vsts.WebApi(collectionURL, authHandler);
 
-    var vstsGit = connection.getGitApi();
+    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } );
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
