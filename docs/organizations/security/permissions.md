@@ -349,7 +349,7 @@ For each project that you create, the system creates the followings project-leve
 	</tr>
 	<tr>
 		<td>Contributors</td>
-		<td>Has permissions to contribute fully to the project code base and work item tacking.</td>
+		<td>Has permissions to contribute fully to the project code base and work item tracking.</td>
 		<td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
 	</tr>
 	<tr>
@@ -384,7 +384,7 @@ For each project that you create, the system creates the followings project-leve
 	<tr>
 		<td id="team-group">{team name}</td>
 		<td>
-			Has permissions to contribute fully to the project code base and work item tacking.
+			Has permissions to contribute fully to the project code base and work item tracking.
 			The default Team group is created when you create a project,
 			and by default is added to the Contributors group for the project.
 			Any new teams you create will also have a group created for them and added to the Contributors group.
@@ -839,7 +839,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p>
+		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p>
 		<p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
 	</tr>
 	<tr>

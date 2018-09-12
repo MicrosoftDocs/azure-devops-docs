@@ -52,7 +52,7 @@
     items:
     - name: Code search extension
       href: ../project/search/overview.md
-    - name: Package Management extension
+    - name: Azure Artifacts extension
       href: ../artifacts/overview.md
     - name: Work item search extension
       href: ../project/search/work-item-search.md

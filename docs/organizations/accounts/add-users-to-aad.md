@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,5 +44,5 @@ If your users don't already exist in Azure AD:
 
    For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
 
-3. After adding your organization users to your directory, connect your organization to your directory.
+3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
 

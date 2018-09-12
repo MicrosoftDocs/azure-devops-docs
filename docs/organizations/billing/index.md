@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: '>= tfs-2015'
 ---
 # Billing 
@@ -74,10 +74,6 @@ Guidance for Cloud Solution Providers
 * [Buy and manage Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-csp)
 * [Buy App Center resources](csp/buy-vs-app-center.md)
 
-## Troubleshooting
-
-* [Trials](faq-extension-trials.md)
-
 ## Reference
 
 * [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
@@ -88,7 +84,7 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [Start using Azure DevOps](../../user-guide/index.yml)
+* [Start using Azure DevOps Services](../../user-guide/index.yml)
 * [Manage organizations](../accounts/index.md)
 * [TFS Server Administration documentation](/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

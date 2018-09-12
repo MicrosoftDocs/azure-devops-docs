@@ -10,12 +10,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2013'
 ---
 
 # Source control
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 A source control system (also called a *version control* system) allows developers to collaborate on code and track changes made to the code base. Source control is an essential tool for multi-developer projects.  
 

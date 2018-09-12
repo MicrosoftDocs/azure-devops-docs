@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 08/10/2016
+ms.date: 09/11/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -36,7 +36,7 @@ To undo pending changes in another user's workspace, you must have the **Adminis
 
 2.  Type the following command at the command prompt and replace the arguments with the appropriate parameter information for your needs:
 
-    **tf undo /workspace:***OtherUserWorkspace*;*OtherUser $/TeamProject/MyFile.cs /s:http://YourTFSServer:8080*
+    `tf undo /workspace:OtherUserWorkspace;OtherUser $/TeamProject/MyFile.cs /collection:http://YourTFSServer:8080/tfs/YourCollection`
 
 For more information, see [Undo Command](undo-command.md).
 

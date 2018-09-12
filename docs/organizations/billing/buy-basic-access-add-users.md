@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -41,34 +41,34 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
 ## Increase number of paid users
 
-1. Sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and choose **Get**.
+1. Sign in to [**Visual Studio Marketplace**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) and then find and choose **Azure DevOps Services Users**. Select **Get**.
 
-   > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
 
-1. Select your organization (if you have multiple organizations) and then choose **Buy**.
+   ![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
+
+2. Select your organization and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
 ![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
-1. Confirm the Azure subscription where your Azure DevOps charges are billed and then choose **Continue**.
+3. Confirm the Azure subscription where your Azure DevOps charges are billed and then choose **Continue**.
 
    If you have multiple Azure subscriptions, select the Azure subscription that you want to use. If you don't have an Azure subscription, you can create a new one.
 
    > [!div class="mx-imgBorder"]
 ![Confirm or select your Azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.png)
 
-1. Enter the number of paid users and then choose **Continue**. You also see the number of free users that are included, which is separate.
+4. Enter the number of paid users and then choose **Continue**. You also see the number of free users that are included, which is separate.
 
    > [!div class="mx-imgBorder"]
 ![Enter the number of paid users](_img/buy-more-basic-access/marketplace-select-number-of-users.png)
 
-1. Review your order and then choose **Confirm**.
+5. Review your order and then choose **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-1. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
+6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 

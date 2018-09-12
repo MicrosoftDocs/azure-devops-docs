@@ -12,7 +12,7 @@ ms.ms.date: 09/01/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Run UI tests in a CI/CD pipeline
+# UI testing considerations
 
 **Azure Pipelines | TFS 2017.1 and later**
 
@@ -50,27 +50,26 @@ When running Selenium tests for a web app, you can launch the browser in two way
    > Microsoft Edge browser currently cannot be run in the headless mode.
    > To follow developments in this space, see [this user voice item](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6545168-headless-browser-for-testing).
 	
-2. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
+1. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
    When running tests in this mode on Windows, [special configuration of the agents](#visible-ui-mode) is required.
 
-   If you are running UI tests for a desktop application, such as
-   [Appium tests using WinAppDriver](https://github.com/Microsoft/WinAppDriver) or Coded UI tests,
-   again a [special configuration of the agents](#visible-ui-mode) is required.
+If you are running UI tests for a desktop application, such as
+[Appium tests using WinAppDriver](https://github.com/Microsoft/WinAppDriver) or Coded UI tests,
+a [special configuration of the agents](#visible-ui-mode) is required.
 
-   > [!TIP]
-   > End-to-end UI tests generally tend to be long-running. When using the visible UI mode,
-   > depending on the test framework, you may not be able to run tests in parallel on the
-   > same machine because the app must be in focus to receive keyboard and mouse events.
-   > In this scenario, you can speed up testing cycles by running tests in parallel on _different_
-   > machines. See [run tests in parallel for any test runner](./parallel-testing-any-test-runner.md)
-   > and [run tests in parallel using Visual Studio Test task](./parallel-testing-vstest.md).
+> [!TIP]
+> End-to-end UI tests generally tend to be long-running. When using the visible UI mode,
+> depending on the test framework, you may not be able to run tests in parallel on the
+> same machine because the app must be in focus to receive keyboard and mouse events.
+> In this scenario, you can speed up testing cycles by running tests in parallel on _different_
+> machines. See [run tests in parallel for any test runner](./parallel-testing-any-test-runner.md)
+> and [run tests in parallel using Visual Studio Test task](./parallel-testing-vstest.md).
 
 <a name="visible-ui-mode"></a>
 
 ## UI testing in visible UI mode
 
 A special configuration is required for agents to run UI tests in visible UI mode.
-This configuration is different when using [Microsoft-hosted agents](#ms-hosted-agents) and [self-hosted agents](#self-hosted-agents).  
 
 <a name="ms-hosted-agents"></a>
 
@@ -121,7 +120,7 @@ Running the batch file from this shortcut disconnects from the remote desktop bu
 ## Provisioning agents in Azure VMs for UI testing 
 
 If you are provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
-through the [VSTS Agent artifact for DevTest Labs.](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent)
+through the [Agent artifact for DevTest Labs](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent).
 
 ![agentArtifactDTL](_img/agentartifact-dtl.png)
 
@@ -129,7 +128,7 @@ through the [VSTS Agent artifact for DevTest Labs.](https://github.com/Azure/azu
 
 Before running UI tests you may need to adjust the screen resolution so that apps render correctly.
 For this, a [screen resolution utility task](https://marketplace.visualstudio.com/items?itemName=ms-autotest.screen-resolution-utility-task)
-is available from Windows Marketplace. Use this task in your pipeline to set the screen resolution
+is available from Marketplace. Use this task in your pipeline to set the screen resolution
 to a value that is supported by the agent machine. By default, this utility sets the resolution to
 the optimal value supported by the agent machine.
 
@@ -138,8 +137,8 @@ to run with auto-logon enabled and that all remote desktop sessions are safely d
 the **tscon** command as described above.
 
 > [!NOTE]
-> Screen resolution utility task runs on the unified build/release/test agent and cannot be used with
-> the [deprecated Run Functional Tests task](../tasks/test/run-functional-tests.md).
+> The screen resolution utility task runs on the unified build/release/test agent, and cannot be used with
+> the deprecated [Run Functional Tests task](../tasks/test/run-functional-tests.md).
 
 ## Troubleshooting failures in UI tests
 
@@ -185,8 +184,9 @@ Use the `TestContext.AddTestAttachment()` method available in NUnit 3.7 or highe
 
 If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
 video of the test can be captured and is automatically available as an attachment
-to the test result. For this, you must configure the video data collector in a **.runsettings**
-file and this file must be specified in the task settings.
+to the test result. For this, you must configure the
+[video data collector in a **.runsettings** file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+and this file must be specified in the task settings.
 
 ![runSettings](_img/runsettings-in-vs-task.png)
 

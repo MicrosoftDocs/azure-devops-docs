@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ![icon](_img/cocoapods.png) Runs CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html)
 
-[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects.
+[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. This task optionally runs `pod repo update` and then runs `pod install`.
 
 ## Demands
 
@@ -33,19 +33,10 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Working Directory</td>
-<td>
-Working directory. If you leave it blank, the working directory is the root of your repo.
-</td>
-</tr>
+<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
+<tr><td>Working directory</td><td>(Optional) Specify the working directory in which to execute this task. If left empty, the repository directory will be used.</td></tr>
+<tr><td>Force repo update</td><td>(Required) Selecting this option will force running 'pod repo update' before install.</td></tr>
+<tr><td>Project directory</td><td>(Optional) Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
