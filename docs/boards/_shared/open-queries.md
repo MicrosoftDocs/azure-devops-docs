@@ -20,7 +20,7 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+**New navigation** isn't supported on TFS at this time. Choose **Previous navigation** for guidance.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)

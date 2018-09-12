@@ -55,7 +55,7 @@ With work item search, you can quickly find work items defined within a public p
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search. 
