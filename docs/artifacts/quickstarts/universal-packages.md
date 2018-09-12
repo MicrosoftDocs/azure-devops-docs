@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: amullans
 author: alexmullans
-ms.date: 08/08/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,7 +21,7 @@ Universal Packages store one or more files together in a single unit that has a 
 
 ## Prerequisites
 
-1. Download [this private build](https://1drv.ms/u/s!AuzH567rcbHhv5JLiqDK0Csb1LT80g) of the Azure DevOps Services CLI and install it.
+1. Download and install the latest [build](/cli/vsts/overview?view=vsts-cli-latest) of the Azure DevOps Services CLI and install it.
 2. Using the onboarding instructions you were emailed, let us know your Azure DevOps Services organization name; this is how we'll enable the preview for your organization.
 
 ## Prepare files for publishing
