@@ -399,8 +399,6 @@
         href: tasks/test/publish-test-results.md
       - name: Run Functional Tests
         href: tasks/test/run-functional-tests.md
-      - name: Run Distributed Tests
-        href: tasks/test/run-distributed-tests.md
       - name: Run Apache JMeter Load Test
         href: tasks/test/run-jmeter-load-test.md
       - name: Visual Studio Test
