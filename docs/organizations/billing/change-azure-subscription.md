@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,7 +44,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Package Management users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month will continue uninterrupted until the 1st of next month, but your organization will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
+> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month will continue uninterrupted until the 1st of next month, but your organization will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
 
 [Remove billing subscription](#remove-billing-subscription)
 
@@ -77,5 +77,5 @@ If you wait until the 1st of next month to make your purchases again, your organ
 - [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 - [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 - Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).

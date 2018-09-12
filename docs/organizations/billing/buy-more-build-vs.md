@@ -1,5 +1,5 @@
 ---
-title: Buy Azure Pipelines
+title: Buy CI/CD in Azure DevOps Services
 description: Learn how to pay for more parallel jobs in Azure Pipelines
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,11 +8,11 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Buy Azure Pipelines
+# Quickstart: Buy CI/CD
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -33,7 +33,7 @@ If your pipelines are in a [public project](../public/index.md), then you run up
 
 ### Private projects
 
-[Buy Microsoft-hosted parallel jobs for your organization](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+[Buy Microsoft-hosted parallel jobs for your organization.](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 
 ## Self-hosted CI/CD
 
@@ -53,6 +53,7 @@ The free tier is one parallel job. In addition, you get one free parallel job fo
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
 <a name="buy-build-release"></a>
+
 ## Prerequisites
 
 The first time that you set up billing for your Azure DevOps organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
@@ -62,7 +63,7 @@ The first time that you set up billing for your Azure DevOps organization - whet
 
 To make subsequent edits to paid quantities in your Azure DevOps organization, you only need the owner or contributor role on your Azure subscription.
 
-## Buying process
+## Buy CI/CD
 
 1. As Azure DevOps project collection administrator or organization owner, sign in to either:
 
@@ -73,7 +74,7 @@ To make subsequent edits to paid quantities in your Azure DevOps organization, y
 
     ![Select your Azure DevOps organization](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
-3. Select your Azure DevOps organization, if you have multiple organizations, then choose **Buy**.
+3. Select your Azure DevOps organization and then choose **Buy**.
 
     ![Select your Azure DevOps organization](_img/get-more-build-load-testing/select-team-services-organization.png)
 
@@ -123,11 +124,11 @@ The hosted XAML build controller is no longer supported.
 
 When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
 
-1. Go to your Azure DevOps organization toolbar, then go to **Pipelines**(```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
-
-    ![Go to Azure DevOps organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+1. Go to your Azure DevOps organization toolbar, then go to **Pipelines** (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
 2. Choose **Change** for either Microsoft-hosted or self-hosted parallel jobs, which takes you to the Visual Studio Marketplace.
+
+   ![Go to Azure DevOps organization toolbar > Pipelines > Change](_img/get-more-build-load-testing/manage-pipelines.png)
 
 3. In the Visual Studio Marketplace, choose **Get**, select your Azure DevOps organization, then update your number of paid concurrent jobs and confirm.
 

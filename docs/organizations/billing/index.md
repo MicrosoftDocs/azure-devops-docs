@@ -74,10 +74,6 @@ Guidance for Cloud Solution Providers
 * [Buy and manage Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-csp)
 * [Buy App Center resources](csp/buy-vs-app-center.md)
 
-## Troubleshooting
-
-* [Trials](faq-extension-trials.md)
-
 ## Reference
 
 * [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
