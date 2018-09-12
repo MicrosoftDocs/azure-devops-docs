@@ -41,8 +41,10 @@ resources:
     image: ubuntu:16.04
 
 pool:
-  container: my_container
   vmImage: 'Ubuntu 16.04'
+
+container: my_container
+
 steps:
 - script: printenv
 ```
@@ -75,6 +77,7 @@ resources:
 
 pool:
   vmImage: 'Ubuntu 16.04'
+
 strategy:
   matrix:
     ubuntu14:
@@ -83,7 +86,8 @@ strategy:
       containerResource: u16
     ubuntu18:
       containerResource: u18
-  container: $[ variables['containerResource'] ]
+
+container: $[ variables['containerResource'] ]
 
 steps:
   - script: printenv
