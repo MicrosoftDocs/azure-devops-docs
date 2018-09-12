@@ -8,10 +8,10 @@
   - name: Get started with Azure Pipelines
     href: pipelines-get-started.md
   - name: Create your first pipeline (YAML)
-    href: ../get-started-yaml.md?toc=/vsts/pipelines/get-started/toc.json&bc=/vsts/pipelines/get-started/breadcrumb/toc.json
+    href: ../get-started-yaml.md
   - name: Key concepts
     href: key-pipelines-concepts.md
   - name: Resources
     items:
     - name: Azure Pipelines Docs
-      href: ../index.md
+      href: /azure/devops/pipelines/index

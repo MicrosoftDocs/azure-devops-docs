@@ -59,7 +59,7 @@ ms.topic: include
 </tr>
 
 <tr>
-<td align="left">Package Management (5 users free)
+<td align="left">Azure Artifacts (5 users free)
 </td>
 <td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>

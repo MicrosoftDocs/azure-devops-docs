@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 monikerRange: 'vsts'
 ---
 
@@ -42,11 +42,11 @@ Make sure that the new owner:
 
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select (![gear icon](../../_img/icons/gear-icon.png)) **Organization settings** .
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings** .
 
    ![Select "Organization settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**. The organization owner is listed under **Organization information**.
+3. Select **Overview**. The organization owner is listed under *Organization information*.
 
    ![Overview pane displaying the organization owner](_img/change-organization-ownership/find-organization-owner.png)
 
@@ -72,7 +72,7 @@ Make sure that the new owner:
 
    ![Find the current organization owner](_img/change-organization-ownership/find-organization-owner.png)
 
-4. Change the organization owner.
+4. To change the organization owner, select **X**.
 
    ![Change current organization owner](_img/change-organization-ownership/change-organization-owner.png)
 

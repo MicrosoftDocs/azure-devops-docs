@@ -48,7 +48,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), **Organization settings**.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
@@ -57,7 +57,7 @@ To continue, you'll need at least Basic access and organization owner permission
    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
 
    > [!Note] 
-   > Anonymous access is used to access both private and public repos. Go [here](../public/make-project-public.md) to learn more.
+   > Anonymous access is used to access both private and public repos. Learn more at [Make your project public](../public/make-project-public.md).
 
 # [Previous navigation](#tab/previous-nav)
 

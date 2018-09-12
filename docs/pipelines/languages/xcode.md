@@ -68,6 +68,24 @@ steps:
 
 To sign and provision your app, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
 
+### CocoaPods
+
+If your project uses CocoaPods, you can run CocoaPods commands in your pipeline using a script, or with the [CocoaPods](../tasks/package/cocoapods.md) task. The task optionally runs `pod repo update`, then runs `pod install`, and allows you to set a custom project directory. Following are common examples of using both.
+
+```yaml
+- script: /usr/local/bin/pod install
+  displayName: 'pod install using a script'
+
+- task: CocoaPods@0
+  displayName: 'pod install using the CocoaPods task with defaults'
+
+- task: CocoaPods@0
+  inputs:
+    forceRepoUpdate: true
+    projectDirectory: '$(system.defaultWorkingDirectory)'
+  displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
+```
+
 ### Testing on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.

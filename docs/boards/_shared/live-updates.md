@@ -27,7 +27,8 @@ Choose the ![](/azure/devops/_img/icons/view-options-icon.png) view options icon
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+**New navigation** isn't supported on TFS at this time. Choose **Previous navigation** for guidance.
+
 ::: moniker-end
 
 
@@ -35,10 +36,9 @@ Choose the ![](/azure/devops/_img/icons/view-options-icon.png) view options icon
 
 Choose the ![](/azure/devops/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
 
-![Kanban board, live updates icon](../_shared/_img/kanban-live-updates.png)  
-
+![Kanban board, live updates icon](/azure/devops/boards/_shared/_img/kanban-live-updates.png)  
 As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
 
-![Live update](../boards/_img/kanban-live-updates.gif)  
+![Live update](/azure/devops/boards/_img/kanban-live-updates.gif)  
 
 

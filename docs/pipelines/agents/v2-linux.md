@@ -139,7 +139,7 @@ If your agent is running on these operating systems you can run the agent as a s
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
 
-We provide the `./svc.sh` script for you to run and manage your agent as a systemd service.
+We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
 
 > [!NOTE]
 > If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).

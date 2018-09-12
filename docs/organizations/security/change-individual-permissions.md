@@ -69,7 +69,7 @@ To create a project-level security group, open the web portal and choose the pro
 4. Choose **Create group**.
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
@@ -185,13 +185,3 @@ You add members to a custom security group in the same way you add users to a bu
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 
 
-<!--
-You can do a search on an individual user and change one of their permissions. However, the preferred method  
-
-User Voice requests: 
-* Hide Work Item Types (WITs) based on permission/security group
-
-
-Recommended permissions 
-Team Admins - allow to create area and iteration paths; shared queries. 
--->
