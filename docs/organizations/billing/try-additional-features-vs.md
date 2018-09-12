@@ -1,6 +1,6 @@
 ---
 title: Free trials for paid Azure DevOps  features and extensions | Azure DevOps
-description: How to get free trials for Test Manager, Package Management, and for Azure DevOps extensions offered by other publishers (Azure DevOps)
+description: How to get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers (Azure DevOps)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +22,7 @@ There are two paid features in Azure DevOps that are offered by Microsoft that y
 
 - [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers).
 
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
+- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
 During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 

@@ -56,10 +56,6 @@
       href: /visualstudio/subscriptions/vscloud-csp
     - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
-- name: Troubleshooting
-  items:
-  - name: Trials FAQ
-    href: faq-extension-trials.md
 - name: Reference
   items:
   - name: Permissions 
