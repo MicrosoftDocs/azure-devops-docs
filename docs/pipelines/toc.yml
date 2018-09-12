@@ -212,8 +212,6 @@
       href: test/set-up-continuous-test-environments-builds.md
     - name: Unit test with builds
       href: test/getting-started-with-continuous-testing.md
-    - name: Run UI tests in CI/CD
-      href: test/ui-testing-considerations.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
@@ -230,6 +228,8 @@
       href: test/parallel-testing-any-test-runner.md
     - name: Parallel test with VSTest
       href: test/parallel-testing-vstest.md
+    - name: UI testing considerations
+      href: test/ui-testing-considerations.md
     - name: FAQs for testing
       href: test/reference-qa.md
   - name: Package
