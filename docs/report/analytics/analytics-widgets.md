@@ -24,7 +24,7 @@ The Analytics extension includes several dashboard widgets that take advantage o
 > All Analytics widgets are available only for Azure DevOps Services at this time. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
 You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 
-If **Boards** is disabled, then all all widgets associated with work item tracking, including those based on the Analytics Service, will also be disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+If **Boards** is disabled, then all widgets associated with work item tracking, including those based on the Analytics Service, will also be disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
 ## Burndown
 The Burndown widget lets you display a trend of remaining work across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on any scope of work over time. It will help you answer questions like: 
