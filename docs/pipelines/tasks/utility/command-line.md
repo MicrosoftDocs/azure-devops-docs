@@ -36,7 +36,6 @@ The CmdLine task also has a shortcut syntax in YAML:
 ```yaml
 - script: # script path or inline
   workingDirectory: #
-  displayName: #
   failOnStderr: #
   env:  # mapping of environment variables to add
 ```
@@ -86,14 +85,11 @@ The CmdLine task also has a shortcut syntax in YAML:
 ```yaml
 steps:
 - script: date /t
-  displayName: Get the date
 - script: dir
   workingDirectory: $(Agent.BuildDirectory)
-  displayName: List contents of a folder
 - script: |
     set MYVAR=foo
     set
-  displayName: Set a variable and then display all
 ```
 
 # [Web](#tabs/web)
