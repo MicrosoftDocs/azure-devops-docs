@@ -8361,11 +8361,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/billing/faq-extension-trials.md",
-      "redirect_url": "/azure/devops/organizations/billing/faq-extension-trials",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/billing/index.md",
       "redirect_url": "/azure/devops/organizations/billing/index",
       "redirect_document_id": true
