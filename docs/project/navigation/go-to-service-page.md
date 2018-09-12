@@ -52,7 +52,7 @@ For example, here we select **Boards>Backlogs**.
 > [!div class="mx-imgBorder"]  
 > ![Open a service, new navigation gif](_img/go-to-app/work-backlogs-selection.gif)
 
-Within the page you may select a specific view or artifact, such as as a team backlog or choose another page. 
+Within the page you may select a specific view or artifact, such as a team backlog or choose another page. 
 
 ::: moniker-end
 
@@ -195,4 +195,4 @@ Account owners and members of the Project Collection Administators group configu
 ## Related articles 
 
 - [Manage projects](../../organizations/projects/index.md)
-- [About team, project, and admin settings ](../../organizations/settings/about-settings.md)
+- [About team, project, and admin settings](../../organizations/settings/about-settings.md)

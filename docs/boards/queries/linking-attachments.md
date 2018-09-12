@@ -8,11 +8,18 @@ ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.topic: sample
 ms.date: 05/10/2017  
 ---
 
+::: moniker range="vsts"  
+# Link, attachment comment count queries  
+::: moniker-end  
+
+::: moniker range=">= tfs-2013  <= tfs-2018" 
 # Link and attachment queries  
+::: moniker-end  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -165,7 +172,13 @@ The following image shows the query results that are returned.
 
 
 
-## Link and attachment fields
+::: moniker range="vsts"  
+# Link, attachment, and comment count fields  
+::: moniker-end  
+
+::: moniker range=">= tfs-2013  <= tfs-2018" 
+## Link and attachment fields 
+::: moniker-end  
 
 The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types. 
 
@@ -184,6 +197,19 @@ The following table describes fields associated with links and attachments. Most
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
 For Azure Boards, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+</blockquote> 
+</td>
+<td><p>All</p></td>
+</tr>
+
+<tr>
+<td><p>Comment Count</p></td>
+<td><p>The number of comments added to the **Discussion** section of the work item. </p>
+<p>Reference Name=System.CommentCount, Data type=Integer</p>
+
+<blockquote>
+![note icon](../_img/icons/note-icon.png)<br/>
+Available for Azure DevOps Services only. 
 </blockquote> 
 </td>
 <td><p>All</p></td>
@@ -232,19 +258,26 @@ For Azure Boards, you can add up to 100 attachments to a work item. Attempts to 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
  
-
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace. 
+::: moniker-end  
 
-
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 
 ### Add custom link types or customize the links controls 
 
-To add link types (TFS only), see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
+To add link types, see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
 
 All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).  
 
+### Default data fields in lists of links
+
+You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
+
+
+::: moniker-end  
 
 
 <!---
@@ -281,23 +314,6 @@ The default TFS process templates provide reports that require you to create lin
 </tr>
 </tbody>
 </table>
-
-
-### Default data fields in lists of links
-
-All lists of links display these data fields:
-
--   Work item 
--   ID  
--   Work Item Type    
--   Title  
--   Assigned to
--   State
--   [Link Comment]
-
-You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
-
-For more information about these fields, see [Titles, IDs, and descriptions](titles-ids-descriptions.md) and [Create managed queries](example-queries.md).
 
 
 ### Link toolbar buttons
