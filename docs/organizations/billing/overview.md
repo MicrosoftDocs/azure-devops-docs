@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +22,7 @@ Set up billing when you need more than the **Free tier** of resources in your Az
 The Free tier includes:
 
 * Five Azure DevOps users (Basic).
-* Five Package Management users.
+* Five Azure Artifacts users.
 * Free Tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month).
 * One self-hosted CI/CD concurrent job.
 * 20,000 virtual user minutes of cloud-based load testing.
