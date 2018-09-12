@@ -187,7 +187,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear appear on your **Favorites** page and towards the top of the team backlog selector menu.
+2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear on your **Favorites** page and towards the top of the team backlog selector menu.
 
 ::: moniker-end
 
