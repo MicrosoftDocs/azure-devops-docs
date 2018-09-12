@@ -102,7 +102,7 @@ Replace `{organizationName}` with organization's name, for example "Fabrikam". `
 
 ```
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF
-      ?accountName={organizationName}&api-version=5.0
+      ?accountName={organizationName}&api-version=5.0-preview.1
 ```
 
 #### Response

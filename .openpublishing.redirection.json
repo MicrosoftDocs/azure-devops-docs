@@ -6822,12 +6822,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/run-functional-tests.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/test/run-functional-tests",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/test/RunDistributedTests.1.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/test/run-distributed-tests",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7498,6 +7498,11 @@
     {
       "source_path": "docs/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/azure/devops/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/tasks/test/run-distributed-tests.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/test/run-functional-tests",
       "redirect_document_id": false
     },
     {

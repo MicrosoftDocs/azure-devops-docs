@@ -1,7 +1,7 @@
 ---
 title: Turn an Azure DevOps service on or off, change the visibility of a service
 titleSuffix: Azure DevOps Services
-description: Determines which services are available for a project from the the web portal  
+description: Determines which services are available for a project from the web portal  
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview

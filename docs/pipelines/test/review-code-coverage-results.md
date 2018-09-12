@@ -40,7 +40,7 @@ code coverage for [JavaScript](../languages/javascript.md) using Istanbul.
 ## View results 
 
 The code coverage summary can be viewed in the build timeline view.
-The summary shows the overall percentage of line coverage for each platform. 
+The summary shows the overall percentage of line coverage. 
 
 ![View code coverage results](_img/review-code-coverage-results/view-code-coverage-summary.png)
 
@@ -55,7 +55,7 @@ The code coverage artifacts published during the build can be viewed under the
 
 ![View code coverage artifact](_img/review-code-coverage-results/view-code-coverage-artifact.png)
 
-* If you use the [Visual Studio Test]() task to collect coverage for .NET and .NET Core apps, the artifact contains
+* If you use the [Visual Studio Test](../tasks/test/vstest.md) task to collect coverage for .NET and .NET Core apps, the artifact contains
   **.coverage** files that can be downloaded and used for further analysis in Visual Studio.
 
   ![View .coverage reports](_img/review-code-coverage-results/view-dot-coverage-report.png)
