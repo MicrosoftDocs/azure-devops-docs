@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -51,7 +51,7 @@ Before you begin, do the following:
 2. Ensure that the following is true about each user who performs the connection:
 
 * The user exists in Azure AD as a member.
-* The user is a *project collection administrator* or *owner* of [the organization](../security/lookup-organization-owner-admin.md).
+* The user is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md).
 * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email.
 
     If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
@@ -73,7 +73,7 @@ Before you begin, do the following:
 
     > h. As the new user, complete the migration.
 
-1. Ensure that all Azure DevOps users are in Azure AD by doing the following:  
+3. Ensure that all Azure DevOps users are in Azure AD by doing the following:  
     Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
@@ -138,11 +138,11 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with the Microsoft account that you chose in the previous section.
 
-    Make sure you are connected to the correct directory. You select the directory at the upper right.
+    Make sure you are connected to the correct directory. Select the directory at the upper right corner of the page.
 
     ![Confirm Azure AD connection](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Select **All services** > **Azure DevOps organization**.
+2. Select **All services** and then **Azure DevOps organizations**.
 
    ![All services, Azure DevOps Services organizations](_img/_shared/azure-portal-team-services-administration.png)
 
@@ -162,6 +162,8 @@ b. Compare the list of email addresses in Azure DevOps Services with the list of
 6. Your organization is now connected to your Azure AD.
 
 7. To confirm that the process has been completed, open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
+
+   ![Confirm connected directory](_img/_shared/azure-portal-confirm-connected-directory.png)
 
 8. If you created a temporary user to complete the migration, change the owner of the organization back to the initial user, and delete the temporary Microsoft account, which is no longer needed.
 

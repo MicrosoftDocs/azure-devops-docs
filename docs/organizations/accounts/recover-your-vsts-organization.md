@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/08/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -27,21 +27,21 @@ After you delete your organization, it's disabled but available for 30 days. If 
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-organization.md#ChooseOrgAcctMSAcct)
 
-2. On your profile page, go to the **Organizations Pending Deletion** section at the bottom. You see a link to restore your organization.
+2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom. You see a link to restore your organization.
 
-   ![Restore your deleted organization](_img/delete-organization/restore-organization.png)
+   ![Restore your deleted organization](_img/_shared/visual-studio-profile-page.png)
 
 3. Select **Restore**.
 
    * If your organization URL is still available, you can restore it.
 
-      ![Confirm restoration of your organization](_img/delete-organization/restore-confirm.png)
+      ![Confirm restoration of your organization](_img/_shared/organizations-pending-deletion.png)
 
-   * If your organization URL isn't available, provide a new URL.
+   * If your organization URL isn't available, provide a new URL and then select **Restore**.
 
       ![Rename your deleted organization](_img/delete-organization/rename-deleted-organization.png)
 
-4. After you restore your organization:
+4. After you restore your organization, do the following:
 
    * If billing was set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
 
