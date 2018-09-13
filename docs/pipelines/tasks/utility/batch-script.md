@@ -109,7 +109,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Where can I learn about batch files?
 
-[Using batch files](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/batch.mspx?mfr=true)
+[Using batch files](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands)
 
 ### Where can I learn Windows commands?
 
