@@ -9,7 +9,7 @@
     href: ../projects/about-projects.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
 - name: Quickstarts
   items:
-  - name: Get started as an administrator
+  - name: Get started as a project admin
     href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
   - name: Set area paths
     href: set-area-paths.md
@@ -79,8 +79,8 @@
     href: ../public/make-project-public.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Change service visibility
     href: set-services.md
-  - name: Configure team settings
-    href: configure-team-settings.md
+  - name: Manage teams and configure team tools
+    href: manage-teams.md
     items:
     - name: Set team defaults
       href: set-team-defaults.md
@@ -203,8 +203,6 @@
   items:
   - name: "Default permissions & access"
     href: ../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Team administrator role and permissions
-    href: team-administrator-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ./work/object-limits.md
   - name: REST APIs

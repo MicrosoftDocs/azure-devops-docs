@@ -94,7 +94,7 @@ For an overview of process models, see [Customize your work tracking experience]
 
 ## Related articles
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
-- [Configure team settings](configure-team-settings.md)  
+- [Manage teams and configure team tools](manage-teams.md)  
 
 ### Nested items  
 As indicated in this topic, bugs can appear alongside user stories (requirements or product backlog items) or tasks. You don't need to link bugs to one of these items in order to manage them.

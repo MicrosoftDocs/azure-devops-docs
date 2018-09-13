@@ -414,7 +414,7 @@ Show bugs on backlogs and boards
 
 ## Team administrator role
 
-For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [About security roles, Team administrator role](about-security-roles.md#team-administrator-role). To add a user as a team administrator, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
+For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [Manage teams and configure team tools](../settings/manage-teams.md). To add a user as a team administrator, see [Add a team administrator](../settings/add-team-administrator.md).
 
 > [!NOTE]   
 > Project Administrators can manage all team admin areas for all teams. 
@@ -1436,7 +1436,7 @@ Members of the Project Administrators group are automatically granted permission
 > Multiple teams may contribute to a project.
 > When that's the case, you can set up teams that are associated with an area.
 > Permissions for the team's work items are assigned by assigning permissions to the area.
-> There are other [team settings](../settings/configure-team-settings.md)
+> There are other [team settings](../settings/manage-teams.md)
 > that configure the team's agile planning tools.
 
 <img src="_img/permissions/area-path-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
@@ -1545,7 +1545,7 @@ Iteration path permissions grant or restrict access to create and manage iterati
 Multiple teams may contribute to a project. 
 When that's the case, you can set up teams that are associated with an area. 
 Permissions for the team's work items are assigned by assigning permissions to the area. 
-There are other [team settings](../settings/configure-team-settings.md) 
+There are other [team settings](../settings/manage-teams.md) 
 that configure the team's agile planning tools.
 To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
 
@@ -2032,6 +2032,6 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 - [Add users to a project](../accounts/add-team-members-vs.md) (Azure DevOps)   
 - [Add users to a project](../../organizations/security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
-- [Make a user a team admin](../settings/configure-team-settings.md)  
+- [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 

@@ -202,6 +202,6 @@ Query-based charts generate data from the work item tracking data store and ther
 ::: moniker-end
 
 [add-a-team]: ../../organizations/settings/add-teams.md
-[team-assets]: ../../organizations/settings/configure-team-settings.md
+[team-assets]: ../../organizations/settings/manage-teams.md
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md

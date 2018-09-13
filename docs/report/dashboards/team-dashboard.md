@@ -31,7 +31,7 @@ If you need to add a team first, see [Add teams](../../organizations/settings/ad
 
 You pin an item to the team dashboard from the code, work, and build pages.
 
-1.  If you aren't a team administrator, [get added as one](../../organizations/settings/configure-team-settings.md).  
+1.  If you aren't a team administrator, [get added as one](../../organizations/settings/manage-teams.md).  
 
 2.	Pin a work item query from its context menu.
 

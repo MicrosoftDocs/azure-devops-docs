@@ -56,7 +56,7 @@ A few options are available for you to [configure your chart](#configure) or [co
 > **Feature availability**: For Azure DevOps, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
-[Configure team settings](../../organizations/settings/add-team-administrator.md) to get added as a team admin. 
+[Manage teams and configure team tools](../../organizations/settings/add-team-administrator.md) to get added as a team admin. 
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 

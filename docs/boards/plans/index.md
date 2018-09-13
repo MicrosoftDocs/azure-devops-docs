@@ -41,11 +41,11 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)  
-- [Team administrator role and permissions](../../organizations/settings/team-administrator-permissions.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
 ## How-to Guides
 - [Define a work item template](../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
-- [Configure team settings](../../organizations/settings/configure-team-settings.md) 
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) 
 - [Set team defaults](../../organizations/settings/set-team-defaults.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md)   
 

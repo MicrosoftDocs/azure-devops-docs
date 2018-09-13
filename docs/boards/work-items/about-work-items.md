@@ -181,7 +181,7 @@ Many Scrum teams treat bugs the same as any backlog item or user story. Others s
 
 Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-For an overview of all team settings, see [Configure team settings](../../organizations/settings/configure-team-settings.md).
+For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
 <a id="queries" />
 ## Find or list work items 

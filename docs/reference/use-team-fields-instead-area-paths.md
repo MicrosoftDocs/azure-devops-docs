@@ -24,7 +24,7 @@ The default configuration for projects configures each team as an area path. For
 
 If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Configure team settings](../organizations/settings/configure-team-settings.md).
+Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).
 
 
 
