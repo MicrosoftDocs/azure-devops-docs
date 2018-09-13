@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 02/27/2018
+ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,6 +21,14 @@ monikerRange: 'vsts'
 [!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
 [!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
+
+### Q: How do I delete my organization?
+
+A: See [Delete your organization](delete-your-vsts-organization.md), which includes prerequisites and helpful tips.
+
+### Q: How do I restore my organization?
+
+A: See [Recover your organization](recover-your-vsts-organization.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
