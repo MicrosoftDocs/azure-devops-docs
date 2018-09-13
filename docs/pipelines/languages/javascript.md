@@ -291,7 +291,7 @@ you'll get the benefit of using the package cache.
 
 ::: moniker range="vsts"
 
-Use a simple script stage to invoke [yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md) and can be installed and cofnigured on self-hosted agents like any other tool.
+Use a simple script stage to invoke [yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md) and can be installed and configured on self-hosted agents like any other tool.
 
 ```yaml
 - script: yarn install
