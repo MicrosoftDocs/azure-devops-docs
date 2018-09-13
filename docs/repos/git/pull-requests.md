@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -26,20 +26,98 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) about how to get feedback with Git pull requests.
 
+## View and manage your pull requests
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"
+
+1. To view pull requests in a specific repository in a project, [navigate](../../project/navigation/go-to-project-repo.md) to that project in the web portal and select **Repos**, **Pull requests**.
+
+  ![View your pull requests](_img/repos-navigation/repos-pull-requests.png)
+
+1. Verify that the correct repository is selected.
+
+  ![Select repository](_img/repos-navigation/pull-requests-breadcrumb.png)
+
+1. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
+
+  ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
+
+You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
+
+![View all your pull requests](_img/pull-requests/view-all-my-pull-requests.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+Manage pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
+
+![Viewing completed and abandoned pull requests in Azure Repos](_img/repos-navigation/repos-code-pull-requests.png)
+
+::: moniker range=">= tfs-2017" 
+
+Select **Active** to show all active pull requests for the current repo. 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2017" 
+
+Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
+
+![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
+
+You can view all of your pull requests in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
+
+![View all my pull requests](_img/pull-requests/view-all-pull-requests.png)
+
+::: moniker-end 
+---
+
 ## Create a new pull request
 
 Create a new pull request from:
 
 - [Pushed feature branches to your Git repo](#after-pushing-a-branch)
 - [The **Development** section in a linked work item](#from-a-linked-work-item)
-- [The **Pull Requests** tab in the **Code** view on the web](#from-the-code-view-on-the-web)
+- [From the Pull requests page on the web](#from-the-pull-requests-page-on-the-web)
 - [Team Explorer in Visual Studio](#from-visual-studio) 
-- [Using the Azure DevOps Services CLI (Preview)](#from-the-vsts-cli-preview)   
-
+- [Using the Azure DevOps Services CLI](#from-the-azure-devops-services-cli)
 
 ### After pushing a branch
 
-When you publish or update a feature branch in Azure Repos, you get a prompt asking if would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+When you publish or update a feature branch in Azure Repos, you get a prompt asking if you would like to create a pull request. This prompt is displayed on the **Pull Requests** page and the **Files** page.
+
+![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push-new-nav.png)
+
+![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+
+Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+When you publish or update a feature branch in Azure Repos, you get a prompt asking if you would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
 
 ![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push.png)
 
@@ -47,20 +125,22 @@ When you publish or update a feature branch in Azure Repos, you get a prompt ask
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
+---
+
 ### From a linked work item
 
 Create a pull request directly from a work item linked to the branch. 
 
-0. From the **Backlogs** or **Queries** tab in the **Work** view , open the work item with the linked branch. 
-0. In the **Development** area of the work item, there's a link to create a pull request under the branch name.  
+1. From the **Backlogs** or **Queries** tab in the **Work** view , open the work item with the linked branch. 
+1. In the **Development** area of the work item, there's a link to create a pull request under the branch name.  
 
 ![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](_img/pull-requests/create-pr-from-work-item.png)
 
 Select the link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
-### From the Code view on the web 
+### From the Pull requests page on the web
 
-Create pull requests from any branch from the **Pull Request** tab in the **Code** view on the web.  
+Create pull requests from any branch from the **Pull Request** page on the web.
 
 ![New pull request](_img/pull-requests/new-pr-button.png)
 
@@ -73,13 +153,13 @@ Pick the branch you wish to have reviewed and the branch you want to merge the c
 
 Initiate pull requests directly from Visual Studio. 
 
-0. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).
-0. Open Team Explorer (select **View**, then **Team Explorer** or use the `Ctrl+\`, `Ctrl+M` hotkey)
-0. Open **Pull Requests** in Team Explorer by selecting the **Home** icon and choosing **Pull Requests**.
+1. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+1. Open Team Explorer (select **View**, then **Team Explorer** or use the `Ctrl+\`, `Ctrl+M` hotkey)
+1. Open **Pull Requests** in Team Explorer by selecting the **Home** icon and choosing **Pull Requests**.
 
   ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
+1. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
@@ -87,15 +167,13 @@ Initiate pull requests directly from Visual Studio.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
 
-### From the Azure DevOps Services CLI (Preview)
+### From the Azure DevOps Services CLI
 
 You can now manage pull requests and other resources in Azure DevOps Services and Team Foundation Server 2017 Update 2 or later from the command line with the **[Azure DevOps Services CLI](/cli/vsts/overview)**.
 
 For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
 For more information about working with the Azure DevOps Services CLI, see [Get started with the Azure DevOps Services CLI](/cli/vsts/get-started).
-
-
 
 <a name="finish"></a>
 
@@ -122,39 +200,96 @@ In a future release, we'll make labels even more useful by making it easier to f
 
 ### Add and remove reviewers
 
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+::: moniker range="vsts"
 Add reviewers to your pull request. 
 
-0. Select the **Overview** tab in the pull request.
+1. Select the **Overview** tab in the pull request.
+
+  ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers-new-nav.png)
+
+1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members-vs.md).
+
+1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+
+  ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+Add reviewers to your pull request. 
+
+1. Select the **Overview** tab in the pull request.
 
   ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers.png)
 
-0. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members-vs.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members-vs.md).
 
-0. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
   ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+
+---
+
+
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
 
-
-
 ### Link work items
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+::: moniker range="vsts"
 
 Link work items to your pull request:
 
-0. Select the **Overview** tab in the pull request.
+1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
+  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items-new-nav.png)
 
-0. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
 
-0. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
 This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+Link work items to your pull request:
+
+1. Select the **Overview** tab in the pull request.
+
+  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
+
+1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+
+1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+
+Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
+This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
+
+---
 
 ### Edit pull request title and description
 
@@ -168,25 +303,7 @@ Edit the pull request description by selecting the edit link that appears when y
 
 Keep these fields up to date so reviewers know what the changes in the pull request are trying to accomplish.   
 
-<a name="manage"></a>
 
-## Manage your pull requests
-
-Manage pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
-
-::: moniker range=">= tfs-2017" 
-
-Select **Active** to show all active pull requests for the current repo. 
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2017" 
-
-Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
-
-![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png) 
-
-::: moniker-end 
 
 ## Review a pull request 
 
@@ -305,7 +422,7 @@ Auto-completion lets you skip having to come back to the pull request to complet
 When the conditions are satisfied for auto-complete, the pull request is completed and you are notified via email. If there is a conflict or an error completing the pull request, you will get an email notifying you of the issue so you can resolve it.
 
 Once auto-complete has been set, the pull request displays a banner confirming that the changes will be merged as soon as the policies are satisfied.
-Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state.
+Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state. Starting with TFS 2018 Update 2, the banner [displays the outstanding list of policy critera](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
 
 ![A banner displays when your pull request is in auto-complete state](./_img/pull-requests/pr_banner_autocomplete.png)
 
@@ -321,7 +438,7 @@ The abandoned pull request will still be viewable on the web and stays linked to
 
 Reactivate an abandoned pull request at any time by selecting the pull request from the **Abandoned** tab in the **Pull Request** view and selecting  **Reactivate**.
 
-::: moniker range=">= tfs-2017" 
+
 
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
@@ -331,19 +448,57 @@ Subscribe to email alerts to get notified when changes are made to your pull req
 >[!NOTE]
 >By default you are subscribed to several common pull request notifications. For a complete list of default notification subscriptions, see [Out-of-the-box (OOB) or default subscriptions](../../notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions)
 
-0. Select the settings icon while you have your project open to bring up the project administration page.
+# [New navigation](#tab/new-nav)
 
-   ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png) 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
 
-  ![Notifications](./_img/pull-requests/pr-notifications.png)
+::: moniker-end
 
-0. To edit or unsubscribe from a notification, select **...** for the notification and choose **View** to edit the subscription, or **Opt out** to unsubscribe from the notification.
+::: moniker range="vsts"
+
+1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**, **Notifications** to view your notification settings
+
+  ![Notifications](./_img/pull-requests/pr-notifications-new-nav.png)
+
+1. Choose **New subscription** to subscribe to additional notifications.
+
+  ![Notifications](./_img/pull-requests/new-subscription-new-nav.png)
+
+1. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
 
   ![Notifications](./_img/pull-requests/view-pr-notifications.png)
 
+1. To opt-out of a notification, set the **State** to **Off**.
 
+  ![Notifications](./_img/pull-requests/opt-out-notifications.png)
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+
+1. Select the settings icon while you have your project open to bring up the project administration page.
+
+   ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png) 
+
+1. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+
+  ![Notifications](./_img/pull-requests/pr-notifications.png)
+
+1. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
+
+  ![Notifications](./_img/pull-requests/view-pr-notifications.png)
+
+1. To opt-out of a notification, set the **State** to **Off**.
+
+  ![Notifications](./_img/pull-requests/opt-out-notifications.png)
+
+---
+
+
+::: moniker range=">= tfs-2017" 
 
 ## Revert a pull request
 
@@ -374,15 +529,39 @@ If there are no conflicts between the target branch and the newly created topic 
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.
 
-0. Select the settings icon while you have your project open to bring up the project administration page.
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
+
+2. Scroll down and select **Repositories** from the **Code** section.
+
+3. Select the desired repository and expand the branches.
+
+4. Select the **...** beside the desired branch and choose **Set as default branch**.
+
+  ![Set default branch](_img/pull-requests/set-default-branch-new-nav.png)
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Select the settings icon while you have your project open to bring up the project administration page.
 
    ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png)
    
-0. Select **Version Control**.
+1. Select **Version Control**.
 
-0. Select your Git repository. Your branches are displayed under your repo.   
+1. Select your Git repository. Your branches are displayed under your repo.
 
-0. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.   
+1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
 
    ![Set a default branch for a Git repo in Azure DevOps Services or TFS](_img/pull-requests/set_default_branch.png)
 
+---
