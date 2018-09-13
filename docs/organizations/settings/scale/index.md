@@ -24,16 +24,17 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 - [Set iteration paths or sprints](../set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json) 
 - [Add a team, move from one default team to several teams](../add-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json)
 - [Add a team administrator](../add-team-administrator.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json) 
+- [Manage teams and configure team tools](../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json) 
 - [Add users to a project or team](../../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json)  
 
 ## Concepts 
 
 - [Area & iteration paths (aka sprints)](../about-areas-iterations.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json) 
-- [Team administrator role & permissions](../team-administrator-permissions.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json)   
+  
 
 
 ## How-to Guides
-- [Configure team settings](../configure-team-settings.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json) 
+- [Manage teams and configure team tools](../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  ) 
 - [Set team defaults](../set-team-defaults.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json)    
 
 ## Reference

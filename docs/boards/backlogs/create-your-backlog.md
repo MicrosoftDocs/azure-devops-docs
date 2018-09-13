@@ -20,7 +20,7 @@ Your product backlog corresponds to your project plan, the roadmap for what your
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
 repository of all the information you need to track and share with your team.
 
-Your backlog consists of a list of [work items](add-work-items.md). 
+Your backlog consists of a list of [work items](../work-items/about-work-items.md). 
 You use work items to share information, assign work to team members, track dependencies, organize work, 
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 

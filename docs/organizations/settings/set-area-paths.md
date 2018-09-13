@@ -174,7 +174,7 @@ As you can see, areas play a major role in supporting Agile tools and managing w
 
 *	[About areas and iterations](about-areas-iterations.md)  
 *	[Add another team](../../organizations/settings/add-teams.md)  
-*	[Configure team settings and add team administrators](configure-team-settings.md)   
+*	[Configure team settings and add team administrators](manage-teams.md)   
 *	[Agile tools that rely on areas or iterations](about-teams-and-settings.md)
 *	[Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)  
 *	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
