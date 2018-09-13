@@ -47,11 +47,11 @@ The Powershell task also has a shortcut syntax in YAML:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a .ps1 file</td></tr>
-<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory). Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the PowerShell script.</td></tr>
-<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code></td></tr>
-<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td></tr>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file.</td></tr>
+<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Powershell script.</td></tr>
+<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
+<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code>[$(Build.SourcesDirectory)](../../build/variables.md)</code>.</td></tr>
 <tr>
 <td>Fail on standard error</td>
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
@@ -117,7 +117,7 @@ On the Build tab of a build pipeline, add this task:
 Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 ```
 
-![icon](_img/powershell.png) Write warning using task.LogIssue
+![icon](_img/powershell.png) Write warning using `task.LogIssue`
 
 * Script
 
@@ -151,7 +151,7 @@ Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")
 Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 ```
 
-![icon](_img/powershell.png) Write error using task.LogIssue
+![icon](_img/powershell.png) Write error using `task.LogIssue`
 
 * Script
 
@@ -161,11 +161,11 @@ Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pi
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
  ```powershell
 exit 1
-``` 
+```
 
 ![icon](_img/powershell.png) Write error using PowerShell command
 
@@ -177,7 +177,7 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 ```
 
 > [!TIP]
-> 
+>
 > If you don't want this error to fail the build, then clear the **Advanced: Fail on Standard Error** check box.
 
 
