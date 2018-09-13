@@ -637,7 +637,7 @@ featureFlags:
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/azure/devops/index-all">Index</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="/azure/devops/learn/">Azure DevOps resource center</a></p>
+                                                        <p><a href="/azure/devops/learn/">DevOps resource center</a></p>
                                                         <p><a href="/tfs/index">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>
