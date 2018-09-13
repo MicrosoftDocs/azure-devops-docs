@@ -80,7 +80,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	- [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
 	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)  
 
-	To configure other team features, see [Configure team settings](configure-team-settings.md).
+	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
 
@@ -115,7 +115,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
 
-	To configure other team features, see [Configure team settings](configure-team-settings.md).
+	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 
 ::: moniker-end  
@@ -318,7 +318,7 @@ Once you've created a team, you'll want to configure your Agile tools to support
 > [!div class="nextstepaction"]
 > [Add team administrator](add-team-administrator.md)
 > or
-> [Configure team settings](configure-team-settings.md)
+> [Manage teams and configure team tools](manage-teams.md)
 
 
 

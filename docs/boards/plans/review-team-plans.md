@@ -237,7 +237,7 @@ For additional resources for working with multiple teams, see these additional t
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
-- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 - [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
 
 

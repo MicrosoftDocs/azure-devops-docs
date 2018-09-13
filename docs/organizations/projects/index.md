@@ -34,11 +34,12 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
--  [Customize a project](../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
- 
+-  [Customize a project (Azure DevOps Services)](../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+
 
 ## Concepts
 
+- [Customize a project (TFS)](../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [About areas and iterations](../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
 - [Resources granted to project members](resources-granted-to-project-members.md)  

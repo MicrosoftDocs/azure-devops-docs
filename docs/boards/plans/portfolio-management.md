@@ -162,7 +162,7 @@ These next set of steps can be performed by a team administrator.
 - [Activate backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
 
-See [Configure team settings](../../organizations/settings/configure-team-settings.md) for an overview of all Agile tools and team assets.
+See [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) for an overview of all Agile tools and team assets.
 
 
 ## Try this next

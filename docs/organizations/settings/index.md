@@ -50,12 +50,12 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 ## How-to guides
 
 - [Set team defaults](set-team-defaults.md)    
-- [Configure team settings](configure-team-settings.md)   
+- [Manage teams and configure team tools](manage-teams.md)   
 
 
 ## Reference
 - [Default permissions and access](../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
-- [Team administrator role & permissions](../../organizations/settings/team-administrator-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 
 
 ## Resources

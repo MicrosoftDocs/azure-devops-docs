@@ -163,7 +163,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 Before you can create or work with any of the Agile tools, you need a project. If you don't have one yet, you can [create one](../../organizations/projects/create-project.md). 
 
-If you're ready to move from one team to two teams, or configure several teams, see [Add teams](../../organizations/settings/add-teams.md). To add a team administrator or configure team assets, see [Configure team settings](../../organizations/settings/configure-team-settings.md). 
+If you're ready to move from one team to two teams, or configure several teams, see [Add teams](../../organizations/settings/add-teams.md). To add a team administrator or configure team assets, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md). 
 
 For addtional guidance, see these topics: 
 - [Practices that scale](practices-that-scale.md) 
