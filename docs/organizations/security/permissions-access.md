@@ -96,9 +96,9 @@ You set [test permissions at the project level](set-project-collection-level-per
 [!INCLUDE [temp](_shared/test.md)]
 
 
-## Artifacts/Package Management 
+## Azure Artifacts
 
-You can manage feeds from the web portal, **Artifacts** or **Build and release>Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. 
+You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. 
 
 To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 

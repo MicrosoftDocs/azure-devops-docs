@@ -145,6 +145,8 @@
       href: process/conditions.md
     - name: Variables
       href: process/variables.md
+    - name: Resources
+      href: process/resources.md
   - name: Licensing
     items:
     - name: Parallel jobs
@@ -212,8 +214,6 @@
       href: test/set-up-continuous-test-environments-builds.md
     - name: Unit test with builds
       href: test/getting-started-with-continuous-testing.md
-    - name: Run UI tests in CI/CD
-      href: test/ui-testing-considerations.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
@@ -230,6 +230,8 @@
       href: test/parallel-testing-any-test-runner.md
     - name: Parallel test with VSTest
       href: test/parallel-testing-vstest.md
+    - name: UI testing considerations
+      href: test/ui-testing-considerations.md
     - name: FAQs for testing
       href: test/reference-qa.md
   - name: Package
@@ -399,8 +401,6 @@
         href: tasks/test/publish-test-results.md
       - name: Run Functional Tests
         href: tasks/test/run-functional-tests.md
-      - name: Run Distributed Tests
-        href: tasks/test/run-distributed-tests.md
       - name: Run Apache JMeter Load Test
         href: tasks/test/run-jmeter-load-test.md
       - name: Visual Studio Test

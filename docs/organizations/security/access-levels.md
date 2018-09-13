@@ -129,7 +129,7 @@ Items with a ![](_img/icons/checkmark.png) checkmark are granted permission by d
 |Delete and restore work items | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
 |Move work items out of a project | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
 |Permanently delete work items | ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) |
-|Suppress notifications for owrk item updates | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
+|Suppress notifications for work item updates | ![yes](_img/icons/checkmark.png)| ![yes](_img/icons/checkmark.png) |
 |Agile backlog tools management| ![no](_img/icons/delete-icon.png)| ![yes](_img/icons/checkmark.png) | 
 
 The following permissions to manage area and iteration path settings are granted to Stakeholders by default in both private and public projects: 

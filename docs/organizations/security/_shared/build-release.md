@@ -60,7 +60,7 @@ ms.topic: include
 </tr>
 
 <tr>
-<td align="left">Package Management (5 users free)
+<td align="left">Azure Artifacts (5 users free)
 </td>
 <td>  </td>
 <td>  </td>

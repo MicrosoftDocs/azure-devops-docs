@@ -195,4 +195,4 @@ Account owners and members of the Project Collection Administators group configu
 ## Related articles 
 
 - [Manage projects](../../organizations/projects/index.md)
-- [About team, project, and admin settings ](../../organizations/settings/about-settings.md)
+- [About team, project, and admin settings](../../organizations/settings/about-settings.md)

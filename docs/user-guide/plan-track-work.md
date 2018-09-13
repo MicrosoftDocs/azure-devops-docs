@@ -10,17 +10,17 @@ ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/10/2018
 ---
 
-# Plan and track work
+# Quickstart: Plan and track work
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Add work items to plan and manage your project. Use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.
 
-Learn how to add work items from the web portal and view work items you've created.
+In this quickstart, you learn how to add work items from the web portal and view work items you've created.
 
 <a id="define-new-work">  </a>
 

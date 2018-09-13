@@ -64,7 +64,7 @@ For more information on configuring a project, read [Create a project](../organi
 
 You might have a large product or service that's managed by many teams. Those teams have tight interdependencies on each other across the product life cycle. You create a project and divide the work by using teams and area paths. This setup gives your teams visibility into each other’s work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
 
-> [!RECOMMENDATION]  
+> [!Note]  
  > When multiple teams work on the same product, we recommend that you have all teams on the same iteration schedule. This arrangement helps keep your teams aligned and delivering value on the same cadence.
 
 A high volume of queries and boards can make it difficult to find what you're looking for. Depending on the architecture of your product, this difficulty can bleed into other areas such as builds, releases, and repos. To help alleviate this issue, make sure that you use good naming conventions and a simple folder structure. When you add a new repo to your project, it's a good time to reflect on your strategy and determine if that repo can be placed into its own project.

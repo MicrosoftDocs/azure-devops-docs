@@ -73,5 +73,8 @@ Create an alternate user name and password to access your Git repository using a
 Unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your Azure DevOps Services data.
 Use alternate credentials as a last resort when you can't use personal access tokens or SSH keys.
 
+>[!IMPORTANT]
+> The username specified for the alternate credentials must be unique across Azure DevOps Services and can't be reused
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: Add a user who can purchase for your Azure DevOps organization
-description: Add a backup user or other billing manager who can buy via Visual Studio Marketplace for your organization
+title: Add a user who can purchase
+description: Add a backup user or other billing manager who can buy via Visual Studio Marketplace extensions
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Add a user to make purchases for your Aorganization
+# Add a user to make purchases
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -25,19 +25,23 @@ add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contr
 
    ![Choose the subscription to modify for backup billing manager](_img/add-backup-billing-manager/choose-subscription-to-modify.png)
 
-3. Choose **Access control (IAM)** and then select **Add**.
+3. Choose **Access control (IAM)**.
 
-   ![Choose access control and then add](_img/add-backup-billing-manager/choose-access-control-and-then-add.png)
+   ![Choose access control and then add](_img/add-backup-billing-manager/choose-access-control.png)
 
-4. In the drop-down menus, select the *role* to add members to and select an *assignment* type.
+4. Choose **Add**.
+
+   ![Add role assignment Azure portal](_img/add-backup-billing-manager/add-role-assignment.png)
+
+5. In the drop-down menus, select the *role* to add members to and select an *assignment* type.
 
    ![Choose a role and assignment type](_img/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
-5. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
+6. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
 
    ![Select a user, group, or device by the name or email alias](_img/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
 
-6. If your update is complete, choose **Save**.
+7. If your update is complete, choose **Save**.
 
 A backup billing manager is added to your organization.
 

@@ -3,16 +3,16 @@ ms.topic: include
 ---
 
 
-Before you start tracking work, you must have a project. To create one, see [Create a project](../../organizations/projects/create-project.md).   
+Before you start tracking work, you must have a project. To create one, see [Create a project](/azure/devops/organizations/projects/create-project).   
 
 If you have a project, start tracking work:  
 
--   [Add work items to manage a project](..//backlogs/add-work-items.md) - to gain more familiarity with the work item form features  
--   [Create a backlog](../backlogs/create-your-backlog.md) - to develop your product backlog   
--   [Plan a sprint](../sprints/assign-work-sprint.md) - to start working in Scrum    
--   [Kanban](../boards/kanban-basics.md)  - to start working in Kanban  
--   [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) - to create a work breakdown structure   
+-   [Add work items to manage a project](/azure/devops/boards/backlogs/add-work-items) - to gain more familiarity with the work item form features  
+-   [Create a backlog](/azure/devops/boards/create-your-backlog) - to develop your product backlog   
+-   [Plan a sprint](/azure/devops/boards/sprints/assign-work-sprint) - to start working in Scrum    
+-   [Kanban](/azure/devops/boards/boards/kanban-basics)  - to start working in Kanban  
+-   [Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) - to create a work breakdown structure   
 
 For more information on Agile tools:
 
-- [Team assets](../../organizations/settings/about-teams-and-settings.md)  
+- [Team assets](/azure/devops/organizations/settings/about-teams-and-settings)  
