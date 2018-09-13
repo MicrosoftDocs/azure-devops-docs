@@ -32,6 +32,8 @@
     href: ../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Concepts
   items:
+  - name: Customize a project (TFS)
+    href: ../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: About areas and iterations
     href: ../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: About teams and Agile tools

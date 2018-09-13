@@ -163,6 +163,6 @@ If you work with several teams, and each team wants their own backlog view, you 
 - [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 
 <!--- ADD WIDGET INFO AS WELL --> 

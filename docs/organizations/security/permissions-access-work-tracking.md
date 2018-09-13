@@ -229,5 +229,5 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 *	[Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 *	[Get started as a Stakeholder](get-started-stakeholder.md)  
 *	[Add another team](../../organizations/settings/add-teams.md)  
-*	[Configure team settings](../settings/configure-team-settings.md)   
+*	[Manage teams and configure team tools](../settings/manage-teams.md)   
 

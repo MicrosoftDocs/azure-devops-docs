@@ -264,7 +264,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 - [Set area paths](set-area-paths.md)  
 - [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
 - [Add teams](add-teams.md)  
-- [Configure team settings](configure-team-settings.md)  
+- [Manage teams and configure team tools](manage-teams.md)  
 - [Portfolio management](../../boards/plans/portfolio-management.md)  
 
 

@@ -28,7 +28,7 @@ Once you've defined your product backlog, you can use the following controls to 
 | Mapping | [Turn mapping Off/On](organize-backlog.md)   |
 | Parents | [Show/Hide parents](organize-backlog.md) |
 | In progress items | [Show/Hide in progress items](../sprints/forecast.md)   |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Configure team settings](../../organizations/settings/configure-team-settings.md#team-settings)  |
+| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |

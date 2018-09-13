@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -62,11 +62,11 @@ To subscribe to Xamarin University, you need:
 
    ![Microsoft confirmation screen](_img/xamarin/06-ms-confirm.png)
 
-1. The information on the next screen explains that Xamarin University sends you a redemption code to use on the Xamarin site:
+1. The information on the following screen explains that Xamarin University sends you a redemption code to use on the Xamarin site:
 
    ![Redemption code sent via email for the Xamarin site](_img/xamarin/07-email-notice.png)
    
-   The email that you receive looks like this example:
+   The email that you receive looks like the following example:
 
    ![Example email with redemption code](_img/xamarin/08-xamarin-email.png)
 
