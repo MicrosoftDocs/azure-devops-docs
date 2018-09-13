@@ -521,7 +521,7 @@ If there are no conflicts between the target branch and the newly created topic 
 
 ::: moniker-end 
 
-## Set a new default branch    
+## Set a new default branch
 
 >[!NOTE]
 >This step requires [Edit Policies permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
