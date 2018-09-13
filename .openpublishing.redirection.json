@@ -9302,12 +9302,12 @@
     },
     {
       "source_path": "docs/work/scale/manage-team-assets.md",
-      "redirect_url": "/azure/devops/organizations/settings/configure-team-settings",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/scale/team-administrator-permissions.md",
-      "redirect_url": "/azure/devops/organizations/settings/team-administrator-permissions",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
       "redirect_document_id": false
     },
     {
@@ -11038,6 +11038,16 @@
     {
       "source_path": "docs/report/analytics/analytics-widgets-vsts.md",
       "redirect_url": "/azure/devops/report/analytics/analytics-widgets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/configure-team-settings.md",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/team-administrator-permissions.md",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
       "redirect_document_id": false
     }
   ]

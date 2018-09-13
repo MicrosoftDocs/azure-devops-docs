@@ -13,6 +13,8 @@
     href: ../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
   - name: Add a team administrator
     href: ../../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
+  - name: Manage teams and configure team tools
+    href: ../../organizations/settings/manage-teams.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Manage portfolios
@@ -29,8 +31,6 @@
     href: agile-culture.md
   - name: Practices that scale
     href: practices-that-scale.md
-  - name: Team administrator role and permissions
-    href: ../../organizations/settings/team-administrator-permissions.md	
 - name: How-to Guides
   items:
   - name: Use work item templates

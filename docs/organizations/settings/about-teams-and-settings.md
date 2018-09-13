@@ -190,7 +190,7 @@ You can choose to limit access to select features by making a user a [Stakeholde
 - Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
 - The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
-- For an overview of all team assets and how to configure them, see [Configure team settings](configure-team-settings.md)   
+- For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
@@ -198,7 +198,7 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Set team defaults](../../organizations/settings/set-team-defaults.md)  
-- [Configure team settings ](configure-team-settings.md)      
+- [Configure team settings ](manage-teams.md)      
 - [Work across projects ](../../project/navigation/work-across-projects.md)  
 
 
