@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ms.date: 08/09/2018
 ---
 
-# Syntax guidance for for markdown usage 
+# Syntax guidance for markdown usage 
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
@@ -485,13 +485,13 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
-!&#91;Let's use this flow for the login experience](http://dev.fabrikam.net/images/uxflow.png)
+![Illustration to use for new users](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
 </pre>
 
 <br/>
 **Result:** 
 
-![Sample flowchart with three items](../../repos/git/_img/pull-requests/markdown_sample_image.png)
+![Illustration of linked image](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
 
 The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
 <ul>

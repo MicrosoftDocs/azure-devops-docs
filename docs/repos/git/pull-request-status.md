@@ -121,7 +121,7 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 ### Policy applicability
 
-The the **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
+The **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
 
 ![Policy applicability](_img/pull-request-status/policy-applicability.png)
 

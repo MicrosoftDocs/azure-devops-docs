@@ -257,7 +257,7 @@
     },
     {
       "source_path": "docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-team-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
       "redirect_document_id": true
     },
     {
@@ -912,12 +912,12 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-nodejs-docker.md",
-      "redirect_url": "/azure/devops/pipelines/apps/containers/build",
+      "redirect_url": "/azure/devops/pipelines/languages/javascript",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/azure/devops/pipelines/apps/containers/build",
+      "redirect_url": "/azure/devops/pipelines/languages/docker",
       "redirect_document_id": false
     },
     {
@@ -1137,7 +1137,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-azure-active-directory-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
       "redirect_document_id": false
     },
     {
@@ -1522,7 +1522,7 @@
     },
     {
       "source_path": "docs/work/scale/culture.md",
-      "redirect_url": "/azure/devops/boards/scale/agile-culture",
+      "redirect_url": "/azure/devops/boards/plans/agile-culture",
       "redirect_document_id": false
     },
     {
@@ -2722,7 +2722,12 @@
     },
     {
       "source_path": "docs/build-release/test/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/continuous-test-java.md",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
       "redirect_document_id": false
     },
     {
@@ -2752,7 +2757,7 @@
     },
     {
       "source_path": "docs/build-release/test/set-up-automated-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3017,7 +3022,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications//howto-manage-team-notifications",
+      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
       "redirect_document_id": false
     },
     {
@@ -3992,7 +3997,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/set-up-automated-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -4007,7 +4012,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/languages/java",
       "redirect_document_id": false
     },
     {
@@ -5412,7 +5417,7 @@
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-archtecture",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
@@ -5812,17 +5817,17 @@
     },
     {
       "source_path": "docs/report/analytics/building-extension-against-analytics-service.md",
-      "redirect_url": "/azure/devops/report/extend-analytics/building-extension-against-analytics-service",
+      "redirect_url": "/azure/devops/report/extend-analytics/example-analytics-widget",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/widget-extension-against-analytics-service-configuration.md",
-      "redirect_url": "/azure/devops/report/extend-analytics/widget-extension-against-analytics-service-configuration",
+      "redirect_url": "/azure/devops/report/extend-analytics/example-analytics-widget",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/widget-extensions-against-analytics-service.md",
-      "redirect_url": "/azure/devops/report/extend-analytics/widget-extensions-against-analytics-service",
+      "redirect_url": "/azure/devops/report/extend-analytics/example-analytics-widget",
       "redirect_document_id": false
     },
     {
@@ -6457,7 +6462,7 @@
     },
     {
       "source_path": "docs/build-release/packages/npm.md",
-      "redirect_url": "/azure/devops/pipelines/packages/",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7072,7 +7077,7 @@
     },
     {
       "source_path": "docs/build-release/test/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/test/continuous-test-java",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7132,7 +7137,12 @@
     },
     {
       "source_path": "docs/build-release/test/set-up-continuous-testing-builds.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_url": "/azure/devops/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/test/set-up-continuous-testing-builds.md",
+      "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7222,7 +7232,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/azure-devops-project-python.md",
-      "redirect_url": "/azure/devops-project/azure/azure-devops-project-python",
+      "redirect_url": "/azure/devops-project/azure-devops-project-python",
       "redirect_document_id": true
     },
     {
@@ -7402,6 +7412,11 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-container-kubernetes.md",
+      "redirect_url": "/azure/devops/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/deploy-container-kubernetes.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-aks",
       "redirect_document_id": true
     },
@@ -7802,7 +7817,7 @@
     },
     {
       "source_path": "docs/security/lookup-account-owner-admin.md",
-      "redirect_url": "/azure/devops/organizations/security/lookup-account-owner-admin",
+      "redirect_url": "/azure/devops/organizations/security/lookup-organization-owner-admin",
       "redirect_document_id": false
     },
     {
@@ -9337,17 +9352,17 @@
     },
     {
       "source_path": "docs/work/customize/select-backlog-navigation-levels.md",
-      "redirect_url": "/azure/devops/organizations/select-backlog-navigation-levels",
+      "redirect_url": "/azure/devops/organizations/settings/select-backlog-navigation-levels",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/set-working-days.md",
-      "redirect_url": "/azure/devops/organizations/set-working-days",
+      "redirect_url": "/azure/devops/organizations/settings/set-working-days",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/show-bugs-on-backlog.md",
-      "redirect_url": "/azure/devops/organizations/show-bugs-on-backlog",
+      "redirect_url": "/azure/devops/organizations/settings/show-bugs-on-backlog",
       "redirect_document_id": false
     },
     {
@@ -9452,7 +9467,7 @@
     },
     {
       "source_path": "docs/work/customize/process/new-work-item-experience.md",
-      "redirect_url": "/azure/devops/reference/customize/process/new-work-item-experience",
+      "redirect_url": "/azure/devops/reference/process/new-work-item-experience",
       "redirect_document_id": false
     },
     {
@@ -10312,7 +10327,7 @@
     },
     {
       "source_path": "docs/work/backlogs/add-work-items-tfs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/add-work-items-tfs",
+      "redirect_url": "/azure/devops/boards/backlogs/add-work-items",
       "redirect_document_id": false
     },
     {
@@ -11027,3 +11042,4 @@
     }
   ]
 }
+

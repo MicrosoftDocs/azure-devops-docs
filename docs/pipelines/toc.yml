@@ -2,7 +2,7 @@
   href: index.md
 - name: Quickstarts
   items:
-  - name: Get started
+  - name: Overview
     href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
@@ -212,6 +212,8 @@
       href: test/set-up-continuous-test-environments-builds.md
     - name: Unit test with builds
       href: test/getting-started-with-continuous-testing.md
+    - name: Run UI tests in CI/CD
+      href: test/ui-testing-considerations.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results

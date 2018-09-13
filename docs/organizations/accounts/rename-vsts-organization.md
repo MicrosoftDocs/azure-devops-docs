@@ -47,7 +47,7 @@ To change your Azure DevOps organization URL, you need at least Basic access and
 
    ![Enter new organization name and save changes](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
