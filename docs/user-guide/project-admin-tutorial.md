@@ -22,7 +22,7 @@ With most Azure DevOps Services or Team Foundation Server (TFS) applications, yo
 
 As an organization owner or a project admin, there are a few items you may want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps. 
 
-## Add users  
+## Add users to a project 
 
 ::: moniker range="vsts"  
 The first task is to ensure that all members of your organization or group are added to your Azure DevOps organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 

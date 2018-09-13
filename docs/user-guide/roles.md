@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -19,24 +19,24 @@ monikerRange: '>= tfs-2013'
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
-However, if you work within a large organization, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.    
+However, if you work within a large organization, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.
 
 This topic provides a roadmap to support you in quickly coming up to speed on the features and tasks available to you based on the role you perform.  
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build pipelines, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build pipelines, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).
 
 ### Software developers
 
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in Azure DevOps Services or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
-	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
-	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
-	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
-	- [Share your code in Git using IntelliJ](/../java/download-intellij-plug-in.md).
-	- [Get Started with Git and Azure DevOps Services](../repos/git/gitquickstart.md).
+	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
+	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md)
+	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md)
+	- [Share your code in Git using IntelliJ](/../java/download-intellij-plug-in.md)
+	- [Get Started with Git and Azure DevOps Services](../repos/git/gitquickstart.md)
 - To get started using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
 	- [Share your code in TFVC using Eclipse](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)
@@ -68,19 +68,19 @@ One of the main advantages to working with Azure DevOps Services or TFS is the s
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Azure Pipelines](../pipelines/overview.md) and [Azure Test Plans](../test/overview.md). 
+To get started, see the overviews provided here: [Azure Pipelines](../pipelines/overview.md) and [Azure Test Plans](../test/overview.md).
 
 ### Stakeholders
 
-With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
+With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md).
 
 <a id="admin-roles">  </a>
 
 ## Administrator roles
 
-A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
+A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment.
 
 The main tasks are grouped as follows by membership within a security group or role:
 
@@ -95,7 +95,7 @@ Responsible for configuring team settings which include:
 - Team work item templates
 - Team alerts
 
-To get started, see [Configure team settings](../organizations/settings/configure-team-settings.md). 
+To get started, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md). 
 
 ### Project administrators
 
@@ -166,4 +166,5 @@ To get started, see [Server Administration (TFS)](/tfs/server/index).
 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
+- [Define organizations and projects](define-organizations-and-projects.md)
 

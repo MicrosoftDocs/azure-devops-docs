@@ -20,7 +20,7 @@ ms.date: 07/27/2018
 
 <a id="add-team-admin">  </a>  
 
-It's always a good idea to have more than one person with administration permissions for an area. You need to be a team administrator to [configure team settings](configure-team-settings.md). 
+It's always a good idea to have more than one person with administration permissions for an area. You need to be a team administrator to [Manage teams and configure team tools](manage-teams.md). 
 
 As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. 
 
@@ -120,7 +120,7 @@ From the web portal, open the admin page for the team.
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Configure team settings](configure-team-settings.md) 
+> [Manage teams and configure team tools](manage-teams.md) 
 
 ## Related articles
 
