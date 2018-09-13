@@ -27,53 +27,7 @@ Your Agile tool set, available from **Azure Boards**, consists of the following 
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
-- **Work items**: Use to quickly find work items assigned to you or pivot or filter work items based on other criteria  
-- **Boards**: Use to implement Kanban practices and visualize the flow of work for a team 
-- **Backlogs**: Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs  
-- **Sprints**: Use to plan work for a team to perform during a specific time frame referred to as a sprint 
-- **Queries**: Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates 
-- **Plans**: Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined assigned to sprints (iteration path) of selected teams against a calendar view. 
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">=tfs-2018"
-- **Work items**: Use to quickly find work items assigned to you or pivot or filter work items based on other criteria  
-- **Backlogs**: Which provide access to: 
-	- **Product and Portfolio backlogs**: Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs  
-	- **Boards**: Use to implement Kanban practices and visualize the flow of work for a team 
-	- **Sprint backlogs**: Use to plan work for a team to perform during a specific time frame referred to as a sprint 
-- **Queries**: Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates 
-- **Plans**: Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined assigned to sprints (iteration path) of selected teams against a calendar view. 
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-- **Backlogs**: Which provide access to: 
-	- **Product and Portfolio backlogs**: Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs  
-	- **Boards**: Use to implement Kanban practices and visualize the flow of work for a team 
-	- **Sprint backlogs**: Use to plan work for a team to perform during a specific time frame referred to as a sprint 
-- **Queries**: Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates 
-- **Plans**: Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined assigned to sprints (iteration path) of selected teams against a calendar view. 
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-- **Backlogs**: Which provide access to: 
-	- **Product and Portfolio backlogs**: Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs  
-	- **Boards**: Use to implement Kanban practices and visualize the flow of work for a team 
-	- **Sprint backlogs**: Use to plan work for a team to perform during a specific time frame referred to as a sprint 
-- **Queries**: Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates 
-::: moniker-end
-
----
+[!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 
 <a id="scale" />
 ## Teams and Agile tools
@@ -85,7 +39,7 @@ These Agile tool&mdash;**Boards**, **Backlogs**, **Sprints**, and **Plans**&mdas
 Your view and options available will differ somewhat depending on if you have [enabled the New Navigation feature](../../project/navigation/preview-features.md), which displays a vertical navigation interface along with several changes to navigation of Agile tools. 
 ::: moniker-end  
 
-## Work Items and work item types
+## Work items and work item types
 
 Open **Work Items** to access several personalized pivots and filter functions to focus on work items you care about. You can quickly find work items assigned to you, that you're following, or have viewed or modified recently&mdash;event when defined for different teams and projects. To learn more, see [View and add work items](../work-items/view-add-work-items.md). 
 

@@ -6,7 +6,7 @@ Here's what you'll see when you preview the new form.
 
 <img src="../_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
 
-For guidance in using the new form features, see [Add work items to plan and track your project](../backlogs/add-work-items.md).   
+For guidance in using the new form features, see [Add work items to plan and track your project](/azure/devops/boards/backlogs/add-work-items).   
 
 ## New form features  
 
@@ -25,13 +25,13 @@ Your data has more structure and organization. Plus, you can focus more easily o
 
 ### More viewing area to support core experiences  
  
-All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](../queries/history-and-auditing.md) for details on the new History tab.
+All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](/azure/devops/boards/queries/history-and-auditing) for details on the new History tab.
 
-![View change history](../backlogs/_img/add-work-item-history.png)    
+![View change history](/azure/devops/boards/backlogs/_img/add-work-item-history.png)    
 
 ### Access to other tasks
 
-Looking for the toolbar task options? You access them now through the ![Actions icon](../_img/icons/actions-icon.png) Actions icon.  
+Looking for the toolbar task options? You access them now through the ![Actions icon](/azure/devops/boards/_img/icons/actions-icon.png) Actions icon.  
 
-![User story, Actions menu](../backlogs/_img/new-form-action-menu.png)  
+![User story, Actions menu](/azure/devops/boards/backlogs/_img/new-form-action-menu.png)  
 

@@ -8,10 +8,12 @@ ms.manager: douge
 ms.date: 09/10/2018
 ms.author: douge
 author: erickson-doug
-monikerRange: '>= vsts'
+monikerRange: '>= tfs-2013'
 ---
 
 # Visual Studio Team Services is now Azure DevOps Services
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 On September 10th, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to "Azure DevOps Services". For more information about this change, see [this blog post](https://aka.ms/azurevsts).
 

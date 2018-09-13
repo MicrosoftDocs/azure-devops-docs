@@ -82,7 +82,8 @@ jobs:
   pool:
     name: string
     demands: string | [ string ]
-    container: string
+  
+  container: string
   
   steps:
     - script: echo Hello world
@@ -204,7 +205,6 @@ If you specify demands in both the pipeline and in a job, the union of the two s
 
 Learn more about [build and release agent capabilities](../agents/agents.md#capabilities).
 
-<!-- remove until containers roll out everywhere 
 ## Container image
 
 If you are using YAML, you can specify a Docker container to use for your agent job.
@@ -224,7 +224,7 @@ jobs:
 - job: job_container
   pool:
     name: default
-    container: dev1
+  container: dev1
   steps:
   - script: printenv
 ```
@@ -251,9 +251,9 @@ resources:
       envVariable2: envValue2
 jobs:
 - job: job_container
+  container: $[variables['runtimeContainer']]
   pool:
     name: default
-    container: $[variables['runtimeContainer']]
     matrix:
       container_1:
         runtimeContainer: dev1
@@ -277,7 +277,7 @@ YAML is not yet supported in TFS.
 Containers are not yet supported in the web editor.
 
 ---
--->
+
 ## Timeouts
 
 To avoid hanging up your resources when your release is hung or waiting too long, it's a good idea to set a limit on how long your release is allowed to run.

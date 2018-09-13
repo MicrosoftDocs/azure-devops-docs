@@ -58,7 +58,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## Resources
 
-* [New User Guide](../../user-guide/index.yml)
+* [Azure DevOps Services user guide](../../user-guide/index.yml)
 * [Public Projects](../public/index.md)
 * [Security & identity](../../organizations/security/index.md)
 * [Migrate from TFS to Azure DevOps Services](../../articles/migrate-to-vsts-from-tfs.md)

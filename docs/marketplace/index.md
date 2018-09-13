@@ -7,7 +7,7 @@ ms.assetid: afd7c3b8-a09f-4a38-8207-bc84e678a39b
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
-ms.date: 09/10/2018
+ms.date: 09/12/2018
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -36,7 +36,6 @@ Extensions for Azure DevOps Services and Team Foundation Server (TFS) can be ins
 ## Troubleshooting
 
 * [Marketplace FAQs](./faq-extensions.md)
-* [Trials FAQs](../organizations/billing/faq-extension-trials.md)
 
 
 
