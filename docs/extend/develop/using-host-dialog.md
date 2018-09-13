@@ -52,7 +52,7 @@ The `uri` property references a page that will be rendered within the content ar
             <input id="inpName" />
         </p>
         <p>
-            <label>Data of birth:</label>
+            <label>Date of birth:</label>
             <input id="inpDob" />
         </p>
         <p>

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ms.date: 08/09/2018
 ---
 
-# Syntax guidance for for markdown usage 
+# Syntax guidance for markdown usage 
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
