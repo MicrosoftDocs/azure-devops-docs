@@ -26,7 +26,7 @@ to control access and authenticate users.
 When you organize directory members with 
 [Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups), 
 you can reuse those groups to manage permissions 
-in bulk for your Aorganization. 
+in bulk for your organization. 
 Just add those groups to the group that you want. 
 For example, add them to built-in groups like 
 Project Collection Administrators or Contributors, 

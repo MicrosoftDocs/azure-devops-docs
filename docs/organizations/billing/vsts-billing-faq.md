@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -20,10 +20,10 @@ Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/d
 
 You have to set up billing when you need more than the *free tier* of resources in your Azure DevOps organization: 
 
-* 5 Azure DevOps users (Basic)
-* 5 Azure Artifacts users
+* Five Azure DevOps users (Basic)
+* Five Azure Artifacts users
 * Free tier of Microsoft-hosted continuous integration/continuous development (CI/CD) (1 concurrent job, up to 30 hours per month)
-* 1 self-hosted CI/CD concurrent job
+* One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
 You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
@@ -131,25 +131,62 @@ A: Yes, you can use the same Azure subscription for billing across multiple orga
 
 A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Security** > **Project Collection Administrators** >  **Members**.
+
+   ![Security page, project collection administrators members](_img/security-members-project-collection-administrators.png)
+
+# [Previous navigation](#tab/previous-nav)
+
 1. Go to your organization's security settings.
 
-   <img alt="Click gear button, Security" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+   ![Open admin settings, security page](../../_shared/_img/settings/open-admin-settings-security-horz.png)
 
-2. Under **Security**, view your project collection administrators.
+2. Select **Project Collection Administrators** > **Members**.
 
    <img alt="Go to Project Collection Administrators, Members" src="../../_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
 
+---
+
 ### Q: How do I find the organization owner?
 
-A: You can find the current owner in your Aorganization settings.
+A: You can find the current owner in your organization settings.
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Find the current organization owner.
+
+   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
+
+
+# [Previous navigation](#tab/previous-nav)
 
 1. Go to your organization settings.
 
     <img alt="Go to organization settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-2. Under **Settings**, find the current owner.
+2. Find the current organization owner.
 
-    <img alt="Find current owner" src="../../_shared/_img/organization-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
+
+---
 
 ### Q: Can I buy Azure DevOps from my software reseller?
 
