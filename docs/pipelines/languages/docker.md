@@ -313,7 +313,7 @@ To push the image to Azure Container Registry, use the following snippet:
 
 ```yaml
 - script: |
-    docker login -u $(dockerId).azurecr.io -p $(pswd) $(dockerid).azurecr.io
+    docker login -u $(dockerId).azurecr.io -p $(pswd) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
 ```
 
