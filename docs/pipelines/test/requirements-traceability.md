@@ -16,10 +16,6 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
 **Requirements traceability** is the ability to relate and document two or more phases of 
 a development process, which can then be traced both forward or backward from its origin.
 Requirements traceability help teams to get insights into indicators such as
@@ -27,6 +23,10 @@ Requirements traceability help teams to get insights into indicators such as
 A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
 
 > Read the [glossary](./test-glossary.md) to understand test report terminology.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 <a name="agileteams"></a>
 ## Agile teams running automated tests 

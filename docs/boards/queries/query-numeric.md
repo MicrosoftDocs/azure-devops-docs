@@ -221,7 +221,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
 <p>Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double</p>
 </td>
-<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)</td>
+<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)<p>Feature, Epic</p></td>
 </tr>
 <tr>
 	<td><p>Story Points</p></td>

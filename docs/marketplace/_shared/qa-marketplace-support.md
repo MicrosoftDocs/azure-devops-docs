@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-### Q: How do I get support for the Azure DevOps Marketplace?
+### Q: How do I get support for the Visual Studio Marketplace?
 
-A: Depending on the support you need:
+A: Depending on the support you need, choose from the following:
 
 * Billing questions -- [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions -- [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
