@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-# Manage organizations
+# Organization management
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
