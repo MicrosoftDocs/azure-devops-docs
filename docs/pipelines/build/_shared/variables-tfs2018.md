@@ -56,6 +56,16 @@ ms.topic: include
 </tr>
 
 <tr>
+<td>Agent.ToolsDirectory</td>
+<td>
+The directory used by tasks such as [Node Tool Installer](../../tasks/tool/node-js.md) and [Use Python Version](../../tasks/tool/use-python-version.md) to switch between multiple versions of a tool.
+These tasks will add tools from this directory to <code>PATH</code> so that subsequent build steps can use them.
+<br><br>
+Learn about [managing this directory on a self-hosted agent](https://go.microsoft.com/fwlink/?linkid=2008884).
+</td>
+</tr>
+
+<tr>
 <td>Agent.WorkFolder</td>
 <td>
 The working directory for this agent.
