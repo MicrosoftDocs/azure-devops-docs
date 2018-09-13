@@ -315,7 +315,7 @@ Setting capacity and [estimating remaining work for each task](assign-work-sprin
 - [Sprint burndown](../sprints/sprint-burndown.md)
 - [Velocity](../../report/dashboards/velocity-chart-data-store.md)    
 - [Forecasting](../sprints/forecast.md)    
-- [Configure team settings](../../organizations/settings/configure-team-settings.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
 
 

@@ -96,7 +96,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../boards/queries/set-query-permissions.md)   
-- [Team admin role](../organizations/settings/team-administrator-permissions.md)  
+- [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
 - [Test](../organizations/security/set-project-collection-level-permissions.md)  
 - [Work item tags](../organizations/security/permissions.md#tags)  
 
@@ -2105,7 +2105,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Change team settings</b></p>
-<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/configure-team-settings.md).</p>
+<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/manage-teams.md).</p>
 ![Switch team context](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -2336,7 +2336,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/configure-team-settings.md).</p>
+<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/manage-teams.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2653,7 +2653,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team?</b></p>
-<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/configure-team-settings.md) to plan and manage work and facilitate collaboration.  </p>
+<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/manage-teams.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
 <p>Add organizations-[Azure DevOps Services](../organizations/accounts/add-team-members-vs.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
@@ -2666,7 +2666,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Add a team admin</b></p>
-<p>Add users to the team admin role to enable them to [configure team settings](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add users to the team admin role to enable them to [Manage teams and configure team tools](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2699,7 +2699,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Configure team settings</b></p>
-<p>Configure, customize, and manage all [team-related activities](../organizations/settings/configure-team-settings.md)</p>
+<p>Configure, customize, and manage all [team-related activities](../organizations/settings/manage-teams.md)</p>
 
 
 

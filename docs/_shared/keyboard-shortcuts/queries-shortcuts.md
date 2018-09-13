@@ -5,7 +5,7 @@ ms.topic: include
 
 <a id="queries-web-portal-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [working with queries](/azure/devops/boards/queries/using-queries) in the web portal. To view the valid shortcuts, enter **Shift+?** from the **Work>Queries** page. 
+You can use the following keyboard shortcuts when [working with queries](/azure/devops/boards/queries/using-queries) in the web portal. To view the valid shortcuts, enter **Shift+?** from **Boards>Queries** or **Work>Queries**. 
 
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from Azure DevOps Services or TFS 2015.2 or later versions.  

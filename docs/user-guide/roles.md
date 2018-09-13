@@ -95,7 +95,7 @@ Responsible for configuring team settings which include:
 - Team work item templates
 - Team alerts
 
-To get started, see [Configure team settings](../organizations/settings/configure-team-settings.md). 
+To get started, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md). 
 
 ### Project administrators
 

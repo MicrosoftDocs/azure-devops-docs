@@ -197,7 +197,7 @@ Stakeholder access can view the charts on the dashboard.
 Learn more about
 [dashboards](../report/dashboards.md). 
 Or learn more about
-[team administration](../organizations/settings/configure-team-settings.md).
+[team administration](../organizations/settings/manage-teams.md).
 
 ## See also
 

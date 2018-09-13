@@ -187,7 +187,7 @@ For information about each access levels, see [About access levels](../../organi
 *	[Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md)  
 *	[Add another team](../../organizations/settings/add-teams.md)  
 *	[Add a team administrator](../../organizations/settings/add-team-administrator.md)
-*	[Configure team settings](../../organizations/settings/configure-team-settings.md)   
+*	[Manage teams and configure team tools](../../organizations/settings/manage-teams.md)   
 
 
 

@@ -80,7 +80,7 @@ To learn more, see [Grant permissions to manage extensions](../../marketplace/ho
 
 For [each team that you add](../../organizations/settings/add-teams.md), you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing team assets.
 
-For details, see [Team administrator role and permissions](../settings/team-administrator-permissions.md).
+For details, see [Manage teams and configure team tools](../settings/manage-teams.md).
 
 > [!NOTE]
 > Members of the Project Administrators or Project Collection Administrators groups can manage all team admin areas for all teams.
