@@ -7,7 +7,7 @@
     #goals: 'package' # Optional
     #options: # Optional
     #publishJUnitResults: true 
-    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
+    #testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
     #codeCoverageClassFilter: # Optional
