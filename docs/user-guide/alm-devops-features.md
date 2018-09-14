@@ -1021,7 +1021,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="package-management"></a>
 
-### Package management (Azure DevOps Services)
+## Azure Artifacts (Azure DevOps Services)
 
 <table>
 <tbody>
@@ -1029,8 +1029,8 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 
-<p><b>What is package management?</b></p>
-<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md).</p>
+<p><b>What is Azure Artifacts?</b></p>
+<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md).</p>
 
 <p><b>Create feeds </b></p>
 <p>[Create feeds](../artifacts/feeds/create-feed.md) to share code through packages.</p>
@@ -2134,7 +2134,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../artifacts/overview.md).</p>
+<p>Share code as binary assets and control dependencies by [subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md).</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../pipelines/overview.md), and by controlling the process through approvals for each step.</p>
