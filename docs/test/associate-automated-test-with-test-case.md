@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
-  Automated tests can also be run from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] in Azure DevOps and TFS.
+  Automated tests can also be run from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
   If you are using [XAML builds](../pipelines/test/reference-qa.md#xaml-build) you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 

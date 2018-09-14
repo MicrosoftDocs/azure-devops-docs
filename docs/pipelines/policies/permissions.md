@@ -76,11 +76,11 @@ The following permissions are defined in Build. All of these can be set at both 
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
-**Release Administrators** are given all of the above permissions by
+**Build Administrators** are given all of the above permissions by
 default. **Contributors** are given all permissions except
-**Administer release permissions**. **Readers**, by default,
-are denied all permissions except **View release pipeline** and
-**View releases**.
+**Administer build permissions**. **Readers**, by default,
+are denied all permissions except **View build pipeline** and
+**View builds**.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
