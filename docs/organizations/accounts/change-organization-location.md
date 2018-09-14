@@ -41,7 +41,7 @@ For information on region availability, see [Products available by region](https
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
-2. From your organization toolbar, select **Organization settings**.
+2. Select **Organization settings**.
 
     ![Choose the gear icon, go to Organization settings](../../_shared/_img/settings/open-account-settings.png)
 
