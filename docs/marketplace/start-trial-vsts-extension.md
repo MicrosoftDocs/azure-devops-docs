@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 **Azure DevOps Services**
 
-To add new features and capabilities to your Azure DevOps organization, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions. In this quickstart, you learn how to start a free trial for a preview extension.
+To add new features and capabilities to your Azure DevOps organization, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions. In this quickstart, you learn how to start a free trial for a preview extension.
 
 To learn about building your own Azure DevOps extensions, see [developing](http://aka.ms/vsoextensions) and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
@@ -32,7 +32,7 @@ To learn about building your own Azure DevOps extensions, see [developing](http:
 
 * Private extensions must be shared with your Azure DevOps organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
-1. Sign in to the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/vsts).
+1. Sign in to the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 
     ![Visual Studio Marketplace > Azure DevOps](../organizations/billing/_img/_shared/extensions-marketplace.png)
 

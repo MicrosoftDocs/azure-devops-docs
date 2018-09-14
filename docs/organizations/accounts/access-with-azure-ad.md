@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-/ms.date: 09/10/2018
+/ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,7 +21,7 @@ your Azure DevOps organization the same way that you
 can with Microsoft services like Office 365 and Azure?
 If your organization was created with a Microsoft account,
 you can connect your organization to your
-organization's [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
+[Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 You can then sign in to Azure DevOps with the same username
 and password that you use with these Microsoft services.
 You can also enforce policies for accessing
@@ -58,19 +58,16 @@ You need the following:
 
 * [Ownership of the Azure DevOps organization](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
 
-* A ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),
-such as a [Pay-As-You-Go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),
-associated with Azure Active Directory and at
-least co-administrator permissions for your subscription.
-You'll need both to make your directory appear in the Azure portal,
-so that you can link your subscription and connect Azure AD to your organization. Learn about
+* A ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),such as a [Pay-As-You-Go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),associated with Azure Active Directory and at least co-administrator permissions for your subscription.
+
+  You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect Azure AD to your organization. Learn about
 [Azure subscription co-administrator permissions](../billing/add-backup-billing-managers.md).
 
   [Want to use Office 365 Azure AD with Azure DevOps?](faq-azure-access.md#o365aad)
 
 * Global administrator permissions for your directory so you can add current Azure DevOps users to that directory.
 
-Otherwise, work with your directory's global administrator to add users.
+  Otherwise, work with your directory's global administrator to add users.
 Learn more about [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
   To check your permissions, [sign in to the Azure portal](https://ms.portal.azure.com) with your
@@ -90,25 +87,23 @@ your organization.
 
 Your work in Azure DevOps is associated with your sign-in address.
 After your organization is connected to your directory,
-users will continue working seamlessly if their
+users continue working seamlessly if their
 sign-in addresses appear in the connected directory.
-If they don't, you'll have to [add those users to your directory](add-users-to-aad.md#SetUpCurrentUsers).
-Your organization might have policies about adding users to the directory,
-so find out more first.
+If their sign-in addresses don't appear, you must [add those users to your directory](add-users-to-aad.md#SetUpCurrentUsers).
+Your organization might have policies about adding users to the directory, so find out more first.
 
-### What if we can't use the same sign-in addresses?  
+### What if we can't use the same sign-in addresses?
 
-You'll have to add these users to the directory with new work or school accounts.
+You have to add these users to the directory with new work or school accounts.
 If they have existing work or school accounts, they can use those instead. Their work in Azure DevOps
-won't be lost and will stay with their current sign-in addresses.  You must add them as new
+won't be lost and will stay with their current sign-in addresses. You must add them as new
 users to Azure DevOps, reassign access levels, and readd them to any projects. Users can migrate work that they want to keep,
 except for their work history. Learn [how to manage organization users](add-organization-users-from-user-hub.md).
 
-### What happens to tools that use my credentials, like alternate credentials?  
+### What happens to tools that use my credentials, like alternate credentials?
 
 Alternate credentials won't work anymore for
-tools that run outside a web browser, like the Git command-line tool.  You'll have
-to [set up your credentials](http://support.microsoft.com/kb/2991274/) again for the organization that you connected.
+tools that run outside a web browser, like the Git command-line tool.  You have to [set up your credentials](http://support.microsoft.com/kb/2991274/) again for the organization that you connected.
 
 ## What if I accidentally delete a user in Azure AD?
 

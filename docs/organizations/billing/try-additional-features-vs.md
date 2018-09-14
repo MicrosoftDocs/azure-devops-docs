@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -45,7 +45,7 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
-    ![Find extension trial](_img/get-vsts-extensions/marketplace.png)
+    ![Find extension trial](../billing/_img/_shared/extensions-marketplace.png)
 
 2. Find and select a paid extension that you want to try.
 

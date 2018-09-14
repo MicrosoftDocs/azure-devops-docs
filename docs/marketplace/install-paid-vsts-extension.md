@@ -32,7 +32,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 
 ## Find and buy the extension
 
-1.  Sign in to the [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/vsts).
+1.  Sign in to the [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/azuredevops).
 	
     ![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
 

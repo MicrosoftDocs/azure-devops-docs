@@ -12,7 +12,7 @@ author: KathrynEE
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
-# Grant or restrict access to select features and functions
+# Tutorial: Grant or restrict access to select features and functions
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -20,18 +20,18 @@ You can grant or restrict access to resources that you manage in Azure DevOps Se
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
-Use this topic to learn: 
+Use this topic you learn how to do the following: 
 
 > [!div class="checklist"]
-> * Recommended method for granting and restricting permissions       
-> * How to delegate tasks by assigning select permissions to specific roles
-> * How to restrict access to view or modify objects 
-> * How to restrict modification of work items based on a user or group 
+> * Recommended method for granting and restricting permissions
+> * Delegate tasks by assigning select permissions to specific roles
+> * Restrict access to view or modify objects
+> * Restrict modification of work items based on a user or group
 
 
 
 > [!TIP]    
-> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down. 
+> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down.
 
 
 ## Recommended method for granting and restricting permissions 
