@@ -1,6 +1,6 @@
 ---
-title: Build and Release Automation Jobs in Azure Pipelines and TFS
-description: Understand Build and Release Jobs in Azure Pipelines and Team Foundation Server (TFS)
+title: Build and release jobs in Azure Pipelines and TFS
+description: Understand build and release jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -203,7 +203,7 @@ If you specify demands in both the pipeline and in a job, the union of the two s
 
 ---
 
-Learn more about [build and release agent capabilities](../agents/agents.md#capabilities).
+Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 ## Container image
 
@@ -280,15 +280,18 @@ Containers are not yet supported in the web editor.
 
 ## Timeouts
 
-To avoid hanging up your resources when your release is hung or waiting too long, it's a good idea to set a limit on how long your release is allowed to run.
-Use the job timeout setting to specify the limit in minutes for jobs run by this job.
-A zero value means that the jobs will run forever (except in hosted pools, where they will be forcibly stopped).
+To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
+* Forever on self-hosted agents
+* For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
+* For 30 minutes on Microsoft-hosted agents with a private project or private repository
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
+The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
+
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
 pool:
@@ -505,8 +508,7 @@ In a release pipeline, you may choose to skip the
 
 ::: moniker range=">=tfs-2018"
 
-Alternatively, You can choose to download specific 
-  [artifacts](../release/artifacts.md#download) during the job execution in a release. Use this option if the tasks in a particular job rely on only specific artifacts.
+Alternatively, you can choose to download specific [artifacts](../release/artifacts.md#download) during the job execution in a release. Use this option if the tasks in a particular job rely on only specific artifacts.
 
 ::: moniker-end
 
