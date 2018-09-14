@@ -42,12 +42,12 @@ You can then use the service connection in your [build and release pipeline task
 
 The following Azure tasks are validated with Azure Stack:
 
-* [Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3)
-* [Azure File Copy](https://visualstudio.microsoft.com/docs/build/steps/deploy/azure-file-copy)
-* [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
-* [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment)
-* [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage) 
-* [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
+* [Azure PowerShell](../tasks/deploy/azure-powershell.md)
+* [Azure File Copy](../tasks/deploy/azure-file-copy.md)
+* [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
+* [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
+* [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md) 
+* [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
 
 ### How do I resolve SSL errors during deployment?
 

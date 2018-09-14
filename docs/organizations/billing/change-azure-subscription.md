@@ -55,7 +55,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Azure DevOps organizations**. 
+2. Go to **All services** > **Azure DevOps Services organizations**.
 
    ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 

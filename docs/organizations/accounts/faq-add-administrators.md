@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge  
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -45,9 +45,7 @@ A: The following permissions are required:
 
 #### Q: Where can I find information about each individual permission? 
 
-A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md).
-
-## Project
+A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permissions, complete the following steps:
 
 1. From the team page, select the settings icon ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
