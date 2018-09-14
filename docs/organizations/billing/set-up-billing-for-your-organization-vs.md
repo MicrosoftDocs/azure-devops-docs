@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -40,9 +40,9 @@ If you'd like to set up billing for your organization prior to buying something 
 
     [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
-2. Choose **All services** and then select **Team Services administration**.
+2. Go to **All services** > **Azure DevOps Services organizations**. 
 
-   ![More services, Developer tools, organizations, select your organization](_img/set-up-billing/azure-portal-team-services.png)
+   ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.
 
@@ -56,9 +56,7 @@ If you'd like to set up billing for your organization prior to buying something 
 
    ![Select an Azure subscription](_img/set-up-billing/azure-portal-link-your-organization.png)
 
- After Azure sets up the link, your organization appears linked to your Azure subscription.
-
-![Your organization is now linked to your Azure subscription](_img/set-up-billing/azure-portal-billing-set-up-complete.png)
+ After the link is set up in Azure, your organization appears linked to your Azure subscription.
 
 ## Next steps
 

@@ -142,7 +142,7 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Share code</h3>
-                                                        <p><a href="/azure/devops/artifacts/overview">Package management</a></p>
+                                                        <p><a href="/azure/devops/artifacts/overview">Package Management</a></p>
 														<p><a href="/azure/devops/artifacts/get-started-nuget">NuGet</a></p>
 														<p><a href="/azure/devops/artifacts/get-started-npm">npm</a></p>
 														<p><a href="/azure/devops/artifacts/get-started-maven">Maven</a></p>

@@ -305,16 +305,15 @@ for different purposes separately if required.
 no parallelism) setting, the task will run in the same way as on the previous test agent. In the
 multiple executions and multiple agents modes, it is replicated on the agents, in the same way as all other tasks.
 
-<a name="run-ui-tests"></a>
-#### Q: What is required to run UI tests?
-
-**A**: To run UI tests, you must run the agent in [interactive mode](../../pipelines/agents/agents.md#account) with auto-logon enabled.
-Agents set to run as a service cannot run UI tests. Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
-
 <a name="hosted-ui-tests"></a>
 #### Q: Can I run UI tests on the Microsoft-hosted agents?
 
-**A**: No, running UI tests on the [Microsoft-hosted agents](../../pipelines/agents/agents.md#microsoft-hosted-agents) is not possible at present.
+**A**: Yes, see [UI testing considerations](ui-testing-considerations.md).
+
+<a name="run-ui-tests"></a>
+#### Q: What is required to run UI tests?
+
+**A**: See [UI testing considerations](ui-testing-considerations.md).
 
 <a name="contains-ui-tests"></a>
 #### Q: What does the 'Test mix contains UI tests' checkbox do?

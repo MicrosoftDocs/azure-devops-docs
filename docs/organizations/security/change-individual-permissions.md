@@ -1,6 +1,6 @@
 ---
 title: Change individual or group permissions, grant select access to specific functions 
-description: Add custom security groups, change permissions for groups or individuals 
+description: Add custom security groups, change permissions for groups or individuals tutorial
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -13,7 +13,7 @@ ms.date: 07/27/2018
 ---
 
 
-# Change individual or group permissions, grant select access to specific functions
+# Tutorial: Change individual or group permissions, grant select access to specific functions
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -25,7 +25,7 @@ The three ways to change permissions for an individual are:
 - For object-level permissions: Add the user account and set permissions
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
-In this topic you'll learn how to:
+In this topic you learn how to do the following:
 > [!div class="checklist"]
 > * Create a custom security group 
 > * Set permissions for a custom security group 
