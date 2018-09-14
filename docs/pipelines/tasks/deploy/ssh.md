@@ -48,7 +48,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## See also
 
-* [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)
+* [Install SSH Key task](../utility/install-ssh-key.md)
 
 * [Copy Files Over SSH](copy-files-over-ssh.md)
 
