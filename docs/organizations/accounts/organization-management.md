@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/13/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -43,7 +43,7 @@ and cloud-based load testing.
 
 ## Connect to your organization
 
-After Azure DevOps Services creates your organization,
+Once your Azure DevOps organization is created,
 [connect to your organization](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
 and add code to your project.
@@ -61,7 +61,7 @@ Or if you don't want to use a credential manager, you can
 
 To share work with others,
 [add users and assign access](add-organization-users-from-user-hub.md).
-That way, you control the access that each user gets.
+That way, you control each user's access.
 Or [add users to your project](add-team-members-vs.md),
 and let Azure DevOps Services assign the next available access to them.
 

@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Create your Azure DevOps organization
+# Quickstart: Create your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -29,7 +29,7 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 ## Prerequisites
 
 * Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md).
-*  Before you begin, do either of the following:
+* Before you begin, do either of the following:
 
    * Complete the following steps to use only Microsoft accounts with your organization. Ignore the Azure Active Directory (Azure AD) callouts.
 
@@ -96,7 +96,7 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps organiz
 
     **Microsoft account and Azure AD**: 
     
-    Azure DevOps Services creates your first project as *MyFirstProject*	and uses Agile as your default work item process to organize your work. 
+    Your first project is created in Azure DevOps Services as *MyFirstProject* and uses Agile as your default work item process to organize your work.
 	
     Select **Change details** to [rename your project, change the organization location, or select another process, such as Scrum](faq-create-organization.md#organization-location).
 	

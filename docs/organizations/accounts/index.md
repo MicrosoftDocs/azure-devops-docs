@@ -19,7 +19,7 @@ Sign up for an Azure DevOps organization. Add users and manage permissions and a
 
 ## 5-minute quickstarts
 
-* [Create your Azure DevOps organization](create-organization-msa-or-work-student.md)
+* [Create your organization](create-organization-msa-or-work-student.md)
 * [Pay for users](../billing/buy-basic-access-add-users.md)
 * [Buy CI/CD](../billing/buy-more-build-vs.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)
