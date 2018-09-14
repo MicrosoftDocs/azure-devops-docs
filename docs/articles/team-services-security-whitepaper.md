@@ -14,13 +14,13 @@ monikerRange: 'vsts'
 
 # Data Protection Overview
 
-**Microsoft Azure DevOps Services**
+**Azure DevOps Services**
 
-Microsoft Azure DevOps Services is a cloud-hosted application for
+Azure DevOps Services is a cloud-hosted application for
 your development projects, from planning through deployment. Based on
 the capabilities of Team Foundation Server, with additional cloud
 services, Azure DevOps Services manages your source code, work items, builds, tests, and
-much more. Azure DevOps Services uses Microsoft Azure's Platform as a Service
+much more. Azure DevOps Services uses Azure's Platform as a Service
 infrastructure and many of Azure's services, including Azure SQL
 databases, to deliver a reliable, globally available service for your
 development projects. Because important data is at stake, this white
@@ -66,11 +66,11 @@ datacenter. Thus, it is important to classify your data, its sensitivity
 should also categorize your data relative to an overall information
 security management policy.
 
-## Built on Microsoft Azure
+## Built on Azure
 
 ![Azure DevOps Services high-level architecture diagram ](./_img/team-services-security-whitepaper/Figure1_VSOArchitecture.png)
 
-Azure DevOps Services is hosted entirely in Microsoft Azure datacenters and uses many of the 
+Azure DevOps Services is hosted entirely in Azure datacenters and uses many of the 
 core Azure services including Compute, Storage, Networking, SQL Database, 
 Identity and Access Management Services, and Service Bus. This lets us 
 focus on the unique aspects of running Azure DevOps Services while taking advantage
@@ -119,7 +119,7 @@ specific assets like version control folders and work item area paths.
 
 ## Data availability
 
-Azure DevOps Services leverages many of the Microsoft Azure storage
+Azure DevOps Services leverages many of the Azure storage
 features to ensure data availability in the case of hardware failure,
 service disruption, or data center disasters. Additionally, the Azure DevOps Services team
 has procedures to protect data from accidental or malicious deletion.
@@ -581,7 +581,7 @@ Azure Active Directory (Azure AD) provides the capability for administrators to
 control access to Azure resources and applications such as Azure DevOps Services.  With 
 conditional access control in place, Azure AD checks for the specific conditions 
 you set for a user to access an application. After access requirements are met, 
-the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) 
+the user is authenticated and can access the application.  Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access) 
 to learn more about conditional access policy (CAP).  One limitation of Azure AD conditional access policy is that it is enforced at the time a user signs in, and therefore access can continue 
 to be granted even if conditions change which would otherwise conflict with policy. 
 For example, you may choose to have location conditions applied to limit access to 
