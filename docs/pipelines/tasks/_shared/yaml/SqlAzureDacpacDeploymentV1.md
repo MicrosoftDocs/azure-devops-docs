@@ -8,8 +8,8 @@
     #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
     serverName: 
     databaseName: 
-    #sqlUsername: # Optional
-    #sqlPassword: # Optional
+    sqlUsername: 
+    sqlPassword: 
     #deploymentAction: 'Publish' # Options: publish, extract, export, import, script, driftReport, deployReport
     #taskNameSelector: 'DacpacTask' # Optional. Options: dacpacTask, sqlTask, inlineSqlTask
     #dacpacFile: # Required when taskNameSelector == DacpacTask || DeploymentAction == Script || DeploymentAction == DeployReport

@@ -1,19 +1,19 @@
 ```YAML
 # Azure App Service Deploy
-# Update Azure App Services on Windows, Web App on Linux with built-in images or Docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps, Mobile Apps, API applications, Web Jobs using Web Deploy / Kudu REST APIs
+# Update Azure App Services on Windows, Web App on Linux with built-in images or Docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps on Windows or Linux with Docker Containers, Mobile Apps, API applications, Web Jobs using Web Deploy / Kudu REST APIs
 - task: AzureRmWebAppDeployment@4
   inputs:
     #connectionType: 'AzureRM' # Options: azureRM, publishProfile
     #azureSubscription: # Required when connectionType == AzureRM
     #publishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml' # Required when connectionType == PublishProfile
     #publishProfilePassword: # Required when connectionType == PublishProfile
-    #appType: 'webApp' # Required when connectionType == AzureRM# Options: webApp, webAppLinux, webAppContainer, functionApp, apiApp, mobileApp
+    #appType: 'webApp' # Required when connectionType == AzureRM# Options: webApp, webAppLinux, webAppContainer, functionApp, functionAppContainer, apiApp, mobileApp
     #webAppName: # Required when connectionType == AzureRM
     #deployToSlotOrASE: false # Optional
     #resourceGroupName: # Required when deployToSlotOrASE == True
     #slotName: 'production' # Required when deployToSlotOrASE == True
-    #dockerNamespace: # Required when appType == WebAppContainer
-    #dockerRepository: # Required when appType == WebAppContainer
+    #dockerNamespace: # Required when appType == WebAppContainer || WebAppkind == FunctionAppContainer
+    #dockerRepository: # Required when appType == WebAppContainer || WebAppkind == FunctionAppContainer
     #dockerImageTag: # Optional
     #virtualApplication: # Optional
     #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip' # Required when connectionType == PublishProfile || WebAppKind == WebApp || WebAppKind == ApiApp || WebAppKind == FunctionApp || WebAppKind == MobileApp || WebAppKind == WebAppLinux
