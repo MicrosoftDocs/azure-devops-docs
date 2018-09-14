@@ -60,9 +60,7 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 
 ## Timeouts
 
-Use the job timeout to specify the timeout in minutes for jobs in this job. A zero
-  value for this option means that the timeout is effectively infinite and so, by default, jobs run until they complete or fail.
-  You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+Use the job timeout setting to specify the limit in minutes for running the job. A zero value for this option means that the timeout is effectively infinite and so, by default, jobs run until they complete or fail. You can also set the timeout for each task individually. See [task control options](tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 
 # [YAML](#tab/yaml)
 
