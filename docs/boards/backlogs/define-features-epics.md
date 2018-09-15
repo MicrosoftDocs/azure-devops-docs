@@ -286,7 +286,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
-- [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)  
+- [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 

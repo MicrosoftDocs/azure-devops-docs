@@ -8,8 +8,8 @@ ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/29/2017  
----
+ms.date: 09/13/2018
+--- 
 
 
 
@@ -22,11 +22,11 @@ ms.date: 09/29/2017
 
 <!--- Supports FWLINK 529135 --> 
 
-When a sprint backlog contains same-category, nested  work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
+When a product, portfolio, or sprint backlog contains same-category, nested  work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
 
 To fix this, take the following actions: 
 
-1. Click the **Create query** link on the backlog page. 
+1. Choose the **Create query** link on the backlog page. 
     
 	![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
 
