@@ -3,7 +3,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: About Scrum
+  - name: About sprints and Scrum
     href: scrum-overview.md
   - name: "Backlogs, boards, & plans"
     href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json

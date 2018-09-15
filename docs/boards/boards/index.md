@@ -59,7 +59,7 @@ Collaborate with others by adding, updating, and reviewing your work items as ca
 
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## How-to Guides
 
@@ -80,7 +80,7 @@ Collaborate with others by adding, updating, and reviewing your work items as ca
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Reference   
 
 - [Kanban board controls](kanban-board-controls.md) 

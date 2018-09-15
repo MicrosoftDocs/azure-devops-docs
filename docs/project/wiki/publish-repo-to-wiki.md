@@ -284,7 +284,7 @@ Misc content
 
 ## Related articles
 
-- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
 - [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
 - [Update wiki pages offline](wiki-update-offline.md)
