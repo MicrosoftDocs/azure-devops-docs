@@ -10437,7 +10437,7 @@
     },
     {
       "source_path": "docs/work/backlogs/stack-rank-backlog-position.md",
-      "redirect_url": "/azure/devops/boards/backlogs/stack-rank-backlog-position",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#stack-rank",
       "redirect_document_id": false
     },
     {
@@ -10447,7 +10447,12 @@
     },
     {
       "source_path": "docs/work/backlogs/work-multi-team-ownership-backlogs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/work-multi-team-ownership-backlogs",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#multi-team",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/work-multi-team-ownership-backlogs.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#multi-team",
       "redirect_document_id": false
     },
     {
@@ -11048,6 +11053,11 @@
     {
       "source_path": "docs/organizations/settings/team-administrator-permissions.md",
       "redirect_url": "/azure/devops/organizations/settings/manage-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/stack-rank-backlog-position.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#stack-rank",
       "redirect_document_id": false
     }
   ]

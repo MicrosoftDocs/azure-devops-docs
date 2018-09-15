@@ -162,7 +162,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Multi-team backlog ownership</b></p>
-<p>Easily view and track items [owned by other teams](../boards/backlogs/work-multi-team-ownership-backlogs.md) and quickly reorder and re-parent items to effectively manage your backlog. </p>
+<p>Easily view and track items [owned by other teams](../boards/backlogs/backlogs-overview.md#multi-team) and quickly reorder and re-parent items to effectively manage your backlog. </p>
 
 
 </td>
