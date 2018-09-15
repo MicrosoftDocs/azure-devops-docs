@@ -29,7 +29,7 @@ As your organization grows, you'll want to make sure that you configure your Agi
 In this topic you'll learn:  
 
 >[!div class="checklist"]    
-> * How to add a team, moving from one team to two teams   
+> * How to add a team, move from one team to two teams   
 > * How to add team members  
 > * How to move work items assigned to one team to another team  
 > * How to delete a team      

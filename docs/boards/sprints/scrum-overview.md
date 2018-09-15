@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 07/07/2018
 ---
 
-# About Scrum and project management 
+# About Sprints, Scrum and project management 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
@@ -49,4 +49,17 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 [![Schedule sprints](../backlogs/_img/overview/gs-planning-define-sprints.png)](define-sprints.md)[![Plan a sprint](../backlogs/_img/overview/gs-planning-plan-sprint.png)](assign-work-sprint.md)[![Monitor sprint progress](../backlogs/_img/overview/gs-planning-monitor-sprint.png)](task-board.md)[![Forecast](../backlogs/_img/overview/gs-planning-forecast.png)](forecast.md)
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
+
+## Try this next
+> [!div class="nextstepaction"]
+> [Schedule sprints](define-sprints.md) 
+
+
+## Related articles 
+- [Web portal navigation](../../project/navigation/index.md) 
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
+- [About work items](../work-items/about-work-items.md)  
+
+ 
+
 
