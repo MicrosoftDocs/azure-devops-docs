@@ -12,7 +12,7 @@ author: KathrynEE
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 

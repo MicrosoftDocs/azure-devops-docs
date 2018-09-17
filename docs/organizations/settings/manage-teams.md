@@ -126,8 +126,7 @@ You can configure most of your team settings from the common configuration dialo
 1. Choose the board you want to configure and then choose the ![](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
-
-	::: moniker range=">= tfs-2017"  
+	::: moniker range="tfs-2017"  
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
 	::: moniker-end  
@@ -136,8 +135,9 @@ You can configure most of your team settings from the common configuration dialo
 	::: moniker-end  
 2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
-	::: moniker range=">= tfs-2017"  
-	![Common configuration dialog team settings](_img/configure-team/board-settings-s138.png)
+	::: moniker range=">= tfs-2017"  
+	> [!div class="mx-imgBorder"]  
+	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
 	::: moniker-end  
 	::: moniker range="tfs-2015"  
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
@@ -146,25 +146,14 @@ You can configure most of your team settings from the common configuration dialo
 ---
 
 
-::: moniker range="vsts"  
+::: moniker range=">= tfs-2017"  
 
 For details on each configuration option, see one of these topics:  
 
 > [!div class="mx-tdBreakAll"]  
 > |Cards  | Boards  | Charts |  General  | 
 > |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../boards/boards/add-columns.md)<br/>- [Swimlanes](../../boards/boards/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](../../boards/boards/expedite-work.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-
-For details on each configuration option, see one of these topics:  
-
-> [!div class="mx-tdBreakAll"]  
-> |Cards  | Boards  | Charts |  General  | 
-> |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../boards/boards/add-columns.md)<br/>- [Swimlanes](../../boards/boards/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)<br/> |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](../../boards/boards/expedite-work.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
+> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../boards/boards/add-columns.md)<br/>- [Swimlanes](../../boards/boards/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](set-working-days.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
 
 ::: moniker-end 
 
@@ -176,9 +165,12 @@ For details on each configuration option, see one of these topics:
 > [!div class="mx-tdBreakAll"]  
 > |Cards  | Boards  | Charts |  General  | 
 > |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)|- [Columns](../../boards/boards/add-columns.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)  |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](../../boards/boards/expedite-work.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
+> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)|- [Columns](../../boards/boards/add-columns.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)  |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](set-working-days.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
 
 ::: moniker-end 
+
+
+
 
 
 ## Configure Kanban boards 
