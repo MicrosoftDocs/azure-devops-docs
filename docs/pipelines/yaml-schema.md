@@ -64,12 +64,13 @@ resources:
   containers: [ container ]
   repositories: [ repository ]
 variables: { string: string } | variable
+trigger: trigger
 jobs: [ job | templateReference ]
 ```
 
 Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
 using [containers](#container) and [repositories](#repository) in pipelines,
-and [variables](process/variables.md?tabs=yaml).
+[triggers](#trigger), and [variables](process/variables.md?tabs=yaml).
 
 ### Container
 
@@ -117,6 +118,39 @@ repo including the user or organization. For example, `Microsoft/vscode`. Also,
 GitHub repos require a [service connection](library/service-endpoints.md)
 for authorization.
 
+## Trigger
+
+A trigger specifies what branches will cause a continuous integration build to
+run. If left unspecified, pushes to every branch will trigger a build.
+Learn more about [triggers](build/triggers.md?tabs=yaml#continuous-integration-ci)
+and how to specify them.
+
+List syntax:
+
+```yaml
+trigger: [ string ] # list of branch names
+```
+
+Disable syntax:
+
+```yaml
+trigger: none # will disable CI builds entirely
+```
+
+Include/exclude syntax:
+
+```yaml
+trigger:
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include:  [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+Note that `paths` is only valid for Azure Repos, not any other Git provider.
+
 ## Job
 
 <!-- to be renamed job soon -->
@@ -131,7 +165,10 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
-  strategy: [ parallel | maxParallel | matrix ]
+  strategy:
+    matrix: # matrix strategy, see below
+    parallel: # parallel strategy, see below
+    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: string | [ server ]
   container: string # container resource to run this job inside
@@ -149,6 +186,57 @@ and [step templates](#step-template).
 > [!Note]
 > If you have only one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
 > which omits many of the keywords here.
+
+### Strategies
+
+`matrix` and `parallel` are mutually-exclude strategies for duplicating a job.
+
+#### Matrix
+
+```yaml
+strategy:
+  matrix: { string1: { string2: string3 } }
+```
+
+For each `string1` in the matrix, a copy of the job will be generated. `string1`
+will be appended to the name of the job. For each `string2`, a variable called
+`string2` with the value `string3` will be available to the job. For instance:
+
+```yaml
+job: Build
+strategy:
+  matrix:
+    Python35:
+      PYTHON_VERSION: '3.5'
+    Python36:
+      PYTHON_VERSION: '3.6'
+```
+
+This matrix will create two jobs, "Build Python35" and "Build Python36". Within
+each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
+will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
+
+#### Parallel
+
+```yaml
+strategy:
+  parallel: number
+```
+
+This specifies how many duplicates of the job should run. This is useful for
+slicing up a large test matrix. The [VS Test task](tasks/test/vstest.md)
+understands how to divide the test load across the number of jobs scheduled.
+
+#### Maximum Parallelism
+
+```yaml
+strategy:
+  maxParallel: number
+```
+
+Regardless of which strategy is chosen and how many jobs are generated, this
+value specifies the maximum number of agents which will run at a time for
+this family of jobs. It defaults to 1 if not specified.
 
 ### Job templates
 
@@ -272,7 +360,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 ```yaml
 demands:
 - myCustomCapability   # existence
-- agent.os -eq Darwin  # specific string
+- agent.os -equals Darwin  # specific string
 ```
 
 ### Matrix
