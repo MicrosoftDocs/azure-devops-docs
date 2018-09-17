@@ -65,7 +65,7 @@ to change each one individually.
 
 ## Create a task group
 
-1. Ensure that all the tasks you intent to incude do not contain linke parameters. The easy
+1. Ensure that all the tasks you intend to include do not contain any linked parameters. The easy
    way to do this is to choose **Unlink all** in the settings panel for the entire process.
 
    ![Unlinking parameters for all tasks](_img/unlink-task-group.png)
