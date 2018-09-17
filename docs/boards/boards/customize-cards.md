@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 
@@ -20,12 +20,7 @@ ms.date: 03/20/2018
 
 **Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**  
 
-::: moniker range=">= tfs-2013"
-> [!NOTE]   
-> Reordering cards requires TFS 2015 or later version.  
-::: moniker-end
 
-::: moniker range=">= tfs-2015"
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
@@ -40,7 +35,6 @@ In the card shown below, the following customizations have been set for the bug 
 
 ![Card customize to show additional fields, tags, and style rule ](_img/card-customize-example-bug-with-callouts.png)
 
-::: moniker-end
 
 ::: moniker range="vsts"
 
