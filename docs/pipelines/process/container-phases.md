@@ -28,6 +28,17 @@ When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
 
+## Requirements
+
+The Azure Pipelines system requires a few things to exist in Linux-based containers:
+- Bash
+- `which`
+- Node.js
+
+Be sure your container has each of these tools available. Some of the extremely stripped-down
+containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
+minimum requirements.
+
 # [YAML](#tab/yaml)
 
 ## Single job
