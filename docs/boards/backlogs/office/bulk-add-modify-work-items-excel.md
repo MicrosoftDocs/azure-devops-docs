@@ -32,7 +32,7 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to Azure Boards and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
+>You can't use Office Project 365 to connect to Azure Boards and TFS.
 
 <a id="add-work-items"> </a>  
 ## Add work items
@@ -242,11 +242,12 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
+## Bulk edit test cases
+You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
+
 ## Related articles
 
 While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
-
-If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
@@ -256,8 +257,6 @@ To bulk edit links, you can use these clients:
 -   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
 -   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../test/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 
@@ -272,7 +271,6 @@ You can't delete work items from Excel. The only way to delete work items is fro
 
 When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
 
-
 ### Multiple worksheets
 
 Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
@@ -286,12 +284,13 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp; 
-
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  
 
 ### Web portal and Excel access
 
-While you can't open a query from the web portal, you can open the query from Excel. To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
+To open Excel from a web portal query, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) marketplace extension. 
+
+To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
 
 Once you've installed Visual Studio, open Excel and look for the Team ribbon.
 
@@ -308,4 +307,4 @@ See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-de
 macOS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require Windows.
 
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
+

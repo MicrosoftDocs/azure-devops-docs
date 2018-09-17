@@ -323,14 +323,39 @@ When you configure a plan, you select the team or teams and backlog levels of in
 <img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
 
+
+<a id="task-board-items"/> 
+## Task board items versus query list items
+
+You may notice and wonder why the items shown on the task board may differ from those listed in a query created from its corresponding sprint backlog. 
+
+It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the task board itself. The system runs the query and then applies a few background processes before displaying the task board items.
+
+These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or task board:  
+- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
+- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
+- The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
+	
+ <!---
+> [!NOTE]  
+>Appearance of task and child items on the task board may differ depending on whether you work in Azure Boards and TFS.
+
+> [!NOTE]  
+>In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
+
+> [!NOTE]  
+>In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+-->
+
+
+## Customize backlog and board levels 
 ::: moniker range="vsts"
-## Customize backlog levels 
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+
+If you need more than three backlog and board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
  
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-## Customize backlog levels 
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
+If you need more than three backlog and board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end
 
 ## Related articles  
@@ -362,28 +387,3 @@ Additional topics of interest:
 
 You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads).
 ::: moniker-end
-
-<a id="task-board-items"/> 
-### Task board items versus query list items
-
-You may notice and wonder why the items shown on the task board may differ from those listed in a query created from its corresponding sprint backlog. 
-
-It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the task board itself. The system runs the query and then applies a few background processes before displaying the task board items.
-
-These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or task board:  
-- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
-- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
-- The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
-	
-
-
- <!---
-> [!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in Azure Boards and TFS.
-
-> [!NOTE]  
->In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
-
-> [!NOTE]  
->In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
--->

@@ -265,12 +265,21 @@ You'll also see a roll-up of the remaining work required to complete each requir
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
+::: moniker range="vsts"
+> [!TIP]  
+> Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
+>
+> Also, don't divide tasks into subtasks. If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
 > Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
-
+::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 <a id="track-multiple-activities">  </a>

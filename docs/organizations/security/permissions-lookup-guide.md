@@ -1,5 +1,5 @@
 ---
-title: Permissions and role lookup guide 
+title: Permissions and role look-up guide 
 titleSuffix: Azure DevOps Services & TFS  
 description: Index to permissions defined for Azure DevOps Services and Team Foundation Server   
 ms.technology: devops-security
@@ -9,11 +9,12 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 02/12/2018
+layout: LandingPage
 monikerRange: '>= tfs-2013'
+ms.date: 09/17/2018
 ---
 
-# Permissions lookup guide for Azure DevOps & TFS
+# Permissions look-up guide for Azure DevOps & TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -28,14 +29,147 @@ Values in parenthesis indicate what level the permission is managed:
 - **Collection**: Permissions are managed at the account or project collection level  
 - **Role**: Permissions are managed through a security role.   
 - **Team**: Permissions are managed via the team administrator role.
- 
 
-> [!div class="mx-tdBreakAll"]  
-> |  A through D | E through P| Q through W | 
-> |-------------|----------|---------|---------|    
-> |**A**<br/>- [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Alerts (Team)](../../notifications/howto-manage-team-notifications.md)<br/>- [Analytics Service (Project)](../../report/analytics/analytics-security.md)<br/>- [Analytics views (Object)](../../report/analytics/analytics-security.md)<br/>- [Area path (Object)](set-permissions-access-work-tracking.md)<br/><br/>**B**<br/>- [Branches, Git  (Object)](../../repos/git/branch-permissions.md)<br/>- [Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build resources (Collection)](../../pipelines/policies/set-permissions.md)<br/>- [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Bypass branch policies (Object)](../../repos/git/branch-permissions.md)<br/><br/>**C**<br/>- [Change work item type (Project)](set-project-collection-level-permissions.md)<br/>- [Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Collection-level information](set-project-collection-level-permissions.md)<br/>- [Configure Agile tools (Team)](../settings/manage-teams.md)<br/>- [Customize process](set-project-collection-level-permissions.md#collection-level)<br/><br/>**D**<br/>- [Dashboards, manage (Team)](../../report/dashboards/dashboards.md)<br/>- [Delete field from account](../settings/work/customize-process-field.md)<br/>- [Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)<br/>- [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)<br/>- [Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)|**E**<br/>- [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)<br/>- [Edit process](set-project-collection-level-permissions.md#collection-level)<br/>- [Edit project-level information (Project)](set-project-collection-level-permissions.md)<br/>- [Events (Collection)](set-project-collection-level-permissions.md)<br/>- [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/><br/>**F thru L**<br/>- [Feeds](../../artifacts/feeds/feed-permissions.md)<br/>- [Field, delete (Collection)](set-project-collection-level-permissions.md)<br/>- [Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)<br/>- [Iteration paths (Object)](set-permissions-access-work-tracking.md)<br/>- [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)<br/>- [Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>**M thru P**<br/>- [Manage project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/>- [Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Move or delete work items (Project)](set-project-collection-level-permissions.md)<br/>- [Notes, Git (Object)](../../repos/git/branch-permissions.md)<br/>-  [Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)<br/>- [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Power BI (Analytics Service)](../../report/analytics/analytics-security.md)<br/>- [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)<br/>-  [Project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Project-level information](set-project-collection-level-permissions.md)|**Q thru R**<br/>- [Query (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Query folder (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Repository, Git (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>**S**<br/>- [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)<br/>- [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Service hook](../../service-hooks/overview.md#subscription-permissions)<br/>- [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)<br/>- [Sprint, define (Object)](set-permissions-access-work-tracking.md)<br/>- [Sprints, select (Team)](../settings/set-team-defaults.md)<br/>- [Suppress notifications work items(Project)](set-project-collection-level-permissions.md)<br/>- [Synchronization information (Collection)](set-project-collection-level-permissions.md)<br/><br/>**T**<br/>- [Tags, Git (Oject)](../../repos/git/branch-permissions.md)<br/>- [Tags, work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Team defaults (Team)](../settings/set-team-defaults.md)<br/>- [Team projects (Collection)](set-project-collection-level-permissions.md)<br/>- [Test configurations (Project)](set-project-collection-level-permissions.md)<br/>- [Test controllers (Project)](set-project-collection-level-permissions.md)<br/>- [Test environments (Project)](set-project-collection-level-permissions.md)<br/>- [Test runs  (Project)](set-project-collection-level-permissions.md)<br/>- [TFVC repositories (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Trace settings (Collection)](set-project-collection-level-permissions.md)<br/><br/>**V-W**<br/>- [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Workspaces (Collection)](set-project-collection-level-permissions.md) | 
+<div id="main" class="v2">
+<div class="container">
+<ul id="index" class="cardsW cols cols3 panelContent" style="float: left; display: flex;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**A**<br/>- [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Alerts (Team)](../../notifications/howto-manage-team-notifications.md)<br/>- [Analytics Service (Project)](../../report/analytics/analytics-security.md)<br/>- [Analytics views (Object)](../../report/analytics/analytics-security.md)<br/>- [Area path (Object)](set-permissions-access-work-tracking.md)<br/><br/>- [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**B**<br/>- [Branches, Git  (Object)](../../repos/git/branch-permissions.md)<br/>- [Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build resources (Collection)](../../pipelines/policies/set-permissions.md)<br/>- [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Bypass branch policies (Object)](../../repos/git/branch-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**C**<br/>- [Change work item type (Project)](set-project-collection-level-permissions.md)<br/>- [Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Collection-level information](set-project-collection-level-permissions.md)<br/>- [Configure Agile tools (Team)](../settings/manage-teams.md)<br/>- [Customize process](set-project-collection-level-permissions.md#collection-level)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**D**<br/>- [Dashboards, manage (Team)](../../report/dashboards/dashboards.md)<br/>- [Delete field from account](../settings/work/customize-process-field.md)<br/>- [Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)<br/>- [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)<br/>- [Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**E**<br/>- [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)<br/>- [Edit process](set-project-collection-level-permissions.md#collection-level)<br/>- [Edit project-level information (Project)](set-project-collection-level-permissions.md)<br/>- [Events (Collection)](set-project-collection-level-permissions.md)<br/>- [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText"> 
+**F thru L**<br/>- [Feeds](../../artifacts/feeds/feed-permissions.md)<br/>- [Field, delete (Collection)](set-project-collection-level-permissions.md)<br/>- [Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)<br/>- [Iteration paths (Object)](set-permissions-access-work-tracking.md)<br/>- [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)<br/>- [Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**M thru 0**<br/>- [Manage project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/>- [Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Move or delete work items (Project)](set-project-collection-level-permissions.md)<br/>- [Notes, Git (Object)](../../repos/git/branch-permissions.md)<br/>-  [Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**P**<br/>- [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Power BI (Analytics Service)](../../report/analytics/analytics-security.md)<br/>- [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)<br/>-  [Project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Project-level information](set-project-collection-level-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**Q thru R**<br/>- [Query (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Query folder (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Repository, Git (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**S**<br/>- [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)<br/>- [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Service hook](../../service-hooks/overview.md#subscription-permissions)<br/>- [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)<br/>- [Sprint, define (Object)](set-permissions-access-work-tracking.md)<br/>- [Sprints, select (Team)](../settings/set-team-defaults.md)<br/>- [Suppress notifications work items(Project)](set-project-collection-level-permissions.md)<br/>- [Synchronization information (Collection)](set-project-collection-level-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**T**<br/>- [Tags, Git (Oject)](../../repos/git/branch-permissions.md)<br/>- [Tags, work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Team defaults (Team)](../settings/set-team-defaults.md)<br/>- [Team projects (Collection)](set-project-collection-level-permissions.md)<br/>- [Test configurations (Project)](set-project-collection-level-permissions.md)<br/>- [Test controllers (Project)](set-project-collection-level-permissions.md)<br/>- [Test environments (Project)](set-project-collection-level-permissions.md)<br/>- [Test runs  (Project)](set-project-collection-level-permissions.md)<br/>- [TFVC repositories (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Trace settings (Collection)](set-project-collection-level-permissions.md)<br/><br/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**V-W**<br/>- [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Workspaces (Collection)](set-project-collection-level-permissions.md)  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+    </div>
+</div>
 
-::: moniker-end
+::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
@@ -47,10 +181,144 @@ Values in parenthesis indicate what level the permission is managed:
 - **Team**: Permissions are managed via the team administrator role.
  
 
-> [!div class="mx-tdBreakAll"]  
-> |  A through D | E through P| Q through W | 
-> |-------------|----------|---------|---------|    
-> |**A**<br/>- [Administer warehouse (Server)](permissions.md#server-permissions)<br/>- [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Alerts (Team)](../../notifications/howto-manage-team-notifications.md)<br/>- [Area path (Object)](set-permissions-access-work-tracking.md)<br/><br/>**B**<br/>- [Branches, Git  (Object)](../../repos/git/branch-permissions.md)<br/>- [Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build resources (Collection)](../../pipelines/policies/set-permissions.md)<br/>- [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)<br/><br/>**C**<br/>- [Change work item type (Project)](set-project-collection-level-permissions.md)<br/>- [Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Collection-level information](set-project-collection-level-permissions.md)<br/>- [Configure Agile tools (Team)](../settings/manage-teams.md)<br/>- [Create project collection (Server)](permissions.md#server-permissions)<br/>- [Customize process](set-project-collection-level-permissions.md#collection-level)<br/><br/>**D**<br/>- [Dashboards, manage (Team)](../../organizations/settings/manage-teams.md)<br/>- [Delete project collection (Server)](permissions.md#server-permissions)<br/>- [Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)<br/>- [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)<br/>- [Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)|**E**<br/>- [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)<br/>- [Edit instance level information (Server)](permissions.md#server-permissions)<br/>- [Edit process](set-project-collection-level-permissions.md#collection-level)<br/>- [Edit project-level information (Project)](set-project-collection-level-permissions.md)<br/>- [Events (Collection)](set-project-collection-level-permissions.md)<br/>- [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/><br/>**F thru L**<br/>- [Feeds](../../artifacts/feeds/feed-permissions.md)<br/>- [Field, delete (Collection)](set-project-collection-level-permissions.md)<br/>- [Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)<br/>- [Iteration paths (Object)](set-permissions-access-work-tracking.md)<br/>- [Iteration paths (Team)](../settings/set-team-defaults.md)<br/>- [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)<br/>- [Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>**M thru P**<br/>- [Manage project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/>- [Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Move or delete work items (Project)](set-project-collection-level-permissions.md)<br/>- [Notes, Git (Object)](../../repos/git/branch-permissions.md)<br/>-  [Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)<br/>- [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Power BI (Analytics Service)](../../report/analytics/analytics-security.md)<br/>- [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)<br/>-  [Project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Project-level information](set-project-collection-level-permissions.md)|**Q thru R**<br/>- [Query (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Query folder (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Repository, Git (Object)](set-git-tfvc-repository-permissions.md)<br/><br/>**S**<br/>- [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)<br/>- [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Service hook](../../service-hooks/overview.md#subscription-permissions)<br/>- [Set team defaults (Team)](../settings/set-team-defaults.md)<br/>- [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)<br/>- [Sprint, define (Object)](set-permissions-access-work-tracking.md)<br/>- [Sprints, select (Team)](../settings/set-team-defaults.md)<br/>- [Synchronization information (Collection)](set-project-collection-level-permissions.md)<br/><br/>**T**<br/>- [Tags, Git (Oject)](../../repos/git/branch-permissions.md)<br/>- [Tags, work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Team projects (Collection)](set-project-collection-level-permissions.md)<br/>- [Team rooms (Team)](../../notifications/collaborate-in-a-team-room.md)<br/>- [Test configurations (Project)](set-project-collection-level-permissions.md)<br/>- [Test controllers (Project)](set-project-collection-level-permissions.md)<br/>- [Test environments (Project)](set-project-collection-level-permissions.md)<br/>- [Test runs  (Project)](set-project-collection-level-permissions.md)<br/>- [TFVC repositories (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Trace settings (Collection)](set-project-collection-level-permissions.md)<br/>- [Trigger events (Server)](permissions.md#server-permissions)<br/><br/>**U-V-W**<br/>- [Use full Web Access features (Server)](permissions.md#server-permissions)<br/>- [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Workspaces  (Collection)](set-project-collection-level-permissions.md) | 
+<div id="main" class="v2">
+<div class="container">
+<ul id="index" class="cardsW cols cols3 panelContent" style="float: left; display: flex;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**A**<br/>- [Administer warehouse (Server)](permissions.md#server-permissions)<br/>- [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)<br/>- [Alerts (Team)](../../notifications/howto-manage-team-notifications.md)<br/>- [Area path (Object)](set-permissions-access-work-tracking.md)<br/>- [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**B**<br/>- [Branches, Git  (Object)](../../repos/git/branch-permissions.md)<br/>- [Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Build resources (Collection)](../../pipelines/policies/set-permissions.md)<br/>- [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**C**<br/>- [Change work item type (Project)](set-project-collection-level-permissions.md)<br/>- [Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Collection-level information](set-project-collection-level-permissions.md)<br/>- [Configure Agile tools (Team)](../settings/manage-teams.md)<br/>- [Create project collection (Server)](permissions.md#server-permissions)<br/>- [Customize process](set-project-collection-level-permissions.md#collection-level)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**D**<br/>- [Dashboards, manage (Team)](../../organizations/settings/manage-teams.md)<br/>- [Delete project collection (Server)](permissions.md#server-permissions)<br/>- [Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)<br/>- [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)<br/>- [Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**E**<br/>- [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)<br/>- [Edit instance level information (Server)](permissions.md#server-permissions)<br/>- [Edit process](set-project-collection-level-permissions.md#collection-level)<br/>- [Edit project-level information (Project)](set-project-collection-level-permissions.md)<br/>- [Events (Collection)](set-project-collection-level-permissions.md)<br/>- [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**F thru L**<br/>- [Feeds](../../artifacts/feeds/feed-permissions.md)<br/>- [Field, delete (Collection)](set-project-collection-level-permissions.md)<br/>- [Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)<br/>- [Iteration paths (Object)](set-permissions-access-work-tracking.md)<br/>- [Iteration paths (Team)](../settings/set-team-defaults.md)<br/>- [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)<br/>- [Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**M thru O**<br/>- [Manage project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)<br/>- [Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Move or delete work items (Project)](set-project-collection-level-permissions.md)<br/>- [Notes, Git (Object)](../../repos/git/branch-permissions.md)<br/>-  [Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**P**<br/>- [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)<br/>- [Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Power BI (Analytics Service)](../../report/analytics/analytics-security.md)<br/>- [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)<br/>-  [Project properties (Project)](set-project-collection-level-permissions.md)<br/>- [Project-level information](set-project-collection-level-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**Q thru R**<br/>- [Query (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Query folder (Object)](../../boards/queries/set-query-permissions.md)<br/>- [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)<br/>- [Repository, Git (Object)](set-git-tfvc-repository-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**S**<br/>- [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)<br/>- [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)<br/>- [Service hook](../../service-hooks/overview.md#subscription-permissions)<br/>- [Set team defaults (Team)](../settings/set-team-defaults.md)<br/>- [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)<br/>- [Sprint, define (Object)](set-permissions-access-work-tracking.md)<br/>- [Sprints, select (Team)](../settings/set-team-defaults.md)<br/>- [Synchronization information (Collection)](set-project-collection-level-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**T**<br/>- [Tags, Git (Oject)](../../repos/git/branch-permissions.md)<br/>- [Tags, work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Team projects (Collection)](set-project-collection-level-permissions.md)<br/>- [Team rooms (Team)](../../notifications/collaborate-in-a-team-room.md)<br/>- [Test configurations (Project)](set-project-collection-level-permissions.md)<br/>- [Test controllers (Project)](set-project-collection-level-permissions.md)<br/>- [Test environments (Project)](set-project-collection-level-permissions.md)<br/>- [Test runs  (Project)](set-project-collection-level-permissions.md)<br/>- [TFVC repositories (Object)](set-git-tfvc-repository-permissions.md)<br/>- [Trace settings (Collection)](set-project-collection-level-permissions.md)<br/>- [Trigger events (Server)](permissions.md#server-permissions)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+**U-V-W**<br/>- [Use full Web Access features (Server)](permissions.md#server-permissions)<br/>- [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Work items (Project)](set-permissions-access-work-tracking.md)<br/>- [Workspaces  (Collection)](set-project-collection-level-permissions.md)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+    </div>
+</div>
 
 ::: moniker-end
 
@@ -86,7 +354,7 @@ for all team projects defined in the account or collection:
 - Edit event subscriptions or alerts for teams, team projects, or collection level events.
 
 
-## Related notes
+## Related articles
 
 - [Grant or restrict permissions to select tasks](restrict-access.md)
 - [About permissions and groups](about-permissions.md)
