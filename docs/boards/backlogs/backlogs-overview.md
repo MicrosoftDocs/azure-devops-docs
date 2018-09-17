@@ -21,6 +21,16 @@ You plan and track your project using the suite of Agile tools you access from t
 
 If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
 
+####In a nutshell you use backlogs to: 
+- Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
+- [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
+- [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
+- Quickly assign backlog items to team members and to sprints using either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
+- Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
+- [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
+
+
 ## Product and portfolio backlogs 
 
 Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.. 
@@ -28,14 +38,6 @@ Backlogs present work items as lists. A product backlog represents your project 
 > [!NOTE]
 > To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
-
-####In a nutshell you use backlogs to: 
-- Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
-- [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
-- [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
-- Quickly assign backlog items to team members and to sprints using either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
-- Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
-- Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team). 
 
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
@@ -75,7 +77,9 @@ For details, see [Set team defaults](../../organizations/settings/set-team-defau
 
 ## Define work items and create your backlog  
 
-You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. Portfolio backlogs provide support for organizing work in a hierarchical fashion and tracking major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more. 
+You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. Portfolio backlogs provide support for organizing work in a hierarchical fashion and tracking major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more.  
+
+
 [![Define stories](_img/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog](_img/overview/gs-planning-organize-backlog.png)](organize-backlog.md)[![Manage bugs](_img/overview/gs-planning-manage-bugs.png)](manage-bugs.md)[![Manage issues](_img/overview/gs-planning-manage-issues.png)](manage-issues-impediments.md)
 
 
@@ -91,6 +95,20 @@ The sequence of items on each backlog is determined according to where you have 
 You should refrain from using the bulk modify function to change the value of the backlog priority field. While you can assign a value to these fields, you'll be assigning the same value to all items you've selected for bulk edit.  
 
 The preferred method for bulk edit is to use multi-select to move items to the top, bottom, or specific position within the page. If you must perform a bulk edit of one of the backlog order fields to get a large number of work items in the priority order you want, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can export a query containing the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes. 
+
+## In Progress items and work listed on the backlog 
+
+::: moniker range=">= tfs-2018"  
+Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
+::: moniker-end  
+
+::: moniker range=">= tfs-2013  <= tfs-2017"  
+Backlogs are designed to display work that is in progress. Once you've completed work and it's state enters a *Done*, *Completed*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work. 
+::: moniker-end  
+
+In general, you'll want to display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This is useful when [forecasting your product backlog](../sprints/forecast.md). 
+
+If your backlog is missing items, you might check if the **In Progress** view has been turned off. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 
 ## Organize your backlog, mapping and reparenting backlog items 
@@ -213,6 +231,16 @@ For example, you can create a team structure similar to this one with two manage
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+## Display of leaf node work items  
+
+When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or task board. 
+
+[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
+
+To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
+
+::: moniker-end
 
 ## Permissions and access
 
