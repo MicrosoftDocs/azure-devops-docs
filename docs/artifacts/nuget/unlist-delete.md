@@ -24,13 +24,37 @@ There are two options available to remove a version of a NuGet package from a fe
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
+::: moniker range="vsts"
+
 ## Unlisting or deleting a NuGet package in Azure DevOps Services
+
+You must be a **contributor** to unlist and an **owner** to delete.
+
+# [New navigation](#tab/new-nav)
+Choose the package from **Azure Artifacts** select the appropriate option from the menu:
+
+![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package-newnav.png)
+
+# [Previous navigation](#tab/previous-nav)
+Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
+
+![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+## Unlisting or deleting a NuGet package in Team Foundation Server
 
 You must be a **contributor** to unlist and an **owner** to delete.
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package.png)
+![Unlist or delete npm package TFS](../_img/delete/unlist-delete-nuget-package.png)
+
+::: moniker-end
 
 ## Unlisting a NuGet package using NuGet.exe
 First, get the tools (make sure you're using NuGet 3.5 or later) and your feed URL:
