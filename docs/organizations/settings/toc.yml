@@ -33,6 +33,8 @@
   items:
   - name: Add and manage users
     href: ../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Configure a hierarchy of teams
+    href: ../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Grant or restrict permissions to select tasks
