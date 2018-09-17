@@ -3,7 +3,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: About Kanban and Agile project management
+  - name: About boards & Kanban
     href: kanban-overview.md
   - name: "Backlogs, boards, & plans"
     href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
