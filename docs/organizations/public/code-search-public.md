@@ -27,7 +27,7 @@ With code search, you can locate specific types of code and easily narrow or wid
 
 # [New navigation](#tab/new-nav)
 
-To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](_img/search/code-search-vert.png)    

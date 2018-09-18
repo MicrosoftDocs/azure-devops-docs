@@ -29,7 +29,7 @@ With work item search, you can quickly find work items defined within a public p
 
 # [New navigation](#tab/new-nav)
 
-0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
