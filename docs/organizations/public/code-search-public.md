@@ -1,5 +1,5 @@
 ---
-title: Search the code base of a public project  
+title: Search code of a public project  
 titleSuffix: Azure DevOps Services Public Project
 description: Search across all reposities defined in a public project to find specific types of code   
 ms.technology: devops-public-projects

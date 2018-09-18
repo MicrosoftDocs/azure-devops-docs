@@ -1,5 +1,5 @@
 ---
-title: Search for work items in a public project
+title: Search for work items
 titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
