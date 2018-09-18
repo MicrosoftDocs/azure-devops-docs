@@ -89,26 +89,43 @@ From the **Connect** page, you can select the projects you want to connect to an
 
 
 
-### Home, Work, and Build pages 
+### Home 
+- [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)
+Open [Web portal](../project/navigation/index.md) 
+Open [Task Board](../boards/sprints/task-board.md)  
 
+### Work
+- [Add work items](../boards/backlogs/add-work-items.md)
+- [Use the query editor to list and manage queries](../boards/queries/using-queries.md)
+- [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)
+- [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [Email query results list using Outlook](../boards/queries/share-plans.md)
+- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only)
 
-> [!div class="mx-tdBreakAll"]  
-> |Home|Work Items  |Build |
-> |-------------|----------|----------|
-> |-[Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](../project/navigation/index.md)<br/>- Open [Task Board](../boards/sprints/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../boards/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../boards/queries/using-queries.md)<br/>- [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)<br/>- [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../boards/queries/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build pipelines](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
+### Build 
+- [Create build pipelines](../pipelines/tasks/index.md)
+- [View and manage builds](../pipelines/overview.md)
+- [Manage the build queue](../pipelines/agents/pools-queues.md)
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
 
-### Git and TFVC pages  
+### Git and TFVC 
 
 The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
 
+####  Git   
+- **Changes**: [Save work with commits](../repos/git/commits.md)
+- **Branches**: [Create work in branches](../repos/git/branches.md)
+- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)
+- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
 
-> [!div class="mx-tdBreakAll"]  
-> |Git | TFVC  |
-> |-------------|----------|
-> |- **Changes**: [Save work with commits](../repos/git/commits.md)<br/>- **Branches**: [Create work in branches](../repos/git/branches.md)<br/>- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)<br/>- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)) |- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) |
+#### TFVC
+- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
+- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) 
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"    
 ### Report and Document pages 
@@ -132,7 +149,7 @@ To learn more about settings, see [About team, project, and organizational-level
 
 ## Clients that connect to Azure DevOps Services and TFS
 
-In addition to connecting through Team Explorer, you can connect to a project from these clients: 
+In addition to connecting through Team Explorer, you can connect to a project from the following clients: 
 
 - [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
