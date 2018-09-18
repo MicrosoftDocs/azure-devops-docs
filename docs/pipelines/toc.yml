@@ -54,6 +54,8 @@
     href: targets/nuget.md
   - name: SCVMM
     href: targets/scvmm.md
+  - name: Universal Packages
+    href: targets/universal-packages.md
   - name: VMware
     href: targets/vmware.md
   - name: Azure Web App for Containers
