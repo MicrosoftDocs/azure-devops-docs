@@ -345,7 +345,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
-<td>Build.TriggeredBy.BuildDefinitionName</td>
+<td>Build.TriggeredBy.DefinitionName</td>
 <td>If the build was [triggered by another build](../triggers.md#BuildCompletion), then this variable is set to the name of the triggering build pipeline.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
