@@ -11,8 +11,7 @@ ms.date: 08/27/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
-
-# .NET
+# .NET Framework
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
