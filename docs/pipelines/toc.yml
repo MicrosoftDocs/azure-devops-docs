@@ -1,9 +1,21 @@
 - name: Azure Pipelines
   href: index.md
+- name: Overview
+  items:
+  - name: Start using Build and Release
+    href: overview.md
+  - name: Start using Azure Pipelines
+    href: get-started/index.md
+  - name: What is Azure Pipelines?
+    href: get-started/what-is-azure-pipelines.md
+  - name: Sign up for Azure Pipelines
+    href: get-started/pipelines-sign-up.md
+  - name: Get started with Azure Pipelines
+    href: get-started/pipelines-get-started.md
+  - name: Key concepts
+    href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   items:
-  - name: Overview
-    href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
   - name: Use the visual designer
@@ -54,6 +66,8 @@
     href: targets/nuget.md
   - name: SCVMM
     href: targets/scvmm.md
+  - name: Universal Packages
+    href: targets/universal-packages.md
   - name: VMware
     href: targets/vmware.md
   - name: Azure Web App for Containers
