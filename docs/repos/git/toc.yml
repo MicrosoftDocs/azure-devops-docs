@@ -87,8 +87,8 @@
     href: git-dates.md
   - name: Understand names in Git
     href: git-names.md
-  - name: Case sensitivity
-    href: case-sensitivity.md
+  - name: Cross-Platform Compatibility
+    href: os-compatibility.md
   - name: Git preferences and settings
     href: git-config.md
   - name: Repository settings
