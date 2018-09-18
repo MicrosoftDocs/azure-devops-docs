@@ -153,8 +153,6 @@ Note that `paths` is only valid for Azure Repos, not any other Git provider.
 
 ## Job
 
-<!-- to be renamed job soon -->
-
 A [job](process/phases.md?tabs=yaml) is a collection of steps to be run by an
 [agent](agents/agents.md) or, in some cases, on the server. Jobs can be
 run [conditionally](process/multiple-phases.md?tabs=yaml#conditions), and they
@@ -189,7 +187,7 @@ and [step templates](#step-template).
 
 ### Strategies
 
-`matrix` and `parallel` are mutually-exclude strategies for duplicating a job.
+`matrix` and `parallel` are mutually-exclusive strategies for duplicating a job.
 
 #### Matrix
 
@@ -243,12 +241,22 @@ this family of jobs. It defaults to 1 if not specified.
 Jobs can also be specified in a job template. Job templates are separate
 files which you can reference in the main pipeline definition.
 
+In the main pipeline:
+
 ```yaml
-- template: string
-  parameters: { string: any }
+- template: string # name of template to include
+  parameters: { string: any } # provided parameters
 ```
 
-For example:
+And in the included template:
+
+```yaml
+parameters: { string: any } # expected parameters
+jobs: [ job ]
+```
+
+Here's an example. In this example, a single job is repeated on three platforms.
+The job itself is only specified once.
 
 ```yaml
 # File: jobs/build.yml
@@ -345,9 +353,17 @@ the same resource will be used for the duration of the build.
 pipeline. It also holds information about the job's strategy for running.
 
 ```yaml
-name: string  # name of the pool to run this job in
-demands: string | [ string ]  ## see below
-vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
+pool:
+  name: string  # name of the pool to run this job in
+  demands: string | [ string ]  ## see below
+  vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
+```
+
+If you're using a private pool and don't need to specify demands, this can
+be shortened to simply:
+
+```yaml
+pool: string # name of the private pool to run this job in
 ```
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and
@@ -609,6 +625,46 @@ steps:
 - template: steps/msbuild.yml
   parameters:
     solution: my.sln
+```
+
+### Required parameters
+
+Although the syntax doesn't offer a way to require parameters, you can add a
+validation step at the beginning of your template which checks for the parameters
+you require.
+
+For example, using Bash (so it works on any platform):
+
+```yaml
+# File: steps/msbuild.yml
+
+parameters:
+  solution: ''
+
+steps:
+- bash: |
+    if [ -z "$SOLUTION" ]; then
+      echo ##vso[task.complete result=Failed;]Missing template parameter \"solution\"
+    fi
+  env:
+    SOLUTION: ${{ parameters.solution }}
+  displayName: Check for required parameters
+- task: msbuild@1
+  inputs:
+    solution: ${{ parameters.solution }}
+- task: vstest@2
+  inputs:
+    solution: ${{ parameters.solution }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+# This will fail since it doesn't set the "solution" parameter to anything,
+# so the template will use its default of an empty string
+steps:
+- template: steps/msbuild.yml
+
 ```
 
 ### Functions
