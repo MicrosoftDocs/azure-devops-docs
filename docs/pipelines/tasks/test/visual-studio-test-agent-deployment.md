@@ -174,6 +174,4 @@ machines.
 
 <!-- ENDSECTION -->
 
-::: moniker-end
-
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
