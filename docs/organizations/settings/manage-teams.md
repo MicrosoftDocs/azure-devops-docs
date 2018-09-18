@@ -150,10 +150,55 @@ You can configure most of your team settings from the common configuration dialo
 
 For details on each configuration option, see one of these topics:  
 
-> [!div class="mx-tdBreakAll"]  
-> |Cards  | Boards  | Charts |  General  | 
-> |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../boards/boards/add-columns.md)<br/>- [Swimlanes](../../boards/boards/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](set-working-days.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Configuration task</th>
+</tr>
+<tr>
+<td>Cards  </td>
+<td>
+<ul>
+<li>[Add fields](../../boards/boards/customize-cards.md)</li>
+<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
+<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
+<li>[Enable annotations](../../boards/boards/customize-cards.md#annotations)</li>
+<li>[Configure inline tests](../../boards/boards/customize-cards.md#tests) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Boards </td>
+<td>
+<ul>
+<li>[Add columns](../../boards/boards/add-columns.md)</li>
+<li>[Add swimlanes](../../boards/boards/expedite-work.md)</li>
+<li>[Card reordering](../../boards/boards/reorder-cards.md) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Chart</td>
+<td>
+<ul>
+<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>General  </td>
+<td>
+<ul>
+<li>[Backlogs](select-backlog-navigation-levels.md)</li>
+<li>[Working days](set-working-days.md)</li>
+<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ::: moniker-end 
 
@@ -162,10 +207,51 @@ For details on each configuration option, see one of these topics:
 
 For details on each configuration option, see one of these topics:  
 
-> [!div class="mx-tdBreakAll"]  
-> |Cards  | Boards  | Charts |  General  | 
-> |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)|- [Columns](../../boards/boards/add-columns.md) |- [Cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)  |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](set-working-days.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Configuration task</th>
+</tr>
+<tr>
+<td>Cards  </td>
+<td>
+<ul>
+<li>[Add fields](../../boards/boards/customize-cards.md)</li>
+<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
+<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Boards </td>
+<td>
+<ul>
+<li>[Add columns](../../boards/boards/add-columns.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Chart</td>
+<td>
+<ul>
+<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>General  </td>
+<td>
+<ul>
+<li>[Backlogs](select-backlog-navigation-levels.md)</li>
+<li>[Working days](set-working-days.md)</li>
+<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ::: moniker-end 
 
