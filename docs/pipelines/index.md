@@ -783,25 +783,6 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="get-started-yaml.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GetHub logo" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Create your first pipeline</h3>
-                                                            <p>Get started configuring your pipeline as a YAML file in your repo alongside your code.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="get-started-designer.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
@@ -814,25 +795,6 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         <div class="cardText">
                                                             <h3>Use the visual designer</h3>
                                                             <p>Learn the basics of using the visual designer to add and customize tasks.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="get-started-azure-devops-project.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_scrum.svg" alt="azure portal" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Use the Azure portal</h3>
-                                                            <p>If you just want us to set it all up so you can see how it works, you can do it from the Azure portal.</p>
                                                         </div>
                                                     </div>
                                                 </div>
