@@ -76,8 +76,9 @@ jobs:
   timeoutInMinutes: number
   cancelTimeoutInMinutes: number
   strategy:
-    parallel: number
     maxParallel: number
+    # parallel and matrix are mutually exclusive, while maxParallel affects both
+    parallel: number
     matrix: { string: { string: string } }
   pool:
     name: string
