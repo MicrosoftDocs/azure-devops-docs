@@ -37,10 +37,6 @@
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Refine your backlog
     href: best-practices-product-backlog.md
-  - name: "Backlog items & multi-team ownership"
-    href: work-multi-team-ownership-backlogs.md
-  - name: Backlog priority or stack rank order
-    href: stack-rank-backlog-position.md
   - name: "Workflow states & state categories"
     href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Work in Excel or Project
@@ -101,7 +97,7 @@
     href: ../work-items/index.md
   - name: Boards (Kanban)
     href: ../boards/index.md
-  - name: Scrum
+  - name: Sprints (Scrum)
     href: ../sprints/index.md
   - name: Queries
     href: ../queries/index.md

@@ -18,6 +18,12 @@
     href: ../add-team-administrator.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Add users to a project or team 
     href: ../../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+- name: Tutorials
+  items:
+  - name: Portfolio management
+    href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+  - name: Configure a hierarchy of teams
+    href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: "Area & iteration paths"

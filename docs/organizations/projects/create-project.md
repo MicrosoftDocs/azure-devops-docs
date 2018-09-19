@@ -319,9 +319,13 @@ Name the repository and choose **Create**.
 
 ::: moniker-end
 
-## Try this next 
+## Try this next
+> [!div class="nextstepaction"]
+> [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 
-- [Add team members](../../organizations/security/add-users-team-project.md)  
+
+## Related articlest 
+
 - [Use Git](../../repos/git/overview.md)
 - [Develop your app in TFVC](../../repos/tfvc/index.md) 
 - [Additional project structure activities](about-projects.md#project-structure)

@@ -20,18 +20,18 @@ monikerRange: 'vsts'
 
 The Microsoft-hosted agent pool provides 5 virtual machine images to choose from:
 
-* Ubuntu 16.04 (ubuntu-16.04)
-* Visual Studio 2017 on Windows Server 2016 (vs2017-win2016)
-* Xcode 9 on macOS 10.13 (xcode9-macos10.13)
-* Windows Server 1803 (win1803)
-* Visual Studio 2015 on Windows Server 2012R2 (vs2015-win2012r2)
+* Ubuntu 16.04 (`ubuntu-16.04`)
+* Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
+* Xcode 9 on macOS 10.13 (`xcode9-macos10.13`)
+* Windows Server 1803 (`win1803`) - for running Windows containers
+* Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
 
 | If your development team uses... | ...then choose this image... | ...or pool in web designer |
 |----------------------------------|------------------------------|----------------------------|
-| Docker containers | ubuntu-16.04 or vs2017-win2016 or win1803 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
+| Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
 | Development tools on macOS | xcode9-macos10.13 (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-1604 or win1803 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
+| .NET Core | ubuntu-1604 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 
