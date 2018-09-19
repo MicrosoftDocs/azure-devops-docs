@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/17/2018
 monikerRange: 'vsts'
 ---
 
@@ -48,6 +48,8 @@ For information on region availability, see [Products available by region](https
 3. The region is listed under Organization information, next to  **Region**.
 
    ![Organization settings, region location](_img/change-organization-location/organization-settings-region-prev.png)
+
+---
 
 ## Change organization location
 

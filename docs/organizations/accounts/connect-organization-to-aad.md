@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 09/18/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,35 +44,26 @@ We will update this guidance when we have a solution for scenarios where email a
 
 Before you begin, do the following:
 
-1. Inform users of the upcoming change.
-
+1. Inform users of the upcoming change. 
    Although there is no downtime during this change, users will be affected by it. It's best to let them know before you begin that there will be a short series of steps for them to complete. As your organization transitions from MSA to Azure AD identities, your users' benefits will continue to work with their new identity, provided that their emails match.
 
 2. Ensure that the following is true about each user who performs the connection:
 
-   * The user exists in Azure AD as a member.
-   * The user is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md).
-   * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email.
+    * The user exists in Azure AD as a member.
+    * The user is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md).
+    * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email. If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
 
-    If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
+         a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).  
+         b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.  
+         c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  An email invitation is sent to the new user.  
+         d. Go to your email invitations from Azure and select **Call-To-Action** in each message.     
+         e. Select **Next/Continue** on a few pages to fully register the new user.  
+         f. Sign in to your organization as the new user.  
+         g. Go to **Settings** as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.  
+         h. As the new user, complete the remaining steps to connect your organization to Azure AD.  
 
-   > a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
-
-    > b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
-
-    > c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  An email invitation is sent to the new user.
-
-    > d. Go to your email invitations from Azure and select **Call-To-Action** in each message.  
-    
-    > e. Select **Next/Continue** on a few pages to fully register the new user.
-
-    > f. Sign in to your organization as the new user.
-
-    > g. Go to **Settings** as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
-
-    > h. As the new user, complete the migration.
-
-'3'. Ensure that all Azure DevOps users are in Azure AD by completing the following set of steps:  
+3. Ensure that all Azure DevOps users are in Azure AD by completing the following set of steps:  
+  
 
 (Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.)
 
@@ -81,15 +72,10 @@ Before you begin, do the following:
 # [New navigation](#tab/new-nav)
 
 1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
-
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
- 
+  ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 3. Select **Users**.
-
-![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
-
+  ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 4. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
    * If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
@@ -109,13 +95,9 @@ Before you begin, do the following:
 # [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your Azure DevOps organization and go to **Organization settings**.
-
-![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
-
+  ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
 2. Go to **Users**.
-
-![The Users tab in Azure DevOps Services](_img/connect-organization-to-aad/select-users-to-review-email-addresses-for-azure-ad.png)
-
+  ![The Users tab in Azure DevOps Services](_img/connect-organization-to-aad/select-users-to-review-email-addresses-for-azure-ad.png)
 3. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
    * If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
