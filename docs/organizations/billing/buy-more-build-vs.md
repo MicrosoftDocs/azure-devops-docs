@@ -58,7 +58,7 @@ The free tier is one parallel job. In addition, you get one free parallel job fo
 
 The first time that you set up billing for your Azure DevOps organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [Azure DevOps project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
+* [Azure DevOps project collection administrator or organization owner permissions](billing-faq.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your Azure DevOps organization, you only need the owner or contributor role on your Azure subscription.
@@ -84,7 +84,7 @@ To make subsequent edits to paid quantities in your Azure DevOps organization, y
   select the Azure subscription that you want to use.
   Or if you don't have an Azure subscription,
   create a new subscription now to use for billing.
-  [Azure DevOps billing FAQ](vsts-billing-faq.md)
+  [Azure DevOps billing FAQ](billing-faq.md)
 
     ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
