@@ -49,13 +49,13 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 From the **My Work** page you can save and then restore not only your file changes and related work items, but also the position of your open windows, breakpoints, and other important cues.
 
-In Team Explorer, choose ![](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **My Work**. On the **My Work** page, choose **Suspend & Shelve**, and then type a description of the suspended work.
+In Team Explorer, choose ![Home, my work](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **My Work**. On the **My Work** page, choose **Suspend & Shelve**, and then type a description of the suspended work.
 
-![](_img/suspend-your-work-manage-your-shelvesets/IC592393.png)
+![Suspend and shelve](_img/suspend-your-work-manage-your-shelvesets/IC592393.png)
 
 When you are ready to resume the work, go the **Suspended & Shelved Work** section of the **My Work** page, select a set of suspended work, and choose **Resume**.
 
-![](_img/suspend-your-work-manage-your-shelvesets/IC591026.png)
+![Resume](_img/suspend-your-work-manage-your-shelvesets/IC591026.png)
 
 ## Shelve your changes
 
@@ -64,7 +64,7 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
 
 ### To shelve your changes
 
-1.  In Team Explorer, choose ![](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **Pending Changes**.
+1.  In Team Explorer, choose ![Home, pending changes](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **Pending Changes**.
 
 2.  In the **Pending Changes** page, make sure that the changes you want to shelve are listed in the **Included Changes** section. You can drag files between **Included Changes** and **Excluded Changes** (Keyboard shortcut: open the context menu of an item, and then choose **Include** or **Exclude**.
 
@@ -72,7 +72,7 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
 
 4.  Type a name for the shelveset.
 
-    ![](_img/suspend-your-work-manage-your-shelvesets/IC612901.png)
+    ![Name](_img/suspend-your-work-manage-your-shelvesets/IC612901.png)
 
 5.  (Optional) Select either of the following check boxes:
 
@@ -90,13 +90,13 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
 
 ### To find a shelveset
 
-1.  In Team Explorer, choose ![](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **Pending Changes**.
+1.  In Team Explorer, choose ![Home, pending changes](_img/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **Pending Changes**.
 
 2.  Choose the **Actions** link, and then choose **Find Shelvesets**.
 
 3.  On the **Find Shelvesets** page, enter the name or alias of a project team member in the box, and then choose the **Enter** key.
 
-    ![](_img/suspend-your-work-manage-your-shelvesets/IC612902.png)
+    ![Find shelvesets](_img/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
 	>**Tip:**  
 	>If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
@@ -109,7 +109,7 @@ After you have a list of shelvesets (explained in "To find a shelveset") in the 
 
 The **Shelveset Details** page appears.
 
-![](_img/suspend-your-work-manage-your-shelvesets/IC612903.png)
+![Shelveset details](_img/suspend-your-work-manage-your-shelvesets/IC612903.png)
 -   You can toggle between list and tree view from the **Actions** menu.
 
 -   To get more information about a change to a file, open its context menu, and then choose **Open**, **View History**, or one of the **Compare** options.
@@ -143,6 +143,6 @@ The **Shelveset Details** page appears.
 
 ## Tips
 
--   ![](_img/suspend-your-work-manage-your-shelvesets/IC572374.png) Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items of which a shelveset consists, edit several files, and then later reshelve the shelveset, the system does not create a new version of the items for future comparison and maintains no record of who revised the items, when, or in what manner. The original shelveset is completely replaced.
+-   ![Tips](_img/suspend-your-work-manage-your-shelvesets/IC572374.png) Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items of which a shelveset consists, edit several files, and then later reshelve the shelveset, the system does not create a new version of the items for future comparison and maintains no record of who revised the items, when, or in what manner. The original shelveset is completely replaced.
 
--   ![](_img/suspend-your-work-manage-your-shelvesets/IC572374.png) Conflicts can occur and prevent you from resuming suspended work. If this happens, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
+-   ![Tips](_img/suspend-your-work-manage-your-shelvesets/IC572374.png) Conflicts can occur and prevent you from resuming suspended work. If this happens, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).

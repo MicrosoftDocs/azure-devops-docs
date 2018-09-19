@@ -38,7 +38,7 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Prerequisites
 
-As the [organization owner or project collection administrator](vsts-billing-faq.md#find-owner), you can start trials for your organization.
+As the [organization owner or project collection administrator](billing-faq.md#find-owner), you can start trials for your organization.
 All other users can [request extensions](../../marketplace/install-vsts-extension.md).
 
 ## Start a trial for your organization

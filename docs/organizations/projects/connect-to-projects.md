@@ -62,7 +62,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
     > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
  
 ::: moniker range=">= tfs-2017"   
-0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo.  
+0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![Azure DevOps logo](../../_img/icons/project-icon.png) Azure DevOps logo.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-horz.png)  
