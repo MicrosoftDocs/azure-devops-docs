@@ -96,4 +96,4 @@ To remove users or make an adjustment, sign in to Azure DevOps Service. Choose *
 
 ## Related articles
 
-* [Reduce or cancel paid Azure DevOps users](reduce-cancel-paid-vsts-users.md)
+* [Reduce or cancel paid Azure DevOps users](reduce-cancel-paid-users.md)

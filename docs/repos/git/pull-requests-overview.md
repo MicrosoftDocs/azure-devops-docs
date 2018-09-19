@@ -45,7 +45,7 @@ Diffusing skills and knowledge makes your team stronger and more resilient.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Review code with pull requests" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +63,7 @@ Diffusing skills and knowledge makes your team stronger and more resilient.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -105,7 +105,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Provide reviewer guidance with pull request templates" src="../../_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -124,7 +124,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_blog.svg" />
+                            <img width="48" height="48" alt="Leave comments" src="https://docs.microsoft.com/media/common/i_blog.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,7 +142,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/check.svg" />
+                            <img width="48" height="48" alt="Vote on the changes" src="_img/logos/check.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -172,7 +172,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Branch policies overview" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -190,7 +190,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_policy.svg" />
+                            <img width="48" height="48" alt="How to configure branch policies" src="https://docs.microsoft.com/media/common/i_policy.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -208,7 +208,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_protect.svg" />
+                            <img width="48" height="48" alt="Branch permissions" src="https://docs.microsoft.com/media/common/i_protect.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -233,7 +233,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Pull request status overview" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -251,7 +251,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/nodejs.svg" />
+                            <img width="48" height="48" alt="Create a PR status server with Node.js" src="https://docs.microsoft.com/media/common/nodejs.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -269,7 +269,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="Use Azure Functions to create custom branch policies" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -287,7 +287,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg" />
+                            <img width="48" height="48" alt="Configure a branch policy for an external service" src="https://docs.microsoft.com/media/common/i_web.svg" />
                         </div>
                     </div>
                     <div class="cardText">

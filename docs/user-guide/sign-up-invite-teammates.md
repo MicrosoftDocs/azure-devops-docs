@@ -38,7 +38,7 @@ For more information about managing users and organization access, see [Add orga
 > [!div class="nextstepaction"]
 > [Add code to your Git repository](code-with-git.md)
 >
-> [Plan and track work](plan-track-work.md) 
+> [Plan and track work](plan-track-work.md)
 
 
  

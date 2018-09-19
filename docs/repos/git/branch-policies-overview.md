@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 09/10/2018
+ms.date: 09/18/2018
 layout: LandingPage
 monikerRange: '>= tfs-2015'
 ---
@@ -49,7 +49,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Adopt a branching strategy" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -67,7 +67,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_policy.svg" />
+                            <img width="48" height="48" alt="How to configure branch policies" src="https://docs.microsoft.com/media/common/i_policy.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +85,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_protect.svg" />
+                            <img width="48" height="48" alt="Branch permissions" src="https://docs.microsoft.com/media/common/i_protect.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -103,7 +103,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/folder.png" />
+                            <img width="48" height="48" alt="Require branch folders" src="_img/logos/folder.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -121,7 +121,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg" />
+                            <img width="48" height="48" alt="Configure a branch policy for an external service" src="https://docs.microsoft.com/media/common/i_web.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +146,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Branches tutorial" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +164,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/add.png" />
+                            <img width="48" height="48" alt="How to create a branch" src="_img/logos/add.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -182,7 +182,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/delete.png" />
+                            <img width="48" height="48" alt="How to delete a branch" src="_img/logos/delete.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -200,7 +200,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/restore.png" />
+                            <img width="48" height="48" alt="Restore a deleted branch" src="_img/logos/restore.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,7 +218,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/lock-branches.png" />
+                            <img width="48" height="48" alt="How to lock branches" src="_img/logos/lock-branches.png" />
                         </div>
                     </div>
                     <div class="cardText">

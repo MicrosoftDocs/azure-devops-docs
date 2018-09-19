@@ -22,11 +22,11 @@ monikerRange: 'vsts'
 
 [!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
 
-### Q: How do I delete my organization?
+#### Q: How do I delete my organization?
 
 A: See [Delete your organization](delete-your-vsts-organization.md), which includes prerequisites and helpful tips.
 
-### Q: How do I restore my organization?
+#### Q: How do I restore my organization?
 
 A: See [Recover your organization](recover-your-vsts-organization.md).
 

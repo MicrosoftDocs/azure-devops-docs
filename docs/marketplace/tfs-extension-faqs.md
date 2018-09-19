@@ -136,5 +136,5 @@ for the Team Foundation Server where you want to upload extensions.
 ## Purchases & billing
 
 - [Azure DevOps Services billing overview](../organizations/billing/overview.md)
-- [Azure DevOps Services billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Azure DevOps Services billing FAQ](../organizations/billing/billing-faq.md)
 - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)

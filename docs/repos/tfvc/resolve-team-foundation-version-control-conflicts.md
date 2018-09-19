@@ -42,22 +42,22 @@ Although it can be frustrating to encounter conflicts, the system provides infor
 
 Use the Resolve Conflicts window to resolve conflicts that are blocking you.
 
-![](_img/resolve-team-foundation-version-control-conflicts/IC745580.png)
+![Resolve conflicts](_img/resolve-team-foundation-version-control-conflicts/IC745580.png)
 
-![](_img/resolve-team-foundation-version-control-conflicts/IC612247.png)
+![Resolve conflicts](_img/resolve-team-foundation-version-control-conflicts/IC612247.png)
 By default, the window shows only the conflicts caused by the most recent operation you attempted. When the window is in this state, a message appears that begins: **Path filter applied**. To show all conflicts in your workspace, choose **Get All Conflicts**. A message that begins with: **n Conflict(s)** appears.
 
 If a lot of time has passed since you made changes to files in your workspace, new conflicts might have occurred. To refresh the **Resolve Conflicts** window, choose **Refresh**.
 
 Each conflict contains information and sometimes links that might help you resolve it. To get more information, you can select the conflict and choose:
 
--   ![](_img/resolve-team-foundation-version-control-conflicts/IC277131.png) **History** to see the history of the file. If the operation that caused the conflict is a Merge or a Rollback, then you can choose the menu control to the right of **History** and then select either **Source History** or **Target History**.
+-   ![Resolve conflicts](_img/resolve-team-foundation-version-control-conflicts/IC277131.png) **History** to see the history of the file. If the operation that caused the conflict is a Merge or a Rollback, then you can choose the menu control to the right of **History** and then select either **Source History** or **Target History**.
 
     See [Get the history of an item](get-history-item.md).
 
--   ![](_img/resolve-team-foundation-version-control-conflicts/IC277132.png) **Annotate** to view details on all changes that were made to the most recent version of the file, including who made each change and when they made it. See [View file changes using annotate](view-file-changes-using-annotate.md).
+-   ![Resolve conflicts](_img/resolve-team-foundation-version-control-conflicts/IC277132.png) **Annotate** to view details on all changes that were made to the most recent version of the file, including who made each change and when they made it. See [View file changes using annotate](view-file-changes-using-annotate.md).
 
--   ![](_img/resolve-team-foundation-version-control-conflicts/IC277133.png) **Compare** (or the menu to the right of the button and then choose a command). The [Diff](compare-files.md) window appears.
+-   ![Resolve conflicts](_img/resolve-team-foundation-version-control-conflicts/IC277133.png) **Compare** (or the menu to the right of the button and then choose a command). The [Diff](compare-files.md) window appears.
 
 <a name="autoresolve"></a>
 
@@ -97,7 +97,7 @@ When a conflict is caused by conflicting content changes, you can choose **Merge
 
 When you choose this action, the Merge window appears.
 
-![](_img/resolve-team-foundation-version-control-conflicts/IC612248.png)
+![Merge changes in merge tool](_img/resolve-team-foundation-version-control-conflicts/IC612248.png)
 The outcome of your work to resolve the conflict is shown in the **Results** pane.
 
 In this window you can:
@@ -126,7 +126,7 @@ In special cases, you may want to restrict the types of conflicts automatically 
 
 When you choose **AutoResolve All**, and then **Specific Conflict Types**, the **Choose Conflicts to Resolve** dialog box appears.
 
-![](_img/resolve-team-foundation-version-control-conflicts/IC612249.png)
+![Understand the automatic options](_img/resolve-team-foundation-version-control-conflicts/IC612249.png)
 
 <table>
 <thead>
@@ -195,6 +195,6 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 
 ## Tips
 
--   ![](_img/resolve-team-foundation-version-control-conflicts/IC572374.png) By default the system automatically attempts to **AutoResolve All** conflicts. To change the option, from the menu bar choose **Tools**, **Options**, and then in the **Options** dialog box, navigate to **Source Control**, **Visual Studio Team Foundation Server**. Clear the **Attempt to automatically resolve conflicts when they are generated** checkbox.
+-   ![Tips](_img/resolve-team-foundation-version-control-conflicts/IC572374.png) By default the system automatically attempts to **AutoResolve All** conflicts. To change the option, from the menu bar choose **Tools**, **Options**, and then in the **Options** dialog box, navigate to **Source Control**, **Visual Studio Team Foundation Server**. Clear the **Attempt to automatically resolve conflicts when they are generated** checkbox.
 
--   ![](_img/resolve-team-foundation-version-control-conflicts/IC572374.png) Does your team need to collaborate to resolve a large number of conflicts (for example, which might occur after merge operation in a large codebase)? If so, a public workspace on a shared dev machine might help. See [Create and work with workspaces](create-work-workspaces.md).
+-   ![Tips](_img/resolve-team-foundation-version-control-conflicts/IC572374.png) Does your team need to collaborate to resolve a large number of conflicts (for example, which might occur after merge operation in a large codebase)? If so, a public workspace on a shared dev machine might help. See [Create and work with workspaces](create-work-workspaces.md).

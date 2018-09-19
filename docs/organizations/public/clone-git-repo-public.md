@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
-ms.date: 07/02/2018
+ms.date: 09/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -42,7 +42,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 	> [!div class="mx-imgBorder"]
 	> ![Select repository](_img/browse-code/select-repository-vert.png) 
 
-0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
+0.  Choose **Clone**. In the Clone repository dialog, choose the ![Clone URL](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
 
 	> [!div class="mx-imgBorder"]
 	> ![Clone URL, new navigation](_img/clone-git-repo-public/clone-url-vert.png)
@@ -56,7 +56,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 0. Choose the repository you want to clone from the repository selector. 
 
-	![Choose repository, previous nav ](_img/browse-code/select-repository.png)
+	![Choose repository, previous nav](_img/browse-code/select-repository.png)
 
 0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
 
