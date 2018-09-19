@@ -1,5 +1,5 @@
 ---
-title: Add more Azure DevOps users with Basic features or Visual Studio subscriptions
+title: Add more users with Basic features or Visual Studio subscriptions
 description: Learn how to pay for additional users if you have more than five users who need Basic features and assign VS subscriptions
 ms.prod: devops
 ms.technology: devops-accounts

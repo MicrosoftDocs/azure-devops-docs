@@ -65,6 +65,6 @@ If you'd like to set up billing for your organization prior to buying something 
 
 ## Related articles
 
-* [Billing FAQ](../billing/vsts-billing-faq.md)
+* [Billing FAQ](../billing/billing-faq.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the subscription](../billing/change-azure-subscription.md) for billing.
