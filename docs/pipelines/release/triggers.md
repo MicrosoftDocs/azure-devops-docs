@@ -58,6 +58,15 @@ default branch in the build pipeline.
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
+<h2 id="scheduled-triggers">Scheduled release triggers</h2>
+
+If you want to create and start a release at specific times, define one or more
+scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
+pipeline and enable scheduled release triggers. You can configure multiple schedules.
+
+![Defining a shceduled release trigger](_img/trigger-04.png)
+
+See also [stage scheduled triggers](#stage-scheduled-triggers).
 
 <h2 id="prsettrigger">Pull request triggers</h2>
 
@@ -101,9 +110,12 @@ when a release is created by a continuous deployment trigger, based on:
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
+  <a name="stage-scheduled-triggers"></a>
+
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
+  Release Management will automatically start a new deployment. Unlike scheduled
+  release triggers, you cannot configure multiple schedules for stage triggers.
   Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
