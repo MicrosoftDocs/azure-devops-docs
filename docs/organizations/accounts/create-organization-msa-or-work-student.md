@@ -1,5 +1,5 @@
 ---
-title: Create your Azure DevOps organization with a Microsoft account or a work account
+title: Create your Azure DevOps organization with a Microsoft or work account
 description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops
 ms.technology: devops-accounts
