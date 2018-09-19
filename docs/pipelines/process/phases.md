@@ -76,8 +76,10 @@ jobs:
   timeoutInMinutes: number
   cancelTimeoutInMinutes: number
   strategy:
-    parallel: number
     maxParallel: number
+    # note: `parallel` and `matrix` are mutually exclusive
+    # you may specify one or the other; including both is an error
+    parallel: number
     matrix: { string: { string: string } }
   pool:
     name: string
@@ -149,7 +151,6 @@ jobs:
     name: Windows
     vmImage: vs2017-win2016
 ```
-
 
 ::: moniker-end
 ::: moniker range="< vsts"
@@ -336,7 +337,7 @@ From a single job you can run multiple jobs and multiple agents in parallel. Som
 
 ::: moniker range="vsts"
 
-The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
+The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run at the same time.
 
 ```yaml
 jobs:
@@ -408,15 +409,18 @@ The Visual Studio Test task is one such task that supports test slicing. If you 
 
 ::: moniker range="vsts"
 
-When `parallel` is specified and `matrix` is not defined, the setting indicates how many jobs to dispatch.
+The `parallel` strategy enables a job to be duplicated many times. The `maxParallel` tag restricts the amount of parallelism. 
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
 See [Parallel and multiple execution using agent jobs](#parallelexec).
+
+The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately. However, only two jobs will run at the same time.
 
 ```yaml
 jobs:
 - job: Test
   strategy:
-    parallel: 2
+    parallel: 5
+    maxParallel: 2
 ```
 ::: moniker-end
 ::: moniker range="< vsts"
