@@ -46,7 +46,7 @@ From a web browser, open the web portal administrative context for your team.
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
-You define both areas and iterations from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 0.  Open a backlog or board for a team and choose the ![](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 

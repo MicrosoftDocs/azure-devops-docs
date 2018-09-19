@@ -77,7 +77,9 @@ The system automatically saves the work item with the title you entered. You can
 
 ---
 
-To add details to any work item, choose the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by clicking the Assigned To field. To customize the set of fields displayed on the card, see [Customize cards](../../boards/boards/customize-cards.md).
+To add details to any work item, choose the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by choosing the **Assigned To** field. For a description of each field, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
+
+To customize the set of fields displayed on the card, see [Customize cards](../../boards/boards/customize-cards.md).
 
 <a id="update-status">  </a>
 ## Update status via drag-and-drop

@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 07/21/2018
+ms.date: 09/18/2018
 ---
 
 
@@ -37,6 +37,7 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 ## Open a service or page
 
 Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
+
 ::: moniker range="vsts"
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
@@ -77,7 +78,7 @@ For example, here we select **Work>Work Items**.
 
 ## Open project settings
 
-Administrators configure resources for a project and manage project-level permissions from the **Project settings** pages. Tasks performed in this context can impact the project and team functions.  For an overview of all project settings, see [Project administrator role and managing projects](../../organizations/settings/about-settings.md#project).
+Administrators configure resources for a project and manage project-level permissions from the **Project settings** pages. Tasks performed in this context can impact the project and team functions. For an overview of all project settings, see [Project administrator role and managing projects](../../organizations/settings/about-settings.md#project).
 
 # [New navigation](#tab/new-nav)
 
@@ -143,7 +144,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 ::: moniker range="vsts"
 ## Open Admin or Organization settings 
 
-Account owners and members of the Project Collection Administators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
+Account owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 
@@ -151,7 +152,7 @@ Account owners and members of the Project Collection Administators group configu
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Open Admin settings 
 
-Account owners and members of the Project Collection Administators group configure resources for all projects or the entire project collection from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
+Account owners and members of the Project Collection Administrators group configure resources for all projects or the entire project collection from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 

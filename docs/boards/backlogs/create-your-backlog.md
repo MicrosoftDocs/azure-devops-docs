@@ -187,7 +187,7 @@ Talk with your team to determine how they want to manage bugs and then [change y
 > [!TIP]  
 > If, after refreshing a backlog or board, you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
 
-
+<a id="convert-ideas" />
 ## Convert ideas into backlog items or stories
 
 Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
@@ -199,7 +199,7 @@ Your backlog shows work that you are planning to do or have started working on. 
 
 ::: moniker range="vsts"
 
-0. Before you start adding work items, choose the ![](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to Off.  
+0. Before you start adding work items, choose the ![](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to Off. Optionally turn **In Progress** items on or off. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](_img/create-backlog/view-options-parents-off.png) 
@@ -222,9 +222,11 @@ Your backlog shows work that you are planning to do or have started working on. 
 
 # [Previous navigation](#tab/previous-nav)
 
-Begin building your backlog by entering a title and click **Add**. If you don't see the **Add** link, click **New** to open the quick add panel. Repeat this step until you've captured all your main ideas. 
+Begin building your backlog by entering a title and click **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. Optionally set **In Progress** to Show or Hide.
 
 ![Add work items to the backlog](_img/create-backlog/add-new-items-standard.png) 
+
+Repeat this step until you've captured all your main ideas. 
 
 ---
 
@@ -314,6 +316,6 @@ Teams that want the least overhead in terms of tracking and estimating may prefe
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
-- [Backlog priority or stack rank order](stack-rank-backlog-position.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

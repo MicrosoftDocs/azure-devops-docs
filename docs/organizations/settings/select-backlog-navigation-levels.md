@@ -93,6 +93,6 @@ Requires TFS 2015.1 or later version.
 - [Define features and epics](../../boards/backlogs/define-features-epics.md)
 - [Organize your backlog](../../boards/backlogs/organize-backlog.md)   
 - [Portfolio management, setup a team hierarchy](../../boards/plans/portfolio-management.md)  
-- [Work with multi-team ownership of backlog items](../../boards/backlogs/work-multi-team-ownership-backlogs.md)
-- [Visibility across teams](../../boards/plans/visibility-across-teams.md)  
+- [Work with multi-team ownership of backlog items](../../boards/backlogs/backlogs-overview.md#multi-team)
+
 

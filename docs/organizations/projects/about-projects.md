@@ -236,6 +236,7 @@ See also, [Compatibility with TFS versions](/tfs/server/compatibility).
 
 ## Related articles
 
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Web portal navigation](../../project/navigation/index.md) 
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Understand differences between Azure DevOps Services and TFS](../../user-guide/about-vsts-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)

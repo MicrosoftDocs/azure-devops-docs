@@ -61,7 +61,7 @@ Both of these are considered user-defined variables.
 
 ::: moniker range="vsts"
 
-YAML builds can have variables defined at the [job](../process/phases.md) level.
+YAML builds can have variables defined at the pipeline or [job](../process/phases.md) level.
 They can also access variables defined when the build is queued.
 
 ```yaml
