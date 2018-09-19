@@ -1,6 +1,6 @@
 ---
-title: Buy TFS CALs or access to TFS Azure Test Plans | Team Foundation Server (TFS)
-description: Steps for administrators on how to buy Team Foundation Server (TFS) client access licenses (CALs) or access to TFS Azure Test Plans 
+title: Buy TFS CALs or access to Azure Test Plans
+description: Steps for administrators on how to buy Team Foundation Server (TFS) client access licenses (CALs) or access to Azure Test Plans 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 09/17/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
-# Buy access to Team Foundation Server or TFS Azure Test Plans
+# Buy access to Team Foundation Server or Azure Test Plans
 
 [!INCLUDE [version-tfs-2015-rtm](../../pipelines/_shared/version-tfs-2015-rtm.md)]
 
@@ -36,7 +36,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 2. Based on the number of users who need TFS CALs, [pay for Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Organizations include five free users and these users don't apply to TFS.
 
-3. If you haven't already, sign in to your Azure DevOporganization (`https://dev.azure.com/{yourorganization}`).
+3. If you haven't already, sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
 4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your organization so you can more easily track these users.
 
