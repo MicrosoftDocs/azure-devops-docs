@@ -376,7 +376,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your testing scripts run a code coverage tool such as [Instanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Instanbul needs `--report cobertura`) to generate the right output.
+If your testing scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Istanbul needs `--report cobertura`) to generate the right output.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
