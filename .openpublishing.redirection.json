@@ -5947,17 +5947,17 @@
     },
     {
       "source_path": "docs/billing/faq-azure-billing.md",
-      "redirect_url": "/azure/devops/organizations/billing/vsts-billing-faq",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/faq-billing-setup.md",
-      "redirect_url": "/azure/devops/organizations/billing/vsts-billing-faq",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/faq-pay-for-basic-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/vsts-billing-faq",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": false
     },
     {
@@ -8372,7 +8372,7 @@
     },
     {
       "source_path": "docs/billing/reduce-cancel-paid-vsts-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/reduce-cancel-paid-vsts-users",
+      "redirect_url": "/azure/devops/organizations/billing/reduce-cancel-paid-users",
       "redirect_document_id": true
     },
     {
@@ -8387,7 +8387,7 @@
     },
     {
       "source_path": "docs/billing/vsts-billing-faq.md",
-      "redirect_url": "/azure/devops/organizations/billing/vsts-billing-faq",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": true
     },
     {

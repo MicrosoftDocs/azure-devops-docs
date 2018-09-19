@@ -26,7 +26,7 @@ By opening the **Tracking Changeset** window, you can determine which branches h
 
 Tracking Changeset window shows branches to which a changeset has merged
 
-![](_img/view-where-when-changesets-have-been-merged/IC451984.png)
+![Tracking Changeset window](_img/view-where-when-changesets-have-been-merged/IC451984.png)
 
 **Required Permissions**
 
@@ -36,7 +36,7 @@ To perform these procedures, your **Read** permission must be set to **Allow** f
 
 >**Important:**  
 >These procedures can be performed only on a branch, not on a folder.  
->![](_img/view-where-when-changesets-have-been-merged/IC268252.png)  
+>![View the Tracking Changeset Window](_img/view-where-when-changesets-have-been-merged/IC268252.png)  
 >For more information about how to branch, see [Branch folders and files](branch-folders-files.md).
 
 ### To view the Tracking Changeset Window from the History window of a branch or file
@@ -61,7 +61,7 @@ To perform these procedures, your **Read** permission must be set to **Allow** f
 
 ### To view the Tracking Changeset window from a work item that is linked to a changeset
 
-1.  Open a work item that is linked to one or more changesets, and then click ![](_img/view-where-when-changesets-have-been-merged/IC267918.gif) **Track Work Item**.
+1.  Open a work item that is linked to one or more changesets, and then click ![Work item](_img/view-where-when-changesets-have-been-merged/IC267918.gif) **Track Work Item**.
 
     The **Select Branches** dialog box appears.
 
@@ -81,7 +81,7 @@ To perform these procedures, your **Read** permission must be set to **Allow** f
 
 Tracking Changeset window elements
 
-![](_img/view-where-when-changesets-have-been-merged/IC451985.png)
+![Tracking Changeset window elements](_img/view-where-when-changesets-have-been-merged/IC451985.png)
 
 The previous example illustrates how you can use the **Tracking Changeset** window to visualize the following information:
 
@@ -106,15 +106,15 @@ To perform these procedures, your **Manage branch object** permission must be se
 
 ### To display the Timeline View of a changeset
 
--   Open the **Tracking Changeset** or **Tracking Work Item** window, and then click ![](_img/view-where-when-changesets-have-been-merged/IC267920.gif) **Timeline Tracking**.
+-   Open the **Tracking Changeset** or **Tracking Work Item** window, and then click ![Timeline View of a changeset](_img/view-where-when-changesets-have-been-merged/IC267920.gif) **Timeline Tracking**.
 
 ### Example: Using Timeline View
 
-The previous illustration shows that two baseless merges and one standard merge occurred. When you click ![](_img/view-where-when-changesets-have-been-merged/IC267920.gif) **Track on Timeline View**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges.
+The previous illustration shows that two baseless merges and one standard merge occurred. When you click ![Track on Timeline View](_img/view-where-when-changesets-have-been-merged/IC267920.gif) **Track on Timeline View**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges.
 
 Timeline View provides detailed chronological data
 
-![](_img/view-where-when-changesets-have-been-merged/IC348439.png)
+![Timeline View](_img/view-where-when-changesets-have-been-merged/IC348439.png)
 
 The branches that have received the changeset appear at the top of the view. In the previous example, the user has clicked the **Version1** branch to show the date and time when the merge occurred.
 

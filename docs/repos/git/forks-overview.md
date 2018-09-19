@@ -42,7 +42,7 @@ When working with forks, you typically use the following workflow:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_forks.svg" />
+                            <img width="48" height="48" alt="Forks" src="https://docs.microsoft.com/media/common/i_forks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
