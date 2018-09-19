@@ -57,8 +57,8 @@ Billing management
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your Azure DevOps organization uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your Azure DevOps organization](reduce-cancel-paid-vsts-users.md)
-* [Billing FAQ](vsts-billing-faq.md)
+* [Change the number of paid users on your Azure DevOps organization](reduce-cancel-paid-users.md)
+* [Billing FAQ](billing-faq.md)
 
 Marketplace extension management
 

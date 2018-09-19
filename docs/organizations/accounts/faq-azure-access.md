@@ -250,11 +250,11 @@ A: This might happen due to the following:
 
 #### Q: What if my organization is already linked to an Azure subscription?
 
-A: You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Azure DevOps billing FAQ](../billing/vsts-billing-faq.md).
+A: You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Azure DevOps billing FAQ](../billing/billing-faq.md).
 
 #### Q: What happens if I unlink my Azure subscription while my organization is connected to a directory?
 
-A: See the [Azure DevOps billing FAQ](../billing/vsts-billing-faq.md).
+A: See the [Azure DevOps billing FAQ](../billing/billing-faq.md).
 
 <a name="AlreadyConnected"></a>
 
