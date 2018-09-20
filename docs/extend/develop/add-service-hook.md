@@ -48,10 +48,10 @@ but below is a sample image you can use along with how it will look with the ext
 >NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
 <div style="vertical-align:middle;display:block;width:60%;margin-left:auto;margin-right:auto">
-<img src="../get-started/_img/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="Sample logo" src="../get-started/_img/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-<img src="../get-started/_img/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="first sample extension example" src="../get-started/_img/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 
 ### Create the manifest file and populate it

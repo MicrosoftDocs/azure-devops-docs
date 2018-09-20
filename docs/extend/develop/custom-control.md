@@ -18,7 +18,7 @@ ms.date: 10/10/2017
 
 Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  At the end of the article you will understand how to build your own custom control.
 
-<img src="./_img/customcontrol.png" style="width: 600px;"/>
+<img alt="custom control in work item form" src="./_img/customcontrol.png" style="width: 600px;"/>
 
 ## Add the custom control
 To add a control to the main page, add a contribution to your [extension manifest](../develop/manifest.md). The type of this contribution should be `ms.vss-work-web.work-item-form-control`

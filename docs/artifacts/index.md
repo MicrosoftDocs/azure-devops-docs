@@ -18,7 +18,7 @@ Host your NuGet, npm, and Maven packages in **Azure DevOps Services** and **Team
 
 ## 5-Minute Quickstarts 
 
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="get-started-nuget.md"><img width="48" height="48" alt="" src="_img/index/logo_nuget.svg"><span>NuGet</span></a></div><div class="ico48Link"><a href="get-started-npm.md"><img width="48" height="48" alt="" src="_img/index/logo_npm.svg"><span>npm</span></a></div><div class="ico48Link"><a href="get-started-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="get-started-nuget.md"><img width="48" height="48" alt="nuget logo" src="_img/index/logo_nuget.svg"><span>NuGet</span></a></div><div class="ico48Link"><a href="get-started-npm.md"><img width="48" height="48" alt="npm logo" src="_img/index/logo_npm.svg"><span>npm</span></a></div><div class="ico48Link"><a href="get-started-maven.md"><img width="48" height="48" alt="maven logo" src="_img/index/logo_maven.svg"><span>Maven</span></a></div></div>
 
 ## How-to Guides
 
