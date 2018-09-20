@@ -25,7 +25,7 @@ Both options are enterprise-ready, supporting teams of any size, from tens to th
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Azure DevOps Services, see [About Azure DevOps Services and Team Foundation Server](about-vsts-tfs.md).
+For the key differences between TFS and Azure DevOps Services, see [About Azure DevOps Services and Team Foundation Server](about-azure-devops-services-tfs.md).
 
 ## Get started in the cloud or on-premises
 
@@ -117,7 +117,7 @@ As your team grows, your tools will grow with you. You can easily add teams whic
 
 Once you've signed up for Azure DevOps Services or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
-- [About Azure DevOps Services and Team Foundation Server](about-vsts-tfs.md)
+- [About Azure DevOps Services and Team Foundation Server](about-azure-devops-services-tfs.md)
 - [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
