@@ -64,19 +64,20 @@ or [run load tests locally with Visual Studio](/visualstudio/test/quickstart-cre
 Before you can run load tests in the cloud, 
 connect Visual Studio to Azure DevOps.
 
-1. In Team Explorer, connect to Azure DevOps.
+1. In Team Explorer, connect to Azure DevOps by first choosing the "connect" icon.
 
    ![Connect to Azure DevOps](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
 
-1. Connect to one of your projects.
+1. Connect to one of your projects by opening the server name in the list and double-clicking on the project name.
  
    ![Select Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
 
    - If you haven't connected to Azure DevOps before, add it to the server list.
+     Start by choosing the **Manage servers** link to open the connection dialog.
 
      ![Click Servers to add your Azure DevOps subscription](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
 
-   - Enter your Azure DevOps subscription name.
+   - Enter your Azure DevOps server URL.
 
      ![Enter your subscription name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
 
