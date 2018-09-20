@@ -9,8 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/05/2017
 monikerRange: '>= tfs-2013'
+ms.date: 09/19/2018
 ---
 
 # Agile process work item types and workflow  
