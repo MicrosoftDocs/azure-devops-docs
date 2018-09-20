@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 You can record and then replay cloud-based load tests on your web app or website directly
-using an HTTP Archive file and Azure DevOps.
+using an HTTP Archive (.har) file and Azure DevOps tools.
 
 Before you start:
 
