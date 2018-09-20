@@ -14,7 +14,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 03/20/2018 
+ms.date: 09/19/2018
 ---
 
 # View and add work items using the Work Items page  
@@ -150,6 +150,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 </tbody>
 </table>
 
+[!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
 ## Copy selected items to the clipboard or email them
 

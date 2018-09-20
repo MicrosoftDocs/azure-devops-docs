@@ -108,7 +108,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/basic_menubar.gif" /> 
+<img alt="Basic menubar extension gif" src="_img/basic_menubar.gif" /> 
 </div>
 
 <a name="actions"></a>
@@ -205,7 +205,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/action_menubar.gif" /> 
+<img alt="Action menubar extension gif" src="_img/action_menubar.gif" /> 
 </div>
 
 <a name="disabled"></a>
@@ -284,7 +284,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/toggle_menubar.gif" /> 
+<img alt="Toggle menubar extension gif" src="_img/toggle_menubar.gif" /> 
 </div>
 
 <a name="hidden"></a>
@@ -354,5 +354,5 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/hide_menubar.gif" /> 
+<img alt="Hide menubar extension gif" src="_img/hide_menubar.gif" /> 
 </div>

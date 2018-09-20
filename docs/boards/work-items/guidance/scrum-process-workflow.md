@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 04/05/2017
+ms.date: 09/19/2018
 ---
 
 # Scrum process work item types and workflow  
@@ -70,8 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-> [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed.  
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
