@@ -275,7 +275,7 @@ There are a number of features and tasks associated with administrating a collab
 
 ## Related articles
 
-- [Understand differences between Azure DevOps Services and TFS](about-vsts-tfs.md)
+- [Understand differences between Azure DevOps Services and TFS](about-azure-devops-services-tfs.md)
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  

@@ -212,7 +212,7 @@ sections:
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
-      - href: about-vsts-tfs.md
+      - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:
           title: Differences in Team Foundation Server and Azure DevOps Services

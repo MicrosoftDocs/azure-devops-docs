@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013 <= tfs-2018'
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-Team Foundation Server (TFS) is the on-premises version of our cloud service, [Azure DevOps Services](what-is-vsts.md).  
+Team Foundation Server (TFS) is the on-premises version of our cloud service, [Azure DevOps Services](what-is-azure-devops-services.md).  
 
 Just like Azure DevOps Services, TFS provides an integrated set of features that you access through your web browser or a supported IDE, including the following:
 
