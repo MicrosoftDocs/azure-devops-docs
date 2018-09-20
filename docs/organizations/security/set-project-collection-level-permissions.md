@@ -45,7 +45,7 @@ For a description of each group and each permission, see [Permissions and groups
 ## Prerequisites
 
 ::: moniker range="vsts"
-* You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users-from-user-hub.md). 
+* You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 

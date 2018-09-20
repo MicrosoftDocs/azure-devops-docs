@@ -71,12 +71,12 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to [Azure DevOps Services](../organizations/accounts/add-team-members-vs.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add users to [Azure DevOps Services](../organizations/accounts/add-team-members.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 <p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
-<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md). </p>
+<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md). </p>
 
 </td>
 <td width="30%">
@@ -84,7 +84,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Access levels</b></p>
 <p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users-from-user-hub.md)   
+- [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([Azure DevOps Services](../organizations/accounts/add-organization-users.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -2293,10 +2293,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Manage work access (Azure DevOps Services)</b></p>
-<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
+<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups.md) to enforce policies about accessing company resources.  </p>
 
 <p><b>Azure Active Directory (Azure DevOps Services) </b></p>
-<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md).</p>
+<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
 <p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
@@ -2656,7 +2656,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/manage-teams.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add organizations-[Azure DevOps Services](../organizations/accounts/add-team-members-vs.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-[Azure DevOps Services](../organizations/accounts/add-team-members.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 

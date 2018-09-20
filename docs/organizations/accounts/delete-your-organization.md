@@ -31,7 +31,7 @@ When you delete your organization, note the following:
 
   You're still charged for any paid users and Azure DevOps Services that your organization uses during this billing cycle. Billing stops after the current cycle ends.
 
-To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 ## Prerequisites
 
@@ -46,12 +46,12 @@ To remove billing from your organization, you must be a project collection admin
 
    ![Screenshot of the Azure portal, with Remove billing highlighted](_img/_shared/azure-portal-remove-billing.png)
 
-  [Need help?](faq-delete-restore-vsts-organization.md#get-support)
+  [Need help?](faq-delete-restore-organization.md#get-support)
 
 ## Delete your organization
 
 To delete your organization, you need at least Basic access and organization owner
-permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 # [New navigation](#tab/new-nav)
 
@@ -72,7 +72,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
-   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
+   [Need help?](faq-delete-restore-organization.md#get-support)
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -92,6 +92,6 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
-  [Need help?](faq-delete-restore-vsts-organization.md#get-support)
+  [Need help?](faq-delete-restore-organization.md#get-support)
 
 ---

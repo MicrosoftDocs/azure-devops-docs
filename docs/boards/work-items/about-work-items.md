@@ -149,7 +149,7 @@ Anyone who has write access to a project can assign work items, including users 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-aad.md).
+You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 

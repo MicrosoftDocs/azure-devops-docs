@@ -99,7 +99,7 @@ To start planning and tracking work, see [About Agile tools](../../boards/get-st
 
 ::: moniker range="vsts"
 
-You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/accounts/add-organization-users-from-user-hub.md) can connect. This is typically done by the organization owner. 
+You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/accounts/add-organization-users.md) can connect. This is typically done by the organization owner. 
 
 Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [Azure DevOps pricing](https://www.visualstudio.com/team-services/pricing/).
 
