@@ -17,7 +17,7 @@ You create, manage, and make customizations to processes from **Organization Set
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Then, expand **Work** as needed and choose **Process**. 
+0. Then, expand **Boards** as needed and choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/_img/process/open-process-page-vert.png) 
@@ -25,7 +25,6 @@ You create, manage, and make customizations to processes from **Organization Set
 	> [!IMPORTANT]  
 	>If you don't see **Process**, then you're working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/azure/devops/reference/customize-work).
 
-::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 

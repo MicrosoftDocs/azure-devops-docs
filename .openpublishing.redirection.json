@@ -3502,7 +3502,7 @@
     },
     {
       "source_path": "docs/about-vsts-tfs.md",
-      "redirect_url": "/azure/devops/user-guide/about-vsts-tfs",
+      "redirect_url": "/azure/devops/user-guide/about-azure-devops-services-tfs",
       "redirect_document_id": false
     },
     {

@@ -165,7 +165,7 @@
           href: ./work/upgrade-hosted-to-inherited.md
         - name: Change a project from Hosted XML to Inheritance
           href: ./work/change-process-from-hosted-to-inherited.md
-  - name: "CI/CD" 
+  - name: Build and release 
     items:
     - name: Agent pools & queues
       href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json

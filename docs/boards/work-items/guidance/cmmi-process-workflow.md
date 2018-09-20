@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 12/19/2017
+ms.date: 09/19/2018
 ---
 
 # CMMI process work item types and workflow

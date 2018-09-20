@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2018
+ms.date: 09/19/2018
 ---
 
 # Agile glossary 
@@ -43,6 +43,7 @@ Groups one or more work item types to support flexible reporting, queries, and o
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 
+[!INCLUDE [temp](../../_shared/glossary-terms/discussion.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
 

@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 03/20/2018
+ms.date: 09/19/2018
 ---
 
 ::: moniker range=">= tfs-2017"
@@ -144,6 +144,7 @@ With each update, changes are recorded in the History field which you can view t
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
 
+[!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
 ::: moniker range=">= tfs-2017"
 ## Follow a work item

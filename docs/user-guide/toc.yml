@@ -4,7 +4,7 @@
   expanded: true
   items:
   - name: What is Azure DevOps?
-    href: what-is-vsts.md
+    href: what-is-azure-devops-services.md
   - name: Overview of services
     href: services.md
   - name: Where's VSTS?
@@ -64,7 +64,7 @@
   - name: Software development roles
     href: roles.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: What's the difference? Azure DevOps Services vs. TFS
-    href: about-vsts-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: about-azure-devops-services-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Glossary
     href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides

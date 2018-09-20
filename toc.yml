@@ -87,7 +87,7 @@
   - name: Software development roles
     href: roles.md
   - name: How Azure DevOps & TFS differ
-    href: about-vsts-tfs.md
+    href: about-azure-devops-services-tfs.md
 - name: How-to guides
   items:
   - name: Go mobile
