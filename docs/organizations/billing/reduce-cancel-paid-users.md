@@ -52,7 +52,7 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
    > [!div class="mx-imgBorder"]
 ![Review your changes and confirm total paid users](_img/reduce-cancel-paid-users/review-and-confirm.png)
 
-1. Go back to your organization to [reassign access levels for your users, if necessary](../accounts/add-organization-users-from-user-hub.md).
+1. Go back to your organization to [reassign access levels for your users, if necessary](../accounts/add-organization-users.md).
 
 ## Next steps
 

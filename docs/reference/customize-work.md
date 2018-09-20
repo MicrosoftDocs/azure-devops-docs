@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 03/20/2018
 ---
@@ -181,7 +182,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <tr>
 <td>Manage access </td>
 <td>
-<ul>
+<ul>accounts/add-team-members.md
 <li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members-vs.md)</li>
 <li>[Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)</li>
 <li>[Stakeholder access](../organizations/security/change-access-levels.md)</li>

@@ -52,7 +52,7 @@
 - name: How-to Guides
   items:
   - name: Add users to Azure DevOps Services
-    href: ../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
   - name: Change access levels
     href: change-access-levels.md 
   - name: Export user list  

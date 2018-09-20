@@ -31,7 +31,7 @@ In this quickstart, you learn how to sign up for a free Azure DevOps organizatio
 
 [!INCLUDE [invite-teammates](../_shared/invite-teammates.md)]
 
-For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users-from-user-hub.md).
+For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users.md).
 
 ## Next steps  
  
