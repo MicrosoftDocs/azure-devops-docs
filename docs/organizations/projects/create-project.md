@@ -39,7 +39,7 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker range="vsts"
 
-To create a project, you must first have [signed up for an Azure DevOps Services organiation](../../user-guide/sign-up-invite-teammates.md). 
+To create a project, you must first have [signed up for an Azure DevOps Services organization](../../user-guide/sign-up-invite-teammates.md). 
 
 > [!IMPORTANT]  
 > To create a Public project, or to make a private project public, see [Create a public project](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects. 
