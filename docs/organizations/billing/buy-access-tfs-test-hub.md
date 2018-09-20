@@ -38,7 +38,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 3. If you haven't already, sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your organization so you can more easily track these users.
+4. [Add users](../accounts/add-organization-users.md) to your organization so you can more easily track these users.
 
     These users will be invited to your organization, but you're not required to use Azure DevOps Services.
 
@@ -59,7 +59,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 3. If you haven't already, sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your organization so you can track these users.
+4. [Add users](../accounts/add-organization-users.md) to your organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your organization so you can track these users.
 
      These users will be invited to your organization, but you're not required to use Azure DevOps Services. By assigning Azure Test Plans Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
 

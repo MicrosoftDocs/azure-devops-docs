@@ -24,7 +24,7 @@ monikerRange: 'vsts'
 
 #### Q: How do I delete my organization?
 
-A: See [Delete your organization](delete-your-vsts-organization.md), which includes prerequisites and helpful tips.
+A: See [Delete your organization](delete-your-organization.md), which includes prerequisites and helpful tips.
 
 #### Q: How do I restore my organization?
 

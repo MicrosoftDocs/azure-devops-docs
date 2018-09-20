@@ -49,7 +49,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## Step-by-step tutorials
 
-* [Connect your Azure DevOps organization to Azure Active Directory](../accounts/connect-organization-to-aad.md)
+* [Connect your Azure DevOps organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
 ## How-to guides
 
