@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 9/10/2018
+ms.date: 9/20/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -83,6 +83,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
+            <td>Control specific build dependencies using container jobs</td><td>*2019*</td>
+        </tr>
+        <tr><td>Enable code coverage in .NET Core task</td><td>*2019*</td></tr>
+        <tr><td>Leverage restructured Process REST APIs</td><td>*2019*</td></tr>
+        <tr><td>Simplify authentication using the new cross-platform Credential Provider for NuGet</td><td>*2019*</td></tr>
+        <tr><td>Store artifacts using Universal Packages</td><td>*2019*</td></tr>
+        <tr><td>Compress symbols when publishing to a file share</td><td>*2019*</td></tr>
+        <tr><td>Embed a video in wiki</td><td>*2019*</td></tr>
+        <tr><td>Rename a wiki</td><td>*2019*</td></tr>
+        <tr><td>Insert a wiki table of contents from the format pane</td><td>*2019*</td></tr>
+        <tr><td>Manage your personal access tokens with filtering and paging</td><td>*2019*</td></tr>
         <tr>
             <td rowspan="15">[10 September 2018](2018/sep-10-azure-devops-launch.md)</td>
             <td>Azure DevOps Services</td><td>*2019*</td>

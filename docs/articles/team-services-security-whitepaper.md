@@ -571,7 +571,7 @@ authentication. However, we have taken steps to help people make secure
 choices. For example, all communication is sent over HTTPS and there
 are password complexity requirements. Nevertheless, your organization
 should evaluate if additional policies are required to meet your
-projects security requirements. You can [learn more](../organizations/accounts/change-application-access-policies-vs.md) about disabling alternate 
+projects security requirements. You can [learn more](../organizations/accounts/change-application-access-policies.md) about disabling alternate 
 authentication credentials altogether for your account if it doesn't meet your
 security requirements.
 

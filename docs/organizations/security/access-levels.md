@@ -23,7 +23,7 @@ Access levels enable administrators the ability to provide their user base acces
 Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. 
 
 ::: moniker range="vsts"
-To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md).
+To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -116,7 +116,7 @@ The following features are available to Stakeholders from the web portal for pri
 <li>[View project welcome pages](../../project/wiki/project-vision-status.md) <sup>5</sup></li>
 <li>[View team dashboards](../../report/dashboards.md) </li>
 <li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
-<li>[Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>6</sup></li>
+<li>[Invite users and assign licenses](../accounts/add-organization-users.md) <sup>6</sup></li>
 <li>[View wiki pages](../../project/wiki/filter-print-wiki.md) <sup>7</sup></li>
 </ul>
 </td>
@@ -139,7 +139,7 @@ The following features are available to Stakeholders from the web portal for pri
 3. Cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
 4. Can save queries under My Queries but cannot save under Shared Queries. 
 5. Cannot view markdown README files defined for repositories. 
-6. Can add users and assign licenses when added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md).
+6. Can add users and assign licenses when added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users.md).
 7. Have read-only permissions to wiki pages. These permissions can't be changed. 
 8. When the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all **Pipeline (Build and Release)** features. If it is disabled, Stakeholders have access to [View releases](../../pipelines/release/approvals/index.md) and [Approve releases](../../pipelines/release/approvals/index.md) only.
 
@@ -179,7 +179,7 @@ From the web portal for private projects, Stakeholders have access to the follow
 <li>[View and edit project welcome pages](../../project/wiki/project-vision-status.md)</li>
 <li>[View and manage team dashboards](../../report/dashboards.md)</li>
 <li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
-<li>[Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>1</sup></li>
+<li>[Invite users and assign licenses](../accounts/add-organization-users.md) <sup>1</sup></li>
 <li>[View and edit wiki pages](../../project/wiki/filter-print-wiki.md)</li>
 </ul>
 </td>
@@ -198,7 +198,7 @@ From the web portal for private projects, Stakeholders have access to the follow
 
 **Notes:**
 
-1. To add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md).
+1. To add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-organization-users.md).
 2. When the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all **Pipeline (Build and Release)** features. If it is disabled, Stakeholders have access to [View releases](../../pipelines/release/approvals/index.md) and [Approve releases](../../pipelines/release/approvals/index.md) only.
 
 
@@ -485,7 +485,7 @@ Service accounts don't require a TFS CAL or other purchase.
 ## Related articles  
 
 ::: moniker range="vsts"
-- [Manage users and access](../accounts/add-organization-users-from-user-hub.md)
+- [Manage users and access](../accounts/add-organization-users.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 ::: moniker-end

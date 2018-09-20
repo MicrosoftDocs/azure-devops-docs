@@ -90,7 +90,7 @@ You can get a list of users and groups that have access to your Team Foundation 
 ## Related articles
 
 - For a description of access levels, see [About access levels](access-levels.md)
-- To manage access levels for Azure DevOps, see [Manage users and access in Azure DevOps](../accounts/add-organization-users-from-user-hub.md) 
+- To manage access levels for Azure DevOps, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
 - To manage access levels for TFS, see [Change access levels](change-access-levels.md)
 - For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
 - For default feature permission and access assignments, see [Default permissions and access](permissions-access.md). 

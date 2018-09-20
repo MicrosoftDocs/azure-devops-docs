@@ -22,7 +22,7 @@ Public projects enable anyone to view its contents. Access is limited when the u
 
 To contribute to a public project, you must be added as a member of that project and assigned either Stakeholder or Basic access. The access level determines the user interfaces you can access. The security group you're assigned to determines the features you can exercise. For details, see [About access levels](../security/access-levels.md).
 
-You [add project members](../accounts/add-organization-users-from-user-hub.md) in the same way you do for private projects. Be sure you understand what it means to [invite an external user](../accounts/add-external-user.md) to have access to your project. If you created the project, you're automatically assigned to the Project Administrators group. 
+You [add project members](../accounts/add-organization-users.md) in the same way you do for private projects. Be sure you understand what it means to [invite an external user](../accounts/add-external-user.md) to have access to your project. If you created the project, you're automatically assigned to the Project Administrators group. 
 
 
 <table>

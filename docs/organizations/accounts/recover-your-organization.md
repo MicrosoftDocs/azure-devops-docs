@@ -21,11 +21,11 @@ After you delete your organization, it's disabled but available for 30 days. If 
 ## Prerequisites
 
 * An organization deleted within the last 30 days.
-* Organization owner permissions to restore your organization. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+* Organization owner permissions to restore your organization. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-organization.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-organization.md#ChooseOrgAcctMSAcct)
 
 2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom. You see a link to restore your organization.
 
@@ -47,6 +47,6 @@ After you delete your organization, it's disabled but available for 30 days. If 
 
    * If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
 
-   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
+   [Need help?](faq-delete-restore-organization.md#get-support)
 
 

@@ -154,7 +154,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 ::: moniker range="vsts"  
 > [!NOTE]   
-> You must first [add user to a project or to your organization](../accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
+> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
 ::: moniker-end 
 
 
