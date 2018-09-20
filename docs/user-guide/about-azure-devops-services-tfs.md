@@ -123,8 +123,8 @@ In TFS, you provide users access to deployments by adding AD groups to various T
 As users are added and removed in AD, they also gain and lose access to TFS. 
 
 In Azure DevOps Services, you can use a similar mechanism to 
-[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) by adding Azure AD groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](../organizations/accounts/add-organization-users-from-user-hub.md) one at a time. 
+[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups.md) by adding Azure AD groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Azure AD, you will have to
+[add users](../organizations/accounts/add-organization-users.md) one at a time. 
 
 <a name="manage-user-access"></a>
 ## Manage user access 
@@ -137,7 +137,7 @@ administration page. For example, assign unlicensed users Stakeholder access onl
 
 Users with a TFS Client Access License (CAL) can have Basic access. Visual Studio subscribers can have either Basic or Advanced access, depending on their subscriptions. TFS does not attempt to verify these licenses or enforce compliance. 
 
-In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users-from-user-hub.md)
+In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 
 To give Basic access to more users, you'll need to set up billing for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md). 

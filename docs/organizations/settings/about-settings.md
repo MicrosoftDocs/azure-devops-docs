@@ -372,7 +372,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Overview (Settings)**</td>
 <td><ul>
-<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
+<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)</li>
 <li>[Find or change your organization location](../accounts/change-organization-location.md)</li>
 <li>[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)</li>
 </ul></td>
@@ -402,14 +402,14 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Policy**</td>
 <td><ul>
-<li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
+<li>[Change application access policies](../accounts/change-application-access-policies.md) </li>
 </ul></td>
 <td>Set policies to allow or disallow access by other applications or services to the  Azure DevOps Services organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
 <td><ul>
-<li>[Add users](../accounts/add-organization-users-from-user-hub.md)</li>
+<li>[Add users](../accounts/add-organization-users.md)</li>
 <li>[Add external users](../accounts/add-external-user.md)</li>
 <li>[Manage user access levels](../accounts/manage-users-table-view.md)</li>
 <li>[Remove users](../accounts/delete-organization-users.md)</li>
@@ -423,8 +423,8 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
-<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-aad.md)</li>
+<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)</li>
+<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>

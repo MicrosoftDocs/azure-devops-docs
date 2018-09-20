@@ -32,7 +32,7 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Add and manage users](../accounts/add-organization-users.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Change individual permissions](../security/change-individual-permissions.md) 
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 

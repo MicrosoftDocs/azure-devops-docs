@@ -33,7 +33,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker range="vsts"  
 > [!IMPORTANT]  
-> If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+> If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 ::: moniker-end  
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  

@@ -141,7 +141,7 @@ sections:
           alt: Account management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Get started as a Stakeholder
-      - href: ../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../organizations/accounts/add-organization-users.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           title: Configure teams, manage users

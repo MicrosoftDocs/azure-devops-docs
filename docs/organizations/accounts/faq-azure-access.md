@@ -156,7 +156,7 @@ Find the Azure AD group, and delete it from your organization.
 
 ## Add users to directory
 
-[Add Azure DevOps organization users to your Azure Active Directory](add-users-to-aad.md).
+[Add Azure DevOps organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
 #### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps Services?
 
