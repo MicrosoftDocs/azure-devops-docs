@@ -356,13 +356,15 @@ and [standard GitHub service connections](#sep-github).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
+| Choose authorization | Required. Either **Personal access token** or **Username and Password** or **OAuth2**. See notes below. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
+| OAuth configuraton | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -379,6 +381,19 @@ GitHub account in your profile:
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
+
+
+> [!NOTE]
+> If you select **OAuth2** you must setup OAuth configurations first
+and use it configure the connection. See
+[this page](https://help.github.com/enterprise/2.14/admin/guides/user-management/using-github-oauth/)
+on GitHub for information about registering a new OAuth application. Then create **OAuth configuration** for the OAuth application in your Azure DevOps account:
+
+* From your Azure DevOps account home page, click on **Organization settings** on the bottom left navigation panel.
+* From **Pipelines** submenu, click on **OAuth configurations**
+* Choose the **Add** link, specify a name for the OAuth configuration, select source type as **GitHub Enterprise**
+* Enter the information required to setup the OAuth configuration.
+* Now from the Azure DevOps project, you can create a new service connection for GitHub Enterprise and choose authorization as **OAuth2** 
 
 *****
 
