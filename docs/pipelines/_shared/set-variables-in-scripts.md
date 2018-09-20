@@ -28,8 +28,8 @@ On Linux and macOS, you use `$AGENT_WORKFOLDER`.
 ![icon](../tasks/utility/_img/batch-script.png) Set the `sauce` and `secret.Sauce` variables
 
 ```bat
-@echo ##vso[task.setvariable variable=sauce]crushed tomatoes
-@echo ##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic
+@echo ##vso[task.setvariable variable=sauce;]crushed tomatoes
+@echo ##vso[task.setvariable variable=secret.Sauce;issecret=true;]crushed tomatoes with garlic
 ```
 
 ![icon](../tasks/utility/_img/batch-script.png) Read the variables
@@ -59,8 +59,8 @@ set secretSauceArgument=%~2
 ![icon](../tasks/utility/_img/powershell.png) Set the `sauce` and `secret.Sauce` variables
 
 ```powershell
-Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with
+Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+Write-Host "##vso[task.setvariable variable=secret.Sauce;issecret=true;]crushed tomatoes with
             garlic"
 ```
 
@@ -91,8 +91,8 @@ Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do
 
 ```bash
 #!/bin/bash
-echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
-echo "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic"
+echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+echo "##vso[task.setvariable variable=secret.Sauce;issecret=true;]crushed tomatoes with garlic"
 ```
 
 ![icon](../tasks/utility/_img/shell-script.png) Read the variables
