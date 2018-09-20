@@ -216,7 +216,7 @@ Add reviewers to your pull request.
 
 1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members-vs.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
@@ -234,7 +234,7 @@ Add reviewers to your pull request.
 
 1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members-vs.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 

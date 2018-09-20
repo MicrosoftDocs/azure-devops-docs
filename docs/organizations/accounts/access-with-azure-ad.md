@@ -89,7 +89,7 @@ Your work in Azure DevOps is associated with your sign-in address.
 After your organization is connected to your directory,
 users continue working seamlessly if their
 sign-in addresses appear in the connected directory.
-If their sign-in addresses don't appear, you must [add those users to your directory](add-users-to-aad.md#SetUpCurrentUsers).
+If their sign-in addresses don't appear, you must [add those users to your directory](add-users-to-azure-ad.md#SetUpCurrentUsers).
 Your organization might have policies about adding users to the directory, so find out more first.
 
 ### What if we can't use the same sign-in addresses?
@@ -111,7 +111,7 @@ You should [restore the user](/azure/active-directory/active-directory-users-res
 
 ## Manage organization access with Azure AD
 
-* [Add Azure DevOps users to Azure AD](add-users-to-aad.md)
+* [Add Azure DevOps users to Azure AD](add-users-to-azure-ad.md)
 * [Connect your Azure DevOps organization to Azure AD](connect-organization-to-aad.md)
 * [Disconnect your Azure DevOps organization from Azure AD](disconnect-organization-from-aad.md)
 * [Delete users from Azure DevOps connected to Azure AD](delete-users-from-services-aad.md)

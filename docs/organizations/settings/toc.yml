@@ -32,7 +32,7 @@
 - name: Tutorials
   items:
   - name: Add and manage users
-    href: ../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Configure a hierarchy of teams
     href: ../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Change individual permissions 
@@ -192,13 +192,13 @@
   - name: Manage your organization
     items:
     - name: Change owner
-      href: ../accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../accounts/change-organization-ownership.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Rename organization
-      href: ../accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../accounts/rename-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Delete organization
-      href: ../accounts/delete-your-vsts-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../accounts/delete-your-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Recover organization
-      href: ../accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../accounts/recover-your-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Change organization location (region)
       href: ../accounts/change-organization-location.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Reference

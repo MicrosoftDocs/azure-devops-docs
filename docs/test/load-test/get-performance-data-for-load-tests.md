@@ -31,7 +31,7 @@ is causing performance problems.
 1. [Enable Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
    for your Azure DevOps subscription, if you haven't already done so.
 
-1. [Link Azure DevOps with your Azure subscription](../../organizations/accounts/connect-organization-to-aad.md),
+1. [Link Azure DevOps with your Azure subscription](../../organizations/accounts/connect-organization-to-azure-ad.md),
    if you haven't already done so.
 
 1. Sign in to Azure DevOps from your web browser to refresh the Azure Resources Manager access token. 
