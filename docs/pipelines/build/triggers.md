@@ -145,7 +145,8 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 ::: moniker range="vsts"
 
 Pull request builds are not supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a pull request trigger.
+After your create your YAML build pipeline, you can use the designer to specify a pull request trigger for GitHub.
+Pull request validation triggers for Azure Repos are configured on the [branch policies](../../git/branch-policies.md#build-validation) page.
 
 ::: moniker-end
 
