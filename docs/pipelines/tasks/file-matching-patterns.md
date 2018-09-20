@@ -47,6 +47,8 @@ Leading `!` changes the meaning of an include pattern to exclude. Interleaved ex
 
 Note, multiple leading `!` flips the meaning.
 
+You need to define include pattern before an exclude one. See <a href="#character_set_examples">examples</a>.
+
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
 
