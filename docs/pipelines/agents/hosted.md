@@ -89,7 +89,7 @@ Microsoft-hosted agents:
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
 * Can run jobs for up to 360 minutes (6 hours).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 
 Microsoft-hosted agents do not offer:
