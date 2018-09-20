@@ -11120,6 +11120,11 @@
       "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management-in-vsts.md",
       "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/vsts-billing-faq.md",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
+      "redirect_document_id": false
     }
   ]
 }
