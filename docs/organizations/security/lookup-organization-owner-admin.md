@@ -1,5 +1,5 @@
 ---
-title: Find an admin or account owner 
+title: Find an admin or organization owner 
 titleSuffix: Azure DevOps Services & TFS
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 08/06/2017
 ---
 
 
-# Look up the account owner or a project administrator
+# Look up administrators and organization owner 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -27,7 +27,7 @@ For an overview of built-in security groups and default permission assignments, 
 * You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).  
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.  
 
-## Find out who is a member of the Project Administrators group
+## Show members of the Project Administrators group
 
 If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
  
@@ -69,7 +69,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ---
 
-## Determine who is a member of the Project Collection Administrators group
+## Show members of the Project Collection Administrators group
 
 If you need elevated permissions, you'll have to request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
 
@@ -116,7 +116,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 <a name="find-owner"></a>
 
-## Look up the account owner 
+## Show who is the organization owner 
 ::: moniker-end
 
 # [New navigation](#tab/new-nav)

@@ -41,15 +41,13 @@ You manage access levels for all collections defined on the application tier for
 
 From a user context, open admin settings by choosing the ![](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
  
-::: moniker range=">= tfs-2017"
-
-### TFS 2018, TFS 2017 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**. 
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.</p>  
+0. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access. 
 
 	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
@@ -58,8 +56,6 @@ From a user context, open admin settings by choosing the ![](../../boards/_img/i
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-
-### TFS 2015, TFS 2013
 
 1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings. 
 
@@ -99,7 +95,7 @@ If you're managing access for a large group of users, a best practice is to firs
 
 You can learn more about each of the features you have access to from the following topics. Basic  includes all features supported by Stakeholder, and Advanced includes access to all features supported by Basic.
 
-###Stakeholder access
+### Stakeholder access
 With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.) Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 
 To learn more, see [About access levels](access-levels.md).
