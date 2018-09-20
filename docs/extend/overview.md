@@ -25,7 +25,7 @@ where they can be kept privately for you and your team or shared with the millio
 
 ## What makes up an extension?
 <div align="center" style="padding-top:15px">
-<img src="./_img/extension-components.png" style="padding-bottom:20px">
+<img alt="Components of an extension" src="./_img/extension-components.png" style="padding-bottom:20px">
 </div>
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.

@@ -167,7 +167,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 <ul>
 <li>[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 <li>[Dashboards](../../report/dashboards/dashboard-permissions.md)</li>
-
 </ul>
 </td>
 </tr>

@@ -22,7 +22,7 @@ When you decide to make the move from TFS to Azure DevOps Services, you might st
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
 which vary in both the fidelity of the data transfer and the complexity of the process.
 
-Prior to migrating data, review the differences that exist between [TFS and Azure DevOps Services](../user-guide/about-vsts-tfs.md).
+Prior to migrating data, review the differences that exist between [TFS and Azure DevOps Services](../user-guide/about-azure-devops-services-tfs.md).
 
 ## Option 1: Copy the most important assets manually
 
@@ -79,7 +79,7 @@ is the right strategy.
 
 
 ## Related notes 
-- [About Azure DevOps Services and Team Foundation Server](../user-guide/about-vsts-tfs.md)  
+- [About Azure DevOps Services and Team Foundation Server](../user-guide/about-azure-devops-services-tfs.md)  
 - [Pricing, Azure DevOps Services](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
 - [Pricing, TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 

@@ -65,6 +65,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 	> [!div class="mx-imgBorder"]  
 	> ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  

@@ -43,7 +43,7 @@
   - name: Clients & tools
     href: ../../user-guide/tools.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: "How do Azure DevOps Services & TFS differ"
-    href: ../../user-guide/about-vsts-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Create a project

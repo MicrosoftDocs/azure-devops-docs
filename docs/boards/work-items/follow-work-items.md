@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 03/01/2018
+ms.date: 09/19/2018
 ---
 
 # Follow a work item or pull request  

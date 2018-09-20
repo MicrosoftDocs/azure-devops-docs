@@ -24,20 +24,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 ## Prerequisites 
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
-<a id="open-process-wit">  </a>
-## Open Settings>Process
-
-You create, manage, and make customizations to processes from the **Settings>Process** pages. 
-
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
-	
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](_img/process/open-account-settings.png)   
-
-0. Choose **Process**. 
-   
-	> [!div class="mx-imgBorder"]  
-	> ![Organization Settings, Process page](_img/process/open-process-page.png) 
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 
 <a id="change-inherited-process"></a>
