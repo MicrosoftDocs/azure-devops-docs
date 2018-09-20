@@ -21,7 +21,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../get-started/node.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-    <img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+    <img alt="Visual Studio Code icon" src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
