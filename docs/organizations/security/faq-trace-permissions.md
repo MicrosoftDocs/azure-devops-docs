@@ -43,7 +43,7 @@ A 3: The user does not have the necessary access level
 
 Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following topics:
 
-* For Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users-from-user-hub.md) 
+* For Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
 * For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=vsts)
 
 ## Related articles

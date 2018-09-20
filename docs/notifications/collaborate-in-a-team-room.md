@@ -37,9 +37,9 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(Azure DevOps Services) ask your organization administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [(Azure DevOps Services) ask your organization administrator to grant you a Basic license](../organizations/accounts/add-organization-users.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(Azure DevOps Services) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [(Azure DevOps Services) Add team members](../organizations/accounts/add-team-members.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list. 
 

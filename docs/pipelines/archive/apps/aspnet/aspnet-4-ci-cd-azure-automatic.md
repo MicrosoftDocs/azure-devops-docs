@@ -210,7 +210,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in Azure Pipelines, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users-from-user-hub.md).
+  [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).

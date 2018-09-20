@@ -37,7 +37,7 @@ Once users have been added to a project, you can browse for that name by display
 ## Add users to a project
 
 ::: moniker range="vsts"  
-If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  

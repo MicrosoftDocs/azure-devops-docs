@@ -133,7 +133,7 @@ The following picklists are configured for each project and not customizable thr
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
 - [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
 
-Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members-vs.md).   
+Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members.md).   
 
 
 <a id="rename-field">  </a>

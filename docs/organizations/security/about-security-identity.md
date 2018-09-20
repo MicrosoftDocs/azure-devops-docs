@@ -229,7 +229,7 @@ Certain features are only available to users who have the appropriate licensing 
 ## Related articles
 
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
 - [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
 
