@@ -68,7 +68,7 @@ To make subsequent edits to paid quantities in your organization, you need only 
    > [!div class="mx-imgBorder"]
 ![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
+6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 

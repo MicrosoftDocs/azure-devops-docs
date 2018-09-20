@@ -877,7 +877,7 @@
     },
     {
       "source_path": "docs/accounts/add-account-users-assign-access-levels.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
@@ -1102,12 +1102,12 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
       "redirect_document_id": false
     },
     {
@@ -1127,17 +1127,17 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/change-application-access-policies-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -1147,7 +1147,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -1157,12 +1157,12 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-organization",
       "redirect_document_id": false
     },
     {
@@ -1812,17 +1812,17 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -2132,17 +2132,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/add-account-users-assign-access-levels-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/assign-licenses-to-users-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
@@ -2162,17 +2162,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/change-application-access-policies-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -2192,7 +2192,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-organization",
       "redirect_document_id": false
     },
     {
@@ -2207,7 +2207,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -2217,27 +2217,27 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-vso-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-organization",
       "redirect_document_id": false
     },
     {
@@ -2967,7 +2967,7 @@
     },
     {
       "source_path": "docs/delete-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-organization",
       "redirect_document_id": false
     },
     {
@@ -2987,12 +2987,12 @@
     },
     {
       "source_path": "docs/get-started/setup/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/manage-visual-studio-online-access-azure-active-directory.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -3012,7 +3012,7 @@
     },
     {
       "source_path": "docs/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -5907,32 +5907,32 @@
     },
     {
       "source_path": "docs/accounts/change-azure-active-directory-vsts-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -7967,12 +7967,12 @@
     },
     {
       "source_path": "docs/accounts/add-account-users-from-user-hub.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/add-account-users-from-user-hub.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
@@ -7987,12 +7987,12 @@
     },
     {
       "source_path": "docs/accounts/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/add-users-to-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -8007,22 +8007,22 @@
     },
     {
       "source_path": "docs/accounts/change-account-ownership-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-application-access-policies-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies-vs",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/connect-account-to-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/connect-account-to-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -8047,17 +8047,17 @@
     },
     {
       "source_path": "docs/accounts/delete-users-from-services-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/delete-your-vsts-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-your-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-your-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/disconnect-account-from-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-aad",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",
       "redirect_document_id": false
     },
     {
@@ -8102,7 +8102,7 @@
     },
     {
       "source_path": "docs/accounts/faq-delete-restore-vsts-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/faq-delete-restore-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/faq-delete-restore-organization",
       "redirect_document_id": false
     },
     {
@@ -8132,7 +8132,7 @@
     },
     {
       "source_path": "docs/accounts/manage-azure-active-directory-groups-vsts.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
       "redirect_document_id": false
     },
     {
@@ -8147,12 +8147,12 @@
     },
     {
       "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
-      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management-in-VSTS",
+      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/recover-your-vsts-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/recover-your-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/recover-your-organization",
       "redirect_document_id": false
     },
     {
@@ -8167,7 +8167,7 @@
     },
     {
       "source_path": "docs/accounts/rename-vsts-account.md",
-      "redirect_url": "/azure/devops/organizations/accounts/rename-vsts-organization",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-organization",
       "redirect_document_id": false
     },
     {
@@ -11058,6 +11058,72 @@
     {
       "source_path": "docs/boards/backlogs/stack-rank-backlog-position.md",
       "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview#stack-rank",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/about-vsts-tfs.md",
+      "redirect_url": "/azure/devops/organizations/accounts/about-azure-devops-services-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/what-is-vsts.md",
+      "redirect_url": "/azure/devops/organizations/accounts/what-is-azure-devops-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/recover-your-vsts-organization.md",
+      "redirect_url": "/azure/devops/organizations/accounts/recover-your-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/rename-vsts-organization.md",
+      "redirect_url": "/azure/devops/organizations/accounts/rename-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/change-application-policies-vs.md",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/change-organization-ownership-vs.md",
+      "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/connect-organization-to-aad.md",
+      "redirect_url": "/azure/devops/organizations/accounts/connect-organization-to-azure-ad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/delete-users-from-services-aad.md",
+      "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
+      "redirect_document_id": false
+    },
+    
+    {
+      "source_path": "docs/organizations/accounts/disconnect-organization-from-aad.md",
+      "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-delete-restore-vsts-organization.md",
+      "redirect_url": "/azure/devops/organizations/accounts/faq-delete-restore-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-azure-active-directory-groups-vsts.md",
+      "redirect_url": "/azure/devops/organizations/accounts/manage-azure-active-directory-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management-in-vsts.md",
+      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/vsts-billing-faq.md",
+      "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": false
     }
   ]

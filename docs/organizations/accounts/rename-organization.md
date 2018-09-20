@@ -25,7 +25,7 @@ You can change your organization name (URL) at any time.
 > An organization can't be renamed within one hour of the most recent rename operation.
 
 To change your Azure DevOps organization URL, you need at least Basic access and organization owner permissions. 
-[How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
+[How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 

@@ -177,7 +177,7 @@ Stakeholder access supports business owners and analysts and other team members 
 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
-For information about each access levels, see [About access levels](../../organizations/security/access-levels.md). To assign access levels, see [Add users and assign licenses](../../organizations/accounts/add-organization-users-from-user-hub.md). 
+For information about each access levels, see [About access levels](../../organizations/security/access-levels.md). To assign access levels, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). 
 
 
 ## Related articles 

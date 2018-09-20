@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Connect organization to Azure AD
-    href: ../accounts/connect-organization-to-aad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+    href: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Billing management

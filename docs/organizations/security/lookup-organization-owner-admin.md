@@ -133,7 +133,7 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
-	To change the owner, see [Change organization owner](../accounts/change-organization-ownership-vs.md). 
+	To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
 
 ::: moniker-end  
 
@@ -153,7 +153,7 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
-	To change the account owner, see [Change organization owner](../accounts/change-organization-ownership-vs.md). 
+	To change the account owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
 
 
 ---
