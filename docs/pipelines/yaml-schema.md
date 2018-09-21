@@ -284,13 +284,13 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS 10.13'
+      vmImage: 'macOS-10.13'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'Ubuntu-16.04'
 
 - template: jobs/build.yml  # Template reference
   parameters:
@@ -389,7 +389,7 @@ For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
   
 strategy:
   matrix:
@@ -574,13 +574,13 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS 10.13'
+    vmImage: 'macOS-10.13'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'Ubuntu-16.04'
   steps:
   - template: steps/build.yml # Template reference
 

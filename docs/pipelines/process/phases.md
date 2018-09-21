@@ -139,7 +139,7 @@ jobs:
 - template: templates/npm.yml  # Template reference
   parameters:
     name: macOS
-    vmImage: xcode9-macos10.13
+    vmImage: macOS-10.13
 
 - template: templates/npm.yml  # Template reference
   parameters:
