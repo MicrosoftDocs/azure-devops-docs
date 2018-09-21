@@ -85,7 +85,6 @@ resources:
   - container: string  # identifier (no spaces allowed)
     image: string  # container image name
     options: string  # arguments to pass to container at startup
-    localImage: boolean  # whether to build the image locally instead of pulling from a registry
     endpoint: string  # endpoint for a private container registry
     env: { string: string }  # list of environment variables to add
 ```
