@@ -108,8 +108,8 @@ resources:
 #### Type
 
 Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to a repo
-within the same project as the one you are building. Cross-project references are
+Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+repository in the same organization. Cross-organization references are
 not supported.
 
 If you choose `github` as your type, then `name` is the full name of the GitHub
