@@ -14,7 +14,7 @@ ms.date: 05/31/2018
 ---
 
 # Add a custom field to a work item type    
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 

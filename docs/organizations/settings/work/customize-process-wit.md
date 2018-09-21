@@ -14,7 +14,7 @@ ms.date: 05/31/2018
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 

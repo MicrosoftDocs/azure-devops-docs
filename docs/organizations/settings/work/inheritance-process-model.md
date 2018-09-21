@@ -16,7 +16,7 @@ ms.date: 05/31/2018
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 <a id=" inherited "> </a> 
 
