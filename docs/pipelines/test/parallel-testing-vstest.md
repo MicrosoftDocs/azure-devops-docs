@@ -5,6 +5,7 @@ ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: pbora
 author: pboraMSFT
