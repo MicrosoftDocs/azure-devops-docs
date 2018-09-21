@@ -91,7 +91,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range="vsts"  
 
-0. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+0. To set the set the permissions for TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage. 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Contributors** group, and then (5) the permission for **Manage branch**.
 
