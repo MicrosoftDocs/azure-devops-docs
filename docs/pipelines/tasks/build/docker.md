@@ -75,7 +75,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
 - task: Docker@1
   displayName: 'Build an image'
   inputs:
-    imageName: 'contoso.azurecr.io/(Build.Repository.Name):$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/repositoryname:$(Build.BuildId)'
 - task: Docker@1
   displayName: Login
   inputs:
@@ -86,7 +86,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
   displayName: 'Push an image'
   inputs:
     command: 'push'
-    imageName: 'contoso.azurecr.io/(Build.Repository.Name):$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/repositoryname:$(Build.BuildId)'
 ```
 
 ### Login to a container registry and run scripts
@@ -104,8 +104,8 @@ For example, You can use the Docker task to sign into ACR and then use a subsequ
 - bash: |
    # Write your commands here
    # Use the environment variables input below to pass secret variables to this script
-   docker build -t contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId) . # include other options to meet your needs
-   docker push contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId) 
+   docker build -t contoso.azurecr.io/repositoryname:$(Build.BuildId) . # include other options to meet your needs
+   docker push contoso.azurecr.io/repositoryname:$(Build.BuildId) 
    displayName: 'Build, tag and push image'
 ```
 
