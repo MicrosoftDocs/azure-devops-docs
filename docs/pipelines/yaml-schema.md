@@ -109,8 +109,9 @@ resources:
 
 Pipelines support two types of repositories, `git` and `github`. `git` refers to
 Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
-repository in the same organization. Cross-organization references are
-not supported.
+repository in the same project. For example, `otherRepo`. To refer to a repo in
+another project within the same organization, prefix the name with that project's name.
+For example, `OtherProject/otherRepo`.
 
 If you choose `github` as your type, then `name` is the full name of the GitHub
 repo including the user or organization. For example, `Microsoft/vscode`. Also,
