@@ -93,7 +93,7 @@ To use a variable in a YAML statement, wrap it in `$()`. For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
 steps:
 - script: ls
   workingDirectory: $(agent.homeDirectory)
