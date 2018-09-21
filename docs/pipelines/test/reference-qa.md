@@ -5,6 +5,7 @@ ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
