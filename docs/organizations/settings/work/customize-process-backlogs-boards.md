@@ -14,7 +14,7 @@ ms.date: 05/31/2018
 
 # Customize your backlogs or boards  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]     
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]     
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  

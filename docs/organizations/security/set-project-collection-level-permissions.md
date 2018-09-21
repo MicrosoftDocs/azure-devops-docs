@@ -28,19 +28,17 @@ Several permissions are set at the project or at the organization/project collec
 > [!Note]  
 > The above list indicates the latest groups defined for Azure DevOps and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
-
 For a description of each group and each permission, see [Permissions and groups reference, Groups](permissions.md#groups).
 
 
 > [!TIP] 
-> For users who will manage features provided at the project-level admin 
-> context&mdash;such as, teams, area and iteration paths, repositories, 
-> service hooks, and service end points&mdash;add them to the Project  
-> Administrators group. 
-> For users who will manage features provided at the collection-level admin 
-> context &mdash;such as, team projects, processes, retention policies and 
-> resource limits, agent pools, and extensions&mdash;add them to the Project  
-> Administrators group.  
+> For users who will manage project-level features &mdash;such as, teams, area and 
+> iteration paths, repositories, service hooks, and service end points&mdash;add them to 
+> the Project Administrators group. 
+> For users who will manage organization or collection-level features 
+> &mdash;such as, projects, policies, processes, retention policies, 
+> agent and deployment pools, and extensions&mdash;add them to the Project Collection 
+> Administrators group. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md). 
 
 ## Prerequisites
 
