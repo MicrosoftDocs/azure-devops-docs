@@ -1,6 +1,6 @@
 ---
-title: Navigate within the Visual Studio Team Explorer pane
-titleSuffix: Azure DevOps Services & TFS 
+title: Navigate in Visual Studio Team Explorer 
+titleSuffix: Azure DevOps 
 description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user

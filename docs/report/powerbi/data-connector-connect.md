@@ -31,19 +31,19 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
 
-	![](./_img/data-connector-get-data-1.png)
+	![Power BI desktop splash screen, Get data button](./_img/data-connector-get-data-1.png)
 	
 	Or, you can find a similar button in the ribbon in the **Home** section. 
 	
-	![](./_img/data-connector-get-data-1a.png)
+	![Power BI desktop ribbon, Get data button](./_img/data-connector-get-data-1a.png)
 
 7. Choose (1) **Online Services**, (2) **Visual Studio Team Services (Beta)**, and then **Connect**.
 
-	![](./_img/data-connector-get-data-2.png)
+	![Get data dialog](./_img/data-connector-get-data-2.png)
 
 8. **Specify the basic parameters to connect to your data**. 
  
-	![](./_img/data-connector-parameters.png)
+	![Connect to Azure DevOps Services dialog](./_img/data-connector-parameters.png)
 
 	- For *Account*, enter the Azure DevOps organization name (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
 	- For *project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
@@ -58,15 +58,15 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	- Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
 	- Select *Basic* if you are connecting to a personal organization or you want to use a personal access token. This option also support alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
 
-	![](./_img/data-connector-get-data-6.png)
+	![Sign in dialog](./_img/data-connector-get-data-6.png)
 
 	If you select *Organizational account,* enter your username and password into the standard login page.  
 
-	![](./_img/data-connector-get-data-7.png)
+	![Enter Office 365 crededentials](./_img/data-connector-get-data-7.png)
 
 10. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
 
-	![](./_img/data-connector-get-data-8.png)
+	![Connect dialog](./_img/data-connector-get-data-8.png)
 
 11. **Select the view**. The Data Connector will present a list of available [Analytics Views](../analytics/what-are-analytics-views.md). Each view represents a set of data that can be pulled into Power BI. 
 
@@ -89,13 +89,13 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 12. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
 	the table name. Should you see any errors, refer to the [Q & A](#q-a) section.
 
-	![](./_img/data-connector-get-data-14.png)
+	![Apply query changes loading dialog](./_img/data-connector-get-data-14.png)
 
 13. **Review the Data model**. While the model is being loaded please review the [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
 
 14. **Create reports based on the loaded data**. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Example Reports - using the Data Connector](data-connector-examples.md).
 
-	![](./_img/data-connector-visual.png)
+	![Power BI desktop report view](./_img/data-connector-visual.png)
 
 <a id="PowerBILimitations">  </a>
 

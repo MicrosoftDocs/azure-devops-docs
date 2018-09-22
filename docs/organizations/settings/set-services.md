@@ -1,5 +1,5 @@
 ---
-title: Turn an Azure DevOps service on or off, change the visibility of a service
+title: Turn a service on or off 
 titleSuffix: Azure DevOps Services
 description: Determines which services are available for a project from the web portal  
 ms.technology: devops-settings

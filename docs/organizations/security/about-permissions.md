@@ -1,6 +1,6 @@
 ---
-title: Understand how permissions and groups are defined 
-titleSuffix: Azure DevOps Services & TFS
+title: How are permissions and groups defined?
+titleSuffix: Azure DevOps & TFS
 description: Understand how permissions are managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security

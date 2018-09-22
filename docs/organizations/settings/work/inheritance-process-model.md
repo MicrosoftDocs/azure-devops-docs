@@ -68,7 +68,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 <a id="field-customizations" />
 ## Field customizations 
 
-Fields defined in the system process appear with an ![](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
+Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
 Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process.   
 

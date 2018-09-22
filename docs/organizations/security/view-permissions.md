@@ -1,7 +1,7 @@
 ---
 title: View permissions for yourself or others
-titleSuffix: Azure DevOps Services & TFS 
-description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level permissions and security
+titleSuffix: Azure DevOps & TFS 
+description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
@@ -115,7 +115,7 @@ Open admin settings for the organization or a collection.
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -136,7 +136,7 @@ Open admin settings for the organization or a collection.
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  

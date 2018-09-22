@@ -1,6 +1,6 @@
 ---
 title: Export access level audit log 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
 ms.technology: devops-security
 ms.prod: devops
@@ -32,7 +32,7 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -53,7 +53,7 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Organization settings**.
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
@@ -74,7 +74,7 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 
 You can get a list of users and groups that have access to your Team Foundation Server (TFS) by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-0. From the web portal home page for a project, choose the ![](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Server settings**. 
+0. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Server settings**. 
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 

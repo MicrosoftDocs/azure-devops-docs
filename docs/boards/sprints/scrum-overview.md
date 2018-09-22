@@ -1,5 +1,5 @@
 ---
-title: Implement Scrum, track work, monitor progress and trends
+title: Implement Scrum, track work in sprints
 titleSuffix: Azure Boards and TFS 
 description: Implement Scrum, track work, monitor progress and trends in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile

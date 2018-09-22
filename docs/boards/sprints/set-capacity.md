@@ -103,12 +103,12 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 ::: moniker range="vsts"
 
-0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
 
-0. If you need to add other contributors to your project, choose the ![](../../_img/icons/blue-add-icon.png) **Add user**.  
+0. If you need to add other contributors to your project, choose the ![ ](../../_img/icons/blue-add-icon.png) **Add user**.  
 
 0. Next, set any time off that the team will take. Choose the **0 days** link as shown.  
 
@@ -138,12 +138,12 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2015"
-0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members-standard.png)  
 
-0.  If you need to add other contributors to your project, choose the ![](../_img/icons/add-light-icon.png) **Add user** icon.  
+0.  If you need to add other contributors to your project, choose the ![ ](../_img/icons/add-light-icon.png) **Add user** icon.  
 ::: moniker-end  
 
 0. Set any time off that the team will take. Choose the **0 days** link as shown.
@@ -223,7 +223,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 <a id="add-remove-users">  </a>
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![](../../_img/icons/actions-icon.png) action menu. 
+To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
 
 ::: moniker-end
 

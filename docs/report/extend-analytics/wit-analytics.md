@@ -1,5 +1,5 @@
 ---
-title: Query work tracking data using the OData Analytics service
+title: Query work tracking data using OData 
 titleSuffix: Azure DevOps Services
 description: How to generate work item tracking reports for Azure DevOps using the OData Analytics service  
 ms.prod: devops

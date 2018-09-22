@@ -1,7 +1,7 @@
 ---
-title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
+title: Markdown syntax for files, widgets, wikis
 titleSuffix: Azure DevOps & TFS 
-description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
+description: Share information, add tables & mathematical notation using markdown within pull requests, readme files, dashboards, and wikis  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  

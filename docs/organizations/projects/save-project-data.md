@@ -1,6 +1,6 @@
 ---
 title: Save project data 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Save project data, like source code, custom build templates, build data, and work items, for Azure DevOps Services
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops

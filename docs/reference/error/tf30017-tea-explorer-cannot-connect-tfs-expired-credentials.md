@@ -1,6 +1,6 @@
 ---
 title: TF30017-Team Explorer cannot connect to 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Team Explorer will not connect to a server that does not have a valid CA certificate.
 ms.prod: devops
 ms.technology: devops-agile

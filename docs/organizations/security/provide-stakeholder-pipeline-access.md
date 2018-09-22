@@ -131,12 +131,12 @@ Open the Security dialog for all or a select build pipeline.
 
 # [New navigation](#tab/new-nav)
 
-0. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![](../../_img/icons/actions-icon.png)actions icon and select **Security**.
+0. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../_img/icons/actions-icon.png)actions icon and select **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build pipelines, vertical nav](_img/stakeholder-security/open-security-all-build-pipelines-new-nav.png)  
 
-0. To set the permissions for a specific build pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
+0. To set the permissions for a specific build pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the security dialog for a build pipeline](_img/stakeholder-security/open-security-build-pipeline-new-nav.png)  
@@ -147,7 +147,7 @@ Open the Security dialog for all or a select build pipeline.
 
    ![Open the Security dialog for all build pipelines](../../pipelines/policies/_img/set-build-release-permissions/open-all-build-definitions-security.png)
 
-0. To set the permissions for a specific build pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
+0. To set the permissions for a specific build pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
 
    ![Open the security dialog for a build pipeline](../../pipelines/policies/_img/set-build-release-permissions/set-build-permission-open-dialog.png)  
 
@@ -192,7 +192,7 @@ Open the Security dialog for all or a select release pipeline.
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build definitions, vertical nav](_img/stakeholder-security/open-security-release-definitions-vert.png)  
 
-0. To set the permissions for a specific release pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
+0. To set the permissions for a specific release pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
 
 0. Add the custom security group, such as *Stakeholder Access*, to the permissions dialog.
 
@@ -212,7 +212,7 @@ Open the Security dialog for all or a select release pipeline.
 
    ![Open the Security dialog for all build definitions](_img/stakeholder-security/open-security-release-definitions.png)
 
-0. To set the permissions for a specific release pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the release and choose **Security**. 
+0. To set the permissions for a specific release pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu for the release and choose **Security**. 
 
 0. Add the custom security group, such as *Stakeholder Access*, to the permissions dialog.
 

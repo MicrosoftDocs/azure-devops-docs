@@ -1,7 +1,7 @@
 ---
-title: Add, edit, or print wiki pages defined in your team project
+title: Add, edit, or print wiki pages
 titleSuffix: Azure DevOps & TFS  
-description: Add, edit, reorder, and manage pages for your built-in team project wiki in Azure DevOps Services & Team Foundation Server  
+description: Add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki

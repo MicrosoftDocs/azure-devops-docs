@@ -1,6 +1,6 @@
 ---
 title: IProcessTemplates.AddUpdateTemplate method 
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Syntax and usage for the IProcessTemplates.AddUpdateTemplate method to add or update a process template when working with Azure DevOps Services or Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops
