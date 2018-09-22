@@ -136,7 +136,7 @@ you'll see the parent epic of the features and backlog items, even if the epic o
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/customer-service-backlog-parents-on.png)   
@@ -154,7 +154,7 @@ Items that are owned by other teams appear with an information icon, ![](../../_
 
 ::: moniker range=">= tfs-2017"  
 
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, previous navigation](_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   

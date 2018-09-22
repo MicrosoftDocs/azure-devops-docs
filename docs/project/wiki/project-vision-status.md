@@ -112,7 +112,7 @@ You can share your project vision and objective, as well as ways for team member
 
 	A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-0.	Return to **Overview>Summary** and choose the README file for the project page. Choose the ![](../../_img/icons/edit.png) edit icon.
+0.	Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../_img/icons/edit.png) edit icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](_img/share-project/choose-readme-file-new-nav.png)  
@@ -254,7 +254,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity. 
 
 ::: moniker range="vsts"   
-To add users to the project, choose the ![](_img/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md). 
+To add users to the project, choose the ![ ](_img/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Project stats](_img/share-project/project-stats-new-nav.png) 
@@ -262,7 +262,7 @@ To add users to the project, choose the ![](_img/share-project/add-members-new-n
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-To add users to the project, choose the ![](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
+To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
 
 ![Project Home Page, Activity](_img/project-home-page-activity.png)  
 
@@ -281,7 +281,7 @@ You can change the repository used to support your project vision, including poi
 
 0. Open **Overview>Summary** . 
 
-0. Choose the ![](../../_img/icons/edit.png) edit icon.
+0. Choose the ![ ](../../_img/icons/edit.png) edit icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](_img/share-project/choose-readme-file-new-nav.png)  

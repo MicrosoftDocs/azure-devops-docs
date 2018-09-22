@@ -1,5 +1,5 @@
 ---
-title: Create an Active bugs Power BI report with a custom Analytics view
+title: Create an Active bugs Power BI report 
 titleSuffix: Azure DevOps Services
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops

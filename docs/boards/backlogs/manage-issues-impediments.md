@@ -41,12 +41,12 @@ In this topic you'll learn:
 
 ::: moniker range="vsts"    
 
-Open **Boards>Work Items**, and choose the ![](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
+Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add issue, new nav](_img/manage-issues/add-issue-vert.png)   
 
-Choose the ![](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
+Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end    
 
@@ -58,7 +58,7 @@ Choose the ![](../_img/icons/pin-icon.png) pin icon to have it show up within th
 
 ::: moniker range=">= tfs-2017"
 
-From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
 <img src="_img/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   

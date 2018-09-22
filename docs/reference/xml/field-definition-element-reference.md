@@ -1,6 +1,6 @@
 ---
 title: FIELD (Definition) element reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.prod: devops
 ms.technology: devops-agile

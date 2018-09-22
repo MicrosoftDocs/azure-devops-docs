@@ -1,5 +1,5 @@
 ---
-title: TF30026-You cannot change the file name extension titleSuffix: Azure DevOps Services & TFS
+title: TF30026-You cannot change file name extension titleSuffix: Azure DevOps & TFS
 description: Occurs when you try to change the file extension on a file stored on a server that hosts SharePoint Products.
 ms.prod: devops
 ms.technology: devops-agile

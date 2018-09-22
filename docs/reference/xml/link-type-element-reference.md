@@ -1,6 +1,6 @@
 ---
 title: Link type element reference
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.prod: devops
 ms.technology: devops-agile

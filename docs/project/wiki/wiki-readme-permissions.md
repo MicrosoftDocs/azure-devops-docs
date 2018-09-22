@@ -1,7 +1,7 @@
 ---
-title: Default permissions set for notifications, READMEs, Wiki, and feedback 
+title: Default Wiki and social tool permissions 
 titleSuffix: Azure DevOps & TFS 
-description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Azure DevOps Services & Team Foundation Server 
+description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  

@@ -1,6 +1,6 @@
 ---
 title: View and change your user preferences 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps Services or Team Foundation Serer 
 ms.prod: devops
 ms.technology: devops-collab

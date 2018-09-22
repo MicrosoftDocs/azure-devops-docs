@@ -1,6 +1,6 @@
 ---
 title: Cumulative flow guidance
-titleSuffix: Azure DevOps Services & TFS   
+titleSuffix: Azure DevOps & TFS   
 description: Process guidance to work with cumulative flow diagrams to improve your     
 ms.prod: devops  
 ms.technology: devops-analytics  

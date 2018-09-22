@@ -1,7 +1,7 @@
 ---
-title: About user, team, project, collection, & organizational-level settings
-titleSuffix: Azure DevOps Services & TFS
-description: Overview of configuring team, project, collection, and organizational-level settings in Azure DevOps & Team Foundation Server
+title: What settings are supported? 
+titleSuffix: Azure DevOps & TFS
+description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview

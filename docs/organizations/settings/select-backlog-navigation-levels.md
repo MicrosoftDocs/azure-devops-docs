@@ -1,6 +1,6 @@
 ---
 title: Select backlog navigation levels
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

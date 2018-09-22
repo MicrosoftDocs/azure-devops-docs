@@ -1,6 +1,6 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Choose how bugs appear on Agile tools in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

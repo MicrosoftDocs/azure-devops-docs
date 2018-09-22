@@ -39,7 +39,7 @@ You manage access levels for all collections defined on the application tier for
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned.  
 
-From a user context, open admin settings by choosing the ![](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
+From a user context, open admin settings by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
  
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 

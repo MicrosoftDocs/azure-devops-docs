@@ -40,7 +40,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 ```
 
 ## Build an app with Xcode
@@ -59,7 +59,7 @@ steps:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 ```

@@ -1,6 +1,6 @@
 ---
-title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed 
-titleSuffix: Azure DevOps Services & TFS
+title: TF237002-Cannot open the document... 
+titleSuffix: Azure DevOps & TFS
 description: Appears when a Team Foundation add-in has been disabled in an Office client.
 ms.prod: devops
 ms.technology: devops-agile

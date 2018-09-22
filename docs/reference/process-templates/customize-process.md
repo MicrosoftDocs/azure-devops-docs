@@ -1,6 +1,6 @@
 ---
 title: Customize a process template
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define the objects and processes available to you when you create a project in Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
