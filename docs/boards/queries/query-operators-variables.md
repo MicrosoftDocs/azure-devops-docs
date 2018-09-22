@@ -57,7 +57,7 @@ For more general information about queries, see [Use the query editor to list an
 
 5.  To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
 
-    You can add a clause to the end of the query, insert a clause after an existing clause (![](_img/query-fields-operators-values-variables/IC588311.png)), and remove (![](_img/query-fields-operators-values-variables/IC588312.png)), group (![](_img/query-fields-operators-values-variables/IC588313.png)), and ungroup (![](_img/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
+    You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](_img/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](_img/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](_img/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](_img/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
 
 <a id="and-or" /> 
 ## And/Or
@@ -72,8 +72,8 @@ As the following example shows, the grouped clauses are translated to the corres
 
 |Grouped clauses|Logical expression|
 |---|---|
-|![](_img/query-fields-operators-values-variables/IC425364.png)|Priority=1 OR (Work Item Type=Bug AND State=Active)|
-|![](_img/query-fields-operators-values-variables/IC425365.png)|Priority=1 AND (Work Item Type=Bug OR State=Active)|
+|![ ](_img/query-fields-operators-values-variables/IC425364.png)|Priority=1 OR (Work Item Type=Bug AND State=Active)|
+|![ ](_img/query-fields-operators-values-variables/IC425365.png)|Priority=1 AND (Work Item Type=Bug OR State=Active)|
 
 For more information, see [Use the query editor to list and manage queries](using-queries.md).
 

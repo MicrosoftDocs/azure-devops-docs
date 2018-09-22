@@ -1,6 +1,6 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: At-a-glance view of permissions and access levels for common user tasks for Azure DevOps Services and Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-security
@@ -77,7 +77,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range="vsts"
 > [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![](/azure/devops/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 [!INCLUDE [temp](_shared/pipelines.md)]
 

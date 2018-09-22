@@ -130,7 +130,7 @@ With this view, you can quickly see which items are nearing completion and which
 
 ::: moniker range="vsts"
 
-0. To show cards based on their backlog-to-task groupings, choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
+0. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
 	> ![Set view options](_img/taskboard/group-items-all-agile.png)
@@ -166,7 +166,7 @@ With this view, you can focus on the work completed and the work remaining for e
 
 ::: moniker range="vsts"
 
-To filter on the tasks for a specific team member, choose the ![](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
+To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 > [!div class="mx-imgBorder"]
 > ![Task board, filter on a person](_img/taskboard/group-by-backlog-filter-on-person.png)
@@ -194,14 +194,14 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **People**.
+0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **People**.
 
 	Only those team members with tasks assigned to them are listed. All their tasks are shown as cards under their column state.
 
 	> [!div class="mx-imgBorder"]
 	> ![Group by people](_img/taskboard/group-by-people-agile.png)
 
-0. To filter on the tasks for a specific team member, choose the ![](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
+0. To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another sprint](_img/taskboard/filter-by-a-team-member.png)

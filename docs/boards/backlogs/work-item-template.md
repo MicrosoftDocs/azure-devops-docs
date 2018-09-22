@@ -41,7 +41,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 	Note that within the web portal or browser context, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
 	::: moniker-end
 
-0. Choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
+0. Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
 	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]  
@@ -149,7 +149,7 @@ The main method for adding a work item using a template is to open the template 
 	Expand **Work** and choose **Team configuration**. 
 	####Previous navigation  
 
-	Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+	Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team admin context](../../_img/open-admin-context-standard.png)
@@ -224,7 +224,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 ::: moniker range=">= tfs-2017"
 #### Apply a template within a work item form 
 
-1. Open the work item that you want to update using the fields defined within a template, choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
+1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
 	::: moniker range="vsts"
 	> [!div class="mx-imgBorder"]
@@ -308,7 +308,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 	Expand **Work** and choose **Team configuration**. 
 	####Previous navigation  
 
-	Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+	Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
 
 	Here we open the admin page for the Web team. 
 

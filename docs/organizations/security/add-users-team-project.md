@@ -97,7 +97,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
    ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
@@ -152,7 +152,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-0.  Open a backlog or board for a team and choose the ![](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
 	Here we open the Board for the Web team and from there the team profile.  
 
@@ -176,7 +176,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
 
 0. To remove members, return to this page, highlight the user name and choose **Remove**.
 
@@ -210,7 +210,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
 
 0. To remove members, return to this page, highlight the user name and choose **Remove**.
 

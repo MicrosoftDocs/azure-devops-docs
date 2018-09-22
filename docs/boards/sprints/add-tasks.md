@@ -116,7 +116,7 @@ From the **Backlog** view, choose the plus sign to open the work item form for a
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
+Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the task board](_img/add-tasks/add-task-board-agile.png)
@@ -135,14 +135,14 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 You can add tasks from the sprint **Backlog** or **Board** (aka task board). 
 
-From the **Backlog** view, choose the ![](../../_img/icons/blue-add-icon.png) plus icon to add a new task.  
+From the **Backlog** view, choose the ![ ](../../_img/icons/blue-add-icon.png) plus icon to add a new task.  
 
 > [!div class="mx-imgBorder"]
 > ![print backlog page, add task](_img/add-tasks/sp-add-tasks.png)
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Board**, and add tasks as cards. Simply click the ![](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
+Another option, is to open the **Board**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the task board](_img/add-tasks/add-task-board-standard.png)

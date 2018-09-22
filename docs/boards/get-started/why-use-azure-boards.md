@@ -1,6 +1,6 @@
 ---
 title: Why use Azure Boards
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure Boards & TFS 
 description: Benefits provided with Azure Boards  
 ms.prod: devops
 ms.technology: devops-new-user

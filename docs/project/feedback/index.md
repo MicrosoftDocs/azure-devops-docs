@@ -1,7 +1,7 @@
 ---
 title: Feedback index to content
 titleSuffix: Azure DevOps Services & TFS 
-description: Index to topics for requesting and providing feedback in Azure DevOps Services & Team Foundation Server   
+description: Index to topics for requesting and providing feedback in Azure DevOps & Team Foundation Server  
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview

@@ -1,6 +1,6 @@
 ---
 title: Process template and plug-in files 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Describes each process template and plug-in file and what is supported when you create a project via Visual Studio or the web portal  
 ms.prod: devops
 ms.technology: devops-agile 

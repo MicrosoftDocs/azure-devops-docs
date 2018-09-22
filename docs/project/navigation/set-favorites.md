@@ -97,12 +97,12 @@ You can set favorites for the following artifacts from the indicated page.
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-vert.png)  
 <a id="team-artifact" />
-0. To favorite a team artifact, open **Boards>Boards** or **Boards>Backlogs**. Select the team you want to favorite from the team selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon.
+0. To favorite a team artifact, open **Boards>Boards** or **Boards>Backlogs**. Select the team you want to favorite from the team selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work>Boards, set team favorite](_img/favorites/set-team-favorite-vert.png)
 
-0. To favorite other team artifacts, choose the ![](../../_img/icons/team.png) team icon, and then choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to one of the listed artifacts. 
+0. To favorite other team artifacts, choose the ![ ](../../_img/icons/team.png) team icon, and then choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to one of the listed artifacts. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Phone team work artifacts](_img/favorites/view-team-artifacts-vert.png) 
@@ -138,7 +138,7 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker range="vsts"
 
-Access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
+Access your favorites by choosing the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View your favorited items](_img/favorites/open-favorites-page-vnav.png) 
@@ -153,7 +153,7 @@ Access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
@@ -187,7 +187,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear appear on your **Favorites** page and towards the top of the team backlog selector menu.
+2.  Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear appear on your **Favorites** page and towards the top of the team backlog selector menu.
 
 ::: moniker-end
 
@@ -270,7 +270,7 @@ Favoriting a dashboard isn't supported in  previous navigation.
 
 ::: moniker range="vsts"  
 
-From any **Repos** page, open the repository selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon for the repository you want to favorite.
+From any **Repos** page, open the repository selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon for the repository you want to favorite.
 
 > [!div class="mx-imgBorder"]  
 > ![Code page, Repository selector, choose favorites icon](_img/favorites/favorite-repo-vert.png)  
@@ -283,7 +283,7 @@ From any **Repos** page, open the repository selector and choose the ![](../../_
 
 # [Previous navigation](#tab/previous-nav)
 
-From any **Code** page, open the repository selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the repository you want to favorite. 
+From any **Code** page, open the repository selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the repository you want to favorite. 
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Code, Favorite a repo](_img/set-favorites-repository.png) 
@@ -297,7 +297,7 @@ From any **Code** page, open the repository selector and choose the ![](../../_i
 
 ::: moniker range="vsts"  
 
-Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
+Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Pipelines>Builds, Add to my favorites or team favorites, new navigation](_img/favorites/set-build-favorites-vert.png)
@@ -310,7 +310,7 @@ Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Ch
 
 # [Previous navigation](#tab/previous-nav)
 
-Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
+Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Build & Release, Builds, Add to my favorites or team favorites, previous navigation](_img/favorites/set-favorites-build-definitions.png)
@@ -324,14 +324,14 @@ Open **Build and Release>Builds** and choose either **Mine** or **Definitions** 
 
 ::: moniker range="vsts"  
 
-Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
+Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, Add to favorites, new navigation](_img/favorites/favorite-query.png)
 
-You can also set a query as a personal favorite by opening the query and choosing the ![](../../_img/icons/icon-favorite-star.png) star icon.
+You can also set a query as a personal favorite by opening the query and choosing the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, set shared query as a personal favorite](_img/favorites/set-query-favorite-personal.png) 
@@ -346,14 +346,14 @@ You can also set a query as a personal favorite by opening the query and choosin
 
 ::: moniker range="vsts"
 
-Open **Work>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
+Open **Work>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, Add to favorites, new navigation](_img/favorites/favorite-query.png)
 
-You can also set a query as a personal favorite by opening the query and choosing the ![](../../_img/icons/icon-favorite-star.png) star icon.
+You can also set a query as a personal favorite by opening the query and choosing the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, set shared query as a personal favorite](_img/favorites/set-query-favorite-personal.png) 
@@ -362,7 +362,7 @@ You can also set a query as a personal favorite by opening the query and choosin
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Open **Work>Queries**. Next, open the ![](../../_img/icons/actions-icon.png) actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
+Open **Work>Queries**. Next, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
 
 ![Web portal, Work, Queries, Add to my favorites](_img/set-favorites-shared-query.png)
 
@@ -379,7 +379,7 @@ To learn more about delivery plans, see [Review team Delivery Plans](../../board
 
 ::: moniker range="vsts"    
 
-To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan. 
+To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan. 
 ::: moniker-end    
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"    
@@ -389,7 +389,7 @@ To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose
 
 # [Previous navigation](#tab/previous-nav)
 
-To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan.
+To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan.
 
 ---
 
@@ -401,7 +401,7 @@ To learn more about test plans, see [Create a test plan and test suite](../../te
 
 ::: moniker range="vsts"    
 
-To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
 ::: moniker-end    
 
@@ -412,7 +412,7 @@ To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the
 
 # [Previous navigation](#tab/previous-nav)
 
-To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
 ---
 
@@ -425,7 +425,7 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and choose 
 
 ::: moniker range="vsts"  
 
-You can unfavorite an artifact from your **Favorites** page. Choose the ![](../../_img/icons/inbox.png) inbox icon, and then choose **Favorites**. Choose the ![](../../_img/icons/icon-favorited.png) favorited icon of a currently favorited artifact. 
+You can unfavorite an artifact from your **Favorites** page. Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choose **Favorites**. Choose the ![ ](../../_img/icons/icon-favorited.png) favorited icon of a currently favorited artifact. 
 
 > [!div class="mx-imgBorder"]  
 > ![View your favorited items](_img/favorites/open-favorites-page-vnav.png) 
@@ -440,7 +440,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 # [Previous navigation](#tab/previous-nav)
 
-You can unfavorite an artifact from the **Projects>Favorites** page and choose the ![](../../_img/icons/icon-favorited.png) favorited icon of a currently favorited artifact. 
+You can unfavorite an artifact from the **Projects>Favorites** page and choose the ![ ](../../_img/icons/icon-favorited.png) favorited icon of a currently favorited artifact. 
 
 Similarly, you can unfavorite an artifact from the same page where you favorited it. 
 

@@ -1,5 +1,5 @@
 ---
-title: Access Analytics service data from the Power BI desktop
+title: Access Analytics data from Power BI desktop
 titleSuffix: Azure DevOps Services  
 description: How to access Analytics Service OData from a Power BI Desktop OData feed for Azure DevOps  
 ms.prod: devops

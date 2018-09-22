@@ -1,6 +1,6 @@
 ---
 title: Dashboards, charts, & widgets
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: devops

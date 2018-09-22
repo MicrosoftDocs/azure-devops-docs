@@ -1,6 +1,6 @@
 ---
-title: Set project-level or collection-level permissions 
-titleSuffix: Azure DevOps Services & TFS
+title: Set project or collection-level permissions 
+titleSuffix: Azure DevOps & TFS
 description: How-to guide to set project-level permissions in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
@@ -84,7 +84,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Choose **Save changes**. Choose the ![](../../_img/icons/refresh.png) refresh icon to see the additions.  
+0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
@@ -96,7 +96,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
@@ -114,7 +114,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Choose **Save changes**. Choose the ![](../../_img/icons/refresh.png) refresh icon to see the additions.  
+0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 
 ---
 
@@ -146,7 +146,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -181,7 +181,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (TFS).
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (TFS).
 
 	
 	> [!div class="mx-imgBorder"]  

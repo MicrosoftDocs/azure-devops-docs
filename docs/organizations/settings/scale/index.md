@@ -1,6 +1,6 @@
 ---
 title: Scale & configure teams
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Add teams and configure and customize team assets to scale your organization 
 ms.technology: devops-settings
 ms.prod: devops

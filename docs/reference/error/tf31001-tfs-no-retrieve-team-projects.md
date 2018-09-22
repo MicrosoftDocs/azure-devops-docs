@@ -1,6 +1,6 @@
 ---
-title: TF31001-Team Foundation cannot retrieve the list of projects 
-titleSuffix: Azure DevOps Services & TFS
+title: TF31001-Team Foundation cannot retrieve...
+titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer can't display the list of projects defined on a Team Foundation Server. 
 ms.prod: devops
 ms.technology: devops-agile

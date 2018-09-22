@@ -1,6 +1,6 @@
 ---
 title: Add a team administrator 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Add a user to the team administrator role in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-settings
 ms.prod: devops

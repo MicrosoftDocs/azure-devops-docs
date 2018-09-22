@@ -1,6 +1,6 @@
 ---
 title: Process template XML elements reference
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Processes the template for adding or removing plug-in files.
 ms.prod: devops
 ms.technology: devops-agile
