@@ -81,7 +81,7 @@ The first step is to add a team for each feature team and management area. You c
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](../../organizations/settings/_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -96,7 +96,7 @@ The first step is to add a team for each feature team and management area. You c
 ::: moniker range=">= tfs-2013  <= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
 	<img src="../../_shared/_img/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -141,7 +141,7 @@ You do this by opening each area path associated with a feature team and changin
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](../../organizations/settings/_img/areas/open-project-work-areas-settings-vert.png)   
 
-0. Next, choose the ![](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
@@ -160,7 +160,7 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range=">= tfs-2017"  
 
-0. From the web portal for the project, choose the ![](../../_img/icons/gear_icon.png) gear icon.   
+0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
@@ -173,7 +173,7 @@ You do this by opening each area path associated with a feature team and changin
 
 0. Choose **Work**.  
 
-0. Next, choose the ![](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
@@ -187,11 +187,11 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
-0. Next, choose the ![](../_img/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../_img/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
@@ -249,7 +249,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker range=">= tfs-2017"  
 
-0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png) 
@@ -272,7 +272,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-From **Areas**, open the ![](../_img/icons/context_menu.png) context menu and select **Include sub-areas**.  
+From **Areas**, open the ![ ](../_img/icons/context_menu.png) context menu and select **Include sub-areas**.  
 
 Here we choose to include sub-area paths for the Account Management area.  
 

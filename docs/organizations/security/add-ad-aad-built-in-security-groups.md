@@ -1,7 +1,7 @@
 ---
-title: Add AD/Azure AD security groups to built-in security groups 
-titleSuffix: Azure DevOps Services & TFS
-description: Manage large groups of users by adding AD/Azure AD security groups to built-in security groups 
+title: Add AD/Azure AD groups to security groups 
+titleSuffix: Azure DevOps & TFS
+description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -62,7 +62,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-1. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 2. Enter the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
 
@@ -84,7 +84,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
    ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
 
@@ -102,7 +102,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-1. Choose ![](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 2. Enter the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
 

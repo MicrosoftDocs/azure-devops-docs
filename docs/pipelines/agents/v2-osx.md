@@ -229,9 +229,9 @@ Command:
 ./svc.sh uninstall
 ```
 
-#### Automatic log on and lock
+#### Automatic login and lock
 
-The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](http://www.tuaw.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
+Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/en-us/HT201476).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 

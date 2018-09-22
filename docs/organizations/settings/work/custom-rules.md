@@ -1,5 +1,5 @@
 ---
-title: Add a custom rule to a work item type to an inherited process
+title: Add a custom rule to a work item type
 titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
 ms.technology: devops-agile
@@ -16,7 +16,7 @@ ms.date: 05/31/2018
 
 # Add a rule to a work item type  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 

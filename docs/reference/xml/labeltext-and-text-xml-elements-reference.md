@@ -1,6 +1,6 @@
 ---
 title: LabelText and Text XML elements reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Adds a standalone label or informational text to a work item form by using the LabelText element
 ms.prod: devops
 ms.technology: devops-agile

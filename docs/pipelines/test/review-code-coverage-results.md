@@ -5,6 +5,7 @@ ms.assetid: 86D94FB7-D730-4ECE-8300-5E76934090A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: vinojos
 author: vinojos

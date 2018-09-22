@@ -1,6 +1,6 @@
 ---
 title: Git repository and branch default permissions
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.assetid:  

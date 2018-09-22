@@ -144,7 +144,7 @@ When defining a plan, note the following:
 
 Once you've defined a plan, you can further customize it. 
 
-1. Choose the ![](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the ![ ](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
 	- Edit the teams you've selected and their backlog level  

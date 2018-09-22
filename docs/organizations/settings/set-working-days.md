@@ -1,6 +1,6 @@
 ---
 title: Set working days off
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

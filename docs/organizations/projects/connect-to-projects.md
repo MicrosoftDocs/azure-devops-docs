@@ -1,6 +1,6 @@
 ---
 title: Connect to a project from a web browser or supported client
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops

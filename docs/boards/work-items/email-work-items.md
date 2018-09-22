@@ -268,7 +268,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 <a id="release-summary"></a>
 ## Email release summary
 
-From **Build and release>Releases**, choose a specific release and click the ![](../_img/icons/email-icon.png) **Send Email** icon to share the results of that release.  
+From **Build and release>Releases**, choose a specific release and click the ![ ](../_img/icons/email-icon.png) **Send Email** icon to share the results of that release.  
 
 ![Release summary, send email](../queries/_img/share-plans-email-release-definition.png)
 

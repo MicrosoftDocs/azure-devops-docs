@@ -1,5 +1,5 @@
 ---
-title: Default roles & access for public projects
+title: Default roles & access 
 titleSuffix: Azure DevOps Services Public Project
 description: Overview of public project user roles and access
 ms.technology: devops-public-projects

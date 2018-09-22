@@ -1,6 +1,6 @@
 ---
 title: About teams & Agile tools
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Guide to adding and configuring teams in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops

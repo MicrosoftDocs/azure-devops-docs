@@ -46,7 +46,7 @@ Change values to match your project configuration. See the [Gradle](../tasks/bui
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 
 steps:
 - task: Gradle@2

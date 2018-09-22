@@ -1,6 +1,6 @@
 ---
 title: Resources granted to project members
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Security and data access considerations and resources granted when you add members to a project or organization 
 ms.prod: devops
 ms.technology: devops-accounts

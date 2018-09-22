@@ -1,6 +1,6 @@
 ---
-title: Quickstart guide to plan and track work using Azure Boards
-titleSuffix: Azure DevOps Services  
+title: Quickstart guide to plan and track work 
+titleSuffix: Azure Boards 
 description: Begin planning and tracking work in your new team project on Azure Boards
 ms.technology: devops-new-user 
 ms.prod: devops

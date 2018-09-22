@@ -16,7 +16,7 @@ ms.date: 08/29/2018
 
 # Work Item Tracking Client OM Deprecation
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 > [!NOTE]  
 > Work in progress

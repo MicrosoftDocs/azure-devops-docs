@@ -1,6 +1,6 @@
 ---
 title: Permissions and role lookup guide 
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Index to permissions defined for Azure DevOps Services and Team Foundation Server   
 ms.technology: devops-security
 ms.prod: devops

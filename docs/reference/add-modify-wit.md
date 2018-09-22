@@ -1,6 +1,6 @@
 ---
 title: Add or modify a work item type (WIT) 
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

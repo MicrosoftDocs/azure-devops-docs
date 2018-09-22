@@ -1,6 +1,6 @@
 ---
 title: WebLayout XML elements reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

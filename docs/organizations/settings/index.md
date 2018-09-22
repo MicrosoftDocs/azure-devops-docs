@@ -1,6 +1,6 @@
 ---
 title: Project, collection, and organization settings
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
