@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/test/{projectName}/plans/{id}",
-   "requestUrl": "https://vishac.visualstudio.com/tfs/DefaultCollection/_apis/test/Scrum1/plans/1?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/test/Scrum1/plans/1?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

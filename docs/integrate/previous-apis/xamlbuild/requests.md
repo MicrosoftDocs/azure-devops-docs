@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Build Requests (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Submit and acccess build requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Build Requests (XAML Build) | REST API Reference for Team Foundation Server
+description: Submit and acccess build requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 40A7EF31-7303-4A6E-ADB5-69BCF7830A2A
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/requests[?request
 | Parameter       | Type   | Notes
 |:----------------|:-------|:------------
 | URL
-| instance        | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance        | string | TFS server name ({server:port}).
 | project         | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version     | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -83,7 +83,7 @@ Content-Type: application/json
 | Parameter       | Type   | Required | Notes
 |:----------------|:-------|:---------|:------------
 | URL
-| instance        | string | yes      | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance        | string | yes      | TFS server name ({server:port}).
 | project         | string | yes      | [Project](../tfs/projects.md) ID or name containing the build definition.
 | Request body
 | buildDefinition | int    | yes      | ID of the build definition to use.
@@ -111,7 +111,7 @@ Content-Type: application/json
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | request   | int    | ID of the build request to update.
 | Query
@@ -133,7 +133,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/requests/{requ
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | request   | int    | ID of the build request to delete.
 | Query

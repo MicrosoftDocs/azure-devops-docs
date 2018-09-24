@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tfvc/labels/{labelId}?maxItemCount=100",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2883?maxItemCount=100&api-version=1.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?maxItemCount=100&api-version=1.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,13 +31,13 @@
    "responseBody": {
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2883"
+            "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
          },
          "items": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2883/items"
+            "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items"
          },
          "owner": {
-            "href": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
          }
       },
       "id": 2883,
@@ -49,64 +49,64 @@
          "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
          "displayName": "Chuck Reinhart",
          "uniqueName": "fabrikamfiber3@hotmail.com",
-         "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-         "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "items": [
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code",
             "isFolder": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties",
             "isFolder": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
          },
          {
             "version": 12,
             "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev",
             "isFolder": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
          }
       ],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2883"
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
    }
 }

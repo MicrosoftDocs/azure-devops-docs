@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/wit/queries/Shared Queries/{folderName}/{queryNameNew}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/Shared%20Queries/Website%20team/Active%20Bugs?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/Shared%20Queries/Website%20team/Active%20Bugs?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@
       "pragma": "no-cache",
       "content-type": "application/json; charset=utf-8; api-version=2.2",
       "expires": "-1",
-      "location": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb",
+      "location": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb",
       "server": "Microsoft-IIS/8.5",
       "x-tfs-processid": "c836d729-5fd8-4224-956b-e9c71f551a10",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -52,17 +52,17 @@
          {
             "referenceName": "System.Id",
             "name": "ID",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Id"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Id"
          },
          {
             "referenceName": "System.Title",
             "name": "Title",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Title"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Title"
          },
          {
             "referenceName": "System.State",
             "name": "State",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.State"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.State"
          }
       ],
       "sortColumns": [
@@ -70,7 +70,7 @@
             "field": {
                "referenceName": "Microsoft.VSTS.Common.Priority",
                "name": "Priority",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Priority"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Priority"
             },
             "descending": false
          },
@@ -78,7 +78,7 @@
             "field": {
                "referenceName": "System.CreatedDate",
                "name": "Created Date",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.CreatedDate"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.CreatedDate"
             },
             "descending": true
          }
@@ -92,7 +92,7 @@
                "field": {
                   "referenceName": "System.WorkItemType",
                   "name": "Work Item Type",
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.WorkItemType"
+                  "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.WorkItemType"
                },
                "operator": {
                   "referenceName": "SupportedOperations.Equals",
@@ -104,7 +104,7 @@
                "field": {
                   "referenceName": "System.State",
                   "name": "State",
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.State"
+                  "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.State"
                },
                "operator": {
                   "referenceName": "SupportedOperations.Equals",
@@ -116,18 +116,18 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
          },
          "html": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/web/qr.aspx?pguid=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&qid=342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/web/qr.aspx?pguid=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&qid=342f0f44-4069-46b1-a940-3d0468979ceb"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/8a8c8212-15ca-41ed-97aa-1d6fbfbcd581"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/8a8c8212-15ca-41ed-97aa-1d6fbfbcd581"
          },
          "wiql": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/wiql/342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/wiql/342f0f44-4069-46b1-a940-3d0468979ceb"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
    }
 }

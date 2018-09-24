@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/teamsettings/iterations/{iterationId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553?api-version=v2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553?api-version=v2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -42,31 +42,31 @@
          "startDate": null,
          "finishDate": null
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553",
+      "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553",
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553"
          },
          "project": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
+            "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
          },
          "team": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
+            "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
          },
          "teamSettings": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
          },
          "teamIterations": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations"
          },
          "capacity": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553/capacities"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553/capacities"
          },
          "classificationNode": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%202"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%202"
          },
          "teamDaysOff": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553/teamdaysoff"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553/teamdaysoff"
          }
       }
    }

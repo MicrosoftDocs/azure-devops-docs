@@ -1,7 +1,7 @@
 ﻿{
    "method": "PATCH",
    "resourceFormat": "/projects/{projectId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -36,6 +36,6 @@
    "responseBody": {
 		"id":"b5f386e9-c67d-4caf-8e78-4e58230c7e90",
 		"status":"queued",
-		"url":"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/operations/b5f386e9-c67d-4caf-8e78-4e58230c7e90"
+		"url":"https://mytfsserver/DefaultCollection/_apis/operations/b5f386e9-c67d-4caf-8e78-4e58230c7e90"
 	}
 }

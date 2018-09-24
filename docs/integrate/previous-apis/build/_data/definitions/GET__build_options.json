@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/options",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/options?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/build/options?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

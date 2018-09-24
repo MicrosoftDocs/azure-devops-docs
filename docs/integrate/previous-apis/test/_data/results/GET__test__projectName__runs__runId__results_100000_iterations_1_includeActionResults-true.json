@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/runs/{runId}/results/100000/iterations/1?includeActionResults=true",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?includeActionResults=true&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?includeActionResults=true&api-version=1.0",
     "requestHeaders": {       "Content-Type": "application/json"    },
    "statusCode": 200,
    "responseHeaders": {
@@ -31,7 +31,7 @@
          {
             "actionPath": "00000002",
             "iterationId": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
             "outcome": "Passed",
             "startedDate": "2014-05-04T13:00:38Z",
             "completedDate": "2014-05-04T13:00:38Z"
@@ -39,7 +39,7 @@
          {
             "actionPath": "00000003",
             "iterationId": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000003",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000003",
             "outcome": "Passed",
             "startedDate": "2014-05-04T13:00:38Z",
             "completedDate": "2014-05-04T13:00:38Z"
@@ -47,7 +47,7 @@
          {
             "actionPath": "00000004",
             "iterationId": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000004",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000004",
             "outcome": "Passed",
             "startedDate": "2014-05-04T13:00:38Z",
             "completedDate": "2014-05-04T13:00:38Z"
@@ -55,14 +55,14 @@
       ],
       "parameters": [
          {
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
             "iterationId": 1,
             "actionPath": "00000002",
             "parameterName": "username",
             "value": "abc"
          },
          {
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=password",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=password",
             "iterationId": 1,
             "actionPath": "00000003",
             "parameterName": "password",
@@ -70,6 +70,6 @@
          }
       ],
       "attachments": [],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
    }
 }

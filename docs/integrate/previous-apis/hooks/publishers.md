@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Service Hook Publishers | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with service hook publishers programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Service Hook Publishers | REST API Reference for Team Foundation Server
+description: Work with service hook publishers programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: F61EDE31-0F8D-4C4E-AE03-B4480C51C5FD
 ms.manager: douge
 ms.topic: article

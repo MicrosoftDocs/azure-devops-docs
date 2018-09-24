@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/variables?$top=2",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables?$top=2&api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables?$top=2&api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,10 +39,10 @@
          {
             "id": 2,
             "name": "Browser",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
             "project": {
                "name": "fabrikam-fiber-tfvc",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
             },
             "description": "Default browsers",
             "revision": 1,
@@ -57,10 +57,10 @@
          {
             "id": 3,
             "name": "Renamed Language",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
             "project": {
                "name": "fabrikam-fiber-tfvc",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
             },
             "description": "Language for testing",
             "revision": 2,

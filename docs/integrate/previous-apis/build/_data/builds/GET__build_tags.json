@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/tags",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/tags?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/tags?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

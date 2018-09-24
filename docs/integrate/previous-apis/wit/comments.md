@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Comments | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item comments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Comments | REST API Reference for Team Foundation Server
+description: Work with work item comments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: EF2796AF-2400-4396-ABFC-1903BA1581CC
 ms.manager: douge
 ms.topic: article

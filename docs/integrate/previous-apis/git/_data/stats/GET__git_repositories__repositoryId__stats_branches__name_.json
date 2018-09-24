@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/stats/branches/{name}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/stats/branches/develop?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/stats/branches/develop?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -42,7 +42,7 @@
             "date": "2014-01-29T23:52:56Z"
          },
          "comment": "home page",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+         "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
       },
       "name": "develop",
       "aheadCount": 1,

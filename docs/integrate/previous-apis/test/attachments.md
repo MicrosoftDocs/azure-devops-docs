@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Attachments | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test attachments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Attachments | REST API Reference for Team Foundation Server
+description: Work with test attachments programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 17331F93-DD6A-459E-A3E6-D4A0FABAAC9B
 ms.manager: douge
 ms.topic: article
@@ -39,7 +39,7 @@ Content-Type: application/json
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run against which attachment has to be uploaded.
 | Query
@@ -75,7 +75,7 @@ Content-Type: application/json
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|-------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test results against which attachment has to be uploaded.
@@ -98,7 +98,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | attachment     | int    |                   | ID of the test run attachment to be downloaded
@@ -107,7 +107,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 
 ####Sample request
 ```no-highlight
-GET https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/fabrikam/_apis/test/runs/1/attachments/1?api-version=2.0-preview
+GET https://fabrikam-fiber-inc:8080/DefaultCollection/fabrikam/_apis/test/runs/1/attachments/1?api-version=2.0-preview
 ```
 
 ####Response
@@ -128,7 +128,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 
@@ -138,7 +138,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 
 ####Sample request
 ```no-highlight
-GET https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/fabrikam/_apis/test/runs/1/results/100000/attachments/1?api-version=2.0-preview
+GET https://fabrikam-fiber-inc:8080/DefaultCollection/fabrikam/_apis/test/runs/1/results/100000/attachments/1?api-version=2.0-preview
 ```
 
 ####Response
@@ -158,7 +158,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | Query
@@ -175,7 +175,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter      | Type   | Default           | Notes
 |:---------------|:-------|:------------------|:------------------------
 | URL
-| instance       | string |                   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string |                   | TFS server name ({server:port}).
 | project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 

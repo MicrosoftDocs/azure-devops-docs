@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: WIT Attachments | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item attachments programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: WIT Attachments | REST API Reference for Team Foundation Server
+description: Work with work item attachments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
 ms.manager: douge
 ms.topic: article
@@ -40,7 +40,7 @@ Content-Type: application/octet-stream
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | Query
 | api-version| string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | filename  | string  | The name of the file in the attachment store (typically the same as the name of the source of the attachment).
@@ -121,14 +121,14 @@ GET https://{instance}/DefaultCollection/_apis/wit/attachments/{attachment}?api-
 | Parameter  | Type    | Notes	
 |:-----------|:--------|:------------------------------
 | URL
-| instance   | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string  | TFS server name ({server:port}).
 | attachment | GUID    | ID of the attachment to download.
 | Query
 | api-version| string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ####Sample request
 ```no-highlight
-GET https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
+GET https://fabrikam-fiber-inc:8080/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
 ```
 
 ####Response

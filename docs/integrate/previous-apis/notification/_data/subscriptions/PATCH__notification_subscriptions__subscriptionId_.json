@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/notification/subscriptions/{subscriptionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/subscriptions/114711?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114711?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -35,7 +35,7 @@
    },
    "responseBody": {
       "id": "114711",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/114711",
+      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
       "description": "All changes to work items in this account",
       "subscriber": {
          "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -77,7 +77,7 @@
       },
       "_links": {
          "edit": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+            "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
          }
       },
       "permissions": "view, edit, delete"

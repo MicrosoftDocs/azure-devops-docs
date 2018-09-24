@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/git/repositories/{repositoryId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

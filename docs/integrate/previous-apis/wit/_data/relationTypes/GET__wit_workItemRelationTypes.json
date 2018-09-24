@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workitemrelationtypes",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitemrelationtypes?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -43,7 +43,7 @@
             },
             "referenceName": "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward",
             "name": "Referenced By",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward"
          },
          {
             "attributes": {
@@ -57,7 +57,7 @@
             },
             "referenceName": "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse",
             "name": "References",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse"
          },
          {
             "attributes": {
@@ -71,7 +71,7 @@
             },
             "referenceName": "Microsoft.VSTS.Common.TestedBy-Forward",
             "name": "Tested By",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Forward"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Forward"
          },
          {
             "attributes": {
@@ -85,7 +85,7 @@
             },
             "referenceName": "Microsoft.VSTS.Common.TestedBy-Reverse",
             "name": "Tests",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Reverse"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Reverse"
          },
          {
             "attributes": {
@@ -99,7 +99,7 @@
             },
             "referenceName": "Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward",
             "name": "Test Case",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward"
          },
          {
             "attributes": {
@@ -113,7 +113,7 @@
             },
             "referenceName": "Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse",
             "name": "Shared Steps",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse"
          },
          {
             "attributes": {
@@ -127,7 +127,7 @@
             },
             "referenceName": "System.LinkTypes.Dependency-Forward",
             "name": "Successor",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Forward"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Forward"
          },
          {
             "attributes": {
@@ -141,7 +141,7 @@
             },
             "referenceName": "System.LinkTypes.Dependency-Reverse",
             "name": "Predecessor",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Reverse"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Reverse"
          },
          {
             "attributes": {
@@ -155,7 +155,7 @@
             },
             "referenceName": "System.LinkTypes.Hierarchy-Forward",
             "name": "Child",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Forward"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Forward"
          },
          {
             "attributes": {
@@ -169,7 +169,7 @@
             },
             "referenceName": "System.LinkTypes.Hierarchy-Reverse",
             "name": "Parent",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Reverse"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Reverse"
          },
          {
             "attributes": {
@@ -183,7 +183,7 @@
             },
             "referenceName": "System.LinkTypes.Related",
             "name": "Related",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
          },
          {
             "attributes": {
@@ -193,7 +193,7 @@
             },
             "referenceName": "AttachedFile",
             "name": "Attached File",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/AttachedFile"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/AttachedFile"
          },
          {
             "attributes": {
@@ -203,7 +203,7 @@
             },
             "referenceName": "Hyperlink",
             "name": "Hyperlink",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/Hyperlink"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Hyperlink"
          },
          {
             "attributes": {
@@ -213,7 +213,7 @@
             },
             "referenceName": "ArtifactLink",
             "name": "Artifact Link",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/ArtifactLink"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/ArtifactLink"
          }
       ]
    }

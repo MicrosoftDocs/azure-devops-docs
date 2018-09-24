@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/classificationNodes/iterations/{iterationPath}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Final%20Iteration?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Final%20Iteration?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -45,12 +45,12 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
    }
 }

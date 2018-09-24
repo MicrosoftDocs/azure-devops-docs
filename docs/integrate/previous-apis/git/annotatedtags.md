@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 title: Git Tags - Annotated | REST API Reference for VAzure DevOps Services and Team Foundation Server
-description: Work with annotated tags in Git using the REST APIs for Azure DevOps Services and Team Foundation Server.
+description: Work with annotated tags in Git using the REST APIs for Team Foundation Server.
 ms.assetid: 5F749008-5513-444E-8E46-AF575132796E
 ms.manager: jprakash
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter  | Type   | Notes
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string | TFS server name ({server:port}).
 | project    | string | [Project](../tfs/projects.md) ID or name.
 | repository | string | ID or name of the [repository](./repositories.md).
 | objectId   | string | objectId of Tag to be fetched, returned only if it is annotated tag
@@ -58,7 +58,7 @@ Content-Type: application/json
 | Parameter  | Type   | Notes
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance              | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance              | string | TFS server name ({server:port}).
 | project               | string | [Project](../tfs/projects.md) ID or name.
 | repository            | string | ID or name of the [repository](./repositories.md).
 | Query                 |

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/runs/{runId}/results/{testCaseResultId}/iterations/{iterationId}/attachments",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/attachments?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/attachments?api-version=1.0",
     "requestHeaders": {       "Content-Type": "application/json"    },
    "statusCode": 200,
    "responseHeaders": {
@@ -28,14 +28,14 @@
             "id": 6,
             "size": 1186,
             "iterationId": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/testresultattachments"
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/testresultattachments"
          },
          {
             "name": "TC5_Metadata.xml",
             "id": 7,
             "size": 2714,
             "iterationId": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/testresultattachments"
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/testresultattachments"
          }
       ]
    }

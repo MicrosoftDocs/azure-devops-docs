@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/accesscontrollists/{securityNamespaceId}/?token={existingToken}&includeExtendedInfo=False&recurse=True",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=1ba198c0-7a12-46ed-a96b-f4e77554c6d4&includeExtendedInfo=False&recurse=True&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=1ba198c0-7a12-46ed-a96b-f4e77554c6d4&includeExtendedInfo=False&recurse=True&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

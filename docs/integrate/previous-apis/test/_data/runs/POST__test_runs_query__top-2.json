@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/test/runs/query?$top=2",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/runs/query?$top=2&api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/runs/query?$top=2&api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -44,7 +44,7 @@
          {
             "id": 40,
             "name": "MSDN BVT Run 1",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/Runs/40",
+            "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/40",
             "isAutomated": false,
             "iteration": "Fabrikam",
             "owner": {
@@ -54,18 +54,18 @@
             "project": {
                "id": "8e5a3cfb-fed3-46f3-8657-e3b175cd0305",
                "name": "Fabrikam",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam"
             },
             "startedDate": "2015-06-08T12:28:51.153Z",
             "state": "InProgress",
             "revision": 2,
             "runStatistics": [],
-            "webAccessUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_TestManagement/Runs#runId=40&_a=runCharts"
+            "webAccessUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_TestManagement/Runs#runId=40&_a=runCharts"
          },
          {
             "id": 41,
             "name": "NewTestRun with message logs",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/Runs/41",
+            "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/41",
             "isAutomated": true,
             "iteration": "Fabrikam",
             "owner": {
@@ -75,14 +75,14 @@
             "project": {
                "id": "8e5a3cfb-fed3-46f3-8657-e3b175cd0305",
                "name": "Fabrikam",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam"
             },
             "startedDate": "2015-06-09T01:24:23.687Z",
             "completedDate": "2015-06-09T01:24:24.253Z",
             "state": "Completed",
             "revision": 4,
             "runStatistics": [],
-            "webAccessUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_TestManagement/Runs#runId=41&_a=runCharts"
+            "webAccessUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_TestManagement/Runs#runId=41&_a=runCharts"
          }
       ],
       "count": 2

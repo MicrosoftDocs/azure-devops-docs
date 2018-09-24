@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/boards/{boardName}/cardrulesettings",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardrulesettings?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardrulesettings?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
       "content-length": "2271"
    },
    "responseBody": {
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings",
+      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings",
       "rules": {
          "fill": [
             {
@@ -137,13 +137,13 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings"
+            "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings"
          },
          "cardsettings": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardsettings"
+            "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardsettings"
          },
          "board": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items"
+            "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items"
          }
       }
    }

@@ -1,10 +1,10 @@
 ---
-title: Policy Configurations | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with policy configurations programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+title: Policy Configurations | REST API Reference for Team Foundation Server
+description: Work with policy configurations programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: ddcf1e33-29c3-42b0-ae44-673643e07e38
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -28,7 +28,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations?a
 | Parameter     | Type    | Default | Notes
 |:--------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  |         | TFS server name ({server:port}).
 | project       | string  |         | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | Query
 | api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -50,7 +50,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{
 | Parameter     | Type    | Notes
 |:--------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  | TFS server name ({server:port}).
 | project       | string  | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | id            | integer | ID of the policy configuration.
 | Query
@@ -67,7 +67,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{
 | Parameter     | Type    | Default | Notes
 |:--------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  |         | TFS server name ({server:port}).
 | project       | string  |         | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | id            | integer |         | ID of the policy configuration.
 | Query
@@ -90,7 +90,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{
 | Parameter     | Type    | Notes
 |:--------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  | TFS server name ({server:port}).
 | project       | string  | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | id            | integer | ID of the policy configuration.
 | revision      | integer | ID of the specific revision of the configuration
@@ -118,7 +118,7 @@ POST https://{instance}/defaultcollection/{project}/_apis/policy/configurations?
 | Parameter   | Type        | Notes
 |:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string      | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string      | TFS server name ({server:port}).
 | project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | Query
 | api-version | string      | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -149,7 +149,7 @@ PUT https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{
 | Parameter   | Type        | Notes
 |:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string      | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string      | TFS server name ({server:port}).
 | project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | id          | integer     | ID of the policy configuration.
 | Query
@@ -171,7 +171,7 @@ DELETE https://{instance}/defaultcollection/{project}/_apis/policy/configuration
 | Parameter   | Type        | Notes
 |:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string      | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string      | TFS server name ({server:port}).
 | project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | id          | integer     | ID of the policy configuration.
 | Query

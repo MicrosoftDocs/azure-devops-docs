@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/work/plans/",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -24,7 +24,7 @@
       "content-type": "application/json; charset=utf-8; api-version=3.0-preview",
       "expires": "-1",
       "server": "Microsoft-IIS/10.0",
-      "location": "Location →https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/_apis/work/plans/b19a4a8e-5d28-4398-8eaf-64e2d6dffd0d",      
+      "location": "Location →https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans/b19a4a8e-5d28-4398-8eaf-64e2d6dffd0d",      
       "x-tfs-processid": "b8a0b772-2c3f-4c9d-abac-867e6e153458",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "access-control-allow-origin": "*",
@@ -89,7 +89,7 @@
         "id":   "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/_apis/work/plans/b19a4a8e-5d28-4398-8eaf-64e2d6dffd0d",
+      "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans/b19a4a8e-5d28-4398-8eaf-64e2d6dffd0d",
       "userPermissions": 255
     }
 }
