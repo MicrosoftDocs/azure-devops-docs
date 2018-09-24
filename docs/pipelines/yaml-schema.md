@@ -169,6 +169,8 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
     maxParallel: number # maximum number of agents to simultaneously run copies of this job on
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: string | [ server ]
+  workspace:
+    clean: outputs | resources | all # what to clean up after the job runs
   container: string # container resource to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give run always even if cancelled tasks before killing them
@@ -359,6 +361,10 @@ pool:
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
+To use the Microsoft hosted pool, omit the name and specify one of the available
+[hosted images](agents/hosted.md#use-a-microsoft-hosted-agent). To use a private
+pool, specify its name and optionally a set of demands.
+
 If you're using a private pool and don't need to specify demands, this can
 be shortened to simply:
 
@@ -524,6 +530,8 @@ steps:
   clean: boolean  # whether to fetch clean each time
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
+  persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
 OR
