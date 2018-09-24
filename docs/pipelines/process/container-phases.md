@@ -115,8 +115,12 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 resources:
-  - container: my_private_container
-    image: private:ubuntu14
+  - container: private_ubuntu1604
+    image: myprivate/registry:ubuntu1604
+    endpoint: private_dockerhub_connection
+  
+  - container: acr_win1803
+    image: myprivate.azurecr.io/windowsservercore:1803
     endpoint: my_acr_connection
 ```
 
