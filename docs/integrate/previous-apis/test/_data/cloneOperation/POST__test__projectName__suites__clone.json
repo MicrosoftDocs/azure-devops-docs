@@ -1,7 +1,7 @@
 {
   "method": "POST",
   "resourceFormat": "/test/plans/{planId}/suite/{suiteId}/cloneOperation",
-  "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2/cloneOperation?api-version=3.0-preview.1",
+  "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2/cloneOperation?api-version=3.0-preview.1",
   "requestHeaders": {
     "Accept": "application/json",
     "Content-Type": "application/json",
@@ -52,31 +52,31 @@
     "destinationObject": {
       "id": "14",
       "name": "simpleCloned",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/13/Suites/14"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/13/Suites/14"
     },
     "sourceObject": {
       "id": "1",
       "name": "TestSuite1",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2"
     },
     "destinationPlan": {
       "id": "18",
       "name": "DestinationPlan",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
     },
     "sourcePlan": {
       "id": "1",
       "name": "TestPlan1",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
     },
     "destinationProject": {
       "name": "fabrikam-fiber-tfvc2",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
     },
     "sourceProject": {
        "name": "fabrikam-fiber-tfvc",
-       "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+       "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
     },
-    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/3"
+    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/3"
   }
 }

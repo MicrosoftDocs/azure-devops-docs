@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Security namespace reference | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2013 < vsts'
+title: Security namespace reference | REST API Reference for Team Foundation Server
 description: Security namespace reference fpr integrating with VSTS
 ms.assetid: c5b4c4b9-8d80-43a4-92c5-8ecdd335ac49
 ms.manager: douge
@@ -31,7 +31,7 @@ GET https://{instance}/_apis/securitynamespaces/00000000-0000-0000-0000-00000000
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		        |		  |			|
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | Query
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | localonly         | bool    | false   | If true, retrieve only local security namespaces.
@@ -47,7 +47,7 @@ GET https://{instance}/_apis/securitynamespaces/{securitynamespace}/?api-version
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		        |		  |			|
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace. 
 | Query
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -67,7 +67,7 @@ POST https://{instance}/_apis/securitynamespaces/{securitynamespace}/?api-versio
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace. 
 | Query           
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

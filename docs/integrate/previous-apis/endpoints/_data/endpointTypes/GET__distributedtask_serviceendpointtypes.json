@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/distributedtask/serviceendpointtypes",
-   "requestUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_apis/distributedtask/serviceendpointtypes?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/distributedtask/serviceendpointtypes?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
 

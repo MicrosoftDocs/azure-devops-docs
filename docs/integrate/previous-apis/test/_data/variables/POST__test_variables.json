@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/test/variables",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -47,10 +47,10 @@
    "responseBody": {
       "id": 3,
       "name": "Language",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
       "project": {
          "name": "fabrikam-fiber-tfvc",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+         "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Language for testing",
       "revision": 1,

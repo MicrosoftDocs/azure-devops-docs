@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/pullRequests/{pullRequestId}/iterations/{iterationId}/commits",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/iterations/2/commits?api-version=3.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/iterations/2/commits?api-version=3.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -40,7 +40,7 @@
                "date": "2016-11-01T16:30:37Z"
             },
             "comment": "Updated new_feature.cpp",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/8c9396b5cf22f929767c7172e9dbbe777ddc6357"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/8c9396b5cf22f929767c7172e9dbbe777ddc6357"
          },
          {
             "commitId": "b60280bc6e62e2f880f1b63c1e24987664d3bda3",
@@ -55,7 +55,7 @@
                "date": "2016-11-01T16:30:28Z"
             },
             "comment": "Added new_feature.cpp",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/b60280bc6e62e2f880f1b63c1e24987664d3bda3"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/b60280bc6e62e2f880f1b63c1e24987664d3bda3"
          },
          {
             "commitId": "050acf036bcef766bcbe61abeb0aa67a56ca8586",
@@ -70,7 +70,7 @@
                "date": "2016-11-01T16:30:25Z"
             },
             "comment": "Added new_feature.h",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/050acf036bcef766bcbe61abeb0aa67a56ca8586"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/050acf036bcef766bcbe61abeb0aa67a56ca8586"
          }
       ],
       "count": 3

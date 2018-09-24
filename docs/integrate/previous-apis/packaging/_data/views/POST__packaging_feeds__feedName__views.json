@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/packaging/feeds/{feedName}/views",
-   "requestUrl": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -34,17 +34,17 @@
    "responseBody": {
       "id": "b0024744-d616-41f3-af01-34eb4d33efe5",
       "name": "Alpha",
-      "url": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5",
       "type": "release",
       "_links": {
          "self": {
-            "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5"
          },
          "feed": {
-            "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
          },
          "packages": {
-            "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@b0024744-d616-41f3-af01-34eb4d33efe5/Packages"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@b0024744-d616-41f3-af01-34eb4d33efe5/Packages"
          }
       }
    }

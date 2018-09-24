@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Build Definitions | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Get build definitions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Build Definitions | REST API Reference for Team Foundation Server
+description: Get build definitions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 20BE109C-0350-4338-B6BC-522A2200F5CC
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-v
 | Parameter     | Type                 | Notes
 |:--------------|:---------------------|:------------
 | URL
-| instance      | string               | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string               | TFS server name ({server:port}).
 | project       | string               | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| instance     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string | TFS server name ({server:port}).
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query
@@ -68,7 +68,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-
 | Parameter     | Type                 | Notes
 |:--------------|:---------------------|:------------
 | URL
-| instance      | string               | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string               | TFS server name ({server:port}).
 | project       | string               | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -85,7 +85,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 | Parameter     | Type                 | Notes
 |:--------------|:---------------------|:------------
 | URL
-| instance      | string               | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string               | TFS server name ({server:port}).
 | project       | string               | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int                  | ID of the build definition.
 | Query
@@ -105,7 +105,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{d
 | Parameter     | Type                 | Notes
 |:--------------|:---------------------|:------------
 | URL
-| instance      | string               | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string               | TFS server name ({server:port}).
 | project       | string               | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int                  | ID of the build definition.
 | Query
@@ -123,7 +123,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| instance     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string | TFS server name ({server:port}).
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query
@@ -140,7 +140,7 @@ GET https://{instance}/DefaultCollection/_apis/build/options?api-version={versio
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| instance     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string | TFS server name ({server:port}).
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

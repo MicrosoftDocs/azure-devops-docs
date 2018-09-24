@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/projects",
-   "requestUrl": "https://fabrikam.visualstudio.com/defaultcollection/_apis/projects?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -51,6 +51,6 @@
    "responseBody": {
       "id": "066488b8-b14e-43d1-befc-a2e655266e2b",
       "status": "queued",
-      "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/operations/066488b8-b14e-43d1-befc-a2e655266e2b"
+      "url": "https://mytfsserver/DefaultCollection/_apis/operations/066488b8-b14e-43d1-befc-a2e655266e2b"
    }
 }

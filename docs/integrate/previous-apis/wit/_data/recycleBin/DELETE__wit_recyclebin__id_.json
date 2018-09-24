@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/wit/recyclebin/{id}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recyclebin/403?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/403?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

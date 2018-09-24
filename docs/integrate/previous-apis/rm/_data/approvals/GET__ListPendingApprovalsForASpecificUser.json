@@ -1,6 +1,6 @@
 {
   "method": "GET",
-  "requestUrl": "https://fabfiber-inc.vsrm.visualstudio.com/MyFirstProject/_apis/Release/approvals?assignedToFilter=Chuck Reinhart&continuationToken=0",
+  "requestUrl": "https://mytfsserver/DefaultCollection/MyFirstProject/_apis/Release/approvals?assignedToFilter=Chuck Reinhart&continuationToken=0",
   "requestHeaders": {
     "accept": "application/json; api-version=3.0-preview.2",
     "user-Agent": "VSServices/15.116.26501.0",
@@ -29,8 +29,8 @@
           "id": "4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
           "displayName": "Chuck Reinhart",
           "uniqueName": "fabfiber@outlook.com",
-          "url": "https://app.vssps.visualstudio.com/A168224e4-29ff-4081-9954-c8780ce81117/_apis/Identities/4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
-          "imageUrl": "https://fabfiber-inc.visualstudio.com/_api/_common/identityImage?id=4adb1680-0eac-6149-b5ee-fc8b4f6ca227"
+          "url": "https://mytfsserver/DefaultCollection/_apis/Identities/4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
+          "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=4adb1680-0eac-6149-b5ee-fc8b4f6ca227"
         },
         "approvalType": "preDeploy",
         "createdOn": "2017-05-31T16:40:14.47Z",
@@ -45,13 +45,13 @@
         "release": {
           "id": 2,
           "name": "Release-2",
-          "url": "https://fabfiber-inc.vsrm.visualstudio.com/MyFirstProject/_apis/Release/releases/2",
+          "url": "https://mytfsserver/DefaultCollection/MyFirstProject/_apis/Release/releases/2",
           "_links": {}
         },
         "releaseDefinition": {
           "id": 1,
           "name": "MyShuttle.CD",
-          "url": "https://fabfiber-inc.vsrm.visualstudio.com/d07908bc-118f-47d2-8a13-ff75601a6b1a/_apis/Release/definitions/1",
+          "url": "https://mytfsserver/DefaultCollection/d07908bc-118f-47d2-8a13-ff75601a6b1a/_apis/Release/definitions/1",
           "_links": {}
         },
         "releaseEnvironment": {
@@ -59,7 +59,7 @@
           "name": "Dev",
           "_links": {}
         },
-        "url": "https://fabfiber-inc.vsrm.visualstudio.com/MyFirstProject/_apis/Release/approvals/2"
+        "url": "https://mytfsserver/DefaultCollection/MyFirstProject/_apis/Release/approvals/2"
       },
       {
         "id": 1,
@@ -68,8 +68,8 @@
           "id": "4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
           "displayName": "Chuck Reinhart",
           "uniqueName": "fabfiber@outlook.com",
-          "url": "https://app.vssps.visualstudio.com/A168224e4-29ff-4081-9954-c8780ce81117/_apis/Identities/4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
-          "imageUrl": "https://fabfiber-inc.visualstudio.com/_api/_common/identityImage?id=4adb1680-0eac-6149-b5ee-fc8b4f6ca227"
+          "url": "https://mytfsserver/DefaultCollection/_apis/Identities/4adb1680-0eac-6149-b5ee-fc8b4f6ca227",
+          "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=4adb1680-0eac-6149-b5ee-fc8b4f6ca227"
         },
         "approvalType": "preDeploy",
         "createdOn": "2017-05-31T16:40:04.577Z",
@@ -84,13 +84,13 @@
         "release": {
           "id": 1,
           "name": "Release-1",
-          "url": "https://fabfiber-inc.vsrm.visualstudio.com/MyFirstProject/_apis/Release/releases/1",
+          "url": "https://mytfsserver/DefaultCollection/MyFirstProject/_apis/Release/releases/1",
           "_links": {}
         },
         "releaseDefinition": {
           "id": 1,
           "name": "MyShuttle.CD",
-          "url": "https://fabfiber-inc.vsrm.visualstudio.com/d07908bc-118f-47d2-8a13-ff75601a6b1a/_apis/Release/definitions/1",
+          "url": "https://mytfsserver/DefaultCollection/d07908bc-118f-47d2-8a13-ff75601a6b1a/_apis/Release/definitions/1",
           "_links": {}
         },
         "releaseEnvironment": {
@@ -98,7 +98,7 @@
           "name": "Dev",
           "_links": {}
         },
-        "url": "https://fabfiber-inc.vsrm.visualstudio.com/MyFirstProject/_apis/Release/approvals/1"
+        "url": "https://mytfsserver/DefaultCollection/MyFirstProject/_apis/Release/approvals/1"
       }
     ]
   }

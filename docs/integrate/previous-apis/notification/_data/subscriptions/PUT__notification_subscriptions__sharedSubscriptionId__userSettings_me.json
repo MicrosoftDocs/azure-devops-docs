@@ -1,7 +1,7 @@
 {
    "method": "PUT",
    "resourceFormat": "/notification/subscriptions/{sharedSubscriptionId}/userSettings/me",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/subscriptions/ms.vss-code.pull-request-updated-subscription/userSettings/me?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/ms.vss-code.pull-request-updated-subscription/userSettings/me?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

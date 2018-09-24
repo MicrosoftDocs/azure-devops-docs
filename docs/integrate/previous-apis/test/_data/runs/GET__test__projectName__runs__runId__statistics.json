@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/runs/{runId}/statistics",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/1/statistics?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/1/statistics?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -32,7 +32,7 @@
       "run": {
          "id": "1",
          "name": "NewTestRun2",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/1"
+         "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/1"
       },
       "runStatistics": []
    }

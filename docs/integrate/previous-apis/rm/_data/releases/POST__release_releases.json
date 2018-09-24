@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/release/releases",
-   "requestUrl": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/releases?api-version=3.0-preview.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/releases?api-version=3.0-preview.2",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -54,15 +54,15 @@
          "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
          "displayName": "Chuck Reinhart",
          "uniqueName": "chuckreinhart@outlook.com",
-         "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-         "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
          "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
          "displayName": "Chuck Reinhart",
          "uniqueName": "chuckreinhart@outlook.com",
-         "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-         "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "environments": [
          {
@@ -145,8 +145,8 @@
                "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
                "displayName": "Chuck Reinhart",
                "uniqueName": "chuckreinhart@outlook.com",
-               "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-               "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
             }
          },
          {
@@ -223,8 +223,8 @@
                "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
                "displayName": "Chuck Reinhart",
                "uniqueName": "chuckreinhart@outlook.com",
-               "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-               "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
             }
          },
          {
@@ -312,8 +312,8 @@
                "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
                "displayName": "Chuck Reinhart",
                "uniqueName": "chuckreinhart@outlook.com",
-               "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-               "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
             }
          }
       ],
@@ -347,12 +347,12 @@
       "releaseDefinition": {
          "id": 12,
          "name": "Fabrikam-Website",
-         "url": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "M 98 release",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
+      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
    }
 }

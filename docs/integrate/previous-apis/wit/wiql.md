@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Query Language | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with the work item query language programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Query Language | REST API Reference for Team Foundation Server
+description: Work with the work item query language programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C98285FE-3882-4F35-9E19-9A6E109EED66
 ms.manager: douge
 ms.topic: article
@@ -36,7 +36,7 @@ Content-type: application/json
 | Parameter     | Type    | Default | Notes	
 |:--------------|:--------|:--------|:------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  |         | TFS server name ({server:port}).
 | project       | string  |         | Filter the results to this project.<br/>If your query string uses the @project macro ([System.TeamProject] = @project, for example), you must specify the project in the URL.
 | Query
 | api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/wiql/{id}?api-ver
 | Parameter     | Type    | Default | Notes	
 |:--------------|:--------|:--------|:------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string  |         | TFS server name ({server:port}).
 | project       | string  |         | Filter the results to this project.<br/>If the query uses the @project macro ([System.TeamProject] = @project, for example), you must specify the project in the URL.
 | id            | GUID    |         | ID of a [stored query](./queries.md).
 | Query

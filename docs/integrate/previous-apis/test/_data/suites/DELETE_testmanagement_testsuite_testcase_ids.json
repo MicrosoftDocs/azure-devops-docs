@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/test/{projectName}/plans/1/suites/{suiteId}/testcases/39",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/testcases/39?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/testcases/39?api-version=1.0",
     "requestHeaders": {       "Content-Type": "application/json"    },
    "statusCode": 204,
    "responseHeaders": {

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: TFVC Labels | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with TFVC labels programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: TFVC Labels | REST API Reference for Team Foundation Server
+description: Work with TFVC labels programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 6E87D313-19A9-4271-AB5B-4B4CA1ADA9BA
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels?api-version={version}
 | Parameter       | Type   | Default | Notes
 |:----------------|:-------|:--------|:------
 | URL
-| instance        | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance        | string |         | TFS server name ({server:port}).
 | Query
 | api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | name            | string |         | Name of the label.<br/>Wildcards are supported.
@@ -59,7 +59,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}?api-version
 | Parameter    | Type   | Default | Notes
 |:-------------|:-------|:--------|:------
 | URL
-| instance     | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string |         | TFS server name ({server:port}).
 | labelId      | int    |         | ID of label.
 | Query
 | api-version  | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -80,7 +80,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}/items?api-v
 | Parameter    | Type   | Default | Notes
 |:-------------|:-------|:--------|:------
 | URL
-| instance     | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance     | string |         | TFS server name ({server:port}).
 | labelId      | int    |         | ID of the label.
 | Query
 | Query

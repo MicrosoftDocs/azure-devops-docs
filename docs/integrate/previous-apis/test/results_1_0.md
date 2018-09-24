@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Results (Version 1.0) | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test results programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. This is for Version 1.0 of this API.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Results (Version 1.0) | REST API Reference for Team Foundation Server
+description: Work with test results programmatically using the REST APIs for Team Foundation Server. This is for Version 1.0 of this API.
 ms.assetid: FCBFFCFB-E57E-492F-9984-BD9C77EA4153
 ms.manager: douge
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the results.
 | Query
@@ -46,7 +46,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result to get.
@@ -69,7 +69,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -99,7 +99,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -124,7 +124,7 @@ In a parameterized test, gets results for each parameter value.
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -159,7 +159,7 @@ Content-Type: application/json
 | Parameter               | Type   | Default | Notes
 |:------------------------|:-------|:--------|:------------------------
 | URL
-| instance                | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string |         | TFS server name ({server:port}).
 | project                 | string |         | Name or ID of the project.
 | Query
 | version                 | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -233,7 +233,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string   |         | TFS server name ({server:port}).
 | project              | string   |         | Name or ID of the project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -314,7 +314,7 @@ Content-Type: application/json
 | Parameter           | Type     | Default | Notes
 |:--------------------|:---------|:--------|:------------------------
 | URL
-| instance            | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance            | string   |         | TFS server name ({server:port}).
 | project             | string   |         | Name or ID of the project.
 | Query
 | version             | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -385,7 +385,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string   |         | TFS server name ({server:port}).
 | project              | string   |         | Name or ID of the project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

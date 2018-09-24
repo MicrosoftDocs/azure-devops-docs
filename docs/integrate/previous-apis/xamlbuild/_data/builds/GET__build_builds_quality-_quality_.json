@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/builds?quality={quality}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds?quality=Rejected&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds?quality=Rejected&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,7 +34,7 @@
             "uri": "vstfs:///Build/Build/347",
             "id": 347,
             "buildNumber": "MyWebSite CI_20141007.2",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/347",
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/347",
             "startTime": "2014-10-07T22:20:29.823Z",
             "finishTime": "2014-10-07T22:21:24.24Z",
             "reason": "manual",
@@ -44,21 +44,21 @@
             "drop": {
                "location": "#/111707/drop",
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111707/drop",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111707/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141007.2_drop"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111707/drop",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111707/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141007.2_drop"
             },
             "log": {
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111707/logs",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111707/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141007.2_logs"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111707/logs",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111707/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141007.2_logs"
             },
             "sourceGetVersion": "LG:refs/heads/master:23d0bc5b128a10056dc68afece360d8a0fabb014",
             "lastChangedBy": {
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "retainIndefinitely": false,
             "hasDiagnostics": true,
@@ -66,24 +66,24 @@
                "definitionType": "xaml",
                "id": 2,
                "name": "MyWebSite CI",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
             },
             "queue": {
                "queueType": "buildController",
                "id": 274,
                "name": "Hosted Build Controller",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/274"
+               "url": "https://mytfsserver/DefaultCollection/_apis/build/Queues/274"
             },
             "requests": [
                {
                   "id": 428,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/428",
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/428",
                   "requestedFor": {
                      "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                      "displayName": "Chuck Reinhart",
                      "uniqueName": "fabrikamfiber3@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
                   }
                }
             ]
@@ -92,7 +92,7 @@
             "uri": "vstfs:///Build/Build/344",
             "id": 344,
             "buildNumber": "MyWebSite CI_20141002.9",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/344",
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/344",
             "startTime": "2014-10-02T17:42:24.91Z",
             "finishTime": "2014-10-02T17:43:28.523Z",
             "reason": "manual",
@@ -102,21 +102,21 @@
             "drop": {
                "location": "#/111703/drop",
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111703/drop",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111703/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.9_drop"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111703/drop",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111703/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.9_drop"
             },
             "log": {
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111703/logs",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111703/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.9_logs"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111703/logs",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111703/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.9_logs"
             },
             "sourceGetVersion": "LG:refs/heads/master:23d0bc5b128a10056dc68afece360d8a0fabb014",
             "lastChangedBy": {
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
             "retainIndefinitely": false,
             "hasDiagnostics": true,
@@ -124,24 +124,24 @@
                "definitionType": "xaml",
                "id": 2,
                "name": "MyWebSite CI",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
             },
             "queue": {
                "queueType": "buildController",
                "id": 274,
                "name": "Hosted Build Controller",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/274"
+               "url": "https://mytfsserver/DefaultCollection/_apis/build/Queues/274"
             },
             "requests": [
                {
                   "id": 424,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/424",
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/424",
                   "requestedFor": {
                      "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                      "displayName": "Chuck Reinhart",
                      "uniqueName": "fabrikamfiber3@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
                   }
                }
             ]
@@ -150,7 +150,7 @@
             "uri": "vstfs:///Build/Build/341",
             "id": 341,
             "buildNumber": "MyWebSite CI_20141002.6",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/341",
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/341",
             "startTime": "2014-10-02T16:47:14.08Z",
             "finishTime": "2014-10-02T16:48:03.007Z",
             "reason": "manual",
@@ -160,21 +160,21 @@
             "drop": {
                "location": "#/111700/drop",
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111700/drop",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111700/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.6_drop"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111700/drop",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111700/drop?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.6_drop"
             },
             "log": {
                "type": "container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111700/logs",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/resources/Containers/111700/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.6_logs"
+               "url": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111700/logs",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/_apis/resources/Containers/111700/logs?api-version=1.0&$format=zip&downloadFileName=MyWebSite CI_20141002.6_logs"
             },
             "sourceGetVersion": "LG:refs/heads/master:23d0bc5b128a10056dc68afece360d8a0fabb014",
             "lastChangedBy": {
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
             "retainIndefinitely": false,
             "hasDiagnostics": true,
@@ -182,24 +182,24 @@
                "definitionType": "xaml",
                "id": 2,
                "name": "MyWebSite CI",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2"
             },
             "queue": {
                "queueType": "buildController",
                "id": 274,
                "name": "Hosted Build Controller",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/274"
+               "url": "https://mytfsserver/DefaultCollection/_apis/build/Queues/274"
             },
             "requests": [
                {
                   "id": 420,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/420",
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Requests/420",
                   "requestedFor": {
                      "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                      "displayName": "Chuck Reinhart",
                      "uniqueName": "fabrikamfiber3@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
                   }
                }
             ]

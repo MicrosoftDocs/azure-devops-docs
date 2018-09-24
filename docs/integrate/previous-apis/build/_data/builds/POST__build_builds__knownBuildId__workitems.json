@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/build/builds/{knownBuildId}/workitems",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/workitems?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/workitems?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json"
@@ -41,11 +41,11 @@
       "value": [
          {
             "id": "3",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/3"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/3"
          },
          {
             "id": "33",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/33"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/33"
          }
       ]
    }

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/projects/{projectId}/teams/{teamId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,8 +31,8 @@
    "responseBody": {
       "id": "564e8204-a90b-4432-883b-d4363c6125ca",
       "name": "Quality assurance",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca",
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca",
       "description": "Testing staff",
-      "identityUrl": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/564e8204-a90b-4432-883b-d4363c6125ca"
+      "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/564e8204-a90b-4432-883b-d4363c6125ca"
    }
 }

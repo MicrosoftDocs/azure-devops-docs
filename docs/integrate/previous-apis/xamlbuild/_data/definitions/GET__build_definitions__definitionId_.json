@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/definitions/{definitionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/3?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/3?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
          "queueType": "buildController",
          "id": 274,
          "name": "Hosted Build Controller",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/274"
+         "url": "https://mytfsserver/DefaultCollection/_apis/build/Queues/274"
       },
       "triggerType": "continuousIntegration",
       "defaultDropLocation": "#/",
@@ -44,11 +44,11 @@
       "supportedReasons": 63,
       "lastBuild": {
          "id": 335,
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/335"
+         "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Builds/335"
       },
       "definitionType": "xaml",
       "id": 3,
       "name": "CustomerAddressModule",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/3"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/3"
    }
 }

@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/distributedtask/serviceendpoints/{Id}",
-   "requestUrl": "https://fabfiber.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/distributedtask/serviceendpoints/d4177445-c5ad-414a-82bf-2d5727a8176e?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/distributedtask/serviceendpoints/d4177445-c5ad-414a-82bf-2d5727a8176e?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json"

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tfvc/shelvesets/{shelvesetId}/changes",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets/My%20first%20shelveset;d6245f20-2af8-44f4-9451-8107cb2767db/changes?api-version=1.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets/My%20first%20shelveset;d6245f20-2af8-44f4-9451-8107cb2767db/changes?api-version=1.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
             "item": {
                "version": 9,
                "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
+               "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
             },
             "changeType": "edit"
          },
@@ -43,14 +43,14 @@
             "item": {
                "version": 9,
                "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
+               "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
             },
             "changeType": "edit"
          },
          {
             "item": {
                "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/FabrikamEngine.cs",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/FabrikamEngine.cs?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
+               "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/FabrikamEngine.cs?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
             },
             "changeType": "add, edit, encoding"
          },
@@ -58,7 +58,7 @@
             "item": {
                "version": 9,
                "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
+               "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs?versionType=Shelveset&version=My%20first%20shelveset%3Bfabrikamfiber16%40hotmail.com"
             },
             "changeType": "delete"
          }

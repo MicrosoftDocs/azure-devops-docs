@@ -44,17 +44,10 @@
     href: ../service-hooks/consumers.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
   - name: Service hooks events
     href: ../service-hooks/events.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
-  - name: Previous REST API versions
+  - name: REST APIs for TFS 2015 and 2017
     items:
     - name: Overview
       href: previous-apis/overview.md
-    - name: Accounts and profiles
-      href: previous-apis/shared/overview.md
-      items:
-      - name: Accounts
-        href: previous-apis/shared/accounts.md
-      - name: Publishers
-        href: previous-apis/shared/profiles.md
     - name: Build
       href: previous-apis/build/overview.md
       items:
@@ -136,27 +129,6 @@
         href: previous-apis/hooks/publishers.md
       - name: Subscriptions
         href: previous-apis/hooks/subscriptions.md    
-    - name: Load test
-      href: previous-apis/load-test/overview.md
-      items:
-      - name: APM applications
-        href: previous-apis/load-test/apm-applications.md
-      - name: APM counters
-        href: previous-apis/load-test/apm-counters.md
-      - name: APM plugins
-        href: previous-apis/load-test/apm-plugins.md
-      - name: Configuration
-        href: previous-apis/load-test/configuration.md
-      - name: Counter instances
-        href: previous-apis/load-test/counter-instances.md
-      - name: Counter samples
-        href: previous-apis/load-test/counter-samples.md
-      - name: Test drops
-        href: previous-apis/load-test/test-drops.md
-      - name: Test runs
-        href: previous-apis/load-test/test-runs.md
-      - name: Types
-        href: previous-apis/load-test/types.md
     - name: Notification
       href: previous-apis/notification/overview.md
       items:

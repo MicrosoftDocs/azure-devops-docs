@@ -1,7 +1,7 @@
 {
   "method": "PATCH",
   "resourceFormat": "/git/repositories/{repositoryId}/importRequests/{importRequestId}",
-  "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1?api-version=3.0-preview",
+  "requestUrl": "https://mytfsserver/DefaultCollection/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1?api-version=3.0-preview",
   "requestHeaders": {
     "Accept": "application/json",
     "Content-Type": "application/json",
@@ -41,15 +41,15 @@
     "repository": {
       "id": "0eb02d2e-fff9-4990-bd45-2f7503f5aae5",
       "name": "EmptyGitRepo",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5",
       "project": {
         "id": "5745879a-8531-41c3-9ed3-ae7fc07309ff",
         "name": "Test",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/5745879a-8531-41c3-9ed3-ae7fc07309ff",
+        "url": "https://mytfsserver/DefaultCollection/_apis/projects/5745879a-8531-41c3-9ed3-ae7fc07309ff",
         "state": "wellFormed",
         "revision": 7
       },
-      "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/Test/_git/EmptyGitRepo"
+      "remoteUrl": "https://mytfsserver/DefaultCollection/Test/_git/EmptyGitRepo"
     },
     "parameters": {
       "gitSource": {
@@ -71,12 +71,12 @@
     },
     "_links": {
       "self": {
-        "href": "https://fabrikam-fiber-inc.visualstudio.com/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1"
+        "href": "https://mytfsserver/DefaultCollection/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1"
       },
       "repository": {
-        "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5"
+        "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5"
       }
     },
-    "url": "https://fabrikam-fiber-inc.visualstudio.com/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1"
+    "url": "https://mytfsserver/DefaultCollection/Test/_apis/git/repositories/0eb02d2e-fff9-4990-bd45-2f7503f5aae5/importRequests/1"
   }
 }

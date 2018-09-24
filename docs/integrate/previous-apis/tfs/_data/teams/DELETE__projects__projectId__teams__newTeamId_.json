@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/projects/{projectId}/teams/{newTeamId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/8e8aa4ff-848a-474a-9033-93190137c8e4?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/8e8aa4ff-848a-474a-9033-93190137c8e4?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

@@ -1,6 +1,6 @@
 ---
-title: Plans | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with agile plans programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Plans | REST API Reference for Team Foundation Server
+description: Work with agile plans programmatically using the REST APIs for Team Foundation Server. 
 ms.contentid: D7B8FEC4-75F9-432E-8140-091C535C514B
 ms.prod: devops
 ---
@@ -21,7 +21,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans?api-version=
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -38,7 +38,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}?api-ver
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
@@ -55,7 +55,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/work/plans?api-version
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -73,7 +73,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/work/plans{id}?api-vers
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
@@ -90,7 +90,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}?api-
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
