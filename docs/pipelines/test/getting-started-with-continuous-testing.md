@@ -32,7 +32,7 @@ This example shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
 [Visual Studio Test](test-with-unified-agent-and-phases.md) task.
 
-> Typically you will run unit tests in your build workflow,
+Typically you run unit tests in your build workflow
 and functional tests in your release workflow after your
 app is deployed (usually to a QA environment).
 Code coverage is available only in the build workflow.

@@ -58,13 +58,13 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
 	
 	::: moniker range=">= tfs-2018"  	
-	<img src="_img/show-bugs-settings-ts.png" alt=web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	![web portal, team settings dialog, Working with bugs tab](_img/show-bugs-settings-ts.png)
 	::: moniker-end
 	::: moniker range="tfs-2017"     
-	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	![TFS, web portal, team settings dialog, Working with bugs tab](_img/show-bugs-settings-2017.png)
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
-	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
+	![TFS 2015, web portal, team settings admin page, Working with bugs](_img/team-settings.png)
 	::: moniker-end 
 
 3. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md), [sprint backlog pages](../../boards/sprints/assign-work-sprint.md), or [Kanban board](../../boards/boards/kanban-basics.md).

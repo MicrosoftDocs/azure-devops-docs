@@ -28,12 +28,13 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 
 | If your development team uses... | ...then choose this image... | ...or pool in web designer |
 |----------------------------------|------------------------------|----------------------------|
-| Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
-| Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
-| Development tools on macOS | macOS-10.13 (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-1604 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
-| Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
-| Visual Studio 2015 | vs2015-win2012r2 | Hosted |
+| Docker containers | `ubuntu-16.04` or `win1803` | Hosted Ubuntu 1604 or Hosted Windows Container |
+| Development tools on Ubuntu | `ubuntu-16.04` | Hosted Ubuntu 1604 |
+| Development tools on macOS | `xcode9-macos10.13` (see notes below) | Hosted macOS |
+| .NET Core | ubuntu-1604 or `vs2017-win2016` | Hosted Ubuntu 1604 or Hosted VS2017 |
+| Visual Studio 2017 | `vs2017-win2016` | Hosted VS2017 |
+| Visual Studio 2015 | `vs2015-win2012r2` | Hosted |
+
 
 # [YAML](#tab/yaml)
 
@@ -89,7 +90,7 @@ Microsoft-hosted agents:
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
 * Can run jobs for up to 360 minutes (6 hours).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 
 Microsoft-hosted agents do not offer:

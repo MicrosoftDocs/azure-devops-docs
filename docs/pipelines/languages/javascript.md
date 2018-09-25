@@ -115,7 +115,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 ```yaml
 - task: NodeTool@0
   inputs:
-    version: '8.x' # replace this value with the version that you need for your project
+    versionSpec: '8.x' # replace this value with the version that you need for your project
 ```
 ::: moniker-end
 
@@ -157,7 +157,7 @@ strategy:
 steps:
 - task: NodeTool@0
   inputs:
-    version: $(node_version)
+    versionSpec: $(node_version)
 
 - script: npm install
 ```
@@ -376,7 +376,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your testing scripts run a code coverage tool such as [Instanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Instanbul needs `--report cobertura`) to generate the right output.
+If your testing scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Istanbul needs `--report cobertura`) to generate the right output.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -766,3 +766,4 @@ If you are able to build your project on your development machine, but are havin
 ### Where can I learn more about tasks?
 
 [Build, release and test tasks](../tasks/index.md)
+
