@@ -12,14 +12,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 03/20/2018
+ms.date: 09/24/2018
 ---
 
 
 # Customize cards  
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**  
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
 
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
