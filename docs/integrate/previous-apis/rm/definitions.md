@@ -4,7 +4,7 @@ description: Get release definitions programmatically using the REST APIs for VS
 ms.assetid: e61ec615-19fb-4ce9-a704-5b5e27221d5e
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk

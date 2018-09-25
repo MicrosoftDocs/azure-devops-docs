@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: TFVC Changesets | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with TFVC changesets programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: TFVC Changesets | REST API Reference for Team Foundation Server
+description: Work with TFVC changesets programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 27A32DF1-E6D8-47E1-93FB-7FB812F2B47D
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={vers
 | Parameter                    | Type                    | Default | Notes
 |:-----------------------------|:------------------------|:--------|:------------
 | URL
-| instance                     | string                  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                     | string                  |         | TFS server name ({server:port}).
 | Query
 | api-version                  | string                  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | searchCriteria.itemPath      | string                  | $/      | Changesets for the item at this path.
@@ -87,7 +87,7 @@ Retrieves representations for all items given a list of paths.
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|------------
 | URL
-| instance         | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance         | string |         | TFS server name ({server:port}).
 | Query
 | api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -105,7 +105,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets/{id}?api-version=
 | Parameter            | Type   | Default | Notes
 |:---------------------|:-------|:--------|:---------------------------
 | URL
-| instance             | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string |         | TFS server name ({server:port}).
 | id                   | int    |         | ID of the changeset.
 | Query
 | api-version          | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -141,7 +141,7 @@ GET https://{instance}/DefaultColletion/_apis/tfvc/changesets/{id}/changes?api-v
 | Parameter | Type   | Default | Notes
 |:----------|:-------|:--------|----------------------------------------
 | URL
-| instance  | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string |         | TFS server name ({server:port}).
 | id        | int    |         | ID of the changeset.
 | Query
 | Query
@@ -162,7 +162,7 @@ GET /tfvc/changesets/{id}/workitems?api-version={version}
 | Parameter | Type   | Default | Notes
 |:----------|:-------|:--------|----------------------------------------
 | URL
-| instance  | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string |         | TFS server name ({server:port}).
 | id        | int    |         | ID of the changeset.
 | Query
 | Query

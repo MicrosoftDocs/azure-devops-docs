@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/pushes?pusherId={pusherId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes?pusherId=d6245f20-2af8-44f4-9451-8107cb2767db&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes?pusherId=d6245f20-2af8-44f4-9451-8107cb2767db&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,76 +35,76 @@
             "repository": {
                "id": "278d5cd2-584d-4b63-824a-2ba458937249",
                "name": "Fabrikam-Fiber-Git",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
                "project": {
                   "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "name": "Fabrikam-Fiber-Git",
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                  "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "state": "wellFormed"
                },
                "defaultBranch": "refs/heads/master",
-               "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
+               "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
             },
             "pushedBy": {
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "pushId": 23,
             "date": "2014-06-30T18:11:18.0929091Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/23"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/23"
          },
          {
             "repository": {
                "id": "278d5cd2-584d-4b63-824a-2ba458937249",
                "name": "Fabrikam-Fiber-Git",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
                "project": {
                   "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "name": "Fabrikam-Fiber-Git",
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                  "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "state": "wellFormed"
                },
                "defaultBranch": "refs/heads/master",
-               "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
+               "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
             },
             "pushedBy": {
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "pushId": 21,
             "date": "2014-06-30T17:58:34.1765687Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/21"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/21"
          },
          {
             "repository": {
                "id": "278d5cd2-584d-4b63-824a-2ba458937249",
                "name": "Fabrikam-Fiber-Git",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
                "project": {
                   "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "name": "Fabrikam-Fiber-Git",
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                  "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                   "state": "wellFormed"
                },
                "defaultBranch": "refs/heads/master",
-               "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
+               "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
             },
             "pushedBy": {
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "pushId": 19,
             "date": "2014-06-30T17:48:43.0279161Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/19"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/19"
          }
       ]
    }

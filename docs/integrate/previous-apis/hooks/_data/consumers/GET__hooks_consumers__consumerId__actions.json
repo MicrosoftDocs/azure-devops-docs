@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/hooks/consumers/{consumerId}/actions",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/consumers/zendesk/actions?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,7 +34,7 @@
          {
             "id": "createPrivateComment",
             "consumerId": "zendesk",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
+            "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
             "name": "Create a private comment in a ticket",
             "description": "Create a private comment in a ticket. <a href='http://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
             "supportedEventTypes": [

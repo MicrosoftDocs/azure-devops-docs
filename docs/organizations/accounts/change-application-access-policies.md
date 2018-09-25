@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 Azure DevOps offers the capability for other apps to integrate with its services and resources in your organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 
-* [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). The [Organizations](../../integrate/previous-apis/shared/accounts.md) and [Profiles](../../integrate/previous-apis/shared/profiles.md) APIs support only OAuth.
+* [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). The [Organizations](/docs/rest/api/vsts/account) and [Profiles](/docs/rest/api/vsts/profile) APIs support only OAuth.
 
 * [Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) as a single set of credentials across all tools that don't have plug-in, extension, or native support. For example, you can use basic authentication to access [REST APIs for Azure DevOps Services and TFS](../../integrate/get-started/rest/basics.md), but you must turn on alternate credentials.
 

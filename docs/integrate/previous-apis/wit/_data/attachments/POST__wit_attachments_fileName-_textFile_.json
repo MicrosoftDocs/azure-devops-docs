@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/attachments?fileName={textFile}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/attachments?fileName=textAsFileAttachment.txt&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/attachments?fileName=textAsFileAttachment.txt&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -33,6 +33,6 @@
    },
    "responseBody": {
       "id": "6b2266bf-a155-4582-a475-ca4da68193ef",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/attachments/6b2266bf-a155-4582-a475-ca4da68193ef?fileName=textAsFileAttachment.txt"
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/6b2266bf-a155-4582-a475-ca4da68193ef?fileName=textAsFileAttachment.txt"
    }
 }

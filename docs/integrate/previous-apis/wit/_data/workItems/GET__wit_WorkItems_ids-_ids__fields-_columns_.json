@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workitems?ids={ids}&fields={columns}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fields=System.Id,System.Title,System.WorkItemType,Microsoft.VSTS.Scheduling.RemainingWork&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fields=System.Id,System.Title,System.WorkItemType,Microsoft.VSTS.Scheduling.RemainingWork&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,7 +39,7 @@
                "System.WorkItemType": "Product Backlog Item",
                "System.Title": "Customer can sign in using their Microsoft Account"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/297"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
          },
          {
             "id": 299,
@@ -50,7 +50,7 @@
                "System.Title": "JavaScript implementation for Microsoft Account",
                "Microsoft.VSTS.Scheduling.RemainingWork": 4
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/299"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
          },
          {
             "id": 300,
@@ -61,7 +61,7 @@
                "System.Title": "Unit Testing for MSA login",
                "Microsoft.VSTS.Scheduling.RemainingWork": 3
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/300"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
          }
       ]
    }

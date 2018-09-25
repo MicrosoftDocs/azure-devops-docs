@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/plans/{planId}/suites/{suiteId}/points?configuration={configuration}",
-   "requestUrl": "https://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/points?configuration=Windows 8&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/points?configuration=Windows 8&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -26,7 +26,7 @@
       "value": [
          {
             "id": 1,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
             "assignedTo": {
                "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
                "displayName": "Jamal Hartnett"
@@ -59,7 +59,7 @@
          },
          {
             "id": 2,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
             "assignedTo": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber"

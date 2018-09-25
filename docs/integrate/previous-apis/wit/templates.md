@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Templates | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item templates programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Templates | REST API Reference for Team Foundation Server
+description: Work with work item templates programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 0FF507EB-0E59-45F9-8A04-E3E95BA3DA58
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 | Parameter       | Type    | Notes      | 
 |:----------------|:--------|:------------|
 | URL             |         |             |            
-| instance        | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).  | 
+| instance        | string  | TFS server name ({server:port}).  | 
 | project         | string  | Name or ID of the project.  |
 | team            | string  | Name or ID of the team.          |  
 | templateid      | GUID    | ID of the template.  | 
@@ -48,7 +48,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?[w
 | Parameter           | Type    | Default                       | Notes       |
 |:--------------------|:--------|:------------------------------|:------------|
 | URL                 |         |                               |             | 
-| instance            | string  |                               | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). | 
+| instance            | string  |                               | TFS server name ({server:port}). | 
 | project             | string  |                               | Name or ID of the project.| 
 | team                | string  |                               | Name or ID of the team.        |  
 | Query               |         |                               |             | 
@@ -73,7 +73,7 @@ POST https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?a
 | Parameter       | Type    | Notes  | 
 |:----------------|:--------|:------------| 
 | URL             |         |             | 
-| instance        | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). | 
+| instance        | string  | TFS server name ({server:port}). | 
 | project         | string  | Name or ID of the project. |
 | team            | string  | Name or ID of the team.         |  
 | Query             |         |             |
@@ -96,7 +96,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 | Parameter       | Type    | Notes  |  
 |:----------------|:--------|:------------| 
 | URL             |         |             |
-| instance        | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).  |  
+| instance        | string  | TFS server name ({server:port}).  |  
 | project         | string  | Name or ID of the project.  |  
 | team            | string  | Name or ID of the team.         |  
 | templateid      | GUID    | ID of the template to replace.  |  
@@ -121,7 +121,7 @@ DELETE https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates
 | Parameter       | Type    | Notes  |  
 |:----------------|:--------|:------------|  
 | URL             |         |             | 
-| instance        | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).  |  
+| instance        | string  | TFS server name ({server:port}).  |  
 | project         | string  | Name or ID of the project.  |  
 | templateid      | GUID    | ID of the template to remove.  |  
 | team            | string  | Name or ID of the team.         |  

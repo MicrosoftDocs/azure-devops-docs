@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Security Tokens | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Secure Git repositories and branches programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Security Tokens | REST API Reference for Team Foundation Server
+description: Secure Git repositories and branches programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: e9da48fa-fefb-4b17-bdb2-fff937b3cdab
 ms.manager: douge
 ms.topic: article

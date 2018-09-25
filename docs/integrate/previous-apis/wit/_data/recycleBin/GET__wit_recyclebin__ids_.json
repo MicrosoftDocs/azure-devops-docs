@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/recyclebin",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebin?ids=92,93,102&api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebin?ids=92,93,102&api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -37,7 +37,7 @@
         "project": "My Project",
         "deletedDate": "1/31/2017 9:21:14 PM",
         "deletedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/92"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/92"
       },
       {
         "id": "93",
@@ -47,7 +47,7 @@
         "project": "My Project",
         "deletedDate": "1/31/2017 9:31:00 PM",
         "deletedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/93"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/93"
       },
       {
         "id": "102",
@@ -57,7 +57,7 @@
         "project": "My Project",
         "deletedDate": "12/30/2016 8:25:15 PM",
         "deletedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/102"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/102"
       }
    ]
 }

@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/build/builds/{knownBuildId}/tags/myTag",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/tags/myTag?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/tags/myTag?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json"

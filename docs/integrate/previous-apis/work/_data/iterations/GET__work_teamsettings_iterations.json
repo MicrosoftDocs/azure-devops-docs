@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/teamsettings/iterations",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations?api-version=v2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations?api-version=v2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -43,7 +43,7 @@
                "startDate": null,
                "finishDate": null
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/a589a806-bf11-4d4f-a031-c19813331553"
          },
          {
             "id": "2ec76bfe-ba74-4060-970d-4567a3e997ee",
@@ -52,7 +52,7 @@
                "startDate": null,
                "finishDate": null
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee"
          },
          {
             "id": "7757b6b8-e04d-4e7e-ad65-e2978ac3a6a4",
@@ -61,7 +61,7 @@
                "startDate": null,
                "finishDate": null
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/7757b6b8-e04d-4e7e-ad65-e2978ac3a6a4"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/7757b6b8-e04d-4e7e-ad65-e2978ac3a6a4"
          },
          {
             "id": "4ea8cb72-5177-48b7-ad84-85ad4bebe645",
@@ -70,7 +70,7 @@
                "startDate": null,
                "finishDate": null
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/4ea8cb72-5177-48b7-ad84-85ad4bebe645"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/4ea8cb72-5177-48b7-ad84-85ad4bebe645"
          },
          {
             "id": "2de1694b-2b5b-4ce3-b35d-4888fc5a52fd",
@@ -79,7 +79,7 @@
                "startDate": null,
                "finishDate": null
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2de1694b-2b5b-4ce3-b35d-4888fc5a52fd"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2de1694b-2b5b-4ce3-b35d-4888fc5a52fd"
          }
       ]     
    }

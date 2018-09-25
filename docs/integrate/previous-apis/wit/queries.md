@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Queries | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item queries programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Queries | REST API Reference for Team Foundation Server
+description: Work with work item queries programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: F91A2D76-3586-4552-A9F4-AC9E5CBB46D4
 ms.manager: douge
 ms.topic: article
@@ -40,7 +40,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries[/{folderPat
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |         | TFS server name ({server:port}).
 | project   | string  |         | Name or ID of a project that contains the queries.
 | folderPath    | string  |         | Path to the folder you want to enumerate
 | Query
@@ -81,7 +81,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{folderPath
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |         | TFS server name ({server:port}).
 | project   | string  |         | Name or ID of a project that contains the queries.
 | folderPath    | string  |         | ID or path to the query or folder you want to retrieve
 | Query
@@ -153,7 +153,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | folderPath | string  | ID or Path to the folder you want to create the query in
 | Query
@@ -186,7 +186,7 @@ Content-type: Application/json
 | Parameter | Type     | Notes	
 |:----------|:---------|:------------------------------
 | URL
-| instance  | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string   | TFS server name ({server:port}).
 | project   | string   | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path to the folder you want to create the folder in
 | Query
@@ -218,7 +218,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | query     | string  | ID of the query to update.
 | folderPath    | string  | Path to the folder you want to enumerate
@@ -250,7 +250,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | queryPath    | string  | ID or Path of the query to rename.
 | Query
@@ -281,7 +281,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path of the folder to update.
 | Query
@@ -312,7 +312,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path to the folder you want to enumerate
 | Query
@@ -331,7 +331,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{queryPa
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | queryPath | string  | ID or path of the query or folder to delete.
 | Query
@@ -370,7 +370,7 @@ Content-type: Application/json
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Name or ID of a project that contains the queries.
 | id    | string  | ID of the folder or query to undelete.
 | Query

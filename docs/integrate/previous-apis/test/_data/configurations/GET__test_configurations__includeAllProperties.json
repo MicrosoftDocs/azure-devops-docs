@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/configurations",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?includeAllProperties=true&api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?includeAllProperties=true&api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,18 +39,18 @@
          {
             "id": 1,
             "name": "Windows 10",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
             "project": {
                "name": "fabrikam-fiber-tfvc",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
             },
             "description": "Default operating system for testing",
             "lastUpdatedBy": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "lastUpdatedDate": "2015-12-23T05:21:26.42Z",
             "area": {
@@ -69,18 +69,18 @@
          {
             "id": 2,
             "name": "Win10 IE11",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
             "project": {
                "name": "fabrikam-fiber-tfvc",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
             },
             "description": "Windows 10 - IE 11",
             "lastUpdatedBy": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "lastUpdatedDate": "2015-12-23T05:49:13.94Z",
             "area": {
@@ -101,18 +101,18 @@
          {
             "id": 3,
             "name": "Win10 English",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
             "project": {
                "name": "fabrikam-fiber-tfvc",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
             },
             "description": "",
             "lastUpdatedBy": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "lastUpdatedDate": "2015-12-23T05:52:48.167Z",
             "area": {

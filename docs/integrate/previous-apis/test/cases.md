@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Cases | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test cases programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Cases | REST API Reference for Team Foundation Server
+description: Work with test cases programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 17A2D523-0FEA-47EE-9C61-98D016F4F91D
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter | Type   | Notes
 |:----------|:-------|:-----------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | Name or ID of the project.
 | plan      | int    | ID of the test plan that contains the suites.
 | suite     | int    | ID of the suite to get.
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter | Type   | Notes
 |:----------|:-------|:-----------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | Name or ID of the project.
 | plan      | int    | ID of the test plan that contains the suites.
 | suite     | int    | ID of the suite that contains the test case.
@@ -64,7 +64,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/testcases/{case
 | Parameter | Type   | Notes
 |:----------|:-------|:-----------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | Name or ID of the project.
 | caseId    | int    | ID of the test case to delete.       
 | Query

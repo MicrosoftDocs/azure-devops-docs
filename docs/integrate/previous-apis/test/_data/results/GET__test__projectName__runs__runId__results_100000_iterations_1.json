@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/runs/{runId}/results/100000/iterations/1",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?api-version=1.0",
     "requestHeaders": {       "Content-Type": "application/json"    },
    "statusCode": 200,
    "responseHeaders": {
@@ -27,6 +27,6 @@
       "startedDate": "2014-05-04T13:00:38.697Z",
       "completedDate": "2014-05-04T13:00:44.567Z",
       "durationInMs": 5871,
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
    }
 }

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Recycle Bin | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with deleted work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Recycle Bin | REST API Reference for Team Foundation Server
+description: Work with deleted work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A4633743-4644-421E-9B4F-3C906F9D4D42
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}_apis/wit/recycleBin?api-versi
 | Parameter | Type    | Notes
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Project of the deleted work items
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -49,7 +49,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin/{id}?api
 | Parameter | Type    | Notes
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Project of the deleted work items
 | id        | int     | ID of the deleted item
 | Query
@@ -70,7 +70,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin?ids={ids
 | Parameter | Type    | Notes
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Project of the deleted work items
 | ids       | string  | A comma-separated list of up to 200 IDs of the deleted work items to get.
 | Query
@@ -93,7 +93,7 @@ PATCH https://{instance}/DefaultCollection/_apis/wit/recyclebin/{id}?api-version
 | Parameter | Type    | Notes
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | id        | int     | ID of the deleted item
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -129,7 +129,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/recycleBin/{id}?
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | project   | string  | Project of the deleted work items
 | id        | int     | ID of the deleted item
 | Query

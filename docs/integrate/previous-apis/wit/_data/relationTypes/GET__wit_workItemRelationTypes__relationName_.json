@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workitemrelationtypes/{relationName}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitemrelationtypes/System.LinkTypes.Related?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes/System.LinkTypes.Related?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -40,6 +40,6 @@
       },
       "referenceName": "System.LinkTypes.Related",
       "name": "Related",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
    }
 }

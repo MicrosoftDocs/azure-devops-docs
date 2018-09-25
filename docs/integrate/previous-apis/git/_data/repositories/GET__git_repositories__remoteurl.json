@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/_git/{repoName}/vsts/info",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_git/FabrikamCloud/vsts/info",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_git/FabrikamCloud/vsts/info",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -29,24 +29,24 @@
       "content-length": "547"
    },
    "responseBody": {
-      "serverUrl": "https://fabrikam-fiber-inc.visualstudio.com",
+      "serverUrl": "https://mytfsserver/DefaultCollection",
 	  "collection": {
 		  "id": "e22ddea7-989e-455d-b46a-67e991b04714",
 		  "name": "fabrikam-fiber-inc",
-		  "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/e22ddea7-989e-455d-b46a-67e991b04714"
+		  "url": "https://mytfsserver/DefaultCollection/_apis/projectCollections/e22ddea7-989e-455d-b46a-67e991b04714"
 	  },
 	  "repository": {
 		  "id": "2f3d611a-f012-4b39-b157-8db63f380226",
 		  "name": "FabrikamCloud",
-		  "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/git/repositories/2f3d611a-f012-4b39-b157-8db63f380226",
+		  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/2f3d611a-f012-4b39-b157-8db63f380226",
 		  "project": {
 			  "id": "3b3ae425-0079-421f-9101-bcf15d6df041",
 			  "name": "FabrikamCloud",
-			  "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/projects/3b3ae425-0079-421f-9101-bcf15d6df041",
+			  "url": "https://mytfsserver/DefaultCollection/_apis/projects/3b3ae425-0079-421f-9101-bcf15d6df041",
 			  "state": 1,
 			  "revision": 411518573
 		  },
-		  "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/FabrikamCloud/_git/FabrikamCloud"
+		  "remoteUrl": "https://mytfsserver/DefaultCollection/FabrikamCloud/_git/FabrikamCloud"
 	  }
    }
 }

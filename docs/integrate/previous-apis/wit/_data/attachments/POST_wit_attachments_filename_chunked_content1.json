@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/attachments/{attachmentid}?uploadType=chunked",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443?uploadType=chunked&api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443?uploadType=chunked&api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/zip",
@@ -33,6 +33,6 @@
    },
    "responseBody": {
 	   "id": "de471719-27b2-40ab-ac40-4890f3eb1443",
-	   "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443"
+	   "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443"
    }
 }

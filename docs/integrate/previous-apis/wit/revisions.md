@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Revisions | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item revisions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Revisions | REST API Reference for Team Foundation Server
+description: Work with work item revisions programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 19599ABC-A720-43DA-9CDA-FA8C91CD687E
 ms.manager: douge
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions?api-
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |         | TFS server name ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version | string |        | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -59,7 +59,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions/{rev
 | Parameter | Type    | Notes	
 |:----------|:--------|:--------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | id        | int     | ID of the work item.
 | revision  | int     | Revision of the work item.<br/>When a work item is created, the revision is 0, and each time it's updated, the revision is incremented.
 | Query

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feeds/{feedName}/packages/{packageId}/",
-   "requestUrl": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
       "normalizedName": "feed.client",
       "name": "Feed.Client",
       "protocolType": "NuGet",
-      "url": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b",
       "versions": [
          {
             "id": "c2f2a3a8-517d-46c4-ad66-a1a7ec6d20d2",
@@ -48,13 +48,13 @@
       ],
       "_links": {
          "self": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b"
          },
          "feed": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4"
          },
          "versions": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions"
          }
       }
    }

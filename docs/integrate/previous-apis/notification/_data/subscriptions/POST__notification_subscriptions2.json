@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/notification/subscriptions",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/subscriptions?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -49,7 +49,7 @@
    },
    "responseBody": {
       "id": "114712",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/114712",
+      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
       "description": "A new work item enters our area path",
       "subscriber": {
          "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",

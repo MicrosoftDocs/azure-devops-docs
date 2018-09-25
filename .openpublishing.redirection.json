@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/extend/test/discover-menu-group-ids.md",
+      "redirect_url": "/azure/devops/extend/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/artifacts/install.md",
       "redirect_url": "/azure/devops/artifacts/license-azure-artifacts",
       "redirect_document_id": true

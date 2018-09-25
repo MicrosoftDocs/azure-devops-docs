@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/fields/{fieldName}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -55,6 +55,6 @@
             "name": "In"
          }
       ],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.IterationPath"
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath"
    }
 }
