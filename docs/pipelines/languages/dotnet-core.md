@@ -240,11 +240,25 @@ You build your .NET Core project by running `dotnet build` command in your pipel
 
 ::: moniker range="vsts"
 
-To build your project using .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
+To build your project, add the following `dotnet build` snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - script: dotnet build # Include additional options such as --configuration to meet your need
 ```
+
+Or, to build using the **.NET Core** task:
+
+```yaml
+# .NET Core
+# Restore NuGet packages.
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
+```
+
+For more information about the .NET Core task, see [Build: .NET Core CLI](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=vsts).
 
 You can run any `dotnet` command in your pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
 
