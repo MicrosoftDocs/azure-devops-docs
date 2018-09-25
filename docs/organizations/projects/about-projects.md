@@ -1,6 +1,6 @@
 ---
 title: Scale your organization by adding a project
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Understand project management for Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user 
 ms.prod: devops

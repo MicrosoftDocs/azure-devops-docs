@@ -85,7 +85,6 @@ resources:
   - container: string  # identifier (no spaces allowed)
     image: string  # container image name
     options: string  # arguments to pass to container at startup
-    localImage: boolean  # whether to build the image locally instead of pulling from a registry
     endpoint: string  # endpoint for a private container registry
     env: { string: string }  # list of environment variables to add
 ```
@@ -109,9 +108,10 @@ resources:
 #### Type
 
 Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to a repo
-within the same project as the one you are building. Cross-project references are
-not supported.
+Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+repository in the same project. For example, `otherRepo`. To refer to a repo in
+another project within the same organization, prefix the name with that project's name.
+For example, `OtherProject/otherRepo`.
 
 If you choose `github` as your type, then `name` is the full name of the GitHub
 repo including the user or organization. For example, `Microsoft/vscode`. Also,
@@ -169,6 +169,8 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
     maxParallel: number # maximum number of agents to simultaneously run copies of this job on
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: string | [ server ]
+  workspace:
+    clean: outputs | resources | all # what to clean up after the job runs
   container: string # container resource to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give run always even if cancelled tasks before killing them
@@ -284,13 +286,13 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS 10.13'
+      vmImage: 'macOS-10.13'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'Ubuntu-16.04'
 
 - template: jobs/build.yml  # Template reference
   parameters:
@@ -359,6 +361,10 @@ pool:
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
+To use the Microsoft hosted pool, omit the name and specify one of the available
+[hosted images](agents/hosted.md#use-a-microsoft-hosted-agent). To use a private
+pool, specify its name and optionally a set of demands.
+
 If you're using a private pool and don't need to specify demands, this can
 be shortened to simply:
 
@@ -389,7 +395,7 @@ For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
   
 strategy:
   matrix:
@@ -524,6 +530,8 @@ steps:
   clean: boolean  # whether to fetch clean each time
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
+  persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
 OR
@@ -574,13 +582,13 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS 10.13'
+    vmImage: 'macOS-10.13'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'Ubuntu-16.04'
   steps:
   - template: steps/build.yml # Template reference
 

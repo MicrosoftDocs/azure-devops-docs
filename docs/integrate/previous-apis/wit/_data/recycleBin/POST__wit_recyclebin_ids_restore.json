@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/$batch",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/$batch?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -67,14 +67,14 @@
           "headers": {
             "Content-Type": "application/json; charset=utf-8"
           },
-          "body": "{\"id\":403,\"code\":200,\"type\":\"Bug\",\"name\":\"Test bug to be deleted and then restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/403\"}"
+          "body": "{\"id\":403,\"code\":200,\"type\":\"Bug\",\"name\":\"Test bug to be deleted and then restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/403\"}"
         },
         {
           "code": 200,
           "headers": {
             "Content-Type": "application/json; charset=utf-8"
           },
-          "body": "{\"id\":404,\"code\":200,\"type\":\"Bug\",\"name\":\"Second work item to be restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/404\"}"
+          "body": "{\"id\":404,\"code\":200,\"type\":\"Bug\",\"name\":\"Second work item to be restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/404\"}"
         }
       ]
     }

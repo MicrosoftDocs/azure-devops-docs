@@ -15,7 +15,7 @@ ms.date: 05/31/2018
 
 # Add and manage fields for an inherited process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
@@ -161,7 +161,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 <a id="add-existing-field">  </a>
 ## Add an existing field to another WIT
 
-Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. 
+Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Or, you can add a field defined for one process to a work item type in another process. Simply open the work item and choose the existing field. 
 
 For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 

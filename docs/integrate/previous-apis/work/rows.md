@@ -1,10 +1,10 @@
 ---
-title: Rows for Kanban Boards | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Kanban board rows programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Rows for Kanban Boards | REST API Reference for Team Foundation Server
+description: Work with Kanban board rows programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 01F3FEF0-DCCA-4CB0-B723-A546CE0935B0
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -53,7 +53,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | TFS server name ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.
@@ -105,7 +105,7 @@ GET https://{instance}/defaultcollection/[{project}/]_apis/work/boardrows/?api-v
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.

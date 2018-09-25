@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/classificationNodes/areas/{areaParent}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Parent%20Area?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Parent%20Area?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@
       "pragma": "no-cache",
       "content-type": "application/json; charset=utf-8; api-version=1.0",
       "expires": "-1",
-      "location": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team",
+      "location": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team",
       "server": "Microsoft-IIS/8.5",
       "x-tfs-processid": "1d691abf-aeef-4c6c-bb44-3182bd2e26c5",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -47,12 +47,12 @@
       "hasChildren": false,
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
    }
 }

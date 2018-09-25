@@ -268,7 +268,7 @@ jobs:
 
 - job: buildandtest
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'Ubuntu-16.04'
   steps:
 
   # add steps here to build the app
@@ -283,7 +283,7 @@ jobs:
 
 - job: prod
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'Ubuntu-16.04'
   dependsOn: buildandtest
   condition: succeeded()
   steps:

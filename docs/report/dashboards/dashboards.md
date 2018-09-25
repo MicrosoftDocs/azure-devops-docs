@@ -59,7 +59,7 @@ Open a web browser window and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -75,7 +75,7 @@ Open a web browser window and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 ::: moniker-end 
 

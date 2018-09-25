@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/projects/{projectId}?$top={top}&$skip={skip}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects?$top=1&$skip=1&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects?$top=1&$skip=1&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
             "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "name": "Fabrikam-Fiber-TFVC",
 			"description": "Team Foundation Version Control projects.",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "state": "wellFormed"
          }
       ]

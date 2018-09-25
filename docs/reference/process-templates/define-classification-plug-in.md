@@ -1,6 +1,6 @@
 ---
 title: Define the classification plug-in 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile

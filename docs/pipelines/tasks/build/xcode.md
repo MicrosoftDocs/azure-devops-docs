@@ -68,13 +68,13 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Xcode version</td>
 <td>
-Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 9`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
+Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 10`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
 </td>
 </tr>
 <tr>
 <td>Xcode developer path</td>
 <td>
-(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_9.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
+(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_10.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
 </td>
 </tr>
 

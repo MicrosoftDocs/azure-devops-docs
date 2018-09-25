@@ -1,5 +1,5 @@
 ---
-title: TF31004-Team Foundation encountered an unexpected error while connecting to  TFS titleSuffix: Azure DevOps Services & TFS
+title: TF31004-Team Foundation error...titleSuffix: Azure DevOps & TFS
 description: Occurs when the instance of Team Foundation on the local computer cannot connect to the application-tier server for Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile

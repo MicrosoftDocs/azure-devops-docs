@@ -1,6 +1,6 @@
 ---
-title: Understand the components of security and identity
-titleSuffix: Azure DevOps Services & TFS
+title: Hos are security and identity managed?
+titleSuffix: Azure DevOps & TFS
 description: Understand how Azure DevOps and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.prod: devops
 ms.technology: devops-security

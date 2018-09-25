@@ -1,6 +1,6 @@
 ---
 title: Change the workflow for a work item type
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile

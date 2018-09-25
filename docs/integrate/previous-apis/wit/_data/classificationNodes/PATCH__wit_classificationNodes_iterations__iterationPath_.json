@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/wit/classificationNodes/iterations/{iterationPath}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Final%20Iteration?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Final%20Iteration?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@
       "pragma": "no-cache",
       "content-type": "application/json; charset=utf-8; api-version=1.0",
       "expires": "-1",
-      "location": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration",
+      "location": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration",
       "server": "Microsoft-IIS/8.5",
       "x-tfs-processid": "0e66f322-f19f-4603-a65d-ba39de36ddfa",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -47,12 +47,12 @@
       "hasChildren": false,
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
    }
 }

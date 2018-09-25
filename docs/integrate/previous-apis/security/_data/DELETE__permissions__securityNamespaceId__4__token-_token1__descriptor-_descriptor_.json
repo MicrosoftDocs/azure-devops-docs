@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/permissions/{securityNamespaceId}/4/?token={token1}&descriptor={descriptor}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/4/?token=token1&descriptor=Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/4/?token=token1&descriptor=Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

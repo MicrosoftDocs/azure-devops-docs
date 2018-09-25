@@ -1,10 +1,10 @@
 ---
-title: Work Items | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Work Items | REST API Reference for Team Foundation Server
+description: Work with work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 2762B459-BD46-493C-998F-A14EE1DA4C94
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -91,7 +91,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 | Parameter         | Type 	                                                            | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                                            |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                                            |         | TFS server name ({server:port}).
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | ids				| string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
@@ -150,7 +150,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}?api-version={v
 | Parameter         | Type 	                                                            | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                                            |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                                            |         | TFS server name ({server:port}).
 | id				| string                                                            |         | ID of the work item to retrieve.
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -189,7 +189,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workitems/${workIte
 | Parameter         | Type 		| Notes
 |:------------------|:----------|:-------------------------------------------------------------------
 | URL
-| instance          | string	| [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string	| TFS server name ({server:port}).
 | project			| string	| Name or ID of a [project](../tfs/projects.md) where the work item type is defined.
 | workItemTypeName	| string    | Name of the [work item type](./work-item-types.md).
 | Query
@@ -271,7 +271,7 @@ Content-Type: application/json-patch+json
 | Parameter         | Type 	                                |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                | TFS server name ({server:port}).
 | project			| string								| Name or ID of a [project](../tfs/projects.md) where the work item should be created.
 | workItemTypeName	| string                                | Name of the [work item type](./work-item-types.md).
 | Query
@@ -340,7 +340,7 @@ Content-Type: application/json-patch+json
 | Parameter         | Type 	                                |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                | TFS server name ({server:port}).
 | id				| string                               	| ID of the work item to retrieve.
 | Query
 | api-version       | string                                | [Version](../../concepts/rest-api-versioning.md) of the API to use.

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "process/processes",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/process/processes?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,21 +35,21 @@
             "id": "adcc42ab-9882-485e-a3ed-7678f01f66bc",
             "description": "This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.",
             "isDefault": false,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
+            "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
             "name": "Agile"
          },
          {
             "id": "27450541-8e31-4150-9947-dc59f998fc01",
             "description": "This template is for more formal projects requiring a framework for process improvement and an auditable record of decisions.",
             "isDefault": false,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01",
+            "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01",
             "name": "CMMI"
          },
          {
             "id": "6b724908-ef14-45cf-84f8-768b5384da45",
             "description": "This template is for teams who follow the Scrum methodology and use Scrum terminology.",
             "isDefault": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45",
+            "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45",
             "name": "Scrum"
          }
       ]

@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/notification/subscriptionQuery",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/subscriptionQuery?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -39,7 +39,7 @@
       "value": [
          {
             "id": "105645",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/105645",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105645",
             "description": "A pull request is created or updated",
             "subscriber": {
                "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
@@ -91,7 +91,7 @@
          },
          {
             "id": "105936",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/105936",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105936",
             "description": "A build completes",
             "subscriber": {
                "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
@@ -125,7 +125,7 @@
          },
          {
             "id": "114712",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/114712",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
             "description": "A new work item enters our area path",
             "subscriber": {
                "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",

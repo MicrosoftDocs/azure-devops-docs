@@ -1,7 +1,7 @@
 {
    "method": "PUT",
    "resourceFormat": "/git/repositories/{repositoryId}/pullRequests/{pullRequestId}/reviewers/{additionalReviewerId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9?api-version=3.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9?api-version=3.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -31,12 +31,12 @@
       "content-length": "530"
    },
    "responseBody": {
-      "reviewerUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+      "reviewerUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
       "vote": 0,
       "id": "19d9411e-9a34-45bb-b985-d24d9d87c0c9",
       "displayName": "Johnnie McLeod",
       "uniqueName": "fabrikamfiber2@hotmail.com",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
-      "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
    }
 }

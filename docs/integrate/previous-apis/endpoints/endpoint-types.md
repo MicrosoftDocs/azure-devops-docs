@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Service Endpoint Types | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2013 < vsts'
+title: Service Endpoint Types | REST API Reference for Team Foundation Server
 description: Get the available service endpoint types
 ms.ContentId: 81A52B66-E3EB-4212-91A0-60B4430B64BC
 ---
@@ -22,7 +22,7 @@ GET https://{instance}/defaultcollection/_apis/distributedtask/serviceendpointty
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

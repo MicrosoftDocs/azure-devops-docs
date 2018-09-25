@@ -1,6 +1,6 @@
 ---
 title: Customize the layout of the work item web form
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops

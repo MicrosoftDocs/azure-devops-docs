@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/policy/configurations/{configurationId}",
-   "requestUrl": "https://fabrikam.visualstudio.com/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations/17?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations/17?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

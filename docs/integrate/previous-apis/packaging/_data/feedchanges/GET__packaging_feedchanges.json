@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feedChanges",
-   "requestUrl": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feedChanges?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feedChanges?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -44,7 +44,7 @@
 				"name": "EngineeringInternal",
 				"description": "Contains packages internal to the engineering organization",
 				"upstreamEnabled": false,
-				"url": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"}, 
+				"url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"}, 
 			
 				"changeType": "addOrUpdate",
 				"feedContinuationToken": 1,
@@ -57,7 +57,7 @@
 				"name": "EngineeringExternal",
 				"description": "Contains packages external to the engineering organization",
 				"upstreamEnabled": false,
-				"url": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/1ff10ae7-62f5-487c-8040-feeee696cddb"},
+				"url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/1ff10ae7-62f5-487c-8040-feeee696cddb"},
 
 				"changeType": "addOrUpdate",
 				"feedContinuationToken": 2,
@@ -67,7 +67,7 @@
           "nextFeedContinuationToken": 2,
 	  "_links": {
 			"next": {
-				"href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/FeedChanges?continuationtoken=2&batchSize=1000"
+				"href": "https://mytfsserver/DefaultCollection/_apis/Packaging/FeedChanges?continuationtoken=2&batchSize=1000"
 			}
 		 }
    }

@@ -50,14 +50,14 @@ From your web browser, open your product backlog.
 	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -113,7 +113,7 @@ Talk with your team to determine how they want to manage bugs and then [change y
 
 ::: moniker range="vsts"
 
-0. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
+0. From your team's backlog page, choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/open-configure-settings-backlog-agile.png) 
@@ -141,7 +141,7 @@ Talk with your team to determine how they want to manage bugs and then [change y
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
+1. From your team's backlog page, choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
 	::: moniker range=">= tfs-2017"   
 	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
 	::: moniker-end
@@ -156,7 +156,7 @@ Talk with your team to determine how they want to manage bugs and then [change y
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.  
 	::: moniker-end
 	::: moniker range="tfs-2013"
-	Choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the administration page. Requires TFS 2013.4 or later version.  
+	Choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the administration page. Requires TFS 2013.4 or later version.  
 
 	![Gear icon provides access to admin pages](../_img/icons/ALM_OpenAdminContext.png)  
 
@@ -199,7 +199,7 @@ Your backlog shows work that you are planning to do or have started working on. 
 
 ::: moniker range="vsts"
 
-0. Before you start adding work items, choose the ![](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to Off. Optionally turn **In Progress** items on or off. 
+0. Before you start adding work items, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to Off. Optionally turn **In Progress** items on or off. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](_img/create-backlog/view-options-parents-off.png) 

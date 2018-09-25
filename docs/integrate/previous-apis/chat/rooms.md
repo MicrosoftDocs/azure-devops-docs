@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Team Rooms | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with team rooms programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Team Rooms | REST API Reference for Team Foundation Server
+description: Work with team rooms programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 6E6370DD-6E61-4F56-BCAD-8A66CC45965A
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/chat/rooms?api-version={version}
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -41,7 +41,7 @@ GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}?api-version={
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | roomId    | int    | ID of the room to update.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -66,7 +66,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | TFS server name ({server:port}).
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -93,7 +93,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | TFS server name ({server:port}).
 | roomId      | int    | ID of the room to update.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -112,7 +112,7 @@ DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}?api-versio
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | TFS server name ({server:port}).
 | roomId      | int    | ID of the room to update.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

@@ -1,5 +1,5 @@
 ---
-title: Differences between cloud and on-premises process customizations
+title: Differences between process customizations
 titleSuffix: Azure DevOps Services  
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Azure DevOps Services.
 ms.technology: devops-agile

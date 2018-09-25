@@ -1,5 +1,5 @@
 ---
-title: Use Kanban boards to add, update, and review work items
+title: Use Kanban boards to add & update work items
 titleSuffix: Azure Boards and TFS
 description: Work with Kanban boards in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Items | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Git items (files and folders) programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Git Items | REST API Reference for Team Foundation Server
+description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
 ms.manager: douge
 ms.topic: article
@@ -63,7 +63,7 @@ When you get an item that is a file, the response is a stream (`application/octe
 
 ####Sample request
 ```no-highlight
-GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/repos/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
+GET http://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-Git/_apis/repos/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
 ```
 ####Sample response
 

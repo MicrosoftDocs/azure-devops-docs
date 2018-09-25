@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/c34d5807-1734-4541-ad1c-d16e9ac1faca/_apis/git/repositories/ca93c3a5-87bb-4b5b-a62f-1f971d677c79/annotatedTags",
+  "requestUrl": "https://mytfsserver/DefaultCollection/c34d5807-1734-4541-ad1c-d16e9ac1faca/_apis/git/repositories/ca93c3a5-87bb-4b5b-a62f-1f971d677c79/annotatedTags",
   "requestHeaders": {
     "accept": [
       "application/json; api-version=4.0-preview.2"
@@ -69,6 +69,6 @@
       "date": "2017-06-22T05:09:23"
     },
     "message": "First beta release",
-    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/c34d5807-1734-4541-ad1c-d16e9ac1faca/_apis/git/repositories/ca93c3a5-87bb-4b5b-a62f-1f971d677c79/annotatedTags/bc57849b33949a15fa3cb889bb82d9ce21d5b6ee"
+    "url": "https://mytfsserver/DefaultCollection/c34d5807-1734-4541-ad1c-d16e9ac1faca/_apis/git/repositories/ca93c3a5-87bb-4b5b-a62f-1f971d677c79/annotatedTags/bc57849b33949a15fa3cb889bb82d9ce21d5b6ee"
   }
 }

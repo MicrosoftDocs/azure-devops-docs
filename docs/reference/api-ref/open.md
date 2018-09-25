@@ -1,6 +1,6 @@
 ---
 title: WorkItem.Open method 
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Syntax and usage for the Open method to open a work item for modification when working with Azure DevOps Services or Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops

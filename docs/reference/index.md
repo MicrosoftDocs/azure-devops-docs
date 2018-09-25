@@ -1,6 +1,6 @@
 ---
-title: Index to work item tracking customization topics
-titleSuffix: Azure DevOps Services & TFS   
+title: Work item tracking customization 
+titleSuffix: Azure DevOps & TFS   
 description: Index to topics for customizing your work tracking experience in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

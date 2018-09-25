@@ -1,5 +1,5 @@
 ---
-title: Dataset design for the Power BI Azure DevOps Data Connector
+title: Dataset design for Power BI & Azure DevOps
 titleSuffix: Azure DevOps Services
 description: Describes dataset that is created in Power BI for an Analytics View for Azure DevOps 
 ms.technology: devops-analytics
@@ -101,7 +101,7 @@ For example, if you want to show a table of work items and values for the associ
 > [!TIP]  
 > Always use the **Date** option when using the Date column. The Date field is not intended to support default hierarchies in Power BI.
 
-![](./_img/data-connector-date.png)
+![Power BI Date menu of options](./_img/data-connector-date.png)
 
 ## Related articles  
 - [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md)

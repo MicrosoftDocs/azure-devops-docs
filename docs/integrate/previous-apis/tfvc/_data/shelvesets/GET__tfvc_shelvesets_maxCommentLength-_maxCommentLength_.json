@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tfvc/shelvesets?maxCommentLength={maxCommentLength}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets?maxCommentLength=6&api-version=1.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets?maxCommentLength=6&api-version=1.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -38,13 +38,13 @@
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "createdDate": "2014-07-18T03:37:52.277Z",
             "comment": "Here i",
             "commentTruncated": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets/My%20first%20shelveset%3bd6245f20-2af8-44f4-9451-8107cb2767db"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets/My%20first%20shelveset%3bd6245f20-2af8-44f4-9451-8107cb2767db"
          },
          {
             "name": "More changes",
@@ -53,11 +53,11 @@
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "createdDate": "2014-07-18T03:29:45.91Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets/More%20changes%3bd6245f20-2af8-44f4-9451-8107cb2767db"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets/More%20changes%3bd6245f20-2af8-44f4-9451-8107cb2767db"
          },
          {
             "name": "Doc updates",
@@ -66,11 +66,11 @@
                "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                "displayName": "Normal Paulk",
                "uniqueName": "fabrikamfiber16@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
             },
             "createdDate": "2014-07-18T03:27:25.18Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets/Doc%20updates%3bd6245f20-2af8-44f4-9451-8107cb2767db"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets/Doc%20updates%3bd6245f20-2af8-44f4-9451-8107cb2767db"
          },
          {
             "name": "Set this aside for now",
@@ -79,11 +79,11 @@
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
             "createdDate": "2014-03-24T20:32:25.37Z",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/shelvesets/Set%20this%20aside%20for%20now%3b8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/shelvesets/Set%20this%20aside%20for%20now%3b8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
          }
       ]
    }

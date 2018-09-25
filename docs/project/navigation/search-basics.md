@@ -1,5 +1,5 @@
 ---
-title: Search across your code base, work items, or wiki
+title: Search code, work items, or wiki
 titleSuffix: Azure DevOps Services & TFS   
 description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
 ms.assetid: 
@@ -37,7 +37,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](../../organizations/public/_img/search/code-search-vert.png) 
@@ -98,7 +98,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range="vsts"  
 
-0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    

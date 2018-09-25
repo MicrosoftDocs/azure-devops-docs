@@ -5,6 +5,7 @@ ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: vinojos
 author: vinojos
@@ -30,6 +31,12 @@ Read the [glossary](./test-glossary.md) to understand test reports terminology.
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 ::: moniker-end
+
+## Install the Analytics extension
+
+1. Go to the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in Marketplace.
+1. Choose to install the Analytics extension. You might need to sign in with your Azure DevOps Services organization credentials.
+1. Select the Azure DevOps Services organization where you would like to install this extension and confirm. [Learn more about installing extensions](../../marketplace/overview.md).
 
 <a name="viewinbuild"></a>
 
@@ -66,17 +73,15 @@ The detailed view contains two sections:
 
     ![View pass rate](_img/test-analytics/pass-rate.png)
 
-  - Failing tests: Provides a count of distinct tests that contribute to the total of test failures during the specified period. 
+  - Failing tests: Provides a distinct count of tests that failed during the specified period. In the example above, 986 test failures originated from 124 tests. 
 
     ![View failing tests](_img/test-analytics/failing-tests.png)
 
-  - Chart view: A graphical view of the total test failures for each day in the specified period,
-    along with the trend line of average pass rate during that period. You can also change the graph to show average duration and only the result count. 
+  - Chart view: A trend of the total test failures and average pass rate on each day of the specified period. 
 
     ![View chart](_img/test-analytics/chart-view.png)
 
-* **Results**: Lists all the failed test cases in an order based on the total number of failures, starting with the highest value.
-  It helps you focus on the problematic tests, and provides the ability to drill down for more details.
+* **Results**: List of top failed tests based on the total number of failures.  Helps to identify problematic tests and lets you drill into a detailed summary of results.
 
   ![View chart](_img/test-analytics/results-view.png)
 
@@ -93,7 +98,7 @@ Additionally, for each test file, it shows the tests that contribute to these fa
 
 ### Drill down to individual tests
 
-After you have identified one or more tests in the **Details** section, select the individual test case you want to analyze.
+After you have identified one or more tests in the **Details** section, select the individual test you want to analyze.
 This provides a drill-down view of the selected test with a stacked chart of various outcomes such as passed or
 failed instances of the test, for each day in the specified period. 
 This view helps you infer hidden patterns and take actions accordingly. 

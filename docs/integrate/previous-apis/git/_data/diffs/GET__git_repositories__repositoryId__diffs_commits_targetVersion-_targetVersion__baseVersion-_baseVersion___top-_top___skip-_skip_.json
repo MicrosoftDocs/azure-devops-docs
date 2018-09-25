@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/diffs/commits?targetVersion={targetVersion}&baseVersion={baseVersion}&$top={top}&$skip={skip}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/diffs/commits?targetVersion=master&baseVersion=develop&$top=2&$skip=2&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/diffs/commits?targetVersion=master&baseVersion=develop&$top=2&$skip=2&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -40,7 +40,7 @@
                "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
                "path": "/CustomerAddressModule/CustomerAddressModule",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
             },
             "changeType": "add"
          },
@@ -49,7 +49,7 @@
                "gitObjectType": "blob",
                "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
                "path": "/CustomerAddressModule/CustomerAddressModule/App.config",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
             },
             "changeType": "add"
          }

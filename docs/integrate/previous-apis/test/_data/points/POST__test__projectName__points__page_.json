@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/test/points?$skip={skip}&$top={top}",
-   "requestUrl": "https://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?$skip=1&$top=1&api-version=3.1-preview.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?$skip=1&$top=1&api-version=3.1-preview.2",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -42,7 +42,7 @@
       "points": [
          {
             "id": 2,
-            "url": "https://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
             "assignedTo": {
                "id": "edfab9de-17c2-49ef-99cb-abfc159a1224",
                "displayName": "Fabrikam Fiber2"

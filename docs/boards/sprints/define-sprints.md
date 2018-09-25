@@ -190,7 +190,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 # [New navigation](#tab/new-nav)
 
-1. Open **Boards>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. Open **Boards>Backlogs** and then choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)

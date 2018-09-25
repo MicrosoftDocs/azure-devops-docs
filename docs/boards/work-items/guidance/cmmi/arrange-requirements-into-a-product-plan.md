@@ -1,7 +1,7 @@
 ---
-title: CMMI process guidance, Arrange requirements in a product plan
+title: Arrange requirements in a product plan
 titleSuffix: Azure Boards and TFS
-description: Obtain and arrange a plan, starting from a set of requirements - Team Foundation Server (TFS)
+description: CMMI process guidance, Create a plan from a set of requirements 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171

@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/test/runs/{newRunId}/results?resultIds={result1},{result2}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/Defaultcollection/Fabrikam-Fiber-TFVC/_apis/test/runs/27/results?resultIds=100000,100001&api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/runs/27/results?resultIds=100000,100001&api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
