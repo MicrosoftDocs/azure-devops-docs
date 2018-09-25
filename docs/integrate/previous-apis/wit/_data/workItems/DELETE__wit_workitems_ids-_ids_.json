@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/wit/workitems?ids={taskId1},{taskId2},{taskId3}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems?ids=72,73,74?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems?ids=72,73,74?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

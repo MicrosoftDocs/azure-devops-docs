@@ -1,6 +1,6 @@
 ---
-title: TF30172-You do not have permission to create a new project. 
-titleSuffix: Azure DevOps Services & TFS
+title: TF30172-You do not have permission ... 
+titleSuffix: Azure DevOps & TFS
 description: Display the error when you run the New Team Project Wizard.
 ms.prod: devops
 ms.technology: devops-agile

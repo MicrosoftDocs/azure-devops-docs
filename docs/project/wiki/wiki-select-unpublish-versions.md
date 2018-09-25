@@ -37,12 +37,12 @@ When your published wiki corresponds to a product version, you can publish new v
 
 # [New navigation](#tab/new-nav)  
 
-0. To create a new branch from the web portal, open **Repos>Branches**, open the ![](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and choose **New branch**. 
+0. To create a new branch from the web portal, open **Repos>Branches**, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and choose **New branch**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a new branch](_img/wiki/publish-wiki-create-branch-vert.png)
 
-0. To Publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the ![](../../_img/icons/actions-icon.png) actions icon, and choose **Publish new version**.
+0. To Publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose **Publish new version**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish new version menu option](_img/wiki/publish-new-version-option.png)
@@ -56,12 +56,12 @@ When your published wiki corresponds to a product version, you can publish new v
 
 # [Previous navigation](#tab/previous-nav)
 
-0. To create a new branch from the web portal, open the **Code>Branches** page, open the ![](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and choose **New branch**. 
+0. To create a new branch from the web portal, open the **Code>Branches** page, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and choose **New branch**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a new branch](_img/wiki/publish-wiki-create-branch.png)
 
-0. To Publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the ![](../../_img/icons/actions-icon.png) actions icon, and choose **Publish new version**.
+0. To Publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose **Publish new version**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish new version menu option](_img/wiki/publish-new-version-option.png)

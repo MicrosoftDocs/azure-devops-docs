@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Backlog Configuration | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Backlog Configuration programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Backlog Configuration | REST API Reference for Team Foundation Server
+description: Work with Backlog Configuration programmatically using the REST APIs for Team Foundation Server.
 ms.contentid: D128FEC4-75F9-432E-8140-091C535C514B
 ms.prod: devops
 ms.date: 04/28/2017

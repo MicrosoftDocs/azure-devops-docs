@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Sessions| REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test sessions programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Sessions| REST API Reference for Team Foundation Server
+description: Work with test sessions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 98502210-26d4-4b47-9d42-087c8e62782f
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/test/session?api
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name of a project.
 | team	    | string  | Project's default team name| Name of a team within the project.
 | version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -57,7 +57,7 @@ Content-Type: application/json
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name of a project.
 | team	    | string  | Project's default team name | Name of a team within the project.
 | version   | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -107,7 +107,7 @@ Content-Type: application/json
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name of a project.
 | team	    | string  | Project's default team Name| Name of a team within the project.
 | version   | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.

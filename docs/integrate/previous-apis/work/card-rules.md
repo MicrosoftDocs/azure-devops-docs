@@ -1,10 +1,10 @@
 ---
-title: Card Styling Rules for Kanban Boards | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Kanban board Card Styling Rules programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Card Styling Rules for Kanban Boards | REST API Reference for Team Foundation Server
+description: Work with Kanban board Card Styling Rules programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B1E4A7C6-E04C-42B9-8A55-0B18E00970EA
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team ID | Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -55,7 +55,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{b
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | TFS server name ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team ID | Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.

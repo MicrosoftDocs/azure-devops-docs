@@ -1,6 +1,6 @@
 ---
 title: Define area paths for a project
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Group work items based on team, product, or feature area by defining area paths for Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

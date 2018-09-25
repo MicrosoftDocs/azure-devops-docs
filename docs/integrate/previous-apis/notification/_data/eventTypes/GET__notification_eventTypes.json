@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/notification/eventTypes",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/eventTypes?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/eventTypes?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,7 +31,7 @@
          {
             "id": "ms.vss-build.build-completed-event",
             "name": "Build completed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-completed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-completed-event",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -68,7 +68,7 @@
          {
             "id": "ms.vss-build.build-completion-legacy-event",
             "name": "Build completed (legacy)",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-completion-legacy-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-completion-legacy-event",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -92,7 +92,7 @@
          {
             "id": "ms.vss-build.build-completion-legacy-event2",
             "name": "Build completedV2 (legacy)",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-completion-legacy-event2",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-completion-legacy-event2",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -116,7 +116,7 @@
          {
             "id": "ms.vss-build.build-definition-changed-event",
             "name": "Build definition changed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-definition-changed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-definition-changed-event",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -137,7 +137,7 @@
          {
             "id": "ms.vss-build.build-resource-changed-event",
             "name": "Build resource changed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-resource-changed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-resource-changed-event",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -161,7 +161,7 @@
          {
             "id": "ms.vss-build.build-status-change-event",
             "name": "Build status change",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-build.build-status-change-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-build.build-status-change-event",
             "eventPublisher": {
                "id": "ms.vss-build.build-event-publisher",
                "subscriptionManagementInfo": {
@@ -185,7 +185,7 @@
          {
             "id": "ms.vss-code.checkin-event",
             "name": "Code checked in",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.checkin-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.checkin-event",
             "eventPublisher": {
                "id": "ms.vss-code.code-event-publisher",
                "subscriptionManagementInfo": {
@@ -218,7 +218,7 @@
          {
             "id": "ms.vss-code.git-push-event",
             "name": "Code pushed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-push-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-push-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -247,7 +247,7 @@
          {
             "id": "ms.vss-code.git-repository-created-event",
             "name": "Repository created",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-created-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-created-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -268,7 +268,7 @@
          {
             "id": "ms.vss-code.git-repository-renamed-event",
             "name": "Repository renamed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-renamed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-renamed-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -289,7 +289,7 @@
          {
             "id": "ms.vss-code.git-repository-deleted-event",
             "name": "Repository deleted",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-deleted-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-deleted-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -310,7 +310,7 @@
          {
             "id": "ms.vss-code.git-import-succeeded-event",
             "name": "Import successful",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-import-succeeded-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-import-succeeded-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -331,7 +331,7 @@
          {
             "id": "ms.vss-code.git-import-failed-event",
             "name": "Import failed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-import-failed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-import-failed-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -352,7 +352,7 @@
          {
             "id": "ms.vss-code.git-pullrequest-event",
             "name": "Pull request created or updated",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -389,7 +389,7 @@
          {
             "id": "ms.vss-code.git-pullrequest-merge-event",
             "name": "Pull request merged",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-merge-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-merge-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -413,7 +413,7 @@
          {
             "id": "ms.vss-codereview.codereview-changed-event",
             "name": "Code review changed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-codereview.codereview-changed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-codereview.codereview-changed-event",
             "eventPublisher": {
                "id": "ms.vss-codereview.codereview-event-publisher",
                "subscriptionManagementInfo": {
@@ -454,7 +454,7 @@
          {
             "id": "ms.vss-notifications.subscription-disabled-event",
             "name": "Subcription disabled",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-notifications.subscription-disabled-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-notifications.subscription-disabled-event",
             "eventPublisher": {
                "id": "ms.vss-notifications.notifications-event-publisher",
                "subscriptionManagementInfo": {
@@ -475,7 +475,7 @@
          {
             "id": "ms.vss-tfs.message-sent-event",
             "name": "Team room message",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-tfs.message-sent-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-tfs.message-sent-event",
             "eventPublisher": {
                "id": "ms.vss-tfs.chat-event-publisher",
                "subscriptionManagementInfo": {
@@ -496,7 +496,7 @@
          {
             "id": "ms.vss-work.workitem-changed-event",
             "name": "Work item created or updated",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-work.workitem-changed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-work.workitem-changed-event",
             "eventPublisher": {
                "id": "ms.vss-work.work-event-publisher",
                "subscriptionManagementInfo": {

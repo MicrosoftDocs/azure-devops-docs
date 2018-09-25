@@ -69,7 +69,7 @@ Management teams can drill down from their portfolio backlog to see how **Epics*
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
@@ -86,7 +86,7 @@ Items that are owned by other teams appear with an information icon, ![](../../_
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"  
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
@@ -114,7 +114,7 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 
 ::: moniker range="vsts"  
 
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
@@ -128,7 +128,7 @@ Items that are owned by other teams appear with an information icon, ![](../../_
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017" 
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
  
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   

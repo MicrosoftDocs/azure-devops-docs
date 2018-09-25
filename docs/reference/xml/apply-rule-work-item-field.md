@@ -1,6 +1,6 @@
 ---
 title: Apply a field rule
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: devops-agile
 ms.prod: devops

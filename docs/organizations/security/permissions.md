@@ -1,6 +1,6 @@
 ---
 title: Permissions and groups reference
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
@@ -219,8 +219,8 @@ Project Collection Test Service Accounts
 Project Collection Valid Users
 -->
 
-
-<img src="_img/permissions/collection-admin-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts.png)
 
 
 <table valign="top" width="100%">
@@ -331,9 +331,6 @@ For each project that you create, the system creates the followings project-leve
 > For example, the contributors group for a project called "My Project" is 
 > **[My Project]/Contributors**.
 
-<!---
-<img src="_img/permissions/team-project-groups-and-permissions.png" style="border: 1px solid #C3C3C3;" />
--->
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -911,7 +908,8 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
-<img src="_img/permissions/build-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Build object-level permissions dialog](_img/permissions/build-permissions-vsts.png)
 
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
@@ -1082,13 +1080,15 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 
 ::: moniker range="vsts" 
 
-<img src="_img/permissions/git-repo-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
 
 ::: moniker-end 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018" 
 
-<img src="_img/permissions/git-repo-permissions-tfs.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Git repository permissions dialog, TFS](_img/permissions/git-repo-permissions-tfs.png) 
 
 ::: moniker-end 
 
@@ -1242,7 +1242,8 @@ You manage the security of each TFVC branch from the [web portal](set-git-tfvc-r
 
 These permissions appear only for a project set up to use Team Foundation Version Control as the source control system.
 
-<img src="_img/permissions/tfvc-repo-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![TFVC permissions dialog](_img/permissions/tfvc-repo-permissions-vsts.png)
 
 In version control permissions, explicit deny takes precedence over administrator group permissions.
 
@@ -1439,7 +1440,9 @@ Members of the Project Administrators group are automatically granted permission
 > There are other [team settings](../settings/manage-teams.md)
 > that configure the team's agile planning tools.
 
-<img src="_img/permissions/area-path-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Area path permissions dialog](_img/permissions/area-path-permissions-vsts.png)  
+
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1553,7 +1556,8 @@ You manage the security of each iteration path from the [web portal](../../organ
 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
 
-<img src="_img/permissions/iteration-path-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
 
 Consider granting team administrators, scrum masters, or team leads
 permissions to create, edit, or delete iteration nodes.
@@ -1619,7 +1623,8 @@ permissions to create, edit, or delete iteration nodes.
 
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
-<img src="_img/permissions/query-folder-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
 
 Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
@@ -2019,10 +2024,10 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 
 |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
 |---|---|---|:---:|
-|CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![](_img/checkmark.png)|
-|GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![](_img/checkmark.png)|
-|GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![](_img/checkmark.png)|
-|UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![](_img/checkmark.png)|
+|CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
+|GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
+|GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
+|UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
 
 
 

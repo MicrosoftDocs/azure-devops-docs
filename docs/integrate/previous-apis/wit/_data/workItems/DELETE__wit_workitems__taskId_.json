@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/wit/workitems/{taskId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/72?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/72?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -28,6 +28,6 @@
       "p3p": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\"",
       "x-content-type-options": "nosniff",
       "date": "Wed, 26 Nov 2014 22:38:52 GMT",
-      "location": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/92a64cb4-b477-479e-bbc0-98b4a4c0da39?api-version=1.0"
+      "location": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/92a64cb4-b477-479e-bbc0-98b4a4c0da39?api-version=1.0"
    }
 }

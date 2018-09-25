@@ -291,6 +291,13 @@ sections:
           alt: Billing logo
           src: https://docs.microsoft.com/media/common/i_billing.svg
         title: Billing
+      - href: ../organizations/accounts/index.md
+        html: <p></p>
+        image: 
+          title: Azure DevOps organization management
+          alt: Management icon
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Manage organizations
       - href: https://docs.microsoft.com/visualstudio
         html: <p></p>
         image:

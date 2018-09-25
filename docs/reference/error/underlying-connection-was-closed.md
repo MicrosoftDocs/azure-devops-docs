@@ -1,5 +1,5 @@
 ---
-title: Underlying connection was closed titleSuffix: Azure DevOps Services & TFS
+title: Underlying connection was closed titleSuffix: Azure DevOps & TFS
 description: Occurs when users save work items, check in code merges, or perform other operations on a large number of files.
 ms.prod: devops
 ms.technology: devops-agile

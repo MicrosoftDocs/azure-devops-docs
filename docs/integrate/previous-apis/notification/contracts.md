@@ -3,7 +3,7 @@ title: Notification API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 generated: true
 ms.manager: douge
 ms.topic: article

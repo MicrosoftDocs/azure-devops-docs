@@ -27,7 +27,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> ![Choose another team's board](/azure/devops/boards/boards/_img/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the ![](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
@@ -48,7 +48,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Portfolio Kanban board, Features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 

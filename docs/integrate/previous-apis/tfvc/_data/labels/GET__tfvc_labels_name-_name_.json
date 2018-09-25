@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tfvc/labels?name={name}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels?name=Th*Label&api-version=1.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels?name=Th*Label&api-version=1.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -41,10 +41,10 @@
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2883"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
          },
          {
             "id": 2882,
@@ -56,10 +56,10 @@
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/labels/2882"
+            "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2882"
          }
       ]
    }

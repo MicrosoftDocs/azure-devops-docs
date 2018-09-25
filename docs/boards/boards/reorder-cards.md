@@ -46,7 +46,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 ## Set card reordering team preference  
 
 If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
-1. To open, choose the ![](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
+1. To open, choose the ![ ](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
 
 	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png)  
 

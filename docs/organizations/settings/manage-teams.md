@@ -1,6 +1,6 @@
 ---
 title: Manage teams, configure team tools 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Get started as a team admin to manage team resources and tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

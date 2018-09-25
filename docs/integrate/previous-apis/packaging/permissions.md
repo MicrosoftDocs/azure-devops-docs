@@ -6,7 +6,7 @@ ms.manager: douge
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.topic: article
 ms.author: elbatk
 author: elbatk

@@ -1,6 +1,6 @@
 ---
 title: Delete or remove a project
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Delete or remove a project from Azure DevOps Services or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops

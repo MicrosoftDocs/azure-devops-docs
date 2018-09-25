@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Service Endpoints | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2013 < vsts'
+title: Service Endpoints | REST API Reference for Team Foundation Server
 description: Get, create, update and delete endpoints
 ms.ContentId: 01af664f-d3e9-4331-b1c4-8b323045940b
 ---
@@ -22,7 +22,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -38,7 +38,7 @@ POST https://{instance}/defaultcollection/{project}/_apis/distributedtask/servic
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -62,7 +62,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query
@@ -79,7 +79,7 @@ PUT https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query
@@ -96,7 +96,7 @@ DELETE https://{instance}/defaultcollection/{project}/_apis/distributedtask/serv
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query

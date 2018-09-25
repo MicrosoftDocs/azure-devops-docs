@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Import Requests | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Git import requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Git Import Requests | REST API Reference for Team Foundation Server
+description: Work with Git import requests programmatically using the REST APIs for Team Foundation Server.
 ms.contentid: 95B4933F-8191-4073-835A-3A0E218987D3
 ---
 
@@ -21,7 +21,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | project           | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  |         | ID of the [repository](./repositories.md).
 | Query
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter         | Type    | Notes
 |:------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  | TFS server name ({server:port}).
 | project           | string  | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  | ID of the [repository](./repositories.md).
 | importRequestId   | int     | ID of the import request.
@@ -76,7 +76,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories
 | Parameter                                          | Type     | Notes
 |:---------------------------------------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance                                           | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                                           | string   | TFS server name ({server:port}).
 | project                                            | string   | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository                                         | string   | ID of the [repository](./repositories.md).
 | Query
@@ -104,7 +104,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositorie
 | Parameter            | Type                       | Notes
 |:---------------------|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance             | string                     | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string                     | TFS server name ({server:port}).
 | project              | string                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository           | string                     | ID of the [repository](./repositories.md).
 | importRequestId      | int                        | ID of the import request.

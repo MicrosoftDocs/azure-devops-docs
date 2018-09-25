@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Suite Entries| REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test suite entries programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Suite Entries| REST API Reference for Team Foundation Server
+description: Work with test suite entries programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 357368C6-6A97-4685-A154-ED665713B201
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/suiteEntry/{suiteI
 | Parameter   | Type   | Notes
 |:------------|:-------|:-----------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
+| instance    | string | TFS server name ({server:port}). 
 | project     | string | Name or ID of the project.
 | suiteId     | int    | ID of the parent suite of the suite entries to get.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -55,7 +55,7 @@ Content-Type: application/json
 | Parameter       | Type   |Default Value | Notes
 |:----------------|:-------|:------------ |:------------------------------
 | URL
-| instance        | string |               |[VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
+| instance        | string |               |TFS server name ({server:port}). 
 | project         | string |               |Name or ID of the project.
 | suiteId         | int    |               |ID of the parent suite of the suite entries to reorder.
 | api-version     | string |               |[Version](../../concepts/rest-api-versioning.md) of the API to use.

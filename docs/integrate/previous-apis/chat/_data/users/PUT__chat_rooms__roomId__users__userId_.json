@@ -1,7 +1,7 @@
 {
    "method": "PUT",
    "resourceFormat": "/chat/rooms/{roomId}/users/{userId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/chat/rooms/305/users/d6245f20-2af8-44f4-9451-8107cb2767db?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/users/d6245f20-2af8-44f4-9451-8107cb2767db?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

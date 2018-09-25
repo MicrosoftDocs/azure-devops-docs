@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: TFVC Items | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with TFVC items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: TFVC Items | REST API Reference for Team Foundation Server
+description: Work with TFVC items programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
 ms.manager: douge
 ms.topic: article
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items/{path}?api-version={ve
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | path      | string  | Path to the file in TFVC. `$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml`
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -42,7 +42,7 @@ This format should be used for certain files (like web.config) that are not acce
 
 ####Request
 ```
-GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/_apis/tfvc/items?path=$/Fabrikam-Fiber-TFVC/WebSite/WebSite/web.config&api-version={version}
+GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fabrikam-Fiber-TFVC/WebSite/WebSite/web.config&api-version={version}
 ```
 ####Response
 #####Status code: 200
@@ -58,7 +58,7 @@ GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/_apis/tfvc/item
 
 ####Request
 ```
-GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/_apis/tfvc/items/$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml?api-version={version}
+GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items/$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml?api-version={version}
 ```
 ####Response
 #####Status code: 200

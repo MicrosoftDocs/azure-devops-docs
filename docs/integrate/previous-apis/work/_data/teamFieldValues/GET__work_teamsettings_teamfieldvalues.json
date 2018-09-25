@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/teamsettings/teamfieldvalues",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/teamfieldvalues?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/teamfieldvalues?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -37,7 +37,7 @@
    "responseBody": {
       "field": {
          "referenceName": "System.AreaPath",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AreaPath"
+         "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaPath"
       },
       "defaultValue": "Fabrikam-Fiber\\Auto",
       "values": [
@@ -54,22 +54,22 @@
             "includeChildren": false
          }
       ],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/teamfieldvalues",
+      "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/teamfieldvalues",
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/teamfieldvalues"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/teamfieldvalues"
          },
          "project": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
+            "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
          },
          "team": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
+            "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
          },
          "teamSettings": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
          },
          "areaPathClassificationNodes": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/_apis/wit/classificationNodes/Areas"
+            "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/_apis/wit/classificationNodes/Areas"
          }
       }
    }

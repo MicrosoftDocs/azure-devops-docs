@@ -1,6 +1,6 @@
 ---
 title: Find an admin or organization owner 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
 ms.technology: devops-security
@@ -58,7 +58,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
    ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
@@ -80,7 +80,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -99,7 +99,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
@@ -123,7 +123,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -143,7 +143,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)   

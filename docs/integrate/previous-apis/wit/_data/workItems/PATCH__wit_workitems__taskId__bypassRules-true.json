@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/wit/workitems/{taskId}?bypassRules=true",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitems/335?bypassRules=true&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitems/335?bypassRules=true&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json-patch+json",
@@ -61,7 +61,7 @@
       "relations": [
          {
             "rel": "System.LinkTypes.Hierarchy-Reverse",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/333",
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/333",
             "attributes": {
                "isLocked": false,
                "comment": "decomposition of work"
@@ -69,7 +69,7 @@
          },
          {
             "rel": "System.LinkTypes.Related",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/336",
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/336",
             "attributes": {
                "isLocked": false,
                "comment": "adding another task"
@@ -89,27 +89,27 @@
       ],
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/335"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335"
          },
          "workItemUpdates": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/335/updates"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/updates"
          },
          "workItemRevisions": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/335/revisions"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/revisions"
          },
          "workItemHistory": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/335/history"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/history"
          },
          "html": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=335"
+            "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=335"
          },
          "workItemType": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
          },
          "fields": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/335"
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335"
    }
 }

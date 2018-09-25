@@ -116,7 +116,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 # [Previous navigation](#tab/previous-nav)
 
-You open team settings from the top navigation bar. Select the team you want and then choose the ![](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
+You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png) 
@@ -157,14 +157,14 @@ Administrators configure resources for a project and manage project-level permis
 
 # [Previous navigation](#tab/previous-nav)
 
-From a user context, open **Project settings** by choosing the ![](../../_img/icons/gear_icon.png) gear icon. 
+From a user context, open **Project settings** by choosing the ![ ](../../_img/icons/gear_icon.png) gear icon. 
 
 ::: moniker range=">= tfs-2018"
 
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
  
-Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 ![Project Settings](../../_shared/_img/settings/open-project-settings-horz.png) 
 
@@ -174,7 +174,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 
 <a id="admin-intro-tfs-2017-1" />
 
-Open any admin page by choosing it's name. Choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 **TFS 2017.2**
 
@@ -215,7 +215,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
@@ -233,7 +233,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
+0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-organization-settings.png) 
@@ -252,7 +252,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
-1. From the web portal home page for a project, choose or hover over the ![](../../_img/icons/gear_icon.png) gear icon and select **Server settings**. 
+1. From the web portal home page for a project, choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon and select **Server settings**. 
 
 	<img src="../../organizations/security/_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 

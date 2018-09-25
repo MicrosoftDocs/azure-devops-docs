@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/release/approvals/{approvalId}",
-   "requestUrl": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/approvals/240?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/approvals/240?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -43,15 +43,15 @@
          "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
          "displayName": "Chuck Reinhart",
          "uniqueName": "chuckreinhart@outlook.com",
-         "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-         "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "approvedBy": {
          "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
          "displayName": "Chuck Reinhart",
          "uniqueName": "chuckreinhart@outlook.com",
-         "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-         "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "approvalType": "preDeploy",
       "createdOn": "2016-04-12T08:14:07.287Z",
@@ -71,15 +71,15 @@
                "id": "c1f4b9a6-aee1-41f9-a2e0-070a79973ae9",
                "displayName": "Noah Munger",
                "uniqueName": "noahmunger@outlook.com",
-               "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/c1f4b9a6-aee1-41f9-a2e0-070a79973ae9",
-               "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=c1f4b9a6-aee1-41f9-a2e0-070a79973ae9"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/c1f4b9a6-aee1-41f9-a2e0-070a79973ae9",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=c1f4b9a6-aee1-41f9-a2e0-070a79973ae9"
             },
             "changedBy": {
                "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
                "displayName": "Chuck Reinhart",
                "uniqueName": "chuckreinhart@outlook.com",
-               "url": "https://fabfiber.vssps.visualstudio.com/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-               "imageUrl": "https://fabfiber.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
             },
             "createdOn": "2016-04-12T08:27:32.9Z",
             "modifiedOn": "2016-04-12T08:27:32.9Z"
@@ -88,12 +88,12 @@
       "release": {
          "id": 119,
          "name": "Release-17",
-         "url": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/119"
+         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/119"
       },
       "releaseDefinition": {
          "id": 12,
          "name": "Fabrikam-Website",
-         "url": "https://fabfiber.vsrm.visualstudio.com/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "releaseEnvironment": {
          "id": 258,

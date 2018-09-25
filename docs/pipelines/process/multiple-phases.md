@@ -115,7 +115,7 @@ jobs:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: xcode9-macos10.13
+    vmImage: macOS-10.13
   steps:
   - script: echo hello from macOS
 - job: Linux

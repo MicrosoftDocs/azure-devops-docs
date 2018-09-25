@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Team Days Off | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with team days off programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Team Days Off | REST API Reference for Team Foundation Server
+description: Work with team days off programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: b1bfef41-c787-40dd-be4d-6ed981e55fdd
 ms.manager: douge
 ms.topic: article
@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.
@@ -46,7 +46,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.

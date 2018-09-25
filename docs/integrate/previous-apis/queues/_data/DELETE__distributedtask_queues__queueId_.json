@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/distributedtask/queues/{queueId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/distributedtask/queues/4?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/distributedtask/queues/4?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json;api-version=3.0-preview.1",
       "Content-Type": "application/json",

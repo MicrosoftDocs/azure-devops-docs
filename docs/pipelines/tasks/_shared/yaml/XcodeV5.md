@@ -8,7 +8,7 @@
     #sdk: '$(SDK)' # Optional
     #xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace' # Optional
     #scheme: # Optional
-    #xcodeVersion: 'default' # Optional. Options: 8, 9, default, specifyPath
+    #xcodeVersion: 'default' # Optional. Options: 8, 9, 10, default, specifyPath
     #xcodeDeveloperDir: # Optional
     packageApp: 
     #archivePath: # Optional

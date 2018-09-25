@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/dashboard/groups/{groupId}/dashboards/{dashboardId}/widgets/{widgetId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf/widgets/f453fa65-6bcc-4534-9210-8c3cfa72cb1a?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf/widgets/f453fa65-6bcc-4534-9210-8c3cfa72cb1a?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

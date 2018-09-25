@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feeds/{feedName}/packages/{packageId}/versions/{versionId}",
-   "requestUrl": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/versions/b8a2a277-f77b-4ef2-acfd-0c0e550af5f7?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/versions/b8a2a277-f77b-4ef2-acfd-0c0e550af5f7?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -41,7 +41,7 @@
          }
       },
       "tags": [],
-      "url": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions",
       "dependencies": [
          {
             "packageName": "Microsoft.AspNet.WebApi.Client",
@@ -62,13 +62,13 @@
       ],
       "_links": {
          "self": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b/Versions"
          },
          "feed": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4"
          },
          "package": {
-            "href": "https://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/ebe02934-8b9a-419b-bd8d-0cd33d7c86f4/Packages/e3d6b8ad-9a15-40cf-ab6c-d08a409bba6b"
          }
       },
       "id": "b8a2a277-f77b-4ef2-acfd-0c0e550af5f7",

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/classificationNodes/iterations?$depth=2",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations?$depth=2&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations?$depth=2&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -45,21 +45,21 @@
             "name": "Release 3",
             "structureType": "iteration",
             "hasChildren": false,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%203"
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%203"
          },
          {
             "id": 3571,
             "name": "Release 2",
             "structureType": "iteration",
             "hasChildren": false,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%202"
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%202"
          },
          {
             "id": 3572,
             "name": "Release 4",
             "structureType": "iteration",
             "hasChildren": false,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%204"
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%204"
          },
          {
             "id": 3576,
@@ -72,7 +72,7 @@
                   "name": "Sprint 4",
                   "structureType": "iteration",
                   "hasChildren": false,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%204"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%204"
                },
                {
                   "id": 3565,
@@ -83,21 +83,21 @@
                      "startDate": "2014-03-17T00:00:00Z",
                      "finishDate": "2014-03-28T00:00:00Z"
                   },
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%202"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%202"
                },
                {
                   "id": 3567,
                   "name": "Sprint 6",
                   "structureType": "iteration",
                   "hasChildren": false,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%206"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%206"
                },
                {
                   "id": 3573,
                   "name": "Sprint 5",
                   "structureType": "iteration",
                   "hasChildren": false,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%205"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%205"
                },
                {
                   "id": 3574,
@@ -108,24 +108,24 @@
                      "startDate": "2014-03-03T00:00:00Z",
                      "finishDate": "2014-03-14T00:00:00Z"
                   },
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%201"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%201"
                },
                {
                   "id": 3575,
                   "name": "Sprint 3",
                   "structureType": "iteration",
                   "hasChildren": false,
-                  "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%203"
+                  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%203"
                }
             ],
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201"
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201"
          }
       ],
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
    }
 }

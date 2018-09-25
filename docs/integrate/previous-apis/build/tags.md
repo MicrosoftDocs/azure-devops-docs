@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 title: Build Tags | REST API Reference for  Azure DevOps Services and Team Foundation Server
 description: Get build tags using the REST APIs for VSTS.
 ms.assetid: f5a3bb49-f843-4f51-a29a-6ca1c226fbe2
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/build/queues?api-version={version
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

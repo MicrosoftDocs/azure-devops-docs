@@ -1,6 +1,6 @@
 ---
 title: Support rollup of work and other fields
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: devops
 ms.technology: devops-agile

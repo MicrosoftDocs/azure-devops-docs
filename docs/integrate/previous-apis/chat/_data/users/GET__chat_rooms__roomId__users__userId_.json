@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/chat/rooms/{roomId}/users/{userId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/chat/rooms/305/users/d6245f20-2af8-44f4-9451-8107cb2767db?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/users/d6245f20-2af8-44f4-9451-8107cb2767db?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -33,8 +33,8 @@
       "user": {
          "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
          "displayName": "Normal Paulk",
-         "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-         "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "lastActivity": "2014-10-27T16:36:02.28Z",
       "joinedDate": "2014-10-27T16:36:02.203Z",

@@ -1,6 +1,6 @@
 ---
 title: All FIELD XML elements reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile

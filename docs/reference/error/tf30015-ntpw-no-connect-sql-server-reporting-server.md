@@ -1,6 +1,6 @@
 ---
 title: TF30015-The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: The New Team Project Wizard was unable to connect to {name}.
 ms.prod: devops
 ms.technology: devops-agile

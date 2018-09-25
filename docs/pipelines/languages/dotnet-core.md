@@ -82,7 +82,7 @@ Add the following snippet to your `azure-pipelines.yml` file to select the appro
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'Ubuntu-16.04' # other options: 'macOS-10.13', 'VS2017-Win2016'
 ```
 
 # [Designer](#tab/designer)

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/projects/{projectId}/teams/{teamId}/members/",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca/members/?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca/members/?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,22 +34,22 @@
             "id": "3b5f0c34-4aec-4bf4-8708-1d36f0dbc468",
             "displayName": "Christie Church",
             "uniqueName": "fabrikamfiber1@hotmail.com",
-            "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/3b5f0c34-4aec-4bf4-8708-1d36f0dbc468",
-            "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=3b5f0c34-4aec-4bf4-8708-1d36f0dbc468"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/3b5f0c34-4aec-4bf4-8708-1d36f0dbc468",
+            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=3b5f0c34-4aec-4bf4-8708-1d36f0dbc468"
          },
          {
             "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
             "displayName": "Chuck Reinhart",
             "uniqueName": "fabrikamfiber3@hotmail.com",
-            "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-            "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
          },
          {
             "id": "19d9411e-9a34-45bb-b985-d24d9d87c0c9",
             "displayName": "Johnnie McLeod",
             "uniqueName": "fabrikamfiber2@hotmail.com",
-            "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
-            "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
          }
       ],
       "count": 3

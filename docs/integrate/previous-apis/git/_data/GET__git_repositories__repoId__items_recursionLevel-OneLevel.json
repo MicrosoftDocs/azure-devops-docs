@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repoId}/items?recursionLevel=OneLevel",
-   "requestUrl": "http://localhost:8080/tfs/DefaultCollection/_apis/git/repositories/18b70da6-63c5-4767-a77d-7847538e05f1/items?recursionLevel=OneLevel",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/18b70da6-63c5-4767-a77d-7847538e05f1/items?recursionLevel=OneLevel",
    "requestHeaders": {
       "Accept": "application/json"
    },
