@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 09/25/2018
 monikerRange: 'vsts'
 ---
 
@@ -70,7 +70,7 @@ To make subsequent edits to paid quantities in your Azure DevOps organization, y
  * [Visual Studio Marketplace > Pipelines > **Microsoft-hosted parallel jobs**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
  * [Visual Studio Marketplace > Pipelines > **Self-hosted parallel jobs**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
-2. Choose **Get**.
+2. Choose **Get**. (The following images represent Microsoft-hosted CI/CD, rather than Self-hosted, although the process is the same.)
 
     ![Select your Azure DevOps organization](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
