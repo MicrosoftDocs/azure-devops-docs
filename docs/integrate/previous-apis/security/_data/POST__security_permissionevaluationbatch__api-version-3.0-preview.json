@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/security/permissionevaluationbatch/?api-version=3.0-preview",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/security/permissionevaluationbatch/?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/security/permissionevaluationbatch/?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

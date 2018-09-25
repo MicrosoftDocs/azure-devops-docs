@@ -133,7 +133,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)) field.
 
-0. To add a field to a card, click ![](../_img/icons/add_icon.png) add icon to select a field from the drop-down menu. 
+0. To add a field to a card, click ![ ](../_img/icons/add_icon.png) add icon to select a field from the drop-down menu. 
 
 	![Kanban board, Add fields to a card](_img/customize-cards/add-changed-by-field.png) 
 
@@ -229,7 +229,7 @@ To learn more about using these features, see [Add task checklists](../../boards
 ::: moniker range=">= tfs-2017"
 ### Enable or disable an annotation 
 
-1. To open, click the ![](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
+1. To open, click the ![ ](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
 
 	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
@@ -249,11 +249,11 @@ To learn more about using these features, see [Add task checklists](../../boards
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan going forward. 
 
-1. To open, click the ![](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
+1. To open, click the ![ ](../../_img/icons/gear-icon.png) gear icon from your team's Kanban board.  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can set team settings.  
 
-2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
+2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
 
 	<img src="_img/c-cards-test-settings.png" alt="Kanban board, Settings dialog, Tests tab" style="border: 1px solid #C3C3C3;" />  
 
@@ -261,7 +261,7 @@ You can control the test plan under which inline tests you add through the Kanba
 	  
 ### Open the test plan, test suite from a card
 
-From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the ![](../../_img/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
+From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the ![ ](../../_img/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
 <img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 

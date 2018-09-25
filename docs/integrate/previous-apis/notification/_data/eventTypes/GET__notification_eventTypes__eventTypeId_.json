@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/notification/eventTypes/{eventTypeId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/eventTypes/ms.vss-build.build-completed-event?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/eventTypes/ms.vss-build.build-completed-event?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },

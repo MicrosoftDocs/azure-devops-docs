@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/policy/configurations",
-   "requestUrl": "https://fabrikam.visualstudio.com/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -52,8 +52,8 @@
          "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
          "displayName": "Normal Paulk",
          "uniqueName": "fabrikamfiber16@hotmail.com",
-         "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-         "imageUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+         "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.935666",
       "isEnabled": true,
@@ -70,18 +70,18 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/policy/configurations/19"
+            "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
          },
          "type": {
-            "href": "https://fabrikam.visualstudio.com/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab"
+            "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab"
          }
       },
       "revision": 1,
       "id": 19,
-      "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/policy/configurations/19",
+      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
       "type": {
          "id": "fa4e907d-c16b-4a4c-9dfa-4916e5d171ab",
-         "url": "https://fabrikam.visualstudio.com/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab",
+         "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab",
          "displayName": "Require a merge strategy"
       }
    }

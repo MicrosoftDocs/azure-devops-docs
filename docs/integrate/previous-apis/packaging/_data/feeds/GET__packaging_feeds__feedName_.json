@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feeds/{feedName}",
-   "requestUrl": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/EngineeringInternal?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInternal?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -38,10 +38,10 @@
       "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
       "name": "EngineeringInternal",
       "description": "Contains packages internal to the engineering organization",
-      "url": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
       "_links": {
          "self": {
-            "href": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+            "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
          }
       }
    }

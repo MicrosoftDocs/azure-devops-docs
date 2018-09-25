@@ -1,6 +1,6 @@
 ---
 title: Customize your work tracking experience
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

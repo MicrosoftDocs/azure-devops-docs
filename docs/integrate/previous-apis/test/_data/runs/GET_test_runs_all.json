@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/{projectName}/runs?includeRunDetails=true",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs?includeRunDetails=true&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs?includeRunDetails=true&api-version=1.0",
     "requestHeaders": {       "Content-Type": "application/json"    },
    "statusCode": 200,
    "responseHeaders": {
@@ -25,20 +25,20 @@
          {
             "id": 1,
             "name": "NewTestRun2",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/1",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/1",
             "isAutomated": false,
             "iteration": "Fabrikam-Fiber-TFVC\\Release 1\\Sprint 1",
             "owner": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "project": {
                "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
                "name": "Fabrikam-Fiber-TFVC",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
             },
             "startedDate": "2014-05-04T12:50:33.17Z",
             "completedDate": "2014-05-04T12:50:31.953Z",
@@ -46,7 +46,7 @@
             "plan": {
                "id": "1",
                "name": "sprint1",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+               "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
             },
             "postProcessState": "Complete",
             "totalTests": 1,
@@ -57,8 +57,8 @@
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "revision": 4,
             "comment": "This test run is doomed"
@@ -66,20 +66,20 @@
          {
             "id": 2,
             "name": "sprint1 (Manual)",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/2",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/2",
             "isAutomated": false,
             "iteration": "Fabrikam-Fiber-TFVC\\Release 1\\Sprint 1",
             "owner": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "project": {
                "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
                "name": "Fabrikam-Fiber-TFVC",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
             },
             "startedDate": "2014-05-04T12:58:36.907Z",
             "completedDate": "2014-05-04T12:58:36.47Z",
@@ -87,7 +87,7 @@
             "plan": {
                "id": "1",
                "name": "sprint1",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+               "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
             },
             "postProcessState": "Complete",
             "totalTests": 1,
@@ -98,28 +98,28 @@
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "revision": 3
          },
          {
             "id": 4,
             "name": "sprint1 (Manual)",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4",
             "isAutomated": false,
             "iteration": "Fabrikam-Fiber-TFVC\\Release 1\\Sprint 1",
             "owner": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "project": {
                "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
                "name": "Fabrikam-Fiber-TFVC",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
             },
             "startedDate": "2014-05-04T13:00:37.447Z",
             "completedDate": "2014-05-04T13:01:02.943Z",
@@ -127,7 +127,7 @@
             "plan": {
                "id": "1",
                "name": "sprint1",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+               "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
             },
             "postProcessState": "Complete",
             "totalTests": 2,
@@ -139,28 +139,28 @@
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "revision": 3
          },
          {
             "id": 6,
             "name": "sprint1 (Manual)",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/6",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/6",
             "isAutomated": false,
             "iteration": "Fabrikam-Fiber-TFVC\\Release 1\\Sprint 1",
             "owner": {
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "project": {
                "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
                "name": "Fabrikam-Fiber-TFVC",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
             },
             "startedDate": "2014-05-04T14:00:56.807Z",
             "completedDate": "2014-05-04T14:00:57.15Z",
@@ -168,7 +168,7 @@
             "plan": {
                "id": "1",
                "name": "sprint1",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+               "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
             },
             "postProcessState": "Complete",
             "totalTests": 1,
@@ -179,8 +179,8 @@
                "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
                "displayName": "Fabrikam Fiber",
                "uniqueName": "fabrikamfiber1@outlook.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
             },
             "revision": 3
          }

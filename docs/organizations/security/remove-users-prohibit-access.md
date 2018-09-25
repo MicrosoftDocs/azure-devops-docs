@@ -1,6 +1,6 @@
 ---
 title: Remove users from AD/Azure AD security groups 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD security groups  
 ms.prod: devops
 ms.technology: devops-security

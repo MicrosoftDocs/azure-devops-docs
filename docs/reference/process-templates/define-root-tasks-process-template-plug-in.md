@@ -1,6 +1,6 @@
 ---
 title: Define the root process template tasks
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Add, remove, define, or change the sequence in which process template plug-in files are processed 
 ms.prod: devops
 ms.technology: devops-agile

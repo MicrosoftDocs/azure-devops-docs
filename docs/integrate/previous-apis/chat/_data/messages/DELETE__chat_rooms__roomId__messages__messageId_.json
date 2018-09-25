@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/chat/rooms/{roomId}/messages/{messageId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/chat/rooms/305/messages/118943?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

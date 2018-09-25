@@ -1,6 +1,6 @@
 ---
 title: Velocity metrics and usage guidance
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Guidance for working with velocity charts generated for a team or project in Azure DevOps & Team Foundation Server
 ms.technology: devops-analytics  
 ms.prod: devops

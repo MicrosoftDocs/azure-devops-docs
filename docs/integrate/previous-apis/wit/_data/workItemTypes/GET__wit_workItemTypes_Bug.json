@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workItemTypes/Bug",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemTypes/Bug?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemTypes/Bug?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -36,192 +36,192 @@
          {
             "referenceName": "System.IterationPath",
             "name": "Iteration Path",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.IterationPath"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath"
          },
          {
             "referenceName": "System.IterationId",
             "name": "Iteration ID",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.IterationId"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationId"
          },
          {
             "referenceName": "System.ExternalLinkCount",
             "name": "External Link Count",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.ExternalLinkCount"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.ExternalLinkCount"
          },
          {
             "referenceName": "System.TeamProject",
             "name": "Team Project",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.TeamProject"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.TeamProject"
          },
          {
             "referenceName": "System.HyperLinkCount",
             "name": "Hyperlink Count",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.HyperLinkCount"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.HyperLinkCount"
          },
          {
             "referenceName": "System.AttachedFileCount",
             "name": "Attached File Count",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AttachedFileCount"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AttachedFileCount"
          },
          {
             "referenceName": "System.NodeName",
             "name": "Node Name",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.NodeName"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.NodeName"
          },
          {
             "referenceName": "System.AreaPath",
             "name": "Area Path",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AreaPath"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaPath"
          },
          {
             "referenceName": "System.RevisedDate",
             "name": "Revised Date",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.RevisedDate"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.RevisedDate"
          },
          {
             "referenceName": "System.ChangedDate",
             "name": "Changed Date",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.ChangedDate"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.ChangedDate"
          },
          {
             "referenceName": "System.Id",
             "name": "ID",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Id"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Id"
          },
          {
             "referenceName": "System.AreaId",
             "name": "Area ID",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AreaId"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaId"
          },
          {
             "referenceName": "System.AuthorizedAs",
             "name": "Authorized As",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AuthorizedAs"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AuthorizedAs"
          },
          {
             "referenceName": "System.Title",
             "name": "Title",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Title"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Title"
          },
          {
             "referenceName": "System.State",
             "name": "State",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.State"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.State"
          },
          {
             "referenceName": "System.AuthorizedDate",
             "name": "Authorized Date",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AuthorizedDate"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AuthorizedDate"
          },
          {
             "referenceName": "System.Watermark",
             "name": "Watermark",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Watermark"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Watermark"
          },
          {
             "referenceName": "System.Rev",
             "name": "Rev",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Rev"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Rev"
          },
          {
             "referenceName": "System.ChangedBy",
             "name": "Changed By",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.ChangedBy"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.ChangedBy"
          },
          {
             "referenceName": "System.Reason",
             "name": "Reason",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Reason"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Reason"
          },
          {
             "referenceName": "System.AssignedTo",
             "name": "Assigned To",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AssignedTo"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AssignedTo"
          },
          {
             "referenceName": "System.WorkItemType",
             "name": "Work Item Type",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.WorkItemType"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.WorkItemType"
          },
          {
             "referenceName": "System.CreatedDate",
             "name": "Created Date",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.CreatedDate"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.CreatedDate"
          },
          {
             "referenceName": "System.CreatedBy",
             "name": "Created By",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.CreatedBy"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.CreatedBy"
          },
          {
             "referenceName": "System.Description",
             "name": "Description",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Description"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Description"
          },
          {
             "referenceName": "System.History",
             "name": "History",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.History"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.History"
          },
          {
             "referenceName": "System.BISLinks",
             "name": "BIS Links",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.BISLinks"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.BISLinks"
          },
          {
             "referenceName": "System.RelatedLinkCount",
             "name": "Related Link Count",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.RelatedLinkCount"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.RelatedLinkCount"
          },
          {
             "referenceName": "System.Tags",
             "name": "Tags",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Tags"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Tags"
          },
          {
             "referenceName": "Microsoft.VSTS.TCM.SystemInfo",
             "name": "System Info",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.TCM.SystemInfo"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.TCM.SystemInfo"
          },
          {
             "referenceName": "Microsoft.VSTS.Common.ClosedDate",
             "name": "Closed Date",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.ClosedDate"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.ClosedDate"
          },
          {
             "referenceName": "Microsoft.VSTS.TCM.ReproSteps",
             "name": "Repro Steps",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.TCM.ReproSteps"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.TCM.ReproSteps"
          },
          {
             "referenceName": "Microsoft.VSTS.Common.BacklogPriority",
             "name": "Backlog Priority",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.BacklogPriority"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.BacklogPriority"
          },
          {
             "referenceName": "Microsoft.VSTS.Scheduling.Effort",
             "name": "Effort",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort"
          },
          {
             "referenceName": "Microsoft.VSTS.Common.AcceptanceCriteria",
             "name": "Acceptance Criteria",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.AcceptanceCriteria"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.AcceptanceCriteria"
          },
          {
             "referenceName": "Microsoft.VSTS.Common.Severity",
             "name": "Severity",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Severity"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Severity"
          },
          {
             "referenceName": "Microsoft.VSTS.Build.IntegrationBuild",
             "name": "Integration Build",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Build.IntegrationBuild"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Build.IntegrationBuild"
          },
          {
             "referenceName": "Microsoft.VSTS.Build.FoundIn",
             "name": "Found In",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Build.FoundIn"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Build.FoundIn"
          }
       ],
       "transitions": {
@@ -303,9 +303,9 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Bug"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Bug"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Bug"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Bug"
    }
 }

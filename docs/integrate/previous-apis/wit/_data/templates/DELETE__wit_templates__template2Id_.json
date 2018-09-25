@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/wit/templates/{template2Id}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/Fabrikam-Fiber-Git%20Team/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/Fabrikam-Fiber-Git%20Team/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

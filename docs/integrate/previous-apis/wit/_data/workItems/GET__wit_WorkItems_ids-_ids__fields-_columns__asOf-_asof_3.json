@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/WorkItems?ids={ids}&fields={columns}&asOf={asof}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/WorkItems?ids=297,299,300&fields=System.Id,System.Links.LinkType,System.WorkItemType,System.Title,System.State&asOf=2014-12-29T20:49:35.357Z&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/WorkItems?ids=297,299,300&fields=System.Id,System.Links.LinkType,System.WorkItemType,System.Title,System.State&asOf=2014-12-29T20:49:35.357Z&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -40,7 +40,7 @@
                "System.State": "New",
                "System.Title": "Customer can sign in using their Microsoft Account"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/297"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
          },
          {
             "id": 299,
@@ -51,7 +51,7 @@
                "System.State": "To Do",
                "System.Title": "JavaScript implementation for Microsoft Account"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/299"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
          },
          {
             "id": 300,
@@ -62,7 +62,7 @@
                "System.State": "To Do",
                "System.Title": "Unit Testing for MSA login"
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/300"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
          }
       ]
    }

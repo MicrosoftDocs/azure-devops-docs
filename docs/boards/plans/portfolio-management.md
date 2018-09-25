@@ -101,7 +101,7 @@ Each feature team has its own team home page or dashboards, product and portfoli
 
 The Customer Service feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam Fiber/Customer Service**. Here we show parents which provide a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
 
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on.png)   
@@ -116,7 +116,7 @@ Items that are owned by other teams appear with an information icon, ![](../../_
 
 ::: moniker range=">= tfs-2017"  
 
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, previous navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   

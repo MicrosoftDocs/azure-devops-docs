@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/queues",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/queues?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/build/queues?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,7 +39,7 @@
             "queueType": "buildController",
             "id": 274,
             "name": "Hosted Build Controller",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/274"
+            "url": "https://mytfsserver/DefaultCollection/_apis/build/Queues/274"
          }
       ],
       "count": 1

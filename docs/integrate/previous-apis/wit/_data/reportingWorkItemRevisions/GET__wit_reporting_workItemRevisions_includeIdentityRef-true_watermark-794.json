@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/reporting/workItemRevisions?includeIdentityRef=true&watermark=794",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/reporting/workItemRevisions?includeIdentityRef=true&watermark=794&api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemRevisions?includeIdentityRef=true&watermark=794&api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -100,7 +100,7 @@
             }
          }
       ],
-      "nextLink": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/reporting/workItemRevisions?continuationToken=813;350;1&includeIdentityRef=true&api-version=2.0",
+      "nextLink": "https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemRevisions?continuationToken=813;350;1&includeIdentityRef=true&api-version=2.0",
       "continuationToken": "813;350;1",
       "isLastBatch": true
    }

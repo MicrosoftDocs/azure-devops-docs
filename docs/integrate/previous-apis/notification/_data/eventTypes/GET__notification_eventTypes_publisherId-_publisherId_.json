@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/notification/eventTypes?publisherId={publisherId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/eventTypes?publisherId=ms.vss-code.git-event-publisher&api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/eventTypes?publisherId=ms.vss-code.git-event-publisher&api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,7 +31,7 @@
          {
             "id": "ms.vss-code.git-push-event",
             "name": "Code pushed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-push-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-push-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -60,7 +60,7 @@
          {
             "id": "ms.vss-code.git-repository-created-event",
             "name": "Repository created",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-created-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-created-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -81,7 +81,7 @@
          {
             "id": "ms.vss-code.git-repository-renamed-event",
             "name": "Repository renamed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-renamed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-renamed-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -102,7 +102,7 @@
          {
             "id": "ms.vss-code.git-repository-deleted-event",
             "name": "Repository deleted",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-repository-deleted-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-repository-deleted-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -123,7 +123,7 @@
          {
             "id": "ms.vss-code.git-import-succeeded-event",
             "name": "Import successful",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-import-succeeded-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-import-succeeded-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -144,7 +144,7 @@
          {
             "id": "ms.vss-code.git-import-failed-event",
             "name": "Import failed",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-import-failed-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-import-failed-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -165,7 +165,7 @@
          {
             "id": "ms.vss-code.git-pullrequest-event",
             "name": "Pull request created or updated",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {
@@ -202,7 +202,7 @@
          {
             "id": "ms.vss-code.git-pullrequest-merge-event",
             "name": "Pull request merged",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-merge-event",
+            "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-code.git-pullrequest-merge-event",
             "eventPublisher": {
                "id": "ms.vss-code.git-event-publisher",
                "subscriptionManagementInfo": {

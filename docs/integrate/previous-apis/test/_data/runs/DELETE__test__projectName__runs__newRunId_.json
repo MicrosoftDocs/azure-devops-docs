@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/test/{projectName}/runs/{newRunId}",
-   "requestUrl": "https://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/31?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/31?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

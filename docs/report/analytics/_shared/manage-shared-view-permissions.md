@@ -9,7 +9,7 @@ All members of the Contributors group for your project can use **Shared** views 
 
 0. To change the permissions for a shared view, open **Analytics views**, and choose **All**. For details, see [Create an Analytics view](/azure/devops/report/analytics/analytics-views-create). 
 
-0. Choose the ![](/azure/devops/report/_img/icons/actions-icon.png) actions icon and then select **Security**.
+0. Choose the ![ ](/azure/devops/report/_img/icons/actions-icon.png) actions icon and then select **Security**.
 
 0. Change the permissions so that the team member or group can't edit or delete the view.
 

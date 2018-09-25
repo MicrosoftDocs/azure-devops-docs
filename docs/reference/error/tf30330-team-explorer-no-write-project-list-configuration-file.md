@@ -1,5 +1,5 @@
 ---
-title: TF30330-Team Explorer cannot write to the project list configuration file. Free up space on the local hard disk. titleSuffix: Azure DevOps Services & TFS
+title: TF30330-Team Explorer cannot write...titleSuffix: Azure DevOps & TFS
 description: Display an error when Team Explorer cannot establish read/write access to the project list configuration file.
 ms.prod: devops
 ms.technology: devops-agile

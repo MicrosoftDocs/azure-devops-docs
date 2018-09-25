@@ -43,7 +43,7 @@ This topic shows you how to:
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
 <img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
 
@@ -51,12 +51,12 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
-To stop following changes, choose the ![](../_img/icons/following-icon.png) following icon.
+To stop following changes, choose the ![ ](../_img/icons/following-icon.png) following icon.
  
 <a id="follow-pr"></a>
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the ![](../_img/icons/actions-icon.png) actions icon for the pull request, and select the ![](../_img/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the ![ ](../_img/icons/actions-icon.png) actions icon for the pull request, and select the ![ ](../_img/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
 <img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 
@@ -64,7 +64,7 @@ You'll only receive notifications when other members of your team modifies the P
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, open the PR context menu and choose the ![](../_img/icons/following-icon.png) Following icon. 
+To stop following changes, open the PR context menu and choose the ![ ](../_img/icons/following-icon.png) Following icon. 
 
 ## Manage work items that you're following  
 

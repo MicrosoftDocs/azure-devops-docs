@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/templates?workItemTypeName=Task",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/Fabrikam-Fiber-Git%20Team/_apis/wit/templates?workItemTypeName=Task&api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/Fabrikam-Fiber-Git%20Team/_apis/wit/templates?workItemTypeName=Task&api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json"
@@ -42,13 +42,13 @@
             "workItemTypeName": "Task",
             "_links": {
                "workItemType": {
-                  "href": "https://fabrikam-fiber-inc.visualstudio.com/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+                  "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
                },
                "self": {
-                  "href": "https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40"
+                  "href": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40"
                }
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40"
+            "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7/_apis/wit/templates/b72b7a65-0511-4d04-ad7b-7d7e5d370a40"
          }
       ]
    }

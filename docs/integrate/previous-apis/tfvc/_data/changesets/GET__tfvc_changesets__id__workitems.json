@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tfvc/changesets/{id}/workitems",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tfvc/changesets/16/workitems?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workitems?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },

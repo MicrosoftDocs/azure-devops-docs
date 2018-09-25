@@ -1,7 +1,7 @@
 {
    "method": "PUT",
    "resourceFormat": "/hooks/subscriptions/{newSubscriptionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -47,7 +47,7 @@
    },
    "responseBody": {
       "id": "fd672255-8b6b-4769-9260-beea83d752ce",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce",
+      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce",
       "publisherId": "tfs",
       "eventType": "build.complete",
       "resourceVersion": "1.0-preview.1",

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/pullRequests/{pullRequestId}/threads",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads?api-version=3.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads?api-version=3.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,8 +39,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "The pull request is mergable and the target commit would be 39f52d24533cc712fc845ed9fd1b6c06b3942588.",
@@ -87,8 +87,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "Normal Paulk added Johnnie McLeod as a reviewer",
@@ -143,8 +143,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "Normal Paulk voted 10",
@@ -187,8 +187,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "Normal Paulk removed Johnnie McLeod from the reviewers",
@@ -243,8 +243,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "The reference refs/heads/npaulk/my_work was updated.",
@@ -303,8 +303,8 @@
                   "author": {
                      "id": "41113706-4320-4083-9150-925feb93fc22",
                      "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
                      "isContainer": true
                   },
                   "content": "The pull request is mergable and the target commit would be fd8da3e51efe350811d2157b2223df53d4db46c3.",
@@ -352,8 +352,8 @@
                      "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                      "displayName": "Normal Paulk",
                      "uniqueName": "fabrikamfiber16@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
                   },
                   "content": "This new feature looks good!",
                   "publishedDate": "2016-11-01T16:30:48.91Z",
@@ -391,8 +391,8 @@
                      "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                      "displayName": "Normal Paulk",
                      "uniqueName": "fabrikamfiber16@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
                   },
                   "content": "Should we add a comment about what this value means?",
                   "publishedDate": "2016-11-01T16:30:50.083Z",
@@ -407,8 +407,8 @@
                      "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
                      "displayName": "Normal Paulk",
                      "uniqueName": "fabrikamfiber16@hotmail.com",
-                     "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-                     "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+                     "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+                     "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
                   },
                   "publishedDate": "2016-11-01T16:30:51.383Z",
                   "lastUpdatedDate": "2016-11-01T16:30:52.48Z",

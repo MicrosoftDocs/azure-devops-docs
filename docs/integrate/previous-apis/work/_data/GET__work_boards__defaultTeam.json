@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/boards/",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/work/boards/?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -38,17 +38,17 @@
       "value": [
          {
             "id": "41688c28-a3fc-4811-977d-247a33f18a00",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
+            "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
             "name": "Backlog items"
          },
          {
             "id": "eab834bb-a382-4527-90ea-af1624ccae72",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
+            "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
             "name": "Epics"
          },
          {
             "id": "4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
+            "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
             "name": "Features"
          }
       ]

@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Permissions and security with VSTS | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2013 < vsts'
+title: Permissions and security with VSTS | REST API Reference for Team Foundation Server
 description: Permissions reference fpr integrating with VSTS
 ms.assetid: ede350bd-bdf7-4360-90ac-e5be3fe24266
 ms.manager: douge
@@ -30,7 +30,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -63,7 +63,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -85,7 +85,7 @@ POST https://{instance}/_apis/security/permissionevaluationbatch/?api-version={v
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | Query
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use. Works with Version 3.0 and above.
 | Body 
@@ -116,7 +116,7 @@ DELETE https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?t
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to remove from the ACE's allow and deny bitmasks.
 | Query 

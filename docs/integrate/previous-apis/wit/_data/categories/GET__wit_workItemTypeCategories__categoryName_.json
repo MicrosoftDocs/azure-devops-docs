@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workItemTypeCategories/{categoryName}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemTypeCategories/Microsoft.RequirementCategory?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemTypeCategories/Microsoft.RequirementCategory?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -33,14 +33,14 @@
       "referenceName": "Microsoft.RequirementCategory",
       "defaultWorkItemType": {
          "name": "Product Backlog Item",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+         "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
       },
       "workItemTypes": [
          {
             "name": "Product Backlog Item",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+            "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
          }
       ],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypeCategories/Microsoft.RequirementCategory"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypeCategories/Microsoft.RequirementCategory"
    }
 }

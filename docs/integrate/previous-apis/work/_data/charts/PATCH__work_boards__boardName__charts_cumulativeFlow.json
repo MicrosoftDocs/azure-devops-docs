@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/work/boards/{boardName}/charts/cumulativeFlow",
-   "requestUrl": "http://fabrikam.visualstudio.com/DefaultCollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts/cumulativeFlow?api-version=2.0-preview.1",
+   "requestUrl": "mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts/cumulativeFlow?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -44,7 +44,7 @@
    },
    "responseBody": {
       "name": "cumulativeFlow",
-      "url": "http://fabrikam.visualstudio.com/DefaultCollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
+      "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
       "settings": {
          "startDate": "2015-09-01T12:07:11Z",
          "hideIncomingColumn": true,
@@ -52,10 +52,10 @@
       },
       "_links": {
          "self": {
-            "href": "http://fabrikam.visualstudio.com/DefaultCollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+            "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
          },
          "board": {
-            "href": "http://fabrikam.visualstudio.com/DefaultCollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
+            "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
          }
       }
    }

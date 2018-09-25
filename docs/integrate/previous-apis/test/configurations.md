@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Configurations | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test configurations programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Configurations | REST API Reference for Team Foundation Server
+description: Work with test configurations programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: b551e771-0315-4cfc-a3bd-ddfa3bb6b71f
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations?api
 | Parameter          | Type    | Default | Notes
 |:-------------------|:--------|:--------|:---------------------
 | URL
-| instance           | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  |         | TFS server name ({server:port}).
 | project            | string  |         | Name or ID of the project.
 | Query
 | api-version        | string  |         | Version of the API to use.
@@ -84,7 +84,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations/{co
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:---------------------
 | URL
-| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | TFS server name ({server:port}).
 | project            | string  | Name or ID of the project.
 | configurationId    | int     | ID of the test configuration to get.
 | Query
@@ -115,7 +115,7 @@ Content-Type: application/json
 | Parameter   | Type     | Default                     | Notes
 |:------------|:---------|:----------------------------|:---------------------
 | URL
-| instance    | string   |                             | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string   |                             | TFS server name ({server:port}).
 | project     | string   |                             | Name or ID of the project.
 | Query
 | api-version | string   |                             | Version of the API to use.
@@ -155,7 +155,7 @@ Content-Type: application/json
 | Parameter   | Type     | Default                     | Notes
 |:------------|:---------|:----------------------------|:---------------------
 | URL
-| instance    | string   |                             | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string   |                             | TFS server name ({server:port}).
 | project     | string   |                             | Name or ID of the project.
 | configurationId               | int     |            | ID of the test configuration to update.
 | Query
@@ -178,7 +178,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/configurations/
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:---------------------
 | URL
-| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | TFS server name ({server:port}).
 | project            | string  | Name or ID of the project.
 | configurationId               | int     | ID of the test configuration to get.
 | Query

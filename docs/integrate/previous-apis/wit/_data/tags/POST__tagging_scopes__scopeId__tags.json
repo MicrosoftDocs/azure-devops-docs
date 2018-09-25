@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/tagging/scopes/{scopeId}/tags",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@
       "pragma": "no-cache",
       "content-type": "application/json; charset=utf-8; api-version=1.0-preview.1",
       "expires": "-1",
-      "location": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb",
+      "location": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb",
       "server": "Microsoft-IIS/8.5",
       "x-tfs-processid": "c6d2b449-120f-4bb7-a3c3-809ad144d2f5",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -38,6 +38,6 @@
       "id": "9dfc2f21-b2aa-4e11-a36a-f3761e9861cb",
       "name": "My Tag",
       "active": true,
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
+      "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
    }
 }

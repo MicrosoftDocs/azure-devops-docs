@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Build Qualities (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Configure a project's build qualities programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Build Qualities (XAML Build) | REST API Reference for Team Foundation Server
+description: Configure a project's build qualities programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 0C352988-B949-4515-A89F-5562F86E937F
 ms.manager: douge
 ms.topic: article
@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/qualities?api-ver
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -49,7 +49,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/qualities/{qualit
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | quality   | string | Quality value to add.
 | Query
@@ -68,7 +68,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/qualities/{qua
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | quality   | string | Quality value to add.
 | Query

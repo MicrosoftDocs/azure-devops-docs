@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/builds/{knownBuildId}/timeline",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/timeline?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/timeline?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -56,7 +56,7 @@
             "details": {
                "id": "ef959107-e566-4c28-8d9f-354d605dd400",
                "changeId": 6,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/Timeline/ef959107-e566-4c28-8d9f-354d605dd400"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/Timeline/ef959107-e566-4c28-8d9f-354d605dd400"
             },
             "errorCount": 0,
             "warningCount": 1,
@@ -64,7 +64,7 @@
             "log": {
                "id": 2,
                "type": "Container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/2"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/2"
             },
             "issues": [
                {
@@ -100,7 +100,7 @@
             "log": {
                "id": 1,
                "type": "Container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/1"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/1"
             }
          },
          {
@@ -126,7 +126,7 @@
             "log": {
                "id": 4,
                "type": "Container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/4"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/4"
             }
          },
          {
@@ -152,7 +152,7 @@
             "log": {
                "id": 3,
                "type": "Container",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/3"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/logs/3"
             }
          }
       ],
@@ -160,6 +160,6 @@
       "lastChangedOn": "2015-07-16T19:54:41.6Z",
       "id": "de9c3ffa-7e27-4bca-ac68-24e512354883",
       "changeId": 18,
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/Timeline/de9c3ffa-7e27-4bca-ac68-24e512354883"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/Timeline/de9c3ffa-7e27-4bca-ac68-24e512354883"
    }
 }

@@ -1,5 +1,5 @@
 ---
-title: Invite users to collaborate on your public project
+title: Invite users
 titleSuffix: Azure DevOps Services Public Project  
 description: Invite others to contribute to you public project  
 ms.technology: devops-public-projects

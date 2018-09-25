@@ -1,10 +1,10 @@
 ---
-title: WIT Batch | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Edit or change multiple work items programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: WIT Batch | REST API Reference for Team Foundation Server
+description: Edit or change multiple work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 0f4a6185-6518-4bda-a5b6-2eddf0319afe
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -34,7 +34,7 @@ POST https://{instance}/defaultcollection/_apis/wit/$batch
 | Parameter | Type		| Notes	
 |:----------|:----------|:------------------------------
 | URL
-| instance  | string	| [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string	| TFS server name ({server:port}).
 | project   | string	| Name or ID of a project.
 | Body
 | method	| string	| API Verb: PATCH (Currently only create/update requests are supported)

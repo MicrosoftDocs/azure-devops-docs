@@ -22,7 +22,7 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 
 * Ubuntu 16.04 (`ubuntu-16.04`)
 * Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
-* Xcode 9 on macOS 10.13 (`xcode9-macos10.13`)
+* macOS 10.13 (`macOS-10.13`)
 * Windows Server 1803 (`win1803`) - for running Windows containers
 * Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
 
@@ -30,7 +30,7 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 |----------------------------------|------------------------------|----------------------------|
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
-| Development tools on macOS | xcode9-macos10.13 (see notes below) | Hosted macOS |
+| Development tools on macOS | macOS-10.13 (see notes below) | Hosted macOS |
 | .NET Core | ubuntu-1604 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
@@ -48,7 +48,7 @@ jobs:
   - script: echo hello from Linux
 - job: macOS
   pool:
-    vmImage: 'xcode9-macos10.13'
+    vmImage: 'macOS-10.13'
   steps:
   - script: echo hello from macOS
 - job: Windows
@@ -78,7 +78,7 @@ Software on Microsoft-hosted agents is updated once each month.
 
 * [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
 * [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
-* [Xcode 9 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
+* [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
 * [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
 * [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 

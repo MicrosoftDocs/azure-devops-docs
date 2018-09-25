@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/hooks/subscriptions/{newSubscriptionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

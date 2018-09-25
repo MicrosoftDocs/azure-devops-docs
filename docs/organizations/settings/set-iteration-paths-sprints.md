@@ -1,6 +1,6 @@
 ---
 title: Define iteration paths or sprint for a project 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define the iterations or sprints to use when assigning work items in Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

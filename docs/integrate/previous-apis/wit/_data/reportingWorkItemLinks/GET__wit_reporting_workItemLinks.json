@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/reporting/workItemLinks",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/reporting/workItemLinks?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemLinks?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -59,7 +59,7 @@
             "isActive": true
          }
       ],
-      "nextLink": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/reporting/workItemLinks?continuationToken=6281123&api-version=2.2",
+      "nextLink": "https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemLinks?continuationToken=6281123&api-version=2.2",
       "isLastBatch": true
    }
 }

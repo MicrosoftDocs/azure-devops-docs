@@ -1,7 +1,6 @@
 ---
-title: Add or remove columns, change column width, or sort order 
+title: Add or remove columns 
 titleSuffix: Azure Boards and TFS
-ms.global_help.title: Change column options
 description: Set column fields to show and sort fields for a backlog or query in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

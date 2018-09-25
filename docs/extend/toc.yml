@@ -100,8 +100,6 @@
     items:
     - name: Debug a web extension
       href: test/debug-in-browser.md
-    - name: Menu group IDs
-      href: test/discover-menu-group-ids.md
   - name: Reporting
     items:
     - name: Extension reporting

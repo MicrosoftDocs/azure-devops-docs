@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/policy/types/{policyId}",
-   "requestUrl": "https://fabrikam.visualstudio.com/DefaultCollection/fabrikam-fiber-git/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -32,11 +32,11 @@
       "description": "This policy will require a successful build has been performed before updating protected refs.",
       "_links": {
          "self": {
-            "href": "https://fabrikam.visualstudio.com/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
+            "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
          }
       },
       "id": "0609b952-1397-4640-95ec-e00a01b2c241",
-      "url": "https://fabrikam.visualstudio.com/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
+      "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
       "displayName": "Build"
    }
 }

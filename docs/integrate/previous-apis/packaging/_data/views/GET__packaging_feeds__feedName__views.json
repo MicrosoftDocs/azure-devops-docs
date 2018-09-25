@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feeds/{feedName}/views",
-   "requestUrl": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,34 +31,34 @@
          {
             "id": "3d80c2b2-aa5a-4e10-bca9-4775c6e37b04",
             "name": "Prerelease",
-            "url": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04",
+            "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04",
             "type": "release",
             "_links": {
                "self": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04"
                },
                "feed": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
                },
                "packages": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@3d80c2b2-aa5a-4e10-bca9-4775c6e37b04/Packages"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@3d80c2b2-aa5a-4e10-bca9-4775c6e37b04/Packages"
                }
             }
          },
          {
             "id": "e7d6aa9e-27e6-4e42-b65e-9cb4781628a9",
             "name": "Release",
-            "url": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9",
+            "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9",
             "type": "release",
             "_links": {
                "self": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9"
                },
                "feed": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
                },
                "packages": {
-                  "href": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@e7d6aa9e-27e6-4e42-b65e-9cb4781628a9/Packages"
+                  "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@e7d6aa9e-27e6-4e42-b65e-9cb4781628a9/Packages"
                }
             }
          }

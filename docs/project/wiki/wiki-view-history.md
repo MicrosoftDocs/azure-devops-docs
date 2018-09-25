@@ -77,17 +77,17 @@ If you find that you need to revert to an earlier revision for a page that you h
 
 0. You can preview any version by choosing the commit id from the **Revisions** page for the selected file.   
 
-0. Copy the full ID of the commit by clicking the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`. 
+0. Copy the full ID of the commit by clicking the ![ ](../../_img/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](_img/wiki/revert-publish-as-code-copy-commit-id.png)
 
-0. Open the **Code>Commits** page and paste the ID that you copied into the Commit ID box and click the ![](../../_img/icons/search-icon.png) search icon. 
+0. Open the **Code>Commits** page and paste the ID that you copied into the Commit ID box and click the ![ ](../../_img/icons/search-icon.png) search icon. 
  
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](_img/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-0. From the commit page, open the ![](../../_img/icons/actions-icon.png) actions icon and choose the **Revert** option.  
+0. From the commit page, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose the **Revert** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](_img/wiki/revert-publish-as-code-option.png)
