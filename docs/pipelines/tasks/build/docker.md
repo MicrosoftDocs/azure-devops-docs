@@ -89,7 +89,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
   displayName: 'Push an image'
   inputs:
     command: 'push'
-    imageName: 'contoso.azurecr.io/repositoryname:$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId)'
 ```
 
 ### Login to a container registry and run scripts
