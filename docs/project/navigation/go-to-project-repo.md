@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 09/05/2018
+ms.date: 09/24/2018
 ---
 
 # Switch project, repository, team 
@@ -57,7 +57,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](../../organizations/projects/_img/create-project/projects-hub-vert-create-project.png) 
 ::: moniker-end
-::: moniker range=">= tfs-2017  <= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
@@ -114,7 +114,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> ![Select repository](../../organizations/public/_img/browse-code/select-repository-vert.png) 
 
 ::: moniker-end
-::: moniker range=">= tfs-2017  <= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
@@ -148,7 +148,7 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 > ![Select team from the breadcrumb](_img/breadcrumbs/choose-team-selector.png)
 
 ::: moniker-end
-::: moniker range=">= tfs-2017  <= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
