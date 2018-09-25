@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: amullans
 author: alexmullans
-ms.date: 09/18/2018
+ms.date: 09/25/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +22,7 @@ Universal Packages store one or more files together in a single unit that has a 
 ## Prerequisites
 
 1. Download and install the latest [build](/cli/vsts/overview?view=vsts-cli-latest) of the VSTS CLI and install it.
-2. Using the onboarding instructions you were emailed, let us know your Azure DevOps Services organization name; this is how we'll enable the preview for your organization.
+2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 
 > [!NOTE]
 > The VSTS CLI is named after the previous name of Azure DevOps, Visual Studio Team Services. In the coming months, Universal Packages (and the rest of the VSTS CLI) will become part of the Azure CLI.
