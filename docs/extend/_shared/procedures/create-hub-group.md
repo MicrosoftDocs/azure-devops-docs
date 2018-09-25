@@ -1,6 +1,6 @@
 1. Add a hub group to your app's manifest file in contributions, like this.
 
-    ```
+    ```json
     "contributions": [
         {
             "id": "sample-hub-group",
@@ -21,7 +21,7 @@
 
 2. Change the hub contribution so that it's in the samples hub group that you just created. Just update the targets to the relative contribution ID of the hub group you just added.
 
-    ```
+    ```json
         {
             "id": "Fabrikam.HelloWorld",
             "type": "ms.vss-web.hub",
