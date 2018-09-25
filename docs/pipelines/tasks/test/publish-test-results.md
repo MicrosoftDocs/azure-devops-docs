@@ -269,7 +269,7 @@ YAML builds are not yet available on TFS.
 
    * **Agent queue**: `Hosted Linux Preview`
 
-1. Add a [Bash task](../utility/bash.md) after the Docker task and configure it as follows to build and copy artifacts to the host:
+1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
    * **Type**: Inline
    * **Script**: To build, test and copy artifacts to host, use the following script:
