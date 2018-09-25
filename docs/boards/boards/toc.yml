@@ -41,7 +41,7 @@
     href: ../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
   - name: WIP limits
     href: wip-limits.md
-  - name: Expedite work
+  - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Split columns
     href: split-columns.md
