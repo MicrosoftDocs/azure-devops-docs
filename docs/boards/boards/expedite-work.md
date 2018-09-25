@@ -10,17 +10,17 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 03/20/2018
+ms.date: 09/24/2018
 ---
 
 # Expedite work with swimlanes
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
-For example, you can create three swimlanes&mdash;Expedite, Standard, and Park&mdash;to track high-priority work, standard work, and work that's currently blocked.  
+For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
 <img src="_img/ALM_EW_IntroChart_3C.png" alt="Kanban board showing three swimlanes" style="border: 2px solid #C3C3C3;" />
 
@@ -40,73 +40,138 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 ## Track work in swimlanes  
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
 
+::: moniker range=">= tfs-2018"  
+> [!div class="mx-imgBorder"]
+> ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)
+::: moniker-end 
+::: moniker range=">= tfs-2015 <= tfs-2017"  
 <img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" />
-
+::: moniker-end 
 You can also focus on a single swimlane by collapsing all other lanes.
 
-<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range=">= tfs-2018"  
+> [!div class="mx-imgBorder"]
+> ![Kanban board, Collapsed swimlanes](_img/expedite/collapse-lanes.png)  
 ::: moniker-end
+::: moniker range=">= tfs-2015 <= tfs-2017"  
+<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end 
 
 	
 ## Configure swimlanes 
 So, what swimlanes will support your tracking needs?  
 
-Once you've identified one or two, add them to your working Kanban board.  
+Once you've identified one or two, add them to your Kanban board.  
 
-1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Swimlanes.  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
+# [New navigation](#tab/new-nav)
 
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+::: moniker range="vsts"  
 
-2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.       
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    	
-	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
+0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.
-	::: moniker-end   
-	::: moniker range="tfs-2015"   
+0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
+
+0. Choose **Swimlanes** and then choose the ![](../_img/icons/green_plus_icon.png) plus icon and enter the name of the swimlane you want to add.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Add a swimlane](_img/expedite/settings-swimlanes-add.png)  
+
+	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
+    
+0.	To reorder your swimlanes, simply grab the lane and move it up or down.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Reorder a swimlane](_img/expedite/swimlanes-reorder.png)  
+
+0.	If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Remove**. 
+	
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Remove a swimlane](_img/expedite/swimlanes-remove.png)  
+
+0. When done with your changes, choose **Save**.  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2017"  
+0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+
+0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+
+	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
+
+0. Choose **Swimlanes** and then choose the ![](../_img/icons/green_plus_icon.png) plus icon and enter the name of the swimlane you want to add.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Add a swimlane](_img/expedite/settings-swimlanes-add.png)  
+
+	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
+    
+0.	To reorder your swimlanes, simply grab the lane and move it up or down.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Reorder a swimlane](_img/expedite/swimlanes-reorder.png)  
+
+0.	If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Remove**. 
+	
+	> [!div class="mx-imgBorder"]
+	> ![Kanban board settings dialog, Remove a swimlane](_img/expedite/swimlanes-remove.png)  
+
+0. When done with your changes, choose **Save**.  
+::: moniker-end  
+::: moniker range="tfs-2015"  
+0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+
+0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+
+	![Kanban board, open common configuration settings](../../boards/boards/_img/kanban-card-customize-open-settings.png) 
+
+0.	Choose **Swimlanes**, and then choose the ![](../_img/icons/add_icon.png) plus icon, and enter the name of the swimlane you want to add.       
+
 	**For TFS 2015.1 and later versions**       
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.    
+
 	**For TFS 2015**    
 	![Add a swimlane](_img/ALM_SW.AddLane.png)     
 	The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.   
-	::: moniker-end    
     
-3.	To reorder your swimlanes, simply grab the lane and move it up or down.   
+0.	To reorder your swimlanes, simply grab the lane and move it up or down.   
 	<img src="_img/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
 
-4.	If you need to delete a lane, first move all items out of the lane, and then click Delete from the lane's context menu.      
-	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />   
+0.	If you need to delete a lane, first move all items out of the lane. Then, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Delete**.      
 
-  
-## Related articles
+	![Kanban board settings, Delete a swimlane](<_img/ALM_EW_DeleteLane.png)
 
-As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.   
+0. When done with your changes, choose **Save**.  
 
-*	[Add columns](add-columns.md)  
-*	[Work in Progress limits](wip-limits.md)   
-*	[Split columns](split-columns.md)   
-*	[Definition of Done](definition-of-done.md)   
-*	[Customize cards](../../boards/boards/customize-cards.md)   
-*	[Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)   
+::: moniker-end  
+
+---
 
 
+::: moniker range=">= tfs-2017"		
+## Track lane moves  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"		
-### Tracking lane moves  
-
-<!---**Azure Boards and TFS 2015.1 and later versions**-->
-You can track Kanban board swimlane moves using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
+You can track Kanban board swimlane moves by creating a query and using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-### Tracking lane moves  
+## Track lane moves  
 
 **For TFS 2015.1 and later versions**  
 
-You can track Kanban board swimlane moves using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
+You can track Kanban board swimlane moves by creating a query and using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
 
 **For TFS 2015**
 
@@ -119,13 +184,17 @@ For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md
 ::: moniker-end
 
 
+## Related articles
+
+As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.   
+
+*	[Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
+*	[Add columns](add-columns.md)  
+*	[Split columns](split-columns.md)   
+*	[Customize cards](../../boards/boards/customize-cards.md)   
+
+
 ###REST API resources
 To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 
 
-
-
-<!---
-> [!NOTE]   
-> Swimlanes is a supported feature in TFS 2015 and later versions. Consider upgrading to a later TFS version. 
-> -->
