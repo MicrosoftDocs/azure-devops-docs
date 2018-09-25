@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/packaging/feeds/{feedName}/views/{newViewName}",
-   "requestUrl": "https://contoso.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/fabrikam/views/Beta?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views/Beta?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

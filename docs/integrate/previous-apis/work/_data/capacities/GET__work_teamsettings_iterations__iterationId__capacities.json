@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/teamsettings/iterations/{iterationId}/capacities",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -41,8 +41,8 @@
                "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                "displayName": "Chuck Reinhart",
                "uniqueName": "fabrikamfiber3@hotmail.com",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
             "activities": [
                {
@@ -51,7 +51,7 @@
                }
             ],
             "daysOff": [],
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+            "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
          }
       ]
    }

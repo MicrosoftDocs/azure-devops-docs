@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workitems/{taskId}/revisions?$skip=1&$top=2",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitems/299/revisions?$skip=1&$top=2&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$skip=1&$top=2&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -51,7 +51,7 @@
                "System.History": "Moving to the right area path",
                "System.Tags": ""
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
          },
          {
             "id": 299,
@@ -74,7 +74,7 @@
                "System.History": "Johnnie is going to take this work over.",
                "System.Tags": ""
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/299/revisions/3"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/3"
          }
       ]
    }

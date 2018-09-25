@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/hooks/publishers/{publisherId}/eventTypes/{eventTypeId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,7 +31,7 @@
    "responseBody": {
       "publisherId": "tfs",
       "id": "build.complete",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
+      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
       "name": "Build completed",
       "description": "A build completes",
       "supportedResourceVersions": [

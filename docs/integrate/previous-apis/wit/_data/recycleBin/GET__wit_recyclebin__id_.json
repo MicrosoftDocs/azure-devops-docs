@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/recyclebin/{id}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,7 +35,7 @@
       "Project": "Fabrikam-Fiber-Git",
       "DeletedDate": "2015-01-07T18:13:01.807Z",
       "DeletedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/72?api-version=1.0",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/72?api-version=1.0",
       "resource": {
         "id": 72,
         "rev": 1,
@@ -57,28 +57,28 @@
         },
         "_links": {
            "self": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/72"
+              "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72"
            },
            "workItemUpdates": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/72/updates"
+              "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/updates"
            },
            "workItemRevisions": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/72/revisions"
+              "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/revisions"
            },
            "workItemHistory": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/72/history"
+              "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/history"
            },
            "html": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=72"
+              "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=72"
            },
            "workItemType": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+              "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
            },
            "fields": {
-              "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields"
+              "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
            }
         },
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/72"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72"
      }
     }
 }

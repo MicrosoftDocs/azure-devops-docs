@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/tagging/scopes/{scopeId}/tags/{tagId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -38,6 +38,6 @@
       "id": "9dfc2f21-b2aa-4e11-a36a-f3761e9861cb",
       "name": "My Tag Renamed",
       "active": false,
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
+      "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
    }
 }

@@ -1,10 +1,10 @@
 ---
-title: Charts for Kanban boards | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with the charts on Kanban boards programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Charts for Kanban boards | REST API Reference for Team Foundation Server
+description: Work with the charts on Kanban boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: b23c71d1-7c01-4c29-a48d-a64c6f7a5560
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -46,7 +46,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -79,7 +79,7 @@ Content-Type: application/json
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | TFS server name ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.

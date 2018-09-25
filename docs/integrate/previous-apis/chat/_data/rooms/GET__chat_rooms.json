@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/chat/rooms",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/chat/rooms?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/chat/rooms?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -39,8 +39,8 @@
             "createdBy": {
                "id": "47d25e84-de54-49ce-8f3d-351c77422775",
                "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
             },
             "createdDate": "2014-01-24T19:19:00.21Z",
             "hasAdminPermissions": true,
@@ -54,8 +54,8 @@
             "createdBy": {
                "id": "47d25e84-de54-49ce-8f3d-351c77422775",
                "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
             },
             "createdDate": "2014-01-24T19:20:37.41Z",
             "hasAdminPermissions": true,
@@ -69,8 +69,8 @@
             "createdBy": {
                "id": "47d25e84-de54-49ce-8f3d-351c77422775",
                "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
             },
             "createdDate": "2014-01-27T23:03:55.663Z",
             "hasAdminPermissions": true,
@@ -84,8 +84,8 @@
             "createdBy": {
                "id": "47d25e84-de54-49ce-8f3d-351c77422775",
                "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-               "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-               "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+               "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+               "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
             },
             "createdDate": "2014-05-15T14:00:36.443Z",
             "hasAdminPermissions": true,

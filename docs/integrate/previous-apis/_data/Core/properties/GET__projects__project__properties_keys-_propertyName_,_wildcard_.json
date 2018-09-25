@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/projects/{project}/properties?keys={propertyName},{wildcard}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/projects/94e82dfb-8ce4-430c-aa97-07ee10c83d5f/properties?keys=System.CurrentProcessTemplateId,*SourceControl*&api-version=4.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/projects/94e82dfb-8ce4-430c-aa97-07ee10c83d5f/properties?keys=System.CurrentProcessTemplateId,*SourceControl*&api-version=4.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Fields | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item fields programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Fields | REST API Reference for Team Foundation Server
+description: Work with work item fields programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields?api-version={version}
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
 | URL
-| instance      | string    | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | TFS server name ({server:port}).
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields/{fieldName}?api-versio
 
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
-| instance      | string    | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | TFS server name ({server:port}).
 | fieldName     | string    | Refernce name of the field
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.

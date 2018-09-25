@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/queries/{queryId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -48,18 +48,18 @@
       "isPublic": true,
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
          },
          "html": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/web/qr.aspx?pguid=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&qid=342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/web/qr.aspx?pguid=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&qid=342f0f44-4069-46b1-a940-3d0468979ceb"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/8a8c8212-15ca-41ed-97aa-1d6fbfbcd581"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/8a8c8212-15ca-41ed-97aa-1d6fbfbcd581"
          },
          "wiql": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/wiql/342f0f44-4069-46b1-a940-3d0468979ceb"
+            "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/wiql/342f0f44-4069-46b1-a940-3d0468979ceb"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/queries/342f0f44-4069-46b1-a940-3d0468979ceb"
    }
 }

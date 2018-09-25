@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/wit/queries/My Queries/{folderNameNew}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/My%20Queries/Website?api-version=2.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/My%20Queries/Website?api-version=2.2",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

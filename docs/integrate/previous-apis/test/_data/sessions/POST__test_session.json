@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/test/session",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-TFVC/Fabrikam-Fiber-TFVC%20Team/_apis/test/session?api-version=1.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/Fabrikam-Fiber-TFVC%20Team/_apis/test/session?api-version=1.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

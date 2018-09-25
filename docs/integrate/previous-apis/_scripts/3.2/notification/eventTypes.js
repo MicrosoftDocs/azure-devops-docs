@@ -15,7 +15,7 @@ var fixResult = function(context, result) {
     if (result) {
         var str = JSON.stringify(result, null, 2);
 
-        str = str.replace(/vsalmopen.visualstudio.com/gi, "fabrikam-fiber-inc.visualstudio.com");
+        str = str.replace(/vsalmopen.visualstudio.com/gi, "fabrikam-fiber-inc:8080");
 
         var newResult = JSON.parse(str);
 

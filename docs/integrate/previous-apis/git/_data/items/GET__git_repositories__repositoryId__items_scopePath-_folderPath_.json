@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/items?scopePath={folderPath}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items?scopePath=/MyWebSite/MyWebSite/Views&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items?scopePath=/MyWebSite/MyWebSite/Views&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -37,7 +37,7 @@
             "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
             "path": "/MyWebSite/MyWebSite/Views",
             "isFolder": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views?versionType=Branch&versionOptions=None"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views?versionType=Branch&versionOptions=None"
          }
       ]
    }

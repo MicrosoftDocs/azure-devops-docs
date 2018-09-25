@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/commits?itemPath={itemPath}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?branch=master&itemPath=/MyWebSite/MyWebSite/Views/Home/_Home.cshtml&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?branch=master&itemPath=/MyWebSite/MyWebSite/Views/Home/_Home.cshtml&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -53,8 +53,8 @@
                   "changeType": "edit"
                }
             ],
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
          },
          {
             "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -78,8 +78,8 @@
                   "changeType": "add"
                }
             ],
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
          }
       ]
    }

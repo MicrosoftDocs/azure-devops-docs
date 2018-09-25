@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/recyclebin",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebin?api-version=3.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebin?api-version=3.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -31,15 +31,15 @@
    "responseBody": [
       {
         "id": "92",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/92"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/92"
       },
       {
         "id": "93",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/93"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/93"
       },
       {
         "id": "102",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/recycleBin/102"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/102"
       }
    ]
 }

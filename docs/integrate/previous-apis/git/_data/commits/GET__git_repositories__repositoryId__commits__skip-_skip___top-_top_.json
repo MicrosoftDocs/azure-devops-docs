@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/commits?$skip={skip}&$top={top}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?$skip=1&$top=2&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?$skip=1&$top=2&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -20,7 +20,7 @@
          "Tfs-SessionActive=2014-10-28T00:41:04; path=/; secure"
       ],
       "x-vss-userdata": "d6245f20-2af8-44f4-9451-8107cb2767db:fabrikamfiber16@hotmail.com",
-      "link": "<https://fabrikam-fiber-inc.visualstudio.com/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?%24skip=1&%24top=2>;rel=\"next\"",
+      "link": "<https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits?%24skip=1&%24top=2>;rel=\"next\"",
       "activityid": "c79a736d-f22e-0001-24ed-9bc72ef2cf01",
       "x-aspnet-version": "4.0.30319",
       "x-powered-by": "ASP.NET",
@@ -48,8 +48,8 @@
             "changeCounts": {
                "Edit": 1
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
          },
          {
             "commitId": "0360c963d7d86d040e9c33bba836feab14da4ad3",
@@ -67,8 +67,8 @@
             "changeCounts": {
                "Edit": 1
             },
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
          }
       ]
    }

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/configurations?$skip=10&$top=15&continuationToken=14;12",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?$skip=10&$top=15&continuationToken=14;12&api-version=3.0-preview.2",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?$skip=10&$top=15&continuationToken=14;12&api-version=3.0-preview.2",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -40,7 +40,7 @@
          {
             "id": 14,
             "name": "Windows 10-2",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/14",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/14",
             "description": "Default operating system for testing",
             "isDefault": true,
             "state": "active"
@@ -48,13 +48,13 @@
          {
             "id": 15,
             "name": "Win10 IE11-2",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/15",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/15",
             "description": "Windows 10 - IE 11"            
          },
          {
             "id": 16,
             "name": "Win10 English-2",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/16",
+            "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/16",
             "description": ""
          }
       ],

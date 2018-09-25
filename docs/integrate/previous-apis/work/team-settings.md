@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Team Settings | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with team settings programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Team Settings | REST API Reference for Team Foundation Server
+description: Work with team settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
 ms.manager: douge
 ms.topic: article
@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team.
 | Query
@@ -49,7 +49,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team.
 | Query

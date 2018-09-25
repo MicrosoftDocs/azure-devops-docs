@@ -1,7 +1,7 @@
 {
 	"method": "GET",
 	"resourceFormat": "packaging/feeds/{feed}/maven/{groupId}/{artifactId}/{version}/{fileName}",
-	"requestUrl": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom?api-version=3.0-preview.1",
+	"requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom?api-version=3.0-preview.1",
 	"requestHeaders": {
 		"Accept": "application/json"
 	},
@@ -28,53 +28,53 @@
 		"artifactId": "spring-core",
 		"version": "5.0.0.M1",
 		"versionsIndex": {
-			"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
+			"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
 		},
 		"artifactIndex": {
-			"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+			"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
 		},
 		"artifactMetadata": {
-			"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+			"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
 		},
 		"requestedFile": {
-			"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+			"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
 		},
 		"files": {
 			"spring-core-5.0.0.M1.pom": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
 			},
 			"spring-core-5.0.0.M1.pom.md5": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
 			},
 			"spring-core-5.0.0.M1.pom.sha1": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
 			},
 			"spring-core-5.0.0.M1-javadoc.jar": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
 			},
 			"spring-core-5.0.0.M1-javadoc.jar.md5": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
 			},
 			"spring-core-5.0.0.M1-javadoc.jar.sha1": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
 			},
 			"spring-core-5.0.0.M1-sources.jar": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
 			},
 			"spring-core-5.0.0.M1-sources.jar.md5": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
 			},
 			"spring-core-5.0.0.M1-sources.jar.sha1": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
 			},
 			"spring-core-5.0.0.M1.jar": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
 			},
 			"spring-core-5.0.0.M1.jar.md5": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
 			},
 			"spring-core-5.0.0.M1.jar.sha1": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
+				"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
 			}
 		}
 	}

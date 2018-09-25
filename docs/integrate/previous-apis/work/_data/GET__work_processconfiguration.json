@@ -1,7 +1,7 @@
 {
   "method": "GET",
   "resourceFormat": "/work/processconfiguration",
-  "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfiguration?api-version=2.0-preview.1",
+  "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfiguration?api-version=2.0-preview.1",
   "requestHeaders": {
     "Accept": "application/json"
   },
@@ -39,27 +39,27 @@
         "Effort": {
             "referenceName": "Microsoft.VSTS.Scheduling.StoryPoints",
             "name": "Story Points",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints"
         },
         "Order": {
             "referenceName": "Microsoft.VSTS.Common.StackRank",
             "name": "Stack Rank",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.StackRank"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.StackRank"
         },
         "RemainingWork": {
             "referenceName": "Microsoft.VSTS.Scheduling.RemainingWork",
             "name": "Remaining Work",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork"
         },
         "Team": {
             "referenceName": "System.AreaPath",
             "name": "Area Path",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.AreaPath"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaPath"
         },
         "Activity": {
             "referenceName": "Microsoft.VSTS.Common.Activity",
             "name": "Activity",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Activity"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Activity"
         }
     },
     "taskBacklog": {
@@ -68,7 +68,7 @@
         "workItemTypes": [
             {
                 "name": "Task",
-                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Task"
+                "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Task"
             }
         ]
     },
@@ -78,7 +78,7 @@
         "workItemTypes": [
             {
                 "name": "User Story",
-                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/User%20Story"
+                "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/User%20Story"
             }
         ]
     },
@@ -89,7 +89,7 @@
             "workItemTypes": [
                 {
                     "name": "Epic",
-                    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Epic"
+                    "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Epic"
                 }
             ]
         },
@@ -99,7 +99,7 @@
             "workItemTypes": [
                 {
                     "name": "Feature",
-                    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Feature"
+                    "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Feature"
                 }
             ]
         }
@@ -110,10 +110,10 @@
         "workItemTypes": [
             {
                 "name": "Bug",
-                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Bug"
+                "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Bug"
             }
         ]
     },
-    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/work/processconfiguration"
+    "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/work/processconfiguration"
   }
 }

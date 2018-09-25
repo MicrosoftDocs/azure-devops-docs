@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/test/runs/{newRunId}/results/{result1}/attachments",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/runs/49/results/100000/attachments?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/runs/49/results/100000/attachments?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -44,6 +44,6 @@
    },
    "responseBody": {
       "id": 4,
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/Runs/49/Results/100000/Attachments/4"
+      "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/49/Results/100000/Attachments/4"
    }
 }

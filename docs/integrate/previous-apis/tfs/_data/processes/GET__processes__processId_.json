@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "process/processes/{processId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,10 +34,10 @@
       "isDefault": false,
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc"
+            "href": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
+      "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
       "name": "Agile"
    }
 }
