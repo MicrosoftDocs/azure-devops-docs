@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: TFVC Branches | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with TFVC branches programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: TFVC Branches | REST API Reference for Team Foundation Server
+description: Work with TFVC branches programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 9C1923A9-4887-4DC4-9C20-153C19D453CE
 ms.manager: douge
 ms.topic: article
@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/branches/{path}?api-version=
 | Parameter       | Type   | Default | Notes
 |:----------------|:-------|:--------|:------------|
 | URL
-| instance        | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance        | string |         | TFS server name ({server:port}).
 | path            | string | $/      | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
 | Query
 | api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/branches?api-version={versio
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|:------------
 | URL
-| instance         | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance         | string |         | TFS server name ({server:port}).
 | Query
 | api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeChildren  | bool   | false   | Return the child branches for each root branch.

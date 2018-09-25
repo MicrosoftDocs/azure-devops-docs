@@ -1,6 +1,6 @@
 ---
-title: What access levels does Azure DevOps & TFS support?
-titleSuffix: Azure DevOps Services & TFS
+title: What access levels are supported? 
+titleSuffix: Azure DevOps & TFS
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise access  
 ms.technology: devops-security
 ms.prod: devops
@@ -206,7 +206,7 @@ From the web portal for private projects, Stakeholders have access to the follow
 
 The following administrative features are granted or denied to users with Stakeholder access by default. Additional features are granted to Stakeholders in public projects. 
 
-Items with a ![](_img/icons/checkmark.png) checkmark are granted permission by default. Items with an ![red x](_img/icons/delete-icon.png) indicate that permissions aren't granted and can't be granted to Stakeholders. Members of the Project Collection Administrators or Project Administrators group can grant or deny these permissions for Stakeholders. 
+Items with a ![ ](_img/icons/checkmark.png) checkmark are granted permission by default. Items with an ![red x](_img/icons/delete-icon.png) indicate that permissions aren't granted and can't be granted to Stakeholders. Members of the Project Collection Administrators or Project Administrators group can grant or deny these permissions for Stakeholders. 
 
 **Project settings**
 | Permission | Private project | Public project|

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,40 +34,40 @@
          {
             "id": "5febef5a-833d-4e14-b9c0-14cb638f91e6",
             "name": "AnotherRepository",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
             "project": {
                "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                "name": "Fabrikam-Fiber-Git",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                "state": "wellFormed"
             },
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
+            "remoteUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
          },
          {
             "id": "278d5cd2-584d-4b63-824a-2ba458937249",
             "name": "Fabrikam-Fiber-Git",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
             "project": {
                "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                "name": "Fabrikam-Fiber-Git",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
                "state": "wellFormed"
             },
             "defaultBranch": "refs/heads/master",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
          },
          {
             "id": "66efb083-777a-4cac-a350-a24b046be6be",
             "name": "TestGit",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/66efb083-777a-4cac-a350-a24b046be6be",
+            "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/66efb083-777a-4cac-a350-a24b046be6be",
             "project": {
                "id": "281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
                "name": "TestGit",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
+               "url": "https://mytfsserver/DefaultCollection/_apis/projects/281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
                "state": "wellFormed"
             },
             "defaultBranch": "refs/heads/master",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/TestGit"
+            "remoteUrl": "https://mytfsserver/DefaultCollection/_git/TestGit"
          }
       ]
    }

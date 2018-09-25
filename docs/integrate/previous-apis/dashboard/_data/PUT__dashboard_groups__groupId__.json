@@ -1,7 +1,7 @@
 {
    "method": "PUT",
    "resourceFormat": "/dashboard/groups/{groupId}/",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -54,29 +54,29 @@
    "responseBody": {
       "dashboardEntries": [
          {
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf",
+            "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf",
             "id": "7562562a-4f9f-4258-94a9-b048b1c817cf",
             "name": "Dashboard98",
             "position": 2
          },
          {
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/29935f9f-0604-4c63-ba2f-8a8fff0b42d4",
+            "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/29935f9f-0604-4c63-ba2f-8a8fff0b42d4",
             "id": "29935f9f-0604-4c63-ba2f-8a8fff0b42d4",
             "name": "Dashboard8",
             "position": 5
          }
       ],
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/Groups/999ef3b4-93e1-4086-86c2-5e8bd24512c7",
+      "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/Groups/999ef3b4-93e1-4086-86c2-5e8bd24512c7",
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/Groups/999ef3b4-93e1-4086-86c2-5e8bd24512c7"
+            "href": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/Groups/999ef3b4-93e1-4086-86c2-5e8bd24512c7"
          },
          "dashboard": [
             {
-               "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf"
+               "href": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/7562562a-4f9f-4258-94a9-b048b1c817cf"
             },
             {
-               "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/29935f9f-0604-4c63-ba2f-8a8fff0b42d4"
+               "href": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/Dashboard/groups/999EF3B4-93E1-4086-86C2-5E8BD24512C7/Dashboards/29935f9f-0604-4c63-ba2f-8a8fff0b42d4"
             }
          ]
       }

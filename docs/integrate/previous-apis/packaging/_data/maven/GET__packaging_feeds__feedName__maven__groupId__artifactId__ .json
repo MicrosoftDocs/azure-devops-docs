@@ -1,7 +1,7 @@
 {
 	"method": "GET",
 	"resourceFormat": "packaging/feeds/{feed}/maven/{groupId}/{artifactId}",
-	"requestUrl": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core?api-version=3.0-preview.1",
+	"requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core?api-version=3.0-preview.1",
 	"requestHeaders": {
 		"Accept": "application/json"
 	},
@@ -27,20 +27,20 @@
 		"groupId": "org.springframework",
 		"artifactId": "spring-core",
 		"artifactMetadata": {
-			"href": "https://fabrikam.pkgs.visualstudio.com/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+			"href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
 		},
 		"versions": {
 			"5.0.0.M1": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+				"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
 			},
 			"5.0.0.M2": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M2"
+				"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M2"
 			},
 			"5.0.0.M3": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M3"
+				"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M3"
 			},
 			"5.0.0.M4": {
-				"href": "https://fabrikam.pkgs.visualstudio.com/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M4"
+				"href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M4"
 			}
 		}
 	}

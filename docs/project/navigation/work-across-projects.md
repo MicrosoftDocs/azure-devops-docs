@@ -81,7 +81,7 @@ To switch to another project, see [Switch project, repository, or team](go-to-pr
 
 ::: moniker range="vsts"  
 
-To view work items assigned to you across projects, choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
+To view work items assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](_img/projects-page/view-work-across-projects.png) 
@@ -98,7 +98,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 # [Previous navigation](#tab/previous-nav)
 
-Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
@@ -162,7 +162,7 @@ Similar to the Favorites page, you can filter the work pages by typing a keyword
 
 ::: moniker range="vsts"  
 
-To view pull requests you created  or that are assigned to you across projects, choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
+To view pull requests you created  or that are assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View pull requests assigned to you across projects](_img/projects-page/view-pull-requests-vert.png) 
@@ -205,7 +205,7 @@ You can view favorites you've set across projects. To learn more about working w
 
 ::: moniker range="vsts"  
 
-Choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
+Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View your favorited items](_img/favorites/open-favorites-page-vnav.png) 
@@ -234,7 +234,7 @@ To learn more about working with favorites, see [Set personal and team favorites
 
 ### Favorite and unfavorite an item
 
-To mark any item as a favorite, choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the object. 
+To mark any item as a favorite, choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the object. 
 
 To remove an item from your favorites list, choose the favorited icon.
 

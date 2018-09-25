@@ -131,7 +131,7 @@ If your team's over capacity, you can move items from the sprint backlog back to
 
 ::: moniker range="vsts"
 
-Here we select two items at the bottom of the sprint backlog, open the ![](../../_img/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
+Here we select two items at the bottom of the sprint backlog, open the ![ ](../../_img/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Move work items to backlog](_img//adjust-work/move-items-to-backlog-agile.png)

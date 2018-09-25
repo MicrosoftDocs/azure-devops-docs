@@ -1,6 +1,6 @@
 ---
-title: TF31003-Your user account does not have permission to connect 
-titleSuffix: Azure DevOps Services & TFS
+title: TF31003-You don't have permission to connect 
+titleSuffix: Azure DevOps & TFS
 description: Receive the error when you try to connect to Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,6 +1,6 @@
 ---
 title: Set team defaults 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Configure the default area and iteration paths or sprints for a team in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

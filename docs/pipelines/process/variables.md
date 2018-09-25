@@ -50,6 +50,53 @@ Some variables are automatically inserted by the system.
 As a pipeline author or end user, you cannot set the contents of such variables.
 See the comprehensive lists of [build variables](../build/variables.md) and [release variables](../release/variables.md) to learn which ones are available.
 
+### System.AccessToken
+
+One variable, System.AccessToken, has special behavior. Because it contains a
+credential, it's not available to scripts and tasks by default. This reduces the
+chances for a rogue script or task to steal the credential. You must explicitly
+allow this variable on a pipeline-by-pipeline basis.
+
+# [YAML](#tab/yaml)
+
+In YAML, you must explicitly map System.AccessToken into the pipeline using an
+environment variable. You can do this at the pipeline level:
+
+```yaml
+variables:
+  system.accesstoken: $( System.AccessToken )
+
+jobs:
+  job: ...
+```
+
+Or at the step level:
+
+```yaml
+steps:
+  - script: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+    env:
+      system.accesstoken: $( System.AccessToken )
+  - task: MyTaskThatNeedsTheToken@1
+    env:
+      system.accesstoken: $( System.AccessToken )
+```
+
+# [Designer](#tab/designer)
+
+You can allow scripts and tasks to access System.AccessToken at the job level.
+
+1. Navigate to the job
+
+1. Under **Additional options**, check the **Allow scripts to access the OAuth token** box.
+
+![Secret](_img/variables/allow-oauth-token.png)
+
+Checking this box also leaves the credential set in Git so that you can run
+pushes and pulls in your scripts.
+
+---
+
 ## User-defined variables
 
 Some build templates automatically create variables for you.
@@ -93,7 +140,7 @@ To use a variable in a YAML statement, wrap it in `$()`. For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
 steps:
 - script: ls
   workingDirectory: $(agent.homeDirectory)

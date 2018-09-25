@@ -1,6 +1,6 @@
 ---
-title: Delivery Timeline | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with delivery timeline plans programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+title: Delivery Timeline | REST API Reference for Team Foundation Server
+description: Work with delivery timeline plans programmatically using the REST APIs for Team Foundation Server. 
 ms.contentid: D7B8FEC4-75F9-432E-8140-091C535C514B
 ms.prod: devops
 ---
@@ -21,7 +21,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}/deliver
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | id        | string  | | ID of the specific plan.
 | Query

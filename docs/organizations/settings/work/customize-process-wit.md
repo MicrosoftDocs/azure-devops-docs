@@ -14,7 +14,7 @@ ms.date: 05/31/2018
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
@@ -65,7 +65,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 

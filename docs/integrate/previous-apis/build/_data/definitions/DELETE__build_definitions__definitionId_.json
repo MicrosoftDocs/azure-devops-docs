@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/build/definitions/{definitionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/29?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/29?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json"

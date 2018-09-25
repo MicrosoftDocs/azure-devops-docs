@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/wit/workitems/{taskId}/updates/2",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workitems/231/updates/2?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/workitems/231/updates/2?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -34,7 +34,7 @@
       "revisedBy": {
          "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
          "name": "Normal Paulk",
-         "url": "https://fabrikam-fiber-inc.vssps.visualstudio.com/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db"
+         "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "revisedDate": "2014-10-28T03:08:56.933Z",
       "fields": {
@@ -80,15 +80,15 @@
       },
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/231/updates/2"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/231/updates/2"
          },
          "workItemUpdates": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/231/updates"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/231/updates"
          },
          "parent": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/231"
+            "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/231"
          }
       },
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/231/updates/2"
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/231/updates/2"
    }
 }

@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/build/builds/{knownBuildId}/artifacts",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/artifacts?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/391/artifacts?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -44,8 +44,8 @@
             "resource": {
                "type": "Container",
                "data": "#/303511/drop",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/artifacts/drop",
-               "downloadUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/artifacts/drop?%24format=zip"
+               "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/artifacts/drop",
+               "downloadUrl": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/builds/391/artifacts/drop?%24format=zip"
             }
          }
       ]

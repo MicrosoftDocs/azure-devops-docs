@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Suites | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test suites programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Test Suites | REST API Reference for Team Foundation Server
+description: Work with test suites programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: AC2CE3FA-0BBF-4919-A850-383FEE4364B3
 ms.manager: douge
 ms.topic: article
@@ -26,8 +26,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter | Type   | Notes
 |:----------|:-------|:-----------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
+| instance  | string | TFS server name ({server:port}). 
+| instance  | string | TFS server name ({server:port}). 
 | project   | string | Name or ID of the project.
 | plan      | int    | ID of the test plan that contains the suites.
 | Query
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/suites/?api-versio
 | Parameter   | Type   | Notes
 |:------------|:-------|:-----------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | TFS server name ({server:port}).
 | project     | string | Name or ID of the project.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -72,7 +72,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | Parameter          | Type   | Default | Notes
 |:-------------------|:-------|:--------|:----------------
 | URL
-| instance           | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string |         | TFS server name ({server:port}).
 | project            | string |         | Name or ID of the project.
 | plan               | int    |         | ID of the test plan that contains the suites.
 | suite              | int    |         | ID of the suite to get.
@@ -111,7 +111,7 @@ Content-Type: application/json
 | Parameter      | Type   | Notes
 |:---------------|:-------|:-----------
 | URL
-| instance       | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | TFS server name ({server:port}).
 | project        | string | Name or ID of the project.
 | plan           | int    | ID of the test plan that contains the suite.
 | parent         | int    | ID of the parent suite.
@@ -141,7 +141,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suit
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:----------------
 | URL
-| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | TFS server name ({server:port}).
 | project            | string  | Name or ID of the project.
 | plan               | int     | ID of the test plan that contains the suite.
 | suite              | int     | ID of the suite to get.
@@ -160,7 +160,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/su
 | Parameter          | Type    | Notes
 |:-------------------|:--------|:----------------
 | URL
-| instance           | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance           | string  | TFS server name ({server:port}).
 | project            | string  | Name or ID of the project.
 | plan               | int     | ID of the test plan that contains the suite.
 | suite              | int     | ID of the suite to get.
@@ -193,7 +193,7 @@ Content-Type: application/json
 | Parameter                    | Type   | Notes
 |:-----------------------------|:-------|:-----------
 | URL
-| instance                     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                     | string | TFS server name ({server:port}).
 | project                      | string | Name or ID of the project.
 | plan                         | int    | ID of the test plan that contains the suite.
 | suite                        | int    | ID of the test suite to update.
@@ -229,7 +229,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/su
 | Parameter                    | Type   | Notes
 |:-----------------------------|:-------|:-----------
 | URL
-| instance                     | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                     | string | TFS server name ({server:port}).
 | project                      | string | Name or ID of the project.
 | plan                         | int    | ID of the test plan that contains the suite.
 | suite                        | int    | ID of the test suite to delete.

@@ -1,6 +1,6 @@
 ---
 title: Naming restrictions and conventions 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
 ms.technology: devops-collab
 ms.prod: devops

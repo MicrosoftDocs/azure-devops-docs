@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/packaging/feeds/{feedName}/permissions",
-   "requestUrl": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/permissions?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInternal/permissions?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },

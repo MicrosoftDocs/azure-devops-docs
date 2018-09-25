@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Types | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item types programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Work Item Types | REST API Reference for Team Foundation Server
+description: Work with work item types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C58D078F-9310-4BE9-95A5-715CB70370FD
 ms.manager: douge
 ms.topic: article
@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypes?api-v
 | Property  	| Type 		| Description 
 |:--------------|:----------|:---------------------------
 | URL
-| instance      | string    | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | TFS server name ({server:port}).
 | project 		| string 	| Name or ID of a project that contains the work item types
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypes/{name
 | Property | Type   | Description |
 |:---------|:-------|:---------------------------
 | URL
-| instance | string	| [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance | string	| TFS server name ({server:port}).
 | project  | string | Name or ID of a project that contains the work item types
 | name 	   | string | Name of the work item type
 | Query

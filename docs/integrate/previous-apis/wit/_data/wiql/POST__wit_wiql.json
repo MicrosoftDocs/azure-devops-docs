@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/wiql",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/wiql?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/wiql?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -40,27 +40,27 @@
          {
             "referenceName": "System.WorkItemType",
             "name": "Work Item Type",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.WorkItemType"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.WorkItemType"
          },
          {
             "referenceName": "System.Title",
             "name": "Title",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Title"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Title"
          },
          {
             "referenceName": "System.State",
             "name": "State",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.State"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.State"
          },
          {
             "referenceName": "Microsoft.VSTS.Scheduling.Effort",
             "name": "Effort",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort"
          },
          {
             "referenceName": "System.IterationPath",
             "name": "Iteration Path",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.IterationPath"
+            "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath"
          }
       ],
       "sortColumns": [
@@ -68,7 +68,7 @@
             "field": {
                "referenceName": "Microsoft.VSTS.Common.BacklogPriority",
                "name": "Backlog Priority",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.BacklogPriority"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.BacklogPriority"
             },
             "descending": false
          },
@@ -76,7 +76,7 @@
             "field": {
                "referenceName": "System.Id",
                "name": "ID",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/fields/System.Id"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.Id"
             },
             "descending": false
          }
@@ -85,31 +85,31 @@
          {
             "target": {
                "id": 5,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/5"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/5"
             }
          },
          {
             "target": {
                "id": 47,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/47"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/47"
             }
          },
          {
             "target": {
                "id": 41,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/41"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/41"
             }
          },
          {
             "target": {
                "id": 45,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/45"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/45"
             }
          },
          {
             "target": {
                "id": 297,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/297"
+               "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
             }
          }
       ]

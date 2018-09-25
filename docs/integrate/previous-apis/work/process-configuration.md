@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Process Configuration | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Process Configuration programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Process Configuration | REST API Reference for Team Foundation Server
+description: Work with Process Configuration programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 086ce0df-bb60-4cd0-99de-4d54cf348985
 ms.manager: douge
 ms.topic: article
@@ -39,7 +39,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/Work/ProcessConfigurati
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

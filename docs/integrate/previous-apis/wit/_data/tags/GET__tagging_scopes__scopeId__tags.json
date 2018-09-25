@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/tagging/scopes/{scopeId}/tags",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -35,55 +35,55 @@
             "id": "d3b448f5-01ea-4e04-a779-923160a05111",
             "name": "Billing",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/d3b448f5-01ea-4e04-a779-923160a05111"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/d3b448f5-01ea-4e04-a779-923160a05111"
          },
          {
             "id": "e4b2b4cc-c728-42fa-92d7-1e8187dcdaf1",
             "name": "Customer",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/e4b2b4cc-c728-42fa-92d7-1e8187dcdaf1"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/e4b2b4cc-c728-42fa-92d7-1e8187dcdaf1"
          },
          {
             "id": "afb5078a-b81a-4f5d-a7a0-38de6a055200",
             "name": "Customer Service",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/afb5078a-b81a-4f5d-a7a0-38de6a055200"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/afb5078a-b81a-4f5d-a7a0-38de6a055200"
          },
          {
             "id": "9dfc2f21-b2aa-4e11-a36a-f3761e9861cb",
             "name": "My Tag",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/9dfc2f21-b2aa-4e11-a36a-f3761e9861cb"
          },
          {
             "id": "7339639a-089f-4592-b352-993f0648c877",
             "name": "Tag1",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/7339639a-089f-4592-b352-993f0648c877"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/7339639a-089f-4592-b352-993f0648c877"
          },
          {
             "id": "05d4d487-054e-498e-8d6f-9132ed72c295",
             "name": "Tag2",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/05d4d487-054e-498e-8d6f-9132ed72c295"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/05d4d487-054e-498e-8d6f-9132ed72c295"
          },
          {
             "id": "d894c59f-9d24-4cce-9242-515f210eb681",
             "name": "Technician",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/d894c59f-9d24-4cce-9242-515f210eb681"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/d894c59f-9d24-4cce-9242-515f210eb681"
          },
          {
             "id": "ec448db2-46bc-49a1-a806-54798dde05b3",
             "name": "UX review needed",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/ec448db2-46bc-49a1-a806-54798dde05b3"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/ec448db2-46bc-49a1-a806-54798dde05b3"
          },
          {
             "id": "8b3d3191-bc8f-46b4-ad68-35dd14d1f494",
             "name": "zendesk",
             "active": true,
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/8b3d3191-bc8f-46b4-ad68-35dd14d1f494"
+            "url": "https://mytfsserver/DefaultCollection/_apis/Tagging/scopes/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/tags/8b3d3191-bc8f-46b4-ad68-35dd14d1f494"
          }
       ]
    }

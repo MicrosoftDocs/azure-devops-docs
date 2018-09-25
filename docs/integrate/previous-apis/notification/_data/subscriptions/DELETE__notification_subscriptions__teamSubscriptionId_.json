@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/notification/subscriptions/{teamSubscriptionId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/_apis/notification/subscriptions/114712?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114712?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

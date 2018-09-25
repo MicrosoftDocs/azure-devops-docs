@@ -52,7 +52,7 @@ resources:
     image: ubuntu:16.04
 
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
 
 container: my_container
 
@@ -87,7 +87,7 @@ resources:
     image: ubuntu:18.04
 
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
 
 strategy:
   matrix:
@@ -109,14 +109,18 @@ steps:
 ### Endpoints
 
 Containers can be hosted on registries other than Docker Hub. To host
-an image on [Azure Container Registry](/services/container-registry/),
+an image on [Azure Container Registry](/azure/container-registry/),
 add a [service connection](../library/service-endpoints.md) to the
 private registry. Then you can reference it in a container spec:
 
 ```yaml
 resources:
-  - container: my_private_container
-    image: private:ubuntu14
+  - container: private_ubuntu1604
+    image: myprivate/registry:ubuntu1604
+    endpoint: private_dockerhub_connection
+  
+  - container: acr_win1803
+    image: myprivate.azurecr.io/windowsservercore:1803
     endpoint: my_acr_connection
 ```
 

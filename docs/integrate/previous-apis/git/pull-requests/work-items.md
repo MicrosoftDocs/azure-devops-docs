@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Pull Request Work Item Linking | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Git pull requests programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Git Pull Request Work Item Linking | REST API Reference for Team Foundation Server
+description: Work with Git pull requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: BFED54AE-D618-48D7-9F0E-11D4C107232E
 ms.manager: douge
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | TFS server name ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.

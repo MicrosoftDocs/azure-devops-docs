@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/operations/{operationId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d?api-version=2.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d?api-version=2.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -37,10 +37,10 @@
    "responseBody": {
       "id": "109787e4-3f2e-4fbb-af75-0be32e63e45d",
       "status": "inProgress",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d",
+      "url": "https://mytfsserver/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d",
       "_links": {
          "self": {
-            "href": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d"
+            "href": "https://mytfsserver/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af75-0be32e63e45d"
          }
       }
    }

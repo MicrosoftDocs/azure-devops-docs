@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/work/boards/{boardId}/columns",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns?api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns?api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },

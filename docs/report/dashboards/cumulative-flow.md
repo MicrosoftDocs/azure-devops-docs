@@ -1,6 +1,6 @@
 ---
 title: Cumulative flow charts
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
 ms.prod: devops  
 ms.technology: devops-analytics  
@@ -66,7 +66,7 @@ You will need to be a team administrator or a member of the Project Administrato
 
 	![Cumulative flow diagram widget](_img/cfd-choose-widget.png)  
 
-4. Choose the ![](../_img/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Choose the ![ ](../_img/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />    
 
@@ -126,7 +126,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 
 ::: moniker range="vsts"  
 
-1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
+1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Board settings](_img/cfd/open-cfd-settings-new-nav.png)
@@ -145,7 +145,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
+1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 

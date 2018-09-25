@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/accesscontrollists/{securityNamespaceId}/",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

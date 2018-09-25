@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/build/qualities/{quality}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/qualities/To%20be%20evaluated?api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/qualities/To%20be%20evaluated?api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

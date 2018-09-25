@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Notification subscriptions | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Notification subscriptions | REST API Reference for Team Foundation Server
+description: REST APIs for Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.manager: douge
 ms.topic: article
@@ -41,7 +41,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | | Body | [NotificationSubscriptionCreateParameters](./contracts.md#NotificationSubscriptionCreateParameters) | Required.  Parameters for creating a new subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
 
@@ -79,7 +79,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>subscriptionId</code> | URL | string | Required.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | <code>queryFlags</code> | Query | [SubscriptionQueryFlags](./contracts.md#SubscriptionQueryFlags) | Optional.
@@ -114,7 +114,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | | Body | [SubscriptionQuery](./contracts.md#SubscriptionQuery) | Required.  Notification subscriptions query input.
 
@@ -147,7 +147,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | <code>targetId</code> | Query | GUID | Optional.
 | <code>ids</code> | Query | array (string) | Optional.
@@ -183,7 +183,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>subscriptionId</code> | URL | string | Required.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | | Body | [NotificationSubscriptionUpdateParameters](./contracts.md#NotificationSubscriptionUpdateParameters) | Required.  Parameters for updating an existing subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. Note: only the fields to be updated should be set.
@@ -222,7 +222,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>subscriptionId</code> | URL | string | Required.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 
@@ -250,7 +250,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
 | <code>subscriptionId</code> | URL | string | Required.
 | <code>userId</code> | URL | GUID | Optional. ID of the user or "me" to indicate the calling user
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.

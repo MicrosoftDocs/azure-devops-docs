@@ -1,7 +1,7 @@
 {
    "method": "DELETE",
    "resourceFormat": "/packaging/feeds/{feedId}?api-version=2.0-preview",
-   "requestUrl": "http://fabrikam.feeds.visualstudio.com/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

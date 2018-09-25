@@ -1,5 +1,5 @@
 ---
-title: TF30031-Team Explorer can't open a document because the WebClient service isn't runningtitleSuffix: Azure DevOps Services & TFS
+title: TF30031-Team Explorer can't open a document... titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer tries to open a document stored in the document library for a project.
 ms.prod: devops
 ms.technology: devops-agile

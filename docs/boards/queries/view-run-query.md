@@ -72,14 +72,14 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 - You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#query-macros-or-variables). 
 
 ### How do I quickly navigate to queries I view frequently?  
-- Favorite those queries and other artifacts that you view frequently. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a query. 
-- Favorited queries (![](../../_img/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+- Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a query. 
+- Favorited queries (![ ](../../_img/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 	![queries selector](_img/example-queries/queries-selector.png)  
-- Or, you can select from any of your favorited items by choosing the ![](../../_img/icons/inbox.png) inbox icon and choose **Favorites**.  
+- Or, you can select from any of your favorited items by choosing the ![ ](../../_img/icons/inbox.png) inbox icon and choose **Favorites**.  
 	![queries selector](_img/example-queries/favorites-selector.png)  
 
 ### How do I quickly navigate to queries within the same query folder?  
-When viewing a query, you can use the queries breadcrumb selector (![](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+When viewing a query, you can use the queries breadcrumb selector (![ ](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 	![queries breadcrumb example](_img/view-run-queries/folder-selector.png)  
 
 ### Can I run several queries at the same time?  
@@ -94,7 +94,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 ## View, rename, or delete a query
 
 ::: moniker range="vsts"
-From either the **Favorites** or **All** page, choose the ![](../_img/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
+From either the **Favorites** or **All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](_img/view-run-queries/query-context-menu-favorites-page.png)  
 
@@ -104,7 +104,7 @@ For shared queries, you can also choose to perform one of these tasks:
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-Choose the ![](../_img/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
+Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
 
 ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)
 
@@ -148,7 +148,7 @@ From the **Query Editor** or **Results** view, you can email a formatted list of
 
 ::: moniker range="vsts"
 
-Choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
+Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
  
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL](_img/view-run-queries/email-query-new-exp.png)  

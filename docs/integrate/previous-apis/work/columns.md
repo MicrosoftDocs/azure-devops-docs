@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Columns for Kanban boards | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with the columns on boards programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2013 < vsts'
+title: Columns for Kanban boards | REST API Reference for Team Foundation Server
+description: Work with the columns on boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: D2B3A527-C95C-4E56-ADC5-D53FEF16025D
 ms.manager: douge
 ms.topic: article
@@ -27,7 +27,7 @@ GET https://{instance}/defaultcollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -53,7 +53,7 @@ PUT https://{instance}/defaultcollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | TFS server name ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.
@@ -105,7 +105,7 @@ GET https://{instance}/defaultcollection/[{project}/]_apis/work/boardcolumns/?ap
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.

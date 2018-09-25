@@ -1,7 +1,7 @@
 {
    "method": "POST",
    "resourceFormat": "/wit/queryartifacturis",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/artifacturiquery?api-version=3.2-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/wit/artifacturiquery?api-version=3.2-preview",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",
@@ -40,11 +40,11 @@
     "vstfs:///Git/Commit/3065bb47-8344-4370-982a-5183abf197fa%2F649107bd-ab35-4192-8584-601f64172f80%2F4800cfa0be564b1e606d6811e99e0380f765a9c4": [
         {
         "id": 1,
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/1"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1"
         },
         {
         "id": 2,
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/2"
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/2"
         }
     ]
     }

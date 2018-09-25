@@ -18,6 +18,12 @@ monikerRange: '>= tfs-2015'
 
 ### Basic patterns
 
+A pattern is a string or list of newline-delimited strings.
+
+### Path separators
+Even on Windows, use `/` as the path separator.
+This ensures that the pattern works on any agent.
+
 #### Asterisk
 `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
 

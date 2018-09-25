@@ -1,6 +1,6 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics

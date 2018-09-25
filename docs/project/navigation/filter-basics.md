@@ -35,7 +35,7 @@ You can filter most items using keywords or a user name for an author of an item
 ::: moniker range=">= tfs-2018"
 ## Filter work tracking backlogs, boards, and queries based on keywords, tags, or fields
 
-To turn filtering on, choose the ![](../../_img/icons/filter-icon.png) filter icon. 
+To turn filtering on, choose the ![ ](../../_img/icons/filter-icon.png) filter icon. 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 

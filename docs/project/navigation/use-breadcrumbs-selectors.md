@@ -1,5 +1,5 @@
 ---
-title: Use breadcrumbs and selectors to navigate and open artifacts
+title: Use breadcrumbs and selectors 
 titleSuffix: Azure DevOps Services & TFS
 description: Navigate to pages and artifacts using breadcrumbs or selectors in the web portal for Azure DevOps Services and Team Foundation Server
 ms.technology: devops-collab

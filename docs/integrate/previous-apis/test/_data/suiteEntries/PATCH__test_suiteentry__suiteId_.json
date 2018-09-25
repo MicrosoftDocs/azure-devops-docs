@@ -1,7 +1,7 @@
 {
    "method": "PATCH",
    "resourceFormat": "/test/suiteentry/{suiteId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam/_apis/test/suiteentry/339?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/suiteentry/339?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json",
       "Content-Type": "application/json",

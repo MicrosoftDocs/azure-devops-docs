@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Policy Types | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with policy types programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2013 < vsts'
+title: Policy Types | REST API Reference for Team Foundation Server
+description: Work with policy types programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: c7025882-81ca-4d4a-a879-416560546992
 ms.manager: douge
 ms.topic: article
@@ -28,7 +28,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/types?api-versio
 | Parameter     | Type   | Notes
 |:--------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string | TFS server name ({server:port}).
 | project       | string | The name or ID of the project.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -45,7 +45,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/types/{id}?api-v
 | Parameter     | Type   | Notes
 |:--------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string | TFS server name ({server:port}).
 | project       | string | The name or ID of the project.
 | id            | guid   | The ID of the policy type.
 | Query

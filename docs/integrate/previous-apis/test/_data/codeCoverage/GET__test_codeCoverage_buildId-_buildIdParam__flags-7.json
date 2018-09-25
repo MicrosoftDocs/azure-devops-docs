@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/codeCoverage?buildId={buildIdParam}&flags=7",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/codeCoverage?buildId=363&flags=7&api-version=2.0-preview",
+   "requestUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/codeCoverage?buildId=363&flags=7&api-version=2.0-preview",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -60,7 +60,7 @@
                   "functions": []
                }
             ],
-            "codeCoverageFileUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-TFVC/_api/_build/ItemContent?buildUri=vstfs%3A%2F%2F%2FBuild%2FBuild%2F363&path=%2FBuildCoverage%2FFabrikamUnitTests_20150609.2.Debug.Any%20CPU.51.coverage"
+            "codeCoverageFileUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_api/_build/ItemContent?buildUri=vstfs%3A%2F%2F%2FBuild%2FBuild%2F363&path=%2FBuildCoverage%2FFabrikamUnitTests_20150609.2.Debug.Any%20CPU.51.coverage"
          }
       ],
       "count": 1

@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Access control lists (ACLs) | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2013 < vsts'
+title: Access control lists (ACLs) | REST API Reference for Team Foundation Server
 description: Access control lists reference for integrating with VSTS
 ms.assetid: 79447872-9742-42c5-9d4a-2e291df06c85
 ms.manager: douge
@@ -27,7 +27,7 @@ POST https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-versio
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace. 
 | Query
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -46,7 +46,7 @@ GET https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-version
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace.
 | Query 
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -90,7 +90,7 @@ DELETE https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-vers
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace.
 | Query 
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

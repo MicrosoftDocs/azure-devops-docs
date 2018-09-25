@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/extend/test/discover-menu-group-ids.md",
+      "redirect_url": "/azure/devops/extend/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/artifacts/install.md",
       "redirect_url": "/azure/devops/artifacts/license-azure-artifacts",
       "redirect_document_id": true
@@ -1722,8 +1727,13 @@
     },
     {
       "source_path": "docs/build-release/preview/2017-user-experience.md",
-      "redirect_url": "/azure/devops/pipelines/archive/preview/2017-user-experience",
+      "redirect_url": "/azure/devops/pipelines/process/parameters",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/preview/2017-user-experience.md",
+      "redirect_url": "/azure/devops/pipelines/process/parameters",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/preview/release-definition-editor.md",
@@ -6137,8 +6147,8 @@
     },
     {
       "source_path": "docs/build-release/archive/preview/2017-user-experience.md",
-      "redirect_url": "/azure/devops/pipelines/archive/preview/2017-user-experience",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/process/parameters",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/preview/new-release-landing-page.md",
@@ -11100,7 +11110,7 @@
       "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
       "redirect_document_id": false
     },
-    
+
     {
       "source_path": "docs/organizations/accounts/disconnect-organization-from-aad.md",
       "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",

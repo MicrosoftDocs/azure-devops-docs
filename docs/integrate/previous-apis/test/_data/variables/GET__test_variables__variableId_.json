@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/test/variables/{variableId}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables/1?api-version=3.0-preview.1",
+   "requestUrl": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables/1?api-version=3.0-preview.1",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -37,10 +37,10 @@
    "responseBody": {
       "id": 1,
       "name": "Operating System",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
       "project": {
          "name": "fabrikam-fiber-tfvc",
-         "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+         "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Default operating systems",
       "revision": 1,

@@ -48,11 +48,11 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](../dashboards/_img/dashboards/open-dashboards-vert.png)
 
-	If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+	If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 0. [Choose the dashboard](../dashboards/dashboards.md#choose-dashboard) that you want to modify. 
 
-0. Choose ![](../dashboards/_img/icons/edit-icon.png) to modify a dashboard. The widget catalog opens.  
+0. Choose ![ ](../dashboards/_img/icons/edit-icon.png) to modify a dashboard. The widget catalog opens.  
 
 0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 

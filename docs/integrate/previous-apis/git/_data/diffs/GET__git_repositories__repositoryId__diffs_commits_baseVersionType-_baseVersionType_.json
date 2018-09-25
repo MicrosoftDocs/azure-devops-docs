@@ -1,7 +1,7 @@
 {
    "method": "GET",
    "resourceFormat": "/git/repositories/{repositoryId}/diffs/commits?baseVersionType={baseVersionType}&baseVersion={baseVersion}&targetVersionType={targetVersionType}&targetVersion={targetVersion}",
-   "requestUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/diffs/commits?baseVersionType=commit&baseVersion=c093714168cdd190c1e171a803e996d685454352&targetVersionType=commit&targetVersion=2f271272a1548da5a6507b4a29f3af943094c6b4&api-version=1.0",
+   "requestUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/diffs/commits?baseVersionType=commit&baseVersion=c093714168cdd190c1e171a803e996d685454352&targetVersionType=commit&targetVersion=2f271272a1548da5a6507b4a29f3af943094c6b4&api-version=1.0",
    "requestHeaders": {
       "Accept": "application/json"
    },
@@ -49,7 +49,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/CustomerAddressModule",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -61,7 +61,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/CustomerAddressModule/CustomerAddressModule",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -72,7 +72,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/CustomerAddressModule/CustomerAddressModule/Form1.cs",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -83,7 +83,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/CustomerAddressModule/CustomerAddressModule/Program.cs",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -95,7 +95,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/HelloWorld",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -107,7 +107,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/HelloWorld/src",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -118,7 +118,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/HelloWorld/src/HelloWorld.java",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src/HelloWorld.java?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src/HelloWorld.java?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -130,7 +130,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -142,7 +142,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -153,7 +153,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Project_Readme.html",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Project_Readme.html?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Project_Readme.html?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -164,7 +164,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Startup.cs",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Startup.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Startup.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -176,7 +176,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Views",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -188,7 +188,7 @@
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Views/Home",
                "isFolder": true,
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -199,7 +199,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Views/Home/_Register.cshtml",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -210,7 +210,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/MyWebSite/MyWebSite/Web.config",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Web.config?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Web.config?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "edit"
          },
@@ -220,7 +220,7 @@
                "gitObjectType": "blob",
                "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
                "path": "/readme.md",
-               "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//readme.md?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+               "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//readme.md?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
             },
             "changeType": "add"
          }
