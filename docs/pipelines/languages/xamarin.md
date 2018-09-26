@@ -33,7 +33,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Xamarin apps without needing to set up any infrastructure of your own. Xamarin tools are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use macOS or Windows agents to run Xamarin.Android builds, and macOS agents to run Xamarin.iOS builds.
 
-For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 

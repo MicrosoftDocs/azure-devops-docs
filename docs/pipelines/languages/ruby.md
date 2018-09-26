@@ -33,7 +33,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Ruby projects without needing to set up any infrastructure of your own. Ruby is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
+For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
 
 ### Use a specific Ruby version
 

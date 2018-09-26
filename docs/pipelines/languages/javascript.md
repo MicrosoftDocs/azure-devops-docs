@@ -98,7 +98,7 @@ Read through the rest of this topic to learn some of the common ways to customiz
 You can use Azure Pipelines to build your JavaScript apps without needing to set up any infrastructure of your own.
 Tools that you commonly use to build, test, and run JavaScript apps - npm, node, yarn, gulp, etc. - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can either use Windows or Linux agents to run your builds.
 
-For the exact version of Node.js and npm pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of these tools on Microsoft hosted agents, add the **Node Tool Installer** task to the beginning of your process.
+For the exact version of Node.js and npm pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft hosted agents, add the **Node Tool Installer** task to the beginning of your process.
 
 ::: moniker-end
 
