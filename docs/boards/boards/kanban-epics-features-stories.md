@@ -45,7 +45,7 @@ In this topic, you'll learn:
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [taskboard](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
  
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 

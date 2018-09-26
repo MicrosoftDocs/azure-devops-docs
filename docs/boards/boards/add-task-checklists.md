@@ -69,7 +69,7 @@ In this topic, you'll learn:
 
 	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
-	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
+	Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
 
 
 ## Mark a task as done 

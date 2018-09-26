@@ -100,7 +100,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ## Determine if bugs should appear on your backlog 
 
-You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [task board](../sprints/task-board.md).
+You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [taskboard](../sprints/task-board.md).
 
 If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
@@ -185,7 +185,7 @@ Talk with your team to determine how they want to manage bugs and then [change y
 ---
 
 > [!TIP]  
-> If, after refreshing a backlog or board, you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or taskboards.  
 
 <a id="convert-ideas" />
 ## Convert ideas into backlog items or stories

@@ -32,14 +32,14 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker range="vsts"
 > [!NOTE]    
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+>If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]    
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+>If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
