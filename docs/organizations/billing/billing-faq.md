@@ -16,9 +16,9 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [Azure DevOps billing overview](overview.md) to start.
+Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [Azure DevOps billing overview](overview.md).
 
-You have to set up billing when you need more than the *free tier* of resources in your Azure DevOps organization: 
+You have to set up billing when you need more than the *free tier* of resources in your Azure DevOps organization:
 
 * Five Azure DevOps users (Basic)
 * Five Azure Artifacts users
