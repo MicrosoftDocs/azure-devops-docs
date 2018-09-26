@@ -7,7 +7,7 @@ ms.topic: include
 
 ## Move work items to a sprint from any backlog or board
 
-From any backlog, you can drag a multi-selected list of work items and drop it onto a sprint to change it's iteration path. From a Kanban or task board, you can drag a single work item onto a sprint. 
+From any backlog, you can drag a multi-selected list of work items and drop it onto a sprint to change it's iteration path. From a Kanban or taskboard, you can drag a single work item onto a sprint. 
 
 > [!div class="mx-imgBorder"]  
 > ![Drop work items onto a sprint](/azure/devops/boards/sprints/_img/sp-assign-to-sprints.png)  

@@ -119,7 +119,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Sprints (Scrum)</h3>
-                                                            <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                            <p>Plan a sprint, use a taskboard in daily scrums, monitor sprint burndown.</p>
                                                         </div>
                                                     </div>
                                                 </div>
