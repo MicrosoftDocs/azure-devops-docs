@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 07/05/2018
+ms.date: 09/21/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
