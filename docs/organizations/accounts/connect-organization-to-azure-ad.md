@@ -8,11 +8,11 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/18/2018
+ms.date: 09/26/2018
 monikerRange: 'vsts'
 ---
 
-# Tutorial: Connect your Azure DevOps organization to Azure AD
+# Tutorial: Connect your Azure DevOps organization to Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -29,14 +29,14 @@ In this tutorial, you learn how to do the following:
 > * Close the temporary Microsoft account (MSA), if you created one.
 > * Update the Azure subscription that your organization uses for billing.
 
-For more information, see the [conceptual overview](access-with-azure-ad.md) about using Azure AD with Azure DevOps Services.
+For more information, see the [conceptual overview](access-with-azure-ad.md) about using Azure AD with Azure DevOps.
 
 > [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
 
 >[!Note]
 >Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
 
-We offer a path to connect to an Azure Active Directory where the users' email addresses are the same before and after the connection. For example, if users currently sign in to their MSA with the email address *jamalhartnett@fabrikam.com*, they'll sign in with the same email address as their Azure AD identity.
+We offer a path to connect to an Azure Active Directory where the users' email addresses are the same before and after the connection. For example, if users currently sign in to their Microsoft account (MSA) with the email address *jamalhartnett@fabrikam.com*, they'll sign in with the same email address as their Azure AD identity.
 
 We will update this guidance when we have a solution for scenarios where email addresses must be changed.
 
@@ -45,7 +45,7 @@ We will update this guidance when we have a solution for scenarios where email a
 Before you begin, do the following:
 
 1. Inform users of the upcoming change. 
-   Although there is no downtime during this change, users will be affected by it. It's best to let them know before you begin that there will be a short series of steps for them to complete. As your organization transitions from MSA to Azure AD identities, your users' benefits will continue to work with their new identity, provided that their emails match.
+   Although there is no downtime during this change, users will be affected by it. It's best to let them know before you begin that there will be a short series of steps for them to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits will continue to work with their new identity, provided that their emails match.
 
 2. Ensure that the following is true about each user who performs the connection:
 
