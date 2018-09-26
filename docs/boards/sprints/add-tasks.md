@@ -101,7 +101,7 @@ If you haven't yet assigned backlog items to your sprint, [do that now](assign-w
 
 For each sprint backlog item, add a task. Adding tasks from the sprint backlog or board automatically links the task to its parent backlog item. 
 > [!TIP]    
-> You can quickly add several tasks on the task board by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the task board](../../boards/boards/customize-cards.md#task-board). 
+> You can quickly add several tasks on the taskboard by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the taskboard](../../boards/boards/customize-cards.md#task-board). 
 
 # [New navigation](#tab/new-nav)
 
@@ -119,7 +119,7 @@ Fill out the form as described in the next section.
 Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
 > [!div class="mx-imgBorder"]
-> ![Add task from the task board](_img/add-tasks/add-task-board-agile.png)
+> ![Add task from the taskboard](_img/add-tasks/add-task-board-agile.png)
 
 > [!TIP]    
 > You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).   
@@ -133,7 +133,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 # [Previous navigation](#tab/previous-nav)
 
-You can add tasks from the sprint **Backlog** or **Board** (aka task board). 
+You can add tasks from the sprint **Backlog** or **Board** (aka taskboard). 
 
 From the **Backlog** view, choose the ![ ](../../_img/icons/blue-add-icon.png) plus icon to add a new task.  
 
@@ -145,7 +145,7 @@ Fill out the form as described in the next section.
 Another option, is to open the **Board**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
-> ![Add task from the task board](_img/add-tasks/add-task-board-standard.png)
+> ![Add task from the taskboard](_img/add-tasks/add-task-board-standard.png)
 
 > [!TIP]    
 > You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).  
@@ -208,7 +208,7 @@ During the sprint, team members update remaining work to continually reflect the
 <a id="unparented-tasks">  </a>
 ## Unparented tasks
 
-Tasks without links to parent backlog items or user stories appear at the top of the task board. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
+Tasks without links to parent backlog items or user stories appear at the top of the taskboard. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
 
 # [New navigation](#tab/new-nav)
 

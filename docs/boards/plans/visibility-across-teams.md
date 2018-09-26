@@ -251,7 +251,7 @@ With the multi-team Kanban board view, you can:
 
 Many project managers are interested in getting numeric rollup of estimates&mdash;Story Points or Effort&mdash; or the Remaining Work field. Rollup provides summed values of select fields for all child work items of a parent.
 
-Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the task board.
+Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard.
 
 ![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)
 

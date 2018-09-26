@@ -29,7 +29,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 
 > [!NOTE]    
->The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
+>The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
 <tr valign="top">
@@ -161,7 +161,7 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 
 **Required:** 
 *	[Schedule sprints for your team](define-sprints.md).  
-*	[Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+*	[Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
 
 **Recommended:**  
@@ -215,7 +215,7 @@ You can use your team [velocity](../../report/dashboards/velocity-chart-data-sto
 You can learn more about defining, planning, and executing your sprints from these topics:  
 *	[Schedule sprints](define-sprints.md)  
 *	[Sprint planning](assign-work-sprint.md)  
-*	[Task board](task-board.md)  
+*	[taskboard](task-board.md)  
 
 
 And, from these industry resources:  

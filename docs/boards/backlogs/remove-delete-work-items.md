@@ -20,7 +20,7 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
 
-Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
+Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Often times you find that someone created a work item of the wrong work item typ
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
+You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
 > [!TIP]    
 You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
@@ -229,7 +229,7 @@ You can only move work items from one project to another project within the orga
 <a id="remove"> </a>  
 ## Remove work items by changing the State
 
-By changing the State of a work item to Removed, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).
+By changing the State of a work item to Removed, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards).
 
 > [!div class="mx-imgBorder"]  
 > ![Change State to Removed](_img/move-change-delete/remove-state.png)  
@@ -254,7 +254,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	> [!div class="mx-imgBorder"]
 	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
 
-4. You can also delete work items from your Kanban or task board. 
+4. You can also delete work items from your Kanban or taskboard. 
  
 	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
@@ -286,7 +286,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
-4. You can also delete work items from your Kanban or task board. 
+4. You can also delete work items from your Kanban or taskboard. 
  
 	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
