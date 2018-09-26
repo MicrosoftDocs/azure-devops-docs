@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 09/26/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
-> SSH URLs have changed. Old SSH URLs will continue to work through December 1, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
 > - Verify which remotes are using SSH by running ```git remote -v ``` in your Git client. 
 > - Visit your repository on the web and select the **Clone** button in the upper right.
 > - Select **SSH** and copy the new SSH URL.
