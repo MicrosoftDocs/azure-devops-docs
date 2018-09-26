@@ -320,9 +320,9 @@ The typical workflow progression for a requirement is:
 -   The team updates the status to **Resolved** when code development is finished and system tests have passed.  
 -   Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.  
 
-### Update status with Kanban or task boards
+### Update status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint task board](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 <img src="../../boards/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
 
