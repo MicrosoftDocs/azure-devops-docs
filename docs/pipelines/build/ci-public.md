@@ -205,12 +205,12 @@ To configure validation builds for an Azure Repos Git repository, you must be a 
 > [!IMPORTANT]
 > These settings affect the security of your build.
 
-When you create a build pipeline for a public repository, your pipeline is automatically triggered for pull requests from forks of your repository. You can change this behavior, carefully considering how it affects security. To enable or disable this behavior:
+When you create a build pipeline, your pipeline is automatically triggered for pull requests from forks of your repository. You can change this behavior, carefully considering how it affects security. To enable or disable this behavior:
 
 1. Go to your Azure Pipelines project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
 1. Select the **Triggers** tab. After enabling the **Pull request trigger**, enable or disable the **Build pull requests from forks of this repository** check box.
 
-By default, secrets associated with your build pipeline are not made available to pull request builds of forks. Secrets include:
+By default on GitHub pipelines, secrets associated with your build pipeline are not made available to pull request builds of forks. These secrets are enabled by default on GitHub Enterprise pipelines. Secrets include:
 
 * A security token with access to your GitHub repository.
 * These items, if your build uses them:
@@ -218,7 +218,7 @@ By default, secrets associated with your build pipeline are not made available t
   * Files from the [secure files library](../library/secure-files.md)
   * Build [variables](../process/variables.md#user-defined-variables) marked **secret**
 
-To bypass this precaution, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
+To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
 
 ### Important security considerations
 
