@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/26/2018
 monikerRange: 'vsts'
 ---
 
@@ -29,7 +29,7 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Prerequisites
 
-1. [Set up billing for your organization](set-up-billing-for-your-organization-vs.md).
+[Set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 ## Enable paid load testing
 
@@ -53,6 +53,8 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
     ![Choose PAID and select an optional monthly limit](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+
+Cloud-based load testing is enabled for your organization.
 
 ## Billing and free monthly usage
 

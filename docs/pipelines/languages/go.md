@@ -35,7 +35,7 @@ The rest of this topic describes ways to customize your Go build pipeline.
 
 You can use Azure Pipelines to build your Go projects without needing to set up any infrastructure of your own. Modern versions of Go are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Go that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Go that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
