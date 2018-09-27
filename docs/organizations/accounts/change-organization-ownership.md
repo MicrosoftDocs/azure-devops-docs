@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, change your Azure DevOps organization owner to another user.
+When your team's roles and responsibilities change, change your organization owner to another user.
 
 <a name="ChangeOwner"></a>
 
@@ -40,7 +40,7 @@ Make sure that the new owner:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings** .
 
@@ -60,7 +60,7 @@ Make sure that the new owner:
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md)
 

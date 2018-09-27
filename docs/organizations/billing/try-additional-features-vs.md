@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to start a trial for your Azure DevOps organization and how to keep using your extension after the trial ends.
+In this quickstart, you learn how to start a trial for your organization and how to keep using your extension after the trial ends.
 
 There are two paid features in Azure DevOps that are offered by Microsoft that you can use free for a 30-day trial:
 
@@ -74,7 +74,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 

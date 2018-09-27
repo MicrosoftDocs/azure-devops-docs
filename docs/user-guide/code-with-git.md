@@ -34,7 +34,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
    ![Project, select Repos to clone URL](_img/project-select-repos-vert.png)
 
@@ -44,7 +44,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your organization and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
 
