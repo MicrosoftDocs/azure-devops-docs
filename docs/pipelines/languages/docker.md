@@ -33,12 +33,7 @@ Docker Hub or Azure Container Registry.
 > This document helps you start using Azure Pipelines by using Docker commands. As an alternative, Azure Pipelines also has built-in [Docker task](../tasks/build/docker.md)  which can be used for 
 > building and pushing the container images to a Container Registry. Know more about how the task helps in with Docker best practises and standards [here](../tasks/build/docker.md)
 
-
 ::: moniker-end
-
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]
 
 <a name="example"></a>
 ## Example
