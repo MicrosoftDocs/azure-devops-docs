@@ -248,7 +248,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
-<b>Note:</b> For Azure Boards, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
+<b>Note:</b> For Azure Boards, the taskboard always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
 </blockquote>
 <p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
 </td>
@@ -303,7 +303,7 @@ The main tools you use to plan and track work are described here:
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
-- [Task board](../sprints/task-board.md)
+- [taskboard](../sprints/task-board.md)
 - [Kanban board](../boards/kanban-basics.md)
 
 For more information on using work items and queries, see: 
@@ -318,7 +318,7 @@ For more information on using work items and queries, see:
 <a id="rollup"/>
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)

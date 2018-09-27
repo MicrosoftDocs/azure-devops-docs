@@ -45,7 +45,7 @@ Choose the process that provides the best fit for your team.
             <p><b>Scrum</b></p>
             <p>
                 Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great if you want to track product backlog items (PBIs) and
-                bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board.
+                bugs on the Kanban board, or break PBIs and bugs down into tasks on the taskboard.
             </p>
 
             <p>This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).</p>
@@ -62,7 +62,7 @@ Choose the process that provides the best fit for your team.
             <p><b>Agile</b></p>
             <p>Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
             and tracks development and test activities separately. This process works great if you want to track user stories and
-            (optionally) bugs on the Kanban board, or track bugs and tasks on the task board.</p>
+            (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.</p>
 
 
 
@@ -284,7 +284,7 @@ used by the three default processes.
 2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
     Each team can configure which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
 
-3.  You can define tasks from the [sprint backlog and task board](../../sprints/assign-work-sprint.md). 
+3.  You can define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). 
     With capacity planning, teams can quickly determine if they are over or under capacity for a sprint.  
  
 
@@ -395,7 +395,7 @@ Each image shows only the default reason associated with the transition.
 </table>
 
 
-Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the task board by dragging it to its corresponding state column.
+Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the taskboard by dragging it to its corresponding state column.
 
 You can change the workflow to support additional states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
@@ -404,7 +404,7 @@ You can change the workflow to support additional states, transitions, and reaso
 ### Removed, Closed, and Done states  
 When you change the state of a work item to Removed, Closed, or Done, the system responds like this: 
 
-*   **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and task board. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.   
+*   **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.   
 *   **Removed**: Work items in this state don't appear on any backlog or board.   
 
 Work items are maintained in a project as long as the project is active. 

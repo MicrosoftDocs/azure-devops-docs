@@ -237,7 +237,7 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 > [2. Add tasks](add-tasks.md)
 
 <!---
- Use your [task board during your daily scrum meetings](task-board.md) to perform these tasks: 
+ Use your [taskboard during your daily scrum meetings](task-board.md) to perform these tasks: 
 
 - Update task status and remaining work (daily updates of remaining work leads to smoother burndown charts)    
 - Review progress with the team during the daily Scrum meetings

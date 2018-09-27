@@ -126,15 +126,15 @@ Because feature teams don't own epics or features, epics and features don't appe
 
 ![Migrate team backlog of stories to epics](_img/safe-migrate-team-stories-to-epics.png)  
 
-They can also break down their work into tasks and use the task board to keep themselves on track during specific sprints.
+They can also break down their work into tasks and use the taskboard to keep themselves on track during specific sprints.
 
-![Migrate team Sprint 3 task board](_img/safe-migrate-sprint3-task-board.png)
+![Migrate team Sprint 3 taskboard](_img/safe-migrate-sprint3-task-board.png)
 
 The chart view of queries becomes very useful in the Innovation and Planning (IP) sprint, when feature teams work together to stabilize the features scheduled for a Release.  
 
 ![Bug charts](_img/safe-feature-team-active-bug-charts.png)  
 
-For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and task board to track progress and break down work into manageable chunks.  
+For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and taskboard to track progress and break down work into manageable chunks.  
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.  
 

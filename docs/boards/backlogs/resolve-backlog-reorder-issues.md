@@ -71,9 +71,9 @@ The child bug, *Save takes too long*, appears on the Kanban board, but not the p
 <a id="bugs-as-tasks">  </a>
 ## When you track bugs as tasks
 
-When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and task board.  
+When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and taskboard.  
 
-However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and task board, but not the bug. 
+However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and taskboard, but not the bug. 
 
 **Hierarchy of items assigned to the sprint backlog**  
 
@@ -83,7 +83,7 @@ However, if you create parent-child links between a requirement and a bug, and t
 
 ![Sprint backlog, leaf node task ](../../reference/_img/sprint-backlog-leaf-only.png)  
 
-**Only leaf nodes appear on the task board**   
+**Only leaf nodes appear on the taskboard**   
 ![Sprint board, leaf node task appears](../../reference/_img/bugs-appear-on-taskboard.png)  
 
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 

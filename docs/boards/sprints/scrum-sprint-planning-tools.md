@@ -70,19 +70,19 @@ At the start of each sprint, you'll want to plan the work that your team can com
 
 
 ##  Update tasks, monitor burndown 
-During a sprint, your team can use the task board and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
+During a sprint, your team can use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 <table valign="top">
 <tr valign="top" > 
 <td width="35%">
 <p>
-<b>Task board</b>
+<b>taskboard</b>
 </p>
-<p>Your [task board](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
+<p>Your [taskboard](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
 <p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
 </td>
 <td width="520px">
-![Task board](_img/ALM_DS_Task_board_S.png)
+![taskboard](_img/ALM_DS_Task_board_S.png)
 </td>
 </tr>
 <tr valign="top" > 
@@ -135,13 +135,13 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 </table>  
 
 ## How selected sprints show up on the backlog 
-Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
+Each sprint that you select for your team provides access to a sprint backlog, taskboard, and other Agile tools for planning and tracking work. 
 
 <a id="ts-sprints" /> 
 
 ::: moniker range=">= tfs-2017"  
 
-For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
+For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
 <img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
@@ -151,7 +151,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 <a id="tfs2015-sprints" />
 
-For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
+For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 

@@ -250,7 +250,7 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 ## Configure the Burnup widget
 
-Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
+Configuring the Burnup widget is exactly like configuring the Burndown widget, except that it plots work completed, rather than work remaining.
 
 **Burnup Widget displaying a Stories Burnup**
 

@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 None
 
 ## Prerequisites
-* A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
+* A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
 This task will fail if no Python versions are found in the tool cache. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
