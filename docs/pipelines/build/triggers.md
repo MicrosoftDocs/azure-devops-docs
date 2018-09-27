@@ -41,11 +41,12 @@ trigger:
 - releases/*
 ```
 
-You can also be more specific about branches to include and exclude.
+You can also be more specific about branches to include and exclude, or whether to batch changes per branch.
 
 ```yaml
 name: My Specific Branch Build
 trigger:
+  batch: true
   branches:
     include:
     - master

@@ -137,10 +137,11 @@ Disable syntax:
 trigger: none # will disable CI builds entirely
 ```
 
-Include/exclude syntax:
+Full syntax:
 
 ```yaml
 trigger:
+  batch: true | false
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
