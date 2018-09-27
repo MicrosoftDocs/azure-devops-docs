@@ -28,7 +28,7 @@ You can use the following keyboard shortcuts from the web portal.
 **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>
 **f,p**&nbsp;&nbsp;&nbsp;Focus previous section<br/>
 <br/>
-**s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search<br/>
+**/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search<br/>
 </td>
 </tr>
 </tbody>
