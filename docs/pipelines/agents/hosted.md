@@ -58,7 +58,7 @@ jobs:
   - script: echo hello from Windows
 ```
 
-# [Web](#tab/web)
+# [Designer](#tab/designer)
 
 Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent pool**, select the pool you decided on.
 

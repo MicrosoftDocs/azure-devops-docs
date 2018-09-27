@@ -25,7 +25,7 @@ After you commit and push a code change, it is automatically built and then depl
 
 ## Example
 
-If you want some sample code that works with this guidance, import (into Azure DevOps or Azure DevOps Server) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, import (into Azure DevOps) or fork (into GitHub) this repo:
 
 ```
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/container/Application
