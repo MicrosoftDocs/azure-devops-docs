@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-With an Azure DevOps organization, you gain access to the platform in which you can do the following:
+With an organization, you gain access to the platform in which you can do the following:
 
 * Collaborate with others to develop applications by using our cloud service.
 * Plan and track your work as well as code defects and issues.
@@ -26,7 +26,7 @@ With an Azure DevOps organization, you gain access to the platform in which you 
 
 ## Create your organization
 
-Before you get started, read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
+Before you get started, read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,
@@ -34,7 +34,7 @@ like builds, tests, and work items. If you're starting with Visual Studio
 as your development environment, you can create your organization when you
 [set up Visual Studio](set-up-vs.md).
 
-Your Azure DevOps organization includes five free users
+Your organization includes five free users
 with Basic access, plus unlimited Visual Studio
 subscribers and stakeholders at no extra charge.
 Your organization also includes free monthly amounts
@@ -43,7 +43,7 @@ and cloud-based load testing.
 
 ## Connect to your organization
 
-Once your Azure DevOps organization is created,
+Once your organization is created,
 [connect to your organization](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
 and add code to your project.

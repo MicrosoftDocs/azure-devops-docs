@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/21/2018
+ms.date: 09/27/2018
 ---
 
 # Understand differences between Azure DevOps Services and TFS
@@ -220,7 +220,7 @@ In addition, Azure DevOps Services gives you access to the following services:
 
 - [The Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [PowerBI integration](../report/powerbi/overview.md), which supports getting Analytics data into PowerBI reports, providing a combination of simplicity and power.
-- [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser and then use the returned JSON data as you want. You can generate queries that span multiple projects or your entire Azure DevOps organization.
+- [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser and then use the returned JSON data as you want. You can generate queries that span multiple projects or your entire organization.
 
 We plan to make these services available in TFS in a future release. See our [Reporting roadmap](../report/analytics/reporting-roadmap.md).
 

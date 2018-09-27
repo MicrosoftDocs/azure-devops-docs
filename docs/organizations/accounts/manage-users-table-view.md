@@ -48,7 +48,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -78,7 +78,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 # [Previous navigation](#tab/previous-nav)
  
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Open **Organization settings**.
 

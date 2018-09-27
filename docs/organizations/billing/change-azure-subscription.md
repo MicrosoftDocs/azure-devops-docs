@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Change the Azure subscription your Azure DevOps organization uses for billing
+# Change the Azure subscription your organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

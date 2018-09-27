@@ -262,7 +262,7 @@ Verification failures happen when the import fails to start. Issues falling into
 VS403254: Region {0} may not be used for the Import, it is not a supported region.
 ```
 
-The region that you entered for your VSTS import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
+The region that you entered for your Azure DevOps Services import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
 
 **VS403249**
 
@@ -270,7 +270,7 @@ The region that you entered for your VSTS import isn't supported. Open your impo
 VS403249: The organization {0} already exists. Please select a different name and try the import again.
 ```
 
-All VSTS imports go into a new organization that is created at import time. This error indicates that the organization name your team has selected is already being used by an existing organization. Select a different name and update the import specification file before retrying the import. 
+All Azure DevOps Services imports go into a new organization that is created at import time. This error indicates that the organization name your team has selected is already being used by an existing organization. Select a different name and update the import specification file before retrying the import. 
 
 **VS403250 & VS403286**
 
@@ -385,7 +385,7 @@ VS403366: A problem occurred while attempting to connect to your database. Pleas
 List of Azure DevOps Services IPs:
 ```
 
-The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for VSTS. VSTS's IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
+The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
 
 ### Import Failures
 When an import fails, the individual that queued the import will receive an email notification. Most of the time this email will include a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and try your import again. 
