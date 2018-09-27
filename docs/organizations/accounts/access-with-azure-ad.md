@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Do you want to authenticate users and control access to
-your Azure DevOps organization the same way that you
+your organization the same way that you
 can with Microsoft services like Office 365 and Azure?
 If your organization was created with a Microsoft account,
 you can connect your organization to your
@@ -30,12 +30,12 @@ your team's critical resources and key assets.
 > To use existing on-premises identities with Azure DevOps,
 > you can integrate on-premises directories with Azure AD by using
 > [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
-> To switch your Azure DevOps organization to another directory,
+> To switch your organization to another directory,
 > learn [how to change your directory in Azure AD](change-organization-location.md).
 
 ## How does Azure Active Directory control access to Azure DevOps?
 
-Your Azure DevOps organization authenticates users
+Your organization authenticates users
 through your organization's directory so that
 only users who are members or guests in that directory can
 get access to your organization.
@@ -56,7 +56,7 @@ And all users must sign in with Microsoft accounts.
 
 You need the following:
 
-* [Ownership of the Azure DevOps organization](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
+* [Ownership of the organization](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
 
 * A ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),such as a [Pay-As-You-Go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),associated with Azure Active Directory and at least co-administrator permissions for your subscription.
 
@@ -79,7 +79,7 @@ Learn more about [Azure AD administrators](/azure/active-directory/users-groups-
 You must add your Microsoft account to Azure AD.
 
 Although directory membership isn't required to
-connect your Azure DevOps organization to Azure AD, it makes sure that you can sign in and
+connect your organization to Azure AD, it makes sure that you can sign in and
 access your organization after you connect to Azure AD. Otherwise, your Microsoft account will not have access to
 your organization.
 
@@ -112,6 +112,6 @@ You should [restore the user](/azure/active-directory/active-directory-users-res
 ## Manage organization access with Azure AD
 
 * [Add Azure DevOps users to Azure AD](add-users-to-azure-ad.md)
-* [Connect your Azure DevOps organization to Azure AD](connect-organization-to-aad.md)
-* [Disconnect your Azure DevOps organization from Azure AD](disconnect-organization-from-aad.md)
+* [Connect your organization to Azure AD](connect-organization-to-aad.md)
+* [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
 * [Delete users from Azure DevOps connected to Azure AD](delete-users-from-services-aad.md)

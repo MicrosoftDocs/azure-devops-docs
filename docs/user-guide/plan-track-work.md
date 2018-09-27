@@ -34,7 +34,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The web browser URL follows the following pattern: ```https://dev.azure.com/{yourorganization}/{yourproject}```  
 
@@ -58,7 +58,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The web browser URL follows this pattern: ```https://dev.azure.com/{yourorganization}/{yourproject}```  
 

@@ -28,7 +28,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Browse Marketplace**.
 
@@ -55,7 +55,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Browse Marketplace**.
 

@@ -12,11 +12,11 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Add users to your Azure DevOps organization or project
+# Add users to your organization or project
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add users to your Azure DevOps organization and specify the level of features they can use, such as Basic or Stakeholder.
+Add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
 These kinds of users can join your organization for free:
 
 * Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
@@ -66,7 +66,7 @@ To give other users access to your organization, add their email addresses.
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -91,7 +91,7 @@ To give other users access to your organization, add their email addresses.
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
 
 2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
 

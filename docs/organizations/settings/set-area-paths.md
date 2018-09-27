@@ -61,12 +61,12 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![](../../_img/icons/gear-icon.png) gear icon. 
+You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 
 <a id="admin-intro-team-services" /> 
 ::: moniker range=">= tfs-2017"  
 
-1. From the web portal for the project, choose the ![](../../_img/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
@@ -83,7 +83,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 <a id="admin-intro-tfs-2015" />
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
@@ -100,7 +100,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![](../../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.   
 
 	Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -113,7 +113,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![](../../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.   
 
 	Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -142,7 +142,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 When you rename an area or an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths.  
 
-0. To rename an area or iteration path, choose the ![](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
+0. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/areas/edit-area-rename.png)  

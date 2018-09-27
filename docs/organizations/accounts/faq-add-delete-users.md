@@ -77,12 +77,12 @@ A: If no other access levels are available, users can [work as stakeholders](../
 
 A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users will be transitioned systematically. The transition provides an upgrade by offering access to unlimited Azure DevOps organizations (not just one organization) like Visual Studio Online Professional. 
+Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users will be transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
 
 The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
-If you're purchasing user access to Visual Studio Professional for a specific Azure DevOps organization (possible only if you purchased before November 2015) and want to upgrade, do this:
-	
+If you're purchasing user access to Visual Studio Professional for a specific organization (possible only if you purchased before November 2015) and want to upgrade, do the following:
+
 1. Before the last day of the calendar month, sign in to the [Azure portal](https://portal.azure.com). Reduce the number of paid Visual Studio Online Professional users to 0. 
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
@@ -117,9 +117,9 @@ A: This might happen for different reasons (although the user can continue to [w
 
 *	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
-*	The Azure subscription used for billing was unlinked from your Azure DevOps organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+*	The Azure subscription used for billing was unlinked from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
 
-*	Your Azure DevOps organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
+*	Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
 
 	Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
@@ -129,7 +129,7 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	The extension was uninstalled. Users can reinstall the extension by visiting the extension page in the [Marketplace](https://marketplace.visualstudio.com).
 
-	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your Azure DevOps organization or might no longer be active. Learn more about [linking your Azure DevOps organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
+	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 
 
 ###	Azure Active Directory and your organization
@@ -138,7 +138,7 @@ A: This might happen for different reasons (although the user can continue to [w
 
 #### Q: Why do I have to add users to a directory?
 
-A: Your Azure DevOps organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
+A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
 If you're a directory administrator, you can [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). If you're not an administrator, work with your directory administrator to add users. Learn more about [how to control access by using a directory](access-with-azure-ad.md).
 
@@ -150,7 +150,7 @@ If you're a directory administrator, you can [add users to the directory](https:
 
 #### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all Azure DevOps organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 

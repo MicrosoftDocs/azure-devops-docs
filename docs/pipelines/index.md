@@ -1,7 +1,7 @@
 ---
-title: CI/CD index to content for Azure Pipelines and Team Foundation Server
-titleSuffix: Azure Pipelines and TFS
-description: Learn how to configure CI/CD for the app and platform of your choice. Find tutorials, references, and other documentation.  
+title: CI/CD index to content
+titleSuffix: Azure Pipelines & TFS
+description: Learn how to configure CI/CD for the app and platform of your choice using Azure DevOps Services and Team Foundation Server (TFS). Includes tutorials, references, and other documentation.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
