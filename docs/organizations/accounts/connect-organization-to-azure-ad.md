@@ -12,11 +12,11 @@ ms.date: 09/26/2018
 monikerRange: 'vsts'
 ---
 
-# Tutorial: Connect your Azure DevOps organization to Azure Active Directory
+# Tutorial: Connect your organization to Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If your Azure DevOps organization was created with a Microsoft account, you can connect that account to your [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
+If your organization was created with a Microsoft account, you can connect that account to your [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
 
 You can then sign in to Azure DevOps Services with the same username and password that you use with the Microsoft services.
 
@@ -71,7 +71,7 @@ Before you begin, do the following:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 3. Select **Users**.
@@ -94,7 +94,7 @@ Before you begin, do the following:
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization and go to **Organization settings**.
+1. Sign in to your organization and go to **Organization settings**.
   ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
 2. Go to **Users**.
   ![The Users tab in Azure DevOps Services](_img/connect-organization-to-aad/select-users-to-review-email-addresses-for-azure-ad.png)
@@ -116,7 +116,7 @@ Before you begin, do the following:
 
 ---
 
-## Connect your Azure DevOps organization to your Azure AD
+## Connect your organization to your Azure AD
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with the Microsoft account that you chose in the previous section.
 

@@ -52,7 +52,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
@@ -78,7 +78,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
@@ -96,7 +96,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 Requires TFS 2015.1 or later version. 
 
-0. From your web portal, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
+0. From your web portal, choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
 
 	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)  
 
