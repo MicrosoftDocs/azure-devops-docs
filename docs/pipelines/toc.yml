@@ -157,6 +157,8 @@
         href: process/multiple-phases.md
     - name: Conditions
       href: process/conditions.md
+    - name: Expressions
+      href: process/expressions.md
     - name: Variables
       href: process/variables.md
     - name: Resources
