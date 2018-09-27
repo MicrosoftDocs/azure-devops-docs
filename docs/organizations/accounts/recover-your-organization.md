@@ -12,7 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Restore your Azure DevOps organization
+# Restore your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

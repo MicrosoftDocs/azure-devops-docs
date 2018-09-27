@@ -1,4 +1,4 @@
-### Q:		Why don't I see my Azure DevOps organization in the Visual Studio Marketplace?
+### Q:		Why don't I see my organization in the Visual Studio Marketplace?
 
 A:	If you don't see your organization when buying from the Visual Studio Marketplace, try these steps:
 

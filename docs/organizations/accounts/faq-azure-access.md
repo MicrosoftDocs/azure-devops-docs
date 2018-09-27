@@ -195,7 +195,7 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 
 ## Connect to directory
 
-[Tutorial: Connect your Azure DevOps organization to Azure AD](connect-organization-to-aad.md).
+[Tutorial: Connect your organization to Azure AD](connect-organization-to-aad.md).
 
 <a name="connect-o365-azure-ad"></a>
 

@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your Azure DevOps organization once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your Azure DevOps organization](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your Azure DevOps organization using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>

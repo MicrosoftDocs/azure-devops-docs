@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images and push them to registries such as
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as
 Docker Hub or Azure Container Registry.
 
 ::: moniker range="<= tfs-2018"

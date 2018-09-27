@@ -28,7 +28,7 @@ If users no longer require access to a project or your organization, you can rem
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization: ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -59,7 +59,7 @@ If users no longer require access to a project or your organization, you can rem
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization: ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 

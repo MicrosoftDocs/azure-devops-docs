@@ -95,7 +95,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
 
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
@@ -113,7 +113,7 @@ You can configure most of your team settings from the common configuration dialo
 
 # [Previous navigation](#tab/previous-nav)  
 
-0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
 
@@ -123,7 +123,7 @@ You can configure most of your team settings from the common configuration dialo
 	>![Open Kanban board, previous navigation](../../boards/boards/_img/kanban-basics-intro.png)
 
 
-1. Choose the board you want to configure and then choose the ![](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 	::: moniker range="tfs-2017"  

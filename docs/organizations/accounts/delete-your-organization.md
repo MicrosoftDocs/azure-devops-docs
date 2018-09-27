@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you don't need your Azure DevOps organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
+If you don't need your organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 30 days, your organization and data are permanently deleted.
 
 When you delete your organization, note the following:
@@ -55,7 +55,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-organiza
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -76,7 +76,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-organiza
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), and  **Organization settings**.
 

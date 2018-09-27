@@ -2,7 +2,7 @@
 
 <a name="which-azure-sub-for-billing"></a>
 
-#### Q: Which Azure subscriptions can I link to my Azure DevOps organization and use for billing?
+#### Q: Which Azure subscriptions can I link to my organization and use for billing?
 
 A: You can use an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
 that's not the following:

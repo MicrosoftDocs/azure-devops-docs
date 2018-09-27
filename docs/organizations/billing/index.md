@@ -49,15 +49,15 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## Step-by-step tutorials
 
-* [Connect your Azure DevOps organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
+* [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
 ## How-to guides
 
 Billing management
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription your Azure DevOps organization uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your Azure DevOps organization](reduce-cancel-paid-users.md)
+* [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
+* [Change the number of paid users on your organization](reduce-cancel-paid-users.md)
 * [Billing FAQ](billing-faq.md)
 
 Marketplace extension management
