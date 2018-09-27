@@ -203,7 +203,7 @@ You can run any docker commands as part of the script block in your YAML file. I
 The [**Docker task**](../tasks/build/docker.md) which uses service connection for 'docker login' can be used in case you want to avoid managing username and password as secret. Plus, once you have used the [Docker task](../tasks/build/docker.md) to login, the session is maintained for the duration of the job thus allowing you to use follow-up tasks to execute any scripts .
 
 ```yaml
-- script: docker login -u $(dockerId) -p $(pswd) <docker-registry-url>
+- script: docker login -u $(dockerId) -p $(dockerPassword) <docker-registry-url>
 ```
 
 Make sure that you define the Docker password as a [secret variable](../process/variables.md) in the build pipeline and not in the YAML file.
@@ -305,7 +305,7 @@ To push the image to Docker hub, add the following snippet to the `azure-pipelin
 
 ```yaml
 - script: |
-    docker login -u $(dockerId) -p $(pswd)
+    docker login -u $(dockerId) -p $(dockerPassword)
     docker push $(dockerId)/$(imageName)
 ```
 
@@ -313,7 +313,7 @@ To push the image to Azure Container Registry, use the following snippet:
 
 ```yaml
 - script: |
-    docker login -u $(dockerId).azurecr.io -p $(pswd) $(dockerId).azurecr.io
+    docker login -u $(dockerId).azurecr.io -p $(dockerPassword) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
 ```
 
