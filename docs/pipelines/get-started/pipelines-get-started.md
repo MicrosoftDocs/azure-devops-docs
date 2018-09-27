@@ -39,7 +39,7 @@ If you think the YAML workflow is best for you, take the next step by [creating 
 
 ## Use Azure Pipelines in the visual designer
 
-You can create and configure your build and release pipelines in the Azure DevOps web poral with the visual designer. 
+You can create and configure your build and release pipelines in the Azure DevOps Services web portal with the visual designer. 
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Use the Azure Pipelines visual designer to create  and configure your build and release pipelines.
