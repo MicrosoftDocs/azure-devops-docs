@@ -46,7 +46,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -61,7 +61,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in as the organization owner to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in as the organization owner to your organization (```https://dev.azure.com/{yourorganization}```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 

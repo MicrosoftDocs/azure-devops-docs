@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/26/2018
 monikerRange: 'vsts'
 ---
-# Add external users to your Azure DevOps organization
+# Add external users to your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -36,7 +36,7 @@ If you’re an Azure Active Directory (Azure AD)-backed organization user who wa
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -54,7 +54,7 @@ If you’re an Azure Active Directory (Azure AD)-backed organization user who wa
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Go to the **Users** tab in **Settings**.
 

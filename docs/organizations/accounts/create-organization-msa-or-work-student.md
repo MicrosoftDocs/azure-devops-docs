@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create an Azure DevOps organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
+To create an organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
 
 In this quickstart, you learn how to upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
@@ -28,7 +28,7 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 
 ## Prerequisites
 
-* Read [Defining your Azure DevOps organizations and projects](../../user-guide/define-organizations-and-projects.md).
+* Read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md).
 * Before you begin, do either of the following:
 
    * Complete the following steps to use only Microsoft accounts with your organization. Ignore the Azure Active Directory (Azure AD) callouts.
@@ -50,7 +50,7 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 
 Azure DevOps Services authenticates users through your Azure AD, so that only users who are members in that directory can access your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your organization.
 
-Without Azure AD, you're solely responsible for controlling Azure DevOps organization access. And all users must sign in with their Microsoft account. 
+Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
 [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
 
 <a name="SignIn"></a>

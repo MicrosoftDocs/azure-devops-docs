@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [Azure DevOps billing overview](overview.md).
 
-You have to set up billing when you need more than the *free tier* of resources in your Azure DevOps organization:
+You have to set up billing when you need more than the *free tier* of resources in your organization:
 
 * Five Azure DevOps users (Basic)
 * Five Azure Artifacts users
@@ -79,7 +79,7 @@ If you can't access the Azure Enterprise Portal, inquire within your organizatio
 
 ### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?
 
-A: Yes, you can use these prepaid funds for all Azure DevOps Services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your Azure DevOps organization](set-up-billing-for-your-organization-vs.md).
+A: Yes, you can use these prepaid funds for all Azure DevOps Services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 The only exclusion is for extensions offered by partners in the Visual Studio Marketplace. These charges will appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that are not eligible for Azure Monetary Commitment funds) will trigger an overage invoice.
 
@@ -99,14 +99,14 @@ A: When you reduce or cancel user charges or CI/CD charges, you're canceling aut
 
 ### Q: What happens if I cancel my Azure subscription or my credit card expires?
 
-A: When the Azure subscription used for billing on your Azure DevOps organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization will revert to the free tier of service. But you'll keep any paid users or paid CI/CD concurrent jobs until next month.
+A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization will revert to the free tier of service. But you'll keep any paid users or paid CI/CD concurrent jobs until next month.
 
 >[!NOTE]
 >You must keep your Azure subscription in good standing to avoid interruptions in paid services.
 
 ### Q: Where can I check my bill or update billing details on my Azure subscription?
 
-A: If you're the owner or contributor for the Azure subscription used for billing your Azure DevOps organization, you can view your billing details in the [Azure portal](https://account.azure.com/).
+A: If you're the owner or contributor for the Azure subscription used for billing your organization, you can view your billing details in the [Azure portal](https://account.azure.com/).
 
 ## Other questions
 
@@ -114,9 +114,9 @@ A: If you're the owner or contributor for the Azure subscription used for billin
 
 ### Q: Why do I no longer see Team Projects in the Azure portal?
 
-A: Starting September 28th, 2018 you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your Azure DevOps organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
+A: Starting September 28th, 2018 you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
 
-### Q: Why is my Azure DevOps organization already linked to an Azure subscription?
+### Q: Why is my organization already linked to an Azure subscription?
 
 A: This happens if someone already set up billing for your organization, either through the Azure portal or while purchasing something for this organization via the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
@@ -135,7 +135,7 @@ A: You can find your [project collection administrator](../security/set-project-
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -165,7 +165,7 @@ A: You can find the current owner in your organization settings.
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 

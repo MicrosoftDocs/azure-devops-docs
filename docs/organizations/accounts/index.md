@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Sign up for an Azure DevOps organization. Add users and manage permissions and access.
+Sign up for an organization. Add users and manage permissions and access.
 
 ## 5-minute quickstarts
 

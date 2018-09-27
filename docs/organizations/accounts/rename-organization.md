@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Rename your Azure DevOps organization
+# Rename your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -24,14 +24,14 @@ You can change your organization name (URL) at any time.
 > [!NOTE]
 > An organization can't be renamed within one hour of the most recent rename operation.
 
-To change your Azure DevOps organization URL, you need at least Basic access and organization owner permissions. 
+To change your organization URL, you need at least Basic access and organization owner permissions. 
 [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -49,7 +49,7 @@ To change your Azure DevOps organization URL, you need at least Basic access and
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
