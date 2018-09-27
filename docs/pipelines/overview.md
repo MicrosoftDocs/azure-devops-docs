@@ -1,7 +1,7 @@
 ---
-title: Overview of Azure Pipelines
-titleSuffix: Azure Pipelines
-description: Build and deploy your app using Azure Pipelines
+title: Start using Build and Release
+titleSuffix: TFS
+description: Build and deploy your app using Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
