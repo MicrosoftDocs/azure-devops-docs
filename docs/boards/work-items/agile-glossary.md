@@ -39,7 +39,7 @@ A suite of web-based tools used to track work and support Agile methodologies. A
 A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
 
 ## Categories
-Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
+Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 
@@ -103,7 +103,7 @@ An interactive list of work items, similar to the product backlog, that supports
 [!INCLUDE [temp](../../_shared/glossary-terms/process.md)]  
 
 ## Process configuration
-Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and task board. (Only supported for Hosted XML and On-premises XML process models)  
+Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and taskboard. (Only supported for Hosted XML and On-premises XML process models)  
 
 ## Process model  
 The work tracking customization method supported by your organization or collection. One of three process models are supported, Inheritance and Hosted XML for Azure Boards and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../../reference/customize-work.md) 

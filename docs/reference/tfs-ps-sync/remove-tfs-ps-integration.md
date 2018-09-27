@@ -121,7 +121,7 @@ Example steps:
 	```
 3. Import the updated categories.xml file. 
 
-	```witadmin importglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
+	```witadmin importcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
 
 
 ## 5. Delete TFS-PS global workflow rules from projects and project collections  

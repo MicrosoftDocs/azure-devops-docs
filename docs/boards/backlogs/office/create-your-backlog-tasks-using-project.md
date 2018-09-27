@@ -92,7 +92,7 @@ Use this topic to learn how to:
 
 ## Indent tasks to create parent-child links
 
-When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [task board](../../sprints/task-board.md) when they are assigned to the current sprint.
+When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [taskboard](../../sprints/task-board.md) when they are assigned to the current sprint.
 
 ![Link tasks to create parent-child links](_img/create-your-backlog-tasks-using-project/IC658913.png)
 

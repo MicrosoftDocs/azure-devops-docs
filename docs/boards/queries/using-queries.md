@@ -222,9 +222,9 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 ::: moniker-end
 
-## Task board versus query list items
+## Taskboard versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 ## Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
