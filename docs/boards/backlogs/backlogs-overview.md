@@ -234,7 +234,7 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ## Display of leaf node work items  
 
-When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or task board. 
+When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or taskboard. 
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
 

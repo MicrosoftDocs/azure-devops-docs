@@ -96,7 +96,7 @@ steps:
   displayName: Set a variable and then display all
 ```
 
-# [Web](#tab/web)
+# [Designer](#tab/designer)
 
 On the Build tab of a build pipeline, add these tasks:
 

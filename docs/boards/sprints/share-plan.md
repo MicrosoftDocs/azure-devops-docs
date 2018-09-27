@@ -143,7 +143,7 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [6. Update the task board](task-board.md) 
+> [6. Update the taskboard](task-board.md) 
 
 
 ## Related articles

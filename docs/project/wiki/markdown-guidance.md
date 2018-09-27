@@ -528,9 +528,9 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 
 ::: moniker range=">= tfs-2017"
-## Checklist or task list in pull requests or markdown 
+## Checklist or task list 
 
-Lightweight task lists are a great way to track progress on a list of todos as either a pull request creator or reviewer in the description or a single, consolidated comment. Click the Markdown toolbar to get started or apply the format to selected text.
+Lightweight task lists are a great way to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Click the Markdown toolbar to get started or apply the format to selected text.
 
 You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
