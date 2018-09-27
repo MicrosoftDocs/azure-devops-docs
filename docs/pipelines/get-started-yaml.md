@@ -1,6 +1,7 @@
 ---
 title: Create your first pipeline
-description: Create your first pipeline
+titleSuffix: Azure Pipelines
+description: Create your first pipeline using Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -9,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 8/23/2018
-monikerRange: '> tfs-2018'
+monikerRange: 'vsts'
 ---
 
 # Create your first pipeline
