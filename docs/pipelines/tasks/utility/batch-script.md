@@ -107,13 +107,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Where can I learn about batch files?
-
-[Using batch files](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/batch.mspx?mfr=true)
-
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
