@@ -13,17 +13,17 @@ ms.topic: conceptual
 monikerRange: 'vsts'
 ---
 
-# Define your Azure DevOps organizations and projects
+# Define your organizations and projects
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
 In Azure DevOps, an organization is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other organizational structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
-For a larger company, you may want to create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three Azure DevOps organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other.
+For a larger company, you may want to create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other.
 
 ## Choose your organization admin account type
 
-You can create one or more Azure DevOps organizations. These organizations can be created by using a Microsoft account or with an Azure Active Directory (Azure AD)-backed account. This account provides the credentials to sign in to your new Azure DevOps organization at `https://dev.azure.com/{yourorganization}`.
+You can create one or more organizations. These organizations can be created by using a Microsoft account or with an Azure Active Directory (Azure AD)-backed account. This account provides the credentials to sign in to your new organization at `https://dev.azure.com/{yourorganization}`.
 
 ### Microsoft account
 
@@ -33,7 +33,7 @@ If you don’t have an Azure Active Directory instance, you can either [create o
 
 ### Azure Active Directory-backed account
 
-Use your work or school account managed by its Azure Active Directory instance. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure Active Directory](https://azure.microsoft.com/documentation/articles/sign-up-organization/) to **automatically connect** your Azure DevOps organization to your Azure Active Directory. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Use your work or school account managed by its Azure Active Directory instance. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure Active Directory](https://azure.microsoft.com/documentation/articles/sign-up-organization/) to **automatically connect** your organization to your Azure Active Directory. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## Define organizations
 

@@ -25,7 +25,7 @@ As an organization owner or a project admin, there are a few items you may want 
 ## Add users to a project 
 
 ::: moniker range="vsts"  
-The first task is to ensure that all members of your organization or group are added to your Azure DevOps organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
+The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
 
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
 - [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users.md)

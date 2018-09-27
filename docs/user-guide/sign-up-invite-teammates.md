@@ -13,11 +13,11 @@ monikerRange: 'vsts'
 ---
 
 
-# Quickstart: Sign up for a free Azure DevOps organization
+# Quickstart: Sign up for a free organization
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to sign up for a free Azure DevOps organization with a Microsoft account and how to invite your teammates.
+In this quickstart, you learn how to sign up for a free organization with a Microsoft account and how to invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 

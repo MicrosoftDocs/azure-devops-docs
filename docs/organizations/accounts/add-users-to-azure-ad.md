@@ -14,11 +14,11 @@ monikerRange: 'vsts'
 
 <a name="SetUpCurrentUsers"></a>
 
-# Add Azure DevOps organization users to your Azure Active Directory
+# Add organization users to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If your Azure DevOps organization was created with a Microsoft account, you can connect your organization to your directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then you can sign in to Azure DevOps with the same user name and password that you use with these Microsoft services. You can also enforce policies for accessing your team's critical resources and key assets.
+If your organization was created with a Microsoft account, you can connect your organization to your directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then you can sign in to Azure DevOps with the same user name and password that you use with these Microsoft services. You can also enforce policies for accessing your team's critical resources and key assets.
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with Azure DevOps.
 

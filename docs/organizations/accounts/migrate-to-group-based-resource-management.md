@@ -26,7 +26,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -49,7 +49,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Open Organization settings.
 
