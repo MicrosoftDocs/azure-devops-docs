@@ -30,23 +30,7 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 ## Publish your packages
 
-# [Web](#tab/web)
-
-To publish the files you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
-
-- **Command:** Publish
-- **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
-- **Feed location:** You can publish to an Azure Artifacts feed in this organization or in another organization.
-- **Destination feed:** Select the feed you want to publish to.
-- **Package name:** Select an existing package (to publish a new version of that package) or enter a new package name (to publish the first version of a new package).
-
-![Example Universal Packages build step screenshot](_img/universal-packages/publish.png)
-
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
-
-To publish to a external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [Personal Access Token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md)) to connect to the feed.
-
-#  [YAML](#tab/yaml)
+# [YAML](#tab/yaml)
 
 To publish a Universal Package to your feed, add the following snippet to your azure-pipelines.yml file.
 
@@ -66,6 +50,22 @@ To publish a Universal Package to your feed, add the following snippet to your a
 
 To publish to a external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [Personal Access Token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md)) to connect to the feed.
 
+# [Designer](#tab/designer)
+
+To publish the files you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
+
+- **Command:** Publish
+- **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
+- **Feed location:** You can publish to an Azure Artifacts feed in this organization or in another organization.
+- **Destination feed:** Select the feed you want to publish to.
+- **Package name:** Select an existing package (to publish a new version of that package) or enter a new package name (to publish the first version of a new package).
+
+![Example Universal Packages build step screenshot](_img/universal-packages/publish.png)
+
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+
+To publish to a external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [Personal Access Token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md)) to connect to the feed.
+
 ---
 
 <a name="package-versioning"></a>
@@ -76,11 +76,7 @@ In Universal Packages, a particular package is identified by its name and versio
 
 The Universal Packages task will automatically select the next major, minor, or patch version for you when you publish a new package - just set the appropriate radio button 
 
-# [Web](#tab/web)
-
-In the **Universal Packages** task you configured above, choose the appropriate **Version** increment option.
-
-#  [YAML](#tab/yaml)
+# [YAML](#tab/yaml)
 
 In the **Universal Packages** snippet you added above, add the `versionOption` key with the `major`, `minor`, `patch`, or `custom` value. If you enter the `custom` value, you must also provide the `versionPublish` key.
 
@@ -96,6 +92,10 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
     versionPublish: <Package version>
     packagePublishDescription: '<Package description>'
 ```
+
+# [Designer](#tab/designer)
+
+In the **Universal Packages** task you configured above, choose the appropriate **Version** increment option.
 
 ---
 

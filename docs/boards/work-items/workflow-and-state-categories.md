@@ -51,7 +51,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <th width="16%">Test WITs </th>
 </tr>
 <tr valign="top" >
-<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or task board maps to a Proposed state. </td> 
+<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or taskboard maps to a Proposed state. </td> 
 <td>New</td> 
 <td>New<br/>Approved<br/>To Do (Task) </td> 
 <td>Proposed<br/></td> 

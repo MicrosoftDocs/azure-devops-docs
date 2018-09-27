@@ -89,7 +89,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 Select the condition for running this task:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md)
+* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../build/options.md#job-cancel-timeout).

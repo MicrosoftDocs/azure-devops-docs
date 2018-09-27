@@ -150,7 +150,7 @@ Once you've defined a plan, you can further customize it.
 	- Edit the teams you've selected and their backlog level  
 	- Set field criteria to further limit the work items that will appear on the plan 
 	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or task board](../../boards/boards/customize-cards.md).  
+	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
 	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 

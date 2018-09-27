@@ -1,7 +1,7 @@
 ---
 title: Update and monitor your scrum taskboard
 titleSuffix: Azure Boards and TFS
-description: Implement scrum using the sprint task board in Azure Boards & Team Foundation Server
+description: Implement scrum using the sprint taskboard in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
@@ -17,17 +17,17 @@ ms.date: 06/21/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint task board.
+Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint taskboard.
 
-Your task board provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.
+Your taskboard provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.
 
 In this topic you'll learn how to:
 
 > [!div class="checklist"]
-> * Open the sprint task board for your team
-> * Customize your task board
-> * Use your task board to review progress during daily scrum meetings
-> * Filter and group work items on your task board
+> * Open the sprint taskboard for your team
+> * Customize your taskboard
+> * Use your taskboard to review progress during daily scrum meetings
+> * Filter and group work items on your taskboard
 > * Update the status of tasks through drag-and-drop
 > * Update remaining work
 > * Close out a sprint
@@ -35,7 +35,7 @@ In this topic you'll learn how to:
 If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that now.
 
 > [!NOTE]
-> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).
+> Your taskboard is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
@@ -94,16 +94,16 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ---
 
-## Customize the task board
-Each team can customize their task board in the following ways:
-- [Customize cards](../../boards/boards/customize-cards.md) that appear on the task board to show additional fields.
-- [Show bugs on the task board](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
+## Customize the taskboard
+Each team can customize their taskboard in the following ways:
+- [Customize cards](../../boards/boards/customize-cards.md) that appear on the taskboard to show additional fields.
+- [Show bugs on the taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and taskboards at the same level as tasks.
 
-An administrator can customize the task board for all teams in the following ways:
+An administrator can customize the taskboard for all teams in the following ways:
 
 ::: moniker range="vsts"
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- [Add a custom work item type to the taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -113,7 +113,7 @@ An administrator can customize the task board for all teams in the following way
 
 <a id="review-progress">  </a>
 ## Review progress in daily scrum meetings
-During your daily Scrum, you can filter your task board to help focus on items of interest.
+During your daily Scrum, you can filter your taskboard to help focus on items of interest.
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
@@ -138,7 +138,7 @@ With this view, you can quickly see which items are nearing completion and which
 0.	You can **Collapse All** or **Expand All** rows, and selectively expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
 	> [!div class="mx-imgBorder"]
-	> ![Task board, collapsed, show items](_img/taskboard/group-items-all-taskboard-agile.png)
+	> ![taskboard, collapsed, show items](_img/taskboard/group-items-all-taskboard-agile.png)
 
 ::: moniker-end
 
@@ -169,7 +169,7 @@ With this view, you can focus on the work completed and the work remaining for e
 To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 > [!div class="mx-imgBorder"]
-> ![Task board, filter on a person](_img/taskboard/group-by-backlog-filter-on-person.png)
+> ![taskboard, filter on a person](_img/taskboard/group-by-backlog-filter-on-person.png)
 
 ::: moniker-end
 
@@ -223,13 +223,13 @@ Choose the **Group by People** option, and then select a specific team member, o
 
 <a id="update-tasks">  </a>
 ## Update tasks during the sprint cycle
-The task board makes quick work of updating both task status and remaining work.
+The taskboard makes quick work of updating both task status and remaining work.
 
 <a id="update-task-status">  </a>
 ### Update task status
 Simply drag tasks to a downstream column to reflect if they are in progress or completed.
 
-![Task board, update task status](_img/ALM_TB_Move_To_Done.png)
+![taskboard, update task status](_img/ALM_TB_Move_To_Done.png)
 
 When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
 
@@ -238,11 +238,11 @@ Updating *Remaining Work*, preferably prior to the daily Scrum meeting, helps th
 
 Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the remaining work for the task. *Remaining Work* should always reflect exactly how much work the team member estimates is remaining to complete the task.
 
-![Task board, update task remaining work](_img/ALM_TB_UpdateRWork.png)
+![taskboard, update task remaining work](_img/ALM_TB_UpdateRWork.png)
 
 
 <a id="close-sprint">  </a>
-## Close out a sprint, update your task board
+## Close out a sprint, update your taskboard
 At the end of the sprint, you'll want to perform these final tasks:
 *	Zero out *Remaining Work* of all completed tasks
 *	Update the status of all completed backlog items
@@ -263,22 +263,22 @@ Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, mana
 
 
 ## Related articles
-As you can see, the task board provides a lot of support for your Scrum activities. For related topics, see:
+As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
 *	[Scrum best practices](best-practices-scrum.md)
 *	[Sprint planning](assign-work-sprint.md)
 *	[Schedule sprints](define-sprints.md)
-*	[Customize cards on the task board](../../boards/boards/customize-cards.md#task-board)
+*	[Customize cards on the taskboard](../../boards/boards/customize-cards.md#task-board)
 *	[Capacity planning](../sprints/set-capacity.md)
 
 <!---
 <a id="task-board-controls">  </a>
-###Task board controls
+### Taskboard controls
 
 | Control               | Function                                    |
 |-----------------------|---------------------------------------------|
 | Backlog               | [Switch to sprint backlog view](assign-work-sprint.md)                         |
-| Board                 | Switch to task board view                   |
+| Board                 | Switch to taskboard view                   |
 | Capacity              | [Switch to Capacity planning](assign-work-sprint.md#set-capacity)   |
 | Group by Stories/People   | Switch grouping of cards based on backlog items or team members                        |
 | Person                    | Filter tasks to show items assigned to All or a selected team member            |
@@ -291,15 +291,15 @@ See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md
 
 
 <a id="reduce-task-board-items">  </a>
-## Reduce the number of items on the task board
+## Reduce the number of items on the taskboard
 
-If you exceed the number of items allowed on your task board, you'll receive a message indicating that you need to reduce the number of items. The maximum number of items includes work item types included in the Requirement and Task categories.
+If you exceed the number of items allowed on your taskboard, you'll receive a message indicating that you need to reduce the number of items. The maximum number of items includes work item types included in the Requirement and Task categories.
 
-You can reduce the number of items on the task board by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item.
+You can reduce the number of items on the taskboard by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item.
 
 ::: moniker range=">= tfs-2017"
 
-- From the task board, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
 ![multi-select items from the sprint backlog](_img/sprint-backlog-multi-select-non-sequential-items.png)
@@ -307,14 +307,14 @@ You can reduce the number of items on the task board by moving them to the backl
 
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
-- From the task board, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
    <img src="_img/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- From the task board, drag the PBI or user story from the first column onto the backlog or future sprint.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint.
 
 - From the sprint backlog, drag an item back to the backlog or to another sprint.
 

@@ -20,7 +20,7 @@ ms.date: 07/07/2018
 The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum). 
 
 
-## Sprint backlogs and task boards
+## Sprint backlogs and taskboards
 
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
