@@ -14,7 +14,7 @@ For more details, see the extension's description
 in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 <a name="trial-expired"></a>
-*	If you're using an Azure DevOps organization, and you started a free extension trial, 
+*	If you're using an organization, and you started a free extension trial, 
 your trial might have expired. To check whether your trial expired:
 
 	0.	On your organization toolbar, go to **Users**.
@@ -22,7 +22,7 @@ your trial might have expired. To check whether your trial expired:
 	0.	Check for an expiration message to find if or when your extension expired.
 
 <a name="extension-not-assigned"></a>
-*	If you're using an Azure DevOps organization, and you paid for this extension, 
+*	If you're using an organization, and you paid for this extension, 
 make sure that you assigned this extension to users.
 
 	0.	On your organization toolbar, go to **Users**.

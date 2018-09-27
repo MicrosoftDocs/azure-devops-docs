@@ -12,7 +12,7 @@ ms.date: 09/17/2018
 monikerRange: 'vsts'
 ---
 
-# Find or change your Azure DevOps organization location (region)
+# Find or change your organization location (region)
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -26,7 +26,7 @@ For information on region availability, see [Products available by region](https
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -37,7 +37,7 @@ For information on region availability, see [Products available by region](https
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in as the organization owner to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in as the organization owner to your organization (```https://dev.azure.com/{yourorganization}```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
