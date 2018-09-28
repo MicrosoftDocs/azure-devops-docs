@@ -29,7 +29,7 @@ You can organize your build or deployment pipeline into jobs. Every build or dep
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release management deployment processes.
+> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release deployment processes.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ At run time (when either the build or release pipeline is triggered), each job i
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> You must install Update 2 to use jobs in TFS 2017, and they are available only in release management deployment processes.
+> You must install Update 2 to use jobs in TFS 2017, and they are available only in release deployment processes.
 > Jobs in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
 
 ::: moniker-end

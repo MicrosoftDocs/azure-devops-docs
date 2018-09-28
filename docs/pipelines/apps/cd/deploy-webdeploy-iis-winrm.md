@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 instead of WinRM. Deployment groups are currently in preview for some users in Azure Pipelines. They are not yet available in TFS.
 
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
-Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Release Management.
+Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Azure Pipelines.
 A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run Powershell scripts remotely in order to deploy the Web Deploy package.
 
 ## Get set up
