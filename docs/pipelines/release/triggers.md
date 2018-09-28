@@ -1,6 +1,6 @@
 ---
 title: Release triggers for stages, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand triggers in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
@@ -29,7 +29,7 @@ and the latter through [stage triggers](#env-triggers) - both in a release pipel
 
 If you specify [certain types](artifacts.md#sources) of
 artifacts in a release pipeline, you can enable continuous deployment.
-This instructs Release Management to create
+This instructs Azure Pipelines to create
 new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
 and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
@@ -114,7 +114,7 @@ when a release is created by a continuous deployment trigger, based on:
 
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically start a new deployment. Unlike scheduled
+  Azure Pipelines will automatically start a new deployment. Unlike scheduled
   release triggers, you cannot configure multiple schedules for stage triggers.
   Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
 

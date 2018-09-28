@@ -91,7 +91,7 @@ When it comes to security, there are different best practices and levels of perm
 
 ## Release permissions
 
-Permissions in Release Management follow a hierarchical model.
+Permissions for releases follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual release pipeline.
 Some of the permissions can also be overridden on a specific
@@ -113,7 +113,7 @@ To specify security settings for individual stages in a release pipeline, open
 the **Permissions** dialog by choosing **Security** on the shortcut menu that opens
 from the ellipses (**...**) on a stage in the release pipeline editor.
 
-The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or stage level.
+The following permissions are defined for releases. The scope column explains whether the permission can be set at the project, release pipeline, or stage level.
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | Scopes |

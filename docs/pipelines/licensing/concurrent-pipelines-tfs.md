@@ -1,6 +1,6 @@
 ---
 title: Parallel jobs in Team Foundation Server
-description: Learn about the Release Management parallel jobs pricing and availability in Team Foundation Server (TFS)
+description: Learn about the parallel jobs pricing and availability in Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.prod: devops
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015 < vsts'
 
 **[Azure Pipelines](concurrent-jobs-vsts.md) | TFS 2018 | TFS 2017**
 
-This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 
@@ -113,12 +113,12 @@ To approve releases, a TFS CAL is not necessary; any user with [stakeholder acce
 
 No, on TFS you don't need parallel jobs to run builds. You can run as many builds as you want at the same time for no additional charge.
 
-<h3 id="tfs_before_2017">Do I need parallel jobs to use release management in versions before TFS 2017?</h3>
+<h3 id="tfs_before_2017">Do I need parallel jobs to manage releases in versions before TFS 2017?</h3>
 
 No.
 
-In TFS 2015, so long as your users have a TFS CAL, they can use release management for no additional charge in trial mode. We called it "trial mode" to indicate that we would eventually charge for release management. Despite this label, we fully support release management in TFS 2015.
+In TFS 2015, so long as your users have a TFS CAL, they can manage releases for no additional charge in trial mode. We called it "trial mode" to indicate that we would eventually charge for managing releases. Despite this label, we fully support managing releases in TFS 2015.
 
-### How is release management licensed in Azure Pipelines?
+### How are releases licensed in Azure Pipelines?
 
 See [Parallel jobs in Azure Pipelines](concurrent-jobs-vsts.md).

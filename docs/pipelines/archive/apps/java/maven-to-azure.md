@@ -127,7 +127,7 @@ A: Yes.
 
 ### How do I continually deliver my app and manage my releases?
 
-[Learn about Release Management](../../../release/index.md)
+[Learn about Azure Pipelines](../../../release/index.md)
 
 
 [!INCLUDE [temp](../../../_shared/qa-definition-common-all-platforms.md)]

@@ -297,7 +297,7 @@ for different purposes separately if required.
 <a name="use-build"></a>
 #### Q: How do I do this with Build? 
 
-**A**: The jobs capability is currently available only in Release Management. It will become available in Build soon.
+**A**: The jobs capability is currently available only in Azure Pipelines releases. It will become available for builds soon.
 
 <a name="vst-task-changes"></a>
 #### Q: Does the Visual Studio Test version 1 task behave the same way as the version 2 task?
