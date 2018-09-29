@@ -210,7 +210,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
 
 ### Q: Why use release stages to run tests? 
 
-**A:** Release Management offers a compelling orchestration workflow
+**A:** Azure Pipelines offers a compelling orchestration workflow
 to obtain test binaries as artifacts and run tests. This workflow shares
 the same concepts used in the scheduled testing workflow, meaning users
 running tests in scheduled workflow will find it easy to adapt; for 
@@ -261,7 +261,7 @@ method and report the appropriate results.
 ### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 
 **A:** The current capability is optimized for a single team build
-to be tested on-demand using a Release Management workflow.
+to be tested on-demand using an Azure Pipelines workflow.
 We will evaluate support for multi-artifact releases, including
 non-Azure Pipelines artifacts such as Jenkins, based on user feedback.
 
@@ -307,8 +307,7 @@ or [Parallel jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
 
-To enable multiple different test runs to execute in parallel, set the Release Management
-stage trigger option for
+To enable multiple different test runs to execute in parallel, set the Azure Pipelines stage trigger option for
 [behavior when multiple releases are waiting to be deployed](../../pipelines/release/triggers.md#env-triggers)
 as follows:
 

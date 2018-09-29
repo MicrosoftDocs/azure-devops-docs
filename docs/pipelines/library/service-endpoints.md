@@ -554,19 +554,19 @@ Other service connection types and tasks can be installed in Azure Pipelines
 and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
-* [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
+* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with Azure Pipelines
-  Release Management through a TFS service connection
+  through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
-* [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
+* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
   This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
-  by using Release Management. See
+  by using Azure Pipelines. See
   [TeamCity](../release/artifacts.md#teamcitysource)
   for more details.
 
