@@ -1,6 +1,6 @@
 ---
 title: Releases in Azure Pipelines and Team Foundation Server
-description: DevOps CI CD - Understand releases in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,7 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Releases in Release Management
+# Releases in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -28,7 +28,7 @@ and actions in the release pipeline, such as the
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
 queuing options. There can be multiple releases from one released pipeline, and information
-about each one is stored and displayed in Release Management for the specified
+about each one is stored and displayed in Azure Pipelines for the specified
 [retention period](../policies/retention.md#release).  
 
 A **deployment** is the action of running the [tasks](../process/tasks.md)

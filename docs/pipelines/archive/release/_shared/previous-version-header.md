@@ -7,7 +7,7 @@ ms.topic: include
 ![horizontal-line](../_img/horizontal-line.png)
 
 ![information](../_img/info1.png)
-**A newer version of Release Management is available**
+**A newer version of is available**
 
 Release Management features have been integrated into **Azure Pipelines** and
 Team Foundation Server (TFS).

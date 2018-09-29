@@ -1,6 +1,6 @@
 ---
-title: Stages in Release Management
-description: DevOps CI CD - Understand stages in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Stages in Azure Pipelines
+description: DevOps CI CD - Understand stages in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: devops
 ms.technology: devops-cicd
@@ -34,7 +34,7 @@ a cloud, or multiple clouds. In fact, you can even use a stage to represent
 shipping the software to an app store, or the manufacturing process of a boxed product.
 
 Second, you must be able to deploy to a stage **independently** of other stages in the pipeline.
-For example, your pipeline might consist of two stages A and B, and Release Management could deploy Release 2
+For example, your pipeline might consist of two stages A and B, and Azure Pipelines could deploy Release 2
 to A and Release 1 to B. If you make any assumptions in B about the existence of a certain release in A, the
 two stages are not independent.
 

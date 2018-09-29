@@ -96,8 +96,8 @@ The supported options for these scenarios are:
     to specify the location. The user must manually check for 
     new versions of the agent and update the test machines.<p /> 
 * **Continuous integration/continuous deployment workflows**
-  - Build/deploy/test tasks are supported in both Build and 
-    Release Management workflows.<p /> 
+  - Build/deploy/test tasks are supported in both build and 
+    release workflows.<p /> 
 * **Machine group configuration**
   - Only Windows-based machines are supported inside a 
     machine group for build/deploy/test tasks. Linux, macOS, or 

@@ -1,6 +1,6 @@
 ---
-title: Variables in Release Management
-description: Understand variables in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Release variables in Azure Pipelines
+description: Understand release variables in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: devops
 ms.technology: devops-cicd
@@ -71,7 +71,7 @@ Using custom variables at project, release pipeline, and stage scope helps you t
 
   >The values of hidden (secret) variables are stored securely on
   the server and cannot be viewed by users after they are saved.
-  During a deployment, the Release Management service
+  During a deployment, the Azure Pipelines release service
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
@@ -100,7 +100,7 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call Azure Pipelines REST APIs. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
 > | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/dev.azure.com/fabrikam/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
@@ -220,7 +220,7 @@ See also [Artifact source alias](artifacts.md#source-alias)
 
 ### Primary artifact variables
 
-You designate one of the artifacts as a primary artifact in a release pipeline. For the designated primary artifact, Release Management populates the following variables.
+You designate one of the artifacts as a primary artifact in a release pipeline. For the designated primary artifact, Azure Pipelines populates the following variables.
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Same as |

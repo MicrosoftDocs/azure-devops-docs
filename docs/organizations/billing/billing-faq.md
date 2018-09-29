@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 09/28/2018
 monikerRange: 'vsts'
 ---
 
@@ -38,7 +38,7 @@ A: Almost all Azure subscriptions can be used. We support Azure subscriptions co
 [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by
 Cloud Solution Providers (CSPs), Azure subscriptions set up through Microsoft Open License resellers, and Pay-As-You-Go Azure subscriptions. You can even buy using Azure subscriptions that Visual Studio subscribers set up as a subscriber benefit. (But no, you can't use your monthly credit to pay for more Visual Studio subscriptions.)
 
-The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/free-trial/).
+The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/free-trial/), Government, or National clouds.
 
 ### Q: Can I use the monthly Azure credits from my Visual Studio subscription to buy Azure DevOps?
 
