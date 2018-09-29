@@ -1,6 +1,6 @@
 #### Q: How do I find the region where my organization is located? 
 
-A: [Find your organization's region](../organizations/accounts/change-organization-location.md).
+A: [Find your organization's region](/azure/devops/organizations/accounts/change-organization-location).
 
 #### Q: How do I change my project name, organization location, or process? 
 

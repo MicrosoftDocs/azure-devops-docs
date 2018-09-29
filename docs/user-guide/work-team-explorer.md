@@ -88,13 +88,31 @@ From the **Connect** page, you can select the projects you want to connect to an
 > From the Visual Studio plug-in, you can [Create a project](../organizations/projects/create-project.md). The ability to create projects is not supported from the Eclipse plug-in. You can, however, create projects from the web portal/collection administration context. 
 
 
-
 ### Home 
-- [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)
+
 Open [Web portal](../project/navigation/index.md) 
 Open [Task Board](../boards/sprints/task-board.md)  
 
-### Work
+### Souce control: Git and TFVC 
+
+The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
+
+####  Git
+- [Create a new repo](../repos/git/creatingrepo.md)  
+- [Clone an existing repo](../repos/git/clone.md)  
+- **Changes**: [Save work with commits](../repos/git/commits.md)
+- **Branches**: [Create work in branches](../repos/git/branches.md)
+- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)
+- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
+
+#### TFVC
+- [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)  
+- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
+- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) 
+
+
+### Work items
 - [Add work items](../boards/backlogs/add-work-items.md)
 - [Use the query editor to list and manage queries](../boards/queries/using-queries.md)
 - [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)
@@ -103,28 +121,13 @@ Open [Task Board](../boards/sprints/task-board.md)
 - [Email query results list using Outlook](../boards/queries/share-plans.md)
 - [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only)
 
-### Build 
+### Builds 
 - [Create build pipelines](../pipelines/tasks/index.md)
 - [View and manage builds](../pipelines/overview.md)
 - [Manage the build queue](../pipelines/agents/pools-queues.md)
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
-
-### Git and TFVC 
-
-The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
-
-####  Git   
-- **Changes**: [Save work with commits](../repos/git/commits.md)
-- **Branches**: [Create work in branches](../repos/git/branches.md)
-- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)
-- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
-
-#### TFVC
-- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
-- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
-- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) 
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"    
