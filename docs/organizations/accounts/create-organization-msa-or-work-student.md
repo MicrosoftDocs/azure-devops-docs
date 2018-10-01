@@ -8,21 +8,21 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Create your organization
+# Quickstart: Create your organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create an organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
+To create an organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site.
 
-In this quickstart, you learn how to upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
+In this quickstart, you learn how to upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? [Get Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs), or learn [how to install and set up Team Foundation Server](/tfs/server/install/get-started). 
 
-> [Who can join for free?  What do users get in Azure DevOps Services?](faq-create-organization.md#free-users)
+> [Who can join for free?  What do users get in Azure DevOps?](faq-create-organization.md#free-users)
 
 <a name="how-sign-up"></a>
 
@@ -43,23 +43,23 @@ In this quickstart, you learn how to upload and share code in free, unlimited pr
 
 	  2. You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
-	  3. To use existing on-premises identities with Azure DevOps Services, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+	  3. To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 
-## How does Azure AD control access to Azure DevOps Services?
+## How does Azure AD control access to Azure DevOps?
 
-Azure DevOps Services authenticates users through your Azure AD, so that only users who are members in that directory can access your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your organization.
+Azure DevOps authenticates users through your Azure AD, so that only users who are members in that directory can access your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
 [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
 
 <a name="SignIn"></a>
 
-## Create your organization and sign up for Azure DevOps Services
+## Create your organization and sign up for Azure DevOps
 
-1. Go to [Azure DevOps Services](https://go.microsoft.com/fwlink/?LinkId=307137), and use either of the following:
+1. Go to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137), and use either of the following:
 
-	* **Microsoft account**: If you're a Visual Studio subscriber and get Azure DevOps Services as a benefit, use the Microsoft account email address that's associated with your subscription. 
+	* **Microsoft account**: If you're a Visual Studio subscriber and get Azure DevOps as a benefit, use the Microsoft account email address that's associated with your subscription. 
 
 	* **Azure AD**: Use your work or school account email address. Depending on the account you use, your sign-in page might vary from the page shown as follows:
 
@@ -96,7 +96,7 @@ Without Azure AD, you're solely responsible for controlling organization access.
 
     **Microsoft account and Azure AD**: 
     
-    Your first project is created in Azure DevOps Services as *MyFirstProject* and uses Agile as your default work item process to organize your work.
+    Your first project is created in Azure DevOps as *MyFirstProject* and uses Agile as your default work item process to organize your work.
 	
     Select **Change details** to [rename your project, change the organization location, or select another process, such as Scrum](faq-create-organization.md#organization-location).
 	
@@ -114,12 +114,12 @@ Without Azure AD, you're solely responsible for controlling organization access.
 	To sign in to your organization at any time, go to `https://<yourorganization>.visualstudio.com`.
 
 	> [!NOTE]
-	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Azure DevOps Services as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in Azure DevOps Services.
+	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Azure DevOps as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in Azure DevOps.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Manage users and access](add-organization-users-from-user-hub.md)
+> [Manage users and access](add-organization-users.md)
 > or
 > [!div class="nextstepaction"]
 > [Create project](../projects/create-project.md)

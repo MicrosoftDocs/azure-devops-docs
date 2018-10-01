@@ -12,7 +12,7 @@ ms.date: 09/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Change the number of paid users for an Azure DevOps extension
+# Change the number of paid extension users for Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 

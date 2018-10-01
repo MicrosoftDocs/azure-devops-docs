@@ -13,7 +13,7 @@ ms.topic: conceptual
 monikerRange: 'vsts'
 ---
 
-# Define your organizations and projects
+# Define your organizations and projects in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
@@ -90,4 +90,4 @@ If the projects stored in multiple repos work on independent schedules or proces
 > or
 > [Create a project](../organizations/projects/create-project.md)
 
-Or, after you've created a new organization and project in Azure DevOps, you can begin sharing your code with others: [Code with git](code-with-git.md).
+Or, after you've created a new organization and project, you can begin sharing your code with others: [Code with git](code-with-git.md).

@@ -12,9 +12,9 @@ A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases 
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes. You can use these prepaid funds to pay for: 
+A:	Yes. You can use these prepaid funds to pay for the following:
 
-*	[Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
+*	[Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
 *	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops).
 *	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs).
 *   [Xamarin University](https://www.xamarin.com/university).

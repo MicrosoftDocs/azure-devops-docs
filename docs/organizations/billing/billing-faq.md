@@ -1,6 +1,6 @@
 ---
 title: Billing frequently asked questions (FAQ) 
-description: Find answers to frequently asked questions about billing for your Azure DevOps organization, which is managed in the Azure portal
+description: Find answers to frequently asked questions about billing for your organization, which is managed in the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [Azure DevOps billing overview](overview.md).
+Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [billing overview](overview.md).
 
 You have to set up billing when you need more than the *free tier* of resources in your organization:
 
@@ -59,7 +59,7 @@ to pay for Azure DevOps. Before you make purchases by using this type of Azure s
 
 A: Not at all. If you only want to buy Azure DevOps via Azure, you can do that.
 
-### Q: Can tags be applied to Azure DevOps organizations from the Azure portal?
+### Q: Can tags be applied to organizations from the Azure portal?
 
 A: No, but this feature is in our backlog to add in the future.
 
@@ -79,7 +79,7 @@ If you can't access the Azure Enterprise Portal, inquire within your organizatio
 
 ### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?
 
-A: Yes, you can use these prepaid funds for all Azure DevOps Services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
+A: Yes, you can use these prepaid funds for all Azure DevOps services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 The only exclusion is for extensions offered by partners in the Visual Studio Marketplace. These charges will appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that are not eligible for Azure Monetary Commitment funds) will trigger an overage invoice.
 
@@ -114,14 +114,14 @@ A: If you're the owner or contributor for the Azure subscription used for billin
 
 ### Q: Why do I no longer see Team Projects in the Azure portal?
 
-A: Starting September 28th, 2018 you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create an Azure DevOps project](https://azure.microsoft.com/en-us/features/devops-projects/).
+A: Starting September 28th, 2018 you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/en-us/features/devops-projects/).
 
 ### Q: Why is my organization already linked to an Azure subscription?
 
 A: This happens if someone already set up billing for your organization, either through the Azure portal or while purchasing something for this organization via the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
 
-### Q: Can I use the same Azure subscription for billing across multiple Azure DevOps organizations?
+### Q: Can I use the same Azure subscription for billing across multiple organizations?
 
 A: Yes, you can use the same Azure subscription for billing across multiple organizations. But you can't link a single organization to multiple Azure subscriptions.
 

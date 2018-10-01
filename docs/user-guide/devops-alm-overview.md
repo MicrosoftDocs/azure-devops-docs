@@ -10,7 +10,6 @@ ms.date: 09/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # DevOps overview for Azure DevOps Services and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
