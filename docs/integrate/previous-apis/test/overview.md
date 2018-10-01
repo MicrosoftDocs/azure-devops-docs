@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Test Overview | REST API Reference for Team Foundation Server
 description: Work with test management programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 82EB89BA-B237-453B-8F15-E2747458C790
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Test Management
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 

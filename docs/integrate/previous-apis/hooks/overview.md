@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Service Hook Overview | REST API Reference for Team Foundation Server
 description: Work with service hooks programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 9AFC70D7-D27B-45EF-A374-4A7283BF1E4C
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Service hooks
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 
