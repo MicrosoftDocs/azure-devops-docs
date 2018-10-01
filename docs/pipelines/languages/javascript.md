@@ -513,7 +513,7 @@ Add the following tasks to your build pipeline:
 
 * **bash**
   * **Type:** `inline`
-  * **Script:** `npx webpacj --config webpack.config.js`
+  * **Script:** `npx webpack --config webpack.config.js`
 
 ---
 
