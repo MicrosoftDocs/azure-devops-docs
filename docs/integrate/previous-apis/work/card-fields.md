@@ -4,7 +4,7 @@ description: Work with the fields on the cards in Kanban boards programmatically
 ms.assetid: C2E9062C-3C18-42BC-A057-794FD2F2BA35
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Card fields on a Kanban board
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 Use card fields to display work item fields on cards on Kanban boards.
@@ -38,11 +41,155 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 
 ### By ID
 
-[!code-REST [GET__boards__boardId__cards_json](./_data/GET__work_boards__boardId__cardsettings.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/cardsettings?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "cards": {
+    "Bug": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.State"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Severity"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarAndFullName",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "false"
+      }
+    ],
+    "Product Backlog Item": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.TeamProject"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.BusinessValue"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarOnly",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "true"
+      }
+    ]
+  }
+}
+```
+
 
 ### By name
 
-[!code-REST [GET__boards__boardName__cards_json](./_data/GET__work_boards__boardName__cardsettings.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardsettings?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "cards": {
+    "Bug": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.State"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Severity"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarAndFullName",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "false"
+      }
+    ],
+    "Product Backlog Item": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.TeamProject"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.BusinessValue"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarOnly",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "true"
+      }
+    ]
+  }
+}
+```
+
 
 ## Update card fields on a board
 <a name="updatecardfieldsonaboard" />
@@ -91,5 +238,141 @@ eventId: 3000
 }
 ```
 
-[!code-REST [PUT__boards__boardName__cards_json](./_data/PUT__work_boards__boardName__cardsettings.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardsettings?api-version=2.0-preview.1
+```
+```json
+{
+  "cards": {
+    "Bug": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.State"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Severity"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarAndFullName",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "false"
+      }
+    ],
+    "Product Backlog Item": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.TeamProject"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.BusinessValue"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarOnly",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "true"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "cards": {
+    "Bug": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.State"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Severity"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarAndFullName",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "false"
+      }
+    ],
+    "Product Backlog Item": [
+      {
+        "fieldIdentifier": "System.Title"
+      },
+      {
+        "fieldIdentifier": "System.ChangedBy"
+      },
+      {
+        "fieldIdentifier": "System.TeamProject"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.Priority"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Common.BusinessValue"
+      },
+      {
+        "fieldIdentifier": "System.AssignedTo",
+        "displayFormat": "AvatarOnly",
+        "displayType": "CORE"
+      },
+      {
+        "fieldIdentifier": "Microsoft.VSTS.Scheduling.Effort",
+        "displayType": "CORE"
+      },
+      {
+        "showEmptyFields": "true"
+      }
+    ]
+  }
+}
+```
+
 
