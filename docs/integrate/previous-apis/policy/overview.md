@@ -4,7 +4,7 @@ description: Work with policies programmatically using the REST APIs for Team Fo
 ms.assetid: c7fc7c92-075e-4bfc-8b66-9a9a5f28bdbd
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Policy
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]

@@ -4,7 +4,7 @@ description: Work with the charts on Kanban boards programmatically using the RE
 ms.assetid: b23c71d1-7c01-4c29-a48d-a64c6f7a5560
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Charts on a Kanban board
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -34,7 +37,26 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Query
 | api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__work_boards__boardName__charts](./_data/charts/GET__work_boards__boardName__charts.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "name": "cumulativeFlow",
+      "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+    }
+  ]
+}
+```
+
 
 ## Get a chart by name
 <a name="getachartbyname" />
@@ -55,7 +77,33 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 
-[!code-REST [GET__work_boards__boardName__charts_cumulativeFlow](./_data/charts/GET__work_boards__boardName__charts_cumulativeFlow.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts/cumulativeFlow?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "name": "cumulativeFlow",
+  "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
+  "settings": {
+    "startDate": null,
+    "hideIncomingColumn": false
+  },
+  "_links": {
+    "self": {
+      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+    },
+    "board": {
+      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
+    }
+  }
+}
+```
+
 
 ## Update a cumulative flow chart
 <a name="updateacumulativeflowchart" />
@@ -91,7 +139,43 @@ Content-Type: application/json
 | hideIncomingColumn	| bool	| false | Indicate if the CFD chart should hide the incoming column.
 | hideOutgoingColumn	| bool	| false | Indicate if the CFD chart should hide the outgoing column.
 
-[!code-REST [PATCH__work_boards__boardName__charts_cumulativeFlow](./_data/charts/PATCH__work_boards__boardName__charts_cumulativeFlow.json)]
+#### Sample request
+
+```
+PATCH mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts/cumulativeFlow?api-version=2.0-preview.1
+```
+```json
+{
+  "settings": {
+    "startDate": "2015-09-01T12:07:11Z",
+    "hideIncomingColumn": true,
+    "hideOutgoingColumn": true
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "name": "cumulativeFlow",
+  "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
+  "settings": {
+    "startDate": "2015-09-01T12:07:11Z",
+    "hideIncomingColumn": true,
+    "hideOutgoingColumn": true
+  },
+  "_links": {
+    "self": {
+      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+    },
+    "board": {
+      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
+    }
+  }
+}
+```
+
 
 
 ## Q&A

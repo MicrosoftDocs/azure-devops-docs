@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Work item tracking artifact uri query | REST API Reference for Team Foundation Server
 description: REST APIs for Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
@@ -13,6 +13,9 @@ ms.date: 04/27/2017
 ---
 
 # Work item tracking artifact uri query
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version3-2-preview.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -41,4 +44,34 @@ POST https://{instance}/_apis/wit/artifacturiquery?api-version={version}
 |:-----------|:---------
 | ArtifactUriQueryResult | work item reference linked to the artifact uri.
 
-[!code-REST [POST__wit_queryartifacturis_json](./_data/artifacturiquery/POST__wit_artifacturiquery.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/wit/artifacturiquery?api-version=3.2-preview
+```
+```json
+{
+  "artifactUris": [
+    "vstfs:///Git/Commit/3065bb47-8344-4370-982a-5183abf197fa%2F649107bd-ab35-4192-8584-601f64172f80%2F4800cfa0be564b1e606d6811e99e0380f765a9c4"
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "artifactUrisQueryResult": {
+    "vstfs:///Git/Commit/3065bb47-8344-4370-982a-5183abf197fa%2F649107bd-ab35-4192-8584-601f64172f80%2F4800cfa0be564b1e606d6811e99e0380f765a9c4": [
+      {
+        "id": 1,
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1"
+      },
+      {
+        "id": 2,
+        "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/2"
+      }
+    ]
+  }
+}
+```

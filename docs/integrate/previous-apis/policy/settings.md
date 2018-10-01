@@ -4,7 +4,7 @@ description: Work with policies programmatically using the REST APIs for Team Fo
 ms.assetid: e4b5513c-75ef-41e6-acd9-c0afee020894
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Policy type settings
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
@@ -53,7 +56,112 @@ This example request will alter a required reviewers policy so that it:
  * Prevents the pull request from being completed if it does not comply with policy (*isBlocking* is true)
 
 
-[!code-REST [RequiredReviewerSample](./_data/configurations/PUT__policy_configurations__configurationId_.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations/17?api-version=2.0-preview
+```
+```json
+{
+  "isEnabled": true,
+  "isBlocking": true,
+  "type": {
+    "id": "fd2167ab-b0be-447a-8ec8-39368250530e"
+  },
+  "settings": {
+    "requiredReviewerIds": [
+      "1d1dad71-f27c-4370-810d-838ec41efd41",
+      "13272ea3-92ef-46d1-b77e-608ebbf3428b"
+    ],
+    "filenamePatterns": [
+      "*/API*.cs",
+      "sql/tables/*"
+    ],
+    "addedFilesOnly": false,
+    "scope": [
+      {
+        "repositoryId": null,
+        "refName": "refs/heads/master",
+        "matchKind": "exact"
+      },
+      {
+        "repositoryId": null,
+        "refName": "refs/heads/releases/",
+        "matchKind": "prefix"
+      },
+      {
+        "repositoryId": "49c1d4d0-be28-4f20-9e0a-4ecfafc39257",
+        "refName": "refs/heads/adventureworks",
+        "matchKind": "exact"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "createdBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "createdDate": "2015-02-23T12:51:06.85754Z",
+  "isEnabled": true,
+  "isBlocking": true,
+  "isDeleted": false,
+  "settings": {
+    "requiredReviewerIds": [
+      "1d1dad71-f27c-4370-810d-838ec41efd41",
+      "13272ea3-92ef-46d1-b77e-608ebbf3428b"
+    ],
+    "filenamePatterns": [
+      "*/API*.cs",
+      "sql/tables/*"
+    ],
+    "addedFilesOnly": false,
+    "message": null,
+    "scope": [
+      {
+        "refName": "refs/heads/master",
+        "matchKind": "Exact",
+        "repositoryId": null
+      },
+      {
+        "refName": "refs/heads/releases/",
+        "matchKind": "Prefix",
+        "repositoryId": null
+      },
+      {
+        "refName": "refs/heads/adventureworks",
+        "matchKind": "Exact",
+        "repositoryId": "49c1d4d0-be28-4f20-9e0a-4ecfafc39257"
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+    },
+    "type": {
+      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+    }
+  },
+  "revision": 2,
+  "id": 17,
+  "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+  "type": {
+    "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
+    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+    "displayName": "Required reviewers"
+  }
+}
+```
+
 
 ## Minimum approval count policy
 **Policy type ID** = fa4e907d-c16b-4a4c-9dfa-4906e5d171dd
@@ -87,7 +195,76 @@ This example adds an approval count policy that:
  * Does not block the pull request from being completed (*isBlocking* is false)
      * The web interface warns the user on completion if the pull request does not comply with the policy
 
-[!code-REST [ApproverCountSample](./_data/configurations/POST__policy_configurations2.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview
+```
+```json
+{
+  "isEnabled": true,
+  "isBlocking": false,
+  "type": {
+    "id": "fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
+  },
+  "settings": {
+    "minimumApproverCount": 1,
+    "creatorVoteCounts": false,
+    "scope": [
+      {
+        "repositoryId": null,
+        "refName": "refs/heads/master",
+        "matchKind": "exact"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "createdBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "createdDate": "2015-02-23T12:51:06.8887894",
+  "isEnabled": true,
+  "isBlocking": false,
+  "settings": {
+    "minimumApproverCount": 1,
+    "creatorVoteCounts": false,
+    "scope": [
+      {
+        "refName": "refs/heads/master",
+        "matchKind": "Exact",
+        "repositoryId": null
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18"
+    },
+    "type": {
+      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
+    }
+  },
+  "revision": 1,
+  "id": 18,
+  "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18",
+  "type": {
+    "id": "fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
+    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
+    "displayName": "Minimum approval count"
+  }
+}
+```
+
 
 ## Build policy
 **Policy type ID** = 0609b952-1397-4640-95ec-e00a01b2c241
@@ -124,7 +301,74 @@ This example adds a build policy that:
  * Does not block the pull request from being completed (*isBlocking* is false)
      * The web interface warns the user on completion if the pull request does not comply with the policy
 
-[!code-REST [BuildSample](./_data/configurations/POST__policy_configurations3.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview
+```
+```json
+{
+  "isEnabled": true,
+  "isBlocking": false,
+  "type": {
+    "id": "0609b952-1397-4640-95ec-e00a01b2c241"
+  },
+  "settings": {
+    "buildDefinitionId": 5,
+    "scope": [
+      {
+        "repositoryId": null,
+        "refName": "refs/heads/features/",
+        "matchKind": "prefix"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "createdBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "createdDate": "2015-02-23T12:51:06.935666",
+  "isEnabled": true,
+  "isBlocking": false,
+  "settings": {
+    "buildDefinitionId": 5,
+    "scope": [
+      {
+        "refName": "refs/heads/features/",
+        "matchKind": "Prefix",
+        "repositoryId": null
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
+    },
+    "type": {
+      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
+    }
+  },
+  "revision": 1,
+  "id": 19,
+  "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
+  "type": {
+    "id": "0609b952-1397-4640-95ec-e00a01b2c241",
+    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
+    "displayName": "Build"
+  }
+}
+```
+
 
 ## Work item linking policy
 **Policy type ID** = 40e92b44-2fe1-4dd6-b3d8-74a9c21d0c6e
@@ -151,7 +395,72 @@ This example adds a work item policy that:
  * Does not block the pull request from being completed (*isBlocking* is false)
      * The web interface warns the user on completion if the pull request does not comply with the policy
 
-[!code-REST [ApproverCountSample](./_data/configurations/POST__policy_configurations4.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview
+```
+```json
+{
+  "isEnabled": true,
+  "isBlocking": false,
+  "type": {
+    "id": "40e92b44-2fe1-4dd6-b3d8-74a9c21d0c6e"
+  },
+  "settings": {
+    "scope": [
+      {
+        "repositoryId": null,
+        "refName": "refs/heads/master",
+        "matchKind": "exact"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "createdBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "createdDate": "2015-02-23T12:51:06.935666",
+  "isEnabled": true,
+  "isBlocking": false,
+  "settings": {
+    "scope": [
+      {
+        "refName": "refs/heads/master",
+        "matchKind": "Exact",
+        "repositoryId": null
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
+    },
+    "type": {
+      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/40e92b44-2fe1-4dd6-b3d8-74a9c21d0c6e"
+    }
+  },
+  "revision": 1,
+  "id": 19,
+  "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
+  "type": {
+    "id": "40e92b44-2fe1-4dd6-b3d8-74a9c21d0c6e",
+    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/40e92b44-2fe1-4dd6-b3d8-74a9c21d0c6e",
+    "displayName": "Work item linking"
+  }
+}
+```
+
 
 ## Merge strategy policy
 **Policy type ID** = fa4e907d-c16b-4a4c-9dfa-4916e5d171ab
@@ -177,7 +486,74 @@ This example adds a merge strategy policy that:
 
  * Ensures all pull requests going into master are squash merged
 
-[!code-REST [MergeStrategySample](./_data/configurations/POST__policy_configurations5.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview
+```
+```json
+{
+  "isEnabled": true,
+  "isBlocking": true,
+  "type": {
+    "id": "fa4e907d-c16b-4a4c-9dfa-4916e5d171ab"
+  },
+  "settings": {
+    "useSquashMerge": true,
+    "scope": [
+      {
+        "repositoryId": "1d1dad71-f27c-4370-810d-838ec41efd41",
+        "refName": "refs/heads/master",
+        "matchKind": "exact"
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "createdBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "createdDate": "2015-02-23T12:51:06.935666",
+  "isEnabled": true,
+  "isBlocking": true,
+  "settings": {
+    "useSquashMerge": true,
+    "scope": [
+      {
+        "refName": "refs/heads/master",
+        "matchKind": "Exact",
+        "repositoryId": "1d1dad71-f27c-4370-810d-838ec41efd41"
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
+    },
+    "type": {
+      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab"
+    }
+  },
+  "revision": 1,
+  "id": 19,
+  "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
+  "type": {
+    "id": "fa4e907d-c16b-4a4c-9dfa-4916e5d171ab",
+    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4916e5d171ab",
+    "displayName": "Require a merge strategy"
+  }
+}
+```
+
 
 ## Git ref scope
 <a name="gitrefscope" />

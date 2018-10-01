@@ -4,7 +4,7 @@ description: Work with Kanban board Card Styling Rules programmatically using th
 ms.assetid: B1E4A7C6-E04C-42B9-8A55-0B18E00970EA
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Card rules
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 Use card styling rules to visually draw attention towards specific cards on kanban boards.
@@ -38,11 +41,257 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 
 ### By ID
 
-[!code-REST [GET__boards__boardId__cardrules_json](./_data/GET__work_boards__boardId__cardrulesettings.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/cardrulesettings?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/cardrulesettings",
+  "rules": {
+    "fill": [
+      {
+        "name": "High Priority",
+        "isEnabled": "True",
+        "filter": "[System.Title] contains 'Shopping'",
+        "clauses": [
+          {
+            "fieldName": "System.Title",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "Shopping"
+          }
+        ],
+        "settings": {
+          "background-color": "#EFFFDC",
+          "title-color": "#000000"
+        }
+      },
+      {
+        "name": "P1-LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [Microsoft.VSTS.Common.Priority] = '1' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "Microsoft.VSTS.Common.Priority",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "1"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 3,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#F7CBCB",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      },
+      {
+        "name": "LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#FFBA69",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      }
+    ],
+    "tagStyle": [
+      {
+        "name": "LSI",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#FBFD52",
+          "color": "#000000"
+        }
+      },
+      {
+        "name": "Blocked",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#EC001D",
+          "color": "#FFFFFF"
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/cardrulesettings"
+    },
+    "cardsettings": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/cardsettings"
+    },
+    "board": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00"
+    }
+  }
+}
+```
+
 
 ### By name
 
-[!code-REST [GET__boards__boardName__cardrules_json](./_data/GET__work_boards__boardName__cardrulesettings.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardrulesettings?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings",
+  "rules": {
+    "fill": [
+      {
+        "name": "High Priority",
+        "isEnabled": "True",
+        "filter": "[System.Title] contains 'Shopping'",
+        "clauses": [
+          {
+            "fieldName": "System.Title",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "Shopping"
+          }
+        ],
+        "settings": {
+          "background-color": "#EFFFDC",
+          "title-color": "#000000"
+        }
+      },
+      {
+        "name": "P1-LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [Microsoft.VSTS.Common.Priority] = '1' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "Microsoft.VSTS.Common.Priority",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "1"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 3,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#F7CBCB",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      },
+      {
+        "name": "LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#FFBA69",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      }
+    ],
+    "tagStyle": [
+      {
+        "name": "LSI",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#FBFD52",
+          "color": "#000000"
+        }
+      },
+      {
+        "name": "Blocked",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#EC001D",
+          "color": "#FFFFFF"
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings"
+    },
+    "cardsettings": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardsettings"
+    },
+    "board": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items"
+    }
+  }
+}
+```
+
 
 ## Update styling rules on a board
 <a name="updatecardstylingrulesonaboard" />
@@ -86,7 +335,185 @@ Status code: 400
 }
 ```
 
-[!code-REST [PATCH__boards__boardName__cardrules_json](./_data/PATCH__work_boards__boardName__cardrulesettings.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%20items/cardrulesettings?api-version=2.0-preview.1
+```
+```json
+{
+  "rules": {
+    "fill": [
+      {
+        "name": "High Priority",
+        "isEnabled": "True",
+        "filter": "[System.Title] contains 'Shopping'",
+        "settings": {
+          "background-color": "#EFFFDC",
+          "title-color": "#000000"
+        }
+      },
+      {
+        "name": "P1-LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [Microsoft.VSTS.Common.Priority] = '1' and [System.State] = 'Active'",
+        "settings": {
+          "background-color": "#F7CBCB",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      },
+      {
+        "name": "LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [System.State] = 'Active'",
+        "settings": {
+          "background-color": "#FFBA69",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      }
+    ],
+    "tagStyle": [
+      {
+        "name": "LSI",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#FBFD52",
+          "color": "#000000"
+        }
+      },
+      {
+        "name": "Blocked",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#EC001D",
+          "color": "#FFFFFF"
+        }
+      }
+    ]
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings",
+  "rules": {
+    "fill": [
+      {
+        "name": "High Priority",
+        "isEnabled": "True",
+        "filter": "[System.Title] contains 'Shopping'",
+        "clauses": [
+          {
+            "fieldName": "System.Title",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "Shopping"
+          }
+        ],
+        "settings": {
+          "background-color": "#EFFFDC",
+          "title-color": "#000000"
+        }
+      },
+      {
+        "name": "P1-LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [Microsoft.VSTS.Common.Priority] = '1' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "Microsoft.VSTS.Common.Priority",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "1"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 3,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#F7CBCB",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      },
+      {
+        "name": "LSI-ActionItems",
+        "isEnabled": "True",
+        "filter": "[System.Tags] contains 'LSI' and [System.State] = 'Active'",
+        "clauses": [
+          {
+            "fieldName": "System.Tags",
+            "index": 1,
+            "logicalOperator": "",
+            "operator": "CONTAINS",
+            "value": "LSI"
+          },
+          {
+            "fieldName": "System.State",
+            "index": 2,
+            "logicalOperator": "AND",
+            "operator": "=",
+            "value": "Active"
+          }
+        ],
+        "settings": {
+          "background-color": "#FFBA69",
+          "title-color": "#000000",
+          "title-font-weight": "bold"
+        }
+      }
+    ],
+    "tagStyle": [
+      {
+        "name": "LSI",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#FBFD52",
+          "color": "#000000"
+        }
+      },
+      {
+        "name": "Blocked",
+        "isEnabled": "True",
+        "settings": {
+          "background-color": "#EC001D",
+          "color": "#FFFFFF"
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardrulesettings"
+    },
+    "cardsettings": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items/cardsettings"
+    },
+    "board": {
+      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/Backlog items"
+    }
+  }
+}
+```
+
 
 ### Recommended fill colors
 
