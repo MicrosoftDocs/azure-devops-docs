@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Migrate to group-based resource management in Azure DevOps Services
+# Migrate to group-based resource management in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

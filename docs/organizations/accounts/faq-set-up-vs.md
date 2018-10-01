@@ -12,7 +12,7 @@ ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot setting up Visual Studio with Azure DevOps Services
+# Troubleshoot setting up Visual Studio with Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -81,7 +81,7 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 #### Q: How can I create an organization later?
 
-A:	Learn how to [sign up for Azure DevOps Services](create-organization-msa-or-work-student.md).
+A:	Learn how to [sign up for Azure DevOps](create-organization-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 
@@ -103,7 +103,7 @@ so that your organization is closest to most users.
 
 Your organization's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/regions) 
-where Azure DevOps Services is available. 
+where Azure DevOps is available.
 
 [!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
 

@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-/ms.date: 09/13/2018
+/ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
 
-# Access Azure DevOps with Azure Active Directory
+# Access your organization with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -95,10 +95,9 @@ Your organization might have policies about adding users to the directory, so fi
 ### What if we can't use the same sign-in addresses?
 
 You have to add these users to the directory with new work or school accounts.
-If they have existing work or school accounts, they can use those instead. Their work in Azure DevOps
-won't be lost and will stay with their current sign-in addresses. You must add them as new
-users to Azure DevOps, reassign access levels, and readd them to any projects. Users can migrate work that they want to keep,
-except for their work history. Learn [how to manage organization users](add-organization-users-from-user-hub.md).
+If they have existing work or school accounts, they can use those instead. Their work won't be lost and will stay with their current sign-in addresses. You must add them as new
+users, reassign access levels, and readd them to any projects. Users can migrate work that they want to keep,
+except for their work history. Learn [how to manage organization users](add-organization-users.md).
 
 ### What happens to tools that use my credentials, like alternate credentials?
 

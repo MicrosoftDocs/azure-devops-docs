@@ -8,20 +8,19 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding and deleting organization users in Azure DevOps Users
+# Troubleshoot adding and deleting organization users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-## Permissions 
+## Permissions
 
 #### Q: Why can't I manage users?
 
 A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
-
 
 <a name="find-owner"></a>
 
@@ -29,11 +28,9 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 [!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
-
 <a name="users-delay"></a>
 
 [!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
-
 
 ## Visual Studio subscriptions
 
@@ -41,7 +38,7 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 #### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
-A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the Azure DevOps subscription. 
+A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
 For example, if a user selects **Visual Studio/MSDN Subscriber** but the user doesn't have a valid, active Visual Studio subscription, the user can work only [as a stakeholder](../../organizations/security/get-started-stakeholder.md).
 
@@ -89,15 +86,14 @@ If you're purchasing user access to Visual Studio Professional for a specific or
 
 1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
-	> [!NOTE]
-	> If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).
-
+   > [!NOTE]
+   > If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).
 
 ## User access
 
 #### Q: What does "Last Access" mean in the All Users view?
 
-The value in **Last Access** is the last date a user accessed any Azure DevOps resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/en-us/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/en-us/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 
@@ -131,8 +127,7 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 
-
-###	Azure Active Directory and your organization
+### Azure Active Directory and your organization
 
 <a name="AddUserDirectory"></a>
 
@@ -160,8 +155,6 @@ A: Yes, but deleting a user from the directory removes the user's access to all 
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-
 ###	More support
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
-

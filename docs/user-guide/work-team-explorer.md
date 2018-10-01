@@ -14,7 +14,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Navigate in Team Explorer
+# Navigate in Visual Studio Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -106,6 +106,7 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 - **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
 
 #### TFVC
+
 - [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)  
 - **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
 - **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
@@ -130,7 +131,7 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"    
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Report and Document pages 
 
 The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.

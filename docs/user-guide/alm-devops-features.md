@@ -14,7 +14,7 @@ ms.date: 08/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Features
+# Azure DevOps Features
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
