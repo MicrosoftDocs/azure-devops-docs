@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Git Blobs | REST API Reference for Team Foundation Server
 description: Work with Git blobs programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 681BE5A9-6228-4A4B-AD90-0E79277394B9
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Git blobs
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 Blobs are files in the Git repository.
@@ -44,7 +47,30 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 ### The metadata
 
-[!code-REST [GET__git_repositories__repositoryId__blobs__objectId__json](./_data/blobs/GET__git_repositories__repositoryId__blobs__objectId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/61a86fdaa79e5c6f5fb6e4026508489feb6ed92c?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "objectId": "61a86fdaa79e5c6f5fb6e4026508489feb6ed92c",
+  "size": 1486,
+  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/61a86fdaa79e5c6f5fb6e4026508489feb6ed92c",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/61a86fdaa79e5c6f5fb6e4026508489feb6ed92c"
+    },
+    "repository": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
+    }
+  }
+}
+```
+
 
 ###In a stream
 

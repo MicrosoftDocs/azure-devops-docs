@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Service Hook Subscriptions | REST API Reference for Team Foundation Server
 description: Work with service hook subscriptions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 249F8AEB-0E5C-41D5-9B67-C8AC6A22A98D
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Service hook subscriptions
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 A service hooks subscription defines the action to perform on a consumer service when an event occurs in a project. 
@@ -411,20 +414,177 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/?api-version
 
 ## Get a subscription
 
-[!code-REST [GET__hooks_subscriptions__subscriptionId__json](./_data/subscriptions/GET__hooks_subscriptions__subscriptionId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/8dea9aba-3a9a-4ad0-860f-2a5c7379e3eb?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": "8dea9aba-3a9a-4ad0-860f-2a5c7379e3eb",
+  "url": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/8dea9aba-3a9a-4ad0-860f-2a5c7379e3eb",
+  "publisherId": "tfs",
+  "eventType": "build.complete",
+  "resourceVersion": null,
+  "eventDescription": "Build CustomerAddressModule, Status Succeeded",
+  "consumerId": "myGet",
+  "consumerActionId": "publishPackage",
+  "actionDescription": "Feed: fabrikam-package",
+  "createdBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "createdDate": "2014-05-20T19:47:15.247Z",
+  "modifiedBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "modifiedDate": "2014-05-20T19:47:15.247Z",
+  "publisherInputs": {
+    "buildStatus": "Succeeded",
+    "definitionName": "CustomerAddressModule",
+    "hostId": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+    "projectId": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "tfsSubscriptionId": "e15ed970-8b92-4b71-8ec2-f99b5db5e34d"
+  },
+  "consumerInputs": {
+    "feedId": "fabrikam-package",
+    "packageSourceId": "ef1a74fb-53e3-46b8-9d8f-03a38a9c7b78"
+  }
+}
+```
+
 
 ## Create a subscription
 <a name="createasubscription" />
 
-[!code-REST [POST__hooks_subscriptions_json](./_data/subscriptions/POST__hooks_subscriptions.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions?api-version=1.0
+```
+```json
+{
+  "publisherId": "tfs",
+  "eventType": "build.complete",
+  "resourceVersion": "1.0-preview.1",
+  "consumerId": "webHooks",
+  "consumerActionId": "httpRequest",
+  "publisherInputs": {
+    "buildStatus": "Failed",
+    "definitionName": "MyWebSite CI",
+    "projectId": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c"
+  },
+  "consumerInputs": {
+    "url": "https://myservice/myhookeventreceiver"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "fd672255-8b6b-4769-9260-beea83d752ce",
+  "url": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce",
+  "publisherId": "tfs",
+  "eventType": "build.complete",
+  "resourceVersion": "1.0-preview.1",
+  "eventDescription": "Build MyWebSite CI, status Failed",
+  "consumerId": "webHooks",
+  "consumerActionId": "httpRequest",
+  "actionDescription": "To host myservice",
+  "createdBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "createdDate": "2014-10-27T15:37:24.873Z",
+  "modifiedBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "modifiedDate": "2014-10-27T15:37:24.873Z",
+  "publisherInputs": {
+    "buildStatus": "Failed",
+    "definitionName": "MyWebSite CI",
+    "hostId": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+    "projectId": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "tfsSubscriptionId": "3e8b33e7-426d-4c92-9bf9-58e163dd7dd5"
+  },
+  "consumerInputs": {
+    "url": "https://myservice/myhookeventreceiver"
+  }
+}
+```
+
 
 ## Update a subscription
 
-[!code-REST [PUT__hooks_subscriptions__newSubscriptionId__json](./_data/subscriptions/PUT__hooks_subscriptions__newSubscriptionId_.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0
+```
+```json
+{
+  "publisherId": "tfs",
+  "eventType": "build.complete",
+  "resourceVersion": "1.0-preview.1",
+  "consumerId": "webHooks",
+  "consumerActionId": "httpRequest",
+  "publisherInputs": {
+    "buildStatus": "Failed",
+    "definitionName": "MyWebSite CI",
+    "projectId": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c"
+  },
+  "consumerInputs": {
+    "url": "https://myservice/newreceiver"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "fd672255-8b6b-4769-9260-beea83d752ce",
+  "url": "https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce",
+  "publisherId": "tfs",
+  "eventType": "build.complete",
+  "resourceVersion": "1.0-preview.1",
+  "eventDescription": "Build MyWebSite CI, status Failed",
+  "consumerId": "webHooks",
+  "consumerActionId": "httpRequest",
+  "actionDescription": "To host myservice",
+  "createdBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "createdDate": "2014-10-27T15:37:24.873Z",
+  "modifiedBy": {
+    "id": "00ca946b-2fe9-4f2a-ae2f-40d5c48001bc"
+  },
+  "modifiedDate": "2014-10-27T15:37:26.23Z",
+  "publisherInputs": {
+    "buildStatus": "Failed",
+    "definitionName": "MyWebSite CI",
+    "hostId": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+    "projectId": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "tfsSubscriptionId": "3e8b33e7-426d-4c92-9bf9-58e163dd7dd5"
+  },
+  "consumerInputs": {
+    "url": "https://myservice/newreceiver"
+  }
+}
+```
+
 
 ## Delete a subscription
 
-[!code-REST [DELETE__hooks_subscriptions__newSubscriptionId__json](./_data/subscriptions/DELETE__hooks_subscriptions__newSubscriptionId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/hooks/subscriptions/fd672255-8b6b-4769-9260-beea83d752ce?api-version=1.0
+```
+
 
 
 
