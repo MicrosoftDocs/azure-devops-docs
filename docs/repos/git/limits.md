@@ -58,4 +58,4 @@ For these reasons and more, pushes are limited to 5GB at a time.
 There's one exception where large pushes are normal.
 When you migrate a repository from another service into Azure Repos, it comes in as a single push.
 We don't intend to block imports, even of very large repositories.
-If the repository is more than 5GB, then you must use the [Import repository](import-git-repository.md) feature instead of the command line.
+If the repository is more than 5GB, then you must use the web experience to [Import the repository](import-git-repository.md) instead of the command line. 
