@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/01/2018
+ms.date: 10/02/2018
 monikerRange: 'vsts'
 ---
 
@@ -31,7 +31,8 @@ In this tutorial, you learn how to do the following:
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) about using Azure AD with Azure DevOps.
 
-> [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
+> [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc]
+
 
 >[!Note]
 >Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
@@ -44,7 +45,7 @@ We will update this guidance when we have a solution for scenarios where email a
 
 Before you begin, do the following:
 
-1. Inform users of the upcoming change. 
+1. Inform users of the upcoming change.
    Although there is no downtime during this change, users will be affected by it. It's best to let them know before you begin that there will be a short series of steps for them to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits will continue to work with their new identity, provided that their emails match.
 
 2. Ensure that the following is true about each user who performs the connection:
@@ -63,11 +64,10 @@ Before you begin, do the following:
          h. As the new user, complete the remaining steps to connect your organization to Azure AD.  
 
 3. Ensure that all Azure DevOps users are in Azure AD by completing the following set of steps:  
-  
 
 (Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.)
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -155,7 +155,7 @@ Visual Studio subscription administrators assign subscriptions to users' corpora
 
 When you inform your users of the completed change, include the tasks that each user in the organization must complete, as follows:
 
-1. If you use the Git command-line tool, you might need to clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory).  
+1. If you use Visual Studio or the Git command-line tool, you might need to clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory).  
     Deleting the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine will resolve the issue.
 
 2. If you use the alternate authentication tokens that are used by tools or scripts, [regenerate new tokens](use-personal-access-tokens-to-authenticate.md) for the Azure AD users. Complete the following:
