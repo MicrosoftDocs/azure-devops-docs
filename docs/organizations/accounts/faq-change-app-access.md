@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 #### Q: How do personal access tokens differ from alternate authentication credentials?
 
-A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](/azure/devops/integrate/) of activities that the token authorizes. Learn more about [personal access tokens](use-personal-access-tokens-to-authenticate.md).
+A:  Personal access tokens are a more convenient and secure replacement for alternate authentication credentials. You can limit a token's use to a specific lifetime, to an organization, and to [scopes](../../integrate/index.md) of activities that the token authorizes. Learn more about [personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
 #### Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
 
