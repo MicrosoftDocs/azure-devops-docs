@@ -34,13 +34,13 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 1. [Sign up for an organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need TFS CALs, [pay for Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Organizations include five free users and these users don't apply to TFS.
+2. Based on the number of users who need TFS CALs, [pay for users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Organizations include five free users and these users don't apply to TFS.
 
 3. If you haven't already, sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 4. [Add users](../accounts/add-organization-users.md) to your organization so you can more easily track these users.
 
-    These users will be invited to your organization, but you're not required to use Azure DevOps Services.
+    These users will be invited to your organization, but you're not required to use Azure DevOps.
 
 5. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them the necessary access](../../organizations/security/change-access-levels.md).
 

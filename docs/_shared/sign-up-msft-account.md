@@ -16,7 +16,7 @@ ms.topic: include
 
    ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
 
-4. To get started with Azure DevOps , choose **Continue**.
+4. To get started with Azure DevOps, choose **Continue**.
 
    ![Choose Continue to sign up for Azure DevOps](../_shared/_img/sign-up-azure-devops.png)
 

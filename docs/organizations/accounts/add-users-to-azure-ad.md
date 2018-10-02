@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 <a name="SetUpCurrentUsers"></a>
 
-# Add organization users to your Azure Active Directory
+# Add organization users in Azure DevOps to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -39,10 +39,9 @@ If your users don't already exist in Azure AD:
    Nicole is user at Fabrikam. She has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address as her Microsoft account. Nicole continues to work seamlessly with the same sign-in address.
 
    Here's what the Fabrikam directory might look like in the Azure portal after Jamal adds users from his organization:
-    
+
    ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
    For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
 
 3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
-

@@ -13,7 +13,7 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Code with Git
+# Quickstart: Code with Git in Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

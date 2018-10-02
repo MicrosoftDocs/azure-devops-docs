@@ -11,11 +11,11 @@ author: chcomley
 ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
-# Buy Azure DevOps resources for your customers
+# Cloud Solution Providers: Buy Azure DevOps resources for your customers
 
 [!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
-Partners in the cloud service provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
+Partners in the Cloud Solution Provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
 your customers, including users (who get Basic features), Test Manager, Azure Artifacts, Private Pipelines, and
 Hosted Pipelines.
 

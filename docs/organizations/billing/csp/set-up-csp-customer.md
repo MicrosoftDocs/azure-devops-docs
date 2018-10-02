@@ -12,7 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Cloud Solution Providers: set up billing for your customers for Azure DevOps Services and Visual Studio 
+# Cloud Solution Providers: Set up billing for your customers for Azure DevOps Services and Visual Studio
 
 ## Azure DevOps Services 
 

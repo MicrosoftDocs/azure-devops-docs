@@ -1,6 +1,6 @@
 ---
-title: Manage users and access in Azure DevOps Services
-description: Add users and assign access levels on the Users page in Azure DevOps Services. 
+title: Manage users and access in Azure DevOps
+description: Add users and assign access levels on the Users page in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
-# Manage users for Azure DevOps Services
+# Manage users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -26,13 +26,13 @@ These types of users can join your organization for free:
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
 > [!NOTE]
-> You can add people to projects instead of to your organization. Azure DevOps Services automatically assigns the users [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members-vs.md).
+> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members.md).
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
 ## Prerequisites
 
-You must have [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).   
+You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).   
 
 
 ## Manage users
@@ -111,5 +111,5 @@ Access levels control which features are available to users. Permissions control
 - [Connect to a project](../../organizations/projects/connect-to-projects.md)
 - [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Delete users from Azure DevOps Services](delete-organization-users.md)
+- [Delete users from Azure DevOps](delete-organization-users.md)
 

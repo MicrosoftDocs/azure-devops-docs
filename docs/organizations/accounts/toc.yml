@@ -55,7 +55,7 @@
   - name: Manage access to your organization
     items:
     - name: Add users to your organization
-      href: add-organization-users-from-user-hub.md
+      href: add-organization-users.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access

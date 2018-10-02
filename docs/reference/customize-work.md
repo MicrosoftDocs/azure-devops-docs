@@ -183,7 +183,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>Manage access </td>
 <td>
 <ul>accounts/add-team-members.md
-<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members-vs.md)</li>
+<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)</li>
 <li>[Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)</li>
 <li>[Stakeholder access](../organizations/security/change-access-levels.md)</li>
 <li>[VS Enterprise access](../organizations/security/change-access-levels.md)</li>
