@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 
 All charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing overview](overview.md)
 
 ::: moniker-end

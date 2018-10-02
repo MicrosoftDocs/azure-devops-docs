@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/28/2018
+ms.date: 10/02/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [billing overview](overview.md).
+Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [billing overview](overview.md).
 
 You have to set up billing when you need more than the *free tier* of resources in your organization:
 
@@ -205,5 +205,5 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

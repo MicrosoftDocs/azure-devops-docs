@@ -75,7 +75,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 ## Related articles
 
-- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
 
 ## Q&A
