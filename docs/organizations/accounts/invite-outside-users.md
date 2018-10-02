@@ -1,6 +1,6 @@
 ---
 title: Invite external users
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Security and data access considerations when you add an external or outside user
 ms.prod: devops
 ms.technology: devops-accounts
@@ -14,7 +14,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Invite external users
+# Invite external users to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -35,7 +35,7 @@ Project members have access to resources beyond the specific project. Those reso
 
    ![Edit the private release dates field](../projects/_img/edit-field-release-in-feature.png)
 
-* When the WIT Client object model is used, which includes the use of Microsoft Excel and Visual Studio integration with Azure DevOps Services, it stores sensitive information in a cache on the local disk. The cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
+* When the WIT Client object model is used, which includes the use of Microsoft Excel and Visual Studio integration with Azure DevOps, it stores sensitive information in a cache on the local disk. The cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
 
 ## The trust decision
 
@@ -44,4 +44,4 @@ These resources and groups are required for the proper functioning of a member o
 ### Related articles
 
 * [Add external users](add-external-user.md)
-* [Add team members](add-team-members-vs.md)
+* [Add team members](add-team-members.md)

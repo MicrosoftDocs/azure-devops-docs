@@ -163,6 +163,8 @@
       href: process/variables.md
     - name: Resources
       href: process/resources.md
+    - name: Templates
+      href: process/templates.md
   - name: Licensing
     items:
     - name: Parallel jobs
@@ -190,12 +192,10 @@
       href: build/ci-public.md
     - name: Build multiple branches
       href: build/ci-build-git.md
+    - name: Build on multiple platforms
+      href: get-started-multiplatform.md
     - name: Build a repo using the visual designer
       href: build/ci-build-github.md
-    - name: Run a PowerShell script
-      href: scripts/powershell.md
-    - name: Run Git commands
-      href: scripts/git-commands.md
     - name: Publish symbols
       href: symbols/index.md
   - name: Release
@@ -222,6 +222,14 @@
       href: library/government-cloud.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
+  - name: Scripts
+    items:
+    - name: Cross-platform scripts
+      href: scripts/cross-platform-scripting.md
+    - name: Run a PowerShell script
+      href: scripts/powershell.md
+    - name: Run Git commands
+      href: scripts/git-commands.md
   - name: Test
     items:
     - name: Test glossary

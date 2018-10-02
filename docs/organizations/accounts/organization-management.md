@@ -12,7 +12,7 @@ ms.date: 09/13/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# About organization management
+# About organization management in Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -49,8 +49,8 @@ with tools like Xcode, Eclipse, or Visual Studio,
 and add code to your project.
 
 Some clients, like Xcode, Git, and NuGet, require basic credentials
-(a username and password) for you to access Azure DevOps Services.
-To connect these clients to Azure DevOps Services,
+(a username and password) for you to access Azure DevOps.
+To connect these clients to Azure DevOps,
 create personal access tokens to authenticate your identity.
 Use a credential manager to create, store, and secure your tokens,
 so you don't have to reenter them every time you push.
@@ -60,10 +60,10 @@ Or if you don't want to use a credential manager, you can
 ## Add users and assign access
 
 To share work with others,
-[add users and assign access](add-organization-users-from-user-hub.md).
+[add users and assign access](add-organization-users.md).
 That way, you control each user's access.
-Or [add users to your project](add-team-members-vs.md),
-and let Azure DevOps Services assign the next available access to them.
+Or [add users to your project](add-team-members.md),
+and let Azure DevOps assign the next available access to them.
 
 ## Try extensions for free
 
@@ -83,7 +83,7 @@ buy more services, and purchase extensions for your organization.
 
 ## Access with Azure AD
 
-Azure DevOps Services works with Azure Active Directory (Azure AD),
+Azure DevOps works with Azure Active Directory (Azure AD),
 so that you can control access the same way that you do
 with Microsoft services like Office 365 and Microsoft Azure.
 If your enterprise uses a directory managed by Azure AD,

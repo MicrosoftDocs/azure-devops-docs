@@ -13,7 +13,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Source control
+# Source control in Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

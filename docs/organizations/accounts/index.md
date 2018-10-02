@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-# Organization management
+# Organization management in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

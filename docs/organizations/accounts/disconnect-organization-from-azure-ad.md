@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
-# Disconnect your organization from your directory
+# Disconnect your Azure DevOps organization from your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -33,7 +33,7 @@ For more information, see the [Conceptual overview](access-with-azure-ad.md) for
 
 Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps Services as new users. Users can migrate everything except work history. They can relink Visual Studio subscriptions and have their access levels reassigned to their new identities.
+**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps as new users. Users can migrate everything except work history. They can re-link Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
 ## Disconnect organization from directory
 
@@ -64,8 +64,3 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
    Only users with Microsoft accounts can sign in.
 
    For answers to questions about disconnecting, see the [FAQ](faq-azure-access.md#faq-disconnect).
-
-
-
-
-

@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Delete your organization
+# Delete your organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -29,13 +29,13 @@ When you delete your organization, note the following:
 
 * If your organization is linked to an Azure subscription for billing purchases, you must unlink your organization before you delete your organization.
 
-  You're still charged for any paid users and Azure DevOps Services that your organization uses during this billing cycle. Billing stops after the current cycle ends.
+  You're still charged for any paid users and services used during this billing cycle. Billing stops after the current cycle ends.
 
 To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
 ## Prerequisites
 
-If your organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your  organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your organization in Azure DevOps.
 
 To remove billing from your organization, you must be a project collection administrator.
 

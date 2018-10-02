@@ -109,48 +109,7 @@ jobs:
     ...
 ```
 
-Jobs can also be defined as templates in a separate file. This allows you
-to define your logic once and then reuse it in several places.
-Templates can include parameters which the pipeline can vary.
-
-```yaml
-# File: templates/npm.yml
-
-parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
-
-jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: npm install
-  - script: npm test
-```
-
-When you consume the template in your pipeline, specify values for
-the template parameters.
-
-```yaml
-# File: azure-pipelines.yml
-
-jobs:
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: macOS
-    vmImage: macOS-10.13
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Linux
-    vmImage: ubuntu-1604
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Windows
-    vmImage: vs2017-win2016
-```
+It's possible to re-use some or all of a pipeline through [templates](templates.md).
 
 ::: moniker-end
 ::: moniker range="< vsts"
