@@ -117,5 +117,5 @@ Which email addresses can I add?
 
 * [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/) 
