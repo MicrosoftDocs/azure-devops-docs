@@ -13,10 +13,6 @@ monikerRange: 'vsts'
 
 # Container jobs
 
-> [!Note]
-> Container jobs are rolling out during the month of August 2018.
-> They may not yet be available to your organization.
-
 By default, jobs run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
@@ -38,6 +34,9 @@ The Azure Pipelines system requires a few things to exist in Linux-based contain
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
 minimum requirements.
+
+Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
+[Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
 
 # [YAML](#tab/yaml)
 
@@ -109,7 +108,8 @@ steps:
 ### Endpoints
 
 Containers can be hosted on registries other than Docker Hub. To host
-an image on [Azure Container Registry](/azure/container-registry/),
+an image on [Azure Container Registry](/azure/container-registry/) or
+another private container registry,
 add a [service connection](../library/service-endpoints.md) to the
 private registry. Then you can reference it in a container spec:
 
