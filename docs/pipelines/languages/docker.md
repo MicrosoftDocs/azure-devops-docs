@@ -13,10 +13,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Docker
+# Build Docker apps with Azure Pipelines or Team Foundation Server
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as
-Docker Hub or Azure Container Registry.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as Docker Hub or Azure Container Registry with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
