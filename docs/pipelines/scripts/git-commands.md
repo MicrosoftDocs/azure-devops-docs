@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
-Git.exe is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
+Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
 
 <a name="enable"></a>
@@ -63,7 +63,9 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
-### Enable your build pipeline to run git.exe
+::: moniker range="< tfs-2018"
+
+### Enable your pipeline to run command-line Git
 
 On the [variables tab](../build/variables.md) set this variable:
 
@@ -71,7 +73,41 @@ On the [variables tab](../build/variables.md) set this variable:
 |---|---|
 | ```system.prefergit``` | ```true``` |
 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+### Allow scripts to access the system token
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+# [YAML](#tab/yaml)
+
+Add a `checkout` section with `persistCredentials` set to `true`.
+
+```yaml
+steps:
+- checkout: self
+  persistCredentials: true
+```
+
+Learn more about [`checkout`](../yaml-schema.md#checkout).
+
+# [Designer](#tab/designer)
+
 On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+
+---
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+
+::: moniker-end
 
 ## Make sure to clean up the local repo
 
@@ -80,18 +116,44 @@ Certain kinds of changes to the local repository are not automatically cleaned u
 * Delete local branches you create.
 * Undo git config changes.
 
-If you run into problems using an on-premises agent, to make sure the repo is clean:
+If you run into problems using an on-premises agent, make sure the repo is clean:
+
+::: moniker range="vsts"
+
+# [YAML](#tab/yaml)
+
+Make sure `checkout` has `clean` set to `true`.
+
+```yaml
+steps:
+- checkout: self
+  clean: true
+```
+
+# [Designer](#tab/designer)
+
+* On the [repository tab](../build/repository.md) set **Clean** to true.
+
+---
+
+::: moniker-end
+
+::: moniker range="< vsts"
 
 * On the [repository tab](../build/repository.md) set **Clean** to true.
 
 * On the [variables tab](../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
+
+::: moniker-end
 
 ## Examples
 
 
 ### List the files in your repo
 
-Make sure to follow the above steps to [enable git.exe](#enable).
+::: moniker range="< tfs-2018"
+Make sure to follow the above steps to [enable Git](#enable).
+::: moniker-end
 
 On the [build tab](../tasks/index.md) add this task:
 
@@ -103,7 +165,9 @@ On the [build tab](../tasks/index.md) add this task:
 
 You want a CI build to merge to master if the build succeeds.
 
-Make sure to follow the above steps to [enable git.exe](#enable).
+::: moniker range="< tfs-2018"
+Make sure to follow the above steps to [enable Git](#enable).
+::: moniker-end
 
 On the [Triggers tab](../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -162,10 +226,13 @@ Yes
 
 Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
 
+::: moniker range="< tfs-2018"
 
 ### How does enabling scripts to run Git commands affect how the build pipeline gets build sources?
 
-When you set ```system.prefergit``` to ```true```, the build pipeline uses git.exe instead of LibGit2Sharp to clone or fetch the source files.
+When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
