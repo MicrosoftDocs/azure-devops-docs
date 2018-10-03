@@ -43,11 +43,20 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 **Create a token that lasts longer than 90 days:**
 
 1. Navigate to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)".
-2. Base64 encode the PAT.  On Windows you can use...
+2. Base64 encode the PAT.
 
+    # [Windows](#tab/windows)
     ```powershell
     [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
     ```
+
+    # [Mac](#tab/mac)
+    ```
+    base64 <<< "YOUR_PAT_GOES_HERE"
+    ```
+   ---
+
+
 3. In your $home/.npmrc add the following lines replacing account, feedname, username, PAT, and email.
 
     ```json

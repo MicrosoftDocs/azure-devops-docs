@@ -156,7 +156,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | Azure Pipelines |
 | ![icon](tool/_img/DotNetCoreInstaller.png) [.NET Core Tool Installer](tool/dotnet-core-tool-installer.md). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | Azure Pipelines, TFS 2018 |
 | ![icon](tool/_img/node.png) [Node.js Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Azure Pipelines |
-| ![icon](tool/_img/nuget.png) Finds or downloads and caches the specified version of [NuGet](tool/nuget.md) and adds it to the PATH | Azure Pipelines |
+| ![icon](tool/_img/nuget.png) [NuGet Tool Installer](tool/nuget.md) Finds or downloads and caches the specified version of [NuGet](https://www.nuget.org/) and adds it to the PATH | Azure Pipelines |
 | ![icon](tool/_img/python.png) [Use Python Version](tool/use-python-version.md). Selects a version of Python to run on an agent.  Optionally adds it to PATH. | Azure Pipelines |
 | ![icon](tool/_img/ruby.png) [Use Ruby Version](tool/use-ruby-version.md). Selects a version of Ruby to run on an agent.  Optionally adds it to PATH. | Azure Pipelines |
 | ![icon](tool/_img/visualstudiotestplatforminstaller.png) [Visual Studio Test Platform Installer](tool/vstest-platform-tool-installer.md). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | Azure Pipelines |
