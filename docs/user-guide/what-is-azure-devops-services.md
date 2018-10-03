@@ -48,7 +48,7 @@ Sign up for free by creating an organization and then, either upload your code t
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 
 <!---

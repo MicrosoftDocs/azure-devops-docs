@@ -56,5 +56,5 @@ To make subsequent changes to the amount of paid resources, you only need to hav
 
 ## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

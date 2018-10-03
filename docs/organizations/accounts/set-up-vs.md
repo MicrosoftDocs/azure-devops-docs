@@ -36,7 +36,7 @@ Azure DevOps is free for [up to five users with access to Basic features](https:
 Learn [what else you get with Azure DevOps](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use Azure DevOps with any IDE or code editor, like the following:
 
-* [Eclipse, Android Studio, or IntelliJ](/azure/devops/java)
+* [Eclipse, Android Studio, or IntelliJ](/../../java/index.md)
 * Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
 * [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
