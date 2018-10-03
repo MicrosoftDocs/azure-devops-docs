@@ -68,7 +68,8 @@ The following organization agent pools are provided by default:
   Linux machines without having to configure a self-hosted Linux agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
-  *Note: this pool has been superceded by the **Hosted Ubuntu 1604** pool.*
+  *Note: this pool has been superceded by the Hosted Ubuntu 1604 pool. It will be removed from the service on December 1, 2018.*
+  *Learn more about [migrating](hosted.md#hosted-linux-preview-pool-deprecation).*
 
 * **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
   macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)

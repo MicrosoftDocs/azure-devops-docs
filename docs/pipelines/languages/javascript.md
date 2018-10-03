@@ -1,5 +1,5 @@
 ---
-title: JavaScript and Node.js
+title: Building JavaScript and Node.js apps with Azure Pipelines or TFS
 description: Building JavaScript and Node.js apps using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,13 +13,15 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# JavaScript and Node.js
+# Build JavaScript and Node.js apps with Azure Pipelines or Team Foundation Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to build JavaScript and Node.js apps.
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build JavaScript and Node.js apps with CI/CD pipelines.
 
 ::: moniker range="tfs-2017"
 
@@ -371,7 +373,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 - task: PublishTestResults@2
   inputs:
     testRunner: JUnit
-    testResultsFile: ./test-results.xml
+    testResultsFiles: ./test-results.xml
 ```
 
 ### Publish code coverage results

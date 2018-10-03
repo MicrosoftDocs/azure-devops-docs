@@ -72,7 +72,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. For the **Agent pool**:
 
- * **Azure Pipelines:** Select _Hosted Linux_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
+ * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
 
