@@ -91,7 +91,7 @@ pool:
 
 # [Designer](#tab/designer)
 
-Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Linux Preview** agent pool, or the **Hosted macOS Preview** pool.
+Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Ubuntu 1604** agent pool, or the **Hosted macOS Preview** pool.
 To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
 
 ---
