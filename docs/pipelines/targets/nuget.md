@@ -95,9 +95,9 @@ This example shows how to use the date and time as the prerelease label.
 
 ```yaml
 variables:
-- Major: '1'
-- Minor: '0'
-- Patch: '0'
+  Major: '1'
+  Minor: '0'
+  Patch: '0'
 
 steps:
 - task: NuGetCommand@2
