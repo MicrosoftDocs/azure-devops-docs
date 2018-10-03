@@ -1,5 +1,5 @@
 ---
-title: .NET Core
+title: Building .NET Core projects with Azure Pipelines and TFS
 description: Building .NET Core projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# .NET Core
+# Build .NET Core projects with Azure Pipelines or Team Foundation Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build .NET Core projects and deploy or publish to targets with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
