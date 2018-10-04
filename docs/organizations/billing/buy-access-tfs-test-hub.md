@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/17/2018
+ms.date: 10/04/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or Azure Test Plans
@@ -22,11 +22,7 @@ For [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/), you
 
 Paid users are entitled access to Basic features in your enterprise's TFS. Paying monthly for users is a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. When you buy access to TFS in this way, you aren't required to use Azure DevOps Services (although you can use Azure DevOps Services in addition to TFS).
 
-To pay monthly for TFS users, follow [these steps](#rent-cal).
-
-You can also buy [Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in TFS.
-
-To pay monthly for TFS Azure Test Plans access, follow [these steps](#test-hub).
+You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in TFS.
 
 To learn more about the requirements to access TFS or Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about TFS licensing, see the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
@@ -34,7 +30,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 1. [Sign up for an organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need TFS CALs, [pay for users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Organizations include five free users and these users don't apply to TFS.
+2. You can use TFS features, like Basic or Test Manager up to your total entitlements across Visual Studio subscription purchases, TFS CALs, and paid users in Azure DevOps. Based on your number of users,  [pay for users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
 
 3. If you haven't already, sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
@@ -53,13 +49,13 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 1. [Sign up for an organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need Azure Test Plans access in TFS, [buy Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+2. Based on the number of users who need Azure Test Plans access in TFS, [buy Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
-    Azure Test Plans Manager is installed automatically in TFS.
+    Test Manager is installed automatically in TFS.
 
 3. If you haven't already, sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-4. [Add users](../accounts/add-organization-users.md) to your organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your organization so you can track these users.
+4. [Add users](../accounts/add-organization-users.md) to your organization. [Assign them to Test Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your organization so you can track these users.
 
      These users will be invited to your organization, but you're not required to use Azure DevOps Services. By assigning Azure Test Plans Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
 
