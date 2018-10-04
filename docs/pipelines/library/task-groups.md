@@ -20,6 +20,9 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
+> [!NOTE]
+> Task group is not supported by YAML builds, use templates instead. [See documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=vsts#step-template)
+
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be
 added to a build or release pipeline, just like any other task. You can
