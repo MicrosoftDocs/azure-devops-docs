@@ -36,7 +36,7 @@ Depending on whether you work from the Azure DevOps Services or TFS, you can cre
 When you create a project from the web portal, the following plug-in files are ignored. 
 
 - **Build**: Default security permissions are defined for build functions.
-- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
 - **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project. 
 - **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
 - **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. 

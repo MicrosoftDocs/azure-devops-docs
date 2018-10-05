@@ -20,7 +20,7 @@ Add users to your organization and specify the level of features they can use, s
 These kinds of users can join your organization for free:
 
 * Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
-such as version control, tools for Agile, Java, build, release management, and more
+such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
 such as working with your backlog, work items, and queries
 * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/)
