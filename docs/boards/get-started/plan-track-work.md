@@ -35,7 +35,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 > [!NOTE]
-> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in the [New Work Hubs](https://devblogs.microsoft.com/devops/2018/06/22/new-work-hubs/) blog post. >
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in the [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) blog post. >
 > For on-premises TFS users, choose **Previous navigation** for guidance. 
 
 # [New navigation](#tab/new-nav)
