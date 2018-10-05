@@ -1178,8 +1178,8 @@ pipelines\tasks\build\_img
 <br />
 
 
-<p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
+<p><b>When to use Azure Pipelines or Build &amp; Release in TFS?</b></p>
+<p>Evaluate how Azure Pipelines and Build &amp; Release in TFS can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>

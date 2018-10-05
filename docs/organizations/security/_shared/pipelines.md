@@ -37,7 +37,7 @@ ms.topic: include
 </tr>
 
 <tr>
-<td align="left">Define releases, manage deployments, manage releases with Release Management
+<td align="left">Define releases and manage deployments
 </td>
 <td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
