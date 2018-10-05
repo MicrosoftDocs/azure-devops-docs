@@ -158,7 +158,7 @@ If users believe they are getting too many notifications, they can [opt out of a
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 ## Configure an SMTP server 
 
-In order for team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts).  
+In order for team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
