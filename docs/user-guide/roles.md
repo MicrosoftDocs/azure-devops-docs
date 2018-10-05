@@ -117,10 +117,7 @@ Responsible for configuring project-level resources, including:
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
 ::: moniker-end   
 
-
-### Project collection administrators
-
-::: moniker range="vsts" 
+::: moniker range="vsts"
 
 ### Organization owners and project collection administrators
 
@@ -133,9 +130,9 @@ Responsible for configuring organization-level resources. These tasks include:
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
 To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
-::: moniker-end   
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Project collection administrators
 
@@ -159,7 +156,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
   
 To get started, see [Server Administration (TFS)](/tfs/server/index). 
 
-::: moniker-end   
+::: moniker-end
 
 
 ## Related articles
@@ -167,4 +164,3 @@ To get started, see [Server Administration (TFS)](/tfs/server/index).
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Define organizations and projects](define-organizations-and-projects.md)
-
