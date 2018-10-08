@@ -384,7 +384,7 @@ integrity, traceability and audit rules, we view all information within Azure De
 These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within Azure DevOps Services. 
 We have ensured that when an entire Azure DevOps Services account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). 
 To learn more about how Azure DevOps Services honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
-To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 
