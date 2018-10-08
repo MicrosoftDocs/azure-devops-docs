@@ -53,7 +53,7 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 ## Steps
 There are four steps to creating a build or release task extension and putting it on the Marketplace:
 * [Step 1: Create the task metadata file](#createmetadata)
-* [Step 2: Create the extension maniest file](#extensionmanifest)
+* [Step 2: Create the extension manifest file](#extensionmanifest)
 * [Step 3: Package your extension](#packageext)
 * [Step 4: Publish your extension](#publishext)
 * [Optional: Install and test your extension](#installandtest)
