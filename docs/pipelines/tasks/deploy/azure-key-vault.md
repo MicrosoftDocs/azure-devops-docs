@@ -1,5 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
+titleSuffix: Azure Pipelines & TFS
 description: Learn about Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops

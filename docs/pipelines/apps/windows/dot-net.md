@@ -1,6 +1,7 @@
 ---
 title: Build your .NET desktop app for Windows
 shorttitle: Visual Studio solution
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can define a continuous integration (CI) pipeline that builds your .NET app on Team Foundation Server and Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd

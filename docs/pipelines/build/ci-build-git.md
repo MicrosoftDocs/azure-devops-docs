@@ -1,5 +1,6 @@
 ---
 title: Building multiple branches
+titleSuffix: Azure Pipelines & TFS
 description: Build multiple branches using Azure Pipelines or TFS
 ms.prod: devops
 services: vsts

@@ -1,5 +1,6 @@
 ---
 title: Selenium testing with continuous integration in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops

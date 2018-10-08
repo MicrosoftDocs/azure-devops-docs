@@ -1,5 +1,6 @@
 ---
 title: Stages in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: DevOps CI CD - Understand stages in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: devops

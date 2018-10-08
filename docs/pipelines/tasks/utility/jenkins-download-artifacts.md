@@ -1,5 +1,6 @@
 ---
 title: Jenkins Download Artifacts
+titleSuffix: Azure Pipelines & TFS
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
 ms.prod: devops

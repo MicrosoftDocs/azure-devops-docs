@@ -1,5 +1,6 @@
 ---
 title: Connect Microsoft Release Management server/client to TFS
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can connect Release Management to Team Foundation Server (TFS) using server and client for VS 2015 and TFS 2015
 ms.assetid: CEB0875B-F42A-45F3-B743-D6C522F7E5A6
 ms.prod: devops

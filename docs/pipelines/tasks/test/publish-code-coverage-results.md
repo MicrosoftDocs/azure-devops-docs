@@ -1,5 +1,6 @@
 ---
 title: Publish Code Coverage Results from an Azure Pipelines or TFS build
+titleSuffix: Azure Pipelines & TFS
 description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops

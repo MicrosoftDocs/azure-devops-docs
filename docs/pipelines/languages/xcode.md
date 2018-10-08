@@ -1,5 +1,6 @@
 ---
 title: Building apps with Xcode with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building Xcode projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,5 +1,6 @@
 ---
 title: .NET
+titleSuffix: Azure Pipelines & TFS
 description: Build .NET projects using Azure Pipelines or TFS
 ms.prod: devops
 ms.technology: devops-cicd

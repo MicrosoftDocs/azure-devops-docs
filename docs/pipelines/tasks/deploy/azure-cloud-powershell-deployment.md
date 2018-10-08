@@ -1,5 +1,6 @@
 ---
 title: Azure Cloud Service Deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy an Azure Cloud Service
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
 title: Create a Helm chart for a Docker enabled app with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Package and deploy a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops

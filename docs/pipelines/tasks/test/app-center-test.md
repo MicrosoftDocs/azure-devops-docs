@@ -1,5 +1,6 @@
 ---
 title: App Center Test
+titleSuffix: Azure Pipelines & TFS
 description: Test app packages with Visual Studio App Center.
 ms.topic: reference
 ms.prod: devops

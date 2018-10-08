@@ -1,5 +1,6 @@
 ---
 title: VMware deployment
+titleSuffix: Azure Pipelines & TFS
 description: Provision and manage virtual machines (VMs) in VMware vCenter Server
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 ms.prod: devops

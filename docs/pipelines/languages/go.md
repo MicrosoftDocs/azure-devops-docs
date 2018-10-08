@@ -1,5 +1,6 @@
 ---
 title: Building and testing Go projects with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Build and test Go projects using Azure Pipelines or TFS
 ms.prod: devops
 ms.technology: devops-cicd
