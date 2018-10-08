@@ -38,7 +38,7 @@ There are a number of other features across Work, Code, Build, Release, and even
 - [Visualize release progress](#visualize-release-progress)
 - [Run inline or file-based Python scripts in your pipeline](#run-inline-or-file-based-python-scripts-in-your-pipeline)
 - [Use Anaconda tools for data science in your pipeline](#use-anaconda-tools-for-data-science-in-your-pipeline)
-- [Simplify definitions with multiple agentless tasks per phase](#simplify-definitions-with-multiple-agentless-tasks-per-phase)
+- [Simplify definitions with multiple agentless tasks](#simplify-definitions-with-multiple-agentless-tasks)
 - [Manage limits on self-hosted, concurrent CI/CD jobs](#manage-limits-on-self-hosted-concurrent-cicd-jobs)
 - [Streamline authentication from agent VMs to Azure Resource Manager](#streamline-authentication-from-agent-vms-to-azure-resource-manager)
 
