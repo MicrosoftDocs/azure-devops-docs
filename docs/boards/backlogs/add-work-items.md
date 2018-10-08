@@ -164,7 +164,7 @@ To stop following changes, click the ![Following icon](../_img/icons/following-i
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!IMPORTANT]
->To support the Follow feature, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
+>To support the Follow feature, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
 
 ::: moniker-end
 
