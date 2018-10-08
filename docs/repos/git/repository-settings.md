@@ -46,9 +46,9 @@ By default, the option to complete linked work items during pull request complet
 Some teams may have different approaches to closing work items, such as at a standup meeting, and may want to discourage users from completing work items with their pull requests.
 By disabling this setting, users must opt-in to completing work items for each pull request.  
 
-##Cross-platform compatibility settings
+## Cross-platform compatibility settings
 
-> **Note:** *Our recommendation is to configure these settings *either* at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.*
+> **Note:** *Our recommendation is to configure these settings **either** at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.*
 
 ### Case enforcement
 
