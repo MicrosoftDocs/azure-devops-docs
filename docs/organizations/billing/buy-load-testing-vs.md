@@ -23,7 +23,7 @@ Azure DevOps offers a cloud-based solution for [load testing your apps](../../te
 
 Load tests are measured and billed in virtual user minutes (VUMs) as described in this Q&A: [What are VUMs? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM)
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 <a name="buy-load-testing"></a>
 

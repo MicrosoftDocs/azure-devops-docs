@@ -91,7 +91,7 @@ This data includes potentially sensitive or private information such as
 the contents of source files and the attachments on work items. For most
 Azure DevOps projects, the majority of storage in use is this type of
 unstructured blob storage. For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
 **Azure SQL database storage** is used to store the structured and
 transactional aspects of your account, including project metadata, the
@@ -99,7 +99,7 @@ versioned source control history, and work item details. Database
 storage gives you fast access to the important elements of your project
 and provides indexes into the blob storage to look up files and
 attachments. For more information, see documentation on 
-[Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/).
+[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/).
 
 Administrators can manage access to resources by granting or restricting
 permissions on user identities or groups. Azure DevOps Services uses federated
@@ -231,7 +231,7 @@ your team's success. Because of this, we publish a service level
 agreement (SLA) and provide a financial guarantee to ensure we meet this
 agreement each month. For more specifics on our SLA and financial
 guarantees, please see 
-[Azure DevOps Services SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/).
+[Azure DevOps Services SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
 
 Of course, sometimes our partner teams or dependencies have incidents
 that affect Azure DevOps Services. All our partner teams follow similar approaches to

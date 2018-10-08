@@ -34,7 +34,7 @@ This same process applies to paid extensions that are offered by other publisher
 - [Code Quality NDepend](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
 - [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
