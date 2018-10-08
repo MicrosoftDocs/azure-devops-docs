@@ -10,7 +10,7 @@ First, get the tools and your feed URL:
    >You can also manually construct a push command as follows:  
 
    ```Command
-   nuget.exe push -Source {NuGet package source URL} -ApiKey key {your_package}.nupkg`
+   nuget.exe push -Source {NuGet package source URL} -ApiKey key {your_package}.nupkg
    ```
 
 **Notes:**
