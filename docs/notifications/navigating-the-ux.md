@@ -54,21 +54,41 @@ https://dev.azure.com/{organization}/_notifications
 ## Navigating to the organization level notifications page
 Choose the Notifications page under organization settings.
 
-![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)
+   # [New navigation](#tab/new-nav)
+   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)
 
-![View organization level notifications page](_img/view-organization-notification-hub.png)
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)
+
+   ![View organization level notifications page](_img/view-organization-notification-hub.png)
+
+   ---
 
 ## Navigating to the team level notifications page
 Choose the Notifications page under project settings.
 
-![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+   # [New navigation](#tab/new-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
 
-![View team level notifications page](_img/view-team-notification-hub.png)
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+
+   ![View team level notifications page](_img/view-team-notification-hub.png)
+
+   ---
+
 
 ## Navigating to the personal notifications page
 Choose Notifications page under your profile
 
-![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+   # [New navigation](#tab/new-nav)
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)
 
-![View personal notifications page](_img/view-personal-notification-hub.png)
+   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+
+   ---
+
 
