@@ -171,7 +171,7 @@ Browse to the location of the repository on your local computer, make an edit to
 
 ## Share your changes
 
-Once you are happy wth the changes on your local computer, you can share them back to the remote repository.
+Once you are happy with the changes on your local computer, you can share them back to the remote repository.
 
 0. Commit your changes by entering the following command in the Git command window:
 
