@@ -35,11 +35,24 @@ Use this topic to learn how to:
 
 From the web portal, click the icon with your initials or picture icon, and select **Notification settings** from the drop-down menu. 
 
-<img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
+   # [New navigation](#tab/new-nav)
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+
+   ---
 
 This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the State as **On**. 
 
-<img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+   # [New navigation](#tab/new-nav)
+   <img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+
+   # [Previous navigation](#tab/previous-nav)
+   <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+   
+   ---
+
 
 A subscription can be just for you, or if you are a team admin, can be shared by everyone in the team. 
 
@@ -49,8 +62,14 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 1. From your Notifications page, click **New subscription**. 
 
-	<img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
+   # [New navigation](#tab/new-nav)
+   <img src="_img/manage-personal-notifications-new-subscription-newnav.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
 
+   # [Previous navigation](#tab/previous-nav)
+   <img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
+   
+   ---
+	
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
 	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.   
