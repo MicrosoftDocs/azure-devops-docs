@@ -1,5 +1,6 @@
 ---
 title: Azure Resource Group Deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy, start, stop, delete Azure Resource Groups
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
 title: Library for Azure Pipelines and Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 description: Understand the library in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.prod: devops

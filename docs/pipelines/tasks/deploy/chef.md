@@ -1,5 +1,6 @@
 ---
 title: Chef
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to Chef environments by editing environment attributes
 ms.topic: reference
 ms.prod: devops

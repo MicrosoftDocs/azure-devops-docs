@@ -1,5 +1,6 @@
 ---
 title: Run Git commands in a script
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops

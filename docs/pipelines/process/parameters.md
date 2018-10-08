@@ -1,6 +1,6 @@
 ---
 title: Process parameters
-titleSuffix: Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: You can link all important fields for tasks used across the build definition as process parameters
 ms.topic: conceptual
 ms.prod: devops

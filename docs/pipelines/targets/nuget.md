@@ -1,5 +1,6 @@
 ---
-title: Publishing to NuGet feeds | Microsoft Docs
+title: Publishing to NuGet feeds
+titleSuffix: Azure Pipelines & TFS
 description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2

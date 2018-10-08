@@ -2,6 +2,7 @@
 ms.assetid: 7F0B861F-D88B-45A8-8510-19041543C49E
 title: Build your SQL server database
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Define a continuous integration (CI) build for your SQL server database in Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd

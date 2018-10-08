@@ -1,5 +1,6 @@
 ---
 title: Build packer machine image
+titleSuffix: Azure Pipelines & TFS
 description: Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 ms.topic: reference
 ms.prod: devops

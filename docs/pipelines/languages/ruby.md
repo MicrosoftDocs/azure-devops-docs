@@ -1,5 +1,6 @@
 ---
 title: Building Ruby projects with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for Ruby projects.
 ms.prod: devops
 ms.technology: devops-cicd

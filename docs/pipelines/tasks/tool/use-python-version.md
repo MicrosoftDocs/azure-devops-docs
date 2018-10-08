@@ -1,5 +1,6 @@
 ---
 title: Use Python Version
+titleSuffix: Azure Pipelines & TFS
 description: Use Python version for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

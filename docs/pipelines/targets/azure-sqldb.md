@@ -1,5 +1,6 @@
 ---
 title: Azure SQL database deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops

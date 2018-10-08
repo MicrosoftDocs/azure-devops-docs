@@ -1,5 +1,6 @@
 ---
 title: Release triggers for stages, branches, and pipelines
+titleSuffix: Azure Pipelines & TFS
 description: DevOps CI CD - Understand triggers in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops

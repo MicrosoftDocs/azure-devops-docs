@@ -1,5 +1,6 @@
 ---
 title: Use Ruby Version
+titleSuffix: Azure Pipelines & TFS
 description: Use Ruby version for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

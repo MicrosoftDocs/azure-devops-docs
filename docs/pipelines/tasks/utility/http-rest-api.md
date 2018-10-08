@@ -1,5 +1,6 @@
 ---
 title: Invoke HTTP REST API task for Azure Pipelines and TFS 
+titleSuffix: Azure Pipelines & TFS
 description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: devops

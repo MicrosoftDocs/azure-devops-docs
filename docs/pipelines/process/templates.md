@@ -1,6 +1,6 @@
 ---
 title: Job and step templates
-titleSuffix: Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: How to re-use pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.prod: devops

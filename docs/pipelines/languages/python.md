@@ -1,5 +1,6 @@
 ---
 title: Building Python apps with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for Python projects.
 ms.prod: devops
 ms.technology: devops-cicd

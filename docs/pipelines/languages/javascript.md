@@ -1,5 +1,6 @@
 ---
 title: Building JavaScript and Node.js apps with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building JavaScript and Node.js apps using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

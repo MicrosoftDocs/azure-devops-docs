@@ -1,5 +1,6 @@
 ---
 title: Deployment groups in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.prod: devops
