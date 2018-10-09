@@ -108,6 +108,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
+  Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
