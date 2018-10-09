@@ -26,7 +26,7 @@
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
   - name: Create organizations
-    href: ../organizations/accounts/create-organization-msa-or-work-student.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Add users to a project or team 
     href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
   - name: Manage teams and configure team tools

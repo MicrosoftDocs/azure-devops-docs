@@ -26,7 +26,7 @@ With an organization, you gain access to the platform in which you can do the fo
 
 ## Create your organization
 
-Before you get started, read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization-msa-or-work-student.md). and invite others so they can access your organization.
+Before you get started, read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization.md). and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,
