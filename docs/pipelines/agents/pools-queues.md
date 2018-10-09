@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 title: Agents pools
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89

@@ -1,5 +1,6 @@
 ---
 title: Python Script
+titleSuffix: Azure Pipelines & TFS
 description: Run a Python script.
 ms.topic: reference
 ms.prod: devops

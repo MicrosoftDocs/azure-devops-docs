@@ -10,7 +10,7 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/07/2018
+ms.date: 10/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -40,14 +40,37 @@ The systems employ these access levels:
 - **VS Enterprise** (TFS 2017.1 and later versions): provides access to premium features
 - **Advanced** (TFS 2017 and earlier versions): provides access to premium features 
 
-## Basic access
+::: moniker range="vsts"
 
-Assign **Basic** access to all users with a Visual Studio subscriptions and paid Azure DevOps users, including a TFS client access license (CAL). Basic provides access to most features, except for Test and other premium features.
+## Azure Boards & Repos
+
+Assign **Azure Boards & Repos** to users in your Azure DevOps organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
+
+However, Visual Studio subscribers are entitled to Azure Boards & Repos as a subscriber benefit, so when you add those users be sure to assign them the “Visual Studio subscriber” access level and we will automatically recognize their subscription and enable any other features that are included based on their subscription level. For instance, the Test Plans feature is included for Visual Studio Enterprise, MSDN Platforms, and Visual Studio Test Professional subscribers.
+
+See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
 
 ![Basic access features](_img/access-levels-2017-basic.png)
 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+## Basic
+
+In TFS, assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Boards & Repos in an Azure DevOps organization.  
+For users with a subscription to Visual Studio Enterprise, you’ll either assign **Advanced** (TFS 2017 and earlier) or **VS Enterprise** (TFS 2017.1 and later). This enables the Test Manager feature.
+For users with a subscription to either Visual Studio Test Professional or MSDN Platforms, you’ll either assign **Advanced** (TFS 2017 and earlier) or you’ll assign **Basic** plus the **Test Manager** extension within the Users page (TFS 2017.1 and later).
+
+See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
+
+![Basic access features](_img/access-levels-2017-basic.png)
+
+::: moniker-end
+
 <a id="stakeholder-access">  </a>
-## Stakeholder access 
+
+## Stakeholder access
 
 ::: moniker range="vsts"
 Assign **Stakeholder** access to an unlimited number of users for free.

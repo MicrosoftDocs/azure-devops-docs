@@ -1,5 +1,6 @@
 ---
 title: Parallel jobs in Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 description: Learn about the parallel jobs pricing and availability in Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF

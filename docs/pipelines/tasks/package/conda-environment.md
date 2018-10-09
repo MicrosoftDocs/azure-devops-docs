@@ -1,5 +1,6 @@
 ---
 title: Conda Environment
+titleSuffix: Azure Pipelines & TFS
 description: How to create and activate a Conda environment when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

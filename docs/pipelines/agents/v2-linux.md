@@ -1,5 +1,6 @@
 ---
 title: Deploy a build and release agent on Linux
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can easily deploy a private build and release agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops

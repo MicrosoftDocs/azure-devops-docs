@@ -1,5 +1,6 @@
 ---
 title: Docker
+titleSuffix: Azure Pipelines & TFS
 description: Building Docker images using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

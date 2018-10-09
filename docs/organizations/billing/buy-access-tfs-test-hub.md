@@ -28,7 +28,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 ## Buy monthly access to TFS for your users
 
-1. [Sign up for an organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
 2. You can use TFS features, like Basic or Test Manager up to your total entitlements across Visual Studio subscription purchases, TFS CALs, and paid users in Azure DevOps. Based on your number of users,  [pay for users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
 
@@ -47,7 +47,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 ## Buy monthly access to Azure Test Plans
 
-1. [Sign up for an organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
 2. Based on the number of users who need Azure Test Plans access in TFS, [buy Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 

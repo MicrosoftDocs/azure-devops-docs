@@ -1,5 +1,6 @@
 ---
-title: Publish Universal Packages in pipelines | Microsoft Docs
+title: Publish Universal Packages in pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
@@ -42,7 +43,8 @@ To publish a Universal Package to your feed, add the following snippet to your a
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
     vstsFeedPublish: '<Feed name>'
     vstsFeedPackagePublish: '<Package name>'
-    packagePublishDescription: '<Package description>'
+    packagePublishtitleSuffix: Azure Pipelines & TFS
+description: '<Package description>'
 
 ```
 
@@ -90,7 +92,8 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
     vstsFeedPackagePublish: '<Package name>'
     versionOption: custom
     versionPublish: <Package version>
-    packagePublishDescription: '<Package description>'
+    packagePublishtitleSuffix: Azure Pipelines & TFS
+description: '<Package description>'
 ```
 
 # [Designer](#tab/designer)

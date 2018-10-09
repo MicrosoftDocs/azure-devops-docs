@@ -1,5 +1,6 @@
 ---
 title: Deploy a Docker container app to an Azure Kubernetes Service (AKS)
+titleSuffix: Azure Pipelines & TFS
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops

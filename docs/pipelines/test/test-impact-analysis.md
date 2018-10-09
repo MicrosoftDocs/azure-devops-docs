@@ -1,5 +1,6 @@
 ---
 title: Speed up testing with Test Impact Analysis (TIA) - test automation tools
+titleSuffix: Azure Pipelines & TFS
 description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
