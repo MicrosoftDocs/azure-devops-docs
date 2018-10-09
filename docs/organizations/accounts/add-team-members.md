@@ -93,7 +93,7 @@ Which email addresses can I add?
 
 * If your organization is Azure Active Directory-backed, you can add only email addresses that are internal to the directory.
 
-* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
+* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
 * If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](/azure/devops/organizations/accounts/add-external-user?view=vsts).
 

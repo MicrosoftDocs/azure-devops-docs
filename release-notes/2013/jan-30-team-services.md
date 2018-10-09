@@ -68,7 +68,7 @@ What we released today is just the beginning. The Git support today is just scra
 
 ##Test Case Management
 
-Many people do some amount of manual testing as part of their app development cycle. We have a product called [Microsoft Test Professional](https://www.microsoft.com/en-us/download/details.aspx?id=30662) that enables you to plan, execute and track manual testing activity. We’ve gotten feedback from our Test Professional users that there are scenarios where installing a rich client app in the test environment is prohibitive and a zero impact web experience is really needed. In this release of the service, we are previewing (note the little * on the Test hub indicating this is a preview feature) a web based manual test experience.
+Many people do some amount of manual testing as part of their app development cycle. We have a product called [Microsoft Test Professional](https://www.microsoft.com/download/details.aspx?id=30662) that enables you to plan, execute and track manual testing activity. We’ve gotten feedback from our Test Professional users that there are scenarios where installing a rich client app in the test environment is prohibitive and a zero impact web experience is really needed. In this release of the service, we are previewing (note the little * on the Test hub indicating this is a preview feature) a web based manual test experience.
 
 The new top level Test hub has a list of test plans, suites and test cases. You can see who the test cases are assigned to and their status. From here you can add, remove and edit test cases.
 

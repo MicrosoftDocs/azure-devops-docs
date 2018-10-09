@@ -22,7 +22,7 @@ Why another user name? Some applications get tripped up when they come across sp
 
 ![Alternate authentication credentials](_img/1_7_01.png)
 
-We did make a few changes to the way our Basic authentication mechanism behaves to make it more compatible with other services. This means that if you were previously using Basic authentication from the [Team Explorer Everywhere command line](https://www.microsoft.com/en-us/download/details.aspx?id=30661), or from [Git-TF](https://www.microsoft.com/en-us/download/details.aspx?id=30474), then you need to update to the very latest versions of those clients. We apologize for the inconvenience here. It should be the last major change at the protocol level so it shouldn’t happen again soon.
+We did make a few changes to the way our Basic authentication mechanism behaves to make it more compatible with other services. This means that if you were previously using Basic authentication from the [Team Explorer Everywhere command line](https://www.microsoft.com/download/details.aspx?id=30661), or from [Git-TF](https://www.microsoft.com/download/details.aspx?id=30474), then you need to update to the very latest versions of those clients. We apologize for the inconvenience here. It should be the last major change at the protocol level so it shouldn’t happen again soon.
 
 ##Email work items from backlogs
 
