@@ -13,7 +13,6 @@ monikerRange: '>= tfs-2013'
 ms.date: 09/10/2018
 ---
 
-
 # Key concepts for working with Azure DevOps Services and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]

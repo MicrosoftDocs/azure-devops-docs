@@ -1,5 +1,5 @@
 ---
-title: Office integration issues
+title: TFS-Office integration issues
 titleSuffix: Azure Boards and TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
@@ -9,10 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 03/28/2017   
+ms.date: 09/28/2018   
 ---
 
-# Office integration issues
+
+# TFS-Office integration issues
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -2,7 +2,7 @@
 
 A: When your sign-in address is shared by your personal Microsoft account and by your work account or school account, but your selected identity doesn't have access, you can't sign in. Although both identities use the same sign-in address, they're separate: they have different profiles, security settings, and permissions.
 
-Try to sign out completely from Azure DevOps by completing the following steps. Closing your browser might not sign you out completely from Azure DevOps. Sign in again to Azure DevOps and select your other identity:
+Sign out completely from Azure DevOps by completing the following steps. Closing your browser might not sign you out completely. Sign in again and select your other identity:
 
 1. Close all browsers, including browsers that aren't running Azure DevOps.
 

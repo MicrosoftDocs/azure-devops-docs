@@ -169,7 +169,7 @@ You use the [web portal administration context](../../organizations/security/add
 |[Work item query](permissions.md#query)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
 |[Work item tags](permissions.md#tags)|||![check mark](../../_img/check.png)|||
 |[Alerts](permissions.md#alerts)|||![check mark](../../_img/check.png)|||
-|[Release Management](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
+|[Releases](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
 |[Lab Management](permissions.md#lab)|||||![check mark](../../_img/check.png)|
 
 

@@ -1,5 +1,6 @@
 ---
-title: Xcode
+title: Building apps with Xcode with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building Xcode projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,9 +14,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Xcode
+# Build apps with Xcode using Azure Pipelines or Team Foundation Server
 
-This guidance explains how to build apps with Xcode.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Xcode projects with CI/CD pipelines.
 
 ## Example
 

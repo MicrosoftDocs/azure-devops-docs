@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="vsts"
 
-## Troubleshoot Azure DevOps connectivity
+## Troubleshoot connectivity
 
 As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 

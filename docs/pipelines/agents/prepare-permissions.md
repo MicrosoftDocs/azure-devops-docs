@@ -1,5 +1,6 @@
 ---
 title: Prepare permissions
+titleSuffix: Azure Pipelines & TFS
 description: Prepare permissions
 ms.topic: conceptual
 ms.prod: devops

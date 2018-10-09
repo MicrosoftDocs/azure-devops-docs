@@ -31,8 +31,21 @@ In this topic you'll learn:
 > * Work with different list types    
   
 
-> [!NOTE]  
->You can't use Office Project 365 to connect to Azure Boards and TFS.
+## Prerequisites 
+::: moniker range=">= tfs-2017" 
+- Office Excel 2010 or later version, including Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+- Office Excel 2007, Office Excel 2010, or Office Excel 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+::: moniker-end  
+
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps Services and TFS versions](/tfs/server/compatibility). 
 
 <a id="add-work-items"> </a>  
 ## Add work items

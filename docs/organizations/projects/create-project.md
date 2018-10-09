@@ -28,7 +28,7 @@ If you have a project already, and want to start coding an application project, 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can 
-[sign up for Azure DevOps Services and create a project](../accounts/create-organization-msa-or-work-student.md). 
+[sign up for Azure DevOps Services and create a project](../accounts/create-organization.md). 
 ::: moniker-end
 
 
@@ -127,9 +127,9 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you.
 
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
+1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  

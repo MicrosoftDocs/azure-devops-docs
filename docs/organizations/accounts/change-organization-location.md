@@ -12,11 +12,11 @@ ms.date: 09/17/2018
 monikerRange: 'vsts'
 ---
 
-# Find or change your organization location (region)
+# Find or change your organization location (region) in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When you [create an organization](create-organization-msa-or-work-student.md), you can choose the region where Azure DevOps hosts your organization. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers.  Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOp is available.
+When you [create an organization](create-organization.md), you can choose the region your organization is hosted in Azure DevOps. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
@@ -53,5 +53,4 @@ For information on region availability, see [Products available by region](https
 
 ## Change organization location
 
-To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). The Support staff will coordinate changing the region with the organization owner.
-
+To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff will coordinate changing the region with the organization owner.

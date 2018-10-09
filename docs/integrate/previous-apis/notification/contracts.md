@@ -3,7 +3,7 @@ title: Notification API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 generated: true
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 04/21/2017
 ---
 
 # Notification API Contracts
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 
 
 <a id="ArtifactFilter"></a>

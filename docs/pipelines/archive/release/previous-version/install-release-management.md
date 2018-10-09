@@ -1,5 +1,6 @@
 ---
 title: Install RM server/client for Visual Studio
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can install the Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015 
 ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: devops

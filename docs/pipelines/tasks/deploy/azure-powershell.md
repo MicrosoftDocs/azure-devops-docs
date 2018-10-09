@@ -1,5 +1,6 @@
 ---
 title: Azure PowerShell
+titleSuffix: Azure Pipelines & TFS
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
 ms.prod: devops

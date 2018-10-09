@@ -71,7 +71,7 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 
 ## Rename old branches
 
-# [Web Portal](#tab/vsts-tfs-web-portal)
+# [Browser](#tab/browser)
 
 0. Navigate to the **Branches** page.
 0. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.

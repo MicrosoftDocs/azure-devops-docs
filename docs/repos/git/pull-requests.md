@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 10/03/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -389,6 +389,14 @@ Update your code in response to comments by creating a new [commit](commits.md) 
 You can make quick updates to your branch directly from the **Files** tab in the **Code** view on the web.
 
 ![Updating code directly during a pull request in Azure Repos](./_img/pull-requests/pr_editing_changes.png)
+
+::: moniker range="vsts"
+
+## Change the target branch of a pull request
+
+For most teams, nearly all pull requests target the same branch, such as `master` or `develop`. However, in the case where you do need to target a different branch, it's easy to forget to change the target branch from the default. With the new feature to change the target branch of an active pull request, this is now a simple action. To learn how, see [Change the target branch of a pull request](/azure/devops/release-notes/2018/sprint-141-update#azure-repos).
+
+::: moniker-end
 
 ## Complete the pull request
 

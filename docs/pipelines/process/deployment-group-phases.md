@@ -1,5 +1,6 @@
 ---
-title: Deployment group jobs in Build and Release Management
+title: Deployment group jobs in Azure Pipelines Build and Release
+titleSuffix: Azure Pipelines & TFS
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.prod: devops

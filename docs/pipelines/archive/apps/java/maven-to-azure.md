@@ -1,5 +1,6 @@
 ---
 title: Build and Deploy your Java application to an Azure Web App
+titleSuffix: Azure Pipelines & TFS
 description: Build and Deploy your Java application to an Azure Web App
 ms.topic: conceptual
 ms.prod: devops
@@ -127,7 +128,7 @@ A: Yes.
 
 ### How do I continually deliver my app and manage my releases?
 
-[Learn about Release Management](../../../release/index.md)
+[Learn about Azure Pipelines](../../../release/index.md)
 
 
 [!INCLUDE [temp](../../../_shared/qa-definition-common-all-platforms.md)]

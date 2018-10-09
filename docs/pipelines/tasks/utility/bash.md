@@ -1,5 +1,6 @@
 ---
 title: Bash
+titleSuffix: Azure Pipelines & TFS
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
 ms.prod: devops

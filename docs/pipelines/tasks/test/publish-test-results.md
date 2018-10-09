@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines and TFS Build and Test - Publish Test Results task
+titleSuffix: Azure Pipelines & TFS
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.prod: devops
@@ -186,7 +187,8 @@ The final image will be published to Docker or Azure Container Registry
 
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: ubuntu-16.04
    variables:
      buildConfiguration: 'Release'
    steps:
@@ -215,7 +217,8 @@ The final image will be published to Docker or Azure Container Registry
 
    ```YAML
    # Build Docker image for this app to be published to Azure Container Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: ubuntu-16.04
    variables:
      buildConfiguration: 'Release'
    
@@ -248,7 +251,7 @@ The final image will be published to Docker or Azure Container Registry
 
 1. Update your build pipeline with the following
 
-   * **Agent pool**: `Hosted Linux Preview`
+   * **Agent pool**: `Hosted Ubuntu 1604`
      - **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
      - **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry. 
    * **YAML file path**: `/.vsts-ci.docker.yml`
@@ -267,7 +270,7 @@ YAML builds are not yet available on TFS.
 
 1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-   * **Agent queue**: `Hosted Linux Preview`
+   * **Agent queue**: `Hosted Ubuntu 1604`
 
 1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 

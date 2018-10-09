@@ -1,5 +1,6 @@
 ---
-title: Create a Helm chart for a Docker enabled app 
+title: Create a Helm chart for a Docker enabled app with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Package and deploy a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops
@@ -12,7 +13,9 @@ ms.date: 08/28/2018
 monikerRange: 'vsts'
 ---
 
-# Helm
+# Use Helm to package Docker-based applications
+
+**Azure Pipelines**
 
 This guidance explains how to use [Helm](https://www.helm.sh/) to package a Docker based application in to a Helm chart.
 

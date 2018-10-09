@@ -420,9 +420,9 @@ For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this
 <!-- BEGINSECTION class="md-qanda" -->
 
 
-### What are the predefined Release Management variables?
+### What are the predefined release variables?
 
-[Default release management variables](../release/variables.md#default-variables)
+[Default release variables](../release/variables.md#default-variables)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 

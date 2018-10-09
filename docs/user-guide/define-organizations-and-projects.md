@@ -13,7 +13,7 @@ ms.topic: conceptual
 monikerRange: 'vsts'
 ---
 
-# Define your organizations and projects
+# Define your organizations and projects in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
@@ -41,7 +41,7 @@ Organization settings are managed by administrators. As the creator of the organ
 
 ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
 
-For more information on configuring an organization, read [Create an organization](../organizations/accounts/create-organization-msa-or-work-student.md).
+For more information on configuring an organization, read [Create an organization](../organizations/accounts/create-organization.md).
 
 ## Define projects
 
@@ -86,8 +86,8 @@ If the projects stored in multiple repos work on independent schedules or proces
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Create an organization](../organizations/accounts/create-organization-msa-or-work-student.md)
+> [Create an organization](../organizations/accounts/create-organization.md)
 > or
 > [Create a project](../organizations/projects/create-project.md)
 
-Or, after you've created a new organization and project in Azure DevOps, you can begin sharing your code with others: [Code with git](code-with-git.md).
+Or, after you've created a new organization and project, you can begin sharing your code with others: [Code with git](code-with-git.md).

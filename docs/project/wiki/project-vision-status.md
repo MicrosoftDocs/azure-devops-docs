@@ -55,7 +55,7 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 > ![Open project summary, new nav](_img/share-project/welcome-page-new-nav.png)  
 
 You can select one of the following tasks to get started: accounts/add-team-members.md
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members-vs.md). 
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md). 
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-readme) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.md).

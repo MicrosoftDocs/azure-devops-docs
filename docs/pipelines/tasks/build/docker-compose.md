@@ -1,5 +1,6 @@
 ---
 title: Docker Compose
+titleSuffix: Azure Pipelines & TFS
 description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
 ms.prod: devops

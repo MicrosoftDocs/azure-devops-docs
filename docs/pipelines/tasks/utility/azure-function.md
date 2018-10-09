@@ -1,5 +1,6 @@
 ---
 title: Azure function task for Azure Pipelines and TFS 
+titleSuffix: Azure Pipelines & TFS
 description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
