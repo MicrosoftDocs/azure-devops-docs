@@ -47,7 +47,7 @@ A common workflow with Git is to create temporary branches from your master bran
 
 ::: moniker range="vsts"
 
-Unless you specify a [`trigger`](https://docs.microsoft.com/en-au/azure/devops/pipelines/yaml-schema#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features\*` branches to be automatically built.
+Unless you specify a [`trigger`](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features\*` branches to be automatically built.
 
 ```yaml
 trigger:
