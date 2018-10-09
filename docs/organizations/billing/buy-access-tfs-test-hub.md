@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/04/2018
+ms.date: 10/09/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or Azure Test Plans
@@ -57,7 +57,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 4. [Add users](../accounts/add-organization-users.md) to your organization. [Assign them to Test Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your organization so you can track these users.
 
-     These users will be invited to your organization, but you're not required to use Azure DevOps Services. By assigning Azure Test Plans Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
+     These users will be invited to your organization, but you're not required to use Azure DevOps Services. By assigning Test Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
 
     > [!NOTE]
     > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization.
