@@ -28,7 +28,7 @@ If you have a project already, and want to start coding an application project, 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can 
-[sign up for Azure DevOps Services and create a project](../accounts/create-organization-msa-or-work-student.md). 
+[sign up for Azure DevOps Services and create a project](../accounts/create-organization.md). 
 ::: moniker-end
 
 

@@ -1,5 +1,6 @@
 ---
 title: Install SSH Key
+titleSuffix: Azure Pipelines & TFS
 description: Install an SSH key prior to a build or release
 ms.topic: reference
 ms.prod: devops

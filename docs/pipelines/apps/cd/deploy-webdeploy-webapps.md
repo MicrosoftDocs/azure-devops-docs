@@ -1,5 +1,6 @@
 ---
 title: Deploy a web app from Azure Pipelines or TFS to Azure App Services
+titleSuffix: Azure Pipelines & TFS
 description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services in Azure Pipelines and TFS
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 ms.prod: devops

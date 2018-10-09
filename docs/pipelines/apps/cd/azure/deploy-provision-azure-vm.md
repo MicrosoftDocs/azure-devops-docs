@@ -1,5 +1,6 @@
 ---
 title: CD of an Azure VM using a Resource Manager template
+titleSuffix: Azure Pipelines & TFS
 description: Provision Azure virtual machines (VMs) using ARM templates by using Azure Pipelines or Team Foundation Server (TFS) 
 ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
 ms.prod: devops

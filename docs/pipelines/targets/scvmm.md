@@ -1,5 +1,6 @@
 ---
 title: System Center Virtual Machine Manager (SCVMM)
+titleSuffix: Azure Pipelines & TFS
 description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM)
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 ms.prod: devops

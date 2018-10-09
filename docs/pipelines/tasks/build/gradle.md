@@ -1,5 +1,6 @@
 ---
 title: Gradle build and release task
+titleSuffix: Azure Pipelines & TFS
 description: Gradle build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
 title: Building .NET Core projects with Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building .NET Core projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,5 +1,6 @@
 ---
 title: Run the agent with a self-signed certificate
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops

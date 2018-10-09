@@ -1,7 +1,7 @@
 ---
 title: Build and release permissions and security roles
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd

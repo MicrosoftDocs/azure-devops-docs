@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure CLI
+titleSuffix: Azure Pipelines & TFS
 description: Azure Pipelines and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.prod: devops

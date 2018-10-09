@@ -1,5 +1,6 @@
 ---
 title: Publish symbols for debugging
+titleSuffix: Azure Pipelines & TFS
 description: Publish symbols to a symbol server for debugging using Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd

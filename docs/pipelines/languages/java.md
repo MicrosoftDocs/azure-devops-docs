@@ -1,5 +1,6 @@
 ---
 title: Building Java projects with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building Java projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

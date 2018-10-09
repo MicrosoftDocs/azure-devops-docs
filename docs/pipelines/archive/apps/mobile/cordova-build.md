@@ -1,5 +1,6 @@
 ---
 title: Build and Test Cordova Projects
+titleSuffix: Azure Pipelines & TFS
 description: Build and Test Cordova Projects with Azure Pipelines or Team Foundation Server 2015
 ms.topic: conceptual
 ms.prod: devops

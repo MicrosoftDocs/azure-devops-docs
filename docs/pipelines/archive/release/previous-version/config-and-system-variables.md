@@ -1,5 +1,6 @@
 ---
 title: Configuration and system variables for Release Management
+titleSuffix: Azure Pipelines & TFS
 description: Configuration variables and system variables for Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
 ms.prod: devops

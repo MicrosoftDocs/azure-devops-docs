@@ -1,5 +1,6 @@
 ---
 title: Release Management deployment tools for Release Management
+titleSuffix: Azure Pipelines & TFS
 description: Learn about the release Management tools to deploy an app in Release Management for Azure Pipelines and Team Foundation Server (TFS.
 ms.assetid: 0FD15EFD-35AA-4F56-9603-64D3302C0941
 ms.prod: devops

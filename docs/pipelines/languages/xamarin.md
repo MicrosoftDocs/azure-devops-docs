@@ -1,5 +1,6 @@
 ---
 title: Building Xamarin apps with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Building Xamarin projects using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
