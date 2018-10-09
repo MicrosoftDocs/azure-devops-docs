@@ -81,7 +81,7 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 #### Q: How can I create an organization later?
 
-A:	Learn how to [sign up for Azure DevOps](create-organization-msa-or-work-student.md).
+A:	Learn how to [sign up for Azure DevOps](create-organization.md).
 
 <a name="browser-problems"></a>
 

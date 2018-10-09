@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 ## How do I get started?
 
 ### To get started in the cloud or on-premises 
-- To get started with Azure DevOps Services, begin by [creating a user](https://visualstudio.microsoft.com/team-services/). See step-by-step instructions in [Sign up for Azure DevOps Services](../organizations/accounts/create-organization-msa-or-work-student.md).  
+- To get started with Azure DevOps Services, begin by [creating a user](https://visualstudio.microsoft.com/team-services/). See step-by-step instructions in [Sign up for Azure DevOps Services](../organizations/accounts/create-organization.md).  
 - To get started with an on-premises Team Foundation Server (TFS), download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
 - If you need to create a project, create one in [Azure DevOps Services](../organizations/accounts/set-up-vs.md), or set one up in an [on-premises TFS](../organizations/projects/create-project.md).   
 - If you don't have access to the project, [get invited to the team](../organizations/security/add-users-team-project.md).  

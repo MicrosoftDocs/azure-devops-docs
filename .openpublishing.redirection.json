@@ -1837,7 +1837,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
     },
     {
@@ -2267,17 +2267,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
     },
     {
@@ -3007,8 +3007,13 @@
     },
     {
       "source_path": "docs/get-started/setup/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "docs/organizations/accounts/create-organization-msa-or-work-student.md",
+    "redirect_url": "/azure/devops/organizations/accounts/create-organization",
+    "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/use-personal-access-tokens-to-authenticate.md",
@@ -8037,7 +8042,7 @@
     },
     {
       "source_path": "docs/accounts/create-account-msa-or-work-student.md",
-      "redirect_url": "/azure/devops/organizations/accounts/create-organization-msa-or-work-student",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
       "redirect_document_id": false
     },
     {
