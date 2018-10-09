@@ -1,5 +1,6 @@
 ---
 title: Azure Monitor Alerts
+titleSuffix: Azure Pipelines & TFS
 description: Configure alerts on available metrics for an Azure resource
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
 title: App Center Distribute
+titleSuffix: Azure Pipelines & TFS
 description: Distribute app builds to testers and users via App Center
 ms.topic: reference
 ms.prod: devops

@@ -2,6 +2,7 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
@@ -250,9 +251,9 @@ Test results published within a stage of a release are
 associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
-Foundation or Azure Pipelines Build through Release Management, and are still
+Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
-governed by the retention of the release they belong to.
+governed by the retention settings of the release they belong to.
 
 <!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
 

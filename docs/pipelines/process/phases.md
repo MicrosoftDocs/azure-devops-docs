@@ -1,5 +1,6 @@
 ---
 title: Build and release jobs in Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Understand build and release jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
@@ -29,7 +30,7 @@ You can organize your build or deployment pipeline into jobs. Every build or dep
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release management deployment processes.
+> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release deployment processes.
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ At run time (when either the build or release pipeline is triggered), each job i
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> You must install Update 2 to use jobs in TFS 2017, and they are available only in release management deployment processes.
+> You must install Update 2 to use jobs in TFS 2017, and they are available only in release deployment processes.
 > Jobs in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
 
 ::: moniker-end
@@ -109,48 +110,7 @@ jobs:
     ...
 ```
 
-Jobs can also be defined as templates in a separate file. This allows you
-to define your logic once and then reuse it in several places.
-Templates can include parameters which the pipeline can vary.
-
-```yaml
-# File: templates/npm.yml
-
-parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
-
-jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: npm install
-  - script: npm test
-```
-
-When you consume the template in your pipeline, specify values for
-the template parameters.
-
-```yaml
-# File: azure-pipelines.yml
-
-jobs:
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: macOS
-    vmImage: macOS-10.13
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Linux
-    vmImage: ubuntu-1604
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Windows
-    vmImage: vs2017-win2016
-```
+It's possible to re-use some or all of a pipeline through [templates](templates.md).
 
 ::: moniker-end
 ::: moniker range="< vsts"

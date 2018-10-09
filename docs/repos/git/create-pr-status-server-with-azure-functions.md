@@ -23,7 +23,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to Azure Repos events
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:

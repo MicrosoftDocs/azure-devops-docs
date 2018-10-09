@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: TFVC Items | REST API Reference for Team Foundation Server
 description: Work with TFVC items programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Version control items
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 Items are the files and folders in Team Foundation version control.
@@ -118,7 +121,49 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items?scopePath=/$/Fabrikam-
 ```
 ### A folder
 
-[!code-REST [GET__tfvc_items_scopePath-_folder__json](./_data/items/GET__tfvc_items_scopePath-_folder_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-Fiber-TFVC/AuthSample&api-version=1.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "version": 5,
+      "isBranch": true,
+      "changeDate": "2014-03-19T17:23:59.697Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
+      "isFolder": true,
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+    },
+    {
+      "version": 9,
+      "changeDate": "2014-03-21T19:32:02.213Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+    },
+    {
+      "version": 5,
+      "changeDate": "2014-03-19T17:23:59.697Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+    },
+    {
+      "version": 9,
+      "changeDate": "2014-03-21T19:32:02.213Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
+      "isFolder": true,
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+    }
+  ],
+  "count": 4
+}
+```
+
 
 You can get the metadata for a [specific version](#getaspecificversion) of a folder, too.
 
@@ -127,12 +172,158 @@ You can get the metadata for a [specific version](#getaspecificversion) of a fol
 
 Use `recursionLevel` to include the contents of the folder in the response. You can get the contents of a [specific version](#getaspecificversion) of the folder, too.
 
-[!code-REST [GET__tfvc_items_scopePath-_folder__recursionLevel-_recursionLevel__json](./_data/items/GET__tfvc_items_scopePath-_folder__recursionLevel-_recursionLevel_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-Fiber-TFVC/AuthSample&recursionLevel=OneLevel&api-version=1.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "version": 5,
+      "isBranch": true,
+      "changeDate": "2014-03-19T17:23:59.697Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
+      "isFolder": true,
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+    },
+    {
+      "version": 9,
+      "changeDate": "2014-03-21T19:32:02.213Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+    },
+    {
+      "version": 5,
+      "changeDate": "2014-03-19T17:23:59.697Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+    },
+    {
+      "version": 9,
+      "changeDate": "2014-03-21T19:32:02.213Z",
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
+      "isFolder": true,
+      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+    }
+  ],
+  "count": 4
+}
+```
+
 
 ### Multiple items
 To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#mutlipleitems) for each item, too.
 
-[!code-REST [POST__tfvc_itemBatch_json](./_data/items/POST__tfvc_itembatch.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/tfvc/itemBatch?api-version=1.0-preview.1
+```
+```json
+{
+  "itemDescriptors": [
+    {
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs",
+      "version": 5,
+      "versionType": "changeset"
+    },
+    {
+      "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
+      "recursionLevel": "Full"
+    }
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    [
+      {
+        "version": 5,
+        "changeDate": "2014-03-19T17:23:59.697Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs?versionType=Changeset&version=5"
+      }
+    ],
+    [
+      {
+        "version": 5,
+        "isBranch": true,
+        "changeDate": "2014-03-19T17:23:59.697Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
+        "isFolder": true,
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+      },
+      {
+        "version": 5,
+        "changeDate": "2014-03-19T17:23:59.697Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
+        "isFolder": true,
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.cs",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.cs?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties",
+        "isFolder": true,
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties?versionType=Changeset&version=9"
+      },
+      {
+        "version": 9,
+        "changeDate": "2014-03-21T19:32:02.213Z",
+        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs",
+        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=9"
+      }
+    ]
+  ]
+}
+```
+
 
 ## Get a specific version
 <a name="getaspecificversion" />

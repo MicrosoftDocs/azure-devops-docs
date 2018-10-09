@@ -22,7 +22,7 @@ ms.topic: include
 
 1. In the right panel, click **Start with an empty pipeline**.
 
-1. For the **Agent pool**, select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent pool**, select _Hosted Ubuntu 1604_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. Click **Get sources** and then:
 

@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/26/2018
+ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
-# Add external users to your organization
+# Add external users to your organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you’re an Azure Active Directory (Azure AD)-backed organization user who wants to collaborate with external users, you can invite external users to your organization. To do so, you must add the identities of your external users to your Azure AD and organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
+If you’re an Azure Active Directory (Azure AD)-backed user who wants to collaborate with external users, you can invite external users to your organization. To do so, you must add the identities of your external users to your Azure AD and organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ If you’re an Azure Active Directory (Azure AD)-backed organization user who wa
 
 4. Enter the external user's email address followed by a semicolon, and then select **Add**. A warning message appears, indicating that an external user is being added from outside your directory.
 
-   ![Add external user to Azure DevOps](_img/add-external-user/add-external-user-vert.png)
+   ![Add external user](_img/add-external-user/add-external-user-vert.png)
 
 5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your organization.
 
@@ -66,7 +66,7 @@ If you’re an Azure Active Directory (Azure AD)-backed organization user who wa
 
 4. Enter the external user's email address followed by a semicolon, and then select **Add**. A warning message appears, indicating that an external user is being added from outside your directory.
 
-   >![Add external user to Azure DevOps](_img/add-external-user/add-external-user.png)
+   >![Add external user](_img/add-external-user/add-external-user.png)
 
 5. Advise the external user to locate the email that they received from Azure DevOps and go to the Azure B2B redemption URL, which will add the user to your organization.
 

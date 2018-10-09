@@ -1,5 +1,6 @@
 ---
 title: Download Package
+titleSuffix: Azure Pipelines & TFS
 description: Download a package from a Package Management feed in Azure Artifacts or TFS.  Requires the Package Management extension.
 ms.topic: reference
 ms.prod: devops

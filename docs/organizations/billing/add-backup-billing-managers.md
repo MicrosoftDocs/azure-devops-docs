@@ -12,7 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Add a user to make purchases
+# Add a user to make purchases for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -52,5 +52,5 @@ A backup billing manager is added to your organization.
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+* [Pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Billing support](https://azure.microsoft.com/support/devops/)

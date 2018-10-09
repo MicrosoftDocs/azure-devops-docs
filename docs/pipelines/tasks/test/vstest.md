@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test
+titleSuffix: Azure Pipelines & TFS
 description: Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. Tests can be distributed on multiple agents using this task (version 2).
 ms.topic: reference
 ms.prod: devops

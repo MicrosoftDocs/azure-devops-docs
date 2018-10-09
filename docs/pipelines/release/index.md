@@ -1,6 +1,7 @@
 ---
-title: Release Pipelines for Release Management in Azure Pipelines and TFS
-description: DevOps CI CD - Understand release pipelines in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Release pipelines in Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
+description: DevOps CI CD - Understand release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,12 +21,12 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-A **release pipeline** is one of the fundamental concepts in Release Management for your DevOps CI/CD processes.
+A **release pipeline** is one of the fundamental concepts in Azure Pipelines for your DevOps CI/CD processes.
 It defines the end-to-end release pipeline for an application to be deployed across various stages.
 
-You start using Release Management by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
+You start using Azure Pipelines releases by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
 
-An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Azure Pipelines, Jenkins, or Team City.
+An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Azure Pipelines releases can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Azure Pipelines build, Jenkins, or Team City.
 
 You define the **release pipeline** using [stages](environments.md), and restrict deployments into or out of an stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
@@ -89,7 +90,7 @@ You can customize how long releases of this pipeline must be retained. For more 
 
 ## Release history
 
-Every time you save a release pipeline, Release Management keeps a copy of the changes. This allows you to compare the changes at a later point, especially when you are debugging a deployment failure.
+Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This allows you to compare the changes at a later point, especially when you are debugging a deployment failure.
 
 ## Related topics
 

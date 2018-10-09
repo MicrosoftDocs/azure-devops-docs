@@ -14,7 +14,7 @@ ms.date: 08/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Features
+# Azure DevOps Features
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -1178,8 +1178,8 @@ pipelines\tasks\build\_img
 <br />
 
 
-<p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
+<p><b>When to use Azure Pipelines or Build &amp; Release in TFS?</b></p>
+<p>Evaluate how Azure Pipelines and Build &amp; Release in TFS can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>
@@ -2789,7 +2789,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](/azure/devops/release-notes/)
+- [Azure DevOps Services - Features update](/../../release-notes.md)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 
 <br/>

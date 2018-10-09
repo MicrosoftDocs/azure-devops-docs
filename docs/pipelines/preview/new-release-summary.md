@@ -1,5 +1,6 @@
 ---
 title: New release progress views
+titleSuffix: Azure Pipelines
 description: A preview of a new user experience for release progress on Azure Pipelines
 ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
 ms.prod: devops

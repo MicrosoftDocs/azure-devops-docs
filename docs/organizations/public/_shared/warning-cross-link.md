@@ -8,7 +8,7 @@ In Azure DevOps, you can link objects that exist in different projects defined i
 
 The link types used to construct these links&mdash;as illustrated in the following imagemdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
-![Cross project link types](/azure/devops/boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png) 
+![Cross project link types](/../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png)
 
 Five kinds of cross-project links expose content from the private project.
 

@@ -1,5 +1,6 @@
 ---
 title: Xcode Package iOS build and release task
+titleSuffix: Azure Pipelines & TFS
 description: Xcode Package iOS build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd

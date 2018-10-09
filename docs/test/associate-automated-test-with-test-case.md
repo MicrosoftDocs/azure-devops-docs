@@ -50,9 +50,9 @@ The process to associate an automated test with a test case is:
    test with a test case as shown [below](#add-test). The test case must have
    been added to a test plan that uses the build you just defined. 
 
-If you are using Team Foundation Build and Release Management in
+If you are using the build and release services in
 Azure DevOps or TFS (not a [XAML build](../pipelines/test/reference-qa.md#xaml-build)), you can run associated tests in the 
-Build and Release pipeline by using the
+build and release pipelines by using the
 [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
 You _cannot_ run tests on-demand using Microsoft Test Manager (MTM) unless you are using a [XAML build](../pipelines/test/reference-qa.md#xaml-build). 
 

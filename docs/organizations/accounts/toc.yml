@@ -9,7 +9,7 @@
 - name: Quickstarts
   items:
   - name: Create your organization
-    href: create-organization-msa-or-work-student.md
+    href: create-organization.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Set permissions
@@ -55,7 +55,7 @@
   - name: Manage access to your organization
     items:
     - name: Add users to your organization
-      href: add-organization-users-from-user-hub.md
+      href: add-organization-users.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access

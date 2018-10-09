@@ -12,7 +12,6 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-
 # Change the Azure subscription your organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
@@ -40,7 +39,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Prerequisites
 
-1. [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
@@ -57,7 +56,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 2. Go to **All services** > **Azure DevOps Services organizations**.
 
-   ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Choose All services and Azure DevOps Services organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization and **Remove billing**.
 

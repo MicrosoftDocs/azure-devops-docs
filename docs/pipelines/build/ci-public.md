@@ -1,5 +1,6 @@
 ---
 title: Build open source projects
+titleSuffix: Azure Pipelines & TFS
 description: Build open source repositories by using public projects in Azure Pipelines
 services: vsts
 ms.prod: devops

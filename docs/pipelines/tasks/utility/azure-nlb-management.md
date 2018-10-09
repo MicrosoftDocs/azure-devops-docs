@@ -1,5 +1,6 @@
 ---
 title: Azure Network Load Balancer
+titleSuffix: Azure Pipelines & TFS
 description: Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
 ms.topic: reference
 ms.prod: devops
