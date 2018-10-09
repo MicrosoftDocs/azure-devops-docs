@@ -22,7 +22,7 @@ In this quickstart, you learn how to pay for more users in your organization. Yo
 
 For a list of included features, see the [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
