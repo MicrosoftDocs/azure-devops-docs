@@ -91,7 +91,7 @@ This data includes potentially sensitive or private information such as
 the contents of source files and the attachments on work items. For most
 Azure DevOps projects, the majority of storage in use is this type of
 unstructured blob storage. For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
 **Azure SQL database storage** is used to store the structured and
 transactional aspects of your account, including project metadata, the
@@ -99,7 +99,7 @@ versioned source control history, and work item details. Database
 storage gives you fast access to the important elements of your project
 and provides indexes into the blob storage to look up files and
 attachments. For more information, see documentation on 
-[Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/).
+[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/).
 
 Administrators can manage access to resources by granting or restricting
 permissions on user identities or groups. Azure DevOps Services uses federated
@@ -231,7 +231,7 @@ your team's success. Because of this, we publish a service level
 agreement (SLA) and provide a financial guarantee to ensure we meet this
 agreement each month. For more specifics on our SLA and financial
 guarantees, please see 
-[Azure DevOps Services SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/).
+[Azure DevOps Services SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
 
 Of course, sometimes our partner teams or dependencies have incidents
 that affect Azure DevOps Services. All our partner teams follow similar approaches to
@@ -287,10 +287,10 @@ The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
 ### Reporting Security Issues
-If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps Services service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/organizations/security/ff852094) page.
+If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps Services service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/organizations/security/ff852094) page.
 
 >[!IMPORTANT]
->While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
+>While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683)
 
 ### Restricting access
 
@@ -384,7 +384,7 @@ integrity, traceability and audit rules, we view all information within Azure De
 These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within Azure DevOps Services. 
 We have ensured that when an entire Azure DevOps Services account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). 
 To learn more about how Azure DevOps Services honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
-To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 

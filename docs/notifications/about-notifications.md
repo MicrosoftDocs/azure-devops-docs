@@ -54,6 +54,6 @@ You can also use a third-party service like Zapier to send notifications to hund
 
 ## On-premises SMTP server (TFS)
  
-For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications. 
+For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications. 
 
 ::: moniker-end

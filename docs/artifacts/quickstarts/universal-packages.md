@@ -21,7 +21,7 @@ Universal Packages store one or more files together in a single unit that has a 
 
 ## Prerequisites
 
-1. Download and install the latest [build](/cli/vsts/overview?view=vsts-cli-latest) of the VSTS CLI and install it.
+1. Download and install the latest [build](/cli/vsts/overview?view=vsts-cli-latest) of the VSTS CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 
 > [!NOTE]
