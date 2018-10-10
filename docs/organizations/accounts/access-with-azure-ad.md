@@ -28,7 +28,7 @@ You can also enforce policies for accessing
 your team's critical resources and key assets.
 
 > To use existing on-premises identities with Azure DevOps,
-> you can integrate on-premises directories with Azure AD by using
+> you can integrate directories with Azure AD by using
 > [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 > To switch your organization to another directory,
 > learn [how to change your directory in Azure AD](change-organization-location.md).
@@ -39,9 +39,7 @@ Your organization authenticates users
 through your organization's directory so that
 only users who are members or guests in that directory can
 get access to your organization.
-When users are removed from your directory
-(for example, because they've moved elsewhere),
-they can't access your organization anymore.
+When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
 Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)
 can manage users in your directory,
 so they control who can get access to your organization.
