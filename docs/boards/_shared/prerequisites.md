@@ -12,7 +12,7 @@ ms.topic: include
 * You must be a member of the Contributors group and granted [Basic access](/azure/devops/organizations/security/access-levels) or be granted Stakeholder access to add or modify work items. Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow**. 
 
 > [!NOTE]  
-> Users with Stakeholder access for a public project have full access to backlog and board features the same as those granted to users with Basic access. To learn more, see [[About access levels](/azure/devops/organizations/security/access-levels)
+> Users with Stakeholder access for a public project have full access to backlog and board features the same as those granted to users with Basic access. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels)
 
 
 ::: moniker-end

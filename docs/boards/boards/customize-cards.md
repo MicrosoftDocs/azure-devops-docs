@@ -174,7 +174,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 0. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon icon next to the field.
+0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
 0. When done with your changes, choose **Save**.
 

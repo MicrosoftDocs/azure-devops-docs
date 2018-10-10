@@ -23,7 +23,7 @@ Use the [**@mention** control](../../notifications/at-mentions.md) to notify ano
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name.
 
 > [!IMPORTANT]  
-> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
 ::: moniker-end  
 
 

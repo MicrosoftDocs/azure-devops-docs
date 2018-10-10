@@ -20,7 +20,7 @@ Most extensions have a need to call Azure DevOps Services REST APIs on behalf of
 * If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
 * If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
-    ```
+    ```javascript
     VSS.require(["VSS/Authentication/Services"],
         function (VSS_Auth_Service) {
             VSS.getAccessToken().then(function(token){
@@ -51,7 +51,7 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 
 1. The Core SDK `getAppToken` method return a promise that, when resolved, contains a token signed with your extension's certificate.
 
-    ```
+    ```javascript
     VSS.getAppToken().then(function(token){
         // Add token to your request
     });
@@ -69,7 +69,7 @@ You will need to add 1 reference to get this sample to compile.
 
 1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.2.2 of this package.
 
-```
+```csharp
 using System.Collections.Generic;
 using System.ServiceModel.Security.Tokens;
 using Microsoft.IdentityModel.Tokens;
@@ -110,7 +110,7 @@ You will need to add 1 reference to get this sample to compile.
 
 **Startup.cs**
 
-```
+```csharp
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -163,7 +163,7 @@ namespace TokenSample.Core.API
 
 **Your API Controllers:**
 
-```
+```csharp
 [Route("api/[controller]"), 
  Authorize()]
 public class SampleLogicController : Controller

@@ -29,7 +29,7 @@ The **@mention** control allows you to quickly pull someone into a work item o
 
 <a id="mention-person-id">  </a>
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-In order for team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts).  
+In order for team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
 ::: moniker-end
 
 When leaving a code comment in a pull request, you can type **@** to trigger the **@mention** identity picker. From the identity selector, you'll see a list of those people that you have you've recently mentioned. You can choose one of those names or type in the name of the person you are looking for to perform a directory search.  
