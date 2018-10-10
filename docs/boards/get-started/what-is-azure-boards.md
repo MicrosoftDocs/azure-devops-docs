@@ -17,13 +17,13 @@ ms.date: 09/05/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Azure Boards provides a suite of interactive Agile tools with which you can plan and track work, bugs, and issues. Azure Boards is available from Azure DevOps Services and Team Foundation Server (TFS).
+Azure Boards provides a suite of interactive Agile tools that you can use to plan and track work, bugs, and issues. Azure Boards is available from Azure DevOps Services and Team Foundation Server (TFS).
 
-Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that Azure Boards provides are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/learn/agile/what-is-agile).
+Agile is a term that was coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org). Agile approaches to software development emphasize incremental delivery, team collaboration, and continual planning and learning. The Agile tools that Azure Boards provides are designed to support teams that work with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/learn/agile/what-is-agile).
 
-All tools support viewing and defining work items. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier, an ID, which is unique within an account or project collection. 
+All tools support viewing and defining work items. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier. The IDs are unique within an account or project collection. 
 
-Your Agile tool set, available from **Azure Boards**, consists of the following main interactive lists and signboards. Each of these pages provide a filtered set of work items. 
+Your Agile tool set, available from Azure Boards, consists of the following main interactive lists and signboards. Each of these pages provides a filtered set of work items. 
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
@@ -31,17 +31,17 @@ Your Agile tool set, available from **Azure Boards**, consists of the following 
 
 <a id="scale" />
 ## Teams and Agile tools
-A team refers to a group of project members that work in a particular product area. Those areas are represented as **area paths**, hierarchical paths denoting the possible areas of ownership in an organization. A team is defined by a name, its members, and its area paths.
+A team refers to a group of project members who work in a particular product area. Those areas are represented as *area paths*. Area paths are hierarchical paths that denote the possible areas of ownership in an organization. A team is defined by a name, its members, and its area paths.
 
-These Agile tool&mdash;**Boards**, **Backlogs**, **Sprints**, and **Plans**&mdash;rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+The Agile tools Boards, Backlogs, Sprints, and Plans rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
 ::: moniker range="vsts"   
-Your view and options available will differ somewhat depending on if you have [enabled the New Navigation feature](../../project/navigation/preview-features.md), which displays a vertical navigation interface along with several changes to navigation of Agile tools. 
+Your view and options available differ somewhat depending on whether you [enabled the New Navigation feature](../../project/navigation/preview-features.md). This feature displays a vertical navigation interface along with several changes to navigation of Agile tools. 
 ::: moniker-end  
 
 ## Work items and work item types
 
-Open **Work Items** to access several personalized pivots and filter functions to focus on work items you care about. You can quickly find work items assigned to you, that you're following, or have viewed or modified recently&mdash;event when defined for different teams and projects. To learn more, see [View and add work items](../work-items/view-add-work-items.md). 
+Open **Work Items** to access several personalized pivots and filter functions to focus on work items you care about. You can quickly find work items assigned to you. You also can find work items that you're following or viewed or modified recently. You can even find work items defined for different teams and projects. To learn more, see [View and add work items](../work-items/view-add-work-items.md). 
 
 
 # [New navigation](#tab/new-nav)
@@ -80,7 +80,7 @@ The **Work Items** page isn't an available feature for TFS 2017 and earlier vers
 
 ## Boards 
 
-Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
+Boards present work items as cards and support quick status updates through a drag-and-drop feature. The feature is similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices. You can define columns and swim lanes, set Work-in-Progress (WIP) limits, define the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -132,7 +132,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ## Sprints
 
-Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
+Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path by using the drag-and-drop feature. You then can view that work in a separate *sprint backlog*. 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -154,13 +154,13 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 ---
 
-You can also filter the cards on your taskboard to show only those cards mapped to a given sprint. It is recommended that an entire organization share the same sprint interval in order to align multiple teams in a single org to the same rhythm. A common sprint rhythm is sometimes referred to as the "heartbeat" of an org. 
+You also can filter the cards on your taskboard to show only those cards mapped to a given sprint. We recommend that an entire organization share the same sprint interval to align multiple teams in a single org to the same rhythm. A common sprint rhythm is sometimes referred to as the "heartbeat" of an org. 
 
 
 
 ## Queries
 
-Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
+Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to find groups of work items with something in common. You can use queries to triage a set of items to prioritize or assign them. You also use queries to create status and trend charts that you then can add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Queries, Active Bugs, new navigation](_img/about-boards/queries-active-bugs-vert.png)   
@@ -168,7 +168,7 @@ Queries are filtered lists of work items based on criteria that you define using
 
 ## Delivery plans
 
-Delivery plans display work items as cards along a timeline or calendar view. This can be an effective communication tool with managers, partners and stakeholders for a team or for several teams collaborating on specific features or requirements.
+Delivery plans display work items as cards along a timeline or calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. It also can be used for several teams that collaborate on specific features or requirements.
 
 ![Moving a card to a different iteration](../plans/_img/plans_move1.png)
 
