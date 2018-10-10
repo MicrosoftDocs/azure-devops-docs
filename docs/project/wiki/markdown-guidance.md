@@ -685,10 +685,10 @@ Attachments support the following file formats.
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
 > |------|---------| 
-> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  | 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Hypertext Markup Language(.html, .htm), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  | 
 > | Compressed files | ZIP (.zip) and GZIP (.gz) | 
 > | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
-> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 
+> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg), Icons (.ico) | 
 > | Visio | VSD (.vsd and .vsdx)  | 
 > | Video | MOV (.mov), MP4 (.mp4) | 
 
