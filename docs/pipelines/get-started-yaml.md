@@ -95,11 +95,14 @@ Back in Azure Pipelines, observe that a new build is queued. Its status might be
 You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow a track for the language of your choice:
 
 * [.NET Core](languages/dotnet-core.md)
+* [Docker](languages/docker.md)
 * [Go](languages/go.md)
 * [Java](languages/java.md)
 * [Node.js](languages/javascript.md)
 * [Python](languages/python.md)
 
 To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
+
+To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
 For details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
