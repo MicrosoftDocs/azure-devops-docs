@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 Azure DevOps Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including the following:
 
 - Git repositories for source control of your code
-- Build and release management to support continuous integration and delivery of your apps
+- Build and release services to support continuous integration and delivery of your apps
 - Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods
 - A variety of tools to test your apps, including manual/exploratory testing, load testing, and continuous testing
 - Highly customizable dashboards for sharing progress and trends
@@ -48,7 +48,7 @@ Sign up for free by creating an organization and then, either upload your code t
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 
 <!---

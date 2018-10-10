@@ -38,7 +38,7 @@ ms.topic: include
 </tr>
 
 <tr>
-<td align="left">Define releases, manage deployments, manage releases with Release Management
+<td align="left">Define releases and manage deployments
 </td>
 <td>  </td>
 <td>  </td>

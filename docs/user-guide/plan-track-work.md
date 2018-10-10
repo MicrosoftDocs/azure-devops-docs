@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 09/10/2018
 ---
 
-# Quickstart: Plan and track work
+# Quickstart: Plan and track work in Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -44,11 +44,11 @@ You can start adding work items once you connect to a project. If you don't have
 
 	![Browse all projects](_img/plan-track-work/browse-all-projects-vert.png)
 
-2.	Select **Azure Boards** > **Work Items**. 
+2.	Select **Azure Boards** > **Work Items**.
 
     >![Select Boards and Work Items to create a new work item](_img/plan-track-work/project-select-work-items-vert.png)
 
-3. Choose **New Work Item** and select the work item type you want.  Here, we choose to create a **Feature**. 
+3. Choose **New Work Item** and select the work item type you want.  Here, we choose to create a **Feature**.
 
    >![Choose New Work Item and type](_img/plan-track-work/new-work-item-select-type-vert.png)
 

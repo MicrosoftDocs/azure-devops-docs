@@ -1,5 +1,6 @@
 ---
 title: Chef Knife
+titleSuffix: Azure Pipelines & TFS
 description: Run Scripts with knife commands on your chef workstation
 ms.topic: reference
 ms.prod: devops

@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Columns for Kanban boards | REST API Reference for Team Foundation Server
 description: Work with the columns on boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: D2B3A527-C95C-4E56-ADC5-D53FEF16025D
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Columns on a Kanban board
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -36,11 +39,129 @@ GET https://{instance}/defaultcollection/{project}/{team}/_apis/work/boards/{boa
 
 ### By ID
 
-[!code-REST [GET__work_boards__boardId__columns_json](./_data/GET__work_boards__boardId__columns.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "count": 4,
+  "value": [
+    {
+      "id": "12eed5fb-8af3-47bb-9d2a-058fbe7e1196",
+      "name": "New",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "New",
+        "Bug": "New"
+      },
+      "columnType": "incoming"
+    },
+    {
+      "id": "5f72391d-af1c-4754-9459-23138eba13e3",
+      "name": "Approved",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Approved",
+        "Bug": "Approved"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "4ddb0875-547e-4d2c-b36a-4ea9a1f7be41",
+      "name": "Committed",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Committed",
+        "Bug": "Committed"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "1016c466-6cb6-4bf9-9a19-4e9cc88204df",
+      "name": "Done",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "Done",
+        "Bug": "Done"
+      },
+      "columnType": "outgoing"
+    }
+  ]
+}
+```
+
 
 ### By name
 
-[!code-REST [GET__work_boards__boardName__columns_json](./_data/GET__work_boards__boardName__columns.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/Backlog%20items/columns?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "count": 4,
+  "value": [
+    {
+      "id": "12eed5fb-8af3-47bb-9d2a-058fbe7e1196",
+      "name": "New",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "New",
+        "Bug": "New"
+      },
+      "columnType": "incoming"
+    },
+    {
+      "id": "5f72391d-af1c-4754-9459-23138eba13e3",
+      "name": "Approved",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Approved",
+        "Bug": "Approved"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "4ddb0875-547e-4d2c-b36a-4ea9a1f7be41",
+      "name": "Committed",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Committed",
+        "Bug": "Committed"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "1016c466-6cb6-4bf9-9a19-4e9cc88204df",
+      "name": "Done",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "Done",
+        "Bug": "Done"
+      },
+      "columnType": "outgoing"
+    }
+  ]
+}
+```
+
 
 ## Update columns on a board
 <a name="updatecolumnsonaboard" />
@@ -94,7 +215,114 @@ Status code: 400
 }
 ```
 
-[!code-REST [PUT__work_boards__boardName__columns_json](./_data/PUT__work_boards__boardName__columns.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/Backlog%20items/columns?api-version=2.0-preview
+```
+```json
+[
+  {
+    "id": "12eed5fb-8af3-47bb-9d2a-058fbe7e1196",
+    "name": "New",
+    "itemLimit": 0,
+    "stateMappings": {
+      "Product Backlog Item": "New",
+      "Bug": "New"
+    },
+    "columnType": "incoming"
+  },
+  {
+    "id": "5f72391d-af1c-4754-9459-23138eba13e3",
+    "name": "Approved",
+    "itemLimit": 5,
+    "stateMappings": {
+      "Product Backlog Item": "Approved",
+      "Bug": "Approved"
+    },
+    "isSplit": false,
+    "description": "",
+    "columnType": "inProgress"
+  },
+  {
+    "id": "4ddb0875-547e-4d2c-b36a-4ea9a1f7be41",
+    "name": "Committed",
+    "itemLimit": 5,
+    "stateMappings": {
+      "Product Backlog Item": "Committed",
+      "Bug": "Committed"
+    },
+    "isSplit": false,
+    "description": "",
+    "columnType": "inProgress"
+  },
+  {
+    "id": "1016c466-6cb6-4bf9-9a19-4e9cc88204df",
+    "name": "Done",
+    "itemLimit": 0,
+    "stateMappings": {
+      "Product Backlog Item": "Done",
+      "Bug": "Done"
+    },
+    "columnType": "outgoing"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "count": 4,
+  "value": [
+    {
+      "id": "12eed5fb-8af3-47bb-9d2a-058fbe7e1196",
+      "name": "New",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "New",
+        "Bug": "New"
+      },
+      "columnType": "incoming"
+    },
+    {
+      "id": "5f72391d-af1c-4754-9459-23138eba13e3",
+      "name": "Approved",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Approved",
+        "Bug": "Approved"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "4ddb0875-547e-4d2c-b36a-4ea9a1f7be41",
+      "name": "Committed",
+      "itemLimit": 5,
+      "stateMappings": {
+        "Product Backlog Item": "Committed",
+        "Bug": "Committed"
+      },
+      "isSplit": false,
+      "description": "",
+      "columnType": "inProgress"
+    },
+    {
+      "id": "1016c466-6cb6-4bf9-9a19-4e9cc88204df",
+      "name": "Done",
+      "itemLimit": 0,
+      "stateMappings": {
+        "Product Backlog Item": "Done",
+        "Bug": "Done"
+      },
+      "columnType": "outgoing"
+    }
+  ]
+}
+```
+
 
 ## Get available board columns
 
@@ -112,8 +340,74 @@ GET https://{instance}/defaultcollection/[{project}/]_apis/work/boardcolumns/?ap
 
 ### For a project
 
-[!code-REST [GET__work_boards__boardId__columns_json](./_data/boardSuggestedValues/project/GET__work_boardColumns_.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/fabrikam/_apis/work/boardColumns/?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 4,
+  "value": [
+    {
+      "name": "Active"
+    },
+    {
+      "name": "Closed"
+    },
+    {
+      "name": "New"
+    },
+    {
+      "name": "Resolved"
+    }
+  ]
+}
+```
+
 
 ### For a collection
 
-[!code-REST [GET__work_boards__boardName__columns_json](./_data/boardSuggestedValues/collection/GET__work_boardColumns_.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/_apis/work/boardColumns/?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 8,
+  "value": [
+    {
+      "name": "Active"
+    },
+    {
+      "name": "Closed"
+    },
+    {
+      "name": "Development"
+    },
+    {
+      "name": "Done"
+    },
+    {
+      "name": "New"
+    },
+    {
+      "name": "Ready"
+    },
+    {
+      "name": "Resolved"
+    },
+    {
+      "name": "Test"
+    }
+  ]
+}
+```
+

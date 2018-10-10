@@ -8,20 +8,21 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
-# Add project members in Azure DevOps Services
+# Add project members in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add members to your project in Azure DevOps Services, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Team Foundation Server (TFS), see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
+Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Team Foundation Server (TFS), see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
-When you add members to projects, Azure DevOps Services automatically assigns one of the following permissions:
+When you add members to projects, one of the following permissions is automatically assigned:
+
 * [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if your organization has available seats. 
+if your organization has available seats.
 * [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if your organization does *not* have available seats. 
+if your organization does *not* have available seats.
 
 When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access and, in some instances, they get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
@@ -55,7 +56,6 @@ To add members to projects, you need [*project administrator*](../security/set-p
 4. Add users or groups.
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
-
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -95,19 +95,19 @@ Which email addresses can I add?
 
 * You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
-* If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](/azure/devops/organizations/accounts/add-external-user?view=vsts).
+* If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](add-external-user.md).
 
-	![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
+  ![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
 
-	After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
+  After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
 
     What if new team members don't receive or lose the invitation email?
 
-    * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+  * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
   * **MSA-backed organizations**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
-	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
+   [Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
 ## Next steps
 
@@ -117,5 +117,5 @@ Which email addresses can I add?
 
 * [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
-* [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps Services billing support](https://azure.microsoft.com/support/devops/) 
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/) 

@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 title: Build and Release Agents
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Learn about building your code or deploying your software using build and release agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58

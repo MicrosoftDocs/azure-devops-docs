@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Add users to your organization or project
+# Add users to your organization or project in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -20,22 +20,21 @@ Add users to your organization and specify the level of features they can use, s
 These kinds of users can join your organization for free:
 
 * Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
-such as version control, tools for Agile, Java, build, release management, and more
+such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
 such as working with your backlog, work items, and queries
 * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/)
-who also get Basic features, and in some cases, additional features with specific extensions, such as
-[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
 [Need more users with Basic features or Visual Studio subscriptions?](add-basic-or-vs-subscription-users.md)
 
 > [!NOTE]
 > You can add people to projects,
-> rather than to your organization. Azure DevOps automatically assigns them
+> rather than to your organization. They are automatically assigned
 > [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
 > if your organization has seats available,
 > or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
-> if not. Learn [how to add members to projects](add-team-members-vs.md).
+> if not. Learn [how to add members to projects](add-team-members.md).
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
 
@@ -45,7 +44,7 @@ Access levels control which features are available to users - that is, the full 
 
 ## Prerequisites
 
-You need Azure DevOps project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You need project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your organization
 

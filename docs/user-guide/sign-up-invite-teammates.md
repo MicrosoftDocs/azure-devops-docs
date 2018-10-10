@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Quickstart: Sign up for a free organization
+# Quickstart: Sign up for a free organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
@@ -39,6 +39,3 @@ For more information about managing users and organization access, see [Add orga
 > [Add code to your Git repository](code-with-git.md)
 >
 > [Plan and track work](plan-track-work.md)
-
-
- 

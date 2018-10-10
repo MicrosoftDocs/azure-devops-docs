@@ -13,8 +13,7 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
-# Quickstart: Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 

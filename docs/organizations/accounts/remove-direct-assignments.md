@@ -1,6 +1,6 @@
 ---
 title: Remove direct assignments
-description: Learn how to remove direct assignments in your Azure DevOps Services (Visual Studio Online, VSO, Azure DevOps Services) organization
+description: Learn how to remove direct assignments in your Azure DevOps organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Remove direct assignments from users
+# Remove direct assignments from users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

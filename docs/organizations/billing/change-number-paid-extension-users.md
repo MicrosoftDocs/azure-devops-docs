@@ -12,7 +12,7 @@ ms.date: 09/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Change the number of paid users for an Azure DevOps extension
+# Change the number of paid extension users for Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -92,4 +92,4 @@ The number of paid extension users is updated.
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)

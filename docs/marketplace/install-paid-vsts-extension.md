@@ -127,5 +127,5 @@ Tell your team about this extension, so they can start using its capabilities.
 - [Add backup billing managers](../organizations/billing/add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](../organizations/billing/change-azure-subscription.md)
 - [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
-- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

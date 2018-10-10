@@ -1,5 +1,6 @@
 ---
 title: Docker
+titleSuffix: Azure Pipelines & TFS
 description: Building Docker images using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,10 +14,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Docker
+# Build Docker apps with Azure Pipelines or Team Foundation Server
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as
-Docker Hub or Azure Container Registry.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as Docker Hub or Azure Container Registry with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -377,7 +379,9 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
 ::: moniker range="vsts"
 > [!NOTE]
-> When using Hosted Linux agents, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for example, to drive tests. One way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the example above. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
+> When using agents in the Hosted Linux Preview pool, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for example, to drive tests. The preferred workaround is to upgrade to the _Hosted Ubuntu 1604_ pool, where the agents do not run inside a container.
+
+If you can't upgrade, another way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the example above. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
 :::moniker-end
 
 ::: moniker range="vsts"
@@ -413,7 +417,7 @@ If you're able to build your image on your development machine, but are having t
 
 * If you use Microsoft-hosted agents to run your builds, the Docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
 
-* If you use Hosted Linux agents, then the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers.
+* If you use agents from the Hosted Linux Preview pool, then the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers. Also, you should upgrade those builds to use the _Hosted Ubuntu 1604_ pool, where the agents do not run in containers.
 
 ::: moniker-end
 

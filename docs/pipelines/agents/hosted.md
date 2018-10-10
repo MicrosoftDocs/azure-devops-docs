@@ -1,5 +1,6 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -13,6 +14,10 @@ monikerRange: 'vsts'
 ---
 
 # Microsoft-hosted agents
+
+> [!NOTE]
+> The Hosted Linux Preview Pool is deprecated and will be removed in December 2018.
+> [Learn more below](#hosted-linux-preview-pool-deprecation).
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
@@ -173,6 +178,10 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
+
+## Hosted Linux Preview pool deprecation
+
+[!INCLUDE [include](_move-from-hosted-linux-preview.md)]
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]

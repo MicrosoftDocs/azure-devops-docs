@@ -1,5 +1,6 @@
 ---
-title: Workflow using multiple jobs in Build and Release Management
+title: Workflow using multiple jobs in Azure Pipelines Build and Release
+titleSuffix: Azure Pipelines & TFS
 description: Understand how to configure a workflow using jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 497316D5-F657-4FFF-9F31-6DBEE9408D99
 ms.prod: devops

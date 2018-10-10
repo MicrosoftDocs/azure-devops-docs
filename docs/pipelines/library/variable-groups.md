@@ -1,6 +1,7 @@
 ---
 title: Variable groups for Azure Pipelines and TFS
-description: Understand variable groups in Azure Pipelines and Team Foundation Server (TFS) with Release Management
+titleSuffix: Azure Pipelines & TFS
+description: Understand variable groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,6 +25,11 @@ Use a variable group to store values that you want to make available across
 multiple build and release pipelines. Variable groups are defined and managed in the **Library** tab of the
 **Pipelines** hub.
 
+::: moniker range="< tfs-2018"
+> [!NOTE]
+> Variable groups can be used in a build pipeline in only Azure DevOps and TFS 2018. They cannot be used in a build pipeline in earlier versions of TFS. 
+::: moniker-end
+
 ## Create a variable group
 
 1. Open the **Library** tab to see a list of existing variable groups for your project.
@@ -37,7 +43,7 @@ Choose **+ Variable group**.
 
    ![Saving a variable group](_img/save-variable-group.png) 
 
->Variable groups follow the [library security model](index.md#security).
+> Variable groups follow the [library security model](index.md#security).
 
 ## Link secrets from an Azure key vault as variables
 

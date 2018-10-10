@@ -1,5 +1,6 @@
 ---
-title: Deploy to Azure index to content | Microsoft Docs    
+title: Deploy to Azure index to content
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd

@@ -25,12 +25,14 @@ Notifications are sent by default to the preferred email address for your organi
 
 1. To change your preferred email address, open your organization menu and select **My profile**. 
 
-	![Azure DevOps Services , My Profile link on Organization menu](_img/open-profile-team-services.png)   
+   # [New navigation](#tab/new-nav)
+   ![Azure DevOps Services , My Profile link on Organization menu](_img/open-profile-newnav.png)   
 
+   # [Previous navigation](#tab/previous-nav)
+   ![Azure DevOps Services , My Profile link on Organization menu](_img/open-profile-team-services.png) 
+
+   ---
+	  
 2. From your Profile/Information page, click **Edit**. 
 
-	<img src="_img/change-email-address-open-profile.png" alt="Azure DevOps Services , Profile page" style="border: 2px solid #C3C3C3;" />  
-
 2. Change the address and save your changes.    
-
-	<img src="_img/change-email-address-edit-profile.png" alt="Azure DevOps Services , Profile page" style="border: 2px solid #C3C3C3;" /> 

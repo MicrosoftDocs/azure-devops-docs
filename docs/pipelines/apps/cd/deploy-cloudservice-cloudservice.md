@@ -1,6 +1,7 @@
 ---
 title: Deploy ASP.NET app to an Azure Cloud Service
-description: Example of deploying an Azure cloud services package from Release Management in Azure Pipelines or Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
+description: Example of deploying an Azure cloud services package in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Release Management.
+Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 
 You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)

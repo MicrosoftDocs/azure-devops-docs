@@ -6,7 +6,7 @@ ms.topic: include
 
 0. Before you start, if you haven't already:
 
- * [Sign up and create your project](../../../organizations/accounts/create-organization-msa-or-work-student.md).
+ * [Sign up and create your project](../../../organizations/accounts/create-organization.md).
  * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
 0. Go to your project's page 

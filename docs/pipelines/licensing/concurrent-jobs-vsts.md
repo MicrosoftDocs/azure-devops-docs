@@ -1,5 +1,6 @@
 ---
 title: Parallel jobs in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
@@ -75,7 +76,7 @@ The term *job* can refer to multiple concepts, and its meaning depends on the co
 
 You can begin by seeing if the free tier offered in your Azure DevOps Services organization is enough for your teams.
 When you've reached the 1,800-minute per month limit for the free tier of Microsoft-hosted parallel jobs,
-you can start by buying one parallel job to remove this monthly time limit (from both the free and purchased parallel job) before deciding to purchase more.
+you can start by buying one parallel job to remove this monthly time limit before deciding to purchase more.
 
 As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer.
 When you find the queue delays are too long, you can purchase additional parallel jobs as needed.

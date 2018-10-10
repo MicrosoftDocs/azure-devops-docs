@@ -12,7 +12,6 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-
 # Billing overview for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
@@ -44,7 +43,7 @@ The Free tier includes:
 
 The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
 
-* [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
@@ -57,5 +56,5 @@ To make subsequent changes to the amount of paid resources, you only need to hav
 
 ## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

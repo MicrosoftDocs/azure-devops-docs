@@ -1,5 +1,6 @@
 ---
 title: Build pipeline source repositories
+titleSuffix: Azure Pipelines & TFS
 description: Specify the sources and repository that contains the code you want to build on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

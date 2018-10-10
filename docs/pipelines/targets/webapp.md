@@ -1,5 +1,6 @@
 ---
-title: Azure Web App deployment | Microsoft Docs
+title: Azure Web App deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops

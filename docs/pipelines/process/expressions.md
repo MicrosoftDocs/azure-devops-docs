@@ -115,31 +115,6 @@ In order to use property dereference syntax, the property name must:
 - Start with `a-Z` or `_`
 - Be followed by `a-Z` `0-9` or `_`
 
-::: moniker range="vsts"
-
-## Parameters
-
-<!-- TODO: when the multi-platform topic lands, this should live over there instead -->
-
-When an expression is used as part of [YAML template expansion](../yaml-schema.md#template-expressions),
-`parameters` can be accessed much like variables. For instance,
-
-```yaml
-parameters:
-  name: ''
-  vmImage: ''
-
-jobs:
-- job: ${{ parameters['name'] }} # index syntax
-  pool: 
-    vmImage: ${{ parameters.vmImage }} # property dereference syntax
-  steps:
-  - script: npm install
-  - script: npm test
-```
-
-::: moniker-end
-
 ## Functions
 
 Expressions may include functions. These functions are always available.

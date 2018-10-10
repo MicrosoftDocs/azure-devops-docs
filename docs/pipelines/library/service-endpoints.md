@@ -1,5 +1,6 @@
 ---
 title: Service connections in Azure Pipelines and Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: devops
@@ -270,9 +271,9 @@ Defines and secures a connection to a Docker registry.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription**, **endpoint**, or the equivalent name value in the script. |
 | Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
-| Docker ID | Required. The identifier of the Docker account user. |
+| Docker ID | Required. The identifier of the Docker account user. For Azure Container Registry, this is likely to be a service principal. |
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
@@ -569,19 +570,19 @@ Other service connection types and tasks can be installed in Azure Pipelines
 and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
-* [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
+* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with Azure Pipelines
-  Release Management through a TFS service connection
+  through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
-* [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
+* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
   This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
-  by using Release Management. See
+  by using Azure Pipelines. See
   [TeamCity](../release/artifacts.md#teamcitysource)
   for more details.
 

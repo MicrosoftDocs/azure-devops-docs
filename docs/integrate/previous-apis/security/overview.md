@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013 < vsts'
+monikerRange: '>= tfs-2015 < vsts'
 title: Security with VSTS | REST API Reference for Team Foundation Server
 description: Security overview for integrating with VSTS
 ms.assetid: ae811730-f033-4d5a-b3a6-6cbb0743cada
@@ -13,6 +13,9 @@ ms.date: 03/15/2017
 ---
 
 # Security
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 Data stored in security namespaces are used to determine whether an user has permissions to perform a specific action on a specific resource.
