@@ -38,7 +38,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-ruby"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_ruby.svg"><span>Ruby</span></a></div>
 </div>
 
-### Use VSTS to deploy your App to Azure
+### Use Azure DevOps to deploy your App to Azure
 <div class="ico48Case halfStack">
 <div class="ico48Link"><a href="../pipelines/targets/webapp.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
 <div class="ico48Link"><a href="../pipelines/apps/cd/deploy-webdeploy-iis-deploygroups.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
@@ -53,8 +53,8 @@ Learn how to build your app and deploy it to your choice of Azure service.
 * [Azure DevOps Project for AKS](/azure/devops-project/azure-devops-project-aks)
 * [Azure DevOps Project for Service Fabric](/azure/devops-project/azure-devops-project-service-fabric)
 * [Set up multi-stage release](../pipelines/release/define-multistage-release-process.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json)
-* [CI builds for Git in VSTS](../pipelines/build/ci-build-git.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json)
-* [Deploy apps to Azure App Service with VSTS and CI/CD](/azure/app-service)
+* [CI builds for Git in Azure DevOps](../pipelines/build/ci-build-git.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json)
+* [Deploy apps to Azure App Service with Azure DevOps and CI/CD](/azure/app-service)
 
 ## Videos
 

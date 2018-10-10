@@ -59,7 +59,7 @@ when you create a Service Hook subscription.
    <img alt="Azure Service Bus Queue" src="./_img/azure-service-bus/queues.png" style="border: 1px solid #CCCCCC" />
 
 2. Create or modify your app's code to receive Azure DevOps Services
-messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
+messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/).
 
 0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
@@ -93,7 +93,7 @@ You can verify this in your application or service.
 
 2. Create or modify your app's code to recieve
 Azure DevOps Services messages using a Azure Service Bus topic.
-For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
+For details, go [here](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
 
 3. Open the admin page for the project in Azure DevOps Services.
 
@@ -135,7 +135,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
 
 2. Create or modify an app to receive messages from Azure DevOps Services through the notification hub. 
 The steps and code required to set up your app depend on the target platform (Android, iOS, Windows Phone 8, and Windows Store).
-For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
+For details, go [here](http://azure.microsoft.com/documentation/services/notification-hubs/).
 
 3. Open the admin page for the project in Azure DevOps Services.
 
@@ -186,7 +186,7 @@ A: Use the following taking care to concatenate the variable and value in the pa
 
 #### Q: Can I get more information about the differences between service bus queues and service bus topics?
 
-A: Get more details [here](http://azure.microsoft.com/en-us/documentation/articles/fundamentals-service-bus-hybrid-solutions/).
+A: Get more details [here](http://azure.microsoft.com/documentation/articles/fundamentals-service-bus-hybrid-solutions/).
 
 #### Q: Can I programmatically create subscriptions?
 
