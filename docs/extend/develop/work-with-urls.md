@@ -233,9 +233,9 @@ If you are not using a Microsoft-provided client library:
 
 > Like the global Resource Areas REST API described earlier, no credentials are required to call the organization-level Resource Areas REST API.
 
-### Example: Pipelines task calling a Release Management REST API
+### Example: Pipelines task calling an Azure Pipelines releases REST API
 
-In this example, a build task needs to call the Release Definitions REST API. It forms the correct base URL for this REST API call by using the organization URL (provided in an environment variable) and the Resource Areas REST API. 
+In this example, a build task needs to call the Azure Pipelines releases REST API. It forms the correct base URL for this REST API call by using the organization URL (provided in an environment variable) and the Resource Areas REST API. 
 
 > [!NOTE]
 > Resource area IDs are fixed and can be safely embedded in tasks and other logic.

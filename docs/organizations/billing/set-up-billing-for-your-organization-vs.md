@@ -12,8 +12,7 @@ ms.date: 09/13/2018
 monikerRange: 'vsts'
 ---
 
-
-# Quickstart: Set up billing for your organization
+# Quickstart: Set up billing for your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -27,7 +26,7 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 The first time you set up billing for your organization, whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you must have the following:
 
-* [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your organization, you only need have access to [purchase on the Azure subscription](add-backup-billing-managers.md).

@@ -72,10 +72,10 @@ When you complete a release cycle, create a **release** branch. Use the release 
 
 ![Version 1.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-vnext.png)
 
-Automate your build to:
+Automate your build and release to:
 - Trigger with every checkin to the release branch 
 - Run automated tests
-- Use release management to deploy to your development and other environments
+- Deploy to your development and other environments
 
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|

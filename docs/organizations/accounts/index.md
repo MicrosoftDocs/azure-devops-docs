@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-# Organization management
+# Organization management in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -19,7 +19,7 @@ Sign up for an organization. Add users and manage permissions and access.
 
 ## 5-minute quickstarts
 
-* [Create your organization](create-organization-msa-or-work-student.md)
+* [Create your organization](create-organization.md)
 * [Pay for users](../billing/buy-basic-access-add-users.md)
 * [Buy CI/CD](../billing/buy-more-build-vs.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)

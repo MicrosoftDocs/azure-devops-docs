@@ -1,6 +1,7 @@
 ---
 title: Build an Azure Virtual Machine using Azure RM templates
-description: How to build an Azure Virtual Machine using ARM templates in Release Management in Azure Pipelines and Team Foundation Server (TFS).
+titleSuffix: Azure Pipelines & TFS
+description: How to build an Azure Virtual Machine using ARM templates in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 ms.prod: devops
 ms.technology: devops-cicd

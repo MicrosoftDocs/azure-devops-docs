@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 09/13/2018/
 monikerRange: 'vsts'
 ---
-# Change the number of paid users in your organization
+# Change the number of paid users in your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -25,12 +25,12 @@ As your team grows and contracts, you can increase or decrease the number of pai
 
 Whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
 
-* [Azure DevOps project collection administrator or organization owner permissions](billing-faq.md#find-owner).
+* [Project collection administrator or organization owner permissions](billing-faq.md#find-owner).
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md). To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Update the number of paid users on your organization
 
-1. As Azure DevOps project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Get**.
+1. As project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Get**.
 
    ![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 

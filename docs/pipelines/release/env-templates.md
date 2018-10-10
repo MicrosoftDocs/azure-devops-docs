@@ -1,6 +1,7 @@
 ---
-title: Stage templates in Release Management
-description: DevOps CI CD - Understand stage templates in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Stage templates in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
+description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +13,7 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Stage templates in Release Management
+# Stage templates in Azure Pipelines
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -55,7 +56,7 @@ Then you can re-create the template for use in that location.
 
 ### Can I publish or consume new templates through extensions in VS Marketplace?
 
-Yes. See [Adding release management stage templates to your VSS extension](https://blogs.msdn.microsoft.com/divman/2017/05/30/adding-release-management-environment-templates-to-your-vss-extension/) for more details.
+Yes. See [Adding release stage templates to your VSS extension](https://blogs.msdn.microsoft.com/divman/2017/05/30/adding-release-management-environment-templates-to-your-vss-extension/) for more details.
 
 ### How do I delete a custom stage template?
 

@@ -1,5 +1,6 @@
 ---
-title: PHP
+title: Building PHP projects with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for PHP projects.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,9 +13,11 @@ ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# PHP
+# Build PHP projects with Azure Pipelines
 
-This guidance explains how to build PHP projects.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build and test PHP projects with CI/CD pipelines.
 
 ## Example
 

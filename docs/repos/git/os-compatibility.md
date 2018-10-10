@@ -6,13 +6,23 @@ ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.prod: devops
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 9/11/2018
+ms.date: 10/03/2018
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Git Cross-Platform Compatibility
+
+::: moniker range="vsts"
+
+#### Azure Repos
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
 #### Azure Repos | TFS 2018
+
+::: moniker-end
 
 The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working direction due to unsupported file or paths names.
 
@@ -22,7 +32,7 @@ Azure Repos offers [three cross-platform compatibility settings](repository-sett
 - Restricted File and Folder Names
 - Path Length Restrictions
 
-##Case Sensitivity
+## Case Sensitivity
 
 The Windows and macOS file systems are case-insensitive (but case-preserving) by default.
 Most Linux filesystems are case-sensitive.
@@ -77,15 +87,19 @@ In the context menu, choose "Create tag".
 Give the tag a new name that doesn't have a case conflict.
 Return to the tags page and delete the conflicting tag.
 
-##Path and File Name Restrictions
+## Path and File Name Restrictions
 
-The Windows, Mac OS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms. 
+The Windows, Mac OS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
 
-For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to do damage your repo with corrupted data.
+For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to damage your repo with corrupted data.
+
+::: moniker range="vsts"
 
 Azure Repos offers file name and max path [repository settings](repository-settings.md) that block pushes containing commits that violate one or more of the below limitations.
 
-###File Name & Path Length Reference Table
+::: moniker-end
+
+### File Name & Path Length Reference Table
 ||Windows|macOS|Linux|
 |--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------:|:---------------------:|
 | File Name Restrictions   | [Reserved File Names](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or ` ` | Filenames ending in `/` |Filenames ending in `/`|

@@ -52,10 +52,6 @@ Upon completion of your selection and text entry, your **@mention** user will re
 
 ![Email sent to at-mention user organization](_img/mail-to-at-mention-user.png)
 
-When viewing their own mentioned names in conversations, users will notice that their own name is are highlighted in orange text.  
-
-![Web portal, At mention of ones own name appears in orange text](_img/at-mention-link-view-of-own-name.png)  
-
 You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in any text field on the work item form.
 
 ## Related articles

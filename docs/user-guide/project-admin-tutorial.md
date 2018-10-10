@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Quickstart: Get started as an administrator
+# Quickstart: Get started as an administrator in Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -212,4 +212,5 @@ All organizations can add up to five users with Basic access and unlimited users
 - [Manage organizations](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 - [TFS administration](/tfs/server/index)
+
 ::: moniker-end 

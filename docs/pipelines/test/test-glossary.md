@@ -1,5 +1,6 @@
 ---
 title: Test glossary
+titleSuffix: Azure Pipelines & TFS
 description: Frequently used terms in test report and test analytics
 ms.assetid: 7C6E8651-FD90-40EB-8E0F-1AE48360B5DB
 ms.prod: devops

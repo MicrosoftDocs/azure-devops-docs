@@ -1,5 +1,6 @@
 ---
 title: Update Service Fabric App Versions task
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can update the Service Fabric App Versions build task Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

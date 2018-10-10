@@ -21,7 +21,7 @@ natively support Microsoft account and Azure AD authentication, so you can direc
 For non-Microsoft tools that integrate into Azure DevOps Services but do not support Microsoft account or Azure AD authentication
 interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens (PATs). You set up PATs by using [Git credential managers](../../repos/git/set-up-credential-managers.md) or by creating them manually. You can also use personal access tokens when there is no "pop- up UI," such as with command-line tools, integrating tools or tasks into build pipelines, or using [REST APIs](../../integrate/get-started/rest/basics.md).
 
-Personal access tokens essentially are alternate passwords that you create in a secure way by using your normal authentication. PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command-line operations are valid), and specific Azure DevOps Services organizations. You can put them in environment variables so that scripts don't hard code passwords. For more information, see [Authentication overview](../../repos/git/auth-overview.md) and [Scopes](../../integrate/get-started/authentication/oauth.md#scopes).
+Personal access tokens essentially are alternate passwords that you create in a secure way by using your normal authentication. PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command-line operations are valid), and specific organizations. You can put them in environment variables so that scripts don't hard code passwords. For more information, see [Authentication overview](../../repos/git/auth-overview.md) and [Scopes](../../integrate/get-started/authentication/oauth.md#scopes).
 
 [!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
 
@@ -56,4 +56,3 @@ If you get a notification that a PAT was created and you don't know what caused 
 - Setting up web load testing as part of a pipeline. This creates a token with a display name like "WebAppLoadTestCDIntToken."
 
 If you still believe that a PAT was created in error, we suggest [revoking the PAT](../../integrate/get-started/authentication/PATs.md). The next step is to investigate whether your password has been compromised. Changing your password is a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your organization was used from an unknown source or location.  
-

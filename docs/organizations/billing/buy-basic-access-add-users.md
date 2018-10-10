@@ -12,7 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Pay for users (Basic)
+# Quickstart: Pay for Azure DevOps users (Basic) 
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -28,7 +28,7 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 The first time that you set up billing for your organization, whether you do the setup up via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
 
-* [Azure DevOps project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
+* [Project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
 
    > [!div class="mx-imgBorder"]
 ![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
@@ -76,7 +76,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 # [New navigation](#tab/new-nav)
 
-   ![Azure DevOps number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
+   ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -87,7 +87,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ## Clean up resources
 
-To remove users or make an adjustment, sign in to Azure DevOps Service. Choose **Manage users** and then choose **Change quantity**.
+To remove users or make an adjustment, sign in to Azure DevOps. Choose **Manage users** and then choose **Change quantity**.
 
 ## Next steps
 
@@ -96,4 +96,4 @@ To remove users or make an adjustment, sign in to Azure DevOps Service. Choose *
 
 ## Related articles
 
-* [Reduce or cancel paid Azure DevOps users](reduce-cancel-paid-users.md)
+* [Reduce or cancel paid users](reduce-cancel-paid-users.md)

@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/19/2018
+ms.date: 10/01/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot access with Azure Active Directory (Azure AD)
+# Troubleshoot Azure DevOps access with Azure Active Directory (Azure AD)
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## General
 
-#### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect.
+#### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect
 
-A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps Services.
+A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
-#### Q: Can I use Office 365 and Azure AD with Azure DevOps Services?
+#### Q: Can I use Office 365 and Azure AD with Azure DevOps?
 
 A: Yes. You can't do this, however, by using the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
 that you can activate when you connect Office 365 and Azure AD.
@@ -63,19 +63,19 @@ Learn more about the differences in how you
 
 ## Understand Azure AD groups
 
-#### Q: Why can't I assign Azure DevOps Services permissions directly to an Azure AD group?
+#### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
 
-A: Because these groups are created and managed in Azure, you can't assign Azure DevOps Services permissions directly or secure version control paths to these groups. You'll get an error if you try to assign permissions directly.
+A: Because these groups are created and managed in Azure, you can't assign Azure DevOps permissions directly or secure version control paths to these groups. You'll get an error if you try to assign permissions directly.
 
-You can add an Azure AD group to the Azure DevOps Services group that has the permissions you want. Or,
-you can assign these permissions to the Azure DevOps Services group instead. Azure AD group members inherit permissions from the Azure DevOps Services group where you add them.
+You can add an Azure AD group to the Azure DevOps group that has the permissions you want. Or,
+you can assign these permissions to the group instead. Azure AD group members inherit permissions from the group where you add them.
 
-#### Q: Can I manage Azure AD groups in Azure DevOps Services?
+#### Q: Can I manage Azure AD groups in Azure DevOps?
 
-A: No, because these groups are created and managed in Azure. Azure DevOps Services doesn't store or sync member status for Azure AD groups. To manage Azure AD groups, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), 
+A: No, because these groups are created and managed in Azure. Azure DevOps doesn't store or sync member status for Azure AD groups. To manage Azure AD groups, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
 or the group management tools that your organization supports.
 
-#### Q: How do I tell the difference between an Azure DevOps Services group and an Azure AD group?
+#### Q: How do I tell the difference between an Azure DevOps group and an Azure AD group?
 
 A: On the group's identity card, check the group's source.
 
@@ -83,15 +83,15 @@ A: On the group's identity card, check the group's source.
 
 #### Q: Why doesn't Users show all Azure AD group members?
 
-A: These users have to sign in to your organization before they appear in Users. 
+A: These users have to sign in to your organization before they appear in Users.
 
 <a name="AssignLicenses"></a>
 
 #### Q: How do I assign organization access to Azure AD group members?
 
-A: When these group members sign in to your organization for the first time, Azure DevOps Services assigns an access level to them automatically. If they have
+A: When these group members sign in to your organization for the first time, Azure DevOps assigns an access level to them automatically. If they have
 [Visual Studio subscriptions](faq-add-delete-users.md#EligibleMSDNSubscriptions),
-Azure DevOps Services assigns the respective access level to them. Otherwise, Azure DevOps Services assigns them the next "best available"
+Azure DevOps assigns the respective access level to them. Otherwise, Azure DevOps assigns them the next "best available"
 [access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs), in this order: Basic, Stakeholder.
  
 If you don't have enough access levels for all Azure AD group members, those members who sign in will get a Stakeholder access.
@@ -140,7 +140,7 @@ A: Users can belong to your organization, both as individuals and as members of 
 
 To block all access for these users, remove them from Azure AD groups in your organization, or remove these groups from your organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps doesn't currently have this capability.
 
-#### Q: How do I remove an Azure AD group from Azure DevOps Services?
+#### Q: How do I remove an Azure AD group from Azure DevOps?
 
 A: Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
 
@@ -158,7 +158,7 @@ Find the Azure AD group, and delete it from your organization.
 
 [Add Azure DevOps organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
-#### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps Services?
+#### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 
 A: No. Although you can add new work accounts to your organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your organization was connected to your Azure AD.
 You can do this by adding your Microsoft account as a member to your Azure AD.
@@ -170,7 +170,7 @@ A: You must be a member or have read access in those directories. Otherwise, you
 
 #### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
-A: If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes Azure DevOps Services as a benefit, you can add a work or school account. The account must be managed by Azure AD. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
+A: If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes Azure DevOps as a benefit, you can add a work or school account. The account must be managed by Azure AD. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="guest-access"></a>
 
@@ -220,7 +220,7 @@ A: This might happen due to the following:
 
 * You don't have [organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
-* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) associated with your organization's Azure AD. (This problem is described in the preceding question.) 
+* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) associated with your organization's Azure AD. (This problem is described in the preceding question.)
 
   For example, if you want to use an Azure AD created from Office 365,
   you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
@@ -237,8 +237,7 @@ A: This might happen due to the following:
 * Your organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link them](../billing/set-up-billing-for-your-organization-vs.md).
 
   >[!IMPORTANT]
-  This link also sets up organization billing, so you can bill Azure DevOps Services purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the
-  next month when your monthly charges are billed. Otherwise, all resources billed to this subscription will be suspended, including all Azure DevOps Services purchases, Visual Studio Marketplace purchases, and Azure resources. Learn more about [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
+  >This link also sets up organization billing, so you can bill purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the next month when your monthly charges are billed. Otherwise, all resources billed to this subscription will be suspended, including all Azure DevOps purchases, Visual Studio Marketplace purchases, and Azure resources. Learn more about [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
 
   If you're the [organization administrator](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator) for the subscription, visit the Azure Account Center to remove the spending limit:
 
@@ -250,11 +249,11 @@ A: This might happen due to the following:
 
 #### Q: What if my organization is already linked to an Azure subscription?
 
-A: You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Azure DevOps billing FAQ](../billing/billing-faq.md).
+A: You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [Billing FAQ](../billing/billing-faq.md).
 
 #### Q: What happens if I unlink my Azure subscription while my organization is connected to a directory?
 
-A: See the [Azure DevOps billing FAQ](../billing/billing-faq.md).
+A: See the [Billing FAQ](../billing/billing-faq.md).
 
 <a name="AlreadyConnected"></a>
 
@@ -278,7 +277,7 @@ you can [add them to the directory](https://azure.microsoft.com/documentation/ar
 
 Some users have sign-in addresses that are shared by their Microsoft account and their work or school account. These are treated as separate identities with different profiles, security settings, and permissions. When they're asked to choose which account they want to use when they sign in, they should choose the identity that's a member in your directory. Only directory members can get access to your organization.
 
-If you have a Visual Studio with MSDN subscription that [includes Azure DevOps Services](https://visualstudio.microsoft.com/vs/pricing/), and you activated that subscription with a Microsoft account, you can add a work or school account. Azure AD manages that work or school account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
+If you have a Visual Studio with MSDN subscription that [includes Azure DevOps](https://visualstudio.microsoft.com/vs/pricing/), and you activated that subscription with a Microsoft account, you can add a work or school account. Azure AD manages that work or school account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="faq-disconnect"></a>
 

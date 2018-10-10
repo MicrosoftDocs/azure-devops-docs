@@ -1,6 +1,6 @@
 ---
 title: Create your first pipeline
-titleSuffix: Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Create your first pipeline using Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
@@ -25,7 +25,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Get the sample code
 
-Azure Pipelines can be used to build an app written in any language.
+You can use Azure Pipelines to build an app written in any language.
 Select a sample repository of your choice from the following languages and fork it into your own GitHub user account:
 
 | Programming language | Repository with a sample app |

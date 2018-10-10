@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 9/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -24,7 +24,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Work Item support for Markdown editing|Work|2019|
 |Cross organization linking for Work Items|Work|TBD|
 |GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
@@ -47,9 +46,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Test Failures report for Release pipelines|Test|2019|
 |Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
 |Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
@@ -83,6 +80,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="11">[1 October 2018](2018/sprint-141-update.md)</td>
+            <td>Azure Policy compliance and security validations in Pipelines</td><td>*2019*</td>
+        </tr>
+        <tr><td>Simplified continuous delivery to Azure VMs</td><td>*2019*</td></tr>
+        <tr><td>The Xcode task supports newly released Xcode 10</td><td>*2019*</td></tr>
+        <tr><td>Performance improvements when queuing a build</td><td>N/A</td></tr>
+        <tr><td>Create Azure service connection with service principal that authenticates with a certificate</td><td>N/A</td></tr>
+        <tr><td>View test analytics in Pipelines</td><td>*2019*</td></tr>
+        <tr><td>Change the target branch of a pull request</td><td>*2019*</td></tr>
+        <tr><td>Protect Git repos with cross platform compatibility settings</td><td>*2019*</td></tr>
+        <tr><td>Expanded search box</td><td>*2019*</td></tr>
+        <tr><td>Support AAD users in MSA accounts</td><td>N/A</td></tr>
+        <tr><td>PATs enforce CAP</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
             <td>Control specific build dependencies using container jobs</td><td>*2019*</td>

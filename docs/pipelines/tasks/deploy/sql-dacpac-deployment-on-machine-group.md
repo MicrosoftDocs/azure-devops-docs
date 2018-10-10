@@ -1,5 +1,6 @@
 ---
 title: SQL Server Database Deploy
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to SQL Server Database using DACPAC or SQL scripts
 ms.topic: reference
 ms.prod: devops

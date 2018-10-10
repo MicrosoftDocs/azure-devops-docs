@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot creating an organization
+# Troubleshoot creating an organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -42,9 +42,9 @@ A:	[Find Visual Studio subscriptions that include Azure DevOps](faq-add-delete-u
 
 #### Q:	Why am I asked to provide profile details?
 
-A:	If you're a new user, you can change your profile details. You need to do this only once. 
+A:	If you're a new user, you can change your profile details. You need to do this only once.
 
-1.	Confirm your profile details. 
+1.	Confirm your profile details.
 
 	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
 
@@ -120,9 +120,9 @@ A:	Yes, see [Change your organization's Azure Active Directory instance](change-
 
 [!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
 
-*	Choose **Work or school account** if you want to use your organization's directory to authenticate Azure DevOps users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
+* Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
 
-*	Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
+* Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 

@@ -1,5 +1,6 @@
 ---
 title: Azure Database for Mysql Deployment
+titleSuffix: Azure Pipelines & TFS
 description: This is an early preview. Run your scripts and make changes to your Azure DB for Mysql?.
 ms.topic: reference
 ms.prod: devops

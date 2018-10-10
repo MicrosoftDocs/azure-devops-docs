@@ -1,5 +1,6 @@
 ---
 title: Run UI tests in a CI/CD pipeline
+titleSuffix: Azure Pipelines & TFS
 description: Continuous testing. Things to consider when running UI tests and FAQ. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.prod: devops

@@ -30,11 +30,24 @@ A subscription lets you control what your team should be notified about and how 
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 	
-	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
+   # [New navigation](#tab/new-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+
+   ---
 
 2. Click **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
-	![New subscription](_img/new-subscription.png)
+   # [New navigation](#tab/new-nav)
+   ![New subscription](_img/new-subscription-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![New subscription](_img/new-subscription.png)
+
+   ---
+	
 	
 3. Select the type of activity you want your team to be notified about.
 	
@@ -74,11 +87,23 @@ Choose the default method for your team to receive notifications by updating the
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 	
-	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
+   # [New navigation](#tab/new-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+
+   ---
 
 2. Choose **Delivery settings**:
 
-	![Delivery settings](_img/delivery-settings.png)
+   # [New navigation](#tab/new-nav)
+   ![Delivery settings](_img/delivery-settings-newnav.png)
+
+   # [Previous navigation](#tab/previous-nav)
+   ![Delivery settings](_img/delivery-settings.png)
+
+   ---
 
 3. Choose which option best fits your team's needs:
 
