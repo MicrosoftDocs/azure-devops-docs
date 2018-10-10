@@ -40,7 +40,7 @@ None
 <tr>
 <td>Root folder (or file) to archive</td>
 <td>
-<p>The folder (or file) you wish to archive. The default file path is relative from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
+<p>The folder (or file) you wish to archive. The default file path is relative from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```.</p>
 <p>If the specified path is a folder, recursively, all nested files and folders will be included in the archive.</p>
 <p>If the specified path is a file, only the single file will be included in the archive.</p>
 </td>
