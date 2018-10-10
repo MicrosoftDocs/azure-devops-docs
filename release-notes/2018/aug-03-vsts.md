@@ -80,7 +80,7 @@ YAML Tags example with list:
 ```json
 ---
 tags:
- - post
+- post
 - code
 - web
 title: Hello world
