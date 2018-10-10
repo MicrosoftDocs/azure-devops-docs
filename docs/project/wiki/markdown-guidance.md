@@ -685,10 +685,10 @@ Attachments support the following file formats.
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
 > |------|---------| 
-> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  | 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Hypertext Markup Language(.html, .htm), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  | 
 > | Compressed files | ZIP (.zip) and GZIP (.gz) | 
 > | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
-> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 
+> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg), Icons (.ico) | 
 > | Visio | VSD (.vsd and .vsdx)  | 
 > | Video | MOV (.mov), MP4 (.mp4) | 
 
@@ -827,7 +827,7 @@ $$
 
 
 ::: moniker range="vsts"
-<a id="toc-wiki" />
+<a id="toc-wiki" > </a>
 ## Table of contents (TOC) for Wiki pages
 
 You can now just add a tag [[\_TOC\_]] to enable table of contents in your page. The TOC is generated when the tag is added to the page and there is at least one heading in the page.
@@ -848,6 +848,28 @@ This is to maintain consistency in the formatting in TOC.
 Note: The tag [[\_TOC\_]] is case sensitive i.e. [[\_toc\_]] may not render the TOC.
 
 ::: moniker-end
+
+
+::: moniker range="vsts"  
+## Embed Videos in a Wiki page
+
+To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
+
+```
+::: video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+:::
+```
+The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
+
+**Result:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+(The ending ":::" is required to prevent break in page)
+
+::: moniker-end
+
 
 ## Related articles  
 
