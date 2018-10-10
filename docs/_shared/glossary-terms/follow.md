@@ -5,4 +5,4 @@ ms.topic: include
 
 ## Follow 
 
-A tool for tagging specific work items or pull requests for which you want to receive email updates when changes are made to them. Learn more: [Follow a work item or pull request](/azure/devops/boards/work-items/follow-work-items). 
+Tagging specific work items or pull requests to follow them is a method used to receive email updates about changes that are made to them. To learn more, see [Follow a work item or pull request](/azure/devops/boards/work-items/follow-work-items). 
