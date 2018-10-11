@@ -24,15 +24,13 @@ The Analytics Service provides the reporting platform for Azure DevOps. **The An
 Currently, you can access the following data from the Analytics Service. This information was last updated: April 4, 2018.
 
 > [!div class="mx-tdBreakAll"]
-> Data | Availability | [Widgets](./analytics-widgets.md) > | [OData](../extend-analytics/index.md) | [Power BI](../powerbi/overview.md) |
+> Data | Available Now | Future availability | 
 > |-|-|-|-|-|
-> | Work Item Tracking | Available Now | Yes | Yes | Yes |
-> | Automated Testing Data | Target - Q2, 2018 |  |  |  |
-> | Manual Testing Data | Target - 2018 |  |  |  |
-> | Build | Under investigation |  |  |  |
-> | Release | Under investigation |  |  |  |
-> | Code (Pull Requests, Commits, Branches) | Under investigation |  |  |  |
-> | Packaging | Under investigation |  |  |  |
+> | [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) | [Widgets](./analytics-widgets.md)  , [OData](../extend-analytics/index.md) , [Power BI](../powerbi/overview.md) | Rollup - Q2, 2019 |
+> | [Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) | [Test Analytics](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=vsts) | Build/Release - 2019 |
+> | [Repos](https://azure.microsoft.com/en-us/services/devops/repos/) | None | Under investigation |
+> | [Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/) | None | Under investigation |
+> | [Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/) | None | Under investigation |
 
 
 As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
