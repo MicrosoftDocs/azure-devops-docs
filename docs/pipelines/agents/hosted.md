@@ -82,10 +82,10 @@ You can manually select from tool versions on macOS images. [See below](#mac-pic
 
 Software on Microsoft-hosted agents is updated once each month.
 
-* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
-* [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
-* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
+* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
+* [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md).
+* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
 * [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 
 ## Capabilities and limitations
@@ -155,7 +155,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -165,7 +165,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
 #### Mono
 

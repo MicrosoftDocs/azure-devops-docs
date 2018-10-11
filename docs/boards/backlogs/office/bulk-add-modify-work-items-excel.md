@@ -59,32 +59,49 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+	(1) Choose Team tab, (2) place your cursor in Cell A1, and then (3) choose **New List**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]  
-    >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md). 
 
 4.  Connect to your project where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
-    ![ALM\_EXL\_Connect](_img/IC680074.png)
+    ![New List](_img/excel/team-ribbon.png)
 
     If it is your first time connecting from Excel, you might have to add the URL to the list of recognized servers.
 
-    ![ALM\_EXL\_AddServer](_img/IC658167.png)
+	**Azure Boards**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+
+	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
+
+	**TFS**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+
+    ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
+
+	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
+
+0. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-5.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-6.  Specify the titles of the work items you want to add and their work item type.
+0.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-7.  Publish your worksheet.
+0.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -94,7 +111,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-8.  Also, note how you can open a work item in the web portal to add more information.
+0.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 
