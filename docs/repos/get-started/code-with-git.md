@@ -86,7 +86,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 1. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
    ```
-   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+   git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
    ```
 
    Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
@@ -242,7 +242,7 @@ This example shows the basic steps of creating and completing a pull request.
 1. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
    ```
-   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+   git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
    ```
 
    Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
