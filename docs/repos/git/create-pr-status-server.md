@@ -122,7 +122,7 @@ In order to receive the service hook notifications, you'll need to expose a port
     http://c3c1bffa.ngrok.io
     ```
 
-3. Browse to your Azure DevOps project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+3. Browse to your Azure DevOps project, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -203,7 +203,7 @@ Now that your server can receive service hook events when new PRs are created,up
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
 
     ```
-    setx COLLECTIONURL "https://<your account>.visualstudio.com/DefaultCollection"
+    setx COLLECTIONURL "https://dev.azure.com/<your account>/DefaultCollection"
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
