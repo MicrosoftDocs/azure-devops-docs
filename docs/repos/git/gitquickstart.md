@@ -66,7 +66,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
 
     ```cmd
-    git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/_git/FabrikamFiber
+    git clone https://dev.azure.com/fabrikam-fiber/_git/FabrikamFiber
     ```
 
 Git downloads and creates your own copy of the code in a new folder for you to work with. 

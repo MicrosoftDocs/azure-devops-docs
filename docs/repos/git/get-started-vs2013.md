@@ -49,7 +49,7 @@ To use Git, you'll need to have the client tools installed on your computer.
 ## Clone
 To get started, you'll first need to clone your repo to your local machine.  Once you have a local clone, you can start adding code to your repo.
 
-0. Go to your team's project page (`https://{youraccount}.visualstudio.com/DefaultCollection/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
+0. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
@@ -192,7 +192,7 @@ First you'll need to:
 
 For the Fabrikam project on Azure DevOps Services, the command to clone would look like this:
 
-`git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam`
+`git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam`
 
 Once you have the repo cloned, create a new topic branch:
 

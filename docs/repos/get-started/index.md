@@ -14,15 +14,15 @@ monikerRange: '>= tfs-2013'
 
 # Start using Azure Repos
 
-Use this guide to sign up and start using Azure Repos. If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md)
+Use this guide to sign up and start using Azure Repos. If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md).
 
-Azure DevOps Services includes free unlimited private Git repos so Azure Repos is easy to try out. Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
+Azure DevOps Services includes free unlimited private Git repos, so Azure Repos is easy to try out. Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning that your local copy of code is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 
-Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
+Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
 Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
-After signing up, learn how to [Code with Git](code-with-git.md). Whether your code is in Azure Repos, a GitHub repo, or on your local computer, this guide shows you how to get started.
+After you sign up, learn how to [code with Git](code-with-git.md). Whether your code is in Azure Repos, in a GitHub repo, or on your local computer, this guide shows you how to get started.
 
 Other resources to get you up and running:
 

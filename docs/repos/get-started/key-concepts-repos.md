@@ -18,49 +18,49 @@ Here you'll find definitions of key concepts and artifacts used in Azure Repos.
 
 ## Branch
 
-Branches are lightweight references that keep a history of commits and provide a way to isolate changes for a feature or a bug fix from your master branch and other work. Committing changes to a branch doesn't affect other branches, and you can push and share branches with others on your team without having to merge them into master.
+Branches are lightweight references that keep a history of commits and provide a way to isolate changes for a feature or a bug fix from your master branch and other work. Committing changes to a branch doesn't affect other branches. You can push and share branches with other people on your team without having to merge the changes into master.
 
-Switching between branches is quick and easy. Git doesn't create multiple copies of your source code when working with branches - it uses the history information stored in commits to recreate the files in a branchw hen you start working on it.
+Switching between branches is quick and easy. Git doesn't create multiple copies of your source code when you're working with branches - it uses the history information stored in commits to re-create the files in a branch when you start working on it.
 
-Learn more: [branches](../git/branches.md), [branch organization](../git/git-branching-guidance.md), and see [how we use branches at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft#git-branch-structure-and-policies).
+Learn more: [branches](../git/branches.md), [branch organization](../git/git-branching-guidance.md), and [how we use branches at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft#git-branch-structure-and-policies).
 
 ## Branch policies
 
-Branch policies are an important part of the Git workflow and enable you to protect the important branches in your development, like `master`. Branch policies enable you to:
+Branch policies are an important part of the Git workflow. You use them to help protect the important branches in your development, like `master`. Branch policies enable you to:
 
-* Isolate work in progress from the completed work in your master branch
-* Guarantee changes build before they get to master
-* Limit who can contribute to specific branches
-* Enforce who can create branches and the naming guidelines for the branches
-* Automatically include the right reviewers for every code change
-* Enforce best practices with required code reviewers
+* Isolate work in progress from the completed work in your master branch.
+* Guarantee that changes build before they get to master.
+* Limit who can contribute to specific branches.
+* Enforce who can create branches and the naming guidelines for the branches.
+* Automatically include the right reviewers for every code change.
+* Enforce best practices with required code reviewers.
 
 Learn more: [branch policies](../git/branch-policies-overview.md).
 
 ## Clone
 
 Create a complete local copy of an existing Git repo by cloning it. 
-Cloning a repo downloads all [commits](#commit) and [branches](#branch) in the repo and sets up a named relationship with the existing repo you cloned. Use this relationship to interact with the existing repo, [pushing](#push) and [pulling](#pull) changes to share code with your team.
+Cloning a repo downloads all [commits](#commit) and [branches](#branch) in the repo and sets up a named relationship with the existing repo that you cloned. Use this relationship to interact with the existing repo, [pushing](#push) and [pulling](#pull) changes to share code with your team.
 
 Learn more: [cloning](../git/clone.md).
 
 ## Commit
 
-A commit is a group of changes saved to your local repository, which can be shared to the remote repository by [pushing](#push).
+A commit is a group of changes saved to your local repository. You can share these changes to the remote repository by [pushing](#push).
 
 Learn more: [commits](../git/commits.md).
 
 ## Fork
 
-A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository. After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use pull requests to push the changes back to the original repository.
+A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository and then pushed to a new, empty repository. After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. When you're ready to share those changes, it's easy to use pull requests to push the changes back to the original repository.
 
 Learn more: [forks](../git/forks-overview.md)
 
 ## Git
 
-Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
+Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, so your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 
-Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
+Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
 Learn more: [Git and Azure Repos](../git/overview.md).
 
@@ -70,10 +70,10 @@ Version control has a general workflow that most developers use when writing cod
 
 1. Get a local copy of code if they don't have one yet.
 1. Make changes to code to fix bugs or add new features.
-1. Once the code is ready, make it available for review by your team.
-1. Once the code is reviewed, merge it into the team's shared codebase.
+1. When the code is ready, make it available for your team to review.
+1. After the code is reviewed, merge it into the team's shared codebase.
 
-Git has a version of this workflow using terminology and commands such as repositories, branches, commits, and pull requests. These terms might sound familiar if you've used a version control system like Team Foundation Version Control or Subversion, but they behave differently in Git.
+Git has a version of this workflow that uses terminology and commands such as repositories, branches, commits, and pull requests. These terms might sound familiar if you've used a version control system like Team Foundation Version Control (TFVC) or Subversion, but they behave differently in Git.
 
 1. [Create a branch](#branch) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `features/cool-feature`.
 1. [Commit changes](#commit) to your branch. People often have multiple commits for a bug fix or feature.
@@ -82,7 +82,7 @@ Git has a version of this workflow using terminology and commands such as reposi
 
 Use this workflow if you're new to Git. As your team gets more experienced and confident with Git, extend it to suit your team's needs.
 
-Learn more: [See how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+Learn more: [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 [!INCLUDE [glossary-terms-notifications](../../_shared/glossary-terms/notifications.md)]
 
@@ -94,8 +94,8 @@ Learn more: [See how we use Git at Microsoft](/azure/devops/learn/devops-at-micr
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before
-merging it into the master branch. Pull requests can come from either
-topic branches within the same repository or from a branch in a
+you merge it into the master branch. Pull requests can come from either
+topic branches within the same repository or a branch in a
 [fork](../git/forks-overview.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
@@ -103,13 +103,13 @@ Learn more: [pull requests](../git/pull-requests-overview.md).
 
 ## Pull
 
-A `pull` updates the code in your local repository with the changes from other members of your team that are in the remote repository.
+A `pull` command updates the code in your local repository with the changes from other members of your team that are in the remote repository.
 
 Learn more: [pull](../git/pulling.md).
 
 ## Push
 
-Share changes made in commits and branches using the `push` command. 
+Share changes made in commits and branches by using the `push` command. 
 
 When you push, Git uploads the saved commits in your checked branch to the remote repository. If the branch exists on the remote repository, Git takes the [commits](#commit) and adds them to that branch on the remote repository. If that branch doesn't exist, Git creates a new branch with the same commits as your local branch.
 
@@ -117,7 +117,7 @@ Learn more: [push](../git/pushing.md).
 
 ## Repository
 
-A location for your code managed by version control. Azure Repos supports both [Git](#git) and [TFVC](#team-foundation-version-control-tfvc).
+A repository is a location for your code managed by version control. Azure Repos supports both [Git](#git) and [TFVC](#team-foundation-version-control-tfvc).
 
 [!INCLUDE [glossary-terms-teams](../../_shared/glossary-terms/teams.md)]
 
