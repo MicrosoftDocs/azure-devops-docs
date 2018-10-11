@@ -14,11 +14,6 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-> [!IMPORTANT]  
-><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML or On-premises process models. The customizations addressed in this topic aren't available for the [Inheritance process model](../../organizations/settings/work/customize-process.md). 
->
->For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
-
 When you customize your work item form, you may want to provide information or links to content that helps your team define the fields in the form. If you embed information in the form or make it easily available, team members will be better able to track useful data.  
   
 By using the form controls that are described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to Web pages, or embed HTML content or Web content in the form.  
