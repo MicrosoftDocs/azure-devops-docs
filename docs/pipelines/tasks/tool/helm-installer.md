@@ -40,4 +40,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+### Do I need to initialize Helm after it's installed?
+
+The HelmInstaller task will run `helm init --client-only` for you, as a part of verifying the installation, there is no need to run it separately.
+
 <!-- ENDSECTION -->
