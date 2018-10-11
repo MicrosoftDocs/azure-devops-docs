@@ -155,7 +155,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -165,7 +165,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
 #### Mono
 

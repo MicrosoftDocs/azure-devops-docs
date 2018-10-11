@@ -259,4 +259,4 @@ Report any problems on [Developer Community](https://developercommunity.visualst
 
 We welcome your suggestions:
 
-* Propose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
+* Send feedback and report problems through the [Developer Community](https://developercommunity.visualstudio.com/).
