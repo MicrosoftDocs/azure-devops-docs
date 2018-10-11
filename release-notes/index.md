@@ -42,9 +42,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Package Management – Maven Upstream support|Package|TBD|
 |PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
 |Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
+|[Embed Dashboard in Microsoft Teams channel](https://blogs.msdn.microsoft.com/devops/2018/08/09/make-your-visual-studio-team-services-dashboard-part-of-your-conversation-in-microsoft-teams/)|Reporting|N/A|
 |Analytics - Test Failures report for Build pipelines|Test|2019|
 |Analytics - Test Failures report for Release pipelines|Test|2019|
-|Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
 |Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
@@ -62,7 +62,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Extensible Pool Providers|Build|TBD|
 |Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Package|N/A|
 |Analytics - Available for Azure DevOps Server|Reporting|2019|
-|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 

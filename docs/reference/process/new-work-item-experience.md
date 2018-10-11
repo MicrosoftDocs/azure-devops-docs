@@ -119,13 +119,6 @@ For news of upcoming features, or extending the work tracking experience, see th
 - [REST API, Work Item Types](/rest/api/vsts/processdefinitions/work%20item%20types)  
 
 
-### Will the new work item experience become permanent?  
-
-Yes, however, we're always interested in how to improve the experience. What do you like or don't like about the new form layout and experience?  
-
-Send your suggestions to **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
-
-
 ### Will this impact Visual Studio work item forms?  
 
 Not at this time.   

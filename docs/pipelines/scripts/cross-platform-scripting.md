@@ -9,7 +9,7 @@ ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/12/2016
+ms.date: 10/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -101,13 +101,19 @@ request build:
 # [YAML](#tab/yaml)
 
 ```yaml
+trigger:
+    batch: true
+    branches:
+        include:
+        - master
 steps:
 - bash: |
-    if [ -n "$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]; then
-        echo This is for pull request $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
-    else
-        echo This is not a pull request build. The trigger was $BUILD_REASON
-    fi
+    case $BUILD_REASON in
+            "Manual") echo "$BUILD_REQUESTEDFOR manually queued the build." ;;
+            "IndividualCI") echo "This is a CI build for $BUILD_REQUESTEDFOR." ;;
+            "BatchedCI") echo "This is a batched CI build for $BUILD_REQUESTEDFOR." ;;
+        *) $BUILD_REASON ;;
+    esac
 ```
 
 # [Designer](#tab/designer)

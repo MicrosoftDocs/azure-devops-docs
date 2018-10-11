@@ -32,6 +32,8 @@ This suite of web-based tools is used to track work and support Agile methodolog
 ## Bug
 A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects.  
 
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
+
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 

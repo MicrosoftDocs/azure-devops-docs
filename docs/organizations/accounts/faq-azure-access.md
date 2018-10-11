@@ -134,20 +134,6 @@ A: No, but you might be interested in our [process customization plans](https://
 
 <a name="remove-user-azure-ad-group"></a>
 
-#### Q: Why am I asked to remove a user from an Azure AD group when I delete that user from my organization?
-
-A: Users can belong to your organization, both as individuals and as members of Azure AD groups that were added to Azure DevOps groups. These users can still access your organization while they're members of these Azure AD groups.
-
-To block all access for these users, remove them from Azure AD groups in your organization, or remove these groups from your organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps doesn't currently have this capability.
-
-#### Q: How do I remove an Azure AD group from Azure DevOps?
-
-A: Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
-
-Find the Azure AD group, and delete it from your organization.
-
-![Screenshot of project, with Delete option highlighted](_img/manage-azure-ad-groups/deleteaadgroupfromvso.png)
-
 <a name="ChooseOrgAcctMSAcct"></a>
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
@@ -190,6 +176,26 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 2. Select **Policy** and choose to allow or deny organization access for external users added as guests.
 
    ![Screenshot of organization settings](_img/manage-work-access/guest-access.png)
+
+## Remove users or groups
+
+#### Q: How do I remove an Azure AD group from Azure DevOps?
+
+A: Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
+
+Find the Azure AD group, and delete it from your organization.
+
+![Screenshot of project, with Delete option highlighted](_img/manage-azure-ad-groups/deleteaadgroupfromvso.png)
+
+#### Q: Why am I asked to remove a user from an Azure AD group when I delete that user from my organization?
+
+A: Users can belong to your organization, both as individuals and as members of Azure AD groups that were added to Azure DevOps groups. These users can still access your organization while they're members of these Azure AD groups.
+
+To block all access for these users, remove them from Azure AD groups in your organization, or remove these groups from your organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps doesn't currently have this capability.
+
+#### Q: If an AAD user is removed, will all their related PATs be revoked as well?
+
+A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
 
 <a name="faq-connect"></a>
 

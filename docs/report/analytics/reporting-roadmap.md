@@ -27,7 +27,7 @@ The [Analytics Service](what-is-analytics.md) is in Public Preview. It currently
 ### Pricing for the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 While in Public Preview, the Analytics extension is free.
 
-We are currently working out what our pricing model will be. When we have more details on pricing, we will share that information here. Our goal is to share more details in Q3, 2018. 
+We are currently working out what our pricing model will be. We plan to share details in Q4, 2018.
 
 ## TFS and SQL Server Reporting
 
@@ -41,7 +41,7 @@ We have no plans to bring a cloud version of our SQL Server Reporting story to A
 
 ## Future of TFS & SQL Server Reporting
 
-We currently support SQL Server Reporting through TFS 2018.  
+We currently support SQL Server Reporting through TFS 2018, and will continue to support it in TFS 2019.  
 
 We will continue to support SQL Server Reporting until Analytics is brought to TFS and can fully replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major TFS release. This allows customers time to convert their reports to Analytics.
 
