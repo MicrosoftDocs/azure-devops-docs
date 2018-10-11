@@ -82,12 +82,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd old-contoso-repo.git
     ```
 
-0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
 0. Run the following command to copy the source repo to the target repo.
 
     ```
-    git push --mirror https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo
+    git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
 0. Delete the temporary folder by running the following commands.
