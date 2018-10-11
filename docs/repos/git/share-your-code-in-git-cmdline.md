@@ -89,7 +89,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
 0. Connect your local repo to the Git repo in Azure Repos using the copied clone URL in the `git remote` command:
 
     ```
-    git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
+    git remote add origin https://dev.azure.com/fabrikops2/Fabrikam/_git/FabrikamApp
     ```
 
 
