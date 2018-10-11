@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 08/02/2018
+ms.date: 10/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -65,9 +65,9 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 `printenv` command runs, it will happen inside the `ubuntu:16.04` container.
 
 > [!Note]
-> Due to a bug, you must currently specify "Hosted Ubuntu 1604" as the
-> pool name in order to run containers. Other pools will not work.
-> In September 2018, we expect to remove the need to specify a pool.
+> You must specify "Hosted Ubuntu 1604" as the
+> pool name in order to run containers. Other pools won't work.
+> In the future, we intend to remove the need to specify a pool.
 
 ## Multiple jobs
 
