@@ -25,9 +25,9 @@ Do you need to do any of the following?:
 
 * **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [TFS](http://stackoverflow.com/questions/tagged/tfs).
 
-* **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
+* **Report a bug** Submit it through our Developer Community for [Azure DevOps or TFS](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
-* **Suggest a feature or a fix** Submit your idea or issue through [UserVoice for Azure DevOps Services](https://visualstudio.uservoice.com/forums/330519-team-services).
+* **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).
 
 * **Find out what's new in Azure DevOps Services** Check out the [current Azure DevOps Services Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 

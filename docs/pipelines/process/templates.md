@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: alewis
 author: vtbassmatt
-ms.date: 09/21/2018
+ms.date: 10/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -180,7 +180,10 @@ jobs:
 ```
 
 Repositories are resolved only once, when the pipeline starts up. 
-After that, the same resource will be used for the duration of the pipeline.
+After that, the same resource is used for the duration of the pipeline.
+Only the template files are used.
+Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
+This means that you can't use scripts from the template repo in your pipeline.
 
 ## Template expressions
 
