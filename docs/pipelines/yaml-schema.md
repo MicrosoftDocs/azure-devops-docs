@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 08/02/2018
+ms.date: 10/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -55,6 +55,12 @@ Conventions used in this topic:
 * `|` indicates there are multiple data types available for the keyword. For
 instance, `job | templateReference` means either a job definition or a
 template reference are allowed.
+
+### YAML basics
+
+This document covers the schema of an Azure Pipelines YAML file.
+To learn the basics of YAML, see [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/).
+Note: Azure Pipelines doesn't support all features of YAML, such as complex keys and sets.
 
 ## Pipeline
 
