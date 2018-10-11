@@ -101,7 +101,7 @@ Once you are ready to share your code, [get the clone URL](clone.md#clone_url) f
 can [push](pushing.md) changes to a shared repo.
 
 ```
-git remote add origin https://fabrikam.visualstudio.com/Fabrikam/_git/FabrikamFiber
+git remote add origin https://dev.azure.com/fabrikam/Fabrikam/_git/FabrikamFiber
 ```
 
 [Push](pushing.md) your changes to the `origin` repository to share with others:
