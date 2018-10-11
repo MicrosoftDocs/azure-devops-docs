@@ -67,7 +67,7 @@ Regular reviews of the project schedule with these teams help ensure that the te
 Some questions you might address during the review: 
 - *How confident are the teams in meeting the deliverables scheduled for each sprint?* 
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
-- *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
+- *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
 For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
