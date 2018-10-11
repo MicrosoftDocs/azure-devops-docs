@@ -47,6 +47,8 @@ Authorization refers to the operations performed to verify that the identity whi
 
 A user account that has been granted membership to an Azure DevOps organization or TFS instance with Basic access. To learn more, see [About access levels](access-levels.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)]
+
 ## Conditional access
 
 Conditional access provides support for securing Azure DevOps resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. To learn more, see [Manage conditional access to Azure DevOps](../accounts/manage-conditional-access.md).

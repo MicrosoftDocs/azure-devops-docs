@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 10/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -26,7 +26,7 @@ With an organization, you gain access to the platform in which you can do the fo
 
 ## Create your organization
 
-Before you get started, read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization.md). and invite others so they can access your organization.
+Before you get started, read [Define your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,
@@ -43,8 +43,8 @@ and cloud-based load testing.
 
 ## Connect to your organization
 
-Once your organization is created,
-[connect to your organization](../../organizations/projects/connect-to-projects.md)
+When your organization is created,
+[connect to your projects](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
 and add code to your project.
 

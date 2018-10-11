@@ -284,7 +284,7 @@ Here are a few options available to you:
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
-- Add your feature request to our [user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
+- Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
 
  
 
