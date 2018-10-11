@@ -58,7 +58,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
   ```
-  git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+  git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
   ```
   After running the previous command, Git downloads a copy of the code, including all [commits](commits.md) and [branches](branches.md) from the repo, into a new folder for you to work with.
 
