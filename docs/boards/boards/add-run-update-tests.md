@@ -160,7 +160,7 @@ Additional ways you can quickly add linked items and objects to user stories fro
 - [Add inline tasks](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
-To initate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../../test/perform-exploratory-tests.md).
+To initate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
 ### Test status in the Kanban board
