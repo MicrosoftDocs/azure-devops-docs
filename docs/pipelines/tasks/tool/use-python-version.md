@@ -32,11 +32,11 @@ This task will fail if no Python versions are found in the tool cache. Available
 
 ## Arguments
 
-| Argument | Description |
-|----------|-------------|
-| Version spec | Version range or exact version of a Python version to use. |
-| Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
-| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. |
+| Argument | Description | Default |
+|----------|-------------|---------|
+| Version spec | Version range or exact version of a Python version to use. | 3.x |
+| Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. | true |
+| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. | x64 |
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
