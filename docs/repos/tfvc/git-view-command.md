@@ -34,7 +34,7 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 | Parameter                            | Description |
 |--------------------------------------|-------------|
-| **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the project collection that contains the file to view. For example: http://myserver:8080/tfs/DefaultCollection or https://fabrikam-fiber.visualstudio.com. This parameter is required. |
+| **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the project collection that contains the file to view. For example: http://myserver:8080/tfs/DefaultCollection or https://dev.azure.com/fabrikam-fiber. This parameter is required. |
 | **/teamproject:***TeamProjectIdentifier*   | Specifies the name of the project that contains the repo. This parameter is required. |
 | **/repository:***RepositoryIdentifier*     | Specifies the name of the repo that contains the file to view. This parameter is required. |
 | **/blobId:***blobId*                       | Specifies the ID of a blob to retrieve. This option cannot be used with the **path** parameter. One of either **path** or **blob** is required. |
@@ -51,7 +51,7 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 The following example retrieves a file from the default branch (typically master) and saves it to the current folder, and prompts the user for their credentials.
 
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber 
             /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 
@@ -61,7 +61,7 @@ tf git view /collection:https://fabrikam-fiber.visualstudio.com
 The following example retrieves a file from the default branch (typically master), and does not prompt for credentials since they are supplied.
 
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber 
             /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 
@@ -72,7 +72,7 @@ tf git view /collection:https://fabrikam-fiber.visualstudio.com
 The following example retrieves a file from the specified commit.
 
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber 
             /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 

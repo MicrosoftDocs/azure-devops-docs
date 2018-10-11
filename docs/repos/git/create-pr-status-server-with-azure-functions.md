@@ -85,7 +85,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Copy function url](_img/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
-2. Browse to your Azure DevOps project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+2. Browse to your Azure DevOps project, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -203,7 +203,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
     string Url = string.Format(
-        @"https://{0}.visualstudio.com/{1}/_apis/repos/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.0-preview",
+        @"https://dev.azure.com/{0}/{1}/_apis/repos/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.0-preview",
         accountName,
         projectName,
         repositoryName,

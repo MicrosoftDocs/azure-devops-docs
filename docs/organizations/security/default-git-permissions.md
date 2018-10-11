@@ -1,6 +1,6 @@
 ---
 title: Git repository and branch default permissions
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps and TFS
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.assetid:  
@@ -16,11 +16,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to contribute to a Git repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to a branch or repository as listed below.
+After you've been added as a team member, you are a member of the Contributors group. This membership allows you to contribute to a Git repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to a branch or repository.
 
-From the project admin content, **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). 
+From the project admin content, on the **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). 
 
-From the project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
+From the **Code** > **Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
 
 [!INCLUDE [temp](_shared/code-git.md)]
 

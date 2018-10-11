@@ -63,7 +63,7 @@ Copy the command line instructions from the **Clone** pop-up.
 on the command prompt:
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git clone <a style="color: #b5bd68;">https://fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamFiber</a>  
+    &gt; git clone <a style="color: #b5bd68;">https://dev.azure.com/fabrikam/DefaultCollection/Fabrikam/_git/FabrikamFiber</a>  
     </pre>
 
 Git will download and create your own copy of the code in a new folder for you to work with. 
