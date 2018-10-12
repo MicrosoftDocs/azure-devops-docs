@@ -9,7 +9,7 @@ ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/17/2018
+ms.date: 10/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -41,12 +41,14 @@ trigger:
 - releases/*
 ```
 
-You can also be more specific about branches to include and exclude, or whether to batch changes per branch.
+You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify branches to include and exclude. For example:
 
 ```yaml
 name: My Specific Branch Build
 trigger:
-  batch: true
   branches:
     include:
     - master
@@ -55,7 +57,19 @@ trigger:
     - releases/old*
 ```
 
-If your source repository is Azure Repos Git, you can also specify file paths to include or exclude.
+If you have a lot of team members uploading changes often, then you might want to reduce the number of builds you're running.
+If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
+
+```yaml
+name: My Specific Branch Build with Batching to save time
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+```
+
+If your source repository is Azure Repos Git, then you can specify file paths to include or exclude.
 
 ```yaml
 name: My Specific Path Build
