@@ -20,7 +20,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 ## Overview
 
 * [About notifications](about-notifications.md)
-* [Navigation in the notifications UI](navigating-the-ux.md)
+* [Navigation in the notifications UI](navigating-the-ui.md)
 
 ## Step-by-step tutorials
 

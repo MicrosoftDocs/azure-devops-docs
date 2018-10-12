@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 ## Organization level notifications page
 
-See [Navigating the UX](navigating-the-ux.md) to learn how to locate this page.
+See [Navigating the UI](navigating-the-ui.md) to learn how to locate this page.
 
 The organization notifications page consists of the following sections:
 

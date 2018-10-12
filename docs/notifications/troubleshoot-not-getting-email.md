@@ -37,7 +37,7 @@ Ensure the email was not delivered to a different email folder.
 
 ## Step 2: Locate the subscription and ensure it is enabled
 
-Navigate to your personal subscriptions and locate the subscription which you feel should have produced an email, but didn't. L[earn how to navigate to your personal subscriptions](navigating-the-ux.md#navigating-to-the-personal-notifications-page).
+Navigate to your personal subscriptions and locate the subscription which you feel should have produced an email, but didn't. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#navigating-to-the-personal-notifications-page).
 
 If the subscription is greyed-out in the user interface, then it is disabled. The following screenshot shows the first subscription enabled and the second disabled.
 

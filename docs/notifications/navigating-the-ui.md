@@ -1,5 +1,5 @@
 ---
-title: Navigating the notifications UX
+title: Navigating the notifications UI
 titleSuffix: Azure DevOps Services & TFS 
 description: Navigate and explore the notifications pages in Azure DevOps Services and Team Foundation Server (TFS)  
 ms.technology: devops-collab
@@ -9,11 +9,11 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 10/11/2018  
+ms.date: 10/12/2018  
 monikerRange: '>= tfs-2017'
 ---
 
-# Navigating the notifications UX
+# Navigating the notifications UI
 
 <b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b>
 

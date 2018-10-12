@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 08/06/2018 
+ms.date: 10/12/2018 
 monikerRange: '>= tfs-2017'
 ---
 
@@ -40,7 +40,7 @@ The recipients for a custom personal subscription is the easiest to understand: 
 Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and Azure DevOps Services groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
 
 > [!NOTE]
-> Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UX or at the organization level.
+> Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UI or at the organization level.
 
 **Team delivery settings button under organization level settings**
 
