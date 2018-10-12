@@ -21,9 +21,9 @@ monikerRange: 'vsts'
 None
 
 ## Prerequisites
-* A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
+* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Ruby installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
-This task will fail if no Ruby versions are found in the tool cache. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
+This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -55,7 +55,7 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 ### How can I configure a self-hosted agent to use this task?
 
 You can run this task on a self-hosted agent with your own Ruby versions.
-To run this task on a self-hosted agent, set up your agent's tool cache by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
+To run this task on a self-hosted agent, set up Agent.ToolsDirectory by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
 The tool name to use is "Ruby."
 
 <!-- ENDSECTION -->
