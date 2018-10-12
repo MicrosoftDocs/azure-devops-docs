@@ -38,7 +38,6 @@ Azure Repos:
 Administration:
 
 - [Support AAD users in MSA accounts](#support-aad-users-in-msa-accounts)
-- [PATs enforce CAP](#pats-enforce-cap)
 
 ## Next steps
 
@@ -161,10 +160,6 @@ For organizations that already use AAD identities with Azure DevOps, this featur
 Here's an example scenario where this experience may be useful: Dorothy is the Azure DevOps organization owner for her company, Fabrikam. She and her team of 10 team members all sign into Azure DevOps with MSA identities that use their corporate email address, e.g. Dorothy@fabrikam.com. Sam is a new team member who joined the company today. Dorothy invites him to Azure DevOps by using his email, sam@fabrikam.com. When he clicks on the join now link in the email, he can sign into Azure DevOps with the same AAD identity he was given to access his email with O365. This allows Sam to collaborate with his 11 colleagues and gives Dorothy the freedom to connect her Azure DevOps organization to AAD when she's ready.
 
 See our [blog post](https://blogs.msdn.microsoft.com/devops/2018/09/27/using-azuread-identities-in-azure-devops-organizations-backed-by-microsoft-accounts/) for more information.
-
-### PATs enforce CAP
-
-In February 2017, VSTS announced [support for Azure Active Directory Conditional Access Policy (CAP)](https://docs.microsoft.com/en-us/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access). One caveat that was called out in that announcement was that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Feedback
 
