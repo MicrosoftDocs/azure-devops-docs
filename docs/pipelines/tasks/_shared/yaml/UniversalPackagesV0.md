@@ -22,7 +22,6 @@
     #packagePublishExternal: # Required when feedsToUsePublish == External
     #versionOption: 'patch' # Options: major, minor, patch, custom
     #versionPublish: # Required when versionOption == Custom
-    packagePublishtitleSuffix: Azure Pipelines & TFS
-description: 
+    packagePublishDescription: 
     #verbosity: 'None' # Options: none, trace, debug, information, warning, error, critical
 ```

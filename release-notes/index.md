@@ -80,7 +80,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="11">[1 October 2018](2018/sprint-141-update.md)</td>
+            <td rowspan="10">[1 October 2018](2018/sprint-141-update.md)</td>
             <td>Azure Policy compliance and security validations in Pipelines</td><td>*2019*</td>
         </tr>
         <tr><td>Simplified continuous delivery to Azure VMs</td><td>*2019*</td></tr>
@@ -92,7 +92,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Protect Git repos with cross platform compatibility settings</td><td>*2019*</td></tr>
         <tr><td>Expanded search box</td><td>*2019*</td></tr>
         <tr><td>Support AAD users in MSA accounts</td><td>N/A</td></tr>
-        <tr><td>PATs enforce CAP</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
             <td>Control specific build dependencies using container jobs</td><td>*2019*</td>
