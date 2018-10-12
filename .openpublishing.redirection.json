@@ -11140,6 +11140,11 @@
       "source_path": "docs/organizations/billing/vsts-billing-faq.md",
       "redirect_url": "/azure/devops/organizations/billing/billing-faq",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/navigating-the-ux.md",
+      "redirect_url": "/azure/devops/notifications/navigating-the-ui",
+      "redirect_document_id": false
     }
   ]
 }
