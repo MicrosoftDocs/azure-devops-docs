@@ -43,8 +43,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
     vstsFeedPublish: '<Feed name>'
     vstsFeedPackagePublish: '<Package name>'
-    packagePublishtitleSuffix: Azure Pipelines & TFS
-description: '<Package description>'
+    packagePublishDescription: '<Package description>'
 
 ```
 
@@ -92,8 +91,7 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
     vstsFeedPackagePublish: '<Package name>'
     versionOption: custom
     versionPublish: <Package version>
-    packagePublishtitleSuffix: Azure Pipelines & TFS
-description: '<Package description>'
+    packagePublishDescription: '<Package description>'
 ```
 
 # [Designer](#tab/designer)
