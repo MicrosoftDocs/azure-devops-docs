@@ -101,7 +101,13 @@ with the number of commands in the window given by the Count column, and the tot
 
 For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
 
-<img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+   # [New navigation](#tab/new-nav)
+   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
+
+   # [Previous navigation](#tab/previous-nav)
+   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+
+   ---
 
 By default, visiting the Usage page will display requests for the last hour. Clicking the link from the email will open the Usage page scoped to the request history from 
 30 minutes before and after the first delayed request. By default, the Usage page will default to showing the past hour. After arriving on the page, review the 
@@ -109,7 +115,7 @@ request history leading up to delayed requests.
 
 <img alt="Usage page TSTU investigation" src="./_img/rate-limits/usage-tstu.png" style="border: 1px solid #CCCCCC" />
 
-Commands consuming a high number of TSTUs will be the ones responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands 
+Commands consuming a high number of TSTUs (in the hundreds, for example) will be the ones responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands 
 are coming from. Common problems to look for are custom tools or build service accounts that might be making a large amount of calls in a short time window. To avoid these types of issues,
 tools may need to be rewritten or build processes updated to reduce the type and number of calls made. For example, a tool might be pulling a large version control repository from scratch
 on a regular basis, when it could pull incrementally instead. 

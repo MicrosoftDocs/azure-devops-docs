@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 08/15/2018
+ms.date: 10/12/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -113,7 +113,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 > The hosted agents are regularly updated, and setting this task up will result in spending significant time updating to a newer minor version every time the pipeline is run. Only use this task only when you need a specific Node version in your pipeline.
 
 ```yaml
-- task: NodeTool@0
+- task: NodeTool@0 
   inputs:
     versionSpec: '8.x' # replace this value with the version that you need for your project
 ```
@@ -155,7 +155,7 @@ strategy:
       node_version: 9.x
 
 steps:
-- task: NodeTool@0
+- task: NodeTool@0 
   inputs:
     versionSpec: $(node_version)
 

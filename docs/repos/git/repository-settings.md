@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 10/04/2018
+ms.date: 10/12/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -102,7 +102,7 @@ By disabling this setting, users must opt-in to completing work items for each p
 ## Cross-platform compatibility settings
 
 >[!NOTE]
->Our recommendation is to configure these settings *either* at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
+>Our recommendation is to configure these settings **either** at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
 
 ### Case enforcement
 
