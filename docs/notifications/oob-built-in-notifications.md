@@ -7,29 +7,27 @@ ms.technology: devops-collab
 ms.topic: conceptual
 toc: show
 ms.manager: douge
-ms.author: elbatk
-author: elbatk
-ms.date: 09/01/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 10/11/2018
 monikerRange: '>= tfs-2017'
 ---
-
-
 
 # Default and supported notifications
 
 **Azure DevOps Services | TFS 2018 | TFS 2017.1**
 
-Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item. 
+Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item.
 
 The roles that receive a notification for a particular default subscription are reflected in the description of the subscription, for example, *"Notifies you when a build you queued or that was queued for you completes"*. Role-based subscriptions contain a Roles field which you can view by opening the subscription. Only users or groups that belong to the role listed within the subscription will receive a notification for an event matched by the subscription.
   
 Default subscriptions only send targeted notifications. That is, recipient will always be somehow associated with the event that triggered the notification. For example, the default subscription for work item updates only sends an email notification to the person assigned to the work item.
 
-## Out-of-the-box (OOB) or default subscriptions 
+## Out-of-the-box (OOB) or default subscriptions
 
 The following events generate a notification to all subscribers by default. To unsubscribe from any one notification, see [Unsubscribe from a notification](unsubscribe-default-notification.md).  
 
-Within the personal notifications page, OOB subscriptions appear with the following image: ![OOB notification](_img/oob-notification.png).   
+Within the personal notifications page, OOB subscriptions appear with the following image: ![OOB notification](_img/oob-notification.png).
 
 
 | Category | 	Type| 	Build| 	Description
@@ -50,10 +48,9 @@ Within the personal notifications page, OOB subscriptions appear with the follow
 | Work| 	Work item| 	A work item is moved from this project	| Notifies you when the area path for a work item is moved to another project | 
 | Work	| Work item	| A work item assigned	| Notifies you when you are assigned or unassigned a work item | 
 
+## Supported subscriptions
 
-## Supported subscriptions 
-
-You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](howto-manage-personal-notifications.md).    
+You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](howto-manage-personal-notifications.md).
 
 | Category | 	Template |
 |-----------------------|-------------------|
@@ -81,12 +78,11 @@ You can create subscriptions using the following templates for yourself, a team,
 |Release | A deployment is completed |
 |Release | A manual intervention for a deployment is pending |
 
-
-## Related notes
+## Related articles
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](howto-manage-team-notifications.md) 
-- [Unsubscribe from a notification](unsubscribe-default-notification.md) 
+- [Manage personal notifications](howto-manage-team-notifications.md)
+- [Unsubscribe from a notification](unsubscribe-default-notification.md)
 
 
 

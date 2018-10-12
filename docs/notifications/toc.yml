@@ -4,21 +4,25 @@
   items:
   - name: About notifications
     href: about-notifications.md
-  - name: Navigating the UX
-    href: navigating-the-ux.md
+  - name: Navigating the UI
+    href: navigating-the-ui.md 
 - name: Concepts
   items:
   - name: Events and notifications
     href: concepts-events-and-notifications.md
   - name: How email recipients are determined
     href: concepts-email-recipients.md
-- name: How-to Guides
+- name: Tutorials
   items:
-  - name: Manage your personal subscriptions
+  - name: "Follow work & pull requests"
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+- name: How-to guides
+  items:
+  - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
-  - name: Manage your team and group subscriptions
+  - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
-  - name: Manage your organization subscriptions
+  - name: Manage organization notifications
     href: howto-manage-organization-notifications.md
   - name: Manage organization default delivery settings
     href: howto-manage-organization-notifications-settings.md
@@ -30,8 +34,6 @@
     href: howto-use-subscription-logging.md
   - name: Exclude yourself from notification of events initiated by you
     href: howto-exclude-self-from-email.md
-  - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
