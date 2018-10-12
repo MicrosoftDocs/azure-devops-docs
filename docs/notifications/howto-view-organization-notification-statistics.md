@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2017'
 
 Notification statistics show the top 10 most active subscriptions and the top event initiators in your organization for the current day. Administrators should periodically review statistics to ensure there are no unintended high volume subscriptions or event initiators.
 
-1. [Navigate to the organization notifications settings page](navigating-the-ux.md#navigating-to-the-organization-level-notifications-page).
+1. [Navigate to the organization notifications settings page](navigating-the-ui.md#navigating-to-the-organization-level-notifications-page).
 2. Select the **Statistics** tab.
 3. Analyze the most active subscriptions and top event initiators.
 
