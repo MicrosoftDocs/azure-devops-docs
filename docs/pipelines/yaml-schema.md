@@ -8,14 +8,13 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 monikerRange: 'vsts'
 ---
 
 # YAML schema reference
 
 Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
-This document is intended for people who already have a strong understanding of YAML pipelines.
 
 > The best way to get started with YAML pipelines is through the
 [quickstart guide](get-started-yaml.md).

@@ -8,7 +8,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: chrispat
 ms.reviewer: chrispat
-ms.date: 08/04/2016
+ms.date: 10/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -193,6 +193,21 @@ Analyzing a dump of the process can help to identify what a deadlocked process i
 
 ### WiX project
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
+
+## Line endings for multiple platforms
+
+When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
+Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
+Git tries to compensate for the difference by automatically making lines end in LF in the repo but CRLF in the working directory on Windows.
+
+Most Windows tools are fine with LF-only endings, and this automatic behavior can cause more problems than it solves.
+If you encounter issues based on line endings, we recommend you configure Git to prefer LF everywhere.
+To do this, add a [`.gitattributes`](https://www.git-scm.com/docs/gitattributes) file to the root of your repository.
+In that file, add the following line:
+
+```
+* text eol=lf
+```
 
 ## Agent connection issues
 
