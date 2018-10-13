@@ -298,7 +298,7 @@ jobs:
   parameters:
     name: Linux
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
 
 - template: jobs/build.yml  # Template reference
   parameters:
@@ -357,7 +357,7 @@ For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
   
 strategy:
   matrix:
@@ -550,13 +550,13 @@ jobs:
 
 - job: Linux
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-16.04'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: 'vs2017-win2016'
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only

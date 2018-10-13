@@ -111,22 +111,23 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: macOS-10.13
+    vmImage: 'macOS-10.13'
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - script: echo hello from Linux
 ```
 
 Example of fan out:
+
 ```yaml
 jobs:
 - job: InitialJob
@@ -143,6 +144,7 @@ jobs:
 ```
 
 Example of fan in:
+
 ```yaml
 jobs:
 - job: InitialA
@@ -218,7 +220,9 @@ phased execution:
 ---
 
 ::: moniker range=">=tfs-2018"
+
 ## Conditions
+
 You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
 
 # [YAML](#tab/yaml)
