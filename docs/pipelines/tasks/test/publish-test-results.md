@@ -113,7 +113,6 @@ in a build or release summary, and the corresponding mapping with the attributes
 | | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value | /testsuites/testsuite/testcase/Attributes["**classname**"].Value | /test-results/test-suite.Attributes["**name**"].Value | /test-suite[@type='Assembly'].Attributes["**name**"].Value | /assemblies/assembly.Attributes["**name**"].Value |
 | | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value | - | - | - | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value |
 
-
 <a name="docker"></a>
 
 ## Docker
@@ -165,13 +164,13 @@ The final image will be published to Docker or Azure Container Registry
    replace the contents of the existing `Dockerfile` with the following:
 
    ```Dockerfile
-   # This Dockerfile creates the final image to be published to Docker or 
+   # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
    FROM microsoft/aspnetcore:2.0
    # Create app directory
    WORKDIR /app
-   # Copy only the deployment artifacts 
+   # Copy only the deployment artifacts
    COPY /out .
    ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
    ```
@@ -188,7 +187,7 @@ The final image will be published to Docker or Azure Container Registry
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
    pool:
-     vmImage: ubuntu-16.04
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
    steps:
@@ -218,10 +217,10 @@ The final image will be published to Docker or Azure Container Registry
    ```YAML
    # Build Docker image for this app to be published to Azure Container Registry
    pool:
-     vmImage: ubuntu-16.04
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
-   
+
    steps:
    - script: |
        docker build -f Dockerfile.build -t $(dockerId)/dotnetcore-build:$BUILD_BUILDID .
@@ -313,7 +312,7 @@ YAML builds are not yet available on TFS.
 1. If you use Azure Container Registry, ensure you have
    [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
-       
+
 1. In the **Variables** tab of the build pipeline, define two variables:
 
    * **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
@@ -338,7 +337,6 @@ The Publish Test Results task provides support for attachments for both test run
 | | Code Coverage | /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**binaryFile**"].Value And /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**pdbFile**"].Value |
 | **Test result** | Data Collectors | /TestRun/Results/UnitTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/WebTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/TestResultAggregation/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value |
 | | Test Result | /TestRun/Results/UnitTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/WebTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/TestResultAggregation/ResultFiles/ResultFile.Attributes["**path**"].Value |
-
 
 ### NUnit 3
 

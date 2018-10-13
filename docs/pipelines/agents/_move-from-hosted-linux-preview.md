@@ -18,27 +18,27 @@ If your pipeline assumes that its agent is running in a container, then you'll n
 
 # [YAML](#tab/yaml)
 
-Pipelines that use `queue: Hosted Linux Preview` need to be changed to the new `pool` syntax. 
+Pipelines that use `queue: 'Hosted Linux Preview'` need to be changed to the new `pool` syntax.
 `queue` has been split into two focused sections: `pool` and `strategy`.
-`pool` specifies which agent pool receives the build. 
+`pool` specifies which agent pool receives the build.
 `strategy` specifies if and how the system should create multiple instances of the jobs you specify.
 
 #### Example: Pool name only
 
 ```yaml
 # Before
-queue: Hosted Linux Preview
+queue: 'Hosted Linux Preview'
 
 # After
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'ubuntu-16.04'
 ```
 
 #### Example: Pool name with a matrix
 
 ```yaml
 # Before
-queue: Hosted Linux Preview
+queue: 'Hosted Linux Preview'
 matrix:
   entry1:
     var: value1
@@ -48,7 +48,7 @@ matrix:
 # After
 ## The matrix syntax has not changed, but it has moved under a `strategy` keyword
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'ubuntu-16.04'
 strategy:
   matrix:
     entry1:
@@ -61,7 +61,7 @@ strategy:
 
 ```yaml
 # Before
-queue: Hosted Linux Preview
+queue: 'Hosted Linux Preview'
 parallel: 2
 matrix:
   entry1:
@@ -72,7 +72,7 @@ matrix:
 # After
 ## The keyword `parallel` has been replaced by `maxParallel` and moved under the strategy node
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'ubuntu-16.04'
 strategy:
   maxParallel: 2
   matrix:
@@ -122,7 +122,7 @@ If you weren't aware that the agent was in a container, your pipelines would fai
 For example, you could successfully instantiate another container, but because the agent and new containers weren't networked together, you couldn't communicate between them.
 
 The **Hosted Ubuntu 1604** pool uses a more typical model that matches the other hosted pools.
-The agent runs on the host VM. 
+The agent runs on the host VM.
 When you start a container from the agent, the host is networked to the container automatically.
 
 ### What will happen if I don't move?
