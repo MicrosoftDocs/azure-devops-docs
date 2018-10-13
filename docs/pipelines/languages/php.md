@@ -45,7 +45,7 @@ On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
 
 variables:
   phpVersion: 7.2

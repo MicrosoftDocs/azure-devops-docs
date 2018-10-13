@@ -49,7 +49,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 pool:
-  vmImage: 'Ubuntu-16.04' # Other options: 'macOS-10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 ## Build your code with Maven
