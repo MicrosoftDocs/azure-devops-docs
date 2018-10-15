@@ -467,6 +467,9 @@ pool:
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
+If you're using a Microsoft-hosted pool, choose an
+[available `vmImage`](agents/hosted.md#use-a-microsoft-hosted-agent).
+
 If you're using a private pool and don't need to specify demands, this can
 be shortened to:
 
