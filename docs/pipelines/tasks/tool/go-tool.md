@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Tool: Go Tool Installer
 
+**Azure Pipelines**
+
 ![](_img/gotool.png) Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
 
 ::: moniker range="> tfs-2018"

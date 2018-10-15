@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Package: Conda Environment
 
+**Azure Pipelines**
+
 ![icon](_img/conda.png) Create and activate a Conda environment.
 
 This task will create a Conda environment and activate it for subsequent build tasks.

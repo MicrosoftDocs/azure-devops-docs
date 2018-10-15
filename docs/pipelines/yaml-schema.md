@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # YAML schema reference
 
+**Azure Pipelines**
+
 Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
 
 > The best way to get started with YAML pipelines is through the

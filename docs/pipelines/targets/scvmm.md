@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2018'
 
 # SCVMM deployment
 
+**Azure Pipelines | TFS 2018**
+
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
 
 ::: moniker range="<= tfs-2018"

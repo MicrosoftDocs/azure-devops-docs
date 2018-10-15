@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Resources
 
+**Azure Pipelines**
+
 A resource is anything used by a pipeline that lives outside the pipeline itself. Examples include:
 
 - [secure files](../library/secure-files.md)

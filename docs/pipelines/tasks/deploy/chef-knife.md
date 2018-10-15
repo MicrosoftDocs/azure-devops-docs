@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Chef Knife
 
+**Azure Pipelines**
+
 ![](_img/chefknife.png) Run Scripts with knife commands on your chef workstation
 
 ::: moniker range="> tfs-2018"

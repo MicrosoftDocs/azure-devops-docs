@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Deploy to an Azure Web App for Containers
 
+**Azure Pipelines**
+
 We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure Web App using
 Azure Pipelines.
 

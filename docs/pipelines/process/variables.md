@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2015'
 
 # Build variables
 
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.

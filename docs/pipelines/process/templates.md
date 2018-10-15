@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Job and step templates
 
+**Azure Pipelines**
+
 Use templates to define your logic once and then reuse it several times.
 Templates combine the content of multiple YAML files into a single pipeline.
 You can pass parameters into a template from your parent pipeline.
