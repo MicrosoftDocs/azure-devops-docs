@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/02/2018
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -346,6 +346,8 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ::: moniker range="vsts"
 
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
 Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
@@ -387,6 +389,8 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 # [Designer](#tab/designer)
+
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
