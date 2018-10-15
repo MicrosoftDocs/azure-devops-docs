@@ -242,6 +242,7 @@ Containers are not yet supported in the web editor.
 ## Timeouts
 
 To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
+
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
 * For 30 minutes on Microsoft-hosted agents with a private project or private repository
@@ -280,6 +281,7 @@ On the **Options** tab you can specify default values for all jobs in the pipeli
 > You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
 
 <a name="parallelexec"></a>
+
 ## Multi-configuration
 
 From a single job you can run multiple jobs and multiple agents in parallel. Some examples include:
@@ -315,6 +317,7 @@ jobs:
         Location: Europe
         Browser: Chrome
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -382,6 +385,7 @@ jobs:
     parallel: 5
     maxParallel: 2
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -396,6 +400,7 @@ and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are 
 ---
 
 ## Job variables
+
 If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
 
 # [YAML](#tab/yaml)
@@ -418,6 +423,7 @@ steps:
 - bash: echo Input macro = $(my.dotted.var). Env var = $MY_DOTTED_VAR
 - powershell: Write-Host "Input macro = $(my var with spaces). Env var = $env:MY_VAR_WITH_SPACES"
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -430,6 +436,7 @@ Job variables are not yet supported in the web editor.
 ---
 
 <a name="artifact-download"></a>
+
 ## Artifact download
 
 # [YAML](#tab/yaml)
@@ -439,7 +446,7 @@ Job variables are not yet supported in the web editor.
 jobs:
 - job: Build
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - script: npm test
   - task: PublishBuildArtifacts@1
@@ -450,7 +457,7 @@ jobs:
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - checkout: none #skip checking out the default repository resource
   - task: DownloadBuildArtifacts@0
@@ -501,6 +508,7 @@ steps:
   env:
     TOKEN: $(system.accesstoken)
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
