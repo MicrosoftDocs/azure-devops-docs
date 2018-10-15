@@ -199,7 +199,7 @@ To configure validation builds for an Azure Repos Git repository, you must be a 
 
 ---
 
-## Validate contributions from forks 
+## Validate contributions from forks
 
 # [GitHub](#tab/github)
 
@@ -211,7 +211,7 @@ When you create a build pipeline, your pipeline is automatically triggered for p
 1. Go to your Azure Pipelines project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
 1. Select the **Triggers** tab. After enabling the **Pull request trigger**, enable or disable the **Build pull requests from forks of this repository** check box.
 
-By default on GitHub pipelines, secrets associated with your build pipeline are not made available to pull request builds of forks. These secrets are enabled by default on GitHub Enterprise pipelines. Secrets include:
+By default with GitHub pipelines, secrets associated with your build pipeline are not made available to pull request builds of forks. These secrets are enabled by default with GitHub Enterprise pipelines. Secrets include:
 
 * A security token with access to your GitHub repository.
 * These items, if your build uses them:
