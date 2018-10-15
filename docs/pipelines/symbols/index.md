@@ -8,9 +8,12 @@ ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/18/2017
+monikerRange: '> tfs-2015'
 ---
 
 # Publish symbols for debugging
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

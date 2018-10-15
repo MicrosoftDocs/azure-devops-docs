@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure PowerShell
 
+**Azure Pipelines**
+
 ![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
 
 ::: moniker range="> tfs-2018"

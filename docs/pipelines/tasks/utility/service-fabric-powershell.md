@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Utility: Service Fabric PowerShell
 
+**Azure Pipelines**
+
 ![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.

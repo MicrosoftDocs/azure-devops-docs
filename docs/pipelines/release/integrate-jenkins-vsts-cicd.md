@@ -17,10 +17,12 @@ ms.workload:
 ms.date: 03/30/2018
 ms.author: mlearned
 ms.custom: mvc
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # Tutorial:  Integrate your Jenkins CI jobs with Azure Pipelines CD to Azure
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

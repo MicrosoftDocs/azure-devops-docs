@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure VM scale set Deployment
 
+**Azure Pipelines**
+
 ![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
 
 ::: moniker range="> tfs-2018"

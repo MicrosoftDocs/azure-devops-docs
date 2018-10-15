@@ -16,6 +16,8 @@ monikerRange: 'vsts'
 
 # Tool: Node.js Tool Installer
 
+**Azure Pipelines**
+
 **Build**
 
 ![icon](_img/node.png) Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH

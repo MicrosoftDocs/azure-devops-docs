@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure App Service Deploy
 
+**Azure Pipelines**
+
 ![](_img/azurermwebappdeployment.png) The Azure App Service Deploy task is used to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac;
 and uses several different [underlying deployment technologies](#deploy-methods).

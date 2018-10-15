@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure Cloud Service Deployment
 
+**Azure Pipelines**
+
 ![](_img/azurecloudpowershelldeployment.png) Deploy an Azure Cloud Service
 
 ::: moniker range="> tfs-2018"

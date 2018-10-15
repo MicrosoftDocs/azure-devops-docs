@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Test: Visual Studio Test
 
+**Azure Pipelines**
+
 ![](_img/vstest.png) Run unit and functional tests (Selenium, Appium, Coded UI test, and more)
 using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
 Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be run.  

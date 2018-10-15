@@ -19,6 +19,8 @@ monikerRange: '>= tfs-2018'
 
 # Server jobs
 
+**Azure Pipelines | TFS 2018**
+
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server job at present. At present you can add only one task to each server job in your pipeline.
 
 # [YAML](#tab/yaml)

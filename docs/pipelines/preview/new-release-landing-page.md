@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # New release landing page
 
+**Azure Pipelines**
+
 A new and fully redesigned user experience is available for release landing page in Azure Pipelines.
 To use this page, you may need to switch it on using one of the on-screen prompts,
 or from the [user profile **Previews** panel](../../project/navigation/preview-features.md#enable-features-for-your-use).

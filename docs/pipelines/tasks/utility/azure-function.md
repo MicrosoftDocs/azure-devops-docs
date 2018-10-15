@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Invoke Azure function
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ::: moniker range="<= tfs-2018"

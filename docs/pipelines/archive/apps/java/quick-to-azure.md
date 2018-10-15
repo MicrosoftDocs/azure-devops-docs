@@ -16,6 +16,8 @@ monikerRange: 'vsts'
 
 # Implement a CI/CD pipeline to build and deploy your Java app to Azure
 
+**Azure Pipelines**
+
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 Java apps.
 This quickstart shows how to set up CI and CD to deploy

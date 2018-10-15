@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Build: Docker Compose
 
+**Azure Pipelines**
+
 ![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 
 ::: moniker range="> tfs-2018"
