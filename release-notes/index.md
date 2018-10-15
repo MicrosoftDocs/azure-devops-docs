@@ -23,7 +23,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |---------|---------|---------|
 |Cross organization linking for Work Items|Boards|TBD|
 |Azure DevOps Server Support for Move work item to another team project / Change work item type|Boards|2019|
-|Linking from Work Items to GitHub Commits|Boards|TBD|
 |New rich text Description and Discussion control|Boards|TBD|
 |GVFS - Performance improvements for status|Repos|2019|
 |GVFS for Mac - Public Preview|Repos|N/A|
