@@ -52,7 +52,7 @@ resources:
     image: ubuntu:16.04
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
 
 container: my_container
 
@@ -87,7 +87,7 @@ resources:
     image: ubuntu:18.04
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
 
 strategy:
   matrix:

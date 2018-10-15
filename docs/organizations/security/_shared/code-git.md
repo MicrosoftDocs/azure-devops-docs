@@ -61,7 +61,7 @@
 <tr>
 <td align="left">Powerful semantic code search
 </td>
-<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>

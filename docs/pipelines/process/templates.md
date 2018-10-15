@@ -16,12 +16,12 @@ monikerRange: 'vsts'
 # Job and step templates
 
 Use templates to define your logic once and then reuse it several times.
-Templates combine the content of multiple YAML files into a single pipeline. 
+Templates combine the content of multiple YAML files into a single pipeline.
 You can pass parameters into a template from your parent pipeline.
 
 ## Step re-use
 
-You can reuse one or more steps across several jobs. 
+You can reuse one or more steps across several jobs.
 In addition to the steps from the template, each job can define additional steps.
 
 ```yaml
@@ -35,21 +35,21 @@ steps:
 # File: azure-pipelines.yml
 
 jobs:
-- job: macOS
+- job: Linux
   pool:
-    vmImage: xcode9-macos10.13
+    vmImage: 'ubuntu-16.04'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
-- job: Linux
+- job: macOS
   pool:
-    vmImage: ubuntu-1604
+    vmImage: 'macOS-10.13'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
 - job: Windows
   pool:
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo This script runs before the template's steps, only on Windows.
   - template: templates/npm-steps.yml  # Template reference
@@ -110,33 +110,33 @@ the template parameters.
 jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
-    name: macOS
-    vmImage: xcode9-macos10.13
+    name: Linux
+    vmImage: 'ubuntu-16.04'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
-    name: Linux
-    vmImage: ubuntu-1604
+    name: macOS
+    vmImage: 'macOS-10.13'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: Windows
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
 ```
 
 The above example shows only how to use parameters with a job template. But you can also use parameters with step templates.
 
 ## Using other repositories
 
-You can keep your templates in other repositories. 
-For example, suppose you have a core pipeline that you want all of your app pipelines to use. 
+You can keep your templates in other repositories.
+For example, suppose you have a core pipeline that you want all of your app pipelines to use.
 You can put the template in a core repo and then refer to it from each of your app repos:
 
 ```yaml
 # Repo: Contoso/BuildTemplates
 # File: common.yml
 parameters:
-  vmImage: 'Ubuntu 18.04'
+  vmImage: 'ubuntu 16.04'
 
 jobs:
 - job: Build
@@ -147,7 +147,7 @@ jobs:
   - script: npm test
 ```
 
-Now you can reuse this template in multiple pipelines. 
+Now you can reuse this template in multiple pipelines.
 Use the `resources` specification to provide the location of the core repo.
 When you refer to the core repo, use `@` and the name you gave it in `resources`.
 
@@ -176,10 +176,10 @@ resources:
 jobs:
 - template: common.yml@templates  # Template reference
   parameters:
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
 ```
 
-Repositories are resolved only once, when the pipeline starts up. 
+Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
 Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
@@ -187,7 +187,7 @@ This means that you can't use scripts from the template repo in your pipeline.
 
 ## Template expressions
 
-Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization. 
+Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.
 
 Template expressions can expand template parameters, and also variables.
@@ -251,7 +251,7 @@ steps:
     solution: ${{ parameters.solution }}
 ```
 
-To prove that the template fails if it's missing the required parameter: 
+To prove that the template fails if it's missing the required parameter:
 
 ```yaml
 # File: azure-pipelines.yml
@@ -302,7 +302,7 @@ parameters:
 jobs:
 - job: Build
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: 'vs2017-win2016'
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}
