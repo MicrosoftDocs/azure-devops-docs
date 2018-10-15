@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Chef
 
+**Azure Pipelines**
+
 ![](_img/chef.png) Deploy to Chef environments by editing environment attributes
 
 ::: moniker range="> tfs-2018"

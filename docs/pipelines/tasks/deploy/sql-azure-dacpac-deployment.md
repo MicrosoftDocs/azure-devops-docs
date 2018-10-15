@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure SQL Database Deployment
 
+**Azure Pipelines**
+
 ![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 
 ::: moniker range="> tfs-2018"

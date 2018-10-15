@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Download Build Artifacts
 
+**Azure Pipelines**
+
 ![](_img/downloadbuildartifacts.png) Download Build Artifacts
 
 ::: moniker range="> tfs-2018"

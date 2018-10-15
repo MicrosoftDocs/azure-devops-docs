@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure CLI
 
+**Azure Pipelines**
+
 ![icon](_img/azure-cli-icon.png) Run a shell or batch 
 script containing Azure CLI commands against an Azure subscription.
 

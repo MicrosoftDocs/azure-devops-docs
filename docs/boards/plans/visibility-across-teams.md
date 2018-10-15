@@ -64,11 +64,11 @@ With the multi-team portfolio backlog view, you can:
 ### View child items owned by other teams 
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -77,15 +77,15 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017" 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -94,15 +94,15 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015" 
 
 Items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker-end  
+::: moniker-end 
 
 ---
 
@@ -112,33 +112,33 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017" 
+::: moniker range=">= tfs-2017"   
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
- 
+   
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015" 
 Items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
-::: moniker-end  
+::: moniker-end 
 
 ---
 

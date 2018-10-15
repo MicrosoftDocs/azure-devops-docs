@@ -14,6 +14,8 @@ monikerRange: '> tfs-2018'
 
 # Build: Docker
 
+**Azure Pipelines | TFS 2018**
+
 ![](_img/docker.png) Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
 
 > [!NOTE]

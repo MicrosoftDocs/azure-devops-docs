@@ -82,7 +82,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 0. Open **Boards>Plans**. 
 
@@ -100,11 +100,11 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -119,7 +119,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  
-	::: moniker range=">= tfs-2017  <= tfs-2018"  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
 	::: moniker-end  
 

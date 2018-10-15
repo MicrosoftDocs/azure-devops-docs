@@ -327,7 +327,7 @@ If you want to create a reusable and automatically updated piece of logic, then 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range=">=tfs-2018"
 
 ### I don't see XAML builds. What do I do?
 

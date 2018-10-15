@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Install SSH Key
 
+**Azure Pipelines**
+
 ![](_img/installsshkey.png) Install an SSH key prior to a build or release
 
 ::: moniker range="> tfs-2018"

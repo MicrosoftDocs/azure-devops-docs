@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2015'
 
 # Build and release permissions and security roles
 
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.

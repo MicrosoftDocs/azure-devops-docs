@@ -149,7 +149,7 @@ you can use the following as shortcuts for common job status checks.
 ## Variables
 
 [Build](../build/variables.md) or [Release](../release/variables.md) variables are available.
-For agent phases, variables marked agent-scoped are available.
+For agent jobs, variables marked agent-scoped are available.
 
 Some of the more useful predefined variables include:
 
@@ -162,12 +162,12 @@ Some of the more useful predefined variables include:
 For jobs which depend on other jobs, expressions may also use context about previous jobs in the dependency graph.
 The context is called `dependencies` and works much like [`variables`](expressions.md#variables).
 
-Structurally, the `dependencies` object is a map of phase names to `results` and `outputs`.
+Structurally, the `dependencies` object is a map of job names to `results` and `outputs`.
 Expressed as JSON, it would look like:
 
 ```json
 "dependencies": {
-  "<PHASE_NAME>" : {
+  "<JOB_NAME>" : {
     "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
     "outputs": { // only variables explicitly made outputs will appear here
       "variable1": "value1",
@@ -175,7 +175,7 @@ Expressed as JSON, it would look like:
     }
   },
   "...": {
-    // another phase
+    // another job
   }
 }
 ```
@@ -185,13 +185,13 @@ Expressed as JSON, it would look like:
 For instance, in a YAML pipeline, you could use it like this:
 
 ```yaml
-phases:
-- phase: A
+jobs:
+- job: A
   steps:
   - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
     name: printvar
 
-- phase: B
+- job: B
   condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
   dependsOn: A
   steps:

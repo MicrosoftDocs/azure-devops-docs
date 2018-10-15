@@ -23,7 +23,7 @@ When viewing a public project, you can view the status of build and release pipe
 
 ## View recent builds and build pipelines  
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

@@ -65,7 +65,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
