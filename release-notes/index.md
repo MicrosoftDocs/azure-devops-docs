@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 10/1/2018
+ms.date: 10/13/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -17,53 +17,65 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Azure DevOps Services, the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
-### 2018 Q3
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|Work Item support for Markdown editing|Work|2019|
-|Cross organization linking for Work Items|Work|TBD|
-|GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
-|Visual Studio Git - Stash|Code|N/A|
-|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Release Management orchestration improvements – Tag based triggers|Release|2019|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|Release traceability – Pull request integration|Release|2019|
-|Updated landing pages for Release|Release|2019|
-|Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Deployment Groups easy configuration of Azure VMs|Release|TBD|
-|Extend release gates – Test|Release|TBD|
-|Release traceability – Work Item integration|Release|TBD|
-|Configuration as code (YAML) releases - Public Preview|Release|TBD|
-|Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Package|2019|
-|Package Management – Package consumption metrics|Package|2019|
-|Package Management – Maven Upstream support|Package|TBD|
-|PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
-|Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
-|[Embed Dashboard in Microsoft Teams channel](https://blogs.msdn.microsoft.com/devops/2018/08/09/make-your-visual-studio-team-services-dashboard-part-of-your-conversation-in-microsoft-teams/)|Reporting|N/A|
-|Analytics - Test Failures report for Build pipelines|Test|2019|
-|Analytics - Test Failures report for Release pipelines|Test|2019|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
-|Publisher certification process|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
-|Notification feed|Notifications|2019|
-
 ### 2018 Q4
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Azure DevOps Server Support for Move work item to another team project / Change work item type|Work|2019|
-|A discussion-centric Work Item form|Work|TBD|
-|GVFS for Mac - Public Preview|Code|N/A|
-|Extensible Pool Providers|Build|TBD|
-|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Package|N/A|
+|Cross organization linking for Work Items|Boards|TBD|
+|Azure DevOps Server Support for Move work item to another team project / Change work item type|Boards|2019|
+|Linking from Work Items to GitHub Commits|Boards|TBD|
+|New rich text Description and Discussion control|Boards|TBD|
+|GVFS - Performance improvements for status|Repos|2019|
+|GVFS for Mac - Public Preview|Repos|N/A|
+|Git Pull Requests – Improved search/filter options for pull requests|Repos|TBD|
+|Visual Studio Git - Stash|Repos|N/A|
+|Configuration as code (YAML) for builds|Pipelines|2019|
+|New pages for CI|Pipelines|TBD|
+|Hosted build images – Ability to use latest or previous version of image|Pipelines|N/A|
+|Extensible Pool Providers|Pipelines|TBD|
+|Release Management orchestration improvements – Tag based triggers|Pipelines|2019|
+|Agent-based deployment in Release Management – Sharing of VMs|Pipelines|2019|
+|Release traceability – Pull request integration|Pipelines|2019|
+|Updated landing pages for Release|Pipelines|2019|
+|Canvas-based Release Summary views to track progress of releases|Pipelines|2019|
+|Deployment Groups easy configuration of Azure VMs|Pipelines|TBD|
+|Extend release gates – Test|Pipelines|TBD|
+|Release traceability – Work Item integration|Pipelines|TBD|
+|Configuration as code (YAML) releases - Public Preview|Pipelines|TBD|
+|Analytics – Test Failures report for Build pipelines|Test Plans|2019|
+|Analytics – Test Failures report for Release pipelines|Test Plans|2019|
+|Repo, Build provenance information for a package|Artifacts|2019|
+|Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Artifacts|2019|
+|Package consumption metrics|Artifacts|2019|
+|Maven Upstream support|Artifacts|TBD|
+|PyPI (Python ecosystem) package hosting and upstream sources|Artifacts|TBD|
+|Universal Packages (“versioned bunch of files”) hosting|Artifacts|TBD|
+|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Artifacts|N/A|
+|File Container Store (FCS) v2 is at least 2x faster than external CI Systems at upload and download drop times|Artifacts|TBD|
+|Improve Apdex for Azure Artifacts day 1 and the two most used web pages to .75|Artifacts|TBD|
+|Dashboards – Create dashboard separate from a team|Reporting|TBD|
+|Analytics – Test Failures report for Build pipelines|Reporting|2019|
 |Analytics - Available for Azure DevOps Server|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
-|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|Analytics – Test Failures report for Release pipelines|Reporting|2019|
+|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
+|GitHub identities support|Admin|N/A|
+|Encryption at rest for disks used by code and work item search|Admin|N/A|
+|Bring multiple organizations under an enterprise|Admin|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
+|Notification feed|Notifications|2019|
+|Publisher certification process|Marketplace|N/A|
+
+### 2019 Q1
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Work Item support for Markdown editing|Boards|TBD|
+
+### Future
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|A discussion-centric Work Item form|Boards|TBD|
 
 ## Current features
 
@@ -80,7 +92,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="11">[1 October 2018](2018/sprint-141-update.md)</td>
+            <td rowspan="10">[1 October 2018](2018/sprint-141-update.md)</td>
             <td>Azure Policy compliance and security validations in Pipelines</td><td>*2019*</td>
         </tr>
         <tr><td>Simplified continuous delivery to Azure VMs</td><td>*2019*</td></tr>
@@ -92,7 +104,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Protect Git repos with cross platform compatibility settings</td><td>*2019*</td></tr>
         <tr><td>Expanded search box</td><td>*2019*</td></tr>
         <tr><td>Support AAD users in MSA accounts</td><td>N/A</td></tr>
-        <tr><td>PATs enforce CAP</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
             <td>Control specific build dependencies using container jobs</td><td>*2019*</td>

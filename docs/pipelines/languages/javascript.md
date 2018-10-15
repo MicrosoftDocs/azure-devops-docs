@@ -146,7 +146,7 @@ You can build and test your app on multiple versions of Node.
 ::: moniker range="vsts"
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
 strategy:
   matrix:
     node_8_x:

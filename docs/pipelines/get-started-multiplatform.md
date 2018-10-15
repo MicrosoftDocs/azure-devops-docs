@@ -50,7 +50,7 @@ jobs:
 - job: Linux
 
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'ubuntu 16.04'
 
   steps:
   - task: NodeTool@0
@@ -82,7 +82,7 @@ jobs:
 - job: Windows
 
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: 'vs2017-win2016'
 
   steps:
   - task: NodeTool@0

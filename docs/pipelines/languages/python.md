@@ -45,7 +45,7 @@ Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set th
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 pool:
-  vmImage: 'Ubuntu-16.04' # other options: 'macOS-10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
 - task: UsePythonVersion@0
@@ -63,7 +63,7 @@ To run a pipeline with multiple Python versions, such as to test your project us
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'Ubuntu-16.04' # other options: 'macOS-10.13', 'VS2017-Win2016'
+    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
   strategy:
     matrix:
       Python27:
