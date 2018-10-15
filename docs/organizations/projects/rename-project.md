@@ -22,7 +22,7 @@ A project rename updates all of your version control paths, work items, queries,
 Projects can be renamed multiple times and older names can be reused as well. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 

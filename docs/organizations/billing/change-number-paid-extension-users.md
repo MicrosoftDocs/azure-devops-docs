@@ -24,7 +24,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 ## Change number of paid users
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

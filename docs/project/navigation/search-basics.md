@@ -33,7 +33,7 @@ With the search box, you can quickly find a code file or work item.
 
 Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-vsts-extension.md#install-extension).  
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  

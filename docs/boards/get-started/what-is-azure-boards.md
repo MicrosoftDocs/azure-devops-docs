@@ -25,7 +25,7 @@ All tools support viewing and defining work items. Each work item represents an 
 
 Your Agile tool set, available from Azure Boards, consists of the following main interactive lists and signboards. Each of these pages provides a filtered set of work items. 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 
@@ -51,7 +51,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -89,7 +89,7 @@ Boards present work items as cards and support quick status updates through a dr
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
@@ -115,7 +115,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
@@ -140,7 +140,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team assi
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)

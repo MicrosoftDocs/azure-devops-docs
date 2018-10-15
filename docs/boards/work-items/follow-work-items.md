@@ -74,7 +74,7 @@ You can review and manage all the work items you've selected to follow.
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"    
+::: moniker range="vsts"   
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
@@ -96,11 +96,11 @@ You can also view and manage work that you're following from **Boards>Work Items
 > ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/open-work-items-vert.png)   
 
 
-::: moniker-end    
+::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
+::: moniker range=">= tfs-2017 <= tfs-2018"   
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end   
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -122,9 +122,9 @@ From this view, you can view all items you're following across all projects. Als
 For TFS 2018.2 and later versions, you can view work you're following from the **Work>Work Items** page. 
 ![Projects page, Work, Assigned to me page](../../user-guide/_img/org-hub-tfs/organization-home-work-followed.png) 
 
-::: moniker-end    
+::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"   
+::: moniker range=">= tfs-2017 <= tfs-2018"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 

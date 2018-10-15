@@ -59,7 +59,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
