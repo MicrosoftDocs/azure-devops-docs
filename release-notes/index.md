@@ -57,7 +57,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Available for Azure DevOps Server|Reporting|2019|
 |Analytics – Test Failures report for Release pipelines|Reporting|2019|
 |Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
-|GitHub identities support|Admin|N/A|
 |Encryption at rest for disks used by code and work item search|Admin|N/A|
 |Bring multiple organizations under an enterprise|Admin|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
