@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 
 <a id="define-tasks">  </a>
-# Add tasks to backlog items 
+# 2. Add tasks to backlog items 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
@@ -66,7 +66,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 
@@ -218,7 +218,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 

@@ -27,7 +27,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 ## Disable or uninstall extensions
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

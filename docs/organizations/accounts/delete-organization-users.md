@@ -24,7 +24,7 @@ If users no longer require access to a project or your organization, you can rem
 
 ## Remove users from your organization
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
