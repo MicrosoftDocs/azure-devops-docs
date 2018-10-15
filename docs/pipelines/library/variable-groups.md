@@ -112,4 +112,8 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
 
+### Variable groups in build/release
+* When a new instance of build/release is created from piepline definition, the values of the variables from the linked variable group are copied to the build/release. 
+* In order to override the variables from the variable group, you need to create a variable with the same name in the release. A release variable with the same name overrides variable from the variable group.
+
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
