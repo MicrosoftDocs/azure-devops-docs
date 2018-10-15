@@ -1135,6 +1135,7 @@ Team Foundation version control (TFVC) provides a central repository for files a
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
 
+In the web portal and REST API certain operations (Edit, Rename, and Delete) have a more restrictive path length than Visual Studio and TF.exe clients.  This is due to web portal/REST utilizing a randomly generated workspace for concurrency when pending the changes.
 <table>
 <tr>
 <th width="20%">Restriction type</th>
@@ -1169,6 +1170,18 @@ Version control paths must conform to the following restrictions. See also [Opti
 </li>
 <li>
 <p>Must not contain more than 260 Unicode characters for a combined directory and file name.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Web portal and REST specific length restrictions</p>
+</td>
+<td>
+<ul>
+<li>
+<p>Must not contain more than 215 Unicode characters for a combined project name, directory and file name.</p>
 </li>
 </ul>
 </td>
