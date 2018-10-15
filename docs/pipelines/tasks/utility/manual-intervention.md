@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Utility: Manual intervention
 
+**Azure Pipelines**
+
 ![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands

@@ -111,7 +111,7 @@ You can add and update work items from the web portal and various clients. For a
 
 Use the web portal to accomplish the following tasks. 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 

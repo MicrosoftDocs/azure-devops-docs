@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Microsoft-hosted agents
 
+**Azure Pipelines**
+
 > [!NOTE]
 > The Hosted Linux Preview Pool is deprecated and will be removed in December 2018.
 > [Learn more below](#hosted-linux-preview-pool-deprecation).

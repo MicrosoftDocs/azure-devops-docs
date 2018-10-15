@@ -23,6 +23,8 @@ monikerRange: 'vsts'
 
 # Use the Azure portal
 
+**Azure Pipelines**
+
 The Azure portal presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Azure Pipelines, which is the CI/CD solution for Azure, to configure the pipeline.
 
 If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).

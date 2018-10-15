@@ -49,7 +49,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
@@ -179,7 +179,8 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 > [Kanban quickstart](kanban-quickstart.md)  
   
 
-## Related articles 
+## Related articles  
+- [Kanban key concepts](kanban-key-concepts.md) 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  

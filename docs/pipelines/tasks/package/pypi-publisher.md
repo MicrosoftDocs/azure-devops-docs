@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Package: PyPI Publisher
 
+**Azure Pipelines**
+
 ![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.

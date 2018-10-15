@@ -66,7 +66,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ With this view, you can quickly see which items are nearing completion and which
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -174,7 +174,7 @@ To filter on the tasks for a specific team member, choose the ![ ](../../_img/ic
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -209,7 +209,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)

@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure Monitor Alerts
 
+**Azure Pipelines**
+
 ![](_img/azuremonitoralerts.png) Configure alerts on available metrics for an Azure resource
 
 ::: moniker range="> tfs-2018"

@@ -42,7 +42,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
 ## Change application access policies
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

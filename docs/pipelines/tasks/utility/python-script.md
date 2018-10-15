@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Python Script
 
+**Azure Pipelines**
+
 ![](_img/pythonscript.png) Run a Python script.
 
 ::: moniker range="> tfs-2018"

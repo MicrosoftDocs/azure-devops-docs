@@ -19,6 +19,8 @@ monikerRange: 'vsts'
 
 # Build a repo using the visual designer
 
+**Azure Pipelines**
+
 ::: moniker range="> tfs-2018"
 > [!TIP]
 > We recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](../get-started-yaml.md).

@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure Resource Group Deployment
 
+**Azure Pipelines**
+
 ![](_img/azureresourcegroupdeployment.png) Deploy, start, stop, delete Azure Resource Groups
 
 ::: moniker range="> tfs-2018"

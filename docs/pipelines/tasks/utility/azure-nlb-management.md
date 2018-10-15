@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Azure Network Load Balancer
 
+**Azure Pipelines**
+
 ![](_img/azurenlbmanagement.png) Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
 
 ::: moniker range="> tfs-2018"

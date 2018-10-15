@@ -21,7 +21,7 @@ With Azure DevOps Services and Team Foundation Server (TFS), you gain an integra
 
 Access web services through the following areas, as shown in the following image.
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

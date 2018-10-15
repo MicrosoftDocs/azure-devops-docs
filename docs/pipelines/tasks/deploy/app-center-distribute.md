@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Deploy: App Center Distribute
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 
 ::: moniker range="<= tfs-2018"

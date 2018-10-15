@@ -58,7 +58,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 

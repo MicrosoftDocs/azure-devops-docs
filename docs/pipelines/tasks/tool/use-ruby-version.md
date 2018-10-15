@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Tool: Use Ruby Version
 
+**Azure Pipelines**
+
 ![icon](_img/ruby.png) Selects a version of Ruby to run on an agent.  Optionally adds it to PATH.
 
 ## Demands

@@ -37,6 +37,8 @@
   items:
   - name: Scrum best practices
     href: best-practices-scrum.md
+  - name: Key concepts
+    href: scrum-key-concepts.md
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
   - name: About areas and iterations
@@ -45,8 +47,6 @@
     href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Agile glossary
-    href: ../work-items/agile-glossary.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: "Filter backlogs & queries"
