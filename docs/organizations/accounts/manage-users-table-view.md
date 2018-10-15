@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 monikerRange: 'vsts'
 ---
 # Manage users in Azure DevOps
@@ -17,11 +17,11 @@ monikerRange: 'vsts'
 
 Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
 
-These types of users can join your organization for free:
+The following types of users can join your organization for free:
 
-*	Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, and build and release management.
-*	Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-*	Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
+* Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, and build and release management.
+* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
@@ -29,6 +29,8 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 > You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members.md).
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
+
+[Compare Azure DevOps features](https://azure.microsoft.com/en-us/services/devops/compare-features/) that are available to your users.
 
 ## Prerequisites
 
@@ -77,7 +79,7 @@ The Users view shows key information per user in a table. In this view, you can 
 5. **Save** your changes.
 
 # [Previous navigation](#tab/previous-nav)
- 
+
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Open **Organization settings**.
@@ -100,16 +102,14 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. Select **Add** to complete your invitation.
 
-
 ### How is *access* different from *permissions*?
 
-Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md). 
+Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
 
 ## Related articles
 
-- [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
-- [Connect to a project](../../organizations/projects/connect-to-projects.md)
-- [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Delete users from Azure DevOps](delete-organization-users.md)
-
+* [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
+* [Connect to a project](../../organizations/projects/connect-to-projects.md)
+* [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+* [Delete users from Azure DevOps](delete-organization-users.md)

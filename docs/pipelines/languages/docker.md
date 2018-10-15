@@ -143,7 +143,7 @@ Add the following snippet to your `azure-pipelines.yml` file to select the appro
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04' # other options: 'macOS-10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 # [Designer](#tab/designer)
@@ -270,7 +270,7 @@ Replace the contents in the `azure-pipelines.yml` file at the root of your repo 
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
 
 steps:
   - script: docker build -t $(dockerId)/$(dockerImage) . # include other options to meet your needs
