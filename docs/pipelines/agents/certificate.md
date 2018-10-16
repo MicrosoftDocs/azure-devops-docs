@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2017 < vsts'
 
 # Run the agent with a self-signed certificate
 
+**TFS 2018 | TFS 2017**
+
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 
 ## Work with SSL server certificate

@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Utility: Publish To Azure Service Bus
 
+**Azure Pipelines**
+
 ![icon](_img/publish-to-azure-service-bus.png) Send a message to an Azure Service Bus using a service connection and without using an agent.
 
 ## Demands

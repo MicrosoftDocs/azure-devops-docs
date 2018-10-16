@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/19/2018
+ms.date: 10/12/2018
 ---
 
 # Agile glossary 
@@ -16,6 +16,8 @@ ms.date: 09/19/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards and Team Foundation Server. See also: 
+- [Kanban key concepts](../boards/kanban-key-concepts.md)  
+- [Sprints and Scrum key concepts](../sprints/scrum-key-concepts.md)  
 - [Work item field index](guidance/work-item-field.md)  
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
@@ -27,16 +29,13 @@ Your work tracking experience is managed and customized primarily through the ob
 -->
 
 ## Agile methods
-A family of engineering best processes with a goal of enabling rapid delivery of high-quality software and a business approach that aligns development with customer needs and company goals. In this paradigm, frequent inspection and adaptation is necessary, with teamwork, self-organization, and accountability all critical to project success.
+A family of engineering best processes with a goal of enabling rapid delivery of high-quality software and a business approach that aligns development with customer needs and company goals. In this paradigm, frequent inspection and adaptation is necessary, with team work, self-organization, and accountability all critical to project success.
 
-
-## Agile tools
-A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../get-started/what-is-azure-boards.md).
+[!INCLUDE [temp](../../_shared/glossary-terms/agile-tools.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
-## Bug
-A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
+[!INCLUDE [temp](../../_shared/glossary-terms/bugs.md)] 
 
 ## Categories
 Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and taskboard pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
@@ -71,17 +70,15 @@ You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamPro
 ## Hosted XML process model  
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. This process model is only available for select accounts hosted on the Azure Boards cloud platform.  To learn more, see [Hosted process model](../../organizations/settings/work/hosted-xml-process-model.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/issues.md)] 
+
 ## Inheritance process model 
 The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Azure Boards cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
 
-## Iteration paths (aka sprints)
-A time period, usually two to three weeks, used to group work items to be completed during that time period. Sprints are used in Scrum methods to support sprint planning, sprint burndown, and other Scrum processes. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
+[!INCLUDE [temp](../../_shared/glossary-terms/kanban-board.md)] 
 
-## Kanban board 
-An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../boards/kanban-basics.md).
-
- 
 ## Link type
 Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md) and [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md).  
 
@@ -89,16 +86,13 @@ Specifies an object used to form link relationships between different WITs. Lear
 ## On-premises XML process model 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. This process model is only available for on-premises TFS. To learn more, see [On-premises process model](../../reference/on-premises-xml-process-model.md).
 
-
 ## Pick lists
 
 Specifies an enumerated set of values that appear within a drop-down menu in a work item form and the **Value** column within the query editor. The method you use to customize a pick list varies depending on the field and the process model.  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
 
-## Portfolio backlog 
-An interactive list of work items, similar to the product backlog, that supports organizing or grouping work under features, epics, or scenarios. Portfolio backlogs work similarly to product backlogs in that you can prioritize work and view the tree hierarchy of work. Learn more: [Define features and epics](../backlogs/define-features-epics.md).    
-
+[!INCLUDE [temp](../../_shared/glossary-terms/portfolio-backlog.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/process.md)]  
 
@@ -111,32 +105,23 @@ The work tracking customization method supported by your organization or collect
 ## Process template
 Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a project and then customize it, or customize a process template that you then use to create a project. (Only supported for Hosted XML and On-premises XML process models) 
 
-## Product backlog 
-An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
+[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
 
-Each product backlog can be customized by a team. Learn more: [Create your backlog](../backlogs/create-your-backlog.md).   
-
-## Product backlog item
-A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items which are defined with the Scrum process.  Learn more: [Scrum process work item types and workflow](guidance/scrum-process-workflow.md).   
+[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog-item.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/queries.md)] 
 
-
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
-
-## Sprint backlog 
-An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../sprints/assign-work-sprint.md).  
+[!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 
 
-
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
-## User story
-A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](guidance/agile-process-workflow.md).   
+[!INCLUDE [temp](../../_shared/glossary-terms/user-story.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
 
@@ -146,11 +131,8 @@ A type of work item that defines the applications, requirements, and elements th
 
 Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
+## Related articles 
 
-<!--- SEE ALSO https://msdn.microsoft.com/library/ms243130(v=vs.100).aspx --> 
-
-
-<!---
-To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
-
--->
+- [Refine your backlog](../backlogs/best-practices-product-backlog.md)
+- [Kanban best practices](../boards/best-practices-kanban.md)  
+- [Scrum best practices](../sprints/best-practices-scrum.md). 

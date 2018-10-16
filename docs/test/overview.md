@@ -219,7 +219,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Get started with exploratory testing](perform-exploratory-tests.md)
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Manual testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Guidance for MTM usage](mtm/guidance-mtm-usage.md) 
+* [Guidance for Microsoft Test Manager usage](mtm/guidance-mtm-usage.md) 
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
 > See also [Load and performance testing](load-test/index.md), [Continuous testing](../pipelines/index.md), [Unit testing](/visualstudio/test/developer-testing-scenarios).

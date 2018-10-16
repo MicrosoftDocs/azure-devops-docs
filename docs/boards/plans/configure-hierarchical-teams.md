@@ -24,19 +24,19 @@ Specifically, we'll show you how to configure a team structure like the one show
 
 In this topic you'll learn how to:  
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end  
+::: moniker-end 
 
 ## Prerequisites 
 
@@ -325,8 +325,8 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 ::: moniker range=">= tfs-2017"  
@@ -336,9 +336,9 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 > ![Area Paths and Teams](_img/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013   <= tfs-2015" 
 This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end  
+::: moniker-end 
 
 ---
 

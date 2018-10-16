@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Test: Cloud-based Apache JMeter Load Test
 
+**Azure Pipelines**
+
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
 
 ## Demands

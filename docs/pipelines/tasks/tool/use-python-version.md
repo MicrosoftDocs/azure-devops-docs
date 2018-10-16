@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Tool: Use Python Version
 
+**Azure Pipelines**
+
 ![icon](_img/python.png) Selects a version of Python to run on an agent.  Optionally adds it to PATH.
 
 ## Demands

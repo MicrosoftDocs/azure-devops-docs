@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure Key Vault
 
+**Azure Pipelines**
+
 ### Overview
 
 ![icon](_img/azure-key-vault-icon.png) This task is used to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords

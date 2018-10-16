@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Download Package
 
+**Azure Pipelines**
+
 ![](_img/downloadpackage.png) Download a package from a package management feed in Azure Artifacts or TFS.  Requires the Package Management extension.
 
 ::: moniker range="> tfs-2018"

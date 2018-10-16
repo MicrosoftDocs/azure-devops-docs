@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Create a multi-platform pipeline
 
+**Azure Pipelines**
+
 This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, and Windows.
 
 ## Prerequisites

@@ -25,7 +25,7 @@ Once you've defined your product backlog, you can use the following controls to 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
@@ -52,9 +52,9 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 | Control                  | Function                      |

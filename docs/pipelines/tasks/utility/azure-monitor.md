@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Query Azure Monitor Alerts
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.

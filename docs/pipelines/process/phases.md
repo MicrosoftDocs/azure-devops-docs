@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Jobs
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -256,9 +258,10 @@ The `timeoutInMinutes` allows a limit to be set for the job execution time. When
 The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
-pool:
-  timeoutInMinutes: number
-  cancelTimeoutInMinutes: number
+jobs:
+- job: Test
+  timeoutInMinutes: 10
+  cancelTimeoutInMinutes: 2
 ```
 
 ::: moniker-end

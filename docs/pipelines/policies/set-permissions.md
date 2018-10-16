@@ -10,10 +10,12 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 02/12/18
-monikerRange: '>= tfs-2017 < vsts'
+monikerRange: '>= tfs-2017 <= tfs-2018'
 ---
 
 # Set build and release permissions
+
+**TFS 2018 | TFS 2017**
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

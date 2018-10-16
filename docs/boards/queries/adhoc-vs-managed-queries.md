@@ -36,16 +36,16 @@ You add and run managed queries using the built-in query-editor available from t
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	
-::: moniker-end    
+::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
+::: moniker range=">= tfs-2013 <= tfs-2018"   
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end   
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013"   
+::: moniker range=">= tfs-2013"     
 
 You perform semantic or adhoc searches using the work item search box (shown below). 
 

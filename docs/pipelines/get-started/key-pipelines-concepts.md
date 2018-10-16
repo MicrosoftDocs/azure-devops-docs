@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # Key concepts for new Azure Pipelines users
 
+**Azure Pipelines**
+
 Learn about the key concepts and components that are used in Azure Pipelines. Understanding the basic terms and parts of Azure Pipelines will help you further explore how it can help you deliver better code more efficiently and reliably.
 
 ## Agent

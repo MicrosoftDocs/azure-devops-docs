@@ -29,7 +29,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
 ## Azure DevOps Services
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

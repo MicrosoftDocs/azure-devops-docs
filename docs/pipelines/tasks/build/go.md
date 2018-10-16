@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Build: Go
 
+**Azure Pipelines**
+
 ![](_img/go.png) Get, build, test a go application, or run a custom go command.
 
 ::: moniker range="> tfs-2018"

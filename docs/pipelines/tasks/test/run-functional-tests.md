@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2015'
 
 # Test: Run Functional Tests
 
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -65,7 +67,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Test Run Title** | Optional. A name for this test run, used to identify it for reporting and in comparison with other test runs. |
 | **Platform** | Optional. The build platform against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `x64` or `x86`<br />- If you have defined a variable for platform in your build task, use that here. |
 | **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
-| **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager (MTM). <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from MTM}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in MTM.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
+| **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager. <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from Microsoft Test Manager}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in Microsoft Test Manager.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 

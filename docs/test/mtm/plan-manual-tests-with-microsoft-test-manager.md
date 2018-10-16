@@ -41,7 +41,7 @@ At the start of a sprint, find out what you need to test. Discussing test cases 
   
    To add multiple lines in a step, press ALT + Enter.  
   
-Now that you've defined a manual test case, you can run it from MTM and keep the results in TFS.  
+Now that you've defined a manual test case, you can run it from Microsoft Test Manager and keep the results in TFS.  
   
 ## Organize your test cases with test suites  
 

@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2015'
 
 # Review code coverage results
 
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
 <a name="prerequisites"></a>  
 
 Code coverage helps you determine the proportion of your project's code that is

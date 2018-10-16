@@ -34,7 +34,7 @@ You can easily switch a private project to a public project, and vice-versa.  Be
 
 Before you can change a private project, to a public project, you must enable anonymous access for your organization. 
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

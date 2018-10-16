@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Sign up for Azure Pipelines
 
+**Azure Pipelines**
+
 1. From the [Azure website](https://azure.microsoft.com/services/devops/pipelines/), select **Start free with Azure Pipelines**.
 
    ![Start free with Azure Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
