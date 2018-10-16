@@ -26,21 +26,21 @@ web apps and from desktop apps, and view it in Azure Test Plans or Team Foundati
 <a name="collect-web"></a>
 ## Collect diagnostic data from web apps and desktop apps
 
-For web apps under test, you can use web-based Microsoft Test Runner 
-and for desktop apps [download](http://aka.ms/ATRDownload) and install the Azure Test Runner client to collect the following data on demand:
+For web apps under test, you can use web-based Microsoft Test Runner. 
+For desktop apps, download and install the [Azure Test Runner client](http://aka.ms/ATRDownload) to collect the following data on demand:
 
 * [Screen captures](#web-screenshot)
 * [Image action log](#web-log)
 * [Screen recordings](#web-recording)
 
->See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+> See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md).
 
 <a name="web-screenshot"></a>
 ### Screen capture
 
 Capture annotated screenshots from your app. 
 
-1. Open Test Runner and choose the **Capture screenshot** icon. Ensure that app from which you want to 
+1. Open Test Runner and choose the **Capture screenshot** icon. Ensure that the app from which you want to 
    capture data is selected.
 
    ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
@@ -62,7 +62,7 @@ Capture annotated screenshots from your app.
 <a name="web-log"></a>
 ### Image action log
 
-Capture your interactions with the web / desktop app as an image action log that provides context.
+Capture your interactions with the web or desktop app as an image action log that provides context.
 
 1. Open or switch to the Test Runner and choose the **Capture user actions...** icon. Ensure that app from which you want to 
    capture data is selected.
@@ -70,7 +70,7 @@ Capture your interactions with the web / desktop app as an image action log that
    ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
 1. The Test Runner will now record all the actions you take
-   on the app's browser tab or the desktop app.
+   on the app's browser tab or in the desktop app.
  
    ![Recording in progress for a web app](_img/collect-diagnostic-data/collect-diagnostic-data-08.png) 
 
@@ -137,8 +137,8 @@ view it before you save the bug.
 If you want to collect advanced diagnostic data such as code coverage, 
 IntelliTrace, and Test Impact data in addition to the data items listed above,
 you must [configure the data collectors](mtm/collect-more-diagnostic-data-in-manual-tests.md)
-and other run settings in Microsoft Test Manager (MTM) and run your 
-tests using MTM. For more details, see 
+and other run settings in Microsoft Test Manager and run your 
+tests using Microsoft Test Manager. For more details, see 
 [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 <p />
 
