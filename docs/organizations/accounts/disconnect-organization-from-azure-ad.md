@@ -1,5 +1,5 @@
 ---
-title: Disconnect your Azure DevOps organization from your Azure AD
+title: Disconnect your Azure DevOps organization from Azure AD
 description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your Azure DevOps Services account from your directory
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/16/2018
 monikerRange: 'vsts'
 ---
-# Disconnect your Azure DevOps organization from your Azure Active Directory
+# Disconnect your Azure DevOps organization from Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -33,7 +33,10 @@ For more information, see the [Conceptual overview](access-with-azure-ad.md) for
 
 Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps as new users. Users can migrate everything except work history. They can re-link Visual Studio subscriptions and have their access levels reassigned to their new identities.
+**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps as new users. Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
+
+> [!IMPORTANT]
+> If you want to connect your Azure DevOps organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [connecting your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 ## Disconnect organization from directory
 
