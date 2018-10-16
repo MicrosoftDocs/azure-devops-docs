@@ -42,7 +42,7 @@ To import the sample app into a Git repo in Azure Repos:
 
  1. Sign into your Azure DevOps organization.
 
- 1. On the **Code** hub for your project in Azure Repos, select the drop-down and choose the option to **Import repository**.
+ 1. on the **Code** page for your project in Azure Repos, select the drop-down and choose the option to **Import repository**.
 
  1. On the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
 
@@ -108,13 +108,13 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 Follow the steps below to test and review the CI/CD pipeline.
 
-1. On the **Code** hub select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
+1. on the **Code** page select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
 1. Replace the existing **value** (ToDoList) for the **database** key in the **appSettings** section of the web.config with a new value such as **NewToDoList**.  You will commit this change to demonstrate creating a new Cosmos DB database as part of the CI/CD pipeline.  This is a simple change to demonstrate CI/CD capabilities of Cosmos DB with Azure Pipelines.  However, more [complicated code changes](/azure/cosmos-db/sql-api-dotnet-samples) can also be deployed with the same CI/CD pipeline.
 
 1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
 
-1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
+1. On the **Build** page select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
 
 1. Once the release finishes, navigate to your Cosmos DB service to see your new database.
 
