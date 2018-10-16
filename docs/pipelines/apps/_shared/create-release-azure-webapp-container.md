@@ -49,7 +49,7 @@ ms.topic: include
 
    - **App Service type**: Select **Web App for Containers**.  
 
-   - **App Service name**: Select the web app you created earlier from your subscription.App services based on selected app type will only be listed.
+   - **App Service name**: Select the web app you created earlier from your subscription. App services based on selected app type will only be listed.
 
    When you select the Docker-enabled app type, the task recognizes that it is a
    containerized app, and changes the property settings to show the following:
