@@ -147,7 +147,7 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 **A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
-You can also run tests using Microsoft Test Manager (MTM) and a
+You can also run tests using Microsoft Test Manager and a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="test-types"></a>
@@ -287,10 +287,10 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 
 ### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
-**A:** No. MTM will not support running automated tests against Team Foundation
+**A:** No. Microsoft Test Manager will not support running automated tests against Team Foundation
 builds. It only works in the web-based interface for Azure Pipelines and TFS.
 All new manual and automated testing product development investments will be
-in the web-based interface. No further development is planned for MTM. See
+in the web-based interface. No further development is planned for Microsoft Test Manager. See
 [Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release pipeline?
