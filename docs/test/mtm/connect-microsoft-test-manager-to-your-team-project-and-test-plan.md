@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
-Use Microsoft Test Manager (MTM) to help you test the application you built. MTM stores your test plans and results on Team Foundation Server (TFS).  
+Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results on Team Foundation Server (TFS).  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
-### Connect MTM to your project and test plan  
+### Connect Microsoft Test Manager to your project and test plan  
   
-1. If you don't have MTM, download and install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/).  
+1. If you don't have Microsoft Test Manager, download and install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/).  
   
    Don't have a project? [Set up a project](../../organizations/projects/create-project.md)  
   
