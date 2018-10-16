@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: yohasna
 author: steved0x
 ms.topic: conceptual
-ms.date: 10/12/2018
+ms.date: 10/16/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -202,7 +202,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
     string Url = string.Format(
-        @"https://dev.azure.com/{0}/{1}/_apis/repos/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1-preview.1",
+        @"https://dev.azure.com/{0}/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1-preview.1",
         accountName,
         projectName,
         repositoryName,
