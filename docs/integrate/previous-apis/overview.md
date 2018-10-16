@@ -1,5 +1,5 @@
 ---
-title: REST API documentation for Team Foundation Server 2015 and 2017
+title: REST API documentation for Team Foundation Server 2015, 2017, 2018 (RTW and Update 1)
 description: Overview of REST APIs and their references for Team Foundation Server.
 ms.assetid: 5C49CA02-A8C1-4B8D-AE52-B955FAFC7B06
 ms.prod: devops
@@ -12,12 +12,12 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# REST API Overview for TFS 2015 and 2017
+# REST API Overview for TFS 2015, 2017, and 2018 (RTW and Update 1)
 
 The Team Foundation Server APIs are based on REST, JSON and service hooks - all standard web technologies broadly supported in the industry.
 
 > [!NOTE]
-> The REST APIs documented here are for older versions of the APIs. The newest versions can be found in the [Azure DevOps Services REST API documentation](/rest/api/vsts).
+> The REST APIs documented here are for older versions of the APIs (TFS 2015 up to TFS 2018 Update 1). The newest versions can be found in the [Azure DevOps Services REST API documentation](/rest/api/vsts). 
 
 This article walks you through:
 

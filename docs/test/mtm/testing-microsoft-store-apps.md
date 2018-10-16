@@ -61,7 +61,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 1. Choose **Install Microsoft Store App**, and then enter the path and name of the .appx file for the Microsoft Store app that you want to install.  
   
-   ![Install Microsoft Store app from MTM](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
+   ![Install Microsoft Store app from Microsoft Test Manager](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
   
 1. Follow the steps in the installation wizard.  
   
