@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2018
+ms.date: 10/16/2018
 monikerRange: 'vsts'
 ---
 # Manage users in Azure DevOps
@@ -30,7 +30,7 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
-[Compare Azure DevOps features](https://azure.microsoft.com/en-us/services/devops/compare-features/) that are available to your users.
+To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
