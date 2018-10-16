@@ -157,11 +157,15 @@ You can also run tests using Microsoft Test Manager and a
 
 * Coded UI test, Selenium tests, and unit tests written using
   Version 1 of the MSTest framework **can** be associated with a test case.
-* Unit tests that use the.NET Core framework **cannot** be
-  associated with a test case.
-* Tests that use other test frameworks such as [Version 2 of the MSTest framework](https://blogs.msdn.microsoft.com/devops/2016/06/17/taking-the-mstest-framework-forward-with-mstest-v2/),
-  xUnit, nUnit, Chutzpah, and others **cannot** be associated with a test case.
-* Associating ordered tests and generic tests **may** work, but running these tests is not supported.
+* Tests that use MSTest v2, NUnit, and xUnit frameworks **can** be associated
+  with a test case workitem when using Visual Studio 15.9 Preview 2 or later.
+* Tests that use the .NET core framework **can** be associated with a test case
+  workitem when using Visual Studio 15.9 Preview 2 or later.
+  To run the .NET core tests the appropriate target framework must be specified
+  in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+* Tests that use other test frameworks such as Chutzpah (for JavaScript tests
+  such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
+* Associating generic tests **may** work, but running these tests is not supported.
 
 <a name="open-in-vs"></a>
 ### Q: Can I configure work items to open in Visual Studio?
