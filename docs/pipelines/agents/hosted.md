@@ -38,7 +38,7 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 | Docker containers | `ubuntu-16.04` or `win1803` | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | `ubuntu-16.04` | Hosted Ubuntu 1604 |
 | Development tools on macOS | `xcode9-macos10.13` (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-1604 or `vs2017-win2016` | Hosted Ubuntu 1604 or Hosted VS2017 |
+| .NET Core | `ubuntu-16.04` or `vs2017-win2016` | Hosted Ubuntu 1604 or Hosted VS2017 |
 | Visual Studio 2017 | `vs2017-win2016` | Hosted VS2017 |
 | Visual Studio 2015 | `vs2015-win2012r2` | Hosted |
 
