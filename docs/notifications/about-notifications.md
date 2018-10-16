@@ -1,5 +1,5 @@
 ---
-title: Understand the basics of how notifications work in Azure DevOps Services and TFS
+title: Get started with notifications in Azure DevOps Services and TFS
 description: Understand how notifications or alerts are managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-collab
