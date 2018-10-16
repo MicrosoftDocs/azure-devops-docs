@@ -28,7 +28,7 @@ If you're a contributor, you can also [edit README files for a project](../../pr
 
 From your web browser, open the public project.   
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

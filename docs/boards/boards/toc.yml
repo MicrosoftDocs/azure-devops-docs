@@ -13,6 +13,8 @@
   items:
   - name: Kanban board quickstart
     href: kanban-quickstart.md
+  - name: Enable live updates
+    href: live-updates.md
 - name: Tutorials
   items:
   - name: Kanban board basics
@@ -27,12 +29,12 @@
   items:
   - name: Kanban best practices
     href: best-practices-kanban.md
+  - name: Kanban key concepts
+    href: kanban-key-concepts.md
   - name: "Workflow states & state categories"
     href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
-  - name: Agile glossary
-    href: ../work-items/agile-glossary.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: How-to guides 
   items:
   - name: Add or edit columns

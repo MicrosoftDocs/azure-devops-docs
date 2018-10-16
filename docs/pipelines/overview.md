@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2015 < vsts'
 
 # Start using Build and Release
 
+**TFS 2018 | TFS 2017 | TFS 2015**
+
 Team Foundation Server (TFS) is the on-premises Azure DevOps offering. TFS includes Build and Release and can be installed and managed on your own servers.
 
 ![A typical CI and CD process for web applications](./_img/pipeline-concept-end-to-end.png)

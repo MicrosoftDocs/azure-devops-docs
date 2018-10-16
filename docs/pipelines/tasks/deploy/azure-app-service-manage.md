@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Azure App Service Manage
 
+**Azure Pipelines**
+
 ![](_img/azureappservicemanage.png) Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
 
 ::: moniker range="> tfs-2018"

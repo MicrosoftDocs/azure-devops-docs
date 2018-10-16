@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Tool: Helm tool installer
 
+**Azure Pipelines**
+
 ![](_img/helminstaller.png) Install Helm and Kubernetes on agent machine.
 
 ::: moniker range="> tfs-2018"

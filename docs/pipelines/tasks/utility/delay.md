@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Utility: Delay
 
+**Azure Pipelines**
+
 ![icon](_img/delay.png) &nbsp; Pause execution of the pipeline for a fixed delay time.
 
 ## Demands

@@ -53,9 +53,9 @@ every test case that is returned by the query that you define.
 
 ### Q: Can I edit other properties of a test plan?
 
-**A:** You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
-(The most recently installed version of MTM is launched.)
+**A:** You can only do this from Microsoft Test Manager. If you're using Visual Studio 2017, Visual Studio 2015,
+Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in Microsoft Test Manager directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+(The most recently installed version of Microsoft Test Manager is launched.)
 
 ![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
 

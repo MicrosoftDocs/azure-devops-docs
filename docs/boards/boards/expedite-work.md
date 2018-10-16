@@ -40,22 +40,22 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 ## Track work in swimlanes  
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
 
-::: moniker range=">= tfs-2018"  
+::: moniker range=">= tfs-2018" 
 > [!div class="mx-imgBorder"]
 > ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)
-::: moniker-end 
-::: moniker range=">= tfs-2015 <= tfs-2017"  
+::: moniker-end   
+::: moniker range=">= tfs-2015 <= tfs-2017" 
 <img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" />
-::: moniker-end 
+::: moniker-end   
 You can also focus on a single swimlane by collapsing all other lanes.
 
-::: moniker range=">= tfs-2018"  
+::: moniker range=">= tfs-2018" 
 > [!div class="mx-imgBorder"]
 > ![Kanban board, Collapsed swimlanes](_img/expedite/collapse-lanes.png)  
 ::: moniker-end
-::: moniker range=">= tfs-2015 <= tfs-2017"  
+::: moniker range=">= tfs-2015 <= tfs-2017" 
 <img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
-::: moniker-end 
+::: moniker-end   
 
 	
 ## Configure swimlanes 
@@ -67,7 +67,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -95,11 +95,11 @@ Once you've identified one or two, add them to your Kanban board.
 
 0. When done with your changes, choose **Save**.  
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015   <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -155,7 +155,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 0. When done with your changes, choose **Save**.  
 
-::: moniker-end  
+::: moniker-end 
 
 ---
 

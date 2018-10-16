@@ -30,7 +30,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 ## Add a work item
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

@@ -55,9 +55,8 @@ Collaborate with others by adding, updating, and reviewing your work items as ca
 ## Concepts 
       
 - [Kanban best practices](best-practices-kanban.md)      
+- [Kanban key concepts](best-practices-kanban.md)     
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
-
-
 
 ::: moniker range=">= tfs-2015"
 

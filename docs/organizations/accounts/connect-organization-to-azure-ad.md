@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/02/2018
+ms.date: 10/16/2018
 monikerRange: 'vsts'
 ---
 
@@ -117,6 +117,9 @@ Before you begin, do the following:
 ---
 
 ## Connect your organization to your Azure AD
+
+> [!IMPORTANT]
+> If you want to connect your Azure DevOps organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [disconnecting your organization from Azure AD](disconnect-organization-from-azure-ad.md).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with the Microsoft account that you chose in the previous section.
 

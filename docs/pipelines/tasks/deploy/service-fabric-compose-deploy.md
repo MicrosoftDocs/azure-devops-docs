@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Deploy: Service Fabric Compose Deploy
 
+**Azure Pipelines**
+
 ![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
 
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.

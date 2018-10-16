@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"    
+::: moniker range="vsts"   
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
@@ -48,11 +48,11 @@ Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) p
 
 Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
 
-::: moniker-end    
+::: moniker-end   
 
-::: moniker range=">= tfs-2015 <= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
+::: moniker range=">= tfs-2015 <= tfs-2018"   
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end   
 
 # [Previous navigation](#tab/previous-nav)
 

@@ -67,7 +67,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -198,7 +198,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -244,7 +244,7 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)

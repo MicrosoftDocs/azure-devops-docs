@@ -13,11 +13,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018  
 ---
 
-# Key concepts 
+# Key concepts and terms used for Azure Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Here are definitions of key concepts and artifacts used in Azure Boards. For more information, see also: 
+- [Kanban key concepts](../boards/kanban-key-concepts.md)
+- [Sprints and scrum key concepts](../sprints/scrum-key-concepts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
@@ -47,8 +49,7 @@ Fields are used to track a piece of information about the work to perform. Value
 The Inheritance process model is used to customize work-tracking objects and Agile tools for a project through the user interface. This process model is available only for accounts hosted on the Azure DevOps Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
-## Iteration path (also known as a sprint)
-An iteration path is a time period of usually two to three weeks that's used to group work items to be completed during that time period. Sprints are used in Scrum methods to support sprint planning, sprint burndown, and other Scrum processes. You use iteration paths to group work into sprints, milestones, or other event-specific or time-related periods. To learn more, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
+[!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
 
 ## Kanban board 
 A Kanban board is an interactive, electronic signboard that supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
@@ -63,8 +64,7 @@ A pick list specifies an enumerated set of values that appear within a drop-down
 
 [!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
 
-## Portfolio backlog 
-A portfolio backlog is an interactive list of work items, similar to the product backlog. You use portfolio backlogs to organize or group work under features, epics, or scenarios. Portfolio backlogs work similarly to product backlogs. You can use portfolio backlogs to prioritize work and view the tree hierarchy of work. To learn more, see [Define features and epics](../backlogs/define-features-epics.md). 
+[!INCLUDE [temp](../../_shared/glossary-terms/portfolio-backlog.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/process.md)]  
 
@@ -73,8 +73,8 @@ A product backlog is an interactive list of work items. It corresponds to a team
 
 Each product backlog can be customized by a team. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
-## Product backlog item
-A product backlog item is a type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items, which are defined with the Scrum process. To learn more, see [Scrum process work item types and workflow](../work-items/guidance/scrum-process-workflow.md). 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
 
@@ -82,8 +82,7 @@ A product backlog item is a type of work item that defines the applications, req
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
-## Sprint backlog 
-A sprint backlog is an interactive list of work items assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. To learn more, see [Sprint planning](../sprints/assign-work-sprint.md).  
+[!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 
 

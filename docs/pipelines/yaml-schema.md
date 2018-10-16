@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # YAML schema reference
 
+**Azure Pipelines**
+
 Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
 
 > The best way to get started with YAML pipelines is through the
@@ -464,6 +466,9 @@ pool:
   demands: string | [ string ]  ## see below
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
+
+If you're using a Microsoft-hosted pool, choose an
+[available `vmImage`](agents/hosted.md#use-a-microsoft-hosted-agent).
 
 If you're using a private pool and don't need to specify demands, this can
 be shortened to:

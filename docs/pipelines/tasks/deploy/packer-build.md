@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: Build Packer machine image
 
+**Azure Pipelines**
+
 ![](_img/packerbuild.png) Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
 
 ::: moniker range="> tfs-2018"

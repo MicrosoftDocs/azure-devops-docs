@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Decrypt File (OpenSSL)
 
+**Azure Pipelines**
+
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 
 ::: moniker range="> tfs-2018"
