@@ -73,7 +73,7 @@ You need an app stored in a Git repository.  You use this app to build and deplo
 For this tutorial, we recommend you use [this sample Java app available from
 GitHub](https://github.com/Azure-Samples/app-service-maven).  This tutorial uses a Java and Maven sample application that is configured for deployment to Azure App Service.  If you want to work with your own repository, you should configure a similar sample.
 
-1. In Azure Pipelines, on the **Code** hub for your Azure Pipelines project, select the option to **Import repository**.
+1. In Azure Pipelines, on the **Code** page for your Azure DevOps project, select the option to **Import repository**.
 
 1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
   ```
