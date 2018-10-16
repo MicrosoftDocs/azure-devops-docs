@@ -43,9 +43,11 @@ To go back to the old view, open the drop-down list from the ellipses (**...**) 
 
 ## Pre- and post-deployment gates and approvals
 
-The deployment conditions links open the information panels for pre- and post-deployment conditions.
+The deployment conditions links open the information panels for pre- and post-deployment conditions. See the status of approvals and gates for your stage. You can also Approve/Reject the pending approvals and Ignore a gate that the stage is waiting for.    
 
-![Pre- and post-deployment conditions panels](_img/new-release-summary/pre-post-panel.png)
+![Pre- and post-deployment approvals](_img/new-release-summary/pre-post-panel.png)
+
+![Pre- and post-deployment gates](_img/new-release-summary/pre-post-gates.png)
 
 ## Commits and workitems
 
