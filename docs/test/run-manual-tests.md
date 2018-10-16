@@ -90,17 +90,17 @@ If the only data you want to collect from your desktop app
 is screen recordings, use the web-based Microsoft Test Runner 
 in the same way as [described above](#run-web) for web apps.
 
-If you want to collect more diagnostic data for your desktop application, run your tests using Azure Test Runner. You can [downlaod](http://aka.ms/ATRDownload) the desktop client for Azure Test Runner. 
+If you want to collect more diagnostic data for your desktop application, run your tests using Azure Test Runner. You can [download the desktop client](http://aka.ms/ATRDownload) for Azure Test Runner. 
 
-1. Launch the test runner client from the Azure Test Plans section in Azure DevOps by choosing **Run for desktop application** from the Run menu. 
+1. Launch the test runner client from the Azure Test Plans section in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
 
 1. **Download** and install the Azure Test Runner desktop client if you haven't already set it up. 
 
-   ![Downoad_ATR](_img/downlaodATR.png)
+   ![Download_ATR](_img/downlaodATR.png)
 
-1. Click **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md#collect-diagnostic-data-from-web-apps) for more info on data collection 
+1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md#collect-diagnostic-data-from-web-apps) for more information about data collection. 
 
-You can also run your tests [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
+You can also run your tests using [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 1. Launch the test runner 
    client from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by choosing **Run with options**
