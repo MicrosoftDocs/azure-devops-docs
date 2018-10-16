@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 
-are automatically included in the bug. 
+are automatically included in the bug. You can use the web runner or desktop runner specfically for desktop app data collection.  
 
 > You just need [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) 
 to run tests that have been assigned to you with Azure DevOps. 
@@ -48,7 +48,7 @@ that you need for more advanced testing features.
    ![Use Microsoft Test Runner to record your test results](_img/run-manual-tests/RunTestsStartApp.png)
 
 1. Mark each test step as either passed or failed based on the expected results. 
-   If a test step fails, you can enter a comment on why it failed.
+   If a test step fails, you can enter a comment on why it failed or [collect diagnostic data for the test](collect-diagnostic-data.md#collect-diagnostic-data-from-web-apps).
 
    ![Mark test steps](_img/run-manual-tests/RunTest_3.png)
 
@@ -90,8 +90,17 @@ If the only data you want to collect from your desktop app
 is screen recordings, use the web-based Microsoft Test Runner 
 in the same way as [described above](#run-web) for web apps.
 
-However, if you want to collect more types of data, run your tests using
-[Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
+If you want to collect more diagnostic data for your desktop application, run your tests using Azure Test Runner. You can [downlaod](http://aka.ms/ATRDownload) the desktop client for Azure Test Runner. 
+
+1. Launch the test runner client from the Azure Test Plans section in Azure DevOps by choosing **Run for desktop application** from the Run menu. 
+
+1. **Download** and install the Azure Test Runner desktop client if you haven't already set it up. 
+
+   ![Downoad_ATR](_img/downlaodATR.png)
+
+1. Click **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md#collect-diagnostic-data-from-web-apps) for more info on data collection 
+
+You can also run your tests [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 1. Launch the test runner 
    client from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by choosing **Run with options**
