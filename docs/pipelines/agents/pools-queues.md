@@ -142,6 +142,16 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 ::: moniker-end
 
+## Maintenance for agent pools
+Microsoft-hosted agents pools are managed by microsoft and doesn't require maintenance.
+
+Self-hosted agents cleanup and maintenance can be managed from agent pool settings. You can enable maintenance on your self-hosted agent pools and provide the following settings:
+* **Maintenance job timeout** minutes for the maximum time your maintenance job should run. 
+* **Maximum percentage of agents running maintenance** to define the number of agents in a pool that can be under maintenance anytime.
+* **Number of maintenance job records** to keep the maintenance history in the system.
+* **Days to delete the unused working directory** to clean up the stale artifacts from the agents in the agent pool. 
+* **Schedule pool maintenance** to run periodic cleanup jobs on the agent pool.
+
 ## Q & A
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
