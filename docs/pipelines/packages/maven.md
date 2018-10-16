@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2018'
  
 # Set up Azure Pipelines and Maven
 
+**Azure Pipelines | TFS 2018**
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end

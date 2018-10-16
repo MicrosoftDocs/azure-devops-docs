@@ -22,6 +22,8 @@ monikerRange: 'vsts'
 
 # Deploy your ASP.NET Core app as a container
 
+**Azure Pipelines**
+
 Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](/azure/container-registry/).
 
 ![A typical release pipeline for web applications](_img/aspnet-core-to-acr/cicddockerflow.png)

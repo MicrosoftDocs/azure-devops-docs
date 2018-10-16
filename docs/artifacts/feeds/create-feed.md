@@ -1,5 +1,5 @@
 ---
-title: Create a feed
+title: Create a feed in Azure Artifacts
 description: Create a feed in Azure DevOps Services or Team Foundation Server
 ms.assetid: e0e7e942-7c9e-4e93-8726-f2175c78e55f
 ms.prod: devops
@@ -12,7 +12,6 @@ ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
 ---
  
-
 # Create a feed
 
 **Azure DevOps Services | TFS 2017**

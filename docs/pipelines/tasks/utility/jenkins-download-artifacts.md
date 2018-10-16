@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Jenkins Download Artifacts
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
 
 ::: moniker range="<= tfs-2018"

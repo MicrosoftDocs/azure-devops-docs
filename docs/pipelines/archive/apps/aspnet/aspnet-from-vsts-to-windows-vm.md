@@ -18,11 +18,13 @@ ms.author: alewis
 author: andyjlewis
 ms.date: 06/27/2017
 ms.custom: mvc
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.

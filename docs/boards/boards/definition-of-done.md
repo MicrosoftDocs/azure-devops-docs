@@ -24,13 +24,13 @@ Also, you'll have implemented one of the core Kanban tenets: **make processes an
 
 When set, team members can quickly double-check the done criteria.
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017" 
 > [!div class="mx-imgBorder"]
 > ![Definition of Done](_img/columns/move-doing-done-dod-develop.png)
-::: moniker-end 
-::: moniker range="tfs-2015"  
+::: moniker-end   
+::: moniker range="tfs-2015" 
 ![Definition of Done](_img/ALM_DD_IntroImage.png)
-::: moniker-end 
+::: moniker-end   
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
 
@@ -41,7 +41,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 0.  [Open your Kanban board](kanban-quickstart.md). 
 
@@ -59,11 +59,11 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 0. When done with your changes, choose **Save**.
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 
 # [Previous navigation](#tab/previous-nav)

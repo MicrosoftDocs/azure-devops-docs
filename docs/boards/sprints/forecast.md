@@ -106,7 +106,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -160,7 +160,7 @@ The forecast tool shows between two and four items can be worked on during Itera
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
-	> 
+	
 ::: moniker-end
 
 ::: moniker range="tfs-2017"

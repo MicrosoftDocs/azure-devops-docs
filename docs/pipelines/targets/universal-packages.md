@@ -16,6 +16,8 @@ monikerRange: 'vsts'
 
 # Publish Universal Packages in Azure Pipelines
 
+**Azure Pipelines**
+
 > [!NOTE]
 > Universal Packages are currently in public preview.
 

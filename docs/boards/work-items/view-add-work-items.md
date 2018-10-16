@@ -52,7 +52,7 @@ You can start viewing and adding work items once you connect to a project.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)

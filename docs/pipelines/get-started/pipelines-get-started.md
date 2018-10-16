@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # How to use Azure Pipelines
 
+**Azure Pipelines**
+
 You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [visual designer](../get-started-designer.md) to do the same. 
 
 When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 

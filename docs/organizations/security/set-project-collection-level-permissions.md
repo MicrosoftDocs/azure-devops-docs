@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 08/06/2017
 ---
 
-# Quickstart: Set permissions at the project- or collection-level
+# Set permissions at the project- or collection-level
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

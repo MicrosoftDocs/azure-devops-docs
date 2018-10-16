@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Utility: Bash
 
+**Azure Pipelines**
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/BashV3.md)]

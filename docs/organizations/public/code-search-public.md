@@ -23,7 +23,7 @@ With code search, you can locate specific types of code and easily narrow or wid
 <a name="start-search"></a>
 ## Initiate a search 
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

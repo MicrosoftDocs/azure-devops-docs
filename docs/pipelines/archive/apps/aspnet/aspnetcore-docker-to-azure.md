@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 

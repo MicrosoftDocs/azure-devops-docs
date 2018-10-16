@@ -40,6 +40,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
  
 ## Concepts 
 - [Scrum best practices](best-practices-scrum.md) 
+- [Sprints and Scrum key concepts](scrum-key-concepts.md)
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)  
 - [About areas and iterations](../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)
 - [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json)

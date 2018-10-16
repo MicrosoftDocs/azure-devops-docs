@@ -205,15 +205,15 @@ to collect additional diagnostic from desktop apps.
 If you want to collect advanced diagnostic data such as code coverage, 
 IntelliTrace, and Test Impact data in addition to the data items listed above,
 you must [configure the data collectors](mtm/collect-more-diagnostic-data-in-manual-tests.md)
-and other run settings in Microsoft Test Manager (MTM) and run your 
-tests using MTM. For more details, see 
+and other run settings in Microsoft Test Manager and run your 
+tests using Microsoft Test Manager. For more details, see 
 [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 <p />
 
 > [!NOTE]
 > If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.
 > However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner using **Run with options**.
-> You must [configure the data collectors](mtm/collect-more-diagnostic-data-in-manual-tests.md) and other run settings in Microsoft Test Manager (MTM) and specify these as the default settings for the test plan.
+> You must [configure the data collectors](mtm/collect-more-diagnostic-data-in-manual-tests.md) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
 > For more details, see [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 ## See also
