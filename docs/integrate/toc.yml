@@ -44,7 +44,7 @@
     href: ../service-hooks/consumers.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
   - name: Service hooks events
     href: ../service-hooks/events.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
-  - name: REST APIs for TFS 2015 and 2017
+  - name: REST APIs for TFS 2015, 2017, and 2018
     items:
     - name: Overview
       href: previous-apis/overview.md

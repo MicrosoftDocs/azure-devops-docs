@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
-* The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
+* The **Test Center** in Microsoft Test Manager client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
 * The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track stages of Manual testing.
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
@@ -52,9 +52,9 @@ See the comparison matrix below for more information about these features.
 
 **Comparison of 
 [test planning with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-a-test-plan.md)
-and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**:
+and [test planning with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md)**:
 
-| Test planning capability | Web-based test features | Client-based MTM |
+| Test planning capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
 | Create test plan | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create/Manage suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
@@ -80,9 +80,9 @@ Create shared parameters and use them in multiple test cases for data driven tes
 
 **Comparison of 
 [test authoring with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-test-cases.md)
-and [test authoring with MTM](plan-manual-tests-with-microsoft-test-manager.md)**:
+and [test authoring with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md)**:
 
-| Test authoring capability | Web-based test features | Client-based MTM |
+| Test authoring capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
 | Create and edit test cases using WIT form | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create and edit shared steps | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
@@ -145,9 +145,9 @@ manual testing results.
 
 **Comparison of 
 [test result tracking with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../track-test-status.md)
-and [test result tracking with MTM](https://msdn.microsoft.com/library/hh553099%28v=vs.110%29.aspx)**:
+and [test result tracking with Microsoft Test Manager](https://msdn.microsoft.com/library/hh553099%28v=vs.110%29.aspx)**:
 
-| Test tracking capability | Web-based test features | Client-based MTM |
+| Test tracking capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
 | Test run and results analysis | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | [Create, configure, and pin light-weight test result charts](../track-test-status.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
@@ -185,12 +185,12 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 ## Conclusion
 
 As clearly shown above, the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a much richer, faster, and easier-to-use
-solution for manual testing compared to the Test Center in MTM. It works on
+solution for manual testing compared to the Test Center in Microsoft Test Manager. It works on
 all platforms and all browsers, and has a rich and modern web UI that improves your testing
 experience across all stages of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in Azure DevOps or TFS, so existing
-MTM users can easily get started using the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
+using Microsoft Test Manager are stored in Azure DevOps or TFS, so existing
+Microsoft Test Manager users can easily get started using the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

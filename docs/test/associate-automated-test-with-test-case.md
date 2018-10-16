@@ -1,6 +1,6 @@
 ---
 title: Associate an automated test with a test case
-description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and Azure DevOps with a build or release pipeline
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager and Azure DevOps with a build or release pipeline
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.prod: devops
 ms.technology: devops-test
@@ -54,7 +54,7 @@ If you are using the build and release services in
 Azure DevOps or TFS (not a [XAML build](../pipelines/test/reference-qa.md#xaml-build)), you can run associated tests in the 
 build and release pipelines by using the
 [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
-You _cannot_ run tests on-demand using Microsoft Test Manager (MTM) unless you are using a [XAML build](../pipelines/test/reference-qa.md#xaml-build). 
+You _cannot_ run tests on-demand using Microsoft Test Manager unless you are using a [XAML build](../pipelines/test/reference-qa.md#xaml-build). 
 
 The parameters in a test case are not used by any automated test that
 you associate with a test case. Iterations of a test case that use these

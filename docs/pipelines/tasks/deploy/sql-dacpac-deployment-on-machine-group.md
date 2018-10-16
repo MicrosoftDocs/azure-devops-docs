@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Deploy: SQL Server Database Deploy
 
+**Azure Pipelines**
+
 ![](_img/sqldacpacdeploymentonmachinegroup.png) Deploy to SQL Server Database using DACPAC or SQL scripts
 
 ::: moniker range="> tfs-2018"

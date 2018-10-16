@@ -34,7 +34,7 @@ You can add a public project to your existing organization, or create an Azure D
 
 Before you can create a public project, you must enable anonymous access for your Azure DevOps organization.
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

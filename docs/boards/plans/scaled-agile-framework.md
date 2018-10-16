@@ -320,13 +320,13 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ![User Story work item form](_img/safe-user-story-new-form.png)  
 
-::: moniker range="tfs-2013"  
+::: moniker range="tfs-2013" 
 
 ## Required customization
 
 If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
-::: moniker-end  
+::: moniker-end 
 
 ## Resources
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  

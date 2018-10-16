@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2018
+ms.date: 10/16/2018
 monikerRange: 'vsts'
 ---
 # Manage users in Azure DevOps
@@ -30,7 +30,7 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
-[Compare Azure DevOps features](https://azure.microsoft.com/en-us/services/devops/compare-features/) that are available to your users.
+To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

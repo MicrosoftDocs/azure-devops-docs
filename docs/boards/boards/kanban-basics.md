@@ -48,7 +48,7 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
-
+<a id="map-flow" />
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
 Kanban literally means signboard or billboard. As a first step, you customize your board to map to how your team works.
@@ -122,11 +122,11 @@ As with most Agile practices, Kanban encourages monitoring key metrics to fine t
 
 <img src="_img/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
-The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started.  
+The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
-By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
+By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
 
 ::: moniker range="vsts"

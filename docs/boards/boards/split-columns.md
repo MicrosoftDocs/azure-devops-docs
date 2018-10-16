@@ -27,7 +27,7 @@ When split, each column contains two sub-columns, Doing and Done.
 
 ![Kanban with split columns](_img/kanban-board-split-columns-example-chart.png)  
 
-Split columns lets your team to implement a pull model. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
+Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
 
 By contrast, with split columns, your team knows exactly how many items sit idle, waiting for work to begin. You now have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process. 
 
@@ -43,6 +43,7 @@ For example, as a team member completes his coding task, he moves the item into 
 
 If you're new to Kanban, review [Kanban basics](kanban-basics.md)  to get an overview of how to access your board and implement Kanban.
 
+<a id="id-bottlenecks" />
 ## Identify bottlenecks, drive toward a perfect flow scenario
 How can you use split columns to improve workflow?  
 
@@ -61,7 +62,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -83,11 +84,11 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 
 # [Previous navigation](#tab/previous-nav)  

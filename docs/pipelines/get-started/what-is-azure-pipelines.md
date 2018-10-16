@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # What is Azure Pipelines?
 
+**Azure Pipelines**
+
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
 Pipelines combines both **Continuous Integration (CI)** and **Continuous Deployment (CD)** to constantly and consistently test and build your code and ship it to any target. 

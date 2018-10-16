@@ -13,13 +13,13 @@ ms.topic: sample
 ms.date: 05/10/2017  
 ---
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 # Link, attachment comment count queries  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018"   
 # Link and attachment queries  
-::: moniker-end  
+::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -172,13 +172,13 @@ The following image shows the query results that are returned.
 
 
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 # Link, attachment, and comment count fields  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018"   
 ## Link and attachment fields 
-::: moniker-end  
+::: moniker-end 
 
 The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types. 
 
@@ -258,13 +258,13 @@ Available for Azure DevOps Services only.
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
  
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace. 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 ### Add custom link types or customize the links controls 
 
@@ -277,7 +277,7 @@ All tabs that support creating links between work items are implemented by using
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 
-::: moniker-end  
+::: moniker-end 
 
 
 <!---

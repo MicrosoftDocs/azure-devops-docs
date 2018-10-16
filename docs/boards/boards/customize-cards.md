@@ -148,7 +148,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
@@ -250,7 +250,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
@@ -348,7 +348,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)

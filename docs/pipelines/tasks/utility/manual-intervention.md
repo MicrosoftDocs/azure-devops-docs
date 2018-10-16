@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Utility: Manual intervention
 
+**Azure Pipelines**
+
 ![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands
@@ -60,5 +62,3 @@ After carrying out the manual steps, the administrator or user can choose to res
 Users with **Manage deployment** permission on the stage can resume or reject the manual intervention.
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
-
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).

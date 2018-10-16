@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Tool: .NET Core Tool Installer
 
+**Azure Pipelines**
+
 ![](_img/dotnetcoreinstaller.png) Acquires a specific version of .NET Core from internet or the tools cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
 
 ::: moniker range="> tfs-2018"

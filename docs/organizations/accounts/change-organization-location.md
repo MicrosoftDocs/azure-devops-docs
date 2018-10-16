@@ -22,7 +22,7 @@ For information on region availability, see [Products available by region](https
 
 ## Find your organization location
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

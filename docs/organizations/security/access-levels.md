@@ -10,8 +10,8 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/08/2018
 monikerRange: '>= tfs-2013'
+ms.date: 10/12/2018
 ---
 
 # About access levels
@@ -33,44 +33,172 @@ To add user accounts or groups to specific access levels, see [Change access lev
 
 When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
-The systems employ these access levels:
+You assign users or groups of users to one of the following access levels:
 
+::: moniker range=">= tfs-2018"
+- **Basic**: provides access to most features  
+- **VS Enterprise**: provides access to premium features
 - **Stakeholders**: provides partial access, can be assigned to unlimited users for free
+::: moniker-end
+
+::: moniker range="tfs-2017"
 - **Basic**: provides access to most features  
 - **VS Enterprise** (TFS 2017.1 and later versions): provides access to premium features
 - **Advanced** (TFS 2017 and earlier versions): provides access to premium features 
+- **Stakeholders**: provides partial access, can be assigned to unlimited users for free
+::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="<= tfs-2015"
+- **Basic**: provides access to most features  
+- **Advanced** : provides access to premium features 
+- **Stakeholders**: provides partial access, can be assigned to unlimited users for free
+::: moniker-end
 
-## Azure Boards & Repos
+Assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an Azure DevOps organization. 
 
-Assign **Azure Boards & Repos** to users in your Azure DevOps organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
+::: moniker range=">= tfs-2018"
 
-However, Visual Studio subscribers are entitled to Azure Boards & Repos as a subscriber benefit, so when you add those users be sure to assign them the “Visual Studio subscriber” access level and we will automatically recognize their subscription and enable any other features that are included based on their subscription level. For instance, the Test Plans feature is included for Visual Studio Enterprise, MSDN Platforms, and Visual Studio Test Professional subscribers.
+Assign **VS Enterprise** to users with a a subscription to Visual Studio Enterprise.This enables the Test Manager feature.
+::: moniker-end
+
+
+::: moniker range="tfs-2017"
+Assign **Advanced** (TFS 2017) to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms. Assign **VS Enterprise** (TFS 2017.1 and later versions) to users with a a subscription to Visual Studio Enterprise. This enables the Test Manager feature.  
+::: moniker-end
+
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+Assign **Advanced** to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
+::: moniker-end
+
+
+Assign **Stakeholders** to users with no license or subscriptions who need access to a limited set of features.
 
 See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
 
+
+## Basic, Azure Boards & Repos
+
+Assign **Basic**  to users in your Azure DevOps organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
+
+::: moniker range="<= tfs-2018"
 ![Basic access features](_img/access-levels-2017-basic.png)
+::: moniker-end
+
+Basic access allows users to access **Code**, **Build**, and **Test**  in addition to **Dashboards/Home** and **Work**.
+- [Basic & Advanced backlog and sprint planning tools](../../boards/sprints/assign-work-sprint.md)  
+- [Request and manage feedback](../../project/feedback/get-feedback.md)<sup> 1</sup>  
+- [Chart viewing & Chart authoring](../../report/charts.md)  
+- **Code**: [Git](../../repos/git/overview.md) and [TFVC](../../repos/tfvc/overview.md)  
+- [Build](../../pipelines/overview.md)  
+- [Administer account](#administer-account)<sup> 2</sup>
+- [Advanced home page](../../project/wiki/project-vision-status.md)<sup> 3</sup>
+- [Author release pipelines](../../pipelines/release/index.md)<sup> 4</sup>
+- [Advanced portfolio management](../../boards/backlogs/define-features-epics.md) 
+- [Team rooms](../../notifications/collaborate-in-a-team-room.md)
+- [Analyze test results and manage machine groups](../../test/test-different-configurations.md) 
+
+**Notes:**
+
+1.	Requires TFS 2015.1 or later version.
+2.	You can open Team settings, Project settings, and Collection level settings to view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
+3.	Advanced home page allows you to configure and view the Project summary page in addition to team dashboards.  
+4.	Requires TFS 2015.2 or later version.    
+
+Within the admin context, there are several pages which support administrating features at the team, project, project collection/organization level. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md).
+
+::: moniker range=">= tfs-2017"
+## VS Enterprise
+
+Visual Studio subscribers are entitled to **Basic** features (Azure Boards & Repos) as a subscriber benefit, so when you add those users be sure to assign them **VS Enterprise** access level and the system will automatically recognize their subscription and enable any other features that are included based on their subscription level. For instance, the Test Plans feature is included for Visual Studio Enterprise, MSDN Platforms, and Visual Studio Test Professional subscribers.
+
+With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
+
+<!--- **TFS 2017.2** -->
+
+<img src="_img/access-levels-2017-vs.png" alt="VS Enterprise access features" style="border: 1px solid #CCCCCC;" />  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+## Advanced 
+Users assigned Advanced access can manage test cases when you have [purchased Test Manager extensions and assigned to the user accounts](access-levels.md#test-manager) to gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
+
+For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
+- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
+These include a TFS CAL plus the rights to access the full set of Test features.  
+- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager). 
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md).
+	
+
+**TFS 2017.2**
+
+![TFS 2017.2, Advanced Access](_img/access-levels-2017-update2-vs-t.png)
+
+**TFS 2017.1**
+
+> [!NOTE]   
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+**TFS 2017, TFS 2015, TFS 2013**
+
+![Advanced access features](_img/access-levels-2015-advanced.png)  
+
+> [!NOTE]   
+> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension.  
+ 
+::: moniker-end
+
+ 
+<a id="test-manager"  >  </a>
+::: moniker range="vsts"
+## Test Plans/Test features and Marketplace extensions
+
+Full access to **Test Plans/Test** features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+
+To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+## Test features and Marketplace extensions
 
-## Basic
+Full access to **Test Plans/Test** features requires **Advanced** (TFS 2015 or earlier versions) or **VS Enterprise** (TFS 2017 or later version) access. Visual Studio Test Professional plus the test features in the TFS web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
 
-In TFS, assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Boards & Repos in an Azure DevOps organization.  
-For users with a subscription to Visual Studio Enterprise, you’ll either assign **Advanced** (TFS 2017 and earlier) or **VS Enterprise** (TFS 2017.1 and later). This enables the Test Manager feature.
-For users with a subscription to either Visual Studio Test Professional or MSDN Platforms, you’ll either assign **Advanced** (TFS 2017 and earlier) or you’ll assign **Basic** plus the **Test Manager** extension within the Users page (TFS 2017.1 and later).
-
-See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
-
-![Basic access features](_img/access-levels-2017-basic.png)
+To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
 
 ::: moniker-end
 
 <a id="stakeholder-access">  </a>
 
 ## Stakeholder access
+
+With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
+
+<!---
+To learn more, 
+
+- View My [Work items](../../boards/backlogs/add-work-items.md)
+- Standard features: [Dashboards](../../report/dashboards.md) & [Queries](../../boards/queries/using-queries.md)<sup> 1</sup>
+- Agile boards: [Backlogs](../../boards/backlogs/create-your-backlog.md), [Kanban](../../boards/boards/kanban-basics.md) & [Task](../../boards/sprints/task-board.md) <sup> 2</sup>
+- [View releases and manage approvals](../../pipelines/release/index.md)<sup> 3</sup> 
+
+**Notes:**
+1. Standard features include access to **Dashboards** or **Home** and **Work**.
+2. Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../organizations/security/get-started-stakeholder.md) for details.
+3. Requires TFS 2015.2 or later version.   
+-->
 
 ::: moniker range="vsts"
 Assign **Stakeholder** access to an unlimited number of users for free.
@@ -484,71 +612,6 @@ If you need access to the following features&mdash;which support the daily work 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-## VS Enterprise
-
-For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
-
-<!--- **TFS 2017.2** -->
-
-<img src="_img/access-levels-2017-vs.png" alt="VS Enterprise access features" style="border: 1px solid #CCCCCC;" />  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2017"
-## Advanced 
-
-For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
-- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
-These include a TFS CAL plus the rights to access the full set of Test features.  
-- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](change-access-levels.md#test-manager). 
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md).
-	
-
-**TFS 2017.2**
-
-![TFS 2017.2, Advanced Access](_img/access-levels-2017-update2-vs-t.png)
-
-**TFS 2017.1**
-
-> [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2017"
-**TFS 2017, TFS 2015, TFS 2013**
-
-![Advanced access features](_img/access-levels-2015-advanced.png)  
-
-> [!NOTE]   
-> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension.  
- 
-::: moniker-end
-
- 
-<a id="test-manager"  >  </a>
-::: moniker range="vsts"
-## Test Plans/Test features and Marketplace extensions
-
-Full access to **Test Plans/Test** features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
-
-To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-## Test features and Marketplace extensions
-
-Full access to **Test Plans/Test** features requires **Advanced** (TFS 2015 or earlier versions) or **VS Enterprise** (TFS 2017 or later version) access. Visual Studio Test Professional plus the test features in the TFS web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
-
-To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
-
-::: moniker-end
 
 ## What features can users access who are added to two different groups?
 If a user belongs to a group that has **Basic** access and another group that has **VS Enterprise** access, the user has access to all features available through **VS Enterprise**, which is a superset of **Basic**.
@@ -576,3 +639,4 @@ Service accounts don't require a TFS CAL or other purchase.
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md) 
 ::: moniker-end
+

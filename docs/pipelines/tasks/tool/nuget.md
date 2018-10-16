@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # Tool: NuGet Tool Installer
 
+**Azure Pipelines**
+
 **Build**
 
 ![icon](_img/nuget.png) Finds or downloads and caches the specified version of [NuGet](https://nuget.org/) and adds it to the PATH

@@ -30,7 +30,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Clone the repo to your computer
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 ## [New navigation](#tab/new-nav)
 

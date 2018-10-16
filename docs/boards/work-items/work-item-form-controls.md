@@ -147,17 +147,17 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 > [!NOTE]   
 > You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
-::: moniker-end  
+::: moniker-end 
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
 > For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-::: moniker-end  
+::: moniker-end��
 
 <a id="copy-url">  </a>
 ## Copy the URL
