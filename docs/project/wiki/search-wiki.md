@@ -7,7 +7,8 @@ ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.reviewer: sancha
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'

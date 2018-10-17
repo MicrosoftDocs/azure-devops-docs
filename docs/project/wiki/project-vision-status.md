@@ -7,8 +7,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2015'
 ms.date: 09/05/2018
 ---

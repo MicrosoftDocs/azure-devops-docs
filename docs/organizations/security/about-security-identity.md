@@ -7,8 +7,8 @@ ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'

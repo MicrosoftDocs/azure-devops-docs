@@ -6,8 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
 ms.reviewer: wismythe
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 08/06/2018  
 monikerRange: '>= tfs-2017'
