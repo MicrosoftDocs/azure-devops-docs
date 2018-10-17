@@ -60,6 +60,11 @@ The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
 be changed to `**/TEST-*.trx`. 
 
+**testResultsFormat** is an alias for the **testRunner** input name.
+The results files can be produced by multiple runners, not just a specific
+runner. For example, jUnit results format is supported by many runners and
+not just jUnit.
+
 To publish test results for Python using YAML, see [Python](../../languages/python.md)
 in the **Languages** section of these topics, which also includes examples for other languages. 
 
