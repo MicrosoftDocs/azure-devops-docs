@@ -8,8 +8,8 @@ ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 10/12/2018
 monikerRange: '>= tfs-2013'
 ---

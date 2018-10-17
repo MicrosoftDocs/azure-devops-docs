@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
