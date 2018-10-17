@@ -6,8 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 ms.date: 10/26/2017  
 monikerRange: '>= tfs-2017'

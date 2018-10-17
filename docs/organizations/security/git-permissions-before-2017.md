@@ -7,8 +7,8 @@ ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/01/2016
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---

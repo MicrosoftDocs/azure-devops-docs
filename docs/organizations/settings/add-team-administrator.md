@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/27/2018
 ---

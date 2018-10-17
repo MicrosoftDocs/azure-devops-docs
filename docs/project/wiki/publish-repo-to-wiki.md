@@ -8,9 +8,9 @@ ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.reviewer: sancha
-author: KathrynEE
+author: chcomley
 monikerRange: 'vsts'
 ms.date: 04/26/2018  
 ---
