@@ -47,7 +47,7 @@ If you don't have an Azure subscription, you can get one free through [Visual St
  
 ## Configure an Azure DevOps organization and an Azure subscription
 
-1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure Pipelines project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
+1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure DevOps project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
    	![Enter Azure Pipelines info](_img/azure-devops-project/vstsazureinfo.png)
 
@@ -119,7 +119,7 @@ When no longer needed, you can delete the Azure App service and related resource
 
 ## Next steps
 
-When you configured your CI/CD pipeline in this quickstart, a build and release pipeline were automatically created in your Azure Pipelines project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
+When you configured your CI/CD pipeline in this quickstart, a build and release pipeline was automatically created in your Azure DevOps project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 > [!div class="nextstepaction"]
 > [Customize CD pipeline](release/define-multistage-release-process.md)
