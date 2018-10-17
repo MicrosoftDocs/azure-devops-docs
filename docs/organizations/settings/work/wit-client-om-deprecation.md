@@ -41,7 +41,7 @@ The tables below outline a support matrix of what you can expect across both SOA
 
 ## Impact
 
-If your organization has created or uses the WIT Client OM in tools that run against Azure DevOps, starting on 1/1/2020, those tools will stop working. You will need to make an investment in changing these tools to stop using the WIT Cliemt OM and start using the new [REST](../../../integrate/?view=vsts) based endpoints.
+If your organization has created or uses the WIT Client OM in tools that run against Azure DevOps, starting on 1/1/2020, those tools will stop working. You will need to make an investment in changing these tools to stop using the WIT Client OM and start using the new [REST](../../../integrate/index.md?view=vsts) based endpoints.
 
 Updating your tools to use REST is vital to ensure your tools will work once the WIT Client OM is deprecated on 1/1/2020.
 
@@ -71,8 +71,8 @@ Sorry, no exceptions. We need all organizations off the WIT Client OM by 1/1/202
 
 ## Resources
 
-- [Azure DevOps Services REST API Reference](../../../integrate/?view=vsts)
-- [.NET client libraries for Azure DevOps Services (and TFS)](../../../integrate/concepts/dotnet-client-libraries?view=vsts)
-- [Understanding Rate limits](../../../integrate/concepts/rate-limits?view=vsts&tabs=new-nav)
-- [Integration Best Practices](../../../integrate/concepts/integration-bestpractices?view=vsts)
+- [Azure DevOps Services REST API Reference](../../../integrate/index.md?view=vsts)
+- [.NET client libraries for Azure DevOps Services (and TFS)](../../../integrate/concepts/dotnet-client-libraries.md?view=vsts)
+- [Understanding Rate limits](../../../integrate/concepts/rate-limits.md?view=vsts&tabs=new-nav)
+- [Integration Best Practices](../../../integrate/concepts/integration-bestpractices.md?view=vsts)
 - [Sample Code on GitHub](https://github.com/Microsoft/vsts-dotnet-samples)
