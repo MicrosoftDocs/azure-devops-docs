@@ -8,8 +8,8 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
 ms.date: 08/06/2017
 ---
