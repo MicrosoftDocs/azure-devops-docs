@@ -19,10 +19,10 @@ using just a web browser.
 
 ## 5-Minute Quickstarts
 
-| | |
-| --- | --- |
-| ![icon](_img/_shared/codesearch-icon.png)<br />[Search code](code-search.md) | ![icon](_img/_shared/wisearch-icon.png)<br />[Search work items](work-item-search.md) |
-| | |
+| | | |
+| --- | --- | --- |
+| ![icon](_img/_shared/codesearch-icon.png)<br />[Search code](code-search.md) | ![icon](_img/_shared/wisearch-icon.png)<br />[Search work items](work-item-search.md) |![icon](_img/_shared/wisearch-icon.png)<br />[Search wiki](../wiki/search-wiki.md) |
+| | | |
 
 ## Videos
 
@@ -32,6 +32,7 @@ using just a web browser.
 
 * [Use Code Search](advanced-code-search-syntax.md)
 * [Use Work Item Search](advanced-work-item-search-syntax.md)
+* [Use Wiki Search](../wiki/search-wiki.md)
 * [Administer Search](administration.md)
 
 ## Resources
