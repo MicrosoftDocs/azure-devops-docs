@@ -6,8 +6,8 @@ ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 10/06/2017
 monikerRange: '>= tfs-2013'
 ---

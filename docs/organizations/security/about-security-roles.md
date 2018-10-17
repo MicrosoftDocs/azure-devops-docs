@@ -7,8 +7,8 @@ ms.assetid:
 toc: show
 ms.prod: devops
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
