@@ -7,7 +7,8 @@ ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'

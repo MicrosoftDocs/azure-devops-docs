@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 05/31/2018

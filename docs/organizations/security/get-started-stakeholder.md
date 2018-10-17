@@ -6,8 +6,8 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018

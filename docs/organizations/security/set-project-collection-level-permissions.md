@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 08/06/2017
