@@ -8,8 +8,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
 ms.date: 04/05/2018  

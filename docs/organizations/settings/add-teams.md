@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018

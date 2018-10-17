@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
 ms.date: 09/12/2018

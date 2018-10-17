@@ -6,8 +6,8 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/12/2018

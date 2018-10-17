@@ -7,7 +7,7 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: KathrynEE
 author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 07/27/2018
