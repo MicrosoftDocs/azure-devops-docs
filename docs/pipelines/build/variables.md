@@ -31,6 +31,8 @@ This is the comprehensive list of predefined build variables.
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
 Learn more about [working with variables](../process/variables.md).
 
+[!INCLUDE [set-variables-in-scripts](../_shared/set-variables-in-scripts.md)]
+
 ## Build.Clean 
 
 ::: moniker range="> tfs-2017"
