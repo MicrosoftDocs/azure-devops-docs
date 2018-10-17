@@ -9,14 +9,13 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 2.  From your home page, open your profile. Go to your security details.
 
-	**TFS 2017**
+	**Azure DevOps Services**
 
 	<img alt="Go to Azure DevOps organization home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
-	**Azure DevOps Services**
+    **TFS 2017**
 
 	<img alt="TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
-
 
 3. Create a personal access token.
 
@@ -60,11 +59,10 @@ When you don't need your token anymore, just revoke it to remove access.
 	**Azure DevOps Services**
 
 	<img alt="Go to the Azure DevOps organization home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
-
-	**TFS 2017**
+ 
+ **TFS 2017**
 
 	<img alt="Go to the TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
-
 
 0.	Revoke access.
 
