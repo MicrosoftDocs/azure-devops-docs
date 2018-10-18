@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 10/11/2018
+ms.date: 10/18/2018
 monikerRange: 'vsts'
 ---
 
@@ -467,7 +467,7 @@ pool:
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
-If you're using a Microsoft-hosted pool, choose an
+If you're using a Microsoft-hosted pool, then choose an
 [available `vmImage`](agents/hosted.md#use-a-microsoft-hosted-agent).
 
 If you're using a private pool and don't need to specify demands, this can
