@@ -417,4 +417,4 @@ steps:
 
 ## Escaping
 
-If you need to escape a value that literally starts and ends with `${{ }}`, then prepend an additional leading `$` character. For example: `$${{ }}`
+If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
