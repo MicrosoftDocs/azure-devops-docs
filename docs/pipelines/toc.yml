@@ -165,12 +165,14 @@
       href: process/resources.md
     - name: Templates
       href: process/templates.md
-  - name: Licensing
+  - name: Scripts
     items:
-    - name: Parallel jobs
-      href: licensing/concurrent-jobs-vsts.md
-    - name: Pipelines
-      href: licensing/concurrent-pipelines-tfs.md
+    - name: Cross-platform scripts
+      href: scripts/cross-platform-scripting.md
+    - name: Run a PowerShell script
+      href: scripts/powershell.md
+    - name: Run Git commands
+      href: scripts/git-commands.md
   - name: Library
     href: library/index.md
     items:
@@ -182,6 +184,12 @@
       href: library/service-endpoints.md
     - name: Secure files
       href: library/secure-files.md
+  - name: Licensing
+    items:
+    - name: Parallel jobs
+      href: licensing/concurrent-jobs-vsts.md
+    - name: Pipelines
+      href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
     href: policies/retention.md
 - name: How-to Guides
@@ -222,14 +230,6 @@
       href: library/government-cloud.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
-  - name: Scripts
-    items:
-    - name: Cross-platform scripts
-      href: scripts/cross-platform-scripting.md
-    - name: Run a PowerShell script
-      href: scripts/powershell.md
-    - name: Run Git commands
-      href: scripts/git-commands.md
   - name: Test
     items:
     - name: Test glossary
