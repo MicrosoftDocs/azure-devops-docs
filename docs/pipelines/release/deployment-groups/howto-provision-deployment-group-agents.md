@@ -83,7 +83,7 @@ For information about agents and pipelines, see:
 
    ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Azure Pipelines subacription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    
