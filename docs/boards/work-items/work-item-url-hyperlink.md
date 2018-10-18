@@ -7,13 +7,14 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: reference
-ms.date: 11/27/2017  
+ms.topic: reference   
+monikerRange: '>= tfs-2013'   
+ms.date: 10/17/2018
 ---
 
 
 
-# Define the hyperlink for a work item 
+# Define the URL for a work item 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -31,9 +32,24 @@ Examples in this topic use the following conventions:
 
 ::: moniker range="vsts"  
 
-<b>https://</b>*OrganizationName.visualstudio.com/ProjectName/*<b>_workitems/edit/</b>*WorkItemNumber*
+```
+https://dev.azure.com/OrganizationName/ProjectName/_workitems/edit/WorkItemNumber
+```
 
-**Example:** 
+or
+
+```
+https://OrganizationName.visualstudio.com/DefaultCollection/ProjectName/_workitems/edit/WorkItemNumber
+```
+
+
+**Examples:** 
+
+```
+https://dev.azure.com/fabrikam/Phone%20Saver/_workitems/edit/390
+```  
+
+or
 
 ```
 https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
@@ -41,7 +57,7 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 
 ## TFS 2018, TFS 2017, and TFS 2015
 
