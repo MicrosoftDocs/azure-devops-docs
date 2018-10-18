@@ -321,11 +321,11 @@ WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([Syst
 	AND [System.State] EVER 'Closed'
 ```
 
-You can negate the `contains, under, in,` and `ever` operators by using `not`. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
+You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
 
 ```
 WHERE [System.AreaPath] not under 'MyProject\Feature1'
-WHERE [System.AssignedTo] not ever 'joselugo'
+WHERE [System.AssignedTo] ever 'joselugo'
 ```
 
 
