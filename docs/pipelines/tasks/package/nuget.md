@@ -68,8 +68,10 @@ None
         </tr>
     </thead>
     <tr>
-        <td>Path to solution, packages.config, or project.json</td>
+        <td>restoreSolution</td>
         <td>
+            Path to solution, packages.config, or project.json
+            
             Copy the **Solution** argument in your [Visual Studio Build step](../../tasks/build/visual-studio-build.md) and paste it
             here, or create a link using the Link button in the information panel.
         </td>
@@ -78,8 +80,10 @@ None
         <th style="text-align: center" colspan="2">Feeds and authentication</th>
     </tr>
     <tr>
-        <td>Feeds to use</td>
+        <td>feedsToUse</td>
         <td>
+            Feeds to use
+            
             **Feed(s) I select here:**
             <ul>
                 <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
