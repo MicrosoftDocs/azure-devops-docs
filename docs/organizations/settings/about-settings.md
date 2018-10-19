@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid: 
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
 ---
