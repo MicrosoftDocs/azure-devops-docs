@@ -1,7 +1,7 @@
 ---
 title: Practical DevOps
 titleSuffix: Azure DevOps Services & TFS
-description: Why DevOps?
+description: You need DevOps to manage the increasing complexity of delivering value to many customers from a diverse development team.
 ms.prod: devops
 ms.technology: devops-dev-manager
 ms.article: get-started-article
@@ -14,7 +14,7 @@ ms.date: 10/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Why DevOps?
+# Why DevOps? It's all about managing complexity
 
 Imagine a perfect world of development and delivery of apps and services:
 
@@ -24,6 +24,8 @@ Imagine a perfect world of development and delivery of apps and services:
 - And finally, as soon as you've fulfilled a need or desire in code, the app is immediately delivered to customers on their devices and your services are immediately deployed to customer-accessible servers.
 
 In short, this perfect scenario means there is an effectively instantaneous connection between customer needs and fulfillment of those needs.
+
+![A perfect connection between developer and customer](media/02-perfect-connection.png)
 
 Now if you have any experience whatsoever with writing production code for real customers, you've been laughing yourself silly for the last thirty seconds at the sheer absurdity of such idealism. You know that reality comes nowhere close to this scenario. And yet, it's a good bet that you, along with every other software developer in the world, actually have experienced such a seamless loop. Why? Because it's exactly what happens when you write software for yourself! That is, when the developer and the customer are the same person, there aren't any interpersonal relationships to get in the way. You deliver the app, you immediately know how the customer feels about it, and the developer starts working on changes right away. Indeed, from what we've heard from individual developers, this is literally how most of us got hooked on the magic of coding in the first place. You write some code, build it, put it on a device or a server if needed, start it up, and&mdash;voila! Something amazing happens, something you could control and shape and play with to your utmost heart's desire...often late into the night.
 
@@ -35,13 +37,19 @@ For the sake of simplicity, let's just say that there is only one other person i
 - Because the customer is waiting for you to fulfill her needs, she has to trust that you're giving those needs your full attention and aren't getting distracted by something else, especially someone else's needs. Suddenly, you're working late into the night for an entirely different reason!
 - There is a definite delay between when you write the code and when it gets delivered to the customer. Running code on your own computer is only the single first step among many that are necessary to transfer the proper build artifacts from your development computer to a place where the customer can acquire and/or access it. Because there are potentially many steps in this delivery pipeline, there are breakdown risks all along the way.
 
+![Communication boundaries introduce delays and possibly miscommunication](media/02-communication-boundaries.png)
+
 The risks increase greatly in magnitude as the number of customers increase, because all these matters of communication, understanding, trust, and delivery must be done at scale, which is of course much more complicated:
 
 - You have to be able to listen to many customers, whose needs and desires compete with one another, and at some point it becomes impractical to have direct conversations with everyone.
 - You have to continually earn customers' trust, convincing them that you are, in fact, paying attention to their needs even when certain needs go unfulfilled for several releases.
 - The delay between implementation also gets longer, because every delivery target, from desktop operating systems to mobile app stores and even the diversity of web browsers, has its own specifications, requirements, and eccentricities.
 
+![Complexity increases tremendously when there are many more customers](media/02-complexity-with-more-customers.png)
+
 At some point you also realize that you can't serve all those customers by yourself, making it necessary to join forces with other developers (which is likely the team whose activities you now manage). Collaboration introduces yet another set of complicating factors: the possibility of conflicts in the code, yes, but also in the processes you use to build, test, and otherwise move your apps and services through each stage of the pipeline. To avoid conflict there must be some degree of cooperation and coordination, the need for which increases exponentially as teams and organizations get larger.
+
+![Complexity also increases as a development team gets larger](media/02-complexity-with-larger-teams.png)
 
 In the end, real-world software development is beset by both the complexities of delivering great software to many diverse devices and platforms, and the perhaps greater complexities of interpersonal relationships. These all challenge your ability to achieve your overarching goal, which is delivering the highest value to your customers at the lowest cost to your business.
 
