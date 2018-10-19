@@ -56,7 +56,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 2. Go to **All services** > **Azure DevOps Services organizations**.
 
-   ![Choose All services and Azure DevOps Services organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization and **Remove billing**.
 
