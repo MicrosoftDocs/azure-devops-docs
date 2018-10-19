@@ -34,10 +34,12 @@ Check out the quick starts to get you started:
 - [REST API Versioning](./concepts/rest-api-versioning.md)
 - [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
 - [Rate limits](./concepts/rate-limits.md)
+- [Deprecation of Work Item Tracking (WIT) & Test Client OM](./concepts/wit-client-om-deprecation.md)
 
 ## Samples
 
 - [Custom application samples](./get-started/client-libraries/samples.md)
+- [.NET samples for Azure DevOps on GitHub](https://github.com/Microsoft/vsts-dotnet-samples)
 
 ## How-to Guides
 
