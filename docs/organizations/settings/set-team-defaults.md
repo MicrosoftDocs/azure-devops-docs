@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 07/27/2018
 ---

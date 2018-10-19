@@ -41,7 +41,7 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 2. Select **All services**, choose **Azure DevOps Services organizations**, and select your organization.
 
-   ![Azure DevOps Services organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Azure DevOps organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select **Cloud-based load testing** on the right side of your screen.
 

@@ -41,6 +41,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/dotnetcorecli.png) [.NET Core CLI](build/dotnet-core-cli.md). Build, test, package, or publish a dotnet application, or run a custom dotnet command. | Azure Pipelines, TFS 2018 |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Azure Pipelines and newer versions of TFS. |
+| ![icon](utility/_img/publish-pipeline-artifact.png) [Publish Pipeline Artifact](utility/publish-pipeline-artifact.md). Publish pipeline artifact | Azure Pipelines |
 | [SonarQube - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | Azure Pipelines, TFS 2015.3 and newer |
 | [SonarQube - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](build/_img/visual-studio-build.png) [Visual Studio Build](build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | Azure Pipelines, TFS 2015 RTM and newer |
@@ -67,6 +68,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](utility/_img/downloadbuildartifacts.png) [Download Build Artifacts](utility/download-build-artifacts.md). Download build artifacts. | Azure Pipelines |
 | ![icon](utility/_img/downloadbuildartifacts.png) [Download Fileshare Artifacts](utility/download-fileshare-artifacts.md). Download fileshare artifacts. | Azure Pipelines |
+| ![icon](utility/_img/download-pipeline-artifact.png) [Download Pipeline Artifact](utility/download-pipeline-artifact.md). Download pipeline artifacts. | Azure Pipelines |
 | ![icon](utility/_img/downloadpackage.png) [Download Package](utility/download-package.md). Download a package from a Package Management feed in Azure Pipelines or TFS.  Requires the Package Management extension. | Azure Pipelines |
 | ![icon](utility/_img/secure-file.png) [Download Secure File](utility/download-secure-file.md). Download a secure file to a temporary location on the build or release agent. | Azure Pipelines |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | Azure Pipelines, TFS 2017 and newer |
@@ -79,6 +81,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/manual-intervention.png) [Manual Intervention](utility/manual-intervention.md). Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks. | Azure Pipelines |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](utility/_img/publish-pipeline-artifact.png) [Publish Pipeline Artifact](utility/publish-pipeline-artifact.md). Publish pipeline artifact | Azure Pipelines |
 | ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | Azure Pipelines |
 | ![icon](utility/_img/pythonscript.png) [Python Script](utility/python-script.md). Run a Python script. | Azure Pipelines |
 | ![icon](utility/_img/azure-monitor.png) [Query Azure Monitor Alerts](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | Azure Pipelines |

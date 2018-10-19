@@ -40,7 +40,7 @@ If your organization uses an Azure subscription to bill purchases, you must firs
 To remove billing from your organization, you must be a project collection administrator.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. In the search box, enter *Azure DevOps Services*. In the list, select **Azure DevOps Services organizations**.
+2. In the search box, enter *Azure DevOps*. In the list, select **Azure DevOps Services organizations**.
 3. Select the organization you are deleting.
 4. Choose **Remove billing**. Your Azure subscription is removed from your organization.
 
