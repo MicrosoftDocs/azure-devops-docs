@@ -224,10 +224,10 @@ We recommend that you create a test project and apply your customized inherited 
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
  
-0. Create a test Azure DevOps Services organization.  
-0. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
-0. Verify the process customizations in the test organization.   
-0. Use the import/export process tool again to import the modified process to the production organization.  
+1. Create a test organization.  
+2. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
+3. Verify the process customizations in the test organization.   
+4. Use the import/export process tool again to import the modified process to the production organization.  
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 

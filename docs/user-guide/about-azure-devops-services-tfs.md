@@ -94,13 +94,13 @@ See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 
 To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some problems, but we plan to address these problems when the organization entity is introduced. In particular, the following scenarios:
 
-- You purchase Azure DevOps Services users per organization, meaning that paid users can access only the organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option because subscribers can be added to any number of Azure DevOps Services organizations at no charge. We're also considering other ways to make access available to multiple organizations that are grouped into a single organization.
+- You purchase Azure DevOps Services users per organization, meaning that paid users can access only the organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option because subscribers can be added to any number of organizations at no charge. We're also considering other ways to make access available to multiple organizations that are grouped into a single organization.
 
 - You currently have to administer organizations one at a time. This process can be cumbersome when you have many organizations.
 
 <!---We're working to support enterprise-wide policies.-->
 
-Learn more: [Define your Azure DevOps Services organizations and projects](define-organizations-and-projects.md).
+Learn more: [Define your organizations and projects](define-organizations-and-projects.md).
 
 <a name="authentication"></a>
 
@@ -112,7 +112,7 @@ With Azure DevOps Services, you connect over the public internet (for example, `
 [Azure AD](/azure/active-directory/active-directory-whatis)  
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
-We recommend that you configure your Azure DevOps Services organizations to use Azure AD rather than
+We recommend that you configure your organizations to use Azure AD rather than
 Microsoft accounts. This method provides a better experience in many scenarios and more options for enhanced security.
 
 Learn more: [Access Azure DevOps Services with Azure Active Directory](../organizations/accounts/access-with-azure-ad.md).
@@ -147,7 +147,7 @@ To give Basic access to more users, you need to [set up billing](../organization
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to provide access to groups of users, Azure DevOps Services assigns the appropriate
-access levels automatically when they sign in for the first time. For Azure DevOps Services organizations that are configured to use Microsoft accounts for sign-in, you have to assign access levels to each user explicitly.
+access levels automatically when they sign in for the first time. For organizations that are configured to use Microsoft accounts for sign-in, you have to assign access levels to each user explicitly.
 
 <a name="security-data"></a>
 
