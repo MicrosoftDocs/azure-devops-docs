@@ -84,7 +84,7 @@ Take the following steps in GitHub:
 
 1. Go back to the list of files and select the `Readme.md` file. Then choose **Edit**.
 
-1. Copy the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
+1. Paste the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
 
 1. Commit the change to the master branch.
 

@@ -112,4 +112,12 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
 
+### Variable groups in a build or release
+
+* When a new instance of a build or release is created from a pipeline definition,
+  the values of the variables from the linked variable group are copied to the build or release. 
+* To override the values of variables in the variable group you must create a variable with the
+  same name within the build or release pipeline. A variable in the pipeline overrides a variable
+  with the same name in the variable group.
+
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
