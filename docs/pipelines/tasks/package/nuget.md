@@ -71,7 +71,7 @@ None
         <td>restoreSolution</td>
         <td>
             Path to solution, packages.config, or project.json
-            
+            <br/>
             Copy the **Solution** argument in your [Visual Studio Build step](../../tasks/build/visual-studio-build.md) and paste it
             here, or create a link using the Link button in the information panel.
         </td>
@@ -83,7 +83,7 @@ None
         <td>feedsToUse</td>
         <td>
             Feeds to use
-            
+            <br/>
             **Feed(s) I select here:**
             <ul>
                 <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
@@ -101,20 +101,31 @@ None
         <th style="text-align: center" colspan="2">Advanced</th>
     </tr>
     <tr>
-        <td>Disable local cache</td>
+        <td>includeNuGetOrg</td>
         <td>
+            true | false<br/><br/>
+            Wether to include the public nuget.org repository in the restore process.<br/><br/>
+            Default is true.
+        </td>
+    </tr>
+    <tr>
+        <td>noCache</td>
+        <td>
+            Disable local cache
             Prevents NuGet from using packages from local machine caches.
         </td>
     </tr>
     <tr>
-        <td>Destination directory</td>
+        <td>restoreDirectory</td>
         <td>
+            Destination directory
             Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json.
         </td>
     </tr>
     <tr>
-        <td>Verbosity</td>
+        <td>verbosityRestore</td>
         <td>
+            Verbosity
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
