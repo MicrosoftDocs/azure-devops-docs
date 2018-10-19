@@ -129,7 +129,7 @@ Before you begin, do the following:
 
 2. Select **All services** and then **Azure DevOps Services organizations**.
 
-   ![All services, Azure DevOps Services organizations](_img/_shared/azure-portal-team-services-administration.png)
+   ![All services, Azure DevOps organizations](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.  
     If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the organization.

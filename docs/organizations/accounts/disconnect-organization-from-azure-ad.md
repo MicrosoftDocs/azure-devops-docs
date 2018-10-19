@@ -46,7 +46,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 2. Select **All services**, and then **Azure DevOps Services organizations**.
 
-   ![Select Azure DevOps Services organizations in the Azure portal](_img/_shared/azure-portal-team-services-administration.png)
+   ![Select Azure DevOps organizations in the Azure portal](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.
 
