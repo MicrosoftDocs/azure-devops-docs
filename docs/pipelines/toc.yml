@@ -371,6 +371,8 @@
         href: tasks/utility/download-secure-file.md
       - name: Download Build Artifacts
         href: tasks/utility/download-build-artifacts.md
+      - name: Download Pipeline Artifact
+        href: tasks/utility/download-pipeline-artifact.md
       - name: Download Fileshare Artifacts
         href: tasks/utility/download-fileshare-artifacts.md
       - name: Download Package
@@ -397,6 +399,8 @@
         href: tasks/utility/powershell.md
       - name: Publish Build Artifacts
         href: tasks/utility/publish-build-artifacts.md
+      - name: Publish Pipeline Artifact
+        href: tasks/utility/publish-pipeline-artifact.md
       - name: Publish to Azure Service Bus
         href: tasks/utility/publish-to-azure-service-bus.md
       - name: Python Script
