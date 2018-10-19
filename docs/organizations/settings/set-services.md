@@ -22,7 +22,7 @@ You can control which services are available through the web portal by turning a
 
 ## Prerequisites
 
-- You must have an Azure DevOps Services organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- You must have an Azure DevOps organization. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 
 ## Change the visibility for a service  
@@ -34,7 +34,7 @@ The ability to turn services on or off is supported when you [enable **New Navig
 
 # [New navigation](#tab/new-nav)  
 
-0. Choose **Project Settings** in the sidebar.
+1. Choose **Project Settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  

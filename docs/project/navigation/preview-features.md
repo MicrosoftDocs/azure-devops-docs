@@ -26,7 +26,7 @@ Some features provide a new user interface and functionality, which can be manag
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to TFS. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 > [!div class="mx-tdBreakAll"]  
-> |[Preview features per user](#user-level)| [Preview features per Azure DevOps Services organization](#account-level)|  
+> |[Preview features per user](#user-level)| [Preview features per Azure DevOps organization](#account-level)|  
 > |-------------|----------|  
 > |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
 
@@ -38,7 +38,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 # [New navigation](#tab/new-nav)
 
-0. To access the Preview features options, open your profile menu, and select **Preview features**. 
+1. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)

@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 09/24/2018
