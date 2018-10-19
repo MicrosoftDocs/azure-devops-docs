@@ -214,7 +214,7 @@ You can locate the executable in the following folder: *Drive*:\\Program Files (
 
 ## Connect from Microsoft Excel or Project
 
-To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps Services organization or selected TFS, project collection, and project to exchange information. 
+To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps organization or selected TFS, project collection, and project to exchange information. 
  
 
 > [!NOTE]  
@@ -238,11 +238,11 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
-4.  Connect to an Azure DevOps Services organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
+4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
 
     ![Connect to server](../../boards/backlogs/office/_img/IC680074.png)
 
-    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps Services organization or TFS server to the list of recognized servers.
+    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
 
     ![Add organization or server](../../boards/backlogs/office/_img/IC658167.png)
 

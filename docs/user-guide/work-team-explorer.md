@@ -93,11 +93,12 @@ From the **Connect** page, you can select the projects you want to connect to an
 Open [Web portal](../project/navigation/index.md) 
 Open [Task Board](../boards/sprints/task-board.md)  
 
-### Souce control: Git and TFVC 
+### Source control: Git and TFVC
 
 The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
 
-####  Git
+#### Git
+
 - [Create a new repo](../repos/git/creatingrepo.md)  
 - [Clone an existing repo](../repos/git/clone.md)  
 - **Changes**: [Save work with commits](../repos/git/commits.md)
@@ -110,10 +111,10 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 - [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)  
 - **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
 - **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
-- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) 
-
+- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md)
 
 ### Work items
+
 - [Add work items](../boards/backlogs/add-work-items.md)
 - [Use the query editor to list and manage queries](../boards/queries/using-queries.md)
 - [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)
@@ -122,16 +123,18 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 - [Email query results list using Outlook](../boards/queries/share-plans.md)
 - [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only)
 
-### Builds 
+### Builds
+
 - [Create build pipelines](../pipelines/tasks/index.md)
 - [View and manage builds](../pipelines/overview.md)
 - [Manage the build queue](../pipelines/agents/pools-queues.md)
 
 > [!NOTE]  
-> If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
+> If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 ### Report and Document pages 
 
 The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
@@ -146,24 +149,24 @@ If your project is missing one or more pages, you may be able to [add functional
 
 From the **Settings** page, you can configure administrative features for either a project or project collection. Configuring features in these areas requires you to be a member of a an administrator group or have the required permissions.
 
-Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
+Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse.
 
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
 
 ## Clients that connect to Azure DevOps Services and TFS
 
-In addition to connecting through Team Explorer, you can connect to a project from the following clients: 
+In addition to connecting through Team Explorer, you can connect to a project from the following clients:
 
-- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json) 
+- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
-- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md) 
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
 - [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Office Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json) 
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)   
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
 
 
 ## Related articles
@@ -177,12 +180,9 @@ In addition to connecting through Team Explorer, you can connect to a project fr
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
--   To refresh a page that you are currently viewing, choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-
--   To refresh the project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-
--   To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-
+- To refresh a page that you are currently viewing, choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+- To refresh the project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
 

@@ -404,7 +404,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>[Change application access policies](../accounts/change-application-access-policies.md) </li>
 </ul></td>
-<td>Set policies to allow or disallow access by other applications or services to the  Azure DevOps Services organization. </td>
+<td>Set policies to allow or disallow access by other applications or services to the organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
