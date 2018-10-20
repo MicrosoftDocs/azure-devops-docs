@@ -89,7 +89,7 @@ Optionally, customize the value of **rootFolderOrFile** to alter what is include
   inputs:
     rootFolderOrFile: '$(system.defaultWorkingDirectory)'
     includeRootFolder: false
-- task: PublishBuildArtifacts@1'
+- task: PublishBuildArtifacts@1
 ```
 
 ## Build a container image
