@@ -90,6 +90,29 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="20">[22 October 2018](2018/sprint-142-update.md)</td>
+            <td>New navigation is on for all users</td><td>N/A</td>
+        </tr>
+        <tr><td>Dark Theme</td><td>*2019*</td></tr>
+        <tr><td>Organize reference materials with richer work item attachments</td><td>*2019*</td></tr>
+        <tr><td>Manage dependencies by linking work items across your Organizations</td><td>*2019*</td></tr>
+        <tr><td>Open work items from search</td><td>*2019*</td></tr>
+        <tr><td>Extension authors can query context about the current repo</td><td>*2019*</td></tr>
+        <tr><td>Add custom build counters to your builds</td><td>*2019*</td></tr>
+        <tr><td>Use YAML to specify branches to build for pull requests</td><td>*2019*</td></tr>
+        <tr><td>Use YAML template expressions inline</td><td>*2019*</td></tr>
+        <tr><td>Improve troubleshooting with the pipeline initialization log</td><td>*2019*</td></tr>
+        <tr><td>Default retention for YAML pipelines</td><td>N/A</td></tr>
+        <tr><td>Build on Linux/ARM and Windows 32-bit platforms</td><td>*2019*</td></tr>
+        <tr><td>Clone variable groups</td><td>*2019*</td></tr>
+        <tr><td>See commits and work items for all linked sources</td><td>*2019*</td></tr>
+        <tr><td>Run from Package supported in Azure App Service deployments</td><td>*2019*</td></tr>
+        <tr><td>Deploy Linux containers with the App Server Deploy task</td><td>*2019*</td></tr>
+        <tr><td>Azure Test Runner runs manual tests for desktop applications</td><td>*2019*</td></tr>
+        <tr><td>Public preview of Pipeline Artifacts</td><td>*2019*</td></tr>
+        <tr><td>Publish code as wiki with Contribute permissions</td><td>*2019*</td></tr>
+        <tr><td>PATs enforce CAP</td><td>N/A</td></tr>
+        <tr>
             <td rowspan="10">[1 October 2018](2018/sprint-141-update.md)</td>
             <td>Azure Policy compliance and security validations in Pipelines</td><td>*2019*</td>
         </tr>
