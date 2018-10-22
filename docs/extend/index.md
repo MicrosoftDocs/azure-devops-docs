@@ -47,7 +47,7 @@ Develop Azure DevOps Services extension with continuous delivery pipeline:
 
 ## Reference
 * [Manifest reference](develop/manifest.md)
-* [Build task reference](develop/build-task-schema.md)
+* [Build task reference](develop/integrate-build-task.md)
 * [Endpoint authentication schemes](develop/auth-schemes.md)
 * [Content hosting](develop/static-content.md)
 * [Modal dialog](develop/using-host-dialog.md)
