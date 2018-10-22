@@ -76,6 +76,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/extend/develop/build-task-schema.md",
+      "redirect_url": "/azure/devops/extend/develop/integrate-build-task",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/package/concepts/views.md",
       "redirect_url": "/azure/devops/artifacts/concepts/views",
       "redirect_document_id": true
