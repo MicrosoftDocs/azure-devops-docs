@@ -8,7 +8,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.manager: chcomley
 ms.author: chcomley
 ms.topic: troubleshooting
-ms.date: 09/28/2018
+ms.date: 10/22/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -25,9 +25,9 @@ Do you need to do any of the following?:
 
 * **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [TFS](http://stackoverflow.com/questions/tagged/tfs).
 
-* **Report a bug** Submit it through our Developer Community for [Azure DevOps or TFS](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
+* **Report a bug** Submit it through our Developer Community for [Azure DevOps](https://developercommunity.visualstudio.com/spaces/21/index.html) or [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
-* **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).
+* **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [TFS](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
 
 * **Find out what's new in Azure DevOps Services** Check out the [current Azure DevOps Services Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 
@@ -46,7 +46,6 @@ For technical support:
 For billing support:
 
 * [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) (from the Azure Support Portal)
-
 
 ### Get live help
 
@@ -77,7 +76,7 @@ The more details, the better!
 
 ## What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to Azure DevOps Services or TFS. 
+You can tell what platform you use from the URL you use to connect to Azure DevOps Services or TFS.
 
 **Azure DevOps Services**
 
