@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2018
+ms.date: 10/22/2018
 monikerRange: 'vsts'
 ---
 # Disconnect your Azure DevOps organization from Azure Active Directory
@@ -25,7 +25,7 @@ For more information, see the [Conceptual overview](access-with-azure-ad.md) for
 
 * Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
 
-* [Microsoft accounts](`https://signup.live.com/`) for all users in your organization, including yourself as organization owner.
+* [Microsoft accounts](`https://signup.live.com/?lic=1`) for all users in your organization, including yourself as organization owner.
 
 * [Organization ownership](faq-change-app-access.md#find-owner) for your Microsoft account. 
 
