@@ -192,7 +192,7 @@ For instance, assuming that we had a property in the endpoint named subscription
 The `task.json` file describes your build task.
 
 > [!NOTE]
-> Take a look at the [build task reference](./build-task-schema.md) to find the schema for the build task json file. 
+> Take a look at the [build task reference](./integrate-build-task.md) to find the schema for the build task json file. 
 
 Create a `task.json` file in your `BuildTaskFolder` directory, if you have not created this folder yet, do so now. 
 
