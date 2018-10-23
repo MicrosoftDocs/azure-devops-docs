@@ -1,19 +1,17 @@
 - name: Azure Pipelines
   href: index.md
 - name: Overview
+  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
+  expanded: true
   items:
-  - name: Start using Build and Release
-    href: overview.md
-  - name: Start using Azure Pipelines
-    href: get-started/index.md
   - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
+    href: get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+  - name: How to use Azure Pipelines
+    href: get-started/pipelines-get-started.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: Get started with Azure Pipelines
-    href: get-started/pipelines-get-started.md
+    href: get-started/pipelines-sign-up.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+    href: get-started/key-pipelines-concepts.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Create your first pipeline
