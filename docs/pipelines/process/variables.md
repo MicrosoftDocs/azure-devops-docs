@@ -164,7 +164,7 @@ jobs:
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016''
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
