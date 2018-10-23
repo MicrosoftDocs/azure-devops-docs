@@ -105,7 +105,7 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 
 To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
 
-To change the markup of your YAML file, see [YAML schema documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema). 
+To change the markup of your YAML file, see [YAML schema reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema). 
 
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
