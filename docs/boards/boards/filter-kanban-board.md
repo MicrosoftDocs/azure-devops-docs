@@ -2,8 +2,7 @@
 title: Filter your Kanban board 
 titleSuffix: Azure Boards and TFS
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
-ms.global_help.title: Filter your board
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 4    
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

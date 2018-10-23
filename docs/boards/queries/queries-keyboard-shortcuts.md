@@ -2,6 +2,7 @@
 title: Keyboard shortcuts for work item queries
 titleSuffix: Azure Boards and TFS
 description: Use keyboard shortcuts to interact with query results and query lists in Azure Boards & Team Foundation Server  
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

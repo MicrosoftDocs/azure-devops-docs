@@ -2,6 +2,7 @@
 title: Query by title, ID, or rich-text fields 
 titleSuffix: Azure Boards and TFS
 description: Example work queries based on titles, IDs, rich-text fields in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
