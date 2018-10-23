@@ -6,8 +6,8 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'vsts'
 ms.date: 09/05/2018

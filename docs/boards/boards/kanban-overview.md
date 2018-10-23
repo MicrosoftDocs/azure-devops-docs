@@ -2,6 +2,7 @@
 title: About boards and Kanban  
 titleSuffix: Azure Boards and TFS
 description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards & Team Foundation Server   
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

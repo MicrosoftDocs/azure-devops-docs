@@ -1,7 +1,8 @@
 ---
 title: Backlogs, portfolios, stack rank or backlog priority, and multi-team ownership 
 titleSuffix: Azure Boards and TFS 
-description: Use the web portal to plan and track work  
+description: Use the web portal to plan and track work 
+ms.custom: boards-backlogs 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4

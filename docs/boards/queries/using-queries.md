@@ -2,6 +2,7 @@
 title: Create managed queries with the Query Editor
 titleSuffix: Azure Boards and TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
