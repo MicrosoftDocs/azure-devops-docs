@@ -2,8 +2,7 @@
 title: Customize cards on a board
 titleSuffix: Azure Boards and TFS
 description: Customize cards on the Kanban or Sprint/Scrum/taskboards in Azure Boards & Team Foundation Server 
-ms.global_help.title: Customize cards
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F

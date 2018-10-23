@@ -2,7 +2,7 @@
 title: Adjust sprint plan based on team capacity 
 titleSuffix: Azure Boards and TFS
 description: Change work items assigned to a sprint or iteration working with Scrum methods 
-ms.custom: Uses the New Navigation
+ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
