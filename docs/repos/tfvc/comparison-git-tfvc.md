@@ -99,7 +99,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See [Use Git branches to switch contexts, suspend work, and isolate risk](https://docs.microsoft.com/en-us/azure/devops/repos/git/branches?view=vsts&tabs=visual-studio#use-branches-to-manage-development).</p>
+<p>See [Use Git branches to switch contexts, suspend work, and isolate risk](https://docs.microsoft.com/azure/devops/repos/git/branches?view=vsts&tabs=visual-studio#use-branches-to-manage-development).</p>
 </td>
 </tr>
 <tr>
