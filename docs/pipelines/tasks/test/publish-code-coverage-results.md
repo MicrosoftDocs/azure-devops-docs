@@ -1,5 +1,5 @@
 ---
-title: Publish Code Coverage Results from an Azure Pipelines or TFS build
+title: Publish Code Coverage Results task
 titleSuffix: Azure Pipelines & TFS
 description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
@@ -12,14 +12,17 @@ ms.date: 08/31/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Publish Code Coverage Results
+# Publish Code Coverage Results task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/publish-code-coverage-results-icon.png)
-This task publishes code coverage results to Azure pipelines or TFS, which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. In addition there are built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md) that provide the option to publish code coverage data to the pipeline.
+Use this task in a build pipeline to publish code coverage results to Azure Pipelines or TFS,
+which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
+In addition, there are built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md),
+[Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md)
+that provide the option to publish code coverage data to the pipeline.
 
-Example below shows **Ant** task with the option to publish code coverage data in Cobertura or JaCoCo format.
+The example below shows the **Ant** task with the option to publish code coverage data in Cobertura or JaCoCo format.
 
 ![Publish code coverage results ant](_img/publish-code-coverage-result-ant.png)
 
