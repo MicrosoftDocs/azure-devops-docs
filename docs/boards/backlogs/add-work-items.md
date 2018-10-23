@@ -49,7 +49,7 @@ Here we show how to add work items from the web portal.
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
+	![Agile process, User story work item form](_img/add-new-work-item-vsts-user-story.png   
 
 	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
