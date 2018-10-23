@@ -417,6 +417,8 @@
       items:
       - name: App Center Test
         href: tasks/test/app-center-test.md
+      - name: Cloud-based Apache JMeter Load Test
+        href: tasks/test/run-jmeter-load-test.md
       - name: Cloud-based Load Test
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
@@ -427,14 +429,10 @@
         href: tasks/test/publish-test-results.md
       - name: Run Functional Tests
         href: tasks/test/run-functional-tests.md
-      - name: Run Apache JMeter Load Test
-        href: tasks/test/run-jmeter-load-test.md
       - name: Visual Studio Test
         href: tasks/test/vstest.md
       - name: Visual Studio Test Agent Deployment
         href: tasks/test/visual-studio-test-agent-deployment.md
-      - name: Xamarin Test Cloud
-        href: tasks/test/xamarin-test-cloud.md
     - name: Package tasks
       items:
       - name: CocoaPods
