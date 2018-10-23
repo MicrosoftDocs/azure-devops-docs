@@ -20,17 +20,17 @@ monikerRange: 'vsts'
 
    ![Start free with Azure Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
 
-   Or if you've already [signed up for Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md), from your new project page, select **Azure Pipelines**.
+   If you already [signed up for Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md), on your new project page, select **Azure Pipelines**.
 
    ![New project, select Azure Pipelines](../_img/new-project-select-pipelines.png)
 
-2. Select the location of your code, **GitHub** or **Azure Repos**.
+2. Select the location of your code, either **GitHub** or **Azure Repos**.
 
    ![New build Azure Pipelines, select where your code is hosted](../_img/new-build-pipelines.png)
 
-3. Grant Azure Pipelines permission to access your GitHub repositories by selecting  **Authorize** to authorize with OAuth, or **Install our app from the GitHub Marketplace**.
+3. Grant Azure Pipelines permission to access your GitHub repositories. Select **Authorize** to authorize with OAuth, or select **Install our app from the GitHub Marketplace**.
 
-   ![choose-authorize-with-oauth.png](../_img/choose-authorize-with-oauth.png)
+   ![Choose authorize with oauth](../_img/choose-authorize-with-oauth.png)
 
    ![GitHub fetching repositories](../_img/github-fetching-repositiories.png)
 
@@ -38,19 +38,19 @@ monikerRange: 'vsts'
 
     ![Select repository](../_img/select-repository-pipelines.png)
 
-    ![Analyzing repository to recommend template](../_img/analyzing-repository-to-recommend-template.png)
+    ![Analyze repository to recommend template](../_img/analyzing-repository-to-recommend-template.png)
 
-5. Choose a template.
+5. Select a template.
 
-   ![Choose a template](../_img/choose-template.png)
+   ![Select a template](../_img/choose-template.png)
 
-6. Choose **Save and run**.
+6. Select **Save and run**.
 
    ![Save and run Azure Pipelines](../_img/save-and-run-azure-pipelines.png)
 
-7. Select to either commit directly to the master branch or create a new branch for this commit and start a pull request.
+7. Select to commit directly to the master branch. Or select to create a new branch for this commit and start a pull request.
 
-   ![Commit to master of create a new branch](../_img/commit-to-master-or-create-new-branch.png)
+   ![Commit to master or create a new branch](../_img/commit-to-master-or-create-new-branch.png)
 
 
 ## Next steps

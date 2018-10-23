@@ -1,7 +1,7 @@
 ---
-title: Azure Pipelines and Team Foundation Server Build and Test - Xamarin Test Cloud
+title: Xamarin Test Cloud task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can use Xamarin Test Cloud when you are building your code in Azure Pipelines and Team Foundation Server (TFS) 
+description: This task is deprecated. Use the App Center Test task instead. 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Test: Xamarin Test Cloud
+# Xamarin Test Cloud task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-test-cloud-icon.png) Test mobile apps with Xamarin Test Cloud using Xamarin.UITest
+This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
 >**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest) task instead.
 
