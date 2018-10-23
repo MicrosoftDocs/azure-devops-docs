@@ -1,5 +1,5 @@
 ---
-title: App Center Test
+title: App Center Test task
 titleSuffix: Azure Pipelines & TFS
 description: Test app packages with Visual Studio App Center.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Test: App Center Test
+# App Center Test task
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
-![](_img/appcentertest.png) Test app packages with Visual Studio App Center.
+Use this task in a build or release pipeline to test app packages with Visual Studio App Center.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
