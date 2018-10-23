@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines and TFS Build and Test - Publish Test Results task
+title: Publish Test Results task
 titleSuffix: Azure Pipelines & TFS
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
@@ -13,20 +13,18 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Publish Test Results
+# Publish Test Results task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+Use this task in a build or release pipeline to publish test results to Azure Pipelines or TFS when tests are
+executed using your choice of runner, and when results are available in any of the supported result formats.
 
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 
 ::: moniker-end
-
-![icon](_img/publish-test-results-icon.png)
-This task publishes test results to Azure Pipelines or TFS when tests are
-executed using your choice of runner, and when results are available in any of the
-supported result formats.
 
 The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
