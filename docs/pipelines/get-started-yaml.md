@@ -105,6 +105,8 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 
 To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
 
+To change the markup of your YAML file, see [YAML documentation] {to do}. 
+
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
 For details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
