@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines and TFS Build and Test - Cloud-based Web Performance Test
+title: Cloud-based Web Performance Test task
 titleSuffix: Azure Pipelines & TFS
 description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
@@ -13,24 +13,17 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Cloud-based Web Performance Test
+# Cloud-based Web Performance Test task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+Use this task in a build or release pipeline to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
+The task generates load against an application URL
+using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
-
-![icon](_img/web-based-perf-icon.png)
-Runs the Quick Web Performance Test with Azure Pipelines.
-
-The task can be used in a build or release 
-pipeline to generate load against an application URL
-using the Azure Pipelines Cloud-based Load Test Service.
-The Cloud-based Load Test Service is based in
-Microsoft Azure and can be used to test your app's 
-performance by generating load on it, and verify it
-exists and is responsive.
 
 ## Demands
 
