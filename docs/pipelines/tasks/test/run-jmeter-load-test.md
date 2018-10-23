@@ -1,5 +1,5 @@
 ---
-title: Cloud-based Apache JMeter Load Test
+title: Cloud-based Apache JMeter Load Test task
 titleSuffix: Azure Pipelines & TFS
 description: Runs the Apache JMeter load test in cloud
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Test: Cloud-based Apache JMeter Load Test
+# Cloud-based Apache JMeter Load Test task
 
 **Azure Pipelines**
 
-![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
+Use this task in a build or release pipeline to run Apache JMeter load tests in the cloud.
 
 ## Demands
 
