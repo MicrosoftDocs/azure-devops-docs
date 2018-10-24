@@ -2,6 +2,7 @@
 title: Navigate to an application or functional area
 titleSuffix: Azure DevOps Services & TFS   
 description: Access the application area or change your view
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 

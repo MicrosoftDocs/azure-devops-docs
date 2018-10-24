@@ -1,9 +1,8 @@
 ---
 title: View & add work items from the Work Items page
 titleSuffix: Azure Boards and TFS
-description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
-ms.global_help.title: View & add work items
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 1 
+description: Use the Work Items page to view and add work items that support 7 personalized pivot views      
+ms.custom: boards-work-items
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -13,20 +12,15 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
 ms.author: kaelli
 ms.topic: quickstart
-monikerRange: '>= tfs-2018'
-ms.date: 09/19/2018
+monikerRange: 'vsts'
+ms.date: 10/19/2018
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | TFS 2018.2**  
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
 View work items that you created or are assigned to you. The **Boards>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
-
-::: moniker range=">= tfs-2018"
-> [!NOTE]     
-> The **Work Items** page is available from TFS 2018.2 and later versions. 
-::: moniker-end  
 
 ## Prerequisites 
 
@@ -43,17 +37,11 @@ You can start viewing and adding work items once you connect to a project.
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="vsts"
+
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Boards>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -122,7 +110,7 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
+> ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 
@@ -150,7 +138,17 @@ You can sort your view by one of the column fields that you select from the **Vi
 </tbody>
 </table>
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
+
+## Capture comments in the Discussion section 
+
+Use the [Discussion section](/azure/devops/boards/work-items/work-item-form-controls#discussion) to add and review comments made about the work being performed. 
+
+> [!div class="mx-imgBorder"]  
+> ![Discussion section within a work item form](/azure/devops/boards/backlogs/_img/discussion-section.png)   
+
+Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
+
+
 
 ## Copy selected items to the clipboard or email them
 

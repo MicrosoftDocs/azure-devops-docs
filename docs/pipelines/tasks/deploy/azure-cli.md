@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure CLI
+title: Azure CLI task
 titleSuffix: Azure Pipelines & TFS
 description: Azure Pipelines and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
@@ -13,17 +13,17 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure CLI
+# Azure CLI task
 
 **Azure Pipelines**
 
-![icon](_img/azure-cli-icon.png) Run a shell or batch 
+Use this task in a build or release pipeline to run a shell or batch 
 script containing Azure CLI commands against an Azure subscription.
 
 This task is used to run Azure CLI commands on 
 cross-platform agents running on Linux, macOS, or Windows operating systems.
  
-The task is under development. If you encounter problems, or wish to
+This task is under development. If you encounter problems, or wish to
 share feedback about the task and features you would like to see,
 please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 
@@ -34,8 +34,8 @@ please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 - To work with [Azure CLI 1.0](/azure/cli-install-nodejs), which is node based, switch to task version 0.0
 - Both versions of Azure-CLI can coexist in the same system, but task V1.0 logs into the Python based AZ CLI using the user's subscription, whereas task V0.0 logs into the node based Azure CLI. Therefore, scripts should include only the appropriate corresponding commands.
 - Limitations:
-	- No support for Classic subscriptions. AZ CLI 2.0 supports only Azure Resource Manager (ARM) subscriptions
-	- Currently, Microsoft-hosted agents do not have AZ CLI installed. You can either install using `npm install -g azure-cli` or use self-hosted agents with AZ CLI pre-installed
+  - No support for Classic subscriptions. AZ CLI 2.0 supports only Azure Resource Manager (ARM) subscriptions
+  - Currently, Microsoft-hosted agents do not have AZ CLI installed. You can either install using `npm install -g azure-cli` or use self-hosted agents with AZ CLI pre-installed
 
 ## Demands
 
@@ -87,5 +87,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

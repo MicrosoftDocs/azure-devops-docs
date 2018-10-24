@@ -10,7 +10,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
-38195423-A9B7-4C5B-8FA2-F9DA5C97DB1F
+
 
 # WorkItem.PartialOpen Method
 

@@ -2,6 +2,7 @@
 title: Burndown guidance
 titleSuffix: Azure DevOps & TFS  
 description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
+ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual

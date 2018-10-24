@@ -469,10 +469,10 @@
         href: tasks/deploy/azure-rm-web-app-deployment.md
       - name: Azure App Service Manage
         href: tasks/deploy/azure-app-service-manage.md
-      - name: Azure Cloud PowerShell Deployment
-        href: tasks/deploy/azure-cloud-powershell-deployment.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
+      - name: Azure Cloud PowerShell Deployment
+        href: tasks/deploy/azure-cloud-powershell-deployment.md
       - name: Azure File Copy
         href: tasks/deploy/azure-file-copy.md
       - name: Azure Key Vault
@@ -485,10 +485,12 @@
         href: tasks/deploy/azure-powershell.md
       - name: Azure Resource Group Deployment
         href: tasks/deploy/azure-resource-group-deployment.md
-      - name: Azure RM Web App Deployment
-        href: tasks/deploy/azure-rm-web-app-deployment.md
+      - name: Azure SQL Database Deployment
+        href: tasks/deploy/sql-azure-dacpac-deployment.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
+      - name: Build Machine Image (Packer)
+        href: tasks/deploy/packer-build.md
       - name: Chef
         href: tasks/deploy/chef.md
       - name: Chef Knife
@@ -501,28 +503,24 @@
         href: tasks/build/docker-compose.md
       - name: Helm Deploy
         href: tasks/deploy/helm-deploy.md
-      - name: IIS Web App Deployment on Machine Group
+      - name: IIS Web App Deploy (Machine Group)
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
-      - name: IIS Web App Management on Machine Group
+      - name: IIS Web App Manage (Machine Group)
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
       - name: Kubernetes (kubectl)
         href: tasks/deploy/kubernetes.md
-      - name: Packer Build
-        href: tasks/deploy/packer-build.md
       - name: PowerShell on Target Machines
         href: tasks/deploy/powershell-on-target-machines.md
       - name: Service Fabric App Deployment
         href: tasks/deploy/service-fabric-deploy.md
       - name: Service Fabric Compose Deploy
         href: tasks/deploy/service-fabric-compose-deploy.md
-      - name: SQL Azure DACPAC Deployment
-        href: tasks/deploy/sql-azure-dacpac-deployment.md
-      - name: SQL DACPAC Deployment on Machine Group
-        href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
       - name: SSH
         href: tasks/deploy/ssh.md
       - name: Windows Machine File Copy
         href: tasks/deploy/windows-machine-file-copy.md
+      - name: WinRM SQL Server DB Deployment
+        href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
     - name: Tool tasks
       items:
       - name: Go Tool Installer

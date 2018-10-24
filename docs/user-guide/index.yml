@@ -27,7 +27,7 @@ sections:
   - html: Note <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps Services</a>. 
 - title:
   items:
-  - html: To access our full content set, choose the <a href=index.md>Azure DevOps & TFS</a> breadcrumb link to the top left of this page.
+  - html: To access our full content set, choose the <a href=index.md>Azure DevOps and TFS</a> breadcrumb link at the top left of this page.
 - title: 
   items:
   - type: list
@@ -81,16 +81,16 @@ sections:
         html: <p></p>
         image:
           title: Quickstart plan and track work
-          alt: Quick start logo
+          alt: Quickstart logo
           src: https://docs.microsoft.com/media/common/i_quick-start.svg
-        title: Plan & track work
+        title: Plan and track work
       - href: add-run-manual-tests.md
         html: <p></p>
         image:
           title: Add and run manual tests
           alt: Test logo
           src: https://docs.microsoft.com/media/common/i_test.svg
-        title: Add & run manual tests
+        title: Add and run manual tests
       - href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
@@ -108,8 +108,8 @@ sections:
       - href:  project-admin-tutorial.md
         html: <p></p>
         image:
-          title: Get started administrator
-          alt: Account management logo
+          title: Get started as an administrator
+          alt: Organization management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Get started as an admin
 
@@ -133,21 +133,21 @@ sections:
           title: Follow pull requests
           alt: Pull request logo
           src: https://docs.microsoft.com/media/common/i_pull-request.svg
-        title: Follow work & pull requests
+        title: Follow work and pull requests
       - href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Get started stakeholder
-          alt: Account management logo
+          title: Get started as a Stakeholder
+          alt: Organization management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Get started as a Stakeholder
       - href: ../organizations/accounts/add-organization-users.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Configure teams, manage users
+          title: Configure teams and manage users
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-        title: Add & manage users
+        title: Add and manage users
       - href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
@@ -173,7 +173,7 @@ sections:
       - href: concepts.md
         html: <p></p>
         image:
-          title: Concepts Azure DevOps Services user guide
+          title: Concepts in the Azure DevOps Services user guide
           alt: Learn about logo
           src: https://docs.microsoft.com/media/common/i_learn-about.svg
         title: Key concepts
@@ -181,34 +181,34 @@ sections:
         html: <p></p>
         image:
           title: Define projects and organizations
-          atl: Guidelines logo
+          alt: Guidelines logo
           src: https://docs.microsoft.com/media/common/i_guidelines.svg
         title: Define organizations and projects
       - href: source-control.md
         html: <p></p>
         image:
-          title: Source control Azure DevOps
+          title: Source control for Azure DevOps
           alt: Code logo
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
       - href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Agile tools, backlogs, and boards Azure DevOps
+          title: Agile tools, backlogs, and boards for Azure DevOps
           alt: Kanban logo
           src: https://docs.microsoft.com/media/common/i_kaban.svg
-        title: Boards, backlogs, & Agile tools
+        title: Boards, backlogs, and Agile tools
       - href: tools.md
         html: <p></p>
         image:
-          title: Tools and clients Azure DevOps
+          title: Tools and clients for Azure DevOps
           alt: Tools logo
           src: https://docs.microsoft.com/media/common/i_tools.svg
-        title: Clients & tools
+        title: Clients and tools
       - href: roles.md
         html: <p></p>
         image:
-          title: Role in software development Azure DevOps
+          title: Roles in software development with Azure DevOps
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
@@ -230,10 +230,10 @@ sections:
       - href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Sign in to web or client Azure DevOps
+          title: Sign in to web or client for Azure DevOps
           alt: Http logo
           src: https://docs.microsoft.com/media/common/i_http.svg
-        title: Sign in - web portal or client
+        title: Sign in with the web portal or a client
 
 - title: Reference
   items:
@@ -245,14 +245,14 @@ sections:
       - href: ../security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Default access and permissions Azure DevOps
+          title: Default access and permissions for Azure DevOps
           alt: Overview logo
           src: https://docs.microsoft.com/media/common/i_overview.svg
-        title: Default permissions & access
+        title: Default permissions and access
       - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Users access levels Azure DevOps
+          title: Users access levels in Azure DevOps
           alt: Protect logo
           src: https://docs.microsoft.com/media/common/i_protect.svg
         title: About access levels
@@ -266,7 +266,7 @@ sections:
       - href: ../project/navigation/index.md
         html: <p></p>
         image:
-          title: Navigation in Azure DevOps web portal
+          title: Navigation in the Azure DevOps web portal
           alt: Portal logo
           src: https://docs.microsoft.com/media/common/i_portal.svg
         title: Web portal navigation
@@ -276,12 +276,12 @@ sections:
           title: Azure DevOps security and identity
           alt: Security management logo
           src: https://docs.microsoft.com/media/common/i_security-management.svg
-        title: Security & identity
+        title: Security and identity
       - href: ../organizations/projects/index.md
         html: <p></p>
         image:
           title: Manage Azure DevOps projects
-          alt: management logo
+          alt: Management logo
           src: https://docs.microsoft.com/media/common/i_management.svg
         title: Manage projects
       - href: ../organizations/billing/index.md
@@ -295,7 +295,7 @@ sections:
         html: <p></p>
         image: 
           title: Azure DevOps organization management
-          alt: Management icon
+          alt: Management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Manage organizations
       - href: https://docs.microsoft.com/visualstudio

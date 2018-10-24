@@ -2,6 +2,7 @@
 title: Switch project, repository, or team
 titleSuffix: Azure DevOps Services & TFS
 description: Open another project or repository for Azure DevOps Services and Team Foundation Server
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 

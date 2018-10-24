@@ -2,6 +2,7 @@
 title: Cycle time and lead time control charts
 titleSuffix: Azure DevOps Services  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
+ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  

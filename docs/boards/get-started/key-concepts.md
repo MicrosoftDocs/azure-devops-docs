@@ -2,6 +2,7 @@
 title: Key concepts and terminology for Azure Boards
 titleSuffix: Azure Boards & TFS 
 description: Key definitions for objects and items used to plan and track work by using Azure Boards
+ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
