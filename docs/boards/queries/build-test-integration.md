@@ -269,10 +269,11 @@ The following fields do not appear on work item forms, but these fields are trac
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
+- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)
 
-###Availability of test work item types (TFS)
+::: moniker range="tfs-2013"  
+### Availability of test work item types 
 
 Test Manager and the test work item types (WITs) use the following fields to track test plans, progress, and results. The availability of the WITs is based on the version of TFS installed on your application-tier. To learn more about using these WITs, see [Create a test plan](../../test/create-a-test-plan.md).
 
@@ -282,3 +283,4 @@ Test Manager and the test work item types (WITs) use the following fields to tra
 
 To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../../reference/configure-features-after-upgrade.md).
 
+::: moniker-end  
