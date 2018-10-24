@@ -12,7 +12,7 @@
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
-  - name: .NET Framework
+  - name: ASP.NET
     href: apps/aspnet/build-aspnet-4.md
   - name: .NET Core
     href: languages/dotnet-core.md
