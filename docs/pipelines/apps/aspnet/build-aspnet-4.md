@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to build ASP.NET projects. For guidance on ASP.NET Core projects, see [this topic](../../languages/dotnet-core.md).
+This guidance explains how to build ASP.NET projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
 
 ::: moniker range="tfs-2017"
 
