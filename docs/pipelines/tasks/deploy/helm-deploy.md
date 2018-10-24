@@ -44,7 +44,7 @@ Azure Pipelines has built-in support for Helm charts:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Connection Type</td><td>(Required) Select ‘Azure Resource Manager' to connect to an Azure Kubernetes Service(AKS) cluster by using Azure Service Connection.  Select ‘Container registry' to connect to any Kubernetes cluster by using kubeconfig or Service Account.
+<tr><td>Connection Type</td><td>(Required) Select 'Azure Resource Manager' to connect to an Azure Kubernetes Service(AKS) cluster by using Azure Service Connection.  Select 'Container registry' to connect to any Kubernetes cluster by using kubeconfig or Service Account.
 </td></tr>
 <tr><td>Azure subscription</td><td>(Required) Select an Azure subscription, which has your Azure Container Registry.</td></tr>
 <tr><td>Resource group</td><td>(Required) Enter or select the resource group of your AKS cluster.</td></tr>
@@ -54,8 +54,8 @@ Azure Pipelines has built-in support for Helm charts:
 <tr><td>Command</td><td>(Required) Select a helm command.</td></tr>
 <tr><td>Chart Type</td><td>(Required) Select how you want to enter chart info. You can either provide name of the chart or folder/file path to the chart.</td></tr>
 <tr><td>Chart Name</td><td>(Required) Name of the chart to install or upgrade.</td></tr>
-<tr><td>Chart Path</td><td>(Required) Path to the chart to install or upgrade.Chart path can be a path to a packaged chart or a path to an unpacked chart directory. For example if ‘./redis' is specified the task will run ‘helm package ./redis'.</td></tr>
-<tr><td>Version</td><td>(Optional) Specify the exact chart version to install. If this is not specified, the latest version is installed. Set the version on the chart to this semver version?</td></tr>
+<tr><td>Chart Path</td><td>(Required) Path to the chart to install or upgrade.Chart path can be a path to a packaged chart or a path to an unpacked chart directory. For example if './redis' is specified the task will run 'helm package ./redis'.</td></tr>
+<tr><td>Version</td><td>(Optional) Specify the exact chart version to install. If this is not specified, the latest version is installed. Set the version on the chart to this semver version</td></tr>
 <tr><td>Release Name</td><td>(Optional) Release name. If unspecified, it will autogenerate one for you.</td></tr>
 <tr><td>Set Values</td><td>(Optional) Set values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2).In the Helm chart you can parameterize the container image details like name and tag because the same Helm chart can be used for deploying to different environments. These values can also be specified in the values.yaml file of the chart or be overridden by a user-supplied values file, which can in turn be overridden by --set parameters during helm install or helm upgrade.</td></tr>
 <tr><td>Value File</td><td>(Optional) Specify values in a YAML file or a URL.</td></tr>
@@ -63,8 +63,8 @@ Azure Pipelines has built-in support for Helm charts:
 <tr><td>Use canary image version.</td><td>(Optional) Use the canary Tiller image. Will install the latest pre-release version of Tiller.</td></tr>
 <tr><td>Upgrade Tiller</td><td>(Optional) Upgrade if Tiller is already installed.</td></tr>
 <tr><td>Update Dependency</td><td>(Optional) Run helm dependency update before installing the chart. Update dependencies from 'requirements.yaml' to dir 'charts/' before packaging</td></tr>
-<tr><td>Save</td><td>(Optional) Save packaged chart to local chart repository (default true)?</td></tr>
-<tr><td>Install if release not present.</td><td>(Optional) If a release by this name doesn't already exist, run an install?.</td></tr>
+<tr><td>Save</td><td>(Optional) Save packaged chart to local chart repository (default true)</td></tr>
+<tr><td>Install if release not present.</td><td>(Optional) If a release by this name doesn't already exist, run an install.</td></tr>
 <tr><td>Recreate Pods.</td><td>(Optional) Performs pods restart for the resource if applicable.</td></tr>
 <tr><td>Reset Values.</td><td>(Optional) Reset the values to the ones built into the chart.</td></tr>
 <tr><td>Force</td><td>(Optional) Force resource update through delete/recreate if you want to upgrade and rollback when there are any conflicts. This is useful in scenarios where applying patches can fail (e.g., for services, because clusterIp is immutable).</td></tr>
