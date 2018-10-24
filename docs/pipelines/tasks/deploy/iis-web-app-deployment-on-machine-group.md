@@ -1,7 +1,7 @@
 ---
-title: IIS Web App Deploy
+title: IIS Web App Deploy task
 titleSuffix: Azure Pipelines & TFS
-description: Deploy a Website or Web Application using WebDeploy
+description: Deploy a website or web app using WebDeploy
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: IIS Web App Deploy
+# IIS Web App Deploy task
 
 **Azure Pipelines**
 
-![](_img/iiswebappdeploymentonmachinegroup.png) Deploy a Website or Web Application using WebDeploy
+Use this task in a build or release pipeline to deploy a website or web app using WebDeploy.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -43,9 +43,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
