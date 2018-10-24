@@ -5,6 +5,7 @@ description: Set team capacity for a sprint or iteration working with Scrum meth
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
 ms.prod: devops
+ms.custom: boards-sprints
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

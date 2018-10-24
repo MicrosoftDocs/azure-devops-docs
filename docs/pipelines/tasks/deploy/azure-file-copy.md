@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure File Copy
+title: Azure File Copy task
 titleSuffix: Azure Pipelines & TFS
 description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
@@ -13,11 +13,11 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy: Azure File Copy
+# Azure File Copy task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![icon](_img/azure-file-copy-icon.png) Copy files to 
+Use this task in a build or release pipeline to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
 ::: moniker range="<= tfs-2018"
@@ -194,5 +194,3 @@ A suitable account can be easily created for use in a service connection:
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

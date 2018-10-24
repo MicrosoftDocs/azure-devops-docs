@@ -2,6 +2,7 @@
 title: Quickstart guide to plan and track work 
 titleSuffix: Azure Boards 
 description: Plan and track work in your new team project on Azure Boards
+ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 

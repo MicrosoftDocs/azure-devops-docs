@@ -2,8 +2,7 @@
 title: Add columns to your Kanban board
 titleSuffix: Azure Boards and TFS
 description: Map your Kanban board, support your team's work flow in Azure Boards & Team Foundation Server
-ms.global_help.title: Add columns
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 3  
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e

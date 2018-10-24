@@ -2,6 +2,7 @@
 title: Scrum and sprint planning tools
 titleSuffix: Azure Boards and TFS 
 description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards & Team Foundation Server 
+ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

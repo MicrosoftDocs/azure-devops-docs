@@ -2,8 +2,7 @@
 title: Understand and configure your Kanban board 
 titleSuffix: Azure Boards and TFS
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
-ms.global_help.title: Kanban basics
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 2  
+ms.custom: boards-kanban  
 ms.topic: get-started-article
 ms.technology: devops-agile
 ms.prod: devops

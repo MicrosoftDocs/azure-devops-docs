@@ -1,7 +1,7 @@
 ---
-title: Copy Files Over SSH task for use in Azure Pipelines and TFS
+title: Copy Files Over SSH task
 titleSuffix: Azure Pipelines & TFS
-description: How to copy Files Over SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+description: Copy Files Over SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
@@ -13,19 +13,19 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy: Copy Files Over SSH
+# Copy Files Over SSH task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to copy files from a source folder to a target folder on a remote machine over SSH.
+
+This task allows you to connect to a remote machine using SSH and copy files matching a set of minimatch patterns from specified
+source folder to target folder on the remote machine. Supported protocols for file transfer are SFTP and SCP via SFTP.
+In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
-
-![icon](_img/copy-files-over-ssh.png) Copy files from source folder to target folder on a remote machine over SSH.
-
-This task allows you to connect to a remote machine using SSH and copy files matching a set of minimatch patterns from specified source folder to target folder on the remote machine.
-Supported protocols for file transfer are SFTP and SCP via SFTP.
-In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ## Prerequisites
 
@@ -77,5 +77,3 @@ This task is intended for target machines running Linux.
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
