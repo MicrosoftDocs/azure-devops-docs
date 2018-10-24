@@ -58,17 +58,17 @@ Assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subs
 
 ::: moniker range=">= tfs-2018"
 
-Assign **VS Enterprise** to users with a a subscription to Visual Studio Enterprise.This enables the Test Manager feature.
+Assign **VS Enterprise** to users with a subscription to Visual Studio Enterprise. This enables the Test Manager feature.
 ::: moniker-end
 
 
 ::: moniker range="tfs-2017"
-Assign **Advanced** (TFS 2017) to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms. Assign **VS Enterprise** (TFS 2017.1 and later versions) to users with a a subscription to Visual Studio Enterprise. This enables the Test Manager feature.  
+Assign **Advanced** (TFS 2017) to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms. Assign **VS Enterprise** (TFS 2017.1 and later versions) to users with a subscription to Visual Studio Enterprise. This enables the Test Manager feature.  
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-Assign **Advanced** to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
+Assign **Advanced** to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
 ::: moniker-end
 
 
