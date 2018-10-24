@@ -9,14 +9,14 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/12/2017
+ms.date: 10/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Utility: Publish Build Artifacts
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3 | [TFS 2015 RTM](copy-and-publish-build-artifacts.md) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/bb778394%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
 
 ![](_img/publish-build-artifacts.png) Publish build artifacts to Azure Pipelines/TFS or a file share.
 
