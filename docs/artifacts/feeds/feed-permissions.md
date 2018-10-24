@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2017**
 
-Packages you host in Azure Artifacts are stored in a [feed](../concepts/feeds.md). Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
+Packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
 ## Feed permissions overview
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.
