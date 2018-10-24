@@ -1,5 +1,5 @@
 ---
-title: Azure PowerShell
+title: Azure PowerShell task
 titleSuffix: Azure Pipelines & TFS
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure PowerShell
+# Azure PowerShell task
 
 **Azure Pipelines**
 
-![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
+Use this task in a build or release pipeline to run a PowerShell script within an Azure environment.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -46,9 +46,3 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
