@@ -9,13 +9,13 @@ ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/12/2017
+ms.date: 10/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Copy and Publish Build Artifacts
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+**TFS 2015**
 
 ::: moniker range="> tfs-2015"
 
