@@ -1,7 +1,7 @@
 ---
+title: Windows Machine File Copy task
 titleSuffix: Azure Pipelines & TFS
-description: Windows Machine File Copy build task
-title: Windows Machine File Copy task for Azure Pipelines and TFS
+description: Copy application files and other artifacts to remote Windows machines
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,20 +13,18 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy: Windows Machine File Copy
+# Windows Machine File Copy task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+Use this task in a build or release pipeline to copy application files and other artifacts such as
+PowerShell scripts and PowerShell-DSC modules that are required to 
+install the application on Windows Machines. It uses RoboCopy, the 
+command-line utility built for fast copying of data.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
-
-![icon](_img/windows-machine-file-copy-icon.png) Copy files to remote machines.
-
-Use this task to copy application files and other artifacts such as
-PowerShell scripts and PowerShell-DSC modules that are required to 
-install the application on Windows Machines. It uses RoboCopy, the 
-command-line utility built for fast copying of data.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -70,5 +68,3 @@ or an invalid path specification. For more details, see
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

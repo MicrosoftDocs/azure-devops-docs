@@ -2,6 +2,7 @@
 title: Sprint burndown
 titleSuffix: Azure Boards and TFS
 description: Review Scrum progress during and at the end of a sprint when working in Azure Boards & Team Foundation Server
+ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B

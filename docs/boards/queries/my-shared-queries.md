@@ -2,6 +2,7 @@
 title: Individual versus shared queries
 titleSuffix: Azure Boards and TFS
 description: Work with queries to support your and team usage   
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  

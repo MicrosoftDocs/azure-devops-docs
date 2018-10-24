@@ -2,6 +2,7 @@
 title: Filter lists & boards
 titleSuffix: Azure DevOps Services & TFS  
 description: Filter your view to focus on items of interest 
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 

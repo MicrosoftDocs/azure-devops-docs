@@ -2,6 +2,7 @@
 title: Backlogs, boards, & plans
 titleSuffix: Azure Boards and TFS
 description: Understand the tasks supported among backlogs, Kanban boards, and taskboards in Azure Boards & Team Foundation Server  
+ms.custom: boards-backlogs 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70

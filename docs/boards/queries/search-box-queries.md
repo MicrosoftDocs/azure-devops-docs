@@ -2,6 +2,7 @@
 title: Perform adhoc searches for quick queries
 titleSuffix: Azure Boards and TFS
 description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards & Team Foundation Server  
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 

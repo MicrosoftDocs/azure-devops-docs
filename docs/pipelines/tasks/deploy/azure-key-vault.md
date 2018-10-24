@@ -1,7 +1,7 @@
 ---
-title: Build and Deploy - Azure Key Vault task
+title: Azure Key Vault task
 titleSuffix: Azure Pipelines & TFS
-description: Learn about Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+description: Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,13 +13,13 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure Key Vault
+# Azure Key Vault task
 
 **Azure Pipelines**
 
 ### Overview
 
-![icon](_img/azure-key-vault-icon.png) This task is used to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
+Use this task in a build or release pipeline to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
 from an [Azure Key Vault](/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
@@ -118,6 +118,4 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
 

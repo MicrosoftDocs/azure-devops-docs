@@ -2,6 +2,7 @@
 title: Dashboards index to content
 titleSuffix: Azure DevOps & TFS
 description: Index to topics for working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
+ms.custom: dashboards
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
 ms.technology: devops-analytics

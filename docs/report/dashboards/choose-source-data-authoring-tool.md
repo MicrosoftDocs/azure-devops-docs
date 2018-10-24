@@ -1,7 +1,8 @@
 ---
 title: Choose the source of data and authoring tool
 titleSuffix: TFS
-description: Guide to data sources and tools for creating and customizing reports - Team Foundation Server 
+description: Guide to data sources and tools for creating and customizing reports - Team Foundation Server  
+ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual

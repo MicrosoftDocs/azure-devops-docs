@@ -2,6 +2,7 @@
 title: Cumulative flow charts
 titleSuffix: Azure DevOps & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
+ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
