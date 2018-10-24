@@ -44,7 +44,23 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_details/organizations/security/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+# [New navigation](#tab/new-nav)
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_userSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+
+Click **+ New Token**.
+
+Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+
+> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+
+![Create packaging personal access token](../_shared/_img/create-packaging-pat.png)
+
+Click **Create**.
+
+# [Previous navigation](#tab/previous-nav)
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_userSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
 
 Click **Add**.
 
@@ -56,6 +72,7 @@ Select the **Packaging (read and write)** scope.
 
 ![Select a token scope](_img/select-scope.png)
 
+---
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
 
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 

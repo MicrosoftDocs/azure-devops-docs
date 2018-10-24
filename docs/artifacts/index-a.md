@@ -88,6 +88,25 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
+                                        <a href="/azure/devops/artifacts/quickstarts/universal-packages">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_package.svg" alt="universal packages logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with Universal Packages</h3>
+                                                            <p>Create, host, and share Universal packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="/azure/devops/artifacts/overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
