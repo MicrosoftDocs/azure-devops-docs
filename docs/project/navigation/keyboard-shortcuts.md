@@ -2,6 +2,7 @@
 title: Web portal& Team Explorer keyboard shortcuts 
 titleSuffix: Azure DevOps Services & TFS   
 description: Keyboard shortcuts for the web portal for Azure DevOps Services, TFS, and Team Explorer
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference

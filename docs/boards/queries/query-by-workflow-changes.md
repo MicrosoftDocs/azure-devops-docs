@@ -2,6 +2,7 @@
 title: Query by account, user name, workflow or board changes 
 titleSuffix: Azure Boards and TFS
 description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  

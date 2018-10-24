@@ -2,6 +2,7 @@
 title: Add a widget to a team dashboard 
 titleSuffix: Azure DevOps & TFS
 description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
+ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967

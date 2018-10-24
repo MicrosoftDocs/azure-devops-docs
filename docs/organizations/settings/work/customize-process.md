@@ -1,7 +1,8 @@
 ---
 title: Customize a project  
 titleSuffix: Azure DevOps Services
-description: Your guide to configuring and customizing work tracking processes for a project by customizing an  inherited process
+description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   

@@ -1,7 +1,7 @@
 ---
+title: Service Fabric Compose Deploy task
 titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy task for Azure Pipelines and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,12 +13,11 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Service Fabric Compose Deploy
+# Service Fabric Compose Deploy task
 
 **Azure Pipelines**
 
-![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
-
+Use this task in a build or release pipeline to deploy a Docker-compose application to a Service Fabric cluster.
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.
 
 ## Prerequisites
@@ -62,5 +61,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

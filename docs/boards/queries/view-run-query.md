@@ -2,6 +2,7 @@
 title: View or run a query 
 titleSuffix: Azure Boards and TFS
 description: View, run, or favorite a query in Azure Boards & Team Foundation Server
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
