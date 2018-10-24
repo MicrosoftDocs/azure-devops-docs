@@ -16,6 +16,6 @@ ms.topic: include
 0. Click **Capabilities**.
 
 0. Look for the `Agent.Version` capability.
- > You can check this value against the latest published agent version. See [Azure Pipelines Agent](https://github.com/Microsoft/vsts-agent/releases) and check the page for the highest version number listed.
+ > You can check this value against the latest published agent version. See [Azure Pipelines Agent](https://github.com/Microsoft/azure-pipelines-agent/releases) and check the page for the highest version number listed.
 
 1. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then click **Update all agents**.
