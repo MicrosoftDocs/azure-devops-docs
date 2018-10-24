@@ -2,6 +2,7 @@
 title: View built-in data store velocity chart
 titleSuffix: Azure DevOps & TFS 
 description: Track team velocity across several sprints using the work tracking datastore velocity chart in Azure DevOps & Team Foundation Server  
+ms.custom: dashboards
 ms.technology: devops-analytics  
 ms.prod: devops
 ms.topic: tutorial

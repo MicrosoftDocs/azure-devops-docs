@@ -2,6 +2,7 @@
 title: Add, run, and update inline tests
 titleSuffix: Azure Boards and TFS  
 description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Azure Boards & Team Foundation Server   
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  

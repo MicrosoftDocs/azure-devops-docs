@@ -2,6 +2,7 @@
 title: Pick list queries
 titleSuffix: Azure Boards and TFS
 description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973

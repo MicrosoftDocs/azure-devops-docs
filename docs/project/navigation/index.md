@@ -2,6 +2,7 @@
 title: Navigating within the web portal  
 titleSuffix: Azure DevOps Services & TFS 
 description: Navigate within the user interface/web portal of Azure DevOps Services & Team Foundation Server  
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
