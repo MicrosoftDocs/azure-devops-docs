@@ -9,7 +9,7 @@ ms.assetid: 22fc4e22-ef0a-4c55-8cce-20ad2fa14342
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/04/2016
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn't recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
-Azure Pipelines (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](https://github.com/Microsoft/vsts-agent) that supports macOS. The end result is you can use Azure Pipelines or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*.
+Azure Pipelines (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](https://github.com/Microsoft/azure-pipelines-agent) that supports macOS. The end result is you can use Azure Pipelines or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*.
 
 To streamline CI for Cordova-based projects, we have created a series of build tasks that you can use: **Cordova Build**, **[Cordova Command](./cordova-command.md)**, **[Ionic Command](./cordova-command.md)**, and **[PhoneGap Command](./cordova-command.md)**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
@@ -204,7 +204,7 @@ That's it!
 ##In Depth: Private build agent setup
 As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Microsoft-hosted agent pool in Azure Pipelines. This allows you to build without setting up a Windows build agent on-premises. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for Azure Pipelines agents targeted at building iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Microsoft-hosted agent pool in Azure Pipelines or MacinCloud's special Azure Pipelines plan.
 
-If you are not using the Azure Pipelines Microsoft-hosted agent pool or MacinCloud's streamlined [Azure Pipelines plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/vsts-agent) on Windows or macOS and integrate with either TFS or Azure Pipelines. The build machine simply needs to have HTTP access to the server with your TFS collection or Azure Pipelines.
+If you are not using the Azure Pipelines Microsoft-hosted agent pool or MacinCloud's streamlined [Azure Pipelines plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/azure-pipelines-agent) on Windows or macOS and integrate with either TFS or Azure Pipelines. The build machine simply needs to have HTTP access to the server with your TFS collection or Azure Pipelines.
 
 ### Custom Agent Setup
 Since the build pipeline we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:
@@ -213,7 +213,7 @@ Since the build pipeline we will describe here is not directly dependent on MSBu
 
 2. Otherwise you can manually install only the prerequisites needed for the specific platforms you intend to build. For example, you do not need to install Visual Studio at all if you only intend to target Android. See "Installing Dependencies" in the [general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691196) for additional details.
 
-Next you will need to install the [build agent](https://github.com/Microsoft/vsts-agent) to build apps for Android, iOS, Windows, or Windows Phone.  See [the new build system documentation](http://go.microsoft.com/fwlink/?LinkID=533772) for information on getting started with setting up an agent. It is important to note that you should setup the agent as a **launch agent** (./svc.sh install agent) or run it as an **interactive process** (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
+Next you will need to install the [build agent](https://github.com/Microsoft/azure-pipelines-agent) to build apps for Android, iOS, Windows, or Windows Phone.  See [the new build system documentation](http://go.microsoft.com/fwlink/?LinkID=533772) for information on getting started with setting up an agent. It is important to note that you should setup the agent as a **launch agent** (./svc.sh install agent) or run it as an **interactive process** (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
 
 >**Troubleshooting Tip:** See [Internet Access & Proxy Setup" in the general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691832) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
