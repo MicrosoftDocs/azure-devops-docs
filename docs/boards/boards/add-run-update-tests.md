@@ -96,7 +96,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
   For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-	<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
 
   To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
 

@@ -63,7 +63,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 
 ## Helpful links
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
 * [Visual Studio Partner Program](https://vspartner.com/)
 
