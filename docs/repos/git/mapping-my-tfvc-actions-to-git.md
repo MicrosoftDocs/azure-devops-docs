@@ -43,7 +43,7 @@ Similar to a workspace in TFVC you `clone` the Git repository to a folder on you
 # [Command Line](#tab/command-line)
 
 ```
-git clone https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/Mapping-TFVC-actions-to-Git
+git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions-to-Git
 ```
 
 # [Visual Studio](#tab/visual-studio)

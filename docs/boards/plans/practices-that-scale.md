@@ -45,7 +45,7 @@ By adopting a shared cadence and set of periodic communications, you create a co
 Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own. 
 
 - **Continuous feedback**: Build in customer feedback loops. These can take many forms: 
-	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/330519-team-services). 
+	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website. 
 	- **Product feedback**: In-product feedback buttons are another way to solicit feedback about the product experience or specific features. 
 	- **Customer demos**: Regularly scheduled demos that solicit feedback from your customers can help shape next generation products and keep you on track to build applications your customers want to consume.  
 - **Early adopter programs**: Such programs should be developed with the idea that all teams may want to participate as some point. Early adopters gain access to early versions of working software which they then can provide feedback. Oftentimes, these programs work by turning select [feature flags](#feature-flags) on for an early adopter list. 
@@ -119,8 +119,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaled Agile Framework](scaled-/azure/devops/learn/agile/scale-agile-large-teams
-- [Scaling Agile to large teams] (/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

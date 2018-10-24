@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: get-started-article
-ms.date: 03/20/2018
+ms.date: 09/19/2018
 ---
 
 # Manage bugs
@@ -180,8 +180,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
-Add and review comments made about the work being performed by going to the discussion section. 
-
+[!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
 ## Capture bugs using test tools
 
@@ -193,7 +192,7 @@ You can create bugs during test sessions using one of the following tools:
 <a id="triage"> </a>
 ## Triage bugs  
  
-Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.  
+Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
 
 The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
 

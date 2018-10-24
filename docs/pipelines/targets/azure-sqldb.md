@@ -1,5 +1,6 @@
 ---
 title: Azure SQL database deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Azure SQL database deployment
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

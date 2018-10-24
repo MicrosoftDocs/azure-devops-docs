@@ -1,5 +1,6 @@
 ---
-title: Create a Helm chart for a Docker enabled app 
+title: Create a Helm chart for a Docker enabled app with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Package and deploy a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops
@@ -12,7 +13,9 @@ ms.date: 08/28/2018
 monikerRange: 'vsts'
 ---
 
-# Helm
+# Use Helm to package Docker-based applications
+
+**Azure Pipelines**
 
 This guidance explains how to use [Helm](https://www.helm.sh/) to package a Docker based application in to a Helm chart.
 
@@ -59,7 +62,7 @@ Configure the properties as follows:
    - **Connection Type**: Select ‘Azure Resource Manager’ to connect to an AKS cluster by using Azure Service Connection.  Select ‘Container registry’ to connect to any Kubernetes cluster by using kubeconfig or Service Account.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you are using Azure DevOps Server or if you do not see
+     If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
 
    - **Resource Group**: Enter or select the resource group of your **AKS cluster**.  

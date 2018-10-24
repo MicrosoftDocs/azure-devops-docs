@@ -1,6 +1,7 @@
 ---
 title: Task Groups in Azure Pipelines and Team Foundation Server
-description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS) Release Management
+titleSuffix: Azure Pipelines & TFS
+description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,6 +20,9 @@ monikerRange: '>= tfs-2017'
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
+
+> [!NOTE]
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-template).
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be
@@ -65,7 +69,7 @@ to change each one individually.
 
 ## Create a task group
 
-1. Ensure that all the tasks you intent to include do not contain link parameters. The easy
+1. Ensure that all the tasks you intend to include do not contain any linked parameters. The easy
    way to do this is to choose **Unlink all** in the settings panel for the entire process.
 
    ![Unlinking parameters for all tasks](_img/unlink-task-group.png)

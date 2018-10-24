@@ -9,12 +9,14 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 09/05/2018
-monikerRange: '>= tfs-2015'
+monikerRange: 'vsts'
 ---
 
 # Sign up for Azure Pipelines
 
-1. From the Azure website, select **Start free with Azure Pipelines**.
+**Azure Pipelines**
+
+1. From the [Azure website](https://azure.microsoft.com/services/devops/pipelines/), select **Start free with Azure Pipelines**.
 
    ![Start free with Azure Pipelines](../../_shared/_img/start-free-with-azure-pipelines.png)
 

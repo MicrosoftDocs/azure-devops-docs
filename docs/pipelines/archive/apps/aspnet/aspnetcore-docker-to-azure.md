@@ -1,5 +1,6 @@
 ---
 title: Deploy an ASP.NET Core app with Docker to Azure
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker using Visual Studio
 ms.topic: conceptual
 ms.prod: devops
@@ -9,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 

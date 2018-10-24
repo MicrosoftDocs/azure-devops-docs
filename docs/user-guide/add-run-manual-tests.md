@@ -13,8 +13,7 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
-# Quickstart: Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
@@ -24,11 +23,11 @@ Tests you create from the Kanban board are automatically linked to the user stor
  
 ## Open your Kanban board
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
@@ -40,7 +39,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and choose **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 

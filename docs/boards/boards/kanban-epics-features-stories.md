@@ -45,7 +45,7 @@ In this topic, you'll learn:
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [taskboard](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
  
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
@@ -63,7 +63,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> ![Choose another team's board](/azure/devops/boards/boards/_img/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the ![](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 0. Select **Features** or **Epics** from the backlog selector menu . 
 
@@ -74,7 +74,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 1. 
 	![Open Features Kanban board](_img/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
@@ -123,7 +123,7 @@ For additional guidance on working with a checklist on a Kanban board, see [Add 
 - Mark an item as done  
 - Reorder and reparent work items  
 
-To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![](../../_img/icons/blue-gear.png) or ![](../../_img/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
+To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![ ](../../_img/icons/blue-gear.png) or ![ ](../../_img/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
 * [Customize cards](../../boards/boards/customize-cards.md)  

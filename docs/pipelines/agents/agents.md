@@ -1,19 +1,21 @@
 ---
 ms.prod: devops
 title: Build and Release Agents
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Learn about building your code or deploying your software using build and release agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/31/2018
+ms.date: 10/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Build and release agents
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -122,7 +124,17 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 The agent communicates with Azure Pipelines or TFS to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or TFS happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
-![Agent topologies](_img/agent-topologies.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+![Agent topologies](_img/agent-topologies-tfs.png)
+::: moniker-end
+
+::: moniker range="vsts"
+![Agent topologies](_img/agent-topologies-devops.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Here is a common communication pattern between the agent and Azure Pipelines or TFS.
 
@@ -146,6 +158,8 @@ Here is a common communication pattern between the agent and TFS.
 
 ::: moniker-end
 
+::: moniker range="vsts"
+
 ### Communication to deploy to target servers
 
 When you use the agent to deploy artifacts to a set of servers, it must have "line of sight"
@@ -158,7 +172,8 @@ manually configure a self-hosted agent on on-premises computer(s). The agents mu
 on-premises environments, and access to the Internet to connect to Azure Pipelines or Team Foundation Server,
 as shown in the following schematic.
 
-![Agent connectivity for on-premises environments](_img/agent-connections.png)
+![Agent connectivity for on-premises environments](_img/agent-connections-devops.png)
+::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
 ## Authentication

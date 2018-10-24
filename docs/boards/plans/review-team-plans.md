@@ -52,7 +52,7 @@ All users with [basic access](../../organizations/security/change-access-levels.
 <a id="install-plans">  </a>
 ### Install the Plans page extension 
 
-The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). To provide feedback, visit our [Uservoice page](https://visualstudio.uservoice.com/forums/330519-team-services).
+The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). 
 
 ::: moniker range="tfs-2017" 
 Installation of Delivery Plans requires TFS 2017.2 or later version.
@@ -67,7 +67,7 @@ Regular reviews of the project schedule with these teams help ensure that the te
 Some questions you might address during the review: 
 - *How confident are the teams in meeting the deliverables scheduled for each sprint?* 
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
-- *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
+- *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
 For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
@@ -82,7 +82,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 0. Open **Boards>Plans**. 
 
@@ -100,11 +100,11 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -119,7 +119,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  
-	::: moniker range=">= tfs-2017  <= tfs-2018"  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
 	::: moniker-end  
 
@@ -144,13 +144,13 @@ When defining a plan, note the following:
 
 Once you've defined a plan, you can further customize it. 
 
-1. Choose the ![](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the ![ ](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
 	- Edit the teams you've selected and their backlog level  
 	- Set field criteria to further limit the work items that will appear on the plan 
 	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or task board](../../boards/boards/customize-cards.md).  
+	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
 	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 

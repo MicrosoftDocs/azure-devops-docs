@@ -1,5 +1,5 @@
 ---
-title: Search for work items in a public project
+title: Search for work items
 titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
@@ -25,11 +25,11 @@ With work item search, you can quickly find work items defined within a public p
 <a name="start-search"></a>
 ## Initiate a search 
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    

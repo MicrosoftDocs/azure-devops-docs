@@ -7,8 +7,8 @@ ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -83,7 +83,7 @@ Org Project	Projects that are visible to everyone in the Organization (Azure AD 
 
 Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
 
-![Pipeline concept end-to-end](/azure/devops/pipelines/_img/pipeline-concept-end-to-end.png)
+![Pipeline concept end-to-end](/../../pipelines/_img/pipeline-concept-end-to-end.png)
 
 
 ## Private project	

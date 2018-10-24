@@ -1,5 +1,6 @@
 ---
 title: Bash
+titleSuffix: Azure Pipelines & TFS
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Utility: Bash
+
+**Azure Pipelines**
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

@@ -12,23 +12,23 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Pay for users (Basic)
+# Quickstart: Pay for Azure DevOps users (Basic) 
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to pay for more users in your Azure DevOps organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five additional users free in your organization.
+In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five additional users free in your organization.
 
 [Pay for additional users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
 
 For a list of included features, see the [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
-The first time that you set up billing for your Azure DevOps organization, whether you do the setup up via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
+The first time that you set up billing for your organization, whether you do the setup up via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
 
-* [Azure DevOps project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
+* [Project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
 
    > [!div class="mx-imgBorder"]
 ![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
@@ -68,15 +68,15 @@ To make subsequent edits to paid quantities in your organization, you need only 
    > [!div class="mx-imgBorder"]
 ![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users-from-user-hub.md).
+6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
-   ![Azure DevOps number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
+   ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -87,7 +87,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ## Clean up resources
 
-To remove users or make an adjustment, sign in to Azure DevOps Service. Choose **Manage users** and then choose **Change quantity**.
+To remove users or make an adjustment, sign in to Azure DevOps. Choose **Manage users** and then choose **Change quantity**.
 
 ## Next steps
 
@@ -96,4 +96,4 @@ To remove users or make an adjustment, sign in to Azure DevOps Service. Choose *
 
 ## Related articles
 
-* [Reduce or cancel paid Azure DevOps users](reduce-cancel-paid-vsts-users.md)
+* [Reduce or cancel paid users](reduce-cancel-paid-users.md)

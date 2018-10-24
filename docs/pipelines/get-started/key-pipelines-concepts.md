@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # Key concepts for new Azure Pipelines users
 
+**Azure Pipelines**
+
 Learn about the key concepts and components that are used in Azure Pipelines. Understanding the basic terms and parts of Azure Pipelines will help you further explore how it can help you deliver better code more efficiently and reliably.
 
 ## Agent
@@ -29,13 +31,13 @@ A collection of files or packages published by a build and made available to sub
 
 A build represents one execution of a pipeline and it collects the logs associated with running the steps as well as the results of running tests.
 
-## Continuous delivery
+[//]: # (## Continuous delivery)
 
-**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
+[//]: # (**Continuous Delivery &#40;CD&#41;** is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.)
 
-## Continuous integration
+[//]: # (## Continuous integration)
 
-**Continuous Integration (CI)** is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process, which can be run on a set schedule, whenever code is pushed, or both. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
+[//]: # (**Continuous Integration &#41;CI&#41;** is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process, which can be run on a set schedule, whenever code is pushed, or both. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.)
 
 ## Deployment target
 

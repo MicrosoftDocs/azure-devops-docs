@@ -1,19 +1,21 @@
 ---
 ms.prod: devops
 title: Agents pools
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+titleSuffix: Azure Pipelines & TFS
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/13/2018
+ms.date: 10/18/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Agent pools
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -59,17 +61,28 @@ The following organization agent pools are provided by default:
 
 ::: moniker range="vsts"
 
+* **Hosted Ubuntu 1604** pool (Azure Pipelines only): Enables you to build and release on
+  Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
+  run in a container, but the Docker tools are available for you to use if you want to
+  run [container jobs](../process/container-phases.md).
+
 * **Hosted Linux** pool (Azure Pipelines only): Enables you to build and release on
-  Linux machines without having to configure a self-hosted agent. The agents
+  Linux machines without having to configure a self-hosted Linux agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
+  *Note: this pool has been superceded by the Hosted Ubuntu 1604 pool. It will be removed from the service on December 1, 2018.*
+  *Learn more about [migrating](hosted.md#hosted-linux-preview-pool-deprecation).*
 
 * **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
-  macOS without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
 * **Hosted VS2017** pool (Azure Pipelines only): The **Hosted VS2017** pool is another built-in pool in Azure Pipelines. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 
 * **Hosted** pool (Azure Pipelines only): The **Hosted** pool is the built-in pool that is a collection of Microsoft-hosted agents. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
+
+* **Hosted Windows Container** pool (Azure Pipelines only): Enabled you to build and release
+  inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building
+  using containers, Windows builds should run in the **Hosted VS2017** or **Hosted** pools.
 
 Each of these Microsoft-hosted organization agent pools is exposed to each project through a corresponding project agent pool. By default, all contributors in a project are members of the **User** role on each hosted pool. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted pools.
 
@@ -83,7 +96,7 @@ Here are some typical situations when you might want to create agent pools:
 
 * You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pookl for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First create a project agent pool in one of the projects and select the option to **Create a new organization agent pool** while creating that pool. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing organization agent pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 

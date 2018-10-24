@@ -1,5 +1,6 @@
 ---
 title: Docker
+titleSuffix: Azure Pipelines & TFS
 description: Building Docker images using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,15 +9,16 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 07/05/2018
+ms.date: 09/21/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Docker
+# Build Docker apps with Azure Pipelines or Team Foundation Server
 
-This guidance explains how to build Docker images and push them to registries such as
-Docker Hub or Azure Container Registry.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as Docker Hub or Azure Container Registry with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,12 +35,7 @@ Docker Hub or Azure Container Registry.
 > This document helps you start using Azure Pipelines by using Docker commands. As an alternative, Azure Pipelines also has built-in [Docker task](../tasks/build/docker.md)  which can be used for 
 > building and pushing the container images to a Container Registry. Know more about how the task helps in with Docker best practises and standards [here](../tasks/build/docker.md)
 
-
 ::: moniker-end
-
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]
 
 <a name="example"></a>
 ## Example
@@ -146,7 +143,7 @@ Add the following snippet to your `azure-pipelines.yml` file to select the appro
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 # [Designer](#tab/designer)
@@ -273,7 +270,7 @@ Replace the contents in the `azure-pipelines.yml` file at the root of your repo 
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'ubuntu-16.04'
 
 steps:
   - script: docker build -t $(dockerId)/$(dockerImage) . # include other options to meet your needs
@@ -313,7 +310,7 @@ To push the image to Azure Container Registry, use the following snippet:
 
 ```yaml
 - script: |
-    docker login -u $(dockerId).azurecr.io -p $(pswd) $(dockerid).azurecr.io
+    docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
 ```
 
@@ -382,7 +379,9 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
 ::: moniker range="vsts"
 > [!NOTE]
-> When using Hosted Linux agents, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for example, to drive tests. One way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the example above. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
+> When using agents in the Hosted Linux Preview pool, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for example, to drive tests. The preferred workaround is to upgrade to the _Hosted Ubuntu 1604_ pool, where the agents do not run inside a container.
+
+If you can't upgrade, another way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the example above. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
 :::moniker-end
 
 ::: moniker range="vsts"
@@ -418,7 +417,7 @@ If you're able to build your image on your development machine, but are having t
 
 * If you use Microsoft-hosted agents to run your builds, the Docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
 
-* If you use Hosted Linux agents, then the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers.
+* If you use agents from the Hosted Linux Preview pool, then the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers. Also, you should upgrade those builds to use the _Hosted Ubuntu 1604_ pool, where the agents do not run in containers.
 
 ::: moniker-end
 

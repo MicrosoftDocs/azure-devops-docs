@@ -61,7 +61,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -121,9 +121,9 @@ Defining additional sprints is a two-step process. You first define the sprints 
 
 [![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-team-defaults.md)
 
-Each sprint that you select for your team provides access to a [sprint backlog, task board, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
+Each sprint that you select for your team provides access to a [sprint backlog, taskboard, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
 
-For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
+For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint. 
 
 # [New navigation](#tab/new-nav)
 
@@ -135,7 +135,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 # [New navigation](#tab/new-nav)
 
-1. Open **Boards>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. Open **Boards>Backlogs** and then choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)

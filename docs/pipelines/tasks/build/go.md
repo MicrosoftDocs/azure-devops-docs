@@ -1,5 +1,6 @@
 ---
 title: Go
+titleSuffix: Azure Pipelines & TFS
 description: Get, build, test a go application, or run a custom go command.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Build: Go
+
+**Azure Pipelines**
 
 ![](_img/go.png) Get, build, test a go application, or run a custom go command.
 

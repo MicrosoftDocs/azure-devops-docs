@@ -1,10 +1,12 @@
 ---
-title: Run unit tests with your builds in Azure Pipelines and TFS - test automation tools
+title: Run unit tests with your builds in Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Get started with continuous testing. Run unit tests with your builds for continuous integration in Azure Pipelines and Team Foundation Server TFS 
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
@@ -31,10 +33,19 @@ This example shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
 [Visual Studio Test](test-with-unified-agent-and-phases.md) task.
 
-> Typically you will run unit tests in your build workflow,
+Typically you run unit tests in your build workflow
 and functional tests in your release workflow after your
 app is deployed (usually to a QA environment).
 Code coverage is available only in the build workflow.
+
+> [!NOTE]
+> This example shows how to run unit tests with your build
+  for .NET and ASP.NET apps. It uses the
+  [Visual Studio Test](test-with-unified-agent-and-phases.md) task.
+  For information about running test for other app types such as
+  [.NET Core](../languages/dotnet-core.md) and
+  [Python](../languages/python.md), see the topics in the
+  **Languages** section of the Azure Pipelines documentation.
 
 <a name="beforestart"></a>
 ## Before you start

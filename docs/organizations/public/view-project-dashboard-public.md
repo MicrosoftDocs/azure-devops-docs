@@ -7,8 +7,8 @@ ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -28,7 +28,7 @@ If you're a contributor, you can also [edit README files for a project](../../pr
 
 From your web browser, open the public project.   
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

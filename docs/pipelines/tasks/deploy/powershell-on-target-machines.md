@@ -1,6 +1,7 @@
 ---
+titleSuffix: Azure Pipelines & TFS
 description: PowerShell on Target Machines build task
-title: PowerShell on Target Machines task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+title: PowerShell on Target Machines task for Azure Pipelines and TFS
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
 ms.prod: devops
 ms.technology: devops-cicd
@@ -50,7 +51,7 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 | **Deployment - PowerShell Script** | The location of the PowerShell script on the target machine. Can include environment variables such as `$env:windir` and `$env:systemroot` Example: `C:\FabrikamFibre\Web\deploy.ps1` |
 | **Deployment - Script Arguments** | The arguments required by the script, if any. Example: `-applicationPath $(applicationPath) -username $(vmusername) -password $(vmpassword)` |
 | **Deployment - Initialization Script** | The location on the target machine(s) of the data script used by PowerShell-DSC. It is recommended to use arguments instead of an initialization script. |
-| **Deployment - Session Variables** | Used to set up the session variables for the PowerShell scripts. A comma-separated list such as `$varx=valuex, $vary=valuey` Most commonly used for backward compatibility with earlier versions of Release Management. It is recommended to use arguments instead of session variables. |
+| **Deployment - Session Variables** | Used to set up the session variables for the PowerShell scripts. A comma-separated list such as `$varx=valuex, $vary=valuey` Most commonly used for backward compatibility with earlier versions of the release service. It is recommended to use arguments instead of session variables. |
 | **Advanced - Run PowerShell in Parallel** | Set this option to execute the PowerShell scripts in parallel on all the target machines |
 | **Advanced - Select Machines By** | Depending on how you want to specify the machines in the group when using the **Filter Criteria** parameter, choose **Machine Names** or **Tags**. |
 | **Advanced - Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}<strong>:</strong>{Value} Example: `Role:DB;OS:Win8.1` |

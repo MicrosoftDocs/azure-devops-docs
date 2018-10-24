@@ -1,5 +1,5 @@
 ---
-title: Invite users to collaborate on your public project
+title: Invite users
 titleSuffix: Azure DevOps Services Public Project  
 description: Invite others to contribute to you public project  
 ms.technology: devops-public-projects
@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -30,7 +30,7 @@ To enable users to contribute to your project, you must add them as a member.
 
 ## Open Organization Settings>Users
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

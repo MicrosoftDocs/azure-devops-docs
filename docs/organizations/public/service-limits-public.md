@@ -1,5 +1,5 @@
 ---
-title: Rate and service limits on public projects
+title: Rate and service limits 
 titleSuffix: Azure DevOps Services Public Project
 description: Terms of service  
 ms.technology: devops-public-projects
@@ -7,8 +7,8 @@ ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'

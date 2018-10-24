@@ -47,10 +47,63 @@ In this topic you'll learn:
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range="vsts"
-> [!div class="mx-tdBreakAll"]  
-> |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
-> |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select)<br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags)<br/>- [Update from template](work-item-template.md)<sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../queries/share-plans.md)<br/>- [Change work item type](remove-delete-work-items.md#change-type)<sup>1</sup><br/>- [Move items to another project](remove-delete-work-items.md#move)<sup>1, 3</sup>|                
+
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Multi-select work items  </td>
+<td>
+<ul>
+<li>[Multi-select-query results](#multi-select)</li>
+<li>[Multi-select-backlog](#multi-select)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Link work items </td>
+<td>
+<ul>
+<li>[Link to a new item](add-link.md#link)</li>
+<li>[Link to an existing item](add-link.md#link)</li>
+<li>[New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Bulk edit/update/delete</td>
+<td>
+<ul>
+<li>[Edit field(s)](#edit)</li>
+<li>[Assign to](#assign-to)</li>
+<li>[Move to iteration](#move-iteration)</li>
+<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
+<li>[Change parent](organize-backlog.md#reparent)</li>
+<li>[Add/remove tags](#tags)</li>
+<li>[Update from template](work-item-template.md)<sup>1</sup></li>
+<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Copy, clone, change type, move, or email work items  </td>
+<td>
+<ul>
+<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
+<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
+<li>[Email selected item(s)](../queries/share-plans.md)</li>
+<li>[Change work item type](remove-delete-work-items.md#change-type)<sup>1</sup></li>
+<li>[Move items to another project](remove-delete-work-items.md#move)<sup>1, 3</sup></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+               
 
 
 **Notes:**  
@@ -62,11 +115,61 @@ All of the following actions can be performed by team members that belong to the
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-> [!div class="mx-tdBreakAll"]  
-> |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
-> |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select)<br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags)<br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../queries/share-plans.md) <sup>3</sup>|       
+   
 
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Multi-select work items  </td>
+<td>
+<ul>
+<li>[Multi-select-query results](#multi-select)</li>
+<li>[Multi-select-backlog](#multi-select)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Link work items </td>
+<td>
+<ul>
+<li>[Link to a new item](add-link.md#link)</li>
+<li>[Link to an existing item](add-link.md#link)</li>
+<li>[New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Bulk edit/update/delete</td>
+<td>
+<ul>
+<li>[Edit field(s)](#edit)</li>
+<li>[Assign to](#assign-to)</li>
+<li>[Move to iteration](#move-iteration)</li>
+<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
+<li>[Change parent](organize-backlog.md#reparent)</li>
+<li>[Add/remove tags](#tags)</li>
+<li>[Update from template](work-item-template.md)<sup>1</sup></li>
+<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Copy, clone, or email work items  </td>
+<td>
+<ul>
+<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
+<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
+<li>[Email selected item(s)](../queries/share-plans.md)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
@@ -79,10 +182,58 @@ All of the following actions can be performed by team members that belong to the
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-> [!div class="mx-tdBreakAll"]  
-> |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
-> |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) <br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../queries/share-plans.md) <sup>3</sup>|       
+
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Multi-select work items  </td>
+<td>
+<ul>
+<li>[Multi-select-query results](#multi-select)</li>
+<li>[Multi-select-backlog](#multi-select)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Link work items </td>
+<td>
+<ul>
+<li>[Link to a new item](add-link.md#link)</li>
+<li>[Link to an existing item](add-link.md#link)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Bulk edit/update/delete</td>
+<td>
+<ul>
+<li>[Edit field(s)](#edit)</li>
+<li>[Assign to](#assign-to)</li>
+<li>[Move to iteration](#move-iteration)</li>
+<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
+<li>[Change parent](organize-backlog.md#reparent)</li>
+<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Copy, clone, or email work items  </td>
+<td>
+<ul>
+<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
+<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
+<li>[Email selected item(s)](../queries/share-plans.md)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+      
 
 
 **Notes:**  

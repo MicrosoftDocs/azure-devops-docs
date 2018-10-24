@@ -1,6 +1,7 @@
 ---
+titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+title: Service Fabric Compose Deploy task for Azure Pipelines and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,6 +14,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Service Fabric Compose Deploy
+
+**Azure Pipelines**
 
 ![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
 

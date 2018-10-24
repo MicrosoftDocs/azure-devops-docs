@@ -1,5 +1,6 @@
 ---
 title: Service connections in Azure Pipelines and Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: devops
@@ -270,9 +271,9 @@ Defines and secures a connection to a Docker registry.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription**, **endpoint**, or the equivalent name value in the script. |
 | Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
-| Docker ID | Required. The identifier of the Docker account user. |
+| Docker ID | Required. The identifier of the Docker account user. For Azure Container Registry, this is likely to be a service principal. |
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
@@ -356,13 +357,15 @@ and [standard GitHub service connections](#sep-github).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
+| Choose authorization | Required. Either **Personal access token** or **Username and Password** or **OAuth2**. See notes below. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
+| OAuth configuraton | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -379,6 +382,19 @@ GitHub account in your profile:
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
+
+
+> [!NOTE]
+> If you select **OAuth2** you must setup OAuth configurations first
+and use it configure the connection. See
+[this page](https://help.github.com/enterprise/2.14/admin/guides/user-management/using-github-oauth/)
+on GitHub for information about registering a new OAuth application. Then create **OAuth configuration** for the OAuth application in your Azure DevOps account:
+
+* From your Azure DevOps account home page, click on **Organization settings** on the bottom left navigation panel.
+* From **Pipelines** submenu, click on **OAuth configurations**
+* Choose the **Add** link, specify a name for the OAuth configuration, select source type as **GitHub Enterprise**
+* Enter the information required to setup the OAuth configuration.
+* Now from the Azure DevOps project, you can create a new service connection for GitHub Enterprise and choose authorization as **OAuth2** 
 
 *****
 
@@ -554,19 +570,19 @@ Other service connection types and tasks can be installed in Azure Pipelines
 and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
-* [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
+* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with Azure Pipelines
-  Release Management through a TFS service connection
+  through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
-* [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
+* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
   This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
-  by using Release Management. See
+  by using Azure Pipelines. See
   [TeamCity](../release/artifacts.md#teamcitysource)
   for more details.
 

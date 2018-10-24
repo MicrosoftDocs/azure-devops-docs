@@ -258,7 +258,7 @@ Here are a few examples of the kinds of apps you can build:
 
 ### Release
 
-The new build system is tightly integrated with Release Management. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
+The new build system is tightly integrated with Azure Pipelines. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
 * [CI/CD Hello world](../get-started-designer.md)
 
@@ -327,7 +327,7 @@ If you want to create a reusable and automatically updated piece of logic, then 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range=">=tfs-2018"
 
 ### I don't see XAML builds. What do I do?
 

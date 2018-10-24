@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Reporting Work Item Links | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Report on work item links programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Reporting Work Item Links | REST API Reference for Team Foundation Server
+description: Report on work item links programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 56c1dc20-c204-4550-8294-8d88b6a54aec
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Work item links
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-2.md)]
 
 
@@ -37,7 +40,7 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/reporting/workIte
 | Property      | Type     | Description
 |:--------------|:---------|:----------------------------
 | URL
-| instance      | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string   | TFS server name ({server:port}).
 | project       | string   | The result will contain all links where either source or target work item (or both) is in the specified project. The project can be specified by name or ID.
 | Query
 | continuationToken     | string   | Specifies the token to start the batch from. Omit this parameter to get the first batch of links.
@@ -48,4 +51,40 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/reporting/workIte
 Note: as of API version 2.2, the watermark property has been deprecated in favor of the continuationToken property. Existing watermark values can be passed in as the continuationToken to continue getting incremental updates when using the version 2.2 APIs.
 API version 2.2 fixes an issue where certain links changes were not being exposed through the links reporting API.
 
-[!code-REST [GET__wit_reporting_workItemLinks__json](./_data/reportingWorkItemLinks/GET__wit_reporting_workItemLinks.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemLinks?api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "values": [
+    {
+      "rel": "System.LinkTypes.Hierarchy",
+      "sourceId": 7,
+      "targetId": 8,
+      "changedDate": "2014-03-18T17:17:52.02Z",
+      "isActive": true
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy",
+      "sourceId": 7,
+      "targetId": 9,
+      "changedDate": "2014-03-18T17:18:03.007Z",
+      "isActive": true
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy",
+      "sourceId": 10,
+      "targetId": 13,
+      "changedDate": "2014-03-18T17:21:27.623Z",
+      "isActive": true
+    }
+  ],
+  "nextLink": "https://mytfsserver/DefaultCollection/_apis/wit/reporting/workItemLinks?continuationToken=6281123&api-version=2.2",
+  "isLastBatch": true
+}
+```

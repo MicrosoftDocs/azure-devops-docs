@@ -42,7 +42,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-team-defaults.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list&mdash;only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and taskboard only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and taskboard. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list&mdash;only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 
@@ -80,12 +80,12 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Forecast** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecast** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
@@ -106,7 +106,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -160,7 +160,7 @@ The forecast tool shows between two and four items can be worked on during Itera
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
-	> 
+	
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
@@ -213,7 +213,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 *	[Team velocity](../../report/dashboards/velocity-chart-data-store.md)  
 *	[Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md)  
 *	[Select sprints for a team](../../organizations/settings/set-team-defaults.md)  
-*	Use the [task board](task-board.md) to track work during your sprint
+*	Use the [taskboard](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
 
 

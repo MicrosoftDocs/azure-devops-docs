@@ -1,6 +1,6 @@
 ---
 title: Add portfolio backlogs
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -207,7 +207,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../boards/backlogs/organize-backlog.md).  
 3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercies all the features available with portfolio backlogs.  
-	For **Hosted XML:**  See [Assign licenses to users](../organizations/accounts/add-organization-users-from-user-hub.md).
+	For **Hosted XML:**  See [Assign licenses to users](../organizations/accounts/add-organization-users.md).
 
 
 <a id="import-export">  </a>

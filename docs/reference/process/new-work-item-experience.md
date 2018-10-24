@@ -72,7 +72,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 <img src="../../boards/backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
 > [!IMPORTANT]
-> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
 
 ### Access to other tasks
 
@@ -117,13 +117,6 @@ For guidance in using the new form, see:
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
 - [REST API, Work Item Types](/rest/api/vsts/processdefinitions/work%20item%20types)  
-
-
-### Will the new work item experience become permanent?  
-
-Yes, however, we're always interested in how to improve the experience. What do you like or don't like about the new form layout and experience?  
-
-Send your suggestions to **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
 
 
 ### Will this impact Visual Studio work item forms?  

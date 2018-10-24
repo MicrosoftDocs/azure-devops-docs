@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Connect organization to Azure AD
-    href: ../accounts/connect-organization-to-aad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+    href: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Billing management
@@ -29,11 +29,11 @@
     - name: Change Azure subscription
       href: change-azure-subscription.md
     - name: Change number of paid users
-      href: reduce-cancel-paid-vsts-users.md
+      href: reduce-cancel-paid-users.md
     - name: Buy TFS CALs or Test
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
-      href: vsts-billing-faq.md
+      href: billing-faq.md
   - name: Manage extensions (Marketplace)
     items:
     - name: Change number of paid users

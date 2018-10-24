@@ -1,12 +1,13 @@
 ---
-title: Understand how area and iteration paths are used in projects
-titleSuffix: Azure DevOps Services & TFS
+title: How are area and iteration paths used?
+titleSuffix: Azure DevOps & TFS
 description: Understand how areas and iterations are used in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 06/19/2018
@@ -51,7 +52,7 @@ Add iterations to support these requirements:
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
 
-In the following example, Backlog, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
+In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
 <img src="_img/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 

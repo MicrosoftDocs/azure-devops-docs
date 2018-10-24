@@ -1,5 +1,6 @@
 ---
 title: App Center Test
+titleSuffix: Azure Pipelines & TFS
 description: Test app packages with Visual Studio App Center.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Test: App Center Test
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ![](_img/appcentertest.png) Test app packages with Visual Studio App Center.
 

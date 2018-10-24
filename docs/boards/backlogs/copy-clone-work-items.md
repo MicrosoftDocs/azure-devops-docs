@@ -1,8 +1,7 @@
 ---
-title: Copy work items 
-description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Azure Boards or Team Foundation Server (TFS)  
-ms.global_help.title: Copy or clone a work item 
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 4  
+title: Copy or clone work items 
+titleSuffix: Azure Boards and TFS  
+description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  

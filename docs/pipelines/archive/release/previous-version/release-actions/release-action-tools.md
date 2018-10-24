@@ -1,5 +1,6 @@
 ---
 title: Release Management deployment tools for Release Management
+titleSuffix: Azure Pipelines & TFS
 description: Learn about the release Management tools to deploy an app in Release Management for Azure Pipelines and Team Foundation Server (TFS.
 ms.assetid: 0FD15EFD-35AA-4F56-9603-64D3302C0941
 ms.prod: devops
@@ -32,7 +33,7 @@ The following sections describe the tools provided with Release Management:
 * [IIS Deployment Agent](#iis_da)
 * [Microsoft Azure VM Manager](#mavmm)
 * [XBAP Deployer](#xbapd)
-* [Microsoft Test Manager (MTM) Command-Line Utility](#mtm_clu)
+* [Microsoft Test Manager Command-Line Utility](#mtm_clu)
 * [INI File Manager](#ini_fm)
 * [Windows Process](#wproc)
 
@@ -271,10 +272,10 @@ management executable. The configuration variables of this tool are:
 | -pl |  | No | The complete path where the XBAP project to deploy is located. If not specified, the tool will use the package location where it is executed. |
 
 <a name="mtm_clu"></a>
-## Microsoft Test Manager (MTM) Command-Line Utility
+## Microsoft Test Manager Command-Line Utility
 
-This tool creates and launches automated tests run on MTM (Microsoft Test 
-Manager). It is based on a custom release management PowerShell script. The 
+This tool creates and launches automated tests run on Microsoft Test 
+Manager. It is based on a custom release management PowerShell script. The 
 configuration variables of this tool are:
 
 | **Parameter** | **Variable** | **Mandatory** | **Description** |
@@ -287,9 +288,9 @@ configuration variables of this tool are:
 | -Collection | TFSCollection | Yes | The Team Foundation Server Collection URL for which the automated tests will execute. |
 | -TeamProject | TeamProject | Yes | The name of the project in which the automated tests were configured. |
 | -TestEnvironment | TestEnvironment | Yes | The Test Environment in which the Tests are to be executed (the test environment is associated to a corresponding test controller). |
-| -BuildDirectory | BuildDirectory | No\* | The location of the automated tests. In MTM 2010, this parameter is required. In MTM 2012 and 2013 this parameter is still supported, but you should preferably use BuildDefinition and BuildNumber parameters. |
-| -BuildDefinition |  | No\* | Allows the user to specify the build definition in which the automated tests are included. This parameter can only be used with MTM 2012. If defined, the BuildNumber parameter must also be specified. If not specified, the field "build" visible in the details of a test run will not be affected by the test run. |
-| -BuildNumber |  | No\* | Allows the user to specify the build number whose drop location will contain the automated tests. This parameter can only be used under MTM 2012. If defined, the BuildDefinition parameter must also be specified. If not specified, the field "build" visible in the details of a test run, will not be affected by the test run. |
+| -BuildDirectory | BuildDirectory | No\* | The location of the automated tests. In Microsoft Test Manager 2010, this parameter is required. In Microsoft Test Manager 2012 and 2013 this parameter is still supported, but you should preferably use BuildDefinition and BuildNumber parameters. |
+| -BuildDefinition |  | No\* | Allows the user to specify the build definition in which the automated tests are included. This parameter can only be used with Microsoft Test Manager 2012. If defined, the BuildNumber parameter must also be specified. If not specified, the field "build" visible in the details of a test run will not be affected by the test run. |
+| -BuildNumber |  | No\* | Allows the user to specify the build number whose drop location will contain the automated tests. This parameter can only be used under Microsoft Test Manager 2012. If defined, the BuildDefinition parameter must also be specified. If not specified, the field "build" visible in the details of a test run, will not be affected by the test run. |
 | -SettingsName |  | No | Allows the user to specify the settings to use for the test run. If not specified, the default test settings will be used. |
 | -TestRunWaitDelay |  | No | Allows the user to specify the delay, in seconds, between each call to the test controller. This is required to allow the test run to complete before processing the test results. If not specified, it will default to 10 seconds. |
 | -InconclusiveFailsTests | N/A | No | When this flag is set, the existence of inconclusive tests will fail the deployment. By default, an inconclusive test will not fail the deployment. |

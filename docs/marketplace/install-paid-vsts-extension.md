@@ -44,7 +44,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 
 	![Buy the extension](_img/get-vsts-extensions/test-manager-extension.png)
 
-4.	Select an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) that you'll use to pay for extension access.
+4.	Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) that you'll use to pay for extension access.
 	
 	![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-sub.png)
 
@@ -126,6 +126,6 @@ Tell your team about this extension, so they can start using its capabilities.
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Add backup billing managers](../organizations/billing/add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](../organizations/billing/change-azure-subscription.md)
-- [Azure DevOps billing FAQ](../organizations/billing/vsts-billing-faq.md)
-- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

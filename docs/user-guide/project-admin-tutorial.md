@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Quickstart: Get started as an administrator
+# Quickstart: Get started as an administrator in Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -25,10 +25,10 @@ As an organization owner or a project admin, there are a few items you may want 
 ## Add users to a project 
 
 ::: moniker range="vsts"  
-The first task is to ensure that all members of your organization or group are added to your Azure DevOps organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
+The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. 
 
 Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. To learn more, see: 
-- [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users-from-user-hub.md)
+- [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users.md)
 - [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md) 
 
 ::: moniker-end 
@@ -95,7 +95,7 @@ There are several policies you can set to support collaboration across your team
 ::: moniker-end 
 
 ::: moniker range="vsts"  
-- [Change application access policies for your organization](../organizations/accounts/change-application-access-policies-vs.md)  
+- [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)  
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
@@ -158,7 +158,7 @@ If users believe they are getting too many notifications, they can [opt out of a
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 ## Configure an SMTP server 
 
-In order for team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts).  
+In order for team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
@@ -212,4 +212,5 @@ All organizations can add up to five users with Basic access and unlimited users
 - [Manage organizations](../organizations/accounts/index.md)
 - [All settings](../organizations/settings/about-settings.md)
 - [TFS administration](/tfs/server/index)
+
 ::: moniker-end 

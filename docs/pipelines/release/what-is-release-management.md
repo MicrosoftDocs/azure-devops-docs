@@ -1,6 +1,7 @@
 ---
-title: Understand how Microsoft Release Management works
-description: DevOps CI CD - What is Microsoft Release Management in Azure Pipelines and Team Foundation Server (TFS)
+title: Understand how Azure Pipelines releases work
+titleSuffix: Azure Pipelines & TFS
+description: DevOps CI CD - What is Azure Pipelines and Team Foundation Server (TFS) releases service?
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +13,7 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# What is Release Management?
+# What is Azure Pipelines release service?
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
@@ -20,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-**Release Management** is a service in Azure Pipelines
+**Azure Pipelines releases** is a service in Azure Pipelines
 and Team Foundation Server (TFS 2015.2 and later) and an essential
 element of DevOps CI/CD that helps your team **continuously deliver** software
 to your customers at a faster pace and with lower risk.
@@ -30,7 +31,7 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 
 ![A release pipeline defines the stages for deploment](_img/what-is-release-management/understand-rm-01.1.png)
 
-1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Release Management in action.
+1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Azure Pipelines releases in action.
 
    <iframe width="640" height="360" src="https://www.youtube.com/embed/zSPuRXTeZW8" frameborder="0" allowfullscreen="true"></iframe><p />
 
@@ -41,74 +42,73 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 1. **[Get started now](#getstartednow)** - follow the steps to deploy your apps.
 
 <a name="isitforyou"></a>
-## Is Release Management for you?
+## Is Azure Pipelines release service for you?
 
-Consider using Release Management if:
+Consider using Azure Pipelines releases if:
 
 * **You develop applications and need to deploy them regularly to any platform,**
-  public or private cloud services, or App stores. Release Management
+  public or private cloud services, or App stores. Azure Pipelines
   has many out-of-the-box tasks to deploy a variety of applications. If
   you cannot find an out-of-the-box task to deploy your application
-  using Release Management, consider this: if you can script the
+  using Azure Pipelines, consider this: if you can script the
   deployment of your application using Shell scripts or PowerShell scripts,
   utilities such as Ant or Maven, batch files or EXE utilities, then
-  you can deploy it using Release Management. Release
-  Management also integrates with third party deployment systems
+  you can deploy it using Azure Pipelines. It also integrates with third party deployment systems
   such as Chef and Docker.
 
 * **You use a continuous integration (CI) system**
-  and are looking for a fully-fledged continuous delivery or release
-  management system. Whether you use Azure Pipelines or TFS, or
-  Jenkins as your CI system, you can set up Release Management to
+  and are looking for a fully-fledged continuous delivery management or release
+  system. Whether you use Azure Pipelines or TFS, or
+  Jenkins as your CI system, you can set up Azure Pipelines releases to
   automatically deploy new builds to multiple stages. Even if
   we do not yet support integration with your favorite CI system or artifact
   repository, you can still write custom tasks to download and
   deploy artifacts from it.
 
 * **You need to track the progress of releases.**
-  If you use several stages for your tests, Release Management
+  If you use several stages for your tests, Azure Pipelines release service
   helps you monitor whether a release has been deployed and tested on each
-  of these stages. Release Management also tracks whether an issue fixed
+  of these stages. It also tracks whether an issue fixed
   by a developer, or a product backlog item completed by your team, has
   been deployed to a specific stage.
 
 * **You need control of the deployments.**
-  Release Management lets you specify which users can change the
+  Azure Pipelines release service lets you specify which users can change the
   configuration of an stage, or approve the release to be
   deployed into a particular stage. If there is a problem with
-  your deployment, Release Management helps you roll back to a previous
+  your deployment, Azure Pipelines helps you roll back to a previous
   deployment, and provide all the logs in one place to help you debug the
   problem.
 
 * **You need audit history for all releases and their deployments.**
-  Release Management provides a history of all changes to the pipelines,
+  Azure Pipelines release service provides a history of all changes to the pipelines,
   configurations, and deployments. It also provides a history of all the
   activity performed during each deployment. Each release is accompanied
   by a listing of new features and developer commits that went into that
   release.
 
 <a name="howrmworks"></a>
-## How does Release Management work?
+## How does Azure Pipelines release service work?
 
-The Release Management service stores the data about your release pipelines,
+The Azure Pipelines release service stores the data about your release pipelines,
 stages, tasks, releases, and deployments in Azure Pipelines or TFS.
 
-![Release management components](_img/what-is-release-management/understand-rm-05.png)
+![Azure Pipelines release service components](_img/what-is-release-management/understand-rm-05.png)
 
-Release Management runs the following steps as part of every deployment:
+Azure Pipelines runs the following steps as part of every deployment:
 
 1. **Pre-deployment approval:** When a new deployment request is triggered,
-   Release Management checks whether a pre-deployment approval is required
+   Azure Pipelines checks whether a pre-deployment approval is required
    before deploying a release to a stage. If it is required, it sends
    out email notifications to the appropriate approvers.
 
-1. **Queue deployment job:** Release Management schedules the deployment job on
+1. **Queue deployment job:** Azure Pipelines schedules the deployment job on
    an available [automation agent](../agents/agents.md). An agent is a piece
    of software that is capable of running tasks in the deployment.
 
 1. **Agent selection**: An automation agent picks up the job.
-   The agents for Release Management are exactly the same as those that run your
-   Builds in Azure Pipelines and TFS. A release pipeline can
+   The agents for Azure Pipelines releases are exactly the same as those that run your
+   builds in Azure Pipelines and TFS. A release pipeline can
    contain settings to select an appropriate agent at runtime.
 
 1. **Download artifacts**: The agent downloads all the artifacts specified
@@ -124,9 +124,9 @@ Release Management runs the following steps as part of every deployment:
    or TFS.
 
 1. **Post-deployment approval:** When deployment to a stage is complete,
-   Release Management checks if there is a post-deployment approval required
+   Azure Pipelines checks if there is a post-deployment approval required
    for that stage. If no approval is required, or upon completion of
-   a required approval, Release Management proceeds to trigger deployment to
+   a required approval, it proceeds to trigger deployment to
    the next stage.
 
 <a name="getstartednow"></a>

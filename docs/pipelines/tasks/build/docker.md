@@ -1,5 +1,6 @@
 ---
 title: Docker
+titleSuffix: Azure Pipelines & TFS
 description: Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
 ms.prod: devops
@@ -7,17 +8,22 @@ ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 09/22/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Build: Docker
 
+**Azure Pipelines | TFS 2018**
+
 ![](_img/docker.png) Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
-[!NOTE]
+
+> [!NOTE]
+> 
+> For YAML pipelines, consider using script-based Docker commands as described in the [Docker guidance](../../languages/docker.md), and using this Docker task when working with container registries that require authentication.
 
 The built-in Docker task enables you to build Docker images, push Docker images to an authenticated Docker registry,
-run Docker images or execute other operations offered by the Docker CLI: 
+run Docker images, or execute other operations offered by the Docker CLI:
 
 * **Use Docker best practices**: By writing minimal yaml you can build and push an image which is tagged with '$(Build.BuildId)' and has rich metadata about the repository, commit, build information to the container image as Docker labels
 * **Conform to Docker standards**: The task takes care of details like tagging image with the registry hostname and port image before pushing the image to a private registry like Azure Container Registry (ACR). It also helps you to follow Docker naming convention, for example, converting upper case character to lower case and removes spaces in 
@@ -66,7 +72,7 @@ Push Docker images with multiple tags to an authenticated Docker Registry and sa
     azureContainerRegistry: contoso.azurecr.io
     command: 'push'
 ```
-This will reult in a docker login to the container registry by using the service connection and then a docker push command will be used to push the image to the container registry. For example, a simplified version of the command run is:
+This will result in a docker login to the container registry by using the service connection and then a docker push command will be used to push the image to the container registry. For example, a simplified version of the command run is:
 > docker push contoso.azurecr.io/contoso-ci:11
 
 ### Build, tag and push container image
@@ -75,7 +81,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
 - task: Docker@1
   displayName: 'Build an image'
   inputs:
-    imageName: 'contoso.azurecr.io/(Build.Repository.Name):$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/repositoryname:$(Build.BuildId)'
 - task: Docker@1
   displayName: Login
   inputs:
@@ -86,7 +92,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
   displayName: 'Push an image'
   inputs:
     command: 'push'
-    imageName: 'contoso.azurecr.io/(Build.Repository.Name):$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId)'
 ```
 
 ### Login to a container registry and run scripts
@@ -104,8 +110,8 @@ For example, You can use the Docker task to sign into ACR and then use a subsequ
 - bash: |
    # Write your commands here
    # Use the environment variables input below to pass secret variables to this script
-   docker build -t contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId) . # include other options to meet your needs
-   docker push contoso.azurecr.io/$(Build.Repository.Name):$(Build.BuildId) 
+   docker build -t contoso.azurecr.io/repositoryname:$(Build.BuildId) . # include other options to meet your needs
+   docker push contoso.azurecr.io/repositoryname:$(Build.BuildId) 
    displayName: 'Build, tag and push image'
 ```
 

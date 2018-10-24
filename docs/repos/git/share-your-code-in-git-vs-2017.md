@@ -32,7 +32,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ##  Create a local Git repo for your project
 

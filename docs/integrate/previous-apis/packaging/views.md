@@ -4,11 +4,14 @@ description: Work with release views programmatically using the REST APIs for VS
 ms.assetid: AED5CC40-4B11-447E-BAE6-D9806687736E
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.date: 10/10/2016
 ---
 
 # Release views
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version3-preview.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
@@ -29,7 +32,56 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__packaging_feeds__feedName__views](./_data/views/GET__packaging_feeds__feedName__views.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "id": "3d80c2b2-aa5a-4e10-bca9-4775c6e37b04",
+      "name": "Prerelease",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04",
+      "type": "release",
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/3d80c2b2-aa5a-4e10-bca9-4775c6e37b04"
+        },
+        "feed": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+        },
+        "packages": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@3d80c2b2-aa5a-4e10-bca9-4775c6e37b04/Packages"
+        }
+      }
+    },
+    {
+      "id": "e7d6aa9e-27e6-4e42-b65e-9cb4781628a9",
+      "name": "Release",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9",
+      "type": "release",
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/e7d6aa9e-27e6-4e42-b65e-9cb4781628a9"
+        },
+        "feed": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+        },
+        "packages": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@e7d6aa9e-27e6-4e42-b65e-9cb4781628a9/Packages"
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ## Get a release view
 
@@ -46,7 +98,34 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__packaging_feeds__feedName__views__viewName_](./_data/views/GET__packaging_feeds__feedName__views__viewName_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views/Alpha?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "b0024744-d616-41f3-af01-34eb4d33efe5",
+  "name": "Alpha",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5",
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5"
+    },
+    "feed": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+    },
+    "packages": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@b0024744-d616-41f3-af01-34eb4d33efe5/Packages"
+    }
+  }
+}
+```
+
 
 
 ## Create a release view
@@ -67,7 +146,40 @@ POST https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/
 | name        | string | Name of the release view to be created.
 | type        | string | Type of the release view to be created, currently only "release" views are supported.
 
-[!code-REST [POST__packaging_feeds__feedName__views](./_data/views/POST__packaging_feeds__feedName__views.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views?api-version=3.0-preview
+```
+```json
+{
+  "name": "Alpha",
+  "type": "release"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "b0024744-d616-41f3-af01-34eb4d33efe5",
+  "name": "Alpha",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5",
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5"
+    },
+    "feed": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+    },
+    "packages": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@b0024744-d616-41f3-af01-34eb4d33efe5/Packages"
+    }
+  }
+}
+```
+
 
 ## Update a release view
 
@@ -86,7 +198,39 @@ PATCH https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging
 | Body
 | name        | string | Updated name of the release view.
 
-[!code-REST [PATCH__packaging_feeds__feedName__views__viewName_](./_data/views/PATCH__packaging_feeds__feedName__views__viewName_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views/Alpha?api-version=3.0-preview
+```
+```json
+{
+  "name": "Beta"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "b0024744-d616-41f3-af01-34eb4d33efe5",
+  "name": "Beta",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5",
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40/Views/b0024744-d616-41f3-af01-34eb4d33efe5"
+    },
+    "feed": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40"
+    },
+    "packages": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/8c2a4e66-9205-4a9b-8bd1-16799a65fb40@b0024744-d616-41f3-af01-34eb4d33efe5/Packages"
+    }
+  }
+}
+```
+
 
 ## Delete a release view
 
@@ -103,4 +247,9 @@ DELETE https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packagin
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [DELETE__packaging_feeds__feedName__views__newViewName_](./_data/views/DELETE__packaging_feeds__feedName__views__newViewName_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/views/Beta?api-version=3.0-preview
+```
+

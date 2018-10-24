@@ -1,5 +1,6 @@
 ---
 title: Download Build Artifacts
+titleSuffix: Azure Pipelines & TFS
 description: Download Build Artifacts
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Utility: Download Build Artifacts
+
+**Azure Pipelines**
 
 ![](_img/downloadbuildartifacts.png) Download Build Artifacts
 

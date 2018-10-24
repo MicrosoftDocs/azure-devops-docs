@@ -35,11 +35,11 @@ Prior to generating these reports, you must first [connect to the Analytics Serv
 
 2. Select *Card* visual.  
 
-	![](./_img/data-connector-recipes-count-1.png)  
+	![Power BI Visualizations, choose Card visual](./_img/data-connector-recipes-count-1.png)  
 
 3. Search for `Work Item Count` and drag it to the `Fields`.
 
-	![](./_img/data-connector-recipes-count-2.png)  
+	![Power BI, Filter for Work Item Count, add to fields](./_img/data-connector-recipes-count-2.png)  
 
 <a id="number-of-bugs-by-area-path-and-priority" />
 ## Number of Bugs by Area Path and Priority
@@ -48,23 +48,23 @@ Prior to generating these reports, you must first [connect to the Analytics Serv
 
 2. Select `Matrix` visual.  
 
-	![](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-1.png)
+	![Power BI Visualizations, choose Matrix visual](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-1.png)
 
 3. Search for `Area Path` and drag it to `Rows`.
 
-	![](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-2.png)
+	![Power BI, Add Area Path to Rows](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-2.png)
 
 4. Search for `Priority` and drag it to `Columns`.
 
-	![](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-3.png)
+	![Power BI, add Priority to Columns](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-3.png)
 
 5. Search for `Work Item Count` and drag it to `Values`.
 
-	![](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-4.png)
+	![Power BI, add Work Item Count to Values](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-4.png)
 
 6. Search for `Work Item Type`, drag it to `Visual level filters` and select `Bugs`.
 
-	![](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-5.png)
+	![Power BI, Add Work Item Type to Visual Level Filters, Filter on Bug](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-5.png)
 
 ## Related articles 
 - [Power BI integration overview](overview.md) 

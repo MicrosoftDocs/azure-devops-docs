@@ -38,12 +38,29 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 5. Select **Add**.
 
 ## Filter to saved packages
-You can see the packages you have saved in your feed by selecting the "Source = npmjs.com" filter.
+
+You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
 > Right now, Azure DevOps Services and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+![Viewing your cached packages](_img/view-cached-packages-newnav.png)
+
+# [Previous navigation](#tab/previous-nav)
 ![Viewing your cached packages](_img/view-cached-packages.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
+
+::: moniker-end
 
 ## Scopes
 If you prefer to use scopes, which limit your private packages to those with the `@<scope>` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Scopes](scopes.md).

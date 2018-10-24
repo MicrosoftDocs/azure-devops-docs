@@ -21,7 +21,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * Git command line tools:
   * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager - Windows](set-up-credential-managers.md#windows)
   * [Install Git for macOS and Linux](https://git-scm.com/downloads). For information on Git credential managers for these platforms, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux)
@@ -58,7 +58,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
   ```
-  git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+  git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
   ```
   After running the previous command, Git downloads a copy of the code, including all [commits](commits.md) and [branches](branches.md) from the repo, into a new folder for you to work with.
 

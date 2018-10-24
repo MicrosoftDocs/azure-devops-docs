@@ -72,7 +72,7 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
   of how long your test is and how many users the test simulates.
 
 * You get a generous allocation of virtual user minutes free each month.
-  See the [Azure DevOps Pricing](https://visualstudio.microsoft.com/team-services/pricing/) page.
+  See the [Azure DevOps Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) page.
   
 ## More information
 

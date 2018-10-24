@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure File Copy
+titleSuffix: Azure Pipelines & TFS
 description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
@@ -43,6 +44,11 @@ has a sample template that can perform the required
 operations to set up the WinRM HTTPS
 protocol on the virtual machines, open the 5986 port 
 in the firewall, and install the test certificate.
+
+> [!NOTE]
+> If you are deploying to Azure Static Websites as a container in blob storage,
+  you must use **Version 2** or higher of the task in order to preserve the **$web**
+  container name.
 
 ## Demands
 

@@ -1,6 +1,7 @@
 ---
-title: Xamarin
-description: Building Xamarin projects using Azure Pipelines and TFS
+title: Building Xamarin apps with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
+description: Building Xamarin projects using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
@@ -13,9 +14,11 @@ ms.topic: quickstart
 monikerRange: '> tfs-2018'
 ---
 
-# Xamarin
+# Build Xamarin apps with Azure Pipelines
 
-This guidance explains how to build Xamarin apps for Android and iOS.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build Xamarin apps for Android and iOS.
 
 ## Example
 
@@ -33,14 +36,14 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Xamarin apps without needing to set up any infrastructure of your own. Xamarin tools are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use macOS or Windows agents to run Xamarin.Android builds, and macOS agents to run Xamarin.iOS builds.
 
-For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
 pool:
-  vmImage: 'macOS 10.13' # For Windows, use 'VS2017-Win2016'
+  vmImage: 'macOS-10.13' # For Windows, use 'vs2017-win2016'
 ```
 
 ## Build a Xamarin.Android app
@@ -112,7 +115,7 @@ You can build and test your Xamarin.Android app, Xamarin.iOS app, and related ap
 jobs:
 - job: Android
   pool:
-    vmImage: 'VS2017-Win2016'
+    vmImage: 'vs2017-win2016'
   variables:
     buildConfiguration: 'Release'
     outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
@@ -129,7 +132,7 @@ jobs:
 
 - job: iOS
   pool:
-    vmImage: 'macOS 10.13'
+    vmImage: 'macOS-10.13'
   variables:
     buildConfiguration: 'Release'
   steps:

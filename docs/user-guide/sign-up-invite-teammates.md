@@ -13,9 +13,11 @@ monikerRange: 'vsts'
 ---
 
 
-# Quickstart: Sign up for a free Azure DevOps organization
+# Quickstart: Sign up for a free organization in Azure DevOps
 
-In this quickstart, you learn how to sign up for a free Azure DevOps organization with a Microsoft account and how to invite your teammates.
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+
+In this quickstart, you learn how to sign up for a free organization with a Microsoft account and how to invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
@@ -29,14 +31,11 @@ In this quickstart, you learn how to sign up for a free Azure DevOps organizatio
 
 [!INCLUDE [invite-teammates](../_shared/invite-teammates.md)]
 
-For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users-from-user-hub.md).
+For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users.md).
 
 ## Next steps  
  
 > [!div class="nextstepaction"]
 > [Add code to your Git repository](code-with-git.md)
 >
-> [Plan and track work](plan-track-work.md) 
-
-
- 
+> [Plan and track work](plan-track-work.md)

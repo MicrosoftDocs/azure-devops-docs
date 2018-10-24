@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 07/12/2018
+ms.date: 09/27/2018
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
 
-Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
+Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Often times you find that someone created a work item of the wrong work item typ
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
+You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
 
 > [!TIP]    
 You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 ::: moniker range="vsts"
 
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to change the work item type of one or more work items   
 > * How to move one or more work items to another project     
 > * How to remove work items from the backlog by changing the State to Removed     
@@ -77,43 +77,100 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="vsts"
 
-> [!div class="mx-tdCol2BreakAll"]
-> |Contributors & Stakeholders for public projects|Project Administrators|  
-> |-------------|----------|---------|  
-> |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) <br/>- [Restore work items](#restore) |- [Move a work item to another project](#move) <br/>- [Permanently delete work items](#restore) <br/>- [Permanently delete test artifacts](#delete-test) |  
+<table>
+<tbody valign="top">
+<tr>
+<th width="50%">Contributors & Stakeholders</th>
+<th width="50%">Project Administrators</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>[Change work item type](#change-type)</li> 
+<li>[Remove work items (change State)](#remove)</li>
+<li>[Delete work items](#delete)</li>
+<li>[Restore work items](#restore)</li>
+</ul>
+</td>
+<td><ul>
+<li>[Move a work item to another project](#move)</li>
+<li>[Permanently delete work items](#restore) </li>
+<li>[Permanently delete test artifacts](#delete-test)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 
-You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
+You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-> [!div class="mx-tdCol2BreakAll"] 
-> |Contributors|Project Administrators|  
-> |-------------|----------|---------|  
-> |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal)<br/>- [Restore work items](#restore) (web portal)|- [Permanently delete work items (web portal)](#restore)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)<br/>- [Permanently delete test artifacts](#delete-test)| 
+<table>
+<tbody valign="top">
+<tr>
+<th width="50%">Contributors & Stakeholders</th>
+<th width="50%">Project Administrators</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>[Remove work items (change State)](#remove)</li>
+<li>[Delete work items](#delete)</li>
+<li>[Restore work items](#restore)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Permanently delete work items (web portal](#restore)</li>
+<li>[Permanently delete work items (command-line)](#perm-delete)</li>
+<li>[Permanently delete test artifacts](#delete-test)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-> [!div class="mx-tdCol2BreakAll"]
-> |Contributors|Project Administrators|  
-> |-------------|----------|---------|  
-> |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete)<br/>- [Restore work items](#restore)|- [Permanently delete work items](#restore)  (web portal)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)| 
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="50%">Contributors & Stakeholders</th>
+<th width="50%">Project Administrators</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>[Remove work items (change State)](#remove)</li>
+<li>[Delete work items](#delete)</li>
+<li>[Restore work items](#restore)</li>
+</ul>
+</td>
+<td><ul>
+<li>[Permanently delete work items (web portal](#restore)</li>
+<li>[Permanently delete work items (command-line)](#perm-delete)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |Contributors|Project Administrators|  
-> |-------------|----------|---------|  
-> |- [Remove work items (change State)](#remove)|- [Permanently delete work items (command-line tool)](#perm-delete)| 
+- **Contributors & Stakeholders**: [Remove work items (change State)](#remove)  
+- **Project Administrators**: [Permanently delete work items (command-line)](#perm-delete)  
 
 
 ::: moniker-end
@@ -165,25 +222,30 @@ To learn more, see [Set permissions and access for work tracking](/azure/devops/
 ## Change the work item type 
 
 > [!NOTE]  
->You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
+>You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.  
 
 Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
 
-1. Select the ![Change project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+# [New navigation](#tab/new-nav)
+
+0. Open a work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option. 
 
 	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
 
-	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
+	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type.  
 
-	Click ![actions icon](../_img/icons/actions-icon.png) to open the context menu of one of the selected work items, and choose the ![Change project icon](../_img/icons/change-type-icon.png) **Change type&hellip;** option.    
+	Choose the ![ ](../_img/icons/actions-icon.png) actions icon,  and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option.     
+
+	> [!div class="mx-imgBorder"]  
+	> ![Backlog, multi-select, open actions menu, choose Change type option](_img/move-change-delete/change-type-new-nav.png)  
 
 	> [!IMPORTANT]   
 	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
-
-	![backlog, multi-select, open menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
 
 2. Select the type and optionally enter a comment.  
 
@@ -196,10 +258,40 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> [!NOTE]     
 	> The system automatically resets the State and Reason fields to the default initial values of the specified type.  
 
-4. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Select the ![Change project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
+
+	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
+
+	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
+
+	Choose the ![ ](../_img/icons/actions-icon.png) actions icon,  and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option.     
+
+	![Backlog, multi-select, open actions menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
+
+	> [!IMPORTANT]   
+	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
+
+2. Select the type and optionally enter a comment.  
+
+	![Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
+
+	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
+
+3. Save the work item to complete the change.  
+ 
+	> [!NOTE]     
+	> The system automatically resets the State and Reason fields to the default initial values of the specified type.  
+
+	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+
+--- 
 
 ::: moniker-end
- 
+
 ::: moniker range="vsts"
 
 <a id="move"> </a>  
@@ -227,38 +319,57 @@ You can only move work items from one project to another project within the orga
 
 
 <a id="remove"> </a>  
-## Remove work items by changing the State
+## Remove work items
 
-By changing the State of a work item to Removed, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards).
 
 > [!div class="mx-imgBorder"]  
 > ![Change State to Removed](_img/move-change-delete/remove-state.png)  
 
+To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
 
-To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
+
+
 
 <a id="delete"> </a> 
-
-
-
 ::: moniker range="vsts" 
 
 ## Delete work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
 
-1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+# [New navigation](#tab/new-nav)
 
-2. Confirm you want to actually delete the item(s).  
+0. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+
+0. Confirm you want to actually delete the item(s).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
 
-4. You can also delete work items from your Kanban or task board. 
+0. You can also delete work items from your Kanban or taskboard. 
  
-	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
-	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
+
+# [Previous navigation](#tab/previous-nav)
+
+0. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+
+0. Confirm you want to actually delete the item(s).  
+
+	> [!div class="mx-imgBorder"]
+	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
+
+0. You can also delete work items from your Kanban or taskboard. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+
+	Or, from a backlog or query results list, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
+
+--- 
 
 ::: moniker-end
 
@@ -273,7 +384,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -286,7 +397,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
-4. You can also delete work items from your Kanban or task board. 
+4. You can also delete work items from your Kanban or taskboard. 
  
 	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
@@ -294,63 +405,185 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
+<a id="restore" />
+
+::: moniker range="vsts"
 ## Restore or permanently delete work items   
 
-To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
+You restore deleted work items from the web portal Recycle bin. 
 
-# [Browser](#tab/browser)
+# [New navigation](#tab/new-nav)
 
-::: moniker range="tfs-2013"
-Restoring or deleting work items from the web portal isn't a supported feature for TFS 2013. 
-::: moniker-end
+1. Choose **Boards>Work Items** and then choose the **Recycle bin**.  
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
 
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
-::: moniker-end
+	A new browser tab opens with the query which lists work items added to the Recycle bin. 
 
-::: moniker range=">= tfs-2017"
-1. To restore deleted items, open the Recycle bin from the web portal.  
+2.	Select the items you want to restore and then choose **Restore**.  
+ 
+	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
+
+	> [!NOTE] 
+	> You can't open work items that have been moved to the Recycle bin.  
+
+	Optionally, you can choose to permanently delete the items.
+
+	> [!NOTE] 
+	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+
+3.	Confirm your selection. 
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose **Work>Work Items** and then choose the **Recycle bin**.  
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
+
+	Or, from a backlog or query, open the Recycle bin.  
  
 	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
 
-2.	Select the items you want to restore  and then choose **Restore**.  
+	A new browser tab opens with the query which lists work items added to the Recycle bin. 
+
+0.	Select the items you want to restore  and then choose **Restore**.  
  
 	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
 
 	Optionally, you can choose to permanently delete the items.
 
 	> [!NOTE] 
-	>You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+
+3.	Confirm your selection. 
+
+---
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+## Restore or permanently delete work items   
+
+You restore deleted work items from the web portal Recycle bin. 
+::: moniker-end  
+::: moniker range="tfs-2015"  
+> [!NOTE]  
+> **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
+::: moniker-end  
+
+::: moniker range=">= tfs-2015"
+0. Choose **Work>Work Items** and then choose the **Recycle bin**.  
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
+
+	Or, from a backlog or query, open the Recycle bin.  
+ 
+	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
+
+	A new browser tab opens with the query which lists work items added to the Recycle bin. 
+
+0.	Select the items you want to restore  and then choose **Restore**.  
+ 
+	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
+
+	Optionally, you can choose to permanently delete the items.
+
+	> [!NOTE] 
+	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
 
 3.	Confirm your selection. 
 
 ::: moniker-end
 
-# [Command Line](#tab/command-line)
 
-::: moniker range=">tfs-2018"
+<a id="perm-delete" />
+::: moniker range=">= tfs-2013 <= tfs-2018"
+## Permanently delete work items (command line)  
+
+To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
+::: moniker-end
+::: moniker range="tfs-2018"
 Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards.
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="perm-delete"> </a>    
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
-Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the WIT data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group of have your **Edit project-level information** permission set to Allow. 
+Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group of have your **Edit project-level information** permission set to Allow. 
+::: moniker-end  
 
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
-	::: moniker range=">= tfs-2017"  
+::: moniker range="tfs-2018"  
+0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+
+	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
+
+	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
+
+	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
+
+0.	To delete several work items, enter the server name and directory path to the collection. For example:   
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
+ 
+	To delete a single work item, simply enter the ID as shown:  
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
+
+::: moniker-end
+
+::: moniker range="tfs-2017"  
+0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
+
+	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
+
+	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
+
+0.	To delete several work items, enter the server name and directory path to the collection. For example:   
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
+ 
+	To delete a single work item, simply enter the ID as shown:  
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
+
+::: moniker-end
+
+::: moniker range="tfs-2015"  
+
+0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+
 	`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
 
 	> [!NOTE] 
 	>**Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow. 	
-	::: moniker-end  
-	::: moniker range="tfs-2013"  
+
+	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
+
+	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
+
+0.	To delete several work items, enter the server name and directory path to the collection. For example:   
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
+ 
+	To delete a single work item, simply enter the ID as shown:  
+
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
+
+::: moniker-end
+
+
+::: moniker range="tfs-2013"  
+
+0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+
 	`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
-	::: moniker-end  
+
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
 
 	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
@@ -364,8 +597,6 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
 
 ::: moniker-end
-
----
 
 
 ::: moniker range=">= tfs-2017"
@@ -413,11 +644,27 @@ To delete test artifacts, the following restrictions and operations apply:
 
 ## Related articles   
 
-To learn more about managing test artifacts, see: 
+::: moniker range=">= tfs-2018"  
+- [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
+::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range="tfs-2017"  
+- [Add, update, and follow a work item](../backlogs/add-work-items.md)  
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+::: moniker-end
+
+
+::: moniker range="<= tfs-2015"  
+- [Add and update a work item](../backlogs/add-work-items.md)  
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+::: moniker-end
+
+
+
+::: moniker range=">= tfs-2015"  
 
 ### Delete and restore actions performed under the hood  
 

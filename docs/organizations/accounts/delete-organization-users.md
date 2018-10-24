@@ -24,11 +24,11 @@ If users no longer require access to a project or your organization, you can rem
 
 ## Remove users from your organization
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization: ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -50,7 +50,7 @@ If users no longer require access to a project or your organization, you can rem
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly in Azure DevOps after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
 7. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
@@ -59,7 +59,7 @@ If users no longer require access to a project or your organization, you can rem
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization: ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
@@ -75,7 +75,7 @@ If users no longer require access to a project or your organization, you can rem
 
 5. To confirm that you've removed the users completely, make sure they're not in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly in Azure DevOps after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
 6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
@@ -108,4 +108,4 @@ To remove users from a project, remove them from the **Teams** groups they belon
 - [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting organization users in the Users page](faq-add-delete-users.md)
-- [Troubleshoot adding members to projects in Azure DevOps ](faq-add-team-members.md)
+- [Troubleshoot adding members to projects](faq-add-team-members.md)

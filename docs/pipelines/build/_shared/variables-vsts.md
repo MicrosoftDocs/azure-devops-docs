@@ -5,7 +5,7 @@ ms.topic: include
 ## Agent variables
 
 > [!NOTE]
-> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks.
+> You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
 > You cannot use them to customize the build number or to apply a version control label or tag.
 
 <table>
@@ -190,6 +190,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.LocalPath</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synomymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
 
@@ -284,6 +285,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourcesDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synomymous with Build.Repository.LocalPath.</p>
 </td>
 </tr>
 
@@ -345,7 +347,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
-<td>Build.TriggeredBy.BuildDefinitionName</td>
+<td>Build.TriggeredBy.DefinitionName</td>
 <td>If the build was [triggered by another build](../triggers.md#BuildCompletion), then this variable is set to the name of the triggering build pipeline.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
@@ -405,7 +407,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to `build` if the pipeline is a build or `release` if the pipeline is a release.</td>
+<td>Set to `build` if the pipeline is a build. For a release, the values are `deployment` for a Deployment group job and `release` for an Agent job.
 <tr>
 
 <tr>

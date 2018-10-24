@@ -10,7 +10,7 @@ First, get the tools and your feed URL:
    >You can also manually construct a push command as follows:  
 
    ```Command
-   nuget.exe push -Source {NuGet package source URL} -ApiKey key {your_package}.nupkg`
+   nuget.exe push -Source {NuGet package source URL} -ApiKey key {your_package}.nupkg
    ```
 
 **Notes:**
@@ -25,6 +25,6 @@ If you don't have a package but want to try this out, Microsoft provides a sampl
 * Run these two commands:
 
    ```Command
-   nuget.exe install Azure DevOps Services-HelloWorld -ExcludeVersion
-   nuget.exe push -Source {NuGet package source URL} -ApiKey key Azure DevOps Services-HelloWorld\Azure DevOps Services-HelloWorld.nupkg
+   nuget.exe install HelloWorld -ExcludeVersion
+   nuget.exe push -Source {NuGet package source URL} -ApiKey key HelloWorld\HelloWorld.nupkg
    ```

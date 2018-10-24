@@ -1,5 +1,6 @@
 ---
-title: Go
+title: Building and testing Go projects with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Build and test Go projects using Azure Pipelines or TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,9 +14,11 @@ ms.topic: quickstart
 monikerRange: '> tfs-2018'
 ---
 
-# Go
+# Build Go projects with Azure Pipelines
 
-This guidance explains how to build and test Go projects.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build and test Go projects with CI/CD pipelines.
 
 ## Example
 
@@ -35,14 +38,14 @@ The rest of this topic describes ways to customize your Go build pipeline.
 
 You can use Azure Pipelines to build your Go projects without needing to set up any infrastructure of your own. Modern versions of Go are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Go that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Go that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/go
 pool:
-  vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 ## Set up a Go workspace

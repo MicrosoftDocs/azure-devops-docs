@@ -41,7 +41,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
@@ -82,12 +82,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd old-contoso-repo.git
     ```
 
-0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
 0. Run the following command to copy the source repo to the target repo.
 
     ```
-    git push --mirror https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo
+    git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
 0. Delete the temporary folder by running the following commands.

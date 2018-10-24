@@ -71,11 +71,16 @@ None
 <td>Select this check box to delete all existing files in the target folder before beginning to copy.</td>
 </tr>
 <tr>
-<td>Over Write</td>
+<td>Overwrite</td>
 <td>Select this check box to replace existing files in the target folder.</td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Notes
+
+If no files are matched, the task will still report success.
+If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
 
 ## Examples
 
@@ -142,6 +147,18 @@ These files are copied to the staging directory:
                 | -- ClassLibrary2.dll
                 | -- ConsoleApplication1.exe
 ```
+
+### Copy everything from the source directory except the .git folder
+
+* Source Folder: ```$(Build.SourcesDirectory)```
+
+* Contents (example of multiple match patterns):
+
+   ```
+   **/*
+   !.git/**/*
+   ```
+
 
 ## Open source
 

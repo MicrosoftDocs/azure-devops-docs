@@ -1,5 +1,6 @@
 ---
-title: Deploy to Azure index to content | Microsoft Docs    
+title: Deploy to Azure index to content
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,6 +12,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Deploy to Azure
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]

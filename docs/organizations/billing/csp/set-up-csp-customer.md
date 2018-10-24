@@ -1,5 +1,5 @@
 ---
-title: "Cloud Solution Providers: set up billing for your customers for Azure DevOps Services and Visual Studio"
+title: "Set up billing for your customers for Azure DevOps Services and Visual Studio"
 description: Cloud Solution Provider (CSP) partners can purchase and manage various Azure DevOps Services, Visual Studio, HockeyApp, and other subscriptions for their customers
 ms.prod: devops
 ms.technology: devops-billing
@@ -12,7 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-# Cloud Solution Providers: set up billing for your customers for Azure DevOps Services and Visual Studio 
+# Cloud Solution Providers: Set up billing for your customers for Azure DevOps Services and Visual Studio
 
 ## Azure DevOps Services 
 

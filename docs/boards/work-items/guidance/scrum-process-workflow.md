@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 04/05/2017
+ms.date: 09/19/2018
 ---
 
 # Scrum process work item types and workflow  
@@ -70,8 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-> [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed.  
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
@@ -98,9 +97,9 @@ PBIs and bugs follow this typical workflow progression:
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
 
-### Update status with Kanban or task boards
+### Update status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of PBIs, and the [sprint task board](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of PBIs, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 ![Track progress on the Kanban board](../../boards/_img/ALM_CC_MoveCard.png)
 

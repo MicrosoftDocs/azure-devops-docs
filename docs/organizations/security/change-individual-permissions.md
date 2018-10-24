@@ -1,12 +1,13 @@
 ---
-title: Change individual or group permissions, grant select access to specific functions 
+title: Change individual or group permissions
+titleSuffix: Azure DevOps & TFS
 description: Add custom security groups, change permissions for groups or individuals tutorial
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
@@ -152,26 +153,63 @@ You add members to a custom security group in the same way you add users to a bu
 
 ### To change the permission at an object-level
 
-1. From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see these topics:
+From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see these topics:
 
-	> [!div class="mx-tdBreakAll"]
-	> |Wiki & Dashboard permissions | DevOps permissions  |Agile/Work tracking permissions |  
-	> |-------------|----------|---------|   
-	> |- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Release pipeline security](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md) |- [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  
 
-2. From the Security dialog, choose **Add** to add a user account. 
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Wiki & Dashboard permissions</td>
+<td>
+<ul>
+<li>[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)</li>
+<li>[Dashboards](../../report/dashboards/dashboard-permissions.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>DevOps (code, build, test, release) permissions </td>
+<td>
+<ul>
+<li>[Git branch](../../repos/git/branch-permissions.md)</li>
+<li>[Git repository](set-git-tfvc-repository-permissions.md)</li>
+<li>[TFVC](set-git-tfvc-repository-permissions.md)</li>
+<li>[Builds](../../pipelines/policies/set-permissions.md)</li>
+<li>[Release pipeline security](../../pipelines/policies/set-permissions.md)</li>
+<li>[Approvals and approvers](../../pipelines/release/approvals/index.md)</li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Work tracking permissions</td>
+<td>
+<ul>
+<li>[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)</li>
+<li>[Work item query and folder](../../boards/queries/set-query-permissions.md)</li>
+<li>[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)</li>  
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+0. From the Security dialog, choose **Add** to add a user account. 
 
 	<img src="_img/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
 
-3. Type the name of the user account, choose search, and select the account you want.
+0. Type the name of the user account, choose search, and select the account you want.
 
-4. Select the user name from the left pane and then update the permission assignments, setting **Allow** or **Deny** for specific permissions. 
+0. Select the user name from the left pane and then update the permission assignments, setting **Allow** or **Deny** for specific permissions. 
 
     <img src="_img/change-individual-permissions/set-permissions-individual-object-level.png" alt="Set permissions for a single user account" style="border: 1px solid #C3C3C3;" />
 
     For a description of a specific permission, see [Permissions and groups reference](permissions.md).
 
-5. Choose **Save changes**.
+0. Choose **Save changes**.
 
 ## Next steps
 

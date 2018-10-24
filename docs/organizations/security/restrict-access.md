@@ -1,14 +1,14 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: devops
 ms.topic: Conceptual
 ms.technology: devops-security
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---

@@ -1,5 +1,6 @@
 ---
 title: Azure VM scale set Deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy Virtual Machine scale set image
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Azure VM scale set Deployment
+
+**Azure Pipelines**
 
 ![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
 

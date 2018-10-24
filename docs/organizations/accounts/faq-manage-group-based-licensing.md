@@ -13,7 +13,7 @@ ms.date: 03/21/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot managing group-based licensing
+# Troubleshoot managing group-based licensing in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -24,13 +24,13 @@ A: Users in the group **TestGroup** lose access to group resources if the users 
 > [!div class="mx-imgBorder"]
 ![remove-test-group-group-rule-managing_group-based-licensing](_img/faq/remove-test-group-rule.png)
 
-#### Q: Will my Azure DevOps Services or Azure AD group be deleted if I remove its group rule?
+#### Q: Will my Azure DevOps or Azure AD group be deleted if I remove its group rule?
 
 A: No. Your groups won't be deleted.
 
 #### Q: What does the option "Remove <group> from all project level groups" do?
 
-A: This option removes the Azure DevOps Services or Azure AD group from any project-level default groups, such as **Project Readers** or **Project Contributors**.
+A: This option removes the Azure DevOps or Azure AD group from any project-level default groups, such as **Project Readers** or **Project Contributors**.
 
 ## Related articles
 

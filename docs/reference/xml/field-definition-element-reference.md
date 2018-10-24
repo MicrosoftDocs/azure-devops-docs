@@ -1,6 +1,6 @@
 ---
 title: FIELD (Definition) element reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.prod: devops
 ms.technology: devops-agile
@@ -27,8 +27,9 @@ You use the **FIELD** (Definition) element to define a work item field and speci
 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
-syncnamechanges ="true | false" reportable="Dimension | Detail | Measure"formula="sum"  
+<FIELD name="fieldDisplayName" refname="fieldReferenceName" 
+type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
+syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum"  
 reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
    <ALLOWEXISTINGVALUE />  

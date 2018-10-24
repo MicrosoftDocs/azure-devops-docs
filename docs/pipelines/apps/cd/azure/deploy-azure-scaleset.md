@@ -1,5 +1,6 @@
 ---
 title: Implement deployment of your app to Azure Virtual Machine Scale Set
+titleSuffix: Azure Pipelines & TFS
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 ms.prod: devops

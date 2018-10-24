@@ -56,7 +56,7 @@ sections:
           alt: Cloud security logo
           src: https://docs.microsoft.com/media/common/i_cloud-security.svg
         title: Sign up for Azure DevOps
-      - href: ../organizations/accounts/create-organization-msa-or-work-student.md
+      - href: ../organizations/accounts/create-organization.md
         html:
         image:
           title: Azure DevOps
@@ -141,7 +141,7 @@ sections:
           alt: Account management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Get started as a Stakeholder
-      - href: ../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../organizations/accounts/add-organization-users.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           title: Configure teams, manage users
@@ -212,7 +212,7 @@ sections:
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
-      - href: about-vsts-tfs.md
+      - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:
           title: Differences in Team Foundation Server and Azure DevOps Services
@@ -291,6 +291,13 @@ sections:
           alt: Billing logo
           src: https://docs.microsoft.com/media/common/i_billing.svg
         title: Billing
+      - href: ../organizations/accounts/index.md
+        html: <p></p>
+        image: 
+          title: Azure DevOps organization management
+          alt: Management icon
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Manage organizations
       - href: https://docs.microsoft.com/visualstudio
         html: <p></p>
         image:

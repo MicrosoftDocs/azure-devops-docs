@@ -1,5 +1,6 @@
 ---
 title: Build and Test - Visual Studio Test Agent Deployment task
+titleSuffix: Azure Pipelines & TFS
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Test: Visual Studio Test Agent Deployment
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -96,8 +99,8 @@ The supported options for these scenarios are:
     to specify the location. The user must manually check for 
     new versions of the agent and update the test machines.<p /> 
 * **Continuous integration/continuous deployment workflows**
-  - Build/deploy/test tasks are supported in both Build and 
-    Release Management workflows.<p /> 
+  - Build/deploy/test tasks are supported in both build and 
+    release workflows.<p /> 
 * **Machine group configuration**
   - Only Windows-based machines are supported inside a 
     machine group for build/deploy/test tasks. Linux, macOS, or 
@@ -173,7 +176,5 @@ machines.
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]

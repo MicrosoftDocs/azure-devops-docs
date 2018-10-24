@@ -15,7 +15,7 @@ ms.date: 05/31/2018
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
@@ -55,11 +55,11 @@ Learn how to perform these tasks:
 
 ## Add or modify a field 
 
-Locked ![](_img/process/locked-icon.png) fields and inherited ![](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
+Locked ![ ](_img/process/locked-icon.png) fields and inherited ![ ](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
 0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-0. To add a field, choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
+0. To add a field, choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png)
@@ -217,17 +217,17 @@ We recommend that you create a test project and apply your customized inherited 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field(s) you added appear on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
 ### Create a test organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
  
-0. Create a test Azure DevOps Services organization.  
-0. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
-0. Verify the process customizations in the test organization.   
-0. Use the import/export process tool again to import the modified process to the production organization.  
+1. Create a test organization.  
+2. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
+3. Verify the process customizations in the test organization.   
+4. Use the import/export process tool again to import the modified process to the production organization.  
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 

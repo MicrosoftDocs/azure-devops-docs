@@ -1,5 +1,6 @@
 ---
 title: Restore Package Management NuGet packages in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: devops

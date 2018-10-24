@@ -1,7 +1,7 @@
 ---
-title: About user, team, project, collection, & organizational-level settings
-titleSuffix: Azure DevOps Services & TFS
-description: Overview of configuring team, project, collection, and organizational-level settings in Azure DevOps & Team Foundation Server
+title: What settings are supported? 
+titleSuffix: Azure DevOps & TFS
+description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -153,6 +153,8 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
+See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md). 
+
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
@@ -160,9 +162,9 @@ Members of the [Project Administrators group](../security/set-project-collection
 
 ::: moniker range="vsts"   
 **Project settings**  
-From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
-![Project settings, conceptual](_img/about/project-settings-concept.png) 
+![Project settings, new nav](_img/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -173,15 +175,17 @@ From the administrative **Project settings** page, you can configure the setting
 # [Previous navigation](#tab/previous-nav)
 
 **Project-level settings**  
-From the administrative pages for a project, you can configure the settings shown in the following image. 
+From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
 
-> [!NOTE]  
-> Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
 ::: moniker range=">= tfs-2013"
-![Project settings, conceptual](_img/about/project-settings-concept-prev-nav.png) 
+![Project settings, conceptual](_img/about/project-settings-prev-nav.png) 
 ::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+> [!NOTE]  
+> Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+::: moniker-end
 ---
 
 <table>
@@ -248,7 +252,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td><a id="work" />**Work, Project configuration**</td>
+<td><a id="work" />**Boards, Project configuration (Work)**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -257,7 +261,7 @@ From the administrative pages for a project, you can configure the settings show
 </td>
 </tr>
 <tr>
-<td><a id="pipelines" />**CI/CD** </td>
+<td><a id="pipelines" />**Build and release (Agent Pools, Release)** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
@@ -267,7 +271,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td><a id="repos" />**Code** </td>
+<td><a id="repos" />**Code (Version control)** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -315,9 +319,9 @@ Members of the [Project Collection Administrators group](../security/set-project
 
 ::: moniker range="vsts"   
 **Organization settings**  
-From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Project settings, conceptual](_img/about/organization-settings-concept.png) 
+![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -327,28 +331,26 @@ From the administrative **Project settings** page, you can configure the setting
 
 # [Previous navigation](#tab/previous-nav)
 
-
 ::: moniker range="vsts"   
 
 **Organization settings**  
 From the **Admin settings** page, you can configure the settings shown in the following image. 
 
-![Organization settings, conceptual](_img/about/collection-settings-concept-prev-nav.png) 
+![Organization settings, conceptual](_img/about/organization-settings-prev-nav.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"  
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 **Project collection-level settings**  
 From the administrative pages for a collection, you can configure the settings shown in the following image. 
 
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
-![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-concept-prev-nav.png) 
+![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
 ::: moniker-end
 
 ---
-
 
 ::: moniker range="vsts" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
@@ -368,9 +370,9 @@ For an overview of managing your organization, see [About organization managemen
 <td>Organization administrators can enable or disable account-level features that are in preview.</td>
 </tr>
 <tr>
-<td>**Overview**</td>
+<td>**Overview (Settings)**</td>
 <td><ul>
-<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
+<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)</li>
 <li>[Find or change your organization location](../accounts/change-organization-location.md)</li>
 <li>[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)</li>
 </ul></td>
@@ -400,14 +402,14 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Policy**</td>
 <td><ul>
-<li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
+<li>[Change application access policies](../accounts/change-application-access-policies.md) </li>
 </ul></td>
-<td>Set policies to allow or disallow access by other applications or services to the  Azure DevOps Services organization. </td>
+<td>Set policies to allow or disallow access by other applications or services to the organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
 <td><ul>
-<li>[Add users](../accounts/add-organization-users-from-user-hub.md)</li>
+<li>[Add users](../accounts/add-organization-users.md)</li>
 <li>[Add external users](../accounts/add-external-user.md)</li>
 <li>[Manage user access levels](../accounts/manage-users-table-view.md)</li>
 <li>[Remove users](../accounts/delete-organization-users.md)</li>
@@ -421,8 +423,8 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
-<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-aad.md)</li>
+<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)</li>
+<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
@@ -455,7 +457,7 @@ For an overview of managing your organization, see [About organization managemen
 <td>Certain rate limits are in place to ensure performance across the cloud service platform.  </td>
 </tr>
 <tr>
-<td>**Work, Process**</td>
+<td>**Boards, Process** </td>
 <td><ul>
 <li>[Customize a project](./work/customize-process.md)</li>
 <li>[Add and manage processes](./work/manage-process.md)</li>
@@ -463,7 +465,7 @@ For an overview of managing your organization, see [About organization managemen
 <td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
 </tr>
 <tr>
-<td>**CI/CD**</td>
+<td>**Build and release**</td>
 <td><ul>
 <li>[Set retention policies](../../pipelines/policies/retention.md)</li>
 <li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
@@ -489,7 +491,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <th width="45%">Notes</th>
 </tr>
 <tr>
-<td>**Overview, Admin settings**</td>
+<td>**Settings**</td>
 <td><ul>
 <li>[Change access levels](../security/change-access-levels.md)</li>
 </ul></td>
@@ -523,6 +525,16 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
+<td>**Build and release, Agent pools, Deployment pools**</td>
+<td><ul>
+<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+</ul></td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
+</tr>
+<tr>
 <td>**Extensions**</td>
 <td><ul>
 <li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
@@ -535,16 +547,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 </td>
 </tr>
-<tr>
-<td>**CI/CD**</td>
-<td><ul>
-<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
-<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
-<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
-<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
-</ul></td>
-<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
-</tr>
+
 </tbody>
 </table>
 

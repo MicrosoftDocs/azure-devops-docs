@@ -1,5 +1,6 @@
 ---
 title: Build and Release Tasks in Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
@@ -8,7 +9,7 @@ ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/19/2018
+ms.date: 10/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +25,8 @@ A **task** is the building block for defining automation in a
 build pipeline, or in a stage of a release pipeline.
 A task is simply a packaged script or procedure that has been
 abstracted with a set of inputs. We provide some [built-in tasks](../tasks/index.md) 
-to enable fundamental build and deployment scenarios.
+to enable fundamental build and deployment scenarios. We have also
+provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts)
 offers a number of extensions; each of which, when installed to your
@@ -89,7 +91,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 Select the condition for running this task:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md)
+* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../build/options.md#job-cancel-timeout).
@@ -123,9 +125,44 @@ For example, you can set up your build pipeline to run and validate your app for
 > [!TIP]
 > Want a visual walkthrough? See [our April 19 news release](../archive/news/2017.md#april-19).
 
-[Create a new build pipeline](../get-started-designer.md) (start with an empty process) to try this out.
+# [YAML](#tab/yaml)
+
+Create an azure-pipelines.yml file in your project's base directory with the following contents.
+
+```yaml
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+  # Node install
+  - task: NodeTool@0
+    displayName: Node install
+    inputs:
+      versionSpec: '6.x' # The version we're installing
+  # Write the installed version to the command line
+  - script: which node
+```
+
+[Create a new build pipeline](../get-started-designer.md) and run it. Observe how the build is run.
+The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js version if it is not already on the agent. The [Command Line](../tasks/utility/command-line.md) script logs the location of the Node.js version on disk.
+
+# [Designer](#tab/designer)
 
 #### Tasks tab
+
+[Create a new build pipeline](../get-started-designer.md) (start with an empty process) to try this out.
+
+Apply the following agent settings:
+
+1. Set **Parallelism** to **Mutli-configuration**
+
+2. Specify **Multipliers**:
+
+```
+NodeVersionSpec
+```
+
+3. Set **Maximum number of agents** to 2
 
 Add these tasks:
 
@@ -139,19 +176,14 @@ $(NodeVersionSpec)
 
 ![icon](../tasks/utility/_img/command-line.png) Utility: Command Line
 
-* Tool (if you're running on a Windows agent)
+* Script (if you're running on a Windows agent)
  ```
-where
+where node
 ```
 
-* Tool (if you're running on a macOS or Linux agent)
+* Script (if you're running on a macOS or Linux agent)
  ```
-which
-```
-
-* Arguments
- ```
-node
+which node
 ```
 
 #### Variables tab
@@ -162,23 +194,11 @@ On the [Variables tab](../build/variables.md) define this variable:
 |-|-|-|
 |```NodeVersionSpec```|```6.x, 7.x```|Selected|
 
-#### Options tab
-
-On the [Options tab](../build/options.md):
-
-1. Enable **Multi-configuration**.
-
-2. Specify **Multipliers**:
-
- ```
-NodeVersionSpec
-```
-
-0. (Optional) Select **Parallel** if you have multiple build agents and want to run your builds in parallel.
-
 #### Save & queue
 
 Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
+
+---
 
 ### Tool installer tasks
 

@@ -1,6 +1,6 @@
 ---
-title: Understand how permissions and groups are defined 
-titleSuffix: Azure DevOps Services & TFS
+title: How are permissions and groups defined?
+titleSuffix: Azure DevOps & TFS
 description: Understand how permissions are managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
@@ -8,8 +8,8 @@ ms.assetid:
 toc: show
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -169,7 +169,7 @@ You use the [web portal administration context](../../organizations/security/add
 |[Work item query](permissions.md#query)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
 |[Work item tags](permissions.md#tags)|||![check mark](../../_img/check.png)|||
 |[Alerts](permissions.md#alerts)|||![check mark](../../_img/check.png)|||
-|[Release Management](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
+|[Releases](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
 |[Lab Management](permissions.md#lab)|||||![check mark](../../_img/check.png)|
 
 

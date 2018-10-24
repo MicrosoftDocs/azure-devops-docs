@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2018'
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-* An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
@@ -122,7 +122,7 @@ In order to receive the service hook notifications, you'll need to expose a port
     http://c3c1bffa.ngrok.io
     ```
 
-3. Browse to your Azure DevOps project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+3. Browse to your Azure DevOps project, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -203,7 +203,7 @@ Now that your server can receive service hook events when new PRs are created,up
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
 
     ```
-    setx COLLECTIONURL "https://<your account>.visualstudio.com/DefaultCollection"
+    setx COLLECTIONURL "https://dev.azure.com/<your account>"
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
@@ -225,7 +225,7 @@ Now that your server can receive service hook events when new PRs are created,up
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/pull-requests/pullrequeststatuses#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 

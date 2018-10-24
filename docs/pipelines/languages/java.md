@@ -1,5 +1,6 @@
 ---
-title: Java
+title: Building Java projects with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building Java projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +14,9 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Java
+# Build Java projects with Azure Pipelines or Team Foundation Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -21,7 +24,7 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to build Java projects. See [Android](android.md) for Android-specific projects.
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Java projects with CI/CD pipelines. See [Android](android.md) for Android-specific projects.
 
 ## Example
 
@@ -46,7 +49,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 pool:
-  vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 ## Build your code with Maven

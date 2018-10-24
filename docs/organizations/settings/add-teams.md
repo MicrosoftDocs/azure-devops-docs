@@ -1,6 +1,6 @@
 ---
 title: Add a team, move from one team to several teams
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
 ms.prod: devops
@@ -29,7 +29,7 @@ As your organization grows, you'll want to make sure that you configure your Agi
 In this topic you'll learn:  
 
 >[!div class="checklist"]    
-> * How to add a team, moving from one team to two teams   
+> * How to add a team, move from one team to two teams   
 > * How to add team members  
 > * How to move work items assigned to one team to another team  
 > * How to delete a team      
@@ -94,7 +94,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -123,7 +123,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 ::: moniker range=">= tfs-2013  <= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
 	<img src="../../_shared/_img/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -154,7 +154,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 ::: moniker range="vsts"  
 > [!NOTE]   
-> You must first [add user to a project or to your organization](../accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
+> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
 ::: moniker-end 
 
 

@@ -1,5 +1,6 @@
 ---
 title: npm
+titleSuffix: Azure Pipelines & TFS
 description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
 ms.prod: devops

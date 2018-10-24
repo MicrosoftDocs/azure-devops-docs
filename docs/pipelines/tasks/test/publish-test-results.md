@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines and TFS Build and Test - Publish Test Results task
+titleSuffix: Azure Pipelines & TFS
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.prod: devops
@@ -59,6 +60,11 @@ The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
 be changed to `**/TEST-*.trx`. 
 
+**testResultsFormat** is an alias for the **testRunner** input name.
+The results files can be produced by multiple runners, not just a specific
+runner. For example, jUnit results format is supported by many runners and
+not just jUnit.
+
 To publish test results for Python using YAML, see [Python](../../languages/python.md)
 in the **Languages** section of these topics, which also includes examples for other languages. 
 
@@ -112,7 +118,6 @@ in a build or release summary, and the corresponding mapping with the attributes
 | | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value | /testsuites/testsuite/testcase/Attributes["**classname**"].Value | /test-results/test-suite.Attributes["**name**"].Value | /test-suite[@type='Assembly'].Attributes["**name**"].Value | /assemblies/assembly.Attributes["**name**"].Value |
 | | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value | - | - | - | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value |
 
-
 <a name="docker"></a>
 
 ## Docker
@@ -164,13 +169,13 @@ The final image will be published to Docker or Azure Container Registry
    replace the contents of the existing `Dockerfile` with the following:
 
    ```Dockerfile
-   # This Dockerfile creates the final image to be published to Docker or 
+   # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
    FROM microsoft/aspnetcore:2.0
    # Create app directory
    WORKDIR /app
-   # Copy only the deployment artifacts 
+   # Copy only the deployment artifacts
    COPY /out .
    ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
    ```
@@ -186,7 +191,8 @@ The final image will be published to Docker or Azure Container Registry
 
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
    steps:
@@ -215,10 +221,11 @@ The final image will be published to Docker or Azure Container Registry
 
    ```YAML
    # Build Docker image for this app to be published to Azure Container Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
-   
+
    steps:
    - script: |
        docker build -f Dockerfile.build -t $(dockerId)/dotnetcore-build:$BUILD_BUILDID .
@@ -248,7 +255,7 @@ The final image will be published to Docker or Azure Container Registry
 
 1. Update your build pipeline with the following
 
-   * **Agent pool**: `Hosted Linux Preview`
+   * **Agent pool**: `Hosted Ubuntu 1604`
      - **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
      - **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry. 
    * **YAML file path**: `/.vsts-ci.docker.yml`
@@ -267,9 +274,9 @@ YAML builds are not yet available on TFS.
 
 1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-   * **Agent queue**: `Hosted Linux Preview`
+   * **Agent queue**: `Hosted Ubuntu 1604`
 
-1. Add a [Bash task](../utility/bash.md) after the Docker task and configure it as follows to build and copy artifacts to the host:
+1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
    * **Type**: Inline
    * **Script**: To build, test and copy artifacts to host, use the following script:
@@ -310,7 +317,7 @@ YAML builds are not yet available on TFS.
 1. If you use Azure Container Registry, ensure you have
    [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
-       
+
 1. In the **Variables** tab of the build pipeline, define two variables:
 
    * **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
@@ -335,7 +342,6 @@ The Publish Test Results task provides support for attachments for both test run
 | | Code Coverage | /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**binaryFile**"].Value And /TestRun/TestSettings/Execution/AgentRule/DataCollectors/DataCollector/Configuration/CodeCoverage/Regular/CodeCoverageItem.Attributes["**pdbFile**"].Value |
 | **Test result** | Data Collectors | /TestRun/Results/UnitTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/WebTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/TestResultAggregation/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value |
 | | Test Result | /TestRun/Results/UnitTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/WebTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/TestResultAggregation/ResultFiles/ResultFile.Attributes["**path**"].Value |
-
 
 ### NUnit 3
 

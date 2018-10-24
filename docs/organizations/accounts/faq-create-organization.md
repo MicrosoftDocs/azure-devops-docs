@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot creating an Azure DevOps organization
+# Troubleshoot creating an organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -42,15 +42,15 @@ A:	[Find Visual Studio subscriptions that include Azure DevOps](faq-add-delete-u
 
 #### Q:	Why am I asked to provide profile details?
 
-A:	If you're a new user, you can change your profile details. You need to do this only once. 
+A:	If you're a new user, you can change your profile details. You need to do this only once.
 
-1.	Confirm your profile details. 
+1.	Confirm your profile details.
 
 	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
 
-1.	Continue creating your Azure DevOps organization.
+1.	Continue creating your organization.
 
-	![Create your Azure DevOps organization](_img/sign-up-visual-studio-team-services/my-info-new-organization.png)
+	![Create your organization](_img/sign-up-visual-studio-team-services/my-info-new-organization.png)
 
 <a name="organization-location"></a>
 
@@ -62,19 +62,19 @@ A:	Some features require you to install an extension, which might be available f
 
 For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) requires you to install the Test Manager extension. You can [try paid extensions for free](../billing/try-additional-features-vs.md) if you haven't started the extension trials already. Otherwise, you can [pay for user access](../../marketplace/install-vsts-extension.md) to these features.
 
-#### Q:	How many Azure DevOps organizations can I create?
+#### Q:	How many organizations can I create?
 
-A:	You can [create multiple Azure DevOps organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control. 
+A:	You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control. 
 
-There's no limit to the number of Azure DevOps organizations that you can join.  
+There's no limit to the number of organizations that you can join.  
 
 <a name="create-another-organization"></a>
 
-#### Q:	How do I create another Azure DevOps organization?
+#### Q:	How do I create another organization?
 
 A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your Azure DevOps organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create your organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 
@@ -94,17 +94,17 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 #### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
-A:	Your choice of account type affects how you control access and authenticate users for your Azure DevOps organization.
+A:	Your choice of account type affects how you control access and authenticate users for your organization.
 
 When you sign up with a Microsoft account:
 
-*	You're solely responsible for managing access to your Azure DevOps organization.
+*	You're solely responsible for managing access to your organization.
 *	All users must sign in with Microsoft accounts.
 
 When you sign up with a work or school account:
 
-*	Your Azure DevOps organization is automatically connected to your directory in Azure Active Directory.
-*	All users must be members in the connected directory to get access to your Azure DevOps organization.
+*	Your organization is automatically connected to your directory in Azure Active Directory.
+*	All users must be members in the connected directory to get access to your organization.
 *	The directory administrator has control over who can join the directory.
 *	You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
 
@@ -120,9 +120,9 @@ A:	Yes, see [Change your organization's Azure Active Directory instance](change-
 
 [!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
 
-*	Choose **Work or school account** if you want to use your organization's directory to authenticate Azure DevOps users and control Azure DevOps organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
+* Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
 
-*	Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
+* Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 

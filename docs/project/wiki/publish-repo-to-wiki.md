@@ -8,9 +8,9 @@ ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.reviewer: sancha
-author: KathrynEE
+author: chcomley
 monikerRange: 'vsts'
 ms.date: 04/26/2018  
 ---
@@ -71,7 +71,7 @@ Choose **Overview>Wiki**.
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki or publish existing repo markdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -80,8 +80,8 @@ Choose **Wiki**.
 > [!div class="mx-imgBorder"]  
 > ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
 
-- If you need to switch your team project, choose the ![](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
-- If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), then choose **Wiki>Wiki**.
+- If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
+- If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses icon), then choose **Wiki>Wiki**.
 
 ![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
@@ -137,7 +137,7 @@ With the Wiki provisioned with the markdown files you've added, you can now add 
 
 0. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**. 
 
-0. Choose the page you want, open the ![](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
+0. Choose the page you want, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Edit, rename, or delete wiki content](_img/wiki/publish-code-edit-rename-file.png)
@@ -190,7 +190,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Add a page from the web portal 
 
-0. From **Repos>Files** or **Code>Files** for the published repo, open the ![](../../_img/icons/actions-icon.png) actions icon and choose **File**. 
+0. From **Repos>Files** or **Code>Files** for the published repo, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose **File**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a page to the wiki from the web portal](_img/wiki/publish-code-add-edit-files-folder.png)
@@ -209,7 +209,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Upload files to a folder 
 
-0. If you have existing content already defined, you can upload it into a folder. Open the ![](../../_img/icons/actions-icon.png) actions icon and choose **Upload file(s)**. 
+0. If you have existing content already defined, you can upload it into a folder. Open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose **Upload file(s)**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Upload files to a folder option](_img/wiki/publish-wiki-upload-files.png)
@@ -284,7 +284,7 @@ Misc content
 
 ## Related articles
 
-- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
 - [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
 - [Update wiki pages offline](wiki-update-offline.md)

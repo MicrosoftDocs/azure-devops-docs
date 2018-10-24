@@ -126,15 +126,15 @@ Because feature teams don't own epics or features, epics and features don't appe
 
 ![Migrate team backlog of stories to epics](_img/safe-migrate-team-stories-to-epics.png)  
 
-They can also break down their work into tasks and use the task board to keep themselves on track during specific sprints.
+They can also break down their work into tasks and use the taskboard to keep themselves on track during specific sprints.
 
-![Migrate team Sprint 3 task board](_img/safe-migrate-sprint3-task-board.png)
+![Migrate team Sprint 3 taskboard](_img/safe-migrate-sprint3-task-board.png)
 
 The chart view of queries becomes very useful in the Innovation and Planning (IP) sprint, when feature teams work together to stabilize the features scheduled for a Release.  
 
 ![Bug charts](_img/safe-feature-team-active-bug-charts.png)  
 
-For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and task board to track progress and break down work into manageable chunks.  
+For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and taskboard to track progress and break down work into manageable chunks.  
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.  
 
@@ -320,13 +320,13 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ![User Story work item form](_img/safe-user-story-new-form.png)  
 
-::: moniker range="tfs-2013"  
+::: moniker range="tfs-2013" 
 
 ## Required customization
 
 If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
-::: moniker-end  
+::: moniker-end 
 
 ## Resources
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  

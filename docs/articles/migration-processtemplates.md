@@ -1,5 +1,5 @@
 ---
-title: Validation of process templates for migration import from TFS to Azure DevOps Services | Azure DevOps & TFS
+title: Validation of process templates for migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
 description: Guidance for fixing common TfsMigrator process template issues.
 ms.prod: devops
 ms.topic: article
@@ -72,11 +72,11 @@ Make sure you do this for each and every project.
 <a id="dealing-with-process-errors"></a>
 ## Dealing with Process Errors
 
-Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for Azure DevOps. Odds are you will need to make some adjustments and apply them to your TFS collection.
+Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for Azure DevOps Services. Odds are you will need to make some adjustments and apply them to your TFS collection.
 
 > If you are using an OOB Agile, Scrum, or CMMI process you probably won't see any errors in TfsMigrator.log. Instead, check the TryMatchOobProcesses.log for errors. If you are error free then your project will map to an OOB process.
 
-There are variety of customizations that will not work in Azure DevOps. Make sure you review the [list of customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) that are supported. 
+There are variety of customizations that will not work in Azure DevOps Services. Make sure you review the [list of customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) that are supported. 
 
 If you have projects that are using an older process template, TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
 
@@ -125,7 +125,7 @@ When the script has completed you need to re-run TfsMigrator to validate the col
 
 #### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change.
 
-In Azure DevOps we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
+In Azure DevOps Services we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
 
 To fix this you will need to run the witadmin changefield command. Syntax for the command will look something like this:
 
@@ -148,12 +148,12 @@ This error typically occurs when a process has not been updated in a while. Try 
 
 #### TF402564: You've defined XX global lists. Only 64 are allowed.
 
-By default, Azure DevOps will support 64 global lists. You will typically run across this error if you have a large amount of build pipelines. The global list named Builds - **TeamProjectName** gets created for each new build pipeline. You will need remove the outdated global lists.
+By default, Azure DevOps Services will support 64 global lists. You will typically run across this error if you have a large amount of build pipelines. The global list named Builds - **TeamProjectName** gets created for each new build pipeline. You will need remove the outdated global lists.
 
 ### Additional Resources
 
 * [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
-* [Differences between Azure DevOps and TFS process template customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+* [Differences between Azure DevOps Services and TFS process template customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 * [Configure features after TFS upgrade](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 * [Resolve validation errors](../organizations/settings/work/import-process/resolve-errors.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 * [Defining global lists in TFS](../reference/xml/define-global-lists.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)

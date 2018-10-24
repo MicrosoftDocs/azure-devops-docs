@@ -6,8 +6,8 @@ ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -46,6 +46,8 @@ Authorization refers to the operations performed to verify that the identity whi
 ## Basic member
 
 A user account that has been granted membership to an Azure DevOps organization or TFS instance with Basic access. To learn more, see [About access levels](access-levels.md).
+
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)]
 
 ## Conditional access
 

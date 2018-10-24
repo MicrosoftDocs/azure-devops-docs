@@ -1,5 +1,5 @@
 ---
-title: Use Kanban boards to add, update, and review work items
+title: Use Kanban boards to add & update work items
 titleSuffix: Azure Boards and TFS
 description: Work with Kanban boards in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
@@ -55,11 +55,10 @@ Collaborate with others by adding, updating, and reviewing your work items as ca
 ## Concepts 
       
 - [Kanban best practices](best-practices-kanban.md)      
+- [Kanban key concepts](best-practices-kanban.md)     
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 
-
-
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## How-to Guides
 
@@ -80,7 +79,7 @@ Collaborate with others by adding, updating, and reviewing your work items as ca
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Reference   
 
 - [Kanban board controls](kanban-board-controls.md) 

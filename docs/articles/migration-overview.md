@@ -1,5 +1,5 @@
 ---
-title: Migration overview from TFS to Azure DevOps Services | Azure DevOps & TFS 
+title: Migration overview from TFS to Azure DevOps Services | Azure DevOps Services & TFS 
 description: Overview of the high fidelity migration process from Team Foundation Server to Azure DevOps Services
 ms.prod: devops
 ms.topic: article
@@ -18,7 +18,7 @@ ms.date: 04/13/2018
 >[ Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
 
 ## TFS Database Import Service
-The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps. 
+The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 
 ## Supported TFS Versions for Import
@@ -28,16 +28,13 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-> [!IMPORTANT]
-> Support for imports from TFS 2018 Update 1 will no longer be supported as of Wednesday, September 5th. All migrations from this version of TFS will needed to be completed before that date or you will need to upgrade your collection to the next supported version. 
-
-* TFS 2018 Update 1
 * TFS 2018 Update 2
+* TFS 2018 Update 3
 
 > [!NOTE]
-> The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to Azure DevOps using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
+> The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
 
-Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to Azure DevOps should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
 ## Preview Features
 
@@ -51,7 +48,7 @@ The following features can be included with your import, but are currently in a 
 
 * [Azure Artifacts](https://visualstudio.microsoft.com/team-services/package-management/)
 
-When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new Azure DevOps organization along with all your other data. Should you choose to not include these features then their data will not be copied.
+When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new Azure DevOps Services organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
 For a list of items not included with an import please see the [migration guide](https://aka.ms/TFSDataImport).
 
@@ -98,7 +95,7 @@ A. The features available to each team project are the same. The differences occ
 
 #### Q: If my organization is using Hosted XML, can I create new projects to use the Inheritance process model?
 
-A: Yes. For data import organizations, Azure DevOps supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).  
+A: Yes. For data import organizations, Azure DevOps Services supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).  
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 

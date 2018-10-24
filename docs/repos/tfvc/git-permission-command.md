@@ -65,7 +65,7 @@ See [Git repository permission namespaces and actions](/tfs/server/ref/command-l
 The following examples lists the permissions for the fabrikam-fiber collection.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
 ```
 
@@ -74,7 +74,7 @@ tf git permission /collection:https://fabrikam-fiber.visualstudio.com
 The following examples lists the project level permissions for the FabrikamFiber project which is in the fabrikam-fiber collection.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /teamproject:FabrikamFiber
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
 ```
@@ -84,7 +84,7 @@ tf git permission /collection:https://fabrikam-fiber.visualstudio.com
 The following examples lists the project level permissions for the FabrikamFiber repository which is in the FabrikamFiber project.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /teamproject:FabrikamFiber 
                   /repository:FabrikamFiber 
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
@@ -108,7 +108,7 @@ First, block the Create Branch permission at the repository root for the project
 ```
 tf git permission /deny:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo
 ```
@@ -118,14 +118,14 @@ Then, allow contributors to create branches under `features` and `users`.
 ```
 tf git permission /allow:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:features
 
 tf git permission /allow:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:users
@@ -136,7 +136,7 @@ Allow administrators to create branches under `releases`.
 ```
 tf git permission /allow:CreateBranch 
                   /group:"[FabrikamProject]\Project Administrators" 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:releases
@@ -147,7 +147,7 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 ```
 tf git permission /allow:CreateBranch 
                   /group:"[FabrikamProject]\Project Administrators" 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:master

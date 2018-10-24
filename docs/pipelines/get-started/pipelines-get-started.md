@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # How to use Azure Pipelines
 
+**Azure Pipelines**
+
 You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [visual designer](../get-started-designer.md) to do the same. 
 
 When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
@@ -39,7 +41,7 @@ If you think the YAML workflow is best for you, take the next step by [creating 
 
 ## Use Azure Pipelines in the visual designer
 
-You can create and configure your build and release pipelines in the Azure DevOps web poral with the visual designer. 
+You can create and configure your build and release pipelines in the Azure DevOps web portal with the visual designer. 
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Use the Azure Pipelines visual designer to create  and configure your build and release pipelines.

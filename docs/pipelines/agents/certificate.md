@@ -1,5 +1,6 @@
 ---
 title: Run the agent with a self-signed certificate
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
@@ -14,6 +15,8 @@ monikerRange: '>= tfs-2017 < vsts'
 ---
 
 # Run the agent with a self-signed certificate
+
+**TFS 2018 | TFS 2017**
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 
@@ -66,9 +69,10 @@ Pass `--sslskipcertvalidation` during agent configuration
 > The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation.
-When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
-There are 2 approach to solve the problem.
+We ship command-line Git as part of the Windows agent.
+We use this copy of Git for all Git related operation.
+When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the Git we shipped to allow that self-signed SSL certificate.
+There are 2 approaches to solve the problem.
 
 1. Set the following git config in global level by the agent's run as user.
 ```bash
@@ -76,7 +80,7 @@ git config --global http."https://tfs.com/".sslCAInfo certificate.pem
 ```
 > [!NOTE]
 >
-> Setting system level git config is not reliable on Windows, since the system level .gitconfig file is stored at the copy of git.exe we packaged which will get replaced whenever the agent is upgraded to a new version.
+> Setting system level Git config is not reliable on Windows. The system .gitconfig file is stored with the copy of Git we packaged, which will get replaced whenever the agent is upgraded to a new version.
 
 2. Enable git to use SChannel during configure with 2.129.0 or higher version agent
 Pass `--gituseschannel` during agent configuration

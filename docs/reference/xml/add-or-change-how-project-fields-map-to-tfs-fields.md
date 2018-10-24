@@ -1,6 +1,6 @@
 ---
 title: Change how Project fields map to fields
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Customize how data is published and refreshed by modifying the Microsoft Project mapping file for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
 ms.date: 05/31/2018
@@ -14,7 +15,7 @@ ms.date: 05/31/2018
 
 # Customize the web layout for a work item type 
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 

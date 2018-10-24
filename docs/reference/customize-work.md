@@ -1,12 +1,13 @@
 ---
 title: Customize your work tracking experience
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 03/20/2018
 ---
@@ -171,10 +172,52 @@ For a simplified view of the most common, default permissions and access assignm
 
 Otherwise, to grant or restrict access to select features or functions, review one of these topics: 
  
-> [!div class="mx-tdBreakAll"]  
-> |Manage access   |Permissions  |Shared resources  |
-> |-------------|----------|---------|
-> |- [Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../organizations/security/change-access-levels.md) |- [Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../boards/queries/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../organizations/security/permissions.md#tags)<br/>- [Test permissions](../organizations/security/permissions.md#project_test)| - [Alerts](../boards/queries/alerts-and-notifications.md)<br/>- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../boards/queries/using-queries.md)<br/>- [Tags](../boards/queries/add-tags-to-work-items.md) | 
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Customization area</th>
+<th width="65%">Customization support</th>
+</tr>
+<tr>
+<td>Manage access </td>
+<td>
+<ul>accounts/add-team-members.md
+<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)</li>
+<li>[Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)</li>
+<li>[Stakeholder access](../organizations/security/change-access-levels.md)</li>
+<li>[VS Enterprise access](../organizations/security/change-access-levels.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Permissions   </td>
+<td>
+<ul>
+<li>[Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)</li>
+<li>[Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)</li>
+<li>[Work item query and folder permissions](../boards/queries/set-query-permissions.md)</li>
+<li>[Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)</li>
+<li>[Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)</li>
+<li>[Tagging permissions](../organizations/security/permissions.md#tags)</li>
+<li>[Test permissions](../organizations/security/permissions.md#project_test)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Shared resources </td>
+<td>
+<ul>
+<li>[Alerts](../boards/queries/alerts-and-notifications.md)</li>
+<li>[Area paths](../organizations/settings/set-area-paths.md)</li>
+<li>[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)</li>
+<li>[Queries](../boards/queries/using-queries.md)</li>
+<li>[Tags](../boards/queries/add-tags-to-work-items.md)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
   
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="test-experience"></a>
@@ -241,7 +284,7 @@ Here are a few options available to you:
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
-- Add your feature request to our [user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
+- Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
 
  
 

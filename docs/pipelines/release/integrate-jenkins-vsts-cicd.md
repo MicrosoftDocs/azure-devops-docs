@@ -1,5 +1,6 @@
 ---
-title: Integrate your Jenkins CI builds with Azure Pipelines CD to Azure | Microsoft Docs
+title: Integrate your Jenkins CI builds with Azure Pipelines CD to Azure
+titleSuffix: Azure Pipelines & TFS
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
 author: mlearned
 manager: douge
@@ -16,10 +17,12 @@ ms.workload:
 ms.date: 03/30/2018
 ms.author: mlearned
 ms.custom: mvc
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # Tutorial:  Integrate your Jenkins CI jobs with Azure Pipelines CD to Azure
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -70,7 +73,7 @@ You need an app stored in a Git repository.  You use this app to build and deplo
 For this tutorial, we recommend you use [this sample Java app available from
 GitHub](https://github.com/Azure-Samples/app-service-maven).  This tutorial uses a Java and Maven sample application that is configured for deployment to Azure App Service.  If you want to work with your own repository, you should configure a similar sample.
 
-1. In Azure Pipelines, on the **Code** hub for your Azure Pipelines project, select the option to **Import repository**.
+1. In Azure Pipelines, on the **Code** page for your Azure DevOps project, select the option to **Import repository**.
 
 1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
   ```

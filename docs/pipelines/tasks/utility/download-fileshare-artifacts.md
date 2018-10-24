@@ -1,5 +1,6 @@
 ---
 title: Download Fileshare Artifacts
+titleSuffix: Azure Pipelines & TFS
 description: Download Fileshare Artifacts
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Utility: Download Fileshare Artifacts
+
+**Azure Pipelines**
 
 ![](_img/downloadbuildartifacts.png) Download Fileshare Artifacts
 

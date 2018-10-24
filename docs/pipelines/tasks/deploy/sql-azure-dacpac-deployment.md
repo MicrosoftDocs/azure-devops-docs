@@ -1,5 +1,6 @@
 ---
 title: Azure SQL Database Deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Azure SQL Database Deployment
+
+**Azure Pipelines**
 
 ![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 

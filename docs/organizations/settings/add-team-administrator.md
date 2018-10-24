@@ -1,6 +1,6 @@
 ---
 title: Add a team administrator 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Add a user to the team administrator role in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-settings
 ms.prod: devops
@@ -77,12 +77,12 @@ From the web portal, open the admin page for the team.
 
 ::: moniker range=">= tfs-2017"  
 
-0. From the web portal and team context, choose the ![](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
+0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Team Settings](_img/add-team-admin/open-team-settings-horz.png)
 
-	If you choose the ![](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.  
 
@@ -98,12 +98,12 @@ From the web portal, open the admin page for the team.
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal and team context, choose the ![](../../_img/icons/gear_icon.png) gear icon to open the administration page.
+0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, TFS, Open Admin context, project level](../../_shared/_img/settings/open-admin-page-tfs2015.png)
 
-	If you choose the ![](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
   

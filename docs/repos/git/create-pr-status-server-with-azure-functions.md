@@ -9,21 +9,20 @@ ms.manager: douge
 ms.author: yohasna
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 10/16/2018
 monikerRange: '>= tfs-2018'
 ---
-
 
 # Use Azure Functions to create custom branch policies
 
 #### Azure Repos | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+An Azure DevOps organization with a Git repo. If you don't have an Azure DevOps organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to Azure Repos events
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
@@ -85,7 +84,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Copy function url](_img/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
-2. Browse to your Azure DevOps project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+2. Browse to your Azure DevOps project, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -203,7 +202,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
     string Url = string.Format(
-        @"https://{0}.visualstudio.com/{1}/_apis/repos/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.0-preview",
+        @"https://dev.azure.com/{0}/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1-preview.1",
         accountName,
         projectName,
         repositoryName,

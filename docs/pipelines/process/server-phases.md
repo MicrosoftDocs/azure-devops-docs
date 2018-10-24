@@ -1,5 +1,6 @@
 ---
-title: Server jobs in Build and Release Management
+title: Server jobs in Azure pipelinjes Build and Release
+titleSuffix: Azure Pipelines & TFS
 description: Understand server jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 093FD7B8-65F4-40E0-A429-A7944FD2ED9B
 ms.prod: devops
@@ -17,6 +18,8 @@ monikerRange: '>= tfs-2018'
 ::: moniker-end
 
 # Server jobs
+
+**Azure Pipelines | TFS 2018**
 
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server job at present. At present you can add only one task to each server job in your pipeline.
 

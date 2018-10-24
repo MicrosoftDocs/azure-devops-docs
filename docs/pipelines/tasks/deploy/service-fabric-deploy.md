@@ -1,6 +1,7 @@
 ---
+titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Application Deployment task
-title: Service Fabric Application Deployment task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS 
+title: Service Fabric Application Deployment task for Azure Pipelines and TFS 
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
 ms.technology: devops-cicd

@@ -8,8 +8,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
 ms.date: 04/05/2018  
@@ -50,7 +50,7 @@ You can perform these steps to migrate markdown pages from another wiki to your 
 
 	<img src="_img/wiki/clone-wiki.png" alt="Clone wiki Git repository" style="border: 1px solid #C3C3C3;" />
 
-2. From the **Clone repo** dialog, click the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon.  
+2. From the **Clone repo** dialog, click the ![ ](../../_img/icons/copy-clone-icon.png) copy-clone icon.  
 
 	<img src="_img/wiki/clone-wiki-dialog.png" alt="Copy the wiki url" style="border: 1px solid #C3C3C3;" />
 

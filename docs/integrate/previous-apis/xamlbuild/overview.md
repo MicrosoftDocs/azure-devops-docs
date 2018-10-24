@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: XAML Build Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with xaml builds programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: XAML Build Overview | REST API Reference for Team Foundation Server
+description: Work with xaml builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: f92b9363-6b36-4576-98ad-6c2fbf09d536
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Build (1.0)
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 A [build request](./requests.md) references a [build definition](./definitions.md) to add a new [build](./builds.md) to a [build queue](./queues.md).

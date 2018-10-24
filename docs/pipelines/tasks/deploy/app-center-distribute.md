@@ -1,5 +1,6 @@
 ---
 title: App Center Distribute
+titleSuffix: Azure Pipelines & TFS
 description: Distribute app builds to testers and users via App Center
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Deploy: App Center Distribute
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 

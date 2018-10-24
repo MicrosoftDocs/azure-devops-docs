@@ -13,13 +13,13 @@ ms.topic: sample
 ms.date: 05/10/2017  
 ---
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 # Link, attachment comment count queries  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018"   
 # Link and attachment queries  
-::: moniker-end  
+::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -172,13 +172,13 @@ The following image shows the query results that are returned.
 
 
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 # Link, attachment, and comment count fields  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018"   
 ## Link and attachment fields 
-::: moniker-end  
+::: moniker-end 
 
 The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types. 
 
@@ -258,13 +258,13 @@ Available for Azure DevOps Services only.
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
  
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace. 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 ### Add custom link types or customize the links controls 
 
@@ -277,7 +277,7 @@ All tabs that support creating links between work items are implemented by using
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 
-::: moniker-end  
+::: moniker-end 
 
 
 <!---
@@ -322,20 +322,20 @@ Each tab has a toolbar with buttons. The links control toolbar for the web porta
 
 Links control toolbar (Team Explorer)
 
-![](_img/link-controls-restrictions-field-reference/IC673344.png)
+![ ](_img/link-controls-restrictions-field-reference/IC673344.png)
 
 These buttons become available only after you perform a specific action:
 
--   The button to create a work item that is linked to the open work item (![](_img/link-controls-restrictions-field-reference/IC674469.png)) becomes available only after you save the open work item.
+-   The button to create a work item that is linked to the open work item (![ ](_img/link-controls-restrictions-field-reference/IC674469.png)) becomes available only after you save the open work item.
 
--   The buttons to open the list of work items in a query (![](_img/link-controls-restrictions-field-reference/IC588335.png)) and ![](_img/link-controls-restrictions-field-reference/IC588294.png) **Open in Microsoft Office** become available only when at least one work item is listed in the links control tab.
+-   The buttons to open the list of work items in a query (![ ](_img/link-controls-restrictions-field-reference/IC588335.png)) and ![ ](_img/link-controls-restrictions-field-reference/IC588294.png) **Open in Microsoft Office** become available only when at least one work item is listed in the links control tab.
 
--   The buttons to open a work item (![](_img/link-controls-restrictions-field-reference/IC588293.png)), edit a link (![](_img/link-controls-restrictions-field-reference/IC588336.png)), and delete a link (![](_img/link-controls-restrictions-field-reference/IC588333.png)) become available only after you click one or more work items listed in the links control tab.
+-   The buttons to open a work item (![ ](_img/link-controls-restrictions-field-reference/IC588293.png)), edit a link (![ ](_img/link-controls-restrictions-field-reference/IC588336.png)), and delete a link (![ ](_img/link-controls-restrictions-field-reference/IC588333.png)) become available only after you click one or more work items listed in the links control tab.
 
 The **Storyboards** links control restricts users to add links only to storyboards or network shared files. With this control, you can add a new link, open a linked item, and delete a link. Also, only the web portal version displays the **Start Storyboarding** link within the toolbar.
 
 Storyboards links control (the web portal)
-![](_img/link-controls-restrictions-field-reference/IC589934.png)
+![ ](_img/link-controls-restrictions-field-reference/IC589934.png)
 
 -->
 

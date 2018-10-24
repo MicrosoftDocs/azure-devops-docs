@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 9/10/2018
+ms.date: 10/13/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -17,57 +17,63 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Azure DevOps Services, the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
-### 2018 Q3
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|Work Item support for Markdown editing|Work|2019|
-|Cross organization linking for Work Items|Work|TBD|
-|GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
-|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
-|Visual Studio Git - Stash|Code|N/A|
-|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Release Management orchestration improvements – Tag based triggers|Release|2019|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|Release traceability – Pull request integration|Release|2019|
-|Updated landing pages for Release|Release|2019|
-|Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Deployment Groups easy configuration of Azure VMs|Release|TBD|
-|Extend release gates – Test|Release|TBD|
-|Release traceability – Work Item integration|Release|TBD|
-|Configuration as code (YAML) releases - Public Preview|Release|TBD|
-|Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Package|2019|
-|Package Management – Package consumption metrics|Package|2019|
-|Package Management – Maven Upstream support|Package|TBD|
-|PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
-|Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
-|Analytics - Test Failures report for Build pipelines|Test|2019|
-|Analytics - Test Failures report for Release pipelines|Test|2019|
-|Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
-|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
-|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
-|Publisher certification process|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
-|Notification feed|Notifications|2019|
-
 ### 2018 Q4
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Azure DevOps Server Support for Move work item to another team project / Change work item type|Work|2019|
-|A discussion-centric Work Item form|Work|TBD|
-|GVFS for Mac - Public Preview|Code|N/A|
-|Extensible Pool Providers|Build|TBD|
-|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Package|N/A|
+|Cross organization linking for Work Items|Boards|TBD|
+|Azure DevOps Server Support for Move work item to another team project / Change work item type|Boards|2019|
+|New rich text Description and Discussion control|Boards|TBD|
+|GVFS - Performance improvements for status|Repos|2019|
+|GVFS for Mac - Public Preview|Repos|N/A|
+|Git Pull Requests – Improved search/filter options for pull requests|Repos|TBD|
+|Visual Studio Git - Stash|Repos|N/A|
+|Configuration as code (YAML) for builds|Pipelines|2019|
+|New pages for CI|Pipelines|TBD|
+|Hosted build images – Ability to use latest or previous version of image|Pipelines|N/A|
+|Extensible Pool Providers|Pipelines|TBD|
+|Release Management orchestration improvements – Tag based triggers|Pipelines|2019|
+|Agent-based deployment in Release Management – Sharing of VMs|Pipelines|2019|
+|Release traceability – Pull request integration|Pipelines|2019|
+|Updated landing pages for Release|Pipelines|2019|
+|Canvas-based Release Summary views to track progress of releases|Pipelines|2019|
+|Deployment Groups easy configuration of Azure VMs|Pipelines|TBD|
+|Extend release gates – Test|Pipelines|TBD|
+|Release traceability – Work Item integration|Pipelines|TBD|
+|Configuration as code (YAML) releases - Public Preview|Pipelines|TBD|
+|Analytics – Test Failures report for Build pipelines|Test Plans|2019|
+|Analytics – Test Failures report for Release pipelines|Test Plans|2019|
+|Repo, Build provenance information for a package|Artifacts|2019|
+|Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Artifacts|2019|
+|Package consumption metrics|Artifacts|2019|
+|Maven Upstream support|Artifacts|TBD|
+|PyPI (Python ecosystem) package hosting and upstream sources|Artifacts|TBD|
+|Universal Packages (“versioned bunch of files”) hosting|Artifacts|TBD|
+|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Artifacts|N/A|
+|File Container Store (FCS) v2 is at least 2x faster than external CI Systems at upload and download drop times|Artifacts|TBD|
+|Improve Apdex for Azure Artifacts day 1 and the two most used web pages to .75|Artifacts|TBD|
+|Dashboards – Create dashboard separate from a team|Reporting|TBD|
+|Analytics – Test Failures report for Build pipelines|Reporting|2019|
 |Analytics - Available for Azure DevOps Server|Reporting|2019|
-|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
-|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|Analytics – Test Failures report for Release pipelines|Reporting|2019|
+|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
+|Encryption at rest for disks used by code and work item search|Admin|N/A|
+|Bring multiple organizations under an enterprise|Admin|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
+|Notification feed|Notifications|2019|
+|Publisher certification process|Marketplace|N/A|
+
+### 2019 Q1
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Work Item support for Markdown editing|Boards|TBD|
+
+### Future
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|A discussion-centric Work Item form|Boards|TBD|
 
 ## Current features
 
@@ -83,6 +89,55 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="20">[22 October 2018](2018/sprint-142-update.md)</td>
+            <td>New navigation is on for all users</td><td>N/A</td>
+        </tr>
+        <tr><td>Dark Theme</td><td>*2019*</td></tr>
+        <tr><td>Organize reference materials with richer work item attachments</td><td>*2019*</td></tr>
+        <tr><td>Manage dependencies by linking work items across your Organizations</td><td>*2019*</td></tr>
+        <tr><td>Open work items from search</td><td>*2019*</td></tr>
+        <tr><td>Extension authors can query context about the current repo</td><td>*2019*</td></tr>
+        <tr><td>Add custom build counters to your builds</td><td>*2019*</td></tr>
+        <tr><td>Use YAML to specify branches to build for pull requests</td><td>*2019*</td></tr>
+        <tr><td>Use YAML template expressions inline</td><td>*2019*</td></tr>
+        <tr><td>Improve troubleshooting with the pipeline initialization log</td><td>*2019*</td></tr>
+        <tr><td>Default retention for YAML pipelines</td><td>N/A</td></tr>
+        <tr><td>Build on Linux/ARM and Windows 32-bit platforms</td><td>*2019*</td></tr>
+        <tr><td>Clone variable groups</td><td>*2019*</td></tr>
+        <tr><td>See commits and work items for all linked sources</td><td>*2019*</td></tr>
+        <tr><td>Run from Package supported in Azure App Service deployments</td><td>*2019*</td></tr>
+        <tr><td>Deploy Linux containers with the App Server Deploy task</td><td>*2019*</td></tr>
+        <tr><td>Azure Test Runner runs manual tests for desktop applications</td><td>*2019*</td></tr>
+        <tr><td>Public preview of Pipeline Artifacts</td><td>*2019*</td></tr>
+        <tr><td>Publish code as wiki with Contribute permissions</td><td>*2019*</td></tr>
+        <tr><td>PATs enforce CAP</td><td>N/A</td></tr>
+        <tr>
+            <td rowspan="10">[1 October 2018](2018/sprint-141-update.md)</td>
+            <td>Azure Policy compliance and security validations in Pipelines</td><td>*2019*</td>
+        </tr>
+        <tr><td>Simplified continuous delivery to Azure VMs</td><td>*2019*</td></tr>
+        <tr><td>The Xcode task supports newly released Xcode 10</td><td>*2019*</td></tr>
+        <tr><td>Performance improvements when queuing a build</td><td>N/A</td></tr>
+        <tr><td>Create Azure service connection with service principal that authenticates with a certificate</td><td>N/A</td></tr>
+        <tr><td>View test analytics in Pipelines</td><td>*2019*</td></tr>
+        <tr><td>Change the target branch of a pull request</td><td>*2019*</td></tr>
+        <tr><td>Protect Git repos with cross platform compatibility settings</td><td>*2019*</td></tr>
+        <tr><td>Expanded search box</td><td>*2019*</td></tr>
+        <tr><td>Support AAD users in MSA accounts</td><td>N/A</td></tr>
+        <tr>
+            <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
+            <td>Control specific build dependencies using container jobs</td><td>*2019*</td>
+        </tr>
+        <tr><td>Enable code coverage in .NET Core task</td><td>*2019*</td></tr>
+        <tr><td>Leverage restructured Process REST APIs</td><td>*2019*</td></tr>
+        <tr><td>Simplify authentication using the new cross-platform Credential Provider for NuGet</td><td>*2019*</td></tr>
+        <tr><td>Store artifacts using Universal Packages</td><td>*2019*</td></tr>
+        <tr><td>Compress symbols when publishing to a file share</td><td>*2019*</td></tr>
+        <tr><td>Embed a video in wiki</td><td>*2019*</td></tr>
+        <tr><td>Rename a wiki</td><td>*2019*</td></tr>
+        <tr><td>Insert a wiki table of contents from the format pane</td><td>*2019*</td></tr>
+        <tr><td>Manage your personal access tokens with filtering and paging</td><td>*2019*</td></tr>
         <tr>
             <td rowspan="15">[10 September 2018](2018/sep-10-azure-devops-launch.md)</td>
             <td>Azure DevOps Services</td><td>*2019*</td>
@@ -3527,15 +3582,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4">[4 Mar 2013](2013/mar-04-team-services.md)</td>
             <td>Customizable Kanban columns</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>TCM improvements – edit test steps when running tests</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Annotate/Blame for version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Scheduled builds for Git-based projects</td>
@@ -3548,20 +3603,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>WIT tagging cleanup for unused tags</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Download as Zip for version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[30 Jan 2013](2013/jan-30-team-services.md)</td>
             <td>Work item tagging</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Git support</td>
@@ -3569,12 +3624,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Hub in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[21 Jan 2013](2013/jan-21-team-services.md)</td>
             <td>Changeset context menu in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[9 Jan 2013](2013/jan-09-team-services.md)</td>
@@ -3584,32 +3639,32 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5">[7 Jan 2013](2013/jan-07-team-services.md)</td>
             <td>Email work items from backlog</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Search for changesets by ID in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Full screen mode for code viewing</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Inline diff of images in version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Collapsible left pane in all left panels in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[10 Dec 2012](2012/dec-10-team-services.md)</td>
             <td>Renamed Source to Code in Web UI hub</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Code Explorer updates in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Hosted build updates for Azure SDK 1.8, TypeScript 0.8.1, and VS 2012 Update 1</td>
@@ -3618,11 +3673,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2">[19 Nov 2012](2012/nov-19-team-services.md)</td>
             <td>Send work items in email from TFS web access</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Build file counts and sizes in summary reports</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[31 Oct 2012](2012/oct-31-team-services.md)</td>
@@ -3637,29 +3692,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[8 Oct 2012](2012/oct-08-team-services.md)</td>
             <td>400 character server paths for version control</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[17 Sep 2012](2012/sep-17-team-services.md)</td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Web usability improvements (tabs and UX modified, collapse left pane in work items)</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Process template updates to Agile 6.1 and Scrum 2.1</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="4">[27 Aug 2012](2012/aug-27-team-services.md)</td>
             <td>Improved source browsing, viewing, and searching</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Improved source "diff"</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Hosted builds of SharePoint components</td>
@@ -3672,24 +3727,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[13 Aug 2012](2012/aug-13-team-services.md)</td>
             <td>Kanban board</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Cumulative Flow Diagram</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>WIP Limits</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="2">[6 Aug 2012](2012/aug-06-team-services.md)</td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Azure continuous deployment summary report</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
     </tbody>
 </table>

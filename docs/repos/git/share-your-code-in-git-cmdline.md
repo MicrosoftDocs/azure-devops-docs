@@ -26,7 +26,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -89,7 +89,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
 0. Connect your local repo to the Git repo in Azure Repos using the copied clone URL in the `git remote` command:
 
     ```
-    git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
+    git remote add origin https://dev.azure.com/fabrikops2/Fabrikam/_git/FabrikamApp
     ```
 
 

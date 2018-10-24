@@ -1,6 +1,7 @@
 ---
+titleSuffix: Azure Pipelines & TFS
 description: Windows Machine File Copy build task
-title: Windows Machine File Copy task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+title: Windows Machine File Copy task for Azure Pipelines and TFS
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: devops
 ms.technology: devops-cicd

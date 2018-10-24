@@ -27,7 +27,7 @@ monikerRange: '>= tfs-2013'
 This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](.\migration-troubleshooting.md).
 
 ## Validating a Collection
-Now that you've confirmed you're on the latest version of TFS the next step is to validate each collection you wish to migrate to Azure DevOps. 
+Now that you've confirmed you're on the latest version of TFS the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
 Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
 Running a validation is done through TfsMigrator. To start, take a copy of [TfsMigrator](https://aka.ms/TFSDataImport) and copy it onto one of your 
 TFS server's Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without TFS installed as long as the PC can connect to the TFS instance's configuration database - example below.
@@ -78,7 +78,7 @@ When you open up the log directory you will notice that there are several loggin
 The log titled ```TfsMigrator.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the "Validating Project Processes" step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
-The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps and can be ignored. 
+The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
 
 ## Generating Import Files
 By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
@@ -157,7 +157,7 @@ In this case, the user planning the Fabrikam import added the organization name 
 
 <a id="supported-azure-regions-for-import"></a>
 ### Supported Azure Regions for Import
-Azure DevOps is available in several Azure [regions](https://azure.microsoft.com/regions/services/). However, not all Azure regions that Azure DevOps is present in are supported for import. The following table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
+Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/). However, not all Azure regions that Azure DevOps Services is present in are supported for import. The following table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
  
 
 |    Geographic Region            |    Azure Region                |  Import Specification Value |
@@ -171,10 +171,10 @@ Azure DevOps is available in several Azure [regions](https://azure.microsoft.com
 |    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity Map Log
-Arguably the identity map log is of equal importance to the actual data that you will be migrating to Azure DevOps. When reviewing the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into Azure DevOps whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active. 
+Arguably the identity map log is of equal importance to the actual data that you will be migrating to Azure DevOps Services. When reviewing the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into Azure DevOps Services whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active. 
 
 #### Active Identities
-Active identities refer to identities that will be users in Azure DevOps post-import. On Azure DevOps, these identities will be licensed and show up as a user in the organization after migration. These identities are marked as 'active' in the "Expected Import Status" column in the identity map log file.
+Active identities refer to identities that will be users in Azure DevOps Services post-import. On Azure DevOps Services, these identities will be licensed and show up as a user in the organization after migration. These identities are marked as 'active' in the "Expected Import Status" column in the identity map log file.
 
 <a id="historical-identities"></a>
 #### Historical Identities
@@ -197,7 +197,7 @@ The table below explains what each column is used for.
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    AD - User (TFS)                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
 |    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
-|    Azure AD - Expected Import User (Azure DevOps)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
+|    Azure AD - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
 |    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
@@ -206,16 +206,16 @@ Reading through the file you will notice the Expected Import Status column has e
 > [!IMPORTANT]  
 > Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your Azure AD that was imported actively, recreating a new user in Azure AD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created Azure AD identity, but it will cause an import failure as this isn't supported. 
 
-Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct Azure AD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
+Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct Azure AD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises Active Directory (AD) identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. 
 
 Next, review the identities that are labeled as 'Historical'. This implies that a matching Azure AD identity couldn't be found. This could be for one of four reasons.
 
-1. The identity hasn't been setup for sync between on-premises AD and Azure AD. 
+1. The identity hasn't been setup for sync between on-premises Active Directory (AD) and Azure AD. 
 2. The identity hasn't been populated in your Azure AD yet; new employee scenario. 
 3. The identity simply doesn't exist in your Azure AD.
 4. The user that owned that identity no longer works at the company.
 
-In the first three cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps. The final case can generally be ignored as employees no longer at your company should be imported historically. 
+In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
 #### Historical Identities (Small Teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
@@ -224,14 +224,14 @@ In cases where the Azure AD Connect hasn't been configured, you will notice that
 
 > Running an import with all historical identities has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
 
-To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the organization as the organization owner. All other users will be imported historically. The organization owner will then be able to [add users](../organizations/accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) back in using their Azure AD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the Azure AD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
+To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the organization as the organization owner. All other users will be imported historically. The organization owner will then be able to [add users](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) back in using their Azure AD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the Azure AD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
 
 TfsMigrator will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
 ### Visual Studio Subscriptions
-TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
+TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
-You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
+You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps Services. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
 
 ## Getting Ready to Import
 By this point you will have everything ready to execute on your import. You will need to schedule downtime with your team to the take the collection offline for the migration. Once you have an agreed upon a time to run the import you need to get all of the required assets you have generated and a copy of the database uploaded to Azure. This process has five steps:
@@ -261,7 +261,7 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 > [!NOTE]   
 > If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
 
-Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools]/sql/ssdt/download-sql-server-data-tools-ssdt). 
+Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps Services and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools]/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
 There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
 
@@ -321,14 +321,14 @@ The output of the command will be a DACPAC that is generated from the collection
 > [!NOTE]   
 > If TfsMigrator warns that you can't use the DACPAC method then you will have to import using the SQL Azure VM method outlined below. If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined above.
 
-DACPACs offer a fast and relatively simplistic method for moving collections into Azure DevOps. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to Azure DevOps. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
+DACPACs offer a fast and relatively simplistic method for moving collections into Azure DevOps Services. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
 Before going any further, it's always recommended to see if [old data can be cleaned up](/tfs/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
-If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you're still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to Azure DevOps. We'll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
+If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you're still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to Azure DevOps Services. We'll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
 1. Setting up a SQL Azure VM
-2. Optionally, we recommend restricting access to just Azure DevOps IPs
+2. Optionally, we recommend restricting access to just Azure DevOps Services IPs
 3. Restoring your database on the VM
 4. Creating an identity to connect to the collection database
 5. Configuring your import specification file to use a SQL connection string 
@@ -336,7 +336,7 @@ If you are under the DACPAC threshold, follow the instructions to [generate a DA
 #### Creating the SQL Azure VM
 Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-portal-sql-server-provision/) on how to setup and configure a SQL Azure VM. 
 
-Azure DevOps is available in several Azure [regions](https://azure.microsoft.com/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
+Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
 
 Use the table below to decide where you should create you SQL Azure VM if you're using this method to import. Creating your VM in a region outside of the list below is not supported for running an import.
 
@@ -350,7 +350,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Central Canada               |    Central Canada              |
 |    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
-> While Azure DevOps is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
+> While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
 > [!NOTE]   
 > DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac-and-import-files). The above guidelines are for SQL Azure VMs only. 
@@ -363,15 +363,15 @@ Below are some additional recommended configurations for your SQL Azure VM.
 4. If your source database is still over 1TB after [reducing the size](/tfs/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
-#### Azure DevOps IPs 
+#### Azure DevOps Services IPs 
 
-It's highly recommended that you restrict access to your VM to only IPs from Azure DevOps. This can be accomplished by allowing connections only from the set of Azure DevOps IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
+It's highly recommended that you restrict access to your VM to only IPs from Azure DevOps Services. This can be accomplished by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
-First, no matter what Azure DevOps region you import into the following IP must be granted access to your collection database. 
+First, no matter what Azure DevOps Services region you import into the following IP must be granted access to your collection database. 
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Azure DevOps Identity Service                        |    168.62.105.45    |
+|    Azure DevOps Services Identity Service                        |    168.62.105.45    |
 
 Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
@@ -385,31 +385,31 @@ Next you will need to grant access to the TFS Database Import Service itself. Yo
 |    Import Service - Canada Central              |    52.237.18.100, 52.237.24.61        |
 |    Import Service - East Asia (Hong Kong)       |    13.75.106.194                      |
   
-Next you will need to grant Azure DevOps access. Again, you only need to grant an exception for the Azure DevOps instance in the region that you're importing into.  
+Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
 |    Service                                              |    IP                                           |
 |---------------------------------------------------------|-------------------------------------------------|
-|    Azure DevOps - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.169   |
-|    Azure DevOps - West Europe                           |    52.166.54.85, 13.95.233.212                  |
-|    Azure DevOps - Australia East                        |    13.75.145.145                                |
-|    Azure DevOps - Brazil South                          |    191.232.37.247                               |
-|    Azure DevOps - India South                           |    104.211.227.29                               |
-|    Azure DevOps - Canada Central                        |    52.237.19.6                                  |
-|    Azure DevOps - East Asia (Hong Kong)                 |    52.175.28.40                                 |
+|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.169   |
+|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212                  |
+|    Azure DevOps Services - Australia East                        |    13.75.145.145                                |
+|    Azure DevOps Services - Brazil South                          |    191.232.37.247                               |
+|    Azure DevOps Services - India South                           |    104.211.227.29                               |
+|    Azure DevOps Services - Canada Central                        |    52.237.19.6                                  |
+|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40                                 |
 
-Next you will need to grant Release Management access. You only need to grant an exception for the Azure DevOps instance in the region that you're importing into.
+Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 
 **Release Management IPs**
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Release Management - United States           |    23.102.153.83    |
-|    Release Management - West Europe             |    13.95.223.69     |
-|    Release Management - Australia East          |    13.73.204.151    |
-|    Release Management - Brazil South            |    191.235.94.154   |
-|    Release Management - India South             |    52.172.15.233    |
-|    Release Management - Canada Central          |    52.237.28.171    |
-|    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
+|    Releases service - United States           |    23.102.153.83    |
+|    Releases service - West Europe             |    13.95.223.69     |
+|    Releases service - Australia East          |    13.73.204.151    |
+|    Releases service - Brazil South            |    191.235.94.154   |
+|    Releases service - India South             |    52.172.15.233    |
+|    Releases service - Canada Central          |    52.237.28.171    |
+|    Releases service - East Asia (Hong Kong)   |    13.107.6.175     |
 
 If you're planning on using the [preview](https://aka.ms/AzureDevOpsImportPreviewFeatures) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
 
@@ -419,13 +419,13 @@ You will need to add exceptions for all three services that make up Package Mana
 
 |    Service                                         |    IP               |
 |----------------------------------------------------|---------------------|
-|    Package Management - United States              |    52.173.148.93    |
+|    Package Management - United States              |    52.173.148.93, 104.43.253.181, 23.99.179.148 |
 |    Package Management - West Europe                |    104.46.45.12     |
 |    Package Management - Australia East             |    13.73.100.166    |
 |    Package Management - Brazil South               |    191.234.179.224  |
 |    Package Management - India South                |    52.172.11.191    |
-|    Package Management - Canada Central             |    52.237.24.224    |
-|    Package Management - East Asia (Hong Kong)      |    52.229.175.18    |
+|    Package Management - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199 |
+|    Package Management - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71    |
 
 |    Service                                         |    IP               |
 |----------------------------------------------------|---------------------|
@@ -450,7 +450,7 @@ You will need to add exceptions for all three services that make up Package Mana
 
 #### Configuring IP Firewall Exceptions
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The Import Service requires the Azure DevOps IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The Import Service requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
 
 ![Add inbound port rule](_img/migration-import/inbound.png)
 
@@ -458,11 +458,11 @@ Select advanced to configure an inbound port rul for a specific IP.
 
 ![Advanced inbound port rule configuration](_img/migration-import/advanced.png)
 
-Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the Azure DevOps exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your Azure DevOps exceptions, the Import Service might not be able to make a successful connection to your database. 
+Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the Azure DevOps Services exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your Azure DevOps Services exceptions, the Import Service might not be able to make a successful connection to your database. 
 
 ![Completed inbound port rule configuration](_img/migration-import/example.png)
 
-You will need to repeat adding inbound port rules until all necessary Azure DevOps IPs have been granted an exception. Missing one IP could result in your import failing to start. 
+You will need to repeat adding inbound port rules until all necessary Azure DevOps Services IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
 #### Restoring your Database on the VM
 
@@ -470,7 +470,7 @@ After setting up and configuring an Azure VM, you will need to take your detache
 
 #### Configuring your Collection for Import
 
-Once your collection database has been restored onto your Azure VM, you will need to configure a SQL login to allow Azure DevOps to connect to the database to import the data. This login will only allow **read** access to a single database. Start by opening SQL Server Management Studio on the VM and open a new query window against the database that will be imported. 
+Once your collection database has been restored onto your Azure VM, you will need to configure a SQL login to allow Azure DevOps Services to connect to the database to import the data. This login will only allow **read** access to a single database. Start by opening SQL Server Management Studio on the VM and open a new query window against the database that will be imported. 
 
 You will need to set the database's recovery to simple: 
 
@@ -524,7 +524,7 @@ Following the Fabrikam example, the import specification would look like the fol
 
 ![Import specification referencing a SQL Azure VM](_img/migration-import/importSpecIaaS.png)
 
-Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to Azure DevOps. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
+Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to Azure DevOps Services. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
 
 ### Uploading the DACPAC
 
@@ -533,7 +533,7 @@ Your import specification is now configured to use a SQL Azure VM for import! Pr
 
 Your DACPAC will need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
 
-Azure DevOps is available in multiple [regions](https://azure.microsoft.com/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start successfully. Your data needs to be placed into the same region that you will be importing into. Placing it somewhere else will result in the import being unable to start. The below table covers the acceptable regions to create your storage account and upload your data.
+Azure DevOps Services is available in multiple [regions](https://azure.microsoft.com/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start successfully. Your data needs to be placed into the same region that you will be importing into. Placing it somewhere else will result in the import being unable to start. The below table covers the acceptable regions to create your storage account and upload your data.
 
 |    Desired Import Region        |    Storage Account Region      |
 |---------------------------------|--------------------------------|
@@ -545,7 +545,7 @@ Azure DevOps is available in multiple [regions](https://azure.microsoft.com/regi
 |    Canada Central               |    Canada Central              |
 |    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
-While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps. Customers will not be able to import their data into other United States Azure regions at this time.  
+While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps Services. Customers will not be able to import their data into other United States Azure regions at this time.  
 
 [Creating a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 * Collection DACPAC 
@@ -600,7 +600,7 @@ Using the Fabrikam example, the final import specification file should look like
 ![Completed import specification file](_img/migration-import/ImportSpecFillOutNoType.png)
 
 ### Determining the Type of Import 
-Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the organization full time in Azure DevOps once the import completes. Determining which type of import to be run is based off the value you provide for the import type parameter. 
+Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the organization full time in Azure DevOps Services once the import completes. Determining which type of import to be run is based off the value you provide for the import type parameter. 
 
 > It's always recommended that you complete a dry run import first.   
 
@@ -617,7 +617,7 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
 > [!NOTE]
-> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
+> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.
@@ -631,7 +631,7 @@ Rollback for the final production run is fairly simple. Before you queue the imp
 >
 > In the event your import fails, see the following [guidance](.\migration-troubleshooting.md). 
 
-Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
+Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
 
 To get started, open a command prompt and CD to path where you have TfsMigrator placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
 

@@ -1,5 +1,6 @@
 ---
 title: Build your GitHub repository using the visual designer in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -17,6 +18,8 @@ monikerRange: 'vsts'
 ---
 
 # Build a repo using the visual designer
+
+**Azure Pipelines**
 
 ::: moniker range="> tfs-2018"
 > [!TIP]

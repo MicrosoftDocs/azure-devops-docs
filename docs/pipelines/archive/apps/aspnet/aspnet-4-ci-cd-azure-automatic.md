@@ -1,6 +1,7 @@
 ---
 ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Automatically generate a CI/CD pipeline to deploy an ASP.NET app
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET app from Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,10 +10,12 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 01/02/2017
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)
@@ -210,7 +213,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in Azure Pipelines, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users-from-user-hub.md).
+  [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).

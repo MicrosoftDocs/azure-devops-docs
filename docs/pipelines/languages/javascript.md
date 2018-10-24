@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 08/15/2018
+ms.date: 10/12/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -98,7 +98,7 @@ Read through the rest of this topic to learn some of the common ways to customiz
 You can use Azure Pipelines to build your JavaScript apps without needing to set up any infrastructure of your own.
 Tools that you commonly use to build, test, and run JavaScript apps - npm, node, yarn, gulp, etc. - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can either use Windows or Linux agents to run your builds.
 
-For the exact version of Node.js and npm pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of these tools on Microsoft hosted agents, add the **Node Tool Installer** task to the beginning of your process.
+For the exact version of Node.js and npm pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft hosted agents, add the **Node Tool Installer** task to the beginning of your process.
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 > The hosted agents are regularly updated, and setting this task up will result in spending significant time updating to a newer minor version every time the pipeline is run. Only use this task only when you need a specific Node version in your pipeline.
 
 ```yaml
-- task: NodeTool@0
+- task: NodeTool@0 
   inputs:
     versionSpec: '8.x' # replace this value with the version that you need for your project
 ```
@@ -146,7 +146,7 @@ You can build and test your app on multiple versions of Node.
 ::: moniker range="vsts"
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'ubuntu-16.04'
 strategy:
   matrix:
     node_8_x:
@@ -155,7 +155,7 @@ strategy:
       node_version: 9.x
 
 steps:
-- task: NodeTool@0
+- task: NodeTool@0 
   inputs:
     versionSpec: $(node_version)
 
@@ -371,12 +371,12 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 - task: PublishTestResults@2
   inputs:
     testRunner: JUnit
-    testResultsFile: ./test-results.xml
+    testResultsFiles: ./test-results.xml
 ```
 
 ### Publish code coverage results
 
-If your testing scripts run a code coverage tool such as [Instanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Instanbul needs `--report cobertura`) to generate the right output.
+If your testing scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. The task expects Cobertura reporting output , so ensure that your code coverage tool runs with the necessary options (for example, Istanbul needs `--report cobertura`) to generate the right output.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -513,7 +513,7 @@ Add the following tasks to your build pipeline:
 
 * **bash**
   * **Type:** `inline`
-  * **Script:** `npx webpacj --config webpack.config.js`
+  * **Script:** `npx webpack --config webpack.config.js`
 
 ---
 

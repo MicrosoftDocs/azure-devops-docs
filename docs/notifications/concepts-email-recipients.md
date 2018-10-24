@@ -1,24 +1,24 @@
 ---
-title: How email recipients are determined
+title: How email recipients of notifications are determined
 titleSuffix: Azure DevOps Services & TFS 
-description: Describes how email recipients are determined for notifications and events in Azure DevOps Servicesand Team Foundation Server (TFS)
+description: Describes how email recipients are determined for notifications and events in Azure DevOps Services and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
 ms.reviewer: wismythe
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
-ms.date: 08/06/2018 
+ms.date: 10/12/2018 
 monikerRange: '>= tfs-2017'
 ---
 
 
-# How email recipients are determined
+# How email recipients of notifications are determined
 
 <b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
-> [!NOTE] 
+> [!NOTE]
 > This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Who receives an email notification when an event matches a subscription involves a number of factors. Not understanding these factors can result in your inbox receiving too many (or too few) emails. The following explains how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
@@ -40,7 +40,7 @@ The recipients for a custom personal subscription is the easiest to understand: 
 Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and Azure DevOps Services groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
 
 > [!NOTE]
-> Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UX or at the organization level.
+> Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UI or at the organization level.
 
 **Team delivery settings button under organization level settings**
 
@@ -80,7 +80,8 @@ The email recipient list is determined by members that had a role in the event. 
 The option _Skip initiator_, which appears for most event types, controls whether the user or group that initiated (caused) the event should be explicitly excluded from the set of recipients. In general, this option should be "on" since most users do not want to receive a notification about something they did.
 
 ### Option: Team preference
-The delivery option is taken from the team's delivery setting. It will be one of the following:
+The delivery option is taken from the team's delivery setting. It can be one of the following:
+
 * **Deliver to email address:** The email is delivered to the team's preferred email address.
 * **Deliver to individual members:** See section below for details of _Members of team_.
 * **Do not deliver:** No email is delivered.
@@ -111,25 +112,25 @@ When a team (or group) is the recipient of a notification and either the subscri
 
 First, only members that have not opted out of the subscription are considered for the final recipient list. Next, any member that is an individual user or mail-enabled group is added to the recipient list. This leaves only Azure DevOps Services groups remaining. For each group, the group's delivery preferences are examined:
 
-* If "Do not deliver", no further evaluation is performed on this group and the next member group is evaluated
-* If "Deliver to email address", the email address is added to the final recipient list
-* If "Deliver to individual members", the group is expanded (like its parent group) and the same rules for evaluating its members are followed
+* "Do not deliver": no further evaluation is performed on this group and the next member group is evaluated
+* "Deliver to email address": the email address is added to the final recipient list
+* "Deliver to individual members": the group is expanded (like its parent group) and the same rules for evaluating its members are followed
 
-Let's look at a few scenarios. For these examples, we will use these symbols to denote the different types of members:
+Let's look at a few scenarios. For these examples, we use the following symbols to denote the types of members:
 
-* `I` denotes an individual user
-* `T` denotes a nested team or group
-* `A` denotes a mail-enabled Azure Active Directory (Azure AD) group.
+* `I`: individual user
+* `T`: nested team or group
+* `A`: mail-enabled Azure Active Directory (Azure AD) group.
 
 ### Scenario 1: A member with _Do not deliver_ preference
 
-The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Do not deliver_. 
+The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Do not deliver_.
 
 What happens: only `I1` and `I2` are notified via their preferred email addresses. Members of `T1` are not notified.
 
 ### Scenario 2: A member with _Deliver to individual members_ preference
 
-The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Deliver to individual members_. `T1` has members `I2` and `I3`. 
+The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Deliver to individual members_. `T1` has members `I2` and `I3`.
 
 What happens: `T1` is expanded (because of its delivery preference) and therefore `I1`, `I2`, and `I3` are notified via their preferred email addresses.
 
@@ -141,6 +142,6 @@ What happens: because `T1` is not expanded (because its delivery preference is "
 
 ### Scenario 4: A member that is an Azure AD group
 
-The team has members `I1`, `I2`, and `A1`. 
+The team has members `I1`, `I2`, and `A1`.
 
 What happens: `I1`, `I2`, and `A1` are notified via their preferred email addresses.

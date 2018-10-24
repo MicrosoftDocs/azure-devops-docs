@@ -1,6 +1,7 @@
 ---
 title: How to provision agents for deployment groups
-description: How to provision agents for deployment groups using Release Management in Azure Pipelines and Team Foundation Server (TFS)
+titleSuffix: Azure Pipelines & TFS
+description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -82,7 +83,7 @@ For information about agents and pipelines, see:
 
    ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Azure Pipelines subacription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    

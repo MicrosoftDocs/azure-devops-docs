@@ -1,10 +1,12 @@
 ---
 title: Run UI tests in a CI/CD pipeline
+titleSuffix: Azure Pipelines & TFS
 description: Continuous testing. Things to consider when running UI tests and FAQ. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: pbora
 author: pboraMSFT
@@ -77,7 +79,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)

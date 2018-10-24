@@ -1,5 +1,5 @@
 ---
-title: Turn an Azure DevOps service on or off, change the visibility of a service
+title: Turn a service on or off 
 titleSuffix: Azure DevOps Services
 description: Determines which services are available for a project from the web portal  
 ms.technology: devops-settings
@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 07/27/2018
@@ -22,19 +22,19 @@ You can control which services are available through the web portal by turning a
 
 ## Prerequisites
 
-- You must have an Azure DevOps Services organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- You must have an Azure DevOps organization. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 
 ## Change the visibility for a service  
 
 The ability to turn services on or off is supported when you [enable **New Navigation** preview feature](../../project/navigation/preview-features.md). 
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)  
 
-0. Choose **Project Settings** in the sidebar.
+1. Choose **Project Settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  

@@ -1,5 +1,5 @@
 ---
-title: Create managed queries to generate a list of work items
+title: List work items with managed queries 
 titleSuffix: Azure Boards and TFS 
 description: Track work by creating queries to list work items in Azure Boards & Team Foundation Server 
 ms.prod: devops
@@ -58,28 +58,83 @@ For additional tips when working with the new queries experience or the director
 
 *You can list work items based on the following criteria...*  
 
-> [!div class="mx-tdBreakAll"]  
-> |Assignment and<br/>other account-specific fields |<br/>Keywords or phrases |Work item counts<br/>and numeric fields  |  
-> |-------------|----------|---------|  
-> |- [Active items assigned to me](query-by-workflow-changes.md#me)<br/>- [Closed items that were assigned to me](query-by-workflow-changes.md#me)<br/>- [Active items assigned to my team](query-by-workflow-changes.md#me)<br/>- [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)<br/>- [Items I closed](query-by-workflow-changes.md#workflow-change-who)<br/>- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who) |- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)<br/>- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)<br/>- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)<br/>- [Items that belong to a category](titles-ids-descriptions.md#category)|- [Count of active bugs per developer](query-numeric.md#counts)<br/>- [Count of bugs by area and states](query-numeric.md#counts)<br/>- [Sum of story points and their status](query-numeric.md#effort)<br/>- [Burnup chart of user stories for a sprint](query-numeric.md#effort)<br/>- [Sum of remaining work per developer](query-numeric.md#work)  | 
+### Assignment and other account-specific fields
+- [Active items assigned to me](query-by-workflow-changes.md#me)
+- [Closed items that were assigned to me](query-by-workflow-changes.md#me)
+- [Active items assigned to my team](query-by-workflow-changes.md#me)
+- [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
+- [Items I closed](query-by-workflow-changes.md#workflow-change-who)
+- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)
 
-> [!div class="mx-tdBreakAll"]  
-> |History and revision changes |Date field or current iteration |State, reason, or workflow changes |  
-> |-------------|----------|---------|  
-> |- [History contains a specific word](history-and-auditing.md)<br/>- [History doesn't contain a specific word](history-and-auditing.md)<br/>- [Reactivated items](history-and-auditing.md)<br/>- [Items closed within a time period](history-and-auditing.md)<br/>- [Items you've been associated with](history-and-auditing.md) |- [Items created in the last 30 days](query-by-date-or-current-iteration.md)<br/>- [Items modified on a specific date](query-by-date-or-current-iteration.md)<br/>- [Items resolved today](query-by-date-or-current-iteration.md)<br/>- [Items closed within a specific time period](query-by-date-or-current-iteration.md) <br/>-  [Items whose updated status](query-by-date-or-current-iteration.md)<br/>- [Items closed in the current sprint](query-by-date-or-current-iteration.md) |- [Resolved user stories](query-by-workflow-changes.md#workflow-change)<br/>-  [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change) <br/>- [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)<br/>-  [Items closed within the last 15 days](query-by-workflow-changes.md#workflow-change)<br/>-  [Items removed as they're duplicate](query-by-workflow-changes.md)<br/>-  [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)<br/>-  [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)<br/>-  [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)<br/>-  [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) |    
- 
-> [!div class="mx-tdBreakAll"]  
-> |Links and attachments |Tags |Build and Test fields  |  
-> |-------------|----------|---------|  
-> |-  [All child items of a single epic ](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags ](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
+### Keywords or phrases
+- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)
+- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)
+- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)
+- [Items that belong to a category](titles-ids-descriptions.md#category)
+
+
+### Work item counts and numeric fields 
+- [Count of active bugs per developer](query-numeric.md#counts)
+- [Count of bugs by area and states](query-numeric.md#counts)
+- [Sum of story points and their status](query-numeric.md#effort)
+- [Burnup chart of user stories for a sprint](query-numeric.md#effort)
+- [Sum of remaining work per developer](query-numeric.md#work) 
+
+
+### History and revision changes
+
+- [History contains a specific word](history-and-auditing.md)
+- [History doesn't contain a specific word](history-and-auditing.md)
+- [Reactivated items](history-and-auditing.md)
+- [Items closed within a time period](history-and-auditing.md)
+- [Items you've been associated with](history-and-auditing.md)
+
+### Date field or current iteration
+
+- [Items created in the last 30 days](query-by-date-or-current-iteration.md)
+- [Items modified on a specific date](query-by-date-or-current-iteration.md)
+- [Items resolved today](query-by-date-or-current-iteration.md)
+- [Items closed within a specific time period](query-by-date-or-current-iteration.md)
+- [Items whose updated status](query-by-date-or-current-iteration.md)
+- [Items closed in the current sprint](query-by-date-or-current-iteration.md)
+
+### State, reason, or workflow changes
+- [Resolved user stories](query-by-workflow-changes.md#workflow-change)
+- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change)
+- [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)
+- [Items closed within the last 15 days](query-by-workflow-changes.md#workflow-change)
+- [Items removed as they're duplicate](query-by-workflow-changes.md)
+- [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)
+- [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)
+- [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)
+- [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
+  
+### Links and attachments 
+- [All child items of a single epic ](linking-attachments.md)
+- [All related items](linking-attachments.md)
+- [Items with one or more attachments](linking-attachments.md)
+- [Items with 2 or more hyperlinks](linking-attachments.md)
+- [Items containing external links](linking-attachments.md)
+
+### Tags
+- [Items containing a specific tag](add-tags-to-work-items.md)
+- [Items that don't contain a specific tag](add-tags-to-work-items.md)
+- [Items that contain two or more tags ](add-tags-to-work-items.md)
+
+### Build and Test fields
+- [List bugs and linked test cases](build-test-integration.md#linked-bugs)
+- [List automated test cases](build-test-integration.md)
+- [List requirement-based test suites](build-test-integration.md)
+- [List query-based test suites](build-test-integration.md)  
 
 
 ::: moniker range="vsts"
 
-> [!div class="mx-tdBreakAll"]  
-> |Team focus |  
-> |-------------| 
-> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)<br/>- [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n) |
+### Team focus 
+- [Assigned to a member of a team](query-by-workflow-changes.md#group)  
+- [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
+- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
+- [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
 
 ::: moniker-end
 
