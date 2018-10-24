@@ -2,16 +2,13 @@
 ms.topic: include
 ---
 
-
 <a id="images-missing-te">  </a>
 
 ### Resolve images that don't display in Team Explorer 
 
-If an in-line image fails to display in a work item form you view from Visual Studio Team Explorer, but does display in the web portal, your credentials may have expired. 
+If an inline image isn't displayed in a work item form that you view in Visual Studio Team Explorer, but the image is displayed in the web portal, your credentials might have expired. You can resolve this by completing the following steps:  
 
-You can resolve it with the following steps.  
-
-1. In Visual Studio, click **View>Other Windows>Web Browser** (Or, use the shortcut **Cltr+Alt+R**).   
-1. In the web browser, locate your account.  
-1. Login with your account.  
-1. Refresh your work item in Team Explorer.   
+1. In Visual Studio, select **View** > **Other Windows** > **Web Browser** (or use the shortcut **Ctrl+Alt+R**).
+2. In the web browser, locate your organization.  
+3. Sign in with your credentials.  
+4. Refresh your work item in Team Explorer.

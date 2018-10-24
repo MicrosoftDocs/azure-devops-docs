@@ -1,10 +1,12 @@
 ---
-title: FAQs for continuous testing in Azure Pipelines and TFS - test automation tools  
+title: FAQs for continuous testing in Azure Pipelines and TFS 
+titleSuffix: Azure Pipelines & TFS
 description: FAQs for continuous testing topics for Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
@@ -13,6 +15,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for continuous testing and test automation
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -143,7 +147,7 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 **A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
-You can also run tests using Microsoft Test Manager (MTM) and a
+You can also run tests using Microsoft Test Manager and a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="test-types"></a>
@@ -153,11 +157,15 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 
 * Coded UI test, Selenium tests, and unit tests written using
   Version 1 of the MSTest framework **can** be associated with a test case.
-* Unit tests that use the.NET Core framework **cannot** be
-  associated with a test case.
-* Tests that use other test frameworks such as [Version 2 of the MSTest framework](https://blogs.msdn.microsoft.com/devops/2016/06/17/taking-the-mstest-framework-forward-with-mstest-v2/),
-  xUnit, nUnit, Chutzpah, and others **cannot** be associated with a test case.
-* Associating ordered tests and generic tests **may** work, but running these tests is not supported.
+* Tests that use MSTest v2, NUnit, and xUnit frameworks **can** be associated
+  with a test case workitem when using Visual Studio 15.9 Preview 2 or later.
+* Tests that use the .NET core framework **can** be associated with a test case
+  workitem when using Visual Studio 15.9 Preview 2 or later.
+  To run the .NET core tests the appropriate target framework must be specified
+  in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+* Tests that use other test frameworks such as Chutzpah (for JavaScript tests
+  such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
+* Associating generic tests **may** work, but running these tests is not supported.
 
 <a name="open-in-vs"></a>
 ### Q: Can I configure work items to open in Visual Studio?
@@ -209,7 +217,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
 
 ### Q: Why use release stages to run tests? 
 
-**A:** Release Management offers a compelling orchestration workflow
+**A:** Azure Pipelines offers a compelling orchestration workflow
 to obtain test binaries as artifacts and run tests. This workflow shares
 the same concepts used in the scheduled testing workflow, meaning users
 running tests in scheduled workflow will find it easy to adapt; for 
@@ -260,7 +268,7 @@ method and report the appropriate results.
 ### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 
 **A:** The current capability is optimized for a single team build
-to be tested on-demand using a Release Management workflow.
+to be tested on-demand using an Azure Pipelines workflow.
 We will evaluate support for multi-artifact releases, including
 non-Azure Pipelines artifacts such as Jenkins, based on user feedback.
 
@@ -283,10 +291,10 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 
 ### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
-**A:** No. MTM will not support running automated tests against Team Foundation
+**A:** No. Microsoft Test Manager will not support running automated tests against Team Foundation
 builds. It only works in the web-based interface for Azure Pipelines and TFS.
 All new manual and automated testing product development investments will be
-in the web-based interface. No further development is planned for MTM. See
+in the web-based interface. No further development is planned for Microsoft Test Manager. See
 [Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release pipeline?
@@ -306,8 +314,7 @@ or [Parallel jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
 
-To enable multiple different test runs to execute in parallel, set the Release Management
-stage trigger option for
+To enable multiple different test runs to execute in parallel, set the Azure Pipelines stage trigger option for
 [behavior when multiple releases are waiting to be deployed](../../pipelines/release/triggers.md#env-triggers)
 as follows:
 

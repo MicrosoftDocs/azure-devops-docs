@@ -1,7 +1,7 @@
 ---
 title: Create your backlog 
 titleSuffix: Azure Boards and TFS
-description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Azure Boards & Team Foundation Server   
+description: Add items, plan your project, order and prioritize, and estimate your backlog of deliverables in Azure Boards and Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -17,8 +17,7 @@ ms.date: 06/19/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
-Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
-repository of all the information you need to track and share with your team.
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
 
 Your backlog consists of a list of [work items](../work-items/about-work-items.md). 
 You use work items to share information, assign work to team members, track dependencies, organize work, 
@@ -40,33 +39,33 @@ From your web browser, open your product backlog.
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
-	![Open Boards>Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+	![Open Boards > Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To select another team, open the selector. Then select a different team, or select the ![home icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Select another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Select the ![ ](../../_img/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![ ](../../_img/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
-
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+	> ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
+
+0. (Optional) To select which columns display and in what order, select the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Column options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -75,22 +74,22 @@ From your web browser, open your product backlog.
 
 ::: moniker range=">= tfs-2017"
 
-From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Boards>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Boards > Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
-To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+To select another team, open the project and team selector. Select a different team, or select the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![Select another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
+On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
 
-![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards > backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -100,48 +99,48 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ## Determine if bugs should appear on your backlog 
 
-You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [task board](../sprints/task-board.md).
+You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
-If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
+If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
-Talk with your team to determine how they want to manage bugs and then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
+Talk with your team to determine how they want to manage bugs. Then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!NOTE]    
-> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
+> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
 	
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-0. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
+0. From your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/open-configure-settings-backlog-agile.png) 
 
-0. Choose the **Working with bugs** tab and select from the three options available.
+0. Select the **Working with bugs** tab, and select one of the three options available.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png) 
 
-	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
+	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
-	* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs will be associated with the Task category. 
+	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
 
-	* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
+	* Select the third option if your team manages bugs separately from requirements or tasks. Bugs are associated with the Bugs category. 
 
 0. To see the changes, refresh your backlog.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
+1. On your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
 	::: moniker range=">= tfs-2017"   
 	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
 	::: moniker-end
@@ -149,21 +148,21 @@ Talk with your team to determine how they want to manage bugs and then [change y
 	**TFS 2015.1**   
 	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
 	**TFS 2015**  
-	Click the ![gear icon](../_img/icons/team-settings-gear-icon.png), (gear icon) to open the administration page.  
+	Select the ![gear icon](../_img/icons/team-settings-gear-icon.png), (gear icon) to open the administration page.  
 
 	![Gear icon provides access to admin pages](../_img/icons/ALM_OpenAdminContext.png)
 
-	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.  
+	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
 	::: moniker-end
 	::: moniker range="tfs-2013"
-	Choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the administration page. Requires TFS 2013.4 or later version.  
+	Select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the administration page. Requires TFS 2013.4 or later version.  
 
 	![Gear icon provides access to admin pages](../_img/icons/ALM_OpenAdminContext.png)  
 
-	From the Overview tab, choose the team whose settings you want to configure, and then choose **Settings**.  
+	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
 	::: moniker-end  
 
-2. Choose the **Working with bugs** tab and select from the three options available.  
+2. Select the **Working with bugs** tab, and select one of the three options available.  
 	::: moniker range=">= tfs-2018"  
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png)  
@@ -174,37 +173,37 @@ Talk with your team to determine how they want to manage bugs and then [change y
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
 	<img src="../../organizations/settings/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
-	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
+	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
-	* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs will be associated with the Task category. 
+	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
 
-	* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
+	* Select the third option if your team manages bugs separately from requirements or tasks. Bugs are associated with the Bugs category. 
 
 0. To see the changes, refresh your backlog.
 
 ---
 
 > [!TIP]  
-> If, after refreshing a backlog or board, you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the Kanban or task boards.  
 
-
+<a id="convert-ideas" />
 ## Convert ideas into backlog items or stories
 
-Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
+Your backlog shows work that you plan to do or have started to work on. As soon as the state of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
 
 > [!TIP]  
-> If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
+> If you already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-0. Before you start adding work items, choose the ![](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to Off.  
+0. Before you add work items, select the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](_img/create-backlog/view-options-parents-off.png) 
 
-0. To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
+0. To add a work item, select ![plus icon](../../_img/icons/blue-add-icon.png)**New Work Item** and enter a title. Then press Enter or select **Add to top**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](_img/create-backlog/add-new-items-agile.png) 
@@ -215,49 +214,53 @@ Your backlog shows work that you are planning to do or have started working on. 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
-Begin building your backlog by entering a title and click **Add**. If you don't see the **Add** link, click **New** to open the quick add panel. Repeat this step until you've captured all your main ideas. 
+To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**.
 
 ![Add work items to the backlog](_img/create-backlog/add-new-items-standard.png) 
+
+Repeat this step until you capture all your main ideas. 
 
 ---
 
 > [!NOTE]  
-> Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+> Depending on whether you create your project with [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md), the items in your backlog might be called user stories, PBIs, or requirements. All three are similar. They describe the customer value to be delivered and the work to be performed.   
 >
->By default,  user stories on Agile backlogs, PBIs and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. 
+>By default, user stories appear on Agile backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
-After you've got some items on your backlog, you can reorder them to create a prioritized list of work. Frequently reviewing and prioritizing your backlog can help your team know what's most important to deliver next.
+After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next.
 
-Reorder your backlog by simply dragging work items. Or, if you prefer the keyboard, hold the Alt key and use the up and down arrows.
+To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
 > [!div class="mx-imgBorder"]
 > ![Reorder work items](_img/create-backlog/cyb-order-backlog.png)
 
 
 > [!TIP]  
-> You can't sort your backlog on a column. If you want to view a sorted listed, click **Create query**, save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 
 <a id="estimates">  </a>
 ## Add details and estimates
-Getting your backlog built and prioritized provides the high level roadmap. 
-However, before your team can actually start work on any item, they'll need 
-more details. You capture these details within the work item form.
+Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, they need more details. You capture these details within the work item form.
 
 > [!TIP]  
-> To plan a sprint, at a minimum you should estimate the effort involved to implement each backlog item. You capture effort in the following fields within the work item form: Effort (Scrum), Story Points (Agile), or Size (CMMI) fields. 
+> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Scrum, **Story Points** for Agile, or **Size** for CMMI. 
 
-Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.  
+To open each item, double-click or press Enter. Then add all the information you want to track. Enter as much detail as the team needs to: 
+
+- Understand the scope. 
+- Estimate the work required. 
+- Develop tests. 
+- Ensure that the end product meets acceptance criteria.  
 
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](_img/create-backlog/pbi-form.png) 
@@ -274,9 +277,9 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 [Size](../queries/query-numeric.md)</td> 
 <td>
 <a name="estimates"></a>
-<p>Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in the Story Points and Size fields.</p> 
-<p>Most Agile methods recommend setting estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for Effort, Size, or Story Points are used in calculating [velocity](../../report/dashboards/velocity-chart-data-store.md) and [forecasting sprints](../sprints/forecast.md).</p>
+<p>Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in **Story Points** and **Size**.</p> 
+<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
+<p>The estimates you set for **Effort**, **Size**, or **Story Points** are used to calculate [velocity](../../report/dashboards/velocity-chart-data-store.md) and [forecast sprints](../sprints/forecast.md).</p>
 </td> 
 </tr>
 
@@ -287,13 +290,13 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 
 <tr>
 <td>[Description](../queries/titles-ids-descriptions.md)</td> 
-<td>Provide enough detail to create shared understanding of scope and to support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
+<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
 </tr>
 
 <tr>
 <td>[Acceptance Criteria](../queries/titles-ids-descriptions.md) </td> 
-<td><p>Define what "Done" means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.</p>
-<p>Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Conversations between the team and customers to determine the acceptance criteria help ensure a common understanding within the team to meet customers' expectations. Also, this info provides the basis for acceptance testing.</p></td> 
+<td><p>Define what "Done" means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
+<p>Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers' expectations. Also, this information provides the basis for acceptance testing.</p></td> 
 </tr>
 
 </tbody>
@@ -301,12 +304,12 @@ Open each item (double-click, or press Enter to open the selected item) and add 
  
 
 ## Try this next
-Now that you've got a working backlog in place, your team can begin work on the top priority items. From here, it's time to make the decision on how you want to work as a team: Scrum or Kanban? You can use these methods independently or together.
+Now that you have a working backlog in place, your team can begin work on the top-priority items. From here, it's time to decide how you want to work as a team. Do you want to use Scrum or Kanban? You can use these methods independently or together.
 
 > [!div class="nextstepaction"]
 > [Scrum: Schedule sprints](../sprints/define-sprints.md) or [Kanban](../boards/kanban-quickstart.md) 
 
-Teams that want the least overhead in terms of tracking and estimating may prefer Kanban. Teams that like to work at a steady cadence and plot the details of their sprint plan may prefer Scrum and sprint planning.
+Teams that want the least overhead in terms of tracking and estimating might prefer Kanban. Teams that like to work at a steady cadence and plot the details of their sprint plan might prefer Scrum and sprint planning.
 
 
 ## Related articles
@@ -314,6 +317,6 @@ Teams that want the least overhead in terms of tracking and estimating may prefe
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
-- [Backlog priority or stack rank order](stack-rank-backlog-position.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

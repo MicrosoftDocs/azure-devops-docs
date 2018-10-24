@@ -30,18 +30,18 @@ To set up Team Foundation Version Control (TFVC) on your dev machine, you just n
 
 From Visual Studio, go to the Team Explorer Connect page (Keyboard: Ctrl + 0, C) and then connect to the project.
 
-![](_img/set-up-team-foundation-version-control-your-dev-machine/IC750752.png)
+![Create a workspace and get the code](_img/set-up-team-foundation-version-control-your-dev-machine/IC750752.png)
 
 (If the project you want to open is not listed, choose **Select Projects** and then 
 [connect to the project](../../organizations/projects/connect-to-projects.md).)
 
 Map the project to a folder on your dev machine.
 
-![](_img/set-up-team-foundation-version-control-your-dev-machine/IC677199.png)
+![Map the project to a folder on your dev machine](_img/set-up-team-foundation-version-control-your-dev-machine/IC677199.png)
 
 Map the workspace and get your code.
 
-![](_img/set-up-team-foundation-version-control-your-dev-machine/IC696633.png)
+![Map the workspace and get your code](_img/set-up-team-foundation-version-control-your-dev-machine/IC696633.png)
 
 ## Work in a "Main" parent folder
 
@@ -53,7 +53,7 @@ Do you want to prepare for when your team grows large enough to need [branches](
 
 3.  On the menu bar choose **File**, **Source Control**, **New Folder**.
 
-    ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC675823.png)
+    ![Source control explorer](_img/set-up-team-foundation-version-control-your-dev-machine/IC675823.png)
 
     Name the folder.
 
@@ -61,11 +61,11 @@ Do you want to prepare for when your team grows large enough to need [branches](
 
 4.  Check in the new folder.
 
-    ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC696634.png)
+    ![Check in the new folder](_img/set-up-team-foundation-version-control-your-dev-machine/IC696634.png)
 
     Your changeset is checked in.
 
-    ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC675825.png)
+    ![Your changeset is checked in](_img/set-up-team-foundation-version-control-your-dev-machine/IC675825.png)
 
 When your team decides to branch the codebase, you can convert the Main folder to a branch. See [Branch folders and files](branch-folders-files.md).
 
@@ -75,7 +75,7 @@ When your team decides to branch the codebase, you can convert the Main folder t
 
 If you've got an idea for a new app, you can use version control from the start. Create a new code project (Keyboard: Ctrl + Shift + N), and add it to TFVC version control:
 
-![](_img/set-up-team-foundation-version-control-your-dev-machine/IC696635.png)
+![Create a new solution under version control](_img/set-up-team-foundation-version-control-your-dev-machine/IC696635.png)
 >**Tip:**
 We suggest that you put your new project in **c:\Users\***YourName***\Source\Workspaces\**.
 
@@ -93,7 +93,7 @@ You've already got an app in progress and you want to begin working on it under 
 
 3.  Add your solution to source control.
 
-    ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC675409.png)
+    ![Add your solution to source control](_img/set-up-team-foundation-version-control-your-dev-machine/IC675409.png)
 
 4.  On the **Choose Source Control** dialog box, choose **Team Foundation Version Control**.
 

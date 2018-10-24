@@ -29,17 +29,94 @@ You can perform the following tasks when you work with the On-premises XML proce
 <a id="on-prem-xml-process-model"></a>
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Fields  |Pick lists   |   Work item types |
-> |-------------|----------|---------|
-> |- [Add or modify a field](add-modify-field.md)<br/>- [Add a checkbox (Boolean) field](add-modify-field.md#boolean-field) (TFS 2017.2)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Change a field label](add-modify-field.md#change-label)<br/>- [Add a custom control field](add-modify-field.md#custom-control)<br/>- [Remove a field from a form](add-modify-field.md#change-label)<br/>- [Change a field attribute](add-modify-field.md#change-attribute)<br/>- [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)<br/>- [Delete a field](add-modify-field.md#delete-field) |- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Add a custom pick list](add-modify-field.md#picklist)<br/>- [Modify a pre-defined pick list](add-modify-field.md#picklist)<br/>- [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)<br/>- [Person-name field (add users)](../organizations/security/add-users-team-project.md) <br/>- [Resolution State & Failure Type](customize-work.md#test-experience)<br/>- [Define global lists](xml/define-global-lists.md) |- [Add or modify a work item type](add-modify-wit.md)<br/>- [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)<br/>- [Customize the form](xml/change-work-item-form-layout.md)<br/>- [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)<br/>- [Specify the WIT icon](xml/process-configuration-xml-element.md)<br/>- [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors) |
-
-
-> [!div class="mx-tdBreakAll"]  
-> |Backlogs & Process configuration  |Process templates  | Link types |
-> |-------------|----------|---------|
-> |- [Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)<br/>- [Add portfolio backlogs](add-portfolio-backlogs.md)<br/>- [Configure the quick add panel](xml/process-configuration-xml-element.md#add)<br/>- [Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)<br/>- [Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)<br/>- [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days) <br/>- [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors) <br/>- [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors) <br/>- [Process configuration](xml/process-configuration-xml-element.md)<br/>- [Categories](xml/categories-xml-element-reference.md) |- [Customize](process-templates/customize-process.md)<br/>- [Manage (upload/download)](../boards/work-items/guidance/manage-process-templates.md)<br/>- [Maintenance and upgrade implications](#before-you-customize) |- [Add a custom link type](xml/link-type-element-reference.md)<br/>- [Delete a custom link type](witadmin/manage-link-types.md)<br/>- [Deactivate/activate a custom link type](witadmin/manage-link-types.md) | 
-
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Customization support</th>
+</tr>
+<tr>
+<td>Fields  </td>
+<td>
+<ul>
+<li>[Add or modify a field](add-modify-field.md)</li>
+<li>[Add a checkbox (Boolean) field](add-modify-field.md#boolean-field) (TFS 2017.2)</li>
+<li>[Add rules to a field](add-modify-field.md#add-rules)</li>
+<li>[Change a field label](add-modify-field.md#change-label)</li>
+<li>[Add a custom control field](add-modify-field.md#custom-control)</li>
+<li>[Remove a field from a form](add-modify-field.md#change-label)</li>
+<li>[Change a field attribute](add-modify-field.md#change-attribute)</li>
+<li>[Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)</li><li>[Delete a field](add-modify-field.md#delete-field)</li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Pick lists  </td>
+<td>
+<ul>
+<li>[Area paths](../organizations/settings/set-area-paths.md)</li>
+<li>[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)</li>
+<li>[Add a custom pick list](add-modify-field.md#picklist)</li>
+<li>[Modify a pre-defined pick list](add-modify-field.md#picklist)</li>
+<li>[State or Reason fields (customize workflow)](xml/change-workflow-wit.md)</li>
+<li>[Person-name field (add users)](../organizations/security/add-users-team-project.md) </li>
+<li>[Resolution State & Failure Type](customize-work.md#test-experience)</li>
+<li>[Define global lists](xml/define-global-lists.md) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Work item types</td>
+<td>
+<ul>
+<li>[Add or modify a work item type](add-modify-wit.md)</li>
+<li>[Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)</li>
+<li>[Customize the form](xml/change-work-item-form-layout.md)</li>
+<li>[Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)</li>
+<li>[Specify the WIT icon](xml/process-configuration-xml-element.md)</li>
+<li>[Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Backlogs and process configuration  </td>
+<td>
+<ul>
+<li>[Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)</li>
+<li>[Add portfolio backlogs](add-portfolio-backlogs.md)</li>
+<li>[Configure the quick add panel](xml/process-configuration-xml-element.md#add)</li>
+<li>[Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)</li>
+<li>[Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)</li>
+<li>[Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days) </li>
+<li>[Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors) </li>
+<li>[Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors) </li>
+<li>[Process configuration](xml/process-configuration-xml-element.md)</li>
+<li>[Categories](xml/categories-xml-element-reference.md) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Process template </td>
+<td>
+<ul>
+<li>[Customize](process-templates/customize-process.md)</li>
+<li>[Manage (upload/download)](../boards/work-items/guidance/manage-process-templates.md)</li>
+<li>[Maintenance and upgrade implications](#before-you-customize) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Link types </td>
+<td>
+<ul>
+<li>[Add a custom link type](xml/link-type-element-reference.md)</li>
+<li>[Delete a custom link type](witadmin/manage-link-types.md)</li>
+<li>[Deactivate/activate a custom link type](witadmin/manage-link-types.md)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 <a id="on-prem-xml-sequence"></a>
 

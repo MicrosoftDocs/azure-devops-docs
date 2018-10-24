@@ -1,5 +1,6 @@
 ---
-title: Xcode
+title: Building apps with Xcode with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building Xcode projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,9 +14,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Xcode
+# Build apps with Xcode using Azure Pipelines or Team Foundation Server
 
-This guidance explains how to build apps with Xcode.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Xcode projects with CI/CD pipelines.
 
 ## Example
 
@@ -33,14 +36,14 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your apps with Xcode without needing to set up any infrastructure of your own. Xcode is preinstalled on [Microsoft-hosted macOS agents](../agents/hosted.md) in Azure Pipelines. You can use the macOS agents to run your builds.
 
-For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 ```
 
 ## Build an app with Xcode
@@ -59,7 +62,7 @@ steps:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 ```

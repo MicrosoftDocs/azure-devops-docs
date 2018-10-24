@@ -11,11 +11,11 @@ author: chcomley
 ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
-# Buy Azure DevOps resources for your customers
+# Cloud Solution Providers: Buy Azure DevOps resources for your customers
 
 [!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
-Partners in the cloud service provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
+Partners in the Cloud Solution Provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
 your customers, including users (who get Basic features), Test Manager, Azure Artifacts, Private Pipelines, and
 Hosted Pipelines.
 
@@ -34,8 +34,10 @@ Make sure your identity hasn't been added into the customer's Azure Active Direc
 
 ## Buy resources for customers
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Azure DevOps Services/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-VSTS/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
+>[!Note]
+>Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
 
 1. Sign in to the [Partner Center](https://partnercenter.microsoft.com).
 2. Choose the customer for whom you're purchasing.

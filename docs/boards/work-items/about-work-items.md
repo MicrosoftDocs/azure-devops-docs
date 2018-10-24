@@ -9,8 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 09/11/2018
----
+ms.date: 09/13/2018
+--- 
 
 # About work items 
 
@@ -111,7 +111,7 @@ You can add and update work items from the web portal and various clients. For a
 
 Use the web portal to accomplish the following tasks. 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 
@@ -149,7 +149,7 @@ Anyone who has write access to a project can assign work items, including users 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-aad.md).
+You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -219,13 +219,13 @@ You can add or modify the fields contained within a WIT or add a custom WIT. To 
 <a id="permissions-access" />
 ## Required permissions and access
 
-As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Usrs with Stakeholder access are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/access-levels.md#stakeholder-access). 
+As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/access-levels.md#stakeholder-access). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [About access levels](../../organizations/security/access-levels.md).  
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-To learn more about user identities, permissions, and access, see [Security & identity](../../organizations/security/index.md).
+
 
 ## Try this next 
 
@@ -233,7 +233,10 @@ To learn more about user identities, permissions, and access, see [Security & id
 > [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 
 
-## Related articles
+## Related articles 
+- [Web portal navigation](../../project/navigation/index.md) 
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
+- - [About Kanban and Agile project management](../boards/kanban-overview.md) 
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 - [Agile process](./guidance/agile-process.md)  
 - [Scrum process](./guidance/scrum-process.md)  

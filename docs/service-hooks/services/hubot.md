@@ -63,15 +63,15 @@ to your Hubot instance.
 
 3. Select the Hubot service.
 
-   <img alt="" src="./_img/hubot/select-hubot.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select hubot service" src="./_img/hubot/select-hubot.png" style="border: 1px solid #CCCCCC" />
 
 4. Configure an event to trigger when there are messages posted in your team room.
 
-   <img alt="" src="./_img/hubot/select-event.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select hubot event" src="./_img/hubot/select-event.png" style="border: 1px solid #CCCCCC" />
 
 5. Select the **Post a message** action from the drop-down and supply the full URL and user name and password of your Hubot instance.
 
-   <img alt="" src="./_img/hubot/hubot-http-action.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select http POST action" src="./_img/hubot/hubot-http-action.png" style="border: 1px solid #CCCCCC" />
 
 6. Click **Finish** to save the subscription.
 

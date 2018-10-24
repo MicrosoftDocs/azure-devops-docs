@@ -8,8 +8,8 @@ ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 01/24/2018
----
+ms.date: 09/13/2018
+--- 
 
 
 # Visibility across teams
@@ -61,20 +61,91 @@ With the multi-team portfolio backlog view, you can:
 - Filter the backlog based on keyword or tag to focus on specific teams or categorized items
 - (Optional) You can use the [mapping feature](../backlogs/organize-backlog.md) to map user stories or PBIs to features
 
-Management teams can drill down from their portfolio backlog to see how epics are progressing.
+### View child items owned by other teams 
+Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
-<img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" />
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-And, feature teams can turn on Show parents on their backlogs to see context and even those stories
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts" 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
+
+> [!TIP]    
+> Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017" 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+
+> [!TIP]    
+> Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+
+Items that are owned by other teams appear with hollow-filled bars.  
+
+<img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" /> 
+
+::: moniker-end 
+
+---
+
+### View backlog items and parent items owned by other teams
+
+Feature teams can turn **Show parents** on their backlogs to see context and those items owned by other teams. 
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts" 
+
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017"   
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
+   
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+Items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
+
+---
 
 > [!TIP]
 >When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
 To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
-
-
 
 
 <a id="dashboards">  </a>
@@ -153,8 +224,8 @@ Here are some additional topics that address working with multiple teams:
 
 ## Limitations of multi-team Kanban board views 
 
-While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board.
- Only when the work item state changes does the card column reflect the same on all boards.
+While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
+Only when the work item state changes does the card column reflect the same on all boards.
 
 > [!IMPORTANT]   
 >Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/../../organizations/settings/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
@@ -180,7 +251,7 @@ With the multi-team Kanban board view, you can:
 
 Many project managers are interested in getting numeric rollup of estimates&mdash;Story Points or Effort&mdash; or the Remaining Work field. Rollup provides summed values of select fields for all child work items of a parent.
 
-Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the task board.
+Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard.
 
 ![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)
 

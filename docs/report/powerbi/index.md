@@ -1,5 +1,5 @@
 ---
-title: Create Power BI reports from the Analytics service for Azure DevOps projects
+title: Create Power BI reports from Analytics service 
 titleSuffix: Azure DevOps Services
 description: Create PowerBI charts, reports, and dashboards based on the Analytics  Service for Azure DevOps 
 ms.prod: devops

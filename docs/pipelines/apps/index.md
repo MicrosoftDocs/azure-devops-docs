@@ -93,7 +93,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Azure Pipelines](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Azure Pipelines](https://azure.microsoft.com/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 

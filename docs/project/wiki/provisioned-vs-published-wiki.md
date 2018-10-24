@@ -8,9 +8,9 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.reviewer: sancha
-author: KathrynEE
+author: chcomley
 monikerRange: 'vsts'
 ms.date: 04/26/2018  
 ---
@@ -67,15 +67,15 @@ The following table summarizes those operations or features that may differ depe
 > [!div class="mx-tdCol2BreakAll"] 
 > |Operation |    Provisoned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
-> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![](_img/checkmark.png) |
-> |[Add or edit pages from the **Wiki**](add-edit-wiki.md) |![](_img/checkmark.png) |  |
-> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |![](_img/checkmark.png)  |
-> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |![](_img/checkmark.png) |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |![](_img/checkmark.png)  |
-> |[Update content offline](wiki-update-offline.md) | ![](_img/checkmark.png) | ![](_img/checkmark.png) |
-> |[Maintain versioned wikis](#versioning) |  | ![](_img/checkmark.png) |
-> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ![](_img/checkmark.png) |
-> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ![](_img/checkmark.png) |
+> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![checkmark](_img/checkmark.png) |
+> |[Add or edit pages from the **Wiki**](add-edit-wiki.md) |![checkmark](_img/checkmark.png) |  |
+> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |![checkmark](_img/checkmark.png)  |
+> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |![checkmark](_img/checkmark.png) |  |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |![checkmark](_img/checkmark.png)  |
+> |[Update content offline](wiki-update-offline.md) | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
+> |[Maintain versioned wikis](#versioning) |  | ![checkmark](_img/checkmark.png) |
+> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ![checkmark](_img/checkmark.png) |
+> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ![checkmark](_img/checkmark.png) |
 
 
 

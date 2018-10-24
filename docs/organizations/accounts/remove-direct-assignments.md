@@ -1,6 +1,6 @@
 ---
 title: Remove direct assignments
-description: Learn how to remove direct assignments in your Azure DevOps Services (Visual Studio Online, VSO, Azure DevOps Services) organization
+description: Learn how to remove direct assignments in your Azure DevOps organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
 
-# Remove direct assignments from users
+# Remove direct assignments from users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -27,7 +27,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -46,9 +46,9 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Go to your Azure DevOps Services **Users** settings.
+2. Go to your **Users** settings.
 
    ![Go to users settings](../../_shared/_img/sign-in-go-to-users-settings-horz.png)
 

@@ -1,5 +1,6 @@
 ---
 title: Deploy to Kubernetes
+titleSuffix: Azure Pipelines & TFS
 description: Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Deploy to Kubernetes
+
+**Azure Pipelines**
 
 ![](_img/kubernetes.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 

@@ -1,5 +1,6 @@
 ---
 title: PyPI Publisher
+titleSuffix: Azure Pipelines & TFS
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Package: PyPI Publisher
+
+**Azure Pipelines**
 
 ![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 

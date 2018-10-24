@@ -1,6 +1,7 @@
 ---
 title: Azure App Service Deploy
-description: The Azure App Service Deployment task is used to update different Azure App Service to deploy [Web Apps](https://azure.microsoft.com/en-in/documentation/articles/app-service-web-overview/), [Functions](https://docs.microsoft.com/en-us/azure/azure-functions/), and [WebJobs](https://azure.microsoft.com/en-us/blog/webjobs-goes-into-full-production/) to Azure.
+titleSuffix: Azure Pipelines & TFS
+description: The Azure App Service Deployment task is used to update different Azure App Service to deploy [Web Apps](https://azure.microsoft.com/documentation/articles/app-service-web-overview/), [Functions](https://docs.microsoft.com/azure/azure-functions/), and [WebJobs](https://azure.microsoft.com/blog/webjobs-goes-into-full-production/) to Azure.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Azure App Service Deploy
+
+**Azure Pipelines**
 
 ![](_img/azurermwebappdeployment.png) The Azure App Service Deploy task is used to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac;
@@ -41,7 +44,7 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 
 * **App Service instance**. The task is used to deploy a Web App project or Azure Function project to an existing Azure App Service instance, which must exist before the task runs.
   The App Service instance can be created from the [Azure portal](https://azure.microsoft.com/documentation/videos/azure-app-service-web-apps-with-yochay-kiriaty/)
-  and [configured](https://azure.microsoft.com/en-us/documentation/articles/web-sites-configure/) there.
+  and [configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/) there.
   Alternatively, the [Azure PowerShell task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) can be used to run
   [AzureRM PowerShell scripts](https://msdn.microsoft.com/en-us/library/mt619237.aspx) to provision and configure the Web App.
 
@@ -59,7 +62,7 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 <tr><td>Connection type</td><td>connectionType</td><td>(Required) Select **Azure Resource Manager**.</td></tr>
 <tr><td>Azure subscription</td><td>azureSubscription</td><td>(Required) Select your Azure Resource Manager subscription. If none exists, choose **Manage** to navigate to the Services page in the administration section. Choose **New Service Endpoint** and select **Azure Resource Manager** from the list, then enter the required details.</td></tr>
 <tr><td>Publish profile path</td><td>publishProfilePath</td><td>(Required) The path to the file containing the publishing information.</td></tr>
-<tr><td>Publish profile password</td><td>publishProfilePassword</td><td>(Required) The password for the profile file. Consider storing teh password in a secret variable and using that variable here. Example: `$(Password)`.</td></tr>
+<tr><td>Publish profile password</td><td>publishProfilePassword</td><td>(Required) The password for the profile file. Consider storing the password in a secret variable and using that variable here. Example: `$(Password)`.</td></tr>
 <tr><td>App Service type</td><td>appType</td><td>(Required) Select the Azure App Service type. The app types supported are Function App, Web App on Windows, Web App on Linux, Web App for Containers, and Azure App Service Environments.</td></tr>
 <tr><td>App Service name</td><td>webAppName</td><td>(Required) Select an existing Azure App Service or enter the name of the Web App if it was provisioned dynamically using the [Azure PowerShell task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) and [AzureRM PowerShell scripts](https://msdn.microsoft.com/en-us/library/mt619237.aspx).</td></tr>
 <tr><td>Deploy to Slot or App Service Environment</td><td>deployToSlotOrASE</td><td>(Optional) Select this option to deploy to an existing slot other than the Production slot. Do not select it if the Web project is being deployed to the Production slot. The Web App itself is the Production slot.</td></tr>
@@ -68,7 +71,7 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 <tr><td>Registry or Namespace</td><td>dockerNamespace</td><td>(Required) A globally unique top-level domain name for your specific registry or namespace. Note: the fully-qualified image name will be of the format: **{registry or namespace}/{repository}:{tag}**. For example, **myregistry.azurecr.io/nginx:latest**.</td></tr>
 <tr><td>Image</td><td>dockerRepository</td><td>(Required) Name of the repository where the container images are stored. Note: the fully-qualified image name will be of the format: **{registry or namespace}/{repository}:{tag}**. For example, **myregistry.azurecr.io/nginx:latest**.</td></tr>
 <tr><td>Tag</td><td>dockerImageTag</td><td>(Optional) Tags are optional, but are the mechanism that registries use to apply version information to Docker images. Note: the fully-qualified image name will be of the format: **{registry or namespace}/{repository}:{tag}**. For example, **myregistry.azurecr.io/nginx:latest**.</td></tr>
-<tr><td>Virtual application</td><td>virtualApplication</td><td>(Optional) Specify the name of the Virtual Application that has been configured in the Azure portal. This option is not required for deployments to the website root. The Virtual Application must have been [configured](https://azure.microsoft.com/en-us/documentation/articles/web-sites-configure/) before deployment of the web project.</td></tr>
+<tr><td>Virtual application</td><td>virtualApplication</td><td>(Optional) Specify the name of the Virtual Application that has been configured in the Azure portal. This option is not required for deployments to the website root. The Virtual Application must have been [configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/) before deployment of the web project.</td></tr>
 <tr><td>Package or folder</td><td>packageForLinux</td><td>(Required) Location of the Web App zip package or folder on the automation agent, or on a UNC path accessible to the automation agent such as **\\\\BudgetIT\\Web\\Deploy\\Fabrikam.zip**. Predefined system variables and wild cards such as **$(System.DefaultWorkingDirectory)\\\*.zip** can be also used here.</td></tr>
 <tr><td>Runtime Stack</td><td>runtimeStack</td><td>(Required) Web App on Linux offers two different options to publish your application: Custom image deployment (Web App for Containers) and App deployment with a built-in platform image (Web App on Linux). You will see this parameter only if you selected **Linux Web App** as the **App type** option.</td></tr>
 <tr><td>Startup command </td><td>startupCommand</td><td>(Optional) The start up command for the container. For example, if you are using PM2 process manager for Nodejs, you can specify the PM2 file here.</td></tr>

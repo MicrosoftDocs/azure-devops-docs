@@ -1,5 +1,6 @@
 ---
-title: Azure Web App deployment | Microsoft Docs
+title: Azure Web App deployment
+titleSuffix: Azure Pipelines & TFS
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
@@ -14,6 +15,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Azure Web App deployment
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -268,7 +271,7 @@ jobs:
 
 - job: buildandtest
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'ubuntu-16.04'
   steps:
 
   # add steps here to build the app
@@ -283,7 +286,7 @@ jobs:
 
 - job: prod
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'ubuntu-16.04'
   dependsOn: buildandtest
   condition: succeeded()
   steps:

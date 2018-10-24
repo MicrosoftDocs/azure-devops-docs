@@ -1,10 +1,12 @@
 ---
-title: Set up environments to run continuous tests with your builds - test automation tools
+title: Set up environments to run continuous tests with your builds
+titleSuffix: Azure Pipelines & TFS
 description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline Azure Pipelines and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
@@ -296,7 +298,7 @@ for different purposes separately if required.
 <a name="use-build"></a>
 #### Q: How do I do this with Build? 
 
-**A**: The jobs capability is currently available only in Release Management. It will become available in Build soon.
+**A**: The jobs capability is currently available only in Azure Pipelines releases. It will become available for builds soon.
 
 <a name="vst-task-changes"></a>
 #### Q: Does the Visual Studio Test version 1 task behave the same way as the version 2 task?

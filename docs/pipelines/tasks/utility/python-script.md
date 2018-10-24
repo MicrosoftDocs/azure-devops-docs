@@ -1,5 +1,6 @@
 ---
 title: Python Script
+titleSuffix: Azure Pipelines & TFS
 description: Run a Python script.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Utility: Python Script
+
+**Azure Pipelines**
 
 ![](_img/pythonscript.png) Run a Python script.
 

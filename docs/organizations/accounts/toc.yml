@@ -9,7 +9,7 @@
 - name: Quickstarts
   items:
   - name: Create your organization
-    href: create-organization-msa-or-work-student.md
+    href: create-organization.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Set permissions
@@ -27,7 +27,7 @@
 - name: Concepts
   items:
   - name: Define organizations and projects
-    href: ../../user-guide/define-organizations-and-projects.md
+    href: ../../user-guide/define-organizations-and-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Add subscription user to organization
     href: add-basic-or-vs-subscription-users.md
   - name: Resources granted to project members
@@ -37,7 +37,7 @@
 - name: How-to guides
   items:
   - name: Set your preferences
-    href: ../settings/set-your-preferences.md
+    href: ../settings/set-your-preferences.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Manage your organization
     items:
     - name: Change organization owner
@@ -45,27 +45,27 @@
     - name: Rename organization
       href: rename-vsts-organization.md
     - name: Delete organization
-      href: delete-your-vsts-organization.md
+      href: delete-your-organization.md
     - name: Recover organization
       href: recover-your-vsts-organization.md
     - name: Sign in with different credentials
-      href: ../../organizations/projects/connect-to-projects.md#logindifferentcred
-    - name: Change organization location (region)
+      href: ../../organizations/projects/connect-to-projects.md#logindifferentcred?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    - name: Change organization location
       href: change-organization-location.md
   - name: Manage access to your organization
     items:
     - name: Add users to your organization
-      href: add-organization-users-from-user-hub.md
+      href: add-organization-users.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access
       href: manage-conditional-access.md
-    - name: Link work accounts to MSDN subscriptions
+    - name: Link work accounts to VS subscriptions
       href: ../../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
-    - name: Authenticate with personal access tokens
+    - name: Authenticate with PATs
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
-      href: change-application-access-policies-vs.md
+      href: change-application-access-policies.md
     - name: Delete users from organization
       href: delete-organization-users.md
     - name: Add external users
@@ -75,7 +75,7 @@
       - name: Add Azure AD group to Azure DevOps group
         href: manage-azure-active-directory-groups-vsts.md
       - name: Add Azure DevOps users to Azure AD
-        href: add-users-to-aad.md
+        href: add-users-to-azure-ad.md
       - name: Disconnect your organization from Azure AD
         href: disconnect-organization-from-aad.md
       - name: Delete Azure DevOps users connected to Azure AD
@@ -83,13 +83,13 @@
   - name: Manage extensions
     items:
     - name: Install extensions
-      href: ../../marketplace/install-vsts-extension.md
+      href: ../../marketplace/install-vsts-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Assign paid extensions access
-      href: ../../marketplace/assign-paid-extensions.md
+      href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Approve requests for extensions
-      href: ../../marketplace/approve-vsts-extensions.md
+      href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../../marketplace/uninstall-disable-vsts-extensions.md
+      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Manage group-based licensing 
     items:
     - name: Assign access levels and extensions

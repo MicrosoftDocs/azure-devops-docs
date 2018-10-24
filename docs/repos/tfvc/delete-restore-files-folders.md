@@ -28,11 +28,11 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
 Before you delete an item:
 
--   ![](_img/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![](_img/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
+-   ![Delete item](_img/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![Delete item](_img/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
 
--   ![](_img/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
+-   ![Delete item](_img/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
 
--   ![](_img/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
+-   ![Delete item](_img/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
 
 ### To delete an item
 
@@ -88,7 +88,7 @@ When you use a local workspace, Visual Studio detects and enables you to resolve
 
 ### To use a local workspace to restore an item you deleted outside Visual Studio
 
-1.  In Team Explorer, choose ![](_img/delete-restore-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
+1.  In Team Explorer, choose ![Home](_img/delete-restore-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
 
 2.  In the **Excluded Changes** section, choose the **Detected changes** link.
 

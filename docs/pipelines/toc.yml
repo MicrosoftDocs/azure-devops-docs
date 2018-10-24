@@ -1,9 +1,21 @@
 - name: Azure Pipelines
   href: index.md
+- name: Overview
+  items:
+  - name: Start using Build and Release
+    href: overview.md
+  - name: Start using Azure Pipelines
+    href: get-started/index.md
+  - name: What is Azure Pipelines?
+    href: get-started/what-is-azure-pipelines.md
+  - name: Sign up for Azure Pipelines
+    href: get-started/pipelines-sign-up.md
+  - name: Get started with Azure Pipelines
+    href: get-started/pipelines-get-started.md
+  - name: Key concepts
+    href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   items:
-  - name: Overview
-    href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
   - name: Use the visual designer
@@ -54,6 +66,8 @@
     href: targets/nuget.md
   - name: SCVMM
     href: targets/scvmm.md
+  - name: Universal Packages
+    href: targets/universal-packages.md
   - name: VMware
     href: targets/vmware.md
   - name: Azure Web App for Containers
@@ -143,16 +157,22 @@
         href: process/multiple-phases.md
     - name: Conditions
       href: process/conditions.md
+    - name: Expressions
+      href: process/expressions.md
     - name: Variables
       href: process/variables.md
     - name: Resources
       href: process/resources.md
-  - name: Licensing
+    - name: Templates
+      href: process/templates.md
+  - name: Scripts
     items:
-    - name: Parallel jobs
-      href: licensing/concurrent-jobs-vsts.md
-    - name: Pipelines
-      href: licensing/concurrent-pipelines-tfs.md
+    - name: Cross-platform scripts
+      href: scripts/cross-platform-scripting.md
+    - name: Run a PowerShell script
+      href: scripts/powershell.md
+    - name: Run Git commands
+      href: scripts/git-commands.md
   - name: Library
     href: library/index.md
     items:
@@ -164,6 +184,12 @@
       href: library/service-endpoints.md
     - name: Secure files
       href: library/secure-files.md
+  - name: Licensing
+    items:
+    - name: Parallel jobs
+      href: licensing/concurrent-jobs-vsts.md
+    - name: Pipelines
+      href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
     href: policies/retention.md
 - name: How-to Guides
@@ -174,12 +200,10 @@
       href: build/ci-public.md
     - name: Build multiple branches
       href: build/ci-build-git.md
+    - name: Build on multiple platforms
+      href: get-started-multiplatform.md
     - name: Build a repo using the visual designer
       href: build/ci-build-github.md
-    - name: Run a PowerShell script
-      href: scripts/powershell.md
-    - name: Run Git commands
-      href: scripts/git-commands.md
     - name: Publish symbols
       href: symbols/index.md
   - name: Release
@@ -347,6 +371,8 @@
         href: tasks/utility/download-secure-file.md
       - name: Download Build Artifacts
         href: tasks/utility/download-build-artifacts.md
+      - name: Download Pipeline Artifact
+        href: tasks/utility/download-pipeline-artifact.md
       - name: Download Fileshare Artifacts
         href: tasks/utility/download-fileshare-artifacts.md
       - name: Download Package
@@ -373,6 +399,8 @@
         href: tasks/utility/powershell.md
       - name: Publish Build Artifacts
         href: tasks/utility/publish-build-artifacts.md
+      - name: Publish Pipeline Artifact
+        href: tasks/utility/publish-pipeline-artifact.md
       - name: Publish to Azure Service Bus
         href: tasks/utility/publish-to-azure-service-bus.md
       - name: Python Script

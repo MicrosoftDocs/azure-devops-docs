@@ -1,6 +1,6 @@
 ---
 title: Customize the layout of the work item web form
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
@@ -39,7 +39,7 @@ Use this sequence when you use the On-premises XML process model, i.e., you mana
 
 
 ## Import/export process zip files 
-Use this sequence when you use the Hosted XML process model, i.e., you manage your work tracking customization by importing a process or process template. 
+Use this sequence when you use the Hosted XML process model, i.e., when you manage your work tracking customization by importing a process or process template. 
 
 [![Export process](_img/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
@@ -68,9 +68,18 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ## Import and export WIT definition files 
 
+> [!NOTE]   
+> The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
+
 0.  If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+0.  Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
+
+	For example:
+  
+    ```  
+    %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer 
+    ```  
 
 0.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 

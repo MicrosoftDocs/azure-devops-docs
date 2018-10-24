@@ -31,8 +31,21 @@ In this topic you'll learn:
 > * Work with different list types    
   
 
-> [!NOTE]  
->You can't use Office Project 365 to connect to Azure Boards and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
+## Prerequisites 
+::: moniker range=">= tfs-2017" 
+- Office Excel 2010 or later version, including Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+- Office Excel 2007, Office Excel 2010, or Office Excel 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+::: moniker-end  
+
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps Services and TFS versions](/tfs/server/compatibility). 
 
 <a id="add-work-items"> </a>  
 ## Add work items
@@ -46,32 +59,49 @@ In this topic you'll learn:
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+	(1) Choose Team tab, (2) place your cursor in Cell A1, and then (3) choose **New List**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]  
-    >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md). 
 
 4.  Connect to your project where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
-    ![ALM\_EXL\_Connect](_img/IC680074.png)
+    ![New List](_img/excel/team-ribbon.png)
 
     If it is your first time connecting from Excel, you might have to add the URL to the list of recognized servers.
 
-    ![ALM\_EXL\_AddServer](_img/IC658167.png)
+	**Azure Boards**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+
+	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
+
+	**TFS**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+
+    ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
+
+	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
+
+0. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-5.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-6.  Specify the titles of the work items you want to add and their work item type.
+0.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-7.  Publish your worksheet.
+0.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -81,7 +111,7 @@ In this topic you'll learn:
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-8.  Also, note how you can open a work item in the web portal to add more information.
+0.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 
@@ -242,11 +272,12 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
+## Bulk edit test cases
+You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
+
 ## Related articles
 
 While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
-
-If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
@@ -256,8 +287,6 @@ To bulk edit links, you can use these clients:
 -   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
 -   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../test/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 
@@ -272,7 +301,6 @@ You can't delete work items from Excel. The only way to delete work items is fro
 
 When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
 
-
 ### Multiple worksheets
 
 Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
@@ -286,12 +314,13 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp; 
-
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  
 
 ### Web portal and Excel access
 
-While you can't open a query from the web portal, you can open the query from Excel. To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
+To open Excel from a web portal query, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) marketplace extension. 
+
+To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
 
 Once you've installed Visual Studio, open Excel and look for the Team ribbon.
 
@@ -308,4 +337,4 @@ See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-de
 macOS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require Windows.
 
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
+

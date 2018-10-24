@@ -87,9 +87,9 @@ SELECT [System.ID], [System.Title], [System.State]
    AND [System.AreaPath]='FabrikamFiber\Web'   
 ```
 
-::: moniker-end 
+::: moniker-end   
 
-::: moniker range="tfs-2013"   
+::: moniker range="tfs-2013"    
 ## Query hyperlink syntax for TFS 2013 and previous versions 
 
 ```  
@@ -106,7 +106,7 @@ SELECT [System.ID], [System.Title], [System.State]
 	AND [System.FoundIn]='9.0.30304' 
 ```
 
-::: moniker-end 
+::: moniker-end   
 
 
 ## Related articles: 

@@ -1,5 +1,6 @@
 ---
 title: Helm tool installer
+titleSuffix: Azure Pipelines & TFS
 description: Install Helm and Kubernetes on agent machine.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Tool: Helm tool installer
+
+**Azure Pipelines**
 
 ![](_img/helminstaller.png) Install Helm and Kubernetes on agent machine.
 

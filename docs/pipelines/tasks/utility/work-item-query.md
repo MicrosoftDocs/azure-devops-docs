@@ -1,5 +1,6 @@
 ---
 title: Work item query task for Azure Pipelines and TFS 
+titleSuffix: Azure Pipelines & TFS
 description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in Azure Pipelines and TFS
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Utility: Query Work Items
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 

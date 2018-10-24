@@ -1,14 +1,14 @@
 ---
 title: View permissions for yourself or others
-titleSuffix: Azure DevOps Services & TFS 
-description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level permissions and security
+titleSuffix: Azure DevOps & TFS 
+description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
 ---
@@ -115,7 +115,7 @@ Open admin settings for the organization or a collection.
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -136,7 +136,7 @@ Open admin settings for the organization or a collection.
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
@@ -157,11 +157,48 @@ You can define the security or permissions for a number of objects. You access t
 
 From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
 
-> [!div class="mx-tdBreakAll"]  
-> |Wiki & Dashboard  | DevOps   |Work tracking  |  
-> |-------------|----------|---------|   
-> |- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Release pipeline security](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md) |- [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plans](set-permissions-access-work-tracking.md#plan-permissions)|  
 
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Wiki & Dashboard permissions</td>
+<td>
+<ul>
+<li>[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)</li>
+<li>[Dashboards](../../report/dashboards/dashboard-permissions.md)</li>
+
+</ul>
+</td>
+</tr>
+<tr>
+<td>DevOps (code, build, test, release) permissions </td>
+<td>
+<ul>
+<li>[Git branch](../../repos/git/branch-permissions.md)</li>
+<li>[Git repository](set-git-tfvc-repository-permissions.md)</li>
+<li>[TFVC](set-git-tfvc-repository-permissions.md)</li>
+<li>[Builds](../../pipelines/policies/set-permissions.md)</li>
+<li>[Release pipeline security](../../pipelines/policies/set-permissions.md)</li>
+<li>[Approvals and approvers](../../pipelines/release/approvals/index.md)</li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Work tracking permissions</td>
+<td>
+<ul>
+<li>[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)</li>
+<li>[Work item query and folder](../../boards/queries/set-query-permissions.md)</li>
+<li>[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)</li>  
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Next steps
 

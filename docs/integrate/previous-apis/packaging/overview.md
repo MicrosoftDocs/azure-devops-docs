@@ -6,7 +6,7 @@ ms.manager: douge
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -14,6 +14,9 @@ ms.date: 08/04/2016
 ---
 
 # Packaging
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]

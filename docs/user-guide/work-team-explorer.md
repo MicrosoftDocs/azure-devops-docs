@@ -1,6 +1,6 @@
 ---
-title: Navigate within the Visual Studio Team Explorer pane
-titleSuffix: Azure DevOps Services & TFS 
+title: Navigate in Visual Studio Team Explorer 
+titleSuffix: Azure DevOps 
 description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
@@ -14,7 +14,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Navigate in Team Explorer
+# Navigate in Visual Studio Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -88,29 +88,53 @@ From the **Connect** page, you can select the projects you want to connect to an
 > From the Visual Studio plug-in, you can [Create a project](../organizations/projects/create-project.md). The ability to create projects is not supported from the Eclipse plug-in. You can, however, create projects from the web portal/collection administration context. 
 
 
+### Home 
 
-### Home, Work, and Build pages 
+Open [Web portal](../project/navigation/index.md) 
+Open [Task Board](../boards/sprints/task-board.md)  
 
-
-> [!div class="mx-tdBreakAll"]  
-> |Home|Work Items  |Build |
-> |-------------|----------|----------|
-> |-[Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](../project/navigation/index.md)<br/>- Open [Task Board](../boards/sprints/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../boards/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../boards/queries/using-queries.md)<br/>- [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)<br/>- [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../boards/queries/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build pipelines](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
-
-> [!NOTE]  
-> If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
-
-### Git and TFVC pages  
+### Source control: Git and TFVC
 
 The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
 
+#### Git
 
-> [!div class="mx-tdBreakAll"]  
-> |Git | TFVC  |
-> |-------------|----------|
-> |- **Changes**: [Save work with commits](../repos/git/commits.md)<br/>- **Branches**: [Create work in branches](../repos/git/branches.md)<br/>- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)<br/>- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)) |- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md) |
+- [Create a new repo](../repos/git/creatingrepo.md)  
+- [Clone an existing repo](../repos/git/clone.md)  
+- **Changes**: [Save work with commits](../repos/git/commits.md)
+- **Branches**: [Create work in branches](../repos/git/branches.md)
+- **Pull Requests**: [Review code with pull requests](../repos/git/pullrequest.md)
+- **Sync**: [Update code with fetch and pull](../repos/git/pulling.md)
 
-::: moniker range=">= tfs-2013 <= tfs-2018"    
+#### TFVC
+
+- [Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)  
+- **My Work**: [Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- **Pending Changes**: [Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)
+- **Source Control Explorer**: [Add/view files and folders](../repos/tfvc/add-files-server.md)
+
+### Work items
+
+- [Add work items](../boards/backlogs/add-work-items.md)
+- [Use the query editor to list and manage queries](../boards/queries/using-queries.md)
+- [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)
+- [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [Email query results list using Outlook](../boards/queries/share-plans.md)
+- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only)
+
+### Builds
+
+- [Create build pipelines](../pipelines/tasks/index.md)
+- [View and manage builds](../pipelines/overview.md)
+- [Manage the build queue](../pipelines/agents/pools-queues.md)
+
+> [!NOTE]  
+> If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
+
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
 ### Report and Document pages 
 
 The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
@@ -125,24 +149,24 @@ If your project is missing one or more pages, you may be able to [add functional
 
 From the **Settings** page, you can configure administrative features for either a project or project collection. Configuring features in these areas requires you to be a member of a an administrator group or have the required permissions.
 
-Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
+Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse.
 
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
 
 ## Clients that connect to Azure DevOps Services and TFS
 
-In addition to connecting through Team Explorer, you can connect to a project from these clients: 
+In addition to connecting through Team Explorer, you can connect to a project from the following clients:
 
-- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json) 
+- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
-- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md) 
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
 - [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Office Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json) 
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)   
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
 
 
 ## Related articles
@@ -156,12 +180,9 @@ In addition to connecting through Team Explorer, you can connect to a project fr
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
--   To refresh a page that you are currently viewing, choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-
--   To refresh the project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-
--   To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-
+- To refresh a page that you are currently viewing, choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+- To refresh the project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
 

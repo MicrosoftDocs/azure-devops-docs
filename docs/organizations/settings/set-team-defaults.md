@@ -1,12 +1,13 @@
 ---
 title: Set team defaults 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Configure the default area and iteration paths or sprints for a team in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 07/27/2018
 ---
@@ -46,9 +47,9 @@ From a web browser, open the web portal administrative context for your team.
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
-You define both areas and iterations from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-0.  Open a backlog or board for a team and choose the ![](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
 	Here we open the Board for the Web team and from there the team profile. 
 
@@ -65,6 +66,7 @@ You define both areas and iterations from **Project Settings>Work>Team configura
 	> [!div class="mx-imgBorder"]  
 	> ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
@@ -73,7 +75,7 @@ You define both areas and iterations from **Project Settings>Work>Team configura
 
 # [Previous navigation](#tab/previous-nav)
 
-You open team settings from the top navigation bar. Select the team you want and then choose the ![](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](_img/team-defaults/open-team-settings-horz.png) 

@@ -1,7 +1,7 @@
 ---
-title: Project and navigational elements, key concepts, objects, and terms
+title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps Services & TFS
-description: Understand the key concepts that support navigation and managing projects available with Azure DevOps Services and Team Foundation Server  
+description: Understand the key concepts that support navigation and managing projects available with Azure DevOps & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -38,6 +38,7 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 ## Boards (Kanban) 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../boards/boards/kanban-basics.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 

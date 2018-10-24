@@ -1,14 +1,14 @@
 ---
-title: Understand the components of security and identity
-titleSuffix: Azure DevOps Services & TFS
+title: About security and identity
+titleSuffix: Azure DevOps & TFS
 description: Understand how Azure DevOps and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
@@ -98,10 +98,52 @@ Also, for select features, users and groups may need to belong to an access leve
 
 Azure DevOps and TFS are pre-configured with default security groups. Default permissions are assigned to the default security groups.   
 
-> [!div class="mx-tdBreakAll"]
-> | Security groups | Permission levels | Permission States  |
-> |-------------|----------| ----------| 
-> |- Project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Security area</th>
+<th width="65%">Groups, levels, and states</th>
+</tr>
+<tr>
+<td>Security groups</td>
+<td>
+<ul>
+<li>Project-level</li>
+<li>Organization or collection level</li>
+<li>Server-level (TFS only) 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Permission levels</td>
+<td>
+<ul>
+<li>Object-level</li>
+<li>Project-level</li>
+<li>Organization or collection level</li>
+<li>Server-level (TFS only) 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Permission states</td>
+<td>
+<p>User or group has permissions to perform a task:</p>
+<ul>
+<li>**Allow**</li>
+<li>**Inherited allow**</li>
+</ul>
+<p>User or group doesn't have permission to perform a task:</p>
+<ul>
+<li>**Deny**</li>
+<li>**Inherited deny**</li>
+<li>**Not set** </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
@@ -136,10 +178,45 @@ see [Permissions and groups reference](permissions.md).
 
 There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
 
-> [!div class="mx-tdCol2BreakAll"]
-> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
-> |-------------|----------|----------|
-> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service connections<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Security level</th>
+<th width="65%">Functional area</th>
+</tr>
+<tr>
+<td>Object-level</td>
+<td>
+<ul>
+<li>Deployment groups</li>
+<li>Secure files</li>
+<li>Variable groups</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Project-level</td>
+<td>
+<ul>
+<li>Agent queues</li>
+<li>Service connections
+<li>Team administration</li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td>Collection-level</td>
+<td>
+<ul>
+<li>Agent pools</li>
+<li>Deployment pools</li>
+<li>Marketplace extensions</li> 
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 To learn more, see [About security roles](about-security-roles.md).
 
@@ -152,7 +229,7 @@ Certain features are only available to users who have the appropriate licensing 
 ## Related articles
 
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
 - [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
 

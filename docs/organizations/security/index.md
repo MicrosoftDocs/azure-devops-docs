@@ -1,13 +1,13 @@
 ---
 title: Security & identity content index
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to permissions, groups, security, roles, and access level topics in Azure DevOps Services & Team Foundation Server   
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 10/24/2017

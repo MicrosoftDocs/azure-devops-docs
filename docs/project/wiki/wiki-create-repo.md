@@ -8,8 +8,8 @@ ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
 ms.date: 09/05/2018
@@ -72,6 +72,8 @@ Use this topic to learn how to:
 
 On the Wiki landing page, choose **Create Wiki** to provision a new Git repository that will store all your wiki pages and related artifacts. (Even if you use TFVC for source control, you can create a wiki with a Git repository.)
 
+For repository naming conventions, 
+
 ::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
@@ -103,7 +105,7 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 
 ## Related articles
 
-- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
 - [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
 - [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
 - [Update wiki pages offline](wiki-update-offline.md)

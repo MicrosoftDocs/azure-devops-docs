@@ -1,6 +1,7 @@
 ---
 title: Release triggers for stages, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
+titleSuffix: Azure Pipelines & TFS
+description: DevOps CI CD - Understand triggers in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
@@ -29,7 +30,7 @@ and the latter through [stage triggers](#env-triggers) - both in a release pipel
 
 If you specify [certain types](artifacts.md#sources) of
 artifacts in a release pipeline, you can enable continuous deployment.
-This instructs Release Management to create
+This instructs Azure Pipelines to create
 new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
 and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
@@ -45,7 +46,7 @@ You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
 (only applicable when the code is in a TFVC, Git, or GitHub repository)
 or when the build has certain tags. These can be both include and exclude filters.
-For example, use **features/\*** to include all builds under the **features** branch.
+For example, use **features/*** to include all builds under the **features** branch.
 You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
@@ -58,6 +59,15 @@ default branch in the build pipeline.
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
+<h2 id="scheduled-triggers">Scheduled release triggers</h2>
+
+If you want to create and start a release at specific times, define one or more
+scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
+pipeline and enable scheduled release triggers. You can configure multiple schedules.
+
+![Defining a shceduled release trigger](_img/trigger-04.png)
+
+See also [stage scheduled triggers](#stage-scheduled-triggers).
 
 <h2 id="prsettrigger">Pull request triggers</h2>
 
@@ -98,12 +108,16 @@ when a release is created by a continuous deployment trigger, based on:
 * **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
+  Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
+  <a name="stage-scheduled-triggers"></a>
+
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
+  Azure Pipelines will automatically start a new deployment. Unlike scheduled
+  release triggers, you cannot configure multiple schedules for stage triggers.
   Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)

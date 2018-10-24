@@ -9,9 +9,12 @@ author: elbatk
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ---
 # NuGet
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
@@ -33,7 +36,23 @@ GET https://{account}.pkgs.visualstudio.com/DefaultCollection/_apis/packaging/fe
 | showDeleted           | bool    | false     | Set to true to return metadata for packages that have been deleted
 | api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use
 
-[!code-REST [GET__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__](./_data/nuget_packages/GET__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/nuget/packages/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "nuget_bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "deletedDate": null
+}
+```
+
 
 ## Unlist/Relist package
 
@@ -62,7 +81,17 @@ Content-Type: application/json
 | Body
 | listed                | boolean |            | Set to true for relist and false for unlist
 
-[!code-REST [PATCH__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__](./_data/nuget_packages/PATCH__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/nuget/packages/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "listed": "false"
+}
+```
+
 
 ## Delete package
 
@@ -79,7 +108,23 @@ DELETE https://{account}.pkgs.visualstudio.com/DefaultCollection/_apis/packaging
 | packageVersion        | string  |           | Version or version ID of the package
 | api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use
 
-[!code-REST [DELETE__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__](./_data/nuget_packages/DELETE__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/nuget/packages/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "nuget_bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "deletedDate": "2016-11-01T20:46:13.7973563Z"
+}
+```
+
 
 ## Download Package
 
@@ -129,4 +174,18 @@ Content-Type: application/json
 | Body
 | views                 | string  |           | JSON patch object
 
-[!code-REST [PATCH__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__3](./_data/nuget_packages/PATCH__packaging_feeds__feedName__nuget_packages__packgeName__versions__packageVersion__3.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/fabrikam/nuget/packages/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "views": {
+    "op": "add",
+    "path": "/views/-",
+    "value": "release"
+  }
+}
+```
+

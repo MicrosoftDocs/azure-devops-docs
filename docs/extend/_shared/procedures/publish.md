@@ -9,3 +9,10 @@ To upload an extension to the Marketplace:
 
 At this point, your extension is not visible to any accounts and cannot be installed until you share it.
 
+**Protective Scans**
+
+As a Marketplace user, one expects to not get malicious software (malware) when they acquire an extension from Visual Studio Marketplace. To ensure this, we run a virus scan on each extension package published. This is performed for each new extension and for each extension update. Until the scan is all clear, we do not publish the extension in Marketplace for public usage.
+> Stated virus scan is run at extension publish only and not during extension's execution.
+
+We also perform a content scan for each extension in Marketplace. This is performed for each new extension and for each extension update. Through this we avoid surfacing inapproprate or offensive content on the Marketplace pages.
+

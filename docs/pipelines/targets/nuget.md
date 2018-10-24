@@ -1,5 +1,6 @@
 ---
-title: Publishing to NuGet feeds | Microsoft Docs
+title: Publishing to NuGet feeds
+titleSuffix: Azure Pipelines & TFS
 description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Publish to NuGet feeds
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -95,9 +98,9 @@ This example shows how to use the date and time as the prerelease label.
 
 ```yaml
 variables:
-- Major: '1'
-- Minor: '0'
-- Patch: '0'
+  Major: '1'
+  Minor: '0'
+  Patch: '0'
 
 steps:
 - task: NuGetCommand@2

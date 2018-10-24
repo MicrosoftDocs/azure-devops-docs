@@ -1,5 +1,6 @@
 ---
-title: Android
+title: Build Android apps with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for Android projects.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +13,11 @@ ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Android
+# Build Android apps with Azure Pipelines or Team Foundation Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build, test, and deploy Android apps with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -46,7 +51,7 @@ Change values to match your project configuration. See the [Gradle](../tasks/bui
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 
 steps:
 - task: Gradle@2

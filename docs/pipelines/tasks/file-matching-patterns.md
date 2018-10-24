@@ -1,5 +1,6 @@
 ---
 title: File matching patterns reference for Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
@@ -14,9 +15,17 @@ monikerRange: '>= tfs-2015'
 
 # File matching patterns reference
 
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
 ## Pattern syntax
 
 ### Basic patterns
+
+A pattern is a string or list of newline-delimited strings.
+
+### Path separators
+Even on Windows, use `/` as the path separator.
+This ensures that the pattern works on any agent.
 
 #### Asterisk
 `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.

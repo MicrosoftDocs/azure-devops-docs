@@ -1,5 +1,6 @@
 ---
 title: CI build Node.js app | Azure Pipelines or Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can set up a continuous integration (CI) build for your Node.js app in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
@@ -14,6 +15,8 @@ monikerRange: 'tfs-2017'
 
 
 # Define a continuous integration build for your Node.js app
+
+**TFS 2017**
 
 Here we'll show you how to define a continuous integration (CI) build pipeline for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build pipeline.
 

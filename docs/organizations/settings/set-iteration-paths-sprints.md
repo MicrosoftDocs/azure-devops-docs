@@ -1,12 +1,13 @@
 ---
 title: Define iteration paths or sprint for a project 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define the iterations or sprints to use when assigning work items in Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
@@ -64,14 +65,14 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![](../../_img/icons/gear-icon.png) gear icon. 
+You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 <a id="admin-intro-team-services" /> 
 ::: moniker range=">= tfs-2017"  
 From the web portal, open **Project settings**. 
 
 <a id="admin-intro-team-services" /> 
 
-1. From the web portal for the project context, choose the ![](../../_img/icons/gear-icon.png) gear icon..  
+1. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
@@ -88,7 +89,7 @@ From the web portal, open **Project settings**.
 <a id="admin-intro-tfs-2015" />
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
+From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
 ![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
@@ -111,7 +112,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 > [!div class="mx-imgBorder"]  
 > ![Project Settings Context, Work, Iterations page](_img/areas/modify-areas-its-iterations-ts.png) 
 
-0. To schedule the start and end dates for each sprint your teams will use,  Highlight the sprint and choose **Set dates**. Or, you can open the ![](../../_img/icons/actions-icon.png) context menu for the iteration path and choose **Edit**.  
+0. To schedule the start and end dates for each sprint your teams will use,  Highlight the sprint and choose **Set dates**. Or, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the iteration path and choose **Edit**.  
 
 	Choose the calendar icon to choose new dates. 
 
@@ -161,7 +162,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 When you rename an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
 
-0. To rename an iteration path, choose the ![](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
+0. To rename an iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path.png)  

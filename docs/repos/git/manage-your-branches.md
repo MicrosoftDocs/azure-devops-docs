@@ -26,7 +26,7 @@ Customize the view to track the branches you care most about so you can stay on 
 
 ::: moniker range="vsts"
 
-View your repo's branches by selecting **Branches** while viewing your repo on the web.
+View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
 ![View your branches](_img/repos-navigation/repos-branches.png)
 

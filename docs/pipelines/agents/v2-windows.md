@@ -1,5 +1,6 @@
 ---
 title: Deploy a build and release agent on Windows
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.prod: devops
@@ -133,6 +134,12 @@ To remove the agent:
 ```
 
 After you've removed the agent, you can [configure it again](#download-configure).
+
+## Unattended config
+
+The agent can be set up from a script with no human intervention.
+You must pass `--unattended` and the answers to all questions.
+Consult `.\config --help` for details about the required responses.
 
 ## Help on other options
 

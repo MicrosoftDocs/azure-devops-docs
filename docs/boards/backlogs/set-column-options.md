@@ -1,7 +1,6 @@
 ---
-title: Add or remove columns, change column width, or sort order 
+title: Add or remove columns 
 titleSuffix: Azure Boards and TFS
-ms.global_help.title: Change column options
 description: Set column fields to show and sort fields for a backlog or query in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -25,20 +24,20 @@ From each backlog page or query, you can add or remove columns. Or, you can drag
 
 Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across user sessions.    
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="vsts" 
 
 > [!div class="mx-imgBorder"]  
 > ![Open column options, new navigation](_img/columns/open-column-options-menu.png)  
  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 

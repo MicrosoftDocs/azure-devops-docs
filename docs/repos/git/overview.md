@@ -43,9 +43,9 @@ and [IntelliJ](/azure/devops/java/download-intellij-plug-in).</p>
 
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="Web" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="Command-line" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="IntelliJ" src="https://docs.microsoft.com/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 
@@ -130,7 +130,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Create a pull request" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -148,7 +148,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -166,7 +166,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Set up branch policies" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -184,7 +184,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Squash merge pull requests" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -202,7 +202,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">

@@ -1,10 +1,12 @@
 ---
-title: Selenium testing with continuous integration in Azure Pipelines - test automation tools
+title: Selenium testing with continuous integration in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
@@ -174,7 +176,7 @@ to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 You can deploy and test your app using either the Microsoft-hosted agent in Azure, or a self-hosted agent that you install on the target servers.
 
 * When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
-  pre-installed on the Microsoft-hosted agents because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
+  pre-installed on the Windows agents (agents named **Hosted VS 20xx**) because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
   The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
 
@@ -182,6 +184,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```
   <p />
+  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and release agents](../agents/agents.md#account).

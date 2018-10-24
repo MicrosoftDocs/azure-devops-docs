@@ -1,5 +1,6 @@
 ---
-title: Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD| Microsoft Docs
+title: Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
+titleSuffix: Azure Pipelines & TFS
 description: Set up continuous integration (CI) and continuous deployment (CD) with Kubernetes for your apps using Jenkins, Azure Container Service (AKS), and Azure Pipelines
 author: nicolela
 manager: ruisun
@@ -16,10 +17,12 @@ ms.workload:
 ms.date: 04/17/2018
 ms.author: nicolela
 ms.custom: mvc
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -74,7 +77,7 @@ You need an app stored in a Git repository.  You use this app to build and deplo
 For this tutorial, we recommend you use [this Spring Boot sample app available from
 GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutorial uses a Spring Boot sample application that is configured for deployment to an AKS cluster.  If you want to work with your own repository, you should configure a similar sample.
 
-1. In Azure Repos, on the **Code** hub for your Azure Repos project, select the option to **Import repository**.
+1. In Azure Repos, on the **Code** page for your Azure Repos project, select the option to **Import repository**.
 
 1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
   ```
@@ -335,7 +338,7 @@ Before you create the release pipeline, you need to install an Azure Pipelines e
 
 4. Select your Azure DevOps organization and select the **Install** button to install the extension.
 
-5. After the extension is installed, select the **Proceed to Organization** button and navigate back to your Azure Pipelines project.
+5. After the extension is installed, select the **Proceed to Organization** button and navigate back to your Azure DevOps project.
 
 ## Create an Azure Pipelines release pipeline for CD to Azure
 

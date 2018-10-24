@@ -1,5 +1,6 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET Core app | Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,11 +18,13 @@ ms.date: 06/24/2017
 ms.author: alewis
 author: andyjlewis
 ms.custom: mvc
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET Core app to Azure
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 ASP.NET Core apps.

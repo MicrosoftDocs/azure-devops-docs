@@ -1,13 +1,13 @@
 ---
 title: Set work tracking permissions 
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: How to grant or restrict access to work tracking tasks for Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 08/06/2018
@@ -85,7 +85,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2017"  
 
-1. From the web portal for the project, choose the ![](../../_img/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Open Admin context, project level](../settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
@@ -106,7 +106,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
@@ -154,7 +154,7 @@ To learn more about Delivery Plans, see [Review team delivery plans](../../board
 ::: moniker range=">= tfs-2017"  
 0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](_img/work-tracking/open-plans-security.png)     

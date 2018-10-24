@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines and Team Foundation Server Build and Test - Xamarin Test Cloud
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use Xamarin Test Cloud when you are building your code in Azure Pipelines and Team Foundation Server (TFS) 
 ms.topic: reference
 ms.prod: devops

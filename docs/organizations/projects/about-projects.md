@@ -1,13 +1,13 @@
 ---
 title: Scale your organization by adding a project
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Understand project management for Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/12/2018
@@ -236,9 +236,10 @@ See also, [Compatibility with TFS versions](/tfs/server/compatibility).
 
 ## Related articles
 
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Web portal navigation](../../project/navigation/index.md) 
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Understand differences between Azure DevOps Services and TFS](../../user-guide/about-vsts-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Understand differences between Azure DevOps Services and TFS](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 <!--- Various blog resources 
 

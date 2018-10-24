@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 09/17/2018
 monikerRange: 'vsts'
 ---
 
-# Find or change your Azure DevOps organization location (region)
+# Find or change your organization location (region) in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When you [create an organization](create-organization-msa-or-work-student.md), you can choose the region where Azure DevOps hosts your organization. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers.  Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOp is available.
+When you [create an organization](create-organization.md), you can choose the region your organization is hosted in Azure DevOps. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
 ## Find your organization location
 
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -37,7 +37,7 @@ For information on region availability, see [Products available by region](https
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in as the organization owner to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in as the organization owner to your organization (```https://dev.azure.com/{yourorganization}```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
@@ -49,5 +49,8 @@ For information on region availability, see [Products available by region](https
 
    ![Organization settings, region location](_img/change-organization-location/organization-settings-region-prev.png)
 
-To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). The Support staff will coordinate changing the region with the organization owner.
+---
 
+## Change organization location
+
+To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff will coordinate changing the region with the organization owner.

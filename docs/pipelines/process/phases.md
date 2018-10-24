@@ -1,5 +1,6 @@
 ---
 title: Build and release jobs in Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Understand build and release jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Jobs
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -29,7 +32,7 @@ You can organize your build or deployment pipeline into jobs. Every build or dep
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release management deployment processes.
+> You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release deployment processes.
 
 ::: moniker-end
 
@@ -46,7 +49,7 @@ At run time (when either the build or release pipeline is triggered), each job i
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> You must install Update 2 to use jobs in TFS 2017, and they are available only in release management deployment processes.
+> You must install Update 2 to use jobs in TFS 2017, and they are available only in release deployment processes.
 > Jobs in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
 
 ::: moniker-end
@@ -76,8 +79,10 @@ jobs:
   timeoutInMinutes: number
   cancelTimeoutInMinutes: number
   strategy:
-    parallel: number
     maxParallel: number
+    # note: `parallel` and `matrix` are mutually exclusive
+    # you may specify one or the other; including both is an error
+    parallel: number
     matrix: { string: { string: string } }
   pool:
     name: string
@@ -107,49 +112,7 @@ jobs:
     ...
 ```
 
-Jobs can also be defined as templates in a separate file. This allows you
-to define your logic once and then reuse it in several places.
-Templates can include parameters which the pipeline can vary.
-
-```yaml
-# File: templates/npm.yml
-
-parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
-
-jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: npm install
-  - script: npm test
-```
-
-When you consume the template in your pipeline, specify values for
-the template parameters.
-
-```yaml
-# File: azure-pipelines.yml
-
-jobs:
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: macOS
-    vmImage: xcode9-macos10.13
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Linux
-    vmImage: ubuntu-1604
-
-- template: templates/npm.yml  # Template reference
-  parameters:
-    name: Windows
-    vmImage: vs2017-win2016
-```
-
+It's possible to re-use some or all of a pipeline through [templates](templates.md).
 
 ::: moniker-end
 ::: moniker range="< vsts"
@@ -281,6 +244,7 @@ Containers are not yet supported in the web editor.
 ## Timeouts
 
 To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
+
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
 * For 30 minutes on Microsoft-hosted agents with a private project or private repository
@@ -294,9 +258,10 @@ The `timeoutInMinutes` allows a limit to be set for the job execution time. When
 The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
-pool:
-  timeoutInMinutes: number
-  cancelTimeoutInMinutes: number
+jobs:
+- job: Test
+  timeoutInMinutes: 10
+  cancelTimeoutInMinutes: 2
 ```
 
 ::: moniker-end
@@ -319,6 +284,7 @@ On the **Options** tab you can specify default values for all jobs in the pipeli
 > You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
 
 <a name="parallelexec"></a>
+
 ## Multi-configuration
 
 From a single job you can run multiple jobs and multiple agents in parallel. Some examples include:
@@ -336,7 +302,7 @@ From a single job you can run multiple jobs and multiple agents in parallel. Som
 
 ::: moniker range="vsts"
 
-The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
+The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run at the same time.
 
 ```yaml
 jobs:
@@ -354,6 +320,7 @@ jobs:
         Location: Europe
         Browser: Chrome
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -408,16 +375,20 @@ The Visual Studio Test task is one such task that supports test slicing. If you 
 
 ::: moniker range="vsts"
 
-When `parallel` is specified and `matrix` is not defined, the setting indicates how many jobs to dispatch.
+The `parallel` strategy enables a job to be duplicated many times. The `maxParallel` tag restricts the amount of parallelism. 
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
 See [Parallel and multiple execution using agent jobs](#parallelexec).
+
+The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately. However, only two jobs will run at the same time.
 
 ```yaml
 jobs:
 - job: Test
   strategy:
-    parallel: 2
+    parallel: 5
+    maxParallel: 2
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -432,6 +403,7 @@ and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are 
 ---
 
 ## Job variables
+
 If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
 
 # [YAML](#tab/yaml)
@@ -454,6 +426,7 @@ steps:
 - bash: echo Input macro = $(my.dotted.var). Env var = $MY_DOTTED_VAR
 - powershell: Write-Host "Input macro = $(my var with spaces). Env var = $env:MY_VAR_WITH_SPACES"
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
@@ -466,6 +439,7 @@ Job variables are not yet supported in the web editor.
 ---
 
 <a name="artifact-download"></a>
+
 ## Artifact download
 
 # [YAML](#tab/yaml)
@@ -475,7 +449,7 @@ Job variables are not yet supported in the web editor.
 jobs:
 - job: Build
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - script: npm test
   - task: PublishBuildArtifacts@1
@@ -486,7 +460,7 @@ jobs:
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - checkout: none #skip checking out the default repository resource
   - task: DownloadBuildArtifacts@0
@@ -537,6 +511,7 @@ steps:
   env:
     TOKEN: $(system.accesstoken)
 ```
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.

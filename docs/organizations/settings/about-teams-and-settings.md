@@ -1,6 +1,6 @@
 ---
 title: About teams & Agile tools
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Guide to adding and configuring teams in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 09/19/2018
 ---
 
 # About teams and Agile tools
@@ -43,38 +43,324 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-2013.png)
 ::: moniker-end
 
-These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. Here's a quick summary of these tools: 
+These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-> [!div class="mx-tdCol2BreakAll"]
-> |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
-> |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Delivery plans](../../boards/plans/review-team-plans.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../notifications/howto-manage-team-notifications.md) |   
+::: moniker range=">= tfs-2017"
+
+
+
+<table width="100%">
+<tbody valign="top">
+<tr>
+<th width="20%">Area</th>
+<th width="40%">Tool</th>
+<th width="40%">Team configuration tasks</th>
+</tr>
+<tr>
+<td>Backlogs  </td>
+<td>
+<ul>
+<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
+<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
+<li>[Epics backlog](../../boards/backlogs/define-features-epics.md)</li>
+<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Sprints and Scrum </td>
+<td>
+<ul>
+<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
+<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
+<li>[Task board](../../boards/sprints/task-board.md)</li>
+<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Set working days](set-working-days.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Kanban boards</td>
+<td>
+<ul>
+<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
+<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
+<li>[Epics board](../../boards/boards/kanban-epics-features-stories.md)</li>
+<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Widgets  </td>
+<td>
+<ul>
+<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
+<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
+<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
+<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
+<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Add team members](../security/add-users-team-project.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other tools </td>
+<td>
+<ul>
+<li>[Favorites](../../project/navigation/set-favorites.md)</li>
+<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
+<li>[Delivery plans](../../boards/plans/review-team-plans.md)</li>
+<li>[Queries](../../boards/queries/using-queries.md)</li>
+<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
+<li>[Dashboards](../../report/dashboards/dashboards.md)</li>
+<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+</ul>
+</td>
+<td>
+Not applicable
+</td>
+</tr>
+</tbody>
+</table>
+
 ::: moniker-end
  
 ::: moniker range="tfs-2015"
-> [!div class="mx-tdCol2BreakAll"]
-> |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
-> |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../boards/queries/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
+
+
+<table width="100%">
+<tbody valign="top">
+<tr>
+<th width="20%">Area</th>
+<th width="40%">Tool</th>
+<th width="40%">Team configuration tasks</th>
+</tr>
+<tr>
+<td>Backlogs  </td>
+<td>
+<ul>
+<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
+<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
+<li>[Epics backlog](../../boards/backlogs/define-features-epics.md)</li>
+<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Sprints and Scrum </td>
+<td>
+<ul>
+<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
+<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
+<li>[Task board](../../boards/sprints/task-board.md)</li>
+<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Set working days](set-working-days.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Kanban boards</td>
+<td>
+<ul>
+<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
+<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
+<li>[Epics board](../../boards/boards/kanban-epics-features-stories.md)</li>
+<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Widgets  </td>
+<td>
+<ul>
+<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
+<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
+<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
+<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
+<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Add team members](../security/add-users-team-project.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other tools </td>
+<td>
+<ul>
+<li>[Favorites](../../project/navigation/set-favorites.md)</li>
+<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
+<li>[Queries](../../boards/queries/using-queries.md)</li>
+<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
+<li>[Dashboards](../../report/dashboards/dashboards.md)</li>
+<li>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</li>
+<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+</ul>
+</td>
+<td>
+Not applicable
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ::: moniker-end
 
 
 ::: moniker range="tfs-2013"
-> [!div class="mx-tdCol2BreakAll"]
-> |Backlogs  |Scrum |Kanban | Other tools |
-> |-------------|----------|---------|---------|   
-> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md) | - [Favorites](../../project/navigation/set-favorites.md)<br/>- [Work item templates](../../boards/backlogs/work-item-template.md)<br/>-  [Queries](../../boards/queries/using-queries.md)<br/>- [Alerts](../../boards/queries/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
+
+
+
+<table width="100%">
+<tbody valign="top">
+<tr>
+<th width="20%">Area</th>
+<th width="40%">Tool</th>
+<th width="40%">Team configuration tasks</th>
+</tr>
+<tr>
+<td>Backlogs  </td>
+<td>
+<ul>
+<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
+<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
+<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Sprints and Scrum </td>
+<td>
+<ul>
+<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
+<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
+<li>[Task board](../../boards/sprints/task-board.md)</li>
+<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Set working days](set-working-days.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Kanban boards</td>
+<td>
+<ul>
+<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
+<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
+<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Widgets  </td>
+<td>
+<ul>
+<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
+<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
+<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
+<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
+<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+</ul>
+</td>
+<td>
+<ul>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Add team members](../security/add-users-team-project.md)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other tools </td>
+<td>
+<ul>
+<li>[Favorites](../../project/navigation/set-favorites.md)</li>
+<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
+<li>[Queries](../../boards/queries/using-queries.md)</li>
+<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
+<li>[Team home page](../../report/dashboards/team-dashboard.md)</li>
+<li>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</li>
+<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+</ul>
+</td>
+<td>
+Not applicable
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ::: moniker-end
 
 
-<!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
-
 Many of these tools are built from system queries that reference the team area path. For example, a team's default area path filters the work items that appear on a team's backlog. Also, work items that you create using an Agile tool auto-assign the areas and iterations based on team defaults.  
-
-<!---
-You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
--->
 
 
 ## Team defaults referenced by backlogs and boards
@@ -196,11 +482,18 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 ## Related notes 
 
-- [Add another team](../../organizations/settings/add-teams.md)  
-- [Set team defaults](../../organizations/settings/set-team-defaults.md)  
-- [Configure team settings ](manage-teams.md)      
+- [Add another team](add-teams.md)  
+- [Set team defaults](set-team-defaults.md)  
+- [Configure team settings](manage-teams.md)      
 - [Work across projects ](../../project/navigation/work-across-projects.md)  
 
 
 
- 
+
+
+<!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
+
+<!---
+You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
+-->
+

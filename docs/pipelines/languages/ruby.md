@@ -1,5 +1,6 @@
 ---
-title: Ruby
+title: Building Ruby projects with Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for Ruby projects.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,9 +13,11 @@ ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Ruby
+# Build Ruby projects with Azure Pipelines
 
-This guidance explains how to build Ruby projects.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build Ruby projects with CI/CD pipelines.
 
 ## Example
 
@@ -33,7 +36,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Ruby projects without needing to set up any infrastructure of your own. Ruby is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
+For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
 
 ### Use a specific Ruby version
 
@@ -42,7 +45,7 @@ Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the ve
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
 - task: UseRubyVersion@0

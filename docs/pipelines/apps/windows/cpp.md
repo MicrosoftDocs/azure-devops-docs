@@ -1,5 +1,6 @@
 ---
 title: C++
+titleSuffix: Azure Pipelines & TFS
 description: Build your C++ app using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # C++
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

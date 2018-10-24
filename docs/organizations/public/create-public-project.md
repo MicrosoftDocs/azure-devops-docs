@@ -1,13 +1,13 @@
 ---
 title: Create a public project
 titleSuffix: Azure DevOps Services Public Project  
-description: Create or add a public project to your Azure DevOps Services organization 
+description: Create or add a public project to your Azure DevOps organization 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-A public project is similar to any other project that you add to your Azure DevOps Services organization. Each project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. 
+A public project is similar to any other project that you add to your organization. Each project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. 
 
 A public project allows non members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).   
 
@@ -34,13 +34,13 @@ You can add a public project to your existing organization, or create an Azure D
 
 Before you can create a public project, you must enable anonymous access for your Azure DevOps organization.
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
+1. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+2. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
@@ -93,7 +93,7 @@ Before you can create a public project, you must enable anonymous access for you
 	> ![Project creation confirmation dialog, new nav](../projects/_img/create-project/project-creation-complete-new-nav.png)
 
 	Select one of the following tasks to get started:  
-	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, if this is your first project, then you must first [invite users to your organization](../accounts/add-team-members-vs.md). 
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, if this is your first project, then you must first [invite users to your organization](../accounts/add-team-members.md). 
 	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
 	- **Pipelines** to start [defining a pipeline](../../pipelines/index.md).

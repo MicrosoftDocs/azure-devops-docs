@@ -1,5 +1,6 @@
 ---
 title: Quick Start - Build and Deploy a Java app | Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -14,6 +15,8 @@ monikerRange: 'vsts'
 
 
 # Implement a CI/CD pipeline to build and deploy your Java app to Azure
+
+**Azure Pipelines**
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 Java apps.

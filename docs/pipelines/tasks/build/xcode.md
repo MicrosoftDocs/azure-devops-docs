@@ -1,5 +1,6 @@
 ---
 title: Xcode build and release task
+titleSuffix: Azure Pipelines & TFS
 description: Xcode build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
@@ -68,13 +69,13 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Xcode version</td>
 <td>
-Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 9`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
+Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 10`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
 </td>
 </tr>
 <tr>
 <td>Xcode developer path</td>
 <td>
-(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_9.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
+(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_10.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
 </td>
 </tr>
 
@@ -176,7 +177,7 @@ Choose the destination type to be used for UI testing. Devices must be connected
 <tr>
 <td>Simulators</td>
 <td>
-Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be [found here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
+Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be [found here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
 </td>
 </tr>
 <tr>

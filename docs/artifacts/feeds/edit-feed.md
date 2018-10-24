@@ -1,5 +1,5 @@
 ---
-title: Edit a feed
+title: Edit a feed in Azure Artifacts
 description: Edit a feed in Azure DevOps Services or Team Foundation Server
 ms.assetid: 83348be7-228b-43d1-8374-6046836ed0f5
 ms.prod: devops
@@ -12,7 +12,6 @@ ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
 ---
  
-
 # Edit a feed
 
 **Azure DevOps Services | TFS 2017**

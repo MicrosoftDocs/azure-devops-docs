@@ -1,6 +1,6 @@
 ---
 title: ProcessConfiguration syntax 
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
 ms.prod: devops

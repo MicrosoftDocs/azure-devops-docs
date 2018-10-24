@@ -1,13 +1,13 @@
 ---
 title: How to use subscription logging
 titleSuffix: Azure DevOps Services & TFS 
-description: How to use subcription logging to troubleshoot Azure DevOps Servicesnotifications
+description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
 ms.reviewer: wismythe
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 08/06/2018  
 monikerRange: '>= tfs-2018'
@@ -24,6 +24,9 @@ monikerRange: '>= tfs-2018'
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, will be collected for the subscription.
 
 ## Enabling subscription logging
+
+> [!IMPORTANT] 
+> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default (globe icon) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
 
 Perform the following steps to enable subscription logging:
 
@@ -51,7 +54,7 @@ The result is JSON-formatted logging information.
 
 ## View subscription diagnostic logs for notification delivery
 
-Retrieve all notification delivery logs in a given timeframe by entering the URL in your browser.
+Retrieve all notification delivery logs in a given time frame by entering the URL in your browser.
 
 `https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 

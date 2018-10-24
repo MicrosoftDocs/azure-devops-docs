@@ -1,5 +1,6 @@
 ---
 title: NuGet restore, pack, and publish
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
@@ -81,7 +82,7 @@ None
         <td>
             **Feed(s) I select here:**
             <ul>
-                <li>Select this option to use NuGet.org and/or one Package Management feed in the same organization/collection as the build.</li>
+                <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
             </ul>
             **Feeds in my NuGet.config:**
             <ul>
@@ -267,11 +268,11 @@ None
         <td>Target feed location</td>
         <td>
             <ul>
-                <li>**This organization/collection** publishes to a Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
+                <li>**This organization/collection** publishes to an Azure Artifacts/Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
                     <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or an Azure Artifacts/Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
             </ul>
         </td>
@@ -289,7 +290,7 @@ None
 </table>
 
 ### Publishing symbols
-When you push packages to a Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
+When you push packages to an Azure Artifacts/Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
 
 ### Publishing packages to TFS with IIS Basic authentication enabled
 This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.

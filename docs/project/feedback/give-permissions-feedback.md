@@ -69,7 +69,7 @@ Since feedback is captured in a feedback response work item, reviewers need to b
 
 Sometimes additional ideas occur after reviewers submit their feedback. By providing access to the web portal, reviewers can revisit and further annotate their feedback submissions. 
 
-- **Azure DevOps Services:**  [Assign the **Stakeholder** license to accounts](../../organizations/accounts/add-organization-users-from-user-hub.md) that you add to your Reviewer group   
+- **Azure DevOps Services:**  [Assign the **Stakeholder** license to accounts](../../organizations/accounts/add-organization-users.md) that you add to your Reviewer group   
 - **On-premises TFS:**  [Add your Reviewer group to the **Stakeholder** group on the **access levels** page](../../organizations/security/change-access-levels.md). If you don't see this tab, get administrative permissions. 
 
 ![Add reviewers to the Limited group](_img/ALM_GP_ModifyFeedback.png)

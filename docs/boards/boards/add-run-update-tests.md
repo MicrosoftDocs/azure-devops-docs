@@ -54,12 +54,12 @@ Tests you create from the Kanban board are automatically linked to the user stor
 	> ![Choose another team's board](_img/quickstart/select-kanban-team-board.png)  
 
 	> [!TIP]    
-	> Choose the ![](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 
@@ -68,7 +68,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
@@ -95,7 +95,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
   For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-	<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
 
   To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
 

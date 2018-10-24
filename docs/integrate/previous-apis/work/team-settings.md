@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Team Settings | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with team settings programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Team Settings | REST API Reference for Team Foundation Server
+description: Work with team settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Team settings
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -27,13 +30,77 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__work_teamsettings__JSON](./_data/teamsettings/GET__work_teamsettings.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettings?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "backlogIteration": {
+    "id": "323b04b6-2fb8-4093-94f4-fbe3bd36a19f",
+    "name": "Iteration",
+    "path": "",
+    "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations"
+  },
+  "bugsBehavior": "asRequirements",
+  "workingDays": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday"
+  ],
+  "backlogVisibilities": {
+    "Microsoft.EpicCategory": false,
+    "Microsoft.FeatureCategory": true,
+    "Microsoft.RequirementCategory": true
+  },
+  "defaultIteration": {
+    "id": "a912d62f-3eba-44b9-ab54-aa82af94b1d7",
+    "name": "Iteration 1",
+    "path": "\\Iteration 1",
+    "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations/Iteration%201"
+  },
+  "defaultIterationMacro": "@currentIteration",
+  "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings"
+    },
+    "project": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb"
+    },
+    "team": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/teams/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572"
+    },
+    "teamIterations": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings/iterations"
+    },
+    "teamFieldValues": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings/teamfieldvalues"
+    },
+    "classificationNode": [
+      {
+        "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations"
+      },
+      {
+        "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations/Iteration%201"
+      }
+    ]
+  }
+}
+```
+
 
 #### Sample code
 
@@ -49,7 +116,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team.
 | Query
@@ -61,7 +128,82 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 | workingDays   | monday, tuesday, wednesday, thursday, friday, saturday, sunday
 | backlogVisibilities | A dictionary of keys (Microsoft.EpicCategory, Microsoft.FeatureCategor, Microsoft.RequirementCategory) and boolean values.
 
-[!code-REST [PATCH__work_teamsettings__JSON](./_data/teamsettings/PATCH__work_teamsettings.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettings?api-version=3.0-preview
+```
+```json
+{
+  "bugsBehavior": "AsTasks",
+  "workingDays": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday"
+  ],
+  "defaultIteration": "8C2457E8-8936-4CDC-B3AA-17B20F56C76C"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "backlogIteration": {
+    "id": "323b04b6-2fb8-4093-94f4-fbe3bd36a19f",
+    "name": "Iteration",
+    "path": "",
+    "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations"
+  },
+  "bugsBehavior": "asTasks",
+  "workingDays": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday"
+  ],
+  "backlogVisibilities": {
+    "Microsoft.EpicCategory": false,
+    "Microsoft.FeatureCategory": true,
+    "Microsoft.RequirementCategory": true
+  },
+  "defaultIteration": {
+    "id": "8c2457e8-8936-4cdc-b3aa-17b20f56c76c",
+    "name": "Iteration 3",
+    "path": "\\Iteration 3",
+    "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations/Iteration%203"
+  },
+  "defaultIterationMacro": null,
+  "url": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings"
+    },
+    "project": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb"
+    },
+    "team": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/teams/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572"
+    },
+    "teamIterations": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings/iterations"
+    },
+    "teamFieldValues": {
+      "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/3e9700ae-46cb-4ee3-ad77-3a1b1ae99572/_apis/work/teamsettings/teamfieldvalues"
+    },
+    "classificationNode": [
+      {
+        "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations"
+      },
+      {
+        "href": "https://mytfsserver/DefaultCollection/c1f04a4e-c4e5-4e0d-8096-e5f9fd214bfb/_apis/wit/classificationNodes/Iterations/Iteration%203"
+      }
+    ]
+  }
+}
+```
+
 
 #### Sample code
 

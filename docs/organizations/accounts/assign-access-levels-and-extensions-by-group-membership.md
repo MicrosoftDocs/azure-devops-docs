@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: 'vsts'
 ---
-# Add a group rule to assign access levels and extensions to users
+# Add a group rule to assign access levels and extensions to users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -29,7 +29,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -57,7 +57,7 @@ A notification is displayed that shows the status and outcome of the rule. If th
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
 
 2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
 

@@ -1,5 +1,6 @@
 ---
 title: Decrypt File (OpenSSL)
+titleSuffix: Azure Pipelines & TFS
 description: A thin utility task for file decryption using OpenSSL.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Utility: Decrypt File (OpenSSL)
+
+**Azure Pipelines**
 
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 

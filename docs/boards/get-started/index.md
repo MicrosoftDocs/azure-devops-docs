@@ -1,6 +1,6 @@
 ---
 title: Get started guide for Azure Boards 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure Boards & TFS
 description: Sign up and get started using Azure Boards 
 ms.prod: devops
 ms.technology: devops-new-user

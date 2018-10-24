@@ -1,5 +1,6 @@
 ---
 title: Building multiple branches
+titleSuffix: Azure Pipelines & TFS
 description: Build multiple branches using Azure Pipelines or TFS
 ms.prod: devops
 services: vsts
@@ -19,6 +20,8 @@ monikerRange: '>=tfs-2017'
 ---
 
 # Build multiple branches
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -47,7 +50,7 @@ A common workflow with Git is to create temporary branches from your master bran
 
 ::: moniker range="vsts"
 
-Unless you specify a `trigger` in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features\*` branches to be automatically built.
+Unless you specify a [`trigger`](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features\*` branches to be automatically built.
 
 ```yaml
 trigger:
@@ -93,7 +96,7 @@ The master branch typically produces deployable artifacts such as binaries.  You
 
 # [YAML](#tab/yaml)
 
-Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
+Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [`publish artifacts`](../tasks/utility/publish-build-artifacts.md) task.
 
 ::: moniker range="vsts"
 
@@ -111,7 +114,7 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 1. Locate the build pipeline that services your master branch. Select **Edit**.
-1. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the **Publish Artifact** task.
+1. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
 1. Select **Control Options** for the task on the bottom right hand part of your screen.
 51. Select the dropdown for **Run this task** and choose **Custom conditions**.
 
@@ -138,7 +141,7 @@ Use policies to protect your branches by requiring successful builds before merg
 
 ::: moniker range="vsts"
 
-Unless you explicitly override `trigger` in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
+Unless you explicitly override [`trigger`](../yaml-schema.md#trigger) in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
 
 ::: moniker-end
 

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Build Qualities (XAML Build) | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Configure a project's build qualities programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Build Qualities (XAML Build) | REST API Reference for Team Foundation Server
+description: Configure a project's build qualities programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 0C352988-B949-4515-A89F-5562F86E937F
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Build qualities
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 Each project has a set of qualities that can be assigned to builds.
@@ -30,12 +33,35 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/qualities?api-ver
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__build_qualities_json](./_data/qualities/GET__build_qualities.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/qualities?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    "Initial Test Passed",
+    "Lab Test Passed",
+    "Ready for Deployment",
+    "Ready for Initial Test",
+    "Rejected",
+    "Released",
+    "UAT Passed",
+    "Under Investigation"
+  ],
+  "count": 8
+}
+```
+
 
 ## Add a quality
 <a name="addaquality" />
@@ -49,13 +75,21 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/qualities/{qualit
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | quality   | string | Quality value to add.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [PUT__build_qualities__quality__json](./_data/qualities/PUT__build_qualities__quality_.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/qualities/To%20be%20evaluated?api-version=1.0
+```
+```json
+{}
+```
+
 
 ## Remove a quality
 
@@ -68,11 +102,16 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/qualities/{qua
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | TFS server name ({server:port}).
 | project   | string | [Project](../tfs/projects.md) ID or name.
 | quality   | string | Quality value to add.
 | Query
 | projectId | string | Add the build quality to the project with this name.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [DELETE__build_qualities__quality__json](./_data/qualities/DELETE__build_qualities__quality_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/qualities/To%20be%20evaluated?api-version=1.0
+```
+

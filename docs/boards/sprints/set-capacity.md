@@ -67,7 +67,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -103,12 +103,12 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 ::: moniker range="vsts"
 
-0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
 
-0. If you need to add other contributors to your project, choose the ![](../../_img/icons/blue-add-icon.png) **Add user**.  
+0. If you need to add other contributors to your project, choose the ![ ](../../_img/icons/blue-add-icon.png) **Add user**.  
 
 0. Next, set any time off that the team will take. Choose the **0 days** link as shown.  
 
@@ -132,18 +132,18 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2015"
-0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members-standard.png)  
 
-0.  If you need to add other contributors to your project, choose the ![](../_img/icons/add-light-icon.png) **Add user** icon.  
+0.  If you need to add other contributors to your project, choose the ![ ](../_img/icons/add-light-icon.png) **Add user** icon.  
 ::: moniker-end  
 
 0. Set any time off that the team will take. Choose the **0 days** link as shown.
@@ -198,7 +198,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -223,7 +223,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 <a id="add-remove-users">  </a>
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![](../../_img/icons/actions-icon.png) action menu. 
+To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
 
 ::: moniker-end
 
@@ -244,7 +244,7 @@ To remove a user, choose the option from the users ![](../../_img/icons/actions-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -265,12 +265,21 @@ You'll also see a roll-up of the remaining work required to complete each requir
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
+::: moniker range="vsts"
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
-> Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+> Also, don't divide tasks into subtasks. If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+> [!TIP]  
+> Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
+>
+> Also, don't divide tasks into subtasks as the [taskboard will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 <a id="track-multiple-activities">  </a>

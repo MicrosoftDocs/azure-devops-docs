@@ -1,5 +1,6 @@
 ---
 title: Deploy a build and release agent on macOS
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on macOS
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

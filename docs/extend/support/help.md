@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Get Help | Developing for Azure DevOps Services
-description: Get help with your extension or custom application for Azure DevOps Services.
+title: Get help | Developing for Azure DevOps Services
+description: Get help with your extension or custom application or third party service for Azure DevOps Services.
 ms.assetid: fdfc7d19-e17a-420a-881a-b88092624d58
 ms.topic: conceptual
 ms.manager: douge

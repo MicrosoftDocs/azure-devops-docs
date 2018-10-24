@@ -1,5 +1,6 @@
 ---
-title: Python
+title: Building Python apps with Azure Pipelines or TFS
+titleSuffix: Azure Pipelines & TFS
 description: CI and CD for Python projects.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,9 +13,11 @@ ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Python
+# Build Python apps with Azure Pipelines
 
-This guidance explains how to build Python apps.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build, test, and deploy Python apps or scripts with CI/CD pipelines. 
 
 ## Example
 
@@ -33,7 +36,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
 
 ### Use a specific Python version
 
@@ -42,7 +45,7 @@ Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set th
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
 - task: UsePythonVersion@0
@@ -60,7 +63,7 @@ To run a pipeline with multiple Python versions, such as to test your project us
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
   strategy:
     matrix:
       Python27:

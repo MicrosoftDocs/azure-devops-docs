@@ -1,5 +1,6 @@
 ---
 title: Go Tool Installer
+titleSuffix: Azure Pipelines & TFS
 description: Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Tool: Go Tool Installer
+
+**Azure Pipelines**
 
 ![](_img/gotool.png) Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
 

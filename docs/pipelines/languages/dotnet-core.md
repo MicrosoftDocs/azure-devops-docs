@@ -1,5 +1,6 @@
 ---
-title: .NET Core
+title: Building .NET Core projects with Azure Pipelines and TFS
+titleSuffix: Azure Pipelines & TFS
 description: Building .NET Core projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +14,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# .NET Core
+# Build .NET Core projects with Azure Pipelines or Team Foundation Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build .NET Core projects and deploy or publish to targets with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -82,12 +87,12 @@ Add the following snippet to your `azure-pipelines.yml` file to select the appro
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 # [Designer](#tab/designer)
 
-Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Linux Preview** agent pool, or the **Hosted macOS Preview** pool.
+Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Ubuntu 1604** agent pool, or the **Hosted macOS Preview** pool.
 To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
 
 ---

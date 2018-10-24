@@ -12,8 +12,7 @@ ms.date: 09/12/2018
 monikerRange: 'vsts'
 ---
 
-
-# Change the Azure subscription your Azure DevOps organization uses for billing
+# Change the Azure subscription your organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -40,7 +39,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Prerequisites
 
-1. [Azure DevOps project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]

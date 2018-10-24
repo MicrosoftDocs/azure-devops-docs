@@ -1,5 +1,6 @@
 ---
 title: The Cordova/Ionic/PhoneGap Command Tasks
+titleSuffix: Azure Pipelines & TFS
 description: The Cordova/Ionic Command Tasks for Azure Pipelines and Team Foundation Services 2015
 ms.topic: conceptual
 ms.prod: devops
@@ -9,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/04/2016
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 

@@ -6,8 +6,8 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -23,7 +23,7 @@ When viewing a public project, you can view the status of build and release pipe
 
 ## View recent builds and build pipelines  
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 # [New navigation](#tab/new-nav)

@@ -13,6 +13,8 @@ monikerRange: 'vsts'
 
 # What is Azure Pipelines?
 
+**Azure Pipelines**
+
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
 Pipelines combines both **Continuous Integration (CI)** and **Continuous Deployment (CD)** to constantly and consistently test and build your code and ship it to any target. 
@@ -59,7 +61,7 @@ Azure Pipelines is the quickest, easiest, and safest way to automate building yo
 
 ### Why you should use CI and CD for your project
 
-Continous Integration is all about automating tests and builds for your project; it helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
+Continuous Integration is all about automating tests and builds for your project; it helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
 
 Continuous Delivery is all about automatically deploying and testing code in multiple stages to help drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, then automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice. 
 

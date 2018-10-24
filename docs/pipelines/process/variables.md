@@ -9,11 +9,13 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/02/2018
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Build variables
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -50,6 +52,53 @@ Some variables are automatically inserted by the system.
 As a pipeline author or end user, you cannot set the contents of such variables.
 See the comprehensive lists of [build variables](../build/variables.md) and [release variables](../release/variables.md) to learn which ones are available.
 
+### System.AccessToken
+
+One variable, System.AccessToken, has special behavior. Because it contains a
+credential, it's not available to scripts and tasks by default. This reduces the
+chances for a rogue script or task to steal the credential. You must explicitly
+allow this variable on a pipeline-by-pipeline basis.
+
+# [YAML](#tab/yaml)
+
+In YAML, you must explicitly map System.AccessToken into the pipeline using an
+environment variable. You can do this at the pipeline level:
+
+```yaml
+variables:
+  system.accesstoken: $( System.AccessToken )
+
+jobs:
+  job: ...
+```
+
+Or at the step level:
+
+```yaml
+steps:
+  - script: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+    env:
+      system.accesstoken: $( System.AccessToken )
+  - task: MyTaskThatNeedsTheToken@1
+    env:
+      system.accesstoken: $( System.AccessToken )
+```
+
+# [Designer](#tab/designer)
+
+You can allow scripts and tasks to access System.AccessToken at the job level.
+
+1. Navigate to the job
+
+1. Under **Additional options**, check the **Allow scripts to access the OAuth token** box.
+
+![Secret](_img/variables/allow-oauth-token.png)
+
+Checking this box also leaves the credential set in Git so that you can run
+pushes and pulls in your scripts.
+
+---
+
 ## User-defined variables
 
 Some build templates automatically create variables for you.
@@ -61,7 +110,7 @@ Both of these are considered user-defined variables.
 
 ::: moniker range="vsts"
 
-YAML builds can have variables defined at the [job](../process/phases.md) level.
+YAML builds can have variables defined at the pipeline or [job](../process/phases.md) level.
 They can also access variables defined when the build is queued.
 
 ```yaml
@@ -93,7 +142,7 @@ To use a variable in a YAML statement, wrap it in `$()`. For example:
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'ubuntu-16.04'
 steps:
 - script: ls
   workingDirectory: $(agent.homeDirectory)
@@ -107,19 +156,20 @@ referencing environment variables.
 
 ```yaml
 jobs:
-- job: LinuxOrMacOs
+- job: LinuxOrMacOS
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - bash: echo $AGENT_HOMEDIRECTORY
 
 - job: Windows
   pool:
-    vmImage: vs2017-win2016'
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
 ```
+
 ### Counters
 
 You can create a counter that is automatically incremented by one in each execution of your pipeline.  You can optionally provide a seed value for the counter if you need to start at a specific number.  The counter can be assigned to a variable and then referenced in task inputs or scripts as you would any other variable.
@@ -134,7 +184,7 @@ variables:
 # use the patch variable as part of your pipeline naming scheme
 name: $(Date:yyyyMMdd).$(patch)
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'ubuntu-16.04'
 
 steps:
 
@@ -151,7 +201,7 @@ variable available to downstream steps within the same job.
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'ubuntu-16.04'
 
 steps:
 
@@ -176,7 +226,7 @@ jobs:
 # Set an output variable from job A
 - job: A
   pool:
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
   steps:
   - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep
@@ -187,7 +237,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
   steps:
@@ -206,7 +256,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   strategy:
     maxParallel: 2
     matrix:
@@ -226,7 +276,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -240,7 +290,7 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
     parallel: 2 # Two slices
   steps:
   - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
@@ -252,7 +302,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
@@ -298,6 +348,8 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ::: moniker range="vsts"
 
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
 Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
@@ -340,6 +392,8 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
 Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
@@ -373,9 +427,9 @@ For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this
 <!-- BEGINSECTION class="md-qanda" -->
 
 
-### What are the predefined Release Management variables?
+### What are the predefined release variables?
 
-[Default release management variables](../release/variables.md#default-variables)
+[Default release variables](../release/variables.md#default-variables)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 

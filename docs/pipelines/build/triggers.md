@@ -9,7 +9,7 @@ ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/17/2018
+ms.date: 10/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -41,7 +41,10 @@ trigger:
 - releases/*
 ```
 
-You can also be more specific about branches to include and exclude.
+You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify branches to include and exclude. For example:
 
 ```yaml
 name: My Specific Branch Build
@@ -54,7 +57,19 @@ trigger:
     - releases/old*
 ```
 
-If your source repository is Azure Repos Git, you can also specify file paths to include or exclude.
+If you have a lot of team members uploading changes often, then you might want to reduce the number of builds you're running.
+If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
+
+```yaml
+name: My Specific Branch Build with Batching to save time
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+```
+
+If your source repository is Azure Repos Git, then you can specify file paths to include or exclude.
 
 ```yaml
 name: My Specific Path Build
@@ -135,6 +150,39 @@ Select the version control paths you want to include and exclude. In most cases,
 ### CI trigger for a remote Git repo or Subversion
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
+
+---
+
+## Pull request validation
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+Pull request builds are not supported in YAML syntax.
+After your create your YAML build pipeline, you can use the designer to specify a pull request trigger for GitHub.
+Pull request validation triggers for Azure Repos are configured on the [branch policies](../../git/branch-policies.md#build-validation) page.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Use the checkbox to enable or disable builds on pull requests (PRs).
+
+For Git-based repos, you can specify branches to include and exclude. Select
+a branch name from the dropdown and choose "Include" or "Exclude" as appropriate.
+For included branches, a build will be triggered on each push to a PR targeting
+that branch.
+
+For GitHub repos, you can choose whether or not to build PRs from forks. There
+are [security implications](ci-public.md?tabs=github#validate-contributions-from-forks)
+to enabling this feature which you should understand before selecting it.
+If you choose to build fork PRs, you may also choose whether or not to expose
+secrets (like secret variables and secure files) to fork PR builds.
 
 ---
 

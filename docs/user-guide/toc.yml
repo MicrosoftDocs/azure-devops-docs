@@ -4,7 +4,7 @@
   expanded: true
   items:
   - name: What is Azure DevOps?
-    href: what-is-vsts.md
+    href: what-is-azure-devops-services.md
   - name: Overview of services
     href: services.md
   - name: Where's VSTS?
@@ -26,7 +26,7 @@
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
   - name: Create organizations
-    href: ../organizations/accounts/create-organization-msa-or-work-student.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Add users to a project or team 
     href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
   - name: Manage teams and configure team tools
@@ -52,7 +52,7 @@
 - name: Concepts
   items:
   - name: Key concepts 
-    href: concepts.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: concepts.md
   - name: Define organizations and projects
     href: define-organizations-and-projects.md
   - name: Source control 
@@ -60,27 +60,27 @@
   - name: Backlogs, boards, & Agile tools
     href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Clients & tools
-    href: tools.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: tools.md  
   - name: Software development roles
-    href: roles.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: roles.md
   - name: What's the difference? Azure DevOps Services vs. TFS
-    href: about-vsts-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: about-azure-devops-services-tfs.md  
   - name: Glossary
     href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides
   items:
   - name: Sign-in to the web or a client
-    href: connect-team-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: connect-team-projects.md 
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
-    href: troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: troubleshoot-connection.md
   - name: "TF31002: Unable to connect"
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Troubleshoot network connections and whitelist addresses
     href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Get support, provide feedback
-    href: provide-feedback.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: provide-feedback.md
 - name: Reference
   items:
   - name: "Permissions & access (Security)"
@@ -90,7 +90,7 @@
   - name: Keyboard shortcuts
     href: ../project/navigation/keyboard-shortcuts.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Navigate in Team Explorer
-    href: work-team-explorer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: work-team-explorer.md  
   - name: FAQs
     href: faqs.md
 - name: Resources
@@ -99,6 +99,8 @@
     href: ../project/navigation/index.md
   - name: Manage projects
     href: ../organizations/projects/index.md
+  - name: Manage organizations
+    href: ../organizations/accounts/index.md
   - name: Security & identity
     href: ../organizations/security/index.md
   - name: Billing

@@ -1,5 +1,6 @@
 ---
 title: Build open source projects
+titleSuffix: Azure Pipelines & TFS
 description: Build open source repositories by using public projects in Azure Pipelines
 services: vsts
 ms.prod: devops
@@ -9,7 +10,7 @@ manager: douge
 ms.assetid:
 ms.author: alewis
 author: andyjlewis
-ms.date: 06/20/2018
+ms.date: 10/16/2018
 monikerRange: 'vsts'
 ---
 
@@ -17,7 +18,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](](../../organizations/public/_shared/version-public-projects.md)]  
 
-If you manage an open source project, you can use Azure Pipelines to automatically build and validate every pull request and commit to your repository. By making your Azure Pipelines project **public**, anyone can view build and test results without signing in.
+If you manage an open source project, you can use Azure Pipelines to automatically build and validate every pull request and commit to your repository. By making your Azure DevOps project **public**, anyone can view build and test results without signing in.
 
 This article describes common tasks for building open source repositories.
 
@@ -114,12 +115,12 @@ Detailed permissions not displayed to the user during installation:
 
 #### Using OAuth
 
-To use OAuth, click **Authorize** on the repository step while creating a pipeline. The OAuth connection will be saved in your Azure Pipelines project for later use.
+To use OAuth, click **Authorize** on the repository step while creating a pipeline. The OAuth connection will be saved in your Azure DevOps project for later use.
 
 #### Revoking OAuth access
 
 After authorizing Azure Pipelines to use OAuth, to later revoke it and prevent further use, visit [OAuth Apps](https://github.com/settings/developers) in your GitHub settings.
-You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure Pipelines project settings.
+You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
 ### 3. Personal access token (PAT)
 
@@ -130,13 +131,13 @@ Builds and GitHub status updates will be performed on behalf of your personal Gi
 
 To create a PAT, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
 The required permissions are `repo`, `admin:repo_hook`, `read:user`, and `user:email`. These are the same permissions required when using OAuth, above.
-Copy the generated PAT to the clipboard and paste it into a new GitHub [service connection](../library/service-endpoints.md) in your Azure Pipelines project settings.
-For future recall, name the service connection after your GitHub username. It will be available in your Azure Pipelines project for later use.
+Copy the generated PAT to the clipboard and paste it into a new GitHub [service connection](../library/service-endpoints.md) in your Azure DevOps project settings.
+For future recall, name the service connection after your GitHub username. It will be available in your Azure DevOps project for later use.
 
 #### Revoking PAT access
 
 After authorizing Azure Pipelines to use a PAT, to later delete it and prevent further use, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
-You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure Pipelines project settings.
+You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
 # [Azure Repos](#tab/gitvsts)
 
@@ -163,7 +164,7 @@ Otherwise, **the repository will not appear** in the repository list while creat
 
 | If the repo is in your personal GitHub account | If the repo is in someone else's personal GitHub account | If the repo is in a GitHub organization that you own | If the repo is in a GitHub organization that someone else owns |
 |-----------------------------|-|-|-|
-| **1.** At least once, authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure Pipelines project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** Grant Azure Pipelines access to your repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). | **1.** At least once, the other person must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure Pipelines project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.**  The other person must grant Azure Pipelines access to their repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator in the repository's settings under "Collaborators". Accept the invitation to be a collaborator using the link that is emailed to you. | **1.** At least once, authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure Pipelines project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** Grant Azure Pipelines access to your organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** At least once, a GitHub organization owner must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure Pipelines project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** The organization owner must grant Azure Pipelines access to the organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". Accept the invitation to be a collaborator using the link that is emailed to you. |
+| **1.** At least once, authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure DevOps project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** Grant Azure Pipelines access to your repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). | **1.** At least once, the other person must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure DevOps project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.**  The other person must grant Azure Pipelines access to their repositories under "Permissions" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator in the repository's settings under "Collaborators". Accept the invitation to be a collaborator using the link that is emailed to you. | **1.** At least once, authenticate to GitHub with OAuth using your personal GitHub account credentials. This can be done in Azure DevOps project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** Grant Azure Pipelines access to your organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". | **1.** At least once, a GitHub organization owner must authenticate to GitHub with OAuth using their personal GitHub account credentials. This can be done in Azure DevOps project settings under Pipelines > Service connections > New service connection > GitHub > Authorize. <br/><br/> **2.** The organization owner must grant Azure Pipelines access to the organization under "Organization access" [here](https://github.com/settings/connections/applications/0d4949be3b947c3ce4a5). <br/><br/> **3.** You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". Accept the invitation to be a collaborator using the link that is emailed to you. |
 
 ### Repository permissions for Personal access token (PAT) authentication
 
@@ -198,19 +199,19 @@ To configure validation builds for an Azure Repos Git repository, you must be a 
 
 ---
 
-## Validate contributions from forks 
+## Validate contributions from forks
 
 # [GitHub](#tab/github)
 
 > [!IMPORTANT]
 > These settings affect the security of your build.
 
-When you create a build pipeline for a public repository, your pipeline is automatically triggered for pull requests from forks of your repository. You can change this behavior, carefully considering how it affects security. To enable or disable this behavior:
+When you create a build pipeline, your pipeline is automatically triggered for pull requests from forks of your repository. You can change this behavior, carefully considering how it affects security. To enable or disable this behavior:
 
-1. Go to your Azure Pipelines project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
+1. Go to your Azure DevOps project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
 1. Select the **Triggers** tab. After enabling the **Pull request trigger**, enable or disable the **Build pull requests from forks of this repository** check box.
 
-By default, secrets associated with your build pipeline are not made available to pull request builds of forks. Secrets include:
+By default with GitHub pipelines, secrets associated with your build pipeline are not made available to pull request builds of forks. These secrets are enabled by default with GitHub Enterprise pipelines. Secrets include:
 
 * A security token with access to your GitHub repository.
 * These items, if your build uses them:
@@ -218,7 +219,7 @@ By default, secrets associated with your build pipeline are not made available t
   * Files from the [secure files library](../library/secure-files.md)
   * Build [variables](../process/variables.md#user-defined-variables) marked **secret**
 
-To bypass this precaution, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
+To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
 
 ### Important security considerations
 

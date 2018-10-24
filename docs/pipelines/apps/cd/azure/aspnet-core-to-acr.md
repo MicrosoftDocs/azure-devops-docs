@@ -1,5 +1,6 @@
 ---
 title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
+titleSuffix: Azure Pipelines & TFS
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,6 +21,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy your ASP.NET Core app as a container
+
+**Azure Pipelines**
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](/azure/container-registry/).
 

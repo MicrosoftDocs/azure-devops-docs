@@ -1,5 +1,6 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
@@ -14,26 +15,33 @@ monikerRange: 'vsts'
 
 # Microsoft-hosted agents
 
+**Azure Pipelines**
+
+> [!NOTE]
+> The Hosted Linux Preview Pool is deprecated and will be removed in December 2018.
+> [Learn more below](#hosted-linux-preview-pool-deprecation).
+
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
 ## Use a Microsoft-hosted agent
 
 The Microsoft-hosted agent pool provides 5 virtual machine images to choose from:
 
-* Ubuntu 16.04 (ubuntu-16.04)
-* Visual Studio 2017 on Windows Server 2016 (vs2017-win2016)
-* Xcode 9 on macOS 10.13 (xcode9-macos10.13)
-* Windows Server 1803 (win1803)
-* Visual Studio 2015 on Windows Server 2012R2 (vs2015-win2012r2)
+* Ubuntu 16.04 (`ubuntu-16.04`)
+* Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
+* macOS 10.13 (`macOS-10.13`)
+* Windows Server 1803 (`win1803`) - for running Windows containers
+* Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
 
 | If your development team uses... | ...then choose this image... | ...or pool in web designer |
 |----------------------------------|------------------------------|----------------------------|
-| Docker containers | ubuntu-16.04 or vs2017-win2016 or win1803 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
-| Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
-| Development tools on macOS | xcode9-macos10.13 (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-1604 or win1803 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 or Hosted Windows Container |
-| Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
-| Visual Studio 2015 | vs2015-win2012r2 | Hosted |
+| Docker containers | `ubuntu-16.04` or `win1803` | Hosted Ubuntu 1604 or Hosted Windows Container |
+| Development tools on Ubuntu | `ubuntu-16.04` | Hosted Ubuntu 1604 |
+| Development tools on macOS | `xcode9-macos10.13` (see notes below) | Hosted macOS |
+| .NET Core | `ubuntu-16.04` or `vs2017-win2016` | Hosted Ubuntu 1604 or Hosted VS2017 |
+| Visual Studio 2017 | `vs2017-win2016` | Hosted VS2017 |
+| Visual Studio 2015 | `vs2015-win2012r2` | Hosted |
+
 
 # [YAML](#tab/yaml)
 
@@ -48,7 +56,7 @@ jobs:
   - script: echo hello from Linux
 - job: macOS
   pool:
-    vmImage: 'xcode9-macos10.13'
+    vmImage: 'macOS-10.13'
   steps:
   - script: echo hello from macOS
 - job: Windows
@@ -58,7 +66,7 @@ jobs:
   - script: echo hello from Windows
 ```
 
-# [Web](#tab/web)
+# [Designer](#tab/designer)
 
 Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent pool**, select the pool you decided on.
 
@@ -76,11 +84,11 @@ You can manually select from tool versions on macOS images. [See below](#mac-pic
 
 Software on Microsoft-hosted agents is updated once each month.
 
-* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
-* [Xcode 9 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
-* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
-* [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
+* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
+* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
+* [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md).
+* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+* [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md).
 
 ## Capabilities and limitations
 
@@ -89,7 +97,7 @@ Microsoft-hosted agents:
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
 * Can run jobs for up to 360 minutes (6 hours).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 
 Microsoft-hosted agents do not offer:
@@ -117,7 +125,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 > We recommend that you check back frequently to ensure you keep an up-to-date list.
 > If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
 
-We publish a [weekly XML file](https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://<your_organization>.visualstudio.com/_admin/_home/settings`. Under **Account**, you will see a field indicating your region.
+We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://dev.azure.com/<your_organization>/_settings/overview`. Under **Organization information**, you will see a field indicating your region.
 
 *This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/ip-addresses-used-hosted-build/).*
 
@@ -149,7 +157,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -159,7 +167,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
 #### Mono
 
@@ -172,6 +180,10 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
+
+## Hosted Linux Preview pool deprecation
+
+[!INCLUDE [include](_move-from-hosted-linux-preview.md)]
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]

@@ -1,5 +1,6 @@
 ---
 title: npm Authenticate (for task runners)
+titleSuffix: Azure Pipelines & TFS
 description: Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 ms.topic: reference
 ms.prod: devops
@@ -12,6 +13,8 @@ monikerRange: 'vsts'
 ---
 
 # Package: npm Authenticate (for task runners)
+
+**Azure Pipelines**
 
 ![](_img/npmauthenticate.png) Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 

@@ -1,14 +1,14 @@
 ---
 title: Project, collection, and organization settings
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
 ---
@@ -32,7 +32,7 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-organization-users-from-user-hub.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Add and manage users](../accounts/add-organization-users.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Change individual permissions](../security/change-individual-permissions.md) 
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 

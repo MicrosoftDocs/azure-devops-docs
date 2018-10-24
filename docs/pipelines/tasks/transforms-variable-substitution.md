@@ -1,5 +1,6 @@
 ---
 title: File transforms and variable substitution
+titleSuffix: Azure Pipelines & TFS
 description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # File transforms and variable substitution reference
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

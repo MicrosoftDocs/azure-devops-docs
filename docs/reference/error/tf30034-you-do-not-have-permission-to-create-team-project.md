@@ -1,6 +1,6 @@
 ---
 title: TF30034-No permissions to create a new project 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Occurs when a user tries to create a project and doesn't have the required permissions
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,5 +1,6 @@
 ---
 title: New release progress views
+titleSuffix: Azure Pipelines
 description: A preview of a new user experience for release progress on Azure Pipelines
 ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: 'vsts'
 ---
 
 # New release progress views
+
+**Azure Pipelines**
 
 A new and fully redesigned user experience is available for release progress in Azure Pipelines.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
@@ -42,9 +45,11 @@ To go back to the old view, open the drop-down list from the ellipses (**...**) 
 
 ## Pre- and post-deployment gates and approvals
 
-The deployment conditions links open the information panels for pre- and post-deployment conditions.
+The deployment conditions links open the information panels for pre- and post-deployment conditions. See the status of approvals and gates for your stage. You can also Approve/Reject the pending approvals and Ignore a gate that the stage is waiting for.    
 
-![Pre- and post-deployment conditions panels](_img/new-release-summary/pre-post-panel.png)
+![Pre- and post-deployment approvals](_img/new-release-summary/pre-post-panel.png)
+
+![Pre- and post-deployment gates](_img/new-release-summary/pre-post-gates.png)
 
 ## Commits and workitems
 

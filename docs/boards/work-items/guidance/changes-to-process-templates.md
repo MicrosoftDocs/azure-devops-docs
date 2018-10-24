@@ -192,8 +192,8 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 </td>
 <td>
 <p>Added the Portfolio Backlog feature and introduced changes to support Planning Tools. </p>
-<h4>Changes to WIT definitions to support status updates via Kanban and task boards</h4>
-<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.</p> 
+<h4>Changes to WIT definitions to support status updates via Kanban and taskboards</h4>
+<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.</p> 
 <p>The following work item types now support any-to-any workflow transitions:</p>
 
 <ul>

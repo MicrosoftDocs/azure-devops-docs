@@ -1,5 +1,6 @@
 ---
 title: Deploy a Docker container app to an Azure Kubernetes Service (AKS)
+titleSuffix: Azure Pipelines & TFS
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: 'vsts'
 ---
 
 # Deploy to an Azure Kubernetes Service
+
+**Azure Pipelines**
 
 We'll show you how to set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using
 Azure Pipelines.
@@ -184,13 +187,13 @@ Another alternative is to set the **Set Values** option of the task to specify t
 
 You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
-1. Choose **+ Release** and select **Create Release**.
+1. Choose **+ Release** and select **Create a release**.
 
-2. In the **Create new release** panel, check that the artifact version you want to use is selected and choose **Create**.
+1. In the **Create a new release** panel, check that the artifact version you want to use is selected and choose **Create**.
 
-3. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
+1. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
 
-4. Open the **Logs** tab to watch the release console output.
+1. In the pipeline view, choose the status link in the stages of the pipeline to see the logs and agent output.
 
 
 ## Next steps

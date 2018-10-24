@@ -1,14 +1,14 @@
 ---
 title: Naming restrictions and conventions 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
 ms.date: 06/26/2018
 ---
@@ -786,7 +786,7 @@ For descriptions of system fields and fields defined in the default process temp
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
-**Examples of field reference names  **
+**Examples of field reference names**
 
 The following examples show valid field reference names, in various namespaces. Customers and partners can also define their own namespaces to support their custom work item types.   
 
@@ -1135,6 +1135,7 @@ Team Foundation version control (TFVC) provides a central repository for files a
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
 
+In the web portal and REST API certain operations (Edit, Rename, and Delete) have a more restrictive path length than Visual Studio and TF.exe clients.  This is due to web portal/REST utilizing a randomly generated workspace for concurrency when pending the changes.
 <table>
 <tr>
 <th width="20%">Restriction type</th>
@@ -1169,6 +1170,18 @@ Version control paths must conform to the following restrictions. See also [Opti
 </li>
 <li>
 <p>Must not contain more than 260 Unicode characters for a combined directory and file name.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Web portal and REST specific length restrictions</p>
+</td>
+<td>
+<ul>
+<li>
+<p>Must not contain more than 215 Unicode characters for a combined project name, directory and file name.</p>
 </li>
 </ul>
 </td>
@@ -1292,7 +1305,7 @@ Shelveset names must conform to the following restrictions.
 </tr>
 </table>
 
-##TFVC workspaces
+## TFVC workspaces
 
 A workspace is a client-side copy of the files and folders in Team Foundation version control (TFVC). When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](../../repos/tfvc/create-work-workspaces.md) provides more details. 
 

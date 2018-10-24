@@ -1,5 +1,6 @@
 ---
-title: Publishing npm packages | Microsoft Docs
+title: Publishing npm packages
+titleSuffix: Azure Pipelines & TFS
 description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Publish npm packages
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

@@ -1,5 +1,6 @@
 ---
-title: Install Microsoft Release Management deployment agent for VS 2015 and TFS 2015
+title: Install Microsoft Release Management deployment agent
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can install deployment agent and set up machines for an environment for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
 ms.prod: devops

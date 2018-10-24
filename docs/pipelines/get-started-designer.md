@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Use the visual designer
 
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -54,6 +56,33 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 ::: moniker range="< vsts"
 
 * A [self-hosted Windows agent](agents/v2-windows.md).
+
+::: moniker-end
+
+<a name="initialize-repo"></a>
+## Intialize your repository
+
+> If you already have a repository in your project, you can skip to the next step: [Add a script to your repository]()
+
+::: moniker range="vsts"
+
+1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
+
+  ![Repos files](../repos/get-started/_img/clone-repo/repos-files.png)
+
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initalize** your repo with a `readme` file: 
+
+  ![Initialize repository](_img/initialize-repo.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+1. Navigate to your repository by clicking **Code** in the top navigation. 
+
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initalize** your repo with a `readme` file: 
+
+  ![Initialize repository](_img/initialize-repo.png)
 
 ::: moniker-end
 
@@ -161,6 +190,12 @@ Create a build pipeline that prints "Hello world."
 
    ---
 
+  For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the visual designer and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
+
+  ![Click settings in top right of screen and click preview features](_img/preview-features.png)
+
+  ![Click toggle to turn yaml preview feature off](_img/yaml-preview-feature-off.png)
+
 1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
 1. Start with an **Empty job**.
@@ -169,30 +204,18 @@ Create a build pipeline that prints "Hello world."
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
-   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
    > ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
    >
-
-   # [Previous navigation](#tab/previous-nav)
-   ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
-
-   ---
    
 1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
    > ![PowerShell task](_img/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
    >
-
-   # [Previous navigation](#tab/previous-nav)
-   ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018-2.png)
-
-   ---
-   
+ 
 1. Select **Save & queue**, and then select **Save**.
 
  ::: moniker-end

@@ -1,5 +1,6 @@
 ---
-title: SCVMM 
+title: System Center Virtual Machine Manager (SCVMM)
+titleSuffix: Azure Pipelines & TFS
 description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM)
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2018'
 ---
 
 # SCVMM deployment
+
+**Azure Pipelines | TFS 2018**
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
 

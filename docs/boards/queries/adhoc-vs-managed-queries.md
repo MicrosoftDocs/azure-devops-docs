@@ -26,7 +26,7 @@ You have two ways to perform work item searches: semantic or adhoc searches and 
 
 You perform semantic or adhoc searches using the work item search box (shown below)   
 
-Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
@@ -36,20 +36,20 @@ You add and run managed queries using the built-in query-editor available from t
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	
-::: moniker-end    
+::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
+::: moniker range=">= tfs-2013 <= tfs-2018"   
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end   
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013"   
+::: moniker range=">= tfs-2013"     
 
 You perform semantic or adhoc searches using the work item search box (shown below). 
 
-In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 

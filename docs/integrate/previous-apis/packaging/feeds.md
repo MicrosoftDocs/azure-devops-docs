@@ -8,11 +8,14 @@ author: elbatk
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.topic: article
 ---
 
 # Feeds
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
@@ -33,7 +36,33 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__packaging_feeds_json](./_data/feeds/GET__packaging_feeds.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+      "name": "EngineeringInternal",
+      "description": "Contains packages internal to the engineering organization",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ## Get a feed
 
@@ -49,7 +78,28 @@ GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/f
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__packaging_feeds_feedName_json](./_data/feeds/GET__packaging_feeds__feedName_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInternal?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "name": "EngineeringInternal",
+  "description": "Contains packages internal to the engineering organization",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+    }
+  }
+}
+```
+
 
 
 ## Create a feed
@@ -78,7 +128,34 @@ Content-Type: application/json
 | name        | string | Name of the feed to be created. Optional.
 | description | string | Description of the feed to be created. Optional.
 
-[!code-REST [POST__packaging_feeds_json](./_data/feeds/POST__packaging_feeds_api-version-2.0-preview.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0-preview.1
+```
+```json
+{
+  "name": "EngineeringInternal",
+  "description": "Contains packages internal to the engineering organization"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "name": "EngineeringInternal",
+  "description": "Contains packages internal to the engineering organization",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+    }
+  }
+}
+```
+
 
 ## Update a feed
 
@@ -106,7 +183,34 @@ Content-Type: application/json
 | name        | string | Updated name of the feed.
 | description | string | Updated description of the feed.
 
-[!code-REST [PATCH__packaging_feeds_json](./_data/feeds/PATCH__packaging_feeds__feedId__api-version-2.0-preview.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1
+```
+```json
+{
+  "name": "LegacyEngineeringInternal",
+  "description": "Contains legacy packages internal to the engineering organization"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "name": "LegacyEngineeringInternal",
+  "description": "Contains legacy packages internal to the engineering organization",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+    }
+  }
+}
+```
+
 
 ## Delete a feed
 
@@ -125,4 +229,9 @@ Content-Type: application/json
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [DELETE__packaging_feeds__feedId_json](./_data/feeds/DELETE__packaging_feeds__feedId__api-version-2.0-preview.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1
+```
+

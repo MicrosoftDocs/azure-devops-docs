@@ -59,7 +59,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range="vsts"
 
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -114,7 +114,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [6. Update the task board](task-board.md) 
+> [6. Update the taskboard](task-board.md) 
 
 
 ## Related articles

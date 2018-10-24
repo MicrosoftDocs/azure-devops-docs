@@ -41,7 +41,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-2. Open the![](../../_img/icons/actions-icon.png) actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
+2. Open the![ ](../../_img/icons/actions-icon.png) actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
 
 	Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 

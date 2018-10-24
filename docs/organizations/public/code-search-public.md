@@ -1,5 +1,5 @@
 ---
-title: Search the code base of a public project  
+title: Search code of a public project  
 titleSuffix: Azure DevOps Services Public Project
 description: Search across all reposities defined in a public project to find specific types of code   
 ms.technology: devops-public-projects
@@ -23,11 +23,11 @@ With code search, you can locate specific types of code and easily narrow or wid
 <a name="start-search"></a>
 ## Initiate a search 
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](_img/search/code-search-vert.png)    

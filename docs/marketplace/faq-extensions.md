@@ -130,7 +130,7 @@ A: This might happen for these reasons:
 ## Troubleshooting purchases & billing
 
 - [Azure DevOps Services billing overview](../organizations/billing/overview.md)
-- [Azure DevOps Services billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Azure DevOps Services billing FAQ](../organizations/billing/billing-faq.md)
 - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
 - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)

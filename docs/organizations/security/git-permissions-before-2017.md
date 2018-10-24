@@ -7,8 +7,8 @@ ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/01/2016
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
@@ -22,7 +22,8 @@ Those using TFS 2017 Update 1 or Azure DevOps should see the [latest list of per
 
 These permissions appear only for a project including a Git repository.
 
-<img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Git repository permissions dialog, prior to TFS 2017.1](_img/permissions/git-permissions-prior-to-2017.png)  
 
 Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
 

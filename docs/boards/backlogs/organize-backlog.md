@@ -71,14 +71,14 @@ From your web browser, open your product backlog from **Work**, **Backlogs** pag
 	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -87,7 +87,7 @@ From your web browser, open your product backlog from **Work**, **Backlogs** pag
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker range="vsts"
 
-0. To view Parents or a tree hierarchy, choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
+0. To view Parents or a tree hierarchy, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
@@ -145,7 +145,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
+0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
@@ -191,7 +191,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
@@ -250,7 +250,7 @@ From the product backlog you can multi-select several work items and choose **Ch
 ## Related articles  
 
 - [Define features and epics](define-features-epics.md)
-- [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)
+- [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)

@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 ms.date: 02/28/2018
 monikerRange: '>= tfs-2013'
@@ -34,10 +34,10 @@ Use this topic to access articles that will show you how to:
 
 ## Manage organizational access with Azure AD
 
-* [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-aad.md)
-* [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-aad.md)
-* [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-aad.md)
-* [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-aad.md)
+* [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
+* [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
+* [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
+* [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
 * [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 
 

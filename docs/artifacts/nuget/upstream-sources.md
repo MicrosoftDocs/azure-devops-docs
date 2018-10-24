@@ -60,6 +60,26 @@ If you're concerned about this, consider creating a new feed then adding nuget.o
 To use your feed and upstream source, follow the instructions to [consume NuGet packages](consume.md). If you've previously set up this feed, still take a quick pass through those instructions and ensure you've disabled NuGet.org as a source. This ensures that all package requests are sent to your Azure DevOps Services feed, which is required to take advantage of the [guaranteed save](../concepts/upstream-sources.md#offline-upstreams) functionality of the nuget.org upstream source.
 
 ## Filter to saved packages
+
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
+::: moniker range="vsts"
+
+# [New navigation](#tab/new-nav)
+![Viewing your cached packages](_img/view-cached-packages-newnav.png)
+
+# [Previous navigation](#tab/previous-nav)
 ![Viewing your cached packages](_img/view-cached-packages.png)
+
+---
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < vsts"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
+
+::: moniker-end
+
+
+

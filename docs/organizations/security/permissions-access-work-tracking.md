@@ -1,14 +1,14 @@
 ---
-title: Default permissions and access for work tracking 
-titleSuffix: Azure DevOps Services & TFS 
-description: Default permissions and access levels to support work tracking tasks in Azure DevOps Services & Team Foundation Server
+title: Default work tracking permissions & access 
+titleSuffix: Azure Boards & TFS 
+description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 10/23/2017
 ms.topic: reference
 monikerRange: '>= tfs-2013'
@@ -203,7 +203,7 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **Azure DevOps**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users-from-user-hub.md)
+- **Azure DevOps**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
 

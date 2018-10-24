@@ -1,14 +1,14 @@
 ---
 title: Understand how security roles work
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Learn about security roles and where they are used to manage permissions to select features and functions of TFS and Azure DevOps
 ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.prod: devops
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
@@ -89,6 +89,6 @@ For details, see [Manage teams and configure team tools](../settings/manage-team
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
  
  

@@ -1,5 +1,6 @@
 ---
 title: Deploy to an IIS web server on a Windows Virtual Machine
+titleSuffix: Azure Pipelines & TFS
 description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.prod: devops
@@ -61,9 +62,13 @@ Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to 
 
 Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
 
+1. If you haven't already done so, install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
+   extension from Marketplace. This extension contains the tasks required for this example.
+
 1. Do one of the following:
 
-   * If you've just completed a CI build then, in the build's **Summary** tab choose **Release**. This creates a new release pipeline that's automatically linked to the build pipeline.
+   * If you've just completed a CI build then, in the build's **Summary** tab choose **Release**.
+     This creates a new release pipeline that's automatically linked to the build pipeline.
 
    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.

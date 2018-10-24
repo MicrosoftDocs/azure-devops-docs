@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Access control lists (ACLs) | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2015 < vsts'
+title: Access control lists (ACLs) | REST API Reference for Team Foundation Server
 description: Access control lists reference for integrating with VSTS
 ms.assetid: 79447872-9742-42c5-9d4a-2e291df06c85
 ms.manager: douge
@@ -13,6 +13,9 @@ ms.date: 03/15/2017
 ---
 
 # Access Control Lists (ACLs)
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 ## Add a list of access control lists
@@ -27,14 +30,52 @@ POST https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-versio
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace. 
 | Query
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | acls              | Json Object |         | A Json Object containing the ACLs to set. 
 
-[!code-REST [POST_acls](./_data/POST__accesscontrollists__securityNamespaceId__.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0
+```
+```json
+{
+  "value": [
+    {
+      "inheritPermissions": false,
+      "token": "token1",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": false,
+      "token": "token2",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 1,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 8,
+          "deny": 0
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ## Get a list of access control lists
 <a name="get" />
@@ -46,7 +87,7 @@ GET https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-version
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace.
 | Query 
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -59,23 +100,317 @@ GET https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-version
 
 All ACLs in the security namespace will be retrieved if no optional parameters are provided. 
 
-[!code-REST [GET_acls](./_data/GET__accesscontrollists__securityNamespaceId__.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 5,
+  "value": [
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3",
+          "allow": 1,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4\\846cd9c3-56ba-4158-b6d2-23a3a73244e5",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-1-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-1-2",
+          "allow": 8,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": true,
+      "token": "28b9bb88-a513-4115-9b5c-8be39ce1f1ba",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-2",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-3": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-2294004008-329585985-2606533603-2632053178-0-0-0-0-3",
+          "allow": 1,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": false,
+      "token": "token1",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": false,
+      "token": "token2",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 1,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 8,
+          "deny": 0
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ### Filter by token
 
-[!code-REST [GET_acls_token](./_data/GET__accesscontrollists__securityNamespaceId___token-_existingToken_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=1ba198c0-7a12-46ed-a96b-f4e77554c6d4&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3",
+          "allow": 1,
+          "deny": 0
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ### Filter by IdentityDescriptors
 
-[!code-REST [GET_acls_descriptors](./_data/GET__accesscontrollists__securityNamespaceId___descriptors-_descriptor1_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?descriptors=Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 5,
+  "value": [
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4\\846cd9c3-56ba-4158-b6d2-23a3a73244e5",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 0,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": true,
+      "token": "28b9bb88-a513-4115-9b5c-8be39ce1f1ba",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 0,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": false,
+      "token": "token1",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": false,
+      "token": "token2",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 1,
+          "deny": 0
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ### Include ExtendedInfo properties
 
-[!code-REST [GET_acls_token_extendedinfo](./_data/GET__accesscontrollists__securityNamespaceId___token-_existingToken__includeExtendedInfo-True.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=1ba198c0-7a12-46ed-a96b-f4e77554c6d4&includeExtendedInfo=True&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0,
+          "extendedInfo": {
+            "effectiveAllow": 31
+          }
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 31,
+          "deny": 0,
+          "extendedInfo": {
+            "effectiveAllow": 31
+          }
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3",
+          "allow": 1,
+          "deny": 0,
+          "extendedInfo": {
+            "effectiveAllow": 1
+          }
+        }
+      },
+      "includeExtendedInfo": true
+    }
+  ]
+}
+```
+
 
 ### Include child ACLs
 
-[!code-REST [GET_acls_token_recurse](./_data/GET__accesscontrollists__securityNamespaceId___token-_existingToken__includeExtendedInfo-False_recurse-True.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=1ba198c0-7a12-46ed-a96b-f4e77554c6d4&includeExtendedInfo=False&recurse=True&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+          "allow": 31,
+          "deny": 0
+        },
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-3",
+          "allow": 1,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "inheritPermissions": true,
+      "token": "1ba198c0-7a12-46ed-a96b-f4e77554c6d4\\846cd9c3-56ba-4158-b6d2-23a3a73244e5",
+      "acesDictionary": {
+        "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-1-2": {
+          "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-1-2",
+          "allow": 8,
+          "deny": 0
+        }
+      }
+    }
+  ]
+}
+```
+
 
 ## Remove a list of access control lists
 <a name="remove" />
@@ -90,11 +425,22 @@ DELETE https://{instance}/_apis/accesscontrollists/{securitynamespace}/?api-vers
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string  |         | TFS server name ({server:port}).
 | securitynamespace | guid    |         | ID of the security namespace.
 | Query 
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | tokens            | string  |         | String containing a list of tokens separated by ',' whose ACLs should be removed.
 | recurse           | bool    |         | If true and this is a hierarchical namespace, then any child ACLs will also be removed.
 
-[!code-REST [DELETE_acls](./_data/DELETE__accesscontrollists__securityNamespaceId___tokens-_newToken1_,_newToken2__recurse-False.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/accesscontrollists/5a27515b-ccd7-42c9-84f1-54c998f03866/?tokens=token1,token2&recurse=False&api-version=1.0
+```
+
+#### Sample response
+
+```json
+true
+```
+

@@ -1,5 +1,6 @@
 ---
 title: Copy and publish build artifacts
+titleSuffix: Azure Pipelines & TFS
 description: Learn about how you can copy build artifacts to a staging folder and publish them with Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Copy and Publish Build Artifacts
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="> tfs-2015"
 

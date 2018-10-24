@@ -38,7 +38,7 @@ With semantic search, you search against a more fully indexed set of fields. Wit
 > If semantic search has been configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
 > 
 >![Search Work Items Text Box](_img/search-box/search-box-vsts.png)  
-::: moniker-end   
+::: moniker-end     
 
 <a name="start-search"></a>
 ## Initiate a semantic search for work items
@@ -50,13 +50,13 @@ With semantic search you can search:
 
 Free text search easily searches across all work item fields, including custom fields, which enables more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
 
-0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
