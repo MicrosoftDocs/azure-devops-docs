@@ -9,7 +9,7 @@ ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/05/2017
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -91,7 +91,9 @@ When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo)
 
 > [!NOTE]
 > **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
-> **Azure Pipelines (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
+
+> [!NOTE]
+> YAML builds don't support tagging sources.
 
 ::: moniker-end
 
