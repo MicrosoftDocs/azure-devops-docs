@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: chrispat
-ms.date: 01/25/2018
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2017 < vsts'
 ---
 
@@ -122,4 +122,4 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
  Windows: Windows Credential Store
  ```
 
-Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more information about agent client certificate support.
+Learn more about [agent client certificate support](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/design/clientcert.md).
