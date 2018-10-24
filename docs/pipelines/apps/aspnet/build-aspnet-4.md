@@ -1,6 +1,6 @@
 ---
-title: .NET Framework
-description: Build .NET Framework projects using Azure Pipelines or TFS
+title: ASP.NET
+description: Build ASP.NET projects using Azure Pipelines or TFS.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
@@ -11,13 +11,13 @@ ms.date: 08/27/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
-# .NET Framework
+# ASP.NET
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
+This guidance explains how to build ASP.NET projects. For guidance on ASP.NET Core projects, see [this topic](../../languages/dotnet-core.md).
 
 ::: moniker range="tfs-2017"
 
