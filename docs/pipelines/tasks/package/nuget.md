@@ -63,17 +63,21 @@ None
 <table>
     <thead>
         <tr>
-            <th>Argument</th>
+            <th>Argument/Input</th>
             <th>Description</th>
         </tr>
     </thead>
     <tr>
+        <td>command</td>
+        <td>restore<br/>
+            <br/>
+            The task will restore nugets as specified.<br/>
+        </td>
+    </tr>
+    <tr>
         <td>restoreSolution</td>
         <td>
-            Path to solution, packages.config, or project.json
-            <br/>
-            Copy the **Solution** argument in your [Visual Studio Build step](../../tasks/build/visual-studio-build.md) and paste it
-            here, or create a link using the Link button in the information panel.
+            Path to solution, packages.config, or project.json. Supports glob patterns.
         </td>
     </tr>
     <tr>
@@ -82,20 +86,31 @@ None
     <tr>
         <td>feedsToUse</td>
         <td>
-            Feeds to use
+            select | config<br/>
             <br/>
-            **Feed(s) I select here:**
+            Where the feeds to be used are defined.
+            <br/>
             <ul>
-                <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
-            </ul>
-            **Feeds in my NuGet.config:**
-            <ul>
-                <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
-                    file you've checked into source control.</li>
-                <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
-                <li>Azure Artifacts users: see the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
+                <li>select<br/>
+                    <ul>
+                        <li>Use this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
+                        <li>Use the `vstsFeed` and `includeNuGetOrg` inputs to specify the feeds to restore from.</li>
+                    </ul>
+                </li>
+                <li>config<br/>
+                    <ul>
+                        <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
+                            file you've checked into source control.</li>
+                        <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+                        <li>Azure Artifacts users: see the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
+                    </ul>
+                </li>
             </ul>
         </td>
+    </tr>
+    <tr>
+        <td>vstsFeed</td>
+        <td>Name of Azure DevOps Artifact feed in your organization to use to restore from.</td>
     </tr>
     <tr>
         <th style="text-align: center" colspan="2">Advanced</th>
@@ -109,24 +124,38 @@ None
         </td>
     </tr>
     <tr>
+        <td>nugetConfigPath</td>
+        <td>Specify the path to the nuget.config file to use when `feedsToUse` is set to 'config'.</td>
+    </tr>
+    <tr>
+        <td>externalFeedCredentials</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>noCache</td>
-        <td>
-            Disable local cache
-            Prevents NuGet from using packages from local machine caches.
+        <td>true | false<br/>
+            <br/>
+            Default is false.
+            <br/>
+            Disable local cache. Prevents NuGet from using packages from local machine caches.
         </td>
     </tr>
     <tr>
+        <td>disableParallelProcessing</td>
+        <td>true | false<br/>
+        <br/>
+        Defaults to false.</td>
+    </tr>
+    <tr>
         <td>restoreDirectory</td>
-        <td>
-            Destination directory
-            Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json.
+        <td>Specify the path in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json.
         </td>
     </tr>
     <tr>
         <td>verbosityRestore</td>
-        <td>
-            Verbosity
-            Specifies the amount of detail displayed in the output.
+        <td>detailed | quite | normal<br/>
+            <br/>
+            Specifies the amount of detail displayed in the output. Default is detailed.
         </td>
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
@@ -268,15 +297,30 @@ None
         </tr>
     </thead>
     <tr>
-        <td>Path to NuGet package(s) to publish</td>
+        <td>command</td>
+        <td>value: push</td>
+    </tr>
+    <tr>
+        <td>packagesToPush</td>
         <td>
             Specify the packages you want to publish.
             <ul>
                 <li>Default value: ```$(Build.ArtifactStagingDirectory)/*.nupkg```</li>
-                <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
                 <li>Use [file matching patterns](../file-matching-patterns.md) to publish multiple packages. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.</li>
                 <li>Use [variables](../../build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
             </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>nuGetFeedtype</td>
+        <td>Type of NuGet feed to push to.<br/>
+            internal | external
+        </td>
+    </tr>
+    <tr>
+        <td>publishVstsFeed</td>
+        <td>
+            The name of the Azure DevOps (VSTS) feed to push to.
         </td>
     </tr>
     <tr>
