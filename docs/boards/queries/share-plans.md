@@ -2,6 +2,7 @@
 title: Share work plans 
 titleSuffix: Azure Boards and TFS 
 description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
@@ -9,16 +10,24 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018 
+ms.date: 10/23/2018 
 ---
 
 
 
-# Share work plans and progress 
+# Share information within work items and social tools
 
 **Azure Boards | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere**
 
-Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
+Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
+
+::: moniker range=">= tfs-2018"
+Additional ways to share information include using dashboards, README files, and project Wikis. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+Additional ways to share information include using dashboards, and SharePoint portals. 
+::: moniker-end
 
 Using work items, you can share information in the following ways: 
 
@@ -34,28 +43,97 @@ Using work items, you can share information in the following ways:
 
 ## Rich text fields  
 
-To convey detailed information, you can format text and insert images inline within the description field or any HTML field type.   
+To convey detailed information, you can format text and insert images inline within any HTML field type. By default, the following fields are HTML fields (as well as many others not listed here for the CMMI process). 
 
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../../organizations/settings/work/customize-process.md), and the platform you work on.   
+::: moniker range=">= tfs-2017"
+- *Acceptance Criteria* 
+- *Description* 
+- *Steps* 
+- *System Info*
+::: moniker-end
+
+::: moniker range="tfs-2017"
+> [!NOTE]  
+> The *History* field is no longer a rich-text field. To annotate the work item history, add your content to the Description or Discussion fields. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+- *Acceptance Criteria* 
+- *Description* 
+- *History*
+- *Steps* 
+- *System Info*
+
+::: moniker-end
+
+In addition, you can add custom HTML fields to support your business processes. To learn more about each field, look it up in the [Work item field index](../work-items/guidance/work-item-field.md)
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
-
 # [Browser](#tab/browser) 
 
-::: moniker range=">= tfs-2017"
-<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar" style="border: 2px solid #C3C3C3;" />
+::: moniker range="vsts" 
 
-You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
+**The New Rich Text Editor**  
 
-> [!NOTE]  
-> The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
+The **New Rich Text Editor** feature is in preview. To enable it for yourself or your organization, see [Enable preview features](../../project/navigation/preview-features.md).
+
+The new editor toolbar appears below each text box that can be formatted. It only becomes active when you move your cursor within the text box.
+
+> [!div class="mx-imgBorder"]  
+> ![New Rich Text Editor toolbar](_img/share-plans/new-rich-text-editor-toolbar.png) 
+
+You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to faciliate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+
+> [!div class="mx-imgBorder"]  
+> ![New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
+
+**Previous Rich Text Editor**  
+
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
+
+![Rich text tool bar](_img/rich-text-ui-team-services.png)
+
+You can use the ![ ](../_img/icons/remove-formatting-icon.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+
+**Keyboard shortcuts**  
+
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the following shortcut keys to format your text:  
+- **Bold**: **Ctrl+B**  
+- *Italic*: **Ctrl+I**  
+- <u>Underscore</u>: **Ctrl+U** 
+
+> [!TIP]    
+> Enter **Shift-?** to view additional Keyboard shortcuts for the work item form. 
+> >[!div class="mx-imgBorder"]  
+> >![work item form keyboard shortcuts](_img/share-plans/shortcuts-work-item-form-s142.png)
+
+
 ::: moniker-end
 
+::: moniker range=">= tfs-2017 <=tfs-2018"
+
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
+
+![Rich text tool bar](_img/rich-text-ui-team-services.png)
+
+You can use the following shortcut keys to format your text:  
+- **Bold**: **Ctrl+B**  
+- *Italic*: **Ctrl+I**  
+- <u>Underscore</u>: **Ctrl+U** 
+
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+
+::: moniker-end
 
 <a id="tfs-portal-rich-text" />
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-<img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 2px solid #C3C3C3;" />
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.  
+
+![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png)
+
 ::: moniker-end
 
 
@@ -65,25 +143,32 @@ You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon 
 
 From Team Explorer you can choose the font, font size, and text and background colors.
 
-<img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 2px solid #C3C3C3;" />
+![Rich text tool bar - Team Explorer](_img/rich-text-ui-te.png)  
 
-If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can use the following shortcut keys to format your text:  
+- **Bold**: **Ctrl+B**  
+- *Italic*: **Ctrl+I**  
+- <u>Underscore</u>: **Ctrl+U** 
 
 [!INCLUDE [temp](../../_shared/images-not-appearing-vs.md)] 
 
 
 # [Team Explorer Everywhere](#tab/tee) 
 
-<img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 2px solid #C3C3C3;" />
+From Team Explorer Everywhere you can exercise only basic format operations.
+
+![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png) 
+
+You can use the following shortcut keys to format your text:  
+- **Bold**: **Ctrl+B**  
+- *Italic*: **Ctrl+I**  
+- <u>Underscore</u>: **Ctrl+U** 
+
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
 
 ---
 
-You can also use the following shortcut keys to format your text:  
-- **Bold**: Ctrl+B  
-- *Italic*: Ctrl+I  
-- <u>Underscore</u>: Ctrl+U 
 
-You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
 
 <a id="link-items"></a>
 ## Link items
@@ -100,17 +185,37 @@ Again, your link options will differ depending on the client you use. For specif
 
 ## Attach files
 
-To help track a work item, use the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
+You and your team can centralize reference materials by attaching files to your work items. That way they are always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
-For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
+Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
+
 
 <a id="team-services" />
 # [Browser](#tab/browser)
+::: moniker range="vsts"
+### Attachment control toolbar 
+Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
-#### Attachment control toolbar 
-::: moniker range=">= tfs-2017"
+You can drag and drop a file onto the tab or anywhere on the work item form. 
 
-<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal" style="border: 1px solid #C3C3C3;" />  
+You can continue viewing the attachments as a list or switch to a grid view to show a thumbnail preview. Double-click or right-click on the file to open a preview and cycle through them to quickly find the information you need. 
+
+![Attachments tab, list or grid view](_img/share-plans/142_attachments.gif) 
+
+> [!TIP]  
+> To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
+::: moniker-end 
+
+You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+### Attachment control toolbar 
+Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
+
+You can drag and drop a file onto the tab or anywhere on the work item form. 
+
+![Attachment controls, web portal](_img/share-plans-attachment-tab-vsts.png)  
 
 > [!TIP]    
 > You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
@@ -121,18 +226,17 @@ You can edit, open, save, or delete an attachment by clicking an attachment and 
 
 ::: moniker-end 
 
-::: moniker range="vsts"
-> [!NOTE]  
-> You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item. 
-::: moniker-end 
-
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+### Attachment control toolbar 
+Choose the **Attachments** tab icon to attach a file to the work item. 
 
 <img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #C3C3C3;" />  
 
-Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  
+Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../_img/icons/open-icon.png) the open icon to open the attachment or ![ ](../_img/icons/download-icon.png) download icon to save a copy.  
 ::: moniker-end 
+
+
 
 <a id="team-explorer" />
 # [Visual Studio](#tab/visual-studio) 

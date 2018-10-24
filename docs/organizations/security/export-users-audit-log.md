@@ -8,8 +8,8 @@ ms.assetid:
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 10/12/2018
 ---

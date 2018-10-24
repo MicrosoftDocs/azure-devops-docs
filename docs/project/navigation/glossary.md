@@ -2,6 +2,7 @@
 title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps Services & TFS
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps & Team Foundation Server  
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 

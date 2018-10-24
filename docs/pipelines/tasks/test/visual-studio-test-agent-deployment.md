@@ -1,5 +1,5 @@
 ---
-title: Build and Test - Visual Studio Test Agent Deployment task
+title: Visual Studio Test Agent Deployment task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
@@ -13,7 +13,7 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Visual Studio Test Agent Deployment
+# Visual Studio Test Agent Deployment task
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
@@ -25,19 +25,14 @@ monikerRange: '>= tfs-2015'
 
 This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
 task together with [jobs](../../process/phases.md) to run unit and functional tests on the universal agent.
-
 For more details, see [Testing with unified agents and jobs](../../test/test-with-unified-agent-and-phases.md).
 
 ::: moniker-end
 
 ## TFS 2017 and earlier
 
-![icon](_img/visual-studio-test-agent-deployment-icon.png)
-Deploy and configure the test agent to run tests on a set of machines.
-
-The test agent deployed by this task can collect data
-or run distributed tests using the [Visual Studio Test](vstest.md)
-task.
+Use this task in a build or release pipeline to deploy and configure the test agent to run tests on a set of machines.
+The test agent deployed by this task can collect data or run distributed tests using the [Visual Studio Test](vstest.md) task.
 
 ### Demands and prerequisites
 

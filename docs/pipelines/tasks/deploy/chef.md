@@ -1,5 +1,5 @@
 ---
-title: Chef
+title: Chef task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy to Chef environments by editing environment attributes
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Chef
+# Chef task
 
 **Azure Pipelines**
 
-![](_img/chef.png) Deploy to Chef environments by editing environment attributes
+Use this task in a build or release pipeline to deploy to Chef environments by editing environment attributes.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -36,9 +36,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

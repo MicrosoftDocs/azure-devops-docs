@@ -1,19 +1,17 @@
 - name: Azure Pipelines
   href: index.md
 - name: Overview
+  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
+  expanded: true
   items:
-  - name: Start using Build and Release
-    href: overview.md
-  - name: Start using Azure Pipelines
-    href: get-started/index.md
   - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
+    href: get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+  - name: How to use Azure Pipelines
+    href: get-started/pipelines-get-started.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: Get started with Azure Pipelines
-    href: get-started/pipelines-get-started.md
+    href: get-started/pipelines-sign-up.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+    href: get-started/key-pipelines-concepts.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Create your first pipeline
@@ -419,6 +417,8 @@
       items:
       - name: App Center Test
         href: tasks/test/app-center-test.md
+      - name: Cloud-based Apache JMeter Load Test
+        href: tasks/test/run-jmeter-load-test.md
       - name: Cloud-based Load Test
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
@@ -429,14 +429,10 @@
         href: tasks/test/publish-test-results.md
       - name: Run Functional Tests
         href: tasks/test/run-functional-tests.md
-      - name: Run Apache JMeter Load Test
-        href: tasks/test/run-jmeter-load-test.md
       - name: Visual Studio Test
         href: tasks/test/vstest.md
       - name: Visual Studio Test Agent Deployment
         href: tasks/test/visual-studio-test-agent-deployment.md
-      - name: Xamarin Test Cloud
-        href: tasks/test/xamarin-test-cloud.md
     - name: Package tasks
       items:
       - name: CocoaPods
@@ -473,10 +469,10 @@
         href: tasks/deploy/azure-rm-web-app-deployment.md
       - name: Azure App Service Manage
         href: tasks/deploy/azure-app-service-manage.md
-      - name: Azure Cloud PowerShell Deployment
-        href: tasks/deploy/azure-cloud-powershell-deployment.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
+      - name: Azure Cloud PowerShell Deployment
+        href: tasks/deploy/azure-cloud-powershell-deployment.md
       - name: Azure File Copy
         href: tasks/deploy/azure-file-copy.md
       - name: Azure Key Vault
@@ -489,10 +485,12 @@
         href: tasks/deploy/azure-powershell.md
       - name: Azure Resource Group Deployment
         href: tasks/deploy/azure-resource-group-deployment.md
-      - name: Azure RM Web App Deployment
-        href: tasks/deploy/azure-rm-web-app-deployment.md
+      - name: Azure SQL Database Deployment
+        href: tasks/deploy/sql-azure-dacpac-deployment.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
+      - name: Build Machine Image (Packer)
+        href: tasks/deploy/packer-build.md
       - name: Chef
         href: tasks/deploy/chef.md
       - name: Chef Knife
@@ -505,28 +503,24 @@
         href: tasks/build/docker-compose.md
       - name: Helm Deploy
         href: tasks/deploy/helm-deploy.md
-      - name: IIS Web App Deployment on Machine Group
+      - name: IIS Web App Deploy (Machine Group)
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
-      - name: IIS Web App Management on Machine Group
+      - name: IIS Web App Manage (Machine Group)
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
       - name: Kubernetes (kubectl)
         href: tasks/deploy/kubernetes.md
-      - name: Packer Build
-        href: tasks/deploy/packer-build.md
       - name: PowerShell on Target Machines
         href: tasks/deploy/powershell-on-target-machines.md
       - name: Service Fabric App Deployment
         href: tasks/deploy/service-fabric-deploy.md
       - name: Service Fabric Compose Deploy
         href: tasks/deploy/service-fabric-compose-deploy.md
-      - name: SQL Azure DACPAC Deployment
-        href: tasks/deploy/sql-azure-dacpac-deployment.md
-      - name: SQL DACPAC Deployment on Machine Group
-        href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
       - name: SSH
         href: tasks/deploy/ssh.md
       - name: Windows Machine File Copy
         href: tasks/deploy/windows-machine-file-copy.md
+      - name: WinRM SQL Server DB Deployment
+        href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
     - name: Tool tasks
       items:
       - name: Go Tool Installer

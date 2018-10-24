@@ -2,6 +2,7 @@
 title: Query by area or iteration path
 titleSuffix: Azure Boards and TFS
 description: Query for work items based on their area or iteration path in Azure Boards & Team Foundation Server
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
