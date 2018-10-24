@@ -58,5 +58,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

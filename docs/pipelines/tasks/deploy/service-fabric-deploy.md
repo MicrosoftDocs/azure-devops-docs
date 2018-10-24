@@ -1,7 +1,7 @@
 ---
+title: Service Fabric Application Deployment task 
 titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Application Deployment task
-title: Service Fabric Application Deployment task for Azure Pipelines and TFS 
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,18 +13,17 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy: Service Fabric Application Deployment
+# Service Fabric Application Deployment task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to deploy a Service Fabric application to a cluster.
+This task deploys an Azure Service Fabric application to a cluster 
+according to the settings defined in the publish profile.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
-
-![icon](_img/azure-service-fabric.png) Deploy a Service Fabric application to a cluster.
-
-This task deploys an Azure Service Fabric application to a cluster 
-according to the settings defined in the publish profile.
 
 ## Prerequisites
 
@@ -63,5 +62,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
