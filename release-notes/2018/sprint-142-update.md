@@ -38,7 +38,7 @@ Azure Pipelines:
 - [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
 - [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
 - [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
-- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linux/arm-and-windows-32-bit-platforms)
+- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
 - [Clone variable groups](#clone-variable-groups)
 - [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
 - [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
@@ -46,7 +46,7 @@ Azure Pipelines:
 
 Azure Test Plans:
 
-- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-runs-manual-tests-for-desktop-applications)
+- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-runs-manual-tests-for-desktop-applications)
 
 Azure Artifacts:
 
