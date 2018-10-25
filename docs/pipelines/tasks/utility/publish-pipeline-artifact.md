@@ -1,7 +1,7 @@
 ---
-title: Publish Pipeline Artifacts
+title: Publish Pipeline Artifacts task
 titleSuffix: Azure Pipelines & TFS
-description: Learn about how you can publish artifacts to Azure Pipelines.
+description: Publish artifacts to Azure Pipelines.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,11 @@ author: mitchdenny
 ms.date: 10/12/2017
 ---
 
-# Utility: Publish Pipeline Artifact
+# Publish Pipeline Artifact task
 
 **Azure Pipelines**
 
-![](_img/publish-pipeline-artifact.png) Publish pipeline artifacts to Azure Pipelines.
+Use this task in a build or release pipeline to publish pipeline artifacts to Azure Pipelines.
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../build/artifacts.md).

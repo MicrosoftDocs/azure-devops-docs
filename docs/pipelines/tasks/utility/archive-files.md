@@ -1,7 +1,7 @@
 ---
-title: Archive Files
+title: Archive Files task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS).  
+description: Use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS)  
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,12 @@ ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Archive Files
+# Archive Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/archive-files.png) Create an archive file from a source folder.  A variety of standard archive formats are supported including: .zip, .jar, .war, .ear, .tar, .7z., and others.
+Use this task in a build or release pipeline to create an archive file from a source folder.
+A range of standard archive formats are supported including .zip, .jar, .war, .ear, .tar, .7z, and more.
 
 ## Demands
 

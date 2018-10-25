@@ -1,7 +1,7 @@
 ---
-title: Decrypt File (OpenSSL)
+title: Decrypt File (OpenSSL) task
 titleSuffix: Azure Pipelines & TFS
-description: A thin utility task for file decryption using OpenSSL.
+description: A thin utility task for file decryption using OpenSSL
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Decrypt File (OpenSSL)
+# Decrypt File (OpenSSL) task
 
 **Azure Pipelines**
 
-![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
+Use this task in a build or release pipeline to decrypt files using OpenSSL.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -37,9 +37,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
