@@ -1,7 +1,7 @@
 ---
-title: Delay task for Azure Pipelines and TFS
+title: Delay task
 titleSuffix: Azure Pipelines & TFS
-description: Build and release task to pause execution of the pipeline for a fixed delay time with a build or release pipeline in Azure Pipelines and TFS
+description: Pause execution of a build or release pipeline for a fixed delay time 
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Delay
+# Delay task
 
 **Azure Pipelines**
 
-![icon](_img/delay.png) &nbsp; Pause execution of the pipeline for a fixed delay time.
+Use this task in a build or release pipeline to pause execution of the pipeline for a fixed delay time.
 
 ## Demands
 

@@ -1,7 +1,7 @@
 ---
-title: Install Apple Provisioning Profile
+title: Install Apple Provisioning Profile task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how you can install an Apple provisioning profile required to build on a macOS agent in Azure Pipelines and Team Foundation Server TFS
+description: Install an Apple provisioning profile required to build on a macOS agent in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,15 +14,15 @@ ms.date: 11/14/2017
 monikerRange: '>= tfs-2018'
 ---
 
-# Utility: Install Apple Provisioning Profile
+# Install Apple Provisioning Profile task
 
 **Azure Pipelines | TFS 2018**
 
-![](../build/_img/xcode.png) Install an Apple provisioning profile required to build on a macOS agent
-
+Use this task in a build or release pipeline to install an Apple provisioning profile that is required to build on a macOS agent.
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.
 
 You can install an Apple provisioning profile that is:
+
 - Stored as a [secure file](../../library/secure-files.md) on the server.
 - (**Azure Pipelines**) Committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
 

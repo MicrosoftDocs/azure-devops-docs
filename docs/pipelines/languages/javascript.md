@@ -353,6 +353,16 @@ Configure your pipelines to run your JavaScript tests so that they produce resul
 
 If your test framework doesn't support JUnit output out of the box, you'll need to add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those into the task definition.
 
+The following table lists the most commonly used test runners and the reporters that can be used to produce XML results:
+
+| Test runner | Reporters to produce XML reports |
+|:---:|:---:|
+| mocha | [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter)<br />[mocha-multi-reporters](https://www.npmjs.com/package/mocha-multi-reporters) |
+| jasmine | [jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters) |
+| jest | [jest-junit](https://www.npmjs.com/package/jest-junit)<br />[jest-junit-reporter](https://www.npmjs.com/package/jest-junit-reporter) |
+| karma | [karma-junit-reporter](https://www.npmjs.com/package/karma-junit-reporter) |
+| Ava | [tap-xunit](https://github.com/aghassemi/tap-xunit) |
+
 This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly by using a script task. This produces the JUnit XML output at the default location of `./test-results.xml`. 
 
 ```yaml
@@ -405,11 +415,11 @@ Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publi
 Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](http://karma-runner.github.io/2.0/index.html). Then publish the results for the build to VSTS with these steps: 
 
 1. Install a headless browser testing driver such as headless Chrome or Firefox, or a browser mocking tool such as PhantomJS, on the build agent. 
-2. Configure your test framework to use the headless browser/driver option of your choice according to the tool's documentation.
-3. Configure your test framework (usually with a reporter plug-in or configuration) to output JUnit-formatted test results.
-4. Set up a script task to run any CLI commands needed to start the headless browser instances.
-5. Run the end-to-end tests in the pipeline stages along with your unit tests.
-6. Publish the results by using the same [Publish Test Results](../tasks/test/publish-test-results.md) task alongside your unit tests.
+1. Configure your test framework to use the headless browser/driver option of your choice according to the tool's documentation.
+1. Configure your test framework (usually with a reporter plug-in or configuration) to output JUnit-formatted test results.
+1. Set up a script task to run any CLI commands needed to start the headless browser instances.
+1. Run the end-to-end tests in the pipeline stages along with your unit tests.
+1. Publish the results by using the same [Publish Test Results](../tasks/test/publish-test-results.md) task alongside your unit tests.
 
 ## Package web apps
 
