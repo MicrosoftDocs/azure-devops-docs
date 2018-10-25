@@ -1,14 +1,14 @@
 ---
-title: Get support, provide feedback
-titleSuffix: Azure DevOps Services & TFS
-description: Guide to providing product and content feedback as well as accessing support resources in Azure DevOps Services & Team Foundation Server  
+title: Get support and provide feedback
+titleSuffix: Azure DevOps Services and TFS
+description: Guide to providing product and content feedback as well as accessing support resources in Azure DevOps Services and Team Foundation Server  
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: chcomley
 ms.author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/22/2018
+ms.date: 10/25/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -104,7 +104,10 @@ A page similar to the one shown will open showing the version number.
 
 |&#160;&#160;TFS release&#160;&#160;|&#160;&#160;Update&#160;&#160;|&#160;&#160;Version number&#160;&#160;|
 |-------------|--------|----------------|
-|**TFS 2018**  | RTW | 16.122.27102.1 |
+|**TFS 2018** |2018.3 |16.131.28106.2 |
+|  |2018.2 |16.131.27701.1 |
+|  |2018.1 |16.122.27409.2 |
+|  | RTW | 16.122.27102.1 |
 |  | RC2 | 16.122.26918.3 |
 |  | RC1 | 16.121.26818.0 |
 |**TFS 2017**  | Update 3 | 15.117.27024.0 |
