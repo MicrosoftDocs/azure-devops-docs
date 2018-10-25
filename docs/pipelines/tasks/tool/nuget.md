@@ -1,7 +1,7 @@
 ---
-title: NuGet Tool Installer
+title: NuGet Tool Installer task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how to use the NuGet Tool Installer for Azure Pipelines and TFS to find, download, and cache the specified version of NuGet.
+description: Find, download, and cache a specified version of NuGet and add it to the PATH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
@@ -11,13 +11,13 @@ ms.date: 7/05/2017
 monikerRange: 'vsts'
 ---
 
-# Tool: NuGet Tool Installer
+# NuGet Tool Installer task
 
 **Azure Pipelines**
 
 **Build**
 
-![icon](_img/nuget.png) Finds or downloads and caches the specified version of [NuGet](https://nuget.org/) and adds it to the PATH
+Use this task in a build or release pipeline to find, download, and cache a specified version of [NuGet](https://nuget.org/) and add it to the PATH.
 
 ## Demands
 

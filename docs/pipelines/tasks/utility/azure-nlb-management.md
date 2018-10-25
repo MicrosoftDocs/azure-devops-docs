@@ -1,7 +1,7 @@
 ---
-title: Azure Network Load Balancer
+title: Azure Network Load Balancer task
 titleSuffix: Azure Pipelines & TFS
-description: Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
+description: Connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Azure Network Load Balancer
+# Azure Network Load Balancer task
 
 **Azure Pipelines**
 
-![](_img/azurenlbmanagement.png) Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
+Use this task in a build or release pipeline to connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -38,9 +38,3 @@ Connect: Adds the virtual machine’s primary network interface to load balancer
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

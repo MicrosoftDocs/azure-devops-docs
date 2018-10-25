@@ -1,7 +1,7 @@
 ---
 title: Publish To Azure Service Bus task 
 titleSuffix: Azure Pipelines & TFS
-description: Build and release task to send a message to an Azure Service Bus with a build or release pipeline in Azure Pipelines and TFS.
+description: Send a message to an Azure Service Bus with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Publish To Azure Service Bus
+# Publish To Azure Service Bus task
 
 **Azure Pipelines**
 
-![icon](_img/publish-to-azure-service-bus.png) Send a message to an Azure Service Bus using a service connection and without using an agent.
+Use this task in a build or release pipeline to send a message to an Azure Service Bus using a service connection and without using an agent.
 
 ## Demands
 

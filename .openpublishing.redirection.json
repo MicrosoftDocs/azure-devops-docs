@@ -6,6 +6,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/artifacts/index-a.md",
+      "redirect_url": "/azure/devops/artifacts/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/artifacts/how-to/retention-policies.md",
       "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
