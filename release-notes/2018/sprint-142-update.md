@@ -170,7 +170,7 @@ We are working on a way for users to configure retention policies for YAML pipel
 
 ### Build on Linux/ARM and Windows 32-bit platforms
 
-The Azure Pipelines [open source, cross-platform agent](#https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. This sprint, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](#https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
+The Azure Pipelines [open source, cross-platform agent](https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. This sprint, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
 
 ### Clone variable groups
 
