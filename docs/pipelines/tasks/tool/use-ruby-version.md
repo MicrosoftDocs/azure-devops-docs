@@ -1,7 +1,7 @@
 ---
-title: Use Ruby Version
+title: Use Ruby Version task
 titleSuffix: Azure Pipelines & TFS
-description: Use Ruby version for Azure Pipelines and TFS
+description: Select a version of Ruby to run on an agent and optionally add it to PATH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
@@ -12,17 +12,18 @@ ms.date: 05/03/2018
 monikerRange: 'vsts'
 ---
 
-# Tool: Use Ruby Version
+# Use Ruby Version task
 
 **Azure Pipelines**
 
-![icon](_img/ruby.png) Selects a version of Ruby to run on an agent.  Optionally adds it to PATH.
+Use this task in a build or release pipeline to select a version of Ruby to run on an agent, and optionally add it to PATH.
 
 ## Demands
 
 None
 
 ## Prerequisites
+
 * A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Ruby installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
 This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).

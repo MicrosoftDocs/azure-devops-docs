@@ -107,7 +107,7 @@ Values in parenthesis indicate the following:
 <li>[Due Date](../../queries/query-by-date-or-current-iteration.md)</li>
 <li>[Effort](../../queries/query-numeric.md) </li>
 <li>[Escalate](../../queries/planning-ranking-priorities.md) (CMMI)</li>
-<li>[External Link Count](../../queries/linking-attachments.md) </li>
+<li>[External Link Count](../../queries/linking-attachments.md#external-link-count) </li>
 <li>[Finish Date](../../queries/query-by-date-or-current-iteration.md)</li>
 <li>[Found In Build](../../queries/build-test-integration.md)  (TCM)</li>
 <li>[Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
@@ -116,14 +116,14 @@ Values in parenthesis indicate the following:
 <ul>
 <li>[History](../../queries/history-and-auditing.md) (System)</li>
 <li>[How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Hyperlink Count](../../queries/linking-attachments.md)</li>
+<li>[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)</li>
 </ul>
 <h3>I</h3>
 <ul>
 <li>[ID](../../queries/titles-ids-descriptions.md) (System)</li>
 <li>[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-</li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
@@ -162,6 +162,7 @@ Values in parenthesis indicate the following:
 <li>[Reason](../../queries/query-by-workflow-changes.md) (System)</li>
 <li>[Related Link Count](../../queries/linking-attachments.md) (System)</li>
 <li>[Remaining Work](../../queries/query-numeric.md) </li>
+<li>[Remote Link Count](../../queries/linking-attachments.md#remote-link-count) (System)</li>
 <li>[Repro Steps](../../queries/titles-ids-descriptions.md)</li>
 <li>[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
 <li>[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
@@ -211,7 +212,9 @@ Values in parenthesis indicate the following:
 <ul>
 <li>[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
 <li>[Value Area](../../queries/planning-ranking-priorities.md)</li>
+<li>[Watermark](../../queries/history-and-auditing.md) (System)</li>
 <li>[Work Item Type](../../queries/titles-ids-descriptions.md) (System) </li> 
+
 </ul>
 </td>
 </tr>

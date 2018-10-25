@@ -1,7 +1,7 @@
 ---
-title: Copy Files
+title: Copy Files task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how you can copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server TFS
+description: Copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Copy Files
+# Copy Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/copy-files.png) Copy files from a source folder to a target folder using match patterns.
+Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

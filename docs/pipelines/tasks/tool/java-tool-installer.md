@@ -1,7 +1,7 @@
 ---
-title: Java Tool Installer
+title: Java Tool Installer task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can use the Java Tool Installer to change the version of Java in Azure Pipelines and Team Foundation Server (TFS).
+description: Change the version of Java in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,11 +14,13 @@ ms.date: 11/15/2017
 monikerRange: 'vsts'
 ---
 
-# Tool: Java Tool Installer
+# Java Tool Installer task
 
 **Azure Pipelines**
 
-![icon](_img/java.png) Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
+Use this task in a build or release pipeline to acquire a specific version of Java from a user supplied Azure blob,
+from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment varaible.
+Use this task to change the version of Java used in Java tasks.
 
 ## Demands
 

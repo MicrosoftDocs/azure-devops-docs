@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/23/2018
+ms.date: 10/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -62,7 +62,7 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 <a name="initialize-repo"></a>
 ## Intialize your repository
 
-> If you already have a repository in your project, you can skip to the next step: [Add a script to your repository]()
+> If you already have a repository in your project, you can skip to the next step: [Add a script to your repository](#add-a-script-to-your-repository)
 
 ::: moniker range="vsts"
 
@@ -462,7 +462,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
 1. Save the build pipeline.
 
-1. Go to the **Code** hub, **Files** tab.
+1. Go to your **Files** in **Azure Repos** (the **Code** hub in the previous navigation and TFS).
 
 1. Select the **HelloWorld.ps1** file, and then **Edit** the file.
 

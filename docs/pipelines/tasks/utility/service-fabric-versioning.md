@@ -1,7 +1,7 @@
 ---
 title: Update Service Fabric App Versions task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can update the Service Fabric App Versions build task Azure Pipelines and Team Foundation Server (TFS).
+description: Update the Service Fabric App versions in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,15 +13,14 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Update Service Fabric App Versions
+# Update Service Fabric App Versions task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/azure-service-fabric.png) Automatically updates 
-the versions of a packaged Service Fabric application.
-
-This task appends a version suffix to all service and application versions, 
-specified in the manifest files, in an Azure Service Fabric application package.
+Use this task in a build or release pipeline to automatically update 
+the versions of a packaged Service Fabric app.
+This task appends a version suffix to all service and app versions, 
+specified in the manifest files, in an Azure Service Fabric app package.
 
 ## Demands
 
