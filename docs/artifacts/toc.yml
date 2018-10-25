@@ -1,5 +1,5 @@
 - name: Azure Artifacts
-  href: index-a.md
+  href: index.md
 - name: Overview
   items:
   - name: What is Azure Artifacts?
@@ -36,6 +36,8 @@
     href: /azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json
   - name: Maven
     href: /azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json
+  - name: Universal
+    href: /azure/devops/pipelines/targets/universal-packages?toc=/azure/devops/artifacts/toc.json
 - name: Concepts
   items:
   - name: Best practices
