@@ -147,7 +147,10 @@ None
             aliases:<br/>
             <ul><li>externalFeedCredentials</li><ul>
         </td>
-        <td>The credentials to use for external registries located in the specified NuGet.config. For feeds in this account/collection, leave thiss blank; the build's credentials are used automatically; if you are using the system provided nuget.exe</td>
+        <td>The credentials to use for external registries located in the specified NuGet.config. For feeds in this account/collection, leave thiss blank; the build's credentials are used automatically; if you are using the system provided nuget.exe.<br/>
+        <br/>
+        Specify the name of the <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=vsts">Service connection</a> in your project that has the needed credentials.
+        </td>
     </tr>
     <tr>
         <th style="text-align: center" colspan="2">Advanced</th>
@@ -205,31 +208,17 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         |-- ConsoleApplication1.csproj
 ```
 
-##### [Build](../../index.md) steps
+##### [YAML](../../yaml-schema.md) steps
 
-<table>
-    <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            Install your NuGet package dependencies.
-            <ul>
-                <li>Path to solution, packages.config, or project.json: ```**/*.sln```</li>
-                <li>Feeds to use: Feeds in my NuGet.config</li>
-                <li>Path to NuGet.config: ```ConsoleApplication1/NuGet.config```</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
-        <td>
-            Build your solution.
-            <ul>
-                <li>Solution: ```**\*.sln```</li>
-                <li>Restore NuGet Packages: **(Important)** Make sure this option is cleared.</li>
-            </ul>
-        </td>
-    </tr>
-</table>
+```
+    - task: NuGetCommand@2
+      inputs:
+        command: restore
+        feedsToUse: config
+        nugetConfigPath: ./ConsoleApplication1/NuGet.config
+        noCache: true
+        externalEndpoints: ConsoleAppFeed
+```
 
 ## Pack NuGet packages
 
