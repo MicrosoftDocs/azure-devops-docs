@@ -1,5 +1,5 @@
 ---
-title: Install SSH Key
+title: Install SSH Key task
 titleSuffix: Azure Pipelines & TFS
 description: Install an SSH key prior to a build or release
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Install SSH Key
+# Install SSH Key task
 
 **Azure Pipelines**
 
-![](_img/installsshkey.png) Install an SSH key prior to a build or release
+Use this task in a build or release pipeline to install an SSH key prior to a build or release.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -36,9 +36,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

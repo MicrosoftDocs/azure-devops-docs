@@ -1,8 +1,7 @@
 ---
-title: Download Fileshare Artifacts
+title: Download Fileshare Artifacts task
 titleSuffix: Azure Pipelines & TFS
-description: Download Fileshare Artifacts
-ms.topic: reference
+description: Download Fileshare Artifacts task for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 515F989D-28E5-4EB3-99E4-7F81E9977F6C
@@ -12,11 +11,11 @@ ms.date: 05/09/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Download Fileshare Artifacts
+# Download Fileshare Artifacts task
 
 **Azure Pipelines**
 
-![](_img/downloadbuildartifacts.png) Download Fileshare Artifacts
+Use this task in a build or release pipeline to download fileshare artifacts.
 
 ::: moniker range="vsts"
 ## YAML snippet

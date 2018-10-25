@@ -1,7 +1,7 @@
 ---
-title: Download Pipeline Artifact
+title: Download Pipeline Artifact task
 titleSuffix: Azure Pipelines
-description: Download Pipeline Artifact
+description: Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,9 +12,9 @@ ms.date: 10/10/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Download Pipeline Artifact
+# Download Pipeline Artifact task
 
-![](_img/download-pipeline-artifact.png) Download pipeline artifacts from earlier stages in this pipeline, or another pipeline.
+Use this task in a build or release pipeline to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 ::: moniker range="vsts"
 ## YAML snippet
@@ -33,9 +33,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

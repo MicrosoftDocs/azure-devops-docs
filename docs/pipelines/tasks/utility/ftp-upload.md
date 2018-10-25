@@ -1,7 +1,7 @@
 ---
-title: FTP Upload
+title: FTP Upload task
 titleSuffix: Azure Pipelines & TFS
-description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server TFS
+description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/18/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: FTP Upload
+# FTP Upload task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/ftp-upload.png) Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
+Use this task in a build or release pipeline to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
