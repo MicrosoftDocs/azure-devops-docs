@@ -1,9 +1,7 @@
 ---
 title: Add links to several work items 
 titleSuffix: Azure Boards and TFS
-description: Link several work items to other work items or to a new git branch in Azure Boards or Team Foundation Server 
-ms.global_help.title: Link work items 
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 3 
+description: Link several work items to other work items or a new git branch in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
@@ -11,11 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 06/25/2018
+ms.date: 10/19/2018
 ---
 
 
-# Add link to work items  
+# Link work items  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -24,19 +22,32 @@ You can add a link to a work item from within the work item form or from a backl
 
 Use this topic to learn how to:  
 
+::: moniker range="vsts"  
+>[!div class="checklist"]      
+> * Link one or more work items to an existing work item   
+> * Link one or more work items to a new work item that you add when linking
+> * Add a link to a remote work item
+> * Link several work items to a new git branch
+> * Find work items that you want to link to  
+> * Bulk modify link relationships   
+::: moniker-end    
+
+
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
 > * Link several work items to a new git branch
 > * Find work items that you want to link to  
-> * Other options for bulk modifying link relationships   
+> * Bulk modify link relationships     
+::: moniker-end    
 
-For a list of all link types and supported link relationships, see [Link work items to support traceability](../queries/link-work-items-support-traceability.md). 
+For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="link"> </a>  
-## Link several items to an existing or new work item 
+## Link several work items 
 ::: moniker range=">= tfs-2018"
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
@@ -73,7 +84,7 @@ For a list of all link types and supported link relationships, see [Link work it
 <a id="link-existing"> </a>  
 ## Link to an existing work item    
 
-When you link work items, you select a link type. In general, use the following link types as indicated. To learn more about each link type, see [Link work items to support traceability](../queries/link-work-items-support-traceability.md#link-type-guidance). 
+When you link work items, you select a link type. In general, use the following link types as indicated. To learn more about each link type, see [Link type reference](../queries/link-type-reference.md). 
 
 - Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active  
 - Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
@@ -155,8 +166,37 @@ Here, we have selected to add a link to the selected work items.
 	::: moniker-end
 0. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
-::: moniker range=">= tfs-2017"
 
+
+::: moniker range="vsts"
+<a id="remote-link"> </a>  
+## Link to a remote work item 
+
+You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Azure Active Directory to manage users. 
+
+Choose from one of the following three remote link types supported. 
+
+- Use the **Consumes From/Produces For** link types when you want to track dependencies of work items that are defined in different organizations and managed by different teams. 
+- Use the **Remote Related** link type when the work items being linked are defined in different organizations and managed by different teams, but don't have strong inter-dependencies.
+
+From the Add link dialog, select the link type, enter the URL of the remote work item, and then choose OK. 
+
+For example, here we use the **Related Related** link type to link to  work item ID *350* that exists in the *remotelinkingtest2* organization, *RemoteLinking* project. 
+
+> [!div class="mx-imgBorder"]  
+> ![Add a link to an existing, external work item](_img/add-link/add-remote-related-link.png)  
+
+The link tab maintains a count of all links to the work item.  The [*Remote Link Count* field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization. 
+
+The following image shows an example of two remote links, indicated by the ![ ](../../_img/icons/cloud-link.png) cloud icon, added to a user story. 
+
+> [!div class="mx-imgBorder"]  
+> ![User Story form, Link tab, showing two external links](_img/add-link/link-tab-remote-links.png)  
+
+::: moniker-end	
+
+
+::: moniker range=">= tfs-2017"
 ## Link several work items to a new git branch 
 
 You can add a new git branch and link them to existing work items at the same time. 
@@ -234,6 +274,6 @@ Additional features you can use to quickly link or change links that use the par
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
-- [Link work items to support traceability](../queries/link-work-items-support-traceability.md)
+- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 
 

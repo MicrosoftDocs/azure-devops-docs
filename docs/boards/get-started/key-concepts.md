@@ -56,8 +56,7 @@ The Inheritance process model is used to customize work-tracking objects and Agi
 A Kanban board is an interactive, electronic signboard that supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
 
  
-## Link type
-A link type specifies an object used to form link relationships between different WITs. To learn more, see [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md) and [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md).  
+[!INCLUDE [temp](../../_shared/glossary-terms/links-and-link-types.md)] 
 
 ## Pick list
 
@@ -79,7 +78,9 @@ Each product backlog can be customized by a team. To learn more, see [Create you
 
 [!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/queries.md)] 
+[!INCLUDE [temp](../../_shared/glossary-terms/queries.md)]  
+
+[!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
