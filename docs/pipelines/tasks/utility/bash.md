@@ -1,5 +1,5 @@
 ---
-title: Bash
+title: Bash task
 titleSuffix: Azure Pipelines & TFS
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
@@ -12,9 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Bash
+# Bash task
 
 **Azure Pipelines**
+
+Use this task in a build or release pipeline to run a Bash script on macOS, Linux, or Windows. 
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -59,9 +61,3 @@ The Bash task also has a shortcut syntax in YAML:
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
