@@ -75,8 +75,14 @@ None
         </td>
     </tr>
     <tr>
-        <td>restoreSolution</td>
+        <td>solution<br/>
+            <br/>
+            aliases:<br/>
+            <ul><li>restoreSolution</li></ul>
+        </td>
         <td>
+            default: **/*.sln<br/>
+            <br/>
             Path to solution, packages.config, or project.json. Supports glob patterns.
         </td>
     </tr>
@@ -84,9 +90,14 @@ None
         <th style="text-align: center" colspan="2">Feeds and authentication</th>
     </tr>
     <tr>
-        <td>feedsToUse</td>
+        <td>selectOrConfig<br/>
+            <br/>
+            aliases:<br/>
+            <ul><li>feedsToUse</li></ul></td>
         <td>
             select | config<br/>
+            <br/>
+            default: select<br/>
             <br/>
             Where the feeds to be used are defined.
             <br/>
@@ -109,18 +120,21 @@ None
         </td>
     </tr>
     <tr>
-        <td>vstsFeed</td>
+        <td>feedRestore<br/>
+            <br/>
+            aliases:<br/>
+            <ul><li>vstsFeed</li><ul>
+        </td>
         <td>Name of Azure DevOps Artifact feed in your organization to use to restore from.</td>
-    </tr>
-    <tr>
-        <th style="text-align: center" colspan="2">Advanced</th>
     </tr>
     <tr>
         <td>includeNuGetOrg</td>
         <td>
             true | false<br/><br/>
-            Wether to include the public nuget.org repository in the restore process.<br/><br/>
-            Default is true.
+            <br/>
+            default: true<br/>
+            <br/>
+            Include the public NuGet.org repository in the restore process.<br/>
         </td>
     </tr>
     <tr>
@@ -128,14 +142,21 @@ None
         <td>Specify the path to the nuget.config file to use when `feedsToUse` is set to 'config'.</td>
     </tr>
     <tr>
-        <td>externalFeedCredentials</td>
-        <td></td>
+        <td>externalEndpoints<br/>
+            <br/>
+            aliases:<br/>
+            <ul><li>externalFeedCredentials</li><ul>
+        </td>
+        <td>The credentials to use for external registries located in the specified NuGet.config. For feeds in this account/collection, leave thiss blank; the build's credentials are used automatically; if you are using the system provided nuget.exe</td>
+    </tr>
+    <tr>
+        <th style="text-align: center" colspan="2">Advanced</th>
     </tr>
     <tr>
         <td>noCache</td>
         <td>true | false<br/>
             <br/>
-            Default is false.
+            default: false<br/>
             <br/>
             Disable local cache. Prevents NuGet from using packages from local machine caches.
         </td>
@@ -144,18 +165,27 @@ None
         <td>disableParallelProcessing</td>
         <td>true | false<br/>
         <br/>
-        Defaults to false.</td>
+        default: false<br/>
+        <br/>
+        Prevents NuGet from installing multiple packages in parallel.
+        </td>
     </tr>
     <tr>
-        <td>restoreDirectory</td>
-        <td>Specify the path in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json.
+        <td>packagesDirectory<br/>
+            <br/>
+            aliases:
+            <ul><li>restoreDirectory</li></ul>
+        </td>
+        <td>Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the specified solution, packages.config, or project.json.
         </td>
     </tr>
     <tr>
         <td>verbosityRestore</td>
         <td>detailed | quite | normal<br/>
             <br/>
-            Specifies the amount of detail displayed in the output. Default is detailed.
+            default: detailed<br/>
+            <br/>
+            Specifies the amount of detail displayed in the output.
         </td>
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
