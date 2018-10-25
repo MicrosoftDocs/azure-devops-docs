@@ -1,7 +1,7 @@
 ---
-title: Publish Build Artifacts
+title: Publish Build Artifacts task
 titleSuffix: Azure Pipelines & TFS
-description: Lear about how you can publish build artifacts to Azure Pipelines, Team Foundation Server (TFS), or to a file share when building code
+description: Publish build artifacts to Azure Pipelines, Team Foundation Server (TFS), or to a file share
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,16 +9,15 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/12/2017
+ms.date: 10/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
+# Publish Build Artifacts task
 
-# Utility: Publish Build Artifacts
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3 | [TFS 2015 RTM](copy-and-publish-build-artifacts.md) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/bb778394%28v=vs.120%29.aspx)**
-
-![](_img/publish-build-artifacts.png) Publish build artifacts to Azure Pipelines/TFS or a file share.
+Use this task in a build or release pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../build/artifacts.md).

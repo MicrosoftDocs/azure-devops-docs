@@ -79,9 +79,7 @@ The Inheritance process model provides support for customizing work tracking obj
 
 [!INCLUDE [temp](../../_shared/glossary-terms/kanban-board.md)] 
 
-## Link type
-Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md) and [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md).  
-
+[!INCLUDE [temp](../../_shared/glossary-terms/links-and-link-types.md)] 
 
 ## On-premises XML process model 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. This process model is only available for on-premises TFS. To learn more, see [On-premises process model](../../reference/on-premises-xml-process-model.md).
@@ -112,6 +110,8 @@ Specifies an inter-related set of files that contain the XML definitions for tra
 [!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/queries.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 

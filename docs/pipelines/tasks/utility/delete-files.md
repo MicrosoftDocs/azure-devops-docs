@@ -1,7 +1,7 @@
 ---
-title: Delete files
+title: Delete Files task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how you can delete files from a build agent working directory when building code in Azure Pipelines and Team Foundation Server TFS
+description: Delete files from the agent working directory when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Utility: Delete files
+# Delete Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/delete-files.png) Delete files or folders.
+Use this task in a build or release pipeline to delete files or folders from the agent working directory.
 
 ## Demands
 

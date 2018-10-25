@@ -3761,7 +3761,12 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
-          <td>2018.2</td>
+          <td>[2018.3](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update3)</td>
+          <td>Sep. 12, 2018</td>
+          <td>16.131.28106.2</td>
+        </tr>
+        <tr>
+          <td>[2018.2](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update2)</td>
           <td>May 7, 2018</td>
           <td>16.131.27701.1</td>
         </tr>

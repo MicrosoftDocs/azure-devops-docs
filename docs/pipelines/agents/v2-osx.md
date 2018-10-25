@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -69,7 +69,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 

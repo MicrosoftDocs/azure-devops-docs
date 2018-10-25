@@ -8,7 +8,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: chrispat
 ms.reviewer: chrispat
-ms.date: 10/09/2018
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -142,7 +142,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 export VSTS_HTTP_PROXY=http://127.0.0.1:8888
  ```
 
-0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/nixsvc.md)
+0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 0. Restart the agent.
 
