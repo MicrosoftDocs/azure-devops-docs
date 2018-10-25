@@ -61,13 +61,13 @@ Azure DevOps leverages many of the Azure storage features to ensure data availab
 
 ### Data redundancy
 
-To protect data in the case of hardware or service failures, Microsoft Azure storage geo-replicates customer data between two locations within the same region that are hundreds of miles apart; for instance, between North and West Europe or between North and South United States (except Brazil). For Azure blobs, customer data is replicated three times within a single region and is replicated asynchronously to a second region hundreds of miles away. As such, Azure always maintains the equivalent of six copies of your data. This enables us to failover to a separate region in the case of a major outage or disaster while also providing local redundancy for hardware failures within a region. For Azure SQL data base storage, daily backups are maintained offsite in the case of a regional disaster.
+To protect data in the case of hardware or service failures, Microsoft Azure storage geo-replicates customer data between two locations within the same region that are hundreds of miles apart; for instance, between North and West Europe or between North and South United States (except Brazil). For Azure blobs, customer data is replicated three times within a single region and is replicated asynchronously to a second region hundreds of miles away. As such, Azure always maintains the equivalent of six copies of your data. This enables us to failover to a separate region in the case of a major outage or disaster while also providing local redundancy for hardware failures within a region. For Azure SQL database storage, daily backups are maintained offsite in the case of a regional disaster.
 
 > [!NOTE]
 > Please note the following regarding data redundancy and fail over:
 > * There is an inherent delta measured in minutes when we replicate your data between the primary and secondary region
 > * Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we’ll opt to not fail over so that customer data is not lost
-> * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a month
+> * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month 
 > * Because there is only one region in Brazil, customer data in Brazil is replicated to South Central US for disaster recovery purposes
 
 ### Mistakes happen
@@ -214,7 +214,7 @@ lessons learned by operating the service.
 
 For some customers, it is important to understand third-party
 evaluation of our data security procedures. We have
-achieved [ISO 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=4ae1695c-34a2-4e29-b0b2-ab333bff6382&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports), HIPAA (Health Insurance Portability and Accountability Act) BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications.
+achieved [ISO 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=4ae1695c-34a2-4e29-b0b2-ab333bff6382&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports), HIPAA (Health Insurance Portability and Accountability Act), BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications.
 The SOC audit for Azure DevOps covers controls for data security, availability, processing integrity, and confidentiality. Azure DevOps SOC reports are available via  [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
 If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps SOC Reports.
 

@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -35,7 +35,7 @@ Where are your builds and releases running?
 
 ::: moniker range="vsts"
 
-**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 
@@ -271,7 +271,7 @@ You can use the template described above as to facilitate generating other kinds
 
 `./svc.sh` uses `systemctl`, which requires `sudo`.
 
-Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
+Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
 ::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]

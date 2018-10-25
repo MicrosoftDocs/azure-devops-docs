@@ -365,16 +365,16 @@
         href: tasks/utility/delay.md
       - name: Delete Files
         href: tasks/utility/delete-files.md
-      - name: Download Secure File
-        href: tasks/utility/download-secure-file.md
       - name: Download Build Artifacts
         href: tasks/utility/download-build-artifacts.md
-      - name: Download Pipeline Artifact
-        href: tasks/utility/download-pipeline-artifact.md
       - name: Download Fileshare Artifacts
         href: tasks/utility/download-fileshare-artifacts.md
       - name: Download Package
         href: tasks/utility/download-package.md
+      - name: Download Pipeline Artifact
+        href: tasks/utility/download-pipeline-artifact.md
+      - name: Download Secure File
+        href: tasks/utility/download-secure-file.md
       - name: Extract Files
         href: tasks/utility/extract-files.md
       - name: FTP Upload
@@ -385,12 +385,12 @@
         href: tasks/utility/install-apple-provisioning-profile.md
       - name: Install SSH Key
         href: tasks/utility/install-ssh-key.md
-      - name: Jenkins Download Artifacts
-        href: tasks/utility/jenkins-download-artifacts.md
       - name: Invoke Azure Function
         href: tasks/utility/azure-function.md
       - name: Invoke REST API
         href: tasks/utility/http-rest-api.md
+      - name: Jenkins Download Artifacts
+        href: tasks/utility/jenkins-download-artifacts.md
       - name: Manual Intervention
         href: tasks/utility/manual-intervention.md
       - name: PowerShell
@@ -523,14 +523,14 @@
         href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
     - name: Tool tasks
       items:
+      - name: .NET Core Tool Installer
+        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
       - name: Helm Installer
         href: tasks/tool/helm-installer.md
       - name: Java Tool Installer
         href: tasks/tool/java-tool-installer.md
-      - name: .NET Core Tool Installer
-        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Node.js Tool Installer
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer

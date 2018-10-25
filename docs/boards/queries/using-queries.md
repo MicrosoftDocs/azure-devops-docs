@@ -179,7 +179,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
-To learn more about each link type, see [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md).
+To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 
 <a id="across-projects" />  

@@ -27,7 +27,7 @@ This will populate the `@local` view of your feed. For more information on views
 
 ### Enable retention policies to automatically cleanup old package versions
 
-Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/retention-policies.md).
+Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
 
 ### Promote your package to the correct view
 

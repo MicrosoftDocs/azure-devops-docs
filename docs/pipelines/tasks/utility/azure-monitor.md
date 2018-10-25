@@ -1,7 +1,7 @@
 ---
-title: Azure monitor task for Azure Pipelines and TFS
+title: Query Azure Monitor Alerts task
 titleSuffix: Azure Pipelines & TFS
-description: Build and release task to observe the configured Azure monitor rules for active alerts in Azure Pipelines and TFS with a build or release pipeline
+description: Observe the configured Azure monitor rules for active alerts in Azure Pipelines and TFS in a build or release pipeline
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Query Azure Monitor Alerts
+# Query Azure Monitor Alerts task
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
-![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
+Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
