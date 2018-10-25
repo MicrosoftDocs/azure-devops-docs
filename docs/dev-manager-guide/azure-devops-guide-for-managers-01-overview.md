@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kraigb
 author: kraigb
 ms.topic: reference
-ms.date: 10/15/2018
+ms.date: 10/25/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -26,7 +26,7 @@ The developer and operations activities that have come to be known collectively 
 
 In business terms, the overall "performance" of those apps and services is directly proportional to the value delivered minus the costs incurred to deliver that value. Maximizing this "performance" is the goal of any organization that produces software, and therefore such an organization naturally seeks to continuously validate that performance in any number of ways that make sense to both product and personnel.
 
-As this series of articles explores, such continuous validation is what DevOps is fundamentally all about.
+As this series of articles explores, such continuous validation is what DevOps is fundamentally all about, and how Azure DevOps provides you with a complete toolset.
 
 ## Writing code vs. delivering value
 
