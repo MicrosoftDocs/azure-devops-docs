@@ -117,7 +117,7 @@ resources:
 resources:
   containers:
   - container: linux
-    image: ubuntu:18.04
+    image: ubuntu-16.04
 ```
 
 ---
@@ -484,7 +484,7 @@ To use the Microsoft hosted pool, omit the name and specify one of the available
 
 ```yaml
 pool:
-  vmImage: ubuntu-18.04
+  vmImage: ubuntu-16.04
 ```
 
 To use a private pool with no demands:
