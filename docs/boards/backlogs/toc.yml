@@ -37,6 +37,8 @@
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Refine your backlog
     href: best-practices-product-backlog.md
+  - name: Linking & traceability
+    href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: "Workflow states & state categories"
     href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Work in Excel or Project
@@ -89,6 +91,8 @@
     href: product-backlog-controls.md 
   - name: Backlog keyboard shortcuts
     href: backlogs-keyboard-shortcuts.md
+  - name: Link types 
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: "Permissions & access (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: Resources

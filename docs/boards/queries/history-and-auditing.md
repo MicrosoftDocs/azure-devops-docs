@@ -270,16 +270,32 @@ All
 
 <tr>
   <td>
-Test Suite Audit
+<a id="test-suite-audit"/>Test Suite Audit
   </td>
   <td>
-Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
+    <p>Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.</p>
+	<p>Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText</p>
 
   </td>
   <td>
 Test Suite
   </td>
 </tr>
+
+<tr>
+  <td>
+<a id="watermark"/>Watermark
+  </td>
+  <td>
+    <p>A system managed field (not editable) that increments with changes made to awork item.</p>
+	<p>Reference name=System.Watermark, Data type=Integer</p>
+
+  </td>
+  <td>
+All
+  </td>
+</tr>
+
 </tbody>
 </table>
 
