@@ -1,7 +1,7 @@
 ---
-title: Download Secure File
+title: Download Secure File task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how you can download a secure file to a temporary location on the build or release agent in Azure Pipelines and Team Foundation Server
+description: Download a secure file to a temporary location on the build or release agent in Azure Pipelines and Team Foundation Server
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,11 +14,11 @@ ms.date: 06/12/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Download Secure File
+# Download Secure File task
 
 **Azure Pipelines**
 
-![](../utility/_img/secure-file.png) Download a secure file to a temporary location on the build or release agent
+Use this task in a build or release pipeline to download a secure file to a temporary location on the build or release agent.
 
 Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
 

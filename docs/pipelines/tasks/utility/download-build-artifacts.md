@@ -1,7 +1,7 @@
 ---
-title: Download Build Artifacts
+title: Download Build Artifacts task
 titleSuffix: Azure Pipelines & TFS
-description: Download Build Artifacts
+description: Download Build Artifacts task for use in a build or release pipeline
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Download Build Artifacts
+# Download Build Artifacts task
 
 **Azure Pipelines**
 
-![](_img/downloadbuildartifacts.png) Download Build Artifacts
+Use this task in a build or release pipeline to download build artifacts.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -44,9 +44,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

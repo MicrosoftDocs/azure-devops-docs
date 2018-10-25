@@ -55,7 +55,6 @@ monikerRange: '>= tfs-2015'
 | Task | Versions |
 | ---- | -------- |
 | ![icon](utility/_img/archive-files.png) [Archive Files](utility/archive-files.md). Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip. | Azure Pipelines, TFS 2017 and newer |
-| ![icon](utility/_img/azure-function.png) [Azure Function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | Azure Pipelines |
 | ![icon](utility/_img/azurenlbmanagement.png) [Azure Network Load Balancer](utility/azure-nlb-management.md).Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool | Azure Pipelines |
 | ![icon](utility/_img/bash.png) [Bash](utility/bash.md). Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the stage | Azure Pipelines, TFS 2015 RTM and newer |
@@ -76,7 +75,8 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | Azure Pipelines, TFS 2018 |
 | ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | Azure Pipelines, TFS 2018 |
 | ![icon](utility/_img/installsshkey.png) [Install SSH Key](utility/install-ssh-key.md). Install an SSH key prior to a build or release | Azure Pipelines |
-| ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | Azure Pipelines |
+| ![icon](utility/_img/azure-function.png) [Invoke Azure Function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | Azure Pipelines |
+| ![icon](utility/_img/http-rest-api.png) [Invoke REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | Azure Pipelines |
 | ![icon](utility/_img/jenkinsdownloadartifacts.png) [Jenkins Download Artifacts](utility/jenkins-download-artifacts.md). Download artifacts produced by a Jenkins job | Azure Pipelines |
 | ![icon](utility/_img/manual-intervention.png) [Manual Intervention](utility/manual-intervention.md). Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks. | Azure Pipelines |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | Azure Pipelines, TFS 2015 RTM and newer |
@@ -156,10 +156,10 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 |------|----------|
+| ![icon](tool/_img/DotNetCoreInstaller.png) [.NET Core Tool Installer](tool/dotnet-core-tool-installer.md). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | Azure Pipelines, TFS 2018 |
 | ![icon](tool/_img/gotool.png) [Go Tool Installer](tool/go-tool.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | Azure Pipelines |
 | ![icon](tool/_img/helminstaller.png) [Helm Tool Installer](tool/helm-installer.md). Install Helm and Kubernetes on agent machine. | Azure Pipelines |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | Azure Pipelines |
-| ![icon](tool/_img/DotNetCoreInstaller.png) [.NET Core Tool Installer](tool/dotnet-core-tool-installer.md). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | Azure Pipelines, TFS 2018 |
 | ![icon](tool/_img/node.png) [Node.js Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Azure Pipelines |
 | ![icon](tool/_img/nuget.png) [NuGet Tool Installer](tool/nuget.md) Finds or downloads and caches the specified version of [NuGet](https://www.nuget.org/) and adds it to the PATH | Azure Pipelines |
 | ![icon](tool/_img/python.png) [Use Python Version](tool/use-python-version.md). Selects a version of Python to run on an agent.  Optionally adds it to PATH. | Azure Pipelines |

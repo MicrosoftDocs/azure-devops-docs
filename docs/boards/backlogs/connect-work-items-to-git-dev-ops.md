@@ -131,7 +131,7 @@ To link a work item to an existing object, click the ![Add link](../_img/icons/a
 
 ![Select multiple items from backlog](_img/add-work-items-link-to-existing-branch.png)
 
-[Link work items to support traceability](../queries/link-work-items-support-traceability.md).   
+[Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
 
 
 ### Remove a link 
