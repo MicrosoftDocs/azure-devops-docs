@@ -72,7 +72,7 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 <tr><td>Image</td><td>dockerRepository</td><td>(Required) Name of the repository where the container images are stored. Note: the fully-qualified image name will be of the format: **{registry or namespace}/{repository}:{tag}**. For example, **myregistry.azurecr.io/nginx:latest**.</td></tr>
 <tr><td>Tag</td><td>dockerImageTag</td><td>(Optional) Tags are optional, but are the mechanism that registries use to apply version information to Docker images. Note: the fully-qualified image name will be of the format: **{registry or namespace}/{repository}:{tag}**. For example, **myregistry.azurecr.io/nginx:latest**.</td></tr>
 <tr><td>Virtual application</td><td>virtualApplication</td><td>(Optional) Specify the name of the Virtual Application that has been configured in the Azure portal. This option is not required for deployments to the website root. The Virtual Application must have been [configured](https://azure.microsoft.com/en-us/documentation/articles/web-sites-configure/) before deployment of the web project.</td></tr>
-<tr><td>Package or folder</td><td>packageForLinux</td><td>(Required) Location of the Web App zip package or folder on the automation agent, or on a UNC path accessible to the automation agent such as **\\\\BudgetIT\\Web\\Deploy\\Fabrikam.zip**. Predefined system variables and wild cards such as **$(System.DefaultWorkingDirectory)\\\*.zip** can be also used here.</td></tr>
+<tr><td>Package or folder</td><td>packageForLinux</td><td>(Required) Location of the Web App zip package or folder on the automation agent, or on a UNC path accessible to the automation agent such as **\\\\BudgetIT\\Web\\Deploy\\Fabrikam.zip**. Predefined system variables and wild cards such as **$(System.DefaultWorkingDirectory)\\\*.zip** can be also used here. Despite the name of the YAML property, this setting applies to both Linux and Windows apps.</td></tr>
 <tr><td>Runtime Stack</td><td>runtimeStack</td><td>(Required) Web App on Linux offers two different options to publish your application: Custom image deployment (Web App for Containers) and App deployment with a built-in platform image (Web App on Linux). You will see this parameter only if you selected **Linux Web App** as the **App type** option.</td></tr>
 <tr><td>Startup command </td><td>startupCommand</td><td>(Optional) The start up command for the container. For example, if you are using PM2 process manager for Nodejs, you can specify the PM2 file here.</td></tr>
 <tr><td>Deployment script type</td><td>scriptType</td><td>(Optional) Customize the deployment by providing a script that runs on the Azure App Service after successful deployment. Choose inline deployment script or the path and name of a script file. [Learn more](https://go.microsoft.com/fwlink/?linkid=843471).</td></tr>
@@ -168,6 +168,7 @@ Based on the type of Azure App Service and agent, the task chooses a suitable de
 * [Container Registry](#acr-notes)
 * [Zip Deploy](#zip-deploy-notes)
 * [Run From Zip](#runfromzip-notes)
+* Deploy **.war** files
 
 By default, the task tries to select the appropriate deployment technology
 based on the input package type, App Service type, and agent operating system.
