@@ -168,6 +168,7 @@ Based on the type of Azure App Service and agent, the task chooses a suitable de
 * [Container Registry](#acr-notes)
 * [Zip Deploy](#zip-deploy-notes)
 * [Run From Zip](#runfromzip-notes)
+* Deploy **.war** files
 
 By default, the task tries to select the appropriate deployment technology
 based on the input package type, App Service type, and agent operating system.
