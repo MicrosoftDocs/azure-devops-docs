@@ -139,7 +139,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 > [!NOTE] 
 > The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for Azure Boards only, and only when run from the web portal. 
 
-Here we show how to list all User Stories and Bugs assigned to the  sliding window that spans the last two, the current, and the next two prints selected for the selected team, Cloud Admin and Tools. 
+Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
 ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
