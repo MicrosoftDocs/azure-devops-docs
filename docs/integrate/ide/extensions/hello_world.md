@@ -71,19 +71,20 @@ At this point, the Button you're adding is pretty generic. You'll have to modify
 3.	Go back to **Solution Explorer** and find the Command.cs file. Change the string message for the command to "Hello World!"
 
           ...
-          private void MenuItemCallback(object sender, EventArgs e)
+          private void Execute(object sender, EventArgs e)
           {
-            string message = "Hello World";
-            string title = "Command1";
+              ThreadHelper.ThrowIfNotOnUIThread();
+              string message = "Hello World";
+              string title = "Command";
 
-            // Show a message box to prove we were here
-            VsShellUtilities.ShowMessageBox(
-                this.ServiceProvider,
-                message,
-                title,
-                OLEMSGICON.OLEMSGICON_INFO,
-                OLEMSGBUTTON.OLEMSGBUTTON_OK,
-                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
+              // Show a message box to prove we were here
+              VsShellUtilities.ShowMessageBox(
+                  this.package,
+                  message,
+                  title,
+                  OLEMSGICON.OLEMSGICON_INFO,
+                  OLEMSGBUTTON.OLEMSGBUTTON_OK,
+                  OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
           }
           ...
 
