@@ -51,7 +51,7 @@ You can use this file to build the app.
 
 Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a pipeline for the sample app.
 
-For more information about YAML, see [YAML schema reference](../yaml-schema.md).
+To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
 
 ::: moniker-end
 
