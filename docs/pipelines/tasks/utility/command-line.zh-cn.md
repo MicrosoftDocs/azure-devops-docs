@@ -151,7 +151,7 @@ steps:
 
 </table>---
 
-# # 开源
+## 开源
 
 此任务是开源 [在 GitHub 上](https://github.com/Microsoft/vsts-tasks)。欢迎反馈和贡献。
 
