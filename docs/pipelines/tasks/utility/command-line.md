@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+monikerRange: ">= tfs-2015"
 ---
 
 # Command Line task
@@ -28,7 +28,9 @@ Use this task in a build or release pipeline to run a program from the command p
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
 
 The CmdLine task also has a shortcut syntax in YAML:
@@ -38,8 +40,9 @@ The CmdLine task also has a shortcut syntax in YAML:
   workingDirectory: #
   displayName: #
   failOnStderr: #
-  env:  # mapping of environment variables to add
+  env: # mapping of environment variables to add
 ```
+
 ::: moniker-end
 
 ## Arguments
@@ -85,15 +88,15 @@ The CmdLine task also has a shortcut syntax in YAML:
 
 ```yaml
 steps:
-- script: date /t
-  displayName: Get the date
-- script: dir
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: List contents of a folder
-- script: |
-    set MYVAR=foo
-    set
-  displayName: Set a variable and then display all
+  - script: date /t
+    displayName: Get the date
+  - script: dir
+    workingDirectory: $(Agent.BuildDirectory)
+    displayName: List contents of a folder
+  - script: |
+      set MYVAR=foo
+      set
+    displayName: Set a variable and then display all
 ```
 
 # [Designer](#tab/designer)
@@ -124,10 +127,10 @@ On the Build tab of a build pipeline, add these tasks:
 </td>
         </tr>
 
-   
         <tr>
       <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+
+
 <td>
 <p>Display the environment variables.</p>
 <ul>
@@ -136,10 +139,10 @@ On the Build tab of a build pipeline, add these tasks:
 </td>
         </tr>
 
-   
         <tr>
       <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+
+
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
@@ -164,7 +167,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
