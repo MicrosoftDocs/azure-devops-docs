@@ -236,7 +236,7 @@ The following services work across the previously mentioned services to support:
 
 Service hooks enable you to perform tasks on other services when events happen within your project hosted on Azure DevOps Services or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
-The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 For the latest set of supported services, see [Integrate with service hooks](../service-hooks/index.md).
 

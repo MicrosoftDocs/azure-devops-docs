@@ -702,7 +702,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="cardText">
                                 <h3>Step-by-step tutorials</h3>
                                 <p>
-                                    <a href="build/ci-public.md">Build open source projects</a><br />
+                                    <a href="repos/github.md">Build GitHub repositories</a><br />
                                     <a href="build/ci-build-git.md">Build multiple branches</a><br />
                                     <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
                                 </p>
@@ -1333,7 +1333,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="cardText">
                                 <h3>Step-by-step tutorials</h3>
                                 <p>
-                                    <a href="build/ci-public.md">Build open source projects</a><br />
+                                    <a href="repos/github.md">Build GitHub repositories</a><br />
                                     <a href="build/ci-build-git.md">Build multiple branches</a><br />
                                     <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
                                 </p>

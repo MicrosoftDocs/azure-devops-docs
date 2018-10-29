@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -64,7 +64,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Purchase again using the new subscription
 
-1. Make your purchases again in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). During your first purchase, select the new Azure subscription to use for billing going forward.
+1. Make your purchases again in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. During your first purchase, select the new Azure subscription to use for billing going forward.
 
 >[!NOTE]
 > You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.

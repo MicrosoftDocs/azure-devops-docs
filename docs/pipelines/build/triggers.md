@@ -179,7 +179,7 @@ For included branches, a build will be triggered on each push to a PR targeting
 that branch.
 
 For GitHub repos, you can choose whether or not to build PRs from forks. There
-are [security implications](ci-public.md?tabs=github#validate-contributions-from-forks)
+are [security implications](../repos/github.md#validate-contributions-from-forks)
 to enabling this feature which you should understand before selecting it.
 If you choose to build fork PRs, you may also choose whether or not to expose
 secrets (like secret variables and secure files) to fork PR builds.
