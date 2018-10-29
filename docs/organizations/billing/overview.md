@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Set up billing when you need more than the **Free tier** of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+Set up billing when you need more than the **Free tier** of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
 
 The Free tier includes:
 
@@ -41,7 +41,7 @@ The Free tier includes:
 
 ## Prerequisites
 
-The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
+The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, Azure DevOps tab, you need:
 
 * [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
