@@ -1,5 +1,5 @@
 ---
-title: CocoaPods
+title: CocoaPods task
 titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
@@ -13,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Package: CocoaPods 
+# CocoaPods task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/cocoapods.png) Runs CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html)
+Use this task in a build or release pipeline to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 
 [CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. This task optionally runs `pod repo update` and then runs `pod install`.
 

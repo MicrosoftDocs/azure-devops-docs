@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Android signing
+# Android signing task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/android-signing.png) Sign and align Android APK files
+Use this task in a build or release pipeline to sign and align Android APK files.
 
 ## Demands
 

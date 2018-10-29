@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/15/2018
+ms.date: 10/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -61,15 +61,17 @@ allow this variable on a pipeline-by-pipeline basis.
 
 # [YAML](#tab/yaml)
 
-In YAML, you must explicitly map System.AccessToken into the pipeline using an
-environment variable. You can do this at the pipeline level:
+In YAML, you must explicitly map System.AccessToken into the pipeline using a
+variable. You can do this at the pipeline level:
 
 ```yaml
 variables:
-  system.accesstoken: $( System.AccessToken )
+  the_token: $(System.AccessToken)
 
 jobs:
-  job: ...
+- job: Test
+  steps:
+  - script: echo Now I can use $(the_token)
 ```
 
 Or at the step level:
@@ -78,10 +80,10 @@ Or at the step level:
 steps:
   - script: echo This is a script that could use $SYSTEM_ACCESSTOKEN
     env:
-      system.accesstoken: $( System.AccessToken )
+      system.accesstoken: $(System.AccessToken)
   - task: MyTaskThatNeedsTheToken@1
     env:
-      system.accesstoken: $( System.AccessToken )
+      system.accesstoken: $(System.AccessToken)
 ```
 
 # [Designer](#tab/designer)

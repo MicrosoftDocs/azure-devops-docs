@@ -14,9 +14,6 @@
   - name: Feedback
     tocHref: /azure/devops/project/feedback/
     topicHref: /azure/devops/project/feedback/index
-  - name: Dashboards
-    tocHref: /azure/devops/report/dashboards
-    topicHref: /azure/devops/report/dashboards/index
   - name: Start using Azure DevOps
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/user-guide/index
@@ -95,6 +92,25 @@
     - name: Unit testing
       tocHref: /visualstudio/test/improve-code-quality/
       topicHref: /visualstudio/test/unit-test-your-code
+  - name: Analytics
+    tocHref: /azure/devops/report/
+    topicHref: /azure/devops/report/index
+    items:
+    - name: Dashboards
+      tocHref: /azure/devops/report/dashboards
+      topicHref: /azure/devops/report/dashboards/index
+    - name: Analytics Service
+      tocHref: /azure/devops/report/analytics/
+      topicHref: /azure/devops/report/analytics/index
+    - name: Power BI
+      tocHref: /azure/devops/report/powerbi/
+      topicHref: /azure/devops/report/powerbi/index
+    - name: Extend Analytics with OData
+      tocHref: /azure/devops/report/extend-analytics/
+      topicHref: /azure/devops/report/extend-analytics/index
+    - name: SQL Server Reporting
+      tocHref: /azure/devops/report/sql-reports/
+      topicHref: /azure/devops/report/sql-reports/index
   - name: Settings
     tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
@@ -136,15 +152,6 @@
   - name: Public Projects
     tocHref: /azure/devops/organizations/public/
     topicHref: /azure/devops/organizations/public/index
-  - name: Analytics
-    tocHref: /azure/devops/report/analytics/
-    topicHref: /azure/devops/report/analytics/index
-  - name: Power BI
-    tocHref: /azure/devops/report/powerbi/
-    topicHref: /azure/devops/report/powerbi/index
-  - name: Extend Analytics with OData
-    tocHref: /azure/devops/report/extend-analytics/
-    topicHref: /azure/devops/report/extend-analytics/index
 - name: Team Foundation Server
   tocHref: /azure/devops/
   topicHref: /tfs/index
@@ -155,9 +162,6 @@
   - name: Project Server integration
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
-  - name: SQL Server Reporting
-    tocHref: /azure/devops/report/sql-reports/
-    topicHref: /azure/devops/report/sql-reports/index
   - name: SharePoint Integration
     tocHref: /azure/devops/report/sharepoint-dashboards/
     topicHref: /azure/devops/report/sharepoint-dashboards/index

@@ -2,6 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Dashboards
-    tocHref: /azure/devops/report/dashboards/
-    topicHref: /azure/devops/report/dashboards/index
+  - name: Analytics
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/report/index
+    items:
+    - name: Dashboards
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/report/dashboards/index

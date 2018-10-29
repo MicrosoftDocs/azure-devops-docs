@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Ant
+# Ant task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/ant.png) Build with Apache Ant
+Use this task in a build or release pipeline to build with Apache Ant.
 
 ## Demands
 
