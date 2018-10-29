@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/10/2018
+ms.date: 10/29/2018
 ---
 
 # Key concepts for working with Azure DevOps Services and Team Foundation Server
@@ -100,12 +100,12 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker-end
 
- 
+
 ## Extensibility
 
 In addition to the pre-built functionality that's available to you, you can add to it in the following ways:
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com): Provides extensions that you can install either on your organization, server, or Visual Studio client.
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab: Provides extensions that you can install either on your organization, server, or Visual Studio client.
 - [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your project that's hosted on Azure DevOps Services or TFS. 
 - [REST APIs](/rest/api/vsts/): Provide the ability to create custom extensions that plug into Azure DevOps Services or TFS.
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace.

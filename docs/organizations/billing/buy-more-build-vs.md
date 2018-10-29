@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -130,7 +130,7 @@ When your team's needs for build or release capacity change, you can change the 
 
    ![Go to your organization toolbar > Pipelines > Change](_img/get-more-build-load-testing/manage-pipelines.png)
 
-3. In the Visual Studio Marketplace, choose **Get**, select your organization, then update your number of paid concurrent jobs and confirm.
+3. In the Visual Studio Marketplace, Azure DevOps tab, choose **Get**, select your organization, then update your number of paid concurrent jobs and confirm.
 
 ## Next steps
 

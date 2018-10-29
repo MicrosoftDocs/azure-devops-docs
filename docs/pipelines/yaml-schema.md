@@ -72,7 +72,7 @@ name: string  # build numbering format
 resources:
   containers: [ container ]
   repositories: [ repository ]
-variables: { string: string } | variable
+variables: { string: string } | [ variable ]
 trigger: trigger
 jobs: [ job | templateReference ]
 ```
@@ -230,6 +230,23 @@ trigger:
   paths:
     exclude:
     - README.md
+```
+
+---
+
+## Variable
+
+Hardcoded values can be added directly.
+
+Or [variable groups](library/variable-groups.md) can be referenced.
+
+For example:
+
+```yaml
+variables:
+- name: MY_VARIABLE         # Hardcoded value
+  value: some value
+- group: my-variable-group  # Variable group
 ```
 
 ---
