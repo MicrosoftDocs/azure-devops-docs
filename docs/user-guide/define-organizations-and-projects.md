@@ -8,7 +8,7 @@ ms.technology: devops-new-user
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 monikerRange: 'vsts'
 ---
@@ -19,7 +19,9 @@ monikerRange: 'vsts'
 
 In Azure DevOps, an organization is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other organizational structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
-For a larger company, you may want to create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Think about what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single Azure DevOps project. However, if you want to manage more granular security between your software projects and their teams, consider using multiple Azure DevOps projects. At the highest level of isolation is an Azure DevOps organization, where each organization has its own Azure AD tenancy.
+
+The (fictional) Fabrikam company chose to create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other.
 
 ## Choose your organization admin account type
 
@@ -71,9 +73,11 @@ A high volume of queries and boards can make it difficult to find what you're lo
 
 ### Multiple projects
 
-Most companies work on several products or services at a time. In those cases, we recommend having multiple projects. A project is best determined by how you ship the product. Having several projects shifts the administration burden and gives your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single Azure DevOps project. However, if you want to manage more granular security between your software projects and their teams, consider using multiple Azure DevOps projects. At the highest level of isolation is an Azure DevOps organization, where each organization has its own Azure AD tenancy.
 
-Having team independence with multiple projects creates some alignment challenges. If each project is using a different process or iteration schedule, it can make communication and collaboration difficult if the taxonomies aren't the same.
+Most companies work on several products or services at a time. A project is best determined by how you ship the product. Having several projects shifts the administration burden and gives your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects.
+
+Having team independence with multiple projects creates some alignment challenges, however. If each project is using a different process or iteration schedule, it can make communication and collaboration difficult if the taxonomies aren't the same.
 
 > [!Tip]
 > Use the same process across all your projects.

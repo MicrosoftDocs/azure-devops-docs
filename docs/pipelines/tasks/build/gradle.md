@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Gradle 
+# Gradle task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gradle.png) Build using a Gradle wrapper script
+Use this task in a build or release pipeline to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

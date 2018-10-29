@@ -1,5 +1,5 @@
 ---
-title: Docker Compose
+title: Docker Compose task
 titleSuffix: Azure Pipelines & TFS
 description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Build: Docker Compose
+# Docker Compose task
 
 **Azure Pipelines**
 
-![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
+Use this task in a build or release pipeline to build, push or run multi-container Docker applications. This task can be used with Docker or Azure Container registry.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

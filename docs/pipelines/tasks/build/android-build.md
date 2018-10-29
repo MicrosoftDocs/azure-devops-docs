@@ -13,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build: Android build (deprecated; use Gradle)
+# Android build task (deprecated; use Gradle)
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/android-build.png) Build an Android app using Gradle and optionally start the emulator for unit tests
+Use this task in a build or release pipeline to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 **The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
