@@ -335,9 +335,10 @@ The tool to edit the test steps is shown.
 
 ### Q: Can I add a screenshot to the test results when I am running a test?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to take screenshots of the web 
-app while testing. 
+app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Azure Test Runner desktop client](http://aka.ms/ATRDownload).
 
 ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
 
@@ -345,9 +346,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture my actions on the app as a log?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner capture your actions on the web 
-app as image logs while testing.
+app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Azure Test Runner desktop client](http://aka.ms/ATRDownload).
  
 ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
@@ -355,9 +357,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture screen recordings of my app?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to capture screen recordings of 
-your web and desktop apps while testing. 
+your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Azure Test Runner desktop client](http://aka.ms/ATRDownload).
 
 ![Capturing a screen recording from the app](_img/_shared/collect-diagnostic-data-11.png) 
 
@@ -366,6 +369,14 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: How do I control how long I keep my test data?
 
 **A:** [Learn more here](how-long-to-keep-test-results.md).
+
+### Q: Where can I download Azure Test Runner client?
+
+**A:** Azure Test runner client can be downloaded from [here](http://aka.ms/ATRDownload).
+
+### Q: What are the supported operating systems for Azure Test Runner client?
+
+**A:** Azure Test runner client is currently supported on only Windows. 
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?
