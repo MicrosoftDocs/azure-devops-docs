@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/02/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -26,7 +26,7 @@ You have to set up billing when you need more than the *free tier* of resources 
 * One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
-You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -67,11 +67,11 @@ A: No, but this feature is in our backlog to add in the future.
 
 ### Q: Can I use an Enterprise Agreement to buy Azure DevOps?
 
-A: Yes, you can. You'll need to be an owner or contributor for an Azure subscription that was created for your EA. Be sure to make your purchases for Azure DevOps directly in the Visual Studio Marketplace. You cannot purchase services by using a purchase order.
+A: Yes, you can. You'll need to be an owner or contributor for an Azure subscription that was created for your EA. Be sure to make your purchases for Azure DevOps directly in the Visual Studio Marketplace, Azure DevOps tab. You cannot purchase services by using a purchase order.
 
 ### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement?
 
-A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service offered in the Visual Studio Marketplace. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
+A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service offered in the Visual Studio Marketplace, Azure DevOps tab. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
 
 Another approach is to try to visit the [Azure Enterprise Portal](http://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
 
@@ -119,7 +119,7 @@ A: Starting September 28th, 2018 you will no longer be able to create Team Proje
 ### Q: Why is my organization already linked to an Azure subscription?
 
 A: This happens if someone already set up billing for your organization, either through the Azure portal or while purchasing something for this organization via the
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
 
 ### Q: Can I use the same Azure subscription for billing across multiple organizations?
 
