@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Visual Studio Build
+# Visual Studio Build task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![](_img/visual-studio-build.png) Build with MSBuild and set the Visual Studio version property.
+Use this task in a build or release pipeline to build with MSBuild and set the Visual Studio version property.
 
 ## Demands
 

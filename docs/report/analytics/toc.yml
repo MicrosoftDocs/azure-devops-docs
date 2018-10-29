@@ -1,6 +1,7 @@
-- name: Analytics
+- name: Analytics Service
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: What is Analytics?
     href: what-is-analytics.md

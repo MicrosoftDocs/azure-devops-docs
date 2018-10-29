@@ -36,6 +36,7 @@ For desktop apps, download and install the [Azure Test Runner client](http://aka
 > See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md).
 
 <a name="web-screenshot"></a>
+<a name="collect-desktop"></a>
 ### Screen capture
 
 Capture annotated screenshots from your app. 

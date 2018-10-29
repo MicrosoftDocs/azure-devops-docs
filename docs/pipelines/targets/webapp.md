@@ -48,8 +48,9 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 ::: moniker range="vsts"
 
-The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
-the build to an Azure Web App. Read through the instructions to learn how to edit the YAML file in order to deploy the sample app.
+The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository.
+This file contains code to build, test, and publish the source as an artifact.
+To learn more about building .NET Core apps, see [Build .NET Core projects with Azure Pipelines or Team Foundation Server](../languages/dotnet-core.md).
 
 ::: moniker-end
 

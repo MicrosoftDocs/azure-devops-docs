@@ -1,5 +1,5 @@
 ---
-title: PyPI Publisher
+title: PyPI Publisher task
 titleSuffix: Azure Pipelines & TFS
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
@@ -12,11 +12,11 @@ ms.date: 5/7/2018
 monikerRange: 'vsts'
 ---
 
-# Package: PyPI Publisher
+# PyPI Publisher task
 
 **Azure Pipelines**
 
-![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
+Use this task in a build or release pipeline to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.
