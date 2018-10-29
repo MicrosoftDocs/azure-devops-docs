@@ -1,5 +1,5 @@
 ---
-title: NuGet restore, pack, and publish
+title: NuGet restore, pack, and publish task
 titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
@@ -13,13 +13,13 @@ ms.date: 07/05/2017
 monikerRange: '>= tfs-2018'
 ---
 
-# Package: NuGet
+# NuGet task
 
 **Version 2.\* | [Other versions](#versions)**
 
 **Azure Pipelines | TFS 2018**
 
-![NuGet icon](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages.
+Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
