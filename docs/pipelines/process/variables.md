@@ -78,12 +78,12 @@ Or at the step level:
 
 ```yaml
 steps:
-  - script: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
     env:
-      system.accesstoken: $(System.AccessToken)
-  - task: MyTaskThatNeedsTheToken@1
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
     env:
-      system.accesstoken: $(System.AccessToken)
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
 # [Designer](#tab/designer)
