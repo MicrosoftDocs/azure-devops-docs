@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates – Jul 1
+# Visual Studio Online updates – Jul 1
 
 We’re back this week with a few usability improvements for backlogs and a shiny new REST API and service hook for pull requests.
 

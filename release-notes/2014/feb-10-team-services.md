@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates - Feb 10
+# Visual Studio Online updates - Feb 10
 
 ## Exporting test artifacts
 

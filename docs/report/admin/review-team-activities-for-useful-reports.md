@@ -12,7 +12,7 @@ author: KathrynEE
 ms.date: 10/17/17
 ---
 
-#Review team activities to support useful reports 
+# Review team activities to support useful reports 
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 

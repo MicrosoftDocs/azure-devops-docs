@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Custom work item types and stakeholder support for exploratory testing – Sept 2
+# Custom work item types and stakeholder support for exploratory testing – Sept 2
 
 We have some exciting new features this sprint!
 

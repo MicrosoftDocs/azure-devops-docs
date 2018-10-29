@@ -11,7 +11,7 @@ author: KathrynEE
 ms.date: 08/11/2016
 ---
 
-#Manage the data warehouse and analysis services cube 
+# Manage the data warehouse and analysis services cube 
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 

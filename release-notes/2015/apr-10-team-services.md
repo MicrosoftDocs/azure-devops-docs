@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Card configuration options – Apr 10
+# Card configuration options – Apr 10
 
 ## Configure cards
 

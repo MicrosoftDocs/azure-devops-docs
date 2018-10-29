@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Aug 27
+# Team Foundation Service updates - Aug 27
 
 Last sprint was mostly focused on new project management features – kanban and some task board improvements. This sprint, we’ve turned our attention to more code centric improvements.
 

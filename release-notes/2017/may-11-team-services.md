@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#VM deployment and Delivery Plans – May 11
+# VM deployment and Delivery Plans – May 11
 
 This sprint has our //Build conference deliverables in it, so it’s a big one, especially in the CI/CD space. 
 

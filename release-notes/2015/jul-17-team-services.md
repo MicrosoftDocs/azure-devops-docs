@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Multiple activities per team member – Jul 17
+# Multiple activities per team member – Jul 17
 
 ## Multiple activities per team member
 

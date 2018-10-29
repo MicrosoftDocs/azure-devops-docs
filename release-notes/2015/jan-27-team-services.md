@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#VS Online Basic license expanded – Jan 27
+# VS Online Basic license expanded – Jan 27
 
 ## Basic license expanded
 

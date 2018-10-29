@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - May 13
+# Team Foundation Service updates - May 13
 
 After being relatively quiet on the “news” front in our last sprint, I’m happy to share that we’ve got quite a few updates in today’s deployment.
 

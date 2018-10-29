@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
+# New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
 
 We have a lot of new features rolling out this sprint!
 

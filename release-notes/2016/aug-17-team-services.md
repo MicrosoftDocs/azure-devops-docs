@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Pull Requests refresh and much, much more – Aug 17
+# Pull Requests refresh and much, much more – Aug 17
 
 Lots of stuff this sprint, lets jump in…
 

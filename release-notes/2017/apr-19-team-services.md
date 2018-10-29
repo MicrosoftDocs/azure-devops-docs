@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Delivery timeline markers, git graph, and build and release improvements – Apr 19
+# Delivery timeline markers, git graph, and build and release improvements – Apr 19
 
 This deployment, we introduce the git graph. We’ve also updated many build and release tasks and extensions, as well as made improvements to the Marketplace.
 

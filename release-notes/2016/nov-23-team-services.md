@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Follow a PR, task versioning, and search for commits in branches – Nov 23
+# Follow a PR, task versioning, and search for commits in branches – Nov 23
 
 We have a bunch of new features rolling out this sprint.
 

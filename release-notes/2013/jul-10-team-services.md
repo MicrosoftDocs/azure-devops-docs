@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - July 10
+# Team Foundation Service updates - July 10
 
 A few updates were pushed to the service this morning that you’ll want to take note of. 
 

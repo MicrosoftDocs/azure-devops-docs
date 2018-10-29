@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 17
+# Team Foundation Service updates - Oct 17
 
 ## Build Image Update
 

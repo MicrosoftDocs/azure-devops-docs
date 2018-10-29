@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online General Availability
+# Visual Studio Online General Availability
 
 ## General Availability of Visual Studio Online
 

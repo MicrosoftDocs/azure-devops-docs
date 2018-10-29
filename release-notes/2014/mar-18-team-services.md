@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates - Mar 18
+# Visual Studio Online updates - Mar 18
 
 ## Getting started with Application Insights
 

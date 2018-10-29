@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Delivery Plans and mobile work item form – Jan 25
+# Delivery Plans and mobile work item form – Jan 25
 
 We have some big new features to introduce this sprint! Let’s get right into it...
 

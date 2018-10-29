@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 29
+# Team Foundation Service updates - Oct 29
 
 The update to the service this week contains a lot of bug fixes & one new feature in the build space.
 

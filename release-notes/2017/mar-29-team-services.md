@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#PR filtering by people and improved Azure resource group template parameter experience – Mar 29
+# PR filtering by people and improved Azure resource group template parameter experience – Mar 29
 
 We have several exciting new features this sprint, including Pull Request and Release Management improvements. Let’s get into the details!
 

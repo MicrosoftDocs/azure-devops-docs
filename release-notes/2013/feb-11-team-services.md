@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Feb 11
+# Team Foundation Service updates - Feb 11
 
 We have a fair number of updates this sprint.
 

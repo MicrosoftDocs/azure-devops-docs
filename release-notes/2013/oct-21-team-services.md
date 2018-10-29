@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 21
+# Team Foundation Service updates - Oct 21
 
 ## Account and project pages
 

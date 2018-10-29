@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Getting personal – Jan 5
+# Getting personal – Jan 5
 
 Happy new year! You may have noticed we skipped our last deployment due to the holidays, so this deployment comes with two sprints of goodies. One of the key themes across the team is to bring more social and personal experiences into the product. You’re going to see a steady stream of those new experiences throughout the year. We’re starting the year with the first collection of these.
 

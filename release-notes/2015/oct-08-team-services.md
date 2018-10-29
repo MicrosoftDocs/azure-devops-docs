@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#AAD Group Support – Oct 8
+# AAD Group Support – Oct 8
 
 ## Azure Active Directory Group support
 

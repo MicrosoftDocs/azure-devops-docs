@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 7
+# Team Foundation Service updates - Jan 7
 
 Happy New Year! This morning we made our first set of updates to the service for the 2013 calendar year. This sprint was relatively light due to the holidays, but we do have a few incremental changes to existing functionality that I want to highlight.
 

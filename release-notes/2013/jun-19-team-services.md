@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jun 19
+# Team Foundation Service updates - Jun 19
 
 We’ve got a few updates to share as a part of today’s deployment.
 

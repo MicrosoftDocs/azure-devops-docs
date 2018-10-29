@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates – Jun 10
+# Visual Studio Online updates – Jun 10
 
 ## Review and Merge code with Pull Requests
 

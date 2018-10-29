@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Git and TFVC together, Package Management build tasks, and more – Nov 24
+# Git and TFVC together, Package Management build tasks, and more – Nov 24
 
 ## Git and TFVC in the same team project
  

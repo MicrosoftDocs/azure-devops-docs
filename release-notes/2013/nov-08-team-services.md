@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Nov 8
+# Team Foundation Service updates - Nov 8
 
 You might be wondering why we’re updating the service today instead of on Monday (our normal deployment). Well, we’ve got some big events happening next week – [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/). Because of those events we moved our normal Monday deployment up a few days. On to the good stuff…
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Application Insights - save search page, pause export and alerts on export fail - Mar 27
+# Application Insights - save search page, pause export and alerts on export fail - Mar 27
 
 We release updates to [Visual Studio Application Insights](http://azure.microsoft.com/documentation/articles/app-insights-get-started/) every week. You'll find these updates already in place today.
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - July 29
+# Team Foundation Service updates - July 29
 
 ## Improved permission management for Git repos
 

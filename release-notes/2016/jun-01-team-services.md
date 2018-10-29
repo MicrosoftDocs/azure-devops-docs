@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#SSH connections to Git repos, Docker integration, and more – June 1
+# SSH connections to Git repos, Docker integration, and more – June 1
 
 With this release we’re introducing new agile features as well as enhancements to dashboards, coding, package management, test, and build and release management.
 

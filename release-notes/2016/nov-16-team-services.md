@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Package Management GA, Release Management GA, import to Team Services, and work item search preview - Nov 16
+# Package Management GA, Release Management GA, import to Team Services, and work item search preview - Nov 16
 
 We hope you are enjoying the Connect() conference! We have announced and released some exciting new things today.
 

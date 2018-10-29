@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
+# Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
 
 ## Synthetic data is filtered out of request metrics
 

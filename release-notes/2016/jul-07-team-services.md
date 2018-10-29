@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Resize charts, PR comment tracking, RM updates and more – Jul 7
+# Resize charts, PR comment tracking, RM updates and more – Jul 7
 
 ## Work
 

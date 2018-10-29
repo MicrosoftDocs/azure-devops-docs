@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Add fields to cards, board filtering – Apr 27
+# Add fields to cards, board filtering – Apr 27
 
 ## Adding fields to cards
 

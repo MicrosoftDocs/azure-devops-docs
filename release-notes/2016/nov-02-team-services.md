@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#Microsoft Teams integration, repo favorites, and new package management and release management regions – Nov 2
+# Microsoft Teams integration, repo favorites, and new package management and release management regions – Nov 2
 
 There are some exciting new features this sprint.
 

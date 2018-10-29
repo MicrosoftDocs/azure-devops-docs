@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Swim lanes, #mention, Build test steps – Jun 3
+# Swim lanes, #mention, Build test steps – Jun 3
 
 ## Kanban swim lanes
 

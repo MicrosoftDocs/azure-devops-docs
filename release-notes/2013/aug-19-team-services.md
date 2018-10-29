@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Aug 19
+# Team Foundation Service updates - Aug 19
 
 This sprint, we have a couple of areas of improvement. The first one I want to talk about is our new “Release archive”. A year or so ago, we adopted this faster cadence of 3 week service updates, multiple VS Updates and a 2013 release only 12 months after VS 2012. In the past several months, especially as the release of VS 2013 has become closer, we’ve had a lot of questions about which features are available and in what release – particularly “Which on premises release will a given cloud feature show up in?”. So today we’ve introduced a way for you to know – a [Release archive](/azure/devops/release-notes/). 
  

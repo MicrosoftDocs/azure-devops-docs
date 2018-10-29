@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Dec 10
+# Team Foundation Service updates - Dec 10
 
 As part of our ongoing efforts to make sure that Team Foundation Server is a great home for developers, we’ve been investing more in the web experience for version control. We are shipping the first round of these improvements in this sprint, but expect more goodness to follow over the coming weeks and months.
 

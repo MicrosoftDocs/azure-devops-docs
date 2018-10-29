@@ -8,7 +8,7 @@ ms.author: alexn
 author: alexn
 ---
 
-#Visual Studio Team Services (VSTS) Sprint 121 Update
+# Visual Studio Team Services (VSTS) Sprint 121 Update
 
 In the __Sprint 121 Update__ we’re introducing the native Wiki in Visual Studio Team Services (VSTS) and a number of features to make VSTS better integrated and more consistent across your workflow. Some feature highlights include:
 - [Wiki in Public Preview](#wiki-in-public-preview) - Help your team members understand, use, and contribute to your project.

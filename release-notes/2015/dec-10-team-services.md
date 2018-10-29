@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Custom work item fields and more – Dec 10
+# Custom work item fields and more – Dec 10
 
 We’ve got quite a few things to cover in this week’s deployment. Let’s jump right in…
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Multi-select backlog items, reorder when changing columns, client libraries availability – Aug 7
+# Multi-select backlog items, reorder when changing columns, client libraries availability – Aug 7
 
 ## Multi-select items on the product backlog
 

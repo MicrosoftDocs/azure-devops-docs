@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Card colors and personal access tokens – Jul 7
+# Card colors and personal access tokens – Jul 7
 
 ## Card coloring on Kanban board
 

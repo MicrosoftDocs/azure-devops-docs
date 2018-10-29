@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 30
+# Team Foundation Service updates - Jan 30
 
 Today is a big step forward in our journey for the Team Foundation Service. Over the past several months, we have been working on a set of changes to make TFS more lightweight and to continue to adapt to the evolving modern devops processes. Today we unveil several of these improvements. This is just the beginning and we have a lot more work planned. Over the next several months, we’ll continue to evolve and expand these improvements.
 

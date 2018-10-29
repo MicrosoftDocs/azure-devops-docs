@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jun 26
+# Team Foundation Service updates - Jun 26
 
 It’s an exciting day today as we announced and released Visual Studio 2013 Preview.  Visit [Soma's blog](http://blogs.msdn.com/b/somasegar/archive/2013/06/26/visual-studio-2013-preview.aspx) to read about the details.  Related to that announcement we have a few changes to the service that you’ll want to know about.
 

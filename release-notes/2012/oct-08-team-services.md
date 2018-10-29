@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 8
+# Team Foundation Service updates - Oct 8
 
 ## 400 character paths on the server
 

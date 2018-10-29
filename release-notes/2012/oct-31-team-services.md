@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 31
+# Team Foundation Service updates - Oct 31
 
 ## Team Foundation Service is Released!
 

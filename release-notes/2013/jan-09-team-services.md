@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 9
+# Team Foundation Service updates - Jan 9
 
 ## Account rename
 

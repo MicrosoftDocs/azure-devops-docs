@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Stakeholder licensing – Aug 27
+# Stakeholder licensing – Aug 27
 
 ## A license for Stakeholders
 

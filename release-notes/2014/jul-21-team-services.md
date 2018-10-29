@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online Updates - Jul 21
+# Visual Studio Online Updates - Jul 21
 
 We have lots to share with you in this week’s deployment. So let’s get into it…
 

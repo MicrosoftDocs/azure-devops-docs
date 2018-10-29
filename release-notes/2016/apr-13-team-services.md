@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Work item follow, move & change type - April 13
+# Work item follow, move & change type - April 13
 
 Let’s start by walking through some of the improvements we’ve made in the Work hub…
 

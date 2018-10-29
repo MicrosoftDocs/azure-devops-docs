@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates – Jan 22
+# Visual Studio Online updates – Jan 22
 
 We’re back from the New Year and excited to talk about a few improvements to the service. 
 

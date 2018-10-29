@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates - Dec 11
+# Visual Studio Online updates - Dec 11
 
 This is our first sprint deployment since our Commercial Public Preview launch in mid-Nov. Unfortunately, we had some instability following that launch. We’ve been hard at work since then fixing the issues, firming up our testing, adding additional resiliency into the system, etc. I [wrote at length](http://blogs.msdn.com/b/bharry/archive/2013/11/25/a-rough-patch.aspx) about some of the issues we hit on my blog. Please be assured that we will do everything we can to provide you a seamless and reliable experience. We are committed to doing work every sprint to make the service more reliable. Please let us know anytime we are failing to meet your expectations.
 

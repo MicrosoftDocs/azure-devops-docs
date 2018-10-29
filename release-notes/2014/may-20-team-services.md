@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates – May 20
+# Visual Studio Online updates – May 20
 
 ## Using corporate identities
 

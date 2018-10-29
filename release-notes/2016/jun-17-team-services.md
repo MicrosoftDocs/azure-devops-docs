@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Git & TFVC updates plus improved test traceability … – June 20
+# Git & TFVC updates plus improved test traceability … – June 20
 
 ## Git & TFVC – Browsing branches
 

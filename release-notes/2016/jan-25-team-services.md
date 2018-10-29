@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
+# Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
 
 Happy New Year! Because of the holidays, we skipped our December deployment, so we have a ton of exciting things to announce this week. There’s a long list, so let’s jump in…
 

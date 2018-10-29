@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#European Datacenter & REST 1.0 - Oct 28
+# European Datacenter & REST 1.0 - Oct 28
 
 ## European Datacenter
 

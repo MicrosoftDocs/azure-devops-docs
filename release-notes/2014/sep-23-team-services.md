@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Work item improvements - Sep 23
+# Work item improvements - Sep 23
 
 This week’s deployment has a few work items usability improvements I’m sure you’ll appreciate. Let’s take a look.
 

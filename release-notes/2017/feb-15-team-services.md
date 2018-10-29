@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#PR usability improvements & richer GitHub build integration – Feb 15
+# PR usability improvements & richer GitHub build integration – Feb 15
 
 We have a few feature improvements this sprint. Let’s get right into it...
 

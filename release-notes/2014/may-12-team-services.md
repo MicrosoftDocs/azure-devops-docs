@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates – May 12
+# Visual Studio Online updates – May 12
 
 ## Integrate with Visual Studio Online
 

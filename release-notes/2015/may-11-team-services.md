@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Application Insights: Public Preview; iOS and Android; performance counters and unhandled exceptions for Java apps; and time range selection
+# Application Insights: Public Preview; iOS and Android; performance counters and unhandled exceptions for Java apps; and time range selection
 
 Application Insights is now in Public Preview, and what a journey it has been getting here. [Public Preview was announced](http://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/) at //Build/, along with our [Pricing Plans](http://azure.microsoft.com/pricing/details/application-insights/).
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
+# Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
 
 Our deployment this week is jam-packed with new value. Let’s start by looking at test results in release environments.
 

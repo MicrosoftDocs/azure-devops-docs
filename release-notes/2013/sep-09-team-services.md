@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Sep 9
+# Team Foundation Service updates - Sep 9
 
 We’ve got lots to share with you in today’s deployment. Buckle up…
 

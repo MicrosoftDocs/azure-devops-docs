@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 21
+# Team Foundation Service updates - Jan 21
 
 ## Explore and Compare
 

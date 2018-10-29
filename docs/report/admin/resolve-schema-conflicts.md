@@ -12,7 +12,7 @@ author: KathrynEE
 ms.date: 08/11/2016
 ---
 
-#Resolve data warehouse schema conflicts
+# Resolve data warehouse schema conflicts
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 

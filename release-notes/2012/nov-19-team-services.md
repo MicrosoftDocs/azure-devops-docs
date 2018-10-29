@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Nov 19
+# Team Foundation Service updates - Nov 19
 
 ## Send work items in email
 

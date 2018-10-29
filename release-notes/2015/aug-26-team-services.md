@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Sprint planning improvements and SonarQube analysis build tasks – Aug 26
+# Sprint planning improvements and SonarQube analysis build tasks – Aug 26
 
 **Renaming columns in place
 

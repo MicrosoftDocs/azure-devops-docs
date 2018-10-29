@@ -12,7 +12,7 @@ author: KathrynEE
 ms.date: 03/02/2017
 ---
 
-#Upload reports to a team project
+# Upload reports to a team project
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 

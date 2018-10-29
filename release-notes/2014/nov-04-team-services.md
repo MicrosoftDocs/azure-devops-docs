@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Turn bugs on/off on your backlog – Nov 4
+# Turn bugs on/off on your backlog – Nov 4
 
 Lots to cover this sprint, so let’s jump right in…
 

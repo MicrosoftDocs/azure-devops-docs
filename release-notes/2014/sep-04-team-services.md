@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Query usability, Hubot, new charts, and more - Sep 4
+# Query usability, Hubot, new charts, and more - Sep 4
 
 We've got lots of incremental improvements in today’s update. I’m not sure the best way to summarize them for you, so let’s just jump right in…
 

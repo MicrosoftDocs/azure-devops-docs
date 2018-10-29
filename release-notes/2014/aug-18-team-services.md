@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Project Welcome pages - Aug 18
+# Project Welcome pages - Aug 18
 
 Following up on last sprint’s support for [using corporate identities with existing accounts](jul-21-team-services.md), we’ve now enabled auto-approval for the preview, enabling anyone to link their existing Visual Studio Online account to Azure Active Directory.
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Kanban Updates, new Branch Policies, and more... – Sep 18
+# Kanban Updates, new Branch Policies, and more... – Sep 18
 
 ## Inline tasks on the Kanban board
 

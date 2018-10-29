@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
+# Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
 
 We have lot to cover with this week’s deployment. So let’s jump right in ...
 

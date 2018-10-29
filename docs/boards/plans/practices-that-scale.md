@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 08/02/2017
 ---
 
-#Scaling Agile - Practices that scale  
+# Scaling Agile - Practices that scale  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#RM updates, email formatting, a checkbox control, and more – May 6
+# RM updates, email formatting, a checkbox control, and more – May 6
 
 There’s so much in our deployment this week that I really don’t know where to begin. I’m going to start with a few items that I’m thrilled we’re knocking off our list...
 

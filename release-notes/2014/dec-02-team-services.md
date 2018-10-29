@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#A new identity control – Dec 2
+# A new identity control – Dec 2
 
 We’ve got another sprint packed full of improvements for you…
 

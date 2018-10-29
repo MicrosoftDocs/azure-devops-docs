@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Kanban split columns, inline adding and editing – Feb 18
+# Kanban split columns, inline adding and editing – Feb 18
 
 This week’s deployment brings a brand new look to our boards and some new functionality that many of you have been waiting for. Let’s jump right in…
 

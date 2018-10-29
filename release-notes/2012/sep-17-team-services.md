@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Sep 17
+# Team Foundation Service updates - Sep 17
 
 Another three weeks and another set of updates to the Team Foundation Service. The long Labor Day weekend shortened our sprint a bit; nonetheless, we’ve got a few new capabilities to share.
 

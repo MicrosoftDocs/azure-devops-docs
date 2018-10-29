@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Sep 30
+# Team Foundation Service updates - Sep 30
 
 We have three new improvements to existing features in this sprint.
 

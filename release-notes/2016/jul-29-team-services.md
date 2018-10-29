@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Release, test and Git/TFVC history view improvements – Jul 29
+# Release, test and Git/TFVC history view improvements – Jul 29
 
 ## Git & TFVC – History view and diff view updates
 
