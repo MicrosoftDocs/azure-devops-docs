@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 10/13/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -21,59 +21,59 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Cross organization linking for Work Items|Boards|TBD|
-|Azure DevOps Server Support for Move work item to another team project / Change work item type|Boards|2019|
-|New rich text Description and Discussion control|Boards|TBD|
-|GVFS - Performance improvements for status|Repos|2019|
-|GVFS for Mac - Public Preview|Repos|N/A|
-|Git Pull Requests – Improved search/filter options for pull requests|Repos|TBD|
-|Visual Studio Git - Stash|Repos|N/A|
-|Configuration as code (YAML) for builds|Pipelines|2019|
-|New pages for CI|Pipelines|TBD|
-|Hosted build images – Ability to use latest or previous version of image|Pipelines|N/A|
-|Extensible Pool Providers|Pipelines|TBD|
-|Release Management orchestration improvements – Tag based triggers|Pipelines|2019|
-|Agent-based deployment in Release Management – Sharing of VMs|Pipelines|2019|
-|Release traceability – Pull request integration|Pipelines|2019|
-|Updated landing pages for Release|Pipelines|2019|
-|Canvas-based Release Summary views to track progress of releases|Pipelines|2019|
-|Deployment Groups easy configuration of Azure VMs|Pipelines|TBD|
-|Extend release gates – Test|Pipelines|TBD|
-|Release traceability – Work Item integration|Pipelines|TBD|
-|Configuration as code (YAML) releases - Public Preview|Pipelines|TBD|
-|Analytics – Test Failures report for Build pipelines|Test Plans|2019|
-|Analytics – Test Failures report for Release pipelines|Test Plans|2019|
-|Repo, Build provenance information for a package|Artifacts|2019|
-|Upstreams sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory|Artifacts|2019|
-|Package consumption metrics|Artifacts|2019|
-|Maven Upstream support|Artifacts|TBD|
-|PyPI (Python ecosystem) package hosting and upstream sources|Artifacts|TBD|
-|Universal Packages (“versioned bunch of files”) hosting|Artifacts|TBD|
-|Upstreams sources for Azure DevOps Services feeds across organizations in an enterprise|Artifacts|N/A|
-|File Container Store (FCS) v2 is at least 2x faster than external CI Systems at upload and download drop times|Artifacts|TBD|
-|Improve Apdex for Azure Artifacts day 1 and the two most used web pages to .75|Artifacts|TBD|
-|Dashboards – Create dashboard separate from a team|Reporting|TBD|
-|Analytics – Test Failures report for Build pipelines|Reporting|2019|
-|Analytics - Available for Azure DevOps Server|Reporting|2019|
-|Analytics – Test Failures report for Release pipelines|Reporting|2019|
-|Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services|Admin|N/A|
-|Encryption at rest for disks used by code and work item search|Admin|N/A|
-|Bring multiple organizations under an enterprise|Admin|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
-|Notification feed|Notifications|2019|
-|Publisher certification process|Marketplace|N/A|
+|[Azure DevOps Server Support for Move work item to another team project / Change work item type](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292418)|Boards|2019|
+|[New rich text Description and Discussion control](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1360789)|Boards|TBD|
+|[Git Pull Requests – Improved search/filter options for pull requests](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1257205)|Repos|TBD|
+|[Release Management orchestration improvements – Tag based triggers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221125)|Pipelines|2019|
+|[Agent-based deployment in Release Management – Sharing of VMs](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221126)|Pipelines|2019|
+|[Release traceability – Pull request integration](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221144)|Pipelines|2019|
+|[Updated landing pages for Release](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221147)|Pipelines|2019|
+|[Canvas-based Release Summary views to track progress of releases](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221148)|Pipelines|2019|
+|[Deployment Groups easy configuration of Azure VMs](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221167)|Pipelines|TBD|
+|[Extend release gates – Test](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221168)|Pipelines|TBD|
+|[Release traceability – Work Item integration](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221169)|Pipelines|TBD|
+|[Configuration as code (YAML) releases - Public Preview](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221170)|Pipelines|TBD|
+|[Visual Studio Code extension for editing Azure Pipelines YAML files](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364234)|Pipelines|TBD|
+|[Repo, Build provenance information for a package](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221150)|Artifacts|2019|
+|[Upstream sources for Azure DevOps Services feeds across organizations with the same Azure Active Directory](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221151)|Artifacts|2019|
+|[Package consumption metrics](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221152)|Artifacts|2019|
+|[Maven Upstream support](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221171)|Artifacts|TBD|
+|[PyPI (Python ecosystem) package hosting and upstream sources](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292653)|Artifacts|TBD|
+|[Universal Packages (“versioned bunch of files”) hosting](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292654)|Artifacts|TBD|
+|[File Container Store (FCS) v2 is at least 2x faster than external CI Systems at upload and download drop times](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1320802)|Artifacts|TBD|
+|[Improve Apdex for Azure Artifacts day 1 and the two most used web pages to .75](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1320804)|Artifacts|TBD|
+|[Dashboards – Create dashboard separate from a team](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221159)|Reporting|TBD|
+|[Analytics - Available for Azure DevOps Server](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1282505)|Reporting|2019|
+|[Encryption at rest for disks used by code and work item search](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221133)|Admin|N/A|
+|[Connect your Azure DevOps Services organizations to Azure Active Directory from within Azure DevOps Services](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1274015)|Admin|N/A|
+|[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221164)|Notifications|2019|
+|[Notification feed](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221165)|Notifications|2019|
+|[Publisher certification process](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221163)|Marketplace|N/A|
 
 ### 2019 Q1
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Item support for Markdown editing|Boards|TBD|
+|[Work Item support for Markdown editing](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221138)|Boards|TBD|
+|[GVFS for Mac - Public Preview](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221136)|Repos|N/A|
+|[Extensible Pool Providers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221174)|Pipelines|TBD|
+|[Multi-stage pipelines](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364226)|Pipelines|TBD|
+|[YAML editor in the web](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364231)|Pipelines|TBD|
+|[Updated Security & Org Settings pages](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366414)|Admin|TBD|
+|[User licenses (Basic) can be purchased directly from the user's page](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366415)|Admin|N/A|
+|[User licenses will be charged once per user across Orgs in the same Azure Subscription](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366420)|Admin|N/A|
+
+### 2019 Q2
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|[Auditing for Azure DevOps](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364977)|Admin|TBD|
 
 ### Future
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|A discussion-centric Work Item form|Boards|TBD|
+|[A discussion-centric Work Item form](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221139)|Boards|TBD|
 
 ## Current features
 

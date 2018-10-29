@@ -5796,11 +5796,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/report/index.md",
-      "redirect_url": "/azure/devops/report/dashboards/index",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/reporting.md",
       "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
       "redirect_document_id": false

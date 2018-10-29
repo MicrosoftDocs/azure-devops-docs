@@ -1,7 +1,7 @@
 ---
-title: gulp build and release task
+title: Gulp build and release task
 titleSuffix: Azure Pipelines & TFS
-description: gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
+description: Gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: gulp
+# Gulp task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gulp.png) Node.js streaming task based build system
+Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task based build system.
 
 ## Demands
 

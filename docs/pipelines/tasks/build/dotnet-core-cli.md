@@ -1,5 +1,5 @@
 ---
-title: .NET Core CLI
+title: .NET Core CLI task
 titleSuffix: Azure Pipelines & TFS
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Build: .NET Core CLI
+# .NET Core CLI task
 
 **Azure Pipelines**
 
-![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
+Use this task in a build or release pipeline to build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
