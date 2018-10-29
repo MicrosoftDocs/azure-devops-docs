@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -26,7 +26,7 @@ There are two paid features in Azure DevOps that are offered by Microsoft that y
 
 During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
-This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including:
+This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including the following:
 
 - [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
 - [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)
@@ -43,7 +43,7 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 ## Start a trial for your organization
 
-1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), go to the **Azure DevOps** tab.
 
     ![Find extension trial](../billing/_img/_shared/extensions-marketplace.png)
 

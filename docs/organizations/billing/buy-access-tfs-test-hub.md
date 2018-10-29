@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2018
+ms.date: 10/29/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or Azure Test Plans
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 For [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/), you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features like Code or Agile Planning. Users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add [stakeholders](../../organizations/security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
 
 > [!NOTE]
-> You need TFS 2015.2 or later to pay monthly for your TFS users via the Visual Studio Marketplace, which uses Azure for billing.
+> You need TFS 2015.2 or later to pay monthly for your TFS users via the Visual Studio Marketplace, Azure DevOps tab, which uses Azure for billing.
 
 Paid users are entitled access to Basic features in your enterprise's TFS. Paying monthly for users is a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. When you buy access to TFS in this way, you aren't required to use Azure DevOps Services (although you can use Azure DevOps Services in addition to TFS).
 
