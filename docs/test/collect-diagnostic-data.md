@@ -19,49 +19,35 @@ monikerRange: '>= tfs-2015'
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
 during the test. You can collect diagnostic data from
-web apps and from desktop apps, and view it in Team 
-Services or Team Foundation Server.
-
-* [Collect diagnostic data from web apps](#collect-web)
-* [Collect diagnostic data from desktop apps](#collect-desktop)
+web apps and from desktop apps, web apps and from desktop apps,
+and view it in Azure Test Plans or Team Foundation Server.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="collect-web"></a>
-## Collect diagnostic data from web apps
+## Collect diagnostic data from web and desktop apps
 
-For web apps under test, you can use web-based Microsoft Test Runner 
-to collect the following data on demand:
+For web apps under test, you can use web-based Microsoft Test Runner. 
+For desktop apps, download and install the
+[Azure Test Runner client](http://aka.ms/ATRDownload) to collect the following data on demand:
 
 * [Screen captures](#web-screenshot)
 * [Image action log](#web-log)
 * [Screen recordings](#web-recording)
 
->The following diagnostic data collection features currently 
-work only with the web-based Microsoft Test runner. See 
-[Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+> See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md).
 
 <a name="web-screenshot"></a>
+<a name="collect-desktop"></a>
 ### Screen capture
 
-Capture annotated screenshots from your web app. 
-
-1. Ensure that the tab of the app from which you want to 
-   capture data is the active tab.
+Capture annotated screenshots from your app: 
 
 1. Open Test Runner and choose the **Capture screenshot** icon. 
+   Ensure that the app from which you want to capture data is selected.
 
    ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
 
-1. Choose the title of the tab containing the app 
-   you are testing.
-
-   ![Selecting the active app tab title](_img/collect-diagnostic-data/collect-diagnostic-data-02.png) 
-
-   If the tab title you want is not shown in the list,
-   switch to the app and activate it by tapping on the title bar, 
-   or on a child window if the app has opened one.
- 
 1. Drag to select the area of the screen you want to 
    capture, or just capture the full screen.
  
@@ -79,26 +65,15 @@ Capture annotated screenshots from your web app.
 <a name="web-log"></a>
 ### Image action log
 
-Capture your interactions with the web app as an image action log that provides context.
-
-1. Ensure that the tab of the app from which you want to 
-   capture data is the active tab.
+Capture your interactions with the web or desktop app as an image action log that provides context:
 
 1. Open or switch to the Test Runner and choose the **Capture user actions...** icon. 
- 
+   Ensure that the app from which you want to capture data is selected.
+
    ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
-1. Choose the title of the tab containing the app 
-   you are testing.
- 
-   ![Selecting the active app tab title](_img/collect-diagnostic-data/collect-diagnostic-data-07.png) 
-
-   If the tab title you want is not shown in the list,
-   switch to the app and activate it by tapping on the title bar, 
-   or on a child window if the app has opened one.
-
 1. The Test Runner will now record all the actions you take
-   on the app's browser tab.
+   on the app's browser tab or in the desktop app.
  
    ![Recording in progress for a web app](_img/collect-diagnostic-data/collect-diagnostic-data-08.png) 
 
@@ -123,10 +98,7 @@ Capture your interactions with the web app as an image action log that provides 
 <a name="web-recording"></a>
 ### Screen recording
 
-Capture screen recordings from your web apps.
-
-1. Ensure that the tab of the app from which you want to 
-   capture data is the active tab.
+Capture screen recordings from your apps:
 
 1. Open or switch to the Test Runner and choose the **Record screen** icon. 
  
@@ -164,43 +136,6 @@ view it before you save the bug.
 ![Viewing the diagnostic data in the bug you are creating](_img/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
 [How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
-
-<a name="collect-desktop"></a>
-## Collect diagnostic data from desktop apps
-
-At present you can collect only screen recordings and system 
-information when testing desktop apps using the web-based 
-Microsoft Test Runner. Instead, use 
-[Microsoft Test Manager client](https://visualstudio.microsoft.com/products/visual-studio-test-professional-with-msdn-vs.aspx)
-to collect additional diagnostic from desktop apps.
-
-1. Open the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], 
-   select a test case, test suite, or test plan to execute.
-
-1. Open the **Run** menu and choose **Run with options**.
-
-   ![Starting a test with options](_img/_shared/collect-diagnostic-data-16.png) 
-
-1. In the **Run with options** dialog, select **Microsoft 
-   Test Runner 2017 or later** in the first drop-down list. 
-
-   ![Selecting the test runner](_img/collect-diagnostic-data/collect-diagnostic-data-17.png) 
- 
-1. Choose the data collectors you want to enable. Options include 
-   Event log, Action log, Screen and voice recorder, and System information.
-
-   ![Selecting the additional diagnostic data to collect](_img/collect-diagnostic-data/collect-diagnostic-data-18.png) 
- 
-   By default, the test runner client lets you to capture screenshots of your 
-   desktop app during testing.
-
-1. If you wish, select a build to associate with your test run.
-   A link to this build will be included automatically in all the 
-   bugs you create during the test run.
-
-   ![Selecting the build to include a link to in the results](_img/_shared/collect-diagnostic-data-19.png) 
-
-1. Choose **OK** to start testing. 
 
 If you want to collect advanced diagnostic data such as code coverage, 
 IntelliTrace, and Test Impact data in addition to the data items listed above,

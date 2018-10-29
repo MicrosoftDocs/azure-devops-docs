@@ -13,11 +13,11 @@ ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: Jenkins Queue Job
+# Jenkins Queue Job task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/jenkins-queue-job.png) Queue a job on a Jenkins server
+Use this task in a build or release pipeline to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

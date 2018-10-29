@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: MSBuild
+# MSBuild task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![](_img/msbuild.png) Build with MSBuild
+Use this task in a build or release pipeline to build with MSBuild.
 
 ## Demands
 
