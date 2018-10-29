@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Maven
+# Maven task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![Build: Maven](_img/maven.png) to build your Java code.
+Use this task in a build or release pipeline to build your Java code.
 
 ## Demands
 

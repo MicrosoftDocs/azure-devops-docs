@@ -540,7 +540,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
+                                        <a href="/azure/devops/report/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -550,8 +550,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics views (Power BI)</h3>
-                                                            <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
+                                                            <h3>Analytics </h3>
+                                                            <p>Answer quantitative questions about the your projects using the Analytics Service.</p>
                                                         </div>
                                                     </div>
                                                 </div>

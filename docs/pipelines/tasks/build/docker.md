@@ -1,5 +1,5 @@
 ---
-title: Docker
+title: Docker task
 titleSuffix: Azure Pipelines & TFS
 description: Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 09/22/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Build: Docker
+# Docker task
 
 **Azure Pipelines | TFS 2018**
 
-![](_img/docker.png) Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
+Use this task in a build or release pipeline to build, tag, push, or run Docker images, or run a Docker command. This task can be used with Docker or Azure Container registry.
 
 > [!NOTE]
 > 

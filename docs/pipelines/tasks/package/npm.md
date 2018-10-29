@@ -1,5 +1,5 @@
 ---
-title: npm
+title: npm task
 titleSuffix: Azure Pipelines & TFS
 description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.date: 07/05/2017
 monikerRange: '>= tfs-2015'
 ---
 
-# Package: npm
+# npm task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/npm.png) Install and publish npm packages
+Use this task in a build or release pipeline to install and publish npm packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
