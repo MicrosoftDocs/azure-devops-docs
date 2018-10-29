@@ -13,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build: Grunt 
+# Grunt task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/grunt.png) The JavaScript Task Runner
+Use this task in a build or release pipeline to run Grunt tasks using the JavaScript Task Runner.
 
 ## Demands
 
