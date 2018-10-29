@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 # Cloud Solution Providers: Buy Azure DevOps resources for your customers
@@ -61,4 +61,4 @@ Make sure your identity hasn't been added into the customer's Azure Active Direc
     
     d. Review the order and complete it.
 
-You can buy other items the same way. After choosing **Visual Studio Marketplace**, search for **Test Manager**, **Azure Artifacts**, **Hosted Pipelines**, and so on.
+You can buy other items the same way. After choosing **Visual Studio Marketplace**, go to the **Azure DevOps** tab, search for **Test Manager**, **Azure Artifacts**, **Hosted Pipelines**, and so on.

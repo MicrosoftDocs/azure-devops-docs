@@ -4971,6 +4971,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/build/repository.md",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/work/reference/support-bug-update-status-using-my-work.md",
       "redirect_url": "/azure/devops/reference/xml/support-bug-update-status-using-my-work",
       "redirect_document_id": false
@@ -7223,6 +7228,11 @@
     {
       "source_path": "docs/build-release/actions/ci-build-git.md",
       "redirect_url": "/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/build/ci-public.md",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
       "redirect_document_id": true
     },
     {
