@@ -23,7 +23,7 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-##Entities  
+## Entities  
 
 >[!NOTE]  
 >Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata```  
@@ -48,7 +48,7 @@ The data model contains the following entity sets:
 |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
 |WorkItemTypeFields | The work item properties for each work item type and process - used for report building|  
 
-##Composite entities
+## Composite entities
 
 Composite entities support specific scenarios. They are composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
@@ -56,7 +56,7 @@ For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that eac
 
 Similarly, some entities may contain all historic values, while others may only contain current values. WorkItemRevision contains all work item history, which you should not use in scenarios where the current values are of interest.
 
-##Relationships
+## Relationships
 
 To generate more complex query results, you can combine entities using relationships. You can employ relationships to expand, filter, or summarize data.
 
@@ -64,11 +64,11 @@ Some navigation properties result in a single entity, while others result in a c
 
 ![Analytics Service Data Model](_img/datamodel.png)
 
-##Relationship keys
+## Relationship keys
 
  Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD.
 
-##Entity Properties
+## Entity Properties
 
 The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties&mdash;CreatedDate, CreatedDateSK, CreatedOn&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
 

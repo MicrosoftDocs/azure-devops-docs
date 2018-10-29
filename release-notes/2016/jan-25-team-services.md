@@ -14,13 +14,13 @@ author: yukom
 
 Happy New Year! Because of the holidays, we skipped our December deployment, so we have a ton of exciting things to announce this week. There’s a long list, so let’s jump in…
 
-##Public preview of the dashboard widget SDK
+## Public preview of the dashboard widget SDK
 
 It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](/azure/devops/integrate/), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](/azure/devops/integrate/).
 
 As a reminder, widgets are implemented as a [contribution point](/azure/devops/integrate/) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
 
-##Create branch and links to related artifacts
+## Create branch and links to related artifacts
 
 I’m excited to announce that you can now create a branch directly from a work item! The work item form has a new development section that displays linked branches, commits, and pull requests, and helps users take the next steps in their development workflow by providing context-aware links such as "Create a branch". When a branch is created this way, links will automatically be created to the related work item, enabling faster and simpler workflows.
 
@@ -34,13 +34,13 @@ In the same way as the work item form, the pull request details view has been up
 
 ![Related work items section in pull request details view](_img/1_25_03.png)
 
-##Build widgets in the catalog
+## Build widgets in the catalog
 
 As I wrote about in the [dashboards futures blog](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/dashboards-futures-january-2016.aspx), one area we’re focusing on is improving the discoverability and ease in bringing different charts to your dashboard. With this update, you’ll see a new option to add a build history chart from the dashboard catalog, and you’ll be able to configure the build definition displayed directly from the dashboard.
 
 ![Adding a build history chart from the dashboard catalog](_img/1_25_04.png)
 
-##Markdown widget with file from repository
+## Markdown widget with file from repository
 
 The first version of the markdown widget allowed custom markdown stored inside the widget. You can now choose to display any markdown file in your existing repository.
 
@@ -50,21 +50,21 @@ Or add the file to any dashboard in your team project directly from the Code Exp
 
 ![Displaying a markdown file in a dashboard](_img/1_25_06.png)
 
-##Auto-refresh dashboards
+## Auto-refresh dashboards
 
 With today’s update, we’re enabling an option to auto-refresh a specific dashboard every 5 minutes. This is a great way to put the dashboard on your TV monitor or hallway screen and keep it updated.
 
 ![Auto-refresh options](_img/1_25_07.png)
 
-##Richer visualizations in the build summary page
+## Richer visualizations in the build summary page
 
-####Code coverage
+#### Code coverage
 
 You’ll now see a graphical representation of the code coverage charts on the build summary page.
 
 ![Code coverage charts](_img/1_25_08.png)
 
-####Quality trend chart and test duration trend chart
+#### Quality trend chart and test duration trend chart
 
 With this update, we’ve added two new trend charts to the Tests tab on the build summary page. The first chart shows the count of test failures over pass percentage, and the second chart shows test duration over the count of tests.
 
@@ -74,41 +74,41 @@ Clicking each chart will open up a detailed information view, and you can also a
 
 ![Test failures and test duration on the dashboard](_img/1_25_10.png)
 
-##View passed test results and file bugs in build summary page
+## View passed test results and file bugs in build summary page
 
 One of the top asks that we’ve heard is to view passed test results, in addition to failed tests in the Tests tab on the build summary page. We have added the outcome filter that lets you view passed, failed or all test results. If multiple tests are failing for the same reason, you can now file a single bug for those multiple test failures.
 
 ![Passed and failed tests together in test results](_img/1_25_11.png)
 
-##Test summary in build status notification email
+## Test summary in build status notification email
 
 You can now find the number of tests that were run, and how many of them passed or failed in the build notification email itself, without opening the build summary page in Team Web Access.
 
-##Support for editing tags in the bulk edit dialog
+## Support for editing tags in the bulk edit dialog
 
 We’re heard your feedback on working with tags, and with this update, you’ll now able to add and remove tags from multiple work items using the bulk edit dialog.
 
 ![Adding and removing tags in bulk edit](_img/1_25_12.png)
 
-##Deleting a custom field
+## Deleting a custom field
 
 In the last [deployment](../2015/dec-10-team-services.md), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
 
-##Keyboard shortcuts
+## Keyboard shortcuts
 
 Following our trend from the last few sprints, we are continuing to add more keyboard shortcuts across the product. Today we’re releasing a set for the Code hub.
 
 ![The latest keyboard shortcuts for Code hub](_img/1_25_13.png)
 
-##Test plan improvements
+## Test plan improvements
 
-####Filter test plans
+#### Filter test plans
 
 You can now set a filter for test plans that is backed by a query. This allows you to customize the set of test plans you want to work with in the Test hub.
 
 ![Filtering test plans](_img/1_25_14.png)
 
-####Tests from child suites
+#### Tests from child suites
 
 You can now see all tests from the current suite and its child suites with one click—this lets you perform certain operations spanning the suite hierarchy from one place.
 
@@ -120,11 +120,11 @@ These operations include:
 
 ![Showing tests from child suites](_img/1_25_15.png)
 
-##Exploratory testing improvements
+## Exploratory testing improvements
 
 The exploratory testing extension can be found in the marketplace: [https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)
 
-####Search on teams within projects
+#### Search on teams within projects
 
 You can now search for your team in the search box without needing to browse the project hierarchy tree. This is useful for quick discovery when there is a large number of projects or teams.
 
@@ -143,7 +143,7 @@ You can now capture the issues found during the exploratory testing either as bu
 
 ![Create bugs or tasks from exploratory testing](_img/1_25_19.png)
 
-##Release orchestration improvements
+## Release orchestration improvements
 
 We have made a number of improvements to give you better control in managing your release processes.
 
@@ -178,7 +178,7 @@ You may want to configure multiple approvers for an environment, and control whe
 
 ![Configuring approval options](_img/1_25_23.png)
 
-##Retention policies for releases
+## Retention policies for releases
 
 With this update, you can now control how long releases are retained. You can set a retention policy for each release definition.
 
@@ -190,17 +190,17 @@ At this point, the retention policies for release management are independent fro
 
 For more information, see [documentation](http://aka.ms/rmpreview) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
 
-##UI extensibility for release management
+## UI extensibility for release management
 
 You can now publish new sections into the release summary by using a specific syntax. For example, having the following line in your task will produce a new section called "Attachments":
 
-Write-Verbose ##vso[Task.UploadSummary] Attachments.md
+Write-Verbose ## vso[Task.UploadSummary] Attachments.md
 
 You can also add new sections or new tabs in the release summary using UI contribution points. Learn more about these contacts here:
 
 [/azure/devops/integrate/](/azure/devops/integrate/)
 
-##Search scope selector
+## Search scope selector
 
 With this update, we’ve added the ability to choose what to search for—code or work item—directly from the search box. Your last search target is persisted for a given hub.
 
@@ -208,7 +208,7 @@ With this update, we’ve added the ability to choose what to search for—code 
 
 If you don’t code search in your account, make sure to grab the extension from the marketplace: [https://marketplace.visualstudio.com/items/ms.vss-code-search](https://marketplace.visualstudio.com/items/ms.vss-code-search)
 
-##Search across Git and TFVC projects
+## Search across Git and TFVC projects
 
 You can now search for code in Git repositories added to your existing team project created with TFVC. Similarly, you can also search for code in TFVC repositories added to an existing team project created with Git repositories.
 

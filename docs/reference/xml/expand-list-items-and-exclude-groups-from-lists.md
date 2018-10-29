@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 05/10/2017
 ---
 
@@ -104,7 +105,7 @@ To better understand how these attributes are used to populate a field's drop-do
 </tr>
 </tbody>
 </table>
-
+## E
 ##Example: Expand lists and exclude groups
 
 In this example, the field contains a string value, a group, and a global list. At the time it is run, the list is expanded and groups are excluded.
@@ -183,7 +184,7 @@ In this example, the field contains a string value, two groups, and a global lis
 </table>
 
 
-
+## E
 ##Example: Do not expand lists or groups, and do not filter
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.

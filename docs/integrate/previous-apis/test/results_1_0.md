@@ -558,7 +558,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/
 ```
 
 
-##Get a list of action results
+## Get a list of action results
 
 Gets the action results for an iteration in a test result.
 
@@ -646,7 +646,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/
 ```
 
 
-##Get a list of parameterized results
+## Get a list of parameterized results
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results/{result}/iterations/{iteration}/parameterresults?api-version={version}[&paramName={string}]

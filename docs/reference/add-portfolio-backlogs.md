@@ -41,7 +41,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 You can add up to five levels of portfolio backlogs. And, each team can [choose which  backlogs appear for them to work on](../organizations/settings/select-backlog-navigation-levels.md).
 
 <a id="overview">  </a>
-##Process overview
+## Process overview
 
 The process to add another portfolio backlog differs slightly depending on the [process model](customize-work.md) you use.   
 - For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing projects or use it to create a project.  
@@ -59,7 +59,7 @@ You can apply the same steps if you work with a project based on the [Scrum](../
 For an overview of the three system processes, see [Choose a process](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
-##1. Export the files you need
+## 1. Export the files you need
 <ol>
 
 <li>If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added as an administrator](../organizations/security/set-project-collection-level-permissions.md). You need these permissions to customize the project.</li>   
@@ -79,7 +79,7 @@ Save the files to a folder that you'll use to update these files and folders: Ca
 
 
 <a id="create-initiative">  </a>
-##2. Create a work item type named Initiative
+## 2. Create a work item type named Initiative
 
 The easiest way to create a work item type (WIT) is to copy an existing one, rename it, and edit it to support your requirements. In this example, we copy the Epic WIT and label it Initiative.  
 
@@ -125,7 +125,7 @@ The easiest way to create a work item type (WIT) is to copy an existing one, ren
 
 
 <a id="update-categories">  </a>
-##3. Update Categories with the Initiative Category 
+## 3. Update Categories with the Initiative Category 
 Now, add the Initiative Category. This adds the Initiative backlog to process configuration. The agile experience manages WITs according to categories.    
 
 Add the Initiative Category to the Categories.xml file. (The Categories.xml file is located in the WorkItem Tracking folder.)  
@@ -141,7 +141,7 @@ You can add this category anywhere within the definition file. Since you are add
 
 <a id="update-processconfig">  </a>
 
-##4. Update ProcessConfiguration to add the Initiative portfolio backlog  
+## 4. Update ProcessConfiguration to add the Initiative portfolio backlog  
 In this last step, you add the Initiative portfolio backlog to the process and modify the Feature portfolio backlog to reflect the hierarchy between Initiatives and Features. The process configuration determines the parent-child relationships among the portfolio backlogs.  
 
 1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Processfolder of the ProcessTemplate folder.)
@@ -196,7 +196,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 
 <a id="update-team-project">  </a>
-##5. Update your project and verify access to the new portfolio backlog  
+## 5. Update your project and verify access to the new portfolio backlog  
 
 1.	Update your project: 
 	- For **Hosted XML:**  [Import your process](../organizations/settings/work/import-process/import-process.md).  
@@ -269,19 +269,19 @@ Otherwise, see [Customize your work tracking experience](customize-work.md) to a
 
 If you have additional questions, see [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.  
 
-###Portfolio backlog hierarchy
+### Portfolio backlog hierarchy
 
 What controls the hierarchy among portfolio backlogs?  
 
 The process configuration determines the hierarchy through the assignment of parent categories to portfolio backlog categories. Only parent-child relationships are supported. The upper-most category within the hierarchy doesn't contain a parent assignment.  
 
-###Portfolio backlogs and WIT categories
+### Portfolio backlogs and WIT categories
 
 Can I have more than one WIT defined in a category that I use for a portfolio backlog? 
 
 Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog category. The main restriction is to not add the same WIT to two different categories that are assigned to one of the following sections for process configuration: a ```PortfolioBacklog```, ```RequirementBacklog```, or ```TaskBacklog```.  
 
-###Nesting of backlog items
+### Nesting of backlog items
 
 **Can you nest backlog items in addition to using portfolio backlogs?**  
 

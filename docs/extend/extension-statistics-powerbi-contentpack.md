@@ -16,7 +16,7 @@ ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 You can gain insight and analyze the progress of your extension by using Extension Statistics Power BI Content pack. All data elements available in the extension hub are also available in Power BI content pack. 
 The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable but the data model is not.
 
-##Connect to Power BI and get the Content Pack
+## Connect to Power BI and get the Content Pack
 
 
 1. Open a web browser and go to [http://powerbi.com](http://powerbi.microsoft.com/).
@@ -59,7 +59,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 9. Once Power BI is authorized, data will begin to load and you'll be presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher will be downloaded. 
 
 
-##Available data and reports 
+## Available data and reports 
 
 After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](./extension-report.md). 
 

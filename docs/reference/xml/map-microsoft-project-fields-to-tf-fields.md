@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/08/2017
 ---
 
@@ -77,7 +78,7 @@ For more information, see [Define initial areas, iterations, and Project mapping
 <LinksField ProjectField="" />  
 ```  
   
-<a name="DefaultFM"></a> 
+## Dname="DefaultFM"></a> 
 ##Default field mappings  
  The following example shows how the MSF for Agile Software Development process template maps fields in work items to columns in Microsoft Project.  
   

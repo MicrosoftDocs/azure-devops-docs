@@ -57,7 +57,7 @@ If you deploy releases to multiple stages, you can substitute configuration sett
 
    > If you prefer to manage stage configuration settings in
    your own database or Azure keyvault, add a task to the stage to read and emit those values using
-   `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
+   `## vso[task.setvariable variable=connectionString;issecret=true]<value>`.
 
    > At present, you cannot apply a different configuration to individual IIS servers.
 

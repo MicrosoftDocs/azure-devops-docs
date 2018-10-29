@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 04/14/2017  
 ---
@@ -63,7 +64,7 @@ Build and test integration work item fields support the following actions:
 </tbody>
 </table>  
 
-<a id="linked-bugs"/>
+## Lid="linked-bugs"/>
 ##List bugs and the test cases that test them
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 

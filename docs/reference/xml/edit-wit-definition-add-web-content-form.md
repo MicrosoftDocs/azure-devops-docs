@@ -32,7 +32,7 @@ For information about the syntax structure of the elements used to add Web conte
   
   
 <a name="Export"></a> 
-##Export and open the WIT definition file  
+## Export and open the WIT definition file  
   
 1.  Perform one of the following steps based on the scope of the customization that you want to perform:  
   

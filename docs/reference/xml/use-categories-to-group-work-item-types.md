@@ -43,7 +43,7 @@ You use categories to accomplish the following operations:
 -   To query for different WITs that have different names based on locale, assign them to the same category and use the **In Group** operator.  
   
 <a name="process"></a> 
-##Default categories and process configuration  
+## Default categories and process configuration  
  Process configuration references the default categories defined for a project. Here are the default categories that are defined in the [default process template](../../boards/work-items/guidance/choose-process.md):  
   
 -   Bug Category    
@@ -65,7 +65,7 @@ Most of these categories are self-explanatory, and mostly contain one WIT within
 If you have created WITs that act in similar ways and you want to treat them in similar ways as those defined by the above categories, then you will want to add them to the category. For example, if you have defined one or more types of bugs, then you might want to add those types to the Bug Category. In this way, the process configuration will automatically treat these bug types as they do the standard bug WIT. Or, you can customize the Requirement Category to include two or more WITs which will then appear on the product backlog.  
   
 <a name="hiddentypes"></a> 
-###Hidden Types category  
+### Hidden Types category  
  The Hidden Types Category specifies the set of WITs that you do not want users to create manually. By default this set includes:  
   
 -   [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    

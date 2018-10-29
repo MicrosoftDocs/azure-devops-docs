@@ -98,7 +98,7 @@ You can change settings defined for the audio device and annotation tool at any 
 
 1. **To delete a recording**: Choose the image for the recording that you want to delete, and then press the **Delete** key.
 
-###To add text, capture a screenshot, or attach a file
+### To add text, capture a screenshot, or attach a file
  
 You can add text, capture a screenshot, annotate a screenshot, or attach a file as part of your feedback. You can perform these operations while you continue to record your feedback. 
 

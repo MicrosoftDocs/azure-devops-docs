@@ -139,7 +139,7 @@ You can also view and manage work that you're following from your Project pages.
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
 
 
-###Q: Can I add someone else to follow a work item or PR?
+### Q: Can I add someone else to follow a work item or PR?
 
 **A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/howto-manage-team-notifications.md).	
 

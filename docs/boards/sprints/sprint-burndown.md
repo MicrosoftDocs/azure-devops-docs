@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 06/21/2018
@@ -171,7 +172,7 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 *	Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
 *	At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
 
-<a id="past-sprints">  </a>
+## Cid="past-sprints">  </a>
 ##Current and past sprint burndown charts
 As you complete each sprint, the system maintains a history of your activity. 
 
@@ -204,7 +205,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ---
 
 
-
+## T
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 

@@ -51,7 +51,7 @@ The following table describes the attributes for the **group**, **member**, and 
 ||**path**|Identifies the node of the area path or iteration path where the permission is being applied. This attribute is valid only when **class** is set to CSS_NODE or ITERATION_NODE.|  
   
 <a name="group-macros"></a> 
-##Group macros and default groups  
+## Group macros and default groups  
  The following table lists the macros that you can use to specify a default group that is defined in Team Foundation Server.  
   
 > [!NOTE]
@@ -68,7 +68,7 @@ The following table describes the attributes for the **group**, **member**, and 
 |Default team|@defaultTeam|  
   
 <a name="NestingGroups"></a> 
-###Example: Nest groups and assign members to groups  
+### Example: Nest groups and assign members to groups  
  The following example shows how to configure groups that are named TestGroup1, TestGroup2, and TestGroup3. In this example, you add TestGroup1 as a member of TestGroup2. For this code to be valid, you must define TestGroup1 before you define TestGroup2.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -107,7 +107,7 @@ The following table describes the attributes for the **group**, **member**, and 
 ```  
   
 <a name="team"></a> 
-##Define a team  
+## Define a team  
  In addition to creating groups, you can assign a group as a team. Creating a project also creates a default team. If you have several teams that want to organize their work separately from the other teams, then you can either define these teams within the Groups and Permissions plug-in file, or you can configure them after you create the project. See [Add another team](../../organizations/settings/add-teams.md).  
   
  The following example shows how to configure a group as a team. In this example, you specify the group, Dream Team, as a team and add the project creator as a member of the team. Whatever iteration paths that you specify for the team must be defined in the Classifications plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
@@ -173,7 +173,7 @@ The following table describes the collection-level permissions that you can assi
 |**GENERIC_READ**|**View collection-level information**. Can view membership of collection-level groups and the permissions of those users.|  
   
 <a name="Project"></a> 
-##Assign project-level permissions  
+## Assign project-level permissions  
  You can assign project-level permissions in the Groups and Permissions plug-in file. You assign these permissions by using the group **permission** element and the PROJECT class. These permissions control access to a single project's resources. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
  The following example shows how to grant several permissions to the Contributors group for a project.  
@@ -206,7 +206,7 @@ The following table describes the project-level permissions that you can assign 
 |**GENERIC_WRITE**|**Edit project-level information**. Can edit project-level permissions for users and groups in Team Foundation Server.||||  
   
 <a name="AreaPaths"></a> 
-##Assign permissions to control area paths  
+## Assign permissions to control area paths  
  You can assign permissions that control access to area definitions by using the group **permission** element and the CSS_NODE class. These permissions control access to a single project's classification structure. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
  The following example shows how to grant several permissions to the Contributors group for a project.  
@@ -239,7 +239,7 @@ The following table describes the project-level permissions that you can assign 
 |**GENERIC_WRITE**|**Edit this node**. Can set permissions for and rename area nodes.||||  
   
 <a name="IterationPaths"></a> 
-##Assign permissions to control iteration paths  
+## Assign permissions to control iteration paths  
 
 You assign permissions that control access to iteration paths by using the group **permission** element and the **ITERATION_NODE** class. These permissions control access to the milestone releases or iterations for a single project. You can grant access to users and groups in Windows, default TFS groups, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   

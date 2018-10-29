@@ -96,7 +96,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}')
 ```
 
-##Related articles 
+## Related articles 
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

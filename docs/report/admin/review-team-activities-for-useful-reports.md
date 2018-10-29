@@ -34,7 +34,7 @@ First, make sure your team is performing the activities that create the data tha
 
 Here's a summary of the reports that TFS provides and the team activities that are associated with them. Over time, you can use these reports to see trends and identify which practices and processes require more attention to deliver desired results.
 
-##Monitor code quality
+## Monitor code quality
 Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
 
 <table>
@@ -67,7 +67,7 @@ Build reports track the quality of software under development. By defining tests
 
 ![Sample build summary report](_img/IC665009.png)  
 
-##Monitor progress
+## Monitor progress
 Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. 
 
 <table width="100%">
@@ -120,7 +120,7 @@ Project management reports provide insight into how much work the team is tackli
 ![Sample stories overview report](_img/IC665011.png)  
 
 
-##Monitor test plans and bug tracking
+## Monitor test plans and bug tracking
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
 <table width="100%">
@@ -150,26 +150,26 @@ Test planning reports support monitoring the test progress and coverage of backl
 **Sample test plan progress report**   
 ![Sample test plan progress report](_img/IC665012.png)  
 
-##Q & A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 
-###Q: Do reports handle stories and substories or tasks and subtasks?
+### Q: Do reports handle stories and substories or tasks and subtasks?
 **A:**  Yes, you can subdivide stories or backlog items as well as tasks, creating a nested hierarchy of both backlog items and tasks. You can nest items several levels deep. If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and their parent backlog item. To correct reports you believe are in error, see [Address inaccuracies published for summary values](../sql-reports/address-inaccuracies-published-for-summary-values.md).
 
-###Q: Which reports depend on linking work items?
+### Q: Which reports depend on linking work items?
 **A:**  The overview and progress reports depend on linking tasks, test cases, and bugs to backlog items. You must link these items using the parent-child link for tasks and bugs and the Tested By link for test cases.
 
-###Q: Are these reports the same as the charts that appear in the web portal?
+### Q: Are these reports the same as the charts that appear in the web portal?
  **A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support additional filters. 
 
-###Q: Do you want to create additional product areas or release milestones?
+### Q: Do you want to create additional product areas or release milestones?
 **A:**  See [Modify areas or iterations](../../organizations/settings/set-area-paths.md).
 
-###Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?
+### Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?
 **A:**  See [Bulk modify work items](../../boards/backlogs/bulk-modify-work-items.md).
 
-###Q: Do you want to add a field to track additional data?
+### Q: Do you want to add a field to track additional data?
 **A:**  See [Add or modify a work item field to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).  
 
 <!-- ENDSECTION -->

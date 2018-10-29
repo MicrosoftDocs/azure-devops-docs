@@ -38,16 +38,16 @@ This example provides a ready-made widget, covering basics from topics in Dashbo
 
 
 
-##Provide a configuration view
+## Provide a configuration view
 0. [Run simple analytics queries](https://github.com/Microsoft/vsts-extension-samples/blob/master/analytics-example-widget/scripts/data/CommonQueries.ts) required by UI controls used for configuring a view.
 0. [Manage state of configuration UI](https://github.com/Microsoft/vsts-extension-samples/blob/master/analytics-example-widget/scripts/config/AnalyticsConfigActionCreator.ts), with updates based on user actions, and with new data from Analytics queries.
 0. [Render configuration UI](https://github.com/Microsoft/vsts-extension-samples/blob/master/analytics-example-widget/scripts/config/AnalyticsConfigComponent.tsx) using Typescript and React.
 
-##Render data within a Widget
+## Render data within a Widget
 0. Run a user configured query as a [POST Request](https://github.com/Microsoft/vsts-extension-samples/blob/master/analytics-example-widget/scripts/data/ViewQueries.ts)
 0. Interpret data from analytics to [render a chart](https://github.com/Microsoft/vsts-extension-samples/blob/master/analytics-example-widget/scripts/widget/ChartOptionFactory.ts)
 
-##Next steps
+## Next steps
 To avoid excess complexity in the sample, we omitted certain technologies and practices, which a production widget should certainly include. The [ui-fabric-react](https://github.com/Microsoft/vsts-extension-samples/tree/master/ui-fabric-react) sample on github highlights a build process which exercises these details.
 0. [Javascript bundling and content minification](/aspnet/mvc/overview/performance/bundling-and-minification) - The set of small, loose script files in the sample can load much more quickly when consolidate into a single file, and minified.
 0. [Fabric UI Controls](https://developer.microsoft.com/fabric) - Fabric UI controls provide a rich set of configuration UI components for React.

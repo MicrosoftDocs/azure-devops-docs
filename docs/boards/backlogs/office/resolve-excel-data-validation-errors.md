@@ -27,7 +27,7 @@ A data validation error occurs when a change in the work item list or project pl
  
   
 ##  <a name="ResolveDataValidationError"></a> 
-##Resolve a data validation error  
+## Resolve a data validation error  
  You can use the **Work Item Publishing Errors** dialog box to resolve a data validation error.  
 
 1.  In the **Work Item Publishing Errors** dialog box, for each work item that appears with a data validation error, follow these steps.  
@@ -51,7 +51,7 @@ A data validation error occurs when a change in the work item list or project pl
 3.  Click **Close** to close the **Work Item Publishing Errors** dialog box.  
   
 <a name="ResolveDataValidationErrorChecking2007"></a> 
-##Resolve a data validation error by using error checking in Excel  
+## Resolve a data validation error by using error checking in Excel  
  You can use the Office Excel tools to find and resolve an error in a work item list. For more information about how to use Office Excel error checking tools, see the Office Excel Help.  
   
 #### To resolve a data validation error by using error checking in  Excel 2007  
@@ -78,6 +78,6 @@ A data validation error occurs when a change in the work item list or project pl
 -  [Work in Excel and Project](track-work-vsts-tfs.md) 
 
 
-###Required permissions  
+### Required permissions  
   
 To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 

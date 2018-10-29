@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 05/10/2017
@@ -337,7 +338,7 @@ All users and groups must be qualified by one of these tokens. For example, the 
 To learn more about built-in groups, see [Permissions and groups](../../organizations/security/permissions.md) 
 
 
-<a name="system"></a>
+## Sname="system"></a>
 ##System field rules
 
 System fields have System.*Name* reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:

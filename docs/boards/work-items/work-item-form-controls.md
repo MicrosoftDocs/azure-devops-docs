@@ -157,7 +157,7 @@ To reference a work item, use the [**#ID** control](../../notifications/add-link
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
 > For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-::: moniker-end  
+::: moniker-endï¿½ï¿½
 
 <a id="copy-url">  </a>
 ## Copy the URL
@@ -177,7 +177,7 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 <img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #C3C3C3;" /> 
 
 
-##Find or list work items  
+## Find or list work items  
 Type an ID in the Search work items box and then choose the search icon.  
 
 <img src="../backlogs/_img/add-work-items-search-box-id.png" alt="Search work items text box" style="border: 1px solid #C3C3C3;" />  

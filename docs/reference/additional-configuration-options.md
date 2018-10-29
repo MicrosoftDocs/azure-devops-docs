@@ -192,7 +192,7 @@ If you have updated a project based on v5.0 of MSF for Agile, do the manual upda
 
 <a id="test-case-management">   </a> 
 
-###Test case management and custom workflow states 
+### Test case management and custom workflow states 
 If you add or change the workflow states for the test plan or test suite type definitions, and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions, you must also update the process configuration for the project as well. Otherwise, you'll encounter an **Application detected an unexpected fault** error when you connect to your project. 
 
 ![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
@@ -200,7 +200,7 @@ If you add or change the workflow states for the test plan or test suite type de
 To resolve this error, see [Import and export process configuration [witadmin]](witadmin/witadmin-import-export-process-configuration.md).  
 
 <a id="update-from-2012">   </a> 
-###Recommended updates to projects created from TFS 2012 process templates 
+### Recommended updates to projects created from TFS 2012 process templates 
 
 There are no additional required customizations to make after updating from TFS 2012 to TFS 2015. However, there are some recommended updates to make to the workflow of specific WITs.
 
@@ -218,7 +218,7 @@ For details, see [Upgrade your 2012 project from RTM to Update 2](http://blogs.m
 If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../boards/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 
-###Recommended updates to projects created from TFS 2010 process templates 
+### Recommended updates to projects created from TFS 2010 process templates 
 
 If you've updated a project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](xml/update-the-workflow-for-agile-team-projects.md). 
 

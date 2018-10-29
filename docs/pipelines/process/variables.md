@@ -207,7 +207,7 @@ steps:
 
 # Create a variable
 - script: |
-    echo '##vso[task.setvariable variable=myVariable]abc123'
+    echo '## vso[task.setvariable variable=myVariable]abc123'
 
 # Print the variable
 - script: |
@@ -228,7 +228,7 @@ jobs:
   pool:
     vmImage: 'vs2017-win2016'
   steps:
-  - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
+  - powershell: echo "## vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
     name: echovar
@@ -267,7 +267,7 @@ jobs:
         configuration: release
         platform: x64
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
+  - script: echo "## vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
     name: echovar
@@ -293,7 +293,7 @@ jobs:
     vmImage: 'ubuntu-16.04'
     parallel: 2 # Two slices
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
+  - script: echo "## vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
     name: echovar
@@ -360,7 +360,7 @@ steps:
 
 # Create a secret variable
 - powershell: |
-    Write-Host '##vso[task.setvariable variable=mySecret;issecret=true]abc'
+    Write-Host '## vso[task.setvariable variable=mySecret;issecret=true]abc'
 
 # Attempt to output the value in various ways
 - powershell: |

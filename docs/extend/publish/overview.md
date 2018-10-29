@@ -115,7 +115,7 @@ To offer your extension again in the Marketplace, choose **Publish** on the menu
 
 You can also choose to remove your extension completely from the Marketplace if your extension has zero (0) installs. To do this, choose **Remove** on the menu. This action cannot be undone. 
 
-###Unpublish/Remove requirements
+### Unpublish/Remove requirements
 Certain criteria must be met for an extension to be unpublished or removed:
 
 | Action    | Requirements                                                  |

@@ -12,7 +12,7 @@ author: yukom
 
 #Team Foundation Service updates - Oct 17
 
-##Build Image Update
+## Build Image Update
 
 Today we interrupt our normally scheduled 3 week update cadence with a bonus update to the service.
 

@@ -247,7 +247,7 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 ::: moniker range=">= tfs-2017"  
 
 <a id="verify-bug">  </a>
-###Verify a bug, re-run tests defined for web apps 
+### Verify a bug, re-run tests defined for web apps 
 ::: moniker-end  
 ::: moniker range="vsts"  
 Choose the **Verify** option to re-run tests which identified the bug. You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.

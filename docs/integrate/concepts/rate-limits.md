@@ -30,10 +30,10 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
-##Current rate limits
+## Current rate limits
 Azure DevOps Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
-###Global consumption limit
+### Global consumption limit
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
 
 - One of their shared resources is at risk of being overwhelmed, and 
@@ -68,7 +68,7 @@ be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 10
 We take a similar approach to rate limiting in Azure Pipelines. Since pipelines are not associated to a single user like other activities, each pipeline is treated as an individual entity with its own resource consumption tracked. Just like the global consumption limit for users, we apply a 200 TSTU limit for an individual pipeline in a sliding 5-minute window. Even if build agents are self-hosted, there could be load on VSTS resources for operations such as git clone. If a pipeline is delayed or blocked due to rate limiting, a message will appear in the attached logs.
 
 <!---
-###Work item tracking request limits
+### Work item tracking request limits
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
@@ -86,7 +86,7 @@ To avoid hitting these limits, we recommend:
 As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.  
 --> 
 
-##User experience
+## User experience
 
 When an individual user's requests are delayed by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.  
 

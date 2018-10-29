@@ -24,7 +24,7 @@ Your Kanban board provides you with a visual interactive space for you and your 
 Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. 
 
 
-####In a nutshell you use boards to: 
+#### In a nutshell you use boards to: 
 - Implement [Kanban methods](kanban-basics.md) 
 - Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
 - Monitor progress and update the status of work items by [drag-and-drop to a column](#update)

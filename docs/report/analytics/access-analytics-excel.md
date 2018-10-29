@@ -71,7 +71,7 @@ This allows the following options:
 
 More information on these options can be found in the [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet).
 
-##Handling relationships
+## Handling relationships
  
 By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
 

@@ -37,7 +37,7 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 <li>(Optional) Delete TFS database catalog mappings.</li> 
 </ol>
 
-###Required permissions
+### Required permissions
 
 To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
 

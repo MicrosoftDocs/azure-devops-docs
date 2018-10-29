@@ -57,7 +57,7 @@ Use the drop-down menu to open a release and see the pipeline, abandon an execut
 
 ![Open pipelines](_img/releases-page/5.png)
 
-##All definitions tab
+## All definitions tab
 
 <a name="folders"></a>
 The **All pipelines** tab shows all your release pipelines as a folder tree.

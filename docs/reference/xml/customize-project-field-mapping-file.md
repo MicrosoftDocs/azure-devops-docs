@@ -4,7 +4,8 @@ description: Change how specific fields are published from Project to Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.date: 09/08/2017
 ---
@@ -20,7 +21,7 @@ You can customize how work item fields that are defined in Team Foundation map t
   
  To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
   
-<a name="FieldMappings"></a> 
+## Mname="FieldMappings"></a> 
 ##Mapping element  
  To specify a mapping between a work item field and a project column, you use the `Mapping` element.  
   
@@ -68,7 +69,7 @@ You can customize how work item fields that are defined in Team Foundation map t
 > [!NOTE]  
 >  As a best practice, you should map calculated fields in Project to read-only fields in Team Foundation. This helps avoid confusion so that team members do not try to change calculated fields.   
   
-<a name="Reserved"></a> 
+## Rname="Reserved"></a> 
 ##ReservedField element  
  The `ReservedField` element works to support hierarchical links defined between tasks and is an optional element.  
   
@@ -126,7 +127,7 @@ For more information about how to use the synchronization field in Project, see 
 ##  Dependency link type  
  When you create links between tasks in Microsoft Project, you create a dependent link between the tasks. The predecessor task is assigned a Predecessor link and the successor task is assigned a Successor link. These are the default designations that are defined for the System.LinkTypes.Dependency link type.  
   
-<a name="PublishRefresh"></a> 
+## Mname="PublishRefresh"></a> 
 ##Mapping attributes that affect publishing and refreshing  
  The following mapping fields and Microsoft Project field values determine whether a value for a work item is published or refreshed:  
   

@@ -72,8 +72,8 @@ steps:
     mkdir -p '$(modulePath)'
     shopt -s extglob
     mv !(gopath) '$(modulePath)'
-    echo '##vso[task.prependpath]$(GOBIN)'
-    echo '##vso[task.prependpath]$(GOROOT)/bin'
+    echo '## vso[task.prependpath]$(GOBIN)'
+    echo '## vso[task.prependpath]$(GOROOT)/bin'
   displayName: 'Set up the Go workspace'
 ```
 

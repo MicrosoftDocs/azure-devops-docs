@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/20/2017
 ---
 
@@ -25,7 +26,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
   
 -   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the project. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
-<a name="default"></a> 
+## Dname="default"></a> 
 ##Default metastate assignments made to workflow states for bugs  
  The following table lists the default metastates assigned to the bug workflow states for the Agile and CMMI process templates.  You only need to assign a metastate to a workflow state that you want to show up on the task board or for My Work to recognize. The default assignments include the typical workflow progression from **Active** or **Proposed** to **Closed**. If your bugs contain workflow states outside this progression, such as a Removed state, then you exclude those states in your metastate assignments.  
   
@@ -56,7 +57,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
 ``` 
   
 <a name="add"></a> 
-
+## A
 ##Add WITs to the Bug category  
 You add WITs to a category by updating the [Categories definition file](categories-xml-element-reference.md) and importing it to your project. Follow the [customization sequence](../customize-work.md) that matches your process model. 
  
@@ -82,7 +83,7 @@ You add WITs to a category by updating the [Categories definition file](categori
   
 
 
-<a name="assign"></a> 
+## Aname="assign"></a> 
 ##Assign metastates to workflow states defined for bugs  
  You assign metastates to the workflow states of bugs within the `BugWorkItems` element in the definition for ProcessConfiguration. Follow the [customization sequence](../customize-work.md) that matches your process model. 
    

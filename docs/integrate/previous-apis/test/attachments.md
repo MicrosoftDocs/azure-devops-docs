@@ -152,12 +152,12 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 | Query
 | api-version    | string |                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET https://fabrikam-fiber-inc:8080/DefaultCollection/fabrikam/_apis/test/runs/1/attachments/1?api-version=2.0-preview
 ```
 
-####Response
+#### Response
 Status code: 200
 ```
 { file-contents }
@@ -183,12 +183,12 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Query
 | api-version    | string |                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET https://fabrikam-fiber-inc:8080/DefaultCollection/fabrikam/_apis/test/runs/1/results/100000/attachments/1?api-version=2.0-preview
 ```
 
-####Response
+#### Response
 Status code: 200
 ```
 { file-contents }

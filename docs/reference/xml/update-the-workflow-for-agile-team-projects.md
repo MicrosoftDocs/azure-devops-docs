@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <=tfs-2015'
 ms.date: 12/15/2017
 ---
@@ -38,7 +39,7 @@ Task board for an Agile project without the recommended manual updates
   
 To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the project. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
   
-<a name="agile_updates"></a> 
+## Uname="agile_updates"></a> 
 ##Update the workflow and metastates
   
 > [!IMPORTANT]  

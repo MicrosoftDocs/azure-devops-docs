@@ -73,7 +73,7 @@ look at the information on the service that you're interested in.
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a id="subscription-permissions" /> 
-####Q: What permissions do I need to set up a subscription?
+#### Q: What permissions do I need to set up a subscription?
 
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
 have these permissions. To grant them to other users directly, use **tfssecurity.exe** 
@@ -91,7 +91,7 @@ tfssecurity /a+ /collection:https://dev.azure.com/fabrikam/DefaultCollection Ser
 
 The GUID is the ID of the project. You can get it using the [Projects](/rest/api/vsts/) REST API.
 
-####Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
+#### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
 A: The user with these permissions can see all subscriptions created in the project 
 project and the notification history for those subscriptions. That user will be able to 
@@ -106,11 +106,11 @@ items in area path XYZ is receiving those "work item update" events, then I coul
 notification history of that other user's events, which includes work item data that I 
 don't otherwise have access to.
 
-####Q: Can I create service hook subscriptions for a project programmatically?
+#### Q: Can I create service hook subscriptions for a project programmatically?
 
 A: Yes. Go [here](create-subscription.md) for more details.
 
-####Q: Can I remove an app's access to my organization after I've authorized it?
+#### Q: Can I remove an app's access to my organization after I've authorized it?
 
 A: Yes. You can revoke authorizations from your profile.
 

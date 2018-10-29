@@ -175,7 +175,7 @@ A best-effort transformation is made to maintain the field groupings and layout 
 When you revert the process, the XML definitions for all WITs revert back to their original definitions. All users will only be able to see the old form layouts. 
 
 <!---
-###Visual Studio work item forms   
+### Visual Studio work item forms   
 
 Certain new controls are added to the Layout section, such as the Development and Discussion section controls. However, these do not display unless XXX. 
 -->

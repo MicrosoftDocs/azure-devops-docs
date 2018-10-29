@@ -60,7 +60,7 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](https://msdn.microsoft.com/library/bb386106.aspx#LoadBehavior).  
 
-##Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
+## Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
 
 To connect to Azure Boards or TFS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
  

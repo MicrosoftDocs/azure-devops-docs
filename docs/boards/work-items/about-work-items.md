@@ -19,7 +19,7 @@ ms.date: 09/13/2018
 You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the process used when your project was created.  
 
 ::: moniker range=">= tfs-2018"
-####In a nutshell:
+#### In a nutshell:
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
@@ -35,7 +35,7 @@ You can use work items to track anything you need to track. Each work item repre
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
-####In a nutshell:
+#### In a nutshell:
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
@@ -107,7 +107,7 @@ The new web form provides a number of experiences not provided with the old web 
 ## Web portal and clients that support tracking work items  
 You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
 
-###Web portal 
+### Web portal 
 
 Use the web portal to accomplish the following tasks. 
 
@@ -145,7 +145,7 @@ Anyone who has write access to a project can assign work items, including users 
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
 ::: moniker range="vsts" 
-###Integration with Azure Active Directory 
+### Integration with Azure Active Directory 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
@@ -153,7 +153,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-###Integration with Active Directory
+### Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 

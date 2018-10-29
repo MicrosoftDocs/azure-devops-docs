@@ -188,7 +188,7 @@ For instance, in a YAML pipeline, you could use it like this:
 jobs:
 - job: A
   steps:
-  - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - script: "echo ## vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
     name: printvar
 
 - job: B

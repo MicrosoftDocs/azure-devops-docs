@@ -8,7 +8,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/16/2017
 ---
 
@@ -71,7 +72,7 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 </tr>
 </table>
   
-
+## T
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 

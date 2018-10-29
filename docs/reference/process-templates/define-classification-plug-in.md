@@ -5,7 +5,8 @@ description: Define areas to organize work items into logical, physical, or func
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 ms.date: 09/08/2017
@@ -30,7 +31,7 @@ For an overview of using the web portal, see [Web portal navigation](../../proje
   
  In addition to areas and iterations, you specify the mapping file for Microsoft Project to upload within the Classification plug-in and the process template property.  
   
-<a name="name"></a> 
+## Cname="name"></a> 
 ##Classification plug-in name and location  
 The name of the file, folder, and plug-in are:  
  
@@ -41,7 +42,7 @@ The name of the file, folder, and plug-in are:
 > [!NOTE]  
 >  You can change the names of the XML file and the folder but not the plug-in. TFS does not include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
   
-<a name="tasks"></a> 
+## Cname="tasks"></a> 
 ##Classification tasks and dependencies  
  The Classification plug-in file must conform to its schema definition, as specified in the Css.xsd file, and the plug-in must be specified in its own file.  
   
@@ -50,7 +51,7 @@ The name of the file, folder, and plug-in are:
 > [!NOTE]  
 >  If you modify a process template's areas or iterations, make sure that you do not break any assignments that are used for work item queries or work items that are defined in the process template. For example, the Iteration1Backlog.wiq work item query for the Agile process template references Iteration 1. For more information, see [Add work item queries](add-work-item-queries-process-template.md).  
   
-<a name="areas"></a> 
+## Sname="areas"></a> 
 ##Specify  the initial area paths  
 Specify the root node of areas by using the following syntax:  
   
@@ -91,7 +92,7 @@ The following example shows how to specify two areas, Client and Server:
 </tasks>  
 ```  
   
-<a name="iterations"></a> 
+## Sname="iterations"></a> 
 ##Specify the initial iteration paths  
  Specify the root node for iterations by using the following syntax:  
   

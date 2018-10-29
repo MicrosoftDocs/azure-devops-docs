@@ -37,7 +37,7 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-####TFS 2018 and TFS 2017, Visual Studio 2017 client:
+#### TFS 2018 and TFS 2017, Visual Studio 2017 client:
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`
 
@@ -45,7 +45,7 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 
 
 ::: moniker range="tfs-2015"
-####TFS 2015, Visual Studio 2015 client 
+#### TFS 2015, Visual Studio 2015 client 
 
 `%programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
 
@@ -54,7 +54,7 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 
   
 ::: moniker range="tfs-2013"
-####TFS 2013, Visual Studio 2013 client 
+#### TFS 2013, Visual Studio 2013 client 
 
 `%programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`
 

@@ -12,7 +12,7 @@ author: yukom
 
 #Swim lanes, #mention, Build test steps – Jun 3
 
-##Kanban swim lanes
+## Kanban swim lanes
 
 Today’s update brings the ability to create swim lanes on your Kanban boards. A swim lane is a horizontal lane used to categorize work; the most common use is the creation of an “expedite lane” for emergency work that can skip queues and preempt other work. Our boards support creating as many lanes as the team needs. Just collapse them out of the way when not in use. To add a swim lane, click the gear in the top right hand corner of your board. Enjoy!
 
@@ -30,7 +30,7 @@ When the mention is saved, a link to the work item form is created. This lets ot
 
 Mentions are supported in changesets, shelvesets, git commit discussion comments, and pull request discussions. We’ve got a lot more planned along these lines, so stay tuned.
 
-##Automated testing in Build vNext
+## Automated testing in Build vNext
 
 In our [last deployment](may-15-team-services.md) we announced the preview of the next version of our Build system. With this deployment, we’ve turned on a bunch of related testing features. The new capabilities allow you to configure two test types: tests that run locally on the build machine (typically used for unit tests), and tests that run on remote machines in a distributed fashion. You can read more about all of this in a recent blog post: [http://aka.ms/testingblog](http://aka.ms/testingblog).
 
@@ -40,7 +40,7 @@ We’ve also released a new hub dedicated to browsing and analyzing test runs ac
 
 ![Viewing the test hub](_img/6_3_05.png)
 
-##Team settings API
+## Team settings API
 
 And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [/azure/devops/integrate/](/azure/devops/integrate/).
 

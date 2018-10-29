@@ -58,7 +58,7 @@ None
 <p>The value appended to the versions in the manifest files. Default is `.$(Build.BuildNumber)`.</p>
 <p>**Tip:** You can modify the [build number format](https://go.microsoft.com/fwlink/?LinkId=761520) directly or use a [logging command](https://go.microsoft.com/fwlink/?LinkId=821347) to dynamically set a variable in any format. For example, you can use `$(VersionSuffix)` defined in a PowerShell task:</p>
 <p>`$versionSuffix = ".$([DateTimeOffset]::UtcNow.ToString('yyyyMMdd.HHmmss'))"`</p>
-<p>`Write-Host "##vso[task.setvariable variable=VersionSuffix;]$versionSuffix"`</p>
+<p>`Write-Host "## vso[task.setvariable variable=VersionSuffix;]$versionSuffix"`</p>
 </ul>
 </td>
 </tr>

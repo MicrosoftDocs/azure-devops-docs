@@ -17,7 +17,7 @@ ms.date: 01/20/2017
 
 You might receive this error when you try to connect to Azure DevOps Services or an on-premises Team Foundation Server from Visual Studio.  
   
-##You receive this error when you try to connect to Azure DevOps Services   
+## You receive this error when you try to connect to Azure DevOps Services   
   
 |Problem|Resolution|  
 |-------------|----------------|  

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ac935b0b-09b3-4aed-9f3a-08190feb92e2
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -20,7 +21,7 @@ ms.date: 09/08/2017
 To learn more about the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md). To learn about process template plug-in files, see [Overview of process template files](overview-process-template-files.md)  
 
   
-<a name="structure"></a> 
+## Sname="structure"></a> 
 ##Structure of the ProcessTemplate.xml file  
  In each ProcessTemplate.xml file, you define metadata and task groups. The metadata describes the template and specifies the plug-ins to be processed, as the following example shows  
   

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 03/20/2018  
 ---
@@ -175,7 +176,7 @@ Work Item Type
 </tbody>
 </table>
 
-
+## N
 ####Notes:   
 
 0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   

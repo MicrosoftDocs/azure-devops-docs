@@ -403,7 +403,7 @@ GET http://localhost:8080/tfs/DefaultCollection/83e53972-81cd-434e-b15a-6fafcf40
         "rowSpan": 1,
         "columnSpan": 2
       },
-      "settings": "#####Markdown\nAdd content using the markdown widget.\n- **Bold**\n- *Italic*\n- [Links]()",
+      "settings": "##### Markdown\nAdd content using the markdown widget.\n- **Bold**\n- *Italic*\n- [Links]()",
       "settingsVersion": {
         "major": 1,
         "minor": 0,

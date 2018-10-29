@@ -74,7 +74,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
 <a id="assigned-to-me-widget"></a>
-###Assigned to me  
+### Assigned to me  
  
 ![Assigned to me widget](_img/widget-assigned-to-me.png)  
 
@@ -86,7 +86,7 @@ Displays the list of work items currently assigned to the currently logged in us
 
 
 ::: moniker range=">= tfs-2015"
-###Chart for work items  
+### Chart for work items  
 <a id="chart-wit-widget"></a> 
 	
 ![Chart work item query widget](_img/widget-chart-work-query.png)  
@@ -104,7 +104,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 ::: moniker range=">= tfs-2015"
 <a id="new-work-item-widget"></a>
-###New Work item
+### New Work item
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
@@ -123,7 +123,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker range=">= tfs-2015"
 
 <a id="other-links-widget"></a> 
-###Other links 
+### Other links 
 
 ![Other links widget](_img/widget-other-links.png)  
 
@@ -150,7 +150,7 @@ The following links are displayed when the corresponding resource is configured 
 ::: moniker range=">= tfs-2015"
 
 <a id="query-results-widget"></a> 
-###Query results 
+### Query results 
 	
 
 ![Query results widget](_img/widget-query-results.png)
@@ -165,7 +165,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 ::: moniker range=">= tfs-2015"
 <a id="query-tile-widget"></a> 
-###Query tile 
+### Query tile 
 
 ![Query tile widget](_img/widget-query-tile.png)
 
@@ -181,7 +181,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
-###Sprint burndown 
+### Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
@@ -195,7 +195,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ::: moniker range=">= tfs-2015"
 
 <a id="sprint-capacity-widget"></a> 
-###Sprint capacity 
+### Sprint capacity 
 
 ![Sprint capacity widget](_img/widget-sprint-capacity.png)
 
@@ -210,7 +210,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker range=">= tfs-2015"
 
 <a id="sprint-overview-widget"></a> 
-###Sprint overview 
+### Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
@@ -231,7 +231,7 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ::: moniker range=">= tfs-2015"
 <a id="work-links-widget"></a> 
-###Work links 
+### Work links 
 
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
@@ -252,7 +252,7 @@ To add Analytics widgets to your dashboard, you first need to install the [Analy
 
 For an overview of each of these widgets, see [Widgets based on the Analytics Service](../analytics/analytics-widgets.md).
 
-###Burndown chart 
+### Burndown chart 
 <a id="burndown-analytics-widget"></a>  
 	
 ![Burndown chart widget](_img/widget-burndown-chart.png)  
@@ -261,7 +261,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 
 ----
 
-###Burnup chart  
+### Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
 
 ![Burnup chart widget](_img/widget-burnup-chart.png)    
@@ -272,7 +272,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 
 <a id="cfd-widget"></a> 
 
-###Cumulative flow diagram   
+### Cumulative flow diagram   
 
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
@@ -285,7 +285,7 @@ Hover over each color within the chart to see the count of items for a particula
 ----
 
 <a id="cycle-time-widget"></a> 
-###Cycle time  
+### Cycle time  
 
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
@@ -296,7 +296,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="lead-time-widget"></a> 
-###Lead time  
+### Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
@@ -307,7 +307,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="velocity-widget"></a> 
-###Velocity   
+### Velocity   
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
@@ -323,7 +323,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 ## Azure Repos/Code widgets
 
 <a id="code-tile-widget"></a> 
-###Code tile	
+### Code tile	
 
 ![Code tile widget](_img/widget-code-tile.png)
 
@@ -339,7 +339,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker range=">= tfs-2015"
 
 <a id="pull-request-widget"></a> 
-###Pull request 
+### Pull request 
 
 ![Pull request widget](_img/widget-catalog-pull-request.png)
 
@@ -370,7 +370,7 @@ Requires TFS 2015.2 or later version.
 ::: moniker range=">= tfs-2015"
 
 <a id="build-history-widget"></a> 
-###Chart for build history  
+### Chart for build history  
 
 ![Build history widget](_img/widget-build-history-chart.png)   
 
@@ -441,7 +441,7 @@ Configurable widget that you can use to track quality continuously from a build 
 ::: moniker range=">= tfs-2017"
 
 <a id="chart-test-plan-widget"></a> 
-###Chart for test plans  
+### Chart for test plans  
 	
 ![Chart work item query widget](_img/widget-chart-test-plans.png)  
 

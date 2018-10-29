@@ -25,7 +25,7 @@ You can use the information in this topic as a quick reference to all the elemen
   
   
 <a name="FORM"></a> 
-##FORM example  
+## FORM example  
 The following example shows the overall structure of the **FORM** element. You specify the layout of a form by using the **Layout** element. You can specify different layouts that target different clients. For example, you can specify one layout for Windows clients and a different layout for the web portal. A layout typically consists of the top of the form and then a group of tabs. The sequence in which you define the elements within the layout determines the sequence in which the elements appear on the form.  
   
 You group elements to appear within columns by using the **Group** and **Column** elements. You use a **Control** element to define each field that you want to appear on the form. You use the **Tab** element to support different functional areas of field groups.  
@@ -68,7 +68,7 @@ You group elements to appear within columns by using the **Group** and **Column*
 ```  
   
 <a name="FormElements"></a> 
-##Form elements  
+## Form elements  
 You can specify how information and work item fields are grouped and appear in a work item form using the elements that are described in the following table.  
   
 > [!NOTE]  
@@ -161,7 +161,7 @@ Margin="(left, top, right, bottom)" ControlSpacing="Distance" LabelSpacing="Dist
 
   
 <a name="FormAttributes"></a> 
-##Attributes that are used to format FORM elements  
+## Attributes that are used to format FORM elements  
 You can control the spacing and size of many elements on a work item form by specifying the attributes that the following table describes. For more information, see [Design the work item form](design-work-item-form.md).  
  
 |**Attribute**|**Description**|**Applicable Elements**|  
@@ -181,7 +181,7 @@ You can control the spacing and size of many elements on a work item form by spe
 |`Type`|Required. The type of the control. For more information, see [Control](control-xml-element-reference.md).|`Control`|  
  
 <a name="LabelElements"></a> 
-##Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
+## Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
  The `WebpageControlOptions` element and its child elements have the following syntax structure:  
   
 > [!div class="tabbedCodeSnippets"]

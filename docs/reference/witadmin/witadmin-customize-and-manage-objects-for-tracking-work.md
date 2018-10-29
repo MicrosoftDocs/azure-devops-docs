@@ -47,7 +47,7 @@ For most commands, you must be a member of the Project Administrators or Project
 |**command /help**<br />or<br /> **command /?**|Displays the syntax and parameters for the **witadmin** command that you specify.|  
 
 <a name="index"></a> 
-##witadmin commands  
+## witadmin commands  
 
 All work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash; are customized by their XML definitions.  
 

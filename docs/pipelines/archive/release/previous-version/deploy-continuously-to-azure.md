@@ -100,7 +100,7 @@ along with the environments. You can add stages and environments, too.
 
    Each new build will trigger a release. You can also manually trigger a new release.
 
-###Q: How can I view and customize the deployment actions for each stage of my release?
+### Q: How can I view and customize the deployment actions for each stage of my release?
 
 **A**: In the Release Management client, go to **Configure Apps**, **vNext Release 
 Templates** and open your release template.
@@ -108,7 +108,7 @@ Learn more **[here](release-without-agents.md)**.
 
 ![Release Template Designer](_img/deploy-continuously-09.png)
 
-###Q: How can I use a different Azure Pipelines account for my releases?
+### Q: How can I use a different Azure Pipelines account for my releases?
 
 **A**: In the Release Management client, go to **Administration**, **Settings**, and edit the URL.
 

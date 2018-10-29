@@ -155,17 +155,17 @@ steps:
 # Linux
 - bash: |
     export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
-    echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+    echo ## vso[task.setvariable variable=IP_ADDR]$IPADDR
   condition: eq( variables.Agent.OS, 'Linux' )
 # macOS
 - bash: |
     export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
-    echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+    echo ## vso[task.setvariable variable=IP_ADDR]$IPADDR
   condition: eq( variables.Agent.OS, 'Darwin' )
 # Windows
 - powershell: |
     Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
-    Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
+    Write-Host ## vso[task.setvariable variable=IP_ADDR]$env:IPADDR
   condition: eq( variables.Agent.OS, 'Windows_NT' )
 
 # now we use the value, no matter where we got it
@@ -184,7 +184,7 @@ First, add a Linux script.
 1. Replace the body of the script with:
 ```bash
 export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
-echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+echo ## vso[task.setvariable variable=IP_ADDR]$IPADDR
 ```
 
 1. Change the value of **Run this task** to "Custom conditions".
@@ -196,7 +196,7 @@ Next, add a macOS script.
 1. Repeat the above steps, but for the body of the script, enter:
 ```bash
 export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
-echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+echo ## vso[task.setvariable variable=IP_ADDR]$IPADDR
 ```
 
 1. For the **Custom condition**, enter "eq( variables.Agent.OS, 'Darwin' )".
@@ -210,7 +210,7 @@ Next, add a Windows script.
 1. Replace the body of the script with:
 ```powershell
 Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
-Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
+Write-Host ## vso[task.setvariable variable=IP_ADDR]$env:IPADDR
 ```
 
 1. Change the value of **Run this task** to "Custom conditions".

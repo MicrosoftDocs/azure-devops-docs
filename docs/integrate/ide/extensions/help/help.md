@@ -30,7 +30,7 @@ A: The Visual Studio Marketplace is currently in preview. Continue managing your
 
 A: Reference the 2013 assembly when you build instead of the 2015 assembly. Visual Studio 2015 contains a binding redirect to ensure it continues to work when you run it within Visual Studio 2015.
 
-##Features and bugs
+## Features and bugs
 <a name="feature"></a>
 #### Q: I have a feature request, how do I report it?
 

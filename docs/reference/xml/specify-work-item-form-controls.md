@@ -38,7 +38,7 @@ You can control the label name, position, size of text box, and other display co
   
   
 <a name="fields"></a>
-##Add work item fields  
+## Add work item fields  
  When you customize your work item form, you typically add a subset of the work item fields that are defined for the work item type that you want to appear on the form. The field definitions control many aspects of which data displays or which data that you can enter into the form. For more information, see [Modify a field or add a custom field](../add-modify-field.md).  
   
  Each work item field is associated with a data type. Use the `Label` attribute to specify the text that displays next to the control. Use the related `LabelPosition` attribute to specify where the label appears relative to the control.  
@@ -102,7 +102,7 @@ The field will appear as a checkbox on the form.
 
  
 <a name="Date"></a> 
-##Add Date or Calendar fields  
+## Add Date or Calendar fields  
 You use the `DateTimeControl` type to give users a calendar picker to select a date for a `DateTime` field. By using this control, you can quickly select a date and time for the field.  
  
 **Calendar Field with Format="Short"**  

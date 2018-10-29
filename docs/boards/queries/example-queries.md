@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/27/2018  
 ---
@@ -42,7 +43,7 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 - [Query operators & macros](query-operators-variables.md)       
 - [Organize and run managed queries](organize-queries.md)   
 
-
+## A
 ###Additional tips for working with queries
 -   To find work items that are assigned to you, add **@Me** as the value for the Assigned To field in one of the query clauses.  
 -   All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).

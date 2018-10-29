@@ -29,7 +29,7 @@ The available tools that communicate with Azure DevOps Services and TFS include 
 - REST APIs  
 
 <!---
-###Video overview
+### Video overview
  (Video ala Robert's 1.5 min Commit)
 Contrast service versus a tool
 Clarify what the service provides 

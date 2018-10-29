@@ -22,7 +22,7 @@ You can define security groups to control access to functional areas within a pr
 This topic describes the syntax structure of the **groups**, **iterationPath**, **members**, **permissions**, and **teamsettings** elements that are used in the file for the Groups and Permissions plug-in. For more information about how to use these elements, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).  
   
 <a name="name"></a> 
-##Name and location of Groups plug-in  
+## Name and location of Groups plug-in  
 The Groups and Permission plug-in is defined by the GroupsandPermissions.xml plug-in file, which must conform to the schema definition that is defined in the Gss.xsd file.   
   
 The file, folder, and plug-in names are:
@@ -37,7 +37,7 @@ The file, folder, and plug-in names are:
  In the Groups and Permissions plug-in, you specify one or more tasks and their dependencies within the `taskXml` element. Generally, you specify one task per security group to create for your process. For more information about how to specify tasks, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   
 <a name="groups"></a> 
-##Define groups  
+## Define groups  
  You use the **group** element to specify a new security group in Team Foundation Server.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -67,7 +67,7 @@ The following example shows how to create a group that is named Reader:
 ```  
   
 <a name="members"></a> 
-##Define members  
+## Define members  
  You use the **member** element to assign a group as a member of a security group in Team Foundation Server.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -105,7 +105,7 @@ The following example shows how to create a group that is named Reader:
 ```  
   
 <a name="team_settings"></a> 
-##Define teams and team settings  
+## Define teams and team settings  
  Within the default Groups and Permissions plug-in file, the `@defaultTeam` macro creates the default team at the root area path. You can change this structure by including additional area paths within the Classification plug-in file. By using the **teamsettings** element, you can pre-configure the iterations assigned to a team. The plug-in uses the following code snippet. In this example, three iterations are defined for the default team.  
   
 > [!IMPORTANT]
@@ -152,7 +152,7 @@ The following example shows how to create a group that is named Reader:
 ```  
   
 <a name="permissions"></a> 
-##Define permissions  
+## Define permissions  
 You must specify permissions for each group that you create. You use the **permission** element for this purpose.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -174,7 +174,7 @@ You must specify permissions for each group that you create. You use the **permi
 ```  
   
 <a name="elements"></a> 
-##Groups element reference  
+## Groups element reference  
  The following table describes the elements that you use to define the initial groups and permissions for a project. You specify these elements within a `taskXml` container element in the Groups and Permissions plug-in file. For information about this element, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   
 > [!WARNING]

@@ -59,7 +59,7 @@ The essential flow for getting started is as shown. To get started using Scrum o
 [Scrum work item types and workflow](scrum-process-workflow.md) provides more details about using these WITs.  
 
 <a id="shared-queries"></a> 
-###List work items
+### List work items
 
 To list work items for a current sprint or the product backlog, use the shared queries that the Scrum process provides.  
 

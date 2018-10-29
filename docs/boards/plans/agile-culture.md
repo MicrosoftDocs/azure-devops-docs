@@ -24,7 +24,7 @@ As your team grows, you want your tools to grow with it. And, if you're an enter
 However, to successfully scale Agile requires addressing both the culture and tools within your organization.  
 
 
-##Alignment enables autonomy
+## Alignment enables autonomy
 <meta name="keywords" content="Agile culture,alignment,autonomy" /> 
 Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. Teams need autonomy to be efficient. And, enterprises need alignment across teams and the organization to be efficient.  
 
@@ -34,7 +34,7 @@ Too much alignment with insufficient team autonomy leads doesn't support innovat
 
 With the right level of alignment across the organization and team autonomy, individuals are empowered to innovate and inspired to collaborate to meet business objectives. 
 
-##7 areas to create alignment and support autonomy 
+## 7 areas to create alignment and support autonomy 
 
 As you plan how you want to grow your Agile tool set, consider the following areas that are key to creating enterprise alignment while developing team autonomy.  
 
@@ -120,7 +120,7 @@ Beyond meeting the needs set by the organization, teams determine any additional
 </table>
 
 <a id="horizontal-vs-vertical">  </a> 
-##Feature teams   
+## Feature teams   
 <meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" />  
 As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
 
@@ -137,7 +137,7 @@ Configure your teams along the value streams your organization wants to deliver.
 Each team plans the features they'll deliver. They have the autonomy to determine how they'll structure the data, architect the services, and design of the web and mobile user interfaces. Of course, they do this in adherence with the quality standards set by the organization and to which all teams contribute. 
 
 
-##Configure your Agile tools to scale
+## Configure your Agile tools to scale
 <meta name="keywords" content="Agile culture,scaling agile" />    
 As your organization grows, you can scale your Agile tools in the following ways.     
 
@@ -171,7 +171,7 @@ For additional guidance, see these topics:
 - [Review team delivery plans](review-team-plans.md)
 - [Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
 
-###Agile culture industry resources
+### Agile culture industry resources
 
 - [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
 - [Culture over process](http://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  

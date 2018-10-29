@@ -97,7 +97,7 @@ You can upload, download, and delete process templates for a project collection.
 
 <a id="wit_correlation"> </a>
 
-##Process template correlation with an existing project
+## Process template correlation with an existing project
 <p>To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.</p>
 
 <table>
@@ -123,7 +123,7 @@ You can upload, download, and delete process templates for a project collection.
 
 <a id="restrictions"> </a>
 
-##Process template restrictions and validation checks 
+## Process template restrictions and validation checks 
 Uploading a process template requires that it pass the following validation checks:  
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>

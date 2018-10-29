@@ -19,7 +19,7 @@ This section describes what you need to publish your extension to the Visual Stu
 - [Publish to the Gallery](#publish)
 
 <a id="package"></a>
-##Package your extension
+## Package your extension
 1. Update the extension vsixmanifest with the correct information about title, author, and version.
   ![Image showing the screen to add metadata to the manifest](../_img/package.png) 
 2. Build your extension in release mode.
@@ -27,7 +27,7 @@ This section describes what you need to publish your extension to the Visual Stu
 3. You can double click the VSIX to verify the installation.
 
 <a id="publish"></a>
-##Publish to the Gallery 
+## Publish to the Gallery 
 
 Once your extension is ready to share, you can publish the extension to the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/).
 1.	Click **Upload**.

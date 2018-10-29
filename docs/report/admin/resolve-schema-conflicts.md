@@ -7,7 +7,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 08/11/2016
 ---
 
@@ -19,7 +20,7 @@ Schema conflicts occur when a set of attributes for reportable fields differs ac
 
 All reportable data from all team projects that are defined in all project collections for a deployment of Visual Studio Team Foundation Server is written to a single relational data warehouse. Data from that warehouse is then processed and written to the cube. Collecting data into a single data warehouse supports reporting across team project collections. However, because fields are managed distinctly for each project collection, schema conflicts can occur when different definitions are assigned to one or more attributes of a field that is assigned the same reporting reference name. 
 
-
+## S
 ##Schema conflict error messages  
 
 When a schema conflict occurs, an error message will appear in the following locations:  
@@ -39,7 +40,7 @@ When a schema conflict occurs, an error message will appear in the following loc
 	> If a schema conflict is blocking data from entering the data warehouse for a report, the time stamp for the report will not be updated. 
  
 In addition to the previous messages, you can obtain more information by using the **GetProcessingStatus** operation of the Warehouse Control Web service. For more information, see Manually Process the Data Warehouse and Analysis Services Cube for Team Foundation Server.
- 
+## S
 ##Sources of schema conflicts
 
 Schema conflicts occur when a project administrator performs one of the following actions:
@@ -129,7 +130,7 @@ You can review the event log on the application-tier server to obtain more infor
 
 	> [!IMPORTANT]  
 	> If you delete a field permanently, you remove the field and all data that it stores from data storage.  
-
+## V
 ##Verify resolution of schema conflicts 
  
 You can verify that the schema conflicts have been resolved by [manually processing the data warehouse](manually-process-data-warehouse-and-cube.md) and then checking the reports to determine whether they are updated. Or you can wait until the warehouse adapter jobs run, according to their default schedule. By default, the relational database is processed every few minutes. However, the Analysis Services cube is processed every two hours by default.

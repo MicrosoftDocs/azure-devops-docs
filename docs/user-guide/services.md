@@ -38,7 +38,7 @@ Many of our services are either free for small teams or available through a subs
 For information about client tools, see [Tools](tools.md).
 
 <!---
-###Video overview
+### Video overview
  (Video ala Robert's 1.5 min Commit)
 -->
 

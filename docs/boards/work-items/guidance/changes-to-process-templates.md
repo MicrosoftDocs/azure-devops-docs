@@ -283,7 +283,7 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 </table>
 
  
-##Related upgrade notes
+## Related upgrade notes
 
 To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 

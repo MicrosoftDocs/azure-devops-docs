@@ -60,7 +60,7 @@ With the rebuild operation, you re-create both the relational database and the c
  
 <a id="verify-services">  </a>
 
-##1. Verify that services and application pools are running and that TCP/IP is enabled for SQL Server
+## 1. Verify that services and application pools are running and that TCP/IP is enabled for SQL Server
 To complete the steps in this procedure, the services that SQL Server requires must be running. You stop Reporting Services so that users do not access reports while you are rebuilding the data warehouse. Also, for a dual-server deployment, the TCP/IP protocol must be enabled for each instance of a SQL Server database. 
 
 By default, TCP/IP is disabled when you install SQL Server.
@@ -97,7 +97,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 <a id="create-datawarehouse">  </a> 
 
-##2. Rebuild the data warehouse and restart services
+## 2. Rebuild the data warehouse and restart services
 
 1. [Open the Team Foundation administration console](/tfs/server/admin/config-tfs-resources).
 
@@ -131,7 +131,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 <a id="verify-reports">  </a>
 
-##3. Verify that reports can be accessed
+## 3. Verify that reports can be accessed
 
 1. Log on to the server that hosts Reporting Services, open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
@@ -152,13 +152,13 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 5. Check the date when the report was last updated. This information appears in the lower-left corner of the report. 
 
-##Q & A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-####Q: How do I resolve schema conflicts?
+#### Q: How do I resolve schema conflicts?
 **A:** If you encounter schema conflicts, you cannot resolve this by rebuilding the data warehouse. Instead, you must resolve the conflicts first and then rebuild the data warehouse. See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
 
-####Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
+#### Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
 **A:** The following actions can cause failure errors to occur.  
 
 * You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/tfs/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
@@ -167,12 +167,12 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 * You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/tfs/server/admin/backup/back-up-restore-tfs).   
 
-####Q: How do I modify the reporting configuration?
+#### Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.
 
 ![Edit the information to configure reporting](_img/IC665021.png)
 
-####Q: What happens to data that has been purged or destroyed before a rebuild?
+#### Q: What happens to data that has been purged or destroyed before a rebuild?
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 
 
 Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
@@ -184,7 +184,7 @@ Deleting builds doesn't remove all associated data from the database. To do that
 <!-- ENDSECTION -->
 
 
-##Related content
+## Related content
 
 - [RebuildWarehouse Command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120))  
 - [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)  

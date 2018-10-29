@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.date: 05/23/2017
 ---
@@ -104,7 +105,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 </table>
   
 <a name="SyntaxWITD"></a> 
-
+## S
 ##Sample global list  
 
  By adding the following syntax, you can define a global list within an XML definition file for a type of work item or a global workflow:  

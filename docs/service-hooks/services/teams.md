@@ -131,13 +131,13 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-####Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+#### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
 create two additional subscriptions.
 
-####Q: I don't see my Azure DevOps Services organization when trying to connect Microsoft Teams 
+#### Q: I don't see my Azure DevOps Services organization when trying to connect Microsoft Teams 
 
 A: Only Azure DevOps Services organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
 

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 09/24/2018
 ---
@@ -27,7 +28,7 @@ While [setting WIP limits](#Set) is simple, adhering to the limits takes a team 
 
 
 <a id="Initial WIP" />
-
+## D
 ##Determine initial WIP limits
 
 To get started, have your team determine the initial WIP limits to set and how they'll use and monitor them. Beyond that, few rules apply to what numbers to set as they can vary based on several factors. Here are two guidelines to help you determine what limits to set:
@@ -44,7 +45,7 @@ If you're new to Kanban, review [Kanban basics](kanban-basics.md) to get an over
 
 
 <a id="Keep within WIP" />
-
+## K
 ##Keep within WIP limits
 
 After you've set your WIP limits, you'll want to track how well your team keeps within the limits. 
@@ -59,7 +60,7 @@ To gain the advantages of constraining work-in-progress, have your team meet fre
 
 
 <a id="Keep within WIP" />
-
+## I
 ##Identify bottlenecks
 
 To optimize the flow of value, you naturally want to identify and eliminate bottlenecks. Bottlenecks indicate waste exists in the overall workflow process. 
@@ -101,7 +102,7 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 
 <a id="Set" />
-
+## S
 ##Set WIP limits
 
 With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 

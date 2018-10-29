@@ -40,7 +40,7 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 ```  
   
 <a name="ChildElements"></a> 
-##WITD child elements  
+## WITD child elements  
 
 The structural elements used in the previous example are described in the following table:  
  

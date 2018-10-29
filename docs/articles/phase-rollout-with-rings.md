@@ -173,7 +173,7 @@ Refer to [Default and custom release variables](/azure/devops/pipelines/release/
 
 Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
 
-##Reference information
+## Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 * [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 * [DevOps @ Microsoft](https://aka.ms/devops)

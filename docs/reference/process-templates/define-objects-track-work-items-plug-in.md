@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 09/08/2017
@@ -23,7 +24,7 @@ By using the plug-in for tracking work items, you define a project's initial obj
 > [!IMPORTANT]
 > You must specify the tasks to upload files and define queries in a specific sequence: link types first, then work item types, and then queries. Each definition file for these objects depends on the definitions that are specified in the tasks that precede them. In general, you should maintain the task sequence that is defined in the process template that you are customizing. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
-<a name="plugin"></a> 
+## Pname="plugin"></a> 
 ##Plug-in name and location  
 
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  

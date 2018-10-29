@@ -114,7 +114,7 @@ On the Build tab of a build pipeline, add this task:
 * Script
 
  ```powershell
-Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
+Write-Host "$("## vso[task.setvariable variable=WarningMessage]") $($args[0])"
 ```
 
 ![icon](_img/powershell.png) Write warning using `task.LogIssue`
@@ -123,7 +123,7 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
  ```powershell
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
+Write-Host  "$("## vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
@@ -148,7 +148,7 @@ Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")
 * Script
 
  ```powershell
-Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
+Write-Host "$("## vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 ```
 
 ![icon](_img/powershell.png) Write error using `task.LogIssue`
@@ -157,7 +157,7 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
  ```powershell
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("## vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]

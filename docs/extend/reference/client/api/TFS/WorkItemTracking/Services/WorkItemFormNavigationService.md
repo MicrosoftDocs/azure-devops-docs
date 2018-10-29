@@ -37,7 +37,7 @@ See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/ma
 * [openNewWorkItem()](#method_openNewWorkItem)
 
 <a name="method_openWorkItem"></a>
-###openWorkItem()
+### openWorkItem()
 
 Opens the specified work item. The host page will display the work item in a dialog.
 
@@ -56,7 +56,7 @@ Opens the specified work item. The host page will display the work item in a dia
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise will return null.
 
 <a name="method_openNewWorkItem"></a>
-###openNewWorkItem()
+### openNewWorkItem()
 
 Opens a new work item of the specified type. The host page will display the new work item in a dialog.
 

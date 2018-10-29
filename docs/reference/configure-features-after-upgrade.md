@@ -25,7 +25,7 @@ If you need to upgrade TFS, [go to the downloads page](https://visualstudio.micr
 If you have several projects to update, you can [apply updates programmatically](#program-updates).  
 
 <a id="RunConfigureFeaturesWizard"/>
-##Run the Configure Features wizard
+## Run the Configure Features wizard
 
 1. From the web portal home page, open the administration context.  
 
@@ -75,7 +75,7 @@ When this occurs, you'll need to perform some manual updates according to one of
 
 * If your project was based on a v4.2 or earlier process template version, first [apply the updates to comply with TFS 2012 manually](xml/update-a-team-project-v4-dot-2-process-template.md). Then run the Configure Features wizard.
 
-##Try this next
+## Try this next
 You'll be able to start using several of the new features after they've been enabled. However, a few features require [additional configuration, or provide configuration options](additional-configuration-options.md).  
 
 In particular:
@@ -87,7 +87,7 @@ In particular:
 - To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../organizations/security/change-access-levels.md).
 
 <a id="related-notes"> </a>
-##Related upgrade notes
+## Related upgrade notes
 
 The Configure Features wizard will work in most cases to update your project. In the event that you are upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
@@ -104,18 +104,18 @@ If you have additional questions, you can post one or search for answers in the 
 
 
 <a id="program-updates"> </a>
-###Programmatically update several projects (TFS 2015, TFS 2013) 
+### Programmatically update several projects (TFS 2015, TFS 2013) 
 
 If the projects were created from the same process template, you should be able to modify the source process template, upload it, and then batch update all projects defined for a project collection. Review the following resources: 
 *	[Update a customized process template to access new features](update-customized-process-template.md)
 *	[How to Configure Features for dozens of projects](http://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx)
 *	[Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
-###Resolve warning or error messages related to the update of test management artifacts
+### Resolve warning or error messages related to the update of test management artifacts
 
 See [Manual updates to support test plans and test suites](xml/update-a-team-project-manually-to-support-test-management.md).
 
-###Understand how  the Configure Features wizard works 
+### Understand how  the Configure Features wizard works 
  
 The Configure Features wizard adds new objects to your project and might update a few existing objects, but does not change your data or the workflow. It adds the new objects based on the best match of settings defined  within the installed process templates and your project. The wizard references both updated customized process templates and the latest version of Microsoft process templates installed to your project collection and added during the upgrade process. If the wizard determines that there is more than one process template that could be used to configure features, it selects the one that best matches your existing project and that is the latest version. 
 
@@ -126,7 +126,7 @@ Here's what the Configure Features wizard does:
 3. For each feature that can be configured, uploads the definitions for new objects or modifies existing definitions. To learn how the wizard configures each specific feature, see [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md).
 
 
-###Required objects used by the Configure Features wizard  
+### Required objects used by the Configure Features wizard  
 
 The Configure Features wizard depends on the following objects to run and to successfully update your projects: 
 

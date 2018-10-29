@@ -5,7 +5,8 @@ description: Define work items that act as reminders for each project manager to
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7cc17cb2-d854-469b-b45f-060e94baca71
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2018' 
@@ -30,7 +31,7 @@ ms.date: 04/13/2017
 
 By adding work items to your process template, you define a set of tasks or other items that act as reminders for each project manager to perform after the project is created. For example, you can create one task each to assign permissions to team members, define product areas and milestones, set up build definitions, and determine the branch strategy for version control.  
   
-<a name="defining"></a> 
+## Dname="defining"></a> 
 ##Define a work item instance   
 To define a work item instance, you specify the work item type along with field values for those work items. You use the **WI** and **FIELD** elements that are contained within the **WORKITEMS** element. You specify the set of work item instances within a **taskXml** element in the WorkItemTracking plug-in file.  
   
@@ -59,7 +60,7 @@ The following example specifies a work item task that reminds project administra
 ```  
   
   
-<a name="elements"></a> 
+<## Wame="elements"></a> 
 ###WORKITEMS elements
  The following syntax shows the structure of the **WORKITEMS** element and its child elements. You specify these elements within a **taskXml** element in the WorkItemTracking plug-in file.  
   

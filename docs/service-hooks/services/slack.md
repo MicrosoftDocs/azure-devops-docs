@@ -58,13 +58,13 @@ for pricing related to their services.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-####Q: Why don't I have the pull request events as an option when I configure my trigger?
+#### Q: Why don't I have the pull request events as an option when I configure my trigger?
 
 A: Pull requests are only available with projects that use Git.
 If your project uses TFVC, pull event triggers aren't available,
 and your code event is called "Code checked in" instead of "Code pushed".
 
-####Q: How can I get multiple events to show up in my Slack channel?
+#### Q: How can I get multiple events to show up in my Slack channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Slack channel,

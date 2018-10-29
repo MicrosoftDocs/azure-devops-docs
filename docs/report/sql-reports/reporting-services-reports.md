@@ -30,7 +30,7 @@ You can analyze the progress and quality of your project by using the reports in
 -   To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
   
 
-##Monitor code quality
+## Monitor code quality
 Build reports track the quality of software under development. By defining tests to run automatically as part of each build pipeline and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
 
 <table>
@@ -60,7 +60,7 @@ Build reports track the quality of software under development. By defining tests
 
 ![Sample build summary report](../admin/_img/IC665009.png)  
 
-##Monitor progress
+## Monitor progress
 Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. 
 
 <table width="100%">
@@ -113,7 +113,7 @@ Project management reports provide insight into how much work the team is tackli
 ![Sample stories overview report](../admin/_img/IC665011.png)  
 
 
-##Monitor test plans and bug tracking
+## Monitor test plans and bug tracking
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
 <table width="100%">

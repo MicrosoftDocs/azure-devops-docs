@@ -63,7 +63,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
 1. Copy the process template to a new folder where you'll apply your customizations (Option B), or copy XML definitions to add new features to your existing process template (Option C).
 
-##2. Add features to your customized process template (Option A)
+## 2. Add features to your customized process template (Option A)
  
 ![Step 2](../boards/_img/icons/ProcGuid_2.png) Update your customized process template by adding or updating the WITs, Categories, and ProcessConfiguration as described in [Add features using a manual update process](add-features-manually.md). Instead of using **witadmin** to export and import definition files, simply make the changes directly to your process template files.
  
@@ -71,7 +71,7 @@ Copy or add files from the folder of the latest version of process template that
 
 Review [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md) to learn about all the changes made to the default process templates to enable new features. 
 
-###Add a WIT to a process template  
+### Add a WIT to a process template  
 
 Perform the following steps for each WIT that you add to your process template. This example shows how to add the Epic WIT to your process template.  
  
@@ -466,7 +466,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 2.	Apply [additional configuration options](additional-configuration-options.md) based on those features of interest.
 
-##Related update notes
+## Related update notes
 
 Keep these tips in mind when modifying process template files:
 * See [Overview of process template files](process-templates/overview-process-template-files.md) for information about each folder and file contained within the interdependent set of files.
@@ -499,11 +499,11 @@ The following changes made to a process template can interfere with the Configur
 
 To learn more, see [Process configuration XML element reference](xml/process-configuration-xml-element.md).  
  
-###Add portfolio backlog levels
+### Add portfolio backlog levels
 
 You can add up to five portfolio backlogs total. This includes the Feature and Epic portfolio backlogs. You can add this to a custom process template or after your project is updated. To get started, see [Add a portfolio backlog](add-portfolio-backlogs.md).  
 
-###Rename a work item type 
+### Rename a work item type 
 
 Use **witadmin renamewitd** command to change the name, and then update the Categories definition file. To learn more, see [Add or modify a work item type](add-modify-wit.md).  
  

@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 09/24/2018
@@ -194,7 +195,7 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 *	[Split columns](split-columns.md)   
 *	[Customize cards](../../boards/boards/customize-cards.md)   
 
-
+## R
 ###REST API resources
 To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 

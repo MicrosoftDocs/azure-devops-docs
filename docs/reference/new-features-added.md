@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/05/2017
@@ -186,7 +187,7 @@ TFS 2015
 Not all new features require feature enablement. 
 
 
-<a id="test-management" >   </a>
+<## Td="test-management" >   </a>
 ###Test Plan and Test Suite features  
 The Test Plan and Test Suite WITs are added when you run the TFS Upgrade Wizard. They aren't enabled through the Configure Feature wizard. They support customization of test plans and test suites
 

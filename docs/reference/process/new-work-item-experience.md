@@ -92,7 +92,7 @@ When you switch, all forms displayed through the web portal for all work item ty
 As this switch is set on a per-user basis, other users will continue to see the old form until they also choose to switch.  
 
 <a id="switch-back">  </a> 
-###Switch back to the old form 
+### Switch back to the old form 
 
 If your admin has enabled opt-in to support switch back. Simply choose the ![](../../_img/icons/actions-icon.png) actions icon to open the context menu to switch back to the old layouts.  
 

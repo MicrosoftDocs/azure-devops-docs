@@ -35,7 +35,7 @@ The following steps are essential to be successful with these APIs. These are de
 
 ![alt text](./_img/clt-apis-steps.png)
 
-####Notes
+#### Notes
 
 * Creation of a test drop location requires the Azure Storage APIs which are available as part of the Azure SDK. Look up the [sample][2] to see how to use them.
 * Uploading the files and downloading the results are also achieved through the Azure Storage APIs as results are stored as Azure Blobs. Refer to [sample][3] for details of downloading and importing the load test results.

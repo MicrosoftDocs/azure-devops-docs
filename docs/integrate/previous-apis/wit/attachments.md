@@ -194,12 +194,12 @@ GET https://{instance}/DefaultCollection/_apis/wit/attachments/{attachment}?api-
 | Query
 | api-version| string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET https://fabrikam-fiber-inc:8080/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
 ```
 
-####Response
+#### Response
 Status code: 200
 ```json
 { file-contents }

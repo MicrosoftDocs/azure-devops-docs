@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/19/2017
 ---
 
@@ -21,7 +22,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 > [!IMPORTANT]  
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). 
 
-  
+## R
 ##Required permissions 
   
 -   To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  

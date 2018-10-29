@@ -29,7 +29,7 @@ As your organization grows, you'll want to scale your practices to remain agile 
 	- "Values and principles scale, but practices are context sensitive."  
 	- "Keep the values, keep the principles, think for yourself.  A core premise of Agile is that the people doing the work are the people who can best figure out how to do it." 
 
-##Create rhythm and flow 
+## Create rhythm and flow 
 <meta name="keywords" content="Agile culture,scaling agile,Agile tools" />
 By adopting a shared cadence and set of periodic communications, you create a constant flow of activity throughout the organization. Practices that help create rhythm and flow within larger organizations include: 
 
@@ -40,7 +40,7 @@ By adopting a shared cadence and set of periodic communications, you create a co
 - **Bug summary emails**: To support insight into product quality and to encourage maintaining bug discipline, periodically share quality metrics with the organization. These metrics may include active bugs per feature team, bug trends, and bugs per engineer.  
 - **Coordination meetings**: Hold meetings that coordinate teams at either regular intervals or as often as needed to address overlapping goals, dependencies, and risks.    
 
-##Enthusiastic customers
+## Enthusiastic customers
 
 Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own. 
 
@@ -52,7 +52,7 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 - **Data-driven decisions**: Find  ways to instrument your product to obtain useful data and that can test various hypotheses. Help drive to an experiment-friendly culture that celebrates learning.
 
 
-##Improve project visibility
+## Improve project visibility
 <meta name="keywords" content="Agile culture,Agile project management,Agile tools" />
 The more insight you and your teams have into the goal, vision, and progress of the work being done, the better enabled you'll be to reduce risks and manage dependencies. 
 
@@ -71,7 +71,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 - **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications as well as collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual as well as overall corporate competence.  
 
-##Organizational culture
+## Organizational culture
 
 You improve organizational effectiveness by attending to the culture you want to build. Culture changes occur when individuals, teams, and organizations adopt one or more continuous improvement practices. Several scalable Agile practices include: 
 
@@ -96,7 +96,7 @@ You improve organizational effectiveness by attending to the culture you want to
 - **Communities of practice**: Support internal common disciplines (e.g., DBAs, SW Architects, UX design)  
 
 
-##Working software
+## Working software
 
 ><p align="center" style="font-size: 13px">"Deliver working software frequently, from a couple of weeks to a couple of months, <br/>with a preference to the shorter timescale." <br/>  
 "Working software is the primary measure of progress."</p>
@@ -121,12 +121,12 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Visibility across teams](visibility-across-teams.md)  
 - [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
-###Industry resources
+### Industry resources
 - [Agile manifesto](http://agilemanifesto.org)
 - [Agile Alliance](http://guide.agilealliance.org/)  
 - [Scaled Agile Lean Development - The Principles](http://scaledprinciples.org/)  
 
-###Practices that don't scale
+### Practices that don't scale
 - **Estimating large initiatives**: Part of waterfall project methods involved estimating resources and schedules. The larger the initiatives, the less likely these estimates were of any value. As projects grow, risks and unforeseen issues and impediments can arise, invalidating many estimates.   
 - **Velocity**: While [team velocity](../../report/dashboards/velocity-chart-data-store.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
 - **Top-down prescriptive solutions**: One size does not fit all, and one solution typically does not fit all teams. Supporting team autonomy means letting teams find their own solutions. 

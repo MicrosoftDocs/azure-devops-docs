@@ -269,7 +269,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 * [Select sprints for a team](../../organizations/settings/set-team-defaults.md)
 * [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 
-####Industry resources 
+#### Industry resources 
 
 * [Managing Myopia with Release Burndowns](https://www.scrumalliance.org/community/articles/2010/may/managing-myopia-with-release-burndowns)
 

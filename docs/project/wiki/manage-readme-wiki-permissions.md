@@ -69,7 +69,7 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 ## Q & A
 
-###Q: Is it possible to grant permissions on a per-page basis?
+### Q: Is it possible to grant permissions on a per-page basis?
 
 **A:** No, permissions to access the wiki are made for all pages and not individual pages. 
 

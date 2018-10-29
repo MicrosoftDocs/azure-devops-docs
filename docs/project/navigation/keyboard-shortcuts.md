@@ -257,7 +257,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Web portal navigation](..//navigation/index.md) 
 
-###Install Team Explorer  
+### Install Team Explorer  
 
 Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
 

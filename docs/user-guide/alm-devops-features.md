@@ -27,7 +27,7 @@ If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.m
 >- **Azure DevOps Services** - Available from Azure DevOps Services (cloud service)  
 >- **TFS** - Available from Team Foundation Server (on-premises)
 
-##Access and supported clients
+## Access and supported clients
 
 <table>
 <tbody>
@@ -109,11 +109,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="agile-tools"></a>
 
-##Agile tools to plan and track work  
+## Agile tools to plan and track work  
 
 <a id="backlogs"></a>
 
-###Backlogs
+### Backlogs
 
 <table>
 <tbody>
@@ -579,7 +579,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="scale"></a>
 
-###Scale
+### Scale
 
 <table>
 <tbody>
@@ -630,7 +630,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="scrum"></a>
 
-###Scrum
+### Scrum
 
 
 
@@ -1340,7 +1340,7 @@ pipelines\tasks\build\_img
 </table>
 
 <a id="dashboards"></a>
-##Dashboards and reports  
+## Dashboards and reports  
 
 <a id="charts"></a>
 
@@ -2725,7 +2725,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <a id="traceability"></a>
 
 
-##Traceability
+## Traceability
 
 
 <table>

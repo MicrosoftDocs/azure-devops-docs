@@ -585,7 +585,7 @@ when running tasks in a release. The files are uploaded during the
 deployment and are then included in the release summary and "Download all log files"
 actions. To upload a new file, use the following agent command in your script:
 
-`Write-host "##vso[task.uploadfile]<filename>"`
+`Write-host "## vso[task.uploadfile]<filename>"`
 
 <a name="jun24-dacpac"></a>
 **Deploy SQL DACPACs**
@@ -1099,7 +1099,7 @@ having the following line in your task will produce a
 new section called **Attachments** containing the
 contents of the file you specify:
 
-`Write-Verbose ##vso[Task.UploadSummary] Attachments.md`
+`Write-Verbose ## vso[Task.UploadSummary] Attachments.md`
 
 <a name="update-dec1-15"></a>
 ### December 1, 2015 Update (Azure Pipelines)

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 04/14/2017  
 ---
@@ -165,7 +166,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 </tbody>
 </table>
-
+## N
 ####Notes:  
 0.  To change the menu selection, see [Add or modify a field, customize a pick list](../../reference/add-modify-field.md).  
 0.  The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
@@ -176,7 +177,7 @@ The following table describes the fields that you can use to plan and prioritize
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Data types and work item fields](../../reference/xml/define-modify-work-item-fields.md).  
- 
+ ## M
 ###More on Backlog Priority or Stack Rank fields
 
 The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).

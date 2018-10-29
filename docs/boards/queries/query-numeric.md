@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 02/05/2018  
 ---
@@ -20,7 +21,7 @@ How do I determine how much work each developer has completed on my team? Is the
 
 The most common numeric fields track effort for items in the Requirements category or estimated, remaining, and completed work for items in the Task category. With queries you can list the work items of interest, and then define a chart that shows either a count of work items or a sum of a numeric field. 
 
-
+## T
 ###Tips for developing chart-based-queries: 
 
 - You can only add charts for flat-list queries  
@@ -104,7 +105,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 
 <img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 2px solid #C3C3C3;" />
 
-<a id="effort"/>
+## Qid="effort"/>
 ##Queries and charts based on effort or story points 
 
 You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
@@ -124,7 +125,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 > [!NOTE]    
 >For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
-
+## S
 ###Show a burnup chart of user stories for an iteration 
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
@@ -135,7 +136,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 
 <img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
-<a id="work"/>
+## Qid="work"/>
 ##Queries and charts based on remaining and completed work 
 
 Based on the process your project references, you can assign the following fields to tasks or bugs. 
