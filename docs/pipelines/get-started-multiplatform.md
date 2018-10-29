@@ -158,4 +158,4 @@ You've just learned the basics of using multiple platforms with Azure Pipelines.
 * Building [Node.js](languages/javascript.md) apps
 * Building [.NET Core](languages/dotnet-core.md), [Go](languages/go.md), [Java](languages/java.md), or [Python](languages/python.md) apps
 
-For details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
+For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).

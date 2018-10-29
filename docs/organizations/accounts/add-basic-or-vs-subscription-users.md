@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 # Add more users to Azure DevOps with Basic features or Visual Studio subscriptions
@@ -19,7 +19,7 @@ When your organization stays within the free limits, you don't have to pay for u
 
 To add more users:
 
-1. [Pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md).
+1. [Pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab.
 2. Return to your Azure DevOps organization.
 3. [Add the users](add-organization-users.md) and assign them Basic access.
 

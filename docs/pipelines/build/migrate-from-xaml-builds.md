@@ -94,7 +94,7 @@ In each of the following sections we show the XAML user interface, and then prov
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Azure Pipelines.  If you're using Azure Pipelines, first make sure to display **Advanced settings**. See [Build pipeline source repositories](../build/repository.md).
+The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Azure Pipelines.  If you're using Azure Pipelines, first make sure to display **Advanced settings**. See [Build TFVC repositories](../repos/tfvc.md).
 
 #### Git
 
@@ -104,7 +104,7 @@ The new build pipeline offers you some new options. The specific extra options y
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Azure Pipelines.  If you're using Azure Pipelines, first make sure to display **Advanced settings**. See [Build pipeline source repositories](../build/repository.md).
+The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Azure Pipelines.  If you're using Azure Pipelines, first make sure to display **Advanced settings**. See [Pipeline options for Git repositories](../repos/pipeline-options-for-git.md).
 
 ### Trigger tab
 
@@ -157,7 +157,7 @@ The new build pipeline offers you some new options. For example:
 | Get version | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
-The new build pipeline offers you some new options. See [Build pipeline source repositories](../build/repository.md).
+The new build pipeline offers you some new options. See [Build TFVC repositories](../repos/tfvc.md).
 
 #### Git
 
@@ -168,7 +168,7 @@ The new build pipeline offers you some new options. See [Build pipeline source r
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. |
 
-The new build pipeline offers you some new options. See [Build pipeline source repositories](../build/repository.md).
+The new build pipeline offers you some new options. See [Pipeline options for Git repositories](../repos/pipeline-options-for-git.md).
 
 #### Build
 
