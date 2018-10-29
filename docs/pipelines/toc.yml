@@ -102,8 +102,6 @@
       href: build/history.md
     - name: Options
       href: build/options.md
-    - name: Repository
-      href: build/repository.md
     - name: Triggers
       href: build/triggers.md
     - name: Predefined variables
@@ -137,7 +135,18 @@
       href: release/env-templates.md
     - name: Releases and deployments
       href: release/releases.md
-  - name: Pipeline
+  - name: Repositories
+    href: repos/index.md
+    items:
+    - name: Azure Repos Git
+      href: repos/azure-repos-git.md
+    - name: GitHub
+      href: repos/github.md
+    - name: TFVC
+      href: repos/tfvc.md
+    - name: Pipeline options for Git
+      href: repos/pipeline-options-for-git.md
+  - name: Pipelines
     items:
     - name: Tasks
       href: process/tasks.md
@@ -194,8 +203,6 @@
   items:
   - name: Build
     items:
-    - name: Build open source projects
-      href: build/ci-public.md
     - name: Build multiple branches
       href: build/ci-build-git.md
     - name: Build on multiple platforms

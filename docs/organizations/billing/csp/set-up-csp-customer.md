@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -38,7 +38,7 @@ appropriate nicknames. Choose the subscription name, enter a new subscription ni
 
 Now you're ready to buy Visual Studio. To purchase Visual Studio for a customer, choose the appropriate customer. Then choose **service management**. If you haven't added an Azure subscription for the customer, the **Visual Studio Marketplace** and **Manage Visual Studio Subscriptions** links won't appear.
 
-Go to the Visual Studio Marketplace to purchase Visual Studio cloud subscriptions and Azure DevOps resources for your customers. Choose **Manage Visual Studio Subscriptions** to assign subscriptions you've already purchased for your
+Go to the Visual Studio Marketplace, Azure DevOps tab, to purchase Visual Studio cloud subscriptions and Azure DevOps resources for your customers. Choose **Manage Visual Studio Subscriptions** to assign subscriptions you've already purchased for your
 customer's end users. You can also delete existing assigned subscriptions or reassign them to a different user.
 
 ## Convert your customers from other Azure billing to CSP
