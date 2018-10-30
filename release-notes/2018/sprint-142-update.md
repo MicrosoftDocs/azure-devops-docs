@@ -215,7 +215,7 @@ The Linux hosting model for Azure Functions is based on Docker containers which 
 
 ### Azure Test Runner client to runs manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
+You can now use the preview version of Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
 
 ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 
