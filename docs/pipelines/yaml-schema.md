@@ -581,9 +581,11 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
-- powershell: |
-    Write-Host "Hello $env:name"
-  displayName: A multiline PowerShell script
+- script: echo Hello $(name)
+  displayName: Say hello
+  name: firstStep
+  workingDirectory: $(Build.SourcesDirectory)
+  failOnStderr: true
   env:
     name: Microsoft
 ```
@@ -654,11 +656,9 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
-  displayName: Say hello
-  name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
-  failOnStderr: true
+- powershell: |
+    Write-Host "Hello $env:name"
+  displayName: A multiline PowerShell script
   env:
     name: Microsoft
 ```
