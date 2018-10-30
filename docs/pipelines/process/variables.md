@@ -157,19 +157,24 @@ space with `_`, capitalize the letters, and then use your platform's syntax for
 referencing environment variables.
 
 ```yaml
+variables:
+  MY_CUSTOM: MyValue
+  
 jobs:
 - job: LinuxOrMacOS
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-  - bash: echo $AGENT_HOMEDIRECTORY
+  - bash: |
+      echo System-defined: $AGENT_HOMEDIRECTORY
+      echo Custom: $MY_CUSTOM
 
 - job: Windows
   pool:
     vmImage: 'vs2017-win2016'
   steps:
-  - script: echo %AGENT_HOMEDIRECTORY%
-  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
+  - script: echo %AGENT_HOMEDIRECTORY% %MY_CUSTOM%
+  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY $env:MY_CUSTOM
 ```
 
 ### Counters

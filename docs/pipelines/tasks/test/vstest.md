@@ -34,7 +34,7 @@ The vstest demand can be satisfied in two ways:
 
 1. Visual Studio is installed on the agent machine. 
 
-2. By using the [Visual Studio Test Platform Installer task](visual-studio-test-agent-deployment.md) in the pipeline definition. 
+2. By using the [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) in the pipeline definition. 
 
 
 ::: moniker range="> tfs-2018"
