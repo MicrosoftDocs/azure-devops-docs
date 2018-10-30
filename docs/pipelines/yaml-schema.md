@@ -249,8 +249,6 @@ variables:
 - group: my-variable-group  # Variable group
 ```
 
----
-
 ## Job
 
 A [job](process/phases.md?tabs=yaml) is a collection of steps to be run by an
@@ -581,13 +579,8 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
+- script: echo Hello world!
   displayName: Say hello
-  name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
-  failOnStderr: true
-  env:
-    name: Microsoft
 ```
 
 ---
