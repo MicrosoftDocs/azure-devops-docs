@@ -581,11 +581,8 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
-- powershell: |
-    Write-Host "Hello $env:name"
-  displayName: A multiline PowerShell script
-  env:
-    name: Microsoft
+- script: echo Hello world!
+  displayName: Say hello
 ```
 
 ---
