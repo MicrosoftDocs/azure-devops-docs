@@ -38,7 +38,7 @@ Azure Pipelines:
 - [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
 - [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
 - [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
-- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linux/arm-and-windows-32-bit-platforms)
+- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
 - [Clone variable groups](#clone-variable-groups)
 - [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
 - [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
@@ -46,7 +46,7 @@ Azure Pipelines:
 
 Azure Test Plans:
 
-- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-runs-manual-tests-for-desktop-applications)
+- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-runs-manual-tests-for-desktop-applications)
 
 Azure Artifacts:
 
@@ -170,7 +170,7 @@ We are working on a way for users to configure retention policies for YAML pipel
 
 ### Build on Linux/ARM and Windows 32-bit platforms
 
-The Azure Pipelines [open source, cross-platform agent](#https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. This sprint, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](#https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
+The Azure Pipelines [open source, cross-platform agent](https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. This sprint, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
 
 ### Clone variable groups
 
@@ -215,7 +215,7 @@ The Linux hosting model for Azure Functions is based on Docker containers which 
 
 ### Azure Test Runner client to runs manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
+You can now use the preview version of Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
 
 ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 
@@ -260,7 +260,7 @@ We would love to hear what you think about these features. Use the feedback menu
 > [!div class="mx-imgBorder"]
 ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
-You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
 Thanks,
 
