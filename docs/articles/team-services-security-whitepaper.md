@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 10/23/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -252,7 +252,7 @@ security requirements.
 
 Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  One limitation of Azure AD conditional access policy is that it is enforced at the time a user signs in, and therefore access can continue to be granted even if conditions change, which would otherwise conflict with policy. For example, you may choose to have location conditions applied to limit access to only within your corporate walls, but after sign-in, the user may pick their laptop up and walk out the door while still retaining access. In addition, custom Azure DevOps authentication mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys are not constrained or checked by conditional access policy.
+to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys. If accessing Azure DevOps through a third party client, like git.exe, only IP based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy will fail and the user will automatically be blocked.
 
 ## Additional resources
 

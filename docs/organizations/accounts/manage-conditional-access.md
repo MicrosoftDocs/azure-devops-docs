@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,11 +22,18 @@ You can require conditions, such as security group membership, location and netw
 
 Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, or block access.
 
-> [!IMPORTANT] 
-> Azure DevOps only enforces conditional access policies when a user signs into services with their Azure AD credentials. Conditional access policies are circumvented when Azure DevOps is accessed by using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys.
+Azure DevOps enforces the policy for usage of personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. See the following details of how and what we enforce.
+
+   * For Web flows, CAP is honored 100%
+   * For third party client flow, like using a PAT with git.exe, we only support IP fencing policies - more specifically we do not support MFA policies. See the following examples:
+        * Policy 1 - Block all access from outside of IP range X, Y, and Z
+            * If a user is accessing Azure DevOps via the web, the user will be allowed from IP X,Y,Z or blocked if outside that list
+            * If a user is accessing Azure DevOps via alt-auth, the user will be allowed from IP X,Y,Z or blocked if outside that list
+        * Policy 2 - Require MFA when outside of IP range X, Y, and Z
+            * If a user is accessing Azure DevOps via the web, the user will be allowed from IP X,Y,Z or prompted for MFA if outside that list
+            * If a user is accessing Azure DevOps via alt-auth, the user will be allowed from IP X,Y,Z blocked if outside that list
 
 For more information and resources, see [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
-
 
 ## Enable conditional access for Azure DevOps
 
