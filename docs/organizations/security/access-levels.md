@@ -20,7 +20,7 @@ ms.date: 10/12/2018
 
 Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. 
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. 
 
 ::: moniker range="vsts"
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md).
