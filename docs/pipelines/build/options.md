@@ -140,7 +140,7 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. Save the pipeline.
 
-0. When the **Show url** link appears, click it and copy the URL to your clipboard.
+0. When the **Show URL** link appears, click it and copy the URL to your clipboard.
 
 0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}"/>```
 

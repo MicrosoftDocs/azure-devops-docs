@@ -107,4 +107,4 @@ To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
 
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
-For details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
+For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).
