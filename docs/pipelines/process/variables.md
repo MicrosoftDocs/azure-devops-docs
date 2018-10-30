@@ -36,7 +36,7 @@ The following table indicates how you can reference a variable called `Build.Def
 <table>
 <tbody>
 <tr><th> Context </th><th> Syntax </th><th> Notes </th></tr>
-<tr><td> Version control tag applied by the build </td><td> `$(Build.DefinitionName)` </td><td> [Learn about repository version control tagging](../build/repository.md). </td></tr>
+<tr><td> Version control tag applied by the build </td><td> `$(Build.DefinitionName)` </td><td> [Learn about repository version control tagging](../repos/index.md). </td></tr>
 <tr><td> Custom build number </td><td> `$(Build.DefinitionName)` </td><td>[Learn about build number format options](../build/options.md).</td></tr>
 <tr><td> Designer input fields </td><td> `$(Build.DefinitionName)` </td><td></td></tr>
 <tr><td> YAML input fields </td><td>  `$(Build.DefinitionName)` </td><td></td></tr>
@@ -350,7 +350,7 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ::: moniker range="vsts"
 
-**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
@@ -394,7 +394,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.

@@ -72,7 +72,7 @@ name: string  # build numbering format
 resources:
   containers: [ container ]
   repositories: [ repository ]
-variables: { string: string } | variable
+variables: { string: string } | [ variable ]
 trigger: trigger
 jobs: [ job | templateReference ]
 ```
@@ -233,6 +233,21 @@ trigger:
 ```
 
 ---
+
+## Variable
+
+Hardcoded values can be added directly.
+
+Or [variable groups](library/variable-groups.md) can be referenced.
+
+For example:
+
+```yaml
+variables:
+- name: MY_VARIABLE         # Hardcoded value
+  value: some value
+- group: my-variable-group  # Variable group
+```
 
 ## Job
 
@@ -564,11 +579,8 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
-- powershell: |
-    Write-Host "Hello $env:name"
-  displayName: A multiline PowerShell script
-  env:
-    name: Microsoft
+- script: echo Hello world!
+  displayName: Say hello
 ```
 
 ---
