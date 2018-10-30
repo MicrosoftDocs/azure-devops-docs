@@ -274,7 +274,7 @@ If you already have the query id, you can skip step 1. The code sample below sho
 ## Query Work Items with WIQL
 <a name="queryworkitemswithwiql" />
 
-If you don't know the query you want to execute, you can use the [work item query language (WIQL)] (https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
+If you don't know the query you want to execute, you can use the [work item query language (WIQL)](https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
 
 >[!div class="tabbedCodeSnippets" cs='C#' cl='.NET Client Library']
 >```cs

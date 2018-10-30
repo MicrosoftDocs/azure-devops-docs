@@ -122,9 +122,9 @@ In the example below the most important part of the error message is:
 
 >Query result exceeds maximum size. Please reduce the number of records by applying additional filters.
 
-![QueryExceedsPreferedMaxSizeException](./_img/QueryExceedsPreferedMaxSizeException.png)
+![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](./_img/QueryExceedsPreferredMaxSizeException.png)
 
-<a id="QueryExceedsPreferedMaxSizeException">  </a>
+<a id="QueryExceedsPreferredMaxSizeException">  </a>
 
 ### Q: What can I do to resolve: *Query result exceeds maximum size. Please reduce the number of records by applying additional filters*?
 
@@ -136,7 +136,7 @@ In the example below the most important part of the error message is:
 
 This error typically occurs when your project has a lot of work items. The size of the dataset must be reduced by [customizing the view](../analytics/analytics-views-create.md) before using it in Power BI.  
 
-![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](_img/QueryExceedsPreferedMaxSizeException.png)
+![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](_img/QueryExceedsPreferredMaxSizeException.png)
 
 <a id="AccessDeniedError">  </a>
 ### Q: How do I resolve error: *The user was not authorized*?

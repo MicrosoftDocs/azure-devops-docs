@@ -36,7 +36,7 @@ The largest table size is currently {Table size}GBs. This is above the recommend
 Similar to the previous warning, this warning means you will have to use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
 
 ```cmdline
-The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data] (/tfs/server/upgrade/clean-up-data).
+The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/tfs/server/upgrade/clean-up-data).
 ```
 
 This warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/tfs/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.

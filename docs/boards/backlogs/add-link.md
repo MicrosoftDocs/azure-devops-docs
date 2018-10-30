@@ -181,7 +181,7 @@ Choose from one of the following three remote link types supported.
 
 From the Add link dialog, select the link type, enter the URL of the remote work item, and then choose OK. 
 
-For example, here we use the **Related Related** link type to link to  work item ID *350* that exists in the *remotelinkingtest2* organization, *RemoteLinking* project. 
+For example, here we use the **Remote Related** link type to link to  work item ID *350* that exists in the *remotelinkingtest2* organization, *RemoteLinking* project. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add a link to an existing, external work item](_img/add-link/add-remote-related-link.png)  

@@ -137,7 +137,7 @@ resources:
     type: enum  # see below
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use, defaults to 'refs/heads/master'
-    endpoint: string  # endpoint for a GitHub repository
+    endpoint: string  # name of the service connection to use (for non-Azure Repos types)
 ```
 
 # [Example](#tab/example)
@@ -649,11 +649,9 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
-  displayName: Say hello
-  name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
-  failOnStderr: true
+- powershell: |
+    Write-Host "Hello $env:name"
+  displayName: A multiline PowerShell script
   env:
     name: Microsoft
 ```
