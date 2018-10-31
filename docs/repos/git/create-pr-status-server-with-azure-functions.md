@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: yohasna
 author: steved0x
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -76,7 +76,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ## Configure a service hook for PR events
 Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests when pull requests change, you will need to provide the service hook with the Azure function URL.
 
-For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** and the second will be for the **Pull request updated** event.
+For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** event and the second will be for the **Pull request updated** event.
 
 1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view and copy the URL.
 
@@ -126,6 +126,9 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 8. Close the Test Notification window, and select **Finish** to create the service hook.
 
 Go through steps 2-8 again but this time configure the **Pull request updated** event.
+
+>[!IMPORTANT]
+> Be sure to go through the preceding steps twice and create service hooks for both the **Pull request created** and **Pull request updated** events.
 
 Create a pull request to verify your Azure function is receiving notifications.
 
