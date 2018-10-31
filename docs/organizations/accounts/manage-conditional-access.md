@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 10/31/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Conditional access offers simple ways to help secure resources for Azure DevOps organizations that are backed by an Azure Active Directory (Azure AD) tenant. Conditional access policies like multi-factor authentication help protect against the risk of compromised credentials and help keep your organization's data safe. In addition to requiring credentials, you can have a policy that only devices that are connected to a corporate network can gain access. More generally, there are a few requirements and actions that you can implement for devices in a device management system. This system is security software that's used by IT departments to manage devices running various operating systems from various locations and networks.
+Conditional access offers simple ways to help secure resources for Azure DevOps organizations that are backed by an Azure Active Directory (Azure AD) tenant. Conditional access policies (CAPs) like multi-factor authentication help protect against the risk of compromised credentials and help keep your organization's data safe. In addition to requiring credentials, you can have a policy that only devices that are connected to a corporate network can gain access. More generally, there are a few requirements and actions that you can implement for devices in a device management system. This system is security software that's used by IT departments to manage devices running various operating systems from various locations and networks.
 
 You can require conditions, such as security group membership, location and network identity, a specific OS, an enabled device in a management system, and so on.
 
@@ -33,10 +33,22 @@ Azure DevOps enforces the policy for usage of personal access tokens (PATs), alt
             * If a user is accessing Azure DevOps via the web, the user will be allowed from IP X,Y,Z or prompted for MFA if outside that list
             * If a user is accessing Azure DevOps via alt-auth, the user will be allowed from IP X,Y,Z blocked if outside that list
 
-For more information and resources, see [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
-
 ## Enable conditional access for Azure DevOps
 
-Use the Azure portal to enable conditional access.
+To enforce conditional access policy on your organization, you must enable the policy in Azure DevOps, as it is set to off by default.
 
-For detailed instructions and requirements, see this [quickstart](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
+
+   ![Enable conditional access policy](_img/_shared/enable-conditional-access-policy.png)
+
+For more information and resources, see [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
+
+For detailed instructions and requirements for conditional access, see this [quickstart](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
