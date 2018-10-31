@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 10/29/2018
+ms.date: 11/1/2018
 monikerRange: 'vsts'
 ---
 
@@ -171,7 +171,7 @@ Some customers require that their data be stored in a particular geographic loca
 
 From time to time, Microsoft employees need to obtain access to customer data stored within Azure DevOps. As a precaution, all employees who have or may ever have access to customer data must pass a background check, which verifies previous employment and criminal convictions. In addition, we permit access to the production systems only when there's a live site incident or other approved maintenance activity, which is logged and monitored.
 
-Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), account data (information used when signing up for or administering your account) and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
+Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), account data (information used when signing up for or administering your organization) and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
 
 ### Microsoft promotional use
 
