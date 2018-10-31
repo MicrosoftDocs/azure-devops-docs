@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 10/29/2018
+ms.date: 11/1/2018
 monikerRange: 'vsts'
 ---
 
@@ -165,13 +165,13 @@ To learn more about data location, please visit the Azure DevOps page in [Micros
 
 In some cases, third parties such as law enforcement entities may approach us to obtain access to customer data stored within Azure DevOps. By policy, we will attempt to redirect the requests to the organization owner for resolution. When we are compelled by court order to disclose customer data to a third party, we will make a reasonable effort to notify the organization owner in advance unless we are legally prohibited from doing so.
 
-Some customers require that their data be stored in a particular geographic location to ensure a specific legal jurisdiction for any law enforcement activities. At this time, Azure DevOps can host accounts in regions in either the United States or the European Union regions. All customer data such as source code, work items, and test results as well as the geo-redundant mirrors and offsite backups are maintained within the selected region.
+Some customers require that their data be stored in a particular geographic location to ensure a specific legal jurisdiction for any law enforcement activities. At this time, Azure DevOps can host organizations in 7 geographies across the world: United States, Canada, Europe, India, Australia, Asia Pacific, and Brazil. All customer data such as source code, work items, test results as well as the geo-redundant mirrors and offsite backups are maintained within the selected geography.
 
 ### Microsoft access
 
 From time to time, Microsoft employees need to obtain access to customer data stored within Azure DevOps. As a precaution, all employees who have or may ever have access to customer data must pass a background check, which verifies previous employment and criminal convictions. In addition, we permit access to the production systems only when there's a live site incident or other approved maintenance activity, which is logged and monitored.
 
-Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), account data (information used when signing up for or administering your account) and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
+Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), account data (information used when signing up for or administering your organization) and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
 
 ### Microsoft promotional use
 
