@@ -19,6 +19,9 @@ monikerRange: 'vsts'
 Use this task in a build or release pipeline to download a package from a package management feed in Azure Artifacts or TFS.
 Requires the Package Management extension.
 
+> [!NOTE]
+> This task currently only supports downloading NuGet packages.
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DownloadPackageV0.md)]
