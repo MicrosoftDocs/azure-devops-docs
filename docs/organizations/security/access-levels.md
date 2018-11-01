@@ -208,7 +208,7 @@ Stakeholder access grants access to features differently depending on whether yo
 | Service, application, or setting | Private project | Public project|
 |------------|-----------------|---------------|
 |**Dashboards** | Partial access | Full access | 
-|**Wiki** | Full access | Full access | 
+|**Wiki** | Partial access | Full access | 
 |**Boards (Work)** | Partial access | Full access | 
 |**Repos (Code)**| No access | Full access | 
 |**Pipelines (Build and Release)** | Full access | Full access | 
