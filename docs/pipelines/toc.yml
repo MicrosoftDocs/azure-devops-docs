@@ -199,6 +199,12 @@
       href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
     href: policies/retention.md
+  - name: Permissions
+    items:
+    - name: "Set build and release permissions"
+      href: policies/set-permissions.md 
+    - name: Permissions & security roles
+      href: policies/permissions.md
 - name: How-to Guides
   items:
   - name: Build
@@ -283,10 +289,6 @@
       href: targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
-  - name: Administer
-    items:
-    - name: "Set build and release permissions (security)"
-      href: policies/set-permissions.md 
 
 - name: Troubleshooting
   items:
@@ -552,5 +554,3 @@
       href: tasks/file-matching-patterns.md
     - name: File and variable transform
       href: tasks/transforms-variable-substitution.md
-  - name: Permissions & security roles
-    href: policies/permissions.md

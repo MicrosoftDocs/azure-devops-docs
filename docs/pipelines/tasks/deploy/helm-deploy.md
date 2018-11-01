@@ -56,7 +56,7 @@ Azure Pipelines has built-in support for Helm charts:
 <tr><td>Chart Name</td><td>(Required) Name of the chart to install or upgrade.</td></tr>
 <tr><td>Chart Path</td><td>(Required) Path to the chart to install or upgrade.Chart path can be a path to a packaged chart or a path to an unpacked chart directory. For example if './redis' is specified the task will run 'helm package ./redis'.</td></tr>
 <tr><td>Version</td><td>(Optional) Specify the exact chart version to install. If this is not specified, the latest version is installed. Set the version on the chart to this semver version</td></tr>
-<tr><td>Release Name</td><td>(Optional) Release name. If unspecified, it will autogenerate one for you.</td></tr>
+<tr><td>Release Name</td><td>(Optional) Release name. If unspecified, it will autogenerate one for you. Cannot be used with the delete command.</td></tr>
 <tr><td>Set Values</td><td>(Optional) Set values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2).In the Helm chart you can parameterize the container image details like name and tag because the same Helm chart can be used for deploying to different environments. These values can also be specified in the values.yaml file of the chart or be overridden by a user-supplied values file, which can in turn be overridden by --set parameters during helm install or helm upgrade.</td></tr>
 <tr><td>Value File</td><td>(Optional) Specify values in a YAML file or a URL.</td></tr>
 <tr><td>Destination</td><td>(Optional) Specify values in a YAML file or a URL.</td></tr>

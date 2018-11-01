@@ -30,6 +30,11 @@ ms.topic: include
 </tr>
 
 <tr>
+<td>Agent.JobName</td>
+<td>The display name of the running job.</td>
+</tr>
+
+<tr>
 <td>Agent.JobStatus</td>
 <td>The status of the build.
     <ul>

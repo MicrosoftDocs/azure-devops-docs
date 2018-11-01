@@ -46,7 +46,7 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
 
 # [New navigation](#tab/new-nav)
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_userSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
 
 Click **+ New Token**.
 
@@ -60,7 +60,7 @@ Click **Create**.
 
 # [Previous navigation](#tab/previous-nav)
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_userSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
 
 Click **Add**.
 
