@@ -46,7 +46,7 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 1. When prompted for an Azure template, select **Windows Virtual Machine**.
 
-   >The **Windows Virtual Machine** template is a simple example of
+   > The **Windows Virtual Machine** template is a simple example of
    provisioning a single virtual machine in Azure.
    For provisioning other types of resources, you can either edit the
    **WindowsVirtualMachine.json** file, select other
@@ -72,6 +72,8 @@ Carry out the following steps to publish an artifact with the Resource Manager t
 1. Queue a new build and verify that the artifact contains 
    the **Templates** folder containing the template files
    **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**.
+
+For more details about creating a pipeline, see [Use the visual designer](../../../get-started-designer.md).   
 
 ### Enable continuous integration (CI)
 
