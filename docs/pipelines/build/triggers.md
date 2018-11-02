@@ -9,7 +9,7 @@ ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/09/2018
+ms.date: 10/30/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -69,7 +69,7 @@ trigger:
     - master
 ```
 
-If your source repository is Azure Repos Git, then you can specify file paths to include or exclude.
+You can specify file paths to include or exclude.
 
 ```yaml
 name: My Specific Path Build
@@ -159,8 +159,55 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 ::: moniker range="vsts"
 
-Pull request builds are not supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a pull request trigger.
+Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
+You can specify the target branches for your pull request builds.
+For example, to run pull request builds only for branches that target: `master` and `releases/*`:
+
+```yaml
+name: My Cool Build
+pr:
+- master
+- releases/*
+```
+
+You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify branches to include and exclude. For example:
+
+```yaml
+name: My Specific Branch Build
+pr:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
+```
+
+You can specify file paths to include or exclude. For example:
+
+```yaml
+name: My Specific Path Build
+pr:
+  branches:
+    include:
+    - master
+    - releases/*
+  paths:
+    include:
+    - docs/*
+    exclude:
+    - docs/README.md
+```
+
+You can opt out of pull request builds entirely by specifying `pr: none`.
+
+```yaml
+name: My PR-less Build
+pr: none
+```
 
 ::: moniker-end
 
@@ -170,18 +217,14 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-Use the checkbox to enable or disable builds on pull requests (PRs).
+Select the check box to enable builds on pull requests.
 
-For Git-based repos, you can specify branches to include and exclude. Select
-a branch name from the dropdown and choose "Include" or "Exclude" as appropriate.
-For included branches, a build will be triggered on each push to a PR targeting
-that branch.
+For Git-based repos, you can specify branches to include and exclude. 
+Select a branch name from the drop-down menu and select "Include" or "Exclude" as appropriate.
+For included branches, a build will be triggered on each push to a pull request targeting that branch.
 
-For GitHub repos, you can choose whether or not to build PRs from forks. There
-are [security implications](../repos/github.md#validate-contributions-from-forks)
-to enabling this feature which you should understand before selecting it.
-If you choose to build fork PRs, you may also choose whether or not to expose
-secrets (like secret variables and secure files) to fork PR builds.
+For GitHub repos, you can choose whether or not to build pull requests from forks. There are [security implications](../repos/github.md?#validate-contributions-from-forks) to enabling this feature that you should understand before selecting it.
+If you choose to build fork pull requests, you may also choose whether or not to expose secrets (like secret variables and secure files) to fork pull request builds.
 
 ---
 

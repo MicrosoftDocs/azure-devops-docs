@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: Comprehensive index to all features in Azure DevOps Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-new-user  
-ms.article: get-started-article
+ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
 ms.author: chcomley

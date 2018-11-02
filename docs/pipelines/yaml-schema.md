@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 10/18/2018
+ms.date: 10/30/2018
 monikerRange: 'vsts'
 ---
 
@@ -74,6 +74,7 @@ resources:
   repositories: [ repository ]
 variables: { string: string } | [ variable ]
 trigger: trigger
+pr: pr
 jobs: [ job | templateReference ]
 ```
 
@@ -89,8 +90,49 @@ variables:
 
 Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
 using [containers](#container) and [repositories](#repository) in pipelines,
-[triggers](#trigger), [variables](process/variables.md?tabs=yaml), and
+[triggers](#trigger), [PR triggers](#pr-trigger), [variables](process/variables.md?tabs=yaml), and
 [build number formats](build/options.md#build-number-format).
+
+### Variables
+
+Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
+
+# [Schema](#tab/schema)
+
+For a simple set of hardcoded variables:
+
+```yaml
+variables: { string: string }
+```
+
+To include variable groups, switch to this list syntax:
+
+```yaml
+variables:
+  - name: string # name of a variable
+    value: any # value of the variable
+  - group: string # name of a variable group
+```
+
+`name`/`value` pairs and `group`s can be repeated.
+
+# [Example](#tab/example)
+
+```yaml
+variables:
+  MY_VAR: my value
+  ANOTHER_VAR: another value
+```
+
+```yaml
+variables:
+- name: MY_VARIABLE           # hardcoded value
+  value: some value
+- group: my-variable-group-1  # variable group
+- group: my-variable-group-2  # another variable group
+```
+
+---
 
 ### Container
 
@@ -199,8 +241,6 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
-Note that `paths` is only valid for Azure Repos, not any other Git provider.
-
 # [Example](#tab/example)
 
 List syntax:
@@ -234,20 +274,72 @@ trigger:
 
 ---
 
-## Variable
+## PR trigger
 
-Hardcoded values can be added directly.
+A pull request trigger specifies what branches will cause a pull request build to
+run. If left unspecified, pull requests to every branch will trigger a build.
+Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pull-request-validation)
+and how to specify them.
 
-Or [variable groups](library/variable-groups.md) can be referenced.
+Note that `pr` is valid for GitHub, not any other Git provider.
 
-For example:
+# [Schema](#tab/schema)
+
+List syntax:
 
 ```yaml
-variables:
-- name: MY_VARIABLE         # Hardcoded value
-  value: some value
-- group: my-variable-group  # Variable group
+pr: [ string ] # list of branch names
 ```
+
+Disable syntax:
+
+```yaml
+pr: none # will disable CI builds entirely
+```
+
+Full syntax:
+
+```yaml
+pr:
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+# [Example](#tab/example)
+
+List syntax:
+
+```yaml
+pr:
+- master
+- develop
+```
+
+Disable syntax:
+
+```yaml
+pr: none # will disable CI builds entirely
+```
+
+Full syntax:
+
+```yaml
+pr:
+  branches:
+    include:
+    - features/*
+    exclude:
+    - features/experimental/*
+  paths:
+    exclude:
+    - README.md
+```
+
+---
 
 ## Job
 
@@ -318,8 +410,9 @@ strategy:
 ```
 
 For each `string1` in the matrix, a copy of the job will be generated. `string1`
-will be appended to the name of the job. For each `string2`, a variable called
-`string2` with the value `string3` will be available to the job.
+is the copy's name and will be appended to the name of the job. For each
+`string2`, a variable called `string2` with the value `string3` will be available 
+to the job.
 
 # [Example](#tab/example)
 

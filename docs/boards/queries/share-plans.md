@@ -100,16 +100,12 @@ You can use the ![ ](../_img/icons/remove-formatting-icon.png) clear format icon
 
 **Keyboard shortcuts**  
 
-You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the following shortcut keys to format your text:  
-- **Bold**: **Ctrl+B**  
-- *Italic*: **Ctrl+I**  
-- <u>Underscore</u>: **Ctrl+U** 
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts for work item forms](../work-items/work-item-form-keyboard-shortcuts.md).
 
 > [!TIP]    
 > Enter **Shift-?** to view additional Keyboard shortcuts for the work item form. 
 > >[!div class="mx-imgBorder"]  
 > >![work item form keyboard shortcuts](_img/share-plans/shortcuts-work-item-form-s142.png)
-
 
 ::: moniker-end
 

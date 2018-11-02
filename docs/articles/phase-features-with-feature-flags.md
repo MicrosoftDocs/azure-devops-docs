@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/26/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---

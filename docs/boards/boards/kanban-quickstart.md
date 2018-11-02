@@ -3,7 +3,7 @@ title: Kanban quickstart
 titleSuffix: Azure Boards and TFS
 description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
