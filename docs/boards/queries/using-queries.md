@@ -2,6 +2,7 @@
 title: Create managed queries with the Query Editor
 titleSuffix: Azure Boards and TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -178,7 +179,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
-To learn more about each link type, see [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md).
+To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 
 <a id="across-projects" />  

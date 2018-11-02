@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Xamarin.iOS
+# Xamarin.iOS task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-ios.png) Build an iOS app with Xamarin on macOS
+Use this task in a build or release pipeline to build an iOS app with Xamarin on macOS.
 
 ## Demands
 

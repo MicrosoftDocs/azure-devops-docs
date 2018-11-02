@@ -2,6 +2,7 @@
 title: Query fields, operators, and macros/variables 
 titleSuffix: Azure Boards and TFS
 description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
@@ -204,7 +205,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong> </p></td></tr>
 <tr>
 	<td><p><strong>Contains Words</strong></p></td>
-	<td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see [Full-text searches] (#full-text) for server and collation requirements.</p></td>
+	<td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.</p></td>
 	<td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields and <strong>Title</strong>.</p></td></tr>
 <tr>
 	<td><p><strong>Does Not Contain Words</strong></p></td>

@@ -96,7 +96,7 @@
         href: guidance/cmmi/track-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Agile glossary
     href: agile-glossary.md
-  - name: "Link types & relationships"
+  - name: Linking & traceability
     href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md
@@ -138,6 +138,8 @@
   items:
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+  - name: Link types 
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: "Default permissions (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Work item form controls 

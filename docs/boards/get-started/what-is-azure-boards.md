@@ -2,6 +2,7 @@
 title: Understand what you get with Azure Boards  
 titleSuffix: Azure DevOps Services
 description: Main features and functions supported by Azure Boards available from Azure DevOps Services and Team Foundation Server (TFS) 
+ms.custom: boards-get-started
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  

@@ -10,9 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 10/29/2018
 ---
-
 
 ::: moniker range="vsts" 
 # About user, team, project, and organization-level settings 
@@ -28,18 +27,19 @@ If you're just getting started as a project administrator, see [Get started as a
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-# About user, team, project, and collection-level settings 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+# About user, team, project, and collection-level settings
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 
 ::: moniker-end  
 
-
 ## User settings
-Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications. 
+
+Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications.
 
 
 <table>
@@ -149,18 +149,18 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 </table>
 
 <a id="project" />
+
 ## Project administrator role and managing projects
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
-See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md). 
+See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"   
+::: moniker range="vsts"
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -446,7 +446,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
 </td>
 </tr>
 <tr>
@@ -544,7 +544,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
 </td>
 </tr>
 
@@ -555,7 +555,9 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 
 ::: moniker range=">= tfs-2013  <= tfs-2018"
+
 <a id="admin" />
+
 ## Server administrator role 
 
 Members of the [Team Foundation Server Administrators group](/tfs/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
@@ -566,7 +568,8 @@ For additional information, see [Team Foundation Server Administration Documenta
 
 ::: moniker-end
 
-## Related articles 
+## Related articles
+
 - [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
 - [Rate limits](../../integrate/concepts/rate-limits.md)

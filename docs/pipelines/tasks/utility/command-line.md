@@ -1,7 +1,7 @@
 ---
-title: Command line
+title: Command Line task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can execute tools from a command prompt when building code in Azure Pipelines and Team Foundation Server (TFS).
+description: Execute tools from a command prompt when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Command line
+# Command Line task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/command-line.png) Run a program from the command prompt.
+Use this task in a build or release pipeline to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -165,7 +165,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 ### Where can I learn Windows commands?
 
 [An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
-
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

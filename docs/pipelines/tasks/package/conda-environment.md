@@ -1,5 +1,5 @@
 ---
-title: Conda Environment
+title: Conda Environment task
 titleSuffix: Azure Pipelines & TFS
 description: How to create and activate a Conda environment when building code in Azure Pipelines and TFS
 ms.prod: devops
@@ -12,11 +12,11 @@ ms.date: 4/26/2018
 monikerRange: 'vsts'
 ---
 
-# Package: Conda Environment
+# Conda Environment task
 
 **Azure Pipelines**
 
-![icon](_img/conda.png) Create and activate a Conda environment.
+Use this task in a build or release pipeline to create and activate a Conda environment.
 
 This task will create a Conda environment and activate it for subsequent build tasks.
 

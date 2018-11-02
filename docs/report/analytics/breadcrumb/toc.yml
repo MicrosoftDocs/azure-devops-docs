@@ -3,7 +3,11 @@
   topicHref: /azure/devops/index
   items: 
   - name: Analytics
-    tocHref: /azure/devops/report/analytics/
-    topicHref: /azure/devops/report/analytics/index
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/report/index
+    items:
+    - name: Analytics Service
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/report/analytics/index
 
 

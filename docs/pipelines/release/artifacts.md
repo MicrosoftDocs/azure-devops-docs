@@ -135,7 +135,7 @@ sources.
 * [TFVC, Git, and GitHub](#tfvc)
 * [Jenkins](#jenkins)
 * [Azure Container Registry, Docker, and Kubernetes](#container)
-* [NuGet and npm with Package Management](#nuget)
+* [Azure Artifacts (NuGet, Maven, and npm)](#nuget)
 * [External or on-premises TFS](#externaltfs)
 * [TeamCity](#teamcity)
 * [Other sources](#others)
@@ -305,22 +305,22 @@ The following features are available when using Azure Container Registry, Docker
 
 <a name="nuget"></a>
 
-<h3 id="nugetsource">NuGet and npm packages from Package Management</h3>
+<h3 id="nugetsource">Azure Artifacts (NuGet, Maven, and npm packages)</h3>
 
-To integrate with NuGet, or npm (Maven is not currently supported), you must first [assign licenses for the Package Management extension](../../artifacts/install.md) from the Marketplace. For more information, see the [Package Management Overview](../../artifacts/overview.md).
+To integrate with NuGet, Maven, or npm, you must first [assign licenses for the Azure Artifacts](../../artifacts/license-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
-Scenarios where you may want to consume Package Management artifacts are:
+Scenarios where you may want to consume these artifacts are:
 
-1.	You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package (NuGet or npm) to Package Management and you want to consume the artifact in a release.
-2.	As part of your application deployment, you need additional packages stored in Package Management.
+1.	You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package to Azure Artifacts and you want to consume the artifact in a release.
+2.	As part of your application deployment, you need additional packages stored in Azure Artifacts.
 
-When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
+When you link such an artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
 You can choose to pick up the latest version of the package, use a specific version, or select the version at the time of release creation.
 During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the job execution.
 
-The following features are available when using Package Management sources:
+The following features are available when using Azure Artifacts sources:
 
-| Feature | Behavior with Package Management sources |
+| Feature | Behavior with Azure Artifacts sources |
 |---------|-------------------------------|
 | Auto-trigger releases | You can configure a continuous deployment trigger for packages. This can automatically trigger a release when a package is updated. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for packages. |

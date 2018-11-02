@@ -409,14 +409,10 @@ To change the directory where templates are stored, click the Configure link, or
 
 ## Add or remove tags from templates 
 
-<!---
-> [!NOTE]  
->**Feature availability**: The ability to add and remove tags from a template is supported from Azure Boards and TFS 2017 and later versions. 
--->
+You can add tags to a template and they'll be applied to the work item when you use the template. To add two or more tags, delimit them with a comma (,).
 
-You can add tags to a template and they'll be applied to the work item when you use the template. 
-
-<img src="_img/wi-templates-add-remove-tags.png" alt="Edit bug template, add or remove tags" style="border: 1px solid #CCCCCC;" />  
+> [!div class="mx-imgBorder"]  
+> ![Edit bug template, add or remove tags](_img/templates/edit-template-add-tags.png)
 
 If you don't specify tags to remove, then all tags present in a work item will remain defined even when you apply a work item template to an existing work item. 
  

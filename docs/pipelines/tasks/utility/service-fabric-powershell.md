@@ -1,7 +1,7 @@
 ---
 title: Service Fabric PowerShell Utility task
 titleSuffix: Azure Pipelines & TFS
-description: Service Fabric PowerShell build task for use in all your build or release pipelines in Azure Pipelines and Team Foundation Server 
+description: Service Fabric PowerShell task for use in build or release pipelines in Azure Pipelines and Team Foundation Server 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,12 +13,11 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Service Fabric PowerShell
+# Service Fabric PowerShell task
 
 **Azure Pipelines**
 
-![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
-
+Use this task in a build or release pipeline to run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.
 
 ## Prerequisites
@@ -58,5 +57,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
