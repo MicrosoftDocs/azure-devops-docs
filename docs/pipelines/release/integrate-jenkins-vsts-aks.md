@@ -7,9 +7,6 @@ manager: ruisun
 editor: mlearned
 ms.prod: devops
 ms.technology: devops-cicd
-tags: 
-ms.assetid: 
-ms.service: 
 ms.devlang: na
 ms.topic: tutorial
 ms.tgt_pltfrm: 

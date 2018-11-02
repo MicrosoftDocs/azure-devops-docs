@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.manager: douge
 ms.date: 04/27/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---

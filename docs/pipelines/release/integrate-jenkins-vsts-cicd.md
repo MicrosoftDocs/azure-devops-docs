@@ -4,12 +4,8 @@ titleSuffix: Azure Pipelines & TFS
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
 author: mlearned
 manager: douge
-editor: 
-tags: 
 ms.prod: devops
 ms.technology: devops-cicd
-ms.assetid: 
-ms.service: 
 ms.devlang: na
 ms.topic: tutorial
 ms.tgt_pltfrm: 

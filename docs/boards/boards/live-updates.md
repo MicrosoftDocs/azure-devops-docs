@@ -3,12 +3,13 @@ title: Enable live updates for a Kanban board
 titleSuffix: Azure Boards and TFS
 description: Turn live updates on or off for a  Kanban board in Azure Boards or Team Foundation Server
 ms.custom: boards-kanban 
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
 ms.date: 10/12/2018
 --- 

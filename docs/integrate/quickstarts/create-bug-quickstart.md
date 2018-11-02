@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 06/27/2017
-ms.custom: get-started-article
+ms.custom: quickstart
 ---
 # Create a bug in Azure DevOps Services using .NET client libraries
 
