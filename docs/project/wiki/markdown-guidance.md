@@ -507,13 +507,13 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
-![Illustration to use for new users](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
+![Illustration to use for new users](https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg)
 </pre>
 
 <br/>
 **Result:** 
 
-![Illustration of linked image](https://docs.microsoft.com/en-us/media/illustrations/bcs-user-management-add-customer-1.svg)
+![Illustration of linked image](https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg)
 
 The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
 <ul>

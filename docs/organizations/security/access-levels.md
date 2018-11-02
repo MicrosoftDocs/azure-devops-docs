@@ -74,7 +74,7 @@ Assign **Advanced** to users with a subscription to Visual Studio Enterprise, Vi
 
 Assign **Stakeholders** to users with no license or subscriptions who need access to a limited set of features.
 
-See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
+See [what benefits come with each subscription level](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).
 
 
 ## Basic, Azure Boards & Repos

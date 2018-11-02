@@ -27,7 +27,7 @@ Currently, you can access the following data from the Analytics Service. This in
 > Data | Available Now | Future availability | 
 > |-|-|-|-|-|
 > | [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) | [Widgets](./analytics-widgets.md)  , [OData](../extend-analytics/index.md) , [Power BI](../powerbi/overview.md) | Rollup - Q2, 2019 |
-> | [Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) | [Test Analytics](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=vsts) | Build/Release - 2019 |
+> | [Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) | [Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=vsts) | Build/Release - 2019 |
 > | [Repos](https://azure.microsoft.com/en-us/services/devops/repos/) | None | Under investigation |
 > | [Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/) | None | Under investigation |
 > | [Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/) | None | Under investigation |
