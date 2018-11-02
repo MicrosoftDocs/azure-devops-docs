@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc 
 ms.manager: douge
 ms.date: 04/25/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
