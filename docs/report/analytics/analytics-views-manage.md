@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: 'azdevserver-2019 || vsts'
 ms.date: 04/04/2018
 ---
 
