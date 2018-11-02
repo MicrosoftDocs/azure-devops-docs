@@ -9,7 +9,7 @@ ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: 'azdevserver-2019 || vsts'
 ms.date: 08/06/2018
 ---
 
