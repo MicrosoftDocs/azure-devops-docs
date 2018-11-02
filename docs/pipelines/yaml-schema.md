@@ -410,8 +410,9 @@ strategy:
 ```
 
 For each `string1` in the matrix, a copy of the job will be generated. `string1`
-will be appended to the name of the job. For each `string2`, a variable called
-`string2` with the value `string3` will be available to the job.
+is the copy's name and will be appended to the name of the job. For each
+`string2`, a variable called `string2` with the value `string3` will be available 
+to the job.
 
 # [Example](#tab/example)
 
