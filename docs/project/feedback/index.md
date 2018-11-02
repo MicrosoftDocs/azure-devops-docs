@@ -18,9 +18,12 @@ ms.date: 09/19/2017
 
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
-::: moniker range=">= tfs-2013 <= tfs-2017"  
+::: moniker range="<= tfs-2017"  
+
 > [!NOTE]  
-> The Test & Feedback extension is available for TFS 2017 and later versions.  ::: moniker-end  
+> The Test & Feedback extension is available for TFS 2017 and later versions.  
+
+::: moniker-end  
 
 
 ## How-to Guides

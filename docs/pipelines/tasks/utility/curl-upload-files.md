@@ -1,7 +1,7 @@
 ---
-title: cURL Upload Files
+title: cURL Upload Files task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can use cURL to upload files with supported protocols in Azure Pipelines and Team Foundation Server (TFS).
+description: Use cURL to upload files with supported protocols in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,12 +13,12 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Utility: cURL Upload Files
+# cURL Upload Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/curl-upload-files.png) Use [cURL](http://curl.haxx.se/) to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more)
+Use this task in a build or release pipeline to use [cURL](http://curl.haxx.se/) to upload files with supported protocols
+such as FTP, FTPS, SFTP, HTTP, and more.
 
 ## Demands
 

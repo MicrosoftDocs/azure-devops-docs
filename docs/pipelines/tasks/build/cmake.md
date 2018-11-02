@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: CMake
+# CMake task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/cmake.png) Build with the CMake cross-platform build system
+Use this task in a build or release pipeline to build with the CMake cross-platform build system.
 
 ## Demands
 

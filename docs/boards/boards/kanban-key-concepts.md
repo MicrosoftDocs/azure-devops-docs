@@ -1,7 +1,8 @@
 ---
 title: Kanban terms
 titleSuffix: Azure Boards and TFS
-description: Key concepts and glossary of terms for Kanban in Azure Boards and Team Foundation Server (TFS)  
+description: Key concepts and glossary of terms for Kanban in Azure Boards and Team Foundation Server (TFS) 
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

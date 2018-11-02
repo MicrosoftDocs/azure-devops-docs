@@ -2,6 +2,7 @@
 title: Adhoc vs managed queries
 titleSuffix: Azure Boards and TFS
 description: Use adhoc or built-in search/managed queries to find work items in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B

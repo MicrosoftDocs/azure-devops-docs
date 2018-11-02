@@ -2,6 +2,7 @@
 title: Query by date or current iteration 
 titleSuffix: Azure Boards and TFS
 description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
@@ -139,7 +140,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 > [!NOTE] 
 > The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for Azure Boards only, and only when run from the web portal. 
 
-Here we show how to list all User Stories and Bugs assigned to the  sliding window that spans the last two, the current, and the next two prints selected for the selected team, Cloud Admin and Tools. 
+Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
 ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)

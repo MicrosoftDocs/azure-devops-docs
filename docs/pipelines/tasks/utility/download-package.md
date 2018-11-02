@@ -1,7 +1,7 @@
 ---
-title: Download Package
+title: Download Package task
 titleSuffix: Azure Pipelines & TFS
-description: Download a package from a Package Management feed in Azure Artifacts or TFS.  Requires the Package Management extension.
+description: Download a package from a Package Management feed in Azure Artifacts or TFS.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,15 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Download Package
+# Download Package task
 
 **Azure Pipelines**
 
-![](_img/downloadpackage.png) Download a package from a package management feed in Azure Artifacts or TFS.  Requires the Package Management extension.
+Use this task in a build or release pipeline to download a package from a package management feed in Azure Artifacts or TFS.
+Requires the Package Management extension.
+
+> [!NOTE]
+> This task currently only supports downloading NuGet packages.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -36,9 +40,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

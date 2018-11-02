@@ -1,5 +1,5 @@
 ---
-title: Azure Monitor Alerts
+title: Azure Monitor Alerts task
 titleSuffix: Azure Pipelines & TFS
 description: Configure alerts on available metrics for an Azure resource
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure Monitor Alerts
+# Azure Monitor Alerts task
 
 **Azure Pipelines**
 
-![](_img/azuremonitoralerts.png) Configure alerts on available metrics for an Azure resource
+Use this task in a build or release pipeline to configure alerts on available metrics for an Azure resource.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -45,9 +45,3 @@ To add or modify alerts, click on […] button.</td></tr>
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

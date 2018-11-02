@@ -1,5 +1,5 @@
 ---
-title: Invoke HTTP REST API task for Azure Pipelines and TFS 
+title: Invoke HTTP REST API task
 titleSuffix: Azure Pipelines & TFS
 description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
@@ -13,11 +13,11 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# Utility: Invoke REST API
+# Invoke REST API task
 
 **Azure Pipelines | TFS 2018**
 
-![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
+Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -60,5 +60,7 @@ pipeline and, optionally, wait for it to be completed.
 ![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
+
+## Open source
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1).

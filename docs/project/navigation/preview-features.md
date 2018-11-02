@@ -2,6 +2,7 @@
 title: Turn preview features on or off 
 titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
+ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
@@ -10,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 07/21/2018
+ms.date: 10/23/2018 
 ---
 
 
@@ -28,8 +29,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per Azure DevOps organization](#account-level)|  
 > |-------------|----------|  
-> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
-
+> |- Git commit menu extension points<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)<br/>- [Build YAML pipelines](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)<br/>- [New YAML pipeline creation experience](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -46,7 +46,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
+	> ![Preview features options for yourself](_img/manage-features/preview-features-user-level-s142.png) 
 
 # [Previous navigation](#tab/previous-nav)  
 
@@ -58,7 +58,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](_img/manage-features/user-latest.png) 
+	> ![Preview features options for yourself](_img/manage-features/preview-features-user-level-s142.png) 
 
 ---
 
@@ -71,26 +71,46 @@ When you enable a feature at the organization level, you essentially turn it on 
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the account](_img/manage-features/account-s137.png)
+> ![Preview features options for the account](_img/manage-features/preview-features-org-level-s142.png)
 
 
 ## Features now enabled for all Azure DevOps Services projects 
-- [Approval gates in releases](../../pipelines/release/approvals/index.md)  
-- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
-- [New Dashboards Experience](../../report/dashboards/dashboards.md)  
-- [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
-- [New Queries Experience](../../boards/queries/view-run-query.md)   
-- [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
-- [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
-- [New Work Items](../../boards/work-items/view-add-work-items.md)   
-- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
-- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
-- [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
+
+### Azure Pipelines
+- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>
+- [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
 - [Symbol server](../../pipelines/symbols/index.md)  
-- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
-- [Task tool installers](../../pipelines/process/tasks.md#tool-installers) 
-- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Task tool installers](../../pipelines/process/tasks.md#tool-installers)  
+
+### Azure Boards 
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [New Work Items](../../boards/work-items/view-add-work-items.md)   
+
+### Azure Repos
+- [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
+
+### Azure Artifacts 
+- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
 - [Updated package experience](../../artifacts/index.md) 
+
+### Azure Test Plans
+- [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
+
+### Dashboards and Analytics 
+- [New Dashboards Experience](../../report/dashboards/dashboards.md)  
+
+### Social tools 
 - [Wiki](../wiki/add-edit-wiki.md)  
+- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
+- [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
+- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+
+### Organization, project, and billing management
+- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
+
+
+
+
 
 

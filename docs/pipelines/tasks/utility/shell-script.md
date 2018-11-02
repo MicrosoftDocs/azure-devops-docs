@@ -1,7 +1,7 @@
 ---
-title: Shell Script
+title: Shell Script task
 titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can execute a bash script when you are building your code in Azure Pipelines and Team Foundation Server (TFS)
+description: Execute a bash script when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Shell Script
+# Shell Script task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/shell-script.png) Run a shell script using bash
+Use this task in a build or release pipeline to run a shell script using bash.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

@@ -1,5 +1,5 @@
 ---
-title: Azure App Service Deploy
+title: Azure App Service Deploy task
 titleSuffix: Azure Pipelines & TFS
 description: The Azure App Service Deployment task is used to update different Azure App Service to deploy [Web Apps](https://azure.microsoft.com/documentation/articles/app-service-web-overview/), [Functions](https://docs.microsoft.com/azure/azure-functions/), and [WebJobs](https://azure.microsoft.com/blog/webjobs-goes-into-full-production/) to Azure.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 09/07/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure App Service Deploy
+# Azure App Service Deploy task
 
 **Azure Pipelines**
 
-![](_img/azurermwebappdeployment.png) The Azure App Service Deploy task is used to deploy to a range of App Services on Azure.
+Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac;
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -168,6 +168,7 @@ Based on the type of Azure App Service and agent, the task chooses a suitable de
 * [Container Registry](#acr-notes)
 * [Zip Deploy](#zip-deploy-notes)
 * [Run From Zip](#runfromzip-notes)
+* Deploy **.war** files
 
 By default, the task tries to select the appropriate deployment technology
 based on the input package type, App Service type, and agent operating system.

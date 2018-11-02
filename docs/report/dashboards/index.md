@@ -2,6 +2,7 @@
 title: Dashboards index to content
 titleSuffix: Azure DevOps & TFS
 description: Index to topics for working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
+ms.custom: dashboards
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
 ms.technology: devops-analytics
@@ -17,7 +18,7 @@ ms.date: 09/05/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-Start gaining visibility into how your team is progressing by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress.  
+Gain visibility into your team's progress by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress.  
 
 To learn about our reporting solutions, read [Reporting Roadmap](../analytics/reporting-roadmap.md).
 

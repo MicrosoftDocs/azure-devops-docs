@@ -1,25 +1,25 @@
 ---
-title: Azure Artifacts Documentation
+title: Azure DevOps Report and Analytics Documentation 
 titleSuffix: Azure DevOps Services
-description: Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds.
+description: Create and share reports using dashboards and the Analytics Service 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
-ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
+ms.technology: devops-analytics
+ms.assetid:  
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 09/05/2018
+ms.date: 10/23/2018
 featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Artifacts</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Analytics</p>
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure Artifacts Documentation</h1>
-        <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p><br/>
+        <h1>Azure DevOps Analytics Documentation</h1>
+        <p>Monitor progress and trends to support improvement of team processes.</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -31,18 +31,18 @@ featureFlags:
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/azure/devops/artifacts/get-started-nuget">
+                                        <a href="/azure/devops/report/dashboards/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_nuget.svg" alt="NuGet logo" />
+                                                                <img src="../_img/index/i_dashboard.svg" alt="Dashboards icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Get started with NuGet</h3>
-                                                            <p>Create, host, and share NuGet packages with your teams.</p>
+                                                            <h3>Dashboards</h3>
+                                                            <p>Share information, progress, and trends through one or more team dashboards.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -50,18 +50,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/artifacts/get-started-npm">
+                                        <a href="/azure/devops/report/analytics/what-is-analytics">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_npm.svg" alt="npm logo" />
+                                                                <img src="../_img/index/i_analytics.svg" alt="Analytics views icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Get started with npm</h3>
-                                                            <p>Create, host, and share npm packages with your teams.</p>
+                                                            <h3>Analytics Service</h3>
+                                                            <p>Access the Analytics Service through dashboard widgets, Power BI, and OData to support your reporting requirements.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -69,18 +69,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/artifacts/get-started-maven">
+                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo_maven.svg" alt="Maven logo" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="Analytics views icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Get started with Maven</h3>
-                                                            <p>Create, host, and share Maven packages with your teams.</p>
+                                                            <h3>Analytics views</h3>
+                                                            <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -88,18 +88,56 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/artifacts/overview">
+                                        <a href="/azure/devops/report/powerbi/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Project management icon" />
+                                                                <img src="../_img/index/logo_power-bi.svg" alt="Power BI logo" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Package management overview</h3>
-                                                            <p>Use multiple feeds to organize and control access to your packages.</p>
+                                                            <h3>Power BI</h3>
+                                                            <p>Quickly generate reports for your Azure DevOps projects based on the Analytics Service.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/report/extend-analytics/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Backlogs icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Extend Analytics with OData</h3>
+                                                            <p>Directly query the Analytics Service using OData and  use the returned JSON data as desired.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/report/sql-reports/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/sql-server-reporting.svg" alt="SQL Server Reporting icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>SQL Server Reporting </h3>
+															<p>Use out-of-the-box reports or define custom reports. Valid only for TFS.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -115,7 +153,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                       <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a> 
+                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,7 +164,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="video icon" />DevOps at Microsoft</a>
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Video icon" />DevOps at Microsoft</a>
                                                     </div>
                                                 </div>
                                             </div>

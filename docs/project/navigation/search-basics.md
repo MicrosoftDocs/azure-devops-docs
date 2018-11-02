@@ -3,6 +3,7 @@ title: Search code, work items, or wiki
 titleSuffix: Azure DevOps Services & TFS   
 description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
 ms.assetid: 
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
