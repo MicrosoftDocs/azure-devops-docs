@@ -131,7 +131,7 @@ There are 3 authentication types for granting Azure Pipelines access to your Git
 | 2. OAuth                       | Your personal GitHub identity | No  |
 | 3. Personal access token (PAT) | Your personal GitHub identity | No  |
 
-## 1. Integrate using the GitHub App
+## Integrate using the GitHub App
 
 The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The GitHub App works with the [GitHub Checks API](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
 
@@ -187,6 +187,7 @@ Temporarily (this is actively being improved), follow these steps to create a pi
 1.	Under "Repository Access,” make sure that access is granted to the repository you wish to build. Optionally, toggle the selection between "All repositories" and "Only select repositories" so that the Save button is enabled. Then, click the **Save** button.
 1.	You’ll be redirected to Azure DevOps to choose the organization, project, and repository for the new pipeline.
 
+<!--
 If GitHub displays an error such as:
 
 `You do not have permission to modify this app on your-organization. Please contact an Organization Owner.`
@@ -196,8 +197,9 @@ then follow these steps instead of those above.
 1. Make note of the numeric installation ID at the end of the URL in your browser's address bar. For example, the number `12345` in the URL `https://github.com/apps/azure-pipelines/installations/12345`
 1. Navigate to the following URL in your browser, replacing `12345` with the numeric installation ID you noted above: `https://go.microsoft.com/fwlink/?linkid=868155&installation_id=12345`
 1. Select or create the Azure DevOps organization, project, and GitHub repository for the new pipeline.
+-->
 
-## 2. Integrate using OAuth
+## Integrate using OAuth
 
 [OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is the simplest authentication type to get started with for repositories in your personal GitHub account. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
 
@@ -210,7 +212,7 @@ To use OAuth, click **Authorize** on the repository step while creating a pipeli
 After authorizing Azure Pipelines to use OAuth, to later revoke it and prevent further use, visit [OAuth Apps](https://github.com/settings/developers) in your GitHub settings.
 You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
-## 3. Integrate using a personal access token (PAT)
+## Integrate using a personal access token (PAT)
 
 [PATs](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) are effectively the same as OAuth, but allow you to control which permissions are granted to Azure Pipelines.
 Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
