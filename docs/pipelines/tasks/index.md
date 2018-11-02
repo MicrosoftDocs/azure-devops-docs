@@ -25,6 +25,8 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 | ---- | -------- |
+| ![icon](build/_img/dotnet-core.png) [.NET Core](build/dotnet-core.md). build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool. | Azure Pipelines, TFS 2018 |
+| ![icon](build/_img/dotnetcorecli.png) [.NET Core CLI](build/dotnet-core-cli.md). Build, test, package, or publish a dotnet application, or run a custom dotnet command. | Azure Pipelines, TFS 2018 |
 | ![icon](build/_img/android-build.png) Android Build - deprecated. Use [Gradle](build/gradle.md) | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/android-signing.png) [Android Signing](build/android-signing.md). Sign and align Android APK files | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/ant.png) [Ant](build/ant.md). Build with Apache Ant | Azure Pipelines, TFS 2015 RTM and newer |
@@ -39,7 +41,6 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | Azure Pipelines, TFS 2017 RTM and newer |
 | ![icon](build/_img/maven.png) [Maven](build/maven.md). Build with Apache Maven | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](build/_img/dotnetcorecli.png) [.NET Core CLI](build/dotnet-core-cli.md). Build, test, package, or publish a dotnet application, or run a custom dotnet command. | Azure Pipelines, TFS 2018 |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Azure Pipelines and newer versions of TFS. |
 | ![icon](utility/_img/publish-pipeline-artifact.png) [Publish Pipeline Artifact](utility/publish-pipeline-artifact.md). Publish pipeline artifact | Azure Pipelines |
 | [SonarQube - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | Azure Pipelines, TFS 2015.3 and newer |
@@ -108,15 +109,15 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 | ---- | -------- |
-| ![icon](package/_img/conda.png) [Conda Environment](package/conda-environment.md). Create and activate a Conda environment | Azure Pipelines |
 | ![icon](package/_img/cocoapods.png) [CocoaPods](package/cocoapods.md). CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](package/_img/conda.png) [Conda Environment](package/conda-environment.md). Create and activate a Conda environment | Azure Pipelines |
 | ![icon](package/_img/npm.png) [npm](package/npm.md). Install npm packages | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](package/_img/npmauthenticate.png) [npm Authenticate](package/npm-authenticate.md). Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](package/_img/nuget-installer.png) [NuGet Installer](package/nuget.md). Installs and updates missing NuGet packages | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget.md)Creates nupkg outputs from csproj or nuspec files | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget.md). Creates nupkg outputs from csproj or nuspec files | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](package/_img/nuget-publisher.png) [NuGet Publisher](package/nuget.md). Uploads nupkg files to a nuget server | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](package/_img/pypi-publisher.png) [PyPI Publisher](package/pypi-publisher.md). Publish a Python package to PyPI | Azure Pipelines |
-| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore. - deprecated. See [Updating component references to NuGet](/xamarin/cross-platform/troubleshooting/component-nuget) | Azure Pipelines, TFS 2015 RTM and newer | Azure Pipelines, TFS 2017 and newer |
+| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore - deprecated. See [Updating component references to NuGet](/xamarin/cross-platform/troubleshooting/component-nuget) | Azure Pipelines, TFS 2015 RTM and newer | Azure Pipelines, TFS 2017 and newer |
 
 ## Deploy
 
