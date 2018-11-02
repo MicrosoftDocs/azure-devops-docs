@@ -107,8 +107,8 @@ The recommended way to track usage, load times and errors is with application in
 [How to setup with your extension](
 https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/05/30/how-to-integrate-application-insights-monitoring-in-your-team-services-extension/)  
 [How to setup application insights and get the instrumentation key.](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)  
+https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource)  
 [Setting alerts in application insights - spike in exceptions, increase response times etc.](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-alerts)  
+https://docs.microsoft.com/azure/application-insights/app-insights-alerts)  
 [More about application insights](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)  
+https://docs.microsoft.com/azure/application-insights/app-insights-overview)  

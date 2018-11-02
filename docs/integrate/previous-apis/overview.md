@@ -58,14 +58,14 @@ There are many ways to authenticate your application or service with Team Servic
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
+| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
-| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](https://docs.microsoft.com/en-us/azure/devops/integrate/concepts/dotnet-client-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
+| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [TFS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | TFS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
 
-> **Note:** You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance).
+> **Note:** You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance).
 
 ### Assemble the request
 
@@ -77,7 +77,7 @@ Here's how to get a list of team projects from TFS using the default port and co
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/tfs/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/pats).
+The examples above use personal access tokens, which requires that you [create a personal access token](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats).
 
 ## Process the response
 
@@ -322,13 +322,13 @@ items that your team uses every day.</td>
 
 ## Related Content
 
-* Check out the [Integrate documentation](https://docs.microsoft.com/en-us/azure/devops/integrate/) for REST API samples and use cases.
-    * [Authentication guidance](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance)
-    * [Samples](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/client-libraries/samples)
+* Check out the [Integrate documentation](https://docs.microsoft.com/azure/devops/integrate/) for REST API samples and use cases.
+    * [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
+    * [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
 
 ## Client Libraries
 * Discover the client libraries for these REST APIs.
-    * [.Net](https://docs.microsoft.com/en-us/azure/devops/integrate/concepts/dotnet-client-libraries)
+    * [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
     * [Node.js](https://github.com/Microsoft/vsts-node-api)
     * [Python](https://github.com/Microsoft/vsts-python-api)
     * [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
