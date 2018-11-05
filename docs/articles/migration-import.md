@@ -454,7 +454,7 @@ Granting exceptions for the necessary IPs is handled at the Azure networking lay
 
 ![Add inbound port rule](_img/migration-import/inbound.png)
 
-Select advanced to configure an inbound port rul for a specific IP. 
+Select advanced to configure an inbound port rule for a specific IP. 
 
 ![Advanced inbound port rule configuration](_img/migration-import/advanced.png)
 

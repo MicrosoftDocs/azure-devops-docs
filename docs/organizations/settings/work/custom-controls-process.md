@@ -2,6 +2,7 @@
 title: Add a custom control to a WIT 
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
@@ -10,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 05/31/2018
+ms.date: 10/29/2018
 ---
 
 # Add extensions and custom controls to a work item type 
@@ -24,9 +25,9 @@ With extensions, you can add rich functionality to your work item forms. An exte
 
 The fourth type, action-level contributions, on the other hand, appear in the context menu of the web form.  
 
-You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Or, you can [create your own custom control](../../../extend/get-started/node.md). 
+You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts), Azure DevOps tab. Or, you can [create your own custom control](../../../extend/get-started/node.md).
 
-For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown. 
+For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.
 
 <img src="_img/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 

@@ -1,5 +1,5 @@
 ---
-title: Azure VM scale set Deployment
+title: Azure VM Scale Set Deployment task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy Virtual Machine scale set image
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure VM scale set Deployment
+# Azure VM Scale Set Deployment task
 
 **Azure Pipelines**
 
-![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
+Use this task in a build or release pipeline to deploy a virtual machine scale set image.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -42,9 +42,3 @@ monikerRange: 'vsts'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

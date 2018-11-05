@@ -1,19 +1,19 @@
 ---
-title: Build pipeline source repositories
+title: Pipeline options for Git repositories
 titleSuffix: Azure Pipelines & TFS
-description: Specify the sources and repository that contains the code you want to build on Azure Pipelines and Team Foundation Server (TFS)
+description: Options that are available when using a Git repository with Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
+ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/05/2017
+ms.date: 10/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Build pipeline source repositories
+# Pipeline options for Git repositories
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
@@ -21,58 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-At the beginning of the build pipeline, the agent downloads files from your remote repository into a local sources directory.
-
-[//]: # (TODO: confirm 2018 was version of multiple jobs)
-
-::: moniker range=">= tfs-2018"
-
-If your build consists of multiple jobs, the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
-
-**Azure Pipelines and TFS 2018:** To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-**TFS 2017:** To specify the source repository:
-
-* **TFS 2017.3** Click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
-
-* **TFS 2017 RTM** Click the **Repository** tab, and then select the type of repo that contains your source files.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < tfs-2017"
-
-**TFS 2015:** To specify the source repository, click the **Repository** tab, and then select the type of repo that contains your source files.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-You can choose from the following repository types:
-
-| Repository type               | Azure Pipelines (YAML) | Azure Pipelines | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
-|-------------------------------|-------------|------|--------------------------------|--------------|
-| Git repo in a project    |Yes|Yes|Yes|Yes|
-| Git repo in Bitbucket Cloud   |No|Yes|No|No|
-| Git repo in GitHub            |Yes|Yes|No|No|
-| Git repo in GitHub Enterprise |No|Yes|TFS 2018.2|No|
-| Git repo (external/remote)    |No|Yes|Yes|Yes|
-| Subversion                    |No|Yes|Yes|No|
-| Team Foundation Version Control (TFVC) repo in a project |No|Yes|Yes|Yes|
-
-> [!NOTE]
-> To build code from Subversion, you must install a Subversion client (`svn`) on your [build agents](../agents/agents.md#install).
-
-## Git options
-
-When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo), you've got the following options.
+While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise, Bitbucket Cloud, or external Git repo), you have the following options.
 
 | Feature | Azure Pipelines | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
@@ -81,11 +30,9 @@ When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo)
 |Tag or label sources|Project|Team project|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
-|Checkout files from LFS|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
+|Checkout files from LFS|Yes|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
 |Don't sync sources|Yes|Yes|Yes|No|No|No|
-|Shallow fetch|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
-
-::: moniker-end
+|Shallow fetch|Yes|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
 
 ::: moniker range=">= tfs-2017"
 
@@ -97,7 +44,7 @@ When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo)
 
 ::: moniker range=">= tfs-2015"
 
-### Branch
+## Branch
 
 ::: moniker-end
 
@@ -115,7 +62,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range=">= tfs-2015"
 
-### Clean the local repo on the agent
+## Clean the local repo on the agent
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
@@ -128,7 +75,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range=">= tfs-2017"
 
-#### Azure Pipelines, TFS 2018, TFS 2017.2, TFS 2017.3
+### Azure Pipelines, TFS 2018, TFS 2017.2, TFS 2017.3
 
 [//]: # (TODO: build.clean variable still works and overrides if clean is set to false)
 
@@ -150,7 +97,7 @@ Select one of the following options:
 
 ::: moniker range="tfs-2017"
 
-#### TFS 2017 RTM
+### TFS 2017 RTM
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
@@ -160,13 +107,13 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 ::: moniker range="tfs-2015"
 
-#### TFS 2015.4
+### TFS 2015.4
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
-#### TFS 2015 RTM
+### TFS 2015 RTM
 
 [//]: # (TODO: clarify folder)
 
@@ -192,7 +139,7 @@ After the sources are tagged by your build pipeline, an artifact with the Git re
 
 ::: moniker range=">= tfs-2017"
 
-### Report build status (Azure Pipelines, TFS 2017 and newer)
+## Report build status (Azure Pipelines, TFS 2017 and newer)
 
 You've got the option to give your team a view of the build status from your remote source repository.
 
@@ -207,23 +154,23 @@ If you use multiple build pipelines for the same repository in your project, the
 
 ::: moniker range="vsts"
 
-#### GitHub (Azure Pipelines)
+### GitHub
 
-If your sources are in GitHub, then this option publishes the status of your build to GitHub using [GitHub status APIs](https://developer.github.com/v3/repos/statuses/). If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull requests page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
+If your sources are in GitHub, then this option publishes the status of your build to GitHub using GitHub [Checks](https://developer.github.com/v3/checks/) or [Status](https://developer.github.com/v3/repos/statuses/) APIs. If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull requests page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
-#### Other types of Git remote repositories
+### Other types of Git remote repositories
 
-If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status. However, you can use a [build badge](options.md) as a way to integrate and show build status within your version control experiences.
+If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status to that repository. However, you can use a [build badge](../build/options.md) as a way to integrate and show build status within your version control experiences.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 
-### Checkout submodules
+## Checkout submodules
 
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
@@ -249,7 +196,7 @@ The build pipeline will check out your Git submodules as long as they are:
 
 ::: moniker range=">= tfs-2015"
 
-#### Authenticated submodules
+### Authenticated submodules
 
 > [!NOTE]
 > Make sure that you have registered your submodules using HTTPS and not using SSH.
@@ -266,7 +213,7 @@ Make sure that whichever account you use has access to both the main repository 
 
 If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service connection is used to access the sources.
 
-#### Alternative to using the Checkout submodules option
+### Alternative to using the Checkout submodules option
 
 In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in Azure Repos and your submodules are in GitHub, or if your main repository is in GitHub and your submodules are in Azure Repos, or if your submodules are in a different Azure DevOps organization than your main repository.
 
@@ -285,7 +232,7 @@ Use a secret variable in your project or build pipeline to store the personal ac
 
 ::: moniker range=">= tfs-2015"
 
-### Checkout files from LFS
+## Checkout files from LFS
 
 Select if you want to download files from [large file storage (LFS)](../../repos/git/manage-large-files.md).
 
@@ -305,13 +252,13 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install git-lfs on the agent to make this option work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install git-lfs on the agent for this option to work.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
-### Don't sync sources (TFS 2017 and newer only)
+## Don't sync sources (TFS 2017 and newer only)
 
 Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
 
@@ -332,11 +279,11 @@ If you want to disable downloading sources:
 
 ::: moniker range=">= tfs-2015"
 
-### Shallow fetch
+## Shallow fetch
 
-Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
+Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
-In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
+In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download for the depth you specify.
 
 > [!NOTE]
 > When the build is queued, the branch to build is resolved to a commit ID. Then, the agent
@@ -349,7 +296,7 @@ In these cases this option can help you conserve network and storage resources. 
 
 ::: moniker range=">= tfs-2017"
 
-#### Azure Pipelines, TFS 2018, TFS 2017.2
+### Azure Pipelines, TFS 2018, TFS 2017.2
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
@@ -359,91 +306,9 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-#### TFS 2017 RTM, TFS 2015 (macOS and Linux only)
+### TFS 2017 RTM, TFS 2015 (macOS and Linux only)
 
 On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set its value to the number of commits in history you want to download. Specify 0 to set no limit.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-## TFVC options
-
-| Feature | Azure Pipelines, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
-|---------|--------------------------------------|--------------|
-| Clean   |Yes|Yes|
-| Specify local path |Yes|No|
-| Label sources|Yes|No|
-
-> [!NOTE]
-> **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
-
-### Repository name
-
-Ignore this text box (**TFS 2017 RTM** or older).
-
-### Mappings (workspace)
-
-Include with a type value of **Map** only the folders that your build pipeline requires. If a subfolder of a mapped folder contains files that the build pipeline does not require, map it with a type value of **Cloak**.
-
-Make sure that you **Map** all folders that contain files that your build pipeline requires. For example, if you add another project, you might have to add another mapping to the workspace.
-
-**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build pipeline by downloading large amounts of data that it does not require.
-
-When you remove projects, look for mappings that you can remove from the workspace.
-
-If this is a CI build, in most cases you should make sure that these mappings match the filter settings of your CI trigger on the [Triggers tab](triggers.md).
-
-For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
-
-### Clean the local repo on the agent
-
-[!INCLUDE [include](_shared/build-clean-intro.md)]
-
-::: moniker-end
-
-::: moniker range="vsts"
-> [!NOTE]
-> Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-#### Azure Pipelines, TFS 2018, TFS 2017.2
-
-If you want to clean the repo, then select **true**, and then select one of the following options:
-
-* **Sources**: The build pipeline performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
-
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
-
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
-
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-#### TFS 2017 RTM, TFS 2015.4
-
-If you select **True** then the build pipeline performs an undo of any changes and scorches the workspace.
-
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-#### TFS 2015 RTM
-
-[//]: # (TODO: confirm this is correct for TFVC; clarify folder)
-
-Select **true** to delete the repository folder.
-
-[!INCLUDE [include](_shared/label-sources.md)]
-
-The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
 
 ::: moniker-end
 
@@ -453,22 +318,7 @@ The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How do I reference the directories on the build agent?
-
-Reference directories using build variables such as `$(Build.SourcesDirectory)` and `$(Build.BinariesDirectory)`. To learn more, see [Build variables](variables.md).
-
-### What protocols can the build agent use with Git?
-
-The agent supports HTTPS.
-
-The agent does not yet support SSH. See [User Voice: Allow build to use SSH authentication while checking out Git submodules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
-
-### What is scorch?
-
-Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server 2015 Power Tools
-](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
-
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](_shared/git-protocols.md)]
 
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: Azure App Service Deploy
+title: Azure App Service Deploy task
 titleSuffix: Azure Pipelines & TFS
 description: The Azure App Service Deployment task is used to update different Azure App Service to deploy [Web Apps](https://azure.microsoft.com/documentation/articles/app-service-web-overview/), [Functions](https://docs.microsoft.com/azure/azure-functions/), and [WebJobs](https://azure.microsoft.com/blog/webjobs-goes-into-full-production/) to Azure.
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 09/07/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure App Service Deploy
+# Azure App Service Deploy task
 
 **Azure Pipelines**
 
-![](_img/azurermwebappdeployment.png) The Azure App Service Deploy task is used to deploy to a range of App Services on Azure.
+Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac;
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -88,9 +88,9 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 <tr><td>Exclude files from the App\_Data folder</td><td>excludeFilesFromAppDataFlag</td><td>(Optional) Select this option to prevent files in the App\_Data folder from being deployed to the Azure App Service. This is useful if a local database or a WebJob has previously been deployed to the Azure App Service and should not be deleted in subsequent deployments of the Web project.</td></tr>
 <tr><td>Additional arguments</td><td>additionalArguments</td><td>(Optional) Additional Web Deploy arguments that will be appended to the MSDeploy command while deploying the Azure Web App such as `-disableLink:AppPoolExtension` and `-disableLink:ContentExtension`. This is useful for enabling and disabling rules, and for skipping synchronization of specific folders ([more examples](https://go.microsoft.com/fwlink/?linkid=838471)).</td></tr>
 <tr><td>Rename locked files</td><td>renameFilesFlag</td><td>(Optional) Select this option to enable msdeploy flag MSDEPLOY\_RENAME\_LOCKED\_FILES=1 in Azure App Service application settings. If set it enables msdeploy to rename locked files that are locked during app deployment</td></tr>
-<tr><td>XML transformation</td><td>enableXmlTransform</td><td>(Optional) The configuration transformations will be run for **\*.Release.config** and **\*.{EnvironmentName}.config** on the **\*.config** files. Configuration transformations run before variable substitution. XML transformations are supported only for Windows platform. [Learn more](https://docs.microsoft.com/en-us/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-transformation).</td></tr>
-<tr><td>XML variable substitution</td><td>enableXmlVariableSubstitution</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the 'key' or 'name' entries in the **appSettings**, **applicationSettings**, and **connectionStrings** sections of any configuration file and **parameters.xml** file. Variable substitution runs after configuration transformations. Note: if the same variables are defined in the release pipeline and in the stage, the stage variables will supersede the release pipeline variables. [Learn more](https://docs.microsoft.com/en-us/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-variable-substitution).</td></tr>
-<tr><td>JSON variable substitution</td><td>jSONFiles</td><td>(Optional) Provide a new line separated list of JSON files to substitute the variable values. Files names must be relative to the root folder. To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. For example, to replace the value of **ConnectionString** in the sample below, define a variable named **Data.DefaultConnection.ConnectionString** in the build or release pipeline (or release pipelines stage).<br/><br/>{<br/>&nbsp;&nbsp;"Data": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;"DefaultConnection": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ConnectionString": "Server=(localdb)\\SQLEXPRESS;Database=MyDB;Trusted\_Connection=True"<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/><br/>Variable substitution runs after configuration transformations. Note: build and release pipeline variables are excluded from substitution. [Learn more](https://docs.microsoft.com/en-us/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#json-variable-substitution).</td></tr>
+<tr><td>XML transformation</td><td>enableXmlTransform</td><td>(Optional) The configuration transformations will be run for **\*.Release.config** and **\*.{EnvironmentName}.config** on the **\*.config** files. Configuration transformations run before variable substitution. XML transformations are supported only for Windows platform. [Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-transformation).</td></tr>
+<tr><td>XML variable substitution</td><td>enableXmlVariableSubstitution</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the 'key' or 'name' entries in the **appSettings**, **applicationSettings**, and **connectionStrings** sections of any configuration file and **parameters.xml** file. Variable substitution runs after configuration transformations. Note: if the same variables are defined in the release pipeline and in the stage, the stage variables will supersede the release pipeline variables. [Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-variable-substitution).</td></tr>
+<tr><td>JSON variable substitution</td><td>jSONFiles</td><td>(Optional) Provide a new line separated list of JSON files to substitute the variable values. Files names must be relative to the root folder. To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. For example, to replace the value of **ConnectionString** in the sample below, define a variable named **Data.DefaultConnection.ConnectionString** in the build or release pipeline (or release pipelines stage).<br/><br/>{<br/>&nbsp;&nbsp;"Data": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;"DefaultConnection": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ConnectionString": "Server=(localdb)\\SQLEXPRESS;Database=MyDB;Trusted\_Connection=True"<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/><br/>Variable substitution runs after configuration transformations. Note: build and release pipeline variables are excluded from substitution. [Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#json-variable-substitution).</td></tr>
 </table>
 
 [!INCLUDE [control-options-arguments](../_shared/control-options-arguments.md)]
@@ -168,6 +168,7 @@ Based on the type of Azure App Service and agent, the task chooses a suitable de
 * [Container Registry](#acr-notes)
 * [Zip Deploy](#zip-deploy-notes)
 * [Run From Zip](#runfromzip-notes)
+* Deploy **.war** files
 
 By default, the task tries to select the appropriate deployment technology
 based on the input package type, App Service type, and agent operating system.

@@ -8,7 +8,7 @@ A:	When you buy from the Visual Studio Marketplace, you select an Azure subscrip
 
 ### Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
+A:	Yes. Buy directly from the Visual Studio Marketplace, Azure DevOps tab. You can bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
 

@@ -8,8 +8,8 @@ ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 10/12/2018
 ---
@@ -20,7 +20,7 @@ ms.date: 10/12/2018
 
 Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. 
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. 
 
 ::: moniker range="vsts"
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md).
@@ -74,7 +74,7 @@ Assign **Advanced** to users with a subscription to Visual Studio Enterprise, Vi
 
 Assign **Stakeholders** to users with no license or subscriptions who need access to a limited set of features.
 
-See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
+See [what benefits come with each subscription level](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).
 
 
 ## Basic, Azure Boards & Repos
@@ -208,7 +208,7 @@ Stakeholder access grants access to features differently depending on whether yo
 | Service, application, or setting | Private project | Public project|
 |------------|-----------------|---------------|
 |**Dashboards** | Partial access | Full access | 
-|**Wiki** | Full access | Full access | 
+|**Wiki** | Partial access | Full access | 
 |**Boards (Work)** | Partial access | Full access | 
 |**Repos (Code)**| No access | Full access | 
 |**Pipelines (Build and Release)** | Full access | Full access | 

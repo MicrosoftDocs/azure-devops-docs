@@ -5,7 +5,7 @@
   items:
   - name: What is Azure DevOps?
     href: what-is-azure-devops-services.md
-  - name: Overview of services
+  - name: Overview of Services
     href: services.md
   - name: Where's VSTS?
     href: what-happened-vsts.md 
@@ -13,11 +13,11 @@
   items:
   - name: Code with Git
     href: code-with-git.md
-  - name: Set up continuous integration & delivery
+  - name: Set up continuous integration and delivery
     href: ../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: "Plan & track work"
+  - name: "Plan and track work"
     href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
-  - name: "Add & run manual tests"
+  - name: "Add and run manual tests"
     href: add-run-manual-tests.md
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
@@ -39,7 +39,7 @@
   items:
   - name: Set favorites
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Follow work & pull requests
+  - name: Follow work and pull requests
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Get started as a Stakeholder
     href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
@@ -57,9 +57,9 @@
     href: define-organizations-and-projects.md
   - name: Source control 
     href: source-control.md
-  - name: Backlogs, boards, & Agile tools
+  - name: Backlogs, boards, and Agile tools
     href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Clients & tools
+  - name: Clients and tools
     href: tools.md  
   - name: Software development roles
     href: roles.md
@@ -69,7 +69,7 @@
     href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides
   items:
-  - name: Sign-in to the web or a client
+  - name: Sign in to the web or a client
     href: connect-team-projects.md 
 - name: Troubleshooting 
   items:
@@ -79,11 +79,11 @@
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Troubleshoot network connections and whitelist addresses
     href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Get support, provide feedback
+  - name: Get support or provide feedback
     href: provide-feedback.md
 - name: Reference
   items:
-  - name: "Permissions & access (Security)"
+  - name: "Permissions and access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: About access levels
     href: ../organizations/security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
@@ -101,7 +101,7 @@
     href: ../organizations/projects/index.md
   - name: Manage organizations
     href: ../organizations/accounts/index.md
-  - name: Security & identity
+  - name: Security and identity
     href: ../organizations/security/index.md
   - name: Billing
     href: ../organizations/billing/index.md

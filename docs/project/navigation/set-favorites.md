@@ -2,6 +2,7 @@
 title: Set personal or team favorites
 titleSuffix: Azure DevOps Services & TFS  
 description: Quickly access artifacts by favoriting them in Azure DevOps Services & Team Foundation Server
+ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB

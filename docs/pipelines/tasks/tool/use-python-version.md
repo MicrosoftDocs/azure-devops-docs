@@ -1,7 +1,7 @@
 ---
-title: Use Python Version
+title: Use Python Version task
 titleSuffix: Azure Pipelines & TFS
-description: Use Python version for Azure Pipelines and TFS
+description: Select a version of Python to run on an agent and optionally add it to PATH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
@@ -12,17 +12,18 @@ ms.date: 4/2/2018
 monikerRange: 'vsts'
 ---
 
-# Tool: Use Python Version
+# Use Python Version task
 
 **Azure Pipelines**
 
-![icon](_img/python.png) Selects a version of Python to run on an agent.  Optionally adds it to PATH.
+Use this task in a build or release pipeline to select a version of Python to run on an agent, and optionally add it to PATH.
 
 ## Demands
 
 None
 
 ## Prerequisites
+
 * A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Python installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).

@@ -1,5 +1,5 @@
 ---
-title: Jenkins Download Artifacts
+title: Jenkins Download Artifacts task
 titleSuffix: Azure Pipelines & TFS
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.date: 05/04/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Jenkins Download Artifacts
+# Jenkins Download Artifacts task
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
-![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
+Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -52,9 +52,3 @@ monikerRange: '>= tfs-2017'
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

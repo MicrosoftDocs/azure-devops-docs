@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -104,7 +104,7 @@ The web server is going to receive `POST` requests from Azure DevOps Services, s
     ```
 
 ## Configure a service hook for PR events
-Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up two service hooks for PR events, so the status server can be notified. The first will be for the **Pull request created** event and the second will be for the **Pull request updated** event.
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
@@ -163,8 +163,13 @@ In order to receive the service hook notifications, you'll need to expose a port
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
+Go through steps 3-9 again but this time configure the **Pull request updated** event.
+
+>[!IMPORTANT]
+> Be sure to go through the preceding steps twice and create service hooks for both the **Pull request created** and **Pull request updated** events.
+
 ## Post status to PRs
-Now that your server can receive service hook events when new PRs are created,update it to post back status to the PR.
+Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR.
 
 1. Service hook requests include a JSON payload describing the event. To help parse the JSON returned by the service hook, install the [body-parser](https://www.npmjs.com/package/body-parser) package.
 
@@ -225,7 +230,7 @@ Now that your server can receive service hook events when new PRs are created,up
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](https://docs.microsoft.com/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 

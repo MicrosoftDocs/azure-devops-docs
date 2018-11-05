@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2018
+ms.date: 10/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -191,7 +191,7 @@ When you inform your users of the completed change, include the tasks that each 
 
 After you connect your organization to Azure AD, you might need to update the Azure subscription that you've been using to pay for Azure DevOps.
 
-If the subscription that you’ve been using to pay for Azure DevOps is associated with a directory other than the one you connect to, you won’t be able to make purchases or change the purchases you’ve already made. Your existing paid resources continue to work, and charges renew each month, but when you try to make changes in the Visual Studio Marketplace you’ll see a message like the following:
+If the subscription that you’ve been using to pay for Azure DevOps is associated with a directory other than the one you connect to, you won’t be able to make purchases or change the purchases you’ve already made. Your existing paid resources continue to work, and charges renew each month, but when you try to make changes in the Visual Studio Marketplace, on the Azure DevOps tab, you’ll see a message like the following:
 
 ![Select Azure subscription for Azure DevOps billing](_img/connect-organization-to-aad/select-azure-subscription.png)
 

@@ -133,7 +133,7 @@ steps:
 
 # [Designer](#tab/designer)
 
-* On the [repository tab](../build/repository.md) set **Clean** to true.
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
 ---
 
@@ -141,7 +141,7 @@ steps:
 
 ::: moniker range="< vsts"
 
-* On the [repository tab](../build/repository.md) set **Clean** to true.
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
 * On the [variables tab](../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
 

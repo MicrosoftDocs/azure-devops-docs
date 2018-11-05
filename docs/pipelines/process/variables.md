@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/15/2018
+ms.date: 10/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -36,7 +36,7 @@ The following table indicates how you can reference a variable called `Build.Def
 <table>
 <tbody>
 <tr><th> Context </th><th> Syntax </th><th> Notes </th></tr>
-<tr><td> Version control tag applied by the build </td><td> `$(Build.DefinitionName)` </td><td> [Learn about repository version control tagging](../build/repository.md). </td></tr>
+<tr><td> Version control tag applied by the build </td><td> `$(Build.DefinitionName)` </td><td> [Learn about repository version control tagging](../repos/index.md). </td></tr>
 <tr><td> Custom build number </td><td> `$(Build.DefinitionName)` </td><td>[Learn about build number format options](../build/options.md).</td></tr>
 <tr><td> Designer input fields </td><td> `$(Build.DefinitionName)` </td><td></td></tr>
 <tr><td> YAML input fields </td><td>  `$(Build.DefinitionName)` </td><td></td></tr>
@@ -61,27 +61,29 @@ allow this variable on a pipeline-by-pipeline basis.
 
 # [YAML](#tab/yaml)
 
-In YAML, you must explicitly map System.AccessToken into the pipeline using an
-environment variable. You can do this at the pipeline level:
+In YAML, you must explicitly map System.AccessToken into the pipeline using a
+variable. You can do this at the pipeline level:
 
 ```yaml
 variables:
-  system.accesstoken: $( System.AccessToken )
+  the_token: $(System.AccessToken)
 
 jobs:
-  job: ...
+- job: Test
+  steps:
+  - script: echo Now I can use $(the_token)
 ```
 
 Or at the step level:
 
 ```yaml
 steps:
-  - script: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
     env:
-      system.accesstoken: $( System.AccessToken )
-  - task: MyTaskThatNeedsTheToken@1
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
     env:
-      system.accesstoken: $( System.AccessToken )
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
 # [Designer](#tab/designer)
@@ -155,19 +157,24 @@ space with `_`, capitalize the letters, and then use your platform's syntax for
 referencing environment variables.
 
 ```yaml
+variables:
+  MY_CUSTOM: MyValue
+  
 jobs:
 - job: LinuxOrMacOS
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-  - bash: echo $AGENT_HOMEDIRECTORY
+  - bash: |
+      echo System-defined: $AGENT_HOMEDIRECTORY
+      echo Custom: $MY_CUSTOM
 
 - job: Windows
   pool:
     vmImage: 'vs2017-win2016'
   steps:
-  - script: echo %AGENT_HOMEDIRECTORY%
-  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
+  - script: echo %AGENT_HOMEDIRECTORY% %MY_CUSTOM%
+  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY $env:MY_CUSTOM
 ```
 
 ### Counters
@@ -348,7 +355,7 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ::: moniker range="vsts"
 
-**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
@@ -392,7 +399,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../build/ci-public.md#validate-contributions-from-forks).
+**Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.

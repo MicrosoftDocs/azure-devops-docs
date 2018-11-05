@@ -252,8 +252,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_android.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -540,7 +540,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
+                                        <a href="/azure/devops/report/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -550,8 +550,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics views (Power BI)</h3>
-                                                            <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
+                                                            <h3>Analytics </h3>
+                                                            <p>Answer quantitative questions about the your projects using the Analytics Service.</p>
                                                         </div>
                                                     </div>
                                                 </div>

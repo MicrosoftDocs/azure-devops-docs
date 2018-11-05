@@ -1,7 +1,7 @@
 ---
-title: Node.js Tool Installer
+title: Node.js Tool Installer task
 titleSuffix: Azure Pipelines & TFS
-description: Learn how to use the Node.js Tool Installer for Azure Pipelines and TFS to find, download, and cache the specified version of Node.js.
+description: Find, download, and cache a specified version of Node.js and add it to the PATH
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,14 +13,13 @@ ms.date: 4/17/2017
 monikerRange: 'vsts'
 ---
 
-
-# Tool: Node.js Tool Installer
+# Node.js Tool Installer task
 
 **Azure Pipelines**
 
 **Build**
 
-![icon](_img/node.png) Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH
+Use this task in a build or release pipeline to find, download, and cache a specified version of [Node.js](https://nodejs.org/) and add it to the PATH.
 
 ## Demands
 

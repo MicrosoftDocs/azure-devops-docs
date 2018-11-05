@@ -6,9 +6,44 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/artifacts/install.md",
-      "redirect_url": "/azure/devops/artifacts/license-azure-artifacts",
-      "redirect_document_id": true
+      "source_path": "docs/artifacts/index-a.md",
+      "redirect_url": "/azure/devops/artifacts/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/how-to/retention-policies.md",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/feeds/immutability.md",
+      "redirect_url": "/azure/devops/artifacts/artifacts-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/maven/delete-artifact.md",
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/npm/deprecate-unpublish.md",
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/nuget/unlist-delete.md",
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/feeds/create-feed.md",
+      "redirect_url": "/azure/devops/artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/feeds/edit-feed.md",
+      "redirect_url": "/azure/devops/artifacts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/collaborate-with-packages.md",
@@ -57,8 +92,8 @@
     },
     {
       "source_path": "docs/package/concepts/feeds.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/feeds",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/artifacts-key-concepts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/package-graph.md",
@@ -102,8 +137,8 @@
     },
     {
       "source_path": "docs/package/feeds/immutability.md",
-      "redirect_url": "/azure/devops/artifacts/feeds/immutability",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/artifacts-key-concepts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/feeds/views.md",
@@ -2012,7 +2047,7 @@
     },
     {
       "source_path": "docs/package/get-started/feeds/immutability.md",
-      "redirect_url": "/azure/devops/artifacts/feeds/immutability",
+      "redirect_url": "/azure/devops/artifacts/artifacts-key-concepts",
       "redirect_document_id": false
     },
     {
@@ -4936,6 +4971,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/build/repository.md",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/work/reference/support-bug-update-status-using-my-work.md",
       "redirect_url": "/azure/devops/reference/xml/support-bug-update-status-using-my-work",
       "redirect_document_id": false
@@ -5758,11 +5798,6 @@
     {
       "source_path": "docs/report.md",
       "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/report/index.md",
-      "redirect_url": "/azure/devops/report/dashboards/index",
       "redirect_document_id": false
     },
     {
@@ -7193,6 +7228,11 @@
     {
       "source_path": "docs/build-release/actions/ci-build-git.md",
       "redirect_url": "/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/build/ci-public.md",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
       "redirect_document_id": true
     },
     {
@@ -11120,7 +11160,6 @@
       "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
       "redirect_document_id": false
     },
-
     {
       "source_path": "docs/organizations/accounts/disconnect-organization-from-aad.md",
       "redirect_url": "/azure/devops/organizations/accounts/disconnect-organization-from-azure-ad",
@@ -11153,4 +11192,3 @@
     }
   ]
 }
-

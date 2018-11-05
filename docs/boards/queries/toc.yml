@@ -24,7 +24,7 @@
     href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: "Link types & relationships"
+  - name: Linking & traceability
     href: link-work-items-support-traceability.md
 - name: Samples
   expanded: true
@@ -75,6 +75,8 @@
     href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: WIQL syntax
     href: wiql-syntax.md
+  - name: Link types 
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: REST API, Queries

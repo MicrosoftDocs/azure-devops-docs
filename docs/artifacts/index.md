@@ -1,45 +1,184 @@
 ---
-title:  Azure Artifacts in Azure DevOps Services and TFS | Microsoft Docs   
-description: Use Azure Artifacts to host and share NuGet packages and npm modules with Azure DevOps Services or Team Foundation Server
-ms.prod: devops
-ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
-ms.date: 08/10/2016
-ms.topic: overview
-layout: LandingPage
-monikerRange: '>= tfs-2017'
+title: Azure Artifacts Documentation
+titleSuffix: Azure DevOps Services
+description: Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds.
+layout: HubPage 
+hide_bc: true
+ms.topic: hub-page
+ms.prod: devops 
+ms.technology: vs-devops-overview 
+ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
+ms.manager: douge 
+ms.author: kaelli 
+ms.date: 09/05/2018
+featureFlags:
+- clicktale 
 ---
 
-# Azure Artifacts
-
-Host your NuGet, npm, and Maven packages in **Azure DevOps Services** and **Team Foundation Server 2017 Update 1** using Azure Artifacts feeds. 
-
-## 5-Minute Quickstarts 
-
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="get-started-nuget.md"><img width="48" height="48" alt="nuget logo" src="_img/index/logo_nuget.svg"><span>NuGet</span></a></div><div class="ico48Link"><a href="get-started-npm.md"><img width="48" height="48" alt="npm logo" src="_img/index/logo_npm.svg"><span>npm</span></a></div><div class="ico48Link"><a href="get-started-maven.md"><img width="48" height="48" alt="maven logo" src="_img/index/logo_maven.svg"><span>Maven</span></a></div></div>
-
-## How-to Guides
-
-- [Publish a NuGet package](nuget/publish.md)
-- [Publish an npm package](npm/publish.md)
-- [Publish a Maven package](maven/publish.md)
-- [Publish a Gradle package](gradle/publish-package-gradle.md)
-
-## Resources
-
-- [Build and Release with Pipelines in Azure DevOps Services](/azure/devops/pipelines/index)
-
-## Videos
-| | |
-| --- | --- |
-| <iframe width="560" height="315" src="https://www.youtube.com/embed/55LhCfB4JlE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="560" height="315" src="https://www.youtube.com/embed/m52wrocBvxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| <iframe src="https://channel9.msdn.com/Events/Build/2017/P4110/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/events/Ignite/Australia-2017/NET324/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T112/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T180/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> |
-| | |
-
-
-
-
-
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Artifacts</p>
+<div id="main" class="v2">
+    <div class="container">
+        <h1>Azure Artifacts Documentation</h1>
+        <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p><br/>
+        <ul class="pivots">
+            <li>
+                <a href="#index"></a>
+                <ul id="index">
+                    <li class="panelItem" data-index="0">
+                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
+                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
+                            <li class="fullSpan">
+                                <a href="#index1"></a>
+                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+                                    <li>
+                                        <a href="/azure/devops/artifacts/get-started-nuget">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/logo_nuget.svg" alt="NuGet logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with NuGet</h3>
+                                                            <p>Create, host, and share NuGet packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/artifacts/get-started-npm">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/logo_npm.svg" alt="npm logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with npm</h3>
+                                                            <p>Create, host, and share npm packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/artifacts/get-started-maven">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/logo_maven.svg" alt="Maven logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with Maven</h3>
+                                                            <p>Create, host, and share Maven packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/artifacts/quickstarts/universal-packages">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_package.svg" alt="universal packages logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with Universal Packages</h3>
+                                                            <p>Create, host, and share Universal packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/artifacts/overview">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Project management icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Package management overview</h3>
+                                                            <p>Use multiple feeds to organize and control access to your packages.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#index2"></a>
+                                <h2 style="float: left; display: flex;">Additional resources</h2>
+                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                       <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="video icon" />DevOps at Microsoft</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />Technical articles</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -72,7 +72,7 @@ name: string  # build numbering format
 resources:
   containers: [ container ]
   repositories: [ repository ]
-variables: { string: string } | variable
+variables: { string: string } | [ variable ]
 trigger: trigger
 jobs: [ job | templateReference ]
 ```
@@ -117,7 +117,7 @@ resources:
 resources:
   containers:
   - container: linux
-    image: ubuntu:18.04
+    image: ubuntu-16.04
 ```
 
 ---
@@ -137,7 +137,7 @@ resources:
     type: enum  # see below
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use, defaults to 'refs/heads/master'
-    endpoint: string  # endpoint for a GitHub repository
+    endpoint: string  # name of the service connection to use (for non-Azure Repos types)
 ```
 
 # [Example](#tab/example)
@@ -233,6 +233,21 @@ trigger:
 ```
 
 ---
+
+## Variable
+
+Hardcoded values can be added directly.
+
+Or [variable groups](library/variable-groups.md) can be referenced.
+
+For example:
+
+```yaml
+variables:
+- name: MY_VARIABLE         # Hardcoded value
+  value: some value
+- group: my-variable-group  # Variable group
+```
 
 ## Job
 
@@ -484,7 +499,7 @@ To use the Microsoft hosted pool, omit the name and specify one of the available
 
 ```yaml
 pool:
-  vmImage: ubuntu-18.04
+  vmImage: ubuntu-16.04
 ```
 
 To use a private pool with no demands:
@@ -564,11 +579,8 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
-- powershell: |
-    Write-Host "Hello $env:name"
-  displayName: A multiline PowerShell script
-  env:
-    name: Microsoft
+- script: echo Hello world!
+  displayName: Say hello
 ```
 
 ---
@@ -637,11 +649,9 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
-  displayName: Say hello
-  name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
-  failOnStderr: true
+- powershell: |
+    Write-Host "Hello $env:name"
+  displayName: A multiline PowerShell script
   env:
     name: Microsoft
 ```

@@ -31,7 +31,7 @@ List operations on your file shares require the client to open every `nupkg` and
 file share has been configured to provide an index that the NuGet client understands.
 - **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. 
 This ensures that any dependencies on that version are guaranteed to remain valid. 
-However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../feeds/immutability.md).
+However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../artifacts-key-concepts.md#immutability).
 - **Well-formedness:** Azure DevOps Services validates all pushed packages to ensure they're well-formed.
 This prevents invalid packages from entering your development and build environments.
 However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.

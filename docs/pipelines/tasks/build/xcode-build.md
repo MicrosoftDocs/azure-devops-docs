@@ -11,12 +11,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 
-
-# Build: Xcode Build
+# Xcode Build task
 
 **[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
-![icon](_img/xcode.png) Build an Xcode workspace on macOS
+Use this task in a build or release pipeline to build an Xcode workspace on macOS.
 
 ## Demands
 

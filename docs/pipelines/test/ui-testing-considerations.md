@@ -100,7 +100,7 @@ context of the user specified in the auto-logon settings.
 If you use Remote Desktop to access the computer on which an agent is running
 with auto-logon, simply disconnecting the Remote Desktop causes the computer
 to be locked and any UI tests that run on this agent may fail.
-To avoid this, use the [tscon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon)
+To avoid this, use the [tscon](https://docs.microsoft.com/windows-server/administration/windows-commands/tscon)
 command on the remote computer to disconnect from Remote Desktop. For example: 
 
 `%windir%\System32\tscon.exe 1 /dest:console`

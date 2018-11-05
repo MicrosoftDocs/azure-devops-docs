@@ -96,7 +96,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. **Download** and install the Azure Test Runner desktop client if you haven't already set it up. 
 
-   ![Download_ATR](_img/downlaodATR.png)
+   ![Download_ATR](_img/downloadATR.png)
 
 1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md#collect-diagnostic-data-from-web-apps) for more information about data collection. 
 
