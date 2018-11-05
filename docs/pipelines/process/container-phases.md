@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 10/10/2018
+ms.date: 11/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -118,6 +118,7 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 resources:
+  containers:
   - container: private_ubuntu1604
     image: myprivate/registry:ubuntu1604
     endpoint: private_dockerhub_connection
@@ -133,6 +134,7 @@ If you need to control container startup, you can specify `options`.
 
 ```yaml
 resources:
+  containers:
   - container: my_container
     image: ubuntu:16.04
     options: --hostname container-test --ip 192.168.0.1
