@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-When viewing a public project, you can view the status of build and release pipelines. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
+When viewing a public project, you can view the status of build and release pipelines. If you're a contributor, you can also [define build pipelines](../../pipelines/get-started-yaml.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]   
 

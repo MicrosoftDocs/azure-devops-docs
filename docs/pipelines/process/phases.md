@@ -253,9 +253,9 @@ To avoid taking up resources when your job is hung or waiting too long, it's a g
 
 ::: moniker range="vsts"
 
-The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
+The `timeoutInMinutes` allows setting a limit on the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
+The `cancelTimeoutInMinutes` allows setting a limit on how long the job is allowed to finish when it is cancelled. When not specified, the default is 5 minutes. Set this value to allow sufficient time for steps to complete in cases where you've specified that a task should run **even if a previous task has failed**, **even if the build was cancelled**, or with **custom conditions** that allow a task to [always run](../process/conditions.md#always) after cancellation.
 
 ```yaml
 jobs:
