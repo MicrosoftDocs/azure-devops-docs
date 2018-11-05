@@ -14,7 +14,7 @@ ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.topic: conceptual
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 06/29/2018
+ms.date: 10/19/2018
 ms.custom: mvc
 monikerRange: '>=tfs-2017'
 ---
@@ -141,13 +141,24 @@ Use policies to protect your branches by requiring successful builds before merg
 
 ::: moniker range="vsts"
 
-Unless you explicitly override `trigger` in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
+Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
+You can specify the target branches for your pull request builds. 
+For example, to run the build only for pull requests that target: `master` and `features/*`:
+
+```yaml
+pr:
+- master
+- features/*
+```
+
+For more details, see [Triggers](../build/triggers.md).
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 YAML builds are not yet available on TFS.
 ::: moniker-end
+
 
 # [Designer](#tab/designer)
 

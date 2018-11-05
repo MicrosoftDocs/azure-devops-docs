@@ -9,7 +9,7 @@ ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/16/2018
+ms.date: 11/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +24,14 @@ monikerRange: '>= tfs-2015'
 A **task** is the building block for defining automation in a
 build pipeline, or in a stage of a release pipeline.
 A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. We provide some [built-in tasks](../tasks/index.md) 
+abstracted with a set of inputs. 
+
+When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
+
+When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+
+## Custom tasks
+We provide some [built-in tasks](../tasks/index.md) 
 to enable fundamental build and deployment scenarios. We have also
 provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
 
@@ -34,15 +41,19 @@ subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
 to add tasks to Azure Pipelines or TFS.
 
-When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
-
-When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
+and a custom task, the in-box task will take precedence. You can use a fully-qualified
+name for the custom task to avoid this risk:
+```yaml
+steps:
+- task: myPublisherId.myExtensionId.myTaskName@1
+```
 
 <a name="taskversions"></a>
 ## Task versions
 
-Each task has a **Version** selector that enables you to specify the major version of the task used in your
-build or deployment. This can help to prevent issues when new versions of a task are released.
+Tasks are versioned, and you can specify the major version of the task used in your
+pipeline. This can help to prevent issues when new versions of a task are released.
 Tasks are typically backwards compatible, but in some scenarios you may
 encounter unpredictable errors when a task is automatically updated.
 
@@ -52,15 +63,28 @@ will automatically use the new version. However, if a new major version is relea
 until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
 
-**Notes:**
+# [YAML](#tab/yaml)
 
-* If you select a preview version (such as **1.\* Preview**), be aware that this
-  version is still under development and might have known issues.
+In YAML, you specify the major version using `@` in the task name.
+For example, to pin to version 2 of the `PublishTestResults` task:
+```yaml
+steps:
+- task: PublishTestResults@2
+```
 
-* If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
-  The ability to restore to an older version of a release pipeline is not currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
+# [Designer](#tab/designer)
 
-* Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
+Each task in a pipeline has a **Version** selector to let you choose the version you want.
+
+If you select a preview version (such as **1.\* Preview**), be aware that this
+version is still under development and might have known issues.
+
+If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
+The ability to restore to an older version of a release pipeline is not currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
+
+Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
+
+---
 
 <a name="controloptions"></a>
 ## Task control options

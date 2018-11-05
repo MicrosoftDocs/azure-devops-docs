@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 09/10/2018
+ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -49,7 +49,27 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Import into a new repo
 
-From the repo drop-down, select **Import repository**. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+0. Select **Repos**, **Files**.
+
+  ![View your branches](_img/repos-navigation/repos-files.png)
+
+0. From the repo drop-down, select **Import repository**.
+
+  ![Manage repositories](_img/repo-mgmt/import-repository.png)
+
+0. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+
+  If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+
+  ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+From the repo drop-down, select **Import repository**.
 
 ![Import Repository Option](_img/Import-Repo/ImportRepository.png)
 
@@ -58,6 +78,10 @@ If the source repo is publicly available, just [enter the clone URL](clone.md#cl
 If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
 
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+---
+
+
 
 ## Import into an existing empty repo
 
