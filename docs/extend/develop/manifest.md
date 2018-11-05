@@ -45,6 +45,7 @@ Here is an example of what a typical manifest will look like:
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
+<a id="public-flag" />
 #### Mark an extension public
 
 By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
