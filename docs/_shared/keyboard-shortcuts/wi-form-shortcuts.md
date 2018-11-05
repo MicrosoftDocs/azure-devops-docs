@@ -15,9 +15,9 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 <td>![Work item form keyboard shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-item-form.png)</td>
 <td>
 **Work Item Form**<br/> 
-**Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>
-**Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;Go to discussion<br/>
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>
+**Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>
+**Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;&nbsp;Go to discussion<br/>
+**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>
 **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title<br/>
 **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)<br/>
 **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)<br/>
@@ -27,31 +27,34 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 </table>
 
 
-Also, you can use the following keyboard shortcuts when working within the work item form in the web portal, both Azure DevOps Services and TFS.
+## Rich text field shortcuts
 
-<table width="70%">
-<tbody valign="top">
-<tr>
-<th>**Format, copy, paste rich text**</th>
-<th>**Save and close**</th>
-</tr>
-<tbody valign="top">
-<tr>
-<td>
-**Ctrl+b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bold text<br/>
-**Ctrl+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italicize text<br/>
-**Ctrl+u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Underscore text<br/>
-**Ctrl+Spacebar**&nbsp;&nbsp;&nbsp;Clear formatting<br/>
-**Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy text<br/>
-**Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied text<br/>
-</td>
+::: moniker range="vsts"  
 
-<td>
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>
-**Ctrl+Enter**&nbsp;&nbsp;&nbsp;Save and close<br/>
-**Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close work item <br/>
-</td>
-<td>
-</tr>
-</tbody>
-</table>
+The **New Rich Text Editor** feature is in preview. To enable it for yourself or your organization, see [Enable preview features](/azure/devops/boards/project/navigation/preview-features.md).
+
+The new editor toolbar appears below each text box that can be formatted. It only becomes active when you move your cursor within the text box.
+
+> [!div class="mx-imgBorder"]  
+> ![New Rich Text Editor toolbar](/azure/devops/boards/queries/_img/share-plans/new-rich-text-editor-toolbar.png) 
+
+You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=![ ](../../_img/icons/mac-command-symbol.png))
+
+>  [!div class="mx-tdCol2BreakAll"]  
+> | Windows OS shortcuts | Mac OS shortcuts |  
+> |------------------|---------------------|  
+> |**Ctrl + b** = Bold<br/>**Ctrl + c** = Copy text<br/>**Ctrl + i** = Italics<br/>**Ctrl + k** = Insert hyperlink<br/>**Ctrl + s** = Save<br/>**Ctrl + u** = Underline<br/>**Ctrl + v** = Paste text<br/>**Ctrl + y** = Redo<br/>**Ctrl + z** = Undo<br/>**Ctrl + .** = Bullet list<br/>**Ctrl + /** = Numbered list<br/>**Shift + :** = Emoji library |**Command + b** = Bold<br/>**Command + c** = Copy text<br/>**Command + i** = Italics<br/>**Command + k** = Insert hyperlink<br/>**Command + s** = Save<br/>**Command + u** = Underline<br/>**Command + v** = Paste text<br/>**Command + Z** = Redo<br/>**Command + z** = Undo<br/>**Command + .** = Bullet list<br/>**Command + /** = Numbered list<br/>**Shift + :** = Emoji library |  
+
+
+**Previous Rich Text Editor**  
+
+::: moniker-end  
+
+The previous rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
+
+![Rich text tool bar](/azure/devops/boards/queries/_img/rich-text-ui-team-services.png)
+
+You can use the following keyboard shortcuts when working in the editor from a web browser running on a Windows operating system. 
+
+**Ctrl + b** = Bold<br/>**Ctrl + c** = Copy text<br/>**Ctrl + i** = Italics<br/>**Ctrl + k** = Insert hyperlink<br/>**Ctrl + s** = Save<br/>**Ctrl + u** = Underline<br/>**Ctrl + v** = Paste text<br/>**Ctrl + y** = Redo<br/>**Ctrl + z** = Undo<br/>**Ctrl + .** = Bullet list<br/>**Ctrl + /** = Numbered list<br/> **CTRL+Spacebar** = Remove formatting  
+ 

@@ -9,7 +9,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: douge
 ms.author: dastahel
 author: davidstaheli
-ms.date: 10/31/2018
+ms.date: 11/02/2018
 monikerRange: 'vsts'
 ---
 
@@ -35,31 +35,89 @@ Be aware of the following access restrictions when you're running builds in Azur
 * **Cross-project access:** All builds in a Azure DevOps public project run with an access token restricted to the project. Builds in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the Azure DevOps organization.
 * **Azure Artifacts packages:** If your builds need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
 
-## Mapping GitHub organizations to Azure DevOps
+## Map GitHub organizations to Azure DevOps
 
-GitHub's structure consists of **organizations and user accounts** that contain **repositories**. For details, see [GitHub's documentation](https://help.github.com/articles/differences-between-user-and-organization-accounts/).
+GitHub's structure consists of **organizations and user accounts** that contain **repositories**. See [GitHub's documentation](https://help.github.com/articles/differences-between-user-and-organization-accounts/).
 
 ![GitHub organization structure](_img/github-org-structure.png)
 
-Azure DevOps' structure consists of **organizations** that contain **projects** that contain **pipelines**. For details, see [Define your organizations and projects in Azure DevOps](../../user-guide/define-organizations-and-projects.md).
+Azure DevOps' structure consists of **organizations** that contain **projects**. See [Define your organizations and projects in Azure DevOps](../../user-guide/define-organizations-and-projects.md).
 
 ![Azure DevOps organization structure](_img/azure-devops-org-structure.png)
 
-The structure of GitHub organizations, user accounts, and repositories can be reflected in Azure DevOps. The following setup is recommended:
+Azure DevOps can reflect your GitHub structure with:
+* An Azure DevOps **organization** for your GitHub **organization or user account**
+* Azure DevOps **projects** for your GitHub **repositories**
 
-1. Create an Azure DevOps organization with a name matching your GitHub organization or user account. This will give it a URL like `https://dev.azure.com/yourOrganization`.
-1. In the Azure DevOps organization created above, create projects with names matching the repositories in the GitHub organization or user account. This will give them URLs like `https://dev.azure.com/yourOrganization/yourRepository`.
-1. In the projects created above, create pipelines named after the organization and repository, such as `python.cpython`, so that it's clear which repositories they build.
+![GitHub structure mapped to Azure DevOps](_img/github-structure-mapped-to-azure-devops.png)
 
-Following this pattern, your GitHub repositories and Azure DevOps projects will share similar URL paths. For example:
-- GitHub: `https://github.com/python/cpython`
-- Azure DevOps: `https://dev.azure.com/python/cpython`
+To set up this mapping between GitHub and Azure DevOps:
 
-<!-- ## Mapping GitHub permissions to Azure DevOps
+1. Create an Azure DevOps organization named after your GitHub organization or user account. It will have a URL like `https://dev.azure.com/your-organization`.
+1. In the Azure DevOps organization, create projects named after your repositories. They will have URLs like `https://dev.azure.com/your-organization/your-repository`.
+1. In the Azure DevOps projects, create pipelines named after the GitHub organization and repository they build, such as `your-organization.your-repository`. Then, it's clear which repositories they're for.
 
-The permissions of GitHub organizations, user accounts, and repositories can be reflected in Azure DevOps. -->
+Following this pattern, your GitHub repositories and Azure DevOps projects will have matching URL paths. For example:
 
-<!-- Add info about GH Teams -->
+|              |                                        |
+|--------------|----------------------------------------|
+| GitHub       | `https://github.com/python/cpython`    |
+| Azure DevOps | `https://dev.azure.com/python/cpython` |
+
+## Mapping GitHub permissions to Azure DevOps
+
+GitHub permissions on GitHub organizations, user accounts, and repositories can be reflected in Azure DevOps.
+
+### Mapping GitHub organization roles
+
+GitHub organization member roles are found at `https://github.com/orgs/your-organization/people` (replace `your-organization`).
+
+Azure DevOps organization member permissions are found at `https://dev.azure.com/your-organization/_settings/security` (replace `your-organization`).
+
+GitHub organization roles map to Azure DevOps organization permissions as follows.
+
+| GitHub organization role | Azure DevOps organization equivalent          |
+| ------------------------ | --------------------------------------------- |
+| Owner                    | Member of `Project Collection Administrators` |
+| Billing manager          | Member of `Project Collection Administrators` |
+| Member                   | Member of `Project Collection Valid Users`. By default, this group lacks permission to create new projects. To change this, set the group's `Create new projects` permission to `Allow`, or create a new group with permissions you need. |
+
+### Mapping GitHub user account roles
+
+A GitHub user account has 1 role, which ownership of the account.
+
+Azure DevOps organization member permissions are found at `https://dev.azure.com/your-organization/_settings/security` (replace `your-organization`).
+
+The GitHub user account role maps to Azure DevOps organization permissions as follows.
+
+| GitHub user account role | Azure DevOps organization equivalent          |
+| ------------------------ | --------------------------------------------- |
+| Owner                    | Member of `Project Collection Administrators` |
+
+### Mapping GitHub repository permissions
+
+GitHub repository permissions are found at `https://github.com/your-organization/your-repository/settings/collaboration` (replace `your-organization` and `your-repository`).
+
+Azure DevOps project permissions are found at `https://dev.azure.com/your-organization/your-project/_settings/security` (replace `your-organization` and `your-project`).
+
+GitHub repository permissions map to Azure DevOps project permissions as follows.
+
+| GitHub repository permission | Azure DevOps project equivalent    |
+| ---------------------------- | ---------------------------------- |
+| Admin                        | Member of `Project Administrators` |
+| Write                        | Member of `Contributors`           |
+| Read                         | Member of `Readers`                |
+
+If your GitHub repository grants permission to teams, you can create matching teams in the `Teams` section of your Azure DevOps project settings. Then, add the teams to the security groups above, just like users.
+
+### Pipleline-specific permissions
+
+To grant permissions to users or teams for specific pipelines in an Azure DevOps project, follow these steps:
+
+1. Visit the project's Builds page (for example, `https://dev.azure.com/your-organization/your-project/_build`).
+1. Select the pipeline for which to set specific permissions.
+1. From the '**...**' context menu, select **Security**.
+1. Click **Add...** to add a specific user, team, or group and customize their permissions for the pipeline.
 
 ## Authorize access to your repositories
 
@@ -73,42 +131,38 @@ There are 3 authentication types for granting Azure Pipelines access to your Git
 | 2. OAuth                       | Your personal GitHub identity | No  |
 | 3. Personal access token (PAT) | Your personal GitHub identity | No  |
 
-### 1. GitHub App
+## Integrate using the GitHub App
 
-The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity.
-Builds and GitHub status updates will be performed using the Azure Pipelines identity.
-Additionally, the GitHub App works with the [GitHub Checks API](https://developer.github.com/v3/checks/)
-to display build, test, and code coverage results in GitHub.
+The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The GitHub App works with the [GitHub Checks API](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
 
-#### Installing the GitHub App
+### Install the GitHub App
 
 To use the GitHub App, install it in your GitHub organization or user account. The app can be installed and uninstalled from 2 locations:
 
-1. The app's [homepage](https://github.com/apps/azure-pipelines) - recommended when no parallel jobs are being purchased.
-1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories,
-but where cancelation of the price plan may delay uninstallation until the end of your GitHub billing period, even for the free plan.
+1. The app's [homepage](https://github.com/apps/azure-pipelines) - **recommended** when no parallel jobs are being purchased.
+1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories, but where cancelation of the price plan may delay uninstallation until the end of your GitHub billing period, even for the free plan.
 
 To install the GitHub App, you must be a repository admin or GitHub organization owner.
 
-If you install the app for an entire GitHub organization, no automatic pipeline set up will take place, nor will communication be sent to repository owners. The app will become Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when organization members create pipelines for their repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s individual GitHub identity which may lose access to the repository.
+If you install the app for all repositories in a GitHub organization, you don't need to worry about Azure Pipelines sending mass emails or automatically setting up pipelines on your behalf. As an alternative to installing the app for all repositories, repo admins can install it one at a time for individual repositories. This requires more work for admins, but has no advantage nor disadvantage.
 
-As an alternative to installing the app for an entire GitHub organization, repository admins can install it one at a time for individual repositories. This requires more work for admins, but has no advantages or disadvantages.
+The app will become Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when organization members create pipelines for their repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s GitHub identity which may lose access to the repository.
 
-##### GitHub App permissions
+#### GitHub App permissions
 
 The GitHub App requests the following permissions during installation:
 
 | Permission | What Azure Pipelines does with it |
 |------------|-----------------------------------|
-| Write access to code | Upon your deliberate action, Azure Pipelines will simplify creating a pipeline by committing a YAML file to a selected branch of your GitHub repository. |
+| Write access to code | Only upon your deliberate action, Azure Pipelines will simplify creating a pipeline by committing a YAML file to a selected branch of your GitHub repository. |
 | Read access to metadata | Azure Pipelines will retrieve GitHub metadata for displaying the repository, branches, and issues associated with a build in the build's summary. |
 | Read and write access to checks | Azure Pipelines will read and write its own build, test, and code coverage results to be displayed in GitHub. |
-| Read and write access to pull requests | Upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Azure Pipelines will retrieve pull request metadata to display in the build summary of builds associated with a pull request. |
+| Read and write access to pull requests | Only upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Azure Pipelines will retrieve pull request metadata to display in build summaries associated with pull requests. |
 
 <!--
 Detailed permissions not displayed to the user during installation:
 | Checks (read & write)
-| Repository contents (read & write
+| Repository contents (read & write)
 | Deployments (read & write)
 | Issues (read & write)
 | Repository metadata (read)
@@ -116,48 +170,60 @@ Detailed permissions not displayed to the user during installation:
 | Commit statuses (read & write)
  -->
 
-#### GitHub Marketplace purchases
+### GitHub Marketplace purchases
 
-Additional, Microsoft-hosted parallel jobs can be purchased through the [GitHub Marketplace](https://github.com/marketplace/azure-pipelines) or [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines). Pricing is the same in both marketplaces. Unless you prefer purchases to accrue in an existing GitHub billing account, it's recommended that purchases be made in the Azure DevOps Marketplace to simplify associating purchases with Azure DevOps organizations.
+Additional, Microsoft-hosted parallel jobs can be purchased through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (recommended) or [GitHub Marketplace](https://github.com/marketplace/azure-pipelines). Pricing is the same in both marketplaces. Unless you prefer using an existing GitHub billing account, it's recommended that purchases be made in the Azure DevOps Marketplace to simplify associating purchases with different Azure DevOps organizations.
 
-The **first time** the app is installed for a GitHub organization or user account or its repositories, the Azure DevOps organization that is created or selected during installation will be where GitHub Marketplace purchases will be applied. Currently, the only way to change where GitHub Marketplace purchases are applied is to uninstall and reinstall the app (which could break your pipelines), or purchase the parallel jobs through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) instead of GitHub.
+The **first time** the app is installed in a GitHub organization or user account, the Azure DevOps organization that is created or selected during installation will be where GitHub Marketplace purchases are applied. Currently, the only way to change where GitHub Marketplace purchases are applied is to uninstall and reinstall the app (which will disable existing pipelines), or purchase parallel jobs through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) instead of GitHub.
 
-#### Creating pipelines in multiple Azure DevOps organizations and projects
+### Create pipelines in multiple Azure DevOps organizations and projects
 
-Once the app is installed, pipelines can be created on an individual basis in different Azure DevOps organizations and projects. The only limitation is that a single repo like `Microsoft/vscode` cannot have CI/automatically-triggered pipelines in multiple Azure DevOps organizations.
+Once the app is installed, pipelines can be created for the organization's repositories in different Azure DevOps organizations and projects. However, if you create pipelines for a single repository in multiple Azure DevOps organizations, only the first organization's pipelines can be automatically triggered by GitHub commits or pull requests. Manual or scheduled builds are still possible in secondary Azure DevOps organizations.
 
-Temporarily (this is actively being improved), follow these steps to create a pipeline using the GitHub App in separate Azure DevOps organizations or projects than those chosen during the app's installation.
+Temporarily (this is actively being improved), follow these steps to create a pipeline using the GitHub App in an Azure DevOps organization or project that is different than the one chosen during the app's installation.
 
-1. Visit https://github.com/apps/azure-pipelines/installations/new and click **Configure** on the GitHub organization for which you want to map another Azure DevOps organization or project.
-    - If Configure is not shown next to the GitHub organization, but **Install** is, that means the GitHub App is not yet installed for the GitHub organization. Click **Install** to install it and skip step 2 below.
+1. Visit https://github.com/apps/azure-pipelines/installations/new and click **Configure** on the GitHub organization for which you want to create a pipeline in another Azure DevOps organization or project.
+    * If Configure is not shown next to the GitHub organization, that means the GitHub App is not yet installed for the GitHub organization. Click the organization name to install it and skip the remaining steps below.
 1.	Under "Repository Access,” make sure that access is granted to the repository you wish to build. Optionally, toggle the selection between "All repositories" and "Only select repositories" so that the Save button is enabled. Then, click the **Save** button.
-3.	You’ll be redirected to Azure DevOps to choose the organization, project, and repository for the new pipeline.
+1.	You’ll be redirected to Azure DevOps to choose the organization, project, and repository for the new pipeline.
 
-### 2. OAuth
+<!--
+If GitHub displays an error such as:
 
-[OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is simplest authentication type to get started with for repositories in your personal GitHub account. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
+`You do not have permission to modify this app on your-organization. Please contact an Organization Owner.`
 
-#### Using OAuth
+then follow these steps instead of those above.
+1. Visit https://github.com/apps/azure-pipelines/installations/new and click **Configure** on the GitHub organization for which you want to create a pipeline in another Azure DevOps organization or project.
+1. Make note of the numeric installation ID at the end of the URL in your browser's address bar. For example, the number `12345` in the URL `https://github.com/apps/azure-pipelines/installations/12345`
+1. Navigate to the following URL in your browser, replacing `12345` with the numeric installation ID you noted above: `https://go.microsoft.com/fwlink/?linkid=868155&installation_id=12345`
+1. Select or create the Azure DevOps organization, project, and GitHub repository for the new pipeline.
+-->
+
+## Integrate using OAuth
+
+[OAuth](https://help.github.com/articles/authorizing-oauth-apps/) is the simplest authentication type to get started with for repositories in your personal GitHub account. Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
+
+### Using OAuth
 
 To use OAuth, click **Authorize** on the repository step while creating a pipeline. The OAuth connection will be saved in your Azure DevOps project for later use.
 
-#### Revoking OAuth access
+### Revoking OAuth access
 
 After authorizing Azure Pipelines to use OAuth, to later revoke it and prevent further use, visit [OAuth Apps](https://github.com/settings/developers) in your GitHub settings.
 You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
-### 3. Personal access token (PAT)
+## Integrate using a personal access token (PAT)
 
 [PATs](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) are effectively the same as OAuth, but allow you to control which permissions are granted to Azure Pipelines.
 Builds and GitHub status updates will be performed on behalf of your personal GitHub identity. For builds to keep working, your repository access must remain.
 
-#### Using a PAT
+### Using a PAT
 
 To create a PAT, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
 The required permissions are `repo`, `admin:repo_hook`, `read:user`, and `user:email`. These are the same permissions required when using OAuth, above. Copy the generated PAT to the clipboard and paste it into a new GitHub [service connection](../library/service-endpoints.md) in your Azure DevOps project settings.
 For future recall, name the service connection after your GitHub username. It will be available in your Azure DevOps project for later use.
 
-#### Revoking PAT access
+### Revoking PAT access
 
 After authorizing Azure Pipelines to use a PAT, to later delete it and prevent further use, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings.
 You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
@@ -190,7 +256,7 @@ You can run a validation build with each commit or pull request that targets a b
 
 To configure validation builds for a GitHub repository, you must be the owner or have admin access to the repository.
 
-1. First, build the repository at least once so that the build result is posted to GitHub, thereby making GitHub aware of the pipeline's name.
+1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
 ## Trigger builds for GitHub tags
@@ -252,6 +318,6 @@ Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs-v
 ### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?
 
 Depending on the authentication type and ownership of the repository, specific permissions are required.
-See [Choose a repository to build](#choose-a-repository-to-build) for details.
+See [Choose a repository to build](#choose-a-repository-to-build) above.
 
 <!-- ENDSECTION -->

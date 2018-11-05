@@ -4,7 +4,6 @@ titleSuffix: Azure Pipelines & TFS
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
-ms.service: vsts
 ms.custom: mvc
 ms.technology: devops-cicd
 ms.prod: devops

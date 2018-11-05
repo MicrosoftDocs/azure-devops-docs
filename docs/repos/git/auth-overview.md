@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,7 +21,7 @@ Choose a method to securely login and access the code in your Azure Repos/TFS Gi
 Use these credentials with Git on the command line or from any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials from the web when they are no longer needed.
 
-> Using Visual Studio? Team Explorer handles authentication with Azure Repos for you. 
+> Using Visual Studio? Team Explorer handles authentication with Azure Repos for you.
 
 ## Authentication comparison
 
@@ -65,16 +65,17 @@ If you don't have SSH set up on your computer, you should use personal access to
 
 Learn more about [setting up SSH with Azure DevOps Services](use-ssh-keys-to-authenticate.md)
 
+::: moniker range="vsts"
+
 ## Alternate credentials
 
-> Use of alternate credentials is not recommended. 
+>[!IMPORTANT]
+> - Use of alternate credentials is not recommended.
+> - Alternate credentials are not supported on TFS.
+> - The username specified for the alternate credentials must be unique across Azure DevOps Services and can't be reused.
 
 Create an alternate user name and password to access your Git repository using alternate credentials.
 Unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your Azure DevOps Services data.
 Use alternate credentials as a last resort when you can't use personal access tokens or SSH keys.
 
->[!IMPORTANT]
-> The username specified for the alternate credentials must be unique across Azure DevOps Services and can't be reused
-
-
-
+::: moniker-end

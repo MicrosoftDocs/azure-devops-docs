@@ -55,7 +55,7 @@ If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ``
 There are four steps to creating a build or release task extension and putting it on the Marketplace:
 * [Step 1: Create a custom task](#createtask)
 * [Step 2: Unit test the task scripts](#testscripts)
-* [Step 3: Create the extension maniest file](#extensionmanifest)
+* [Step 3: Create the extension manifest file](#extensionmanifest)
 * [Step 4: Package your extension](#packageext)
 * [Step 5: Publish your extension](#publishext)
 * [Optional: Install and test your extension](#installandtest)

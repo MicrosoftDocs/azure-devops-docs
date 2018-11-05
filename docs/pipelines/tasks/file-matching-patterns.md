@@ -9,7 +9,7 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/04/2016
+ms.date: 11/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -19,25 +19,19 @@ monikerRange: '>= tfs-2015'
 
 ## Pattern syntax
 
-### Basic patterns
-
 A pattern is a string or list of newline-delimited strings.
+File and directory names are compared to patterns to include (or sometimes exclude) them in a task.
+You can build up complex behavior by stacking multiple patterns.
 
-### Path separators
-Even on Windows, use `/` as the path separator.
-This ensures that the pattern works on any agent.
+### Match characters
 
-#### Asterisk
-`*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
+Most characters are used as exact matches.
+The following characters have special behavior.
 
-#### Question mark
-`?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
-
-#### Character sets
-`[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
-
-### Double-asterisk
-`**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
+* `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
+* `?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
+* `[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
+* `**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
 
 ### Extended globbing
 * `?(hello|world)` - matches `hello` or `world` zero or one times
@@ -54,10 +48,14 @@ Patterns that begin with `#` are treated as comments.
 ### Exclude patterns
 Leading `!` changes the meaning of an include pattern to exclude. Interleaved exclude patterns are supported.
 
-Note, multiple leading `!` flips the meaning.
+Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
 
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
+
+### Slash
+`/` is used as the path separator.
+Even on Windows, use `/` to ensure that the pattern works on any agent.
 
 ## Examples
 
@@ -171,7 +169,7 @@ SampleG.dat
 
 ### Exclude pattern examples
 
-**Example** Given the pattern:
+Given the pattern:
 ```
 *
 !*.xml
@@ -191,4 +189,30 @@ ConsoleHost.exe
 ConsoleHost.pdb
 Fabrikam.dll
 Fabrikam.pdb
+```
+
+<h4 id="doubleexcl_examples">Double exclude</h4>
+
+Given the pattern:
+```
+*
+!*.xml
+!!Fabrikam.xml
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+Fabrikam.dll
+Fabrikam.pdb
+Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+Fabrikam.dll
+Fabrikam.pdb
+Fabrikam.xml
 ```

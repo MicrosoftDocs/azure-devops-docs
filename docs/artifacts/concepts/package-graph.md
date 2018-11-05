@@ -4,7 +4,7 @@ description: A complete package graph helps you share your packages with your co
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

@@ -22,7 +22,7 @@ when events happen in your projects.
 
 ## Available services
 
-> These services are available as the target of service hooks. To learn about others apps and services that integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#Azure DevOps Services)
+> These services are available as the target of service hooks. To learn about others apps and services that integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices)
 
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
@@ -30,7 +30,7 @@ Build and release                  |  Collaborate 	                    | Custome
 [Bamboo](./services/bamboo.md)	   |	[Flowdock](./services/flowdock.md)	|	[Zendesk](./services/zendesk.md) 		|			|	[Azure Storage](./services/azure-storage.md)
 [Jenkins](./services/jenkins.md)   |	[HipChat](./services/hipchat.md)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [MyGet](./services/myget.md)	   |	[Hubot](./services/hubot.md)		|											|			|	[Zapier](./services/zapier.md) |
-								   |	[Slack](./services/slack.md)		|											|			|
+								   |	[Slack](./services/slack.md)		|											|			| |
 
 ## Create a subscription
 

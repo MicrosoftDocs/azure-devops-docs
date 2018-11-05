@@ -10,7 +10,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 09/19/2018
 ---
 
