@@ -1,7 +1,7 @@
 ---
 title: Move, change, or delete work items
 titleSuffix: Azure Boards and TFS  
-description: Guide to removing or deleting working items and test artifacts in Azure Boards and Team Foundation Server
+description: Guide to removing or deleting working items in Azure Boards and Team Foundation Server
 keywords: backlogs
 ms.global_help.title: Move, change, or delete work items
 ms.technology: devops-agile
@@ -43,9 +43,9 @@ In this topic you'll learn:
 > * How to change the work item type of one or more work items   
 > * How to move one or more work items to another project     
 > * How to remove work items from the backlog by changing the State to Removed     
-> * How to delete work items and test artifacts  
+> * How to delete work items   
 > * How to restore or permanently delete work items (web portal)
-> * What permissions are required to delete work items and test artifacts    
+> * What permissions are required to delete work items   
 
 ::: moniker-end
 
@@ -53,10 +53,10 @@ In this topic you'll learn:
 
 >[!div class="checklist"]         
 > * How to remove work items from the backlog by changing the State to Removed 
-> * How to delete work items and test artifacts  
+> * How to delete work items  
 > * How to restore or permanently delete work items (web portal)    
 > * How to permanently delete work items (command-line tool)  
-> * What permissions are required to delete work items and test artifacts    
+> * What permissions are required to delete work items    
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ You can access the following actions for which you have permissions. If you are 
 <td><ul>
 <li>[Move a work item to another project](#move)</li>
 <li>[Permanently delete work items](#restore) </li>
-<li>[Permanently delete test artifacts](#delete-test)</li>
+<li>[Permanently delete test artifacts](delete-test-artifacts.md)</li>
 </ul>
 </td>
 </tr>
@@ -336,7 +336,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ## Delete work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 # [New navigation](#tab/new-nav)
 
@@ -384,7 +384,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -463,7 +463,7 @@ You restore deleted work items from the web portal Recycle bin.
 
 ::: moniker-end
 
-
+<a id="restore-work-items" />
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 ## Restore or permanently delete work items   
 
@@ -599,59 +599,18 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
-
-<a id="delete-test"> </a> 
-## Delete test artifacts  
-
-You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
-
-To delete test artifacts, the following restrictions and operations apply:  
-- Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.  
-- When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
-- You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018" 
-> [!IMPORTANT]   
-> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
->
-> We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-1. To delete a test case, open it from the web portal and choose the Permanently delete option from the actions menu. (Bulk deletion is not supported from a query results page.)     
- 
-	![Delete a test case and associated test artifacts from the web form](_img/move-change-delete/delete-test-artifacts-form.png)  
-
-	> [!NOTE] 
-	>You'll only see the **Permanently delete** option if you have the necessary permissions and access. 
-
-2. Confirm you want to actually delete the item.  
-  
-	![Confirm delete of test artifacts](_img/move-change-delete/perm-delete-test-artifacts-dialog.png)  
- 
-3. You can also delete test plans and test suites directly from **Test**. 
-
-	![Delete test plans and artifacts from Test pages](_img/move-change-delete/delete-test-plans.png)  
-
-4.	To delete shared steps and shared parameters you need to first manually remove all references to them before you can delete them. 
-	
-	<img src="_img/delete-test-shared-steps-remove-link.png" alt="Delete shared steps from form" style="border: 2px solid #C3C3C3;" />
- 
-::: moniker-end
-
-
 ## Related articles   
 
 ::: moniker range=">= tfs-2018"  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+- [Delete test artifacts](delete-test-artifacts.md) 
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
+- [Delete test artifacts](delete-test-artifacts.md) 
 - [Add, update, and follow a work item](../backlogs/add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 ::: moniker-end
@@ -693,15 +652,6 @@ When you restore a work item, the following actions occur:
 - Restores trend data  
 - Adds the work item back to the data warehouse/cube similar  
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-#### Delete test artifacts
-1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item
-2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
-3.	Causes all information in the WIT data store and TCM data store to be deleted and cannot be reactivated nor restored. 
 
 ::: moniker-end
 
