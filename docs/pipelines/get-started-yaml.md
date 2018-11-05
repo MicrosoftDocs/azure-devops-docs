@@ -62,7 +62,7 @@ You should now have a sample app in your GitHub account.
 
 1. The YAML file is now pushed to your GitHub repository, and a new build is automatically started.
 
-1. Wait for the build to finish.
+\1. Wait for the build to finish.
 
 ## Get the status badge
 
@@ -105,10 +105,8 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 
 To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
 
-To change the markup of your YAML file, see [YAML schema reference](yaml-schema.md). 
-
-
-
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
 For details about building GitHub repositories, see [Build open source projects](build/ci-public.md).
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).
