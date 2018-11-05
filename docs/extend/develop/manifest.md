@@ -45,7 +45,7 @@ Here is an example of what a typical manifest will look like:
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
-#### Public flag
+#### Mark an extension public
 
 By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
@@ -67,7 +67,7 @@ Or simply:
 
 See [Package/Publish/Install](../publish/overview.md) for additional details.
 
-#### Preview flag
+#### Mark an extension to be in preview
 
 If your extension is ready for users on the Marketplace to try, but you are still working out a few bugs or adding function, you can mark it as `preview`:
 
@@ -78,22 +78,9 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-####Paid flag
+#### Mark an extension as paid preview
 
-If you want to sell your extension on the Marketplace, you can mark it as `paid`:
-
-```json
-{
-    "galleryFlags": [
-        "Paid"
-    ]
-}            
-```
-Currently, this is in limited Beta. All paid extensions are mandated to define privacy and end user licence agreement. Additional configuration steps are required to sell extension in Marketplace. 
-
-#### Paid Preview flag
-
-If you intend to sell your extension on the Marketplace in the future, you have to mark it as `paid preview`:
+If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free cannot be marked paid later.
 
 ```json
 {
@@ -103,9 +90,48 @@ If you intend to sell your extension on the Marketplace in the future, you have 
     ]
 }            
 ```
-Only extensions marked as `paid preview` can be converted to `paid`.
 
-Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
+#### Mark an extension as paid
+
+If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOL` tag (starts with two underscores) :
+
+```json
+{
+    "galleryFlags": [
+        "Paid"        
+    ]
+     "tags": [        
+        "__BYOL"
+    ]
+}            
+```
+
+> **Note:** Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+
+```json
+{
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }, 
+        "pricing": {
+            "path": "pricing.md"
+        }
+    }
+}          
+```
+
+If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 
+
+```json
+{
+    "galleryproperties" {
+        "trialDays ": "30"
+    } 
+}          
+```
+
+> **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 
 ### Example of additional properties
 
