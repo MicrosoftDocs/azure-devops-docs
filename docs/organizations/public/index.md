@@ -19,10 +19,9 @@ monikerRange: 'vsts'
 
 Create a public project, make an existing project public, or work in a public project to support your development of software applications.  
 
-
 ## 5-Minute Quickstarts  
 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+* [Create your first pipeline](../../pipelines/get-started-yaml.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 * [Create a public project](create-public-project.md)
 * [Invite users to contribute to your public project](invite-users-public.md)
 * [Make a project public](make-project-public.md)

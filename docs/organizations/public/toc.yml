@@ -6,8 +6,8 @@
     href: about-public-projects.md
 - name: Quickstarts
   items:
-  - name: Build OSS repositories
-    href: ../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+  - name: Create a pipeline
+    href: ../../pipelines/get-started-yaml.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Create a public project
     href: create-public-project.md
   - name: Invite users to contribute 
