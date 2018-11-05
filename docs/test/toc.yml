@@ -47,7 +47,7 @@
     - name: Track test status
       href: track-test-status.md
     - name: Delete test artifacts
-      href: ../boards/backlogs/remove-delete-work-items.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Perform user acceptance testing
       href: user-acceptance-testing.md
     - name: Test different configurations

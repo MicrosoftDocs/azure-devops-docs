@@ -33,7 +33,7 @@ monikerRange: '>= tfs-2015'
 
 ![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I group and reorder my requirement-based test suites together?
 
@@ -113,7 +113,7 @@ Or permanently delete it.
 
 ![Delete a test case](_img/create-test-cases/delete-test-case.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I add an extra line to a test step?
 
