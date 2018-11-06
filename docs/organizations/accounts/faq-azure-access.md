@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/01/2018
+ms.date: 11/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -26,19 +26,10 @@ A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOp
 
 #### Q: Can I use Office 365 and Azure AD with Azure DevOps?
 
-A: Yes. You can't do this, however, by using the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
-that you can activate when you connect Office 365 and Azure AD.
+A: Yes.
 
-Instead, you must [sign up for a new Azure subscription](https://azure.microsoft.com/pricing/purchase-options/). You can also use an existing Azure subscription
-that's not from one of these offers:
-
-* An [Azure free trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
-
-* A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
-
-You must then associate that subscription with your Office 365 connection to Azure AD. Note that you need additional subscription administrator permissions, beyond the co-administrator permissions.
-
-Learn how to [associate your Azure subscription to Azure AD](/azure/billing-add-office-365-tenant-to-azure-subscription).
+- Dont have an Azure DevOps organization yet? [Create an Azure DevOps organization](https://aka.ms/SignupAzureDevOps).
+- Have an existing Azure DevOps organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -248,7 +239,7 @@ A: This might happen due to the following:
   If you're the [organization administrator](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator) for the subscription, visit the Azure Account Center to remove the spending limit:
 
   1. Sign in to the [Azure portal](https://portal.azure.com), and go to the Azure Account Center (**Account** > **subscriptions**).
-  2. Select your Azure subscription. 
+  2. Select your Azure subscription.
   3. Remove your spending limit **indefinitely**.
 
 <a name="subscription-linked-already"></a>
