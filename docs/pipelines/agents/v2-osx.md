@@ -234,9 +234,29 @@ Command:
 
 #### Automatic log on and lock
 
-The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
+The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine to automatically log in when powered on, and optionally lock on immediately following log in. Place the following code in a `.plist` file to automatically lock after your machine logs in.  Simply move the file inside `~/Library/LaunchAgents` and reboot.
 
-The .plist file mentioned in the linked article may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/5779922/make-os-x-load-your-desktop-before-you-log-in).
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>AbandonProcessGroup</key>
+        <true/>
+        <key>Label</key>
+        <string>com.luomat.loginhook</string>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession</string>
+                <string>-suspend</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+</dict>
+</plist>
+```
+
+See [Auto Logon and Lock](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) for more information.
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
