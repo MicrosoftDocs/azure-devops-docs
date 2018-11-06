@@ -34,6 +34,8 @@
     href: languages/docker.md
   - name: Go
     href: languages/go.md
+  - name: Helm
+    href: languages/helm.md
   - name: Java
     href: languages/java.md
   - name: JavaScript
