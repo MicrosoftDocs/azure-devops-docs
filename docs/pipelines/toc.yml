@@ -135,6 +135,8 @@
         href: release/approvals/gates.md
     - name: Templates
       href: release/env-templates.md
+    - name: Azure Policy Compliance
+      href: release/azure-policy.md
     - name: Releases and deployments
       href: release/releases.md
   - name: Repositories
