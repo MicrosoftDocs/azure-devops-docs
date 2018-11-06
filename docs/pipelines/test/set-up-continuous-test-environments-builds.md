@@ -185,8 +185,8 @@ it works in a range of scenarios.
 
 For more information about the tasks see:
 
-* [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
-* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
+* [Visual Studio Test version 1](https://github.com/Microsoft/azure-pipelines-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+* [Visual Studio Test version 2](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md)
 
 You select the [specific version](../../pipelines/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top

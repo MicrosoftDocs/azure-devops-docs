@@ -34,4 +34,4 @@ and add it to the PATH. Use this task to change the version of .NET Core used in
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

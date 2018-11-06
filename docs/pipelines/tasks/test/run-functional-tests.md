@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
+[Visual Studio Test](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md)
 task together with [jobs](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
@@ -141,7 +141,7 @@ These scenarios are supported for:
 
 ### Related tasks
 
-* [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
+* [Deploy Azure Resource Group](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 * [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopyV1)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
@@ -149,7 +149,7 @@ These scenarios are supported for:
 
 ### Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -235,7 +235,7 @@ resources that are not in your template. By default,
 
 ![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
 
-See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
+See [Azure Resource Group Deployment Task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
 <a name="oct12-clitask"></a>
 **Azure CLI task**
@@ -599,7 +599,7 @@ IIS web apps and databases from Azure Pipelines and TFS.
 **Web app deployment using ARM**
 
 A new version of the **Azure Web App Deployment** task is available, called
-**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
+**[AzureRM Web App Deployment](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
 It uses MSDeploy and an Azure Resource Manager service connection connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common

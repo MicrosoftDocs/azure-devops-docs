@@ -63,4 +63,4 @@ For more information about using this task, see [Approvals and gates overview](.
 
 ## Open source
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1).
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
