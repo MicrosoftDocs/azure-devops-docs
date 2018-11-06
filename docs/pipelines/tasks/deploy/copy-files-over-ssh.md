@@ -52,7 +52,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## See also
 
-* [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)
+* [Install SSH Key task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallSSHKey)
 
 * [SSH task](ssh.md)
 
@@ -60,7 +60,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
