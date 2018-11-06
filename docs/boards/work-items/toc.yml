@@ -130,22 +130,22 @@
     href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
+  - name: Delete test artifacts
+    href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: "Manage permissions (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
 - name: Reference
   items:
-  - name: Changes made to process templates
-    href: ../work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Link types 
-    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
-  - name: "Default permissions (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Work item form controls 
     href: work-item-form-controls.md 
   - name: Keyboard shortcuts 
     href: work-item-form-keyboard-shortcuts.md
+  - name: Define a hyperlink
+    href: work-item-url-hyperlink.md
+  - name: Link types 
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: Work item field index
     href: guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     items:
@@ -159,10 +159,12 @@
       href: guidance/cmmi/guidance-requirements-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: Review meeting fields
       href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+  - name: Changes made to process templates
+    href: ../work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+  - name: "Default permissions (Security)"
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Clients support for work tracking
     href: ../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: Define a hyperlink
-    href: work-item-url-hyperlink.md
   - name: REST API, Work Items
     href: /rest/api/vsts/wit/work%20items
 - name: Resources

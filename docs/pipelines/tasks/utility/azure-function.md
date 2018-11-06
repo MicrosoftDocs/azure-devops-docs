@@ -50,4 +50,4 @@ Succeeds if the function returns success and the response body parsing is succes
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction).

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts || tfs-2018 || azdevserver-2019'
+monikerRange: '>= tfs-2018'
 ms.date: 04/04/2018
 ---
 
