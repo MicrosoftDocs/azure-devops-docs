@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/10/2017
+ms.date: 11/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -29,8 +29,6 @@ A: Azure DevOps is free for these users to join:
 * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
 	[Learn what else you get with Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/).
-
-
 
 <a name="browser-problems"></a>
 
@@ -58,13 +56,13 @@ A:	If you're a new user, you can change your profile details. You need to do thi
 
 #### Q:	Why are some features not available in my organization?
 
-A:	Some features require you to install an extension, which might be available for free or paid. 
+A: Some features require you to install an extension, which might be available for free or paid.
 
 For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) requires you to install the Test Manager extension. You can [try paid extensions for free](../billing/try-additional-features-vs.md) if you haven't started the extension trials already. Otherwise, you can [pay for user access](../../marketplace/install-vsts-extension.md) to these features.
 
 #### Q:	How many organizations can I create?
 
-A:	You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control. 
+A: You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control.
 
 There's no limit to the number of organizations that you can join.  
 
@@ -72,7 +70,7 @@ There's no limit to the number of organizations that you can join.
 
 #### Q:	How do I create another organization?
 
-A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
+A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
 ![Create your organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
@@ -94,19 +92,19 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 #### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
-A:	Your choice of account type affects how you control access and authenticate users for your organization.
+A: Your choice of account type affects how you control access and authenticate users for your organization.
 
 When you sign up with a Microsoft account:
 
-*	You're solely responsible for managing access to your organization.
-*	All users must sign in with Microsoft accounts.
+* You're solely responsible for managing access to your organization.
+* All users must sign in with Microsoft accounts.
 
 When you sign up with a work or school account:
 
-*	Your organization is automatically connected to your directory in Azure Active Directory.
-*	All users must be members in the connected directory to get access to your organization.
-*	The directory administrator has control over who can join the directory.
-*	You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
+* Your organization is automatically connected to your directory in Azure Active Directory.
+* All users must be members in the connected directory to get access to your organization.
+* The directory administrator has control over who can join the directory.
+* You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
 
 To [add users to the directory](/azure/active-directory/active-directory-create-users), you must be a directory administrator. If you don't have access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
 
@@ -114,7 +112,7 @@ To [add users to the directory](/azure/active-directory/active-directory-create-
 
 #### Q:	Can I change the directory after signup?
 
-A:	Yes, see [Change your organization's Azure Active Directory instance](change-organization-location.md).
+A: Yes, see [Disconnect your organization from Azure Active Directory](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
