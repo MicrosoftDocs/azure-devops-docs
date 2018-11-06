@@ -66,7 +66,7 @@ The following gates are available by default:
 * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
 
-You can [create your own gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
+You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
 The evaluation options that apply to all the gates you've added are:
 
@@ -116,7 +116,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
-* [Author custom gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
+* [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

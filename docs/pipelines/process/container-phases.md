@@ -29,10 +29,11 @@ Then, each step of the job will run inside the container.
 
 ## Requirements
 
-The Azure Pipelines system requires a few things to exist in Linux-based containers:
+The Azure Pipelines system requires a few things in Linux-based containers:
 - Bash
 - `which`
-- Node.js
+- glibc
+- Can run Node.js (which the agent provides)
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these

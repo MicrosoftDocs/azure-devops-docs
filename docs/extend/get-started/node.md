@@ -75,7 +75,7 @@ An extension is composed of a set of files, including a required manifest file, 
 		"name": "My First Extension",
 		"description": "A sample Visual Studio Services extension",
 		"public": false,
-		"categories": ["Repos"],
+		"categories": ["Azure Repos"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"

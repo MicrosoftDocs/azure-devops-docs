@@ -65,9 +65,11 @@ If you want to create and start a release at specific times, define one or more
 scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
 pipeline and enable scheduled release triggers. You can configure multiple schedules.
 
-![Defining a shceduled release trigger](_img/trigger-04.png)
+![Defining a scheduled release trigger](_img/trigger-04.png)
 
 See also [stage scheduled triggers](#stage-scheduled-triggers).
+
+::: moniker range="> tfs-2018"
 
 <h2 id="prsettrigger">Pull request triggers</h2>
 
@@ -84,6 +86,8 @@ You may also want to set up a [branch policy](../../repos/git/pr-status-policy.m
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+
+::: moniker-end
 
 <h2 id="env-triggers">Stage triggers</h2>
 
