@@ -390,6 +390,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>System.AccessToken</td>
 <td>[Use the OAuth token to access the REST API](../../scripts/powershell.md#oauth).
 <br/><br/>
+[Use System.AccessToken from YAML scripts](../../process/variables#systemaccesstoken).
+<br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
