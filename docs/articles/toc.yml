@@ -44,6 +44,8 @@
   items:
   - name: Azure DevOps Services data protection
     href: team-services-security-whitepaper.md
+  - name: Azure DevOps Services credential storage
+    href: credential-storage.md
 - name: Journey articles
   items:
     - name: Agile
