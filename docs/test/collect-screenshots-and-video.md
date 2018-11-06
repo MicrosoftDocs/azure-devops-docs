@@ -57,7 +57,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
 1. To collect video, specify the data collector you want to use in a [runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
    The video data collector captures a screen recording when tests are run.
 
-1. In the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task,
+1. In the [Visual Studio Test](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md) task,
    specify the location of the runsettings file.
 
    ![Specifying the location of the runsettings file](_img/runsettings-in-vs-task.png) 

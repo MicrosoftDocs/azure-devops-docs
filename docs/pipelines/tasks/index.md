@@ -102,7 +102,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to Azure Pipelines/TFS | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to Azure Pipelines/TFS | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](test/_img/vstest.png) [Visual Studio Test version 2](test/vstest.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](test/_img/vstest.png) [Visual Studio Test version 2](test/vstest.md). [Visual Studio Test version 1](https://github.com/Microsoft/azure-pipelines-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment](test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Package
@@ -171,7 +171,7 @@ To learn more about tool installer tasks, see [Tool installers](../process/tasks
 
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A  
 

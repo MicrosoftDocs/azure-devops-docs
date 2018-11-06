@@ -21,7 +21,7 @@ These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
-> **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/servertaskauthoring.md).
+> **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:

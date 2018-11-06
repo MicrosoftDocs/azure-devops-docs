@@ -38,7 +38,7 @@ You'll need a continuous integration (CI) build process that publishes a contain
 
 To set up a CI build process, see:
 
-* [Build Docker image and publish Helm chart](../../languages/docker.md).
+* [Build a Docker image](../../languages/docker.md) and [create a Helm chart](../../languages/helm.md).
 
 ## Prerequisites
 
