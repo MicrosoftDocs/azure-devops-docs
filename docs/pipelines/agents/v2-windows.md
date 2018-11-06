@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 3/14/2018
+ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -61,7 +61,7 @@ running 4 agents apiece.
 
 <li>Follow the instructions on the page to download the agent.</li>
 
-<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+<li>Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 
 </ol>
 

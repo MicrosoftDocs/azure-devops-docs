@@ -7,11 +7,11 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 11/1/2018
+ms.date: 11/05/2018
 monikerRange: 'vsts'
 ---
 
-# Data Protection Overview
+# Data protection overview
 
 **Azure DevOps Services**
 
@@ -21,13 +21,34 @@ This white paper is part of our effort to illuminate how we manage and protect y
 
 ## Our commitment
 
-Microsoft is committed to ensuring that your Azure DevOps projects remain safe and secure, without exception. When stored in Azure DevOps, your projects benefit from multiple layers of security and governance technologies, operational practices, and compliance policies. We enforce data privacy and integrity both at rest and in transit.
+Microsoft is committed to ensuring that your Azure DevOps projects remain safe
+and secure, without exception. When stored in Azure DevOps Services, your projects benefit
+from multiple layers of security and governance technologies,
+operational practices, and compliance policies. We enforce data privacy
+and integrity both at rest and in transit.
 
-As we look at the broader landscape of threats facing Azure DevOps customers, they boil down to four basic categories: data availability, service availability, service security, and data privacy. We will investigate each of these categories to explore specific threats and explain what Azure DevOps does to address them through both the technology that we use and the way we put it into practice. However, we will first describe how data is stored and how Azure DevOps manages access to your data.
+As we look at the broader landscape of threats facing Azure DevOps Services customers,
+they boil down to four basic categories: data availability, service
+availability, service security, and data privacy. We will investigate
+each of these categories to explore specific threats and explain what
+Azure DevOps Services does to address them through both the technology that we use and the
+way we put it into practice. However, we will first describe how data is
+stored and how Azure DevOps Services manages access to your data.
 
-Because proper data protection also requires active engagement of customer administrators and users, we also discuss steps you should take to protect your project assets from unauthorized disclosure and tampering. Much of this has to do with being explicit about granting permissions to user access points to have confidence that only the right people are accessing data within your Azure DevOps.
+Because proper data protection also requires active engagement of
+customer administrators and users, we also discuss steps you should take
+to protect your project assets from unauthorized disclosure and
+tampering. Much of this has to do with being explicit about granting
+permissions to user access points in order to have confidence that only
+the right people are accessing data within your Azure DevOps Services.
 
-Regardless of your approach to data protection, you should consider all data potentially "at risk" no matter where it is or how it is being used; this is true for both data in the cloud as well as data stored in a private data center. Thus, it is important to classify your data, its sensitivity / risk horizon, and the damage it could do if it is compromised. You should also categorize your data relative to an overall information security management policy.
+Regardless of your approach, you should consider all data potentially
+"at risk" no matter where it is or how it is being used; this is true
+for both data in the cloud as well as data stored in a private
+data center. Thus, it is important to classify your data, its sensitivity
+/ risk horizon, and the damage it could do if it is compromised. You
+should also categorize your data relative to an overall information
+security management policy.
 
 ## Built on Azure
 
@@ -107,12 +128,16 @@ A cloud service is only as secure as the host platform. Azure DevOps uses Azure'
 
 Our team conducts regular security-focused penetration testing of Azure DevOps. Using the same techniques and mechanisms as real malicious attackers, penetration testing tries to exploit the live production services and infrastructure of Azure DevOps. The goal is to identify real-world vulnerabilities, configurations errors or other security gaps in a controlled process. The team reviews the results to identify other areas of improvement and to increase the quality of the preventative systems and training.
 
-### Reporting Security Issues
+### Credential security
 
-If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/organizations/security/ff852094) page.
+Your credentials in Azure DevOps are stored using industry best practices. Learn more about [credential storage](credential-storage.md).
+
+### Reporting security issues
+
+If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps Services service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/organizations/security/ff852094) page.
 
 >[!IMPORTANT]
->While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683).
+>While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683).
 
 ### Restricting access
 
@@ -195,13 +220,15 @@ your data. In addition, we maintain a
 [blog](https://blogs.msdn.com/b/bharry/) addressing, among other things,
 lessons learned by operating the service.
 
-## Compliance Certifications
+## Compliance certifications
 
 For some customers, it is important to understand third-party
-evaluation of our data security procedures. We have
-achieved [ISO 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=4ae1695c-34a2-4e29-b0b2-ab333bff6382&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports), HIPAA (Health Insurance Portability and Accountability Act), BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications.
-The SOC audit for Azure DevOps covers controls for data security, availability, processing integrity, and confidentiality. Azure DevOps SOC reports are available via  [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
-If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps SOC Reports.
+evaluation of our data security procedures. Towards that end, we have
+achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
+ BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
+The SOC audit for Azure DevOps Services covers controls for data security, availability, 
+processing integrity, and confidentiality. Azure DevOps Services' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports). 
+If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps Services' SOC Reports.
 
 ## Steps you can take
 
@@ -259,13 +286,14 @@ to learn more about conditional access policy (CAP).  Azure DevOps now enforces 
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
-* [Azure DevOps Services home page](https://visualstudio.microsoft.com/)
-* [Azure DevOps Services status](https://blogs.msdn.com/b/vsoservice/)
-* [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-* [Developer Services Agreement](/azure/devops/user-guide/services)
-* [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
-* [Azure trust center](http://azure.microsoft.com/support/trust-center/)
-* [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
+- [Azure DevOps Services home page](https://visualstudio.microsoft.com/)
+- [Azure DevOps Services status](https://blogs.msdn.com/b/vsoservice/)
+- [Azure DevOps Services credential storage](credential-storage.md)
+- [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+- [Developer Services Agreement](/azure/devops/user-guide/services)
+- [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
+- [Azure trust center](http://azure.microsoft.com/support/trust-center/)
+- [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
 
 *(c) 2018 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

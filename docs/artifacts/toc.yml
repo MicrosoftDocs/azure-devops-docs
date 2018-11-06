@@ -120,5 +120,7 @@
     href: collaborate-with-packages.md
   - name: Upgrading a legacy feed
     href: reference/feed-upgrade-learn-more.md
+  - name: Limits on package sizes and counts
+    href: reference/limits.md
   - name: Use the .artifactignore file
     href: reference/artifactignore.md

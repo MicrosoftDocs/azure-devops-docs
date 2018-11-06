@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 10/10/2018
+ms.date: 11/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -29,10 +29,11 @@ Then, each step of the job will run inside the container.
 
 ## Requirements
 
-The Azure Pipelines system requires a few things to exist in Linux-based containers:
+The Azure Pipelines system requires a few things in Linux-based containers:
 - Bash
 - `which`
-- Node.js
+- glibc
+- Can run Node.js (which the agent provides)
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
@@ -118,6 +119,7 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 resources:
+  containers:
   - container: private_ubuntu1604
     image: myprivate/registry:ubuntu1604
     endpoint: private_dockerhub_connection
@@ -133,6 +135,7 @@ If you need to control container startup, you can specify `options`.
 
 ```yaml
 resources:
+  containers:
   - container: my_container
     image: ubuntu:16.04
     options: --hostname container-test --ip 192.168.0.1
