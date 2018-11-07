@@ -24,7 +24,7 @@ This exercise will walk you through the steps to creating your Azure DevOps acco
 1. Login to your Azure DevOps organization - `https://{your account name}.visualstudio.com`. If you do not have an Azure DevOps organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
 
    > [!div class="mx-imgBorder"]
-   > ![Sign up for an Azure DevOps organization](../_img/settingAzure DevOps Servicesproject/newaccount.png)
+   > ![Sign up for an Azure DevOps organization](../_img/settingvstsproject/newaccount.png)
 
 ## (Optional) Generate an Azure DevOps Services Personal Access Token (PAT)
 
@@ -36,7 +36,7 @@ In this task you will generate a personal access token for yourself. PATs essent
 1. On your Azure DevOps Services page, in the upper right, click on your profile image and click **Security**.
 
    > [!div class="mx-imgBorder"]
-   > ![The location of your account's Security settings](../_img/settingAzure DevOps Servicesproject/click-security.png)
+   > ![The location of your account's Security settings](../_img/settingvstsproject/click-security.png)
 
 1. On the Personal access tokens page, click **Add**. Enter "java" (or whatever you want) for the Description. Scroll to the bottom of the page and click **Create token**.
 
@@ -45,7 +45,7 @@ In this task you will generate a personal access token for yourself. PATs essent
 1. Click on the Visual Studio Code icon in the toolbar to open Visual Studio Code.
 
    > [!div class="mx-imgBorder"]
-   > ![The location of VS Code in the Java VM environment](../_img/settingAzure DevOps Servicesproject/vs-code.png)
+   > ![The location of VS Code in the Java VM environment](../_img/settingvstsproject/vs-code.png)
 
 1. Press Ctrl-N (or use File -> New File) to create a new file. Paste in your PAT. Save this file (**File->Save** or Ctrl+S) to `/home/vmadmin/pat.txt`.
 
@@ -60,12 +60,12 @@ The steps below use Azure DevOps Services Demo Generator to provision a demo Jav
 1. Enter your account name and the PAT you saved earlier. Click **Verify and Continue**.
 
    > [!div class="mx-imgBorder"]
-   > ![The Azure DevOps Services Demo Generator login page](../_img/settingAzure DevOps Servicesproject/Azure DevOps Servicesdemogen.png)
+   > ![The Azure DevOps Services Demo Generator login page](../_img/settingvstsproject/Azure DevOps Servicesdemogen.png)
 
 1. Use **MyShuttle2** for the template. Use **jdev-labs** for the Project Name. Select **Create Project**.
 
    > [!div class="mx-imgBorder"]
-   > ![The Azure DevOps Services Demo Generator project configuration page](../_img/settingAzure DevOps Servicesproject/create-project.png)
+   > ![The Azure DevOps Services Demo Generator project configuration page](../_img/settingvstsproject/create-project.png)
 
 1. After the project is provisioned, click the URL to navigate to the project.
 
@@ -79,17 +79,17 @@ If you have not provisioned the team project using the Azure DevOps Services dem
 1. Use `jdev-labs` for the new **Project Name**. Select **Scrum** as the **Work item process**. Click **Create**.
 
    > [!div class="mx-imgBorder"]
-   > ![Azure DevOps Services new project configuration page](../_img/settingAzure DevOps Servicesproject/newproject.png)
+   > ![Azure DevOps Services new project configuration page](../_img/settingvstsproject/newproject.png)
 
 1. Click on the repo drop-down in the upper-left (in the grey toolbar) and select "Import repository".
 
    > [!div class="mx-imgBorder"]
-   > ![Import a repository in the Code Hub](../_img/settingAzure DevOps Servicesproject/import-repo.png)
+   > ![Import a repository in the Code Hub](../_img/settingvstsproject/import-repo.png)
 
 1. Enter the following url: `https://github.com/nwcadence/MyShuttle2.git` and click Import.
 
    > [!div class="mx-imgBorder"]
-   > ![Enter the URL](../_img/settingAzure DevOps Servicesproject/import-myshuttle2-url.png)
+   > ![Enter the URL](../_img/settingvstsproject/import-myshuttle2-url.png)
 
 1. After a few moments, the code will be imported.
 
@@ -102,12 +102,12 @@ In this task you will import the MyShuttleCalc code from GitHub into Azure DevOp
 1. Click on the repo drop-down in the upper left (in the grey toolbar) and select "Import repository". (This will be the second time you import a repo if you create the project manually.)
 
    > [!div class="mx-imgBorder"]
-   > ![Import a repository in the Code Hub](../_img/settingAzure DevOps Servicesproject/import-repo.png)
+   > ![Import a repository in the Code Hub](../_img/settingvstsproject/import-repo.png)
 
 1. Enter the following url: `https://github.com/nwcadence/MyShuttleCalc.git` and click **Import**.
 
    > [!div class="mx-imgBorder"]
-   > ![Enter the URL](../_img/settingAzure DevOps Servicesproject/import-myshuttlecalc-url.png)
+   > ![Enter the URL](../_img/settingvstsproject/import-myshuttlecalc-url.png)
     
 1. After a few moments, the code will be imported.
 
