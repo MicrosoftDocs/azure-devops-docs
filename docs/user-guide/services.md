@@ -8,13 +8,12 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/07/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # What do I get with Azure DevOps Services or TFS?
- 
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Azure DevOps Services and Team Foundation Server (TFS), you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
@@ -42,7 +41,6 @@ For information about client tools, see [Tools](tools.md).
  (Video ala Robert's 1.5 min Commit)
 -->
 
-
 ## Dashboards
 
 From **Dashboards**, you gain access to user-configurable dashboards.
@@ -62,13 +60,13 @@ You can perform the following tasks in **Dashboards**:
 - Add, configure, and manage dashboards
 - Configure widgets that you add to dashboards
 - Quickly navigate to different areas of your project
- 
 
-To learn more, see [Dashboards](../report/dashboards/dashboards.md). 
+To learn more, see [Dashboards](../report/dashboards/dashboards.md).
 
-## Source control 
+## Source control
 
 # [New navigation](#tab/new-nav)
+
 From **Repos**, you gain access to your source control Git-based or Team Foundation Version Control (TFVC) repositories to support version control of your software projects. These repositories are private.
 
 ![Azure Repos, Git files page](_img/repos-git-hub.png)
@@ -88,11 +86,9 @@ From Azure Repos for Git, you can perform the following tasks:
 - Review, create, approve, comment on, and complete pull requests  
 - Add and manage Git tags
 
-To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md). 
+To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md).
 
 ## Plan and track work
-
-
 
 # [New navigation](#tab/new-nav)
 
@@ -119,7 +115,7 @@ Specifically, you can perform the following tasks:
 - Manage portfolios by grouping stories under features and grouping features under epics
 
 See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) for an overview of each.
- 
+
 ## Continuous integration and deployment  
 
 # [New navigation](#tab/new-nav)
@@ -138,11 +134,10 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 Use pipelines to implement continuous integration and continuous delivery.
 
-- **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
+- **Build automation**: Define the steps to take during build and the triggers that will initiate a build.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release pipelines that represent your environments from development to production. Run automation to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
-To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
-
+To learn more, see [Continuous integration on any platform](../pipelines/overview.md).
 
 ## Manual, exploratory, and load testing  
 
@@ -150,13 +145,13 @@ Test features support manual and exploratory testing, load or performance testin
 
 # [New navigation](#tab/new-nav)
 
-**Test Plans** supports creating and managing manual tests. 
+**Test Plans** supports creating and managing manual tests.
 
 ![Test Plans](_img/test-plans-vert.png)
 
 # [Previous navigation](#tab/previous-nav)
 
-**Test** supports creating and managing manual tests. 
+**Test** supports creating and managing manual tests.
 
 <img src="_img/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
 
@@ -179,28 +174,33 @@ To learn more, see [Testing overview](../test/index.md).
 
 The following services work across the previously mentioned services to support:
 
-::: moniker range="vsts" 
-- Team dashboards 
+::: moniker range="vsts"
+
+- Team dashboards
 - Project wiki
 - Discussion within work item forms
 - Linking of work items, commits, pull requests, and other artifacts to support traceability
-- Alerts and change notifications managed per user, team, project, or organization 
+- Alerts and change notifications managed per user, team, project, or organization
 - Ability to request and manage feedback
 - Analytics service, analytic views, and Power BI reporting
+
 ::: moniker-end  
 
-::: moniker range="tfs-2018" 
+::: moniker range="tfs-2018"
+
 - Dashboards 
 - Project wiki
 - Discussion within work item forms
 - Linking of work items, commits, pull requests, and other artifacts to support traceability
-- Alerts and change notifications managed per user, team, project, or project collection 
+- Alerts and change notifications managed per user, team, project, or project collection
 - Ability to request and manage feedback
 - SQL Server Reporting
+
 ::: moniker-end  
 
-::: moniker range="tfs-2017" 
-- Dashboards 
+::: moniker range="tfs-2017"
+
+- Dashboards
 - Discussion within work item forms
 - Linking of work items, commits, pull requests and other artifacts to support traceability
 - Alerts and change notifications managed per user, team, project, or project collection  
@@ -212,25 +212,27 @@ The following services work across the previously mentioned services to support:
 > Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
 ::: moniker-end  
 
+::: moniker range="tfs-2015"
 
-::: moniker range="tfs-2015" 
-- Dashboards 
+- Dashboards
 - Linking of work items, commits, pull requests, and other artifacts to support traceability
 - Alerts and change notifications managed per user or for teams  
 - Ability to request and manage feedback
 - Team (chat) rooms
 - SQL Server Reporting
+
 ::: moniker-end  
 
+::: moniker range="tfs-2013"
 
-::: moniker range="tfs-2013" 
 - Team home page  
 - Linking of work items, commits, pull requests, and other artifacts to support traceability
 - Alerts and change notifications managed per user or for teams  
 - Ability to request and manage feedback
 - Team (chat) rooms
 - SQL Server Reporting
-::: moniker-end 
+
+::: moniker-end
 
 ## Service hooks
 
@@ -272,15 +274,13 @@ There are features and tasks associated with administering a collaborative softw
 
 ---
 
-
 ## Related articles
 
 - [Understand differences between Azure DevOps Services and TFS](about-azure-devops-services-tfs.md)
 - [Key concepts](concepts.md)  
-- [Client-server tools](tools.md) 
+- [Client-server tools](tools.md)
 - [Software development roles](roles.md)  
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
-
 
 <!---
 **System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 
