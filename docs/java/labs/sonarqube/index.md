@@ -24,7 +24,7 @@ In this exercise, you are going to configure integration between the build syste
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises [to create a Team Project](../settingAzure DevOps Servicesproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have [created an Azure DevOps Services Team Build for MyShuttle2](../builddocker/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises [to create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have [created an Azure DevOps Services Team Build for MyShuttle2](../builddocker/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
 > [!NOTE]
 > SonarQube is running in a docker container on your VM. It is only accessible from within the VM. It is therefore not secure - this is not a recommended production configuration.
