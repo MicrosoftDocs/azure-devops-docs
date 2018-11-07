@@ -24,7 +24,7 @@ In this exercise, you are going to open the MyShuttle2 repo from your Azure DevO
 
 ## Prerequisites
 
-This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingAzure DevOps Servicesproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingvstsproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Connect to Azure DevOps Services from IntelliJ
 

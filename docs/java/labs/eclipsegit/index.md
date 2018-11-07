@@ -24,7 +24,7 @@ In this exercise, you are going to import the MyShuttle2 repo in your Azure DevO
 
 ## Prerequisites
 
-This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingAzure DevOps Servicesproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingvstsproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Connect to Azure DevOps Services from Eclipse
 
@@ -68,7 +68,7 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
 1. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
 
-    ![Sign in to Azure DevOps Services](../_img/eclipsegit/browseAzure DevOps Services.png)
+    ![Sign in to Azure DevOps Services](../_img/eclipsegit/browsevsts.png)
 
 1. The "Follow the instructions to complete sign-in" window will pop up. Click on the hyperlink to be redirected to the Device Login page in a browser on the VM (may have a black background for security purposes).
 
