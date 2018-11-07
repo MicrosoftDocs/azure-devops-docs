@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 08/30/2017
+ms.date: 11/01/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,6 +22,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 ## Prerequisites
 
 * An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* A local Eclipse project. If your code is already in version control in Azure Repos or TFS and you want to clone it, see [Clone an Azure DevOps Services Git repo using Eclipse](../../java/labs/eclipsegit/index.md).
 
 <a name="git"></a>
 
@@ -58,7 +59,7 @@ Before you can push your project to Azure Repos, you need to add it to a local G
 > [!NOTE]
 > If your code is already in a local Git repo, you can skip this step.
 
-0. Right-click your project name in Project Explorer and select **Team, Share Project...** Select **Git** and select **Next**. 
+0. With your project open in Eclipse, right-click the project name in Project Explorer and select **Team, Share Project...** Select **Git** and select **Next**. 
 
 0. Select **Create...** from the **Configure Git Repository** window and choose a folder for your local Git repo. Select **Finish**.
 

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: douge
 author: erickson-doug
 ms.reviewer: dastahel
-ms.date: 07/10/2018
+ms.date: 11/01/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -27,7 +27,33 @@ The latest release of [TEE](https://marketplace.eclipse.org/content/team-explore
 
 * **https://dl.microsoft.com/eclipse**
 
+### To install Team Explorer Everywhere from within Eclipse
 
+1. Click on the Eclipse icon in the toolbar to open the Eclipse Java IDE.
+
+    ![Click Eclipse in the Toolbar](labs/_img/eclipsegit/click-eclipse.png)
+
+1. The first time you run Eclipse, it will prompt for default workspace. Click on the box "Use this as the default and do not ask again" to use the default workspace on startup.
+
+    ![Accept the default Eclipse workspace](labs/_img/eclipsegit/eclipse-defaults.png)
+
+1. When the Welcome dialog appears, on the Help Menu select Install New Software.
+
+    ![Click on Help > Install New Software](labs/_img/eclipsegit/eclipse-install-new-software.png)
+
+1. Choose the Add button to add a new repository.  Use Team Explorer Everywhere as the name. The location of the update site is `https://dl.microsoft.com/eclipse`. 
+
+    ![Add Repository](labs/_img/eclipsegit/AddRepository.cropped.png)
+
+1. Choose the OK button.
+
+1. In the list of features in the Install dialog box, select the check box that corresponds to the Team Explorer Everywhere plugin. If you don't see this option, use the pull-down menu for "Work with:" and find the update site URL you just entered in the list and select it, then select the check box beside the plug-in mentioned above.
+
+    ![Select Team Explorer Everywhere](labs/_img/eclipsegit/SelectTee.cropped.png)
+
+1. Choose Next two times. Accept the license agreement and choose Finish
+
+1. Eclipse will need to restart.
 
 ## Standalone Download Links
 
