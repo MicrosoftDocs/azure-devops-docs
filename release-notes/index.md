@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 10/26/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -23,6 +23,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |---------|---------|---------|
 |[Azure DevOps Server Support for Move work item to another team project / Change work item type](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292418)|Boards|2019|
 |[New rich text Description and Discussion control](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1360789)|Boards|TBD|
+|[Create pull requests in draft mode](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1382660)|Repos|TBD|
 |[Git Pull Requests – Improved search/filter options for pull requests](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1257205)|Repos|TBD|
 |[Release Management orchestration improvements – Tag based triggers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221125)|Pipelines|2019|
 |[Agent-based deployment in Release Management – Sharing of VMs](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221126)|Pipelines|2019|
@@ -55,7 +56,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |[Work Item support for Markdown editing](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221138)|Boards|TBD|
-|[GVFS for Mac - Public Preview](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221136)|Repos|N/A|
+|[VFS for Git - Public Preview of macOS support](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221136)|Repos|N/A|
+|[Pull requests can be completed using a fast forward merge](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1382395)|Repos|TBD|
+|[Pull requests can be completed using rebase](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1382396)|Repos|TBD|
 |[Extensible Pool Providers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221174)|Pipelines|TBD|
 |[Multi-stage pipelines](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364226)|Pipelines|TBD|
 |[YAML editor in the web](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1364231)|Pipelines|TBD|
