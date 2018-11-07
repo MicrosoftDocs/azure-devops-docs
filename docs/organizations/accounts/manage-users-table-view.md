@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2018
+ms.date: 11/07/2018
 monikerRange: 'vsts'
 ---
 # Manage users in Azure DevOps
@@ -19,7 +19,7 @@ Learn how to add users to your organization and specify the level of features th
 
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, and build and release management.
+* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
 * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
