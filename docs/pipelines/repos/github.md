@@ -15,6 +15,8 @@ monikerRange: 'vsts'
 
 # Build GitHub repositories
 
+#### Azure Pipelines
+
 Azure Pipelines can automatically build and validate every pull request and commit to your GitHub repository.
 
 ## Introduction to creating pipelines
