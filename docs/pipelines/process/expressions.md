@@ -106,10 +106,10 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 Depending on the execution context, different variables are available.
 For instance, in a condition on a pipeline, [Build](../build/variables.md) or [Release](../release/variables.md) variables are available.
 
-You may access them using one of two syntaxes:
+You may access variables using one of two syntaxes:
 
-* Index syntax: `variables['Build.SourceBranch']`
-* Property dereference syntax: `variables.Build.SourceBranch`.
+* Index syntax: `variables['MyVar']`
+* Property dereference syntax: `variables.MyVar`.
 
 In order to use property dereference syntax, the property name must:
 - Start with `a-Z` or `_`
