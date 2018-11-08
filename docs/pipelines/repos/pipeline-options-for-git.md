@@ -215,16 +215,23 @@ If your main repository and submodules are in the same GitHub organization, then
 
 ### Alternative to using the Checkout submodules option
 
-In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in Azure Repos and your submodules are in GitHub, or if your main repository is in GitHub and your submodules are in Azure Repos, or if your submodules are in a different Azure DevOps organization than your main repository.
+In some cases you can't use the **Checkout submodules** option.
+You might have a scenario where a different set of credentials are needed to access the submodules.
+This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
-If you can't use the Checkout submodules option, then you can instead use a custom script with the following Git command to get the sources for submodules onto your agent.
+If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
+First, get a personal access token (PAT) and prefix it with "pat:".
+Next, Base64-encode this string to create a basic auth token.
+Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
 ```
 
-Use a secret variable in your project or build pipeline to store the personal access token (PAT) that you generate in Azure Pipelines or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
+Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
 
+Use a secret variable in your project or build pipeline to store the basic auth token that you generated.
+Use that variable to populate the secret in the above Git command.
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
