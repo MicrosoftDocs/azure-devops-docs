@@ -58,6 +58,7 @@ None
 <li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
 </ul>
 <p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
+<p>If your agent is running on MacOS you will need to use forward slashes instead of backslashes.</p>
 <p>More examples are shown below.</p>
 </td>
 </tr>
