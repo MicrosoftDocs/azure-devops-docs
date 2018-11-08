@@ -23,7 +23,7 @@ In this exercise, you are going to examine the various Agile planning features o
 
 ## Prerequisites
 
-This exercise assumes you have completed [setting up your Azure DevOps Services Java project](../settingAzure DevOps Servicesproject/index.md), and have created a Team Project using the Scrum template with a Git repo.
+This exercise assumes you have completed [setting up your Azure DevOps Services Java project](../settingvstsproject/index.md), and have created a Team Project using the Scrum template with a Git repo.
 
 ## Managing your team project backlog
 
