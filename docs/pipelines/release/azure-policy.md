@@ -92,6 +92,7 @@ the stage status panel in the releases page of Azure pipelines.
 
 ![Azure Policy failure in log](_img/azure-policy-03.png)
 
+<!--
 ## View assigned Azure policies
 
 The **Policy Violations** tab in the **Releases** page of Azure Pipelines
@@ -100,5 +101,6 @@ policy definition in the Azure portal. From here you can view more information
 about the policy and its conditions.
 
 ![Azure Policy Violations tab](_img/azure-policy-04.png)
+-->
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
