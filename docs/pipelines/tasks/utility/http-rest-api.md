@@ -48,7 +48,7 @@ This task can be used in only an [agentless job](../../process/server-phases.md)
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
 | **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
-| **Success criteria** | Optional. How to parse the response body for success. By deault, the task passes when 200 OK is returned from the call. Additionally, the success criteria, if specified, is evaluated. |
+| **Success criteria** | Optional. How to parse the response body for success. By default the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Succeeds if the API returns success and the response body parsing is successful, or when the API updates the timeline record with success.
