@@ -5,7 +5,8 @@ description: Understand how workflow states map to state categories in Azure Boa
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 ms.date: 03/20/2018
@@ -58,7 +59,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <td>Design (Test Case)<br/></td> 
 </tr>
 <tr valign="top" >
-<td>**In Progress:** Assign to states that represent active work. Work items assigned to states mapped to this category will appear in the backlog (unless you choose to hide them) and make up the middle columns on the Kanban boards. </td> 
+<td>**InProgress:** Assign to states that represent active work. Work items assigned to states mapped to this category will appear in the backlog (unless you choose to hide them) and make up the middle columns on the Kanban boards. </td> 
 <td>Active<br/>Resolved (Epic, Feature, User Story)</td> 
 <td>Committed<br/>Open (Impediment)</td> 
 <td>Active<br/>Resolved (Epic, Feature, Requirement, Task)</td> 
