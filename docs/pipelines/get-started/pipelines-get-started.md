@@ -10,7 +10,7 @@ ms.author: douge
 ms.date: 07/06/2018
 monikerRange: 'vsts'
 ---
-Use Azure Pipelines
+# Use Azure Pipelines
 
 You can use either [YAML](../get-started-yaml.md) or the [visual designer](../get-started-designer.md) to define your pipelines. 
 
