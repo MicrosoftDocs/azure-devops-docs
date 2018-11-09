@@ -195,35 +195,23 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
 
 ## Package and deliver your code
 
-### Retain artifacts with the build record
+### Authenticate with twine
 
-First, build an sdist of your package.
+The [Twine Authenticate task](../tasks/package/twine-authenticate.md) stores authentication credentials for twine in the `PYPIRC_PATH` environment variable.
 
 ```yaml
-- script: 'python setup.py sdist'
-  displayName: 'Build sdist'
+- task: TwineAuthenticate@0
+  inputs:
+    artifactFeeds: 'feed_name1, feed_name2'
+    externalFeeds: 'feed_name1, feed_name2'
 ```
 
-Then, add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+### Publish with twine
+
+Then, add a [custom script task](../yaml-schema.md#script) to use `twine` to publish your packages.
 
 ```yaml
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish artifact: dist'
-  inputs:
-    pathtoPublish: 'dist'
-    artifactName: 'dist'
-```
-
-### Deploy to a PyPI-compatible index
-
-Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
-
-```yaml
-- task: PyPIPublisher@0
-  inputs:
-    pypiConnection: ''
-    packageDirectory: '$(build.sourcesDirectory)'
-    alsoPublishWheel: false
+- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
 ```
 
 ## Build a container image
