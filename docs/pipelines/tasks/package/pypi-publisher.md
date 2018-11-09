@@ -1,5 +1,5 @@
 ---
-title: PyPI Publisher task
+title: PyPI Publisher task (Deprecated)
 titleSuffix: Azure Pipelines & TFS
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 5/7/2018
 monikerRange: 'vsts'
 ---
 
-# PyPI Publisher task
+# Package: PyPI Publisher task (deprecated)
 
 **Azure Pipelines**
 
@@ -22,6 +22,11 @@ This task builds an sdist package by running `python setup.py sdist` using the P
 It can optionally build a universal wheel in addition to the sdist.
 Then, it will upload the package to a PyPI index using `twine`.
 The task will install the `wheel` and `twine` packages with `python -m pip install --user`.
+
+## Deprecated
+
+> [!WARNING]
+> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../targets/pypi.md). 
 
 ## Demands
 
