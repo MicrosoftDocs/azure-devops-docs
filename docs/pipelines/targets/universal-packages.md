@@ -63,7 +63,7 @@ To publish the files you assembled previously as a Universal Package, add the **
 - **Destination feed:** Select the feed you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package) or enter a new package name (to publish the first version of a new package).
 
-![Example Universal Packages build step screenshot](_img/universal-packages/publish.png)
+![Example Publish Universal Packages build step screenshot](_img/universal-packages/publish.png)
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
@@ -99,6 +99,72 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
 # [Designer](#tab/designer)
 
 In the **Universal Packages** task you configured above, choose the appropriate **Version** increment option.
+
+---
+
+## Download Universal Package
+
+You can also download a Universal Package from your pipeline.
+
+# [YAML](#tab/yaml)
+
+To download a Universal Package from a feed in your organization, use the following snippet: 
+
+```yaml
+steps:
+- task: UniversalPackages@0
+  displayName: 'Universal download'
+  inputs:
+    command: download
+    vstsFeed: 'fabrikamFeed'
+    vstsFeedPackage: 'fabrikam-package'
+    vstsPackageVersion: 1.0.0
+```
+
+| Argument                       | Description                                                         |
+| ------------------------------ | ------------------------------------------------------------------- |
+| vstsFeed                       | Feed that the package is to be downloaded from.     |
+| vstsFeedPackage                | Name of the package to be downloaded.    |
+| vstsPackageVersion             | Version of the package to be downloaded. |
+| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+
+To download a Universal Package from an external source, use the following snippet:
+
+```yaml
+steps:
+- task: UniversalPackages@0
+  displayName: 'Universal download'
+  inputs:
+    command: download
+    feedsToUse: external
+    externalFeedCredentials: MSENG2
+    feedDownloadExternal: `fabrikamFeedExternal`
+    packageDownloadExternal: `fabrikam-package`
+    versionDownloadExternal: 1.0.0
+```
+
+| Argument                       | Description                                                         |
+| ------------------------------ | ------------------------------------------------------------------- |
+| feedsToUse                     | Value should be `external` when downloading from an external source.|
+| externalFeedCredentials        | The name of a service connection to another Azure DevOps organization or server. See [service connections](/azure/devops/pipelines/library/service-endpoints#sep-tfsts).                    |
+| feedDownloadExternal           | Feed that the package is to be downloaded from.        |
+| packageDownloadExternal        | Name of the package to be downloaded.                             |
+| versionDownloadExternal        | Version of the package to be downloaded.        |
+| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+
+# [Designer](#tab/designer)
+
+To download a Universal Package, add the **Universal Package** task and configure these options:
+
+- **Command:** Download
+- **Destination directory**: Directory to download the package. The default is `$(System.DefaultWorkingDirectory)`.
+- **Feed location:** You can download a Universal Package from an Azure Artifacts feed in this organization or in another organization.
+- **Feed:** Select the feed you want to download from.
+- **Package name:** Select the package you want to download.
+- **Version:** Select the version of the package you want to download.
+
+
+![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
 
 ---
 
