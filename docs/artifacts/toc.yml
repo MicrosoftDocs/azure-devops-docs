@@ -18,6 +18,8 @@
     href: get-started-npm.md
   - name: Maven
     href: get-started-maven.md
+  - name: Python
+    href: quickstarts/python-packages.md
   - name: Universal
     href: quickstarts/universal-packages.md
 - name: Tutorials
@@ -36,6 +38,8 @@
     href: /azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json
   - name: Maven
     href: /azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json
+  - name: Python
+    href: /azure/devops/pipelines/targets/pypi?toc=/azure/devops/artifacts/toc.json
   - name: Universal
     href: /azure/devops/pipelines/targets/universal-packages?toc=/azure/devops/artifacts/toc.json
 - name: Concepts

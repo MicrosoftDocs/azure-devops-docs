@@ -64,6 +64,8 @@
     href: targets/npm.md
   - name: NuGet
     href: targets/nuget.md
+  - name: PyPI
+    href: targets/pypi.md
   - name: SCVMM
     href: targets/scvmm.md
   - name: Universal Packages
@@ -460,6 +462,10 @@
         href: tasks/package/nuget.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
+      - name: Python Pip Authenticate
+        href: tasks/package/pip-authenticate.md
+      - name: Python Twine Upload Authenticate
+        href: tasks/package/twine-authenticate.md
       - name: Xamarin Component Restore
         href: /xamarin/cross-platform/troubleshooting/component-nuget
       - name: Previous versions
