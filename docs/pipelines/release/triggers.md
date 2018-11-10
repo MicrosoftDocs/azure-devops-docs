@@ -72,7 +72,7 @@ See also [stage scheduled triggers](#stage-scheduled-triggers).
 <h2 id="prsettrigger">Pull request triggers</h2>
 
 You can configure a pull request trigger that will create a new release when a pull request 
-uploads a new version of the artifact. Enable the trigger and add the branches targetted by pull requests
+uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests
 that you want to activate this trigger. 
 
 ![Selecting a trigger for a release](_img/trigger-01a.png)
