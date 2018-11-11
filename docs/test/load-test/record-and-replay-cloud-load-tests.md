@@ -51,7 +51,7 @@ to create plugins necessary to suit complex testing requirements.
 
 **HTTP Archive testing** also allows you to create load tests
 that mimic end-to-end user scenarios, but with fewer 
-capabilties than the rich Visual Studio 
+capabilities than the rich Visual Studio 
 Enterprise load tests. However, by using HTTP Archive files
 you can represent user scenarios that:
 
