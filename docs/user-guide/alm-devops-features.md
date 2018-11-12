@@ -1,5 +1,5 @@
 ---
-title: Feature overview 
+title: Feature overview for Azure DevOps
 titleSuffix: Azure DevOps Services & TFS 
 description: Comprehensive index to all features in Azure DevOps Services & Team Foundation Server 
 ms.prod: devops
@@ -10,15 +10,15 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 08/02/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Azure DevOps Features
+# What are the features in Azure DevOps?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications.  
+Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
 If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
 
@@ -27,7 +27,7 @@ If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.m
 >- **Azure DevOps Services** - Available from Azure DevOps Services (cloud service)  
 >- **TFS** - Available from Team Foundation Server (on-premises)
 
-##Access and supported clients
+## Access and supported clients
 
 <table>
 <tbody>
