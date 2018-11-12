@@ -93,6 +93,23 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
+            <td>New work item text editor</td><td>*2019*</td>
+        </tr>
+        <tr><td>Improved branch picker</td><td>*2019*</td></tr>
+        <tr><td>Draft pull requests</td><td>*2019*</td></tr>
+        <tr><td>Trigger YAML pipelines with tags</td><td>*2019*</td></tr>
+        <tr><td>Setting to auto cancel an existing pipeline when a pull requests is updated</td><td>*2019*</td></tr>
+        <tr><td>Declare container resources inline</td><td>*2019*</td></tr>
+        <tr><td>Changes to default permissions for new projects</td><td>*2019*</td></tr>
+        <tr><td>Deploy to failed targets in a Deployment Group</td><td>*2019*</td></tr>
+        <tr><td>Automatically redeploy on failure</td><td>*2019*</td></tr>
+        <tr><td>Support for Infrastructure as Code</td><td>*2019*</td></tr>
+        <tr><td>Exclude files in artifact uploads</td><td>N/A</td></tr>
+        <tr><td>Provenance information on packages</td><td>*2019*</td></tr>
+        <tr><td>Azure Artifacts REST API documentation updates</td><td>N/A</td></tr>
+        <tr><td>Test result trend widget</td><td>*2019*</td></tr>
+        <tr>
             <td rowspan="20">[22 October 2018](2018/sprint-142-update.md)</td>
             <td>New navigation is on for all users</td><td>N/A</td>
         </tr>
