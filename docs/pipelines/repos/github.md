@@ -9,7 +9,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: douge
 ms.author: dastahel
 author: davidstaheli
-ms.date: 11/02/2018
+ms.date: 11/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -43,7 +43,7 @@ GitHub's structure consists of **organizations and user accounts** that contain 
 
 ![GitHub organization structure](_img/github-org-structure.png)
 
-Azure DevOps' structure consists of **organizations** that contain **projects**. See [Define your organizations and projects in Azure DevOps](../../user-guide/define-organizations-and-projects.md).
+Azure DevOps' structure consists of **organizations** that contain **projects**. See [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
 ![Azure DevOps organization structure](_img/azure-devops-org-structure.png)
 
