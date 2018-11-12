@@ -9,7 +9,7 @@ ms.manager: douge
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
-ms.date: 08/04/2016
+ms.date: 11/09/2018
 ---
 
 # Authenticating with personal access tokens
