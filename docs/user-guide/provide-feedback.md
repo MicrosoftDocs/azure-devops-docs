@@ -1,5 +1,5 @@
 ---
-title: Get support and provide feedback
+title: Get support and provide feedback for Azure DevOps Services and TFS
 titleSuffix: Azure DevOps Services and TFS
 description: Guide to providing product and content feedback as well as accessing support resources in Azure DevOps Services and Team Foundation Server  
 ms.technology: devops-new-user
@@ -8,11 +8,11 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.manager: chcomley
 ms.author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/25/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Get Azure DevOps Services and TFS product support and provide feedback
+# How do I get support and provide feedback for Azure DevOps Services and TFS products?
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 

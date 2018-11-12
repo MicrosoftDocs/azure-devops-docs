@@ -33,7 +33,7 @@ xcode
 <tr>
 <td>Actions</td>
 <td>
-Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `analyze`, and `archive`.  For example: `clean build` would run a clean build.  See [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `analyze`, and `archive`.  For example: `clean build` would run a clean build.  See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ Path to a plist file that configures archive exporting.
 <tr>
 <td>Arguments</td>
 <td>
-(Optional) Specify additional command-line arguments for this build. See [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+(Optional) Specify additional command-line arguments for this build. See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ If you have selected Use xcpretty (described above), select this option if you w
 <tr>
 <td>Use xctool</td>
 <td>
-Select if you want to run [xctool](https://github.com/facebook/xctool/blob/master/README.md) instead of [xcodebuild](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html). You must have xctool installed on the agent.
+Select if you want to run [xctool](https://github.com/facebook/xctool/blob/master/README.md) instead of [xcodebuild](https://developer.apple.com/library/archive/technotes/tn2339/_index.html). You must have xctool installed on the agent.
 <blockquote>If you select this option, make sure that <strong>Use xcpretty</strong> is cleared.</blockquote>
 </td>
 </tr>

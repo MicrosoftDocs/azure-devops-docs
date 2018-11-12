@@ -17,18 +17,6 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
     ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
     
     ---
-
-2. Copy the "registry" text:
-
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
-    > 
-
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
-
-    ---
     
 ::: moniker-end
 
@@ -36,8 +24,6 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
 
 1. From the **Packages** page, click _Connect to Feed_
     ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
-2. Copy the "registry" text:
-    ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
 
 ::: moniker-end
 
