@@ -11,10 +11,12 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/05/2018
+ms.date: 11/12/2018
 ---
 
 # Plan your Azure DevOps organizational structure
+
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 Your business structure should act as a guide to the number of organizations, projects, and teams that you create in Azure DevOps.  
 
@@ -26,13 +28,13 @@ When you're representing your business or collaborative work in Azure DevOps, co
 You also may want to plan for the following:
 
 * Mapping your organizations and projects in Azure DevOps to your enterprise, business unit, and team structure
-* Structuring your repositories
+* Structuring your repositories (repos)
 * Structuring your teams - it can either help or hinder teams to be Agile and autonomous
 * Managing access to data - who needs to have access and who doesn't?
 * Reporting needs
 * Facilitating common practices - learn more about [foundational elements you need to create an agile mindset and culture](../boards/plans/agile-culture.md).
 
-## Structure of your organization
+## Structure your organization
 
 You must have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
 
@@ -44,22 +46,22 @@ Each organization gets its own free tier of Azure DevOps services (up to 5 users
 
 * Azure Pipelines: One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
 * Azure Boards: Work item tracking and Kanban boards
-* Azure Repos: Unlimited private Git repositories
+* Azure Repos: Unlimited private Git repos
 * Azure Artifacts: Package management
 * Load testing (20,000 VUMs per month)
 * Unlimited stakeholders
 
 ### How many organizations do you need?
 
-When you're starting out with Azure DevOps, it’s best to begin with only one, and add additional organizations – which may require different security models – later. If you only have a single code repo or project, you do not need more than one. If you have separate teams that need to work on code or other projects in isolation from one another, then consider creating separate organizations for those teams, but note that they will have different URLs. You should add projects, teams, and repositories, as necessary, prior to adding another organization.
+When you're starting out with Azure DevOps, it’s best to begin with only one, and add additional organizations – which may require different security models – later. If you only have a single code repo or project, you do not need more than one. If you have separate teams that need to work on code or other projects in isolation from one another, then consider creating separate organizations for those teams, but note that they will have different URLs. You should add projects, teams, and repos, as necessary, prior to adding another organization.
 
 Take some time to review your company or larger work structure and the different business groups and participants that must be managed. Read further in this topic for more information on the [advantages and disadvantages of having multiple organizations](#mapping-organizations-to-business-units) and [structure considerations](#more-about-organizational-structure).
 
-## Structure of your projects
+## Structure your projects
 
 ### What is a project?
 
-A project in Azure DevOps contains a set of features: boards and backlogs for agile planning, pipelines for continuous integration and deployment, repositories for version control and management of source code and artifacts, and continuous test integration throughout the project life cycle. Each organization contains one or more projects.
+A project in Azure DevOps contains a set of features: boards and backlogs for agile planning, pipelines for continuous integration and deployment, repos for version control and management of source code and artifacts, and continuous test integration throughout the project life cycle. Each organization contains one or more projects.
 
 In the following image the Contoso company has three projects within their Contoso-Manufacturing organization.
 
@@ -71,19 +73,19 @@ You need at least one project to start using an Azure DevOps service, such as Az
 
 Within an organization, you can have one large single project or multiple projects. You can choose to do either of the following:
 
-* Create a single project that contains many repositories and teams
-* Create multiple projects, each containing its own set of teams, repositories, builds, work items, and other elements
+* Create a single project that contains many repos and teams
+* Create multiple projects, each containing its own set of teams, repos, builds, work items, and other elements
 
 Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single Azure DevOps project. However, if you want to manage more granular security between your software projects and their teams, consider using multiple Azure DevOps projects. At the highest level of isolation is an Azure DevOps organization, where each organization has its own Azure AD tenancy.
 
 #### Single project
 
-A single project for an organization puts all of the work at a the same “portfolio” level - that is, it is all of the work for the entire organization in the same set of repositories and iteration paths. One benefit of having a single project is that it allows teams to share source repositories, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight interdependencies on each other across the product life cycle. You create a project and divide the work by using teams and area paths. This setup gives your teams visibility into each other’s work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
+A single project for an organization puts all of the work at a the same “portfolio” level - that is, it is all of the work for the entire organization in the same set of repos and iteration paths. One benefit of having a single project is that it allows teams to share source repos, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight interdependencies on each other across the product life cycle. You create a project and divide the work by using teams and area paths. This setup gives your teams visibility into each other’s work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
 
 > [!TIP]
 > When multiple teams work on the same product, having all teams on the same iteration schedule helps keep your teams aligned and delivering value on the same cadence. For example, the Azure DevOps organization has over 40 feature teams and 500 users within a single project - this works well because we're all working on a common product set with common goals and a common release schedule.
 
-A high volume of queries and boards can make it difficult to find what you're looking for. Depending on the architecture of your product, this difficulty can bleed into other areas such as builds, releases, and repositories. To help alleviate this issue, make sure that you use good naming conventions and a simple folder structure. When you add a new repo to your project, it's a good time to reflect on your strategy and determine whether that repo could be placed into its own project.
+A high volume of queries and boards can make it difficult to find what you're looking for. Depending on the architecture of your product, this difficulty can bleed into other areas such as builds, releases, and repos. To help alleviate this issue, make sure that you use good naming conventions and a simple folder structure. When you add a new repo to your project, it's a good time to reflect on your strategy and determine whether that repo could be placed into its own project.
 
 #### Multiple projects
 
@@ -108,15 +110,14 @@ When you map projects to business units, your company gets a single organization
 |Multiple projects             |               |
 |---------|---------|
 |**Advantages**  |**Disadvantages**  |
-|---------|---------|
 |Works well if all business units of your company are in the same geographical area. (e.g. the entire company is in North America)    | Business units cannot administer their own users, policies, access management, or billing practices and require shared ownership of the organization        |
 |Works well if you don’t need to track budgets or spending per business unit    | Business units must share resources, like Azure Pipelines (for CI/CD)        |
 |Works well if you don’t have any regulatory or compliance needs for geographical isolation of your Azure DevOps assets    | Business units cannot track spending and billing separately        |
 | You can easily create cross-project queries and move work items from one project to another | This will not work if you are migrating from on-premises with multiple collections since you will end up with multiple organizations with each collection on-premises mapped to a separate organization  |
 
-## Define your project with teams, repositories, and version control  
+## Structure your teams, repos, and version control within a project
 
-Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and create a project. This project will have a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
+Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project will have a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
 
 Configure your project by visiting its URL and selecting the **Project settings** button at the lower-right of the page.
 
@@ -134,32 +135,36 @@ Every team owns their own backlog, to create a new backlog you create a new team
 
 ### Managing version control
 
-In projects where the Azure Repos service has been enabled, version control repositories can be created to store and revise code. Consider the following options when you’re configuring repositories.
+In projects where the Azure Repos service has been enabled, version control repos can be created to store and revise code. Consider the following options when you’re configuring repos.
 
 #### Git vs. TFVC
 
-Azure Repos offers two different version control systems for teams to choose from: Git and Team Foundation Version Control (TFVC). Projects can contain repositories of each type. By default, new projects have an empty Git repo. Git enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. Any project can use Git repositories, and there is no limit on the number of Git repositories that can be added to a project.
+Azure Repos offers two different version control systems for teams to choose from: Git and Team Foundation Version Control (TFVC). Projects can contain repos of each type. By default, new projects have an empty Git repo. Git enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. Any project can use Git repos, and there is no limit on the number of Git repos that can be added to a project.
 
 TFVC is a centralized version control system that is also available. Unlike Git, only one TFVC repository can be created for a project, but within that repo, folders and branches can be used to organize code for multiple products and services if desired.  
 
-#### One vs. many repositories
+#### One vs. many repos
 
-Customers who need multiple repositories often ask whether to set up multiple repositories in a single project or have a repo set up per project. The following guidance relates to the planning and administration functions across those repositories.  
+Customers who need multiple repos often ask whether to set up multiple repos in a single project or have a repo set up per project. The following guidance relates to the planning and administration functions across those repos.  
 
-Starting with a single project containing multiple repositories is a safe bet, especially if the products/services are working on a coordinated release schedule. If developers are frequently working with multiple repositories, keeping them in a single project encourages the processes to remain shared and consistent. Administering repo access is simpler in a single project, as access controls and options like case enforcement and max file size can be set at the project level. Note that individual repositories can have these access controls and settings managed individually, even if they’re in a single project.
+Starting with a single project containing multiple repos is a safe bet, especially if the products/services are working on a coordinated release schedule. If developers are frequently working with multiple repos, keeping them in a single project encourages the processes to remain shared and consistent. Administering repo access is simpler in a single project, as access controls and options like case enforcement and max file size can be set at the project level. Note that individual repos can have these access controls and settings managed individually, even if they’re in a single project.
 
-If the products stored in multiple repositories are working on independent schedules or processes, you can split them into multiple projects. When you’re considering multiple projects, note that Git repo portability makes it easy to move a repo between projects and still retain full-fidelity commit history. Other history like push and pull request history cannot be migrated between projects.
+If the products stored in multiple repos are working on independent schedules or processes, you can split them into multiple projects. When you’re considering multiple projects, note that Git repo portability makes it easy to move a repo between projects and still retain full-fidelity commit history. Other history like push and pull request history cannot be migrated between projects.
 
-Your decision for one vs. many repositories should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don’t separate a codebase into multiple repositories if you anticipate making coordinated code changes across those repositories, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo (see Git at Scale articles for more details about monolithic repositories). If you have many disconnected services, one repo per service is a good strategy.  
+Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don’t separate a codebase into multiple repos if you anticipate making coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo (see Git at Scale articles for more details about monolithic repos). If you have many disconnected services, one repo per service is a good strategy.  
 
 > [!Note]
-> Consider [managing your permissions](../organizations/security/permissions.md) so not everyone in your organization can create a repo. One of the big challenges a growing team or company faces is the rapid proliferation of repositories. If you have too many of them, it’s very hard to keep track of who owns what code or other content stored in those repositories.
+> Consider [managing your permissions](../organizations/security/permissions.md) so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). One of the big challenges a growing team or company faces is the rapid proliferation of repos. If you have too many of them, it’s very hard to keep track of who owns what code or other content stored in those repos.
 
-#### Shared repo vs. forked repositories
+#### Shared repo vs. forked repos
 
 Generally, we recommend a shared repo approach within a trusted organization. In this model, developers use branches to maintain isolation of their changes from one another. Used with a good branching and release strategy (see [Adopt a Git branching strategy and Release Flow: Our Branching Strategy](../repos/tfvc/branch-strategically.md) for details, a single repo can scale to support concurrent development for more than a thousand developers.
 
-Forks can be particularly useful when you’re working with vendor teams that should not have direct access to update the main repository, or in scenarios where many developers contribute infrequently (such as in an open-source project).  When you’re working with forks, it may be useful to maintain a separate project to isolate the forked repositories from the main repo.  This adds administrative overhead but keeps the main project cleaner. See the [Forks topic](../repos/git/forks.md) for more information.
+Forks can be particularly useful when you’re working with vendor teams that should not have direct access to update the main repository, or in scenarios where many developers contribute infrequently (such as in an open-source project).  When you’re working with forks, it may be useful to maintain a separate project to isolate the forked repos from the main repo.  This adds administrative overhead but keeps the main project cleaner. See the [Forks topic](../repos/git/forks.md) for more information.
+
+The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
+
+![azure-devops-org_project_team_visual.png](_img/azure-devops-org_project_team_visual.png)
 
 ## More about organizational structure
 
@@ -177,7 +182,7 @@ If you don’t have an Azure Active Directory instance, you can either create on
 
 #### Using your Azure Active Directory account
 
-If you use Azure or Office 365, you might have an Azure AD account already. Or, if you work for a company that uses Azure AD to manage the permissions of its users, you probably have one as well. Contact your company's Azure administrator to gain permissions to create an organization or to have them create an organization for you.
+If you use Azure or Office 365, you might have an Azure AD account already. Or, if you work for a company that uses Azure AD to manage the permissions of its users, you probably have one as well. Contact your company's Azure administrator to gain permissions to [create an organization](../organizations/accounts/create-organization.md) or to have them create one for you.
 
 If you don't have an Azure AD account, learn how to [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](https://docs.microsoft.com/en-us/azure/active-directory/b2b/add-users-administrator)capabilities.
 
@@ -203,8 +208,11 @@ You can't link a work item from one organization to another organization within 
 |         |   Each business unit can buy resources, like Azure Pipelines (for CI/CD), and use them exclusively, managing costs independently.           |     |
 |     |        |
 
-## Related articles
+## Try this next  
 
-* ...
-* ...
-* ...
+> [!div class="nextstepaction"]
+> [Create an organization](../organizations/accounts/create-organization.md)
+> or
+> [Create a project](../organizations/projects/create-project.md)
+
+Or, after you've created a new organization and project, you can begin sharing your code with others: [Code with git](code-with-git.md).

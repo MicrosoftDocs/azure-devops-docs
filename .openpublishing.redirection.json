@@ -11189,6 +11189,11 @@
       "source_path": "docs/organizations/notifications/navigating-the-ux.md",
       "redirect_url": "/azure/devops/notifications/navigating-the-ui",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/define-organizations-and-projects.md",
+      "redirect_url": "/azure/devops/user-guide/plan-your-azure-devops-org-structure",
+      "redirect_document_id": false
     }
   ]
 }
