@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 09/10/2018
+ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -162,7 +162,7 @@ Amend your last commit to correct small errors without making a new commit.
 0. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
 
     ```
-    git commit -m --amend <font color="#b5bd68">"short descriptive message"
+    git commit -m --amend "short descriptive message"
     ```
 
 ---

@@ -45,6 +45,8 @@ Some Azure Artifacts services are only compatible with specific versions of TFS.
 | **npm**                        | Yes           | TFS 2017 Update 1 and newer |
 | **NuGet.org upstream source**  | Yes           | TFS 2018 Update 2 and newer |
 | **Maven**                      | Yes           | TFS 2018                    |
+| **Python**                     | Yes           | No                          |
+| **Universal Packages**         | Yes           | No                          |
 
 ## Other package types
 

@@ -9,7 +9,7 @@ ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -27,7 +27,7 @@ While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project
 |---------|------|------|----------|------------|--------------|------------|--------------|
 |Branch|Yes|Yes|Yes|Yes|Yes|Yes|
 |Clean|Yes|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Project|Team project|Team project|Team project|Team project|No|
+|Tag or label sources|Project; Designer only|Team project|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
 |Checkout files from LFS|Yes|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
@@ -38,7 +38,6 @@ While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project
 
 > [!NOTE]
 > **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
-> **Azure Pipelines (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
 
 ::: moniker-end
 
@@ -320,6 +319,12 @@ On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set it
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
+## Prefer Git from path
+
+The Windows agent comes with its own copy of Git.
+If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
+This setting is always true on non-Windows agents.
 
 ## Q & A  
 
