@@ -86,7 +86,7 @@ GitHub organization roles map to Azure DevOps organization permissions as follow
 
 ### Mapping GitHub user account roles
 
-A GitHub user account has 1 role, which ownership of the account.
+A GitHub user account has 1 role, which is ownership of the account.
 
 Azure DevOps organization member permissions are found at `https://dev.azure.com/your-organization/_settings/security` (replace `your-organization`).
 

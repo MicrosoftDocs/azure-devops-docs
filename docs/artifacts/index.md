@@ -88,6 +88,25 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
+                                        <a href="/azure/devops/artifacts/quickstarts/python-packages">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="python logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started with Python packages</h3>
+                                                            <p>Create, host, and share Python packages with your teams.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="/azure/devops/artifacts/quickstarts/universal-packages">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
