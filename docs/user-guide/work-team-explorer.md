@@ -1,7 +1,7 @@
 ---
 title: Navigate in Visual Studio Team Explorer 
 titleSuffix: Azure DevOps 
-description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
+description: Download TFS clients, maneuver in Team Explorer for Azure DevOps Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
 ms.prod: devops
@@ -10,11 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 09/10/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Navigate in Visual Studio Team Explorer
+# How do I use Visual Studio Team Explorer?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -163,4 +163,4 @@ To get started, see [Server Administration (TFS)](/tfs/server/index).
 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
-- [Define organizations and projects](define-organizations-and-projects.md)
+- [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md)

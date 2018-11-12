@@ -1,6 +1,6 @@
 ---
-title: Plan, code, collaborate, and ship your applications faster with Azure DevOps 
-description: What do you get when you sign up to use Azure DevOps  
+title: Plan, code, collaborate, and ship your applications with Azure DevOps 
+description: When you sign up to use Azure DevOps you get an integrated set of features to help you plan, code, collaborate, and ship your applications faster
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 

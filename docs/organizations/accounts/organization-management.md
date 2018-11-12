@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/10/2018
+ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -26,7 +26,7 @@ With an organization, you gain access to the platform in which you can do the fo
 
 ## Create your organization
 
-Before you get started, read [Define your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
+Before you get started, read [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,

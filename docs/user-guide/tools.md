@@ -8,14 +8,16 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Tools and clients that connect to Azure DevOps Services and TFS
+# Which tools and clients connect to Azure DevOps Services and TFS?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+Learn about the tools and clients that can connect to Azure DevOps Services and TFS.
 
 Our platform of software development tools began more than 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps Services and Team Foundation Server (TFS) to support source control, work tracking, build, and test operations.  
 

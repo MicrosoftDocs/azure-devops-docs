@@ -1,5 +1,5 @@
 ---
-title: Source control 
+title: Source control in Azure DevOps
 titleSuffix: Azure DevOps Services & TFS 
 description: What is source control or version control in Azure DevOps Services & Team Foundation Server?  
 ms.technology: devops-new-user 
@@ -9,11 +9,11 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 10/05/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Source control in Azure DevOps
+# What is source control in Azure DevOps?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

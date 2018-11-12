@@ -1,6 +1,6 @@
 ---
-title: Get started as a project admin or organization owner
-description: Learn how to structure a project, manage users, and more to support your software development teams
+title: Get started as a project admin or organization owner in Azure DevOps
+description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
 titleSuffix: Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/29/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
