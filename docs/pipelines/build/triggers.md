@@ -35,7 +35,6 @@ YAML builds are configured by default with a CI trigger on all branches.
 You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
-name: My Cool Build
 trigger:
 - master
 - releases/*
@@ -47,7 +46,7 @@ You cannot put a wildcard in the middle of a value. For example, `releases/*2018
 You can specify branches to include and exclude. For example:
 
 ```yaml
-name: My Specific Branch Build
+# specific branch build
 trigger:
   branches:
     include:
@@ -61,7 +60,7 @@ If you have a lot of team members uploading changes often, then you might want t
 If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
 
 ```yaml
-name: My Specific Branch Build with Batching to save time
+# specific branch build with batching
 trigger:
   batch: true
   branches:
@@ -72,7 +71,7 @@ trigger:
 You can specify file paths to include or exclude.
 
 ```yaml
-name: My Specific Path Build
+# specific path build
 trigger:
   branches:
     include:
@@ -88,7 +87,7 @@ trigger:
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
 ```yaml
-name: My CI-less Build
+# a build with no CI
 trigger: none
 ```
 
@@ -164,7 +163,6 @@ You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
 
 ```yaml
-name: My Cool Build
 pr:
 - master
 - releases/*
@@ -176,7 +174,7 @@ You cannot put a wildcard in the middle of a value. For example, `releases/*2018
 You can specify branches to include and exclude. For example:
 
 ```yaml
-name: My Specific Branch Build
+# specific branch build
 pr:
   branches:
     include:
@@ -189,7 +187,7 @@ pr:
 You can specify file paths to include or exclude. For example:
 
 ```yaml
-name: My Specific Path Build
+# specific path build
 pr:
   branches:
     include:
@@ -205,7 +203,7 @@ pr:
 You can opt out of pull request builds entirely by specifying `pr: none`.
 
 ```yaml
-name: My PR-less Build
+# no PR builds
 pr: none
 ```
 
