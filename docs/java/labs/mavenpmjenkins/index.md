@@ -243,9 +243,9 @@ In this task you will configure an Azure DevOps Services Team Build in Azure Dev
 
 1. The final list of tasks should look as follows:
 
-    ![Build tasks](../_img/mavenpmjenkins/Azure DevOps Services-tasks.png)
+    ![Build tasks](../_img/mavenpmjenkins/vsts-tasks.png)
 
 1. Save and Queue the build.
 1. When the build completes, click on the build number to see the results.
 
-    ![Build results](../_img/mavenpmjenkins/Azure DevOps Services-results.png)
+    ![Build results](../_img/mavenpmjenkins/vsts-results.png)
