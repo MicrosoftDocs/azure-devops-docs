@@ -28,7 +28,7 @@ To set up billing for a customer who's already created an organization by using 
 (in other words, not an identity in their Azure Active Directory), your customer must do the following:
 
 1. [Change their organization to be backed by their Azure Active Directory](../../accounts/access-with-azure-ad.md).
-2. [Remove the link to the existing Azure subscription that's used for billing on their organization](../change-azure-subscription.md#remove-billing-subscription-and-purchase-again), if they had previously set up billing.
+2. [Remove the link to the existing Azure subscription that's used for billing on their organization](../change-azure-subscription.md), if they had previously set up billing.
 
 Make sure your identity hasn't been added into the customer's Azure Active Directory. If it has, you need to have the identity removed before you can go through the purchasing steps for your customer.
 
