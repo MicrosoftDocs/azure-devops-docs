@@ -1,6 +1,6 @@
 ---
-title: Buy and manage cloud service provider customer Azure DevOps subscriptions
-description: Cloud service provider (CSP) partners can purchase and manage Azure DevOps for their customers
+title: Buy and manage Azure DevOps resources for Cloud Solution Providers
+description: Cloud Solution Provider (CSP) partners can purchase and manage resources in Azure DevOps for customers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 # Cloud Solution Providers: Buy Azure DevOps resources for your customers
@@ -51,13 +51,13 @@ Make sure your identity hasn't been added into the customer's Azure Active Direc
 
    ![Marketplace, Azure DevOps Services Users](../_img/buy-more-basic-access/marketplace-choose-get.png)
 
-7. Select **Get** and move through the purchase process. 
+7. Select **Get** and move through the purchase process.
     
     a. Choose the organization that needs more users.
 
     b. Choose the Azure subscription to bill for the purchase.
     
-    c. Enter the number of users that your customer needs. 
+    c. Enter the number of users that your customer needs.
     
     d. Review the order and complete it.
 
