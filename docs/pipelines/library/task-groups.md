@@ -109,7 +109,7 @@ Select a task group name to open the details page.
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 
 ## Create previews and updated versions of task groups
 
