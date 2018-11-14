@@ -1,6 +1,6 @@
 ---
-title: Authenticate access with personal access tokens | Azure DevOps Services & TFS
-description: Use personal access tokens to authenticate access to Azure DevOps Services and Team Foundation Server (TFS)
+title: Authenticate access with personal access tokens in Azure DevOps
+description: Use personal access tokens (PATs) as alternate passwords to authenticate access to Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: '>= tfs-2017'
 ---
 # Authenticate access with personal access tokens for Azure DevOps Services and TFS
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-Azure DevOps Services and Team Foundation Server (TFS) use enterprise-grade authentication, backed by a Microsoft account or Azure Active Directory (Azure AD), to help protect and secure your data.  Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in)
+Personal access tokens essentially are alternate passwords that you create in a secure way by using your normal authentication. PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command-line operations are valid), and specific organizations. You can put them in environment variables so that scripts don't hard code passwords. For more information, see [Authentication overview](../../repos/git/auth-overview.md) and [Scopes](../../integrate/get-started/authentication/oauth.md#scopes).
+
+Azure DevOps Services and Team Foundation Server (TFS) use enterprise-grade authentication, backed by a Microsoft account or Azure Active Directory (Azure AD), to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in)
 natively support Microsoft account and Azure AD authentication, so you can directly use those authentication methods to sign in.
 
 For non-Microsoft tools that integrate into Azure DevOps Services but do not support Microsoft account or Azure AD authentication
 interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens (PATs). You set up PATs by using [Git credential managers](../../repos/git/set-up-credential-managers.md) or by creating them manually. You can also use personal access tokens when there is no "pop- up UI," such as with command-line tools, integrating tools or tasks into build pipelines, or using [REST APIs](../../integrate/get-started/rest/basics.md).
-
-Personal access tokens essentially are alternate passwords that you create in a secure way by using your normal authentication. PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command-line operations are valid), and specific organizations. You can put them in environment variables so that scripts don't hard code passwords. For more information, see [Authentication overview](../../repos/git/auth-overview.md) and [Scopes](../../integrate/get-started/authentication/oauth.md#scopes).
 
 [!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
 

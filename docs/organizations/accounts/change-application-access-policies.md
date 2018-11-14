@@ -1,6 +1,6 @@
 ---
-title: Change your organization's app access policies in Azure DevOps 
-description: Change app access policies for Azure DevOps
+title: Change your organization's application access policies in Azure DevOps 
+description: Learn how to change your application access policies for your organization in Azure DevOps, so you don't have to enter user credentials multiple times
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Azure DevOps offers the capability for other apps to integrate with its services and resources in your organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
+You can change your application access policies for your organization in Azure DevOps. Azure DevOps offers the capability for other apps to integrate with its services and resources in your organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 
 * [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). The [Organizations](/docs/rest/api/vsts/account) and [Profiles](/docs/rest/api/vsts/profile) APIs support only OAuth.
 

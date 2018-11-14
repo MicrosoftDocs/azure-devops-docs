@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
-# Add project members in Azure DevOps
+# Add members to projects in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

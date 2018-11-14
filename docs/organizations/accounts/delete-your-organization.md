@@ -1,6 +1,6 @@
 ---
 title: Delete your Azure DevOps organization
-description: How to delete your organization, and what happens to users when you do.
+description: Learn how to delete your organization, and what happens to users when you do.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you don't need your organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
+If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 30 days, your organization and data are permanently deleted.
 
 When you delete your organization, note the following:

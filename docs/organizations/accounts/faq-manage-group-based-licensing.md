@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot managing group-based licensing
+title: Troubleshoot managing group-based licensing in Azure DevOps
 description: "Troubleshoot managing group-based licensing: remove group, remove group rule, user access level, and project membership"
 ms.prod: devops
 ms.technology: devops-accounts
@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/21/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot managing group-based licensing in Azure DevOps
+# Troubleshoot managing Azure DevOps group-based licensing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
