@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot adding and deleting organization users in the Azure DevOps Users
-description: Permissions required to manage users and user access, find project collection administrator or organization owner, and manage Visual Studio subscriptions.
+title: Troubleshoot adding and deleting organization users in the Azure DevOps
+description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization owner, manage Visual Studio subscriptions, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 

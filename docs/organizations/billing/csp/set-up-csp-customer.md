@@ -46,7 +46,7 @@ If your customers have been buying Azure DevOps, Visual Studio cloud subscriptio
 1. Reduce their paid amounts to zero.
 2. Let you know the ongoing paid amounts of each service and product to start billing on the first day of the next calendar month. For Visual Studio annual cloud subscriptions, customers need to tell you the month, or months, to start purchases of these subscriptions. Then they can continue coverage from the date it will expire from their existing annual cloud subscription purchases.
 
-For Azure DevOps, see additional details about [buying Azure DevOps Services through CSP](buy-csp-azure-devops.md).
+For Azure DevOps, see additional details about [buying Azure DevOps through CSP](buy-csp-azure-devops.md).
 
 ## Convert your customers from CSP billing
 
