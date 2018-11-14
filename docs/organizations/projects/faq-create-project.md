@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot creating a project
-description: Troubleshoot creating a project, including how to resolve various errors, and view frequently asked questions (FAQ)
+title: Troubleshoot creating a project in Azure DevOps
+description: Troubleshoot creating a project, including how to resolve various errors, and view frequently asked questions (FAQs)
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 monikerRange: '>= tfs-2013'
 ---
-# Troubleshoot creating a project
+# Troubleshoot creating a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
-
 
 ## Resolve errors
 
