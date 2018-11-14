@@ -63,7 +63,7 @@ along with the environments. You can add stages and environments, too.
 
    ![Add Azure subscription](_img/deploy-continuously-03.png) 
 
-   * Provide Azure subcription details. If you have an Azure subscription file 
+   * Provide Azure subscription details. If you have an Azure subscription file 
    (.publishsettings file) on your computer, you can browse to that file.
    If you do not have a local copy of this file, you can
    **[download a subscription file](https://manage.windowsazure.com/publishsettings)**.
