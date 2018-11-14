@@ -88,7 +88,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 # [Schema](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 
 To use a variable group, reference it in your variables mapping:
 
@@ -99,7 +99,7 @@ variables:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 
 YAML builds are not yet available on TFS.
 

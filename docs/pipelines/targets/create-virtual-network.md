@@ -351,7 +351,7 @@ environments. You can create as many environments as you need with just a click 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

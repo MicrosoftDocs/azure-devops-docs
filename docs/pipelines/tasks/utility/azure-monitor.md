@@ -29,7 +29,7 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 
 None
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
 ::: moniker-end
