@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '> tfs-2018'
 ---
 
 # Deploy to an Azure Kubernetes Service

@@ -1,5 +1,6 @@
 # [Features timeline](index.md)
 # 2018
+## [November 12](2018/sprint-143-update.md)
 ## [October 22](2018/sprint-142-update.md)
 ## [October 1](2018/sprint-141-update.md)
 ## [September 20](2018/sprint-140-update.md)

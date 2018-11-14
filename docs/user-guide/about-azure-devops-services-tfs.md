@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/27/2018
+ms.date: 11/12/2018
 ---
 
 # Understand the differences between Azure DevOps Services and TFS
@@ -100,7 +100,7 @@ To prepare to use the organization entity, we recommend that you create organiza
 
 <!---We're working to support enterprise-wide policies.-->
 
-Learn more: [Define your organizations and projects](define-organizations-and-projects.md).
+Learn more: [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 

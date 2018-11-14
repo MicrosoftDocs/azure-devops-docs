@@ -54,11 +54,11 @@ At run time (when either the build or release pipeline is triggered), each job i
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 In a build pipeline, the most common target is an agent. The other kind of target is the Azure Pipelines [server](server-phases.md).
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 In a build pipeline, the most common target is an agent. The other kind of target is the server (your TFS instance).
 ::: moniker-end
 

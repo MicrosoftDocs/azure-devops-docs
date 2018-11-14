@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
-monikerRange: 'vsts'
+monikerRange: '> tfs-2018'
 ---
 
 # Delay task
@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to pause execution of the pipeline 
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DelayV1.md)]
 ::: moniker-end

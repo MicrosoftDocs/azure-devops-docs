@@ -1,7 +1,7 @@
 ---
-title: Key concepts and features
+title: Key concepts and features in Azure DevOps Services & TFS
 titleSuffix:  Azure DevOps Services & TFS
-description: Understand the key concepts for Azure DevOps Services and Team Foundation Server (TFS)  
+description: Before you start to use our products, you'll want to become familiar with how the set of platforms, services, and tools fit together in Azure DevOps Services & TFS  
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
@@ -10,10 +10,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/29/2018
+ms.date: 11/08/2018
 ---
 
-# Key concepts for working with Azure DevOps Services and Team Foundation Server
+# What are the key concepts for working with Azure DevOps Services and Team Foundation Server?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

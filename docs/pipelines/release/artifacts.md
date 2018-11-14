@@ -462,7 +462,7 @@ deployed again. In addition, because the previously downloaded contents are
 always deleted when you initiate a new release, Azure Pipelines cannot
 perform incremental downloads to the agent.
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 
 You can, however, instruct Azure Pipelines to [skip the automatic download](../process/phases.md#artifact-download)
 of artifacts to the agent for a specific job and stage of the deployment if you
@@ -472,7 +472,7 @@ download the artifacts you require.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 
 In Azure Pipelines, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
 to the agent for a specific job and stage of the deployment.
