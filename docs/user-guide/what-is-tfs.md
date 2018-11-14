@@ -1,7 +1,7 @@
 ---
 title: Plan, code, collaborate, and ship code with Team Foundation Server   
 titleSuffix: TFS
-description: What do you get when you install and use the on-premises Team Foundation Server 
+description: Learn what you get when you install and use the on-premises Team Foundation Server 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ---
 

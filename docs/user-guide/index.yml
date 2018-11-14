@@ -4,7 +4,7 @@ title: Azure DevOps Services user guide
 metadata:
   title: Azure DevOps Services user guide documentation
   description: Learn the basics of the Azure DevOps interface and some common tasks.
-  ms.date: 09/13/2018
+  ms.date: 11/12/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -177,13 +177,13 @@ sections:
           alt: Learn about logo
           src: https://docs.microsoft.com/media/common/i_learn-about.svg
         title: Key concepts
-      - href: define-organizations-and-projects.md
+      - href: plan-your-azure-devops-org-structure.md
         html: <p></p>
         image:
-          title: Define projects and organizations
+          title: Plan Your Azure DevOps Organizational Structure
           alt: Guidelines logo
           src: https://docs.microsoft.com/media/common/i_guidelines.svg
-        title: Define organizations and projects
+        title: Plan your org structure
       - href: source-control.md
         html: <p></p>
         image:

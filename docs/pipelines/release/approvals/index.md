@@ -31,7 +31,7 @@ that can include waiting for users to manually approve or reject deployments, an
 systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
 deployment pipeline and prompt users to carry out manual tasks, then resume or reject the deployment.
 
->At present, gates are available only in Azure Pipelines.
+> At present, gates are available only in Azure Pipelines.
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 

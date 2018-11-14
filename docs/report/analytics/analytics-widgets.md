@@ -98,7 +98,17 @@ To learn more, see [Cycle time and lead time control charts](../dashboards/cycle
 
 To learn more, see [Configure and view Velocity widgets](../dashboards/team-velocity.md).  
 
-<!---
+## Test Results Trend (Advanced)
+With the Test Results Trend (Advanced) widget, you can track the test quality of your pipelines over time. Tracking test quality and improving test collateral are essential tasks to maintaining a healthy DevOps pipeline.  
 
+The widget shows a trend of your test results for either build or release pipelines. You can track the daily count of tests, pass rates, and test duration. The highly configurable widget allows you to use it for a wide variety of scenarios. 
 
--->
+You can find outliers in your test results and answer questions like:
+- *What tests taking longer to run than usual?*
+- *What micro services are affecting my pass rate?*
+
+**Test trend widget showing passed test results and pass rate for the last 7 days grouped by Priority**
+
+![test trend widget by priority](../dashboards/_img/test-results-trend-widget/passed-bypriority-pass.png)
+
+To learn more, see [Configure a test results widget](../dashboards/configure-test-results-trend.md).

@@ -1,7 +1,7 @@
 ---
-title: Plan and track work 
+title: Plan and track your work in Azure DevOps
 titleSuffix: Azure DevOps
-description: Begin planning and tracking work in your new project in Azure DevOps 
+description: Learn how to add work items from the web portal and view work items that you've created for your new project in Azure DevOps.
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
@@ -18,9 +18,7 @@ ms.date: 09/10/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Add work items to plan and manage your project. Use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.
-
-In this quickstart, you learn how to add work items from the web portal and view work items that you've created.
+In this quickstart, you learn how to add work items from the web portal and view work items that you've created for your project. Use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.
 
 <a id="define-new-work">  </a>
 

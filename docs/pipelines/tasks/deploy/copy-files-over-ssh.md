@@ -72,7 +72,7 @@ This task is intended for target machines running Linux.
 - For copying files to a macOS machine, this task may be used, but authenticating with a password is not supported.
 - For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 

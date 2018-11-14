@@ -53,8 +53,8 @@
   items:
   - name: Key concepts 
     href: concepts.md
-  - name: Define organizations and projects
-    href: define-organizations-and-projects.md
+  - name: Plan your org structure
+    href: plan-your-azure-devops-org-structure.md
   - name: Source control 
     href: source-control.md
   - name: Backlogs, boards, and Agile tools

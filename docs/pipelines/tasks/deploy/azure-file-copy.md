@@ -189,7 +189,7 @@ A suitable account can be easily created for use in a service connection:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 

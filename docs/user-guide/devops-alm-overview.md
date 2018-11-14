@@ -1,12 +1,12 @@
 ---
-title: DevOps overview for Azure DevOps Services and TFS    
+title: DevOps tools overview for Azure DevOps Services and TFS    
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/12/2018
+ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
+Learn how to use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  
 ![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
@@ -24,7 +24,7 @@ Both options are enterprise-ready, supporting teams of any size, from tens to th
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Azure DevOps Services, see [About Azure DevOps Services and Team Foundation Server](about-azure-devops-services-tfs.md).
+For the key differences between TFS and Azure DevOps Services, see [Understand the differences between Azure DevOps Services and TFS](about-azure-devops-services-tfs.md).
 
 ## Get started in the cloud or on-premises
 

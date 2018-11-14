@@ -27,7 +27,7 @@ Use this task in a build or release pipeline to upload files to a remote machine
 
 None
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
 ::: moniker-end
@@ -88,7 +88,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 
