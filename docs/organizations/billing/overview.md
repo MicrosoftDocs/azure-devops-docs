@@ -1,6 +1,6 @@
 ---
-title: Billing overview for Azure DevOps
-description: Overview of billing management tasks in Azure DevOps, including how to set up billing, make purchases, and change Azure subscription for billing
+title: Overview of billing for Azure DevOps
+description: Overview of billing management tasks in Azure DevOps, including how to set up billing, make purchases, and change the Azure subscription for billing
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Set up billing when you need more than the **Free tier** of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
+Set up billing when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), on the Azure DevOps tab.
 
 The Free tier includes:
 
