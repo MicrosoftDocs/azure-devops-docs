@@ -2,7 +2,7 @@
   href: index.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Overview
   items:
-  - name: About projects and scaling your organization
+  - name: About projects
     href: about-projects.md
   - name: What do I get with a project?
     href: ../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
@@ -18,9 +18,9 @@
     href: ../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Add users to a project or team 
     href: ../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Add a team & team members"
+  - name: "Add a team and members"
     href: ../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Add administrators or set permissions at the project or collection level
+  - name: Add admins or set perms
     href: ../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Tutorials
   items:
@@ -38,11 +38,11 @@
     href: ../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: About teams and Agile tools
     href: ../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Resources granted to project members
+  - name: Resources granted to members
     href: resources-granted-to-project-members.md
   - name: Clients & tools
     href: ../../user-guide/tools.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "How do Azure DevOps Services & TFS differ"
+  - name: "Azure DevOps Services vs TFS"
     href: ../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: How-to guides
   items:
@@ -76,9 +76,9 @@
   items:
   - name: Features index
     href: ../../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Default permissions & access (Security)"
+  - name: "Default permissions & access"
     href: ../security/permissions-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Permission lookup guide (Security)"
+  - name: "Permission lookup guide"
     href: ../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Resources
   items:
@@ -94,5 +94,5 @@
     href: ../public/index.md
   - name: All settings
     href: ../settings/index.md
-  - name: Migrate from TFS to Azure DevOps Services
+  - name: Migrate from TFS
     href: ../../articles/migrate-to-vsts-from-tfs.md
