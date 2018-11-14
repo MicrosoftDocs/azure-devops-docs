@@ -11194,6 +11194,11 @@
       "source_path": "docs/user-guide/define-organizations-and-projects.md",
       "redirect_url": "/azure/devops/user-guide/plan-your-azure-devops-org-structure",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/csp/buy-csp-vsts.md",
+      "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
