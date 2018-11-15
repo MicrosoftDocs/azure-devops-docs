@@ -82,6 +82,8 @@ None
 If no files are matched, the task will still report success.
 If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
 
+[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
+
 ## Examples
 
 ### Copy executables and a readme file
