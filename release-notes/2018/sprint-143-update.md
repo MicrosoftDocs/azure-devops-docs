@@ -4,7 +4,7 @@ author: erindormier
 ms.author: egeaney
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/12/2018
+ms.date: 11/14/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
 ---
 
@@ -15,6 +15,10 @@ In the **Sprint 143 Update** of Azure DevOps, we are introducing a [new work ite
 Check out the [Features](#features) list below for more.
 
 ## Features
+
+General:
+
+- [REST API version 5.0](#rest-api-version-50)
 
 Azure Boards:
 
@@ -44,6 +48,12 @@ Azure Artifacts:
 Reporting:
 
 - [Test result trend widget](#changes-to-default-permissions-for-new-projects)
+
+## General
+
+### REST API version 5.0
+
+Every API request should include an api-version. However, if you are making a REST request to a previously released endpoint without an api-version, the default version of that request will switch from 4.1 to 5.0 with this deployment. For more information on REST and api-versions, please see [Azure DevOps Services REST API Reference](https://aka.ms/azure-devops-rest-50).
 
 ## Azure Boards
 
