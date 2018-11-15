@@ -1,6 +1,6 @@
 ---
-title: Add organization users for Azure DevOps
-description: How to add users for an Azure DevOps organization or project
+title: Add users to your organization in Azure DevOps
+description: How to add users to an Azure DevOps organization or project
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
@@ -16,8 +16,8 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
-These kinds of users can join your organization for free:
+Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
+The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/),
 such as version control, tools for Agile, Java, build, release, and more

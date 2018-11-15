@@ -1,7 +1,7 @@
 ---
-title: Connect to a project from a web browser or supported client
+title: Connect to a project from a web browser or supported client in Azure DevOps
 titleSuffix: Azure DevOps & TFS
-description: Connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
+description: Learn how to connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
@@ -9,12 +9,11 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 09/07/2017 
+ms.date: 11/14/2018 
 monikerRange: '>= tfs-2013'
 ---
 
-
-# Connect to a project on Azure DevOps Services or TFS
+# Connect to a project in Azure DevOps Services or TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

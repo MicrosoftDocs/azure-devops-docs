@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting renaming a project
-description: Troubleshooting renaming a project
+title: Troubleshooting renaming a project in Azure DevOps
+description: View frequently asked questions (FAQs) about renaming a project
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
@@ -9,14 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 11/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
+# Troubleshoot renaming an Azure DevOps project
 
-# Troubleshoot renaming a project
-
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 ### Q: What permission do I need to rename a project?
 
@@ -27,10 +26,10 @@ If you're using Team Foundation Server 2015, users require **Edit project-level 
 
 Yes, project names can be reused.
 
-### Q: Why did my attempt to reuse a project name fail due to existing workspaces?
+### Q: Why did my attempt to reuse a project name fail due to existing work spaces?
 
-A project name can't be reused if there are still workspace mappings addressing it. 
-This is done to avoid the ambiguity case where a workspace could be mapped to two projects. 
+A project name can't be reused if there are still workspace mappings addressing it.
+This is done to avoid the ambiguity case where a workspace could be mapped to two projects.
 You will need to reach out to the users that have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name. 
 If the user's machine containing the workspace is no longer available then you can delete the workspace 
 by running the following command from Visual Studio's developer command prompt:
@@ -42,7 +41,7 @@ by running the following command from Visual Studio's developer command prompt:
 
 After a project is renamed, any browsers with the project opened may encounter some errors. These errors are due to caches held by the browser which include the old project name. 
 Refreshing will make these errors go away since the cache will be repopulated with the new project name.
-	
+
 ### Q: Do other artifacts in the project get renamed when it is renamed?
 
 ::: moniker range=">= tfs-2018"
