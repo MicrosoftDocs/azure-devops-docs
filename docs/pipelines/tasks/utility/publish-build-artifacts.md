@@ -43,6 +43,8 @@ None
 | Parallel count (**Azure Pipelines**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
+[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
