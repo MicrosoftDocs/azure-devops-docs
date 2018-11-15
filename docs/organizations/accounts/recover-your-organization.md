@@ -1,5 +1,5 @@
 ---
-title: Restore your organization after being deleted
+title: Restore your organization after it's deleted
 description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization owner permissions
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Restore your organization in Azure DevOps
+# Restore your deleted organization in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

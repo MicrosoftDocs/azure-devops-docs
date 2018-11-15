@@ -1,7 +1,7 @@
 ---
-title: Resources granted to project members
+title: Resources granted to project members in Azure DevOps and TFS
 titleSuffix: Azure DevOps & TFS
-description: Security and data access considerations and resources granted when you add members to a project or organization 
+description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
@@ -11,11 +11,10 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 05/01/2018
+ms.date: 11/14/2018
 ---
 
-
-# Resources granted to project members
+# Resources granted to project members in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 

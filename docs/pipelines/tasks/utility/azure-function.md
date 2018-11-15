@@ -27,7 +27,7 @@ Use this task in a build or release pipeline to invoke a HTTP triggered function
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
 ::: moniker-end

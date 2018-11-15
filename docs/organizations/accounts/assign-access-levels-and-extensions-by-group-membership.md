@@ -1,20 +1,20 @@
 ---
-title: Assign access levels and extensions to users by group membership
-description: Learn how to assign group-based licensing for users in Azure AD and Azure DevOps groups by adding a group rule.
+title: Assign access levels and extensions to users by group membership in Azure DevOps
+description: Learn how to assign group-based licensing for users in Azure Active Directory and Azure DevOps groups by adding a group rule.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 # Add a group rule to assign access levels and extensions to users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure AD groups and Azure DevOps groups. You can assign an access level or extensions to a group, and Azure DevOps ensures that those resources are assigned to all members of the group.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can assign an access level or extensions to a group. Resources in Azure DevOps are assigned to all members of the group.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
@@ -25,7 +25,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 ## Assign required licenses
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

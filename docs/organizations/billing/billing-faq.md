@@ -1,5 +1,5 @@
 ---
-title: Billing frequently asked questions (FAQ) 
+title: Frequently asked questions (FAQ) about billing for Azure DevOps
 description: Find answers to frequently asked questions about billing for your organization, which is managed in the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,9 +16,11 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
+In this topic, you'll find answers to frequently asked questions about billing for your organization. You can manage billing in the Azure portal.
+
 Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [billing overview](overview.md).
 
-You have to set up billing when you need more than the *free tier* of resources in your organization:
+You need to set up billing when you need more than the *free tier* of resources in your organization:
 
 * Five Azure DevOps users (Basic)
 * Five Azure Artifacts users
@@ -26,7 +28,7 @@ You have to set up billing when you need more than the *free tier* of resources 
 * One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
-You also have to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
+You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), on the Azure DevOps tab.
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 

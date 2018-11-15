@@ -1,5 +1,5 @@
 ---
-title: Create and manage your Azure DevOps organization 
+title: About creating and managing your Azure DevOps organization 
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/12/2018
+ms.date: 11/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
