@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/07/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -94,8 +94,9 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
         <tr>
             <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
-            <td>New work item text editor</td><td>*2019*</td>
+            <td>REST API version 5.0</td><td>*2019*</td>
         </tr>
+        <tr><td>New work item text editor</td><td>*2019*</td></tr>
         <tr><td>Improved branch picker</td><td>*2019*</td></tr>
         <tr><td>Draft pull requests</td><td>*2019*</td></tr>
         <tr><td>Trigger YAML pipelines with tags</td><td>*2019*</td></tr>
