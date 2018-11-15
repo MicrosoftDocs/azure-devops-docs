@@ -1,6 +1,6 @@
 ---
 title: Change the Azure DevOps organization owner 
-description: Learn how to assign a different user as the owner for your organization, and learn what permissions are required to make updates.
+description: Learn how to assign a different user as the owner for your organization, and learn what permissions are required to make updates in Azure DevOps.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Change the organization owner for Azure DevOps
+# Change the organization owner in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, change your organization owner to another user.
+When your team's roles and responsibilities change, you can assign a different user as the owner for your organization. Learn what permissions are required to make these updates in Azure DevOps.
 
 <a name="ChangeOwner"></a>
 

@@ -1,6 +1,6 @@
 ---
-title: Organization management topics and articles for Azure DevOps Services  
-description: Index to topics for managing the organization for Azure DevOps
+title: Organization management topics and articles for Azure DevOps 
+description: Index to topics for managing your organization in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/12/2018
+ms.date: 11/14/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization management in Azure DevOps

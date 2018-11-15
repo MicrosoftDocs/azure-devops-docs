@@ -1,6 +1,6 @@
 ---
-title: Migrate to group-based resource management
-description: Migrate Azure DevOps to group-based resource (user) management
+title: Migrate to group-based resource management in Azure DevOps
+description: Learn how to move Azure DevOps to group-based resource (user) management for managing licensing
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid:
@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Migrate to group-based resource management in Azure DevOps
+# Change to group-based resource management in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-All current users in your organization are considered to have resources via "explicit assignment" instead of implicit group assignment. To use group-based licensing to manage licenses in your organization, you need a migration plan to seamlessly replace existing solutions with group-based licensing.
+You can seamlessly replace existing solutions with group-based licensing to more easily manage licenses in Azure DevOps. All current users in your organization are considered to have resources via "explicit assignment" instead of implicit group assignment.
 
-The most important thing is to avoid a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
+The most important thing to avoid is a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
 
 ## Add a group rule
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 

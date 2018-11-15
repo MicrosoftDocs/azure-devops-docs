@@ -8,11 +8,11 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Delete users from Azure DevOps  
+# Remove users from Azure DevOps  
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

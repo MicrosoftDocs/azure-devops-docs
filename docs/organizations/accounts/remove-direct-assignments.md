@@ -1,13 +1,13 @@
 ---
-title: Remove direct assignments
-description: Learn how to remove direct assignments in your Azure DevOps organization
+title: Remove direct assignments from users in Azure DevOps
+description: To manage a user's resources only by the groups that they're in, you must remove the direct assignments in your Azure DevOps organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Set up Visual Studio with Azure DevOps Services
+title: Set up Visual Studio with Azure DevOps
 description: Share code with Git and manage work with Agile tools in Azure DevOps for continuous integration and continuous delivery
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 

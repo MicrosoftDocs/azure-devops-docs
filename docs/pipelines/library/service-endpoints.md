@@ -32,7 +32,8 @@ You can define service connections in Azure Pipelines or Team Foundation Server 
 your tasks. For example, you can create a service connection for your Azure subscription
 and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
-You define and manage service connections from the Admin settings of your project.
+You define and manage service connections from the Admin settings of your project:
+
 * Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 

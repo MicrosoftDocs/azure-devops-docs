@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot permissions and access with Azure Active Directory (Azure AD)
-description: Need to understand Azure AD groups, how to add users, or how to connect or disconnect to and from your directory? Read these frequently asked questions.
+title: Troubleshoot Azure DevOps permissions and access via Azure Active Directory (Azure AD)
+description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, how to add users, or how to connect or disconnect to and from your directory.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/06/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 

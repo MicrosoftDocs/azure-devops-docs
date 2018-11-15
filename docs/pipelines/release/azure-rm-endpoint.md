@@ -66,7 +66,7 @@ This is a permission issue that may be due to the following causes:
 #### The user has only guest permission in the directory
 
 The best approach to resolve this issue, while granting only the minimum additional permissions
-to the user, is to increase the Guest user permissions as follows:
+to the user, is to increase the Guest user permissions as follows.
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
@@ -84,7 +84,10 @@ to the user, is to increase the Guest user permissions as follows:
 1. In the **External users** section, change **Guest user permissions are limited** to **No**.
 
 Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
-you can make the user a member of the **Global administrator** role as follows:
+you can make the user a member of the **Global administrator** role as follows.
+
+> **WARNING**: Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities such as Exchange Online, SharePoint Online, and Skype for Business Online. 
+
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
