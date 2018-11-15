@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 11/14/2018
 monikerRange: '>= tfs-2015'
 ---
 # Azure DevOps Billing
@@ -70,7 +70,7 @@ Marketplace extension management
 Guidance for Cloud Solution Providers
 
 * [Set up your customer](csp/set-up-csp-customer.md)
-* [Buy Azure DevOps for your customers](csp/buy-csp-vsts.md)
+* [Buy Azure DevOps for your customers](csp/buy-csp-azure-devops.md)
 * [Buy and manage Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-csp)
 * [Buy App Center resources](csp/buy-vs-app-center.md)
 

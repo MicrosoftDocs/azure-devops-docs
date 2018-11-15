@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.  
+You can increase or decrease the number of paid users for a feature or extension, to scale with your team's needs.  
 
 ## Prerequisites
 
@@ -46,12 +46,12 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
    ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
 
-6. Update the total number of paid users. Then select **Continue**.
+6. Update the total number of paid users and then select **Continue**.
 
    ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
-7. Review and then **Confirm** the update.
+7. Review and then select **Confirm**.
 
-   ![confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
+   ![Confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
 
 # [Previous navigation](#tab/previous-nav)
 

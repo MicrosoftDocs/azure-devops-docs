@@ -1,6 +1,6 @@
 ---
-title: Add organization users for Azure DevOps
-description: How to add users for an Azure DevOps organization or project
+title: Add users to your organization in Azure DevOps
+description: How to add users to an Azure DevOps organization or project
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,14 +16,14 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
-These kinds of users can join your organization for free:
+Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
+The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
+* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/),
 such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/en-us/services/devops/compare-features/),
 such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/)
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/en-us/services/devops/compare-features/)
 who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
 [Need more users with Basic features or Visual Studio subscriptions?](add-basic-or-vs-subscription-users.md)
@@ -86,7 +86,6 @@ To give other users access to your organization, add their email addresses.
    * **Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
 5. Select **Add** to complete your invitation.
-
 
 # [Previous navigation](#tab/previous-nav)
 

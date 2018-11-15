@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in a pipeline, you can:
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 
 * Partition your pipeline into sections targeting different agent pools
 * Partition your pipeline into sections targeting different sets of self-hosted agents using different demands
@@ -170,7 +170,7 @@ YAML is not yet supported in TFS.
 
 # [Designer](#tab/designer)
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not yet supported in release pipelines. Multiple jobs in a release pipeline run in sequence.
 ::: moniker-end
 

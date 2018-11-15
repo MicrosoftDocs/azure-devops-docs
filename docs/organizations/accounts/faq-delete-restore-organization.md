@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot deleting or restoring organizations in Azure DevOps
-description: Answers to frequently asked questions (FAQ) about how to find the organization owner, and delete or restore your organization 
+title: Troubleshoot deleting or restoring your organization in Azure DevOps
+description: Answers to frequently asked questions (FAQs) about how to find the organization owner, and how to delete or restore your organization 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot deleting or restoring your organization in Azure DevOps
+# Troubleshoot deleting or restoring your Azure DevOps organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

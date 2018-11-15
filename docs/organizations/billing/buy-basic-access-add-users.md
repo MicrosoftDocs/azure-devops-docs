@@ -1,5 +1,5 @@
 ---
-title: Buy Basic access for your Azure DevOps  users in the Marketplace
+title: Buy Basic access for your Azure DevOps users in the Marketplace
 description: Steps for how to buy more or increase users when you need more than the free amount via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,15 +8,15 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Pay for Azure DevOps users (Basic) 
+# Quickstart: Pay for Azure DevOps users (Basic)
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five additional users free in your organization.
+In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
 
 [Pay for additional users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
 

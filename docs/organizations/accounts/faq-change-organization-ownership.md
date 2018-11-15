@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot changing organization owner for Azure DevOps Services
-description: Troubleshoot changing Azure DevOps organization owner and organization name (URL), learn about the difference between an organization owner and an organization user, and read frequently asked questions.
+title: Troubleshoot changing the organization owner in Azure DevOps Services
+description: Troubleshoot changing the Azure DevOps organization owner and organization name (URL), learn about the difference between an organization owner and an organization user, and read frequently asked questions (FAQs)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2017
+ms.date: 11/14/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot changing organization owner for Azure DevOps
+# Troubleshoot changing the organization owner in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

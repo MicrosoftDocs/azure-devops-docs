@@ -1,6 +1,6 @@
 ---
 title: Find or change your Azure DevOps organization location (region)
-description: Find your organization's default location or update your organization location (region)
+description: Find your organization's default location or update your organization location (region) in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/17/2018
+ms.date: 11/14/2018
 monikerRange: 'vsts'
 ---
 

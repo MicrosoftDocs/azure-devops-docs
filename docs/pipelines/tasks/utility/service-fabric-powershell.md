@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
-monikerRange: 'vsts'
+monikerRange: '> tfs-2018'
 ---
 
 # Service Fabric PowerShell task
@@ -29,7 +29,7 @@ deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
 ::: moniker-end

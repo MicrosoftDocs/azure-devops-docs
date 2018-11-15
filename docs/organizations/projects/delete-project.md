@@ -1,7 +1,7 @@
 ---
-title: Delete or remove a project
+title: Delete or remove a project in Azure DevOps
 titleSuffix: Azure DevOps & TFS
-description: Delete or remove a project from Azure DevOps Services or from Team Foundation Server (TFS)
+description: Learn how to delete or remove a project from Azure DevOps Services or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
@@ -10,10 +10,10 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 07/12/2018
+ms.date: 11/14/2018
 ---
 
-# Delete a project 
+# Delete a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 

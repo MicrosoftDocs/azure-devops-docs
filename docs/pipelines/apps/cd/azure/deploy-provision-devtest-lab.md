@@ -248,7 +248,7 @@ release pipeline in Azure Pipelines.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

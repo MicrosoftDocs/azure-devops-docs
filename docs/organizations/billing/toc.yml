@@ -18,7 +18,7 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Connect organization to Azure AD
+  - name: Connect to Azure AD
     href: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
@@ -51,7 +51,7 @@
     - name: "CSPs: Set up your customer"
       href: csp/set-up-csp-customer.md
     - name: "CSPs: Buy Azure DevOps for your customers"
-      href: csp/buy-csp-vsts.md
+      href: csp/buy-csp-azure-devops.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: /visualstudio/subscriptions/vscloud-csp
     - name: "CSPs: Buy App Center resources"

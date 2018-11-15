@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 10/30/2018
-monikerRange: 'vsts'
+monikerRange: '> tfs-2018'
 ---
 
 # Azure policy compliance
