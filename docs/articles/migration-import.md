@@ -401,15 +401,15 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 
 **Release Management IPs**
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    Releases service - United States           |    23.102.153.83    |
-|    Releases service - West Europe             |    13.95.223.69     |
-|    Releases service - Australia East          |    13.73.204.151    |
-|    Releases service - Brazil South            |    191.235.94.154   |
-|    Releases service - India South             |    52.172.15.233    |
-|    Releases service - Canada Central          |    52.237.28.171    |
-|    Releases service - East Asia (Hong Kong)   |    13.107.6.175     |
+|    Service                                    |    IP                                              |
+|-----------------------------------------------|----------------------------------------------------|
+|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250    |
+|    Releases service - West Europe             |    13.95.223.69                                    |
+|    Releases service - Australia East          |    13.73.204.151                                   |
+|    Releases service - Brazil South            |    191.235.94.154                                  |
+|    Releases service - India South             |    52.172.15.233                                   |
+|    Releases service - Canada Central          |    52.237.28.171                                   |
+|    Releases service - East Asia (Hong Kong)   |    13.107.6.175                                    |
 
 If you're planning on using the [preview](https://aka.ms/AzureDevOpsImportPreviewFeatures) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
 
