@@ -28,7 +28,7 @@ This exercise assumes you have completed the exercises to create a Team Project 
 
 ## Install a Marketplace Extension
 
-In this task you will install an Azure DevOps Services extension from the [Azure DevOps Services Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services). This extension contains build and release tasks - you are going to use the ReplaceTokens task in the Release.
+In this task you will install an Azure DevOps Services extension from the [Azure DevOps Services Marketplace](https://marketplace.visualstudio.com/azuredevops). This extension contains build and release tasks - you are going to use the ReplaceTokens task in the Release.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 

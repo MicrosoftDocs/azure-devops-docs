@@ -115,7 +115,7 @@ We’ve added a new feature to Package Management called __release views.__ Rele
 [Check out the docs](/azure/devops/artifacts/feeds/views?view=vsts) to get started.
 
 ##npmjs.com upstream now caches packages
-npm feeds in Package Management now support npmjs.com as an __upstream source with caching.__ By enabling this option, your feed will transparently proxy and cache packages from npmjs.com, which means that you’ll only need to get a particular package@version from npmjs.com once. Future requests for that package will be served directly from your Team Services account. If a package is removed from npmjs.com, you’ll still be able to get the cached version of it from Team Services. See [Use packages from npmjs.com](https://visualstudio.microsoft.com/en-us/docs/package/npm/upstream-sources) for more information.
+npm feeds in Package Management now support npmjs.com as an __upstream source with caching.__ By enabling this option, your feed will transparently proxy and cache packages from npmjs.com, which means that you’ll only need to get a particular package@version from npmjs.com once. Future requests for that package will be served directly from your Team Services account. If a package is removed from npmjs.com, you’ll still be able to get the cached version of it from Team Services. See [Use packages from npmjs.com](https://visualstudio.microsoft.com/docs/package/npm/upstream-sources) for more information.
 
 ##Run tests built using Visual Studio 2017
 Using the __Deploy Test Agent__ and __Run Functional Tests__ tasks in CI/CD pipeline, you can now install Test Agents for Visual Studio 2017 RC and run tests that were built using Visual Studio 2017. 

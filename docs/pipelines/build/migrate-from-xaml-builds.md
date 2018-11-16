@@ -337,7 +337,7 @@ XAML builds are deprecated. We strongly recommend that you migrate to the new bu
 
 ::: moniker range="vsts"
 
-If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 
 ::: moniker-end
 
@@ -347,7 +347,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 1. Install [TFS 2018.2](https://visualstudio.microsoft.com/downloads/?q=tfs).
 
-1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 
 ::: moniker-end
 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
-Are you planning to build and deploy Azure DevOps extensionsto production? You probably have a few questions, such as:
+Are you planning to build and deploy Azure DevOps extensions to production? You probably have a few questions, such as:
 * How do you embrace DevOps to deliver changes and value faster?
 * How do you mitigate the risk of deploying to production?
 * How do you automate the build and deployment?
@@ -58,7 +58,7 @@ Next you need to map the topology of your application to the ringed deployment m
 > The ringed deployment model is not a silver bullet!
 > Start small, prototype, and continuously compare impact, value, and cost.
 
-At the application level, the composition of Azure DevOps extensionsis innocuous, easy to digest, scale, and deploy independently. Each extension:
+At the application level, the composition of Azure DevOps extensions is innocuous, easy to digest, scale, and deploy independently. Each extension:
 * Has one of more web and script files
 * Interfaces with Core client
 * Interfaces with REST client and REST APIs
@@ -83,7 +83,7 @@ The extension topology is perfectly suited for the ring deployment model and to 
 
 Let's observe how a change triggers and moves through the ring-based deployment process, using the [Azure DevOps Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
 
-**Azure DevOps Developer Tools Build Tasks** extension is the secret sauce, used to package and publish Azure DevOps extensionsto the Visual Studio Marketplace.
+**Azure DevOps Developer Tools Build Tasks** extension is the secret sauce, used to package and publish Azure DevOps extensions to the Visual Studio Marketplace.
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
@@ -171,7 +171,7 @@ Refer to [Default and custom release variables](/azure/devops/pipelines/release/
 
 ### How can you manage secrets used by the pipeline?
 
-Refer to [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
+Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
 
 ##Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)

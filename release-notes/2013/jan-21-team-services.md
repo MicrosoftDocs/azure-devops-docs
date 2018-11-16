@@ -20,7 +20,7 @@ Just one small update for everyone in this sprint. In our continued effort to im
 
 That’s it for this sprint.
 
-As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

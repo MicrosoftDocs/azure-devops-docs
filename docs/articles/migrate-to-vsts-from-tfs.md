@@ -80,7 +80,7 @@ is the right strategy.
 
 ## Related notes 
 - [About Azure DevOps Services and Team Foundation Server](../user-guide/about-azure-devops-services-tfs.md)  
-- [Pricing, Azure DevOps Services](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
+- [Pricing, Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Pricing, TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---

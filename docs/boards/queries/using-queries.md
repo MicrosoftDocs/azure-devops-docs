@@ -75,7 +75,7 @@ The following example shows how to find all closed bugs by modifying the
 0.	Save the query to your **My Queries** folder.  
 	::: moniker range="vsts"
 	> [!div class="mx-imgBorder"]  
-	> ![Save As query query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+	> ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 
 	![Save Query As](_img/6.png)    

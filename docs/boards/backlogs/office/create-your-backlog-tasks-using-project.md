@@ -101,7 +101,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	> [!div class="mx-imgBorder"]  
 	> ![Project plan bound to a project](_img/project/team-ribbon-connected-project-2018.png)
 
-5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.com/en-us/article/hide-or-unhide-a-column-in-a-project-view-29b1449f-32fe-4ae0-9041-cb59e09d28cf).
+5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.com/article/hide-or-unhide-a-column-in-a-project-view-29b1449f-32fe-4ae0-9041-cb59e09d28cf).
 
 	> [!TIP]  
 	> Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.

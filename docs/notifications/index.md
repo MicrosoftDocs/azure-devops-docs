@@ -61,5 +61,5 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 * [Git](../repos/git/index.md)
 * [Work items](../boards/work-items/index.md)
 * [Service Hooks](../service-hooks/index.md)  
-* [REST API](https://visualstudio.microsoft.com/en-us/docs/integrate/api/notification/subscriptions)
+* [REST API](https://visualstudio.microsoft.com/docs/integrate/api/notification/subscriptions)
 * [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)

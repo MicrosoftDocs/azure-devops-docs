@@ -97,10 +97,10 @@ We made some significant improvements to our Xamarin support:
 -The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports macOS and Linux
 -The [Xamarin.iOS](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-ios) step now supports signing and packaging
 -[Xamarin Test Cloud](https://msdn.microsoft.com/library/vs/alm/build/steps/test/xamarin-test-cloud) results can be displayed on the build summary page
--A new [Xamarin component restore](https://msdn.microsoft.com/en-us/library/vs/alm/build/steps/package/xamarin-component-restore) step
--The [NuGet Installer](https://msdn.microsoft.com/en-us/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
+-A new [Xamarin component restore](https://msdn.microsoft.com/library/vs/alm/build/steps/package/xamarin-component-restore) step
+-The [NuGet Installer](https://msdn.microsoft.com/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
 
-Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](https://msdn.microsoft.com/en-us/Library/vs/alm/Build/apps/xamarin).
+Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](https://msdn.microsoft.com/Library/vs/alm/Build/apps/xamarin).
 
 ##Widget SDK: Reusable CSS and DOM templates
 

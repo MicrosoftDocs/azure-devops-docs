@@ -108,7 +108,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	
 	* Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](process-templates/add-wit-definitions-process-template.md).
 	
-		If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name that that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
+		If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name than that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
 		
 	* Apply customizations to the **Categories** definition file. 
 

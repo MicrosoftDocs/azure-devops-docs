@@ -22,7 +22,7 @@ First, we’ve significantly improved the formatting and usability of emails sen
 
 ##Checkbox control
 
-Moving on to another long overdue item… with this deployment, you can now add a checkbox control to your work items. This new field type (Boolean) has all the properties of normal fields and can be added to any type in your process. When displayed on cards or in a query result, the value is shown as True/False. For guidance on how to add a Boolean field to your process, please see [Customize a field for a process](https://msdn.microsoft.com/en-us/Library/vs/alm/Work/process/customize-process-field) in our documentation.
+Moving on to another long overdue item… with this deployment, you can now add a checkbox control to your work items. This new field type (Boolean) has all the properties of normal fields and can be added to any type in your process. When displayed on cards or in a query result, the value is shown as True/False. For guidance on how to add a Boolean field to your process, please see [Customize a field for a process](https://msdn.microsoft.com/Library/vs/alm/Work/process/customize-process-field) in our documentation.
 
 ![Checkbox control added to a work item](_img/5_06_02.png)
 
