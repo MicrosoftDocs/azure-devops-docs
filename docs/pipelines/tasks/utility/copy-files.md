@@ -63,7 +63,7 @@ None
 </tr>
 <tr>
 <td>Target Folder</td>
-<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../build/artifacts.md).</td>
+<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../artifacts/build-artifacts.md).</td>
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 <tr>
@@ -104,36 +104,103 @@ You want to copy just the readme and the files needed to run this C# console app
         |-- ConsoleApplication1.csproj
 ```
 
+> **Note:** _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
+
 On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
-#### Arguments
+# [YAML](#tab/yaml)
 
-* Source Folder: ```$(Build.SourcesDirectory)```
+::: moniker range="vsts"
 
-* Contents (example of multiple match patterns):
+**Example with multiple match patterns:**
 
-   ```
-   ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
-   ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
-   ConsoleApplication1\readme.txt
-   ```
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+     ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-* Contents (example of OR condition):
+**Example with OR condition:**
 
-   ```
-   ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
-   ConsoleApplication1\readme.txt
-   ```
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-* Contents (example of NOT condition): 
+**Example with NOT condition:**
 
-   ```
-   ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
-   !ConsoleApplication1\**\ClassLibrary*\**
-   ConsoleApplication1\readme.txt
-   ```
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+     !ConsoleApplication1\**\ClassLibrary*\**
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-* Target Folder: ```$(Build.ArtifactStagingDirectory)```
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+![icon](_img/copy-files.png) **Utility: Copy Files**
+
+* Source folder
+
+ ```
+$(Build.SourcesDirectory)
+```
+
+* Contents
+
+    **Example with multiple match patterns:**
+
+    ```
+    ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+    ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+    ConsoleApplication1\readme.txt
+    ```
+
+    **Example with OR condition:**
+    ```
+    ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+    ConsoleApplication1\readme.txt
+    ```
+
+    **Example with NOT condition:**
+    ```
+    ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+    !ConsoleApplication1\**\ClassLibrary*\**
+    ConsoleApplication1\readme.txt
+    ```
+
+* Target folder
+
+ ```
+$(Build.ArtifactStagingDirectory)
+```
+
+---
 
 #### Results
 
@@ -152,15 +219,59 @@ These files are copied to the staging directory:
 
 ### Copy everything from the source directory except the .git folder
 
-* Source Folder: ```$(Build.SourcesDirectory)```
 
-* Contents (example of multiple match patterns):
+# [YAML](#tab/yaml)
 
-   ```
-   **/*
-   !.git/**/*
-   ```
+::: moniker range="vsts"
 
+**Example with multiple match patterns:**
+
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: |
+     **/*
+     !.git/**/*
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+![icon](_img/copy-files.png) **Utility: Copy Files**
+
+* Source folder
+
+ ```
+$(Build.SourcesDirectory)
+```
+
+* Contents
+
+**Example with multiple match patterns:**
+
+ ```
+     **/*
+     !.git/**/*
+```
+
+* Target folder
+
+ ```
+$(Build.ArtifactStagingDirectory)
+```
+
+---
 
 ## Open source
 
@@ -174,7 +285,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### How do I use this task to publish artifacts?
 
-See [Artifacts in Azure Pipelines](../../build/artifacts.md).
+See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

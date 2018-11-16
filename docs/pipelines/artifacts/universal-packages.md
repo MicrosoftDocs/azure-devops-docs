@@ -1,5 +1,5 @@
 ---
-title: Publish Universal Packages in pipelines
+title: Publish and download Universal Packages in pipelines
 titleSuffix: Azure Pipelines & TFS
 description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
@@ -14,7 +14,7 @@ ms.date: 08/06/2018
 monikerRange: 'vsts'
 ---
 
-# Publish Universal Packages in Azure Pipelines
+# Publish and download Universal Packages in Azure Pipelines
 
 **Azure Pipelines**
 

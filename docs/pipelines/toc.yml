@@ -61,21 +61,39 @@
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
   - name: npm
-    href: targets/npm.md
+    href: artifacts/npm.md
   - name: NuGet
-    href: targets/nuget.md
+    href: artifacts/nuget.md
   - name: PyPI
     href: targets/pypi.md
   - name: SCVMM
     href: targets/scvmm.md
-  - name: Universal Packages
-    href: targets/universal-packages.md
   - name: VMware
     href: targets/vmware.md
   - name: Azure Web App for Containers
     href: apps/cd/deploy-docker-webapp.md
   - name: Windows VM
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+- name: Artifacts
+  items:
+  - name: Overview
+    href: artifacts/artifacts-overview.md
+  - name: Pipeline artifacts (Preview)
+    href: artifacts/pipeline-artifacts.md
+  - name: Build artifacts
+    href: artifacts/build-artifacts.md
+  - name: Maven
+    href: artifacts/maven.md
+  - name: npm
+    href: artifacts/npm.md
+  - name: NuGet
+    href: artifacts/nuget.md
+  - name: Python 
+    href: artifacts/pypi.md
+  - name: Symbols
+    href: artifacts/symbols.md
+  - name: Universal 
+    href: artifacts/universal-packages.md
 - name: Concepts
   items:
   - name: Agents
@@ -100,8 +118,6 @@
       href: agents/certificate.md
   - name: Builds
     items:
-    - name: Artifacts
-      href: build/artifacts.md
     - name: History
       href: build/history.md
     - name: Options
@@ -221,8 +237,6 @@
       href: get-started-multiplatform.md
     - name: Build a repo using the visual designer
       href: build/ci-build-github.md
-    - name: Publish symbols
-      href: symbols/index.md
   - name: Release
     items:
     - name: Connect to Azure
@@ -283,10 +297,6 @@
         href: packages/nuget-restore.md
       - name: Set up Jenkins + NuGet
         href: packages/jenkins.md
-    - name: Maven
-      items:
-      - name: Use Package Management
-        href: packages/maven.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds

@@ -117,4 +117,4 @@ vsts package universal download --instance https://fabrikam.visualstudio.com --f
 
 ## Next steps
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in build, see the [Pipelines doc for Universal Packages](../../pipelines/targets/universal-packages.md)
+In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in build, see the [Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md)
