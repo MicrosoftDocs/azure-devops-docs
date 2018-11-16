@@ -499,7 +499,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
             <li>
-                <a href="targets/npm.md">
+                <a href="artifacts/npm.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">
@@ -517,7 +517,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
             <li>
-                <a href="targets/nuget.md">
+                <a href="artifacts/nuget.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">
@@ -1140,7 +1140,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
             <li>
-                <a href="targets/npm.md">
+                <a href="artifacts/npm.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">
@@ -1158,7 +1158,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
             <li>
-                <a href="targets/nuget.md">
+                <a href="artifacts/nuget.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">

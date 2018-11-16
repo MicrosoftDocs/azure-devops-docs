@@ -217,7 +217,7 @@ Or to restore packages from a custom feed, use the **.NET Core** task:
     externalFeedCredentials: <Name of the NuGet service connection>
 ```
 
-For more information about NuGet service connections, see [publish to NuGet feeds](../targets/nuget.md).  
+For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -429,7 +429,7 @@ To create and publish a NuGet package, add the following snippet:
     versionEnvVar: version
 ```
 
-For more information about versioning and publishing NuGet packages, see [Publish to NuGet feeds](../targets/nuget.md).
+For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).
 
 ### Deploy a web app
 
@@ -465,7 +465,7 @@ If you want to publish your code to a NuGet feed, take the following steps:
 
 1. Use a .NET Core task with **Command** set to pack.
 
-1. [Publish your package to a NuGet feed](../targets/nuget.md).
+1. [Publish your package to a NuGet feed](../artifacts/nuget.md).
 
 ### Deploy a web app
 
