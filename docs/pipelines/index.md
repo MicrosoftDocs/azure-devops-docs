@@ -176,7 +176,7 @@ Tutorials, references, and other documentation show you how to configure and man
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
+                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_net.svg"); background-size: cover;'>
                                         <img style="display: none;" alt="ASP.NET logo" src="_img/index/logo_net.svg" data-linktype="external">
                                     </div>
                                 </div>
@@ -775,7 +775,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Start using Build and Release</h3>
-                                                            <p>Get an overview of continous integration (CI) and continuous delivery (CD)</p>
+                                                            <p>Get an overview of continuous integration (CI) and continuous delivery (CD)</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -853,7 +853,7 @@ Tutorials, references, and other documentation show you how to configure and man
                         <div class="cardPadding">
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_net.svg"); background-size: cover;'>
+                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_net.svg"); background-size: cover;'>
                                         <img style="display: none;" alt="ASP.NET logo" src="_img/index/logo_net.svg" data-linktype="external">
                                     </div>
                                 </div>

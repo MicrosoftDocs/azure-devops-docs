@@ -25,7 +25,7 @@ There are three classes of backlogs:
 2. A product or requirement backlog that contains a prioritized list of user stories, deliverables, or work you plan to build or fix.
 3. An iteration or sprint backlog that each team is working on during a scheduled sprint.
 
-The hierarchy of work items follows the order above. Work item types on the portfolio levels (e.g. Scenarios) are at the top and work item types on the iteration backlog are on the bottom (e.g. Tasks). For more information on backlogs, see [Backlogs, boards, and plans](https://visualstudio.microsoft.com/en-us/docs/work/backlogs-boards-plans).
+The hierarchy of work items follows the order above. Work item types on the portfolio levels (e.g. Scenarios) are at the top and work item types on the iteration backlog are on the bottom (e.g. Tasks). For more information on backlogs, see [Backlogs, boards, and plans](https://visualstudio.microsoft.com/docs/work/backlogs-boards-plans).
 
 ## Get a project's backlog configuration 
 
@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/Work/BacklogConfigurati
 | workItemCountLimit | The maximum number of work items that can be on a backlog level.
 | rank               | Rank refers to the backlog level's order in the work item type hierarchy. A lower rank means it is a lower level backlog.
 | workItemTypeMappedStates | Gives the state category mapping for the states of each work item type.
-| backlogFields      | Specifies a collection of typeFields, which are abstractions of customizable fields. For example, the type of the "Story points" field is "Effort". For a complete index of these fields see [Process Configuration XML element reference](https://visualstudio.microsoft.com/en-us/docs/work/reference/process-configuration-xml-element#fields).
+| backlogFields      | Specifies a collection of typeFields, which are abstractions of customizable fields. For example, the type of the "Story points" field is "Effort". For a complete index of these fields see [Process Configuration XML element reference](https://visualstudio.microsoft.com/docs/work/reference/process-configuration-xml-element#fields).
 
 #### Sample request
 

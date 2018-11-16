@@ -133,7 +133,7 @@ To fix this you will need to run the witadmin changefield command. Syntax for th
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:fieldname /syncnamechanges:true
 ```
 
-For more information on the changfield command see https://msdn.microsoft.com/en-us/library/dd236909.aspx
+For more information on the changfield command see https://msdn.microsoft.com/library/dd236909.aspx
 
 #### TF402556: For field System.IterationId to be well defined, you must name it Iteration ID and set its type to Integer.
 

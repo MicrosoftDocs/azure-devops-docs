@@ -5,7 +5,7 @@ ms.topic: include
 ## Agent variables
 
 > [!NOTE]
-> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks.
+> You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
 > You cannot use them to customize the build number or to apply a version control label or tag.
 
 <table>
@@ -195,7 +195,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.LocalPath</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
-<p>This variable is synomymous with Build.SourcesDirectory.</p>
+<p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
 
@@ -290,7 +290,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourcesDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
-<p>This variable is synomymous with Build.Repository.LocalPath.</p>
+<p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
 </tr>
 
@@ -389,6 +389,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>System.AccessToken</td>
 <td>[Use the OAuth token to access the REST API](../../scripts/powershell.md#oauth).
+<br/><br/>
+[Use System.AccessToken from YAML scripts](../../process/variables.md#systemaccesstoken).
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

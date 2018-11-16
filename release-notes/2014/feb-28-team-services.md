@@ -12,7 +12,7 @@ author: yukom
 
 #Visual Studio Online updates - Feb 28
 
-Today’s update delivers some nice capabilities for teams developing Java projects on Visual Studio Online. This update coincides with the release of [Team Explorer Everywhere 2013 Update 1](https://www.microsoft.com/en-us/download/details.aspx?id=40785). The combination together enable more options for where you can build and manage Java. The key service-specific highlights are described below. See [Brian Harry's blog](http://blogs.msdn.com/b/bharry/) to learn more about how to start using some of these new features.
+Today’s update delivers some nice capabilities for teams developing Java projects on Visual Studio Online. This update coincides with the release of [Team Explorer Everywhere 2013 Update 1](https://www.microsoft.com/download/details.aspx?id=40785). The combination together enable more options for where you can build and manage Java. The key service-specific highlights are described below. See [Brian Harry's blog](http://blogs.msdn.com/b/bharry/) to learn more about how to start using some of these new features.
 
 ##Build support for Java code managed in Git
 

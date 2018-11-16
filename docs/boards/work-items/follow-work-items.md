@@ -38,7 +38,7 @@ This topic shows you how to:
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[You must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
+[You must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
 ## Follow a work item

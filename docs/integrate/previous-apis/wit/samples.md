@@ -274,7 +274,7 @@ If you already have the query id, you can skip step 1. The code sample below sho
 ## Query Work Items with WIQL
 <a name="queryworkitemswithwiql" />
 
-If you don't know the query you want to execute, you can use the [work item query language (WIQL)] (https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
+If you don't know the query you want to execute, you can use the [work item query language (WIQL)](https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
 
 >[!div class="tabbedCodeSnippets" cs='C#' cl='.NET Client Library']
 >```cs
@@ -372,7 +372,7 @@ If you don't know the query you want to execute, you can use the [work item quer
 >    //create instance of work item tracking http client
 >    using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(_uri, _credentials))
 >    {
->        //execute the query to get the list of work items in teh results
+>        //execute the query to get the list of work items in the results
 >        WorkItemQueryResult workItemQueryResult = workItemTrackingHttpClient.QueryByWiqlAsync(wiql).Result;
 >     
 >        //some error handling                
@@ -517,7 +517,7 @@ There are a few things happening in the code sample below:
 >    Object[] patchDocument = new Object[4];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Authorization Errors" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Priority", value = "1" };
 >    patchDocument[3] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Severity", value = "2 - High" };
 >
@@ -577,7 +577,7 @@ There are a few things happening in the code sample below:
 >        new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >
@@ -637,7 +637,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >    Object[] patchDocument = new Object[6];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Imported bug from my other system (rest api)" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/System.CreatedBy", value = "Some User" };
 >    patchDocument[3] = new { op = "add", path = "/fields/System.ChangedBy", value = "Some User" };
 >    patchDocument[4] = new { op = "add", path = "/fields/System.CreatedDate", value = "4/15/2016" };
@@ -699,7 +699,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >      new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >

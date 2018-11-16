@@ -102,7 +102,7 @@ public class CreateBug
             {
                 Operation = Operation.Add,
                 Path = "/fields/Microsoft.Azure DevOps Services.TCM.ReproSteps",
-                Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+                Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/library/live/hh826547.aspx"
             }
         );
 

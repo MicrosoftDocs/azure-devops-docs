@@ -72,7 +72,7 @@ Push Docker images with multiple tags to an authenticated Docker Registry and sa
     azureContainerRegistry: contoso.azurecr.io
     command: 'push'
 ```
-This will reult in a docker login to the container registry by using the service connection and then a docker push command will be used to push the image to the container registry. For example, a simplified version of the command run is:
+This will result in a docker login to the container registry by using the service connection and then a docker push command will be used to push the image to the container registry. For example, a simplified version of the command run is:
 > docker push contoso.azurecr.io/contoso-ci:11
 
 ### Build, tag and push container image
@@ -92,7 +92,7 @@ Here is an end to end sample yaml for building, tagging and pushing container im
   displayName: 'Push an image'
   inputs:
     command: 'push'
-    imageName: 'contoso.azurecr.io/repositoryname:$(Build.BuildId)'
+    imageName: 'contoso.azurecr.io/$repositoryname:$(Build.BuildId)'
 ```
 
 ### Login to a container registry and run scripts

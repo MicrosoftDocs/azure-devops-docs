@@ -469,7 +469,7 @@ This sample shows dragging grid rows and dropping them to the same grid which ba
           left: offset.left - dragStartInfo.left + canvasScrollLeft + this._cursorOffset.left
         };
     
-      // The the left or right of the canvas, invalid drop
+      // The left or right of the canvas, invalid drop
       if (offset.left <= 0 || offset.left > dragStartInfo.canvasWidth) {
         return null;
       }

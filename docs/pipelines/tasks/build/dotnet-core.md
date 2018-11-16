@@ -46,7 +46,7 @@ None
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Command</td><td>(Required) The dotnet command to run. Select 'Custom' to add arguments or use a command not listed here.</td></tr>
-<tr><td>Path to project(s)</td><td>(Optional) The path to the csproj file(s) to use. You can use wildcards (e.g. **/.csproj for all .csproj files in all subfolders).</td></tr>
+<tr><td>Path to project(s)</td><td>(Optional) The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).</td></tr>
 <tr><td>Verbosity</td><td>(Required) Specifies the amount of detail displayed in the output.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
@@ -142,7 +142,7 @@ None
 - task: DotNetCoreCLI@2
   inputs:
     command: custom
-    projects: '**/.csproj'
+    projects: '**/*.csproj'
     custom: 'Enter your custom NuGet command here'
     arguments: '--configuration release --output $(build.artifactStagingDirectory)'
 ```
@@ -152,7 +152,7 @@ None
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Command</td><td>(Required) The dotnet command to run. Select 'Custom' to add arguments or use a command not listed here.</td></tr>
-<tr><td>Path to project(s)</td><td>(Optional) The path to the csproj file(s) to use. You can use wildcards (e.g. **/.csproj for all .csproj files in all subfolders).</td></tr>
+<tr><td>Path to project(s)</td><td>(Optional) The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).</td></tr>
 <tr><td>Custom command</td><td>(Required) The command to pass to dotnet.exe for execution.</td></tr>
 <tr><td>Arguments</td><td>(Optional) Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

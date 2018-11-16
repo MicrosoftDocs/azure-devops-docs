@@ -37,7 +37,7 @@ The image and the accompanying hand-on-labs is for a technical audience. As such
 
 ## Provisioning an Azure DevOps project using Azure DevOps Demo Generator
 
-You can use [Azure DevOps Demo Generator](https://vstsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
+You can use [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
 
 ## Hands on Labs
 

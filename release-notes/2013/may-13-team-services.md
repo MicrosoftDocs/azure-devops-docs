@@ -68,7 +68,7 @@ The final change in this sprint’s deployment is an update to our login page so
 
 ![Multiple repositories](_img/5_13_08.png)
 
-That’s it for sprint 47. Let us know what you think. We're listening on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for sprint 47. Let us know what you think. We're listening on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

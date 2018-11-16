@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps Services - Stored Credentials
-description: Learn how Microsoft stores your your credentials for Azure DevOps
+description: Learn how Microsoft stores your credentials for Azure DevOps
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers

@@ -65,7 +65,7 @@ Add the following images to an `img` folder in your project directory so that th
 0. [Catalog icon](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/CatalogIcon.png)
 
 ### Extension manifest file
-In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md. Create a `vss-extension.json` file with the following contents: 
+In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md). Create a `vss-extension.json` file with the following contents: 
 
 ```json
 {

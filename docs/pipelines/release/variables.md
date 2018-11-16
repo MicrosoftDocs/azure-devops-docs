@@ -201,7 +201,7 @@ Not all variables are meaningful for each artifact type. The table below lists t
 variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
 it implies that the variable is not populated for that artifact type.
 
-> Replace **{alias}** with the the value you specified for the [artifact alias](artifacts.md#source-alias), or with the default value generated for the release pipeline.
+> Replace **{alias}** with the value you specified for the [artifact alias](artifacts.md#source-alias), or with the default value generated for the release pipeline.
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Azure Pipelines example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|

@@ -93,7 +93,7 @@ Which email addresses can I add?
 
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
-* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
+* You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
 * If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](add-external-user.md).
 
@@ -101,7 +101,7 @@ Which email addresses can I add?
 
   After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
 
-    What if new team members don't receive or lose the invitation email?
+  What if new team members don't receive or lose the invitation email?
 
   * **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 

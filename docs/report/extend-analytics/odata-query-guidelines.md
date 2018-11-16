@@ -151,7 +151,7 @@ You'll need to specify the filter if you expand one of the following properties:
 
 If you're interested in data from a single project, we recommend you use the project-scoped OData endpoint (`/{ProjectName}/_odata/v1.0`). This avoids the problems described in the preceeding two sections, and implicitly filters data to the one project, the referenced entity set, as well as all the expanded navigation properties.
 
-With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause dissapear, but also there's no need for the filter on the main entity set.
+With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause disappear, but also there's no need for the filter on the main entity set.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

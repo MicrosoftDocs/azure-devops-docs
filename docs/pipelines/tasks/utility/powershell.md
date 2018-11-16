@@ -47,11 +47,11 @@ The Powershell task also has a shortcut syntax in YAML:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a .sh file</td></tr>
-<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory). Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the Bash script.</td></tr>
-<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code></td></tr>
-<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td></tr>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file.</td></tr>
+<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Powershell script.</td></tr>
+<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
+<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code>[$(Build.SourcesDirectory)](../../build/variables.md)</code>.</td></tr>
 <tr>
 <td>Fail on standard error</td>
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
