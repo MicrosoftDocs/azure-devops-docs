@@ -294,7 +294,7 @@ pr: [ string ] # list of branch names
 Disable syntax:
 
 ```yaml
-pr: none # will disable CI builds entirely
+pr: none # will disable PR builds entirely
 ```
 
 Full syntax:
