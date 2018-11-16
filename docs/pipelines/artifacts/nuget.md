@@ -180,7 +180,7 @@ To publish to a external NuGet feed, you must first create a service connection 
 
 ## Publish symbols for your packages
 
-When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/symbols/index).
+When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).
 
 ## Q&A
 

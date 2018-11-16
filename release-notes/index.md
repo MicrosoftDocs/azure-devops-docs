@@ -3082,7 +3082,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[9 Mar 2015](http://azure.microsoft.com/en-us/documentation/articles/app-insights-java-get-started/)</td>
+            <td>[9 Mar 2015](http://azure.microsoft.com/documentation/articles/app-insights-java-get-started/)</td>
             <td>Application Insights support for Java</td>
             <td>N/A</td>
         </tr>
@@ -3109,7 +3109,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 Jan 2015](http://azure.microsoft.com/en-us/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
+            <td>[29 Jan 2015](http://azure.microsoft.com/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
             <td>Application Insights support for Windows Phone and Windows Store Applications</td>
             <td>N/A</td>
         </tr>
@@ -3162,11 +3162,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td rowspan="2">11 Dec 2014</td>
-            <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/en-us/updates/application-insights-status-monitor-and-sdk-updated/)</td>
+            <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/updates/application-insights-status-monitor-and-sdk-updated/)</td>
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/en-us/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
+            <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
             <td>N/A</td>
         </tr>
         <tr>
@@ -3603,15 +3603,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4">[4 Mar 2013](2013/mar-04-team-services.md)</td>
             <td>Customizable Kanban columns</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>TCM improvements – edit test steps when running tests</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Annotate/Blame for version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Scheduled builds for Git-based projects</td>
@@ -3624,20 +3624,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>WIT tagging cleanup for unused tags</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Download as Zip for version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[30 Jan 2013](2013/jan-30-team-services.md)</td>
             <td>Work item tagging</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Git support</td>
@@ -3645,12 +3645,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Hub in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[21 Jan 2013](2013/jan-21-team-services.md)</td>
             <td>Changeset context menu in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[9 Jan 2013](2013/jan-09-team-services.md)</td>
@@ -3660,32 +3660,32 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5">[7 Jan 2013](2013/jan-07-team-services.md)</td>
             <td>Email work items from backlog</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Search for changesets by ID in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Full screen mode for code viewing</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Inline diff of images in version control</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Collapsible left pane in all left panels in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[10 Dec 2012](2012/dec-10-team-services.md)</td>
             <td>Renamed Source to Code in Web UI hub</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Code Explorer updates in Web UI</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Hosted build updates for Azure SDK 1.8, TypeScript 0.8.1, and VS 2012 Update 1</td>
@@ -3694,11 +3694,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2">[19 Nov 2012](2012/nov-19-team-services.md)</td>
             <td>Send work items in email from TFS web access</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Build file counts and sizes in summary reports</td>
-            <td>[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>[31 Oct 2012](2012/oct-31-team-services.md)</td>
@@ -3713,29 +3713,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[8 Oct 2012](2012/oct-08-team-services.md)</td>
             <td>400 character server paths for version control</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="3">[17 Sep 2012](2012/sep-17-team-services.md)</td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Web usability improvements (tabs and UX modified, collapse left pane in work items)</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Process template updates to Agile 6.1 and Scrum 2.1</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="4">[27 Aug 2012](2012/aug-27-team-services.md)</td>
             <td>Improved source browsing, viewing, and searching</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Improved source "diff"</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Hosted builds of SharePoint components</td>
@@ -3748,24 +3748,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[13 Aug 2012](2012/aug-13-team-services.md)</td>
             <td>Kanban board</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Cumulative Flow Diagram</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>WIP Limits</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td rowspan="2">[6 Aug 2012](2012/aug-06-team-services.md)</td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
             <td>Azure continuous deployment summary report</td>
-            <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
+            <td>[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)</td>
         </tr>
     </tbody>
 </table>
@@ -3782,12 +3782,12 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
-          <td>[2018.3](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update3)</td>
+          <td>[2018.3](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)</td>
           <td>Sep. 12, 2018</td>
           <td>16.131.28106.2</td>
         </tr>
         <tr>
-          <td>[2018.2](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update2)</td>
+          <td>[2018.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2)</td>
           <td>May 7, 2018</td>
           <td>16.131.27701.1</td>
         </tr>
@@ -3820,7 +3820,7 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td>15.112.26307.00
-          (15.112.26301.0)[*](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
+          (15.112.26301.0)[*](https://visualstudio.microsoft.com/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
           <td>[2017.0.1](https://aka.ms/tfs2017-relnotes)</td>
@@ -3924,4 +3924,4 @@ We would love to hear what you think about these features. Report any problems t
 > [!div class="mx-imgBorder"]
 ![Make a suggestion](_img/help-make-a-suggestion.png)
 
-You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

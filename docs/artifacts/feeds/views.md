@@ -56,7 +56,7 @@ For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume
 
 If you have a release process with more steps or differently-named steps, you can [customize your views](#managing-views). 
 
-## Use release views with continous integration/delivery
+## Use release views with continuous integration/delivery
 
 Today, you can use the **NuGet** task in Team Build to automatically version your packages, then promote packages into a release view manually in the **Packages** page. In this case, make sure to check the **Include pre-release** button in the Visual Studio NuGet Package Manager extension, even when you're using the `Release` view.
 

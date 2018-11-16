@@ -85,7 +85,7 @@ The new editor toolbar appears below each text box that can be formatted. It onl
 
 You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
-For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to faciliate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
 > ![New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  

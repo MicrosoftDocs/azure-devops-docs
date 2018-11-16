@@ -137,13 +137,13 @@ We don't yet support the **Build even if nothing has changed since the previous 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
 | Build controller | On the **General** tab, select the default agent pool. | On the **Options** tab, select the default agent pool. |
-| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). |
+| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../artifacts/pipeline-artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../artifacts/pipeline-artifacts.md). |
 
 The new build pipeline offers you some new options. For example:
 
 * You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../agents/agents.md).
 
-* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../build/artifacts.md).
+* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../artifacts/pipeline-artifacts.md).
 
 ### Process tab
 
@@ -181,7 +181,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 | Projects | Solution |
 | Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
-| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Azure Pipelines](../build/artifacts.md). |
+| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Azure Pipelines](../artifacts/pipeline-artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |
@@ -337,7 +337,7 @@ XAML builds are deprecated. We strongly recommend that you migrate to the new bu
 
 ::: moniker range="vsts"
 
-If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 
 ::: moniker-end
 
@@ -347,7 +347,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 1. Install [TFS 2018.2](https://visualstudio.microsoft.com/downloads/?q=tfs).
 
-1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 
 ::: moniker-end
 

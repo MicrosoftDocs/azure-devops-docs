@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version2-preview.md)]
 
-[!INCLUDE [GET_STARTED](../_data/get-started.md)] Look [here](https://visualstudio.microsoft.com/en-us/docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results) to know more about result retention settings.
+[!INCLUDE [GET_STARTED](../_data/get-started.md)] Look [here](https://visualstudio.microsoft.com/docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results) to know more about result retention settings.
 
 Below APIs fetch or update result retention settings for a project. To get list of projects, look [here](../tfs/projects.md).
 

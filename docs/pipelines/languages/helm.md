@@ -54,7 +54,7 @@ To set up a continuous integration (CI) build process, see:
 
 ## Package and publish a Helm chart
 
-1. In the **Build &amp; Release** hub, open the the [build pipeline](docker.md) created to build and publish a Docker image.
+1. In the **Build &amp; Release** hub, open the [build pipeline](docker.md) created to build and publish a Docker image.
 
 2. Select Tasks tab and click on **+** icon  to add **Helm tool installer** task  to ensure that the agent which runs the subsequent tasks has Helm and Kubernetes installed on it.
 3. Click on **+** icon again to add new **Package and deploy Helm charts** task.

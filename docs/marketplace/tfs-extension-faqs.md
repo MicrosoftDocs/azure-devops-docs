@@ -28,16 +28,16 @@ aren't fully supported, and have no financially-backed service level agreements.
 Paid extensions require that you buy and assign them to users 
 who need access but don't have it already, for example, 
 through subscription benefits. You'll use an 
-[Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
+[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
 to pay for an extension. If you don't have an Azure subscription, 
 you can create a new subscription when you install your extension. 
 If you have multiple subscriptions, you can select the Azure subscription that you want to use.
 
 #### Q: How do I get other help or support for Azure subscriptions and billing?
 
-A: Check these [topics about Azure billing and subscriptions](https://azure.microsoft.com/en-us/documentation/articles/?tag=billing), 
-the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/documentation/articles/billing-subscription-faq/), 
-or try [Azure Support](https://azure.microsoft.com/en-us/support/options/).
+A: Check these [topics about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing), 
+the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
+or try [Azure Support](https://azure.microsoft.com/support/options/).
 
 [!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
 

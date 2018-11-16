@@ -32,11 +32,11 @@ Select a sample repository of your choice from the following languages and fork 
 
 | Programming language | Repository with a sample app |
 |----------------------|----------------------------|
-| .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
-| Go | `https://github.com/MicrosoftDocs/pipelines-go` |
-| Java | `https://github.com/MicrosoftDocs/pipelines-java` |
-| Node.js | `https://github.com/MicrosoftDocs/pipelines-javascript` |
-| Python | `https://github.com/MicrosoftDocs/pipelines-python-django` |
+| .NET Core | https://github.com/MicrosoftDocs/pipelines-dotnet-core |
+| Go | https://github.com/MicrosoftDocs/pipelines-go |
+| Java | https://github.com/MicrosoftDocs/pipelines-java |
+| Node.js | https://github.com/MicrosoftDocs/pipelines-javascript |
+| Python | https://github.com/MicrosoftDocs/pipelines-python-django |
 
 You should now have a sample app in your GitHub account.
 
@@ -84,7 +84,7 @@ Take the following steps in GitHub:
 
 1. Go back to the list of files and select the `Readme.md` file. Then choose **Edit**.
 
-1. Copy the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
+1. Paste the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
 
 1. Commit the change to the master branch.
 

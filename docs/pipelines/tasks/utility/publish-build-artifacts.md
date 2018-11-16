@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
 
 > [!TIP]
-> Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../build/artifacts.md).
+> Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
 
 ## Demands
 
@@ -35,9 +35,9 @@ None
 
 | Argument | Description |
 | -------- | ----------- |
-| Path to publish | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Typically, you'll specify `$(Build.ArtifactStagingDirectory)`. See [Artifacts in Azure Pipelines](../../build/artifacts.md). |
+| Path to publish | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Typically, you'll specify `$(Build.ArtifactStagingDirectory)`. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md). |
 | Artifact name | Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
-| Artifact publish location | In most cases, Azure Pipelines/TFS (`Server` on **TFS 2018 RTM** and older) is the best and simplest option. Otherwise, choose a file share and then specify a few more arguments (see below). To learn more, see [Artifacts in Azure Pipelines](../../build/artifacts.md). |
+| Artifact publish location | In most cases, Azure Pipelines/TFS (`Server` on **TFS 2018 RTM** and older) is the best and simplest option. Otherwise, choose a file share and then specify a few more arguments (see below). To learn more, see [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md). |
 | File share path | Specify the path to the file share where you want to copy the files. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Publishing artifacts from a Linux or macOS agent to a file share is not supported. |
 | Parallel copy (**Azure Pipelines**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | Parallel count (**Azure Pipelines**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |

@@ -1,7 +1,7 @@
 ---
 title: .NET Core Tool Installer task
 titleSuffix: Azure Pipelines & TFS
-description: Acquires a specific version of .NET Core from internet or the tools cache and adds it to the PATH
+description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

@@ -6,6 +6,41 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/packages/maven.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/maven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/symbols/index.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/symbols",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/targets/nuget.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/nuget",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/targets/pypi.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/pypi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/targets/universal-packages.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/universal-packages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/targets/npm.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/npm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/build/artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/artifacts-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/artifacts/index-a.md",
       "redirect_url": "/azure/devops/artifacts/index",
       "redirect_document_id": false

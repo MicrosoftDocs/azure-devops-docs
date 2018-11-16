@@ -12,6 +12,6 @@ $PSVersionTable.PSVersion
 
 If you need a newer version of PowerShell, you can download it:
 
-* PowerShell 3: [Windows Management Framework 3.0](http://www.microsoft.com/en-us/download/details.aspx?id=34595)
-* PowerShell 4: [Windows Management Framework 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855)
-* PowerShell 5: [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395)
+* PowerShell 3: [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595)
+* PowerShell 4: [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)
+* PowerShell 5: [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=50395)

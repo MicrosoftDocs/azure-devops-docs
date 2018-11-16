@@ -779,7 +779,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
-		<td>Can delete a scheduled test.</td>
+		<td>Can delete a test run.</td>
 	</tr>
 	<tr>
 		<td id="edit-team-project-level-information-permission">Edit project-level information</td>
@@ -1621,7 +1621,7 @@ permissions to create, edit, or delete iteration nodes.
 
 ## Work item query and folder (object-level)
 
-You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
+You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
 > [!div class="mx-imgBorder"]  
 > ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
@@ -1666,7 +1666,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 ## Delivery Plans (object-level)   
 
-You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -1708,7 +1708,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 
 ## Process (object-level)   
-You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 
 <table valign="top" width="100%">

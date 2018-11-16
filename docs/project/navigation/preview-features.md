@@ -79,7 +79,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 ### Azure Pipelines
 - [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>
 - [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
-- [Symbol server](../../pipelines/symbols/index.md)  
+- [Symbol server](../../pipelines/artifacts/symbols.md)  
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers)  
 
 ### Azure Boards 

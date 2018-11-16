@@ -166,7 +166,7 @@ For a different experience than one of the default options use the **CustomerQnA
 ```json
 {
     "CustomerQnASupport": {
-        "enableqna":"true",
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
     } 
 }
