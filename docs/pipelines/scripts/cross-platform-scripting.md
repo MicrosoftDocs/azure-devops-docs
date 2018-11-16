@@ -156,17 +156,17 @@ steps:
 - bash: |
     export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
     echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-  condition: eq( variables.Agent.OS, 'Linux' )
+  condition: eq( variables['Agent.OS'], 'Linux' )
 # macOS
 - bash: |
     export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
     echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-  condition: eq( variables.Agent.OS, 'Darwin' )
+  condition: eq( variables['Agent.OS'], 'Darwin' )
 # Windows
 - powershell: |
     Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
     Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
-  condition: eq( variables.Agent.OS, 'Windows_NT' )
+  condition: eq( variables['Agent.OS'], 'Windows_NT' )
 
 # now we use the value, no matter where we got it
 - script: |
