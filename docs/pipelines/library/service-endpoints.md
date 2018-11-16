@@ -358,13 +358,15 @@ and [standard GitHub service connections](#sep-github).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
+| Choose authorization | Required. Either **Personal access token**, **Username and Password**, or **OAuth2**. See notes below. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
+| OAuth configuraton | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)

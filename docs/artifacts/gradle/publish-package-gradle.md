@@ -108,7 +108,7 @@ publishing {
             url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
             credentials { 
                 username "Azure DevOps Services" 
-                //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+                //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
                 password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
@@ -121,7 +121,7 @@ repositories {
         url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
         credentials { 
             username "Azure DevOps Services" 
-            //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+            //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
             password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 

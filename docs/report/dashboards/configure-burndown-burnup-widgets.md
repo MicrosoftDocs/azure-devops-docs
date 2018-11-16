@@ -190,7 +190,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 Check the boxes of the following options that you want to add to your chart.    
 * **Show burndown**: Displays both the historical and projected future burndown
 * **Show total scope**: Displays both the historical and projected scope increase
-* **Show completed work**: In addition to remaining work, it also displays completed work as as stack bar
+* **Show completed work**: In addition to remaining work, it also displays completed work as stack bar
 * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Interpret a Burndown or Burnup widget chart

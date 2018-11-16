@@ -46,7 +46,7 @@ You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
 (only applicable when the code is in a TFVC, Git, or GitHub repository)
 or when the build has certain tags. These can be both include and exclude filters.
-For example, use **features/\*** to include all builds under the **features** branch.
+For example, use **features/*** to include all builds under the **features** branch.
 You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
@@ -74,7 +74,7 @@ See also [stage scheduled triggers](#stage-scheduled-triggers).
 <h2 id="prsettrigger">Pull request triggers</h2>
 
 You can configure a pull request trigger that will create a new release when a pull request 
-uploads a new version of the artifact. Enable the trigger and add the branches targetted by pull requests
+uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests
 that you want to activate this trigger. 
 
 ![Selecting a trigger for a release](_img/trigger-01a.png)

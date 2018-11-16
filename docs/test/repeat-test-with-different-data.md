@@ -104,8 +104,7 @@ The Test Runner shows the first row of parameter values.
 
 ## Review the test results 
 
-If you marked any test iteration as failed, the outcome of the 
-entire test is shown as failed. 
+The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable and Unspecified (Active). For example, if you marked any iteration as failed and all the rest as passed, the outcome of the entire test is shown as failed. This is different from test cases that do not have parameters, where the outcome displays the status of the last run.
 
 1. Check the test result by opening the details pane.
 

@@ -98,7 +98,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 ### Retain artifacts with the build record
 
 Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
-to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2

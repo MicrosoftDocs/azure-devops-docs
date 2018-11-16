@@ -7,8 +7,8 @@ A:  If you're the Azure Account Administrator,
 #### Q: What if I have other questions about Azure subscriptions and billing?
 
 A: Check the 
-[Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/documentation/articles/billing-subscription-faq/), 
-or try [Azure Support](https://azure.microsoft.com/en-us/support/options/).
+[Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
+or try [Azure Support](https://azure.microsoft.com/support/options/).
 
 #### Q: Why can't I link more organizations to my Azure subscription? What does the error "The resource is blocked to receive any update" mean?
 

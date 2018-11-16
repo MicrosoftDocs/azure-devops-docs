@@ -644,7 +644,7 @@
 "id": "jenkins",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/jenkins",
 "name": "Jenkins",
-"description": "Jenkins is a continuous integration server which allows building and testing software projects continously.",
+"description": "Jenkins is a continuous integration server which allows building and testing software projects continuously.",
 "imageUrl": "http://jenkins-ci.org/sites/default/files/images/headshot.png",
 "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393616",
 "authenticationType": "external",
@@ -1188,7 +1188,7 @@
 {
 "id": "tagsExpression",
 "name": "Tags",
-"description": "The tags expression (for targeting specific sets of devices). <a href=\"http://msdn.microsoft.com/en-us/library/windowsazure/dn530749.aspx\">Learn more</a>",
+"description": "The tags expression (for targeting specific sets of devices). <a href=\"http://msdn.microsoft.com/library/windowsazure/dn530749.aspx\">Learn more</a>",
 "inputMode": "textBox",
 "isConfidential": false,
 "useInDefaultDescription": false,

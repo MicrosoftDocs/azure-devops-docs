@@ -46,8 +46,6 @@
     href: /azure/devops/pipelines/release/define-multistage-release-process?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json
   - name: CI builds with Git for Azure Repos
     href: /azure/devops/pipelines/actions/ci-build-git?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json
-  - name: Deploy apps to Azure App Service with Azure Pipelines
-    href: /azure/app-service
 - name: Resources
   items:
   - name: Deploy apps to Azure App Service with Azure Pipelines

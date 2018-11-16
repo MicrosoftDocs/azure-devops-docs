@@ -61,9 +61,9 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
 you must establish an authentication mechanism. This can be achieved in two ways:
 
-1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
 
-1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
+1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
    An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
 
 ## Create a release pipeline

@@ -7,7 +7,7 @@ ms.topic: include
 0. Before you start, if you haven't already:
 
  * [Sign up and create your project](../../../organizations/accounts/create-organization.md).
- * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/en-us/downloads).
+ * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
 0. Go to your project's page 
 (```http://dev.azure.com/{yourorganization}/{yourteamproject}```)

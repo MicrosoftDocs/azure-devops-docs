@@ -30,7 +30,7 @@ If you’re a user of our load test service you’ll be pleased to learn we made
 
 We also updated our service configuration to support load tests with up to 20 agents. Learn how to modify the number of agents for your runs here.
 
-That’s it for today’s update. We’ll have more to talk about next week so don’t forget to check back on Wednesday, Nov 13. As always let us know what you think on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads) and Twitter.
+That’s it for today’s update. We’ll have more to talk about next week so don’t forget to check back on Wednesday, Nov 13. As always let us know what you think on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads) and Twitter.
 
 Thanks,
 

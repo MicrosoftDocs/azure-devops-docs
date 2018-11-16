@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 06/16/2017
 ---
 
@@ -26,8 +27,9 @@ You use the **FIELD** (Definition) element to define a work item field and speci
 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
-syncnamechanges ="true | false" reportable="Dimension | Detail | Measure"formula="sum"  
+<FIELD name="fieldDisplayName" refname="fieldReferenceName" 
+type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
+syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum" 
 reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
    <ALLOWEXISTINGVALUE />  

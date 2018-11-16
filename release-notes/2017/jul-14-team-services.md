@@ -89,7 +89,7 @@ Show your support for a PR comment with a single click on the __like__ button. Y
 
 ##Build
 ### Pull request build variables
-You can now get the pull request ID, source branch, and target branch from  [build variables](https://visualstudio.microsoft.com/en-us/docs/build/define/variables).
+You can now get the pull request ID, source branch, and target branch from  [build variables](https://visualstudio.microsoft.com/docs/build/define/variables).
 
 ### Faster publishing of artifacts from Windows agents to file shares
 We’ve added an option to make it faster to publish artifacts from Windows agents to file shares. In the __Publish Build Artifacts__ task arguments, select **Enable Copy Concurrency** to enable multi-threaded mode and copy multiple files at the same time. This is equivalent to `robocopy /mt`. Optionally you can specify the number of threads in the **Copy Concurrency Value** (the default is 8).

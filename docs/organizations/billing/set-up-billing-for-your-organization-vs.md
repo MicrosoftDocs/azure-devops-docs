@@ -20,7 +20,7 @@ In this quickstart, you learn to set up billing for your organization in advance
 
 *All services are billed via Azure*, and you're not required to use any other Azure services.
 
-If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
+If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 

@@ -60,7 +60,7 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 ::: moniker-end
 
 <a name="initialize-repo"></a>
-## Intialize your repository
+## Initialize your repository
 
 > If you already have a repository in your project, you can skip to the next step: [Add a script to your repository](#add-a-script-to-your-repository)
 
@@ -70,7 +70,7 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 
   ![Repos files](../repos/get-started/_img/clone-repo/repos-files.png)
 
-2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initalize** your repo with a `readme` file: 
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
   ![Initialize repository](_img/initialize-repo.png)
 
@@ -80,7 +80,7 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 
 1. Navigate to your repository by clicking **Code** in the top navigation. 
 
-2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initalize** your repo with a `readme` file: 
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
   ![Initialize repository](_img/initialize-repo.png)
 
@@ -319,7 +319,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](artifacts/artifacts-overview.md).
 
 ## Enable continuous integration (CI)
 

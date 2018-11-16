@@ -61,7 +61,7 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
-| [```cast```] (http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341801) |  Returns expression casted to specified type  |  
+| [```cast```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341801) |  Returns expression casted to specified type  |  
 | [```contains```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868695) |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
 | [```endswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
 | [```startswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868699) |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  

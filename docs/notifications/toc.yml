@@ -69,5 +69,5 @@
   - name: Service Hooks
     href: ../service-hooks/index.md
   - name: REST API
-    href: https://visualstudio.microsoft.com/en-us/docs/integrate/api/notification/subscriptions
+    href: https://visualstudio.microsoft.com/docs/integrate/api/notification/subscriptions
 

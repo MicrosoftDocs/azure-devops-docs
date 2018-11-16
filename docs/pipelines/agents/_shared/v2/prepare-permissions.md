@@ -14,7 +14,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 #### Authenticate with a personal access token (PAT)
 
-1. Sign in with the user account you plan to use in either your Azure DevOps organization (```https://{your-organization}.visualstudio.com```)
+1. Sign in with the user account you plan to use in either your Azure DevOps organization (```https://dev.azure.com/{your_organization}```)
 or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```).
 
 1.  From your home page, open your profile. Go to your security details.
