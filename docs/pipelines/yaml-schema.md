@@ -742,10 +742,10 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
+- powershell: echo Hello $(name)
   displayName: Say hello
   name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
+  workingDirectory: $(build.sourcesDirectory)
   failOnStderr: true
   env:
     name: Microsoft
