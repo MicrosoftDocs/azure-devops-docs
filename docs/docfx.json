@@ -56,13 +56,13 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "report/admin/**": ">= tfs-2013 <= tfs-2018",
-        "report/analytics/**": "vsts",
-        "report/excel/**": ">= tfs-2013 <= tfs-2018",
-        "report/extend-analytics/**": "vsts",
-        "report/powerbi/**": "vsts",
+        "report/admin/**": ">= tfs-2013 <= tfs-2018 || azdevserver-2019",
+        "report/analytics/**": "azdevserver-2019 || vsts",
+        "report/excel/**": ">= tfs-2013 <= tfs-2018 || azdevserver-2019",
+        "report/extend-analytics/**": "azdevserver-2019 || vsts",
+        "report/powerbi/**": "azdevserver-2019 || vsts",
         "report/sharepoint-dashboards/**": ">= tfs-2013 <= tfs-2017",
-        "report/sql-reports/**": ">= tfs-2013 <= tfs-2018",
+        "report/sql-reports/**": ">= tfs-2013 || >= azdevserver-2019",
         "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
       },
       "ROBOTS":{
@@ -74,7 +74,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
+        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
       }
     }
   }

@@ -1,6 +1,6 @@
 ---
-title: View wiki page revisions, history, and revert in Azure DevOps and TFS
-titleSuffix: Azure DevOps & TFS 
+title: View wiki page revisions, history, and revert in Azure DevOps
+titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 11/15/2018  
+ms.date: 11/19/2018  
 ---
 
 # View wiki page history and revert
@@ -25,13 +25,13 @@ The Revisions page provides a convenient way to get details of the changes made 
 
 ## View wiki page revision history  
 
-0. To view the revision history of a page, select the **Revisions** link provided on each page. You can also click **View revisions** in the context menu of a page.
+1. To view the revision history of a page, select the **Revisions** link provided on each page. You can also click **View revisions** in the context menu of a page.
 
 	<img src="_img/wiki/click-revision.png" alt="Open revision history" style="border: 1px solid #C3C3C3;" />
  
 0. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, click the message or version link.
 
-	::: moniker range="vsts"
+	::: moniker range=">= azdevserver-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Revision page for a provisioned wiki page](_img/wiki/revision-history-vsts.png)
 	::: moniker-end
@@ -41,20 +41,20 @@ The Revisions page provides a convenient way to get details of the changes made 
 0.	Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. You can also choose **Preview** to view the content of the page as of the specific revision.
 
 	<img src="_img/wiki/wiki-revision-details-2.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
-	::: moniker range="vsts"
+	::: moniker range=">= azdevserver-2019"
 	For a *publish as code wiki* page, you'll see similar information, however the **Revert** button is not active.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Revision page for a publish as code wiki page](_img/wiki/view-history-publish-as-code.png)
 	::: moniker-end
-0. You can use the breadcrumbs to return to the page or the revisions of the page.
+1. You can use the breadcrumbs to return to the page or the revisions of the page.
 
 ::: moniker range=">= tfs-2018"
 <a id="revert-provision"></a>
 
 ## Revert a commit to a *provisioned wiki* page
 
-Mistakes can happen while updating a wiki page. You can conveniently revert a revision and undo changes done on a wiki page. You can click the **Revert** button on the revision details page to revert a change on a wiki page.
+Mistakes can happen while updating a wiki page. You can conveniently revert a revision and undo changes done on a wiki page. You can choose the **Revert** button on the revision details page to revert a change on a wiki page.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ Mistakes can happen while updating a wiki page. You can conveniently revert a re
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 <a id="revert-publish"></a>
 
 ## Revert a commit to a *publish as code wiki* page
@@ -78,9 +78,9 @@ If you find that you need to revert to an earlier revision for a page that you h
 
 ### Revert from a recent revision from the web portal
 
-0. You can preview any version by choosing the commit id from the **Revisions** page for the selected file.
+1. You can preview any version by choosing the commit id from the **Revisions** page for the selected file.
 
-0. Copy the full ID of the commit by clicking the ![ ](../../_img/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`. 
+2. Copy the full ID of the commit by clicking the ![ ](../../_img/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](_img/wiki/revert-publish-as-code-copy-commit-id.png)
@@ -136,7 +136,7 @@ To revert to an earlier committed version, one that is not the immediate last re
 
 You can use the following steps to identify the commit that contains the content you want to revert to. And then, use standard Git operations to revert the content.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Clone an existing Git repo](../../repos/git/clone.md)  
 - [Create work in branches](../../repos/git/branches.md)  

@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Track bugs  
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,6 +1,6 @@
 ---
 title: Product backlog controls
-titleSuffix: Azure Boards and TFS 
+titleSuffix: Azure Boards 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards and Team Foundation Server 
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 09/17/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -22,11 +22,11 @@ ms.date: 09/17/2018
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
@@ -58,6 +58,9 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
 | Backlog  | [Switch to backlog view](create-your-backlog.md)    |
@@ -76,6 +79,14 @@ Once you've defined your product backlog, you can use the following controls to 
 > [!IMPORTANT]  
 > If you set the **In progress** control to **Hide**, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 
@@ -84,5 +95,5 @@ Even if you have show parents turned on, the **Create query** and mail ![mail ic
 
 ## Related articles
 
-- [Backlogs, portfolios, and Agile project management ](backlogs-overview.md)  
+- [Backlogs, portfolios, and Agile project management](backlogs-overview.md)  
 - [Workflow states and state categories](../work-items/workflow-and-state-categories.md)

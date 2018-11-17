@@ -7,16 +7,16 @@ ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 07/21/2018
+ms.date: 11/19/2018
 ---
 
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
-**Azure DevOps Services | TFS 2018 | TFS 2017.1**
-
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
 As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams. 
 
@@ -25,20 +25,47 @@ To learn more about adding and viewing dashboards, see [Add and manage dashboard
 > [!TIP]    
 > If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default project team. For details, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). 
 
+By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards.
+
+[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
+
+# [New navigation](#tab/new-nav)
+::: moniker range=">= azdevserver-2019"
+
+0. Open the **Mine** or **All** dashboards page, open the ![actions icon](../../_img/icons/actions-icon.png) actions menu for the dashboard, and choose the **Security** option. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)
+
+0. Add a user or group and set the permissions for that group. To learn more about adding groups or changing permissions, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md).
+ 
+	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
+
+ 	> [!div class="mx-imgBorder"]  
+	> ![Permissions for Analytics dashboard dialog](_img/set-permissions/dashboard-permission-dialog.png)
+
+0. Choose **Save changes** and then **Close**. 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2017 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
 ::: moniker range="tfs-2017"
 > [!NOTE]  
-> The set dashboard permissions feature is available for TFS 2017.1 and later versions. 
+> The set dashboard permissions feature is available for TFS 2017.1 and later versions. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards. 
 ::: moniker-end
 
-::: moniker range="vsts"
-
-By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards. 
+::: moniker range=">=tfs-2017 <= tfs-2018 || vsts"
 
 1. To change the permissions for a dashboard, open the dashboard and then choose the ![gear icon](_img/icons/gear-icon.png) gear icon for the dashboard. 
 
 	For example, here we open the Settings dialog for the Fabrikam Fiber team's Overview dashboard. 
 
-	> [!div class="mx-imgBorder"]  
+	> [!div class="mx-imgBorder"] 
 	> ![Open the dashboards settings dialog](_img/dashboards/open-dashboard-settings-dialog.png) 
 	   
 2. Choose the **Manage permissions for this dashboard** link.  
@@ -62,12 +89,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
 
-> [!NOTE]   
-> Setting dashboard permissions requires TFS 2017.1 or later version. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards. 
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
 1. To change the permissions for a dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
@@ -92,6 +114,14 @@ By default, all team members have permissions to edit dashboards defined for the
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported.md)] 
+
+::: moniker-end
+---
+
 
 
 ## Related articles

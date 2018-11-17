@@ -1,6 +1,6 @@
 ---
 title: Individual versus shared queries
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Work with queries to support your and team usage   
 ms.custom: boards-queries
 ms.prod: devops
@@ -10,7 +10,8 @@ robots: NOINDEX, NOFOLLOW
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 08/11/2017  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
@@ -19,7 +20,6 @@ ms.date: 08/11/2017
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
-
 
 Managed queries help you find work items that you want to review, triage, update, or list in a report. Also, with flat-list queries, you can create status and trend charts and place them on your team dashboard. 
 

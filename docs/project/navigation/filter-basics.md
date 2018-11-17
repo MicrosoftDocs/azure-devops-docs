@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
-ms.date: 07/21/2018
+monikerRange: '>= tfs-2017'
+ms.date: 11/19/2018
 ---
   
 
@@ -50,7 +50,7 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="tfs-2017"
 
 ## Filter work items based on keywords
 
@@ -68,7 +68,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
+::: moniker range="tfs-2017"
 ## Filter work tracking backlogs and queries based on tags
 
 If you've [added tags to your work items](../../boards/queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../boards/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  

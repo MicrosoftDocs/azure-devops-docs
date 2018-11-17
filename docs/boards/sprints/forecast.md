@@ -1,7 +1,7 @@
 ---
 title: Forecasting 
-titleSuffix: Azure Boards and TFS   
-description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards   
+description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints    
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/19/2018
+ms.date: 11/19/2018
 ---
 
 # Forecast your product backlog
@@ -56,16 +56,13 @@ Here's what you need to have in place before you attempt to forecast your team's
 
 You can use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team has activated. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-> [!NOTE]
-> If you work with several teams, and each team wants to work with their own backlog, velocity chart, and forecast tool, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../organizations/settings/set-team-defaults.md). 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 To forecast your product backlog, perform the following actions.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -86,7 +83,7 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecast** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
@@ -112,6 +109,8 @@ To forecast your product backlog, perform the following actions.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 To forecast your product backlog, perform the following actions.
 
@@ -140,6 +139,14 @@ To forecast your product backlog, perform the following actions.
 
 	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.  
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 ## Review the forecast results 
@@ -147,7 +154,7 @@ To forecast your product backlog, perform the following actions.
 *	Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 
 *	Question forecast results where the effort of an item is near to, or greater than, team velocity.  
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018" 
 
 In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
@@ -180,7 +187,8 @@ In this example, a Velocity of 15 is used. The forecast tool shows between two a
 - **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed; no Effort points are carried over into the next sprint.
 - **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
 
-<img src="_img/vel-forecast-forecast-ts.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #C3C3C3;" />
+![Web portal, Backlog, Forecast On](_img/vel-forecast-forecast-ts.png)  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -197,7 +205,8 @@ In summary:
 - **Sprint 5**: 16 Effort points, items 9 through  12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint    
 - **Sprint 6**: 19 Effort points, items 13 through 15 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint     
 
-<img src="_img/ALM_VF_Forecast_1.png" alt="Web portal, Enter a velocity to show forecast lines" style="border: 1px solid #C3C3C3;" />
+![Web portal, Enter a velocity to show forecast lines](_img/ALM_VF_Forecast_1.png)  
+
 ::: moniker-end
 
 ## Determine the velocity needed to complete all items in the backlog

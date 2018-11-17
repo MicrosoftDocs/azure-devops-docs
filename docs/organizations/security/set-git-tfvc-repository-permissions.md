@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/06/2017
+ms.date: 11/19/2018
 ---
 
 
@@ -35,7 +35,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -52,12 +52,14 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -80,6 +82,12 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 4. When done, choose **Save changes**. 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 
@@ -89,7 +97,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
@@ -101,12 +109,14 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
@@ -120,8 +130,15 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 3. Save your changes. 
 
+::: moniker-end
 
-## Related notes
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
+---
+
+## Related articles
 
 - [Default Git permissions](default-git-permissions.md)  
 - [Default TFVC permissions](default-tfvc-permissions.md)  

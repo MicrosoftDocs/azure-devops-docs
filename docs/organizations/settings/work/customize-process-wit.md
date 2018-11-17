@@ -9,7 +9,7 @@ ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.topic: conceptual
 ms.date: 05/31/2018
 ---
@@ -24,6 +24,10 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 > [!div class="mx-imgBorder"]  
 > ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png) 
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -41,9 +45,6 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
-
-
- 
 
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
