@@ -8,8 +8,9 @@ ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
+monikerRange: ">= tfs-2018"
 author: KathrynEE
-ms.date: 3/28/2018
+ms.date: 11/01/2018
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 
@@ -18,7 +19,7 @@ ms.date: 3/28/2018
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
 
-0. Verify that the [Analytics View](../analytics/what-are-analytics-views.md) is shared with all users who might have [access to edit it](../analytics/analytics-views-create.md).
+1. If using an [Analytics View](../analytics/what-are-analytics-views.md) , verify that the view is Shared and not Private.
 
 0. Open the **Power BI Desktop** file with your data.  
 
@@ -46,17 +47,15 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
      <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
-0. Select the appropriate authentication option (as discussed in [Client Authentication Options](../analytics/client-authentication-options.md)). 
+0. Select the appropriate authentication option. 
 
-	* Use **oAuth2**  for Azure Active Directory (Azure AD) credentials.
+	* Use **oAuth2**  for Azure Active Directory (Azure AD) or Windows credentials.
 
     ![Configure Areas dialog](_img/aad-auth-power-bi.png)
  
 	* Use **Basic** for PAT credentials.   
 
     ![Configure Fabrikam Data dialog, Enter credentials](_img/publish-5.png)
-
-	See [Client Authentication Options](../analytics/client-authentication-options.md) for more information on acquiring credentials.  
 
 	> [!IMPORTANT]  
 	> If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](../analytics/client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
@@ -72,7 +71,6 @@ At this point, the data will update on your scheduled basis using the credential
 ## Related articles
 
 - [Analytics service](index.md)  
-- [Client authentication options](../analytics/client-authentication-options.md)
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](../analytics/access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

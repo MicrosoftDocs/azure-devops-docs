@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Building a product
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Build the integrated code to integrate development work into a component, a sub-system, a system, or a finished product - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile

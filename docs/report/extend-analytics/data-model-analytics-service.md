@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts'
-ms.date: 2/18/2018
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # Data model for the Analytics Service  
@@ -26,7 +26,25 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: 
+
+::: moniker range="vsts"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+```
+
+::: moniker-end
 
 The data model contains the following entity sets:  
 

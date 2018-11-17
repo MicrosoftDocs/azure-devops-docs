@@ -11,14 +11,13 @@ ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 03/20/2018 
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/01/2018
 ---
+<!-- TODO: switch to azdevserver-2019 -->
 
-<!--- provides support for FWLINK https://go.microsoft.com/fwlink/?linkid=841878; Update when topic goes live --> 
 
 # Configure the Velocity widget 
-
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). 
@@ -26,8 +25,8 @@ Teams track their velocity to help them determine how much work they can perform
 **Example Velocity widget showing six sprints of velocity**  
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
-> [!NOTE]   
-> **Feature availability:** The Velocity widget is available for Azure DevOps at this time. For on-premises TFS, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
+[!NOTE]
+> The Velocity widget is available by installing the [Analytics extension](../analytics/analytics-extension.md). For TFS 2018 and earlier, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
 
 Use this topic to learn: 
 
@@ -41,7 +40,7 @@ There are two velocity charts, the one you access by adding the Velocity widget 
  
 ### Prerequisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 
@@ -50,7 +49,7 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 
 You configure your velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team which rolls up from several teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
+1. If you haven't yet added the [Analyics Marketplace extension](../analytics/analytics-extension.md), do that now. 
 
 2. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 

@@ -1,6 +1,6 @@
 ---
 title: Drive Git or TFVC development from a work item
-titleSuffix: Azure Boards and TFS 
+titleSuffix: Azure Boards 
 description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,13 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 # Drive Git development from a work item   
 
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -88,7 +88,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
  	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]  
-	>Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
+	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
 	 
 	<img src="_img/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" /> 
 
@@ -164,7 +164,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 
-::: moniker range=">= tfs-2017"
+
 ### Link types showing in the Development section
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
@@ -172,8 +172,8 @@ Links shown in this section appear as a result of these actions:
 - Specifically linking the work item from the Development section or ![Links tab icon](_img/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
-::: moniker-end
-::: moniker range="vsts"
+
+::: moniker range=">= azdevserver-2019"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="../queries/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
@@ -184,6 +184,9 @@ The link types you can add within the development section are Branch, Build, Cha
 
 <img src="_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end

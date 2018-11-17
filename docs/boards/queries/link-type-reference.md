@@ -1,6 +1,6 @@
 ---
 title: Link types reference 
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Reference guide to all link types defined for Azure DevOps and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,9 +8,9 @@ ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.topic: sample
-ms.date: 10/19/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 10/19/2018
 
 <a id="link-type-guidance"></a>
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 Four link types are supported. A specific field maintains a count of links for each of these link types. 
 
 - [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
@@ -28,16 +28,16 @@ Four link types are supported. A specific field maintains a count of links for e
 - [**Hyperlink**](#hyperlink) supports linking a work item to any URL or network share
 - [**External link types**](#external-link-types) supports connecting a work item to an external object, such as a code object, build, or wiki page.   
 
-::: moniker-end 
+::: moniker-end 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= azdevserver-2019"  
 Three link types are supported. A specific field maintains a count of links for each of these link types. 
 
 - [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
 - [**Hyperlink**](#hyperlink) supports linking a work item to any URL or network share
 - [**External link types**](#external-link-types) supports connecting a work item to an external object, such as a code object, build, or storyboard.   
 
-::: moniker-end 
+::: moniker-end 
 
 Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology).
 
@@ -54,13 +54,14 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-The following table describes the  work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
-::: moniker-end 
+::: moniker range=">= tfs-2017 <= azdevserver-2019"  
+The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
-The following table describes the  work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-::: moniker-end 
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
+
+::: moniker-end  
 
 <table>
 <tbody valign="top">
@@ -194,7 +195,9 @@ Link category: Process-defined</p></td>
 **Notes:**
 1. Available from TFS 2017 and later versions. 
 
-::: moniker range="vsts"    
+
+
+::: moniker range="vsts"   
 
 <a id= "remote-work-link-types" />
 ## Remote work link types
@@ -244,7 +247,7 @@ Link category: System-defined</p>
 </table>
 
 
-::: moniker-end   
+::: moniker-end  
 
 <a id="hyperlink">  </a>
 ## Hyperlink type
@@ -283,17 +286,17 @@ External link types are system-defined link types. They support linking work ite
 > [!div class="mx-imgBorder"]  
 > ![External link types, conceptual image](_img/link-type-reference/linkscontrol-external-link-types.png) 
 
-::: moniker range="vsts"  
+::: moniker range="vsts"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
-::: moniker-end 
+::: moniker-endÂ 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= azdevserver-2019""  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
-::: moniker-end 
+::: moniker-endÂ 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link typesto scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-::: moniker-end 
+::: moniker-endÂ 
 
 
 <table width="100%"> 
@@ -412,7 +415,7 @@ The following table describes the external link types you can choose when adding
 </tbody>
 </table>
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="<= azdevserver-2019" 
 ## Custom link types
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  

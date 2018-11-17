@@ -64,7 +64,7 @@ Migration to Azure DevOps Services is a great time to think about process alignm
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
 
 <a id="import-process">  </a>
 ## Import a process

@@ -1,7 +1,7 @@
 ---
 title: Queries index 
-titleSuffix: Azure Boards and TFS
-description: Find and list work items, create flat-based query charts in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Find and list work items, create flat-based query charts in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries   
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,7 +9,8 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Queries
