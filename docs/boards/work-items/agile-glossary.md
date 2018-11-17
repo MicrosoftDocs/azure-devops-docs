@@ -1,17 +1,15 @@
 ---
 title: Agile tools and terms 
-titleSuffix: Azure Boards
-description: Key definitions for objects and items used to track work in Azure Boards, Azure DevOps, & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Key definitions for objects and items used to track work in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
---- 
+ms.date: 10/12/2018
+---
 
 # Agile glossary 
 

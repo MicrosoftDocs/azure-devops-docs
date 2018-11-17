@@ -1,6 +1,6 @@
 ---
-title: Markdown syntax for files, widgets, and wikis in Azure DevOps
-titleSuffix: Azure DevOps 
+title: Markdown syntax for files, widgets, and wikis in Azure DevOps and TFS
+titleSuffix: Azure DevOps & TFS 
 description: Learn how to share information, add tables & mathematical notation using markdown within pull requests, README files, dashboards, and wikis  
 ms.prod: devops
 ms.technology: devops-collab
@@ -11,18 +11,18 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 11/15/2018
 ---
 
 # Syntax guidance for markdown usage
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
 You can provide guidance to your team in these places using markdown:
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 - [Project wiki (provisioned wiki)](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
@@ -48,7 +48,7 @@ You can provide guidance to your team in these places using markdown:
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="=tfs-2017"
 
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
 - [Project vision page or Welcome pages](project-vision-status.md)  
@@ -188,7 +188,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 
 Combine these elements to apply multiple emphasis to text.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 > [!NOTE]  
 > There is no markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` will yield <u>underlined text`</u>.
 ::: moniker-end
@@ -813,7 +813,7 @@ $$
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 <a id="toc-wiki" > </a>
 
 ## Table of contents (TOC) for Wiki pages
@@ -838,7 +838,7 @@ Note: The tag [[\_TOC\_]] is case sensitive i.e. [[\_toc\_]] may not render the 
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 ## Embed Videos in a Wiki page
 

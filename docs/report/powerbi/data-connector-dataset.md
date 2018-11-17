@@ -25,6 +25,10 @@ Each Analytics view defines a dataset in Power BI. Datasets are the tables and p
 
 To learn more about Power BI and datasets, see [Power BI - basic concepts for Power BI service](/power-bi/service-basic-concepts).
 
+
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+
+
 ## Flattening the Analytics OData endpoint
 
 The Analytics OData endpoint provides a normalized representation of the Analytics service data. The data is normalized primarily to support reporting on the "many-to-many" relationships that exist between the data, such as work items and  associated tags. 

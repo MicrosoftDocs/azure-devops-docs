@@ -1,7 +1,7 @@
 ---
 title: Search Wiki content defined in your team project
-titleSuffix: Azure DevOps
-description: Share information using a project or repo README or Wiki in Azure DevOps 
+titleSuffix: Azure DevOps & TFS
+description: Share information using a project or repo README or Wiki in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -10,13 +10,13 @@ ms.manager: douge
 ms.author: chcomley
 ms.reviewer: sancha
 ms.topic: overview
-ms.date: 11/19/2018
+ms.date: 11/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= tfs-2018"
 
-# About Wikis, READMEs, and markdown
+# About Wikis and READMEs
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
@@ -44,7 +44,7 @@ You can provide guidance to your team in the following places using Markdown:
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
   
 - [Team project wiki (provisioned wiki)](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
@@ -76,6 +76,7 @@ You can provide guidance to your team in the following places using Markdown:
 
 For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
 
+::: moniker range=">= tfs-2015"
 
 ## READMEs
 
@@ -98,7 +99,7 @@ Here are some great READMEs that use this format and speak to all three audience
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
-
+::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
@@ -113,7 +114,7 @@ Use your team project wiki to share information with other team members. When yo
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 The following features are supported for the team project wiki.
 
@@ -171,7 +172,7 @@ The following features are supported for the team project wiki you create in the
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 ## Publish existing Git repositories to a wiki  
 

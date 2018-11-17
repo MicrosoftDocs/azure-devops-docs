@@ -1,7 +1,7 @@
 ---
 title: Backlogs index to content
-titleSuffix: Azure Boards
-description: Index to topics for planning and tracking work in Azure Boards, Azure DevOps, & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
@@ -54,7 +54,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)  
 - [Refine your backlog](best-practices-product-backlog.md)         
 - [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
-- [Share information in work items and social tools](../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
+- [Share work plans](../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 
 ## How-to Guides
 

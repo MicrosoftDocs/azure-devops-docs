@@ -1,6 +1,6 @@
 ---
 title: Bulk modify using Excel
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards and TFS  
 description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Azure Boards or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,10 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/10/2017
 ---
-
 
 # Bulk add or modify work items with Excel 
 

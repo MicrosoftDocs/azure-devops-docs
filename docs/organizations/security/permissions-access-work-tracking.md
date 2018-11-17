@@ -9,9 +9,9 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+ms.date: 10/23/2017
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
 ---
 
 # Permissions and access for work tracking
@@ -203,8 +203,8 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
-- **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)  
+- **Azure DevOps**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
+- **TFS**: [Change access levels](change-access-levels.md)  
 
 
 <a id="grant-add-permissions"></a>  
@@ -221,15 +221,8 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="tfs-2018 || azdevserver-2019"
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md) and [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
-
-::: moniker range="<= tfs-2017"
-
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
-
-::: moniker-end  
 
 ## Related notes 
 

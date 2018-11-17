@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
 ---
 
 # Security glossary

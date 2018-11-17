@@ -11,10 +11,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2018
+ms.date: 08/06/2018
 ---
 
 # View and work with the built-in team velocity chart 
+
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. The built-in team velocity chart provides an indication of how much work a team can complete during a sprint. The chart is only available for the product backlog and is based on the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
@@ -31,7 +32,7 @@ Use this topic to learn:
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
-::: moniker range="azdevserver-2019 || vsts"  
+::: moniker range="vsts"  
 > [!NOTE]   
 > In addition to the built-in velocity chart, Azure DevOps users have access to the [Velocity widget](team-velocity.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart. 
 ::: moniker-end  
@@ -49,14 +50,16 @@ From your web browser, open your product backlog.
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	![Open Boards, Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+::: moniker range="vsts"
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	> [!div class="mx-imgBorder"]
+	![Open Work, Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
@@ -85,6 +88,8 @@ From your web browser, open your product backlog.
 
 	> [!NOTE]  
 	> Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
+
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013  <= tfs-2018"  
@@ -92,6 +97,7 @@ From your web browser, open your product backlog.
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
+
 1.	From the backlog page, open the velocity chart.  
 
 	![Choose the velocity chart in the upper right area of the page](_img/velocity/velocity-forecast-open-chart.png)  
@@ -113,6 +119,7 @@ From your web browser, open your product backlog.
 ---
 	
 ## Required and recommended activities   
+
 For your team to gain the greatest utility from the velocity chart, follow these required and recommended tasks.  
 
 **Required:** 
@@ -133,5 +140,8 @@ If you work with several teams, and each team wants to work with their own backl
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Velocity guidance](velocity-guidance.md)
+
+ 

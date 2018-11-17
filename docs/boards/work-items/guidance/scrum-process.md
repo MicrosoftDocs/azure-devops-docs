@@ -1,7 +1,7 @@
 ---
 title: Scrum process template artifacts
-titleSuffix: Azure Boards
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
---- 
+ms.date: 03/20/2018
+---
 
 
 # Scrum process   
@@ -30,7 +30,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 ::: moniker-end
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
 > The latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -84,12 +84,12 @@ To get started, you can open a shared query and create a chart based on your tra
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
 <a id="reports"></a>
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ## Scrum process and SQL Server reports
 
 If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  

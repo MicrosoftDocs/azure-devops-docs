@@ -1,6 +1,6 @@
 ---
 title: Sprints and Scrum key concepts and terms
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-sprints
 ms.technology: devops-agile
@@ -11,8 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
----
+ms.date: 10/12/2018
+--- 
 
 #  Sprints and Scrum key concepts
 
@@ -145,7 +145,7 @@ For example, in the chart shown below the green bar indicates the total estimate
 
 ![Velocity chart](_img/velocity-chart.png)
 
-::: moniker range="azdevserver-2019 || vsts"  
+::: moniker range="vsts"  
 In addition to the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 
 ::: moniker-end  
 

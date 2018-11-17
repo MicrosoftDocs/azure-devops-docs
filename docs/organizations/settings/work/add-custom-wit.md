@@ -10,15 +10,18 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018
+monikerRange: 'vsts'
+ms.date: 05/31/2018
 ---
 
-# Add a custom work item type (Inheritance process)     
+# Add a custom work item type     
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
+
+> [!IMPORTANT]  
+> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
 
 For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
@@ -30,14 +33,12 @@ For example, you may want to capture customer issues in a custom WIT labeled Tic
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
+ 
 [!INCLUDE [temp](../_shared/create-inherited-process.md)] 
 
 <a id="add-wit">  </a>
@@ -92,7 +93,9 @@ To learn more about what you can customize, see [About process customization and
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
+
 # [New navigation](#tab/new-nav)
+
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
@@ -103,6 +106,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](_img/process/create-test-project.png) 
+
 
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
@@ -121,9 +125,8 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png)  
 
-# [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+# [Previous navigation](#tab/previous-nav)
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
@@ -146,12 +149,6 @@ We recommend that you create a test project and apply your customized  inherited
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 

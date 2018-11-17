@@ -11,13 +11,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/05/2018
 ---
 
 
 # Why use Azure Boards?  
 
-[!INCLUDE [temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 We know you have a choice of tracking systems. So why use Azure Boards to plan and track your work, bugs, and customer issues? 
 

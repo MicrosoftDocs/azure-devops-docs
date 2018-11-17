@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 07/21/2018
 ---
 
 
@@ -29,7 +29,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts" 
 ## Analytics views
 Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end
@@ -90,7 +90,9 @@ An interactive list of work items that have been assigned to the same sprint or 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
+
 [!INCLUDE [temp](../../_shared/glossary-terms/tfvc-repo.md)] 
+
 
 [!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
 

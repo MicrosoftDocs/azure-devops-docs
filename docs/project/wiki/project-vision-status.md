@@ -1,6 +1,6 @@
 ---
-title: Share your project vision and view project activity in Azure DevOps
-titleSuffix: Azure DevOps 
+title: Share your project vision and view project activity in Azure DevOps and TFS
+titleSuffix: Azure DevOps & TFS 
 description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps or Team Foundation Server   
 ms.topic: quickstart
 ms.technology: devops-collab
@@ -10,25 +10,25 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 11/15/2018
 ---
 
 # Quickstart: Share your project vision, view project activity
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018"  
 From the project summary page, you can share your project vision with your team, add project members, and check the latest project activity. You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2017"  
 From the project home page, you can share your project vision with your team, add project members, and check the latest project activity. You can share your project vision and objective, as well as ways for team members to contribute to the project through a project README file.
 ::: moniker-end  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 > [!NOTE]
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
@@ -42,11 +42,11 @@ From the project home page, you can share your project vision with your team, ad
 
 ## Open Project summary
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
   
 From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
@@ -74,24 +74,20 @@ To support your project vision, you can choose a README file that you maintain i
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary, previous nav](_img/project-vision-status-project-home-page.png)  
 
-To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
-
 ::: moniker-end
+
+To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
 > The project page described in this section is available for TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2015 and TFS 2017.
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -104,7 +100,7 @@ You can share your project vision and objective, as well as ways for team member
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 1. Open **Repos>Files**. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or simply initialize a repo.  
 
@@ -140,7 +136,7 @@ You can share your project vision and objective, as well as ways for team member
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || vsts" 
+::: moniker range=">= tfs-2018"  
 0. Open the Project home page.
 
 0. With the **Add a README** check box checked, choose **Initialize**.
@@ -177,10 +173,6 @@ You can share your project vision and objective, as well as ways for team member
 
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 <a id="initialize-tfvc"> </a>
@@ -191,7 +183,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range="vsts"  
 
 0. Open **Repos>Files**.
 
@@ -229,13 +221,11 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
 
 0. Open the Project home page.
 
@@ -252,12 +242,6 @@ For projects that selected TFVC for version control, the README.md file needs to
 	> ![Edit page, new nav](_img/share-project/tfvc-checkin-page.png)  
 Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder will also show up in the left pane for easy navigation between them so you can provide additional information.  
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 <a id="cross-project-activity">  </a>
@@ -266,7 +250,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 To add users to the project, choose the ![ ](_img/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 > [!div class="mx-imgBorder"]  
@@ -274,8 +258,7 @@ To add users to the project, choose the ![ ](_img/share-project/add-members-new-
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
 
 ![Project Home Page, Activity](_img/project-home-page-activity.png)  
@@ -290,7 +273,7 @@ You can change the repository used to support your project vision, including poi
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range="vsts"  
 
 0. Open **Overview>Summary** .
 
@@ -299,7 +282,7 @@ You can change the repository used to support your project vision, including poi
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](_img/share-project/choose-readme-file-new-nav.png)  
 
-	If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+	If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) in order to proceed.
 
 0. Select a different repository or choose the Wiki option.
 
@@ -311,21 +294,18 @@ You can change the repository used to support your project vision, including poi
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
 
 0. From your project home page, choose **Change**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project page, Change repo](_img/share-project/markdown-welcome-page-change-location.png)  
 
-	If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+	If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) in order to proceed.
 
 0. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option as shown here. 
 
@@ -333,12 +313,6 @@ You can change the repository used to support your project vision, including poi
 
 	> [!TIP]  
 	> Only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 

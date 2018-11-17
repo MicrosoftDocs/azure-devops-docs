@@ -1,6 +1,6 @@
 ---
 title: Changes made to process templates
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards and TFS  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,10 +8,8 @@ ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688
 ms.topic: reference 
 ms.manager: douge
 ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
---- 
+ms.date: 09/29/2017
+---
 
 # Changes made to process templates  
 

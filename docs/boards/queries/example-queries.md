@@ -1,7 +1,7 @@
 ---
 title: List work items with managed queries 
-titleSuffix: Azure Boards 
-description: Track work by creating queries to list work items in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Track work by creating queries to list work items in Azure Boards & Team Foundation Server 
 ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 04/27/2018  
 ---
 
 
@@ -39,8 +39,8 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 - [View and run a query](view-run-query.md)   
 - [Perform an adhoc search](search-box-queries.md)  
 - [Query editor](using-queries.md)    
-- [Query operators & macros](query-operators-variables.md)  
-- [Organize and run managed queries](organize-queries.md)  
+- [Query operators & macros](query-operators-variables.md)       
+- [Organize and run managed queries](organize-queries.md)   
 
 
 ###Additional tips for working with queries
@@ -129,7 +129,7 @@ For additional tips when working with the new queries experience or the director
 - [List query-based test suites](build-test-integration.md)  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 ### Team focus 
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  

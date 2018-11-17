@@ -11,7 +11,7 @@ You can start viewing and adding work items once you connect to a project.
 > The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps Services. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -24,18 +24,11 @@ The **New Navigation** feature isn't supported on the TFS platform at this time.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items ](/azure/devops/boards/work-items/_img/view-add/work-items-hub.png)
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 

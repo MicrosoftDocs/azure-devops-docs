@@ -1,7 +1,7 @@
 ---
 title: Add tags to work items 
-titleSuffix: Azure Boards
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,8 +9,7 @@ ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 03/20/2018
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -70,7 +69,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 [Use Excel to bulk modify tags](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
@@ -116,7 +115,7 @@ All tags that have been added to the listed work items appear.
 ::: moniker-end
   
 
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../_img/icons/actions-icon.png) actions icon to select it from the menu of options.    
 
@@ -144,7 +143,7 @@ Check the boxes of those tags that you want to filter on. Keep the OR selection 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 1. Turn on filtering and choose a tag.  
 
@@ -192,10 +191,17 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Add tags to the default column view on the product backlog 
 
 To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
+
+<!---
+### Add or modify tags using an API 
+
+You can use ```WorkItem.Fields``` or Work Item Field Explorer, provided with the Process Editor, to determine if the Tags field is editable (IsEditable). To acquire the Process Editor: 
+* For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?* For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
+-->

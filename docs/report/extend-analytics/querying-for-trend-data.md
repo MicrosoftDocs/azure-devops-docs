@@ -9,8 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: ">= tfs-2018"
-ms.date: 11/2/2018
+monikerRange: 'vsts'
+ms.date: 11/13/2017
 ---
 
 # Query trend data
@@ -34,16 +34,6 @@ In this topic you'll learn:
 
 Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
-::: moniker range="tfs-2018"
-
->[!NOTE]
->The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
-```
-::: moniker-end
 
 ## Construct a basic query for trend data   
  

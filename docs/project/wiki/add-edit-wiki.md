@@ -1,7 +1,7 @@
 ---
-title: Add, edit, or print wiki pages in Azure DevOps
-titleSuffix: Azure DevOps  
-description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps  
+title: Add, edit, or print wiki pages in Azure DevOps and Team Foundation Server
+titleSuffix: Azure DevOps & TFS  
+description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 11/19/2018  
+ms.date: 11/15/2018  
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -30,14 +30,14 @@ As you continue editing the page, save the page by entering **Ctrl+S**. To save 
 
 <img src="_img/wiki/wiki-save-with-message.png" alt="Save page with a custom message" style="border: 1px solid #C3C3C3;" />
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 > [!NOTE]  
-> To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This article addresses how to add and edit pages of a wiki that you've provisioned for a team project.
+> To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This topic addresses how to add and edit pages of a wiki that you've provisioned for a team project.
 
 ::: moniker-end
 
-Use this article to learn how to do the following:  
+Use this topic to learn how to do the following:  
 
 > [!div class="checklist"]
 > * Open **Wiki**
@@ -52,7 +52,7 @@ Use this article to learn how to do the following:
 ## Prerequisites
 
 * You must have a provisioned wiki. If you're wiki hasn't yet been created, [do that now](wiki-create-repo.md).
-* You must be a member of the team project as a contributor to add or update wiki pages.
+* You must be a member of the team project as a contributor in order to add or update wiki pages.
 
 [!INCLUDE  [temp](_shared/open-wiki-hub.md)]
 

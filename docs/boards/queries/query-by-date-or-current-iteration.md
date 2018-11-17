@@ -1,7 +1,7 @@
 ---
 title: Query by date or current iteration 
-titleSuffix: Azure Boards
-description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 03/06/2018  
 ---
 
 # Query by date or current iteration
@@ -23,13 +23,13 @@ For example, you can find work items that were modified in the last 3 days with 
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions. These macros only work when run them from the web portal. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for Azure Boards. These two macros only work when run them from the web portal. 
 
 ## Query for items based on when changes occurred
 
@@ -40,10 +40,10 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 <table valign="top">
 <tbody valign="top">
 <tr>
-  <th width="40%">
+  <th width="25%">
     <p>Filter for</p>
   </th>
-  <th width="60%">
+  <th>
     <p>Include these query clauses</p>
   </th>
 </tr>
@@ -104,7 +104,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
@@ -119,7 +119,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
@@ -129,7 +129,7 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 <a id="current-iteration-plus-minus-n">  </a>
 ## Query for items based on a sliding window of team iterations 
@@ -155,9 +155,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <table>
 <tbody valign="top">
 <tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
+  <th width="14%">Field name</th>
+  <th>Description</th>
+  <th>Work item type</th>
 </tr>
 <tr>
   <td>
@@ -300,7 +300,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
@@ -313,7 +313,7 @@ You can use the **@CurrentIteration** in a query from the following clients:
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
 - Using the REST API
 
-You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
 An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).

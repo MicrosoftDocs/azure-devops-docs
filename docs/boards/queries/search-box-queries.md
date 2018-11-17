@@ -1,7 +1,7 @@
 ---
 title: Perform adhoc searches for quick queries
-titleSuffix: Azure Boards
-description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps, & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards & Team Foundation Server  
 ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,8 +9,7 @@ ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/10/2018  
 ---
 
 
@@ -35,7 +34,7 @@ For TFS 2017.1 and earlier versions, or where the work item search extension has
 
 With semantic search, you search against a more fully indexed set of fields. With adhoc search, the number of fields that are indexed are limited. 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!TIP]   
 > If semantic search has been configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
 > 
@@ -52,11 +51,11 @@ With semantic search you can search:
 
 Free text search easily searches across all work item fields, including custom fields, which enables more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
@@ -87,7 +86,7 @@ Free text search easily searches across all work item fields, including custom f
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017" 
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -118,11 +117,6 @@ Free text search easily searches across all work item fields, including custom f
 
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [adhoc search](#adhoc-search).
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 
@@ -130,7 +124,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -163,13 +157,13 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017" 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -205,10 +199,6 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [adhoc search](#adhoc-search).
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 <a name="adhoc-search"></a>
@@ -233,7 +223,7 @@ Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Cont
 Adhoc search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!div class="mx-imgBorder"]  
 > ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)   
@@ -304,7 +294,7 @@ To find work items based on a keyword or phrase contained within other text stri
 |Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test `|  
 
 > [!NOTE]     
-> Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item will not be found. However, if you search for the complete string `History:reproducible` the work item will be found.
+>Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item will not be found. However, if you search for the complete string `History:reproducible` the work item will be found.
 
 ## Use @Me or @Today macros
 

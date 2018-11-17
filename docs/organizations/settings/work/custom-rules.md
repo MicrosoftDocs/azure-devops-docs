@@ -9,20 +9,17 @@ ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 05/31/2018
 ---
 
 
-# Add a rule to a work item type (Inheritance process)   
+# Add a rule to a work item type  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
-
-> [!NOTE]     
-> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios: 
 
@@ -32,11 +29,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
-
- 
+[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
 ## Rule composition  
 
@@ -55,9 +48,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |![list of conditions](_img/rules/when-condition.png) | ![list of actions](_img/rules/rule-actions.png)
 
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
- 
+> [!NOTE]     
+> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

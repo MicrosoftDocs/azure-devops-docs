@@ -4,6 +4,8 @@
   items:
     - name: About work tracking customization
       href: customize-work.md
+    - name: Deprecation of WIT & Test Client OM
+      href: ../integrate/concepts/wit-client-om-deprecation.md
 - name: Quickstarts
   items:
     - name: Define area paths
@@ -327,8 +329,6 @@
           href: ./xml/define-modify-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Customize and manage the test experience
           href: ./witadmin/tcm-customize-manage-test-experience.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Deprecation of WIT & Test Client OM
-      href: ../integrate/concepts/wit-client-om-deprecation.md
     - name: API SDK reference
       items:
         - name: IProcessTemplates.AddUpdateTemplate

@@ -1,6 +1,6 @@
 ---
 title: Filter backlogs and queries 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Filter your backlog or query based on keywords, tags, or other fields   
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
@@ -10,8 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/25/2018
 ---
 
 
@@ -23,71 +22,16 @@ ms.date: 11/19/2018
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range="vsts"
+::: moniker range=">= tfs-2018"
 ## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)  
-
-To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filter by keyword](_img/filter/filter-s144.png)  
-
-Here we show a filtered backlog based on the keyword "issues". Filtered pages show the ![ ](../../_img/icons/filtered.png) filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filter by keyword](_img/filter/filter-issues-keyword.png)   
-
-To clear and dismiss filtering, choose the ![ ](../../_img/icons/close-filter.png) close filter icon.
-
-# [Previous navigation](#tab/previous-nav)
-
-To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. The filtered set is always a flat list, even if you've selected to show parents. 
-
-![Backlogs, turn filtering on](_img/filter/filter-backlog-prev-nav-cloud.png)  
-
-To clear and dismiss filtering, choose the ![ ](../../_img/icons/close-filter.png) close filter icon.
-
----
-
-::: moniker-end 
-
-::: moniker range="azdevserver-2019"
-## Filter based on keywords or fields   
-
-You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
-
-To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filter by keyword](_img/filter/filter-s144.png)  
-
-Here we show a filtered backlog based on the keyword "issues". Filtered pages show the ![ ](../../_img/icons/filtered.png) filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filter by keyword](_img/filter/filter-issues-keyword.png)   
-
-::: moniker-end 
-
-
-::: moniker range="tfs-2018"
-## Filter based on keywords or fields   
-
-You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
-
-To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
-
-![Backlogs, turn filtering on](_img/filter-backlogs-options.png)  
+<img src="_img/filter-backlogs-options.png" alt="Backlogs, turn filtering on" style="border: 2px solid #C3C3C3;" />
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
-::: moniker-end 
-
-
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
@@ -111,7 +55,7 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 
 ## Characters ignored by keyword filter criteria
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 

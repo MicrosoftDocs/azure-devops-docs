@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 
@@ -22,11 +22,11 @@ The standard way for permissions to accrue to individuals are by adding user acc
 
 The three ways to change permissions for an individual are:
 
-- Create a custom Azure DevOps security group, define permissions for that group, add the user account to the group
+- Create a custom group, define permissions for that group, add the user account to the group
 - For object-level permissions: Add the user account and set permissions
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
-In this article you learn how to do the following:
+In this topic you learn how to do the following:
 > [!div class="checklist"]
 > * Create a custom security group 
 > * Set permissions for a custom security group 
@@ -50,7 +50,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 1. Choose **Project Settings** > **Security**.
 
@@ -70,14 +70,12 @@ To create a project-level security group, open the web portal and choose the pro
 4. Choose **Create group**.
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || vsts"
 
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
@@ -96,12 +94,6 @@ To create a project-level security group, open the web portal and choose the pro
     ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
 
 4. Choose **Create group**.
-5. 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -226,7 +218,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
-- [Permissions lookup guide](permissions-lookup-guide.md)
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)

@@ -1,7 +1,7 @@
 ---
 title: Backlogs, boards, & plans
-titleSuffix: Azure Boards
-description: Understand the tasks supported among backlogs, Kanban boards, and taskboards in Azure Boards, Azure DevOps, & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Understand the tasks supported among backlogs, Kanban boards, and taskboards in Azure Boards & Team Foundation Server  
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,8 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/25/2018
 ---
 
 ::: moniker range=">= tfs-2017"
@@ -61,11 +60,11 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -100,7 +99,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -118,12 +117,6 @@ To choose another team, open the project/team selector and select a different te
 From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
 ::: moniker-end
 
@@ -344,7 +337,7 @@ These reasons can cause work items that belong to the Task Category to not appea
 - The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
 	
-<!---
+ <!---
 > [!NOTE]  
 >Appearance of task and child items on the taskboard may differ depending on whether you work in Azure Boards and TFS.
 
@@ -361,22 +354,8 @@ These reasons can cause work items that belong to the Task Category to not appea
 
 If you need more than three backlog and board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-If you need more than three backlog levels and board levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project:  
-
-**Inheritance process model:**  
-- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
-
-**On-premises XML process model:**  
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018" 
+ 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 If you need more than three backlog and board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end
 
@@ -398,7 +377,7 @@ A few things to keep in mind...
 - When you add child items they're linked to their parent using parent-child links which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)    
 
  
-Additional articles of interest:
+Additional topics of interest:
 
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)   
 - [Add work items](add-work-items.md)   

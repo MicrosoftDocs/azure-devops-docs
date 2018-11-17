@@ -8,7 +8,7 @@ ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.topic: reference
-monikerRange: '<= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
 
@@ -35,7 +35,7 @@ Also, you can use `tcm` command options to [copy and clone test suites and test 
 To run the **tcm** command-line tool, open a Command Prompt window where Visual Studio is installed. To do this, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 ####TFS 2018 and TFS 2017, Visual Studio 2017 client:
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`

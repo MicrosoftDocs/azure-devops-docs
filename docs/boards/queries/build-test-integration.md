@@ -1,6 +1,6 @@
 ---
 title: Build and test integration queries
-titleSuffix: Azure Boards 
+titleSuffix: Azure Boards and TFS 
 description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,8 +8,7 @@ ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 04/14/2017  
 ---
 
 
@@ -84,9 +83,9 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <table width="100%">
 <thead>
 <tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
+  <th width="17%">Field name</th>
+  <th width="66%">Description</th>
+  <th width="17%">Work item type</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -182,8 +181,8 @@ Repro Steps (or Steps to reproduce)
 **Notes**  
 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/library/ms194965.aspx).  
-3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
-4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.
+3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
+4.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.
 
 ## Additional fields
 
@@ -194,9 +193,9 @@ The following fields do not appear on work item forms, but these fields are trac
 <table width="100%">
 <thead>
 <tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
+  <th width="17%">Field name</th>
+  <th width="66%">Description</th>
+  <th width="17%">Work item type</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -263,7 +262,7 @@ The following fields do not appear on work item forms, but these fields are trac
 </table>
 
 **Notes**  
-1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
+1.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
 2.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 ## Related articles

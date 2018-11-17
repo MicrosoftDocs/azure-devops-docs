@@ -1,8 +1,8 @@
 ---
 title: Organize and view queries, create query folders 
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards and TFS  
 ms.global_help.title: Organize queries
-description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Manage your queries by using favorites and folders in Azure Boards & Team Foundation Server
 ms.custom: boards-queries 
 ms.prod: devops
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/21/2018  
 ---
 
 
@@ -27,15 +27,14 @@ If you're not a member of the Project Administrators group, [get added](../../or
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
 ## Add a query folder, move items into a folder 
 
-
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 You add query folders from the **Boards>Queries>All** page.
  
@@ -92,11 +91,11 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 ### Q: Can I change the owner of a query or folder?
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2015"
 **A:** No. You can only enable permissions for users and groups from the permissions window for the query or folder.
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2013"
 **A:** Yes. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
 ::: moniker-end
 

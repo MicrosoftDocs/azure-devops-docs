@@ -1,6 +1,6 @@
 ---
 title: Resolve backlog issues 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Resolve error messages when working in backlogs or boards in Azure Boards and Team Foundation Server (TFS) 
 ms.custom: boards-backlogs 
 ms.technology: devops-agile

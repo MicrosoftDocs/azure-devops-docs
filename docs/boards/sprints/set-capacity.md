@@ -1,6 +1,6 @@
 ---
-title: Set sprint capacity 
-titleSuffix: Azure Boards 
+title: Set team capacity to support sprint planning
+titleSuffix: Azure Boards and TFS
 description: Set team capacity for a sprint or iteration working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/21/2018
 ---
 
 <a id="set-capacity">  </a>
@@ -40,11 +40,11 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Open a Sprint backlog for a team 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
@@ -75,8 +75,6 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
@@ -96,14 +94,6 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
 ---
 
 ## Set capacity for the team and team members 
@@ -112,7 +102,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
@@ -148,7 +138,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015"
 0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
@@ -189,10 +179,6 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) field by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
 	::: moniker-end
 
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 ---
 
 ::: moniker range=">= tfs-2015"
@@ -203,17 +189,9 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-> [!NOTE]    
-> This feature is available from TFS 2015.1 and later versions.
-
-Notice that only the capacity per day and activity are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
-
-::: moniker-end
-
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
 > ![Copy capacity, vertical nav](_img/capacity/copy-capacity-from-previous-sprint-vert.png)
@@ -227,26 +205,23 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 
 ![Copy capacity from the previous iteration](_img/capacity/copy-capacity-from-previous-sprint.png)
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
 ---
+
+::: moniker range="tfs-2015"
+> [!NOTE]    
+> This feature is available from TFS 2015.1 and later versions.
+
+Notice that only the capacity per day and activity are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
+
+::: moniker-end
 
 
 ::: moniker range=">= tfs-2015"
 <a id="add-remove-users">  </a>
-
 ## Remove a user from capacity 
 
 To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
@@ -258,9 +233,11 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 > This feature is available from TFS 2015.1 and later versions.
 ::: moniker-end
 
+
+
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
 > ![Remove user from capacity list](_img/capacity/remove-user-agile.png)
@@ -272,12 +249,8 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015"
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -289,19 +262,11 @@ As you define tasks and estimate the work, you'll see capacity charts start to f
 
 You'll also see a roll-up of the remaining work required to complete each requirement or bug.  
 
-::: moniker range=">= azdevserver-2019"
-> [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](_img/capacity/work-details.png)   
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
 ![Capacity charts](_img/capacity/review-capacity.png)  
-::: moniker-end
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-::: moniker range=">= azdevserver-2019"
-
+::: moniker range="vsts"
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
@@ -358,7 +323,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint.  
 
 - [Sprint burndown](../sprints/sprint-burndown.md)
-- [Velocity](../../report/dashboards/velocity-chart-data-store.md)  
+- [Velocity](../../report/dashboards/velocity-chart-data-store.md)    
 - [Forecasting](../sprints/forecast.md)    
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 

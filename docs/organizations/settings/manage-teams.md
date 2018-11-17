@@ -82,7 +82,7 @@ You can configure most of your team settings from the common configuration dialo
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range="vsts"  
 
 0. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
@@ -113,8 +113,6 @@ You can configure most of your team settings from the common configuration dialo
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
-
 0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
@@ -122,7 +120,8 @@ You can configure most of your team settings from the common configuration dialo
 0. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board, previous navigation](../../boards/boards/_img/kanban-basics-intro.png)  
+	>![Open Kanban board, previous navigation](../../boards/boards/_img/kanban-basics-intro.png)
+
 
 1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
@@ -144,14 +143,8 @@ You can configure most of your team settings from the common configuration dialo
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
 	::: moniker-end 
 
-::: moniker-end 
-
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
+
 
 ::: moniker range=">= tfs-2017"  
 
@@ -284,7 +277,7 @@ Additional elements you can configure include:
 ## Add and manage team dashboards   
 
 ::: moniker-end
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts" 
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions). 
 ::: moniker-end
 
@@ -319,6 +312,7 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 
 - [About projects and scaling your organization](../projects/about-projects.md)
 - [About teams and Agile tools](about-teams-and-settings.md)  
+- [Permissions and access for work tracking](../security/permissions-access-work-tracking.md) 
 - [Add teams](add-teams.md) 
 - [Add a team administrator](add-team-administrator.md) 
 

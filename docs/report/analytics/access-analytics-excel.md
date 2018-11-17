@@ -1,6 +1,6 @@
 ---
 title: Access Analytics Service data through Excel
-titleSuffix: Azure DevOps    
+titleSuffix: Azure DevOps Services    
 description: How to guide for accessing the Analytics Service OData from Excel for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,14 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: "azdevserver-2019 || vsts" 
-ms.date: 11/19/2018
+monikerRange: 'vsts'
+ms.date: 09/10/2018
 ---
-
 
 # Access data through Excel 
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can access data through Excel, generate reports and then publish the charts to PowerBI.com or use the Excel file
 as a basis for Power BI reports. At this time you will need to have alternate credentials enabled to access data
@@ -33,9 +32,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 
 	![Excel Get Data ](_img/excel1.png) 
 
-
 4. Enter the URL in the format below and choose **OK**:  
-	::: moniker range="vsts"
 
 	```
 	https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/
@@ -50,26 +47,6 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 	>
 	>`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/` 
 	
-	::: moniker-end
-
-	::: moniker range="azdevserver-2019"
-
-	```
-	https://{ServerName}:{Port}/tfs/{CollectionName}/_odata/{version}/
-	```  
-
-	If the *CollectionName* is **fabrikam** and the *version* is **v1.0**, then the URL is 
-	`https://{ServerName}:{Port}/tfs/fabrikam/_odata/{v1.0}/`.
-
-	![Select OData Feed ](../powerbi/_img/pbi3-onprem.png)  
-
-	>[!NOTE]  
-	>Alternatively, you can enter the URL with the *ProjectName* specified which will trim the results by the specified project across all entities related to that project. 
-	>
-	>`https://{ServerName}:{Port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}/` 
-	
-	::: moniker-end
-
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).
 
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return.

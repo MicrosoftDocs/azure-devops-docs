@@ -10,13 +10,20 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
---- 
+ms.date: 09/19/2018
+---
 
 # Follow a work item or pull request  
 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)] 
+[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)] 
+
+::: moniker range="tfs-2017"
+
+> [!NOTE]   
+> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017). 
+
+::: moniker-end
 
 <a id="follow"></a>  
 
@@ -30,8 +37,8 @@ This topic shows you how to:
 > * Manage work items that you're following
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
-[You must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
+::: moniker range=">= tfs-2017 <= tfs-2018"
+[You must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
 ## Follow a work item
@@ -39,11 +46,6 @@ This topic shows you how to:
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
 <img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
-
-::: moniker range="tfs-2017"
-> [!NOTE]   
-> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
-::: moniker-end
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
@@ -72,7 +74,7 @@ You can review and manage all the work items you've selected to follow.
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"   
+::: moniker range="vsts"   
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
@@ -103,8 +105,6 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 Open **Work>Queries** and choose **Followed work items**.  
 
 <img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
@@ -117,29 +117,25 @@ From this view, you can view all items you're following across all projects. Als
 - Set work item pane
 - Enter full screen mode. 
 
-::: moniker-end
+::: moniker range="tfs-2018"  
 
-::: moniker range="vsts"
-You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
+For TFS 2018.2 and later versions, you can view work you're following from the **Work>Work Items** page. 
+![Projects page, Work, Assigned to me page](../../user-guide/_img/org-hub-tfs/organization-home-work-followed.png) 
 
-::: moniker-end
+::: moniker-end   
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || vsts"     
+::: moniker range=">= tfs-2017 <= tfs-2018"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 --- 
 
 
 ## Related articles  
 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Set team notifications](../../notifications/howto-manage-team-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
 
 

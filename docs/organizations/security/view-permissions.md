@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 
@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to view your permissions or those defined for another which have been set in Azure DevOps or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
+In this quickstart, you learn how to view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
@@ -36,7 +36,7 @@ Permissions are set at the collection, project, and object level as described in
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose **Project Settings** and then **Security**.
 
@@ -62,15 +62,13 @@ Permissions are set at the collection, project, and object level as described in
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
-
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
 	> [!div class="mx-imgBorder"]
@@ -78,41 +76,24 @@ Permissions are set at the collection, project, and object level as described in
 
 2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
 
+	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]
 	> ![Project level permissions for a user, Azure DevOps](_img/view-permissions/search-user-name-vert-nav.png)  
+	::: moniker-end  
+	::: moniker range=">= tfs-2013  <= tfs-2018"  
+	![Find a user account name](_img/view-permissions/search-user-name.png)
+	::: moniker-end  
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
 
+	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]
 	> ![Project level permissions for a user, Azure DevOps](_img/view-permissions/project-level-user-permissions-vsts.png)  
-
-	For a description of each permissions, see [Permissions and groups reference](permissions.md#project-level). 
-
-4. Choose **Member of** to see which security groups the user belongs to.  
-
-	Here we see that *Jamal Hartnett* belongs to several teams as well as the Project Collection Administrators group. 
-
-	![Web portal, Security tab, User name, Members of](_img/view-permissions/view-permissions-member-of.png)    
-
-	For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
-
-2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
-
-	![Find a user account name](_img/view-permissions/search-user-name.png)
-
-3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
-
+	::: moniker-end  
+	::: moniker range=">= tfs-2013  <= tfs-2018"  
 	> [!div class="mx-imgBorder"]
 	> ![Project level permissions for a user, TFS](_img/view-permissions/project-level-user-permissions-tfs.png)  
+	::: moniker-end  
 
 	For a description of each permissions, see [Permissions and groups reference](permissions.md#project-level). 
 
@@ -123,12 +104,6 @@ Permissions are set at the collection, project, and object level as described in
 	![Web portal, Security tab, User name, Members of](_img/view-permissions/view-permissions-member-of.png)    
 
 	For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -138,7 +113,7 @@ Open admin settings for the organization or a collection.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -154,13 +129,12 @@ Open admin settings for the organization or a collection.
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
@@ -173,11 +147,6 @@ Open admin settings for the organization or a collection.
 
 0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -187,6 +156,7 @@ Open admin settings for the organization or a collection.
 You can define the security or permissions for a number of objects. You access them from the context menu of the object. 
 
 From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
+
 
 <table width="80%">
 <tbody valign="top">

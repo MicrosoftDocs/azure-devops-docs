@@ -1,6 +1,6 @@
 ---
 title: Storyboard your ideas with PowerPoint
-titleSuffix: Azure Boards 
+titleSuffix: Azure Boards and TFS 
 description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: 'vsts'
-ms.date: 11/19/2018  
+ms.date: 11/15/2018  
 ---
 
 # Differences between provisioned wikis and published code as a wiki

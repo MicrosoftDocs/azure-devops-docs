@@ -9,14 +9,14 @@ ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 05/31/2018
 ---
 
-# Customize the workflow (Inheritance process)  
+# Customize the workflow 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
@@ -25,15 +25,10 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 <img src="_img/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
-
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
-
 > [!NOTE]    
 > Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
+
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 

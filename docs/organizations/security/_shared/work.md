@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="vsts"  
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -14,7 +14,7 @@ ms.topic: include
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View work items, such as user stories, bugs, and tasks.</td>
+<td align="left">View work items, such as bugs, requirements, and tasks.</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -162,167 +162,7 @@ ms.topic: include
 
 ::: moniker-end  
 
-
-
-::: moniker range="azdevserver-2019"
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team admins</th>
-<th width="16%">Project admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">Create and edit work items, follow a work item.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Change work item type.<sup>1</sup></td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Move or delete work items.<sup>1</sup> </td>
-<td> </td>
-<td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Search and query work items, save work item queries.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>Can't save queries</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">View backlogs, boards, and plans.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Provide feedback.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Request feedback.
-</td>
-<td> </td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management). 
-</td>
-<td> Limited interactions </td>
-<td> View only</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Configure Agile tools, set team defaults.</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Create new work item tags. </td>
-<td>Can assign existing tags</td>
-<td> </td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-
-</tr>
-
-
-<tr>
-<td align="left">View, add, and configure delivery plans.</td>
-<td> </td>
-<td>View only</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-
-</tr>
-
-<tr>
-<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Powerful semantic work-tracking search.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-</tbody>
-</table>
-
-**Notes:**
-1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/analytics/index) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
-
-::: moniker-end  
-
-
-
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013  <= tfs-2018" 
 
 <table>
 <tr valign="bottom">
@@ -335,7 +175,7 @@ ms.topic: include
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View work items, such as user stories, bugs, and tasks.</td>
+<td align="left">View work items, such as bugs, requirements, and tasks.</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -438,7 +278,9 @@ ms.topic: include
 <td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
+
 </tr>
+
 
 <tr>
 <td align="left">View, add, and configure delivery plans.</td>
@@ -450,157 +292,14 @@ ms.topic: include
 
 </tr>
 
+
+
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td> </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Powerful semantic work-tracking search.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-</tbody>
-</table>
-
-::: moniker-end  
-
-
-
-::: moniker range="<= tfs-2018"
-
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team admins</th>
-<th width="16%">Project admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">Create and edit work items, follow a work item.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Delete work items. </td>
-<td> </td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Search and query work items, save work item queries.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>Can't save queries</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">View backlogs, boards, and plans.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Provide feedback.
-</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Request feedback.
-</td>
-<td> </td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).
-</td>
-<td> Limited interactions </td>
-<td> View only</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Configure Agile tools, set team defaults. 
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Create work item tags.</td>
-<td>Can assign existing tags</td>
-<td> </td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">View, add, and configure delivery plans.</td>
-<td> </td>
-<td>View only</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![check mark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
-</td>
-<td> </td>
-<td> </td>
-<td>  </td>
 <td>  </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>

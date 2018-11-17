@@ -37,7 +37,7 @@ The general sequence of steps to support clone are:
 0. Manually reapply customizations that were ignored during clone
 0. Create a test project to verify customizations. 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 
 ## Clone a Hosted XML process to an Inheritance process 

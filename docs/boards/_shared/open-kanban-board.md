@@ -15,7 +15,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
@@ -36,7 +36,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 **New navigation** isn't supported on TFS at this time. Select **Previous navigation** for guidance.
 
@@ -44,8 +44,6 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 0. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
@@ -54,40 +52,24 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
-
+0.	To select another team, open the project and team selector. Select a different team, or select the **Browse** option. 
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Select another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
+	> ![Select another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+	::: moniker-end
+	::: moniker range=">= tfs-2013 <= tfs-2015"
+	![Select another team from the project menu](/azure/devops/boards/sprints/_img/capacity/vso-team-selector.png)
+	::: moniker-end
 
-	Your Kanban board appears. 
-	  
+Your Kanban board appears. 
+	::: moniker range=">= tfs-2017"   
 	![Kanban board, Agile template](/azure/devops/boards/boards/_img/kanban-basics-intro.png)   
-
-::: moniker-end   
-
-::: moniker range="<= tfs-2015"
-
-0. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
-
-	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
-
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
-
-	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
-
-0.	To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
-
-	![Select another team from the project menu](/azure/devops/boards/sprints/_img/capacity/vso-team-selector.png)  
-
-	Your Kanban board appears. 
-	 
+	::: moniker-end   
+	::: moniker range=">= tfs-2013 <= tfs-2015"    
 	> [!div class="mx-imgBorder"]  
-	> ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/_img/overview/kanban-basics-intro-tfs.png)  
-::: moniker-end   
+	> ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
+	::: moniker-end   
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 

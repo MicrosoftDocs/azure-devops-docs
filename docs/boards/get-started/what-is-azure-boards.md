@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/05/2018
 ---
 
 # What is Azure Boards?
@@ -26,7 +26,7 @@ All tools support viewing and defining work items. Each work item represents an 
 
 Your Agile tool set, available from Azure Boards, consists of the following main interactive lists and signboards. Each of these pages provides a filtered set of work items. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 
@@ -46,12 +46,12 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
 > ![Open Work>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
@@ -60,16 +60,20 @@ Open **Work Items** to access several personalized pivots and filter functions t
 ::: moniker range="vsts"   
 > [!div class="mx-imgBorder"]
 > ![Work>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
+
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-The **Work Items** page isn't available for TFS 2018 and earlier versions.  
+> [!div class="mx-imgBorder"]
+> ![Work>Work Items ](../work-items/_img/view-add/work-items-hub.png)
+
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
+::: moniker range=">=tfs-2013 <= tfs-2017"
+
+The **Work Items** page isn't an available feature for TFS 2017 and earlier versions.  
+::: moniker-end   
 
 ---
  
@@ -80,28 +84,24 @@ The **Work Items** page isn't available for TFS 2018 and earlier versions.
 Boards present work items as cards and support quick status updates through a drag-and-drop feature. The feature is similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices. You can define columns and swim lanes, set Work-in-Progress (WIP) limits, define the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017"   
 ![Kanban board, Agile template](../boards/_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](../boards/_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -111,25 +111,21 @@ Boards present work items as cards and support quick status updates through a dr
 Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. To get started, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 !["Web portal, choose Work>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -140,25 +136,21 @@ Backlogs present work items as lists. A product backlog represents your project 
 Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path by using the drag-and-drop feature. You then can view that work in a separate *sprint backlog*. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ![New Navigation, Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 !["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Manage issues  
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks  
 ms.prod: devops
 ms.technology: devops-agile

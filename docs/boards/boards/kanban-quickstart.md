@@ -1,6 +1,6 @@
 ---
 title: Kanban quickstart 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.topic: quickstart
@@ -11,8 +11,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/21/2018
 ---
 
 # Start using your Kanban board
@@ -37,7 +36,7 @@ When you add a team, you add a number of team assets. A team admin can configure
 ::: moniker range="vsts" 
 To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
-::: moniker range="<= azdevserver-2019"   
+::: moniker range=">= tfs-2013 <= tfs-2018"   
 To add a board to support an additional portfolio backlog level, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end   
 
@@ -51,7 +50,7 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
@@ -68,21 +67,13 @@ The system automatically saves the work item with the title you entered. You can
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add a new item on Kanban board, prev nav](_img/quickstart/add-new-item-standard.png)
 
+
 The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
-
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -107,7 +98,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ## Invite others to work on your Kanban board 
 
 All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project. 

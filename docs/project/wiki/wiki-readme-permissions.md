@@ -1,7 +1,7 @@
 ---
-title: Default Wiki and social tool permissions in Azure DevOps
-titleSuffix: Azure DevOps 
-description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps 
+title: Default Wiki and social tool permissions in Azure DevOps and TFS
+titleSuffix: Azure DevOps & TFS 
+description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
@@ -9,13 +9,13 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 11/19/2018  
+ms.date: 11/15/2018  
 monikerRange: '>= tfs-2017'
 ---
 
 # Default permissions and access set for collaboration tools
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and semantic search.  
 
@@ -27,7 +27,7 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 
 ## Manage permissions
 
-To manage permissions for a collaboration tool, see the following articles:
+To manage permissions for a collaboration tool, see the following topics:
 
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
 - [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/wiki/project/feedback/toc.json )

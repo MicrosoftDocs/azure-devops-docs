@@ -1,7 +1,7 @@
 ---
 title: Set up or configure hierarchical teams
-titleSuffix: Azure Boards
-description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 09/13/2018
 ---
 
 # Configure a hierarchy of teams
@@ -52,10 +52,10 @@ The first step is to add a team for each feature team and management area. You c
 > [!div class="mx-imgBorder"]  
 > ![Project settings, Teams](_img/config-teams/team-list.png)
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)  
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -77,7 +77,7 @@ The first step is to add a team for each feature team and management area. You c
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 
 <a id="add-team-team-services" /> 
 
@@ -110,10 +110,6 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 ## Move area paths into a hierarchical structure
@@ -138,7 +134,7 @@ You do this by opening each area path associated with a feature team and changin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
@@ -162,16 +158,16 @@ You do this by opening each area path associated with a feature team and changin
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017"  
 
 0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 
-	> [!div class="mx-imgBorder"] 
+	> [!div class="mx-imgBorder"]
 	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
 	::: moniker-end  
 
@@ -205,11 +201,6 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker-end
 
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 
@@ -219,7 +210,7 @@ By including sub-area paths for the management teams, you automatically include 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
 
 0.  From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
@@ -256,7 +247,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"   
+::: moniker range=">= tfs-2017"  
 
 0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -289,10 +280,6 @@ Here we choose to include sub-area paths for the Account Management area.
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -330,9 +317,7 @@ For additional details, see [Manage and configure team tools](../../organization
 ## Review area paths assigned to teams 
 
 # [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"  
-
+::: moniker range="vsts"  
 From **Project Settings>Project configuration>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
 > [!div class="mx-imgBorder"]  
@@ -344,20 +329,16 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
  
 > [!div class="mx-imgBorder"]  
 > ![Area Paths and Teams](_img/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range=">= tfs-2013   <= tfs-2015" 
 This feature isn't supported for TFS 2015 and earlier versions.
 ::: moniker-end 
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 

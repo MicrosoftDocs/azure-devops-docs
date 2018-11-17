@@ -10,28 +10,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 05/31/2018
 ---
 
 # Customization  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
+Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you use the Inheritance or Hosted XML process models.  
 
-::: moniker range="vsts"  
-Most customers use the [Inheritance process model](../organizations/settings/work/inheritance-process-model.md), which provides a convenient user interface to support customization of the work tracking experience. 
-
-A select few customers use the Hosted XML process model, which requires that they have opted into this method. This model relies on updating XML files and then importing the process template of these files. To learn more, see [Customize your work tracking experience](../organizations/settings/work/hosted-xml-process-model.md).  
-::: moniker-end  
-
-::: moniker range="azdevserver-2019"
-With Azure DevOps Server 2019, you have a choice of using the Inheritance process model or the On-premises XML process model to support customizations. The choice is made when you create a project collection and choose the process model for the projects that you'll create in the collection.  For details, see [On-premises XML process model](on-premises-xml-process-model.md).
-::: moniker-end  
-
-::: moniker range="<= tfs-2018"
-Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. For details, see [On-premises XML process model](on-premises-xml-process-model.md).
-::: moniker-end  
 
 ::: moniker range="vsts"
 ## 5-Minute Quickstarts  
@@ -43,7 +30,7 @@ Team Foundation Server uses the On-premises XML process model to support customi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ## 5-Minute Quickstarts  
 
 - [Define area paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)

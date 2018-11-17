@@ -1,6 +1,6 @@
 ---
-title: Query by history  
-titleSuffix: Azure Boards
+title: History and auditing 
+titleSuffix: Azure Boards and TFS
 description: Track changes and use tools to support audit requirements when working in Azure Boards and Team Foundation Server (TFS) 
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,11 +8,10 @@ ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 06/25/2018  
 ---
 
-# Query by history   
+# History & auditing  
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -31,11 +30,11 @@ You can use either the web portal or Team Explorer to view the history of a work
 ::: moniker-end
 
 
-# [Visual Studio 2015](#tab/visual-studio) 
+# [Visual Studio](#tab/visual-studio) 
 
 <a id="tee-query-history" />
 <a id="team-explorer" />
-**Visual Studio 2015/Team Explorer and Team Explorer Everywhere**
+#### Visual Studio, Team Explorer, Team Explorer Everywhere
 ![Search for items based on words contained in the History field](_img/hist-audit-query-team-explorer.png) 
 
 ---
@@ -174,9 +173,9 @@ You can use the following fields to filter queries and create reports. Several o
 <table width="100%">
 <tbody valign="top">
 <tr>
-  <th width="18%">Field name</th>
-  <th width="64%">Description</th>
-  <th width="18%">Work item type</th>
+  <th width="15%">Field name</th>
+  <th width="70%">Description</th>
+  <th width="15%">Work item type</th>
 </tr>
 
 <tr>
@@ -238,11 +237,11 @@ All
     <p>Resolved Date <sup>1</sup> </p>
   </td>
   <td>
-    <p>The date and time when the work item was moved into a Resolved state. </p>
+    <p>The date and time when the work item was moved into a Resolved state. (Agile, CMMI)</p>
 
 	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
   </td>
-  <td>Bug (Agile, CMMI) 
+  <td>Bug 
   </td>
 </tr>
 

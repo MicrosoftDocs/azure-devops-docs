@@ -47,51 +47,51 @@
     href: guidance/agile-process.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
     items:
     - name: Agile workflow
-      href: guidance/agile-process-workflow.md
+      href: guidance/agile-process-workflow.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
   - name: Scrum process guidance
-    href: guidance/scrum-process.md
+    href: guidance/scrum-process.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
     items:
     - name: Scrum workflow
-      href: guidance/scrum-process-workflow.md
+      href: guidance/scrum-process-workflow.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
   - name: CMMI process guidance
     href: guidance/cmmi-process.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     items:
     - name: CMMI workflow
-      href: guidance/cmmi-process-workflow.md
+      href: guidance/cmmi-process-workflow.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: CMMI background
-      href: guidance/cmmi/guidance-background-to-cmmi.md
+      href: guidance/cmmi/guidance-background-to-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
     - name: Project management
-      href: guidance/cmmi/guidance-project-management.md
+      href: guidance/cmmi/guidance-project-management.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
       items:
       - name: Project activities
-        href: guidance/cmmi/guidance-project-activities.md 
+        href: guidance/cmmi/guidance-project-activities.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
       - name: Project inception
         href: guidance/cmmi/guidance-project-inception.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
       - name: Plan a project
         href: guidance/cmmi/guidance-plan-a-project-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Manage change
-        href: guidance/cmmi/guidance-manage-change.md 
+        href: guidance/cmmi/guidance-manage-change.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Manage risk
-        href: guidance/cmmi/guidance-manage-risks.md 
+        href: guidance/cmmi/guidance-manage-risks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Iteration activities
-        href: guidance/cmmi/guidance-iteration-activities.md
+        href: guidance/cmmi/guidance-iteration-activities.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Plan an iteration
-        href: guidance/cmmi/guidance-plan-an-iteration-cmmi.md
+        href: guidance/cmmi/guidance-plan-an-iteration-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Manage issues
         href: guidance/cmmi/guidance-manage-issues-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: Engineering
       href: guidance/cmmi/guidance-engineering.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       items:
       - name: Develop requirements
-        href: guidance/cmmi/guidance-develop-requirements.md
+        href: guidance/cmmi/guidance-develop-requirements.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Arrange requirements into a product plan
-        href: guidance/cmmi/arrange-requirements-into-a-product-plan.md
+        href: guidance/cmmi/arrange-requirements-into-a-product-plan.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Create a solution architecture
-        href: guidance/cmmi/guidance-create-solution-architecture.md
+        href: guidance/cmmi/guidance-create-solution-architecture.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Implement development tasks
-        href: guidance/cmmi/guidance-implement-development-tasks.md
+        href: guidance/cmmi/guidance-implement-development-tasks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Build a product
-        href: guidance/cmmi/guidance-build-product.md
+        href: guidance/cmmi/guidance-build-product.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
       - name: Track bugs
         href: guidance/cmmi/track-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Agile glossary
@@ -100,6 +100,8 @@
     href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md
+  - name: New work item experience
+    href: ../../reference/process/new-work-item-experience.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: Samples
   items:
   - name: Query by title or ID
@@ -118,8 +120,8 @@
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Add tags 
     href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Share information in work items
-    href: ../queries/share-plans.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+  - name: Share work plans
+    href: ../queries/share-plans.md??toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Bulk add or modify (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Use work item templates
@@ -145,20 +147,20 @@
   - name: Link types 
     href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: Work item field index
-    href: guidance/work-item-field.md
+    href: guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     items:
     - name: "Code review & feedback fields"
-      href: guidance/guidance-code-review-feedback-field-reference.md
+      href: guidance/guidance-code-review-feedback-field-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: "Bugs, issues, & risks fields"
       href: guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: Change request fields
-      href: guidance/cmmi/guidance-change-request-field-reference-cmmi.md
+      href: guidance/cmmi/guidance-change-request-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: Requirements fields
-      href: guidance/cmmi/guidance-requirements-field-reference-cmmi.md
+      href: guidance/cmmi/guidance-requirements-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
     - name: Review meeting fields
-      href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+      href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Changes made to process templates
-    href: guidance/changes-to-process-templates.md
+    href: ../work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: "Default permissions (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Clients support for work tracking
