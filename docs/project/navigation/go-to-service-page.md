@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 09/18/2018
 ---
 
 
@@ -29,7 +29,7 @@ If you don't have a project yet, [create one](../../user-guide/sign-up-invite-te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.  
 
@@ -37,7 +37,7 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 ## Open a service or functional task page
 
@@ -50,7 +50,7 @@ Services support getting work done&mdash;managing code, planning and tracking wo
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 You open a service by choosing the service from the sidebar and then selecting from the available pages. 
 
 For example, here we select **Boards>Backlogs**. 
@@ -69,19 +69,12 @@ Within the page you may select a specific view or artifact, such as a team backl
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 You open a service by choosing it from the horizontal blue bar. Then, select from the available pages.
 
 For example, here we select **Work>Work Items**. 
 
 ![Open a service, previous navigation gif](_img/go-to-app/project-app-page-horizontal-selection.png)
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -94,7 +87,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. Choose **Project Settings**.
 
@@ -124,22 +117,15 @@ Select configurations are made to teams through the team settings pages. For an 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
 > [!div class="mx-imgBorder"]  
-> ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png)  
+> ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png) 
+
 
 0. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
 0. To add a team administrator, add team members, or change the team profile, choose **Overview**. 
-1. 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 --- 
 
@@ -152,7 +138,7 @@ Administrators configure resources for a project and manage project-level permis
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. Choose **Project Settings**.
 
@@ -172,12 +158,9 @@ Administrators configure resources for a project and manage project-level permis
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 From a user context, open **Project settings** by choosing the ![ ](../../_img/icons/gear_icon.png) gear icon. 
-::: moniker-end
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range=">= tfs-2018"
 
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
@@ -210,9 +193,6 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 --- 
 
 <a id="collection-admin-context" /> 
@@ -225,7 +205,7 @@ Organization owners and members of the Project Collection Administrators group c
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Open Collection settings 
 
 Members of the Project Collection Administrators group configure resources for all projects or the entire project collection from the Collection settings pages. This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
@@ -234,7 +214,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -254,8 +234,6 @@ Members of the Project Collection Administrators group configure resources for a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
@@ -266,18 +244,14 @@ Members of the Project Collection Administrators group configure resources for a
 	> [!div class="mx-imgBorder"]  
 	> ![Account settings, Projects](_img/go-to-app/open-admin-settings-horizontal.png) 
 
-::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 ---
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Open Server settings 
 
-Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. <!---This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin). -->
+Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 1. From the web portal home page for a project, choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon and select **Server settings**. 
 

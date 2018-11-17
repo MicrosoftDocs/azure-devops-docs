@@ -10,13 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 
 # Define area paths  
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Newly created projects contain a single, root area that corresponds to the project name. You add area paths under this root. You add area paths to support teams and queries based on work items that belong to different areas of the product. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
 
@@ -25,7 +25,7 @@ Newly created projects contain a single, root area that corresponds to the proje
 ::: moniker range="vsts"
 * You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a project. If you don't have a project yet,[create one](../projects/create-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
@@ -46,7 +46,7 @@ From the web portal, open **Project Settings**.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
@@ -62,17 +62,13 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 
-::: moniker-end
-
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017"  
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
 
@@ -92,10 +88,6 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"  
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]  
 ::: moniker-end
 
 ---
@@ -161,7 +153,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/areas/edit-area-rename-dialog.png)
 
-0. To move the node within the hierarchy, change the Location field. 
+0.  To move the node within the hierarchy, change the Location field. 
 
 0. To delete a node, choose the **Delete** option from the actions menu. 
 

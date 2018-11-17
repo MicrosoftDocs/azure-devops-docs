@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
 

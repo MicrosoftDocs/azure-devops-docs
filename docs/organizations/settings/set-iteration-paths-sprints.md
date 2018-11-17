@@ -10,12 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 # Define iteration paths (aka sprints) 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Newly created projects contain a single, root area that corresponds to the project name. Each project typically specifies a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates. 
@@ -40,6 +40,7 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 <a id="open-admin-context">  </a>
 
 
+
 ## Open Project Settings, Project configuration    
 
 From the web portal, open **Project Settings**.
@@ -48,11 +49,10 @@ From the web portal, open **Project Settings**.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
-
+::: moniker range="vsts"  
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
-0. Choose (1) **Project Settings**, expand **Boards** if needed, and choose (2) **Project configuration** and then (3) **Iterations**.   
+0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Iterations**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-vert.png)   
@@ -65,15 +65,14 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017"  
+From the web portal, open **Project settings**. 
 
-0. From the web portal, open **Project settings**. 
+<a id="admin-intro-team-services" /> 
 
-0. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
+1. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
@@ -84,7 +83,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
 	::: moniker-end
 
-0. Choose **Work**.   
+2. Choose **Work**.   
 
 ::: moniker-end 
 <a id="admin-intro-tfs-2015" />
@@ -96,11 +95,6 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 ---
 
 <a id="iterations"></a>  
@@ -152,13 +146,14 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 	After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates, based on the same iteration length you specified for the first. For example, if you set a three week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks. You can accept or change these dates.  
 
-3. To add another sprint, select **New child** and name it what you want. Here, we call it Sprint 7.  
+3. To add another sprint, select <b>New child</b> and name it what you want. Here, we call it Sprint 7.  
 
-	![Iterations, defaults defined for Agile](../../boards/sprints/_img/create-new-child-under-sprint.png)  
+	<img src="../../boards/sprints/_img/create-new-child-under-sprint.png" alt="Iterations, defaults defined for Agile" style="border: 2px solid #C3C3C3;" />
 
 	Your next step is to [select the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-sprints-tfs). 
  
 ::: moniker-end
+
 
 ::: moniker range=">= tfs-2017"
 

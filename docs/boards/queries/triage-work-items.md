@@ -1,8 +1,8 @@
 ---
 title: Triage work items using a work item query 
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards and TFS  
 ms.global_help.title: Triage work items
-description: Review and update work items use the triage mode from the query results view in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Review and update work items use the triage mode from the query results view in Azure Boards & Team Foundation Server
 ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 06/21/2018  
 ---
 
 
@@ -37,12 +37,12 @@ In this topic you'll learn how to:
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 The buttons to move up or down within the query results list are outside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off. 
 
@@ -65,7 +65,7 @@ The buttons to move up or down within the query results list are inside the work
 You can update several work items through the triage process, and then do a bulk save when you're finished. Work items shown in bold text indicate that local changes have not yet been saved to the data store.   
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 Choose **Save items** to save all work items you've modified. 
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 

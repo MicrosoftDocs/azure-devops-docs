@@ -1,7 +1,7 @@
 ---
 title: Keyboard shortcuts for work item queries
-titleSuffix: Azure Boards
-description: Use keyboard shortcuts to interact with query results and query lists in Azure Boards, Azure DevOps, & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Use keyboard shortcuts to interact with query results and query lists in Azure Boards & Team Foundation Server  
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,13 +9,12 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 01/18/2017
 ---
 
 # Keyboard shortcuts for interacting with work item queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.2**
   
 You can use the keyboard shortcuts provided in this topic from the web portal or from Visual Studio Team Explorer. 
 

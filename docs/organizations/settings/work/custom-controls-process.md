@@ -10,13 +10,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018
+monikerRange: 'vsts'
+ms.date: 10/29/2018
 ---
 
-# Add extensions and custom controls to a work item type  (Inheritance process)  
+# Add extensions and custom controls to a work item type 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution (custom controls) 
@@ -24,10 +24,6 @@ With extensions, you can add rich functionality to your work item forms. An exte
 - Page-level contribution
 
 The fourth type, action-level contributions, on the other hand, appear in the context menu of the web form.  
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts), Azure DevOps tab. Or, you can [create your own custom control](../../../extend/get-started/node.md).
 
@@ -88,7 +84,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 0. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the custom control. Alternatively, you can specify an existing field, inherited or custom. 
 
-0. With the WIT selected, choose **Add custom control**. 
+0. With the WIT selected, click **Add custom control**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
@@ -103,7 +99,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	> [!div class="mx-imgBorder"]  
 	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-0. Choose the **Options** tab and fill out the dialog box. The options you need to specify will depend on the custom control you've selected.   
+0. Click the **Options** tab and fill out the dialog box. The options you need to specify will depend on the custom control you've selected.   
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
 

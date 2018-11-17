@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 
@@ -21,15 +21,10 @@ In this quickstart, you learn how to add users to a project or specific team. Fo
 
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
-
-::: moniker range="vsts"
-
 > [!IMPORTANT]
-> If you're adding users to an Azure DevOps organization and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
+> If you're adding users to an Azure DevOps organization and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this topic.
 
-::: moniker-end
-
-Once users have been added to a project, you can browse for that name by display name as well as their user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
+Once users have been added to a project, you can browse for that name by display name as well as account name. Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 
 ## Prerequisites
 
@@ -49,7 +44,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -94,13 +89,12 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
@@ -142,12 +136,6 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 <a id="add-team-members"> </a>
@@ -160,7 +148,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
@@ -202,14 +190,12 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 	
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || vsts"
 
 0. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
@@ -235,33 +221,19 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 0. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ## Add users or groups to an access level   
 
-For on-premises deployments, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md).
+For on-premises TFS, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md).
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018 || azdevserver-2019"
-## Add users or groups to SQL Server Reports 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+## Add users or groups to SharePoint or SQL Server Reports (TFS only)
 
-If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
-
-::: moniker-end 
-
-
-::: moniker range="<= tfs-2017"
-## Add users or groups to SharePoint or SQL Server Reports 
-
-If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
+If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
 * [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
 * [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)

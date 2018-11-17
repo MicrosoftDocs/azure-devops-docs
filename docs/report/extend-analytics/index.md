@@ -9,8 +9,8 @@ ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: ">= tfs-2018"
-ms.date: 11/1/2018
+monikerRange: 'vsts'
+ms.date: 3/29/2018
 ---
 
 #  Extend Analytics with OData (Preview) 

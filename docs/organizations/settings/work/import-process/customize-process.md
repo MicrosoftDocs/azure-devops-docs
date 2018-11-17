@@ -76,7 +76,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
 
 
 ### Export and import a process  

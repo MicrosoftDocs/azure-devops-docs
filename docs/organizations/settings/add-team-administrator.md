@@ -10,8 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/27/2018
 ---
 
 # Add a team administrator 
@@ -33,7 +32,7 @@ As a team administrator, you can configure, customize, and manage all team-relat
 * You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). 
 * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
 ::: moniker-end
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
 ::: moniker-end
 To get added as a team administrator, ask another team admin, the organization owner, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
@@ -50,7 +49,7 @@ From the web portal, open the admin page for the team.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose **Project Settings** and choose **Teams**. 
 
@@ -69,14 +68,14 @@ From the web portal, open the admin page for the team.
    
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range=">= tfs-2013  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"  
 
 0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
 
@@ -96,6 +95,7 @@ From the web portal, open the admin page for the team.
    
 ::: moniker-end     
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
 0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
@@ -114,10 +114,6 @@ From the web portal, open the admin page for the team.
 	![Add team administrator dialog](_img/add-team/team-admin-dialog.png)    
 	
 ::: moniker-end  
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---   
 

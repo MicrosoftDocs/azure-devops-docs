@@ -1,7 +1,7 @@
 ---
-title: Share information by creating a wiki for your project in Azure DevOps 
-titleSuffix: Azure DevOps
-description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
+title: Share information by creating a wiki for your project in Azure DevOps and TFS 
+titleSuffix: Azure DevOps & TFS
+description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps & Team Foundation Server
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -21,7 +21,13 @@ ms.date: 11/15/2018
 
 Each team project can be provisioned with a wiki. Use it to share information with your team to understand, use, and contribute to your project.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="tfs-2018"
+>[!NOTE]
+>The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
+
+::: moniker-end
+
+::: moniker range="vsts"
 Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a Wiki Git repo is not created by default. To start using a wiki, you must either provision a Git repository to store your wiki markdown files, or [publish existing markdown files from a Git repository](publish-repo-to-wiki.md) to a wiki.
 
 ::: moniker-end
@@ -31,7 +37,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-Use this article to learn how to:  
+Use this topic to learn how to:  
 
 > [!div class="checklist"]
 > * Open **Wiki**
@@ -49,9 +55,9 @@ Use this article to learn how to:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || azdevserver-2019"
+::: moniker range="tfs-2018"
 
-* You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
+* You must have a team project. If you don't have a team project yet, create one in your [on-premises TFS](../../organizations/projects/create-project.md).
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) in order to provision a wiki or publish markdown files from an existing Git repo to a wiki.
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
@@ -65,7 +71,7 @@ On the Wiki landing page, choose **Create Wiki** to provision a new Git reposito
 
 For repository naming conventions,
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki or publish existing repo markdown files](_img/wiki/create-wiki-or-publish-create-option.png)
@@ -107,7 +113,7 @@ The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories 
 
 However, you can navigate to it from the following URL:
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 `https://<AccountName>.visualstudio.com/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
 ::: moniker-end
 
@@ -115,7 +121,7 @@ However, you can navigate to it from the following URL:
 `https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
 ::: moniker-end
 
-You can choose **More** followed by **Clone Wiki** to access the Wiki URL.
+You can click **More** followed by **Clone Wiki** to access the Wiki URL.
 
 <img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 

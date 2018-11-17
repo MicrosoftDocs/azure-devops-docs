@@ -9,23 +9,28 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015 || azdevserver-2019'
-ms.date: 11/01/2018
+monikerRange: '>= tfs-2015'
+ms.date: 07/21/2018
 ---
 
 # Add Markdown to a dashboard
+
 **Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
+
 <a id="markdown-widget">  </a> 
+
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  
 - Provide links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
 - Important dates or target deadlines  
 
 Here's an example:  
+
 <img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range="azdevserver-2019 || vsts"
+
+::: moniker range="vsts"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
@@ -39,12 +44,15 @@ Here's an example:
 
 
 ## Connect to the web portal for your project 
+
 To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"  
+
+::: moniker range="vsts"  
+
 Open a web browser window and choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
@@ -60,6 +68,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 
 # [Previous navigation](#tab/previous-nav)  
+
 Open a web browser window and choose **Dashboards**. 
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
@@ -69,6 +78,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ---
 
 ## Add the markdown widget to a dashboard  
+
 If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).  
 
 ::: moniker range="tfs-2015"
@@ -76,7 +86,8 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 > Requires TFS 2015.1 or later version.   
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
+
 To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). The widget catalog will automatically open.  
 
 0. Drag the Markdown widget onto the dashboard where you want it located.  
@@ -164,11 +175,13 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 0. If you want to reposition the markdown widget or other widgets on the dashboard, do that now while you're still in dashboard edit mode. 
 
 0. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
+
 ::: moniker-end
  
 
 
 ## Related articles
+
 - [Add and manage dashboards](dashboards.md)
 - [Add a widget to a dashboard](add-widget-to-dashboard.md)
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
 
@@ -69,19 +69,19 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
-::: moniker range=">= tfs-2017"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="boolean-field">  </a>
 ## Add a checkbox or Boolean field 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts || >= tfs-2018"
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 ::: moniker-end
 ::: moniker range="tfs-2017"
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. Requires TFS 2017.2 or later version. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
@@ -259,7 +259,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <=tfs-2018"
 
 Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
@@ -274,7 +274,7 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field 
 
@@ -385,7 +385,7 @@ In addition to the attributes that you can change for a work item field, there a
 
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="integration-fields">  </a>
 ### Test, build, and version control fields
 

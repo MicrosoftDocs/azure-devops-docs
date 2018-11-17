@@ -8,9 +8,11 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: '<= azdevserver-2019'
-ms.date: 11/19/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
+
+
 
 
 # On-premises XML process model 
@@ -19,17 +21,9 @@ ms.date: 11/19/2018
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
+
 > [!IMPORTANT]  
-> To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
-
-::: moniker range="azdevserver-2019"  
-
-For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](/azure/devops/reference/customize-work#choose-process-model).  
-
-::: moniker-end
-
-## Supported customizations  
-
+> To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises TFS only.  
 You can perform the following tasks when you work with the On-premises XML process model. 
 
 <a id="on-prem-xml-process-model"></a>
@@ -125,9 +119,8 @@ You can perform the following tasks when you work with the On-premises XML proce
 </table>
 
 <a id="on-prem-xml-sequence"></a>
-## Customization sequence   
 
-When you manage an on-premises deployment, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
+When you manage an on-premises TFS, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
 
 [![Export XML definition file](_img/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
@@ -137,13 +130,16 @@ In addition, you can use the **witadmin** tool to list objects, rename WITs, per
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
 
+
+
 <a id="before-you-customize"></a>
 ## Maintenance and upgrade implications
 Before you customize, you should understand how your customizations may impact your project when you upgrade your application-tier server.  
 
-Upgrades to an on-premises deployment can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your deployment. 
+Upgrades to an on-premises TFS can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your TFS. 
 
-To minimize the amount of manual work you'll need to do after an upgrade, understand which customizations support an easy update path and which do not. 
+To minimize the amount of manual work you'll need to do after a TFS upgrade, understand which customizations support an easy update path and which do not. 
+
 
 
 ### Compatible for quick updating  
@@ -185,7 +181,7 @@ You should avoid making the following customizations because they can result in 
 *	WITs: Rename or delete WITs 
 *	Categories: Change the name of default categories, or change the WITs specified within default categories  
 
-To learn more about reporting attributes, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
+To learn more about reporting attributes, see [Add or modify work item fields to support reporting](http://msdn.microsoft.com/library/ee921481.aspx).
 
 ### Recommended practices  
 *	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.  
@@ -193,13 +189,15 @@ To learn more about reporting attributes, see [Add or modify work item fields to
 *	Test your customized objects just as you would test your software.  
 *	Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.  
 
+ 
 
-## Replace team area path with a team field  
+## Replace team area path with a team field (On-premises TFS)  
 The default configuration for projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
 [Use team fields instead of area paths to support teams](use-team-fields-instead-area-paths.md) describes how to change the default configuration.
 
-## Related articles
+<!--- Add definitions for these 
+release 
+team 
 
-- [Customize work](customize-work.md) 
-- [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+--> 

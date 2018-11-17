@@ -1,6 +1,6 @@
 ---
 title: Understand and configure your Kanban board 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
 ms.custom: boards-kanban  
 ms.topic: quickstart
@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/21/2018
 ---
 
 # Kanban basics
@@ -128,7 +128,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 In addition to the above chart, you can add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
 - [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md)
@@ -136,6 +136,7 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 - [What is the Analytics Service?](../../report/analytics/what-is-analytics.md)
 
 ::: moniker-end
+
 
 
 ## Try this next
@@ -146,6 +147,8 @@ Here are some useful tips when working with the Kanban board:
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
 - Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
+
+
 
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 

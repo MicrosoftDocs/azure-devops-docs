@@ -11,8 +11,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
-monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018  
+monikerRange: 'vsts'
+ms.date: 11/15/2018  
 ---
 
 # Publish a Git repository to a wiki
@@ -29,7 +29,7 @@ By publishing your markdown files to a wiki, you gain the following benefits:
 - Manage content in the same way you manage your code base
 - Readers can search the wiki easily using the Wiki search feature
 
-Use this article to learn how to:  
+Use this topic to learn how to:  
 
 > [!div class="checklist"]
 > * Open **Wiki**
@@ -42,13 +42,13 @@ Use this article to learn how to:
 To perform these steps, you'll want to understand the underlying structure of your wiki Git repo. For details, see [Wiki Git repository files and file structure](wiki-file-structure.md). To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
 > [!TIP]
-> You can add and edit content you've published to a wiki using the steps outlined in this article. Or, you can also work offline and update wiki content in the same way you collaborate on code through a Git repository. For more information, see [Update wiki pages offline](wiki-update-offline.md).
+> You can add and edit content you've published to a wiki using the steps outlined in this topic. Or, you can also work offline and update wiki content in the same way you collaborate on code through a Git repository. For more information, see [Update wiki pages offline](wiki-update-offline.md).
 
 <a id="prereq">  </a>
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, [create one](../../organizations/projects/create-project.md).  
+* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps Services](../../organizations/accounts/set-up-vs.md).  
 * You must have enabled Azure Repos service for your project.
 * You must have a Git repository defined in your team project. Ideally, this repository contains at least one markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 * You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
@@ -63,8 +63,6 @@ Begin by connecting to your project using a [supported web browser](/tfs/server/
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
-
 Choose **Overview>Wiki**.
 
 > [!div class="mx-imgBorder"]  
@@ -72,11 +70,7 @@ Choose **Overview>Wiki**.
 
 If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
-::: moniker-end
-
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range="vsts"
 
 Choose **Wiki**.
 
@@ -87,12 +81,6 @@ Choose **Wiki**.
 - If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses icon), then choose **Wiki>Wiki**.
 
 ![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -192,7 +180,7 @@ You can add pages to your published wiki as follows:
 
 - Add a file to a root folder or sub-folder from the web portal
 - Upload files to a root folder or sub-folder
-- Add or update a .order file to specify the page sequence in the wiki TOC.
+- Add or update a .order file to specify the page sequence in the wiki TOC
 
 Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/05/2018  
 ---
 
 # Permissions and access for Azure Boards 

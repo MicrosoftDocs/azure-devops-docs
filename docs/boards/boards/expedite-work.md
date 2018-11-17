@@ -1,8 +1,8 @@
 ---
 title: Expedite work with swimlanes
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards & Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,12 +11,13 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
---- 
+ms.date: 09/24/2018
+---
 
 # Expedite work with swimlanes
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+
 
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
@@ -63,15 +64,15 @@ So, what swimlanes will support your tracking needs?
 
 Once you've identified one or two, add them to your Kanban board.  
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts" 
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
@@ -97,15 +98,13 @@ Once you've identified one or two, add them to your Kanban board.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2015   <= tfs-2018" 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
+::: moniker range=">= tfs-2017"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
 0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
@@ -159,10 +158,6 @@ Once you've identified one or two, add them to your Kanban board.
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 
@@ -186,6 +181,7 @@ Similar to the way [column moves are tracked](add-columns.md), swimlane moves ar
 <img src="_img/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" style="border: 1px solid #C3C3C3;" />   
 
 For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../queries/add-tags-to-work-items.md) each item in a similar way.  
+
 ::: moniker-end
 
 
@@ -197,6 +193,7 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 *	[Add columns](add-columns.md)  
 *	[Split columns](split-columns.md)   
 *	[Customize cards](../../boards/boards/customize-cards.md)   
+
 
 ###REST API resources
 To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).

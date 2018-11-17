@@ -9,15 +9,15 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
+ms.date: 02/06/2018
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
 ---
 
 # Remove user accounts
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When a user with access to Azure DevOps or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This will automatically void their user account and remove their ability to access or connect to Azure DevOps. 
+When a user with access to Azure DevOps Services or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This will automatically void their user account and remove their ability to access or connect to Azure DevOps or TFS. 
 
 ::: moniker range="vsts"  
 If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), then you'll need to [remove their account](../accounts/delete-organization-users.md). 
@@ -29,7 +29,7 @@ In this topic you'll find:
 > * Links to topics for removing user accounts from AD or Azure AD  
 ::: moniker-end  
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= tfs-2018"  
 
 In this topic you'll find:
 > [!div class="checklist"]

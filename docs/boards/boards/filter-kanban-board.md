@@ -1,6 +1,6 @@
 ---
 title: Filter your Kanban board 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
 ms.custom: boards-kanban 
 ms.technology: devops-agile
@@ -10,12 +10,17 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
---- 
+ms.date: 03/20/2018
+---
 
 # Filter your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015</b>  
+
+<!---
+> [!NOTE]   
+> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to a later TFS version.
+-->
 
 
 <a id="filter"></a>
@@ -30,7 +35,7 @@ To filter the Kanban board, first customize the board settings so that the cards
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).  
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts || >= tfs-2018"
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -40,7 +45,8 @@ For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. 
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
-::: moniker range=">= tfs-2017"
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ![Kanban board, Filter using keyword search](../boards/_img/filter/filter-options-web.png)
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -49,7 +55,6 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 
 ::: moniker range=">= tfs-2017"
-
 > [!TIP]  
 > Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
@@ -57,7 +62,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 
@@ -66,6 +71,7 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 The filter criteria ignores the following characters when the field value starts with the characters:<br/>
 ```{ ( [ ! @ # $ % ^ & *  ~  ` '  " ```
 ::: moniker-end
+
 
 
 ::: moniker range=">= tfs-2017"

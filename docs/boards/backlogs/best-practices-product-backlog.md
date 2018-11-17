@@ -1,6 +1,6 @@
 ---
 title: Backlog best practices 
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Best practices to manage your product backlog in Azure Boards and Team Foundation 
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/11/2017
 ---
 
 # Refine your backlog  
@@ -22,7 +22,8 @@ A great backlog conveys customer needs and value. Over the course of the project
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
-To get started, see [Create your backlog](create-your-backlog.md). 
+To get started, see [Create your backlog](create-your-backlog.md).  
+
 
 <a name="product-owner-role"></a>
 ## Role of the product owner  
@@ -38,6 +39,7 @@ Product owners play an important role in Scrum, primarily as the interface betwe
 If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/add-team-administrator.md).  
 
 A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly articulating acceptance criteria within each requirement.
+
 
  
 <a name="acceptance"></a>

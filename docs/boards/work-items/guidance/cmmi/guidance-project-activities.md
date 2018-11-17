@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Project activities
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Reduce the risks to your project that stem from shifting requirements and implementation costs 
 ms.prod: devops
 ms.technology: devops-agile

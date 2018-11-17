@@ -1,7 +1,7 @@
 ---
 title: Define the hyperlink for a work item
-titleSuffix: Azure Boards
-description: Construct a URL for a work item for Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Construct a URL for a work item for Azure Boards & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   
-ms.date: 11/19/2018
+ms.date: 10/17/2018
 ---
 
 
@@ -57,7 +57,9 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+
+## TFS 2018, TFS 2017, and TFS 2015
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 

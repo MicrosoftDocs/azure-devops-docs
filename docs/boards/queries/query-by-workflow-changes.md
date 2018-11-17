@@ -1,7 +1,7 @@
 ---
 title: Query by account, user name, workflow or board changes 
-titleSuffix: Azure Boards
-description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Azure Boards & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 03/20/2018
 ---
 
 
@@ -301,10 +301,10 @@ For information about data types and default field attributes, see [Work item da
 <table width="100%">
 <thead>
 <tr>
-  <th width="20%">Field name</th>
-  <th width="48%">Description</th>
+  <th width="17%">Field name</th>
+  <th width="56%">Description</th>
   <th width="12%">Data type </th>
-  <th width="20%">Work item type</th>
+  <th width="15%">Work item type</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -458,7 +458,7 @@ For information about data types and default field attributes, see [Work item da
 <a id="sync">  </a>
 1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
-	::: moniker range="<= azdevserver-2019" 
+	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).    
 	::: moniker-end
 
@@ -467,7 +467,7 @@ For information about data types and default field attributes, see [Work item da
 3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 
 4. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
-	If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add and manage fields (Inheritance process model)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a work item field (On-premises XML process model)](../../reference/add-modify-field.md).
+	If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add or modify a work item field](../../reference/add-modify-field.md).
 
 
 ## Related articles

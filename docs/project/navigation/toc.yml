@@ -3,7 +3,7 @@
   items:
   - name: Open a service, page, or settings
     href: go-to-service-page.md   
-  - name: Add an artifact or team artifacts
+  - name: Add an artifact or team 
     href: add-artifact-team.md  
   - name: Open team artifacts, use breadcrumbs & selectors
     href: use-breadcrumbs-selectors.md  

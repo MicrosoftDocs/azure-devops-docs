@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 07/21/2018
 ---
 
 
@@ -34,12 +34,10 @@ With the search box, you can quickly find a code file or work item.
 
 Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-vsts-extension.md#install-extension).  
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
-  
+::: moniker range="vsts"  
 To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
@@ -52,20 +50,12 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
    ![Switching between searching for code and work items](../search/_img/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
 0. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search.
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -107,7 +97,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"  
 
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
@@ -138,8 +128,6 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
    ![The Work Item Search textbox in the title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
@@ -163,12 +151,6 @@ To learn more, see [Search code](../search/code-search.md).
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 
@@ -176,7 +158,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range="vsts"  
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
@@ -215,8 +197,6 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
-
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -246,12 +226,6 @@ To learn more, see [Search code](../search/code-search.md).
 1. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ---
 
 To learn more, see [Search work items](../search/work-item-search.md)
@@ -270,7 +244,7 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019" 
+::: moniker range="vsts"  
 
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
@@ -290,7 +264,7 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="tfs-2018 || vsts"  
+::: moniker range=">= tfs-2018"  
 
 Open **Wiki** and type your keyword or phrase into the search box. 
 
@@ -302,10 +276,6 @@ The search feature quickly returns wiki pages by title or page content. English 
 > [!div class="mx-imgBorder"]  
 > ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 

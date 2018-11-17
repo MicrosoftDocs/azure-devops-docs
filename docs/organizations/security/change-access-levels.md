@@ -10,8 +10,8 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
+ms.date: 10/12/2018
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
 ---
 
 # Change access levels
@@ -26,7 +26,7 @@ ms.date: 11/19/2018
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= tfs-2018" 
 To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
 
 For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  For feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). 
@@ -48,13 +48,13 @@ Make sure to set each user's access level based on what you've purchased for tha
 You manage access levels for all collections defined on the application tier for TFS. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, you add them specifically to one of the other, non-default access levels.
 
 >[!NOTE]  
-> The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps Server or TFS. However, the basic functionality available to you remains the same unless explicitly mentioned.  
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned.  
 
 From a user context, open admin settings by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**. 
 
@@ -84,7 +84,7 @@ From a user context, open admin settings by choosing the ![ ](../../boards/_img/
 
 <a id="set-default" >  </a>
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= tfs-2018"
 ## Change the default access level
 
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or Advanced level will be limited to the features provided through Stakeholder access.

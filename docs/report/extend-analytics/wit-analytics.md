@@ -9,8 +9,8 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: ">= tfs-2018"
-ms.date: 11/2/2018
+monikerRange: 'vsts'
+ms.date: 11/13/2017
 ---
 
 # Query your work tracking data using the OData Analytics service
@@ -22,25 +22,10 @@ Using the Analytics Service for Azure DevOps, you can construct basic and filter
 
 In this topic, the base root URL is scoped to a project as shown:  
 
-::: moniker range="vsts"
-
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ``` 
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}
-```
->[!NOTE]
->The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
-::: moniker-end
 
 All additional URL parts are specified as an additional part of the query string.
 
@@ -50,7 +35,7 @@ All additional URL parts are specified as an additional part of the query string
 
 - You will need to have an Azure DevOps project. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
 
 ## Construct a basic query 
 

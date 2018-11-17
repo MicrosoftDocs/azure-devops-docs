@@ -1,6 +1,6 @@
 ---
 title: Manage issues or impediments 
-titleSuffix: Azure Boards 
+titleSuffix: Azure Boards and TFS 
 ms.global_help.title: Manage issues or impediments 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 6
 description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards and Team Foundation 
@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 03/20/2018
 ---
 
 # Manage issues or impediments 
@@ -35,11 +35,11 @@ In this topic you'll learn:
 
 ## Add an issue or impediment 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range="vsts"   
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
@@ -50,13 +50,13 @@ Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within t
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"   
+::: moniker range=">= tfs-2015 <= tfs-2018"   
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end   
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
@@ -72,11 +72,6 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <a id="customize"> </a>
 ## Customize issues tracking
@@ -85,8 +80,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 ::: moniker range="vsts"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end
-
-::: moniker range="<= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

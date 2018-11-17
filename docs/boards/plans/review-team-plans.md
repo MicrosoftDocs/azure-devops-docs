@@ -1,7 +1,7 @@
 ---
 title: Review team delivery plans 
-titleSuffix: Azure Boards
-description: Add & use plans to review scheduled multi-team deliverables in Azure Boards, Azure DevOps, & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: Add & use plans to review scheduled multi-team deliverables in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
@@ -10,14 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 08/06/2018
 ---
-
 
 
 # Review team Delivery Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+**Azure DevOps Services | TFS 2018 | TFS 2017.2**
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -79,11 +78,11 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts" 
 
 0. Open **Boards>Plans**. 
 
@@ -109,8 +108,6 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
@@ -132,12 +129,6 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 
 ---
 

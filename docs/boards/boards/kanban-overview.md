@@ -1,7 +1,7 @@
 ---
 title: About boards and Kanban  
-titleSuffix: Azure Boards
-description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards, Azure DevOps, & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards & Team Foundation Server   
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/17/2018
 ---
 
 
@@ -44,7 +44,7 @@ Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a cor
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
@@ -55,17 +55,13 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"   
 ![Kanban board, Agile template](_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
@@ -169,7 +165,7 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 
 ::: moniker-end
  
-::: moniker range="<= tfs-2018 || azdevserver-2019" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 If you need more than three board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 

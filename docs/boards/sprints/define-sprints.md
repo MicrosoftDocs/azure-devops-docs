@@ -1,7 +1,7 @@
 ---
 title: Schedule sprints to support working in Scrum
-titleSuffix: Azure Boards  
-description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards, Azure DevOps, & Team Foundation Server 
+titleSuffix: Azure Boards and TFS  
+description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards & Team Foundation Server 
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,14 +10,13 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 06/21/2018
 ---
 
 
 # Schedule sprints  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
-
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
@@ -29,11 +28,11 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 
 To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -70,8 +69,6 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
@@ -103,15 +100,6 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	> [!div class="mx-imgBorder"]
 	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 
 
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
 ---
 
 That's it! You can now start [planning your first sprint](assign-work-sprint.md). 
@@ -140,7 +128,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-agile.png)
 
@@ -154,18 +142,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-vsts.png)
-
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 
 ---
 
@@ -210,7 +187,7 @@ You'll want to [set the start and end dates for your sprint](define-sprints.md#q
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

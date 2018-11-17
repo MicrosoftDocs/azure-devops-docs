@@ -7,7 +7,7 @@ ms.topic: include
 
 ## Enable live updates 
 
-Enable live updates to automatically refresh your Kanban board when changes occur. With live updates enabled, you no longer have to press **F5** to see the latest changes. 
+Enable live updates to automatically refresh your Kanban board when changes occur. With live updates enabled, you no longer have to press F5 to see the latest changes. 
 
 ::: moniker range="tfs-2017"
 > [!NOTE]    
@@ -17,7 +17,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 Choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
 
@@ -26,8 +26,7 @@ Choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options ico
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
+::: moniker range=">= tfs-2013 <= tfs-2018"
 **New navigation** isn't supported on TFS at this time. Choose **Previous navigation** for guidance.
 
 ::: moniker-end
@@ -35,20 +34,11 @@ Choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options ico
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
 Choose the ![ ](/azure/devops/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
 
 ![Kanban board, live updates icon](/azure/devops/boards/_shared/_img/kanban-live-updates.png)  
-
 As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
 
-![Live update](/azure/devops/boards/boards/_img/kanban-live-updates.gif)  
+![Live update](/azure/devops/boards/_img/kanban-live-updates.gif)  
 
-::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----

@@ -1,7 +1,7 @@
 ---
 title: Implement Scrum, track work in sprints
-titleSuffix: Azure Boards 
-description: Implement Scrum, track work, monitor progress and trends in Azure Boards, Azure DevOps, & Team Foundation Server  
+titleSuffix: Azure Boards and TFS 
+description: Implement Scrum, track work, monitor progress and trends in Azure Boards & Team Foundation Server  
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/12/2018
 ---
 
 # About Sprints, Scrum and project management 
@@ -25,10 +25,10 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 ![New Navigation, Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
@@ -38,18 +38,13 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017"
 !["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/IC795962.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 ---
 
 ## Implement Scrum 
@@ -65,7 +60,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 <a id="ts-sprints" /> 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts"
 
 0. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
@@ -87,7 +82,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017"  
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
@@ -104,12 +99,6 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end  
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 
 ## Try this next
 > [!div class="nextstepaction"]

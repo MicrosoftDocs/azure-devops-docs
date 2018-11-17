@@ -1,6 +1,6 @@
 ---
-title: Migrate wiki extension pages in Azure DevOps
-titleSuffix: Azure DevOps  
+title: Migrate wiki extension pages in Azure DevOps and TFS
+titleSuffix: Azure DevOps & TFS  
 description: Migrate wiki pages created using the Marketplace extension to the Azure DevOps wiki
 ms.technology: devops-collab
 ms.custom: wiki
@@ -11,15 +11,15 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: sancha
-monikerRange: 'tfs-2018 || vsts'
-ms.date: 11/19/2018  
+monikerRange: '>= tfs-2018'
+ms.date: 11/15/2018  
 ---  
 
 # Migrate pages from Wiki extension to a team project wiki
 
 **Azure DevOps Services | TFS 2018**
 
-With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a Git repo in your team project. Use this article to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project Wiki. The **Wiki** feature is available for TFS 2018 and later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
+With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a Git repo in your team project. Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project Wiki. The **Wiki** feature is available for TFS 2018 and later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
 
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with the following steps:
 

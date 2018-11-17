@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= azdevserver-2019'
+monikerRange: 'vsts'
 ms.date: 05/31/2018
 ---
 
@@ -19,7 +19,7 @@ ms.date: 05/31/2018
 
 # Create and manage inherited processes 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You customize your project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a project, you select the process you want your project to use. 
 
@@ -39,10 +39,6 @@ In this article, learn how to perform these tasks:
 > * Add a project based on a process   
 > * Enable or disable a process
 > * Set a process as the default to use when adding projects  
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

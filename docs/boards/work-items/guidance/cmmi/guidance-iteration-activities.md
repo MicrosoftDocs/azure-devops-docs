@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Iteration activities
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile

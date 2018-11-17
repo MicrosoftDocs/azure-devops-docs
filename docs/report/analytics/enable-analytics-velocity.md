@@ -1,6 +1,6 @@
 ---
 title: Add an Analytics widget to a dashboard
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,14 +9,13 @@ ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: ">= azdevserver-2019"
+monikerRange: 'vsts'
 ms.date: 08/06/2018
 ---
 
-
 # Add an Analytics widget to a dashboard
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
  
 The [Analytics Service](what-is-analytics.md) is the reporting platform for Azure DevOps. 
 Using Analytics, you and your team can gain new insights into the health and status of your work.
@@ -27,10 +26,16 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-- You must have a project defined for an Azure DevOps organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
+- You must have a project defined for an Azure DevOps Services organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). 
+
+
+## Install the Analytics extension 
+1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
+0.	Choose to **Install** the Analytics extension. You might need to sign in with your Azure DevOps Services organization credentials.
+0. Select the Azure DevOps Services organization where you would like to install this extension and confirm. Learn more about [Install extensions](../../marketplace/install-vsts-extension.md).
+
 
 ## Add the Velocity widget to your dashboard 
 
@@ -59,7 +64,6 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
 0. Connect to the web portal for your project and choose **Dashboards**.  
 
 	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
@@ -73,14 +77,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 	> [!div class="mx-imgBorder"]  
 	> ![Velocity widget in widget catalog](_img/velocity-in-widget-catalog.png)
 
-0. Select the widget and then choose **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
-1. 
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
+0. Click the widget and then click **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
 
 --- 
 

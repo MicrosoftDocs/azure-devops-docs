@@ -25,29 +25,13 @@ See [Add or modify a field](add-modify-field.md) if you want to add a custom fie
 Most WIT customizations are made to the WIT definition, however, other customization are made through the Process Configuration definition or via the **witadmin** command line tool.  
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise some features only from an on-premises deployment and are noted as such. 
+><b>Feature availability: </b>You can exercise some features only from an on-premises TFS and are noted as such. 
 
-#### WIT definition  
-- [Add or modify a field to an existing WIT](#modify-field)
-- [Add a custom WIT, modify a WIT](#add-wit)
-- [Change the workflow (states, reasons, transitions)](#modify-workflow)
-- [Modify the work item form](xml/change-work-item-form-layout.md)
-
-#### ProcessConfiguration definition  
-
-- [Specify the WIT color](#change-wit-color)
-- [Specify the WIT icon](#change-wit-color) (TFS 2017.2 and later versions)
-- [Specify the workflow state color](#change-wit-color)
-- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)
-- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)
-- [Add a portfolio backlog ](add-portfolio-backlogs.md)
-
-#### Command line change
-- [List WITs](witadmin/witadmin-import-export-manage-wits.md)
-- [Deactivate or disable a WIT](#deactivate-wit)
-- [Rename a WIT](#rename-wit) (on-premises deployments only)
-- [Delete a WIT](#delete-wit) (on-premises deployments only) 
-
+> [!div class="mx-tdBreakAll"]  
+> |WIT definition  |ProcessConfiguration definition  |Command line change| 
+> |-------------|----------|----------|    
+> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](xml/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
+ 
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -220,7 +204,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 ### Enable features after upgrade (On-premises XML) 
 
 > [!NOTE]    
-> You can exercise the Configure Features Wizard only from an on-premises deployment. 
+><b>Feature availability: </b>You can exercise the Configure Features Wizard only from an on-premises TFS. 
 
 What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
@@ -234,7 +218,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 ### Rename a WIT (On-premises XML) 
 
 > [!NOTE]    
-> You can exercise **witadmin renamewitd** only from an on-premises deployment. 
+> You can exercise **witadmin renamewitd** only from an on-premises TFS. 
 
 To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."
 

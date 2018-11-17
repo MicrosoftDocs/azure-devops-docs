@@ -10,19 +10,21 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015 || azdevserver-2019'
-ms.date: 11/01/2018
+monikerRange: '>= tfs-2015'
+ms.date: 07/21/2018
 ---
 
 # Add widgets to a dashboard
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
+
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
-::: moniker range="azdevserver-2019 || vsts"
+
+::: moniker range="vsts"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
@@ -34,34 +36,36 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
 
 ## Connect to the web portal for your project 
+
 To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts" 
+
+::: moniker range="vsts" 
+
 Open a web browser and choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range=">= tfs-2015  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 Open a web browser and choose **Dashboards**.
 
@@ -69,26 +73,26 @@ Open a web browser and choose **Dashboards**.
 
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
-::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 ---
 
 ## Select a dashboard to modify 
+
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
-::: moniker range="azdevserver-2019 || vsts"
+
+::: moniker range="vsts"
+
 1. From **Overview>Dashboards** , open the selector and choose the **Browse all dashboards** option. 
  
-	> [!div class="mx-imgBorder"]
+	> [!div class="mx-imgBorder"]  
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 
-2. The dashboard directory page shows you your last visited dashboard, your favorited dashboards, all dashboards of teams that you belong to, and lists all dashboards defined for the project in alphabetical order.  Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
+2. The **All** page lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
  
-	> [!div class="mx-imgBorder"]
+	> [!div class="mx-imgBorder"]  
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/all-dashboards-list.png)  
+   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
@@ -108,7 +112,8 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 
 ## Add a widget to a dashboard  
-::: moniker range="azdevserver-2019 || vsts"
+
+::: moniker range="vsts"
 
 To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
 
@@ -142,6 +147,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 <a id="configure" />
 
 ## Configure a widget  
+
 Most widgets support configuration, which may include specifying the title, seeting the widget size, and other widget-specific variables.
 
 ::: moniker range=">= tfs-2018"
@@ -167,6 +173,7 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 
 ## Move or delete a widget from a dashboard 
+
 To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget's options menu. 
 
 ::: moniker range="tfs-2015"
@@ -174,7 +181,8 @@ Just as you have to be a team or project admin to add items to a dashboard, you 
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
+
 Click ![Edit dashboard icon](_img/icons/edit-icon.png) to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
 To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
@@ -216,10 +224,13 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 ::: moniker range=">= tfs-2018"
 
 ## Copy a widget to another dashboard
+
 You can copy a widget to another dashboard defined for your team. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
+
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
+
 To copy a configured widget to another team dashboard, choose the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
 
 > [!div class="mx-imgBorder"]  
@@ -232,18 +243,23 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 To copy a configured widget to another team dashboard, choose the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
 
 <img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
+
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 ## Analytics Service widgets 
 The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
 - [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
+
 ::: moniker-end
 
 
+
+
 ## Try this next 
+
 > [!div class="nextstepaction"]
 > [Review the widget catalog](widget-catalog.md)
 > or
@@ -254,6 +270,7 @@ The Analytics Service is in preview and provides access to several widgets. To l
 In addition to the widgets described in the Widget catalog, you can create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
 
 ### Widget size
+
 Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
 
 For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
@@ -262,6 +279,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 
 ### Disabled Marketplace widget 
+
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   

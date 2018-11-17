@@ -1,7 +1,7 @@
 ---
 title: Practices that scale
-titleSuffix: Azure Boards
-description: Scaling Agile recommended practices for working in Azure Boards, Azure DevOps, & Team Foundation Server    
+titleSuffix: Azure Boards and TFS
+description: Scaling Agile recommended practices for working in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
@@ -9,10 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 08/02/2017
 ---
-
 
 #Scaling Agile - Practices that scale  
 
@@ -100,8 +98,9 @@ You improve organizational effectiveness by attending to the culture you want to
 
 ##Working software
 
-> *"Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."*   
-> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)   
+><p align="center" style="font-size: 13px">"Deliver working software frequently, from a couple of weeks to a couple of months, <br/>with a preference to the shorter timescale." <br/>  
+"Working software is the primary measure of progress."</p>
+<p align="right" style="font-size: 13px"> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)</p>    
 
 As the amount of software, features, and complexity increase, you'll need to adopt practices that help you produce consumable solutions.  
  

@@ -9,14 +9,14 @@ ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 05/31/2018
 ---
 
-# Customize the web layout for a work item type (Inheritance process) 
+# Customize the web layout for a work item type 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 
@@ -28,9 +28,6 @@ For example, the following form shows that two custom pages have been added, **I
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

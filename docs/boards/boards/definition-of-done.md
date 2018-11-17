@@ -1,6 +1,6 @@
 ---
 title: Definition of Done on the Kanban board
-titleSuffix: Azure Boards
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Definition of Done
 description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
 ms.custom: boards-kanban 
@@ -11,12 +11,14 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
---- 
+ms.date: 09/24/2018
+---
+
 
 # Definition of Done
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**
@@ -36,11 +38,11 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ## Specify the Definition of Done for a column 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range="vsts" 
 
 0.  [Open your Kanban board](kanban-quickstart.md). 
 
@@ -66,7 +68,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017"  
 0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -92,6 +94,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 0. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.  
 
     <img src="_img/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />     
+
 	**For TFS 2015**  
 0. Choose **Edit Definition** within an intermediate column tab and specify  the Definition of Done for that column.  
 
@@ -101,10 +104,6 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	![Definition Text](_img/ALM_DD_DefinitionText.png)  
 
 ::: moniker-end   
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 ---
 
