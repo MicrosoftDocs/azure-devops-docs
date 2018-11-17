@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
-description: Guidance for fixing common TfsMigrator valdiation errors. 
+description: Guidance for fixing common TfsMigrator validation errors. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
