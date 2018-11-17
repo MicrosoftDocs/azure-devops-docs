@@ -91,7 +91,7 @@ You can verify this in your application or service.
 
    <img alt="Azure Service Bus Topic" src="./_img/azure-service-bus/topics.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify your app's code to recieve
+2. Create or modify your app's code to receive
 Azure DevOps Services messages using a Azure Service Bus topic.
 For details, go [here](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
 
@@ -175,7 +175,7 @@ for pricing related to their services.
 
 A: Use the following taking care to concatenate the variable and value in the param node:
 
-```
+```xml
     "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
     "<wp:notification wpnotification\"="" xmlns:wp="\">" +
             "<wp:toast>" +
