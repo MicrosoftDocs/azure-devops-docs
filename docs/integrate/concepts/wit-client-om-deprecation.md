@@ -56,7 +56,7 @@ Any references to the latest versions of WIT Client OM will result in a warning.
 
 ### How do I know what tools are running?
 
-If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and esnure they are aware of our deprecation plan.
+If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and ensure they are aware of our deprecation plan.
 
 ### How do I fix my tools?
 
