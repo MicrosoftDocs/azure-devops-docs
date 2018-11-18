@@ -55,7 +55,7 @@ The Analytics Service is in preview and available to all Azure DevOps users. To 
 
 ### Monitor code activity, build progress and deployment status
 
-With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+With the code tile widgets, you can monitor the activity occurring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 **Code, build, and release chart widgets**  
 
