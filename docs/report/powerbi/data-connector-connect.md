@@ -10,14 +10,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-<!-- TODO: CHANGE THIS MONIKER TO tfs-2019-->
-monikerRange: '>= tfs-2018'
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/01/2018
 ---
 
 # Connect to the Analytics service with Power BI Data Connector
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Azure DevOps Power BI Data connector works with Analytics views. For more information, see [what are Analytics Views](../analytics/what-are-analytics-views.md).
 
@@ -38,7 +37,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	
 	![Power BI desktop ribbon, Get data button](./_img/data-connector-get-data-1a.png)
 
-::: moniker range="tfs-2018"
+::: moniker range="azdevserver-2019"
 
 7. Choose (1) **Online Services**, (2) **Azure DevOps Server (Beta)**, and then **Connect**.
 
@@ -46,7 +45,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 8. **Specify the basic parameters to connect to your data**. 
  
-	![Connect to Azure DevOps Services dialog](./_img/data-connector-get-data-onprem.png)
+	![Connect to Azure DevOps Services dialog](_img/data-connector-get-data-onprem.png)
 
 	- For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
 	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").

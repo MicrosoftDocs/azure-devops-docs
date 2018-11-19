@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 10/30/2018
+ms.date: 11/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -365,7 +365,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
     clean: outputs | resources | all # what to clean up after the job runs
   container: string # container resource to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
-  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled' tasks before killing them
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable ]
   steps: [ script | bash | powershell | checkout | task | stepTemplate ]
 ```

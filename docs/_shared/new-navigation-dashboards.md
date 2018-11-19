@@ -12,10 +12,12 @@ ms.topic: include
 ::: moniker range="azdevserver-2019"
 > [!NOTE]
 > Choose the **New navigation** tab for guidance as Azure DevOps Server 2019 only supports the new navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 > [!NOTE]
 > Choose the **Previous navigation** tab for guidance as TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
 ::: moniker-end
 

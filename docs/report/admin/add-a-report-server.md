@@ -8,7 +8,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Add a report server
