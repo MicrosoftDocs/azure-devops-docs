@@ -30,8 +30,8 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <br/>
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
 **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-**Ctrl+Shift+**![Up arrow](/azure/devops//work/_img/icons/Arrow_Up.png)&nbsp;&nbsp;Move item to swimlane above<br/>
-**Ctrl+Shift+**![Down arrow](/azure/devops//work/_img/icons/Arrow_Down.png)&nbsp;&nbsp;Move item to swimlane below <br/>
+**Ctrl+Shift+**![Up arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;Move item to swimlane above<br/>
+**Ctrl+Shift+**![Down arrow](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;Move item to swimlane below <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>

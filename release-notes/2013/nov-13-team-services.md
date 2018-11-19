@@ -110,7 +110,7 @@ Without Application Insights, “what’s next” decisions are often guesswork.
 
 If you are already Visual Studio Online user and want to participate in the limited preview, request an invitation code via the new Application Insights tile on your Visual Studio Online home page. If you aren’t yet a Visual Studio Online user, you can quickly sign up [here](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
+As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

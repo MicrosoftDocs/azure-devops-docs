@@ -10,11 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
-ms.date: 07/21/2018
+monikerRange: '>= tfs-2017'
+ms.date: 11/19/2018
 ---
 
-# Add an artifact or team 
+# Add an artifact or team artifacts
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
@@ -23,14 +23,13 @@ Select the service of interest to get started adding new artifacts or objects. F
 Prior to adding an artifact, make sure that you've [selected the project and repository](go-to-project-repo.md) that you want to work in.  
 
 ## Add work items, queries, or other work tracking artifacts 
-
 You can quickly add a query or work item when working from a **Boards** or **Work** page. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](_shared/new-navigation-wp.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -39,11 +38,13 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
 From a **Work** page, you can add a work item from the menu of options as shown in the following image.
  
@@ -51,7 +52,13 @@ From a **Work** page, you can add a work item from the menu of options as shown 
 ![Work, add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
 
  Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, or **Plans**&mdash;to add an artifact specific to each of these functional pages.
- 
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 To add other work tracking artifacts, see one of the following articles: 
@@ -68,7 +75,7 @@ You can quickly add a pull request, Git repository, or work item using the **Add
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 Expand the **Repos** service and choose **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -85,6 +92,8 @@ For details on adding a Git repository, see [Git repository](../../repos/git/cre
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
 From **Code**, open the context menu for the current repository and choose ![plus icon](../../_img/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md)
 
 > [!div class="mx-imgBorder"]
@@ -92,6 +101,11 @@ From **Code**, open the context menu for the current repository and choose ![plu
 
 From one of the other **Code** pages, you can add files or folders, a new branch, or a new pull request. 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 ---
 
 Note that you can only add one TFVC repository per project, but an unlimited number of Git repositories. To learn more about Git artifacts, see one of the following articles:
@@ -107,7 +121,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -122,11 +136,19 @@ Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![ 
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
 From **Build and Release**, choose **Builds**, **Releases**, or other page to add an artifact associated with that page.
  
 > [!div class="mx-imgBorder"]
 > 
 ![Build and Release, add an artifact](_img/add-artifact/build-release-hub.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -146,13 +168,12 @@ Agile tools and dashboards are typically associated with teams. You add teams to
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 To view the set of defined teams, open **Project settings**, and choose **Overview**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Project Settings, Teams](_img/add-artifact/view-teams-vert-brn.png)
-
 
 ::: moniker-end
 
@@ -162,9 +183,17 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
 To view the set of defined teams, open the admin context for the project, and choose **Overview**.  
 
 ![Web portal, admin context, project, Overview page](../../boards/plans/_img/multiple-teams-view-teams.png) 
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -184,7 +213,7 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 - [Create a wiki](../wiki/wiki-create-repo.md)
 - [Add and edit wiki pages](../wiki/add-edit-wiki.md)

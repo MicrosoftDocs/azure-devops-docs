@@ -1,7 +1,7 @@
 ---
 title: Query fields, operators, and macros/variables 
-titleSuffix: Azure Boards and TFS
-description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018  
+ms.date: 11/19/2018  
 ---
 
 
@@ -205,7 +205,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong> </p></td></tr>
 <tr>
 	<td><p><strong>Contains Words</strong></p></td>
-	<td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see [Full-text searches] (#full-text) for server and collation requirements.</p></td>
+	<td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.</p></td>
 	<td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields and <strong>Title</strong>.</p></td></tr>
 <tr>
 	<td><p><strong>Does Not Contain Words</strong></p></td>
@@ -342,12 +342,12 @@ You can use the macros described in the following table to filter your queries b
  
 ####Notes:
 0. The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. 
-0. The **@CurrentIteration +/- n** macro is supported for Azure Boards and only when run from the web portal. 
+0. The **@CurrentIteration +/- n** macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
 0. The **@Follow** macro is supported for Azure Boards and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
-0. The **@TeamAreas** macro is supported for Azure Boards only at this time.
+0. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
  
 
 <a id="full-text" /> 
@@ -360,12 +360,12 @@ For examples, see [Example work item queries](example-queries.md) and [Query for
 <!---
 > [!NOTE]    
 > Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
-> -->
+-->
 
 **Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
+::: moniker range=">= tfs-2013 <= azdevserver-2019"
+Azure DevOps Server and Team Foundation Server automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 

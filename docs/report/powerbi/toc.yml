@@ -1,4 +1,4 @@
-- name: "Power BI (Azure DevOps Services)"
+- name: "Power BI (Azure DevOps Analytics)"
   href: index.md
 - name: Overview
   items:
@@ -34,7 +34,7 @@
     href: access-analytics-power-bi.md
   - name: Connect using Power Query (Advanced)
     href: data-connector-functions.md
-  - name: Client authentication 
+  - name: Client OData authentication 
     href: ../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: "Publish to PowerBI.com"
     href: publish-power-bi-desktop-to-power-bi.md  

@@ -34,7 +34,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br/>
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 <br/>
 ```cs
 public static async void GetBuilds()
@@ -81,5 +81,5 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 #### Q: Can I use basic auth with all of the Azure DevOps Services REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](https://visualstudio.microsoft.com/en-us/docs/integrate/api/shared/overview) only support [OAuth](./oauth.md).
+A: No. You can use basic auth with most of them, but [organizations and profiles](https://visualstudio.microsoft.com/docs/integrate/api/shared/overview) only support [OAuth](./oauth.md).
 

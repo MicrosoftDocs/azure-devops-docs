@@ -25,7 +25,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 ## Assign required licenses
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2017'
-ms.date: 03/20/2018  
+monikerRange: '<= tfs-2017'
+ms.date: 11/19/2018
 ---
 
 # Set alerts, get notified when changes occur 
@@ -123,7 +123,6 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 ## Related articles
 
-- [Follow a work item or pull request](../work-items/follow-work-items.md)  
 - [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) 
 - [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md) 
 - [Set your profile and preferences](../../organizations/settings/set-your-preferences.md)  

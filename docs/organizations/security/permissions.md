@@ -11,11 +11,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/06/2017
+ms.date: 11/19/2018
 ---
 
 
-# Permissions and groups in Azure DevOps and TFS
+# Permissions and groups in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -30,12 +30,36 @@ This topic provides a comprehensive reference for each built-in group and permis
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="azdevserver-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
+
+
+::: moniker-end
+
+
+
+::: moniker range="tfs-2018"
+
+> [!div class="mx-tdBreakAll"]  
+> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |-------------|----------|---------|   
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
+
+
+::: moniker-end
+
+
+
+::: moniker range="<= tfs-2017"
+
+> [!div class="mx-tdBreakAll"]  
+> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |-------------|----------|---------|   
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint integration](set-sharepoint-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
 
 ::: moniker-end
@@ -44,7 +68,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 <a id="image-diff"></a>  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps or your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps Services or your on-premises Azure DevOps Server or TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 
@@ -52,10 +76,10 @@ This topic provides a comprehensive reference for each built-in group and permis
 ## Groups
 
 Permissions can be granted directly to an individual, or to a group.
-Using groups can make things a lot simpler,
-and TFS sets up some built-in groups for that purpose.
-These groups and the permissions they're assigned to exist at several different levels:
-server (TFS deployment), project collection, project, and specific objects.
+Using groups can make things a lot simpler. 
+The system provides several built-in groups for that purpose.
+These groups and the default permissions they're assigned are defined at different levels:
+server (on-premises deployment only), project collection, project, and specific objects.
 You can also create your own groups and grant them the specific set of permissions
 that are appropriate for certain roles in your organization.
 
@@ -76,7 +100,7 @@ SharePoint Web Application Services
 
 ## Server-level groups 
 
-When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
+When you install Azure DevOps Server or TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
 ![ADMIN_GROUPS_PERMISSIONS](_img/permissions/server-groups-and-permissions.png)
 
@@ -93,12 +117,12 @@ You can't remove or delete the default server level groups.
 	<tr>
 		<td>Team Foundation Administrators</td>
 		<td>
-			Has permissions to perform all operations for TFS.
+			Has permissions to perform all server-level operations.
 		</td>
 		<td>
 			<p>
 				<strong>Local Administrators</strong> group (BUILTIN\Administrators)
-				for any server that hosts Team Foundation application services.
+				for any server that hosts Azure DevOPs/Team Foundation application services.
 			</p>
 			<p>
 				<em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
@@ -106,7 +130,7 @@ You can't remove or delete the default server level groups.
 			</p>
 			<p>
 				This group should be restricted to the smallest possible number of users
-				who need total administrative control over TFS.
+				who need total administrative control over server-level operations.
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
@@ -120,7 +144,7 @@ You can't remove or delete the default server level groups.
 		<td>Team Foundation Proxy Service Accounts</td>
 		<td>
 			Has service level permissions for Team Foundation Server Proxy,
-			and some TFS service level permissions.
+			and some service-level permissions.
 			<blockquote>
 				Created when you install the TFS proxy service.
 			</blockquote>
@@ -132,18 +156,18 @@ You can't remove or delete the default server level groups.
 	</tr>
 	<tr>
 		<td>Team Foundation Service Accounts</td>
-		<td><p>Has service level permissions for TFS.</p></td>
+		<td><p>Has service-level permissions for the server instance.</p></td>
 		<td>
 			<p>
 				Contains the service account that was supplied during installation
 			</p>
 			<p>
 				This group should contain only service accounts
-				and not user accounts or groupsthat contain user accounts.
+				and not user accounts or groups that contain user accounts.
 				By default, this group is a member of <strong>Team Foundation Administrators</strong>.
 			</p>
 			<p>
-				If you need to add an account to this group after you install TFS, you can do so using
+				If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
 				the TFSSecurity.exe utility in the **Tools** subfolder of your TFS installation directory.
 				The command to do this is `TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername`
 			</p>
@@ -152,7 +176,7 @@ You can't remove or delete the default server level groups.
 	<tr>
 		<td>Team Foundation Valid Users</td>
 		<td>
-			Has permission to view instance level information.
+			Has permission to view server instance-level information.
 			<blockquote>
 				If you set the <strong>View instance-level information</strong>
 				permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
@@ -160,7 +184,7 @@ You can't remove or delete the default server level groups.
 			</blockquote>
 		</td>
 		<td>
-			Contains all users known to exist in the Azure DevOps organization or TFS instance.
+			Contains all users known to exist in the server instance.
 			You can't modify the membership of this group.
 		</td>
 	</tr>
@@ -168,7 +192,7 @@ You can't remove or delete the default server level groups.
 		<td>Project Server Integration Service Accounts   </td>
 		<td>
 			Has service level permissions for the Project Server deployments
-			that are configured for interoperation with TFS
+			that are configured for inter-operation with the server instance
 			and some TFS service level permissions.
 			<blockquote>
 				Created when you install Project Service integration.
@@ -207,7 +231,7 @@ You can't remove or delete the default server level groups.
 
 ## Collection-level groups
 
-When you create an Azure DevOps organization or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
+When you create an Azure DevOps organization or project collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
 <!---
 Project Collection Administrators
@@ -414,7 +438,7 @@ Show bugs on backlogs and boards
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [Manage teams and configure team tools](../settings/manage-teams.md). To add a user as a team administrator, see [Add a team administrator](../settings/add-team-administrator.md).
 
 > [!NOTE]   
-> Project Administrators can manage all team admin areas for all teams. 
+> Project Administrators can manage all team administrative areas for all teams. 
 
 ## Permissions
 
@@ -424,7 +448,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 
 ## Server-level permissions 
 
@@ -466,7 +490,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 	<tr>
 		<td id="edit-instance-level-information-permission">Edit instance-level information</td>
 		<td>
-			Can edit server level permissions for TFS users and groups,
+			Can edit server-level permissions for users and groups,
 			and add or remove server level groups from the collection.
 			<blockquote>
 				<p>
@@ -499,16 +523,16 @@ You manage server-level permissions through the [Team Foundation Administration 
 	<tr>
 		<td id="trigger-events-permission">Trigger events</td>
 		<td>
-			Can trigger TFS alert events.
+			Can trigger server-level alert events.
 			Only assign to service accounts and members of the Team Foundation Administrators group.
 		</td>
 	</tr>
 	<tr>
 		<td id="use-full-web-access-features-permission">Use full Web Access features</td>
 		<td>
-			Can use all TFS WEB PORTAL features.
+			Can use all TFS Web portal features.
 			<blockquote>
-				If the Use full Web Access features permission is set to Deny, the user will only see
+				If the **Use full Web Access** features permission is set to Deny, the user will only see
 				those features permitted for the **Stakeholder** group
 				(see [Change access levels](change-access-levels.md)).
 				A Deny will override any implicit Allow,
@@ -534,9 +558,12 @@ You manage server-level permissions through the [Team Foundation Administration 
 <a id="collection">  </a>
 <a id="collection-level"> </a>
 
-## Collection-level 
+## Collection-level permissions
 
 You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+
+> [!div class="mx-imgBorder"]  
+> ![Collection level permissions and groups(_img/permissions/collection-level-permissions.png)   
 
 
 <table valign="top" width="100%">
@@ -552,7 +579,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-process-permissions-permission">Administer process permissions</td>
 		<td>
-			Can modify permissions for processes. Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can modify permissions for processes. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -602,7 +629,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -614,7 +641,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -666,7 +693,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019.  Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
@@ -748,7 +775,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="change-process-team-project-permission">Change process of project</td>
-		<td>Can change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. </td>
+		<td>Can change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019.  Users granted Basic and Stakeholder access are granted this permission by default. </td>
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
@@ -771,7 +798,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	<tr>
 		<td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
 		<td>Can delete [Analytics views](../../report/analytics/analytics-views-manage.md)
-that have been saved under the Shared area. Applies to Azure DevOps Services only.</td>
+that have been saved under the Shared area. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete project</td>
@@ -779,7 +806,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
-		<td>Can delete a scheduled test.</td>
+		<td>Can delete a test run.</td>
 	</tr>
 	<tr>
 		<td id="edit-team-project-level-information-permission">Edit project-level information</td>
@@ -805,7 +832,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
-		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to Azure DevOps Services only.</td>
+		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
 	</tr>
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
@@ -823,7 +850,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-		<td>Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps Services only. Users granted Stakeholder access for a public project are granted this permission by default.
+		<td>Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Stakeholder access for a public project are granted this permission by default.
 		</td>
 	</tr>
 	<tr>
@@ -845,7 +872,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services onl
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>
-		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps Services only.</td>
+		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
 	</tr>
 	<tr>
 		<td id="view-team-project-level-information-permission">View project-level information</td>
@@ -870,7 +897,7 @@ With shared Analytics views, you can grant specific permissions to view, edit, o
 > [!div class="mx-imgBorder"]
 > ![Manage permissions](../../report/analytics/_img/editable-views/view-permissions.png)  
 
-The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../../report/analytics/what-are-analytics-views.md)
+The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../../report/analytics/what-are-analytics-views.md)  
 
 
 <table valign="top" width="100%">
@@ -1072,11 +1099,15 @@ Remove Others' Locks
 Rename Repository 
 -->
 
+
+You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+
+
+::: moniker range="<= tfs-2017" 
 > [!NOTE] 
 > These permissions have changed in TFS 2017 Update 1 and Azure DevOps.
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
-
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+::: moniker-end
 
 ::: moniker range="vsts" 
 
@@ -1122,14 +1153,14 @@ By default, the project level and collection level Readers groups have only Read
 		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
 		<td>
 		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
 		</td>
 	</tr>
 	<tr>
 		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
 		<td>
 		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
 		</td>
 	</tr>
 	<tr>
@@ -1621,7 +1652,7 @@ permissions to create, edit, or delete iteration nodes.
 
 ## Work item query and folder (object-level)
 
-You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
+You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
 > [!div class="mx-imgBorder"]  
 > ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
@@ -1666,7 +1697,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 ## Delivery Plans (object-level)   
 
-You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -1708,7 +1739,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 
 ## Process (object-level)   
-You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 
 <table valign="top" width="100%">
@@ -1844,7 +1875,7 @@ If you are working with the Release Management client and server supported for T
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017"
+::: moniker range=">= tfs-2017"
 
 ## Release (object-level) 
 
@@ -1854,20 +1885,21 @@ In addition, you can assign approvers to specific steps within a release definit
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release definition, or environment level.
 
-| Permission | Description | Scopes |
-|------------|-------------|--------|
-| **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |
-| **Create releases** | Can create new releases. | Project, Release definition |
-| **Delete release definition** | Can delete release definition(s). | Project, Release definition |
-| **Delete release environment** | Can delete environment(s) in release definition(s). | Project, Release definition, Environment |
-| **Delete releases** | Can delete releases for a definition. | Project, Release definition |
-| **Edit release definition** | Can save any changes to a release definition, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release definition. To make changes to a specific environment in a release definition, the user also needs **Edit release environment** permission. | Project, Release definition |
-| **Edit release environment** | Can edit environment(s) in release definition(s). To save the changes to the release definition, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release definition, Environment |
-| **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release definition, Environment |
-| **Manage release approvers** | Can add or edit approvers for environment(s) in release definition(s). This permissions also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release definition, Environment |
-| **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release definition |
-| **View release definition** | Can view release definition(s). | Project, Release definition |
-| **View releases** | Can view releases belonging to release definition(s). | Project, Release definition |
+>  [!div class="mx-tdCol2BreakAll"]  
+> | Permission | Description | Scopes |
+> |------------|-------------|--------|
+> | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |
+> | **Create releases** | Can create new releases. | Project, Release definition |
+> | **Delete release definition** | Can delete release definition(s). | Project, Release definition |
+> | **Delete release environment** | Can delete environment(s) in release definition(s). | Project, Release definition, Environment |
+> | **Delete releases** | Can delete releases for a definition. | Project, Release definition |
+> | **Edit release definition** | Can save any changes to a release definition, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release definition. To make changes to a specific environment in a release definition, the user also needs **Edit release environment** permission. | Project, Release definition |
+> | **Edit release environment** | Can edit environment(s) in release definition(s). To save the changes to the release definition, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release definition, Environment |
+> | **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release definition, Environment |
+> | **Manage release approvers** | Can add or edit approvers for environment(s) in release definition(s). This permissions also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release definition, Environment |
+> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release definition |
+> | **View release definition** | Can view release definition(s). | Project, Release definition |
+> | **View releases** | Can view releases belonging to release definition(s). | Project, Release definition |
 
 Default values for all of these permissions are set for team
 project collections and project groups. For example,

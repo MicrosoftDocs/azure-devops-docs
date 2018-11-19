@@ -1,7 +1,7 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: Azure Boards and TFS 
-description: Use work item form controls to update status, link work items, and more in Azure Boards & Team Foundation Server  
+titleSuffix: Azure Boards 
+description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
@@ -9,12 +9,12 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2018 
+ms.date: 11/19/2018
 ---
 
 # Use work item form controls
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -156,7 +156,7 @@ To reference a work item, use the [**#ID** control](../../notifications/add-link
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
-> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
 ::: moniker-end 
 
 <a id="copy-url">  </a>

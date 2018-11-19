@@ -61,7 +61,7 @@ The following organization agent pools are provided by default:
 
 ::: moniker range="vsts"
 
-* **Hosted Ubuntu 1604** pool (Azure Pipelinese only): Enables you to build and release on
+* **Hosted Ubuntu 1604** pool (Azure Pipelines only): Enables you to build and release on
   Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
   run in a container, but the Docker tools are available for you to use if you want to
   run [container jobs](../process/container-phases.md).
@@ -74,7 +74,7 @@ The following organization agent pools are provided by default:
   *Learn more about [migrating](hosted.md#hosted-linux-preview-pool-deprecation).*
 
 * **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
-  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
 * **Hosted VS2017** pool (Azure Pipelines only): The **Hosted VS2017** pool is another built-in pool in Azure Pipelines. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 

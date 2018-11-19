@@ -38,7 +38,7 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
 | Development tools on macOS | macOS-10.13 (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-1604 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
+| .NET Core | ubuntu-16.04 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 
@@ -96,13 +96,13 @@ Microsoft-hosted agents:
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
 * Can run jobs for up to 360 minutes (6 hours).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 
 Microsoft-hosted agents do not offer:
 
 * The ability to log on.
-* The ability to [drop artifacts to a UNC file share](../build/artifacts.md#unc-file-share).
+* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
 * The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 
@@ -124,7 +124,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 > We recommend that you check back frequently to ensure you keep an up-to-date list.
 > If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
 
-We publish a [weekly XML file](https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://<your_organization>.visualstudio.com/_admin/_home/settings`. Under **Account**, you will see a field indicating your region.
+We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://dev.azure.com/<your_organization>/_settings/overview`. Under **Organization information**, you will see a field indicating your region.
 
 *This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/ip-addresses-used-hosted-build/).*
 
@@ -141,7 +141,7 @@ A: All Azure DevOps organizations are provided with several free parallel jobs f
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 
-The Microsoft-hosted XAML build controller is no longer supported. If you have an organization in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [self-hosted build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and a [self-hosted build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx).
+The Microsoft-hosted XAML build controller is no longer supported. If you have an organization in which you still need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), you should set up a [self-hosted build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx) and a [self-hosted build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx).
 
 > [!TIP]
 >

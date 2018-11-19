@@ -45,7 +45,7 @@ with [**Edit collection-level information** permissions](../organizations/securi
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 For paid extensions, you'll need an 
-[Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
+[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
 to bill your purchase. If you don't have an Azure subscription, 
 you can create a new subscription when you make your first purchase. 
 
@@ -90,7 +90,7 @@ go to the Visual Studio Marketplace.
 	<img alt="Select project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
 
 0.	If you chose a paid extension, 
-select the [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
+select the [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
 that you'll use to pay for extension access.
 
 	<img alt="For paid extensions, select an Azure subscription for billing" src="./_img/get-tfs-extensions/connected/select-azure-subscription.png" style="border: 1px solid #CCCCCC" />

@@ -92,7 +92,7 @@ If you want to consume or publish Python packages as part of your CI/CD pipeline
 
 ### Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/python?view=vsts).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=vsts).
 
 ## Resources
 

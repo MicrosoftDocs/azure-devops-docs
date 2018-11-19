@@ -34,7 +34,7 @@ Once you have a Microsoft account, you can create an Azure DevOps organization. 
 
 If you want to deploy your applications to Azure, you can use an existing Azure account or create a new one. A credit card is required for identity verification, but you will not be charged for the free trial, nor will your free trial become a paid account without your permission.
 
-[Create a free Azure account](https://azure.microsoft.com/en-us/pricing/free-trial/)
+[Create a free Azure account](https://azure.microsoft.com/pricing/free-trial/)
 
 ## Download a Git client
 

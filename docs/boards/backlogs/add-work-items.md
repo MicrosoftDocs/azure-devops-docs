@@ -1,8 +1,6 @@
 ---
 title: Add work items
-titleSuffix: Azure Boards and TFS 
-ms.global_help.title: View & add work items
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 2 
+titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 09/19/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 ::: moniker range=">= tfs-2017"
@@ -27,13 +26,39 @@ You add work items to plan and manage your project. You use different types of w
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
-::: moniker range=">= tfs-2017"
+
 
 <a id="define-new-work">  </a>
 ## Add a work item 
 You can start adding work items once you connect to a project. 
 
-Here we show how to add work items from the web portal. 
+Here we show how to add work items from the web portal.  
+
+
+
+## Add work items
+You can start adding work items once you connect to a project. Here we show how to add work items from the web portal.
+
+
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
+
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
+
+> [!div class="mx-imgBorder"]
+![Work, add artifact](../../project/navigation/_img/add-artifact/add-work-item-query-vert.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013  <= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -45,7 +70,7 @@ Here we show how to add work items from the web portal.
 	>
 	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 	
-	Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+	Choose the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -55,14 +80,9 @@ Here we show how to add work items from the web portal.
 
 	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
-That's it! 
-
-Create as many work items as you need of the type you need to track the work you want to manage.  
-::: moniker-end
+::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-## Add work items
-You can start adding work items once you connect to a project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
 
@@ -80,6 +100,16 @@ You can start adding work items once you connect to a project. Here we show how 
 
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
+---
+
+That's it! 
+
+Create as many work items as you need of the type you need to track the work you want to manage.  
+
 
 ## Update work items as work progresses
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
@@ -95,7 +125,7 @@ Note that the location of the State field may differ depending on the work item 
 > ![Update the State of an Issue](_img/add-work/update-state-old-form.png)   
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 The following image shows the work flow states for a product backlog item. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).       
 ::: moniker-end
 
@@ -139,7 +169,7 @@ With each update, changes are recorded in the History field which you can view t
 ![View change history](_img/add-work-item-history.png)  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![View change history](_img/work-items-view-change-history.png)  
+![View change history](_img/work-items-view-change-history.png) 
 ::: moniker-end
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
@@ -149,22 +179,22 @@ To find work items based on their history, see [History & auditing](../queries/h
 ::: moniker range=">= tfs-2017"
 ## Follow a work item
 
-When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
 
-<img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+![Work item form, Follow icon control](_img/follow-work-item.png)
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, click the ![Following icon](../_img/icons/following-icon.png)  icon.
+To stop following changes, choose the ![ ](../_img/icons/following-icon.png) following icon.
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 
 > [!IMPORTANT]
->To support the Follow feature, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
+>To support the follow feature, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
 
 ::: moniker-end
 

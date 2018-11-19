@@ -27,7 +27,7 @@ Because the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-noli
 we **recommend** you use this over Microsoft Test Manager for
 all your test management requirements.
 You can use Microsoft Test Manager to test your desktop applications by
-[launching the Microsoft Test Runner client](../run-manual-tests.md#run-desktop). 
+[launching the Microsoft Test Runner client](../run-manual-tests.md#run-desktop). Microsoft Test Manager 2017 is the last shipped version.
 
 This topic will help you understand why the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive
 solution for manual testing compared to Microsoft Test Manager.

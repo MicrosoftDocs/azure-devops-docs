@@ -9,22 +9,26 @@ ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
 
 # Widgets based on the Analytics Service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Analytics extension includes several dashboard widgets that take advantage of the power of the Analytics Service. Once you install the Analytics extension you can add Widgets to your dashboard. Using widgets, you and your team can gain valuable insights into the health and status of your work. 
 
 > [!NOTE]   
-> All Analytics widgets are available only for Azure DevOps Services at this time. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
+> You need to first install the [Analytics Marketplace extension](../analytics/analytics-extension.md). 
 You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 
-If **Boards** is disabled, then all all widgets associated with work item tracking, including those based on the Analytics Service, will also be disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker range="vsts"
+> [!NOTE]  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and most Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+::: moniker-end
+
 
 ## Burndown
 The Burndown widget lets you display a trend of remaining work across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on any scope of work over time. It will help you answer questions like: 
@@ -98,6 +102,7 @@ To learn more, see [Cycle time and lead time control charts](../dashboards/cycle
 
 To learn more, see [Configure and view Velocity widgets](../dashboards/team-velocity.md).  
 
+::: moniker range="vsts"
 ## Test Results Trend (Advanced)
 With the Test Results Trend (Advanced) widget, you can track the test quality of your pipelines over time. Tracking test quality and improving test collateral are essential tasks to maintaining a healthy DevOps pipeline.  
 
@@ -112,3 +117,5 @@ You can find outliers in your test results and answer questions like:
 ![test trend widget by priority](../dashboards/_img/test-results-trend-widget/passed-bypriority-pass.png)
 
 To learn more, see [Configure a test results widget](../dashboards/configure-test-results-trend.md).
+
+::: moniker-end

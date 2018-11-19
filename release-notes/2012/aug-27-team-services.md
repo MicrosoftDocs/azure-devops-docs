@@ -57,7 +57,7 @@ Then enter a password and save the changes. You now have a username and password
 
 That’s it for sprint 35. We’re already busy on sprint 36 and looking forward to bringing more great stuff your way. Please feel free to use our [UserVoice site](https://visualstudio.uservoice.com/forums/330519-vso) if you want to help prioritize our investments.
 
-By the way, we've updated this page so you can bookmark it ([http://tfs.visualstudio.com/en-us/news/](http://tfs.visualstudio.com/en-us/news/)), and you'll always get the most recent news.
+By the way, we've updated this page so you can bookmark it ([http://tfs.visualstudio.com/news/](http://tfs.visualstudio.com/news/)), and you'll always get the most recent news.
 
 Thanks,
 

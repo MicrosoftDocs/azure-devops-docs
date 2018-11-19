@@ -184,7 +184,7 @@ When the required reviewers approve the code, you can complete the pull request.
 >
 >Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead.
 
-In some cases, you need to bypass policy requirements so you can push changes to the branch directly or complete a pull request even if branch policies are not satisfied. For these situations, grant the the desired permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).  
+In some cases, you need to bypass policy requirements so you can push changes to the branch directly or complete a pull request even if branch policies are not satisfied. For these situations, grant the desired permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).  
 
 ![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
 

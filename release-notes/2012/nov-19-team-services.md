@@ -34,7 +34,7 @@ Build summary reports have been updated to include the count and size of files s
 
 Finally, we made some very minor updates to the account landing page to improve the discoverability of the new team project action.
 
-That’s our list for sprint 39. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice). See you again on December 10th.
+That’s our list for sprint 39. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice). See you again on December 10th.
 
 Thanks,
 

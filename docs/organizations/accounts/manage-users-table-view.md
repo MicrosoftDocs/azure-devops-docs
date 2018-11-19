@@ -19,7 +19,7 @@ Learn how to add users to your organization and specify the level of features th
 
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
+* Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
 * Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
@@ -46,7 +46,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

@@ -26,7 +26,7 @@ Additionally, you can now create release definitions that release to an environm
 
 ##Epic and Feature board drill-down
 
-Last summer we released a [feature](https://visualstudio.microsoft.com/en-us/articles/news/2015/sep-18-team-services) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
+Last summer we released a [feature](https://visualstudio.microsoft.com/articles/news/2015/sep-18-team-services) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
 
 ![Board drill-down](_img/3_3_02.png)
 

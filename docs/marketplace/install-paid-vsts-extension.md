@@ -44,7 +44,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 
 	![Buy the extension](_img/get-vsts-extensions/test-manager-extension.png)
 
-4.	Select an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) that you'll use to pay for extension access.
+4.	Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) that you'll use to pay for extension access.
 	
 	![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-sub.png)
 
@@ -61,7 +61,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 After you install a paid extension, you need to assign it to your users so they can start using it.
 To assign extensions, you need Azure DevOps Services [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../_shared/new-navigation-cloud.md)]  
 
 # [New navigation](#tab/new-nav)
 

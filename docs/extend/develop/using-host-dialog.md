@@ -39,7 +39,7 @@ To start, declare a contribution of type `ms.vss-web.control` in your extension 
 
 The `uri` property references a page that will be rendered within the content area of the dialog:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,7 +52,7 @@ The `uri` property references a page that will be rendered within the content ar
             <input id="inpName" />
         </p>
         <p>
-            <label>Data of birth:</label>
+            <label>Date of birth:</label>
             <input id="inpDob" />
         </p>
         <p>

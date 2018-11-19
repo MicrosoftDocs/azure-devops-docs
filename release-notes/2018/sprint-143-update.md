@@ -154,7 +154,7 @@ By default, **Azure Pipelines** used to re-run all jobs when you redeploy a prev
 
 ### Automatically redeploy on failure
 
-When a deployment to a stage fails, **Azure Pipelines** can now automatically redeploy the last successful deployment. You can configure the stage to automatically deploy the last successful release by configuring the **Auto-redeploy trigger** in the **Post-deployment conditions**. We plan to add additional triggered events and actions to the auto redeploy configuration in a future sprint. See the [Deployment groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/) documentation for more information.
+When a deployment to a stage fails, **Azure Pipelines** can now automatically redeploy the last successful deployment. You can configure the stage to automatically deploy the last successful release by configuring the **Auto-redeploy trigger** in the **Post-deployment conditions**. We plan to add additional triggered events and actions to the auto redeploy configuration in a future sprint. See the [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_09.png)
@@ -167,11 +167,11 @@ We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps proje
 
 ### Exclude files in artifact uploads
 
-Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=vsts) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory. 
+Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/azure/devops/artifacts/reference/artifactignore?view=vsts) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory. 
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json&view=vsts&tabs=yaml), [npm](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json&view=vsts&tabs=yaml), and [Maven](https://docs.microsoft.com/en-us/azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json&view=vsts) tasks in **Azure Pipelines**.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [NuGet](https://docs.microsoft.com/azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json&view=vsts&tabs=yaml), [npm](https://docs.microsoft.com/azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json&view=vsts&tabs=yaml), and [Maven](https://docs.microsoft.com/azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json&view=vsts) tasks in **Azure Pipelines**.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_10.png)

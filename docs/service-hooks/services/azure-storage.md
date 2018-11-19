@@ -90,9 +90,9 @@ to the selected storage queue as a JSON string.
 You can then use APIs provided by the Microsoft Azure SDK
 for .NET Framework (and other languages) to access the message:
 
-1. [How to: Peek at the next message](http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/#peek-message)
+1. [How to: Peek at the next message](http://www.windowsazure.com/develop/net/how-to-guides/queue-service/#peek-message)
 
-2. [How to: Dequeue the next message](http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/#get-message)
+2. [How to: Dequeue the next message](http://www.windowsazure.com/develop/net/how-to-guides/queue-service/#get-message)
 
 Example:
 
@@ -124,10 +124,10 @@ for pricing related to their services.
 
 #### Q: Can I get more information about Microsoft Azure storage?
 
-A: Yes, go [here](http://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-queues/).
+A: Yes, go [here](/azure/storage/queues/storage-dotnet-how-to-use-queues).
 
 #### Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](../../integrate/get-started/service-hooks/create-subscription.
+A: Yes, see details [here](../create-subscription.md)
 
 <!-- ENDSECTION -->

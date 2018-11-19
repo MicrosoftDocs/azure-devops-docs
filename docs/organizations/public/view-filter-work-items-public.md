@@ -25,7 +25,7 @@ When viewing a public project, you're able to view work items defined for that p
 
 ## View work items 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)

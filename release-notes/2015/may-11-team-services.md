@@ -50,7 +50,7 @@ A zoomed-in view of this region appears in a child Metrics Explorer blade.
 
 Wrapping up Sprint 82 was exciting as it aligned with some major announcements, and our continued integration with Visual Studio 2015 RC, which released during the same week.
 
-We are very interested in hearing about how we are doing, so please submit questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+We are very interested in hearing about how we are doing, so please submit questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
 
 Thanks,
 

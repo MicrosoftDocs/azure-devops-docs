@@ -25,7 +25,7 @@ For .NET developers building Windows apps and services that integrate with Azure
 
 >Note: REST-based clients only work with Azure DevOps Services and TFS 2015 (not previous versions of TFS) 
 >To learn more about extending and integrating with  Azure DevOps Services and Team Foundation Server using the client libraries, 
->see [Extending Team Foundation](https://msdn.microsoft.com/en-us/library/bb130146.aspx)
+>see [Extending Team Foundation](https://msdn.microsoft.com/library/bb130146.aspx)
 
 ### Packages
 | Package | Description | Primary usage |

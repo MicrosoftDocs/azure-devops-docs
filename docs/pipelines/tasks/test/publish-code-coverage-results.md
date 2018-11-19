@@ -52,10 +52,10 @@ To publish code coverage results for Javascript with istanbul using YAML, see [J
 </table>
 
 ## Docker
-For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipleine, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
+For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipeline, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
 
 ## View results
-In order to view the code coverage results in the pipleine, see [Review code coverage results](../../test/review-code-coverage-results.md)
+In order to view the code coverage results in the pipeline, see [Review code coverage results](../../test/review-code-coverage-results.md)
 
 ## Related tasks
 

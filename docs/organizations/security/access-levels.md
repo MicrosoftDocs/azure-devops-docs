@@ -11,22 +11,23 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/12/2018
+ms.date: 11/19/2018
 ---
+
 
 # About access levels
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
+Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that Azure DevOpsprovides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. 
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. 
 
 ::: moniker range="vsts"
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). 
 ::: moniker-end
 
@@ -58,30 +59,30 @@ Assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subs
 
 ::: moniker range=">= tfs-2018"
 
-Assign **VS Enterprise** to users with a a subscription to Visual Studio Enterprise.This enables the Test Manager feature.
+Assign **VS Enterprise** to users with a subscription to Visual Studio Enterprise.This enables the Test Manager feature.
 ::: moniker-end
 
 
 ::: moniker range="tfs-2017"
-Assign **Advanced** (TFS 2017) to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms. Assign **VS Enterprise** (TFS 2017.1 and later versions) to users with a a subscription to Visual Studio Enterprise. This enables the Test Manager feature.  
+Assign **Advanced** (TFS 2017) to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms. Assign **VS Enterprise** (TFS 2017.1 and later versions) to users with a subscription to Visual Studio Enterprise. This enables the Test Manager feature.  
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-Assign **Advanced** to users with a a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
+Assign **Advanced** to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
 ::: moniker-end
 
 
 Assign **Stakeholders** to users with no license or subscriptions who need access to a limited set of features.
 
-See [what benefits come with each subscription level](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-azure-devops).
+See [what benefits come with each subscription level](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).
 
 
 ## Basic, Azure Boards & Repos
 
 Assign **Basic**  to users in your Azure DevOps organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 ![Basic access features](_img/access-levels-2017-basic.png)
 ::: moniker-end
 
@@ -95,15 +96,16 @@ Basic access allows users to access **Code**, **Build**, and **Test**  in additi
 - [Advanced home page](../../project/wiki/project-vision-status.md)<sup> 3</sup>
 - [Author release pipelines](../../pipelines/release/index.md)<sup> 4</sup>
 - [Advanced portfolio management](../../boards/backlogs/define-features-epics.md) 
-- [Team rooms](../../notifications/collaborate-in-a-team-room.md)
+- [Team rooms](../../notifications/collaborate-in-a-team-room.md)<sup> 5</sup>
 - [Analyze test results and manage machine groups](../../test/test-different-configurations.md) 
 
 **Notes:**
 
-1.	Requires TFS 2015.1 or later version.
-2.	You can open Team settings, Project settings, and Collection level settings to view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
-3.	Advanced home page allows you to configure and view the Project summary page in addition to team dashboards.  
-4.	Requires TFS 2015.2 or later version.    
+1. Requires TFS 2015.1 or later version.
+2. You can open Team settings, Project settings, and Collection level settings to view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
+3. Advanced home page allows you to configure and view the Project summary page in addition to team dashboards.  
+4. Requires TFS 2015.2 or later version.    
+5. Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.
 
 Within the admin context, there are several pages which support administrating features at the team, project, project collection/organization level. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md).
 
@@ -115,7 +117,7 @@ Visual Studio subscribers are entitled to **Basic** features (Azure Boards & Rep
 With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
 
 <!--- **TFS 2017.2** -->
@@ -162,7 +164,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 
  
 <a id="test-manager"  >  </a>
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 ## Test Plans/Test features and Marketplace extensions
 
 Full access to **Test Plans/Test** features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
@@ -220,7 +222,7 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free.
 
 ![Stakeholder access features](_img/access-levels-2017-stakeholder.png)  
@@ -387,7 +389,7 @@ You can change the permissions granted to Stakeholders. See [Grant or restrict a
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="tfs-2018 || azdevserver-2019"
 ### Stakeholder access to user features
 The following features are available to Stakeholders from the web portal.
 
@@ -594,7 +596,7 @@ If you need access to the following features&mdash;which support the daily work 
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
+::: moniker range="tfs-2018 || azdevserver-2019"
 - Change the priority of an item within a backlog  
 - Delete work items 
 - Create shared queries, view charts, and modify the home page  
@@ -616,9 +618,9 @@ If you need access to the following features&mdash;which support the daily work 
 ## What features can users access who are added to two different groups?
 If a user belongs to a group that has **Basic** access and another group that has **VS Enterprise** access, the user has access to all features available through **VS Enterprise**, which is a superset of **Basic**.
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= azdevserver-2019"
 
-## TFS Service account access  
+## Azure DevOps Server and TFS Service account access  
 [TFS service accounts](/tfs/tfs-server/admin/service-accounts-dependencies-tfs) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
 
 Service accounts don't require a TFS CAL or other purchase.  
@@ -634,7 +636,7 @@ Service accounts don't require a TFS CAL or other purchase.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 - [Change access levels](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md) 

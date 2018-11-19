@@ -92,7 +92,7 @@ We’re heard your feedback on working with tags, and with this update, you’ll
 
 ##Deleting a custom field
 
-In the last [deployment](https://visualstudio.microsoft.com/en-us/articles/news/2015/dec-10-team-services), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
+In the last [deployment](https://visualstudio.microsoft.com/articles/news/2015/dec-10-team-services), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
 
 ##Keyboard shortcuts
 

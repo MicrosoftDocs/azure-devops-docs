@@ -76,13 +76,12 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 * Any changes made to *existing* secrets in the key vault, such as a change in the value of a secret, will be made available
   automatically to all the definitions in which the variable group is used.
 
-* When *new* secrets are added to the vault, they are **not** made available automatically to all the definitions.
-  New secrets must be explicitly added to the variable group in order to make them available to definitions
-  in which the variable group is used.
+* When new secrets are added to the vault, or a secret is deleted from the vault, the associated variable groups are not updated
+  automatically. The secrets included in the variable group must be explicitly updated in order for the definitions using the
+  variable group to execute correctly.
 
 * Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
-  Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault.
-  Cryptographic keys and certificates are not yet supported
+  Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault. Cryptographic keys and certificates are not yet supported.
 
 ## Use a variable group
 
@@ -134,5 +133,10 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
+
+### Variable groups in a build or release
+
+-  When a new instance of a build or release is created from a pipeline definition, the values of the variables from the linked variable group are copied to the build or release.
+- To override the values of variables in the variable group you must create a variable with the same name within the build or release pipeline. A variable in the pipeline overrides a variable with the same name in the variable group.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

@@ -25,7 +25,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | The target path where the contents of the pipeline artifact will be placed. See [Artifacts in Azure Pipelines](../../build/artifacts.md). |
+| targetPath | The target path where the contents of the pipeline artifact will be placed. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
 | artifactName | The name of the artifact that you want to download. |
 | pipelineId | The ID of the Pipeline to download from. For example: `1764` |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |

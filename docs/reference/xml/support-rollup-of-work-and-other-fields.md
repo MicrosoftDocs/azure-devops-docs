@@ -99,7 +99,7 @@ You can use the [Analytics Service](../../report/analytics/what-is-analytics.md)
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range=">= tfs-2013 <= azdevserver-2019"  
 ## SQL Server Reporting Services report  
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   

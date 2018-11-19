@@ -24,7 +24,7 @@ If users no longer require access to a project or your organization, you can rem
 
 ## Remove users from your organization
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 
