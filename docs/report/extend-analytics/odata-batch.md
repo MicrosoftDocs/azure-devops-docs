@@ -8,8 +8,8 @@ ms.manager: douge
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
-ms.date: 11/13/2017
+monikerRange: ">= tfs-2018"
+ms.date: 11/2/2018
 ---
 
 # OData batch support
@@ -22,7 +22,28 @@ Batch requests are part of the OData spec, and the Analytics service for Azure D
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## The Analytics $batch endpoint
-The $batch endpoint is located at ```https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$batch```. Note that the $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+The $batch endpoint is located at:
+
+::: moniker range="vsts"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+``` 
+>[!NOTE] 
+>The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+>The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+::: moniker-end
 
 ### Supported $batch operations
 The OData spec allows for numerous operations per $batch request, however the Analytics service limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.

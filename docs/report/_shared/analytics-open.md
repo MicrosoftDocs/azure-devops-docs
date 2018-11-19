@@ -6,7 +6,7 @@ ms.topic: include
 
 ## Open Analytics to access views
 
-After you install the Analytics Marketplace extension, a set of default Analytics views are created for each team project. You can view, modify, and create a custom view from **Analytics**. 
+After you install the [Analytics Marketplace extension](../analytics/analytics-extension.md), a set of default Analytics views are created for each team project. You can view, modify, and create a custom view from **Analytics**. 
 
 # [New navigation](#tab/new-nav)
 

@@ -25,7 +25,7 @@ With work item search, you can quickly find work items defined within a public p
 <a name="start-search"></a>
 ## Initiate a search 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

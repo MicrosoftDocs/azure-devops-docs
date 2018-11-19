@@ -22,7 +22,7 @@ The most important thing to avoid is a situation where migration to group-based 
 
 ## Add a group rule
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

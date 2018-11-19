@@ -9,8 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # Explore the Analytics OData metadata
@@ -35,18 +35,26 @@ Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0
 ### Query for metadata on a specific project
 You construct the service root URL for a project as shown:
 
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata
-```
-
-### Query for metadata on an organization
-The service root URL at the organization-level is constructed as:
+::: moniker range="vsts"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+
+::: moniker-end
 
 ## Interpret the metadata response
 The core components of the metadata response are EntityType and EntityContainer.

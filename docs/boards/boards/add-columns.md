@@ -1,7 +1,7 @@
 ---
 title: Add columns to your Kanban board
-titleSuffix: Azure Boards and TFS
-description: Map your Kanban board, support your team's work flow in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards
+description: Map your Kanban board, support your team's work flow in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,14 +11,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/24/2018
+ms.date: 11/19/2018
 ---
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
-
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
 After you identify your team's workflow stages, you're ready to [configure your Kanban board to map to them](add-columns.md#add-or-rename-columns). Once configured, you use your Kanban board to update status, reassign work, and reorder items to reflect changing priorities.
@@ -36,7 +34,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= azdevserver-2019"
 > [!NOTE]    
 >If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
@@ -50,13 +48,13 @@ It's best if you involve the entire team to identify an initial set of workflow 
 
 To get started, ask your team these questions: 
 
-* What types of activities do we regularly perform? 
-* What natural handoffs occur within our team? Or, from our team to other teams? 
-* What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?
-* What work needs to occur at each stage? 
+- *What types of activities do we regularly perform?* 
+- *What natural hand offs occur within our team? Or, from our team to other teams?* 
+- *What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?*
+- *What work needs to occur at each stage?* 
 
 
-Our example dev team came up with these stages as essential to their process: 
+Our example development team came up with these stages as essential to their process: 
 
 ![Example workflow stages ](_img/ALM_AC_Workflow.png)
 
@@ -100,11 +98,11 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 
 You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -151,7 +149,8 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2018"  
+
+::: moniker range="tfs-2018 || vsts"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -310,6 +309,9 @@ You'll see different column titles and choices based on the [Process](../work-it
  
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -393,9 +395,6 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../../boards/boards/customize-cards.md) 
-* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
-
 
 ### REST API resources
 To interact programmatically with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).

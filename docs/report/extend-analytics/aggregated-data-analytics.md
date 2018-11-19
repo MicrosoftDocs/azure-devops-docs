@@ -8,8 +8,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
-ms.date: 3/16/2018
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # Aggregate work tracking data using the Analytics service   
@@ -35,15 +35,28 @@ In this topic you'll learn:
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
-Use the following basic root URL as a prefix for all the examples provided in this topic. Replace `{OrganizationName}` with your Azure DevOps name. 
+Use the following basic root URL as a prefix for all the examples provided in this topic.
+
+::: moniker range="vsts"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ``` 
 
-Use the above URL as a prefix for all the examples.   
+::: moniker-end
 
+::: moniker range="tfs-2018"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+
+::: moniker-end
 
 ## Simple count aggregations
 

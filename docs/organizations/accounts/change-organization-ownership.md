@@ -36,7 +36,7 @@ Make sure that the new owner:
 
 ## Change organization owner
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

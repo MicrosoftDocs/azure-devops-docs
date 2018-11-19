@@ -44,7 +44,7 @@
 </tr>
 
 <tr>
-<td align="left">Participate in Team (chat) rooms <sup>1<</sup></td>
+<td align="left">Participate in Team (chat) rooms <sup>1</sup></td>
 <td> </td>
 <td> </td>
 <td>![check mark](_img/checkmark.png)</td>

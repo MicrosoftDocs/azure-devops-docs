@@ -38,7 +38,7 @@ Learn how to build stunning reports using Power BI Desktop.
 - [Connect using the Data Connector](data-connector-connect.md)
 - [Connect using OData feed](access-analytics-power-bi.md)    
 - [Connect using Azure DevOps functions (Advanced)](data-connector-functions.md)  
-- [Client authentication](../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
+- [Client OData authentication](../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
 - [Publish to PowerBI.com](publish-power-bi-desktop-to-power-bi.md) 
 - [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
 

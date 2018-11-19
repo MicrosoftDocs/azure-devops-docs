@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
+ms.date: 11/19/2018
 ---
 
 # About security roles

@@ -8,7 +8,7 @@ ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts || >= tfs-2013'
+monikerRange: '>= tfs-2013 <= azdevserver-2019'
 ms.date: 05/10/2017
 ---
 

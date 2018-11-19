@@ -1,6 +1,6 @@
 
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 
 <table>
 <tr valign="bottom">
@@ -77,7 +77,7 @@
 </tbody>
 </table>
 
-**Notes: **
+**Notes:**
 1. Public project Stakeholders have full access to all features. 
 
 ::: moniker-end 

@@ -67,7 +67,7 @@ Before you begin, do the following:
 
 (Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.)
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

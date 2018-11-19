@@ -52,7 +52,7 @@
   items:
   - name: "Analytics"
     href: ../analytics/index.md
-  - name: "Power BI (Azure DevOps Services)"
+  - name: "Power BI integration"
     href: ../powerbi/index.md
   - name: OData Extension for Data Aggregation Version 4.0
     href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

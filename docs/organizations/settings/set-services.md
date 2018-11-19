@@ -29,7 +29,7 @@ You can control which services are available through the web portal by turning a
 
 The ability to turn services on or off is supported when you [enable **New Navigation** preview feature](../../project/navigation/preview-features.md). 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)  

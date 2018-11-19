@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # About permissions and groups

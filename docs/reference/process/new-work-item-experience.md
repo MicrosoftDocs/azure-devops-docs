@@ -8,7 +8,7 @@ ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017 <= azdevserver-2019'
 ms.date: 03/20/2018
 ---
 
