@@ -2,6 +2,6 @@
 # Publish Pipeline Artifact
 - task: PublishPipelineArtifact@0
   inputs:
-    #artifactName: 'drop'
+    #artifactName: 'drop' 
     targetPath: 
 ```

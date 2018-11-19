@@ -1,6 +1,6 @@
 ```YAML
 # Publish Build Artifacts
-# Publish build artifacts to Azure Artifacts/TFS or a file share
+# Publish build artifacts to Azure Pipelines/TFS or a file share
 - task: PublishBuildArtifacts@1
   inputs:
     #pathtoPublish: '$(Build.ArtifactStagingDirectory)' 

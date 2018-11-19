@@ -26,7 +26,7 @@ gulp
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/GulpV0.md)]
+[!INCLUDE [temp](../_shared/yaml/GulpV1.md)]
 ::: moniker-end
 
 ## Arguments
