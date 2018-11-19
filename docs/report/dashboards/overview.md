@@ -30,14 +30,15 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 **Sample chart widgets**  
 ![Lead time widget](_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](_img/cfd-exampe-rolling-30-days.png)   
 
-**Sequence for adding and customizing a dashboard**
+**Sequence for adding and customizing a dashboard**  
+
 [![Add dashboard](_img/gs-add-dashboard.png)](dashboards.md)[![Add widget](_img/gs-add-widget.png)](add-widget-to-dashboard.md) 
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 ## The Analytics Service and Analytics widgets
-The Analytics Service is in preview and available to all Azure DevOps users. To learn more, see these topics: 
+The Analytics Service is in preview and available to all Azure DevOps users. To learn more, see the following articles: 
 - [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
@@ -48,6 +49,7 @@ The Analytics Service is in preview and available to all Azure DevOps users. To 
 With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 **Code, build, and release chart widgets**  
+
 ![Code tile widget](_img/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Pull request widget](_img/widget-catalog-pull-request.png)  
 ![Build history widget](_img/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;![Deployment status widget](_img/widget-deployment-status.png)    
 ::: moniker-end
@@ -71,6 +73,7 @@ With flat-list queries, you can create various charts to monitor status, progres
 ![Active bugs](_img/gs-monitor-charts-active-bugs.png)   
 
 **Sequence for adding query-based charts to a dashboard**   
+
 [![Edit query](_img/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
 
@@ -85,6 +88,7 @@ The steps to creating charts that track test progress and results are similar to
 And, just like work item query-based charts, you can add these charts to a dashboard.  
 
 **Sequence for adding test progress and result charts to a dashboard**  
+
 [![Edit query](_img/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
@@ -117,14 +121,18 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 > [Review available widgets](widget-catalog.md) 
 ::: moniker-end
 
-
-::: moniker range="azdevserver-2019 || vsts"
 ### Add custom fields
+::: moniker range="vsts"
+
 You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+
+You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
+::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-### Add custom fields
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end
 
@@ -133,21 +141,6 @@ You can add data to support reporting requirements by [adding a custom field](..
 Using the REST API service, you can [create a custom widget](../../extend/develop/add-dashboard-widget.md). 
 ::: moniker-end
 
-
-<!---
-<a id="shared-queries">  </a>
-#### Predefined shared queries   
-
-| Area| Agile | Scrum | CMMI | 
-|-------|-------| ----- | ---- |   
-|Project | Product Backlog<br/>Product Planning | Product Backlog | Customer Requirements<br/>Open Requirements<br/>Product Requirements <br/> |  
-|Sprint | Iteration Backlog<br/> | Sprint Backlog<br/>Unfinished Work<br/>Work in Progress | none defined <sup>1</sup> |  
-|Bug | Active Bugs<br/>Bug Triage<br/>Resolved Bugs | none defined <sup>2</sup>| Active Bugs<br/>Resolved Bugs |  
-|Test | Open Test Cases<br/>User Stories without Test Cases | Test Cases | Open Test Cases<br/>Test Tasks |  
-
-1. Create sprint-specific queries by adding a filter clause ```Iteration Path=@CurrentIteration``` to an existing project status query.    
-2. The Scrum process treats bugs the same as product backlog items, so no bug-specific queries are predefined. To monitor bugs, add a filter clause with ```Work Item Type=Bug```.  
--->
 
 [excel-adhoc-query-report]: ../excel/create-status-and-trend-excel-reports.md
 [add-a-team]: ../../organizations/settings/add-teams.md

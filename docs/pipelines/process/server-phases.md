@@ -69,7 +69,7 @@ Use the job timeout setting to specify the limit in minutes for running the job.
 
 ::: moniker range="vsts"
 
-The `timeoutInMinutes` allows setting a limit for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows setting a limit on how long a job is allowed to finish when it is cancelled. When not specified, the default is 5 minutes.
+The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
 pool:

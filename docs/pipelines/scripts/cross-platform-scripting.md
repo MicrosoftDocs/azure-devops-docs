@@ -9,7 +9,7 @@ ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/10/2018
+ms.date: 11/19/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -110,12 +110,14 @@ trigger:
         - master
 steps:
 - bash: |
+    echo "Hello world from $AGENT_NAME running on $AGENT_OS"
     case $BUILD_REASON in
             "Manual") echo "$BUILD_REQUESTEDFOR manually queued the build." ;;
             "IndividualCI") echo "This is a CI build for $BUILD_REQUESTEDFOR." ;;
             "BatchedCI") echo "This is a batched CI build for $BUILD_REQUESTEDFOR." ;;
         *) $BUILD_REASON ;;
     esac
+  displayName: Hello world
 ```
 
 # [Designer](#tab/designer)

@@ -9,7 +9,8 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS

@@ -45,8 +45,8 @@ Use this topic to learn:
 > * Find work assigned to you, or query for other work items
 
 For information about working with pipelines, see these articles: 
-- [Create your first pipeline](../../pipelines/get-started-yaml.md)
-- [Build your GitHub repository](../../pipelines/repos/github.md)
+- [Build your GitHub repository](../../pipelines/get-started-yaml.md)
+- [Build OSS repositories](../../pipelines/build/ci-public.md)
 
 
 ## First time signing in

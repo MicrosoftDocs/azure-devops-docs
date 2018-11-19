@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-monikerRange: "azdevserver-2019 || vsts"
+monikerRange: '>= azdevserver-2019'
 ms.date: 04/04/2018
 ---
 

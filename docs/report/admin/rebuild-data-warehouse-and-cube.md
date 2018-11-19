@@ -9,8 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: ">= tfs-2013 <= tfs-2018 || azdevserver-2019" 
-ms.date: 08/11/2016
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Rebuild the data warehouse and cube
