@@ -59,10 +59,10 @@ Azure DevOps is hosted entirely in Azure data centers and uses many of the core 
 Azure DevOps uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval needs, we use Azure Blob (binary large objects) storage and Azure SQL data storage. To provide a seamless experience, we work hard to abstract these details from the end user. However, to discuss the details surrounding Azure DevOps approach to data protection, some background in these elements is important.
 
 **Azure Blob storage** is generally used to store large chunks of unstructured data. All Azure DevOps projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most Azure DevOps projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
-[Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/).
+[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/).
 
 Administrators can manage access to resources by granting or restricting permissions on user identities or groups. Azure DevOps uses federated authentication of user identities via Azure Active Directory (Azure AD) and Microsoft Accounts (MSA, formerly LiveID). During authentication, the user is routed to the authentication provider (Azure AD or MSA) where they provide their credentials. Once the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows them to remain authenticated against Azure DevOps. In this way, the user's credential information is never shared directly with Azure DevOps. For each Azure DevOps resource that the user attempts to access, permissions are validated based on the user's explicit permissions as well as permissions inherited through group membership. Administrators can leverage access controls to protect access to organization, project collection, team project, and team scoped data and functionality, as well as to more specific assets like version control folders and work item area paths.
 
@@ -110,7 +110,7 @@ Azure DevOps live-site management processes are crafted to ensure a deep focus o
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, we will even contact the customer directly to understand their experience and work with them to improve the service from their vantage point.
 
 We understand that availability of our service is an integral part of your team's success. Because of this, we publish a service level agreement (SLA) and provide a financial guarantee to ensure we meet this agreement each month. For more specifics on our SLA and financial guarantees, please see
-[Azure DevOps Services SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/).
+[Azure DevOps Services SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
 
 Sometimes our partner teams or dependencies have incidents that affect Azure DevOps. All our partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
 
@@ -156,9 +156,9 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 In addition, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-• For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/en-us/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by performing real-time encryption of the database, associated backups, and transaction log files at rest.
+• For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by performing real-time encryption of the database, associated backups, and transaction log files at rest.
 
-• Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption).
+• Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 To learn more about how we encrypt your data, please visit the following [blog post](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/).
 
@@ -178,13 +178,13 @@ The General Data Protection Regulation (GDPR) is the biggest change in data prot
 As such, we do not support GDPR delete requests from within Azure DevOps. We have ensured that when an entire Azure DevOps organization is deleted that all associated data and telemetry about that organization and its members are removed from our system (after the requisite 30-day soft-delete period).
 
 To learn more about how Azure DevOps Services honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
-To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 
 We know our customers care deeply about data security and privacy. Azure DevOps is available in the following 7 geographies across the world: United States, Canada, Europe, India, Australia, Asia Pacific, and Brazil. While we default your organization to your closest region, you have the option to choose a different region. If you change your mind later, our CSS team can help you migrate your organization to a different region. Azure DevOps will not move or replicate customer data outside of the chosen geography. Our backup procedures geo-replicate customer data between a second region within the same geography except for organizations located in Brazil, these are replicated to South Central US for disaster recovery purposes.
 
-To learn more about data location, please visit the Azure DevOps page in [Microsoft’s Trust Center](https://www.microsoft.com/en-us/TrustCenter/CloudServices/vsts/data-location).
+To learn more about data location, please visit the Azure DevOps page in [Microsoft’s Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location).
 
 ### Law enforcement access
 

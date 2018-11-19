@@ -22,7 +22,7 @@ The next version of our build system is now publicly available on Visual Studio 
 
 Included in the preview is support for building projects hosted in public or private GitHub repositories. You can now set up a continuous integration build in Visual Studio Online that kicks off when code is pushed to your GitHub repository. The build results page provides a link to the associated GitHub commits and the status of these commits updates based on the result of the build. You can also show the status of the build on your GitHub repository’s readme file or on your own web site. To enable, navigate to the **General** tab of your build definition and check the **Badge enabled** box. You can then embed the provided image URL onto a markdown or HTML page so users can see the latest status of the repository.
 
-To learn more, please visit [https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview](https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview).
+To learn more, please visit [https://msdn.microsoft.com/Library/vs/alm/Build/overview](https://msdn.microsoft.com/Library/vs/alm/Build/overview).
 
 ##Backlog navigation updates
 

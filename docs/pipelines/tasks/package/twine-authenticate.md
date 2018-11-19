@@ -20,14 +20,11 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 > [!NOTE]
 > The Python Twine Upload Authenticate task in Azure Pipelines is currently in public preview.
 
-## YAML snippet
 
-```yaml
-- task: TwineAuthenticate@0
-  inputs:
-    artifactFeeds: 'feed_name1, feed_name2'
-    externalFeeds: 'feed_name1, feed_name2'
-```
+::: moniker range="> tfs-2018"
+## YAML snippet
+[!INCLUDE [temp](../_shared/yaml/TwineAuthenticateV0.md)]
+::: moniker-end
 
 ## Arguments
 

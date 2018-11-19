@@ -23,7 +23,7 @@ The older TFS/SharePoint integration required the TFS Extension for SharePoint t
 
 We are moving away from the tightly coupled integration solution, to a loosely coupled model using public APIs and extensibility frameworks.  The existing integration simply could not be brought into the future.
 
-As we reposition to the future, our integration story will support both Azure DevOps Services and TFS working with SharePoint Server and SharePoint Online. 
+As we reposition to the future, our integration story will support both Azure DevOps Services and Azure DevOps Server working with SharePoint Server and SharePoint Online. 
 
 ## What features are impacted?
  

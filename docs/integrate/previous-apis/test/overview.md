@@ -66,6 +66,6 @@ After you've run some tests...
 ## Licensing Requirements
 Test resources are subject to specific licensing and access restrictions. Please refer to the documentation links below for ensuring that the REST APIs are accessed with the appropriate user context.
 
-[Access Levels for Test Manager](https://visualstudio.microsoft.com/en-us/docs/work/connect/change-access-levels#test-manager)
+[Access Levels for Test Manager](https://visualstudio.microsoft.com/docs/work/connect/change-access-levels#test-manager)
 
 [Test Manager Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)

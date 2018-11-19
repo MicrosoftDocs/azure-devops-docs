@@ -1,7 +1,7 @@
 ---
 title: Sprint burndown
-titleSuffix: Azure Boards and TFS
-description: Review Scrum progress during and at the end of a sprint when working in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards
+description: Review Scrum progress during and at the end of a sprint when working in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -55,13 +55,13 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 <a id="open-chart">  </a>
 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 ## Open the Sprint backlog for your team 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 1. 
@@ -91,6 +91,8 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
@@ -110,6 +112,14 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 ## Open the sprint burndown chart 
@@ -117,7 +127,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 Choose the chart to display it in a larger view. 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/open-burndown-chart-agile.png)
 
@@ -129,7 +139,7 @@ Choose the chart to display it in a larger view.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
@@ -139,7 +149,14 @@ Choose the chart to display it in a larger view.
 > ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
+
 > [!NOTE]    
 > You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
 
@@ -160,23 +177,32 @@ Teams may find it useful to review this record periodically during their sprint 
 
 In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
 
-**Required:** 
+### Required activities: 
 *	[Schedule sprints for your team](define-sprints.md).  
 *	[Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
 
-**Recommended:**  
+### Recommended activities:
 *	Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
 *	Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
 *	Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
 *	At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
+
+
+<a id="empty-chart">  </a>
+### Empty sprint burndown chart 
+If your sprint burndown chart appears empty, check the following:
+- Have you assigned tasks to the sprint associated with the chart?
+- Have you assigned remaining work to the tasks assigned to the sprint? 
+- Are the parent work items of the tasks assigned to the same sprint? If not, the tasks may appear in another sprint associated with the parent item. 
+
 
 <a id="past-sprints">  </a>
 ##Current and past sprint burndown charts
 As you complete each sprint, the system maintains a history of your activity. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
 > [!div class="mx-imgBorder"]  
 > ![Select a past sprint from the sprint selector](_img/burndown/select-past-sprint.png) 
@@ -192,8 +218,9 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 
 
 # [Previous navigation](#tab/previous-nav)
+
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 > [!div class="mx-imgBorder"]  
 > ![Past sprints provide historical record](_img/burndown/past-sprints.png) 
 ::: moniker-end
@@ -201,6 +228,13 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 
@@ -218,25 +252,19 @@ You can learn more about defining, planning, and executing your sprints from the
 *	[Sprint planning](assign-work-sprint.md)  
 *	[taskboard](task-board.md)  
 
-
 And, from these industry resources:  
 *	[Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
 *	[Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
-TBD - when have more time and when dashboards become more evident
-Other types of burndown charts
-Release burndown 
+TBD - Other types of burndown charts, Release burndown 
 -->
 
-For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevserver-2019"
 
-<a id="empty-chart">  </a>
-### Empty sprint burndown chart 
-If your sprint burndown chart appears empty, check the following:
-- Have you assigned tasks to the sprint associated with the chart?
-- Have you assigned remaining work to the tasks assigned to the sprint? 
-- Are the parent work items of the tasks assigned to the same sprint? If not, the tasks may appear in another sprint associated with the parent item. 
+For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
+
+::: moniker-end
 
 
  

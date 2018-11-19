@@ -11,25 +11,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
-ms.date: 03/23/2018  
+ms.date: 11/01/2018
 ---
 
 # Configure a cumulative flow chart
-
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. Use this topic to learn how to: 
-
-> [!div class="checklist"] 
-> * View and configure the built-in Cumulative Flow chart (work tracking datastore)     
-
-For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
-
-::: moniker-end
-  
-::: moniker range="vsts" 
+::: moniker range="azdevserver-2019 || vsts" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
 
 The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or ([CMMI](../../boards/work-items/guidance/cmmi-process.md)) you've selected.
@@ -41,23 +29,30 @@ Use this topic to learn how to:
 > * View and configure the built-in Cumulative Flow chart (work tracking datastore)     
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
+::: moniker-end
 
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. Use this topic to learn how to: 
+
+> [!div class="checklist"] 
+> * View and configure the built-in Cumulative Flow chart (work tracking datastore)     
+
+For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 ::: moniker-end
 
 <!---
 A few options are available for you to [configure your chart](#configure) or [configure your CFD widget](#configure-widget).
 -->
  
-::: moniker range="vsts" 
-
+::: moniker range="azdevserver-2019 || vsts" 
 <a id="configure-widget"></a>
 ## Configure the CFD widget    
 
-> [!NOTE]   
-> **Feature availability**: For Azure DevOps, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
-
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
 [Manage teams and configure team tools](../../organizations/settings/add-team-administrator.md) to get added as a team admin. 
+
+1. If you haven't yet, install the [Analytics extension](../analytics/analytics-extension.md)
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
@@ -82,13 +77,11 @@ You will need to be a team administrator or a member of the Project Administrato
 7. Choose **Save** when done. The following image shows an example CFD chart showing 30 days of data. 
    
 	<img src="_img/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" />    
-
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013"
-
 ## View the built-in cumulative flow chart 
-
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 ::: moniker range="vsts"  
@@ -104,7 +97,6 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
-
 # [Previous navigation](#tab/previous-nav)
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Work>Backlogs** page. 
 
@@ -117,7 +109,6 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 <img src="../../boards/boards/_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
 
 
-
 <a id="configure"></a>
 ## Configure the built-in cumulative flow chart   
 
@@ -125,8 +116,7 @@ Each team can set their preferences for the built-in cumulative flow charts.
 
 For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../boards/boards/kanban-basics.md). 
 
-::: moniker range="vsts"  
-
+::: moniker range="azdevserver-2019 || vsts"  
 1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	> [!div class="mx-imgBorder"]  
@@ -137,15 +127,14 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 2. Choose **Cumulative flow** and specify the team's preferences.  
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
-
 ::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
 
+# [Previous navigation](#tab/previous-nav)
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
@@ -155,13 +144,9 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 2. Choose **Cumulative flow** and specify the team's preferences.  
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
-
 ---
 
-
-
 ## Try this next
- 
 > [!div class="nextstepaction"]
 > [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md) or
 > [Kanban basics](../../boards/boards/kanban-basics.md)

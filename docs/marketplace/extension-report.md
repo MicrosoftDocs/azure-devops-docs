@@ -100,5 +100,12 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 * **Downgrade organizations** represents the count of existing organizations that reduced the quantity of users purchased. 
 * **Cancel organizations** represents the count of organizations which cancelled their purchase. 
 
+# Track Usage and Errors
+The recommended way to track usage, load times and errors is with application insights.
 
+- [How to setup with your extension](
+https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/05/30/how-to-integrate-application-insights-monitoring-in-your-team-services-extension/)
+- [How to setup application insights and get the instrumentation key.](/azure/application-insights/app-insights-create-new-resource)
+- [Setting alerts in application insights - spike in exceptions, increase response times etc.](/azure/application-insights/app-insights-alerts)
+- [More about application insights](/azure/application-insights/app-insights-overview)  
 

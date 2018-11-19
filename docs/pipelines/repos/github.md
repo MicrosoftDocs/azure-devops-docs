@@ -9,7 +9,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: douge
 ms.author: dastahel
 author: davidstaheli
-ms.date: 11/12/2018
+ms.date: 11/16/2018
 monikerRange: 'vsts'
 ---
 
@@ -141,7 +141,7 @@ The Azure Pipelines GitHub App is the **recommended** authentication type. By in
 
 To use the GitHub App, install it in your GitHub organization or user account. The app can be installed and uninstalled from 2 locations:
 
-1. The app's [homepage](https://github.com/apps/azure-pipelines) - **recommended** when no parallel jobs are being purchased.
+1. The app's [homepage](https://github.com/apps/azure-pipelines) - **This is recommended** when no parallel jobs are being purchased, or when your organization pays GitHub by purchase order (PO) or invoice.
 1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories, but where cancelation of the price plan may delay uninstallation until the end of your GitHub billing period, even for the free plan.
 
 To install the GitHub App, you must be a repository admin or GitHub organization owner.

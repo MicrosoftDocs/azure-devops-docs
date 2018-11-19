@@ -354,10 +354,10 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
  
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |
-   | DebugMode | disabled | No | Release |
+   | Data.DebugMode | disabled | No | Release |
    | Data.DefaultConnection.ConnectionString | Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf; | No | Release |
-   | DBAccess.Users.0 | Admin-3 | Yes | Release |
-   | FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
+   | Data.DBAccess.Users.0 | Admin-3 | Yes | Release |
+   | Data.FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
    
 1. Save the release pipeline and start a new release.
 

@@ -1,7 +1,7 @@
 ---
 title: Query by area or iteration path
-titleSuffix: Azure Boards and TFS
-description: Query for work items based on their area or iteration path in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards
+description: Query for work items based on their area or iteration path in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 04/27/2018  
+ms.date: 11/19/2018  
 ---
 
 
@@ -41,12 +41,12 @@ In addition to these operators, you can use the following macros when you select
 > [!div class="mx-tdBreakAll"]
 > |Macro   | Use when you want to...|
 > |-------------|--------------|
-> | **@CurrentIteration**        | Specify the current iteration associated with the selected team context.  |
-> | **@CurrentIteration +/- n**  | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
-> | **@TeamAreas**  | Filter items based on area path(s) assigned to a specific team.  |
+> | **@CurrentIteration**    | Specify the current iteration associated with the selected team context.  |
+> | **@CurrentIteration +/- n**   | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
+> | **@TeamAreas**   | Filter items based on area path(s) assigned to a specific team.  |
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure Boards. 
+> The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
 
 ## Query for items assigned under several areas 
 
@@ -78,7 +78,7 @@ Another way to filter items based on the area path is to use the Node Name. The 
 
 
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 <a id="team-area-path" /> 
 ## Query for items based on the area path assigned to a team
 
@@ -92,10 +92,12 @@ Use the **@TeamAreas** macro to quickly find items assigned to the area paths as
 <a name="field-reference"></a>
 ## Classification field reference 
 
-|**Field name**|**Description**|**Reference name**|
-|---|---|---|
-|**Area Path**|Groups work items into product feature or team areas. The area must be a valid node in the project hierarchy.|System.AreaPath |
-|**Iteration Path**|Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy.|System.IterationPath |
+
+> [!div class="mx-tdBreakAll"]  
+> |**Field name**|**Description**|**Reference name**|
+> |---|---|---|
+> |**Area Path**|Groups work items into product feature or team areas. The area must be a valid node in the project hierarchy.|System.AreaPath |
+> |**Iteration Path**|Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy.|System.IterationPath |
 
 For each field, data path=```TreePath```, reportable type=```Dimension```, index attribute=```True```. 
  
@@ -105,11 +107,12 @@ You can't apply most field rules to the System.AreaPath and System.IterationPath
 
 The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
-|**Field name**|**Description**|**Reference name**|**Data type**|
-|---|---|---|---|
-|Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
-|Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
-|Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
+> [!div class="mx-tdBreakAll"]  
+> |**Field name**|**Description**|**Reference name**|**Data type**|
+> |---|---|---|---|
+> |Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
+> |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
+> |Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item data type reference](../../reference/xml/define-modify-work-item-fields.md).
 
@@ -117,18 +120,19 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 ## Related articles 
 
-*	[Add another team](../../organizations/settings/add-teams.md)  
 *	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
 *	[Customize iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)  
 *	[Customize area paths](../../organizations/settings/set-area-paths.md)  
-*	[Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 *	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
-
+::: moniker range="<= azdevserver-2019"
 <a name="field-rules"></a>
 ### Supported field rules  
 
-For the Hosted XML and On-premises XML process models, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 
+For the On-premises XML process model, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 
+
+::: moniker-end
+
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

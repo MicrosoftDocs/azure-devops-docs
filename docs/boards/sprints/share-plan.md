@@ -1,6 +1,6 @@
 ---
 title: Share your team's sprint plan 
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Share sprint plan working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -30,23 +30,23 @@ Once you've completed your sprint plan, you can easily share it with other membe
 Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 
 ## Open a Sprint backlog for a team 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
-1. 
-	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+
+0.	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
 	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)  
 
 0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
@@ -65,6 +65,9 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 
 # [Previous navigation](#tab/previous-nav)
+
+
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -85,13 +88,21 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 ## Create query of your sprint plan 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
@@ -121,6 +132,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 0. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
@@ -134,7 +146,13 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 0.	In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
 
+::: moniker-end
 
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 ---
 
 Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
@@ -149,5 +167,5 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 ## Related articles
 
 - [Email or print work items](../work-items/email-work-items.md)  
-- [Share work plans and progress](../queries/share-plans.md)  
+- [Share information in work items and social tools](../queries/share-plans.md)  
 

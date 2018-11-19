@@ -1,7 +1,7 @@
 ---
-title: Clone and update Azure DevOps and TFS wiki content offline 
-titleSuffix: Azure DevOps & TFS 
-description: Add and update pages offline for your built-in team project wiki in Azure DevOps & Team Foundation Server 
+title: Clone and update Azure DevOps wiki content offline 
+titleSuffix: Azure DevOps 
+description: Add and update pages offline for your built-in team project wiki in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -35,7 +35,7 @@ The basic steps to update wiki content offline are as follows:
 3. Update the .order file(s) to reflect the pages and sub-pages that you've added
 4. Commit and push the updates you made to your local git branch.
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 You can perform these steps to migrate markdown pages from another wiki to your team project wiki or to content that you publish as code to a wiki. In order to perform these steps, you'll want to understand the underlying structure of your wiki Git repo. For details, see [Wiki Git repository files and file structure](wiki-file-structure.md).  To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 ::: moniker-end
 
@@ -149,7 +149,7 @@ To add pages at the root of the wiki tree, add a markdown file at the root of th
 	<img src="_img/wiki/wiki-offline-updated.png" alt="Wiki pages appear after updating the pages offline" style="border: 1px solid #C3C3C3;" />
 
 In the web portal, you can view the repo files based on the following URL: 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 	`https://*AccountName*.visualstudio.com/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
 ::: moniker range=">= tfs-2018"

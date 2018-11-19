@@ -1,7 +1,7 @@
 ---
-title: .NET
+title: ASP.NET
 titleSuffix: Azure Pipelines & TFS
-description: Build .NET projects using Azure Pipelines or TFS
+description: Build ASP.NET projects using Azure Pipelines or TFS.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
@@ -12,8 +12,7 @@ ms.date: 08/27/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
-
-# .NET
+# ASP.NET
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
@@ -33,7 +32,7 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 
 ## Example
 
-This example shows how to build a ASP.NET project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+This example shows how to build an ASP.NET project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application

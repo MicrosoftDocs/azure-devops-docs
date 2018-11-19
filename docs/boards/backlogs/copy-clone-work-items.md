@@ -1,6 +1,6 @@
 ---
 title: Copy or clone work items 
-titleSuffix: Azure Boards and TFS  
+titleSuffix: Azure Boards  
 description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,7 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Copy or clone work items  
@@ -83,7 +84,7 @@ Copy a work item when you want to create another instance of it and optionally c
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 ## Change the work item type  
 
 If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
@@ -94,7 +95,7 @@ If you have a large number of work items whose type you want to change, use [Cha
 
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
  
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 > [!NOTE]  
 >The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). 
 ::: moniker-end

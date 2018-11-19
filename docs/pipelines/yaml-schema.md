@@ -179,7 +179,7 @@ resources:
     type: enum  # see below
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use, defaults to 'refs/heads/master'
-    endpoint: string  # endpoint for a GitHub repository
+    endpoint: string  # name of the service connection to use (for non-Azure Repos types)
 ```
 
 # [Example](#tab/example)
@@ -294,7 +294,7 @@ pr: [ string ] # list of branch names
 Disable syntax:
 
 ```yaml
-pr: none # will disable CI builds entirely
+pr: none # will disable PR builds entirely
 ```
 
 Full syntax:
@@ -742,10 +742,10 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
-- script: echo Hello $(name)
+- powershell: echo Hello $(name)
   displayName: Say hello
   name: firstStep
-  workingDirectory: $(Build.SourcesDirectory)
+  workingDirectory: $(build.sourcesDirectory)
   failOnStderr: true
   env:
     name: Microsoft

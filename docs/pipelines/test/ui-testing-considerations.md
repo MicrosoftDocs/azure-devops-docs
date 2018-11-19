@@ -40,7 +40,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
    components being visible. While this mode is obviously not useful for browsing the web,
    it is useful for running automated tests in an unattended manner in a CI/CD pipeline.
    [Chrome](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
-   and [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode) browsers can be run in headless mode.
+   and [Firefox](https://developer.mozilla.org/docs/Mozilla/Firefox/Headless_mode) browsers can be run in headless mode.
 	
    This mode generally consumes less resources on the machine because the UI is not
    rendered and tests run faster. As a result, potentially more tests can be run in
@@ -100,7 +100,7 @@ context of the user specified in the auto-logon settings.
 If you use Remote Desktop to access the computer on which an agent is running
 with auto-logon, simply disconnecting the Remote Desktop causes the computer
 to be locked and any UI tests that run on this agent may fail.
-To avoid this, use the [tscon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon)
+To avoid this, use the [tscon](https://docs.microsoft.com/windows-server/administration/windows-commands/tscon)
 command on the remote computer to disconnect from Remote Desktop. For example: 
 
 `%windir%\System32\tscon.exe 1 /dest:console`

@@ -63,7 +63,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Navigate to your project by browsing to `https://dev.azure.com/<your organiation name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you have accessed it recently.
+0. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you have accessed it recently.
 
   ![Select project](_img/repo-mgmt/select-vsts-project.png) 
 

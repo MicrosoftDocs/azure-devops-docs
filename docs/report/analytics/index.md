@@ -1,6 +1,6 @@
 ---
 title: Analytics Service
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Index to topics for using the Analytics Service on Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,15 +9,15 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 3/29/2018
+monikerRange: "azdevserver-2019 || vsts"
+ms.date: 11/19/2018
 ---
 
 # Analytics 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-Analytics provides advanced widgets you can add to a dashboard, [Power BI integration](../powerbi/index.md) for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Azure DevOps. 
+Analytics provides [advanced widgets](analytics-widgets.md) you can add to a dashboard, [Power BI integration](../powerbi/index.md) for more advanced reporting, and [OData access](../extend-analytics/index.md) for extensibility. Analytics is the reporting solution for Azure DevOps. 
 
 For more information, read [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](./reporting-roadmap.md).
 
@@ -78,9 +78,9 @@ Understanding Analytics Service data Acquisition
 
 ## Resources
 - [Dashboards](../dashboards/index.md)
-- [Connect to Azure DevOps Services using Power BI](../powerbi/index.md)
-- [Connect to Azure DevOps Services using Excel](access-analytics-excel.md)
-- [Power BI (Azure DevOps Services)](../powerbi/index.md)
+- [Connect to Azure DevOps using Power BI](../powerbi/index.md)
+- [Connect to Azure DevOps using Excel](access-analytics-excel.md)
+- [Power BI integration](../powerbi/index.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)
 
 

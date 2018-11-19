@@ -28,7 +28,7 @@ This page walks through features that non-members can't access or that work diff
 
 A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)  
 

@@ -786,7 +786,7 @@ For descriptions of system fields and fields defined in the default process temp
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
-**Examples of field reference names  **
+**Examples of field reference names**
 
 The following examples show valid field reference names, in various namespaces. Customers and partners can also define their own namespaces to support their custom work item types.   
 
@@ -1305,7 +1305,7 @@ Shelveset names must conform to the following restrictions.
 </tr>
 </table>
 
-##TFVC workspaces
+## TFVC workspaces
 
 A workspace is a client-side copy of the files and folders in Team Foundation version control (TFVC). When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](../../repos/tfvc/create-work-workspaces.md) provides more details. 
 

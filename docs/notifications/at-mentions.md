@@ -16,22 +16,20 @@ monikerRange: '>= tfs-2015'
 
 # Use &#64;mentions in work items and pull requests
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.2**
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
 The **@mention** control allows you to quickly pull someone into a work item or pull request.
 
 ::: moniker range="tfs-2015"
-
 > [!NOTE]  
 > The **@mention** control is available from TFS 2015 Update 2 and later versions.
->
 ::: moniker-end
 
 <a id="mention-person-id">  </a>
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevserver-2019"
 
-For team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts).
+For team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
 
 ::: moniker-end
 
@@ -61,4 +59,3 @@ Use the **@mention** control in pull request discussions, commit comments, chang
 
 - [Work item form controls](../boards/work-items/work-item-form-controls.md)  
 - [Pull requests](../repos/git/pullrequest.md)
-- 

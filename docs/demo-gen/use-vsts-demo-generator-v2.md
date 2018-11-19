@@ -11,7 +11,7 @@ ms.date: 05/09/2018
 ---
 # Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator
 
-1. Browse to the [Azure DevOps Demo Generator site](https://vstsdemogenerator.azurewebsites.net/) by click the link, or copy `https://vstsdemogenerator.azurewebsites.net/` into your browser's URL field.
+1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
 1. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, Click on **Get Started for Free** to create one and then log in with your credentials.
 

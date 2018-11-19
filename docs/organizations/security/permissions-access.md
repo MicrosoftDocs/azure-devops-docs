@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Default permissions and access 
@@ -44,7 +44,7 @@ The team administrator role supports configuration of team settings. To be added
 ::: moniker-end  
 
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 ::: moniker-end  
 
@@ -112,7 +112,7 @@ You can define and manage dashboards from the web portal, **Dashboard**. For an 
 You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
 ::: moniker-end 
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 ::: moniker-end  
 

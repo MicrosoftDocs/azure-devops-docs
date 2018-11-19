@@ -9,7 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 09/10/2018
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # OData API versioning
@@ -21,10 +22,23 @@ As the Analytics Service grows and changes we are dedicated to providing consist
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 
+::: moniker range="vsts"
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

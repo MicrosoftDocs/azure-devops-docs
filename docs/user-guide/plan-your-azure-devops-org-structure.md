@@ -184,7 +184,7 @@ If you don’t have an Azure Active Directory instance, you can either create on
 
 If you use Azure or Office 365, you might have an Azure AD account already. Or, if you work for a company that uses Azure AD to manage the permissions of its users, you probably have one as well. Contact your company's Azure administrator to gain permissions to [create an organization](../organizations/accounts/create-organization.md) or to have them create one for you.
 
-If you don't have an Azure AD account, learn how to [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](https://docs.microsoft.com/en-us/azure/active-directory/b2b/add-users-administrator)capabilities.
+If you don't have an Azure AD account, learn how to [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)capabilities.
 
 Azure DevOps authenticates users through your Azure AD, so that only users who are members in that directory can access your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) can manage users in your directory, so administrators control who can access your organization.
 

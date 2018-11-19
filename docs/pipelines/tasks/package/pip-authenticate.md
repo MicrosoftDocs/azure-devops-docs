@@ -15,20 +15,15 @@ monikerRange: 'vsts'
 
 **Azure Pipelines**
 
-Provides authentication for `pip` client that can be used to install Python distributions.
+Provides authentication for the `pip` client that can be used to install Python distributions.
 
 > [!NOTE]
 > The Python Pip Authenticate task in Azure Pipelines is currently in public preview.
 
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
-```yaml
-steps:
-- task: PipAuthenticate@0
-  inputs:
-    artifactFeeds: 'feed_name1, feed_name2'
-    externalFeeds: 'feed_name1, feed_name2'
-```
+[!INCLUDE [temp](../_shared/yaml/PipAuthenticateV0.md)]
+::: moniker-end
 
 ## Arguments
 

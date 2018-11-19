@@ -42,7 +42,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/en-us/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=vsts#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=vsts#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
 
 ::: moniker range="vsts"
 

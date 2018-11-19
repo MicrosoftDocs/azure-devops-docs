@@ -18,9 +18,9 @@ ms.date: 10/26/2017
 > This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md).
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Azure DevOps Services. 
-They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
+They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred development tools.
 They utilize our [RESTful API Library](/rest/api/vsts/) in order to easily interact with Azure DevOps Services and applications/services.
-The [Visual Studio Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services) is where extensions are published, 
+The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps Services. 
 
 ## What makes up an extension?
@@ -63,7 +63,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 
 ## Helpful links
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
 * [Visual Studio Partner Program](https://vspartner.com/)
 

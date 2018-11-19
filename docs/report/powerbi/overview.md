@@ -10,7 +10,7 @@ ms.author: stansw
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>=azdevserver-2019'
 ms.date: 03/28/2018
 ---
 
@@ -49,9 +49,9 @@ You can pull data from the Analytics services into Power BI in one of three ways
 
 Before you get started using Power BI to work with the Analytics service, make sure you have completed the following steps:
 
-1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 
-2. Install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
+2. Install the [Analytics extension](../analytics/analytics-extension.md).
 
 3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 

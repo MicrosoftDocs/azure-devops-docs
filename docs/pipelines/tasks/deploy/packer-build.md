@@ -20,7 +20,7 @@ Use this task in a build or release pipeline to build a machine image using Pack
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/PackerBuildV0.md)]
+[!INCLUDE [temp](../_shared/yaml/PackerBuildV1.md)]
 ::: moniker-end
 
 ## Arguments

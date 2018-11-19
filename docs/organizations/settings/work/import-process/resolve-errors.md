@@ -64,7 +64,7 @@ Field names cannot be renamed.
 
 <a id="TF402598"></a>
 ### TF402598: Work item type *[refName]* will be deleted.
-The process that you're updating doesn't include the named WIT that exists in the current process. A[name1s part of updating the existing process, the system will delete the named WIT from the current process. .
+The process that you're updating doesn't include the named WIT that exists in the current process. As part of updating the existing process, the system will delete the named WIT from the current process. 
 
 #### Scenerio example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  

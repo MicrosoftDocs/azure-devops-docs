@@ -132,6 +132,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](deploy/_img/azure-key-vault-icon.png) [Azure Key Vault](deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release pipeline | Azure Pipelines |
 | ![icon](deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts](deploy/azure-monitor-alerts.md). Configure alerts on available metrics for an Azure resource | Azure Pipelines |
 | ![icon](deploy/_img/azuremysqldeployment.png) [Azure MySQL Deployment](deploy/azure-mysql-deployment.md). Run your scripts and make changes to your Azure DB for MySQL. | Azure Pipelines |
+| ![icon](deploy/_img/azure-policy-check-gate.png) [Azure Policy Check Gate](deploy/azure-policy-check-gate.md). Security and compliance assessment with Azure policies on resources that belong to the resource group and Azure subscription. | Azure Pipelines |
 | ![icon](deploy/_img/azurepowershell.png) [Azure PowerShell](deploy/azure-powershell.md). Run a PowerShell script within an Azure environment | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azureresourcegroupdeployment.png) [Azure Resource Group Deployment](deploy/azure-resource-group-deployment.md). Deploy, start, stop, delete Azure Resource Groups | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](deploy/_img/SqlAzureDacpacDeployment.png) [Azure SQL Database Deployment](deploy/sql-azure-dacpac-deployment.md). Deploy an Azure SQL database using DACPAC or run scripts using SQLCMD | Azure Pipelines, TFS 2015.3 and newer |

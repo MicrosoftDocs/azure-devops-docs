@@ -33,15 +33,15 @@
   # - name: Install packages from Artifacts feeds
   #   href: tbd
   - name: NuGet
-    href: /azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json
+    href: /azure/devops/pipelines/artifacts/nuget?toc=/azure/devops/artifacts/toc.json
   - name: npm 
-    href: /azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json
+    href: /azure/devops/pipelines/artifacts/npm?toc=/azure/devops/artifacts/toc.json
   - name: Maven
     href: /azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json
   - name: Python
     href: /azure/devops/pipelines/targets/pypi?toc=/azure/devops/artifacts/toc.json
   - name: Universal
-    href: /azure/devops/pipelines/targets/universal-packages?toc=/azure/devops/artifacts/toc.json
+    href: /azure/devops/pipelines/artifacts/universal-packages?toc=/azure/devops/artifacts/toc.json
 - name: Concepts
   items:
   - name: Best practices
@@ -103,7 +103,7 @@
     - name: Use symbols in WinDbg
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
-      href: /azure/devops/pipelines/symbols/index?toc=/azure/devops/artifacts/toc.json
+      href: /azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json
     - name: Setting up GitHub SourceLinking
       href: symbols/setting-up-github-sourcelinking.md
   - name: Set permissions and grant access

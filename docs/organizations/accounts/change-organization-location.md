@@ -22,7 +22,7 @@ For information on region availability, see [Products available by region](https
 
 ## Find your organization location
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

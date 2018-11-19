@@ -5,7 +5,7 @@ ms.topic: include
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
@@ -42,6 +42,11 @@ From your web browser, open **Boards>Queries**.
 
 ![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png) 
 
+::: moniker-end
+
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---

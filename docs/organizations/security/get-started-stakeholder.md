@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 09/05/2018
+ms.date: 11/19/2018
 ---
 
 # Get started as a Stakeholder
@@ -24,7 +24,7 @@ With Stakeholder access, you can add and modify work items, manage build and rel
 > For public projects, Stakeholder access gives users greater access to work tracking features. To learn more, see [Default roles and access for public projects](../public/default-roles-access-public.md#pipelinesbuild-and-release).
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevserver-2019"
 With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. Stakeholder access is one of several supported access levels. To understand the full set of features Stakeholders have access to, see [About access levels](access-levels.md#stakeholder-access).
 ::: moniker-end  
 
@@ -57,7 +57,7 @@ For information about working with pipelines, see these articles:
 	::: moniker range="vsts"  
 	`http://dev.azure.com/OrganizationName/ProjectName`
 	::: moniker-end
-	::: moniker range="<= tfs-2018"
+	::: moniker range="<= azdevserver-2019"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
@@ -68,12 +68,7 @@ For information about working with pipelines, see these articles:
 
 <a id="create-work-item">  </a>
 
-<!---
-::: moniker range=">= tfs-2018"
-> [!TIP]    
-> Use the [Work Items page](../../boards/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
-::: moniker-end
--->
+
 
 ## View and add work items
 You can start viewing and adding work items once you connect to a project. 
@@ -83,7 +78,7 @@ You can start viewing and adding work items once you connect to a project.
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 0. (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 	> [!div class="mx-imgBorder"]
@@ -132,7 +127,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts"
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
@@ -177,7 +172,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="tfs-2017 || tfs-2018"
 
 0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
 
@@ -193,7 +188,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 0. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
 
@@ -203,6 +198,11 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
@@ -220,7 +220,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -263,7 +263,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -297,6 +297,10 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	Repeat this step until you've captured all your main ideas. 
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 <!---
@@ -317,7 +321,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
@@ -338,13 +342,15 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
@@ -354,30 +360,42 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 	![Open Work when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-	::: moniker range=">= tfs-2017"
+0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+	
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
-	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2015"
-	![Choose another team from the project menu](../../boards/sprints/_img/capacity/vso-team-selector.png)
-	::: moniker-end
+	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
 
 0. Your Kanban board displays. 
-	::: moniker range=">= tfs-2017"   
+	
 	![Kanban board, Agile template](../../boards/boards/_img/kanban-basics-intro.png)   
-	::: moniker-end   
-	::: moniker range=">= tfs-2013 <= tfs-2015"    
+
+::: moniker-end   
+
+::: moniker range="<= tfs-2015"
+
+0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+
+	![Open Portfolio Kanban board, Features](../../boards/boards/_img/quickstart/open-kanban-board.png)
+
+	If you don't see **Work**, your screen size may be reduced. Choose the three dots (![ ](../../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	![Open Work when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
+
+0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+
+	![Choose another team from the project menu](../../boards/sprints/_img/capacity/vso-team-selector.png)
+	
+0. Your Kanban board displays. 
+	 
 	> [!div class="mx-imgBorder"]  
 	> ![TFS 2015, Kanban board, Agile template](../../boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
-	::: moniker-end   
+	
+::: moniker-end   
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
-
-<!---
-> [!div class="mx-imgBorder"]
-> ![View Kanban board](_img/work-as-a-stakeholder-view-kanban-board.png) 
--->
 
 <a id="query">  </a>
 
@@ -385,7 +403,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. Choose **Boards>Work Items**, and then select **Assigned to me**. 
 
@@ -397,14 +415,14 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts"
 
 0. Choose **Work>Work Items**, and then select **Assigned to me**. 
 
@@ -416,7 +434,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2018"
 
 0. Open **Work>Queries** and select **Assigned to me** to see the list of work items assigned to you.  
 
@@ -430,6 +448,10 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 	![Query Editor](_img/work-as-a-stakeholder-edit-query.png)  
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---

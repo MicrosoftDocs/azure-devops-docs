@@ -1,5 +1,5 @@
 ---
-title: Adjust sprint plan based on team capacity 
+title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards and TFS
 description: Change work items assigned to a sprint or iteration working with Scrum methods 
 ms.custom: boards-sprints
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -38,11 +38,11 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ## Open a Sprint backlog for a team 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -72,6 +72,8 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
@@ -91,6 +93,14 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 
@@ -100,7 +110,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 > [!div class="mx-imgBorder"]  
 > ![Turn work details on](_img/adjust-work/work-details-on.png)
@@ -116,10 +126,18 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 > [!div class="mx-imgBorder"]  
 > ![Turn work details on](_img//adjust-work/work-details-on-standard.png)
 
+::: moniker-end
 
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 ---
 
 
@@ -129,7 +147,7 @@ If your team's over capacity, you can move items from the sprint backlog back to
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">=azdevserver-2019"
 
 Here we select two items at the bottom of the sprint backlog, open the ![ ](../../_img/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
 
@@ -145,9 +163,19 @@ Here we select two items at the bottom of the sprint backlog, open the ![ ](../.
 ::: moniker-end
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 Here we select the last item in the sprint backlog and drag it to the product backlog. 
 
 ![Drag items back to product backlog](_img/IC797613.png)  
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 
 ---
 
@@ -157,10 +185,26 @@ Here we select the last item in the sprint backlog and drag it to the product ba
 
 ## Load balance work across the team
 
-To quickly reassign tasks, drag the task onto the new assignee's capacity bar. As you reassign tasks, capacity bars automatically update.  
+To quickly reassign tasks, drag the task onto the new assignee's capacity bar. 
+
+::: moniker range=">= azdevserver-2019"
+
+For example, here we reassign work from Raisa Pokrovskaya to christie Church. 
+
+> [!div class="mx-imgBorder"]  
+> ![Reassign work, drag and drop task onto an assignee](_img/adjust-work/load-balance-work.png)   
+
+As you reassign tasks, capacity bars automatically update.  
+
+> [!div class="mx-imgBorder"]  
+> ![Capacity bars adjusted](_img/adjust-work/adjusted-work.png)   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ![Reassign tasks](_img/IC797838.png) 
-
+::: moniker-end
 
 ## Try this next
 > [!div class="nextstepaction"]

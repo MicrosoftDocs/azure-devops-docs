@@ -1,6 +1,6 @@
 ---
-title: Share work plans 
-titleSuffix: Azure Boards and TFS 
+title: Share information in work items and social tools 
+titleSuffix: Azure Boards 
 description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
@@ -10,14 +10,15 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/23/2018 
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
 
 
 # Share information within work items and social tools
 
-**Azure Boards | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere**
+**Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -72,7 +73,7 @@ The specific set of formatting features differs depending on the client you use.
 
 # [Browser](#tab/browser) 
 
-::: moniker range="vsts" 
+::: moniker range="vsts"
 
 **The New Rich Text Editor**  
 
@@ -85,7 +86,7 @@ The new editor toolbar appears below each text box that can be formatted. It onl
 
 You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
-For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to faciliate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
 > ![New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
@@ -98,6 +99,7 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 You can use the ![ ](../_img/icons/remove-formatting-icon.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
+
 **Keyboard shortcuts**  
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts for work item forms](../work-items/work-item-form-keyboard-shortcuts.md).
@@ -109,7 +111,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <=tfs-2018"
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
@@ -187,9 +189,11 @@ Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) 
 
 
 <a id="team-services" />
+
 # [Browser](#tab/browser)
-::: moniker range="vsts"
-### Attachment control toolbar 
+
+::: moniker range=">= azdevserver-2019"
+
 Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
@@ -200,13 +204,16 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 > [!TIP]  
 > To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
+
 ::: moniker-end 
 
+::: moniker range="vsts"
 You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
 
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-### Attachment control toolbar 
+
 Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
@@ -224,7 +231,7 @@ You can edit, open, save, or delete an attachment by clicking an attachment and 
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-### Attachment control toolbar 
+
 Choose the **Attachments** tab icon to attach a file to the work item. 
 
 <img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #C3C3C3;" />  
@@ -237,16 +244,11 @@ Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attach
 <a id="team-explorer" />
 # [Visual Studio](#tab/visual-studio) 
 
-#### Attachment control toolbar
+Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
 
-> [!TIP]    
-> You can drag and drop files into the attachment area. 
-
-Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.
-
-Click one or more items and then right-click to open the menu options to download or delete several attachments. 
+To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
@@ -254,24 +256,18 @@ Click one or more items and then right-click to open the menu options to downloa
 <a id="team-explorer" />
 # [Team Explorer Everywhere](#tab/tee) 
 
-#### Attachment control toolbar
+
+Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.Or, drag and drop files into the attachment area.
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
 
-
-> [!TIP]    
-> You can drag and drop files into the attachment area. 
-
-Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.
-
-Click one or more items and then right-click to open the menu options to download or delete several attachments. 
+To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 ---
 
- 
- ::: moniker range=">= tfs-2013 <= tfs-2018"
+ ::: moniker range="<= azdevserver-2019"
 ### Attachment size
 
 By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
@@ -336,7 +332,7 @@ A common way teams share information is through a list of work items. You can qu
 
 You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide markdown information, query charts, and more. 
 
-For details, see [Dashboards, charts, & widgets](../../report/dashboards/overview.md). 
+For details, see [Manage dashboards](../../report/dashboards/dashboards.md). 
 
 ::: moniker-end
 
@@ -371,9 +367,6 @@ As you can see, there are many ways to share information using work items alone.
 
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
-
-
-
 
 ::: moniker range=">= tfs-2017"
 ### Marketplace extensions  

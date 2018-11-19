@@ -24,7 +24,6 @@ These hands-on labs are provided to give you a first-hand, technical experience 
 - Using Azure DevOps Services with your Eclipse and IntelliJ
 - Running Junit tests and analyzing code coverage with Jacoco and Cobertura
 - Continuous Integration with Azure Pipelines or Jenkins
-- Managing Technical Debt with SonarQube
 - Deploying Docker containers to Azure with an Automated delivery pipeline
 
 ## Virtual Machine
@@ -37,7 +36,7 @@ The image and the accompanying hand-on-labs is for a technical audience. As such
 
 ## Provisioning an Azure DevOps project using Azure DevOps Demo Generator
 
-You can use [Azure DevOps Demo Generator](https://vstsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
+You can use [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
 
 ## Hands on Labs
 
@@ -72,9 +71,6 @@ The labs should be followed in the following order, though there are some equiva
    </tr>
    <tr>
       <td><a href="builddocker/index.md">Build Docker containers with Azure DevOps Services</a></td>
-   </tr>
-   <tr>
-      <td><a href="sonarqube/index.md">Managing Technical Debt with SonarQube and Azure Pipelines</a></td>
    </tr>
    <tr>
       <td><a href="releasemanagement/index.md">Release Management with Azure DevOps Services</a></td>
