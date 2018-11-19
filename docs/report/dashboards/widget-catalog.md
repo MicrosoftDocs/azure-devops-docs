@@ -12,7 +12,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 # Widget catalog 
@@ -33,9 +33,9 @@ Widgets display information and charts on dashboards. Many of them are configura
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 ::: moniker-end
 
-::: moniker range="vsts"
-
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
+
+::: moniker range="vsts"
   
 > [!div class="mx-tdCol2BreakAll"]
 > |Analytics  |Team-scoped  | Other |
@@ -44,9 +44,17 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="azdevserver-2019"
+  
+> [!div class="mx-tdCol2BreakAll"]
+> |Analytics  |Team-scoped  | Other |
+> |-------------|----------|---------|
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 
-The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Team-scoped  |User-focused |  Build, test, release |Other |  
@@ -55,9 +63,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
  
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
+::: moniker range="tfs-2015" 
   
 > [!div class="mx-tdCol2BreakAll"]
 > |Team-scoped  |User-focused |  Build, test, release |Other |  
@@ -109,7 +115,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
-Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  <br/><br/>
+Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  
 
 Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
 
@@ -246,7 +252,7 @@ Provides quick access to open the following Agile tools and team resources:
 ::: moniker-end
  
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 ## Analytics widgets
 
 To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
@@ -307,6 +313,9 @@ Each marker on the chart corresponds to one or more work items with a particular
   
 ----
 
+::: moniker-end
+
+::: moniker range="vsts"
 <a id="test-trend-results-advanced"></a>
 ### Test Results Trend (Advanced)
 
@@ -322,6 +331,10 @@ The widget provides advanced capabilities. It allows tracking advanced metrics f
 To learn more, see [Test trend widget](./configure-test-results-trend.md)
 
 ---- 
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"  
 
 <a id="velocity-widget"></a> 
 ###Velocity   
@@ -423,7 +436,7 @@ Requires TFS 2017.1 or later version.
 ----
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 <a id="release-definition-widget"></a> 
 ### Release pipeline overview 
@@ -480,11 +493,6 @@ Requires TFS 2017.2 or later version.
 ### Test results trend 
 
 ![Test results trend widget](_img/widget-test-results-trend.png)
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from Azure DevOps or TFS 2017.   
--->
 
 Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc. 
 

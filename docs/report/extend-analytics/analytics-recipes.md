@@ -9,8 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
-monikerRange: 'vsts'
-ms.date: 3/16/2018
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # Query work tracking data using Analytics  
@@ -20,7 +20,7 @@ ms.date: 3/16/2018
 You can query your Azure DevOps work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
-For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For organization-level scoping, see [Project and organization-scoped queries](account-scoped-queries.md).
+For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project on Azure DevOps Services. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

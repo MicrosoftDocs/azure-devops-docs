@@ -1,6 +1,6 @@
 ---
 title: Configure WIP limits for Kanban board
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Set Work In Progress Limits on the Kanban board in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
@@ -9,7 +9,8 @@ ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 09/24/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
@@ -28,7 +29,7 @@ While [setting WIP limits](#Set) is simple, adhering to the limits takes a team 
 
 <a id="Initial WIP" />
 
-##Determine initial WIP limits
+## Determine initial WIP limits
 
 To get started, have your team determine the initial WIP limits to set and how they'll use and monitor them. Beyond that, few rules apply to what numbers to set as they can vary based on several factors. Here are two guidelines to help you determine what limits to set:
 
@@ -45,7 +46,7 @@ If you're new to Kanban, review [Kanban basics](kanban-basics.md) to get an over
 
 <a id="Keep within WIP" />
 
-##Keep within WIP limits
+## Keep within WIP limits
 
 After you've set your WIP limits, you'll want to track how well your team keeps within the limits. 
 
@@ -60,7 +61,7 @@ To gain the advantages of constraining work-in-progress, have your team meet fre
 
 <a id="Keep within WIP" />
 
-##Identify bottlenecks
+## Identify bottlenecks
 
 To optimize the flow of value, you naturally want to identify and eliminate bottlenecks. Bottlenecks indicate waste exists in the overall workflow process. 
 
@@ -102,16 +103,16 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 <a id="Set" />
 
-##Set WIP limits
+## Set WIP limits
 
 With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -137,7 +138,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -187,11 +188,15 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 ## Related articles
 
-Here are some additional ways your team can implement Kanban practices and customize the board:
+::: moniker range=">= tfs-2015"
 
 * [Split columns](split-columns.md)  
 * [Expedite work](expedite-work.md)  
@@ -199,3 +204,11 @@ Here are some additional ways your team can implement Kanban practices and custo
 * [Customize cards](../../boards/boards/customize-cards.md)  
 * [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 
+::: moniker-end
+
+
+::: moniker range="tfs-2013"
+* [Definition of Done](definition-of-done.md)  
+* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+
+::: moniker-end

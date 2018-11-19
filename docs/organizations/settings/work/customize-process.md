@@ -9,24 +9,26 @@ ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.topic: tutorial
-ms.date: 05/31/2018
---- 
+ms.date: 11/19/2018
+---
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
 
-> [!IMPORTANT]  
-> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only.  
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 The general sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project(s) to use that process. 
 
 [![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to  project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
+
 
 You primarily customize a process by adding or modifying a work item type (WIT) defined for that process.  
 

@@ -1,7 +1,7 @@
 ---
 title: Adhoc vs managed queries
-titleSuffix: Azure Boards and TFS
-description: Use adhoc or built-in search/managed queries to find work items in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Use adhoc or built-in search/managed queries to find work items in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 09/10/2018  
+ms.date: 11/19/2018
 ---
 
 # Adhoc vs managed work item queries
@@ -19,11 +19,11 @@ ms.date: 09/10/2018
 
 You have two ways to perform work item searches: semantic or adhoc searches and managed queries. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 You perform semantic or adhoc searches using the work item search box (shown below)   
 
@@ -46,7 +46,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013"     
+::: moniker range="<= tfs-2018 || vsts"     
 
 You perform semantic or adhoc searches using the work item search box (shown below). 
 
@@ -67,14 +67,29 @@ You add and run managed queries using the built-in query-editor available from t
 ![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 For details about semantic or adhoc searches, see [Perform a semantic or adhoc work item search](search-box-queries.md). For details about managed queries, see [Create managed queries with the query editor](using-queries.md). 
 
->[!div class="mx-tdCol2BreakAll"]    
-> |Use semantic or adhoc searches to: | Use managed queries to: |
-> |------|---------|
-> |- Find a specific work item using its ID or a keyword <br/>- Find one or more work items across all projects in a fast, flexible manner<br/>- Perform full text search across all work item fields<br/>- Review work items assigned to a specific team member<br/>- Search against specific work item fields to quickly narrow down a list of work items<br/>- Determine what key words will support a managed search |- Review or triage a group of work items<br/>- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more<br/>- Review parent-child or dependent links among work items<br/>- Create a status or trend chart from a flat list query<br/>- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) |
+### Use semantic or adhoc searches to perform the following tasks: 
+- Find a specific work item using its ID or a keyword 
+-  Find one or more work items across all projects in a fast, flexible manner
+-  Perform full text search across all work item fields
+-  Review work items assigned to a specific team member
+-  Search against specific work item fields to quickly narrow down a list of work items
+-  Determine what key words will support a managed search
+
+### Use managed queries to perform the following tasks: |
+
+- Review or triage a group of work items
+- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more
+- Review parent-child or dependent links among work items
+- Create a status or trend chart from a flat list query
+- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
 
 > [!NOTE]    
 > With semantic search, you search against a more fully indexed set of fields. With adhoc search, the number of fields that are indexed are limited. 

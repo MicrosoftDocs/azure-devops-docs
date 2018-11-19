@@ -510,6 +510,8 @@
         href: tasks/deploy/azure-monitor-alerts.md
       - name: Azure MySQL Deployment
         href: tasks/deploy/azure-mysql-deployment.md
+      - name: Azure Policy Check Gate
+        href: tasks/deploy/azure-policy-check-gate.md
       - name: Azure PowerShell
         href: tasks/deploy/azure-powershell.md
       - name: Azure Resource Group Deployment

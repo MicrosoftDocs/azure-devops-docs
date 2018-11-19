@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 05/31/2018
 ---
 

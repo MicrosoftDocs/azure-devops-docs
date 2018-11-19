@@ -1,6 +1,6 @@
 ---
 title: Create an Analytics view 
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,18 +9,18 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: "azdevserver-2019 || vsts"
 ms.date: 06/30/2018 
 ---
 
 
 # Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
-You create custom views in the web portal for Azure DevOps Services, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
+You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
 [!INCLUDE [temp](../_shared/boards-disabled.md)]
 
@@ -32,8 +32,6 @@ Use this article to learn how to:
 > * Browse your Analytics views
 > * Create a custom Analytics view
 > * Review filter criteria for a view 
-
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)] 
 
 [!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
 

@@ -33,8 +33,6 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 	d. Create a card and apply the Is Current=True filter to show current count.  
 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]  
-
 <a id="prerequisites">  </a>
 ## Prerequisites  
 
@@ -42,7 +40,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time on which to generate a trend report. 

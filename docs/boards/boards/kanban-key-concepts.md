@@ -1,6 +1,6 @@
 ---
 title: Kanban terms
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Kanban in Azure Boards and Team Foundation Server (TFS) 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
@@ -11,8 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/12/2018
---- 
+ms.date: 11/19/2018
+---
 
 # Kanban key concepts
 
@@ -52,7 +52,7 @@ Cycle time is the time calculated for a work item from first entering an *In Pro
 > [!div class="mx-imgBorder"]  
 > ![Lead time and cycle time](/azure/devops/report/dashboards/_img/cycle-lead-time-concept-intro.png)  
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 You can gain valuable metrics and visualize the cycle time for a team and a configurable time period by [adding the Cycle Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md).
 ::: moniker-end  
 
@@ -68,7 +68,7 @@ A Kanban column maps to a stage of work. The default columns map to the workflow
 
 Lead time is the time calculated for a work item from first entering a *Proposed* category state to entering a *Completed* [state category](#state-category). Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md).  
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 You can gain valuable metrics and visualize the lead time for a team and a configurable time period by [adding the Lead Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md).
 ::: moniker-end   
 
@@ -139,11 +139,11 @@ Workflow states are defined for each work item type to support tracking the stat
 > |-------------|----------|---------| 
 > |![User Story workflow states, Agile process](../work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)|![Product backlog item workflow states, Scrum process](../work-items/guidance/_img/ALM_PT_Scrum_WF_PBI.png)|![Requirement workflow states, CMMI process](../work-items/guidance/_img/ALM_PT_CMMI_WF_Requirement.png)|
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 You can customize your workflow states, adding states or renaming states. Learn more: [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= tfs-2018 || azdevserver-2019"  
 You can customize your workflow states, adding states, renaming states, and changing state transitions and reasons. Learn more: [Customize the workflow](../../reference/xml/change-workflow-wit.md). 
 ::: moniker-end  
 

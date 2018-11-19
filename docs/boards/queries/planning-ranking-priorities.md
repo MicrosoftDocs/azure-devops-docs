@@ -1,7 +1,7 @@
 ---
 title: Pick list queries
-titleSuffix: Azure Boards and TFS
-description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,7 +9,8 @@ ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-ms.date: 04/14/2017  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Query by pick list value
@@ -71,8 +72,8 @@ The following table describes the fields that you can use to plan and prioritize
 <table width="100%">
 <thead>
 <tr>
-  <th width="25%">Field name</th>
-  <th width="50%">Description</th>
+  <th width="20%">Field name</th>
+  <th width="55%">Description</th>
   <th width="25%">Work item type</th>
 </tr>
 </thead>

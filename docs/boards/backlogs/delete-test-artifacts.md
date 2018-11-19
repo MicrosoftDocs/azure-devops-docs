@@ -1,6 +1,6 @@
 ---
 title: Delete test artifacts
-titleSuffix: Azure Boards and TFS  
+titleSuffix: Azure Boards  
 description: Guide to deleting test artifacts in Azure DevOps Services and Team Foundation Server
 keywords: backlogs
 ms.global_help.title: Move, change, or delete work items
@@ -12,12 +12,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 10/31/2018
+ms.date: 11/19/2018
 ---
 
 # Delete test artifacts  
 
-**Azure Boards | Azure Test Plans**  
+**Azure Boards | Azure Test Plans | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**  
 
 <a id="delete-test"> </a> 
 
@@ -43,9 +43,9 @@ To delete test artifacts, the following restrictions and operations apply:
 - When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2017" 
 > [!NOTE]   
-> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
+> The permanently delete feature of test artifacts is available for TFS 2017.1 and later versions. 
 ::: moniker-end
 
 <a id="test-experience"></a>

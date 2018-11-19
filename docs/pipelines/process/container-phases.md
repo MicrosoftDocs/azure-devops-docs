@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 11/05/2018
+ms.date: 11/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -34,10 +34,12 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - `which`
 - glibc
 - Can run Node.js (which the agent provides)
+- Does not define an `ENTRYPOINT`, or if it does, that `ENTRYPOINT` is a shell
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
-minimum requirements.
+minimum requirements. Also, containers with a non-shell `ENTRYPOINT` don't work, since Azure Pipelines
+will `docker exec` a series of commands which expect to be run by a shell.
 
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.

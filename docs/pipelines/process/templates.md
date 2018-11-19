@@ -415,6 +415,49 @@ steps:
     debug: true
 ```
 
+## Iterative insertion
+
+The `each` directive allows iterative insertion based on a sequence or mapping.
+
+For example, to wrap all steps within each job
+
+```yaml
+parameters:
+  jobs: []
+
+jobs:
+- ${{ each job in parameters.jobs }}: # Each job
+  - ${{ each pair in job }}:          # Insert all properties other than "steps"
+      ${{ if ne(pair.key, 'steps') }}:
+        ${{ pair.key }}: ${{ pair.value }}
+    steps:                            # Wrap the steps
+    - task: SetupMyBuildTools@1       # Pre steps
+    - ${{ job.steps }}                # Users steps
+    - task: PublishMyTelemetry@1      # Post steps
+      condition: always()
+```
+
+For example, to wrap all jobs with an additional dependency
+
+```yaml
+parameters:
+  jobs: []
+
+jobs:
+- job: CredScan                       # Cred scan first
+  pool: MyCredScanPool
+  steps:
+  - task: MyCredScanTask@1
+- ${{ each job in parameters.jobs }}: # Then each job
+  - ${{ each pair in job }}:          # Insert all properties other than "dependsOn"
+      ${{ if ne(pair.key, 'dependsOn') }}:
+        ${{ pair.key }}: ${{ pair.value }}
+    dependsOn:                        # Inject dependency
+    - CredScan
+    - ${{if job.dependsOn}}:
+      - ${{ job.dependsOn }}
+```
+
 ## Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`

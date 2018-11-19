@@ -37,7 +37,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
 ## Add members to your project
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]  
 
 # [New navigation](#tab/new-nav)
 

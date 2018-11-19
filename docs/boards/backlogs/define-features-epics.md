@@ -1,6 +1,6 @@
 ---
 title: Define features and epics
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description:  Define features and epics to group backlog items and track high level items 
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
@@ -11,12 +11,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -50,11 +50,11 @@ you can [enable them for your team](../../organizations/settings/select-backlog-
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-5.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -86,6 +86,8 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
 	> [!div class="mx-imgBorder"]
@@ -99,6 +101,12 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 0.	Choose **Epics** to see a list of all epics defined in your team's active area paths.  
 
 	![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -114,8 +122,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
-
+::: moniker range=">= azdevserver-2019"
 
 0. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
@@ -142,6 +149,8 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
 	> [!div class="mx-imgBorder"]
@@ -153,6 +162,12 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 	![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 
@@ -162,7 +177,8 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
 
-![Feature work item form, Agile process, Add details to a feature](_img/org-backlog-feature-form-ts-new-nav.png)
+> [!div class="mx-imgBorder"]  
+> [Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
  
 <table>
 <tbody valign="top">
@@ -226,7 +242,7 @@ You can add features to epics, and backlog items to features.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png) and choose from the options provided.
 
@@ -252,6 +268,8 @@ Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you 
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 To add a work item, choose the ![plus icon](../_img/icons/green_plus_icon.png) and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
@@ -260,6 +278,12 @@ Here we add a product backlog item as a child to the Customer Web - Phase 1 feat
 
 Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png), you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your project.   
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 

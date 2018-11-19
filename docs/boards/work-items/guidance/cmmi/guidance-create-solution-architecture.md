@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Create a solution architecture
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Investigate alternative architectural strategies to creat good architecture  
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,9 +1,9 @@
 ---
 title: Create & manage bugs using Agile tools
-titleSuffix: Azure Boards and TFS 
+titleSuffix: Azure Boards 
 ms.global_help.title: Manage bugs
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 5
-description: Manage technical debt and triage bugs using Agile tools in Azure Boards & Team Foundation Server
+description: Manage technical debt and triage bugs using Agile tools in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 09/19/2018
+ms.date: 11/19/2018
 ---
 
 # Manage bugs

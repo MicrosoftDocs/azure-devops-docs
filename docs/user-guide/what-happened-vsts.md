@@ -19,13 +19,14 @@ On September 10, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to A
 
 VSTS features are now separate services:
 
-| VSTS feature name    | Azure DevOps service name | Description |
-|----------------------|----------------------|-------------|
-| Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
-| Code                 | Azure Repos          | Unlimited cloud-hosted private Git and Team Foundation Version Control (TFVC) repos for your project. |
-| Work                 | Azure Boards         | Work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. |
-| Test                 | Azure Test Plans     | All-in-one planned and exploratory testing solution. |
-| Packages (extension) | Azure Artifacts      | Maven, npm, and NuGet package feeds from public and private sources. |
+> [!div class="mx-tdBreakAll"]  
+>| VSTS feature name    | Azure DevOps service name | Description |
+> |----------------------|----------------------|-------------|
+> | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
+> | Code                 | Azure Repos          | Unlimited cloud-hosted private Git and Team Foundation Version Control (TFVC) repos for your project. |
+> | Work                 | Azure Boards         | Work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. |
+> | Test                 | Azure Test Plans     | All-in-one planned and exploratory testing solution. |
+> | Packages (extension) | Azure Artifacts      | Maven, npm, and NuGet package feeds from public and private sources. |
 
 
 Currently, you can acquire only Azure Pipelines as a separate service. In the future, you'll be able to acquire each service separately or all together as Azure DevOps Services. If you are already a VSTS subscriber, you have access to all of the services now.  
@@ -59,4 +60,6 @@ To return to the Azure DevOps service-oriented UI, choose your profile icon, sel
 
 ## What about Team Foundation Server (TFS)?
 
-As of September 10, 2018, [Team Foundation Server](/tfs/index) (TFS) is unchanged and fully supported as our on-premises Agile workflow and DevOps product. The latest version is TFS 2018. The latest servicing update is Team Foundation Server 2018 Update 3, which was released on August 28, 2018.
+On November 19, 2018, [Azure DevOps Server 2019](/tfs/tfs-is-now-azure-devops-server-2019) was announced as the next version of Team Foundation Server, our on-premises Agile workflow and DevOps product. Currently, the Azure DevOps Server 2019 Release Candidate 1 is available for preview.
+
+Azure DevOps Server 2019 uses the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation](../project/navigation/index.md). 

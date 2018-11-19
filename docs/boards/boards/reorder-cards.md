@@ -1,16 +1,16 @@
 ---
 title: Set Kanban board card reordering
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
-monikerRange: '>= tfs-2015'
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 09/24/2018
+monikerRange: '>= tfs-2015'
+ms.date: 11/19/2018
 ---
 
 
@@ -33,11 +33,11 @@ The last column, typically the **Closed** or **Done** column, is always ordered 
 
 If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-5.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -68,6 +68,8 @@ If you want to preserve the backlog priority when you move a card to a new colum
 > Reordering cards is supported on TFS 2015.1 and later versions.  
 ::: moniker-end
 
+::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -83,6 +85,15 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 0. When done with your changes, choose **Save**.
 
+	> [!TIP]
+	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 
@@ -91,9 +102,3 @@ If you want to preserve the backlog priority when you move a card to a new colum
 * [Backlog priority or stack rank order](../backlogs/backlogs-overview.md#stack-rank)
 * [Customize cards](../../boards/boards/customize-cards.md)   
 
-
-<!---
-> [!TIP]
-> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
-
--->

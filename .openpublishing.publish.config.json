@@ -23,7 +23,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "vsts || >= tfs-2013 <= tfs-2018"
+        "vsts || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {

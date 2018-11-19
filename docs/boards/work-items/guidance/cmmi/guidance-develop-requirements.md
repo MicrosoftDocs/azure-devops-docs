@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Develop requirements
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile

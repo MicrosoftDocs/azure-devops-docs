@@ -1,7 +1,7 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: Azure Boards and TFS 
-description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards 
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,8 +10,8 @@ ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/29/2017  
 monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
 
