@@ -10,13 +10,13 @@ ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 2/14/2018
 ---
 
 # Connect using Power Query and Azure DevOps functions 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Data Connector for Azure DevOps includes Power Query M functions which can be used by query authors. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to the Analytics service. 
 

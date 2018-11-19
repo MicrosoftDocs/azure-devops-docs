@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015 || azdevserver-2019'
+monikerRange: '>= tfs-2015'
 ms.date: 11/01/2018
 ---
 
@@ -22,7 +22,7 @@ Widgets smartly format data to provide access to easily consumable data. You add
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
@@ -34,7 +34,7 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"  
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -45,7 +45,9 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts" 
+
+::: moniker range="azdevserver-2019 || vsts"
+
 Open a web browser and choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
@@ -91,7 +93,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/all-dashboards-list.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
 
 2. Choose **Dashboards**.
@@ -110,16 +112,16 @@ All dashboards are associated with a team. You need to be a team administrator, 
 ## Add a widget to a dashboard  
 ::: moniker range="azdevserver-2019 || vsts"
 
-To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
+To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. 
 
 The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
-When you're finished with your additions, click  **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then [configure the widgets](#configure) as needed.
+When you're finished with your additions, choose  **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then [configure the widgets](#configure) as needed.
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
 
-To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, choose the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](_img/dashboards/delete-widget.png) 
@@ -146,7 +148,7 @@ Most widgets support configuration, which may include specifying the title, seet
 
 ::: moniker range=">= tfs-2018"
 
-To configure a widget, add the widget to a dashboard, click open the ![actions icon](../../_img/icons/actions-icon.png) menu, and select **Configure**.  
+To configure a widget, add the widget to a dashboard, choose open the ![actions icon](../../_img/icons/actions-icon.png) menu, and select **Configure**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Open the create a dashboard dialog](_img/add-widgets/configure-widget.png) 
@@ -155,7 +157,7 @@ To configure a widget, add the widget to a dashboard, click open the ![actions i
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-To configure a widget, add the widget to a dashboard and then click the ![configure icon](_img/icons/configure-icon.png) configure icon. 
+To configure a widget, add the widget to a dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) configure icon. 
 
 ![Work item chart unconfigured widget](_img/add-widget-configure-initial.png)  
  
@@ -175,14 +177,14 @@ Just as you have to be a team or project admin to add items to a dashboard, you 
 
 
 ::: moniker range="azdevserver-2019 || vsts"
-Click ![Edit dashboard icon](_img/icons/edit-icon.png) to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
+Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
-To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, choose the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](_img/dashboards/delete-widget.png) 
 
-When you're finished with your changes, click  **Done Editing** to exit dashboard editing.
+When you're finished with your changes, choose  **Done Editing** to exit dashboard editing.
   
 ::: moniker-end
 
@@ -194,7 +196,7 @@ Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashb
 
 ::: moniker range="tfs-2018"
 
-To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, choose the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](_img/dashboards/delete-widget.png) 
@@ -203,13 +205,13 @@ To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png)
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons.  
+To remove a widget, choose the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
+When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
 ::: moniker-end
 

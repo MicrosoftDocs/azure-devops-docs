@@ -9,13 +9,13 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: ">= tfs-2018"
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/2/2018
 ---
 
 # Query your work tracking data using the OData Analytics service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 
 Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
@@ -31,7 +31,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range=">= azdevserver-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

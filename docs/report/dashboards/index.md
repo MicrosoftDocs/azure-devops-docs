@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013"
-ms.date: 11/01/2018
+ms.date: 11/19/2018
 ---
 
 # Dashboards 
@@ -21,24 +21,23 @@ Gain visibility into your team's progress by adding one or more widgets to your 
 
 To learn about our reporting solutions, read [Reporting Roadmap](../analytics/reporting-roadmap.md).
 
-::: moniker range="azdevserver-2019 || vsts"
 ## 5-Minute Quickstarts  
+
+::: moniker range=">= azdevserver-2019"  
 - [Add and manage dashboards](dashboards.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json) 
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-## 5-Minute Quickstarts  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 - [Add and manage dashboards](dashboards.md)
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 ::: moniker-end
 
-
-::: moniker range="azdevserver-2019 || vsts"
 ## Step-by-Step Tutorials
+::: moniker range=">= azdevserver-2019"
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Configure the Velocity widget](team-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
@@ -47,7 +46,6 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-## Step-by-Step Tutorials
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [View the built-in velocity chart](velocity-chart-data-store.md)
 - [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
@@ -66,22 +64,22 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 - [Configure test status, progress, and result charts](../../test/track-test-status.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
 - [Set dashboard permissions](dashboard-permissions.md)  
 
-
-::: moniker range="azdevserver-2019 || vsts"
 ## Samples
+::: moniker range=">= azdevserver-2019"
+
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
 - [Add a chart widget](../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Add an Analytics widget](../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
-## Samples
+
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
 - [Add a chart widget](../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015" 
+::: moniker range=">= tfs-2015"  
 ## Reference 
 - [Widget catalog](widget-catalog.md)  
 - [Markdown guidance](../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
@@ -89,15 +87,15 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 - [REST API, Dashboards](/rest/api/vsts/dashboard/)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+
 ## Resources 
+::: moniker range=">= azdevserver-2019"  
 - [Azure Boards](/azure/devops/boards/index)
 - [Azure Test Plans](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-## Resources 
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 - [Agile](/azure/devops/boards/index)
 - [Testing](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
