@@ -7621,6 +7621,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/java/labs/sonarqube/index.md",
+      "redirect_url": "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/work/customize/process/custom-controls-process.md",
       "redirect_url": "/azure/devops/organizations/settings/work/custom-controls-process",
       "redirect_document_id": false
