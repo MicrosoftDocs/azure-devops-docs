@@ -8,6 +8,7 @@
     #scriptPath: # Required when scriptLocation == ScriptPath
     #inlineScript: # Required when scriptLocation == InlineScript
     #arguments: # Optional
+    #addSpnToEnvironment: false # Optional
     #workingDirectory: # Optional
     #failOnStandardError: false # Optional
 ```
