@@ -8,21 +8,32 @@ description: Index to topics for managing the data warehouse, adding reports, an
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/05/2017
+monikerRange: '<= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
-# SQL Server Reporting (TFS)   
+# SQL Server Reporting  
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+
+The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
+
+::: moniker range="azdevserver-2019"
+Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../analytics/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../analytics/reporting-roadmap.md). 
+
+::: moniker-end
 
 > [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json).  
+> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server 2019 and Team Foundation Server (TFS). If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json).  
 > 
 > For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
 
-To learn about Azure DevOps Reporting Roadmap, read [Reporting roadmap](../analytics/reporting-roadmap.md).
 
+::: moniker range="<= tfs-2018"
 
+To learn more about the future of reporting for TFS, read [Reporting roadmap](../analytics/reporting-roadmap.md).
+
+::: moniker-end
 
 ## 5-Minute Quickstarts  
 - [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)  
@@ -47,6 +58,6 @@ To learn about Azure DevOps Reporting Roadmap, read [Reporting roadmap](../analy
 
 
 ## Resources
-- [SharePoint Integration](../sharepoint-dashboards/index.md)
-- [Server Administration (TFS)](/tfs/server/index)
-- [TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)
+- [Server Administration](/tfs/server/index)
+- [Azure DevOps Developer Community ](https://developercommunity.visualstudio.com/spaces/22/index.html)
+- [(Archived) TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/en-ushome?forum=tfsreporting)

@@ -9,26 +9,27 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: "azdevserver-2019 || vsts"
-ms.date: 11/15/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
 
 # The Analytics Marketplace extension
 
-Installing the Analytics Marketplace extension enables the [Analytics Service](../analytics/what-is-analytics.md).
-
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-## For Azure DevOps Services:
+Installing the Analytics Marketplace extension enables the [Analytics Service](../analytics/what-is-analytics.md).
+
+## For Azure DevOps Services
 1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
 1.	Choose to **Install** the Analytics extension. You might need to sign in with your Azure DevOps organization credentials.
 1. Select the Azure DevOps organization where you would like to install this extension and confirm. Learn more about [Install extensions](../../marketplace/install-vsts-extension.md).
 
-## For Azure DevOps Server 2019 and later:
+## For Azure DevOps Server 2019 and later
+
 Follow the instructions here: [Install extensions for Azure DevOps Server](../../marketplace/get-tfs-extensions.md)
 
-## For Team Foundation Server (TFS) 2018 and earlier
+## For Team Foundation Server (TFS) 2018 and earlier versions
 The Analytics Marketplace extension is **not supported** for TFS 2018 or earlier versions.
 
 ## Related articles

@@ -18,9 +18,6 @@ ms.date: 11/01/2018
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 
-
-
-
 ::: moniker range="tfs-2013"
 > [!NOTE]   
 > Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
@@ -45,9 +42,9 @@ You must be a team admin to add a chart to a team dashboard or homepage, or be [
 
 <a id="build-history"></a>
 
-
 <!-- TODO: Confirm that adding a build history widget from Pipelines has been removed -->
 <!--
+
 ::: moniker range=">= tfs-2015"
 
 ## Add a build history chart
@@ -67,7 +64,7 @@ Each time a build is run, it logs information about the build, including the run
 
 	![Add a test plan chart to a dashboard](_img/add-a-dashboard-build-summary.png)  
 
-	Hover over a bar to view build information and run time. Click a bar to go to the build summary page.   
+	Hover over a bar to view build information and run time. Choose a bar to go to the build summary page.   
 ::: moniker-end
 -->
 
@@ -79,8 +76,10 @@ Each time a release is deployed, it logs information about the release to each o
 
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
+
     # [New navigation](#tab/new-nav)
 	> [!div class="mx-imgBorder"]  
 	> ![Add a Release pipeline chart to a dashboard, new nav](_img/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
@@ -133,7 +132,7 @@ Requires TFS 2017.2 or later version.
 ::: moniker range=">= tfs-2017"
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
-2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
+2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and choose the bar chart for either Test failures or Test duration.    
 
 	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
 
@@ -167,21 +166,21 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 <a id="add-to-dashboard">  </a>
 
 ## Add a markdown file to a dashboard  
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
-Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
+Choose **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 Requires TFS 2015.2 or later version. 
 ::: moniker-end
 
-::: moniker range="> tfs-2015"
-<!-- TODO: Update image -->
+::: moniker range="> tfs-2015 <= tfs-2018"
+<!-- TODO: Update image - I don't think this is supported for latest version-->
 <img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 

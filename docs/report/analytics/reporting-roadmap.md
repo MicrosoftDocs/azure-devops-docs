@@ -9,11 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'tfs-2018 || azdevserver-2019 || vsts'
+monikerRange: '>= tfs-2018'
 ms.date: 11/01/2018
 ---
 
 # Reporting roadmap for Azure DevOps and Azure DevOps Server
+
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The future of reporting for Azure DevOps and Azure DevOps Server is the Analytics Service. 
 

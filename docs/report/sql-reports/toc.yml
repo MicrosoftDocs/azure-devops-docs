@@ -54,6 +54,8 @@
       href: ../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
     - name: "View, upload, and organize Reporting Services reports"
       href: ../admin/view-upload-organize-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+  - name: Disable the Data Warehouse
+    href: ../admin/disable-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Reporting Services reports (TFS)

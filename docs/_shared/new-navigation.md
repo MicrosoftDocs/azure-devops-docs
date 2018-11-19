@@ -18,8 +18,5 @@ ms.topic: include
 
 > [!NOTE]
 > Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
-> 
+
 ::: moniker-end
-
-
-

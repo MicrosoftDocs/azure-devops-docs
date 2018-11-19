@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015 || azdevserver-2019'
+monikerRange: '>= tfs-2015'
 ms.date: 11/01/2018
 ---
 
@@ -220,8 +220,8 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 > Just as you have to be a team admin, a project admin, or have the necessary permissions to add items to a dashboard, you must have the [necessary permissions](#permissions) to remove items.  
 
 
-::: moniker range="azdevserver-2019 || vsts"
-Choose ![Edit dashboard icon](_img/icons/edit-icon.png) to modify your dashboard. 
+::: moniker range=">= azdevserver-2019"
+Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. 
 
 You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
@@ -230,7 +230,7 @@ To remove a widget, choose the ![actions icon](../../_img/icons/actions-icon.png
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](_img/dashboards/delete-widget.png) 
 
-When you're finished with your changes, choose **Done Editing** to exit dashboard editing.
+When you're finished with your changes, choose **Done Editing** to exit dashboard edit mode.
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.  

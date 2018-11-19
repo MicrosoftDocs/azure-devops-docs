@@ -83,7 +83,7 @@
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="<= azdevserver-2019"
 
 <table>
 <tr valign="bottom">
