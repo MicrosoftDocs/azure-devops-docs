@@ -1,55 +1,65 @@
 ---
 title: Use Azure Artifacts as a private PowerShell repository
-description: Use the Package Manager to create your own private PowerShell repository
+description: Use Azure Artifacts within Azure DevOps Services to create your own private PowerShell repository
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.topic: quickstart
-ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.manager: jenp
+ms.manager: douge
 ms.author: elbatk
 author: elbatk
-ms.reviewer: dastahel
-ms.date: 01/31/2018
-monikerRange: '>= tfs-2018'
+ms.reviewer: amullans
+ms.date: 11/19/2018
+monikerRange: 'vsts'
 ---
 
-# Get started with Maven packages in Azure DevOps Services and TFS
+# Use Azure Artifacts as a private PowerShell repository
 
-**Azure DevOps Services** | **TFS 2018**
+**Azure DevOps Services**
 
-## Before you start
+Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
-This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+> [!NOTE]
+> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
-::: moniker range=">=tfs-2018"
+## Prerequisites
 
-> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your Azure DevOps organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+1. [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
 
-::: moniker-end
+2. [An Azure DevOps Services Account](https://azure.microsoft.com/en-us/services/devops/)
 
-### Prerequisites
+## Create a PAT to get command-line access to Azure DevOps Services
 
-1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
+The first step is to create a PAT through the Azure DevOps Services UI to authenticate your command-line with the service.
 
-1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Azure DevOps Services organization.
+1. Head to your Azure DevOps Services organization: `https://dev.azure.com/<org_name>`
+2. From your home page, open your profile. Go to your security details:
+    <img alt="Go to Azure DevOps organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+3. Create a personal access token.
 
-<a name="create-a-feed"></a>
+   <img alt="Add a personal access token" src="../../repos/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-## Create a feed
+4.  Name your token. Select a lifespan for your token.
 
-*Already have a feed? [Skip to the next step](#setup-your-POM-and-settings-.xml).*
+	If you have more than one organization, you can also select the Azure DevOps organization where you want to use the token.
 
-[!INCLUDE [](_shared/create-feed.md)]
+    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-<a name="setup-your-POM-and-settings-.xml"></a>
+5.  Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes) that this token will authorize for *your specific tasks*.
 
-## Set up authentication
+    For this tutorial, you will only need **Packaging: Read, write & manage** permissions, but you may want to add more if you'd like to use this token for other tasks.
 
-[!INCLUDE [](_shared/maven/pom-and-settings.md)]
+6. When you're done, make sure to *copy the token*, as this value will only be shown once. You'll use this token as your password, you can choose to store this value in whatever manner you prefer, but it should be treated as safely as a password.
 
-<a name="publish-a-package"></a>
+> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-persona-access-tokens-to-authenticaate).
 
-## Publish an artifact
+## Create the feed
+
+A feed is a central repository that can store multiple packages of different types. We will need to create a feed in order to store packages, which will be PowerShell Modules in this scenario.
+
+1. Navigate to **Azure Artifacts** from your Azure DevOps Services organization.
+2. On your first visit to **Azure Artifacts**, you'll be welcomed with an image telling you to create a new feed, click _+ New feed_. If you already have feeds in **Azure Artifacts**, simply click _+ New feed_ near the top of the UI.
+3. 
+
+## Creating and packaging a module
 
 [!INCLUDE [](_shared/maven/publish.md)]
 
