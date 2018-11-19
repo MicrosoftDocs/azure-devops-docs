@@ -1,7 +1,7 @@
 ---
 title: Scrum and sprint planning tools
-titleSuffix: Azure Boards and TFS 
-description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards 
+description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 08/19/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
@@ -18,7 +19,7 @@ ms.date: 08/19/2017
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-
+<!--- ADD WIDGET INFO AS WELL --> 
 
 <a id="sprint-tools">   </a>
 
@@ -145,4 +146,3 @@ If you work with several teams, and each team wants their own backlog view, you 
 - [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 
-<!--- ADD WIDGET INFO AS WELL --> 

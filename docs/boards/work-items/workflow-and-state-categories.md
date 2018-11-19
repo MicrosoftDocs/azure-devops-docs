@@ -1,6 +1,6 @@
 ---
 title: Workflow states and state categories
-titleSuffix: Azure Boards and TFS   
+titleSuffix: Azure Boards   
 description: Understand how workflow states map to state categories in Azure Boards and Team Foundation Server   
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,7 +8,8 @@ ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Workflow states and state categories
@@ -125,6 +126,14 @@ To learn more about process models, see [Customize your work tracking experience
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)

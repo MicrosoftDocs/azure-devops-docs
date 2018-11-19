@@ -1,5 +1,5 @@
 ---
-title: Set work tracking permissions 
+title: Set permissions and access for work tracking
 titleSuffix: Azure DevOps & TFS 
 description: How to grant or restrict access to work tracking tasks for Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 08/06/2018
+ms.date: 11/19/2018
 ---
 
 # Set permissions and access for work tracking
@@ -22,26 +22,109 @@ You grant or restrict access to various work tracking features by granting users
 > [!NOTE]   
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 
-> [!div class="mx-tdBreakAll"]
-> | Role or permission level | Functional areas set  |
-> |-----------------------|-----------------------------------|
-> |**Team administrator role** | - [Manage teams and configure team tools](../settings/manage-teams.md)<br/>- [Define and edit team dashboards](../../report/dashboards/dashboards.md)<br/>- [Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Add team administrators](../settings/add-team-administrator.md)|
-> |**Object-level permissions** |- [Modify work items under an area path](#set-permissions-area-path)<br/>- [Create and edit nodes under an area path or iteration path](#set-permissions-area-path)<br/>- [Define and edit queries or query folders](#work-item-queries)<br/>- [Define and edit Delivery Plans](#plan-permissions) | 
-> |**Project-level permissions** |- [Create work item tags](../../boards/queries/add-tags-to-work-items.md)<br/>- [Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)<br/>- [Move work items out of a project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a project (On-premises XML  or Hosted process models) | 
-> |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, Azure DevOps only)<br/>- Delete field from account(Inheritance process model, Azure DevOps only)<br/>- Manage process permissions (Inheritance process model, Azure DevOps only)<br/>- Edit collection level permissions | 
 
-Project collection-level permissions include all permissions you can set at the project-level.
 
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Role or permission level</th>
+<th width="65%">Functional areas set</th>
+</tr>
+<tr>
+<td>**Team administrator role** </td>
+<td>
+<ul>
+<li>[Manage teams and configure team tools](../settings/manage-teams.md)</li>
+<li>[Define and edit team dashboards](../../report/dashboards/dashboards.md)</li>
+<li>[Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)</li>
+<li>[Add team administrators](../settings/add-team-administrator.md)</li>
+</ul>
 To add a user to the team administrator role, see [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
+</td>
+</tr>
+<tr>
+<td>**Object-level permissions** </td>
+<td>
+<ul>
+<li>[Modify work items under an area path](#set-permissions-area-path)</li>
+<li>[Create and edit nodes under an area path or iteration path](#set-permissions-area-path)</li>
+<li>[Define and edit queries or query folders](#work-item-queries)</li>
+<li>[Define and edit Delivery Plans](#plan-permissions)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>**Project-level permissions** </td>
+<td>
+<ul>
+<li>[Create work item tags](../../boards/queries/add-tags-to-work-items.md)</li>
+<li>[Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)</li>
+<li>[Move work items out of a project](#move-delete-permissions)</li>
+<li>[Permanently delete work items](#move-delete-permissions)</li>
+<li>[Delete test artifacts](#delete-test-permissions)</li>
+<li>Edit shared work item queries</li>
+<li>Add teams and team administrators</li>
+<li>Create and manage area and iteration paths</li>
+<li>Edit project-level permissions</li>
+<li>Customize a project (On-premises XML  or Hosted process models)</li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td>**Project collection-level permissions** </td>
+<td>
+<ul>
+<li>Create, delete, or edit a process (Inheritance process model)</li> 
+<li>Delete field from account(Inheritance process model)</li>
+<li>Manage process permissions (Inheritance process model)</li> 
+<li>Edit collection level permissions</li>  
+</ul>
+Project collection-level permissions include all permissions you can set at the project-level.
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Edit project-level or collection-level/instance-level information
 
 The **Edit project-level information** and **Edit instance-level information** (also referred to as Edit collection-level information) provide permissions to several work tracking features as summarized below. To add users or set permissions at these levels, see [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
-> [!div class="mx-tdBreakAll"]
-> | Edit project-level information | Edit instance-level information  |
-> |-----------------------|-----------------------------------|
-> - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit project level permission ACLs<br/>- Manage process templates<br/>- Customize a project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on project or collection level events. |
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Edit project-level information</th>
+<th width="65%">Edit instance-level information</th>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li>Add and administer teams and all team-related features</li>
+<li>Create and modify areas and iterations</li>
+<li>Edit shared work item queries</li>
+<li>Edit project level permission ACLs</li>
+<li>Manage process templates</li>
+<li>Customize a project</li>
+<li>Create and modify global lists</li>
+<li>Edit event subscriptions (email or SOAP) on project level events.</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Add and administer teams and all team-related features</li>
+<li>Create and modify areas and iterations</li>
+<li>Edit check-in policies</li>
+<li>Edit shared work item queries</li>
+<li>Edit project level and collection level permission ACLs</li>
+<li>Manage process templates</li>
+<li>Customize a project or process</li>
+<li>Create and modify global lists</li>
+<li>Edit event subscriptions (email or SOAP) on project or collection level events.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 <a name="set-permissions-area-path" /> 
@@ -55,7 +138,8 @@ Area path permissions let you grant or restrict access to edit or modify work it
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019" 
+
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
@@ -83,7 +167,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
@@ -115,7 +199,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
 ::: moniker-end
-
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
 	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
@@ -125,7 +209,13 @@ You define both areas and iterations for a project from the **Project Settings>W
 	You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
 <!--- <img src=".../boards/boards/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 1px solid #C3C3C3;" />--> 
+::: moniker-end
 
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 ---
 
 <a id="work-item-queries"></a>
@@ -140,16 +230,17 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 ::: moniker range=">= tfs-2017"
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
-## Manage or edit Delivery Plans 
+## Manage or edit Delivery plans 
 
 Plans are an object within a project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../boards/queries/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
 
-To learn more about Delivery Plans, see [Review team delivery plans](../../boards/plans/review-team-plans.md).
+To learn more about Delivery Plans, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 ::: moniker-end
+
 ::: moniker range="tfs-2017"
 > [!NOTE]  
 > **Feature availability**: Delivery plans are available for TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
-::: moniker-end
+::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
 0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
@@ -172,7 +263,8 @@ To learn more about Delivery Plans, see [Review team delivery plans](../../board
 
 
 <a id="move-delete-permissions"></a>
-::: moniker range="vsts"  
+
+::: moniker range=">= azdevserver-2019"
 ## Move or permanently delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
@@ -186,6 +278,7 @@ In this example, we grant members assigned to the team administrator role, who b
 
 ::: moniker-end  
 
+::: moniker range=">= tfs-2017"
 
 <a id="delete-test-permissions"></a>
 
@@ -202,8 +295,9 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
- 
-::: moniker range="vsts"
+::: moniker-end  
+
+::: moniker range=">= azdevserver-2019"
 
 <a id="process-permissions"></a>
 
@@ -228,10 +322,11 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 ::: moniker-end
 
+::: moniker range="<= azdevserver-2019"
 ## Additional options for restricting access to work items   
 
 > [!NOTE]   
-> You can use one or more of the following options with the Hosted XML or On-premises XML process models. To learn more about process models, see [Customize work tracking experience](../../reference/customize-work.md).  
+> You can use one or more of the following options with the On-premises XML process models. To learn more about process models, see [Customize work tracking experience](../../reference/customize-work.md).  
 
 You can restrict access to work tracking objects in one of two ways:
 
@@ -241,7 +336,7 @@ You can restrict access to work tracking objects in one of two ways:
 For more information about how to customize WITs, 
 see [Modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md).
 
-
+::: moniker-end
 
 ## Related articles 
 

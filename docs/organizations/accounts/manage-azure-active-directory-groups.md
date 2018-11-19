@@ -33,7 +33,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Add an Azure AD group to an Azure DevOps group
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

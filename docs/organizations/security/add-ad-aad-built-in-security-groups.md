@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ---
 
 # Add AD/Azure AD users or groups to a built-in security group
@@ -31,7 +31,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Add an AD/Azure AD user or group to a built-in security group 
 
-::: moniker range="vsts"  
+::: moniker range="vsts"
 > [!IMPORTANT]  
 > If you are adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 ::: moniker-end  
@@ -40,7 +40,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -62,9 +62,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+0. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-2. Enter the name of the user into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+0. Enter the name of the user into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
@@ -75,12 +75,14 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -113,6 +115,12 @@ The method for adding a user or group to a built-in security group is the same, 
 	> you can't browse to it or check the friendly name.
 	> After the identity has been added, you can just type the friendly name.
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 ## Next steps
@@ -122,6 +130,6 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Related articles
 
-* [About permissions and groups](about-permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-* [About security and identity](about-security-identity.md)
+- [About permissions and groups](about-permissions.md)
+- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [About security and identity](about-security-identity.md)

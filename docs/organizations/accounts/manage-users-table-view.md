@@ -46,7 +46,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

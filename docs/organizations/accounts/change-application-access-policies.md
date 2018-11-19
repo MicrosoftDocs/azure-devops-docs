@@ -42,7 +42,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
 ## Change application access policies
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

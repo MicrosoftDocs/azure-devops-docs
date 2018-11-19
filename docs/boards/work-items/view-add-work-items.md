@@ -1,6 +1,6 @@
 ---
 title: View & add work items from the Work Items page
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views      
 ms.custom: boards-work-items
 f1_keywords: 
@@ -11,9 +11,10 @@ ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 10/19/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
 # View and add work items using the Work Items page  
@@ -33,8 +34,23 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
+::: moniker range="vsts"
+> [!NOTE]
+> Choose **New navigation** if you see a vertical sidebar or if the **New Navigation** feature is enabled. The vertical sidebar along with other navigational features are enabled when **New Navigation** has been enabled for the signed-in user or the organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index). 
+> 
+> Choose **Previous navigation** when you see a top-level, blue-bar.   
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+::: moniker-end
+
+
+::: moniker range="azdevserver-2019"
+
+> [!NOTE]
+> Choose **New navigation** if you see a vertical sidebar. The vertical sidebar along with other navigational features are enabled for Azure DevOps Server 2019. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index). 
+> 
+> Choose **Previous navigation** when you see a top-level, blue-bar.  
+
+::: moniker-end
 
 # [New navigation](#tab/new-nav)
 
@@ -45,10 +61,20 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range="vsts"
+
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items ](_img/view-add/work-items-hub.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 
 ---
 
@@ -96,7 +122,8 @@ For example, here we choose User Story.
 
 <!---
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). 
+-->
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

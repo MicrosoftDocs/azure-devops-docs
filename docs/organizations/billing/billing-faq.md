@@ -133,7 +133,7 @@ A: Yes, you can use the same Azure subscription for billing across multiple orga
 
 A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -163,7 +163,7 @@ A: You can find your [project collection administrator](../security/set-project-
 
 A: You can find the current owner in your organization settings.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

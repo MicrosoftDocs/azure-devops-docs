@@ -8,8 +8,9 @@ ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: 'azdevserver-2019 || vsts'
 ms.topic: quickstart
-ms.date: 04/04/2018
+ms.date: 11/01/2018
 ---
 
 # Create a Power BI report with a default Analytics view
@@ -33,10 +34,6 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 	c. Apply filters to your trend report    
 	d. Create a card and apply the **Is Current=True** filter to show current count.    
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
-
-
-
 <a id="prerequisites">  </a>
 ## Prerequisites  
 
@@ -44,9 +41,9 @@ In order to create a Power BI report that references an Analytics view, you must
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the project, except stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
-- Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
 [!INCLUDE [temp](../_shared/analytics-open.md)]
@@ -75,6 +72,35 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	To learn more about defining views, see [Create an Analytics view](../analytics/analytics-views-create.md).  
 
+::: moniker range="azdevserver-2019"
+
+## Connect to an Analytics view on Azure DevOps Server 
+
+0. Open Power BI Desktop.  
+ 
+0. Choose **Get Data**, choose **Online Services**, then **Azure DevOps Server (Beta)**, and then click **Connect**. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Connect to data](_img/data-connector-get-data-onprem.png)  
+
+0. Enter your collection URL and Team project for the data you want to report on.  
+
+	![Organization and project name](_img/onprem-cardentials.png) 
+
+0. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. All views listed, except those appended with "Today", will provide historical trend data. 
+
+	Here we choose **Stories - Last 30 days**. This view filters for product backlog items.
+
+	![Navigator dialog, Choose an Analytics view](_img/create-report/choose-view.png) 
+
+	Need help connecting? See [Connect with Power BI Data Connector](data-connector-connect.md).
+
+	> [!NOTE]  
+	> Because you verified the view in the previous section, the view should load. However, if the view won't load, it is most likely because the dataset is too large. Return to the view under the **Analytics view** in the web portal and adjust the filters to decrease the size of the dataset. 
+
+::: moniker-end
+
+::: moniker range="vsts"
 
 ## Connect to an Analytics view 
 
@@ -99,6 +125,8 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	> [!NOTE]  
 	> Because you verified the view in the previous section, the view should load. However, if the view won't load, it is most likely because the dataset is too large. Return to the view under the **Analytics view** in the web portal and adjust the filters to decrease the size of the dataset. 
+
+::: moniker-end
 
 ## Create a daily trend report 
 

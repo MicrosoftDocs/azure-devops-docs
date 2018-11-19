@@ -32,7 +32,7 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
 ## Invite an external user to your organization
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

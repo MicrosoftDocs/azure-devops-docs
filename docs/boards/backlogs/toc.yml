@@ -28,17 +28,13 @@
   - name: Bulk modify (web)
     href: bulk-modify-work-items.md 
   - name: Link work items
-    href: add-link.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: "Move, change, or delete"
-    href: ../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: Link work items
     href: add-link.md
   - name: "Move, change, or delete"
-    href: remove-delete-work-items.md
+    href: ../backlogs/remove-delete-work-items.md
   - name: Forecast work
     href: ../sprints/forecast.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
+- name: Concepts
+  items:
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Refine your backlog
@@ -61,7 +57,7 @@
     href: copy-list.md 
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Share work plans
+  - name: Share information in work items
     href: ../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: Use work item templates
     href: work-item-template.md

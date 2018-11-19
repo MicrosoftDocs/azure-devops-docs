@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Project inception
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Arrange the basic resources of the project in an initial stage.
 ms.prod: devops
 ms.technology: devops-agile

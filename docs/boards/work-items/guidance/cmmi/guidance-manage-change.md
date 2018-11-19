@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Manage change 
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

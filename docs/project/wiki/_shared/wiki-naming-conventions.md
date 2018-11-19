@@ -4,7 +4,7 @@
 
 Each wiki page corresponds to a file within the wiki Git repo. Names you assign to a wiki page title must conform to the following restrictions.
 
-::: moniker range="vsts"   
+::: moniker range=">= azdevserver-2019"   
 |Restriction type| Restriction|
 |---------------|-----------|
 | File name     | The fully qualified page path should not exceed 235 characters.  |
@@ -30,7 +30,7 @@ You can specify page titles which contain one or more of these special character
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"   
+::: moniker range="tfs-2018"
 
 
 > [!div class="mx-tdCol2BreakAll"]

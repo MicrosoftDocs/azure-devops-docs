@@ -1,6 +1,6 @@
 ---
 title: Capability Maturity Model Integration (CMMI)
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development 
 ms.prod: devops
 ms.technology: devops-agile

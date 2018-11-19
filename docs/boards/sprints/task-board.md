@@ -1,5 +1,5 @@
 ---
-title: Update and monitor your scrum taskboard
+title: Update and monitor your taskboard
 titleSuffix: Azure Boards and TFS
 description: Implement scrum using the sprint taskboard in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 # 6. Update and monitor your Taskboard
@@ -43,7 +43,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
@@ -73,6 +73,8 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
@@ -92,6 +94,12 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 ## Customize the taskboard
@@ -99,14 +107,26 @@ Each team can customize their taskboard in the following ways:
 - [Customize cards](../../boards/boards/customize-cards.md) that appear on the taskboard to show additional fields.
 - [Show bugs on the taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and taskboards at the same level as tasks.
 
-An administrator can customize the taskboard for all teams in the following ways:
-
-::: moniker range="vsts"
+::: moniker range="vsts"  
+An administrator can customize the taskboard for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="azdevserver-2019"
+An administrator can customize the taskboard for all teams in the following ways based on the process model selected for the project:
+**Inherited process model:**
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+
+**On-prem XML process model:** 
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+An administrator can customize the taskboard for all teams in the following ways:  
 - [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
 - [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
@@ -128,7 +148,7 @@ With this view, you can quickly see which items are nearing completion and which
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
 
@@ -147,11 +167,21 @@ With this view, you can quickly see which items are nearing completion and which
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2015 <= tfs-2018 || vsts" 
 You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
-::: moniker range=">= tfs-2013"
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
 ![Group by backlog items, show All team members](_img/taskboard/group-items-all.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
 ::: moniker-end
 
@@ -164,12 +194,12 @@ With this view, you can focus on the work completed and the work remaining for e
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 > [!div class="mx-imgBorder"]
-> ![taskboard, filter on a person](_img/taskboard/group-by-backlog-filter-on-person.png)
+> ![taskboard, filter on a person](_img/taskboard/group-by-people.png)
 
 ::: moniker-end
 
@@ -179,9 +209,24 @@ To filter on the tasks for a specific team member, choose the ![ ](../../_img/ic
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
+::: moniker-end
+
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]
+> ![taskboard, filter on a person](_img/taskboard/group-by-people.png)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 ![Group by Backlog items, show Christie Church team member](_img/ALM_TB_GRP_Items_CC.png)
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -192,7 +237,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **People**.
 
@@ -214,9 +259,19 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
 ![Group by People, show All team member](_img/ALM_TB_GRP_People_All.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 
 ---
 
@@ -238,10 +293,18 @@ Updating *Remaining Work*, preferably prior to the daily Scrum meeting, helps th
 
 Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the remaining work for the task. *Remaining Work* should always reflect exactly how much work the team member estimates is remaining to complete the task.
 
-![taskboard, update task remaining work](_img/ALM_TB_UpdateRWork.png)
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]
+> ![Update remaining work](_img/taskboard/update-hours.png)
+::: moniker-end
 
+::: moniker range="<= tfs-2018"
+![taskboard, update task remaining work](_img/ALM_TB_UpdateRWork.png)
+::: moniker-end
 
 <a id="close-sprint">  </a>
+<!--- NEEDS MORE WORK --> 
+
 ## Close out a sprint, update your taskboard
 At the end of the sprint, you'll want to perform these final tasks:
 *	Zero out *Remaining Work* of all completed tasks
@@ -250,7 +313,7 @@ At the end of the sprint, you'll want to perform these final tasks:
 
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop).
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -323,6 +386,6 @@ Requires TFS 2015.1 or later version.
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end
