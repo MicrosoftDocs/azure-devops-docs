@@ -9,7 +9,7 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 8/23/2018
+ms.date: 11/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -48,6 +48,7 @@ You should now have a sample app in your GitHub account.
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
+   > [!div class="mx-imgBorder"]
    ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
 
 1. For the second step, choose to **Authorize with OAuth** by selecting **Authorize**. You might be redirected to GitHub to sign in. Enter your GitHub credentials.
@@ -58,13 +59,19 @@ You should now have a sample app in your GitHub account.
 
 1. In the final step, you're shown the YAML file that will be used.
 
-1. Select **Save and run**. Choose the option to **Commit directly to the master branch**.
-
-1. The YAML file is now pushed to your GitHub repository, and a new build is automatically started.
+1. If you see the **Run**, button, then choose it and skip to the next step. If you see the **Save and run** button, then first select **Commit directly to the master branch**, and then choose **Save and run**.
 
 1. Wait for the build to finish.
 
-## Get the status badge
+<a name="get-the-status-badge"></a>
+## Add a CI status badge to your repository
+
+Many developers like to show that they're keeping their code quality high by displaying a CI build status badge in their repo.
+
+> [!div class="mx-imgBorder"]
+![Status badge shows Azure pipeline succeeded](_img/get-started-yaml/azure-pipelines-succeeded.png)
+
+To copy the status badge to your clipboard:
 
 1. In Azure Pipelines, go to the Build page to view the list of pipelines.
 
@@ -72,13 +79,12 @@ You should now have a sample app in your GitHub account.
 
 1. In the context menu for the pipeline, select **Status badge**.
 
+   > [!div class="mx-imgBorder"]
    ![Status badge](_img/get-started-yaml/status-badge.png)
 
 1. Copy the sample Markdown from the status badge panel.
 
-## Add the status badge to your repository
-
-Take the following steps in GitHub:
+Now with the status badge in your clipboard, take the following steps in GitHub:
 
 1. Inspect the `azure-pipelines.yml` file at the root of your repository. The YAML file contains the instructions for the pipeline. The next time you change any file in this repository, Azure Pipelines will automatically build your code.
 
@@ -108,3 +114,5 @@ To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
 For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).
