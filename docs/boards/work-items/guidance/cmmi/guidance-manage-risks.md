@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Manage risks
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Understand how Risk implies the actual outcomes may vary, sometimes significantly, from desired outcomes - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile

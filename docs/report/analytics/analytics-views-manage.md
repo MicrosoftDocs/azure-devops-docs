@@ -1,6 +1,6 @@
 ---
 title: Manage Analytics views
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: View, edit, and delete an Analytics view for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,13 +9,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: "azdevserver-2019 || vsts"
 ms.date: 04/04/2018
 ---
 
+
 # Manage Analytics views 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps. 
 
@@ -31,8 +32,6 @@ Use this article to learn how to:
 > * Favorite a view
 > * Manage permissions for a shared view
 > * Delete a view
-
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
 [!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
 

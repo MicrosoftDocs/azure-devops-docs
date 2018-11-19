@@ -10,11 +10,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/06/2017
+ms.date: 11/19/2018
 ---
 
-
+::: moniker range="vsts"
 # Look up administrators and organization owner 
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
+# Look up administrators 
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -35,7 +40,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -50,11 +55,13 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -67,6 +74,12 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Security tab, Project Administrators Group, Members tab](_img/view-permissions-project-level-membership.png) 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 ## Show members of the Project Collection Administrators group
@@ -78,7 +91,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -92,12 +105,14 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
 
@@ -108,6 +123,11 @@ To find out who is a member, check the **Security** settings at the collection l
 
 	![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -117,11 +137,8 @@ To find out who is a member, check the **Security** settings at the collection l
 <a name="find-owner"></a>
 
 ## Show who is the organization owner 
-::: moniker-end
 
 # [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -134,12 +151,6 @@ To find out who is a member, check the **Security** settings at the collection l
 	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
 	To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -155,10 +166,9 @@ To find out who is a member, check the **Security** settings at the collection l
 
 	To change the account owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
 
-
 ---
 
-
+::: moniker-end
 
 ## Try this next
 > [!div class="nextstepaction"]

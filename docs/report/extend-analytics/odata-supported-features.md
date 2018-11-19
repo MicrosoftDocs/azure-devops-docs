@@ -10,7 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 3/16/2018
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 
@@ -41,7 +42,7 @@ WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as
 $apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
 
 > [!NOTE]  
-> OData aggregation extensions are relatively new and not yet fully supported by various client tools. 
+> OData aggregation extensions are relatively new and not yet fully supported by some client tools. 
 
 ``` 
 Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))  

@@ -8,7 +8,7 @@ ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azdevserver-2019'
 ms.date: 03/20/2018
 ---
 

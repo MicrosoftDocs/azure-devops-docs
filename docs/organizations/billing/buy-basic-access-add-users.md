@@ -72,7 +72,7 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

@@ -1,7 +1,7 @@
 ---
-title: Search the Wiki in Azure DevOps and TFS
-titleSuffix: Azure DevOps & TFS 
-description: Search the wiki for a team project or across the account in Azure DevOps & Team Foundation Server
+title: Search the Wiki in Azure DevOps
+titleSuffix: Azure DevOps 
+description: Search the wiki for a team project or across the account in Azure DevOps
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
@@ -12,20 +12,27 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 11/15/2018
+ms.date: 11/19/2018
 ---
 
 # Search  Wiki
 
-**Azure DevOps Services | TFS 2018.2**
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
 With wiki search, you can search within a project wiki or across all wikis created for your organization.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> Wiki search is supported on TFS 2018.2 or later versions. 
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 Choose **Overview>Wiki** and enter your keyword or phrase into the search box.
 
@@ -40,16 +47,20 @@ Choose **Overview>Wiki** and enter your keyword or phrase into the search box.
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range="tfs-2018 || vsts"
+
 Simply open **Wiki** and enter your keyword or phrase into the search box.
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki search option](_img/search/search-wiki-horz.png)
 
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2).
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 ---
 
 The search feature quickly returns wiki pages by title or page content.

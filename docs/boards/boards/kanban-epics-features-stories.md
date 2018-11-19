@@ -1,16 +1,16 @@
 ---
 title: Add features & epics to a Kanban board
-titleSuffix: Azure Boards and TFS
-description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards
+description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
-monikerRange: '>= tfs-2013'
 ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
@@ -48,11 +48,11 @@ In this topic, you'll learn:
 
 Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [taskboard](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
  
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
@@ -81,6 +81,8 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
 1. 
 	![Open Features Kanban board](_img/features-epics/open-features-board-standard.png)
@@ -102,6 +104,11 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Kanban board, Agile template](_img/features-epics/features-board-standard.png)   
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 

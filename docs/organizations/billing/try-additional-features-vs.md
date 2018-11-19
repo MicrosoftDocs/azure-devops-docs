@@ -70,7 +70,7 @@ There's no penalty for buying early. Charges don't start until the trial ends.
 
 If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial:
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

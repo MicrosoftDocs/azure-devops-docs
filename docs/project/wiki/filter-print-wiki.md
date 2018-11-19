@@ -1,7 +1,7 @@
 ---
-title: Filter a wiki TOC or print a wiki page in Azure DevOps and TFS
-titleSuffix: Azure DevOps & TFS 
-description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps Services & Team Foundation Server 
+title: Filter a wiki TOC or print a wiki page in Azure DevOps
+titleSuffix: Azure DevOps 
+description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 11/15/2018  
+ms.date: 11/19/2018  
 ---
 
 # Filter the contents of a wiki or print a page
@@ -40,8 +40,7 @@ The **Print page** menu option allows you to use your browser print function to 
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> The **Print page** feature is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2).
-
+> The **Print page** feature is supported on TFS 2018.2 or later versions..
 ::: moniker-end
 
 > [!NOTE]  

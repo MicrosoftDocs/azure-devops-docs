@@ -30,7 +30,7 @@ To enable users to contribute to your project, you must add them as a member.
 
 ## Open Organization Settings>Users
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)

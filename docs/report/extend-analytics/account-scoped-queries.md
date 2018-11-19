@@ -4,14 +4,13 @@ titleSuffix: Azure DevOps Services
 description: How to guide to query the OData Analytics service for an organization or at the project-level in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
-ms.date: 11/13/2017
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: ">= tfs-2018"
+ms.date: 11/1/2018
 ---
 
 # Project and organization-scoped queries
@@ -27,17 +26,28 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Prerequistes 
 
-- You need to have an Azure DevOps project. If you don't have one, [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 - Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
 
 
 ## Project-scoped queries
 Base URL for project level queries:
 
+::: moniker range="vsts"
+
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+::: moniker-end
 
 The following project-scoped query will return the count of work items for a specific project:  
 

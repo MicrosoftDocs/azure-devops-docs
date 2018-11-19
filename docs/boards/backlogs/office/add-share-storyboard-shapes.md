@@ -1,6 +1,6 @@
 ---
 title: Add and share storyboard shapes
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to PowerPoint
 ms.prod: devops
 ms.technology: devops-agile

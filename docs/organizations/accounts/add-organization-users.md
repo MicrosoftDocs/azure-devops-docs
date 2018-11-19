@@ -61,7 +61,7 @@ link to the organization page.
 
 To give other users access to your organization, add their email addresses.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

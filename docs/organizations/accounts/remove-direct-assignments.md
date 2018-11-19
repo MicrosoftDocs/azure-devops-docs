@@ -23,7 +23,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 ## Remove assignments
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 

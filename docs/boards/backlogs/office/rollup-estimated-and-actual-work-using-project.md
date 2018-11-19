@@ -1,6 +1,6 @@
 ---
 title: Rollup estimated and actual work using Project
-titleSuffix: Azure Boards and TFS 
+titleSuffix: Azure Boards 
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: devops
 ms.technology: devops-agile

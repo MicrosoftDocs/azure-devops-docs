@@ -62,7 +62,7 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)  

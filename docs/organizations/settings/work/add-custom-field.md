@@ -10,22 +10,24 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 05/31/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018 
 ---
 
-# Add a custom field to a work item type    
+# Add a custom field to a work item type (Inheritance process)    
+
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
 > [!TIP]    
-> To customize a single project, always start by [creating an inherited process and migrating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
+> To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
-> [!IMPORTANT]  
-> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -86,7 +88,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 
 # [New navigation](#tab/new-nav)
-project
+
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -114,7 +116,8 @@ project
 	
 
 # [Previous navigation](#tab/previous-nav)
-project
+::: moniker range="vsts"
+
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -135,7 +138,14 @@ project
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---	
+
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
 

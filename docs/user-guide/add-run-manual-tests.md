@@ -25,7 +25,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
  
 ## Open your Kanban board
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
+[!INCLUDE [temp](../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 

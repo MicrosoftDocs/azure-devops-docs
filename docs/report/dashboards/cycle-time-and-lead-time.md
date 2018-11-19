@@ -8,17 +8,15 @@ ms.technology: devops-analytics
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts' 
-ms.date: 03/20/2018 
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= azdevserver-2019' 
+ms.date: 11/01/2018 
 ---
+<!-- TODO: switch to azdevserver-2019 -->
 
 # Lead time and cycle time control charts
-
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
-
-> [!NOTE]  
-> <b>Feature availability:</b> The Lead Time and Cycle Time widgets are only available for Azure DevOps at this time.
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
@@ -39,11 +37,11 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 ### Pre-requisites
 In order to configure the Cycle Time and Lead Time widgets, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 ### Configuration dialog 
-1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
+1. If you haven't yet added the [Analyics Marketplace extension](../analytics/analytics-extension.md), do that now. 
 
 2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
@@ -67,7 +65,6 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 
 ## Interpret the scatter-plot control charts 
-
 Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
 
 **Example Lead Time widget**  
@@ -77,7 +74,6 @@ The chart dots represent completed work items where their position on the horizo
 - Larger dots represent multiple work items with the same lead/cycle time 
 - Dot color corresponds to the work item type displayed in the legend
 - Dark gray dots correspond to a mix of work item types.
-  
 
 #### Summary elements include: 
 - Days on average (average lead time or cycle time) for the main work item types configured for the chart 
@@ -92,7 +88,6 @@ The chart dots represent completed work items where their position on the horizo
 
 
 ## Moving average and standard deviation calculations 
-
 The daily moving average value corresponds to the average of data points that fall within the moving average window. 
 The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
 
@@ -104,7 +99,6 @@ The standard deviation appears as a band that encompasses the moving average. St
 
 
 ## Related notes
-
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
 - [Kanban basics](../../boards/boards/kanban-basics.md)  

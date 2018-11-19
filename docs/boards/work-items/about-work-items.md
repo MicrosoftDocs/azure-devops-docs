@@ -7,9 +7,10 @@ ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 09/13/2018
+ms.date: 11/19/2018
 --- 
 
 # About work items 
@@ -18,8 +19,9 @@ ms.date: 09/13/2018
 
 You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the process used when your project was created.  
 
-::: moniker range=">= tfs-2018"
+
 ####In a nutshell:
+::: moniker range=">= tfs-2018"
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
@@ -33,9 +35,7 @@ You can use work items to track anything you need to track. Each work item repre
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2013 <= tfs-2017"
-####In a nutshell:
+::: moniker range="<= tfs-2017"
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
@@ -70,7 +70,7 @@ To learn more about processes and process templates, see [Choose a process](./gu
 ::: moniker range=">= tfs-2018" 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). To learn about the different tabs and sections of the form, see [Work item form controls](work-item-form-controls.md).
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2017" 
+::: moniker range="<= tfs-2017" 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field. To learn more about each field, see [Work item field index](./guidance/work-item-field.md).
 ::: moniker-end
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
@@ -80,17 +80,15 @@ Each form contains a number of controls as shown below and described in [Work it
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
-
 The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md). To learn about the different tabs and sections of the new form, see [Work item form controls](work-item-form-controls.md).
 
-# [New web form](#tab/new-web-form)
+**New web form**
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
-
-# [Old web form](#tab/old-web-form)
+**Old web form** 
 
 ![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
 
@@ -98,7 +96,7 @@ The new web form provides a number of experiences not provided with the old web 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 ![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
 ::: moniker-end
 
@@ -114,7 +112,6 @@ Use the web portal to accomplish the following tasks.
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
-
 
 ### Clients 
 Use these clients to support the following tasks. 
@@ -152,7 +149,7 @@ When your system is configured with Azure Active Directory (Azure AD), then the 
 You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="<= azdevserver-2019" 
 ###Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -161,7 +158,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
  
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 
 > [!NOTE]    
 >To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
@@ -211,7 +208,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevserver-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
@@ -236,9 +233,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 ## Related articles 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
-- - [About Kanban and Agile project management](../boards/kanban-overview.md) 
+- [About Kanban and Agile project management](../boards/kanban-overview.md) 
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
-- [Agile process](./guidance/agile-process.md)  
-- [Scrum process](./guidance/scrum-process.md)  
-- [CMMI process](./guidance/cmmi-process.md)  
+- [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
 - [Work item field index](./guidance/work-item-field.md)  

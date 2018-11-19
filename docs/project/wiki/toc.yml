@@ -32,7 +32,7 @@
     href: filter-print-wiki.md
   - name: Search Wiki content
     href: search-wiki.md
-  - name: Version, select, or unpublish a wiki
+  - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
   - name: Update Wiki pages offline 
     href: wiki-update-offline.md

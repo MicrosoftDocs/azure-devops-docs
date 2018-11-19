@@ -1,6 +1,6 @@
 ---
-title: Manage permissions for READMEs and wiki pages in Azure DevOps and TFS
-titleSuffix: Azure DevOps & TFS
+title: Manage permissions for READMEs and wiki pages in Azure DevOps
+titleSuffix: Azure DevOps
 description: Learn how to set permissions to grant or secure access to README files and you team project built-in wiki
 ms.technology: devops-collab
 ms.custom: wiki
@@ -11,13 +11,13 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
-ms.date: 11/15/2018
+ms.date: 11/19/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Manage README and Wiki permissions
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
 By default, all members of the Contributors group can edit README files and Wiki pages.
 
@@ -38,10 +38,10 @@ By default, all project contributors have read and edit access of the wiki repos
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes).
+> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">=tfs-2018"
 
 To open the Security dialog, choose **More>Security** on the wiki home page.
 

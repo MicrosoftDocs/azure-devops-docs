@@ -9,20 +9,24 @@ ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 11/19/2018
 ---
 
 # Add and manage fields for an inherited process   
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
 For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

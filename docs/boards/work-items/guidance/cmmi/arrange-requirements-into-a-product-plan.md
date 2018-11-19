@@ -1,6 +1,6 @@
 ---
 title: Arrange requirements in a product plan
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: CMMI process guidance, Create a plan from a set of requirements 
 ms.prod: devops
 ms.technology: devops-agile
