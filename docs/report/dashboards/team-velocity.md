@@ -12,20 +12,19 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/01/2018
+ms.date: 11/19/2018
 ---
-<!-- TODO: switch to azdevserver-2019 -->
-
 
 # Configure the Velocity widget 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). 
 
 **Example Velocity widget showing six sprints of velocity**  
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
-[!NOTE]
+> [!NOTE]
 > The Velocity widget is available by installing the [Analytics extension](../analytics/analytics-extension.md). For TFS 2018 and earlier, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
 
 Use this topic to learn: 
@@ -53,7 +52,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 
 2. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
-3. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
+3. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
 	
 	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
@@ -72,8 +71,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 	
 	> [!NOTE]
 	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date<br/>
-	For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final. 
-
+	For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
 	**Highlight work completed late**
 	Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
@@ -84,14 +82,15 @@ You configure your velocity widget for a single team. If you want to view the ve
 	> 
 	> It will take into account the value you enter for <i>Days past end date of iteration after which work is late<i>.
 		
-	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress. 
+	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress.  
+
 	For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
 
-6. Click Save when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
+6. Choose **Save** when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
    
 	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 2px solid #C3C3C3;" />  
 
- 
+
 ## Add other teams
 If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../organizations/settings/set-team-defaults.md). 
 

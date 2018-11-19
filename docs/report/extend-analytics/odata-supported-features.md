@@ -10,14 +10,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: ">= tfs-2018"
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/1/2018
 ---
 
 
 # Supported OData features and clauses 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for Azure DevOps.
 

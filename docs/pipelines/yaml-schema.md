@@ -365,7 +365,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
     clean: outputs | resources | all # what to clean up after the job runs
   container: string # container resource to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
-  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled' tasks before killing them
+  cancelTimeoutInMinutes: number # how much time to give run always even if cancelled tasks before killing them
   variables: { string: string } | [ variable ]
   steps: [ script | bash | powershell | checkout | task | stepTemplate ]
 ```

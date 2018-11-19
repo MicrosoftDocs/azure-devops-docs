@@ -8,7 +8,7 @@ ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 04/28/2017
 ---
 

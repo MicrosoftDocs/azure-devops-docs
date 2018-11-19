@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/02/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 #Upload reports to a team project

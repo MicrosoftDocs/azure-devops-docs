@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/14/2018
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Manually process the TFS data warehouse and analysis services cube

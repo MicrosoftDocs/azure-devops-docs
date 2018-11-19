@@ -8,13 +8,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: ">= tfs-2018"
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/1/2018
 ---
 
 # Aggregate work tracking data using the Analytics service   
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 You can get a sum of your work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
@@ -46,7 +46,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range=">= azdevserver-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

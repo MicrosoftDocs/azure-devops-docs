@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
-monikerRange: ">= tfs-2018"
+monikerRange: '>=azdevserver-2019'
 author: KathrynEE
 ms.date: 11/01/2018
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
 

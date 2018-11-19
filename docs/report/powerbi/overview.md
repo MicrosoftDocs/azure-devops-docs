@@ -16,7 +16,7 @@ ms.date: 03/28/2018
 
 # Power BI integration overview
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The integration of the Analytics service with Power BI makes getting the data into Power BI easy, so you can focus on creating amazing Power BI reports!
 

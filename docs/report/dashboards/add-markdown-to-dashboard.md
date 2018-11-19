@@ -9,12 +9,14 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015 || azdevserver-2019'
-ms.date: 11/01/2018
+monikerRange: '>= tfs-2015'
+ms.date: 11/19/2018 
 ---
 
 # Add Markdown to a dashboard
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
+
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+
 
 <a id="markdown-widget">  </a> 
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
@@ -25,11 +27,11 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 Here's an example:  
 <img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range="vsts"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
@@ -44,7 +46,7 @@ To add the markdown widget to a dashboard, you connect to your project using a [
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"  
+::: moniker range=">= azdevserver-2019"  
 Open a web browser window and choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
@@ -60,11 +62,20 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 
 # [Previous navigation](#tab/previous-nav)  
+
+::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+
 Open a web browser window and choose **Dashboards**. 
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -76,10 +87,10 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 > Requires TFS 2015.1 or later version.   
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
-To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). The widget catalog will automatically open.  
+::: moniker range=">= azdevserver-2019"
+To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  
 
-0. Drag the Markdown widget onto the dashboard where you want it located.  
+0. Add or drag the Markdown widget onto the dashboard where you want it located.  
 
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
@@ -165,14 +176,12 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 0. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 ::: moniker-end
- 
 
 
 ## Related articles
 - [Add and manage dashboards](dashboards.md)
 - [Add a widget to a dashboard](add-widget-to-dashboard.md)
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)
-- [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 

@@ -12,58 +12,54 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 11/01/2018
 ---
 
 # Widget catalog 
-
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
 > Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2015"
-
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
 
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 ::: moniker-end
 
-The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
-
 ::: moniker range="vsts"
+The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |Analytics  |Team-scoped  | Other |
 > |-------------|----------|---------|
-> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Test results trend (Advanced)](#test-trend-results-advanced)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
-
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Test results trend (Advanced)](#test-trend-results-advanced)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 ::: moniker-end
+
+
 
 ::: moniker range="azdevserver-2019"
+The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |Analytics  |Team-scoped  | Other |
 > |-------------|----------|---------|
-> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
-
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget)<br/><br/>**Build, test, release**<br/><br/>- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget)<br/><br/>**User-focused**<br/><br/>- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Team-scoped  |User-focused |  Build, test, release |Other |  
 > |----------|---------|---------|---------|
 > |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |  
- 
 ::: moniker-end
 
-::: moniker range="tfs-2015" 
+::: moniker range="tfs-2015"
+The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |Team-scoped  |User-focused |  Build, test, release |Other |  
@@ -71,7 +67,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 > |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |   
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -88,7 +84,6 @@ The following widgets are available to you. Team-scoped widgets display data bas
 Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
  
 ----
-
 ::: moniker-end
 
 
@@ -100,11 +95,12 @@ Displays the list of work items currently assigned to the currently logged in us
 
 Adds a tile to display a progress or trend chart that builds off a shared work item query.  
 From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
-
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
 ::: moniker-end
+
 ::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
@@ -115,20 +111,20 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
-Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  
+Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  <br/><br/>
 
 Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
-
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.    
 ::: moniker-end
+
 ::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-
 <a id="other-links-widget"></a> 
 ###Other links 
 
@@ -138,7 +134,6 @@ Provides links to the following features:
 - Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-team-defaults.md).
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
@@ -151,11 +146,9 @@ The following links are displayed when the corresponding resource is configured 
 - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
 
 ----
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-
 <a id="query-results-widget"></a> 
 ###Query results 
 	
@@ -185,7 +178,6 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 
 ::: moniker range=">= tfs-2015"
-
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
 ###Sprint burndown 
@@ -195,12 +187,10 @@ To create a shared query, see [Use the query editor to list and manage queries](
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 Teams [use the burndown chart to mitigate risk and check for scope creep](../../boards/sprints/sprint-burndown.md) throughout the sprint cycle. 
 
-
 ----
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-
 <a id="sprint-capacity-widget"></a> 
 ###Sprint capacity 
 
@@ -209,7 +199,6 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 
 Inserts the team's capacity bar chart for the current sprint.
 Teams [specify their capacity to plan and monitor their sprint resources](../../boards/sprints/set-capacity.md).  
-
 ----
 ::: moniker-end
 
@@ -220,7 +209,6 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ###Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
-
 ::: moniker-end
  
 ::: moniker range=">= tfs-2017"
@@ -251,11 +239,10 @@ Provides quick access to open the following Agile tools and team resources:
 ----
 ::: moniker-end
  
-
 ::: moniker range=">= azdevserver-2019"
 ## Analytics widgets
 
-To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](../analytics/analytics-extension.md). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 For an overview of each of these widgets, see [Widgets based on the Analytics Service](../analytics/analytics-widgets.md).
 
@@ -313,9 +300,7 @@ Each marker on the chart corresponds to one or more work items with a particular
   
 ----
 
-::: moniker-end
 
-::: moniker range="vsts"
 <a id="test-trend-results-advanced"></a>
 ### Test Results Trend (Advanced)
 
@@ -331,10 +316,6 @@ The widget provides advanced capabilities. It allows tracking advanced metrics f
 To learn more, see [Test trend widget](./configure-test-results-trend.md)
 
 ---- 
-
-::: moniker-end
-
-::: moniker range=">= azdevserver-2019"  
 
 <a id="velocity-widget"></a> 
 ###Velocity   
@@ -357,7 +338,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 
 ![Code tile widget](_img/widget-code-tile.png)
 
-Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply click the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
+Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
 ::: moniker-end
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
@@ -406,7 +387,7 @@ Requires TFS 2015.2 or later version.
 
 Adds a tile to display a histogram of all builds run for the configured build pipeline.
 From the configuration dialog, select the build you want to monitor. 
-Hover over a bar to learn how long the build took to complete. Click the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -426,7 +407,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. 
 
-In order view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can click any cell to see a more [detailed](../../pipelines/test/review-continuous-test-results-after-build.md) view for the selected environment.
+In order view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can choose any cell to see a more [detailed](../../pipelines/test/review-continuous-test-results-after-build.md) view for the selected environment.
 
 ::: moniker-end
 ::: moniker range="tfs-2017"
@@ -487,6 +468,8 @@ Requires TFS 2017.2 or later version.
 ----
 ::: moniker-end
 
+
+ 
 ::: moniker range=">= tfs-2017"
 
 <a id="test-results-widget"></a>
@@ -525,13 +508,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 <a id="markdown"></a>
 ### Markdown 
 
-
 ![Markdown widget](_img/widget-markdown-tile.png)
-
-<!---
-> [!NOTE]  
-> **Feature availability:** For Azure DevOps and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
--->
 
 ::: moniker-end
 
@@ -554,7 +531,7 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 ![Team members widget](_img/widget-team-members.png)
 
 Shows team member profiles and, on-hover, their user alias.
-For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).  
+For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md). 
 
 > [!NOTE]  
 > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members). 
@@ -610,7 +587,7 @@ Requires TFS 2015.1 or later version.
 
 ![How to links widget](_img/widget-how-to-links.png)
 
-Provides links to the **Work**, **Code**, and **Build** or **Build-Release** pages and reference documentation on how to add charts.
+Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
 
 ::: moniker-end
 ::: moniker range="tfs-2015"

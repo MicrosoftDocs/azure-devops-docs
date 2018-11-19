@@ -9,12 +9,13 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azdevserver-2019 || vsts'
-ms.date: 11/01/2018 
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018 
 ---
 
 # Configure a Burndown or Burnup widget 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create burndown or burnup charts for any type of scope, worked on by any number of teams, within any defined period of time. Burndown charts focus on remaining work within a specific time period, while Burnup charts focus on completed work. 
 
@@ -29,7 +30,7 @@ Use this topic to learn how to:
 > * How to work with the burndown chart    
 > * How to configure a sprint burndown     
 
-[!NOTE]
+> [!NOTE]
 > The Burnup and Burndown widgets are available by installing the [Analytics extension](../analytics/analytics-extension.md)
 
 A burndown chart is a useful tool to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. A bug burndown chart can also be used to track completion of a set of bugs by a certain date. 
@@ -70,10 +71,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 1. If you haven't yet added the [Analytics Marketplace extension](../analytics/analytics-extension.md), do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. Click the ![dotdotdot actions](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and choose the Configure option to open the configuration dialog.  
-
-> [!NOTE]   
-> While the Burndown and Burnup widgets use the Analytics service, access to the service for other report purposes is not supported at this time.
+1. Choose the ![  ](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.  
 
 ## Choose the teams and work items to chart  
 1. Modify the **Title** of the widget and select your preferred **Size**. The Burndown widget can scale up to 10x10.    
@@ -195,9 +193,9 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |---------|------------| 
 |**Date&nbsp;range**|The  start and end date of the burndown. When burndown is plotted by iterations the end date is the end of the last iteration |
 |**Main&nbsp;metric**|Current remaining work based on the selected burndown method.| 
-|**%&nbsp;Completed**|The percentage of work completed based on original scope. You may click or press **% Completed** to see the full list of completed work items.| 
+|**%&nbsp;Completed**|The percentage of work completed based on original scope. You may choose or press **% Completed** to see the full list of completed work items.| 
 |**Average&nbsp;burndown**|Average work completed per interval or iteration.| 
-|**Items&nbsp;not&nbsp;estimated**|Shows only when burning down on a Sum of a field. It represents the current number of items that do not have a value in the selected **Burndown&nbsp;on** field. You may click or press the number to see a full list of work items without estimates.|
+|**Items&nbsp;not&nbsp;estimated**|Shows only when burning down on a Sum of a field. It represents the current number of items that do not have a value in the selected **Burndown&nbsp;on** field. You may choose or press the number to see a full list of work items without estimates.|
 |**Total&nbsp;Scope&nbsp;Increase** |show how much work was added to the original scope since the burndown started.|
 |**Projected&nbsp;completion** |Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it will draw a vertical line on the interval/interation when the work should be complete. If the projected completion date is after the specified **End Date**, then it will display the projected completion date and how many additional intervals/iterations are needed to complete the work.|
 |**Original&nbsp;Scope** |Original scope is all remaining work as of the specified **Start Date**. The chart burns down from the original scope. **% Complete** and **Total Scope Increase** are calculated based on your original scope.|
@@ -244,7 +242,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 > [!div class="nextstepaction"]
 > [Burndown guidance](burndown-guidance.md) 
 
-## Related notes 
+## Related articles 
 * [Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../organizations/settings/set-team-defaults.md)
 * [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)

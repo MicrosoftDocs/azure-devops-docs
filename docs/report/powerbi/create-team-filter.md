@@ -9,13 +9,13 @@ ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
 ms.topic: sample
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 05/18/2018 
 ---
 
 # Create a Power BI report filtered by team using a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Analytics views support field criteria to filter work items based on teams. However, there is no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Due to this one-to-many associations, the Analytics service doesn't provide a team-specific field. 
 
