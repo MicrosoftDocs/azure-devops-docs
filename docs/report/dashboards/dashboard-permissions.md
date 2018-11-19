@@ -25,9 +25,15 @@ To learn more about adding and viewing dashboards, see [Add and manage dashboard
 > [!TIP]    
 > If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default project team. For details, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). 
 
+::: moniker range=">= azdevserver-2019"
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards.
+::: moniker-end
 
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the view, edit, and manage permissions for all team dashboards for members of your team. 
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/new-navigation-7.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range=">= azdevserver-2019"
@@ -59,37 +65,22 @@ By default, all team members have permissions to edit dashboards defined for the
 > The set dashboard permissions feature is available for TFS 2017.1 and later versions. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards. 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 <= tfs-2018 || vsts"
-
-1. To change the permissions for a dashboard, open the dashboard and then choose the ![gear icon](_img/icons/gear-icon.png) gear icon for the dashboard. 
-
-	For example, here we open the Settings dialog for the Fabrikam Fiber team's Overview dashboard. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Open the dashboards settings dialog](_img/dashboards/open-dashboard-settings-dialog.png) 
-	   
-2. Choose the **Manage permissions for this dashboard** link.  
+::: moniker range="vsts"
+0. Open the **Mine** or **All** dashboards page, open the ![actions icon](../../_img/icons/actions-icon.png) actions menu for the dashboard, and choose the **Security** option. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the dashboards settings dialog](_img/dashboards/dashboard-settings-dialog.png)   
+	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)
 
-3. Change the permission settings shown as needed. These permissions are set for members of your team for the specific dashboard. 
+0. Add a user or group and set the permissions for that group. To learn more about adding groups or changing permissions, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md).
  
-	Here we change the **Delete dashboard** permission to Allow.  
+	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open the dashboards settings dialog](_img/dashboards/set-permissions-dialog.png)  
+ 	> [!div class="mx-imgBorder"]  
+	> ![Permissions for Analytics dashboard dialog](_img/set-permissions/dashboard-permission-dialog.png)
 
-4. Choose **Save** to save your changes and dismiss the Settings dialog. 
+0. Choose **Save changes** and then **Close**. 
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the view, edit, and manage permissions for all team dashboards for members of your team. 
-
-::: moniker-end
-
-
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
 1. To change the permissions for a dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
@@ -116,13 +107,10 @@ By default, all team members have permissions to edit dashboards defined for the
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"
-
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported.md)] 
-
 ::: moniker-end
+
 ---
-
-
 
 ## Related articles
 

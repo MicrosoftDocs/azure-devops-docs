@@ -9,7 +9,7 @@ ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd
 ms.author: kaelli
 author: KathrynEE
 ms.manager: douge
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Status Excel Report

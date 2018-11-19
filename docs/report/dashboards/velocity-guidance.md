@@ -13,7 +13,8 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/01/2018
 ---
 
-# Velocity metrics and usage guidance 
+# Velocity metrics and usage guidance  
+
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
  
 Velocity provides a useful metric for these activities:  
@@ -56,9 +57,9 @@ For example, you can create a chart of the number of Product backlog items and b
 > [!div class="nextstepaction"]
 > [Configure or view velocity chart](team-velocity.md) 
 
-See also:
-- [Forecast your sprints](../../boards/sprints/forecast.md)
-- [Plan your sprint](../../boards/sprints/assign-work-sprint.md).
+## Related articles  
+- [Forecast your sprints](../../boards/sprints/forecast.md) 
+- [Plan your sprint](../../boards/sprints/assign-work-sprint.md) 
 
 ### Industry resources
 - [How Should We Use Velocity?](https://www.scrumalliance.org/community/articles/2013/2013-april/how-should-we-use-velocity)  

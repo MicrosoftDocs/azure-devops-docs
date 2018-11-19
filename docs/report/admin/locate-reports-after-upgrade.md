@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 

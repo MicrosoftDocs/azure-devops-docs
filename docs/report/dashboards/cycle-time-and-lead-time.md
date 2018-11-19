@@ -11,12 +11,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019' 
-ms.date: 11/01/2018 
+ms.date: 11/19/2018 
 ---
-<!-- TODO: switch to azdevserver-2019 -->
+
 
 # Lead time and cycle time control charts
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
@@ -47,7 +49,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 3. If you haven't yet [added the widgets to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
-4. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
@@ -57,7 +59,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-7. Click Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+7. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
@@ -83,8 +85,8 @@ The chart dots represent completed work items where their position on the horizo
 
 #### Interactive elements include:  
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
-- Click a dot to open the work item or query that lists the work items   
-- To filter the chart, click a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+- Choose a dot to open the work item or query that lists the work items   
+- To filter the chart, choose a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 

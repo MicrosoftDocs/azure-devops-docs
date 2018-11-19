@@ -9,13 +9,13 @@ ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 09/10/2018
 ---
 
 # Connect using the Power BI OData feed
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)] 
 
 You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any Azure DevOps organization that has alternate credentials enabled. OAuth is currently not supported. 
 

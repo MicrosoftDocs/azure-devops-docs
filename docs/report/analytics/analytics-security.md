@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: "azdevserver-2019 || vsts"
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/13/2017
 ---
 

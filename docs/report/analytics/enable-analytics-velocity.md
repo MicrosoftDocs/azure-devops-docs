@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: ">= azdevserver-2019"
-ms.date: 08/06/2018
+ms.date: 11/19/2018 
 ---
 
 
@@ -27,16 +27,31 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-- You must have a project defined for an Azure DevOps organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
+::: moniker range="vsts"
+
+- You must have a project defined for an Azure DevOps organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).  
+- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md).
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). 
+
+::: moniker-end
+
+
+::: moniker range="azdevserver-2019"
+
+- You must have a project. If you don't have one, [add one now](../../organizations/projects/create-project.md). 
+- You must be a member of the project. If you haven't been added yet, [get added now](../../organizations/security/add-users-team-project.md).
+- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). - To add a widget to a dashboard, you must be a team admin, a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions).
+- The [Analytics Marketplace extension](../analytics/analytics-extension.md) must be installed. 
+
+::: moniker-end
+
 
 ## Add the Velocity widget to your dashboard 
 
 To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a project, see [Create a project](../../organizations/projects/create-project.md)
 
-# [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)  
 
 0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
