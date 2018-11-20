@@ -74,6 +74,18 @@ If you're running in a container, the agent host and container may be running di
 </tr>
 
 <tr>
+<td>Agent.OSArchitecture</td>
+<td>
+The operating system processor architecture of the agent host. Valid values are:
+<ul>
+<li>X86
+<li>X64
+<li>ARM
+</ul>
+</td>
+</tr>
+
+<tr>
 <td>Agent.ToolsDirectory</td>
 <td>
 The directory used by tasks such as [Node Tool Installer](../../tasks/tool/node-js.md) and [Use Python Version](../../tasks/tool/use-python-version.md) to switch between multiple versions of a tool.

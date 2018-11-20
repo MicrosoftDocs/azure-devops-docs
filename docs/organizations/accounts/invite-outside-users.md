@@ -1,5 +1,5 @@
 ---
-title: Invite external users to Azure DevOps
+title: About inviting external users to Azure DevOps
 titleSuffix: Azure DevOps
 description: Security and data access considerations when you add an external or outside user to Azure DevOps
 ms.prod: devops
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 11/20/2018
 monikerRange: 'vsts'
 ---
 
-# Invite external users to Azure DevOps
+# About inviting external users to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -45,5 +45,5 @@ These resources and groups are required for the proper functioning of a member o
 
 ### Related articles
 
-* [Add external users] to Azure DevOps (add-external-user.md)
-* [Add team members] to Azure DevOps (add-team-members.md)
+* [Add external users to Azure DevOps](add-external-user.md)
+* [Add members to projects in Azure DevOps](add-team-members.md)

@@ -85,12 +85,6 @@ We provide a library, _azure-pipelines-task-lib_, that should be used to create 
 npm install azure-pipelines-task-lib --save
 ```
 
-Additionally, in order to create your extension you must have the VSS Web Extension SDK installed:
-
-```
-npm install vss-web-extension-sdk
-```
-
 #### Add typings for external dependencies
 
 Ensure that TypeScript typings are installed for external dependencies.
