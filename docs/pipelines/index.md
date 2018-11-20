@@ -426,7 +426,6 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-
             <li>
                 <a href="https://docs.microsoft.com/azure/machine-learning/service/">
                     <div class="cardSize">
@@ -445,7 +444,6 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-
             <li>
                 <a href="targets/azure-stack.md">
                     <div class="cardSize">
