@@ -67,7 +67,7 @@ $(Build.SourcesDirectory)/environment-variables.txt
 drop
 ```
 
-* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ---
 
@@ -105,7 +105,7 @@ $(Build.SourcesDirectory)/environment-variables.txt
 drop1
 ```
 
-* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
@@ -121,7 +121,7 @@ $(Build.SourcesDirectory)/environment-variables.txt
 drop2
 ```
 
-* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 The completed build delivers two sets of artifacts.
 
@@ -184,7 +184,7 @@ $(Build.ArtifactStagingDirectory)
 drop
 ```
 
-* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ---
 
@@ -239,7 +239,7 @@ $(System.ArtifactsDirectory)
 
 ## Tips
 
-* **Artifact publish location** argument: **Azure Artifacts/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Artifacts or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
+* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
 
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
