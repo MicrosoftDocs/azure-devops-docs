@@ -47,9 +47,43 @@ running 4 agents apiece.
 <a name="download-configure"></a>
 ## Download and configure the agent
 
+::: moniker range="vsts"
+
+### Azure Pipelines
+
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
+[!INCLUDE [include](_shared/agent-pools-tab.md)]
+</li>
+
+<li>Click **Download agent**.</li>
+
+<li>On the **Get agent** dialog box, click **Windows**.</li>
+
+<li>On the left pane, select the processor architecture of your machine (x86 or x64). </li>
+
+<li>On the right pane, click the **Download** button.
+
+<li>Follow the instructions on the page to download the agent.</li>
+
+<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+
+</ol>
+
+> [!Tip]
+> Choose the processor according to the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/en-us/windows/client-management/windows-version-search).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+<ol>
+<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
+<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
@@ -64,6 +98,8 @@ running 4 agents apiece.
 <li>Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 
 </ol>
+
+::: moniker-end
 
 > [!Note]
 > We recommend you configure the agent from an elevated Command Prompt.
