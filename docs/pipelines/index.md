@@ -426,6 +426,26 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
+
+            <li>
+                <a href="https://docs.microsoft.com/azure/machine-learning/service/">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card ready x-hidden-focus">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/azure/media/index/MachineLearning.svg"); background-size: cover;'>
+                                        <img style="display: none;" alt="Azure Machine Learning logo" src="https://docs.microsoft.com/azure/media/index/MachineLearning.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/azure/media/index/MachineLearning.svg">
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3><br />Azure Machine Learning service</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
             <li>
                 <a href="targets/azure-stack.md">
                     <div class="cardSize">
