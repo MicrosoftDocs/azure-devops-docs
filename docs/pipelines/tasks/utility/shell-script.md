@@ -9,7 +9,7 @@ ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 11/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -81,7 +81,9 @@ Select if you want this task to fail if any errors are written to the StandardEr
 
 ## Example
 
-Create ```test.sh``` at the root of your repo:
+Create ```test.sh``` at the root of your repo.
+We recommend creating this file from a Linux environment (such as a real Linux machine or Windows Subsystem for Linux) so that line endings are correct.
+Also, don't forget to `chmod +x test.sh` before you commit it.
 
 ```sh
 #!/bin/bash
@@ -92,9 +94,7 @@ ls -1 $AGENT_WORKFOLDER
 echo "AGENT_BUILDDIRECTORY is $AGENT_BUILDDIRECTORY"
 echo "AGENT_BUILDDIRECTORY contents:"
 ls -1 $AGENT_BUILDDIRECTORY
-echo "BUILD_SOURCESDIRECTORY is $BUILD_SOURCESDIRECTORY"
-echo "BUILD_SOURCESDIRECTORY contents:"
-ls -1 $BUILD_SOURCESDIRECTORY
+echo "SYSTEM_HOSTTYPE is $SYSTEM_HOSTTYPE"
 echo "Over and out."
 ```
 
@@ -112,6 +112,7 @@ On the [Build tab](../../index.md) of a build pipeline, add this task:
 </tr>
 </table>
 
+This example also works with release pipelines.
 
 ## Open source
 
