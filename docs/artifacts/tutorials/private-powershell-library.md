@@ -18,12 +18,19 @@ monikerRange: 'vsts'
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
 > [!NOTE]
-> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../license-azure-artifacts.md).
+
+In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShell repository that your team can download and upload PowerShell modules to. You'll complete the following steps:
+
+>[!div class="checklist"]      
+> * Create a Personal Access Token (PAT) to authenticate other services with Azure DevOps Services
+> * Create a feed within Azure Artifacts that will be used to store your PowerShell modules
+> * Create, package, and send a PowerShell module to your Azure Artifacts Feed
+> * Connect to the feed from PowerShell to see and download your modules  
 
 ## Prerequisites
 
-1. [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
-
+1. [The NuGet CLI](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)
 2. [An Azure DevOps Services Account](https://azure.microsoft.com/en-us/services/devops/)
 
 ## Create a PAT to get command-line access to Azure DevOps Services
@@ -31,8 +38,11 @@ Azure Artifacts provides an easy way to share your PowerShell scripts and books 
 The first step is to create a PAT through the Azure DevOps Services UI to authenticate your command-line with the service.
 
 1. Head to your Azure DevOps Services organization: `https://dev.azure.com/<org_name>`
+
 2. From your home page, open your profile. Go to your security details:
+
     <img alt="Go to Azure DevOps organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+
 3. Create a personal access token.
 
    <img alt="Add a personal access token" src="../../repos/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
@@ -43,7 +53,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
     <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-5.  Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes) that this token will authorize for *your specific tasks*.
+5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will authorize for *your specific tasks*.
 
     For this tutorial, you will only need **Packaging: Read, write & manage** permissions, but you may want to add more if you'd like to use this token for other tasks.
 
@@ -56,11 +66,14 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 A feed is a central repository that can store multiple packages of different types. We will need to create a feed in order to store packages, which will be PowerShell Modules in this scenario.
 
 1. Navigate to **Azure Artifacts** from your Azure DevOps Services organization.
+
 2. On your first visit to **Azure Artifacts**, you'll be welcomed with an image telling you to create a new feed, click _+ New feed_. If you already have feeds in **Azure Artifacts**, simply click _+ New feed_ near the top of the UI.
+
 3. In the dialog:
     * **Name**: Give the feed a name.
     * **Visibility**: Choose who can use your feed. The options are either: all people in your organization or, only you. Choose People in your organization for this scenario.
     * **Packages from public sources**: This is for enabling upstream sources like NuGet or NPM registries, this option is not applicable in this scenario, you can keep the default choice.
+    
 4. Click _Create_. 
 
 Now that you have the feed created that will act as your PowerShell repository, let's create and package a PowerShell module to store.
@@ -95,7 +108,11 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     New-ModuleManifest -Path .\Get-Hello.psd1
     ```
 
-    This will write the module manifest within the file specified (`Get-Hello.psd1`). Within this new file, find the _Nested Modules_ field. Within that field place the path to your `Get-Hello.psm1` file. We can also put this within the _Root-Module_ section of our new manifest. If we were to want to package different script files, we could add these to the _FunctionsToExport_ section of our module.
+    This will write the module manifest within the file specified (`Get-Hello.psd1`).
+
+3. Within the new `Get-Hello.psd1` file, find the _Nested Modules_ field. Within that field place the path to your `Get-Hello.psm1` file. 
+
+> We can also put this within the _Root-Module_ section of our new manifest. If we were to want to package different script files, we could add these to the _FunctionsToExport_ section of our module.
 
 ### Package and send the module
 
@@ -109,7 +126,7 @@ We now have the module and the module manifest. We are ready to package it and s
 
     The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
 
-    * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_.
+    * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
     * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
     ```
@@ -133,35 +150,35 @@ We now have the module and the module manifest. We are ready to package it and s
 
 3. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
 
-     Package the module with the defined parameters within the nuspec file:
+     Package the module with the defined parameters within the `.nuspec` file:
     ```powershell
     nuget pack Get-Hello.nuspec
     ```
 
-    Add the Azure DevOps Services repo as a source for NuGe:
+    Add the Azure DevOps Services repo as a source for NuGet:
     ```powershell
-    nuget.exe sources Add -Name "PowershellModules" -Source "https://dev.azure.com/<org_name>/_packaging/PowershellModules/nuget/v2"
+    nuget.exe sources Add -Name "PowershellModules" -Source "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v3/index.json"
     ```
 
-    Push the file to the NuGet feed in Azure Artifacts. Change the name of the .nupkg file:
+    Push the file to the NuGet feed in Azure Artifacts. You will have to change the name of the `.nupkg` file:
     ```powershell
     nuget.exe push -Source "PowershellModules" -ApiKey AzureDevOpsServices Get-Hello.nupkg
     ```
 
-After the `nuget.exe push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure DevOps Services.
+After the `nuget.exe push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure Artifacts.
 
 ## Connecting to the feed as a PowerShell repo
 
 We now have a private repository within Azure Artifacts that we can push our PowerShell modules to and we have a module that we can install. In the next step, we will connect PowerShell to our new Azure Artifacts feed so we can publish our modules and install modules published from others on our team.
 
 1. Open a PowerShell session as an Administrator
-2. Run the following command within PowerShell. The script will create a new Powershell Repository named PowershellAzureDevopsServices and sets the Publish and Source Location as the links to the NuGet feed. This link can also be found by clicking on “Connect to Feed” within the feeds page in Azure Artifacts.
+2. Run the following command within PowerShell. The script will create a new Powershell Repository named `PowershellAzureDevopsServices` and sets the Publish and Source Location as the links to the NuGet feed. This link can also be found by clicking on _Connect to Feed_ within the feeds page in Azure Artifacts.
 
     ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://dev.azure.com/<org_name>/_packaging/PowershellModules/nuget/v2" -PublishLocation "https://dev.azure.com/<org_name>/_packaging/PowershellModules/nuget/v2" -InstallationPolicy Trusted
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted
     ```
-
-    > **NOTE:** You will notice above that the Publish and Source location both reference Version 2 of NuGet. At the time of writing this article, there were some discrepancies that would happen with Version 3 of NuGet.
+    
+    > **NOTE:** You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
 
 3. We can confirm we have a repository by running:
 
@@ -169,7 +186,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     Get-PSRepository
     ```
 
-4. We now have a personal repository set up, but we will need credentials to be able to access it. Within PowerShell, run the following to take in your Personal access token and then use it within a PSCredential opbject which we will use to securely access our new feed.
+4. We now have a personal repository set up, but we will need credentials to be able to access it. Within PowerShell, run the following to take in your Personal access token and then use it within a PSCredential object which we will use to securely access our new feed.
 
     ```powershell
     $password = ConvertTo-SecureString 'YOUR PERSONAL ACCESS TOKEN FROM THE CREATING THE PIPELINE STEP' -AsPlainText -Force
@@ -188,8 +205,10 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```powershell
     Install-Module Get-Hello -Repository PowershellVSTS -Credential $credsAzureDevopsServices
     ```
+
+    You can check for your installed module:
     ```powershell
-    Get-Modules -ListAvailable Get-Hello
+    Get-Module -ListAvailable Get-Hello
     ```
 
 We now have a repository that pulls down NuGet packages with our PowerShell modules and scripts that we can have version control, access management and best of all, available to all our other developers.
