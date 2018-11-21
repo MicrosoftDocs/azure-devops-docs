@@ -216,4 +216,3 @@ We now have a repository that pulls down NuGet packages with our PowerShell modu
 ## Credit
 
 Credit to the [well-written article on Medium](https://medium.com/@jsrice7391/using-vsts-for-your-companys-private-powershell-library-e333b15d58c8) that was used as a source for this tutorial.
-
