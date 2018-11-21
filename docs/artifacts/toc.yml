@@ -128,3 +128,7 @@
     href: reference/limits.md
   - name: Use the .artifactignore file
     href: reference/artifactignore.md
+- name: Resources
+  items: 
+  - name: Where is Package Management?
+    href: where-is-package-management.md
