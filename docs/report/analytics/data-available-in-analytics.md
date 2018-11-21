@@ -36,13 +36,6 @@ Currently, you can access the following data from the Analytics Service. This in
 <td>Same as Azure DevOps</td>
 <td>Rollup - Q2, 2019</td>
 </tr>
-
-<tr>
-<td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
-<td>[Widgets](./analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](../powerbi/overview.md)</td>
-<td>Same as Azure DevOps</td>
-<td>Rollup - Q2, 2019</td>
-</tr>
 <tr>
 <td>[Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</td>
 <td>[Test Analytics](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=vsts)</td>
