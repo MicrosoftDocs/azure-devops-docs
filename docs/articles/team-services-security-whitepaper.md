@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Services - Data Protection
+title: Azure DevOps - Data Protection
 description: Learn how Microsoft protects your Azure DevOps projects and data. Microsoft is committed to making sure that your Azure DevOps projects stay safe and secure, without exception. 
 ms.prod: devops
 ms.topic: article
@@ -7,40 +7,40 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 11/05/2018
+ms.date: 11/21/2018
 monikerRange: 'vsts'
 ---
 
 # Data protection overview
 
-**Azure DevOps Services**
+**Azure DevOps**
 
-Azure DevOps is a cloud-hosted application for your development projects, from planning through deployment. Based on the capabilities of Team Foundation Server, with additional cloud services, Azure DevOps manages your source code, work items, builds, tests, and much more. Azure DevOps uses Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. Because important data is at stake, this white paper discusses the steps that Microsoft takes to keep your Azure DevOps projects safe, available, secure, and private. In addition, it describes the role you play in keeping your Azure DevOps projects safe and secure.
+Azure DevOps is a cloud-hosted application for your development projects, from planning through deployment. Based on the capabilities of Team Foundation Server, with additional cloud services, Azure DevOps manages your source code, work items, builds, tests, and much more. Azure DevOps uses Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. Because important data is at stake, this white paper discusses the steps that Microsoft takes to keep your Azure DevOps projects safe, available, secure, and private. In addition, it describes the role you play in keeping your projects safe and secure.
 
 This white paper is part of our effort to illuminate how we manage and protect your data and is intended for organization administrators and IT professionals who manage their project assets daily. It will be most useful to individuals who are already familiar with Azure DevOps and want to know more about how Microsoft protects the assets that are stored in Azure DevOps.
 
 ## Our commitment
 
-Microsoft is committed to ensuring that your Azure DevOps projects remain safe
-and secure, without exception. When stored in Azure DevOps Services, your projects benefit
+Microsoft is committed to ensuring that your projects remain safe
+and secure, without exception. When stored in Azure DevOps, your projects benefit
 from multiple layers of security and governance technologies,
 operational practices, and compliance policies. We enforce data privacy
 and integrity both at rest and in transit.
 
-As we look at the broader landscape of threats facing Azure DevOps Services customers,
+As we look at the broader landscape of threats facing Azure DevOps customers,
 they boil down to four basic categories: data availability, service
 availability, service security, and data privacy. We will investigate
 each of these categories to explore specific threats and explain what
-Azure DevOps Services does to address them through both the technology that we use and the
+Azure DevOps does to address them through both the technology that we use and the
 way we put it into practice. However, we will first describe how data is
-stored and how Azure DevOps Services manages access to your data.
+stored and how Azure DevOps manages access to your data.
 
 Because proper data protection also requires active engagement of
 customer administrators and users, we also discuss steps you should take
 to protect your project assets from unauthorized disclosure and
 tampering. Much of this has to do with being explicit about granting
 permissions to user access points in order to have confidence that only
-the right people are accessing data within your Azure DevOps Services.
+the right people are accessing data within Azure DevOps.
 
 Regardless of your approach, you should consider all data potentially
 "at risk" no matter where it is or how it is being used; this is true
@@ -52,13 +52,13 @@ security management policy.
 
 ## Built on Azure
 
-![Azure DevOps Services high-level architecture diagram ](./_img/team-services-security-whitepaper/Figure1_VSOArchitecture.png)
+![Azure DevOps high-level architecture diagram ](./_img/team-services-security-whitepaper/Figure1_VSOArchitecture.png)
 
 Azure DevOps is hosted entirely in Azure data centers and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This lets us focus on the unique aspects of running Azure DevOps while taking advantage of the state-of-the-art capabilities, protection, and industry certifications available from the Azure platform.
 
 Azure DevOps uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval needs, we use Azure Blob (binary large objects) storage and Azure SQL data storage. To provide a seamless experience, we work hard to abstract these details from the end user. However, to discuss the details surrounding Azure DevOps approach to data protection, some background in these elements is important.
 
-**Azure Blob storage** is generally used to store large chunks of unstructured data. All Azure DevOps projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most Azure DevOps projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
+**Azure Blob storage** is generally used to store large chunks of unstructured data. All projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most Azure DevOps projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
 [Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
@@ -78,7 +78,7 @@ To protect data in the case of hardware or service failures, Microsoft Azure sto
 > Please note the following regarding data redundancy and fail over:
 > * There is an inherent delta measured in minutes when we replicate your data between the primary and secondary region
 > * Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we’ll opt to not fail over so that customer data is not lost
-> * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month 
+> * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month
 > * Because there is only one region in Brazil, customer data in Brazil is replicated to South Central US for disaster recovery purposes
 
 ### Mistakes happen
@@ -105,12 +105,12 @@ While we strive for the service to be available 100% of the time, sometimes thin
 
 Azure DevOps live-site management processes are crafted to ensure a deep focus on service health and customer experience. Our processes minimize our time to detect, respond to, and mitigate impacting issues. Ownership for Live site is shared across all engineering disciplines, so there are continual improvements evolving out of direct experience. This means that monitoring, diagnostics, resiliency, and quality assurance processes are improved over time. Live-site management in Azure DevOps is broken into three distinct tracks, shown as follows:
 
-![Azure DevOps Services live-site management process](./_img/team-services-security-whitepaper/Figure2_VSOSiteManagementProcess.png)
+![Azure DevOps live-site management process](./_img/team-services-security-whitepaper/Figure2_VSOSiteManagementProcess.png)
 
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, we will even contact the customer directly to understand their experience and work with them to improve the service from their vantage point.
 
 We understand that availability of our service is an integral part of your team's success. Because of this, we publish a service level agreement (SLA) and provide a financial guarantee to ensure we meet this agreement each month. For more specifics on our SLA and financial guarantees, please see
-[Azure DevOps Services SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
+[Azure DevOps SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
 
 Sometimes our partner teams or dependencies have incidents that affect Azure DevOps. All our partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
 
@@ -134,7 +134,7 @@ Your credentials in Azure DevOps are stored using industry best practices. Learn
 
 ### Reporting security issues
 
-If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps Services service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/organizations/security/ff852094) page.
+If during your penetration testing you believe you have discovered a potential security flaw related to the Azure DevOps service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/organizations/security/ff852094) page.
 
 >[!IMPORTANT]
 >While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683).
@@ -175,9 +175,9 @@ We want you to have confidence that your data is being handled appropriately and
 ### The General Data Protection Regulation (GDPR)
 
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. The GDPR's main objective is to strengthen the protection and security of your personal data and replaced the Directive and all local laws relating to it. Azure DevOps is relied upon as a system of record with strict integrity, traceability, and audit rules. We view all information within Azure DevOps to be business critical and therefore cannot be modified from its original state. These existing obligations affect our delete and retention obligations for GDPR.
-As such, we do not support GDPR delete requests from within Azure DevOps. We have ensured that when an entire Azure DevOps organization is deleted that all associated data and telemetry about that organization and its members are removed from our system (after the requisite 30-day soft-delete period).
+As such, we do not support GDPR delete requests from within Azure DevOps. We have ensured that when an entire organization is deleted that all associated data and telemetry about that organization and its members are removed from our system (after the requisite 30-day soft-delete period).
 
-To learn more about how Azure DevOps Services honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+To learn more about how Azure DevOps honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
 To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
@@ -196,11 +196,11 @@ Some customers require that their data be stored in a particular geographic loca
 
 From time to time, Microsoft employees need to obtain access to customer data stored within Azure DevOps. As a precaution, all employees who have or may ever have access to customer data must pass a background check, which verifies previous employment and criminal convictions. In addition, we permit access to the production systems only when there's a live site incident or other approved maintenance activity, which is logged and monitored.
 
-Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), account data (information used when signing up for or administering your organization) and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
+Since not all data within our system is treated the same, data is classified to distinguish between customer data (what you upload to Azure DevOps), organization data (information used when signing up for or administering your organization), and Microsoft data (information required for or collected through the operation of the service). Based on the classification we control usage scenarios, geolocation requirements, access restrictions and retention requirements.
 
 ### Microsoft promotional use
 
-From time to time, we want to contact customers to let them know about additional features and services that might be useful. Since not all customers want to be contacted about these offers, we allow you to opt-in and opt-out of marketing email communications. We never use customer data to target specific offers for specific users or organizations. Instead, we leverage organization data and aggregate usage statistics at the Azure DevOps organization level to determine groups of organizations that should receive specific offers.
+From time to time, we want to contact customers to let them know about additional features and services that might be useful. Since not all customers want to be contacted about these offers, we allow you to opt-in and opt-out of marketing email communications. We never use customer data to target specific offers for specific users or organizations. Instead, we leverage organization data and aggregate usage statistics at the organization level to determine groups of organizations that should receive specific offers.
 
 ## Building confidence
 
@@ -225,10 +225,10 @@ lessons learned by operating the service.
 For some customers, it is important to understand third-party
 evaluation of our data security procedures. Towards that end, we have
 achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
- BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
-The SOC audit for Azure DevOps Services covers controls for data security, availability, 
-processing integrity, and confidentiality. Azure DevOps Services' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports). 
-If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps Services' SOC Reports.
+ BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications.
+The SOC audit for Azure DevOps covers controls for data security, availability, 
+processing integrity, and confidentiality. Azure DevOps' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
+If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps' SOC Reports.
 
 ## Steps you can take
 
@@ -252,23 +252,23 @@ Another action you can take to improve the security of your end users' credentia
 | Identity creator      | User | Organization |
 | Single user name / password for all work assets      | No      |   Yes |
 | Password lifetime & complexity control | User      |    Organization|
-| Azure DevOps Services account membership limits | Any MAS | Organization's directory
+| Azure DevOps membership limits | Any MSA | Organization's directory
 | Traceable identity | No | Yes
-| Account & IP ownership | Unclear | Organization
+| Organization & IP ownership | Unclear | Organization
 | 2-factor authentication enrollment | User | Organization
 | Device-based conditional access | No | Organization
 
 You can learn more about how to
-[configure this support for your Azure DevOps organization](../organizations/accounts/access-with-azure-ad.md).
+[configure this support for your organization](../organizations/accounts/access-with-azure-ad.md).
 
 ### Require two-factor authentication
 
-In some cases, you might want to restrict access to your Azure DevOps organization by requiring more than one factor to sign in. Azure AD lets you require multiple factors, 
+In some cases, you might want to restrict access to your organization by requiring more than one factor to sign in. Azure AD lets you require multiple factors, 
 such as phone authentication in addition to a username and password, for all authentication requests. You can [learn more](/azure/multi-factor-authentication/) about turning on multifactor authentication for Azure AD.
 
 ### Use BitLocker
 
-For sensitive projects, we also recommend use of BitLocker on your Windows laptop or desktop computer. BitLocker encrypts the entire drive on which Windows and your data reside, keeping everything safe. Once BitLocker is enabled, it automatically encrypts any file you save on that drive. If your laptop or desktop machine were to fall into the wrong hands, BitLocker prevents unauthorized access of local copies of data from your Azure DevOps projects.
+For sensitive projects, we also recommend use of BitLocker on your Windows laptop or desktop computer. BitLocker encrypts the entire drive on which Windows and your data reside, keeping everything safe. Once BitLocker is enabled, it automatically encrypts any file you save on that drive. If your laptop or desktop machine were to fall into the wrong hands, BitLocker prevents unauthorized access of local copies of data from your projects.
 
 ### Limit use of Alternate Authentication Credentials
 
@@ -286,12 +286,12 @@ to learn more about conditional access policy (CAP).  Azure DevOps now enforces 
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
-- [Azure DevOps Services home page](https://visualstudio.microsoft.com/)
-- [Azure DevOps Services status](https://blogs.msdn.com/b/vsoservice/)
-- [Azure DevOps Services credential storage](credential-storage.md)
+- [Azure DevOps home page](https://azure.microsoft.com/en-us/services/devops/)
+- [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
+- [Azure DevOps credential storage](credential-storage.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+- [Azure DevOps support](https://azure.microsoft.com/en-us/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
-- [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
 - [Azure trust center](http://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
 
