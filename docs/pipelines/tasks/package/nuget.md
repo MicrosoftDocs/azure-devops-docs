@@ -208,7 +208,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         |-- ConsoleApplication1.csproj
 ```
 
-##### [YAML](../../yaml-schema.md) steps
+##### [YAML](#tab/yaml)
 
 ```
     - task: NuGetCommand@2
@@ -219,6 +219,32 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         noCache: true
         externalEndpoints: ConsoleAppFeed
 ```
+
+##### [Designer](#tab/designer)
+
+<table>
+    <tr>
+        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+            Install your NuGet package dependencies.
+            <ul>
+                <li>Path to solution, packages.config, or project.json: ```**/*.sln```</li>
+                <li>Feeds to use: Feeds in my NuGet.config</li>
+                <li>Path to NuGet.config: ```ConsoleApplication1/NuGet.config```</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>
+            Build your solution.
+            <ul>
+                <li>Solution: ```**\*.sln```</li>
+                <li>Restore NuGet Packages: **(Important)** Make sure this option is cleared.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 ## Pack NuGet packages
 
