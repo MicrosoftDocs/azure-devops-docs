@@ -67,7 +67,7 @@ To publish the files you assembled previously as a Universal Package, add the **
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
-To publish to a external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [Personal Access Token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md)) to connect to the feed.
+To publish to a external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New Service Connection**. Select the **Azure Repos/Team Foundation Server** option for the service connection. Fill in the feed URL and a [Personal Access Token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md)) to connect to the feed.
 
 ---
 
