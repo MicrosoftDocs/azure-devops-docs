@@ -84,6 +84,14 @@ test files numbered 2 and 5.
 
 ## Sample code
 
+This .NET Core sample uses `--list-tests` and `--filter` parameters of `dotnet test` to slice the tests.
+The tests are run using the NUnit. Test results created by `DotNetCoreCLI@2` test task are then published to the server.
+Import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+
+```
+https://github.com/idubnori/ParallelTestingSample-dotnet-core
+```
+
 This Python sample uses a PowerShell script to slice the tests.
 The tests are run using pytest. JUnit-style test results created by pytest are then published to the server.
 Import (into Azure Repos or TFS) or fork (into GitHub) this repo:
