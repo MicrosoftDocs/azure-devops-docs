@@ -94,7 +94,7 @@ For more details, see [Approvals](approvals/index.md#scenarios).
 
 Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, stage, or agent they are running in.
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
-Some of the most significant variables are described in the following tables.
+Some of the most significant variables are described in the following tables. To obtain the full list refer to [view all variables and its current values](#View-all-variables-and-its-current-values).
 
 ### System variables
 
@@ -259,14 +259,14 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 <a name="view-vars"></a>
 
-### View the current values of all release variables
+### View all variables and its current values
 
 1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.
 
    ![Opening the log for a release](_img/view-variable-values-link.png)
 
-1. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
+2. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
 
    ![Viewing the values of the variables in a release](_img/view-variable-values.png)
 
