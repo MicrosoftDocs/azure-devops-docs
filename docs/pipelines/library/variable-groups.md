@@ -142,5 +142,7 @@ will automatically be made available to all the definitions or stages to which t
 * To override the values of variables in the variable group you must create a variable with the
   same name within the build or release pipeline. A variable in the pipeline overrides a variable
   with the same name in the variable group.
+* The recommended use of linking a variable group to a pipeline is when you want to centrally control values for variables that are used   across multiple instances/releases of the pipeline. To overide the values between any releases, use variables with same name at queue   time. You can read more about this one [here](https://docs.microsoft.com/en-us/azure/devops/release-notes/2018/jun-19-vsts#set-a-   variable-at-release-time). 
+  To override the values of variables in the variable group only for a specific release, you can edit the release and add new variables only for that release with the same name as in the variable group. 
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
