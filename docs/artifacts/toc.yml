@@ -24,6 +24,8 @@
     href: quickstarts/universal-packages.md
 - name: Tutorials
   items:
+  - name: Create a private PowerShell repository
+    href: tutorials/private-powershell-library.md
   - name: Communicate quality with release views
     href: feeds/views.md
   - name: Move your packages to the cloud
@@ -128,3 +130,7 @@
     href: reference/limits.md
   - name: Use the .artifactignore file
     href: reference/artifactignore.md
+- name: Resources
+  items: 
+  - name: Where is Package Management?
+    href: where-is-package-management.md

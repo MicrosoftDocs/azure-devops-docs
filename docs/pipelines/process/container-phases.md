@@ -44,6 +44,8 @@ will `docker exec` a series of commands which expect to be run by a shell.
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
 
+The Hosted macOS pool does not support running containers.
+
 # [YAML](#tab/yaml)
 
 ## Single job

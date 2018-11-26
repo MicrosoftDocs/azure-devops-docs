@@ -60,13 +60,38 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range=">= tfs-2017"
+::: moniker range="vsts"
 
-### Azure Pipelines and TFS 2017 and newer
+### Azure Pipelines
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
+[!INCLUDE [include](_shared/agent-pools-tab.md)]
+</li>
+
+<li>Click **Download agent**.</li>
+
+<li>On the **Get agent** dialog box, click **Linux**.</li>
+
+<li>On the left pane, select the processor architecture (x64 or ARM).</li>
+
+<li>On the right pane, click the **Download** button.
+
+<li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
+</ol>
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+<ol>
+<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
+<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 

@@ -11,13 +11,13 @@ ms.reviewer: divais
 ms.manager: 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 11/12/2018 
+monikerRange: 'vsts' 
+ms.date: 11/19/2018 
 ---
 
 # Configure the Test Results Trend (Advanced) widget 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Teams track their test collateral health&mdash;for example, test pass percentage, test failures, and test duration&mdash;to ensure effective continuous testing in a pipeline. 
 With the test results trend widget, you can monitor test trends over a period of time, detect patterns around test failures, test duration, and more, and generate actionable insights.
@@ -64,7 +64,7 @@ You can configure your Test Results Trend widget widget to show results for eith
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> !![Test Restults Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
+	> ![Test Restults Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 

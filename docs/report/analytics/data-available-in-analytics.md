@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azdevserver-2019'
-ms.date: 04/04/2018
+ms.date: 11/21/2018
 ---
 >
 
@@ -30,13 +30,6 @@ Currently, you can access the following data from the Analytics Service. This in
 <th width="35%">Future availability</th>
 </tr>
 <tbody valign="top">
-<tr>
-<td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
-<td>[Widgets](./analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](../powerbi/overview.md)</td>
-<td>Same as Azure DevOps</td>
-<td>Rollup - Q2, 2019</td>
-</tr>
-
 <tr>
 <td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
 <td>[Widgets](./analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](../powerbi/overview.md)</td>

@@ -19,19 +19,14 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-
-::: moniker range="vsts"
-> [!IMPORTANT]
-> This topic applies to managing access levels for projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for Azure DevOps, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md). For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
-
-::: moniker-end
-
-::: moniker range="<= azdevserver-2019" 
 To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
+
+> [!IMPORTANT]
+> This article applies to managing access levels for projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for Azure DevOps, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md). For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
 
 For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  For feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). 
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > Even if you set a user or group's access level, you must add them to a project collection or project for them to connect to TFS and access features available through a supported client or the web portal. 
 
 Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
@@ -51,8 +46,7 @@ You manage access levels for all collections defined on the application tier for
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps Server or TFS. However, the basic functionality available to you remains the same unless explicitly mentioned.  
 
 From a user context, open admin settings by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
- 
-::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 <= azdevserver-2019"
 
