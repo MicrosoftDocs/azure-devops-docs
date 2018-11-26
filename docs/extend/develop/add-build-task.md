@@ -129,7 +129,9 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
     "friendlyName": "{{taskfriendlyname}}",
     "description": "{{taskdescription}}",
     "helpMarkDown": "",
-    "category": "Utility",
+    "categories": [
+        "Azure Pipelines"
+    ],
     "author": "{{taskauthor}}",
     "version": {
         "Major": 0,
