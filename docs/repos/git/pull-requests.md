@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 11/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -60,7 +60,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 # [Previous navigation](#tab/previous-nav)
 
-Manage pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
+Manage to pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
 ![Viewing completed and abandoned pull requests in Azure Repos](_img/repos-navigation/repos-code-pull-requests.png)
 
@@ -176,6 +176,58 @@ For a list of commands to create and manage pull requests, see [Manage pull requ
 For more information about working with the Azure DevOps Services CLI, see [Get started with the Azure DevOps Services CLI](/cli/vsts/get-started).
 
 <a name="finish"></a>
+
+::: moniker range="vsts"
+
+## Draft pull requests
+
+Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. Draft pull requests allow you to indicate that a pull request is a work in progress, without resorting to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin (or resume) the full review process.
+
+- [Draft pull request differences](#draft-pull-request-differences)
+- [Create a draft pull request](#create-a-draft-pull-request)
+- [Publish a draft pull request](#publish-a-draft-pull-request)
+- [Mark as draft](#mark-as-draft)
+
+### Draft pull request differences
+
+Draft pull requests have the following differences from published pull requests.
+
+- Build validation policies are enabled but not run automatically, but they can be manually queued by selecting the **...** menu beside the build in the pull request.
+- Voting is disabled while in draft mode.
+- Required reviewers are not automatically added.
+- Notifications are sent while in draft mode, but only to reviewers that you explicitly add to the draft pull request.
+- Draft pull requests are displayed in the pull requests list with a special badge.
+
+  ![Draft PRs in list](_img/pull-requests/draft-pr-badge.png)
+
+
+
+### Create a draft pull request
+
+To create a draft pull request, choose **Create as draft** when creating the pull request.
+
+![Create as draft](_img/pull-requests/create-draft-pr.png)
+
+If you start your pull request title with WIP, **Create as draft** is selected as the default option.
+
+![Create as draft](_img/pull-requests/create-draft-pr-wip.png)
+
+### Publish a draft pull request
+
+When you're ready to have the pull request reviewed and completed, you can publish it.
+
+![Publish PR](_img/pull-requests/publish-pr.png)
+
+When a pull request is published, required reviewers are assigned and notified, policies are evaluated, and voting is enabled.
+
+### Mark as draft
+
+To mark an active pull request as a draft, choose **Mark as draft**. Marking a pull request as draft resets all votes, and if your pull request has any votes you'll be asked to confirm.
+
+![Mark as draft](_img/pull-requests/mark-pr-as-draft.png)
+
+::: moniker-end
+
 
 ## Add detail to your pull request
 
@@ -430,7 +482,7 @@ Auto-completion lets you skip having to come back to the pull request to complet
 When the conditions are satisfied for auto-complete, the pull request is completed and you are notified via email. If there is a conflict or an error completing the pull request, you will get an email notifying you of the issue so you can resolve it.
 
 Once auto-complete has been set, the pull request displays a banner confirming that the changes will be merged as soon as the policies are satisfied.
-Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state. Starting with TFS 2018 Update 2, the banner [displays the outstanding list of policy critera](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
+Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state. Starting with TFS 2018 Update 2, the banner [displays the outstanding list of policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
 
 ![A banner displays when your pull request is in auto-complete state](./_img/pull-requests/pr_banner_autocomplete.png)
 
