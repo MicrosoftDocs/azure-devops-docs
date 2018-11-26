@@ -68,14 +68,14 @@ steps:
 - script: echo This is pipeline $(System.DefinitionId)
 ```
 
-In YAML, this also works for variables you're passing into the environment.
-They must be prefixed with `variables.`.
+This also works for variables you specify in the pipeline.
 
 ```yaml
+variables:
+  Example: 'myValue'
+
 steps:
-- script: echo The value passed in is $(variables.Example)
-  env:
-    Example: 'myValue'
+- script: echo The value passed in is $(Example)
 ```
 
 # [Designer](#tab/designer)
