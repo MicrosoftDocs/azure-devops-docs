@@ -93,7 +93,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="15">[12 November 2018](2018/sprint-143-update.md)</td>
             <td>REST API version 5.0</td><td>*2019*</td>
         </tr>
         <tr><td>New work item text editor</td><td>*2019*</td></tr>
