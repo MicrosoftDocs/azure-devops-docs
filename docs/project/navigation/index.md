@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
@@ -38,6 +38,7 @@ Each service provides you with one or more pages which support a number of featu
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
