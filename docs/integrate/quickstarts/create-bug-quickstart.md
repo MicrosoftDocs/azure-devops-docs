@@ -101,7 +101,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.Azure DevOps Services.TCM.ReproSteps",
+                Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
                 Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/library/live/hh826547.aspx"
             }
         );
@@ -110,7 +110,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.Azure DevOps Services.Common.Priority",
+                Path = "/fields/Microsoft.VSTS.Common.Priority",
                 Value = "1"
             }
         );
@@ -119,7 +119,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.Azure DevOps Services.Common.Severity",
+                Path = "/fields/Microsoft.VSTS.Common.Severity",
                 Value = "2 - High"
             }
         );

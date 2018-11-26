@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 11/20/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -497,7 +497,9 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 ::: moniker range="vsts"
 
-OAuth token is always made available to the scripts that run through YAML. Here is an example:
+The OAuth token is always available to YAML pipelines.
+It must be explicitly mapped into the task or step using `env`.
+Here is an example:
 
 ```yaml
 steps:

@@ -73,6 +73,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/secure-file.png) [Download Secure File](utility/download-secure-file.md). Download a secure file to a temporary location on the build or release agent. | Azure Pipelines |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | Azure Pipelines, TFS 2017 and newer |
 | ![icon](utility/_img/ftp-upload.png) [FTP Upload](utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | Azure Pipelines, TFS 2017 and newer |
+| ![icon](utility/_img/github-release.png) [GitHub Release](utility/github-release.md). Create, edit, or discard a GitHub release. | Azure Pipelines |
 | ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | Azure Pipelines, TFS 2018 |
 | ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | Azure Pipelines, TFS 2018 |
 | ![icon](utility/_img/installsshkey.png) [Install SSH Key](utility/install-ssh-key.md). Install an SSH key prior to a build or release | Azure Pipelines |
