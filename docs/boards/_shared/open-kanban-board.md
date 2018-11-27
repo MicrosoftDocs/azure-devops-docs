@@ -7,10 +7,24 @@ ms.topic: include
 
 Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), select **Stories backlog**. To switch to the [task board](/azure/devops/boards/sprints/task-board), select **Sprints** and then select **Taskboard**.  
 
+
+::: moniker range="vsts"
 > [!NOTE]
-> Select **Previous navigation** when you see a top-level blue bar. Select **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature is enabled for the signed-in user or the organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).    
-> 
-> For on-premises TFS, select **Previous Navigation** for guidance. 
+> Your web portal uses either the **New navigation** or **Previous navigation** user interface. Choose the **New navigation** tab if the **New Navigation** feature is enabled. You'll see a vertical sidebar along with other navigational features when **New Navigation** has been enabled for the signed-in user or the organization. Choose **Previous navigation** when you see a top-level, blue-bar&mdash;indicating that **New navigation** isn't enabled. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+> [!NOTE]
+> Choose the **New navigation** tab for guidance. Azure DevOps Server 2019 supports the **New Navigation** user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
 
 
 # [New navigation](#tab/new-nav)

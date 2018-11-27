@@ -20,7 +20,7 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-**New navigation** isn't supported on TFS at this time. Choose **Previous navigation** for guidance.
+Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -44,9 +44,9 @@ From your web browser, open **Boards>Queries**.
 
 ::: moniker-end
 
-
 ::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+**Previous navigation** isn't supported for Azure DevOps Server 2019. Choose **New navigation** for guidance.
+
 ::: moniker-end
 
 ---
