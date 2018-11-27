@@ -52,7 +52,7 @@ steps:
 <a name="taskversions"></a>
 ## Task versions
 
-Tasks are versioned, and you can specify the major version of the task used in your
+Tasks are versioned, and you must specify the major version of the task used in your
 pipeline. This can help to prevent issues when new versions of a task are released.
 Tasks are typically backwards compatible, but in some scenarios you may
 encounter unpredictable errors when a task is automatically updated.
