@@ -1,6 +1,6 @@
 ---
-title: Azure Artifacts in Azure DevOps Services and TFS
-description: Overview of Azure Artifacts for hosting and sharing NuGet packages and npm modules with Azure DevOps Services or Team Foundation Server
+title: Azure Artifacts in Azure DevOps Services and Azure DevOps Server
+description: Overview of Azure Artifacts for hosting and sharing NuGet packages and npm modules with Azure DevOps Services or Azure DevOps Server
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -12,11 +12,11 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Artifacts in Azure DevOps Services and TFS
+# Azure Artifacts in Azure DevOps Services and Azure DevOps Server
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
 
-Azure Artifacts is an extension to Azure DevOps Services and Team Foundation Server (TFS). The extension comes pre-installed in both Azure DevOps Services and TFS (2017 and 2018).
+Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server and comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and TFS (2017 and 2018).
 
 > [!NOTE]
 > **Azure Artifacts** is the new home of the **Packages** page under the **Build and release** page group in the previous navigation UX of Azure DevOps Services and Team Foundation Server (TFS).
