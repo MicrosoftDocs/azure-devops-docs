@@ -7,11 +7,30 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
+
+::: moniker range="vsts"
 > [!NOTE]
-> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps Services. [Go here to enable it](../../project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+> Your web portal uses either the **New navigation** or **Previous navigation** user interface. Choose the **New navigation** tab if the **New Navigation** feature is enabled. You'll see a vertical sidebar along with other navigational features when **New Navigation** has been enabled for the signed-in user or the organization. Choose **Previous navigation** when you see a top-level, blue-bar&mdash;indicating that **New navigation** isn't enabled. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+> [!NOTE]
+> Choose the **New navigation** tab for guidance. Azure DevOps Server 2019 supports the **New Navigation** user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+> [!NOTE]
+> Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
+::: moniker-end
 
 # [New navigation](#tab/new-nav)
+
 ::: moniker range=">= azdevserver-2019"
+
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -20,7 +39,9 @@ You can start viewing and adding work items once you connect to a project.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-The **New Navigation** feature isn't supported on the TFS platform at this time. Choose the **Previous Navigation** for guidance.
+
+Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
+
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -34,7 +55,9 @@ Open a browser window, choose **Work**, and then **Work Items**.
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+Choose **New navigation** for guidance. **Previous navigation** isn't supported for Azure DevOps Server 2019. 
+
 ::: moniker-end
 
 ---
