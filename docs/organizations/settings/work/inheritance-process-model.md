@@ -11,20 +11,20 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azdevserver-2019'
-ms.date: 05/31/2018
+ms.date: 11/25/2018
 ---
 
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 <a id=" inherited "> </a> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
 > [!IMPORTANT]  
-> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 only. 
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
