@@ -54,3 +54,5 @@
       href: /azure/devops/learn/what-is-devops
     - name: Git at Scale
       href: /azure/devops/learn/git/git-at-scale
+- name: Service Status Documentation
+  href: service-status-info.md
