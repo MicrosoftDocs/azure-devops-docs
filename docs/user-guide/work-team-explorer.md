@@ -21,8 +21,8 @@ monikerRange: '>= tfs-2013'
 You use Team Explorer to manage work that is assigned to you, your team, or your projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or on-premises Team Foundation Server (TFS).
 
 
->[!TIP]  
->You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Additional options for connecting to Azure DevOps Services or TFS include:
+> [!TIP]  
+> You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Additional options for connecting to Azure DevOps Services or Azure DevOps Server (previously labeled Team Foundation Server) include:
 
 > - [Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
 > - [Azure DevOps Plugin for Android Studio](/../java/download-android-studio-plug-in.md)  
@@ -153,11 +153,24 @@ Most of the links open to a web portal administration page. Not all settings are
 
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
+<a id="clients">  </a>
+## Supported clients 
 
-## Clients that connect to Azure DevOps Services and TFS
+In addition to connecting through Team Explorer, you can connect to an Azure DevOps project from the following clients:
 
-In addition to connecting through Team Explorer, you can connect to a project from the following clients:
+::: moniker range=">= azdevserver-2019"
 
+- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+- [Visual Studio Code](https://code.visualstudio.com/docs)
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
+- [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
+- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 - [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
@@ -167,13 +180,9 @@ In addition to connecting through Team Explorer, you can connect to a project fr
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
+::: moniker-end
 
 
-## Related articles
-
-- [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)  
-
-<a id="clients">  </a>
 
 
 ## Refresh Team Explorer 
@@ -187,6 +196,13 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
 
 [!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
+
+
+
+
+## Related articles
+
+- [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)  
 
 ### Additional tools provided with TFS Power Tools 
 
