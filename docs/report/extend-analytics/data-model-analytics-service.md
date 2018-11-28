@@ -60,7 +60,7 @@ The data model contains the following entity sets:
 |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
-|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
+|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included  
 |WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items|  
 |WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting|  
 |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
