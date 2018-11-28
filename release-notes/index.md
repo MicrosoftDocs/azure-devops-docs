@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/14/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -94,39 +94,39 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
         <tr>
             <td rowspan="15">[12 November 2018](2018/sprint-143-update.md)</td>
-            <td>REST API version 5.0</td><td>*2019*</td>
+            <td>REST API version 5.0</td><td>Future</td>
         </tr>
-        <tr><td>New work item text editor</td><td>*2019*</td></tr>
-        <tr><td>Improved branch picker</td><td>*2019*</td></tr>
-        <tr><td>Draft pull requests</td><td>*2019*</td></tr>
-        <tr><td>Trigger YAML pipelines with tags</td><td>*2019*</td></tr>
-        <tr><td>Setting to auto cancel an existing pipeline when a pull requests is updated</td><td>*2019*</td></tr>
-        <tr><td>Declare container resources inline</td><td>*2019*</td></tr>
-        <tr><td>Changes to default permissions for new projects</td><td>*2019*</td></tr>
-        <tr><td>Deploy to failed targets in a Deployment Group</td><td>*2019*</td></tr>
-        <tr><td>Automatically redeploy on failure</td><td>*2019*</td></tr>
-        <tr><td>Support for Infrastructure as Code</td><td>*2019*</td></tr>
+        <tr><td>New work item text editor</td><td>Future</td></tr>
+        <tr><td>Improved branch picker</td><td>Future</td></tr>
+        <tr><td>Draft pull requests</td><td>Future</td></tr>
+        <tr><td>Trigger YAML pipelines with tags</td><td>Future</td></tr>
+        <tr><td>Setting to auto cancel an existing pipeline when a pull requests is updated</td><td>Future</td></tr>
+        <tr><td>Declare container resources inline</td><td>Future</td></tr>
+        <tr><td>Changes to default permissions for new projects</td><td>Future</td></tr>
+        <tr><td>Deploy to failed targets in a Deployment Group</td><td>Future</td></tr>
+        <tr><td>Automatically redeploy on failure</td><td>Future</td></tr>
+        <tr><td>Support for Infrastructure as Code</td><td>Future</td></tr>
         <tr><td>Exclude files in artifact uploads</td><td>N/A</td></tr>
-        <tr><td>Provenance information on packages</td><td>*2019*</td></tr>
+        <tr><td>Provenance information on packages</td><td>Future</td></tr>
         <tr><td>Azure Artifacts REST API documentation updates</td><td>N/A</td></tr>
-        <tr><td>Test result trend widget</td><td>*2019*</td></tr>
+        <tr><td>Test result trend widget</td><td>Future</td></tr>
         <tr>
             <td rowspan="20">[22 October 2018](2018/sprint-142-update.md)</td>
             <td>New navigation is on for all users</td><td>N/A</td>
         </tr>
-        <tr><td>Dark Theme</td><td>*2019*</td></tr>
-        <tr><td>Organize reference materials with richer work item attachments</td><td>*2019*</td></tr>
-        <tr><td>Manage dependencies by linking work items across your Organizations</td><td>*2019*</td></tr>
+        <tr><td>Dark Theme</td><td>Future</td></tr>
+        <tr><td>Organize reference materials with richer work item attachments</td><td>Future</td></tr>
+        <tr><td>Manage dependencies by linking work items across your Organizations</td><td>Future</td></tr>
         <tr><td>Open work items from search</td><td>*2019*</td></tr>
         <tr><td>Extension authors can query context about the current repo</td><td>*2019*</td></tr>
         <tr><td>Add custom build counters to your builds</td><td>*2019*</td></tr>
-        <tr><td>Use YAML to specify branches to build for pull requests</td><td>*2019*</td></tr>
-        <tr><td>Use YAML template expressions inline</td><td>*2019*</td></tr>
+        <tr><td>Use YAML to specify branches to build for pull requests</td><td>Future</td></tr>
+        <tr><td>Use YAML template expressions inline</td><td>Future</td></tr>
         <tr><td>Improve troubleshooting with the pipeline initialization log</td><td>*2019*</td></tr>
         <tr><td>Default retention for YAML pipelines</td><td>N/A</td></tr>
         <tr><td>Build on Linux/ARM and Windows 32-bit platforms</td><td>*2019*</td></tr>
         <tr><td>Clone variable groups</td><td>*2019*</td></tr>
-        <tr><td>See commits and work items for all linked sources</td><td>*2019*</td></tr>
+        <tr><td>See commits and work items for all linked sources</td><td>N/A</td></tr>
         <tr><td>Run from Package supported in Azure App Service deployments</td><td>*2019*</td></tr>
         <tr><td>Deploy Linux containers with the App Server Deploy task</td><td>*2019*</td></tr>
         <tr><td>Azure Test Runner runs manual tests for desktop applications</td><td>*2019*</td></tr>
@@ -140,20 +140,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Simplified continuous delivery to Azure VMs</td><td>*2019*</td></tr>
         <tr><td>The Xcode task supports newly released Xcode 10</td><td>*2019*</td></tr>
         <tr><td>Performance improvements when queuing a build</td><td>N/A</td></tr>
-        <tr><td>Create Azure service connection with service principal that authenticates with a certificate</td><td>N/A</td></tr>
+        <tr><td>Create Azure service connection with service principal that authenticates with a certificate</td><td>*2019*</td></tr>
         <tr><td>View test analytics in Pipelines</td><td>*2019*</td></tr>
         <tr><td>Change the target branch of a pull request</td><td>*2019*</td></tr>
-        <tr><td>Protect Git repos with cross platform compatibility settings</td><td>*2019*</td></tr>
+        <tr><td>Protect Git repos with cross platform compatibility settings</td><td>N/A</td></tr>
         <tr><td>Expanded search box</td><td>*2019*</td></tr>
         <tr><td>Support AAD users in MSA accounts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10">[20 September 2018](2018/sprint-140-update.md)</td>
-            <td>Control specific build dependencies using container jobs</td><td>*2019*</td>
+            <td>Control specific build dependencies using container jobs</td><td>Future</td>
         </tr>
-        <tr><td>Enable code coverage in .NET Core task</td><td>*2019*</td></tr>
+        <tr><td>Enable code coverage in .NET Core task</td><td>N/A</td></tr>
         <tr><td>Leverage restructured Process REST APIs</td><td>*2019*</td></tr>
         <tr><td>Simplify authentication using the new cross-platform Credential Provider for NuGet</td><td>*2019*</td></tr>
-        <tr><td>Store artifacts using Universal Packages</td><td>*2019*</td></tr>
+        <tr><td>Store artifacts using Universal Packages</td><td>Future</td></tr>
         <tr><td>Compress symbols when publishing to a file share</td><td>*2019*</td></tr>
         <tr><td>Embed a video in wiki</td><td>*2019*</td></tr>
         <tr><td>Rename a wiki</td><td>*2019*</td></tr>
@@ -161,17 +161,17 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Manage your personal access tokens with filtering and paging</td><td>*2019*</td></tr>
         <tr>
             <td rowspan="15">[10 September 2018](2018/sep-10-azure-devops-launch.md)</td>
-            <td>Azure DevOps Services</td><td>*2019*</td>
+            <td>Azure DevOps Services</td><td>N/A</td>
         </tr>
         <tr><td>Add Azure Pipelines from the GitHub Marketplace</td><td>N/A</td></tr>
         <tr><td>Build open source projects with Azure Pipelines for free</td><td>N/A</td></tr>
-        <tr><td>Configure builds using YAML</td><td>*2019*</td></tr>
-        <tr><td>Create YAML build pipelines using the new wizard</td><td>*2019*</td></tr>
+        <tr><td>Configure builds using YAML</td><td>Future</td></tr>
+        <tr><td>Create YAML build pipelines using the new wizard</td><td>Future</td></tr>
         <tr><td>Manage build pipelines using the new Builds page</td><td>*2019*</td></tr>
-        <tr><td>Rebuild GitHub pull request builds</td><td>*2019*</td></tr>
-        <tr><td>New build status badge URL</td><td>*2019*</td></tr>
+        <tr><td>Rebuild GitHub pull request builds</td><td>N/A</td></tr>
+        <tr><td>New build status badge URL</td><td>N/A</td></tr>
         <tr><td>Leverage even more tools on Microsoft-hosted Linux agents</td><td>N/A</td></tr>
-        <tr><td>Track GitHub commits and associated issues in releases</td><td>*2019*</td></tr>
+        <tr><td>Track GitHub commits and associated issues in releases</td><td>N/A</td></tr>
         <tr><td>Manage build and deployment completion emails better using improved formatting</td><td>*2019*</td></tr>
         <tr><td>Follow the new unified Azure Pipelines terminology</td><td>*2019*</td></tr>
         <tr><td>Leverage the latest extension categories</td><td>N/A</td></tr>
@@ -195,7 +195,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Review summarized test results</td><td>*2019*</td></tr>
         <tr><td>View package download and user metrics</td><td>*2019*</td></tr>
         <tr><td>Browse dependencies in npm packages</td><td>*2019*</td></tr>
-        <tr><td>View VSTS dashboards within Microsoft Teams</td><td>*2019*</td></tr>
+        <tr><td>View VSTS dashboards within Microsoft Teams</td><td>N/A</td></tr>
         <tr><td>Investigate build history through a new build dashboard widget</td><td>*2019*</td></tr>
         <tr><td>Manage billing for your organization directly through the Azure Portal</td><td>N/A</td></tr>
         <tr>
@@ -228,7 +228,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Set a variable at release time</td><td>*2019*</td></tr>
         <tr><td>Organize your release definitions in folders</td><td>*2019*</td></tr>
         <tr><td>Use improved Windows remote PowerShell based tasks</td><td>*2019*</td></tr>
-        <tr><td>GitHub artifacts show associated commits deployed in a release</td><td>*2019*</td></tr>
+        <tr><td>GitHub artifacts show associated commits deployed in a release</td><td>N/A</td></tr>
         <tr><td>Use upstream sources in legacy feeds</td><td>*2019*</td></tr>
         <tr><td>Use arbitrary public npm feeds as upstream sources</td><td>*2019*</td></tr>
         <tr><td>Improved experiences in the Test tab</td><td>*2019*</td></tr>
@@ -244,7 +244,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Favorite a branch from within a pull request</td><td>*2019*</td></tr>
         <tr><td>Visualize release progress</td><td>*2019*</td></tr>
         <tr><td>Run inline or file-based Python scripts in your pipeline</td><td>*2019*</td></tr>
-        <tr><td>Use Anaconda tools for data science in your pipeline</td><td>*2019*</td></tr>
+        <tr><td>Use Anaconda tools for data science in your pipeline</td><td>N/A</td></tr>
         <tr><td>Simplify definitions with multiple agentless tasks per phase</td><td>*2019*</td></tr>
         <tr><td>Manage limits on self-hosted, concurrent CI/CD jobs</td><td>N/A</td></tr>
         <tr><td>Streamline authentication from agent VMs to Azure Resource Manager</td><td>*2019*</td></tr>
@@ -253,9 +253,9 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
             <td>Query for empty rich text fields</td><td>*2019*</td>
         </tr>
-        <tr><td>Build Ruby apps based on a variety of Ruby versions</td><td>*2019*</td></tr>
-        <tr><td>Build, test, and publish Python apps based on a variety of Python versions</td><td>*2019*</td></tr>
-        <tr><td>Build Java apps on hosted agents with Java 10</td><td>*2019*</td></tr>
+        <tr><td>Build Ruby apps based on a variety of Ruby versions</td><td>N/A</td></tr>
+        <tr><td>Build, test, and publish Python apps based on a variety of Python versions</td><td>N/A</td></tr>
+        <tr><td>Build Java apps on hosted agents with Java 10</td><td>N/A</td></tr>
         <tr><td>Leverage improved Xcode build and test output from xcpretty</td><td>*2019*</td></tr>
         <tr><td>Progressively expose and phase deployments using release gates</td><td>*2019*</td></tr>
         <tr><td>Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects</td><td>N/A</td></tr>
@@ -272,7 +272,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Find phrases and code with special characters faster</td><td>*2019*</td>
         </tr>
         <tr><td>Query work in the Area Paths of a Team with the new @TeamAreas macro</td><td>*2019*</td></tr>
-        <tr><td>Trigger CI builds from YAML</td><td>*2019*</td></tr>
+        <tr><td>Trigger CI builds from YAML</td><td>Future</td></tr>
         <tr><td>Continuously deploy to Azure Database for MySQL</td><td>*2019*</td></tr>
         <tr><td>Streamline deployment to Kubernetes using Helm</td><td>*2019*</td></tr>
         <tr><td>Deploy Ruby on Rails applications</td><td>*2019*</td></tr>
