@@ -26,20 +26,82 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 ## Publish symbols
 In order to publish symbols to the Package Management symbol server in Azure Pipelines, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 
-* For **Version**, select the 2.\* (preview).  
+* For **Version**, select 2.\*.
 * For **Symbol Server Type**, select **Azure Pipelines**.
 * Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
 * Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
 For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirectories named *bin*.
 
-![Publish Symbols Task](_img/symboltaskv2.png)
-
 ### Publish symbols for NuGet packages
 To publish symbols for NuGet packages, include the above task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the Azure DevOps organization.
+
+## Publish symbols to a file share
+
+You can also publish symbols to a file share using the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task. When you use this method, the task will copy the PDB files over and put them into a specific layout. When Visual Studio is pointed to the UNC share, it can find the symbols related to the binaries that are currently loaded. 
+
+Add the task to your build pipeline and configure as follows:
+
+* For **Version**, select 2.\*. 
+* For **Symbol Server Type**, select **File share**.
+    * When you select **File share** as your **Symbol Server Type**, you get the option to _Compress Symbols_, this option will compress your symbols to save space. 
+* Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
+* Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
+For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirectories named *bin*.
 
 ## Portable PDBs
 
 If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you don't need to use the **Index Sources and Publish Symbols** task. For Portable PDBs, indexing is done by the build. This is a design feature of Portable PDBs and .NET.
+
+## Use indexed symbols to debug your app
+
+You can use your indexed symbols to debug an app on a different machine from where the sources were built.
+
+### Enable your dev machine
+
+In Visual Studio you may need to enable the following two options:
+
+* Debug -> Options -> Debugging -> General
+  * -> Enable source server support
+  * -> Allow source server for partial trust assemblies (Managed only)
+
+### Advanced usage: overriding at debug time
+
+The mapping information injected into the PDB files contains variables that can be overridden at debugging time. Overriding the variables may be required if the collection URL has changed. When overriding the mapping information, the goals are to construct:
+
+* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
+
+* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
+
+ The mapping information may look something like the following:
+
+```
+SRCSRV: variables ------------------------------------------
+TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
+TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
+TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
+TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
+TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
+TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
+TFS_SHORT_COMMIT=3a991086
+TFS_APPLY_FILTERS=/applyfilters
+SRCSRVVERCTRL=git
+SRCSRVERRDESC=access
+SRCSRVERRVAR=var2
+SRCSRVTRG=%TFS_EXTRACT_TARGET%
+SRCSRVCMD=%TFS_EXTRACT_CMD%
+SRCSRV: source files ---------------------------------------
+C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
+C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
+```
+
+ The above example contains two sections: 1) the variables section and 2) the source files section. The information in the variables section is what can be overridden. The variables can leverage other variables, and can leverage information from the source files section.
+
+ To override one or more of the variables while debugging with Visual Studio, create an ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the INI file to override the variables. For example:
+
+```
+[variables]
+TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
+```
 
 ## Q&A
 

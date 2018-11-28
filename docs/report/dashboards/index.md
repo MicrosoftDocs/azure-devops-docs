@@ -24,14 +24,14 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 ## 5-Minute Quickstarts  
 
 ::: moniker range=">= azdevserver-2019"  
-- [Add and manage dashboards](dashboards.md)
+- [Add, rename, and delete dashboards](dashboards.md) 
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json) 
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-- [Add and manage dashboards](dashboards.md)
+- [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 ::: moniker-end
