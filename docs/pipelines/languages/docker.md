@@ -273,7 +273,7 @@ pool:
   vmImage: 'ubuntu-16.04'
 
 steps:
-  - script: docker build -t $(dockerId)/$(dockerImage) . # include other options to meet your needs
+  - script: docker build -t $(dockerId)/$(imageName) . # include other options to meet your needs
 ```
 
 ::: moniker-end
@@ -306,10 +306,11 @@ To push the image to Docker Hub, add the following snippet to the `azure-pipelin
     docker push $(dockerId)/$(imageName)
 ```
 
-To push the image to Azure Container Registry, use the following snippet:
+To build and push the image to Azure Container Registry, use the following snippet:
 
 ```yaml
 - script: |
+    docker build -t $(dockerId).azurecr.io/$(imageName) .
     docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
 ```
