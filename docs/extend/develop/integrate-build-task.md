@@ -9,7 +9,7 @@ ms.manager: douge
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
-ms.date: 10/16/2018
+ms.date: 11/29/2018
 ---
 
 # Reference for integrating custom build tasks into extensions
@@ -23,7 +23,8 @@ to enable fundamental build and deployment scenarios that we recommend you exami
 When creating a custom build or release task with an extension, your extension will include a `task.json` file for each build or release task.
 This file describes the build or release task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
 
-The build/release task SDK documentation is [here](https://github.com/Microsoft/vsts-task-lib).
+The build/release task SDK documentation is [on GitHub](https://github.com/Microsoft/azure-pipelines-task-lib).
+Specifically, you may be interested in the [task.json schema](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/tasks.schema.json).
 
 ## Bundle multiple versions of build/release tasks within one extension
 You can now include multiple versions of a build or release task in your extension. This can be helpful if you want to roll out
