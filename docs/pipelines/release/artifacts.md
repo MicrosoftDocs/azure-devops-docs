@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -306,9 +306,9 @@ The following features are available when using Azure Container Registry, Docker
 
 <a name="nuget"></a>
 
-<h3 id="nugetsource">Azure Artifacts (NuGet, Maven, and npm packages)</h3>
+<h3 id="nugetsource">Azure Artifacts (NuGet packages only)</h3>
 
-To integrate with NuGet, Maven, or npm, you must first [assign licenses for the Azure Artifacts](../../artifacts/license-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
+To use NuGet packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/license-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 Scenarios where you may want to consume these artifacts are:
 
@@ -328,6 +328,9 @@ The following features are available when using Azure Artifacts sources:
 | Work items and commits | Azure Pipelines cannot show work items or commits. |
 | Artifact download | By default, packages are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 <p />
+
+> [!NOTE]
+> Only NuGet packages are currently supported in the Azure Artifacts release artifact type. Support for the other package types supported in Azure Artifacts is coming soon.
 
 ----
 
