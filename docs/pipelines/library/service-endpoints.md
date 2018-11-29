@@ -120,6 +120,8 @@ Azure Pipelines and TFS support a variety of service connection types by default
 * [Kubernetes service connection](#sep-kuber)
 * [npm service connection](#sep-npm)
 * [NuGet service connection](#sep-nuget)
+* [Python package download service connection](#sep-python-download)
+* [Python package upload service connection](#sep-python-upload)
 * [Service Fabric service connection](#sep-fabric)
 * [SSH service connection](#sep-ssh)
 * [Subversion service connection](#sep-subversion)
@@ -429,8 +431,8 @@ Defines and secures a connection to an npm server.
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Registry URL | Required. The URL of the npm server. |
-| Username | Required when connection type is **Basic authentication**. The username for authentication. |
-| Password | Required when connection type is **Basic authentication**. The password for the username. |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
@@ -450,6 +452,41 @@ Defines and secures a connection to a NuGet server.
 | Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-download">Python package download service connection</h3>
+
+Defines and secures a connection to a Python repository for downloading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for download | Required. The URL of the Python repository. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-upload">Python package upload service connection</h3>
+
+Defines and secures a connection to a Python repository for uploading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for upload | Required. The URL of the Python repository. |
+| EndpointName | Required. Unique repository name used for twine upload. Spaces and special characters are not allowed. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
 <p />
 
 [How do I create a new service connection?](#create-new)

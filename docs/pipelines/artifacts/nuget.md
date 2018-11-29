@@ -140,11 +140,21 @@ In the previous section, you learned how to create a package with every build. W
 #  [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
+To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.
+
+```yaml
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    publishVstsFeed: 'af432f1b-f4b2-4a4f-bc9c-fef924f8f823'
+    allowPackageConflicts: true
+```
 
 To publish to a external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. Fill in feed URL and the API key or token to connect to the feed.
 
-To publish a package to a NuGet feed, add the following snippet to your azure-pipelines.yml file.
+To publish a package to a NuGet feed, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 - task: NuGetCommand@2
