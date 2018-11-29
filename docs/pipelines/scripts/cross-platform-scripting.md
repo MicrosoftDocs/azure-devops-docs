@@ -9,7 +9,7 @@ ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/19/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -157,22 +157,25 @@ steps:
 # Linux
 - bash: |
     export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
-    echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-  condition: eq( variables.Agent.OS, 'Linux' )
+    echo "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
+  condition: eq( variables['Agent.OS'], 'Linux' )
+  displayName: Get IP on Linux
 # macOS
 - bash: |
     export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
-    echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-  condition: eq( variables.Agent.OS, 'Darwin' )
+    echo "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
+  condition: eq( variables['Agent.OS'], 'Darwin' )
+  displayName: Get IP on macOS
 # Windows
 - powershell: |
-    Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
-    Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
-  condition: eq( variables.Agent.OS, 'Windows_NT' )
+    Set-Variable -Name IPADDR -Value ((Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") } | Select-Object -First 1).IPAddress)
+    Write-Host "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
+  condition: eq( variables['Agent.OS'], 'Windows_NT' )
+  displayName: Get IP on Windows
 
 # now we use the value, no matter where we got it
 - script: |
-    echo The IP address is $(variables.IP_ADDR)
+    echo The IP address is $(IP_ADDR)
 ```
 
 # [Designer](#tab/designer)
