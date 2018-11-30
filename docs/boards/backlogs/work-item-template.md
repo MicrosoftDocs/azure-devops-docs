@@ -27,6 +27,25 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
+## Prerequisites  
+
+::: moniker range=">= azdevserver-2019"
+
+- To add, capture, or edit work item templates through the web portal, you must be a member of the team under which you add them. - To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+- To add, capture, or edit work item templates through the web portal, you must be a team administrator. 
+- To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+- To add, capture, or edit work item templates through Visual Studio Team Explorer, you must install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
+
+::: moniker-end
+
+
 <a id="capture"> </a> 
 ## Capture a work item as a template
 

@@ -40,14 +40,14 @@ Use this topic to learn how to:
 ## Prerequisites 
 ::: moniker range=">= tfs-2017" 
 - Office Project 2010 or later version, including Office Project 365
-- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in  Azure Boards or TFS. 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 - Office Project 2007, Office Project 2010, or Office Project 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) 
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 
@@ -59,7 +59,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 0.  If you don't have Office Project 2010 or a more recent version, [install it](https://products.office.com/project). 
 
-0.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
+0.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 
 	> [!NOTE]    
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 

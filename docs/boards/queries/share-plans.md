@@ -75,14 +75,10 @@ The specific set of formatting features differs depending on the client you use.
 
 ::: moniker range="vsts"
 
-**The New Rich Text Editor**  
-
-The **New Rich Text Editor** feature is in preview. To enable it for yourself or your organization, see [Enable preview features](../../project/navigation/preview-features.md).
-
-The new editor toolbar appears below each text box that can be formatted. It only becomes active when you move your cursor within the text box.
+The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
 
 > [!div class="mx-imgBorder"]  
-> ![New Rich Text Editor toolbar](_img/share-plans/new-rich-text-editor-toolbar.png) 
+> ![Rich Text Editor toolbar](_img/share-plans/new-rich-text-editor-toolbar.png) 
 
 You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
@@ -90,15 +86,6 @@ For the **Discussion** section, the tool bar comes with a few extra icons&mdash;
 
 > [!div class="mx-imgBorder"]  
 > ![New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
-
-**Previous Rich Text Editor**  
-
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
-
-![Rich text tool bar](_img/rich-text-ui-team-services.png)
-
-You can use the ![ ](../_img/icons/remove-formatting-icon.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
-
 
 **Keyboard shortcuts**  
 
