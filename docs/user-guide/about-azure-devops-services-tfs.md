@@ -1,5 +1,6 @@
 ---
-title: Understand the differences between Azure DevOps Services and TFS  
+title: Understand the differences between Azure DevOps Services and Azure DevOps Server   
+titleSuffix: Azure DevOps   
 description: Understand the fundamental differences between Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops  
 ms.technology: devops-new-user
@@ -7,31 +8,32 @@ ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/12/2018
+ms.topic: conceptual 
+monikerRange: '>= tfs-2013' 
+ms.date: 11/29/2018 
 ---
 
-# Understand the differences between Azure DevOps Services and TFS
+# Understand the differences between Azure DevOps Services and Azure DevOps Server
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps Services and Microsoft Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
+Azure DevOps Services and Azure DevOps Server, formerly named Visual Studio Team Foundation Server (TFS), both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
 Azure DevOps Services is the cloud offering that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-TFS is the on-premises offering that's built on a SQL Server back end. Enterprises usually choose on-premises TFS when they need their data to stay within their network or when they want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
+Azure DevOps Server is the on-premises offering that's built on a SQL Server back end. Enterprises usually choose on-premises Azure DevOps Server when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
 
-Although both offerings provide the same [essential services](services.md), compared with TFS, Azure DevOps Services offers the following added benefits:
+Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
-- Simplified server management.
-- Immediate access to the latest and greatest features.
-- Improved connectivity with remote sites.
+- Simplified server management
+- Immediate access to the latest and greatest features
+- Improved connectivity with remote sites
 - A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
 
 To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the fundamental differences, as well as the differences in specific feature areas between Azure DevOps Services and TFS.
 
-**Fundamental differences between Azure DevOps Services and TFS**  
+**Fundamental differences between Azure DevOps Services and Azure DevOps Server**  
+
 Consider the differences in these areas when contemplating a move from TFS to Azure DevOps Services:
 
 - [Scope and scale data](#scope-scale-data)
@@ -40,8 +42,8 @@ Consider the differences in these areas when contemplating a move from TFS to Az
 - [Manage user access](#manage-user-access)
 - [Security and data protection](#security-data)
 
-**Differences in specific feature areas between Azure DevOps Services and TFS**  
-Although Azure DevOps Services is a hosted version of TFS, there are some differences between the features that are available in the two products. Some TFS features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SharePoint or Project Server (which are now deprecated features for TFS 2018 and later versions).  
+**Differences in specific feature areas between Azure DevOps Services and Azure DevOps Server**  
+Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some TFS features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SharePoint or Project Server (which are now deprecated features for TFS 2018 and later versions).  
 
 Two additional areas differ in their support:
 
@@ -62,9 +64,9 @@ When you plan a move, a few fundamental differences between TFS and Azure DevOps
 
 ## Scope and scale data
 
-### TFS scales by using deployments, project collections, and projects
+### Azure DevOps Server scales by using deployments, project collections, and projects
 
-TFS offers the following three options for scoping and scaling data: deployments,
+Azure DevOps Server offers the following three options for scoping and scaling data: deployments,
 project collections, and projects. In the simplest case, deployments are just servers.
 
 Deployments can also be more complicated, however, including everything from a two-server deployment,
@@ -79,7 +81,7 @@ Learn more: [Manage project collections](/tfs/server/admin/manage-team-project-c
 
 ### Azure DevOps Services scales by using organizations and projects
 
-Azure DevOps Services is slightly different from TFS. It currently has only two options for scoping and scaling
+Azure DevOps Services differs slightly from Azure DevOps Server. It currently has only two options for scoping and scaling
 data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always contain exactly one project collection. Organizations can contain multiple projects, such as TFS project collections.
 
 <!--- Commenting out forward looking content for now 
@@ -92,7 +94,7 @@ project collections into a single entity. The organization is similar to the TFS
 See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 -->
 
-To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in TFS. In the short term, having your work split across multiple organizations can cause some problems, but we plan to address these problems when the organization entity is introduced. In particular, the following scenarios:
+To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in Azure DevOps Server. In the short term, having your work split across multiple organizations can cause some problems, but we plan to address these problems when the organization entity is introduced. In particular, the following scenarios:
 
 - You purchase Azure DevOps Services users per organization, meaning that paid users can access only the organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option because subscribers can be added to any number of organizations at no charge. We're also considering other ways to make access available to multiple organizations that are grouped into a single organization.
 
@@ -106,7 +108,7 @@ Learn more: [Plan your Azure DevOps organizational structure](plan-your-azure-de
 
 ## Authentication
 
-With TFS, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is usually transparent and you never see any kind of sign-in experience.
+With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is usually transparent and you never see any kind of sign-in experience.
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](http://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis)  
@@ -121,9 +123,9 @@ Learn more: [Access Azure DevOps Services with Azure Active Directory](../organi
 
 ## Manage users and groups
 
-In TFS, you provide users access to deployments by adding Active Directory (AD) groups to various TFS groups
+In Azure DevOps Server, you provide users access to deployments by adding Active Directory (AD) groups to various TFS groups
 (for example, the Project Contributors group for an individual  project). The AD group memberships are kept in sync.
-As users are added and removed in AD, they also gain and lose access to TFS.
+As users are added and removed in AD, they also gain and lose access to Azure DevOps Server.
 
 In Azure DevOps Services, you can use a similar mechanism to
 [provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups.md) by adding Azure AD groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Azure AD, you have to
@@ -133,12 +135,12 @@ In Azure DevOps Services, you can use a similar mechanism to
 
 ## Manage user access
 
-In both Azure DevOps Services and TFS, you manage access to features by assigning users to an [access level](../organizations/security/access-levels.md). All users must be assigned to a single access level. In both the cloud and on-premises offerings, you can give free access to work item features to an unlimited number of stakeholders. Also, an unlimited number of Visual Studio subscribers can have access to all Basic features at no additional charge. You pay only for other users who need access.
+In both Azure DevOps Services and Azure DevOps Server, you manage access to features by assigning users to an [access level](../organizations/security/access-levels.md). All users must be assigned to a single access level. In both the cloud and on-premises offerings, you can give free access to work item features to an unlimited number of stakeholders. Also, an unlimited number of Visual Studio subscribers can have access to all Basic features at no additional charge. You pay only for other users who need access.
 
-In TFS, all use is on the honor system. To set access levels for users based on their licenses, specify their
+In Azure DevOps Server, all use is on the honor system. To set access levels for users based on their licenses, specify their
 [access levels](../organizations/security/change-access-levels.md) on the administration page. For example, assign unlicensed users Stakeholder access only.
 
-Users with a TFS Client Access License (CAL) can have Basic access. Visual Studio subscribers can have either Basic or Advanced access, depending on their subscriptions. TFS doesn't attempt to verify these licenses or enforce compliance.
+Users with a TFS Client Access License (CAL) can have Basic access. Visual Studio subscribers can have either Basic or Advanced access, depending on their subscriptions. Azure DevOps Server doesn't attempt to verify these licenses or enforce compliance.
 
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
@@ -155,11 +157,6 @@ access levels automatically when they sign in for the first time. For organizati
 
 Many entities want to know more about data protection when they consider moving to the cloud. Microsoft is committed to ensuring that Azure DevOps Services projects stay safe and secure. We have technical features and business processes in place to deliver on this commitment. You can also take steps to secure your data. Learn more in our [Data Protection Overview white paper](../articles/team-services-security-whitepaper.md).
 
-<!---
-## Key feature differences between Azure DevOps Services and TFS
-
--->
-
 <a name="process-customization"></a>
 
 ## Process customization
@@ -167,9 +164,10 @@ Many entities want to know more about data protection when they consider moving 
 You customize the work-tracking experience in two different ways, depending on the supported process model:
 
 - For Azure DevOps Services, you use the **Inheritance** process model, which supports WYSIWYG customization.
-- For TFS, you use the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
+- For Azure DevOps Server, you have a choice of using the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
+- For TFS 2018 and earlier versions, you only have access to the **On-premises XML** process model.
 
-Although the **On-premises XML** process model option is powerful, it can cause various issues. The chief issue is that processes for existing projects don't update automatically when TFS is upgraded.
+Although the **On-premises XML** process model option is powerful, it can cause various issues. The chief issue is that processes for existing projects don't update automatically when Azure DevOps Server is upgraded.
 
 For example, TFS 2013 introduced several new features that depended on new work-item types and other process template
 changes. When you upgrade from TFS 2012 to TFS 2013, each project collection gets new versions of each of the
@@ -204,23 +202,19 @@ Projects in organizations that participate in this process-customization private
 
 ## Reporting
 
-Both TFS and Azure DevOps Services offer a variety of tools to give you insight into the progress and quality of your software projects. The tools include:
+Both Azure DevOps Services and Azure DevOps Server offer a variety of tools to give you insight into the progress and quality of your software projects. The tools include:
 
-- [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both TFS and Azure DevOps Services. These tools are easy to set up and use.
+- [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 
-In addition, Azure DevOps Services gives you access to the following services:
+In addition, Azure DevOps Services and Azure DevOps Server 2019 provide access to the following services:
 
 - [The Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
 - [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser and then use the returned JSON data as you want. You can generate queries that span multiple projects or your entire organization.
 
-We plan to make these services available in TFS in a future release. See our [Reporting roadmap](../report/analytics/reporting-roadmap.md).
+To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/analytics/reporting-roadmap.md).
 
-The following reports and dashboards are available only in TFS:
-
-- [Excel reports](../report/excel/excel-reports.md)
-- [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
-- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md)
+[SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md) are available from Azure DevOps Server or TFS when configured with SQL Server Analysis Services.  
 
 ## Related articles
 
