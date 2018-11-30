@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/18/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -87,6 +87,8 @@ The following organization agent pools are provided by default:
 Each of these Microsoft-hosted organization agent pools is exposed to each project through a corresponding project agent pool. By default, all contributors in a project are members of the **User** role on each hosted pool. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted pools.
 
 ::: moniker-end
+
+Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
