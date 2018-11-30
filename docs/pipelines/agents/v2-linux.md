@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/02/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -159,6 +159,9 @@ To run the agent interactively:
  ```bash
 ./run.sh
  ```
+
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
 
 ## Run as a systemd service
 
