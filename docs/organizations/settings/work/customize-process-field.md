@@ -83,7 +83,7 @@ You can add fields and specify the group and page where they should appear. Also
 	> [!NOTE]    
 	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
-0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+0.	Click **Add field** to complete adding the field. If you haven't specified its layout location, it will be added to the first group of fields on the layout form.  
 
 0.	When you've completed making all your changes, open a work item of the type you've just customized. 
 
