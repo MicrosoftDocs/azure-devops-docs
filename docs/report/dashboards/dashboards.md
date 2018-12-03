@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ms.date: 11/01/2018
 ---
 
-# Add and manage dashboards
+# Add, rename, and delete dashboards
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
@@ -158,7 +158,7 @@ With the dashboard selected, you can add [widgets and charts to the dashboard](a
 
 
 <a id="manage">  </a> 
-## Manage dashboards and enable auto-refresh
+## Rename, delete, and enable auto-refresh  
 
 You can rename or delete a dashboard. Also, you can enable auto-refresh, and the dashboard will automatically update every 5 minutes.  
 

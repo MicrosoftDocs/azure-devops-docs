@@ -1,7 +1,7 @@
 ---
-title: ASP.NET
+title: Build ASP.NET apps with Azure Pipelines and Team Foundation Server (TFS)
 titleSuffix: Azure Pipelines & TFS
-description: Build ASP.NET projects using Azure Pipelines or TFS.
+description: Build ASP.NET apps using Azure Pipelines or TFS.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
@@ -12,7 +12,8 @@ ms.date: 08/27/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
-# ASP.NET
+
+# Build ASP.NET apps with Azure Pipelines or Team Foundation Server
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

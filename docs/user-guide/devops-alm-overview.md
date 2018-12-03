@@ -1,5 +1,6 @@
 ---
-title: DevOps tools overview for Azure DevOps Services and TFS    
+title: DevOps tools overview for Azure DevOps 
+titleSuffix: Azure DevOps   
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-new-user  
@@ -10,7 +11,7 @@ ms.date: 11/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# DevOps overview for Azure DevOps Services and TFS
+# Azure DevOps overview
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -24,7 +25,7 @@ Both options are enterprise-ready, supporting teams of any size, from tens to th
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Azure DevOps Services, see [Understand the differences between Azure DevOps Services and TFS](about-azure-devops-services-tfs.md).
+For the key differences between Azure DevOps Services and Azure DevOps Server, see [Understand the differences between Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
 ## Get started in the cloud or on-premises
 

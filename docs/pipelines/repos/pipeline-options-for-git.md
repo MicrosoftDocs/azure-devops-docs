@@ -326,6 +326,10 @@ The Windows agent comes with its own copy of Git.
 If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
 This setting is always true on non-Windows agents.
 
+## Trigger Options for External Git
+
+When using an external Git repository, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
+
 ## Q & A  
 
 <!-- BEGINSECTION class="md-qanda" -->

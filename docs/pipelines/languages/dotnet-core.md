@@ -1,7 +1,7 @@
 ---
-title: Building .NET Core projects with Azure Pipelines and Team Foundation Server (TFS)
+title: Build .NET Core apps with Azure Pipelines and Team Foundation Server (TFS)
 titleSuffix: Azure Pipelines and TFS
-description: Building .NET Core projects by using Azure Pipelines and TFS
+description: Build .NET Core apps by using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
@@ -14,7 +14,7 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Build .NET Core projects with Azure Pipelines or Team Foundation Server
+# Build .NET Core apps with Azure Pipelines or Team Foundation Server
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

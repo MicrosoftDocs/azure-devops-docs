@@ -57,10 +57,10 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
    ---
 
 
-3. In your $home/.npmrc add the following lines replacing account, feedname, username, PAT, and email.
+3. In your $home/.npmrc add the following lines replacing `yourorganization` and `yourfeed`, and adding your username (can be anything except empty), PAT, and email.
 
     ```json
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=YOUR-USERNAME
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY
     //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
     //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
     //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:always-auth=true

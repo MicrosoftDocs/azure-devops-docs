@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/02/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -159,6 +159,9 @@ If you configured the agent to run as a service, it starts automatically. You ca
 > If you need to change the agent's logon account, don't do it from the Services
 > snap-in. Instead, see the information below to re-configure the agent.
 
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
+
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 
 ## Remove and re-configure an agent
@@ -192,6 +195,8 @@ The help provides information on authentication alternatives and unattended conf
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
 
 ::: moniker range="tfs-2017"
 

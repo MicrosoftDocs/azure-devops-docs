@@ -1,7 +1,7 @@
 ---
-title: Android build build and release task
+title: Android build and release task
 titleSuffix: Azure Pipelines & TFS
-description: Android Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
+description: Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

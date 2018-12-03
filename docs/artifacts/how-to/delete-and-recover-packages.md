@@ -100,7 +100,7 @@ You cannot upload a newer revision package with that same version number, or del
 You must be a **contributor** to unlist and an **owner** to delete.
 
 # [New navigation](#tab/new-nav)
-Choose the package from **Azure Artifacts** select the appropriate option from the menu:
+Choose the package from **Azure Artifacts** and select the appropriate option from the menu:
 
 ![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package-newnav.png)
 
@@ -147,6 +147,22 @@ nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 ```
 
 Currently, NuGet.exe can only **unlist** packages; Azure DevOps Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+
+# [Python](#tab/python)
+
+You must be an **owner** to delete a Python package.
+
+Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
+
+![Unlist or delete Universal package](../_img/delete/delete-python-package.png)
+
+# [Universal](#tab/universal)
+
+You must be an **owner** to delete a Universal Package.
+
+Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
+
+![Unlist or delete Universal package](../_img/delete/delete-universal-package.png)
 
 ---
 

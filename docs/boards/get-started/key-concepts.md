@@ -68,11 +68,6 @@ A pick list specifies an enumerated set of values that appear within a drop-down
 
 [!INCLUDE [temp](../../_shared/glossary-terms/process.md)]  
 
-## Product backlog 
-A product backlog is an interactive list of work items. It corresponds to a team's project plan or roadmap for what the team plans to deliver. You use a product backlog to prioritize work, forecast work by sprints, and quickly link work to portfolio backlog items. You can define your backlog items and then manage their status by using the Kanban board. 
-
-Each product backlog can be customized by a team. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
-
 
 [!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
 

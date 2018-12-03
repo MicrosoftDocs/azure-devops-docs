@@ -72,10 +72,15 @@ Team Foundation Server uses the On-premises XML process model to support customi
 
 Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
 
+::: moniker range=">= azdevserver-2019" 
+
 - **Inheritance process model**
 	- [Customize a project](../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)     
 	- [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)    
 
+::: moniker-end
+
+::: moniker range="vsts" 
 - **Hosted XML process model**
 	- [Supported upgrade operations](../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 	- [Clone a Hosted XML process to Inheritance](../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
@@ -83,14 +88,20 @@ Use the guidance provided in the following topics based on the process model or 
 	- [Customize a Hosted XML process](../organizations/settings/work/import-process/customize-process.md)  
     - [Import a process](../organizations/settings/work/import-process/import-process.md)
 
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019" 
 - **On-premises XML process model**
     - [Add or modify a field](add-modify-field.md)
     - [Add or modify a work item type](add-modify-wit.md)
+
+::: moniker-end
 
 - **Process templates**
     - [Upload or download a process template](../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
     - [Customize a process template](./process-templates/customize-process.md)  
 
+::: moniker range="<= azdevserver-2019" 
 ## Reference  
   
 - [Index to XML element reference](xml/xml-element-reference.md) 
@@ -100,10 +111,11 @@ Use the guidance provided in the following topics based on the process model or 
 - [WebLayout and Control elements](xml/weblayout-xml-elements.md)
 - [Process configuration XML element reference](xml/process-configuration-xml-element.md)
 
- 
+::: moniker-end
+
 ## Resources 
 
-- [Work items](../boards/work-items/index.md)
+- [Azure Boards](../boards/index.md)
 - [Scale & configure teams](../organizations/settings/index.md)
 - [Marketplace extensions](../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../extend/overview.md) 

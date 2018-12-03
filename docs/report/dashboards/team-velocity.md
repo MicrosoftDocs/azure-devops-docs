@@ -12,7 +12,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018
+ms.date: 11/29/2018
 ---
 
 # Configure the Velocity widget 
@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). 
 
-**Example Velocity widget showing six sprints of velocity**  
+**Example: Velocity widget showing six sprints of velocity**  
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Teams track their velocity to help them determine how much work they can perform
 Use this topic to learn: 
 
 > [!div class="checklist"]
-> * Install and configure the Velocity widget available from the Analytics service     
+> * How to install and configure the Velocity widget 
 > * Required and recommended team activities to support velocity tracking      
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
@@ -67,32 +67,34 @@ You configure your velocity widget for a single team. If you want to view the ve
 	This is useful for comparing your planned work to actual deliverables.
 	By default, the count of planned work begins as of the start date of the iteration. <br/> 
 	
-	<b><i>Days past start date of iteration when planned work is final:</i></b>  Specify a number of days past the start date to count planned work. For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day. 
+	- <b><i>Days past start date of iteration when planned work is final:</i></b>  Specify a number of days past the start date to count planned work. For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day. 
 	
-	> [!NOTE]
-	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date<br/>
-	For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
+		For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
-	**Highlight work completed late**
-	Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
+	> [!NOTE]
+	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date.  <br/>
+
+	<hr/>
+
+	**Highlight work completed late:** Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
 	This is useful for spotting a trend where work items are marked complete after the iteration is complete.
+
+	- <b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress.  
+
+		For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
 
 	> [!NOTE]  
 	> A work item is considered late when the work item's Completed Date is later than End Date of the Iteration the work item is _currently_ assigned to.
 	> 
-	> It will take into account the value you enter for <i>Days past end date of iteration after which work is late<i>.
-		
-	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress.  
-
-	For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
+	> It will take into account the value you enter for <i>Days past end date of iteration after which work is late<i>.  
 
 6. Choose **Save** when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
    
 	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 2px solid #C3C3C3;" />  
 
+[!INCLUDE [temp](../_shared/velocity-activities.md)] 
 
-## Add other teams
-If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../organizations/settings/set-team-defaults.md). 
+[!INCLUDE [temp](../_shared/add-teams.md)] 
 
 ## Try this next
 
