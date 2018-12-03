@@ -9,7 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 07/27/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/29/2018
 ---
 
 
@@ -89,6 +90,7 @@ You open team settings from the top navigation bar. Select the team you want and
 ::: moniker range=">= tfs-2017"  
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths.  Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
 ::: moniker-end  
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
 ::: moniker-end  
@@ -100,12 +102,12 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker range=">= tfs-2017"  
 
-0.	Open the **Work>Areas** admin page for the team context.  
+0.	Open **Areas** for the team context.  
 
-	Here, we navigate to the Web team.  
+	Here, we show the Areas for the Web team.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Work, Area page for team](_img/team-defaults/open-areas-web-team.png)
+	> ![Area page for team](_img/team-defaults/open-areas-web-team.png)
 
 2. Choose the area path(s) to be active for each team.  
 
@@ -132,7 +134,7 @@ The default area path determines the default area path assigned to work items th
 
 0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
 
-	![Backlog for Web  team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
+	![Product backlog for Web team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
 
 ::: moniker-end  
 
@@ -145,9 +147,9 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019" 
 
-0.	Open **Project settings>Work>Team Configuration>Iterations** for a team.  
+0.	Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
 
 	Here, we navigate to the Fabrikam Fiber Team.  
 
@@ -182,14 +184,14 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
 
 1.	Open **Work>Iterations** for a team.  
 
@@ -256,6 +258,10 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---

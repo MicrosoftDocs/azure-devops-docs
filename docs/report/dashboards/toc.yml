@@ -6,7 +6,7 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: "Add & manage dashboards"
+  - name: "Add, rename, & delete dashboards"
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md

@@ -28,7 +28,8 @@ Yes. You can configure your Azure DevOps Server to look for the agent package fi
 
 0. From a computer with Internet access, download the latest version of the agent package files (in .zip or .tar.gz form) from the [Azure Pipelines Agent GitHub Releases page](https://github.com/Microsoft/azure-pipelines-agent/releases).
 
-0. Transfer the downloaded package files to each Azure DevOps Server Application Tier, via a method of your choice (e.g. USB drive, Network transfer). Place the agent files under the `%ProgramData%\Microsoft\DevOps\Agents` folder.
+0. Transfer the downloaded package files to each Azure DevOps Server Application Tier, via a method of your choice (e.g. USB drive, Network transfer). Place the agent files under the `%ProgramData%\Microsoft\Azure DevOps\Agents` folder.
+**Note**: in Azure DevOps Server 2019 RC1, the folder is called `%ProgramData%\Microsoft\DevOps\Agents`.
 
 0. You're all set! Your Azure DevOps Server will now use the local files whenever the agents need to be updated. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 

@@ -46,6 +46,9 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
     externalFeeds: 'feed_name1, feed_name2'
 ```
 
+* **artifactFeeds**: the name of one or more Azure Artifacts feeds within your organization
+* **externalFeeds**: the name of one or more [external connection endpoints](/azure/devops/pipelines/library/service-endpoints), including PyPI or feeds in other Azure DevOps organizations
+
 # [Designer](#tab/designer)
 
 ![icon](../tasks/package/_img/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**

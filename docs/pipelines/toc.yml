@@ -404,6 +404,8 @@
         href: tasks/utility/extract-files.md
       - name: FTP Upload
         href: tasks/utility/ftp-upload.md
+      - name: GitHub Release
+        href: tasks/utility/github-release.md
       - name: Install Apple Certificate
         href: tasks/utility/install-apple-certificate.md
       - name: Install Apple Provisioning Profile

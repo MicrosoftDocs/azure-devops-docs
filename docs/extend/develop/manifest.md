@@ -107,7 +107,7 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
 }            
 ```
 
-> **Note:** Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -120,6 +120,18 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
         }
     }
 }          
+```
+
+You will also need to add a new section in your extension manifest to override paid licensing. In the future, we will remove the paid licensing check and this override will no longer be required, but for now you will need it to ensure your extension is displayed as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+```json
+"licensing": {
+
+      "overrides": [
+
+        { "id": "my-hub", "behavior": " AlwaysInclude" }
+      ]
+    }
+
 ```
 
 If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 

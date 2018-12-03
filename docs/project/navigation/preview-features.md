@@ -29,7 +29,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per Azure DevOps organization](#account-level)|  
 > |-------------|----------|  
-> |- Git commit menu extension points<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)<br/>- [Build YAML pipelines](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)<br/>- [New YAML pipeline creation experience](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |
+> |-Experimental themes<br/>- Git commit menu extension points<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [Build YAML pipelines](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- Experimental themes<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New YAML pipeline creation experience](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -77,13 +77,14 @@ When you enable a feature at the organization level, you essentially turn it on 
 ## Features now enabled for all Azure DevOps Services projects 
 
 ### Azure Pipelines
+- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)  
 - [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>
 - [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
 - [Symbol server](../../pipelines/artifacts/symbols.md)  
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers)  
 
 ### Azure Boards 
-- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 
 ### Azure Repos

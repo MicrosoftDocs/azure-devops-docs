@@ -24,6 +24,8 @@
     href: quickstarts/universal-packages.md
 - name: Tutorials
   items:
+  - name: Create a private PowerShell repository
+    href: tutorials/private-powershell-library.md
   - name: Communicate quality with release views
     href: feeds/views.md
   - name: Move your packages to the cloud
@@ -82,6 +84,8 @@
       href: npm/publish.md
     - name: Use npm scopes
       href: npm/scopes.md
+    - name: Use npm audit
+      href: npm/npm-audit.md
   - name: Maven
     items:
     - name: Set up authentication # kill this with connect to feed

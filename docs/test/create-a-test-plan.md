@@ -75,14 +75,14 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
    Now you've created a requirement-based test suite for each backlog item.
 
 <a name="findplan"></a>
-## Find a test plan
+## Find a test case
 
-* The **Test Plans** page shows a single test plan. Use the
-  ![filter-icon](_img/create-a-test-plan/filter-icon.png) icon to find the one you want to work with.
+* The **Test Plans** page shows a single test plan. You may use the
+  ![filter-icon](_img/create-a-test-plan/filter-icon.png) icon to find the tests you want to work with.
 
   ![Finding a test plan](_img/create-a-test-plan/select-test-plan.png)
 
-Test plans, suites, and test cases are stored in Azure DevOps and TFS as special types of work items.
+Test plans, suites, and cases are stored in Azure DevOps and TFS as special types of work items.
    
 ## See also
 

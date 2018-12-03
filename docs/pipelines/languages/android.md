@@ -1,7 +1,7 @@
 ---
-title: Build Android apps with Azure Pipelines or TFS
+title: Build Android apps
 titleSuffix: Azure Pipelines & TFS
-description: CI and CD for Android projects.
+description: Set up CI/CD to build, test, and deploy Android projects.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
