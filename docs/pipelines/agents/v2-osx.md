@@ -317,6 +317,8 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Where can I learn more about how the launchd service works?
 
 [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)

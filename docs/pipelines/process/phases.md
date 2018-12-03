@@ -410,7 +410,7 @@ If you are using YAML, variables can be specified on the job. The variables can 
 
 ::: moniker range="vsts"
 
-Here is an example of defining variables in a job and using them within tasks.
+Here's an example of defining variables in a job and using them within tasks.
 
 ```yaml
 variables:
@@ -499,7 +499,7 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 The OAuth token is always available to YAML pipelines.
 It must be explicitly mapped into the task or step using `env`.
-Here is an example:
+Here's an example:
 
 ```yaml
 steps:

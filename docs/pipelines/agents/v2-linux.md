@@ -295,6 +295,8 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Why is sudo needed to run the service commands?
 
 `./svc.sh` uses `systemctl`, which requires `sudo`.
