@@ -56,7 +56,6 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
     ```
    ---
 
-
 3. In your $home/.npmrc add the following lines replacing account, feedname, username, PAT, and email.
 
     ```json
