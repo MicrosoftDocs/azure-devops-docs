@@ -196,6 +196,8 @@ The help provides information on authentication alternatives and unattended conf
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ::: moniker range="tfs-2017"
 
 ### What version of the agent runs with TFS 2017?
