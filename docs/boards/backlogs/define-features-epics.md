@@ -1,7 +1,7 @@
 ---
 title: Define features and epics
 titleSuffix: Azure Boards
-description:  Define features and epics to group backlog items and track high level items 
+description: Define features and epics to group backlog items and track high level items 
 ms.custom: boards-backlogs 
 ms.technology: devops-agile
 ms.prod: devops
@@ -31,6 +31,7 @@ Use your backlogs to plan your project and to:
 
 Use this topic to learn how to: 
 >[!div class="checklist"]      
+> * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
@@ -41,6 +42,27 @@ Use this topic to learn how to:
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+
+## What comprises a feature or epic?  
+
+The epics and features that you create should reflect your business focus. As user stories or product backlog items roll up into features, and features roll up into epics&mdash;you'll want to name your features and epics with that in mind. 
+
+A feature typically represents a shippable component of software. An epic represents a business initiative to be accomplished. Here are a few examples of each. 
+
+**Features**
+- Add view options to the new work hub 
+- Add mobile shopping cart 
+- Support text alerts
+- Refresh the web portal with new look and feel 
+
+**Epics**
+- Increase customer engagement
+- Improve and simplify the user experience
+- Implement new architecture to improve performance 
+- Engineer the application to support future growth
+- Support integration with external services 
+- Support mobile apps
+
 
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
@@ -238,7 +260,9 @@ A subjective unit of measure that captures the how the business value decreases 
 ## Add child items
 With your features defined, you're able to add child items to them. From any backlog, you can add child items. 
 You can add features to epics, and backlog items to features. 
- 
+
+> [!TIP]    
+> You can also add child user stories from the Kanban board for Features, and add child features fromthe Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
 
 # [New navigation](#tab/new-nav)
 
@@ -252,9 +276,6 @@ Here we add a product backlog item as a child to the Customer Web - Phase 1 feat
 > ![Add a product backlog item as a child to a feature](_img/features-epics/add-child-item-to-feature.png) 
 
 Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you can add a child item. The work item always corresponds to the hierarchy of work item types that are defined for your project.
-
-> [!TIP]    
-> You can also add child user stories from the Kanban board for Features. For details, see 
 
 
 ::: moniker-end

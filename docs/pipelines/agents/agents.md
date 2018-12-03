@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/16/2018
+ms.date: 11/26/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -305,5 +305,3 @@ Yes. This approach can work well for agents that run jobs that don't consume a l
 You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume a lot of disk and I/O resources.
 
 You might also run into problems if parallel build jobs are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
-
-[!INCLUDE [agent-latest-version](_shared/v2/qa-agent-version.md)]

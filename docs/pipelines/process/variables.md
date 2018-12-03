@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/20/2018
+ms.date: 11/26/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -54,15 +54,16 @@ See the comprehensive lists of [build variables](../build/variables.md) and [rel
 
 ### System.AccessToken
 
-Secret variables such as System.AccessToken have special behavior. Secrets are
-not available to scripts and tasks by default. This reduces the
-chances for a rogue script or task to steal the credentials they contain.
+Secret variables such as System.AccessToken have special behavior. 
+Secrets aren't available to scripts and tasks by default. 
 You must explicitly allow secret variables on a pipeline-by-pipeline basis.
+This reduces the chances for a malicious script or task to steal the credentials they contain.
+
 
 # [YAML](#tab/yaml)
 
 In YAML, you must explicitly map System.AccessToken into the pipeline using a
-variable. You must do this at the step or task level:
+variable. You can do this at the step or task level:
 
 ```yaml
 steps:

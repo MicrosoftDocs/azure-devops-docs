@@ -30,11 +30,11 @@ Although both offerings provide the same [essential services](services.md), comp
 - Improved connectivity with remote sites
 - A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
 
-To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the fundamental differences, as well as the differences in specific feature areas between Azure DevOps Services and TFS.
+To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the fundamental differences, as well as the differences in specific feature areas between Azure DevOps Services and Azure DevOps Server.
 
 **Fundamental differences between Azure DevOps Services and Azure DevOps Server**  
 
-Consider the differences in these areas when contemplating a move from TFS to Azure DevOps Services:
+Consider the differences in these areas when contemplating a move from  Azure DevOps Server to Azure DevOps Services:
 
 - [Scope and scale data](#scope-scale-data)
 - [Authentication](#authentication)
@@ -43,7 +43,7 @@ Consider the differences in these areas when contemplating a move from TFS to Az
 - [Security and data protection](#security-data)
 
 **Differences in specific feature areas between Azure DevOps Services and Azure DevOps Server**  
-Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some TFS features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SharePoint or Project Server (which are now deprecated features for TFS 2018 and later versions).  
+Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some  Azure DevOps Server features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting. 
 
 Two additional areas differ in their support:
 
@@ -52,7 +52,7 @@ Two additional areas differ in their support:
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
-If you're on TFS and considering moving to Azure DevOps Services, read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
+If you're on TFS or  Azure DevOps Server and are considering moving to Azure DevOps Services, read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
 
 <!---
 ## Fundamental differences between TFS and Azure DevOps Services
@@ -82,14 +82,14 @@ Learn more: [Manage project collections](/tfs/server/admin/manage-team-project-c
 ### Azure DevOps Services scales by using organizations and projects
 
 Azure DevOps Services differs slightly from Azure DevOps Server. It currently has only two options for scoping and scaling
-data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always contain exactly one project collection. Organizations can contain multiple projects, such as TFS project collections.
+data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always contain exactly one project collection. Organizations can contain multiple projects, such as  project collections.
 
 <!--- Commenting out forward looking content for now 
 We are planning a third option for scoping and scaling data in Azure DevOps Services: a new entity called an Enterprise. Rather than adding support for multiple project collections within an organization, multiple
 organizations could be grouped within an organization. 
 
 Additionally, we merge organizations and their single 
-project collections into a single entity. The organization is similar to the TFS deployment and the TFS collection.
+project collections into a single entity. The organization is similar to the  Azure DevOps Server deployment and the project collection.
 
 See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 -->
@@ -123,8 +123,8 @@ Learn more: [Access Azure DevOps Services with Azure Active Directory](../organi
 
 ## Manage users and groups
 
-In Azure DevOps Server, you provide users access to deployments by adding Active Directory (AD) groups to various TFS groups
-(for example, the Project Contributors group for an individual  project). The AD group memberships are kept in sync.
+In Azure DevOps Server, you provide users access to deployments by adding Active Directory (AD) groups to various Azure DevOps groups
+(for example, the Contributors group for an individual  project). The AD group memberships are kept in sync.
 As users are added and removed in AD, they also gain and lose access to Azure DevOps Server.
 
 In Azure DevOps Services, you can use a similar mechanism to
@@ -140,7 +140,7 @@ In both Azure DevOps Services and Azure DevOps Server, you manage access to feat
 In Azure DevOps Server, all use is on the honor system. To set access levels for users based on their licenses, specify their
 [access levels](../organizations/security/change-access-levels.md) on the administration page. For example, assign unlicensed users Stakeholder access only.
 
-Users with a TFS Client Access License (CAL) can have Basic access. Visual Studio subscribers can have either Basic or Advanced access, depending on their subscriptions. Azure DevOps Server doesn't attempt to verify these licenses or enforce compliance.
+Users with a  Azure DevOps Server/TFS Client Access License (CAL) can have Basic access. Visual Studio subscribers can have either Basic or Advanced access, depending on their subscriptions. Azure DevOps Server doesn't attempt to verify these licenses or enforce compliance.
 
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
@@ -187,7 +187,7 @@ customization in Azure DevOps Services is available. This option is referred to 
 
 With this option, you 
 [import customized process templates](../organizations/settings/work/import-process/import-process.md).
-The option is similar to using custom process templates in TFS, except that:
+The option is similar to using custom process templates, except that:
 
 * [Restrictions](../organizations/settings/work/import-process/import-process.md) exist in the customizations that can be imported into Azure DevOps Services. 
 

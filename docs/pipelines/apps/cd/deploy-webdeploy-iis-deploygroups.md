@@ -32,11 +32,11 @@ After you commit and push a code change, it is automatically built and then depl
 
 You'll need a continuous integration (CI) build pipeline that publishes your web deployment package. To set up a CI build pipeline, see:
 
-* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
+* [Build ASP.NET 4 apps](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../../languages/dotnet-core.md)
+* [Build ASP.NET Core apps](../../languages/dotnet-core.md)
 
-* [Build your Node.js app with gulp](../../languages/javascript.md)
+* [Build JavaScript and Node.js apps](../../languages/javascript.md)
 
 ## Prerequisites
 
