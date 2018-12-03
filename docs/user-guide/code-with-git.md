@@ -21,9 +21,9 @@ In this quickstart, you learn how to share your code with others. After you crea
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo, and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-## Install Git command line tools
+## Install Git command-line tools
 
-1. Install one of the following Git command line tools:
+1. Install one of the following Git command-line tools:
 
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows).
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](../repos/git/set-up-credential-managers.md#macos-and-linux).
@@ -43,13 +43,13 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   ![Screenshot of Azure DevOps project, with Copy icon highlighted](_img/code-with-git-clone-repo.png)
 
 
-3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. The following example shows this:
+3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
   ```
   
-  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
+  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo. This copy is put into a new folder for you to work with.
 
   Keep this command window open (you'll use it in the following steps).
 
@@ -76,7 +76,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Work with the code
 
-In the following steps, we'll make a change to the files on your computer, commit the changes locally, and push the commit to the repo that is stored on the server. We can then view the changes there.
+In the following steps, we make a change to the files on your computer, commit the changes locally, and push the commit to the repo that is stored on the server. We can then view the changes.
 
 1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, and make some changes. Then save and close the file.
 
@@ -95,7 +95,7 @@ In the following steps, we'll make a change to the files on your computer, commi
 
   The `git add .` command stages any new or changed files, and `git commit -m` creates a commit with the specified commit message.
 
-4. Push your changes up to the Git repo on the server by entering the following command into the Git command window:
+4. Push your changes to the Git repo on the server. Enter the following command into the Git command window:
 
   ```
   git push

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 12/03/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-A source control system (also called a *version control* system) allows developers to collaborate on code and track changes made to the code base. Source control is an essential tool for multi-developer projects.  
+A source control system, also called a *version control* system, allows developers to collaborate on code and track changes. Source control is an essential tool for multi-developer projects.  
 
 Our systems support two types of source control: Git (distributed) and Team Foundation Version Control (TFVC). TFVC is a centralized, client-server system. In both Git and TFVC, you can check in files and organize files in folders, branches, and repositories.
 
-You manage your repos, branches, and other code development operations from **Azure Repos**.
+Manage your repos, branches, and other code development operations from **Azure Repos**.
 
 ![Repos, code GitHub](_img/code-git-hub.png)
 
@@ -34,7 +34,7 @@ Developers can commit each set of changes and perform version control operations
 
 With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and are created on the server.
 
-## Try this next  
+## Try next  
 
 Start sharing your code or get your code by using source control.  
 
