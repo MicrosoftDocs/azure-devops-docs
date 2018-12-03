@@ -72,7 +72,9 @@ You configure your velocity widget for a single team. If you want to view the ve
 		For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
 	> [!NOTE]
-	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date<br/>
+	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date.  <br/>
+
+	<hr/>
 
 	**Highlight work completed late:** Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
 	This is useful for spotting a trend where work items are marked complete after the iteration is complete.
