@@ -10,18 +10,18 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 11/29/2018 
+ms.date: 12/03/2018 
 ---
 
 # Understand the differences between Azure DevOps Services and Azure DevOps Server
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps Services and Azure DevOps Server, formerly named Visual Studio Team Foundation Server (TFS), both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
+Azure DevOps Services and Azure DevOps Server were formerly named Visual Studio Team Foundation Server (TFS). They both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
 Azure DevOps Services is the cloud offering that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-Azure DevOps Server is the on-premises offering that's built on a SQL Server back end. Enterprises usually choose on-premises Azure DevOps Server when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
+Azure DevOps Server is the on-premises offering that's built on a SQL Server back end. Companies usually choose on-premises Azure DevOps Server when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
@@ -30,7 +30,7 @@ Although both offerings provide the same [essential services](services.md), comp
 - Improved connectivity with remote sites
 - A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
 
-To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the fundamental differences, as well as the differences in specific feature areas between Azure DevOps Services and Azure DevOps Server.
+To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the key differences, as well as the differences in specific feature areas between Azure DevOps Services and Azure DevOps Server.
 
 **Fundamental differences between Azure DevOps Services and Azure DevOps Server**  
 
@@ -43,7 +43,7 @@ Consider the differences in these areas when contemplating a move from  Azure De
 - [Security and data protection](#security-data)
 
 **Differences in specific feature areas between Azure DevOps Services and Azure DevOps Server**  
-Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some  Azure DevOps Server features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting. 
+Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some  Azure DevOps Server features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Service doesn't support integration with SQL Server Analysis Services to support reporting. 
 
 Two additional areas differ in their support:
 
@@ -52,7 +52,7 @@ Two additional areas differ in their support:
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
-If you're on TFS or  Azure DevOps Server and are considering moving to Azure DevOps Services, read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
+Are you on TFS or Azure DevOps Server and considering moving? Read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
 
 <!---
 ## Fundamental differences between TFS and Azure DevOps Services
@@ -81,7 +81,7 @@ Learn more: [Manage project collections](/tfs/server/admin/manage-team-project-c
 
 ### Azure DevOps Services scales by using organizations and projects
 
-Azure DevOps Services differs slightly from Azure DevOps Server. It currently has only two options for scoping and scaling
+Azure DevOps Service differs slightly from Azure DevOps Server. There are currently only two options for scoping and scaling
 data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always contain exactly one project collection. Organizations can contain multiple projects, such as  project collections.
 
 <!--- Commenting out forward looking content for now 
@@ -94,7 +94,7 @@ project collections into a single entity. The organization is similar to the  Az
 See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 -->
 
-To prepare to use the organization entity, we recommend that you create organizations in Azure DevOps Services wherever you would have created collections in Azure DevOps Server. In the short term, having your work split across multiple organizations can cause some problems, but we plan to address these problems when the organization entity is introduced. In particular, the following scenarios:
+We recommend that you create organizations in Azure DevOps Services wherever you would have created collections in Azure DevOps Server. The following scenarios apply:
 
 - You purchase Azure DevOps Services users per organization, meaning that paid users can access only the organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option because subscribers can be added to any number of organizations at no charge. We're also considering other ways to make access available to multiple organizations that are grouped into a single organization.
 

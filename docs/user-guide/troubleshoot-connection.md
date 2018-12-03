@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 11/08/2018
+ms.date: 12/03/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2013'
 
 As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 
-1. Sign out of your browser. To do this, select the [Visual Studio sign-out](http://aka.ms/VsSignout) link.
+1. Sign out of your browser. To do this, select the [Visual Studio sign out](http://aka.ms/VsSignout) link.
 
 2. Delete the cookies in your browser. To delete cookies in most browsers, press Ctrl+Shift+Del.
 
@@ -31,7 +31,7 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 4. Close all browsers and close the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection to Azure DevOps. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps, and then re-add it.
+5. Use a private browser session to retry the connection to Azure DevOps. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps, and then readd it.
 
 ## Troubleshoot signing in to Azure DevOps
 
@@ -42,12 +42,12 @@ Two types of identities can sign in to Azure DevOps: Microsoft accounts and Azur
 > [!div class="mx-imgBorder"]
 ![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
 
-The most common error page is the *401 Not Authorized* error. This occurs when your identity doesn't have permissions to enter an organization. Common reasons for this include:
+The most common error page is the *401 Not Authorized* error. This occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
 
 * Your identity isn't a member of the organization.
 * Your identity has an invalid or missing license assignment.
 
-If you think you are a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
+If you think you're a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
 
 ### Scenario 1
 
@@ -58,20 +58,20 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 > [!div class="mx-imgBorder"]
 ![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
 
-This is a highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You have signed in with your work or school account, but your personal account is the identity that has access to the organization.
+ A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign in address exist. You have signed in with your work or school account, but your personal account is the identity that has access to the organization.
 
 ### Mitigation
 
-In some cases, you might not know you have two identities with the same sign-in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD. 
+In some cases, you might not know you have two identities with the same sign in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
 
-To resolve this, select the **Sign in with your personal MSA account** link to sign out of your current work or school Azure AD account, and then sign in by using the personal Microsoft account. After authentication, you should have access to the organization.
+To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account** and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
-> [!TIP] 
+> [!TIP]
 > To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
 
 ### Scenario 2
 
-Your personal Microsoft account doesn't have access but your Azure AD account does. This is the opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
+Your personal Microsoft account doesn't have access but your Azure AD account does. This is an opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
 
 > 401 - Work or school, or Personal account
 
@@ -80,7 +80,7 @@ Your personal Microsoft account doesn't have access but your Azure AD account do
 
 ### Mitigation
 
-If you enter your credentials correctly but  instead of redirecting to your organization you're redirected back to the original sign-in page, we recommend clearing all cookies and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
+If you enter your credentials correctly but you're redirected back to the original sign-in page, we recommend clearing all cookies and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
 
 ::: moniker-end
 
@@ -148,5 +148,5 @@ When the on-premises TFS configuration changes, such as when you move or split a
         *Drive*:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\2.0\Cache
 
 4. Delete the contents of the Cache directory, including all subfolders.
- 
+
 ::: moniker-end
