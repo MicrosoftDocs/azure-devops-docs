@@ -2,9 +2,8 @@
 ms.topic: include
 ---
 
-We're deprecating the **Hosted Linux Preview** pool.
-We recommend that you begin moving your pipelines to the **Hosted Ubuntu 1604** pool now.
-We plan to remove the **Hosted Linux Preview** from Azure Pipelines on December 1, 2018.
+The **Hosted Linux Preview** pool has been deprecated since December 1, 2018, and is being removed in waves.
+You must move your pipelines to the **Hosted Ubuntu 1604** pool.
 
 ### How do I move my builds?
 

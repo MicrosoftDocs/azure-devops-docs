@@ -7,6 +7,8 @@
     href: scrum-overview.md
   - name: "Backlogs, boards, & plans"
     href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
+  - name: Best tool for the job
+    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
   - name: Start using Azure Boards
     href: ../get-started/index.md
 - name: Quickstarts

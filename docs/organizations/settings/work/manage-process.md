@@ -60,7 +60,7 @@ You can create an inherited process from any one of the three system processes: 
 	> [!div class="mx-imgBorder"]  
 	> ![Context menu, Choose Create inherited process](_img/process/create-inherited-process.png) 
 
-	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../security/set-project-collection-level-permissions.md#collection-level).
 
 0.	Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 

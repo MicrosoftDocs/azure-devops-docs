@@ -222,6 +222,18 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 ::: moniker-end
 
 
+::: moniker range="vsts" 
+<a id="link-github">  </a>
+## Work items linked to GitHub commits and pull requests  
+
+By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
+
+The link types used are **GitHub Commit** and **GitHub Pull Request**.
+
+To learn more, see [GitHub & Azure Boards](../github/index.md). 
+::: moniker-end    
+
+
 ## Work items linked to TFVC code development  
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../repos/tfvc/check-your-work-team-codebase.md).

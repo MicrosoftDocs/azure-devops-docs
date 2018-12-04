@@ -182,3 +182,12 @@ Delivery plans display work items as cards along a timeline or calendar view. Th
 ![Moving a card to a different iteration](../plans/_img/plans_move1.png)
 
 
+::: moniker range="vsts"
+
+## GitHub integration 
+
+By integrating Azure Boards with GitHub repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
+
+To learn more, see [Integrate GitHub with Azure Boards](../../boards/github/index.md).
+
+::: moniker-end

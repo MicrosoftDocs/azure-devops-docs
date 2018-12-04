@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -50,14 +50,6 @@ Drag and drop tests to reorder them.
 **A:** Use a query to group together test cases that have a particular characteristic, 
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
-
-### Q: Can I edit other properties of a test plan?
-
-**A:** You can only do this from Microsoft Test Manager. If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in Microsoft Test Manager directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
-(The most recently installed version of Microsoft Test Manager is launched.)
-
-![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
 
 ### Q: Can I copy, clone, and move test plans and test suites?
 
@@ -487,15 +479,6 @@ Test results are often deleted before you can analyze them.
 
 [Go to related topic &gt;](mtm/share-steps-between-test-cases.md)
 
-### Q: How do I use shared steps in Microsoft Test Manager?**  
-
-**A:** It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
-  
-### Q: Can I find all my shared steps, and all the test cases where they are used?**  
-
-**A:** Yes. [Open Microsoft Test Manager](mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
-Shared steps and test cases are stored as work items in Team Foundation Server.  
-  
 ### Q: Can I share steps between test plans and projects?**  
 
 **A:** Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
@@ -572,41 +555,6 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf** 
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
-
-*****
-
-<a name="mtmqna"></a>
-## Microsoft Test Manager
-
-[Go to related topic &gt;](mtm/run-manual-tests-with-microsoft-test-manager.md)
-
-### Q: Can I record a test in one test plan and play it back in another?
-  
-**A:** Yes, this is a great way to do regression tests quickly and accurately. 
-If you want to repeat some tests you did in a previous sprint, 
-just add those test cases to the test plan for the current sprint.
-The recording is linked to the test case, not to its appearance 
-in any particular test plan or suite.
-
-### Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
-  
-**A:** Yes, the recording is linked to the test case, 
-so you can play it back from any instance of that test case, even in different 
-[test configurations](mtm/test-configurations-specifying-test-platforms.md), 
-test suites, or test plans.
-
-### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
-  
-**A:** Action recording works best for apps in which each user 
-interface field has a unique ID, and for basic actions such as keystrokes, 
-clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
-To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
-
-### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
-
-**A:** Yes, see [Automate system tests](../pipelines/index.md).
 
 *****
 
