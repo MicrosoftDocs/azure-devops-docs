@@ -8,13 +8,16 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run manual tests with Microsoft Test Manager
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
 
@@ -93,6 +96,34 @@ Monitor the progress of your project by seeing how many tests have passed.
 Tests begin in the Active state, meaning that they are ready to run. When a bug has been fixed, you can set the state of a failed test back to Active.  
   
 ![View test results and reset a test ready to re&#45;run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_run13.png)  
+
+
+## FAQs
+
+### Q: Can I record a test in one test plan and play it back in another?
+  
+**A:** Yes, this is a great way to do regression tests quickly and accurately. 
+If you want to repeat some tests you did in a previous sprint, 
+just add those test cases to the test plan for the current sprint.
+The recording is linked to the test case, not to its appearance 
+in any particular test plan or suite.
+
+### Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
+  
+**A:** Yes, the recording is linked to the test case, so you can play it back from any instance of that test case, even in different [test configurations](test-configurations-specifying-test-platforms.md), test suites, or test plans.
+
+### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
+  
+**A:** Action recording works best for apps in which each user 
+interface field has a unique ID, and for basic actions such as keystrokes, 
+clicks, and menu selections. It doesn't work for some apps and web browsers.
+See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+To learn how to develop your app so that it's easier to record tests, 
+see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
+
+### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
+
+**A:** Yes, see [Automate system tests](../../pipelines/index.md).
   
 ## See Also  
 

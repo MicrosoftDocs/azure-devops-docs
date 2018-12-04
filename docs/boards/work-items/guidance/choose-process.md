@@ -442,11 +442,11 @@ Work item types that are added to the Hidden Types category don't appear in the 
 
 <a id="test-experience"></a>
 ### WITs that support the test experience  
-WITs that support the test experience and work with Test Manager and the TFS web portal are linked together using the link types shown in the following picture. 
+WITs that support the test experience and work with Test Manager and the web portal are linked together using the link types shown in the following picture. 
 
   ![Test management work item types](_img/ALM_PT_WITS_TestExperience.png)
 
-From the web portal or Test Manager, you can view which test cases are defined for a test suite, 
+From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
 and which test suites are defined for a test plan. 
 However, these objects aren't connected to each other through link types. 
 You can customize these WITs as you would any other WIT. 

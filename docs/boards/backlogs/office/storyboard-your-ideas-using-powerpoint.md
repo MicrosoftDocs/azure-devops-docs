@@ -18,6 +18,9 @@ ms.date: 05/10/2017
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
 
+> [!IMPORTANT]  
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Storyboarding with PowerPoint and Office Project. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.   
+
 ## Use storyboard shapes and PowerPoint features
 
 1.  If you're interfacing with Azure Boards or TFS 2017 or later versions, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  

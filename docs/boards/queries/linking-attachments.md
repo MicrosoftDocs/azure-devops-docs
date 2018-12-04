@@ -118,6 +118,8 @@ For descriptions of each of these fields, see the [table provided later in this 
 ## List work items containing remote links 
 -->
 
+
+<a id="tree" />
 ## List hierarchical items in a tree view  
 
 Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
@@ -175,7 +177,7 @@ Add to Filters for linked work items:
 </tbody>
 </table>  
 
-
+<a id="dependents" />
 ## List items based on linked dependents  
 
 The following example shows a dependent linked query that returns items with dependencies on work managed by other teams and other projects. Use this query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\\Phone Customers** are returned.

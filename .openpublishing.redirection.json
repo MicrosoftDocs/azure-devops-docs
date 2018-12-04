@@ -7997,7 +7997,12 @@
     },
     {
       "source_path": "docs/feedback/about-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/about-feedback",
+      "redirect_url": "/azure/devops/project/feedback/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs//project/feedback/about-feedback.md",
+      "redirect_url": "/azure/devops/project/feedback/index",
       "redirect_document_id": false
     },
     {

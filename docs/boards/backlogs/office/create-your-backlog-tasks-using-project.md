@@ -20,6 +20,9 @@ ms.date: 11/19/2018
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
+> [!IMPORTANT]  
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project. You can continue to use Office Excel. 
+
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
 
 Use this topic to learn how to:  

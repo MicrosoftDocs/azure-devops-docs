@@ -29,7 +29,7 @@ In this topic you'll learn:
 > * Add or edit work items and publish your changes to Azure Boards or TFS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
-> * Add hierachically linked backlog items and tasks   
+> * Add hierarchically linked backlog items and tasks   
 > * Work with different list types    
   
 

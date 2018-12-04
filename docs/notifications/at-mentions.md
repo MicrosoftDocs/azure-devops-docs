@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/01/2018
 monikerRange: '>= tfs-2015'
+ms.date: 12/04/2018
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -27,7 +27,7 @@ The **@mention** control allows you to quickly pull someone into a work item o
 
 <a id="mention-person-id">  </a>
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevserver-2019"
+::: moniker range=">= tfs-2015 <= azdevserver-2019"
 
 For team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
 

@@ -18,12 +18,13 @@ ms.date: 09/19/2017
 
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
-::: moniker range="<= tfs-2017"  
-
+::: moniker range=">= tfs-2013 <= tfs-2017"  
 > [!NOTE]  
 > The Test & Feedback extension is available for TFS 2017 and later versions.  
 
 ::: moniker-end  
+
+To provide feedback about Azure DevOps Services or TFS, see [Provide product and content feedback](/azure/devops/user-guide/provide-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json).
 
 
 ## How-to Guides
@@ -41,3 +42,4 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 
 - [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)  
 - [UserVoice UI (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui)  
+
