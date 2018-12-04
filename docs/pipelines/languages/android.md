@@ -109,6 +109,34 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 
 > Note: The Android Emulator is currently available only on the **Hosted macOS** agent.
 
+Create the [Bash](../tasks/utility/bash) Task and copy paste the code below in order to install and run the emulator. 
+Don't forget to arrange the emulator parameters to fit your testing environment.
+
+The emulator will be started as a background process and available in subsequent tasks.
+
+```
+#!/usr/bin/env bash
+
+# Install AVD files
+# echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+
+# Create emulator
+echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
+
+echo $ANDROID_HOME/emulator/emulator -list-avds
+
+echo "Starting emulator"
+
+# Start emulator in background
+nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+$ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+
+$ANDROID_HOME/platform-tools/adb devices
+
+echo "Emulator started"
+
+```
+
 ## Test on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
