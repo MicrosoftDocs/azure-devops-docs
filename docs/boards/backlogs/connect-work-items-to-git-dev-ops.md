@@ -10,13 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 # Drive Git development from a work item   
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
-
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -31,9 +30,24 @@ Review this topic to learn:
 > * Link a work item to existing development and build objects    
 -->
 
+
+::: moniker range="vsts"
+
+> [!NOTE]   
+> This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
+
+::: moniker-end
+
+
 The Development section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.    
 
 <img src="_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+
+::: moniker range="tfs-2017"
+> [!NOTE]   
+> The Development section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
+
+::: moniker-end
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
@@ -145,15 +159,23 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
+::: moniker range="vsts"
+- [Add work items](add-work-items.md)  
+- [Git overview](../../repos/git/overview.md) 
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
+- [TFVC overview](../../repos/tfvc/overview.md)  
+- [Create your backlog](create-your-backlog.md)   
+
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md)  
 - [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
+::: moniker-end
 
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
-
-> [!NOTE]   
-> The Development section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
 ### Associated work items in build 
 

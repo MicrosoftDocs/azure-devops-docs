@@ -106,6 +106,25 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="/azure/devops/boards/github/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GitHub logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Boards & GitHub</h3>
+                                                            <p>Use Azure Boards to plan and track work, linking to your GitHub commits and pull requests.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
 									<li>
                                         <a href="/azure/devops/repos/git/branch-policies-overview">
                                             <div class="cardSize">

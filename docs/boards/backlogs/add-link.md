@@ -152,7 +152,7 @@ You'll need to bulk save the work items you've modified.
 
 Here, we have selected to add a link to the selected work items.  
 
-0. Specify the link type, work item type, and title of the new work item. Choose **OK**.
+0. Specify the link type, work item type, and title of the new work item. Choose **OK**.  
 	::: moniker range=">= tfs-2018"
 	<img src="_img/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
@@ -260,21 +260,30 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 Additional features you can use to quickly link or change links that use the parent-child link type (some features are version dependent, see the linked topic for details):
 
--   To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md#reparent). 
-
--   To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md). 
-
--   To indent (![Indent](../queries/_img/IC588323.png)), outdent (![Outdent](../queries/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.
-
-- To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+- To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md#reparent).  
+- To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md).  
+- To indent (![Indent](../queries/_img/IC588323.png)), outdent (![Outdent](../queries/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.  
+- To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).  
 
 
 ## Related articles
 
+::: moniker range="vsts"
+- [Map backlog items to portfolio backlog items](organize-backlog.md)
+- [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
+- [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
+- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
+
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 
+::: moniker-end
 

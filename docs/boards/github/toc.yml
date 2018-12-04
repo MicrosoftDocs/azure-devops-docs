@@ -1,0 +1,23 @@
+- name: GitHub & Azure Boards
+  href: index.md?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json
+  items:
+  - name: Connect Azure Boards to GitHub  
+    href: connect-to-github.md
+  - name: Link GitHub commits and pull requests
+    href: link-to-from-github.md
+  - name: Troubleshoot GitHub repository connection
+    href: troubleshoot-git-hub-connection.md
+  - name: Resources
+    items:
+    - name: Get started with Azure Boards
+      href: ../get-started/index.md
+    - name: Web portal navigation
+      href: ../../project/navigation/index.md
+    - name: Link work items
+      href: ../backlogs/add-link.md
+    - name: Work items
+      href: ../work-items/index.md
+    - name: Process customization
+      href: ../../organizations/settings/work/inheritance-process-model.md
+
+
