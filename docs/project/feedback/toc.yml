@@ -1,9 +1,5 @@
 - name: Feedback 
   href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: About feedback
-    href: about-feedback.md 
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 

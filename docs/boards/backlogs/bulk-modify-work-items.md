@@ -265,9 +265,10 @@ Multi-select of work items on the backlog and sprint backlogs works in the same 
 ::: moniker range="tfs-2015"
 (Requires TFS 2015.1 or later versions)  
 ::: moniker-end
-You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position),  assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
+You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position), assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
+<br/>
 
 ::: moniker range=">= tfs-2018"
 <!---#### Azure Boards and TFS 2018-->
@@ -275,13 +276,13 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog menu </p>
-<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 1px solid #C3C3C3;" />  
+<p>**Backlog menu**</p>  
+![Backlog multi-select menu](_img/bulk-m-backlog-menu-options-ts.png)  
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" /> 
+<p>**Query results multi-select menu**</p>  
+![Query results multi-select menu](_img/bulk-m-query-results-menu-options-ts.png)  
 </td>
 </tr>
 </table>
@@ -293,13 +294,13 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
-<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" />  
+<p>**Backlog multi-select menu** </p>  
+![Product backlog multi-select menu](_img/bulk-m-backlog-r-tfs-2016-menu-options.png)  
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #C3C3C3;" />  
+<p>**Query results multi-select menu** </p>  
+![Query results multi-select menu, TFS-2017](_img/bulk-m-query-r-tfs-2016-menu-options.png) 
 </td>
 </tr>
 </table>
@@ -311,13 +312,13 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
-<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" /> 
+<p>**Backlog multi-select menu**</p>  
+![Backlog multi-select menu, TFS 2015](_img/bulk-m-backlog-r-tfs-menu-options.png) 
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
-<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" />  
+<p>**Query results multi-select menu**</p>  
+![Query results multi-select menu, TFS 2015](_img/bulk-m-query-r-tfs-menu-options.png)  
 </td>
 </tr>
 </table>

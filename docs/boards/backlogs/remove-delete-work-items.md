@@ -1,9 +1,8 @@
 ---
 title: Move, change, or delete work items
-titleSuffix: Azure Boards  
+titleSuffix: Azure Boards
 description: Guide to removing or deleting working items in Azure Boards and Team Foundation Server
 keywords: backlogs
-ms.global_help.title: Move, change, or delete work items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
@@ -12,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -25,7 +24,7 @@ Often times you find that someone created a work item of the wrong work item typ
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 # Delete or restore work items 
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
@@ -62,7 +61,7 @@ In this topic you'll learn:
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 >[!div class="checklist"]         
 > * How to remove work items from the backlog by changing the State to Removed     
@@ -103,8 +102,10 @@ You can access the following actions for which you have permissions. If you are 
 </tbody>
 </table>
 
-::: moniker-end
 
+You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
+
+::: moniker-end
 
 ::: moniker range="azdevserver-2019"
 
@@ -142,8 +143,6 @@ You can access the following actions for which you have permissions. If you are 
 You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 
 ::: moniker-end
-
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -222,11 +221,12 @@ You can't change type, move work items, or delete/restore work items whose work 
 ## Prerequisites  
 
 ::: moniker range="vsts"
+
 * To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access for a public project](../../organizations/security/access-levels.md#stakeholder-access) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to **Allow**. The Contributors group does not have this permission set at the project-level by default.
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
-
+* 
 ::: moniker-end
 
 
@@ -239,9 +239,8 @@ You can't change type, move work items, or delete/restore work items whose work 
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-
+  
 * To remove or delete work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
@@ -249,14 +248,16 @@ You can't change type, move work items, or delete/restore work items whose work 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
+  
 * To remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
 * Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
-To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+
 
 
 ::: moniker range=">= azdevserver-2019"
@@ -271,11 +272,15 @@ Changing the work item type refreshes the work item form with the fields defined
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+# [New navigation](#tab/new-nav)
+
 0. Open a work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option. 
 
 	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
 
-	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type.
+	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type.  
 
 	Choose the ![ ](../_img/icons/actions-icon.png) actions icon,  and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option.     
 
@@ -298,6 +303,36 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
 
+# [Previous navigation](#tab/previous-nav)
+
+1. Select the ![Change project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
+
+	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
+
+	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
+
+	Choose the ![ ](../_img/icons/actions-icon.png) actions icon,  and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option.     
+
+	![Backlog, multi-select, open actions menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
+
+	> [!IMPORTANT]   
+	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
+
+2. Select the type and optionally enter a comment.  
+
+	![Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
+
+	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
+
+3. Save the work item to complete the change.  
+ 
+	> [!NOTE]     
+	> The system automatically resets the State and Reason fields to the default initial values of the specified type.  
+
+	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+
+--- 
+
 ::: moniker-end
 
 ::: moniker range=">= azdevserver-2019"
@@ -307,7 +342,8 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
-You can only move work items from one project to another project within the organization or collection. 
+
+You can only move work items from one project to another project within the organization or collection. You can't move work items associated with test management. To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 
 1. Open the work item and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 
@@ -340,13 +376,12 @@ To cause removed items to not show up in queries, you must add a clause that fil
 <a id="delete"> </a> 
 ::: moniker range=">= azdevserver-2019"
 
+
 ## Delete work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
 
-> [!NOTE]  
-> To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
-
+# [New navigation](#tab/new-nav)
 
 0. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -359,6 +394,23 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
  
 	> [!div class="mx-imgBorder"]  
 	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+
+0. Confirm you want to actually delete the item(s).  
+
+	> [!div class="mx-imgBorder"]
+	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
+
+0. You can also delete work items from your Kanban or taskboard. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+
+	Or, from a backlog or query results list, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
 
 --- 
 
@@ -375,7 +427,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -403,7 +455,9 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 You restore deleted work items from the web portal Recycle bin. 
 
-1. Choose **Boards>Work Items** (or **Work>Work Items**) and then choose the **Recycle bin**.  
+# [New navigation](#tab/new-nav)
+
+1. Choose **Boards>Work Items** and then choose the **Recycle bin**.  
  
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
@@ -424,20 +478,8 @@ You restore deleted work items from the web portal Recycle bin.
 
 3.	Confirm your selection. 
 
-::: moniker-end
+# [Previous navigation](#tab/previous-nav)
 
-<a id="restore-work-items" />
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-## Restore or permanently delete work items   
-
-You restore deleted work items from the web portal Recycle bin. 
-::: moniker-end  
-::: moniker range="tfs-2015"  
-> [!NOTE]  
-> **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
 0. Choose **Work>Work Items** and then choose the **Recycle bin**.  
  
 	> [!div class="mx-imgBorder"]  
@@ -451,10 +493,50 @@ You restore deleted work items from the web portal Recycle bin.
 
 0.	Select the items you want to restore  and then choose **Restore**.  
  
-	> [!div class="mx-imgBorder"]  
-	> ![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
+	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
 
-	Optionally, you can choose to permanently delete the items. You'll only see the Permanently delete option if your [**Permanently delete work items permission**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to **Allow**.
+	Optionally, you can choose to permanently delete the items.
+
+	> [!NOTE] 
+	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+
+3.	Confirm your selection. 
+
+---
+
+::: moniker-end
+
+<a id="restore-work-items" />
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+## Restore or permanently delete work items   
+
+You restore deleted work items from the web portal Recycle bin. 
+::: moniker-end  
+::: moniker range="tfs-2015"  
+> [!NOTE]  
+> **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
+::: moniker-end  
+
+::: moniker range=">= tfs-2015"
+0. Choose **Work>Work Items** and then choose the **Recycle bin**.  
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
+
+	Or, from a backlog or query, open the Recycle bin.  
+ 
+	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
+
+	A new browser tab opens with the query which lists work items added to the Recycle bin. 
+
+0.	Select the items you want to restore  and then choose **Restore**.  
+ 
+	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
+
+	Optionally, you can choose to permanently delete the items.
+
+	> [!NOTE] 
+	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
 
 3.	Confirm your selection. 
 

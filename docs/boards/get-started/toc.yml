@@ -17,6 +17,8 @@
     href: permissions-access-boards.md
   - name: Key concepts
     href: key-concepts.md
+  - name: Best tool for the job
+    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
   - name: Resources
     items:
     - name: Web portal navigation
