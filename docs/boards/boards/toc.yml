@@ -15,6 +15,8 @@
     href: kanban-quickstart.md
   - name: Enable live updates
     href: live-updates.md
+  - name: Drive Git development
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Kanban board basics

@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 # Share information within work items and social tools
 
-**Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere**
+**Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -85,7 +85,7 @@ You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL
 For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
-> ![New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
+> ![Discussion section, New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
 
 **Keyboard shortcuts**  
 
