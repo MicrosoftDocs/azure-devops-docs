@@ -152,6 +152,13 @@
   - name: Public Projects
     tocHref: /azure/devops/organizations/public/
     topicHref: /azure/devops/organizations/public/index
+  - name: Azure Boards
+    tocHref: /azure/devops/boards/
+    topicHref: /azure/devops/boards/index
+    items:
+    - name: Integrate GitHub with Azure Boards
+      tocHref: /azure/devops/boards/github/
+      topicHref: /azure/devops/boards/github/index
 - name: Team Foundation Server
   tocHref: /azure/devops/
   topicHref: /tfs/index

@@ -13,8 +13,10 @@
     href: ../backlogs/create-your-backlog.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json 
   - name: Kanban board quickstart
     href: ../boards/kanban-quickstart.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+  - name: Connect a project to GitHub  
+    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json 
   - name: Default permissions (Security)
-    href: permissions-access-boards.md
+    href: permissions-access-boards.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
   - name: Key concepts
     href: key-concepts.md
   - name: Best tool for the job
