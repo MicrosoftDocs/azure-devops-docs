@@ -179,6 +179,8 @@
     href: /azure/devops/learn/git/what-is-git
   - name: What is version control?
     href: /azure/devops/learn/git/what-is-version-control
+  - name: GitHub & Azure Boards 
+    href: ../../boards/github/index.md
   - name: Plan your migration to Git
     href: /azure/devops/learn/git/centralized-to-git
   - name: Migrate from TFVC to Git

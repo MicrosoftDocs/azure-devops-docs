@@ -383,7 +383,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 - task: PublishTestResults@2
   inputs:
     testRunner: JUnit
-    testResultsFiles: ./test-results.xml
+    testResultsFiles: '**/TEST-RESULTS.xml'
 ```
 
 ### Publish code coverage results

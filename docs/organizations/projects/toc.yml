@@ -12,6 +12,8 @@
     href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Share your project vision
     href: ../../project/wiki/project-vision-status.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+  - name: Connect a project to GitHub  
+    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Define area paths
     href: ../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Define iteration paths or sprints

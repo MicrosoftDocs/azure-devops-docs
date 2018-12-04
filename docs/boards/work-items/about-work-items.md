@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 --- 
 
 # About work items 
@@ -21,6 +21,7 @@ You can use work items to track anything you need to track. Each work item repre
 
 
 ####In a nutshell:
+
 ::: moniker range=">= tfs-2018"
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
@@ -102,6 +103,10 @@ The new web form provides a number of experiences not provided with the old web 
 
 
 <a id="portal-clients"></a>  
+## Track work in the web portal 
+You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items ](best-tool-add-update-link-work-items.md). 
+
+
 ## Web portal and clients that support tracking work items  
 You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
 
@@ -112,15 +117,6 @@ Use the web portal to accomplish the following tasks.
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
-
-### Clients 
-Use these clients to support the following tasks. 
-
-- To perform bulk additions or updates, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
-- From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add and update most types of work items from the **Work** page.  
-- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can add and update work items using [Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in). 
-- From Test Manager or the web portal, you can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
-- You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](../../test/run-manual-tests.md).  
 
 
 <a id="assign" />
@@ -208,7 +204,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevserver-2019"
+::: moniker range="<= azdevserver-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 

@@ -19,7 +19,8 @@ ms.date: 06/22/2017
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   
 > [!IMPORTANT]  
->The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. 
+> The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. Also, starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
+
 
 
 ## Share shapes that you create with your team  

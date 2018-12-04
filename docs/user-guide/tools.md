@@ -19,9 +19,9 @@ monikerRange: '>= tfs-2013'
 
 Learn about the tools and clients that can connect to Azure DevOps Services and TFS.
 
-Our platform of software development tools began more than 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps Services and Team Foundation Server (TFS) to support source control, work tracking, build, and test operations.  
+Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps Services and Team Foundation Server (TFS) to support source control, work tracking, build, and test operations.  
 
-The available tools that communicate with Azure DevOps Services and TFS include the following:
+The available tools that communicate with Azure DevOps Services and TFS are included as follows:
 
 - Desktop client developer tools
 - Office integration tools
@@ -42,11 +42,11 @@ Be clear about what they pay for and what is free
 
 ## Desktop client developer tools
 
-Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. To download any version of Visual Studio, go to the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio offerings](https://visualstudio.microsoft.com/vs/compare/).
+Developers have access to many tools through these versions of Visual Studio and plug-ins. To download any version of Visual Studio, go to the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio offerings](https://visualstudio.microsoft.com/vs/compare/).
 
-- **Visual Studio Community**: A fully featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (It replaces Visual Studio Express.) 
-- **Visual Studio Professional**: Development tools and services to support individual developers or small teams. 
-- **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale. It supports designing, building, and managing complex enterprise applications. 
+- **Visual Studio Community**: A fully featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express.)
+- **Visual Studio Professional**: Development tools and services to support individual developers or small teams.
+- **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process.
 - **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
 - **[Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to Azure DevOps Services or TFS.  

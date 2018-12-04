@@ -78,7 +78,8 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 0. Choose **Edit** from the &hellip; context menu for the state you want to modify.  
   
-	<img src="_img/process/cpworkflow-edit-state.png" alt="Bug WIT, Edit custom state" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Bug WIT, Edit custom state](_img/process/cpworkflow-edit-state.png)
 
 0. Modify the category or color, and then click Save. 
 
@@ -91,7 +92,7 @@ When you hide or remove a state:
 - The state no longer appears in the State picklist for the WIT
 - No changes occur to the work item history     
 - Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state values. You may want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.  
- 
+
 
 <a id="hide-state"></a>
 ## Hide or unhide an inherited state 
@@ -102,10 +103,11 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 	Here we hide the Resolved state for the Bug WIT. 
 
-	<img src="_img/process/cpworkflow-hide-state.png" alt="Hide an inherited state" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Hide an inherited state](_img/process/cpworkflow-hide-state.png)  
 
 	> [!NOTE]    
-	>If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board will need to [update their column settings](../../../boards/boards/add-columns.md).
+	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board will need to [update their column settings](../../../boards/boards/add-columns.md).
 
 0. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
  

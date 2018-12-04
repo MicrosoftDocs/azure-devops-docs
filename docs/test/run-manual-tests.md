@@ -88,36 +88,15 @@ that you need for more advanced testing features.
 <a name="run-desktop"></a>
 ## Run tests for desktop apps
 
-If the only data you want to collect from your desktop app
-is screen recordings, use the web-based Microsoft Test Runner 
-in the same way as [described above](#run-web) for web apps.
-
-If you want to collect more diagnostic data for your desktop application,
-run your tests using Azure Test Runner:
-
-1. **Download** and install the [Azure Test Runner desktop client](http://aka.ms/ATRDownload) if you haven't already set it up. 
+If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client:
 
 1. Launch the test runner client from the Azure Test Plans section in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
 
-1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
-
-You can also run your tests using [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md):
-
-1. Launch the test runner 
-   client from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by choosing **Run with options**
-   from the **Run** menu.
-
    ![Launching the test runner client](_img/_shared/collect-diagnostic-data-16.png)
 
-1. In the **Run with options** dialog, select **Microsoft 
-   Test Runner 2017 or later**, choose the data collectors you 
-   want to enable, and optionally select a build to associate 
-   with your test run.
+1. **Download** and install the [Test Runner client](http://aka.ms/ATRDownload) if you haven't already set it up.
 
-   ![Selecting the Test Runner and options](_img/_shared/run-manual-tests-19.png)
-
-1. Choose **OK** to start testing. For more information, see
-   [Collect diagnostic data](collect-diagnostic-data.md#collect-desktop).
+1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 

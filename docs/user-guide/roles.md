@@ -12,16 +12,15 @@ ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Software development roles supported by Azure DevOps Services and TFS
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 If you are a sole developer or you work on a small team, chances are that you perform tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
-If you work in a large organization, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.
+If you work in a large company, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.
 
-This topic describes the features and tasks available to you based on the role you perform.  
+This article describes the features and tasks available to you based on the role you perform.  
 
 ## Contributor roles
 
