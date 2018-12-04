@@ -93,6 +93,21 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="12">[04 December 2018](2018/sprint-143-update.md)</td>
+            <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Future</td>
+        </tr>
+        <tr><td>Acquire Azure Boards as a service</td><td>Future</td></tr>
+        <tr><td>Rerun expired build for auto-complete pull requests</td><td>Future</td></tr>
+        <tr><td>Manage GitHub releases using pipelines</td><td>Future</td></tr>
+        <tr><td>VS Code extension for YAML based pipelines</td><td>N/A</td></tr>
+        <tr><td>Web editor with IntelliSense for YAML pipelines</td><td>Future</td></tr>
+        <tr><td>ServiceNow Change Management integration</td><td>Future</td></tr>
+        <tr><td>Links to specific lines in a build log</td><td>Future</td></tr>
+        <tr><td>Specify multi-platform pipeline in a single file</td><td>Future</td></tr>
+        <tr><td>Python Package Index (PyPI) public preview</td><td>Future</td></tr>
+        <tr><td>Service health portal</td><td>N/A</td></tr>
+        <tr><td>Markdown templates for formulas and videos</td><td>Future</td></tr>
+        <tr>
             <td rowspan="15">[12 November 2018](2018/sprint-143-update.md)</td>
             <td>REST API version 5.0</td><td>Future</td>
         </tr>
