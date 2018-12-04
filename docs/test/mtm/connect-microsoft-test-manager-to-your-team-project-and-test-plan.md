@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
+
 Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results on Team Foundation Server (TFS).  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
