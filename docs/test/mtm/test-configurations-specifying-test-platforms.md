@@ -16,6 +16,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
 Your users will probably install or run your app on a wide variety of configurations, such as different operating systems, web browsers, and other variations. You will want to run at least some of your tests in environments that have those different configurations. Use your test plan to decide which tests you want to run on which configurations. You have to make sure that when you run your tests that you have set up your environments for the configurations that you need.
 
 You might draw up a schematic matrix of the combinations that you want to test:

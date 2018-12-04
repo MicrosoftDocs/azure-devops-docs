@@ -16,6 +16,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
 There are several ways to duplicate test suites and test cases.
 It's important to understand that a test suite or plan contains a set of *references* to test cases.
 If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in Azure DevOps or TFS, and you can find it there with a query.  

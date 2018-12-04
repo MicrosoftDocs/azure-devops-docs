@@ -54,6 +54,8 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project Settings** > **Security**.
 
+	*To see the full image, click to expand*.
+
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
 2. Choose **Create group** to open the dialog for adding a group.

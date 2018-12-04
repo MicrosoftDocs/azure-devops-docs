@@ -44,6 +44,8 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 
+	*To see the full image, click to expand*.
+
 	[ ![Project Settings>Code>Repositories>Git repositories>Security](_img/git-tfvc-perm/open-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
@@ -102,6 +104,8 @@ You can set the permissions for all Git repositories for a project, or for a sin
 0. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Contributors** group, and then (5) the permission for **Manage branch**.
+
+	*To see the full image, click to expand*.
 
 	[ ![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
 

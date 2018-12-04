@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 ---
 
 
-# Work in Excel or Project 
+# Work in Office Excel or Project 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -47,7 +47,7 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Boards and TFS and later reconnect to synchronize the document with the work item database.  
   
 > [!NOTE]
->  If the project that contains work items for your Excel or Project document is moved to a different organization, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project).  
+>  If the project that contains work items for your Excel or Project document is moved to a different organization, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to Excel or Project](#excel-project) later in this article.  
   
 
 <a name="WorkingOffline"></a> 
@@ -91,9 +91,92 @@ To reconnect an Excel or Project document file:
   
 4.  Resolve any data validation errors or conflicts that occur.  
 
+
+
+<a id="excel-project">  </a>
+
+## Connect from Microsoft Excel or Project
+
+To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
+ 
+### Connect from a worksheet or project plan
+
+To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
+
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure DevOps Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
+
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises TFS. 
+
+	> [!NOTE]  
+	> The only way to get the Team Foundation add-in to Excel is by installing Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   
+
+3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
+
+    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+
+    > [!TIP]    
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+
+4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
+
+    ![Connect to server](_img/IC680074.png)
+
+    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
+
+    ![Add organization or server](_img/IC658167.png)
+
+5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
+
+    To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
+
+> [!NOTE]  
+> If the project is moved to a different project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
+
+### Work offline
+
+An advantage to using Excel or Project is that you can work offline to add or modify work items. Complete the following procedures to disconnect an Excel worksheet or Project plan and later reconnect to synchronize your updates with the work item database.
+
+### Disconnect the document from a project
+
+1.  Open the document that you want to change while you are offline.
+
+2.  Follow one of the following steps:
+
+    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+
+    -   If you are using Project, on the **Team** menu, choose **Refresh**.
+
+    This step refreshes the work item list to retrieve the latest information from the work item database.
+
+3.  If you are using Excel, add to the work item list the columns for all fields that you want to modify.
+
+    You cannot add columns when the work item list is not connected to TFS.
+
+4.  Save your Excel or Project file. You can now modify the information even if you are offline, disconnected from the project or network. 
+
+5.  Change the work item list as needed.
+
+
+### Reconnect the document to the project
+
+1.  Make sure your computer is online.  
+
+2.  If you changed the document while you were offline, follow one of these steps:
+
+    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
+
+    -   If you are using Project, on the **Team** menu, choose **Publish Changes**.
+
+3.  If you did not change the document while you were offline, follow one of these steps:
+
+    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+
+    -   If you are using Project, on the **Team** menu, choose **Refresh**.
+
+4.  Resolve any data validation errors or conflicts that occur.
+5.  
 ## Related articles
 
-- [Connect to projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project)  
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)

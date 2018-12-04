@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 11/08/2018
+ms.date: 12/03/2018
 monikerRange: 'vsts'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to sign up for a free organization with a Microsoft account and how to invite your teammates.
+In this quickstart, you learn how to sign up for a free organization with a Microsoft account. You also learn how to invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 

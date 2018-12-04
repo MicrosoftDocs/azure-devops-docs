@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/08/2018
+ms.date: 12/03/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps.
 
-A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you also can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+For a quick and easy way to start manual testing, add the test to the user story or bug you want to test. Quickly define inline tests, or a set of manual tests, for a backlog item from the Kanban board. In addition to adding tests, you can also run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
@@ -69,15 +69,15 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 2. If you have a number of tests to add, enter each title and select **Enter**.
 
-   ![Work item add more test cases](_img/work-item-add-more-test-cases.png)
+   ![Work items add more test cases](_img/work-item-add-more-test-cases.png)
 
-	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**. 
+	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**.
 
    ![Open test case from Kanban board](_img/open-test-case-form-from-kanban-board.png)
 
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md). 
+To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-Prior to running the test, you must add details.  
+Before you run the test, you must add details.  
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -103,7 +103,7 @@ Prior to running the test, you must add details.
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-Prior to running the test, you must add details.
+Before you run the test, you must add details.
 
 ---
 
@@ -179,5 +179,5 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 > [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
-To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+Install Exploratory testing to set it up for a user story. For more information, read  [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
 

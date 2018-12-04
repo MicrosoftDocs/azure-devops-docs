@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/04/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -91,30 +91,14 @@ across test suites. See more at [Create test cases](create-test-cases.md).
 
 ![Creating manual test cases](_img/manual-testing/create-test-cases-01.png)
 
-#### Testing web applications
+#### Testing applications
 
 The [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
-a browser-based test runner to run tests for your 
-web apps. Mark test steps and test outcomes as pass or fail, and collect
-diagnostic data such as system information, image action logs, 
-screen recordings, and screen captures as you test. Bugs filed
-during the tests automatically include all the captured diagnostic data
-to help your developers reproduce the issues. 
-See more at [Run tests for web apps](run-manual-tests.md#run-web).
+test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
+diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
+to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
 ![Testing web applications](_img/manual-testing/test-web-app-01.png)
-
-#### Testing desktop apps
-
-Test your desktop apps with Microsoft Test Runner client, which is part
-of Microsoft Test Manager. Use the Test Runner client to collect all the
-basic diagnostic data such as system information, image action logs,
-screen recordings, screen captures, and event logs as you test. 
-In addition, use Microsoft Test Manager to collect advanced diagnostic
-data such as code coverage, IntelliTrace traces, and test impact data.
-See more at [Run tests for desktop apps](run-manual-tests.md#run-desktop).
-
-![Testing desktop apps](_img/manual-testing/test-desktop-apps-01.png)
 
 #### Test tracking
 
@@ -218,10 +202,8 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Advanced manual testing techniques](user-acceptance-testing.md)
 * [Get started with exploratory testing](perform-exploratory-tests.md)
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
-* [Manual testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Guidance for Microsoft Test Manager usage](mtm/guidance-mtm-usage.md) 
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Load and performance testing](load-test/index.md), [Continuous testing](../pipelines/index.md), [Unit testing](/visualstudio/test/developer-testing-scenarios).
+> See also [Continuous testing](../pipelines/index.md), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

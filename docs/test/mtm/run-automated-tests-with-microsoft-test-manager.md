@@ -16,6 +16,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
 ## Set up your test plan to use your build  
  
 To set up your test plan to run the automated test that you have created,

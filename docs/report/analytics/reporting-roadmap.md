@@ -24,7 +24,7 @@ The [Analytics Service](what-is-analytics.md) is in Public Preview. It currently
 
 Analytics is enabled it by installing the [Analytics extension](../analytics/analytics-extension.md)
 
-Azure DevOps Server 2019 RC1 and later support the installing the Analytics extension. Team Foundation Servier (TFS) version 2018 and prior do not support Analytics. 
+Azure DevOps Server 2019 RC1 and later versions support installation of the Analytics extension. Team Foundation Server (TFS) version 2018 and earlier versions do not support the Analytics extension. 
 
 ## Pricing for the [Analytics extension](../analytics/analytics-extension.md)
 While in Public Preview, the Analytics extension is free.
