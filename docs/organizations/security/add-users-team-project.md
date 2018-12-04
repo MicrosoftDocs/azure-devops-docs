@@ -55,6 +55,8 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 0. Choose **Project Settings** and then **Security**.
 
+	*To see the full image, click to expand*.
+
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 0. Under **Groups**, choose one of the following:
