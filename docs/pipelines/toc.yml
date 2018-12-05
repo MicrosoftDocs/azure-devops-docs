@@ -128,9 +128,9 @@
       href: build/variables.md
   - name: Releases
     items:
-    - name: What is Release Management?
+    - name: What are release pipelines?
       href: release/what-is-release-management.md
-    - name: Release pipelines
+    - name: Pipelines and names
       href: release/index.md
     - name: Stages
       href: release/environments.md
