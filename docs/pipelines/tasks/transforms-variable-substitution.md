@@ -183,8 +183,10 @@ inside web packages and XML parameters files (`parameters.xml`).
 In this way, the same package can be configured based on the environment to which it will be deployed.
  
 Variable substitution takes effect only on the `applicationSettings`, `appSettings`, `connectionStrings`,
-and `configSections` elements of configuration files.
- 
+and `configSections` elements of configuration files. If you are looking to subsitute values outside of 
+these elements you can use a (`parameters.xml`) file, however you will need to use a 3rd party pipeline task to 
+handle the variable substitution.
+
 ### XML variable substitution example
 
 As an example, consider the task of changing the following values in `Web.config`:
