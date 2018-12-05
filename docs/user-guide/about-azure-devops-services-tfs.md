@@ -52,7 +52,7 @@ Two additional areas differ in their support:
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
-Are you on TFS or Azure DevOps Server and considering moving? Read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
+Are you on TFS or Azure DevOps Server and considering moving? Read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md) to understand your options.
 
 <!---
 ## Fundamental differences between TFS and Azure DevOps Services

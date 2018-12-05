@@ -26,7 +26,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Prerequistes 
 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
 
 ## Project-scoped queries

@@ -213,7 +213,7 @@ You can locate the executable in the following folder: *Drive*:\\Program Files (
 
 - [Work in web portal](../../project/navigation/index.md)  
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md) 
-- [Work in Office Excel or Project](../../boards/backlogs/office/track-work-vsts-tfs.md)   
+- [Work in Office Excel or Project](../../boards/backlogs/office/track-work.md)   
 - [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  

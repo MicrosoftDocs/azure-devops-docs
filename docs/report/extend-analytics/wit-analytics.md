@@ -50,7 +50,7 @@ All additional URL parts are specified as an additional part of the query string
 
 - You will need to have an Azure DevOps project. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
 ## Construct a basic query 
 

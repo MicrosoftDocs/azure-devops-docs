@@ -216,7 +216,7 @@
   - name: Licensing
     items:
     - name: Parallel jobs
-      href: licensing/concurrent-jobs-vsts.md
+      href: licensing/concurrent-jobs.md
     - name: Pipelines
       href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
@@ -250,9 +250,9 @@
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
     - name: Jenkins CI for Azure Pipelines Azure CD
-      href: release/integrate-jenkins-vsts-cicd.md
+      href: release/integrate-jenkins-pipelines-cicd.md
     - name: Jenkins CI for Azure Pipelines Azure AKS
-      href: release/integrate-jenkins-vsts-aks.md
+      href: release/integrate-jenkins-pipelines-aks.md
     - name: Extend IIS Server deployments
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: IIS servers (WinRM)

@@ -75,7 +75,7 @@ A data validation error occurs when a change in the work item list or project pl
 ## Related articles
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  [Work in Excel and Project](track-work-vsts-tfs.md) 
+-  [Work in Excel and Project](track-work.md) 
 
 
 ###Required permissions  

@@ -91,7 +91,7 @@ sections:
           alt: Test logo
           src: https://docs.microsoft.com/media/common/i_test.svg
         title: Add and run manual tests
-      - href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+      - href: ../marketplace/install-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
           title: Install an extension

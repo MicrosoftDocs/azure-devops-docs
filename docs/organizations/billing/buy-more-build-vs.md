@@ -143,6 +143,6 @@ When your team's needs for build or release capacity change, you can change the 
 
 ## Related articles
 
-* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs-vsts.md)
+* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
 * [Team Foundation Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)

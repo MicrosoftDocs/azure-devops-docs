@@ -139,7 +139,7 @@ This message indicates that you can publish the changes that you made to the fie
 ## Related articles
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
--  [Work in Excel or Project](track-work-vsts-tfs.md)
+-  [Work in Excel or Project](track-work.md)
 
 ###Required permissions  
   

@@ -34,7 +34,7 @@
   - name: Get started as an admin
     href: project-admin-tutorial.md
   - name: Install a Marketplace extension
-    href: ../marketplace/install-vsts-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../marketplace/install-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Tutorials for users
   items:
   - name: Set favorites

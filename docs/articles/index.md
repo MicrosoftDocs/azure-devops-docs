@@ -23,7 +23,7 @@ Here you'll find more resources to support your development efforts with Azure D
 ##	Migration and integration
 
 *   [Migrate data from TFS to Azure DevOps Services](migration-overview.md)
-*   [Migration options](migrate-to-vsts-from-tfs.md)  
+*   [Migration options](migrate-from-tfs.md)  
 
 ## Version control
 
