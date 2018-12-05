@@ -127,7 +127,7 @@ Once you've signed up for Azure DevOps Services or installed TFS, you'll want to
 ### TFS updates
 
 - [What's new](/tfs/server/whats-new)
-- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md)
+- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
@@ -143,7 +143,7 @@ Our extensibility framework enables you to build integrations directly within Az
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/index.md)
-- [Get extensions](../marketplace/install-vsts-extension.md)</li>
+- [Get extensions](../marketplace/install-extension.md)</li>
 - [Using service hooks](../service-hooks/index.md)
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)
 

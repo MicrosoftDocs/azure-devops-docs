@@ -311,7 +311,7 @@ If you use a private project or a private repository, then you can run up to 1,8
 
 To adjust the timeout of jobs, see [Timeouts](../process/phases.md#timeouts).
 
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

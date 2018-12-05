@@ -117,8 +117,8 @@
     },
     {
       "source_path": "docs/package/vsts-package-badges.md",
-      "redirect_url": "/azure/devops/artifacts/vsts-package-badges",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/package-badges",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/best-practices.md",
@@ -157,13 +157,13 @@
     },
     {
       "source_path": "docs/package/feeds/create-feed.md",
-      "redirect_url": "/azure/devops/artifacts/feeds/create-feed",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/feeds/edit-feed.md",
-      "redirect_url": "/azure/devops/artifacts/feeds/edit-feed",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/feeds/feed-permissions.md",
@@ -197,8 +197,8 @@
     },
     {
       "source_path": "docs/package/how-to/retention-policies.md",
-      "redirect_url": "/azure/devops/artifacts/how-to/retention-policies",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/how-to/set-up-upstream-sources.md",
@@ -207,8 +207,8 @@
     },
     {
       "source_path": "docs/package/maven/delete-artifact.md",
-      "redirect_url": "/azure/devops/artifacts/maven/delete-artifact",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/maven/install.md",
@@ -227,8 +227,8 @@
     },
     {
       "source_path": "docs/package/npm/deprecate-unpublish.md",
-      "redirect_url": "/azure/devops/artifacts/npm/deprecate-unpublish",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/npmrc.md",
@@ -287,8 +287,8 @@
     },
     {
       "source_path": "docs/package/nuget/unlist-delete.md",
-      "redirect_url": "/azure/devops/artifacts/nuget/unlist-delete",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/upstream-sources.md",
@@ -827,7 +827,7 @@
     },
     {
       "source_path": "docs/package/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/nuget/unlist-delete",
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
       "redirect_document_id": false
     },
     {
@@ -972,7 +972,7 @@
     },
     {
       "source_path": "docs/articles/adopting-vsts.md",
-      "redirect_url": "/azure/devops/articles/migrate-to-vsts-from-tfs",
+      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -1042,7 +1042,7 @@
     },
     {
       "source_path": "docs/build/define/repository.md",
-      "redirect_url": "/azure/devops/pipelines/build/repository",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
       "redirect_document_id": false
     },
     {
@@ -1437,7 +1437,7 @@
     },
     {
       "source_path": "docs/build-release/github/index.md",
-      "redirect_url": "/azure/devops/pipelines/build/repository",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
       "redirect_document_id": false
     },
     {
@@ -1752,7 +1752,7 @@
     },
     {
       "source_path": "docs/build-release/define/repository.md",
-      "redirect_url": "/azure/devops/pipelines/build/repository",
+      "redirect_url": "/azure/devops/pipelines/repos/index",
       "redirect_document_id": false
     },
     {
@@ -2012,7 +2012,7 @@
     },
     {
       "source_path": "docs/marketplace/get-vsts-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/install-vsts-extension",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
       "redirect_document_id": false
     },
     {
@@ -2072,7 +2072,7 @@
     },
     {
       "source_path": "docs/package/get-started/feeds/create-feed.md",
-      "redirect_url": "/azure/devops/artifacts/feeds/create-feed",
+      "redirect_url": "/azure/devops/artifacts",
       "redirect_document_id": false
     },
     {
@@ -2117,7 +2117,7 @@
     },
     {
       "source_path": "docs/package/get-started/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/nuget/unlist-delete",
+      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
       "redirect_document_id": false
     },
     {
@@ -2357,7 +2357,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/try-additional-features-vs.md",
-      "redirect_url": "/azure/devops/marketplace/install-vsts-extension",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
       "redirect_document_id": false
     },
     {
@@ -3086,9 +3086,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "docs/organizations/accounts/create-organization-msa-or-work-student.md",
-    "redirect_url": "/azure/devops/organizations/accounts/create-organization",
-    "redirect_document_id": false
+      "source_path": "docs/organizations/accounts/create-organization-msa-or-work-student.md",
+      "redirect_url": "/azure/devops/organizations/accounts/create-organization",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/use-personal-access-tokens-to-authenticate.md",
@@ -3197,7 +3197,7 @@
     },
     {
       "source_path": "docs/integrate/extensions/test/discover-menu-group-ids.md",
-      "redirect_url": "/azure/devops/extend/test/discover-menu-group-ids",
+      "redirect_url": "/azure/devops/extend/index",
       "redirect_document_id": false
     },
     {
@@ -3442,12 +3442,12 @@
     },
     {
       "source_path": "docs/release/getting-started/concurrent-pipelines-ts.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs-vsts",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/release/getting-started/concurrent-pipelines-vsts.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs-vsts",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -3632,7 +3632,7 @@
     },
     {
       "source_path": "docs/migrate-to-vsts-from-tfs.md",
-      "redirect_url": "/azure/devops/articles/migrate-to-vsts-from-tfs",
+      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -3752,7 +3752,7 @@
     },
     {
       "source_path": "docs/work/office/track-work-vsts-tfs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/track-work-vsts-tfs",
+      "redirect_url": "/azure/devops/boards/backlogs/office/track-work",
       "redirect_document_id": false
     },
     {
@@ -6157,13 +6157,13 @@
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app.md",
-      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-core-to-azure-web-app",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm.md",
-      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-to-windows-vm",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnetcore-docker-to-azure.md",
@@ -6347,8 +6347,8 @@
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/artifacts.md",
-      "redirect_url": "/azure/devops/pipelines/build/artifacts",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/artifacts/artifacts-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/history.md",
@@ -6362,8 +6362,8 @@
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/repository.md",
-      "redirect_url": "/azure/devops/pipelines/build/repository",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/repos/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/triggers.md",
@@ -6477,12 +6477,12 @@
     },
     {
       "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-ts.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs-vsts",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/licensing/concurrent-pipelines-ts.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs-vsts",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -6547,8 +6547,8 @@
     },
     {
       "source_path": "docs/build-release/packages/maven.md",
-      "redirect_url": "/azure/devops/pipelines/packages/maven",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/artifacts/maven",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/npm.md",
@@ -6557,17 +6557,17 @@
     },
     {
       "source_path": "docs/build-release/packages/nuget-pack-publish.md",
-      "redirect_url": "/azure/devops/pipelines/targets/nuget",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/artifacts/nuget",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/packages/nuget-pack-publish.md",
-      "redirect_url": "/azure/devops/pipelines/targets/nuget",
+      "redirect_url": "/azure/devops/pipelines/artifacts/nuget",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/packages/npm.md",
-      "redirect_url": "/azure/devops/pipelines/targets/npm",
+      "redirect_url": "/azure/devops/pipelines/artifacts/npm",
       "redirect_document_id": false
     },
     {
@@ -6577,8 +6577,8 @@
     },
     {
       "source_path": "docs/build-release/symbols/index.md",
-      "redirect_url": "/azure/devops/pipelines/symbols/index",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/artifacts/symbols",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/file-matching-patterns.md",
@@ -7342,13 +7342,13 @@
     },
     {
       "source_path": "docs/build-release/actions/integrate-jenkins-vsts-aks.md",
-      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-vsts-aks",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/integrate-jenkins-vsts-cicd.md",
-      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-vsts-cicd",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-4.md",
@@ -7492,7 +7492,17 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-windows-vm.md",
-      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-windows-vm",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-windows-vm.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure/devops/pipelines/apps/cd/azure/aspnet-core-to-windows-vm.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
       "redirect_document_id": true
     },
     {
@@ -8417,8 +8427,8 @@
     },
     {
       "source_path": "docs/billing/csp/buy-csp-vsts.md",
-      "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-vsts",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/csp/buy-vs-app-center.md",
@@ -10617,7 +10627,7 @@
     },
     {
       "source_path": "docs/work/backlogs/office/track-work-vsts-tfs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/office/track-work-vsts-tfs",
+      "redirect_url": "/azure/devops/boards/backlogs/office/track-work",
       "redirect_document_id": false
     },
     {
@@ -11244,6 +11254,66 @@
       "source_path": "docs/organizations/billing/csp/buy-csp-vsts.md",
       "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/release/integrate-jenkins-vsts-cicd.md",
+      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/release/integrate-jenkins-vsts-aks.md",
+      "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/track-work-vsts-tfs.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/track-work",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/marketplace/start-trial-vsts-extension.md",
+      "redirect_url": "/azure/devops/marketplace/start-trial-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/marketplace/install-vsts-extension.md",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/marketplace/install-paid-vsts-extension.md",
+      "redirect_url": "/azure/devops/marketplace/install-paid-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/licensing/concurrent-jobs-vsts.md",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/demo-gen/use-vsts-demo-generator-v2.md",
+      "redirect_url": "/azure/devops/demo-gen/use-demo-generator-v2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm.md",
+      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-to-windows-vm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app.md",
+      "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-core-to-azure-web-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/vsts-package-badges.md",
+      "redirect_url": "/azure/devops/artifacts/package-badges",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
+      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_document_id": true
     }
   ]
 }

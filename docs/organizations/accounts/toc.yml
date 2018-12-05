@@ -83,7 +83,7 @@
   - name: Manage extensions
     items:
     - name: Install extensions
-      href: ../../marketplace/install-vsts-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+      href: ../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Assign paid extensions access
       href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Approve requests for extensions
@@ -131,7 +131,7 @@
   - name: Azure DevOps data protection overview
     href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
   - name: Migrate from TFS to Azure DevOps
-    href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    href: ../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Start using Azure DevOps
