@@ -27,7 +27,7 @@ ms.date: 12/04/2018
 * Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Connect Azure Boards to GitHub](connect-to-github.md).  
 * You must be a Contributor to Azure Boards. 
 * You must be a  Contributor to the GitHub repository.
-
+* If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-git-hub-connection.md#update-wits). 
 
 ## Use AB# mention to link from GitHub commits and pull requests
 
