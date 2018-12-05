@@ -34,7 +34,7 @@ You can install the agent in any one of these ways:
 For information about agents and pipelines, see:
 
 * [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
-* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md).
+* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
 * [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="runscript"></a>

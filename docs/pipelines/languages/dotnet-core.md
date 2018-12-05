@@ -321,6 +321,7 @@ An alternative is to run the `dotnet test` command with a specific logger and th
 ```yaml
 - script: dotnet test <test-project> --logger trx
 - task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'

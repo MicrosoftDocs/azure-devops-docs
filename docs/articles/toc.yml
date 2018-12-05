@@ -5,7 +5,7 @@
   - name: Migrate data from TFS to Azure DevOps Services
     href: migration-overview.md
   - name: Migrate options
-    href: migrate-to-vsts-from-tfs.md
+    href: migrate-from-tfs.md
   - name: Import
     href: migration-import.md
   - name: Process Templates

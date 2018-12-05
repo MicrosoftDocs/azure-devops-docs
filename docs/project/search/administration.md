@@ -47,7 +47,7 @@ For Code Search, go to [Azure DevOps Marketplace](https://marketplace.visualstud
 to install Code Search extension in Azure DevOps as an administrator.
 Non-administrative users can also go here to request the extension be added to Azure DevOps. 
 
-For more details, see [Install an extension](../../marketplace/install-vsts-extension.md) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/install-extension.md) in the Marketplace documentation.
 
 <a name="uninstall-ts-azuredevops"></a>
 ## Uninstall Search extension in Azure DevOps Services

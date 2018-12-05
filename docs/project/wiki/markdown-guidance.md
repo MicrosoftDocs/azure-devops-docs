@@ -291,6 +291,7 @@ a clear name to description mapping. You can format tables in pull requests, wik
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
 - To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
 - Make sure to end each row with a CR or LF.
+- A blank space is required before and after workitem or PR mentions inside a table cell.
 
 **Example:**
 

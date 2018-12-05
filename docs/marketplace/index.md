@@ -18,10 +18,10 @@ Extensions for Azure DevOps Services and Team Foundation Server (TFS) can be ins
 
 ## 5-minute quickstarts
 
-* [Install free Azure DevOps Services extensions](install-vsts-extension.md)
+* [Install free Azure DevOps Services extensions](install-extension.md)
 * [Get extensions for TFS](./get-tfs-extensions.md)
-* [Start free trial for paid extension](start-trial-vsts-extension.md)
-* [Buy and install paid extensions](install-paid-vsts-extension.md)
+* [Start free trial for paid extension](start-trial-extension.md)
+* [Buy and install paid extensions](install-paid-extension.md)
 * [Assign paid extensions to users](./assign-paid-extensions.md)
 
 ## How-to guides

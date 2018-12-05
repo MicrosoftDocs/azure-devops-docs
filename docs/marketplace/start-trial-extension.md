@@ -70,7 +70,7 @@ Once the trial has ended, you will receive an email notifying you of the end of 
 ![Extension trial period ended](_img/get-vsts-extensions/trial-expired.png)
 
 ### Purchase the extension
-You can buy the extension during the trial period, or you can buy it after the trial period is ended. Check out [Install paid Azure DevOps extension](./install-paid-vsts-extension.md) to learn how.
+You can buy the extension during the trial period, or you can buy it after the trial period is ended. Check out [Install paid Azure DevOps extension](./install-paid-extension.md) to learn how.
 
 ### Get help
 You can find answers to common problems on the [troubleshooting](faq-extensions.md) page.
