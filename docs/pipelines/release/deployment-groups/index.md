@@ -68,7 +68,7 @@ to be installed. You can do this using the script that is generated in the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
 
-If the target machines are Azure VMs, you can quickly and easily prepare them by
+If the target machines are Azure VMs, you can quickly and easily prepare them
 by installing the **Azure Pipelines Agent** Azure VM extension on each of the VMs,
 or by using the **Azure Resource Group Deployment** task in your release pipeline
 to create a deployment group dynamically.
