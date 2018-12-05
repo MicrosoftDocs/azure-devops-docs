@@ -7492,7 +7492,17 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-windows-vm.md",
-      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-windows-vm",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-windows-vm.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure/devops/pipelines/apps/cd/azure/aspnet-core-to-windows-vm.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
       "redirect_document_id": true
     },
     {
