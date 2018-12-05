@@ -448,7 +448,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Extensions**</td>
 <td><ul>
-<li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
 <li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
@@ -554,7 +554,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <tr>
 <td>**Extensions**</td>
 <td><ul>
-<li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
 <li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>

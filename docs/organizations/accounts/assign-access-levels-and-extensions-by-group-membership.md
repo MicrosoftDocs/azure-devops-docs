@@ -21,7 +21,7 @@ When users leave the group, the licenses are freed and returned to your pool. Yo
 ## Prerequisites
 
 To manage licenses and group rules, you must be a project collection administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
-To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-vsts-extension.md).
+To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
 
 ## Assign required licenses
 
@@ -93,5 +93,5 @@ As users sign in to your organization, they're assigned access levels and extens
 
 ## Related articles
 
-* [Buy and install paid extensions](../../marketplace/install-paid-vsts-extension.md)
+* [Buy and install paid extensions](../../marketplace/install-paid-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

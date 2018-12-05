@@ -7,11 +7,11 @@
 - name: Quickstarts
   items:
   - name: Install free Azure DevOps extensions
-    href: install-vsts-extension.md
+    href: install-extension.md
   - name: Preview paid Azure DevOps extensions
-    href: start-trial-vsts-extension.md
+    href: start-trial-extension.md
   - name: Buy and install paid Azure DevOps extensions
-    href: install-paid-vsts-extension.md
+    href: install-paid-extension.md
   - name: Assign paid extensions
     href: assign-paid-extensions.md
   - name: Install TFS extensions

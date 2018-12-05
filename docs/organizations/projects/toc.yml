@@ -97,4 +97,4 @@
   - name: All settings
     href: ../settings/index.md
   - name: Migrate from TFS
-    href: ../../articles/migrate-to-vsts-from-tfs.md
+    href: ../../articles/migrate-from-tfs.md

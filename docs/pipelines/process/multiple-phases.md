@@ -61,7 +61,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 ::: moniker-end
 
 > [!NOTE]
-> Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+> Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 # [YAML](#tab/yaml)
 

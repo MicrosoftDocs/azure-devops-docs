@@ -96,4 +96,4 @@ If either your pipeline or Azure Repos Git repository is in a private project, t
 
 To adjust the timeout of jobs, see [Timeouts](../process/phases.md#timeouts).
 
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).

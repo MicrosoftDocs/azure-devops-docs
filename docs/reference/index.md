@@ -117,5 +117,5 @@ Use the guidance provided in the following topics based on the process model or 
 
 - [Azure Boards](../boards/index.md)
 - [Scale & configure teams](../organizations/settings/index.md)
-- [Marketplace extensions](../marketplace/install-vsts-extension.md)
+- [Marketplace extensions](../marketplace/install-extension.md)
 - [Extensibility and REST APIs](../extend/overview.md) 

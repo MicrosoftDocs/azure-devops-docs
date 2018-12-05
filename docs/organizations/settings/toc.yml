@@ -125,7 +125,7 @@
     - name: Extensions
       items:
         - name: Install extension
-          href: ../../marketplace/install-vsts-extension.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+          href: ../../marketplace/install-extension.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
         - name: Assign paid extensions access
           href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
         - name: Approve requests for extensions
