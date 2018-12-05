@@ -261,8 +261,8 @@ A subjective unit of measure that captures the how the business value decreases 
 With your features defined, you're able to add child items to them. From any backlog, you can add child items. 
 You can add features to epics, and backlog items to features. 
 
-> [!TIP]    
-> You can also add child user stories from the Kanban board for Features, and add child features fromthe Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
+> [!TIP]  
+> You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
 
 # [New navigation](#tab/new-nav)
 

@@ -41,7 +41,7 @@ This article discusses how you can configure the
 
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
 To run multiple jobs in parallel, you must configure multiple agents.
-You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Test slicing
 

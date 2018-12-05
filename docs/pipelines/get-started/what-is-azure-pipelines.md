@@ -52,7 +52,7 @@ To use Azure Pipelines, you need:
 
 If you use public projects, Azure Pipelines is free.
 If you use private projects, you can run up to 1,800 minutes (30 hours) of pipeline jobs for free every month.
-Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Why should I use CI and CD and Azure Pipelines?
 Implementing CI and CD pipelines helps to ensure consistent and quality code that's readily available to users.

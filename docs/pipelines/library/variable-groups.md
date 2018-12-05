@@ -136,7 +136,21 @@ will automatically be made available to all the definitions or stages to which t
 
 ### Variable groups in a build or release
 
--  When a new instance of a build or release is created from a pipeline definition, the values of the variables from the linked variable group are copied to the build or release.
-- To override the values of variables in the variable group you must create a variable with the same name within the build or release pipeline. A variable in the pipeline overrides a variable with the same name in the variable group.
+The recommended use of linking a variable group to a pipeline is when you
+want to centrally control values for variables that are used
+across multiple instances or releases of the pipeline.
+
+* When a new instance of a build or release is created from a pipeline definition, the values of the variables from the linked variable group are copied to the build or release.
+* To override the values of variables in the variable group you must create a variable with the same name within the build or release pipeline. A variable in the pipeline overrides a variable with the same name in the variable group.
+* To override the values of variables in the variable group for only a specific release, you can edit the release and add new variables for just that release by using the same variable name as defined in the variable group.
+
+::: moniker range="> tfs-2018"
+
+* To override the values between releases from the pipeline, use variables with same name at queue time:
+  - When you create the release, you can choose the variables you would like to set.
+  - The value you set for a variable when the release is created is used only for that release.
+  - This helps to avoid the multiple steps of create in draft, update the variables in draft, and trigger the release with the variable.
+
+::: moniker-end
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

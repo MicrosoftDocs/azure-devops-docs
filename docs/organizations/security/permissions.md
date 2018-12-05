@@ -1,5 +1,5 @@
 ---
-title: Permissions and groups reference
+title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps & TFS
 description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
@@ -563,7 +563,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups(_img/permissions/collection-level-permissions.png)   
+> ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
 
 
 <table valign="top" width="100%">
@@ -574,12 +574,24 @@ You manage collection-level permissions through the [web portal admin context](.
 	</tr>
 	<tr>
 		<td id="administer-build-resource-permissions-permission">Administer build resource permissions</td>
-		<td>Can modify permissions for build resources.</td>
+		<td>Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
+			<ul>
+			<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+			<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+			<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+			<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+			</ul>
+			</td>
 	</tr>
 	<tr>
 		<td id="administer-process-permissions-permission">Administer process permissions</td>
 		<td>
-			Can modify permissions for processes. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). 
+			<ul>
+			<li>[Customize a project](../settings/work/customize-process.md)</li>
+			<li>[Add and manage processes](../settings/work/manage-process.md)</li>
+			</ul>
+			<p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default. >/p>
 		</td>
 	</tr>
 	<tr>
@@ -591,24 +603,23 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-shelved-changes-permission">Administer shelved changes</td>
 		<td>
-			Can delete shelvesets created by other users.
+			Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
 		</td>
 	</tr>
 	<tr>
 		<td id="administer-workspaces-permission">Administer workspaces</td>
-		<td>Can create workspaces for other users and delete workspaces created by other users.</td>
+		<td>Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md). Applies when TFVC is used as the source control. </td>
 	</tr>
 	<tr>
 		<td id="alter-trace-settings-permission">Alter trace settings</td>
 		<td>
-			Can change the trace settings for gathering more detailed diagnostic information
-			about TFS Web services.
+			Can [change the trace settings](https://docs.microsoft.com/en-us/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
 		</td>
 	</tr>
 	<tr>
 		<td id="create-a-workspace-permission">Create a workspace</td>
 		<td>
-			Can create a version control workspace.
+			Can create a version control workspace. Applies when TFVC is used as the source control. 
 			<blockquote>
 				The **Create a workspace** permission is granted to all users
 				as part of their membership within the Project Collection Valid Users group.
@@ -616,38 +627,33 @@ You manage collection-level permissions through the [web portal admin context](.
 		</td>
 	</tr>
 	<tr>
-		<td id="create-new-team-projects-permission">Create new team projects</td>
+		<td id="create-new-team-projects-permission">Create new projects (formerly Create new team projects)</td>
 		<td>
-			Can create team projects in the collection.
-			<blockquote>
-				Additional permissions may be required depending on your deployment.
-	
-				[Create a New Team Project Wizard](../projects/create-project.md).
-			</blockquote>
+			Can [add Azure DevOps projects](../projects/create-project.md) to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
 		</td>
 	</tr>
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-field-permission">Delete field from account</td>
 		<td>
-			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to Azure DevOps Services only. Users granted Basic and Stakeholder access are granted this permission by default. 
+			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+			Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
-		<td id="delete-team-project-permission">Delete project</td>
+		<td id="delete-team-project-permission">Delete team project</td>
 		<td>
-			Can [delete team projects](../projects/delete-project.md).
+			Can [delete Azure DevOps projects](../projects/delete-project.md).
 			<blockquote>
 				Deleting a project will delete all data that is associated with the project.
 				You cannot undo the deletion of a project except
@@ -659,11 +665,11 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-collection-level-information-permission">Edit collection-level information</td>
 		<td>
-			Can add users and groups, and edit collection level permissions for users and groups.
+			Can add users and groups, and edit collection-level permissions for users and groups.
 			<blockquote>
 				<p>
-					Edit collection level information includes the ability to perform these tasks
-					for all team projects defined in a collection:
+					Edit collection-level information includes the ability to perform these tasks
+					for all projects defined in a collection:
 				</p>
 
 				<ul>
@@ -680,7 +686,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 				<p>
 					When you set **Edit collection-level information** to **Allow**,
-					users can add or remove collection level groups and implicitly
+					users can add or remove collection-level groups and implicitly
 					allows these users to modify version control permissions.
 					To grant all these permissions at a command prompt,
 					you must use the `tf.exe Permission` command to grant
@@ -693,14 +699,14 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019.  Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users  granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
 		</td>
 	</tr>
 	<tr>
 		<td id="make-requests-on-behalf-of-others-permission">Make requests on behalf of others</td>
 		<td>
 			Can perform operations on behalf of other users or services.
-			Assign only to service accounts.
+			You should assign this permission only to on-premises [service accounts](/tfs/server/admin/service-accounts-dependencies-tfs).
 		</td>
 	</tr>
 	<tr>
@@ -710,7 +716,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="manage-process-template-permission">Manage process template</td>
 		<td>
-			Can download, create, edit, and upload process templates. Applies to TFS only. 
+			Can [download, create, edit, and upload process templates](../../boards/work-items/guidance/manage-process-templates.md). A process template defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards. Applies to Azure DevOps Servers only. 
 		</td>
 	</tr>
 	<tr>
@@ -733,15 +739,15 @@ You manage collection-level permissions through the [web portal admin context](.
 	</tr>
 	<tr>
 		<td id="view-build-resources-permission">View build resources</td>
-		<td>Can view, but not use, build controllers and build agents that are configured for the collection.</td>
+		<td>Can view, but not use, build controllers and build agents that are configured for an organization or project collection.</td>
 	</tr>
 	<tr>
 		<td id="view-collection-level-information-permission">View instance-level information<br/>or View collection-level information</td>
-		<td>Can view collection level group membership and permissions.
+		<td>Can view project collection-level group membership and permissions.
 			<blockquote>
 				If you set the <strong>View instance-level information</strong> permission
 				to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-				no users will be able to access the collection.
+				no users will be able to access projects in the organization or project collection.
 			</blockquote></td>
 	</tr>
 	<tr>
@@ -775,20 +781,20 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="change-process-team-project-permission">Change process of project</td>
-		<td>Can change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019.  Users granted Basic and Stakeholder access are granted this permission by default. </td>
+		<td>Can change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. </td>
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
-		<td>Can add tags through a work item form. Users granted Stakeholder access for a public project are granted this permission by default. </p></td>
+		<td>[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. </p></td>
 	</tr>
 	<tr>
 		<td id="create-test-runs-permission">Create test runs</td>
-		<td>Can add and remove test results and add or modify test runs.</td>
+		<td>Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). </td>
 	</tr>
 	<tr>
 		<td id="delete-work-items-in-this-project-permission">
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
-		<td>Can [mark work items in this project as deleted](../../boards/backlogs/remove-delete-work-items.md). Users granted Stakeholder access for a public project are granted this permission by default.
+		<td>Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
 <li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
 <li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
@@ -802,7 +808,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete project</td>
-		<td>Can [delete the project](../projects/delete-project.md) from the collection.</td>
+		<td>Can [delete a project](../projects/delete-project.md) from an organization or project collection.</td>
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
@@ -842,11 +848,11 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 	</tr>
 	<tr>
 		<td id="manage-test-configurations-permission">Manage test configurations</td>
-		<td>Can create and delete test configurations.</td>
+		<td>Can create and delete [test configurations](../../test/test-different-configurations.md).</td>
 	</tr>
 	<tr>
 		<td id="manage-test-environments-permission">Manage test environments</td>
-		<td>Can create and delete test environments.</td>
+		<td>Can create and delete [test environments](../../test/test-different-configurations.md).</td>
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
@@ -855,7 +861,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 	</tr>
 	<tr>
 		<td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
-		<td>Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. Users granted Stakeholder access for a public project are granted this permission by default.</td>
+		<td>Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.</td>
 	</tr>
 	<tr>
 		<td id="rename-team-project-permission">Rename project</td>
