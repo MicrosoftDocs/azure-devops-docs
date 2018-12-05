@@ -117,7 +117,7 @@
   # - name: Set up Jenkins + NuGet - if this has low views, delete it
   #   href: /azure/devops/pipelines/packages/jenkins?toc=/azure/devops/artifacts/toc.json
   - name: Use badges to share your packages
-    href: vsts-package-badges.md
+    href: package-badges.md
   - name: Delete and recover packages
     href: how-to/delete-and-recover-packages.md
   - name: Follow a package for publish alerts

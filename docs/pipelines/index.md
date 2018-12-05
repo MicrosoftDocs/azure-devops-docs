@@ -719,7 +719,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h3>Concepts</h3>
                                 <p>
                                     <a href="agents/agents.md">Build and release agents</a><br />
-                                    <a href="licensing/concurrent-jobs-vsts.md">Parallel jobs</a><br />
+                                    <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
                                     <a href="release/index.md">Release pipelines</a><br />
                                 </p>
                             </div>
@@ -1350,7 +1350,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h3>Concepts</h3>
                                 <p>
                                     <a href="agents/agents.md">Build and release agents</a><br />
-                                    <a href="licensing/concurrent-jobs-vsts.md">Parallel jobs</a><br />
+                                    <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
                                     <a href="release/index.md">Release pipelines</a><br />
                                 </p>
                             </div>

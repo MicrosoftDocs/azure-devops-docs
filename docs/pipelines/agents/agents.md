@@ -76,7 +76,7 @@ After you've installed the agent on a machine, you can install any other softwar
 
 You might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
 
-* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs-vsts.md)
+* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md)
 
 ::: moniker-end
 

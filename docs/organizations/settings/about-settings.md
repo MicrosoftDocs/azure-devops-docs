@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/29/2018
+ms.date: 12/4/2018
 ---
 
 ::: moniker range="vsts" 
@@ -27,7 +27,7 @@ If you're just getting started as a project administrator, see [Get started as a
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 
 # About user, team, project, and collection-level settings
 
@@ -119,7 +119,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
 </tr>
 <tr>
-<td>**Work, Team configuration**</td>
+<td>**Boards, Team configuration**</td>
 <td><ul>
 <li>[Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
@@ -160,7 +160,7 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -174,18 +174,23 @@ From the administrative **Project settings** pages, you can configure settings a
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range="<= tfs-2018 || vsts"
+
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
 
-
-::: moniker range=">= tfs-2013"
-![Project settings, conceptual](_img/about/project-settings-prev-nav.png) 
+![Project settings, conceptual](_img/about/project-settings-prev-nav.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---
 
 <table>
@@ -204,9 +209,9 @@ From the administrative **Project settings** pages, you can configure settings a
 <td>Update the project description or change it's visibility.</p></td>
 </tr>
 <tr>
-<td>**Services** (Azure DevOps Services only)</td>
+<td>**Services** </td>
 <td><ul>
-<li>[Turn a service on or off ](set-services.md)</li>
+<li>[Turn a service on or off ](set-services.md) (Azure DevOps Services only)</li>
 </ul></td>
 <td>Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on. </p></td>
 </tr>
@@ -252,7 +257,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td><a id="work" />**Boards, Project configuration (Work)**</td>
+<td><a id="work" />**Boards, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -294,7 +299,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <td>**Wiki**</td>
 <td><ul>
 <li>[Create a wiki for your project](../../project/wiki/wiki-create-repo.md)</li>
-<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (Azure DevOps Services only)</li>
+<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) </li>
 <li>[Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 </ul></td>
 <td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).</td>
@@ -317,7 +322,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"   
+::: moniker range=">= azdevserver-2019"   
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
@@ -325,7 +330,7 @@ From the administrative **Organization settings** pages, you can configure setti
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
@@ -340,7 +345,7 @@ From the **Admin settings** page, you can configure the settings shown in the fo
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 **Project collection-level settings**  
 From the administrative pages for a collection, you can configure the settings shown in the following image. 
 
@@ -348,6 +353,10 @@ From the administrative pages for a collection, you can configure the settings s
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -439,7 +448,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Extensions**</td>
 <td><ul>
-<li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
 <li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
@@ -479,7 +488,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="azdevserver-2019"
 For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
 
 
@@ -511,7 +520,89 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
-<li>[Add collectino-level administrators](../security/set-project-collection-level-permissions.md)</li>
+<li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
+<li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
+<li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
+</ul></td>
+<td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
+</tr>
+<tr>
+<td>**Notifications**</td>
+<td><ul>
+<li>Manage collection-level notifications </li>
+</ul></td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
+</tr>
+<tr>
+<td>**Boards, Process** </td>
+<td><ul>
+<li>[Customize a project](./work/customize-process.md)</li>
+<li>[Add and manage processes](./work/manage-process.md)</li>
+</ul></td>
+<td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
+</tr>
+<tr>
+<td>**Build and release, Agent pools, Deployment pools**</td>
+<td><ul>
+<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+</ul></td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
+</tr>
+<tr>
+<td>**Extensions**</td>
+<td><ul>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
+<li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
+<li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
+<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
+<li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
+</ul></td>
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
+</td>
+</tr>
+
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
+
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="15%">Area</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
+</tr>
+<tr>
+<td>**Settings**</td>
+<td><ul>
+<li>[Change access levels](../security/change-access-levels.md)</li>
+</ul></td>
+<td>From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects defined under your account.</td>
+</tr>
+<tr>
+<td>**Projects**</td>
+<td><ul>
+<li>Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)</li>
+<li>[Add users to projects](../security/add-users-team-project.md)</li>
+<li>[Save project data](../accounts/save-team-project-data.md)</li>
+</ul></td>
+<td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. Learn more [About projects and scaling your organization](../projects/about-projects.md). </td>
+</tr>
+<tr>
+<td>**Security**</td>
+<td><ul>
+<li>[Change individual permissions](../security/change-individual-permissions.md)</li>
+<li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
+<li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
 <li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
 </ul></td>
@@ -554,7 +645,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 
 <a id="admin" />
 

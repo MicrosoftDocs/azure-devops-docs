@@ -441,5 +441,5 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Delete your AKS cluster
 
 > [!div class="nextstepaction"]
-> [Integrate your Jenkins CI jobs with Azure Pipelines](integrate-jenkins-vsts-cicd.md)
+> [Integrate your Jenkins CI jobs with Azure Pipelines](integrate-jenkins-pipelines-cicd.md)
 > [Deploy to Kubernetes with Fabric8](/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)

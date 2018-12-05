@@ -61,7 +61,7 @@ A Git repository supports a distributed version control system for tracking chan
 
 ## Pipelines 
 
-Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
+Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs.md). 
 
 ![Pipeline concept end-to-end](/azure/devops/pipelines/_img/pipeline-concept-end-to-end.png)
 

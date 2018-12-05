@@ -308,7 +308,7 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient jobs to enable parallel jobs.
-See [Parallel jobs in Azure Pipelines](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+See [Parallel jobs in Azure Pipelines](../../pipelines/licensing/concurrent-jobs.md) 
 or [Parallel jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information.
 
 * Testers do not run the same tests in parallel. Doing so may cause

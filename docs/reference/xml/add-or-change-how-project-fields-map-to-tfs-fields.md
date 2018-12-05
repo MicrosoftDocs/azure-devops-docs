@@ -40,5 +40,5 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
 ## Related articles 
 -  [Address inaccuracies published for summary values](../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
--  [Work in Excel and Project](../../boards/backlogs/office/track-work-vsts-tfs.md)   
+-  [Work in Excel and Project](../../boards/backlogs/office/track-work.md)   
 -  [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)

@@ -51,7 +51,7 @@ From the **Settings** context, **Extensions**, you can view the extensions that 
 
 ![Organization settings, Extensions page](_img/process/custom-controls-extensions-admin-page-ts.png)   
 
-To learn more about extensions, see [Install free extensions](../../../marketplace/install-vsts-extension.md).
+To learn more about extensions, see [Install free extensions](../../../marketplace/install-extension.md).
 
 <a id="add-extension">  </a>
 ## Add a Marketplace extension   
