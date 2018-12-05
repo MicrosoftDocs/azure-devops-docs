@@ -381,6 +381,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ```yaml
 - task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
     testResultsFiles: '**/TEST-RESULTS.xml'
@@ -407,6 +408,7 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results by using Istanbul.
+Set the Control Options for the Publish Test Results task to run the task even if a previous task has failed, unless the deployment was canceled.
 
 ---
 
