@@ -28,9 +28,11 @@ In this topic, you'll learn:
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 
+For information on managing features and epics as a list, see [Define features and epics](../backlogs/define-features-epics.md). 
+
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Epic portfolio backlogs are supported in TFS 2015 and later versions.  
+> Epic portfolio backlogs are supported in TFS 2015 and later versions. You can add them manually as described in [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end
 
 > [!div class="mx-imgBorder"]
