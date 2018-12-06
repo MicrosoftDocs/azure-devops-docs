@@ -25,7 +25,7 @@ In the past, we have also shipped a client based solution as Microsoft Test Mana
 
 ### Supported combinations
 
-| Client | TFS 2015 | TFS 2017 | TFS 2018 | Azure DevOps Server 2019 | Azure DevOps Server "2020" | Azure DevOps Services |
+| Client | TFS 2015 | TFS 2017 | TFS 2018 | Azure DevOps Server 2019 | Azure DevOps Server vNext | Azure DevOps Services |
 | --- | --- | --- | --- | --- | --- | --- |
 | Microsoft Test Manager 2015 | Yes | Yes | Yes | Yes | No | Up to Jan 1, 2020 |
 | Microsoft Test Manager 2017 | No | Yes | Yes | Yes | No | Up to Jan 1, 2020 |
