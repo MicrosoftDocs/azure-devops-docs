@@ -11,7 +11,7 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
 1. Open a SSH session to your Linux VM. You can do this using the Cloud Shell button on the menu
    in the upper-right of the [Azure portal](https://portal.azure.com/).
 
-   ![Azure portal cloud shell button](_img/cloud-shell-menu.png)
+   ![Azure portal cloud shell button](_img/cloud-shell-menu-image.png)
 
 1. Initiate the session by typing the following command, substituting the IP address of your VM:   
 
