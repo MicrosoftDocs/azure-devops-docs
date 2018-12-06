@@ -1,11 +1,13 @@
 ---
 title: Visual Studio Team Services is now Azure DevOps Services
-description: Visual Studio Team Services (VSTS) is now Azure DevOps Services
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Visual Studio Team Services has been rebranded and is now Azure DevOps Services
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
-ms.date: 09/10/2018
+ms.date: 12/06/2018
 ms.author: douge
 author: erickson-doug
 monikerRange: '>= tfs-2013'
