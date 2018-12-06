@@ -41,7 +41,7 @@ Here's the general process:
 1.	Identify the most important assets that you need to migrate - typically source code, work items, or both. Other assets in TFS - 
 build pipelines, test plans, and so forth - are harder to manually migrate. 
 2.	Identify a good time to make the transition.
-3.	Prepare your target Azure DevOps organizations. Create the organizations and team projects that you need, provision users, and so on.
+3.	Prepare your target organizations. Create the organizations and team projects that you need, provision users, and so on.
 4.	Migrate your data.
 5.	Consider making the source TFS deployments read-only. 
 

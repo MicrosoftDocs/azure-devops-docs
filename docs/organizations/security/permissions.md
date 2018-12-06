@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -231,7 +231,7 @@ You can't remove or delete the default server level groups.
 
 ## Collection-level groups
 
-When you create an Azure DevOps organization or project collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
+When you create an organization or project collection in Azure DevOps, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
 <!---
 Project Collection Administrators

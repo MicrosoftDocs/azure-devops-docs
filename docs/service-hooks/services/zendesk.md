@@ -135,7 +135,7 @@ for pricing related to their services.
 
 #### Q:  Why do I keep getting prompted for a user name and password?
 
-A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible organizations" or to the specific Azure DevOps Services organization configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
+A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible organizations" or to the specific organization configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
 
 Also make sure the token has not expired and that it has the **Work items (read and write)** scope.
 

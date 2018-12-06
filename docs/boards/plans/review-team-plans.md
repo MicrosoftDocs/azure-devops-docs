@@ -53,7 +53,7 @@ All users with [basic access](../../organizations/security/change-access-levels.
 <a id="install-plans">  </a>
 ### Install the Plans page extension 
 
-The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). 
+The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
 
 ::: moniker range="tfs-2017" 
 Installation of Delivery Plans requires TFS 2017.2 or later version.

@@ -61,5 +61,5 @@ Before you get started using Power BI to work with the Analytics service, make s
 
 ## Deprecated PowerBI.com Content Pack
 
-In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of Azure DevOps organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
+In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
 

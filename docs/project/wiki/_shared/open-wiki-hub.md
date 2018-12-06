@@ -5,7 +5,7 @@ Begin by connecting to your project using a [supported web browser](/tfs/server/
 
 
 > [!NOTE]
-> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).    
+> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the organization in Azure DevOps. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).    
 > 
 > For on-premises, choose **Previous Navigation** for guidance.
 

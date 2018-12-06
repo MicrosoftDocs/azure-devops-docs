@@ -1,6 +1,6 @@
 ---
-title: Add external users to your organization
-description: Learn how to invite an outside user to your Azure DevOps organization
+title: Add external users to your organization in Azure DevOps
+description: Learn how to invite an outside user to your organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 # Add external users to your organization in Azure DevOps

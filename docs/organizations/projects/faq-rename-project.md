@@ -13,7 +13,7 @@ ms.date: 11/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Troubleshoot renaming an Azure DevOps project
+# Troubleshoot renaming a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 

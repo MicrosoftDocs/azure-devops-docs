@@ -76,7 +76,7 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 6.  **Azure resources** including the App Service will be created.  **Azure Pipelines resources** such as a build pipeline, and a release pipeline will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
-7.  A **build** and **release** will then execute.  **Navigate** to the Azure DevOps organization and monitor the builds and releases until they complete.  This may take several minutes.
+7.  A **build** and **release** will then execute.  **Navigate** to the organization and monitor the builds and releases until they complete.  This may take several minutes.
 8.  When the deployment finishes, verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
 9.  Make changes to the web app code and push them to Azure Pipelines.  A new build and release will execute and deploy the changes.
 

@@ -59,7 +59,7 @@ Manage the steps in the process with approvals for each step.
 You have the following options for managing your releases:
 
 * **Using Release Management as a service on Azure Pipelines**: 
-  You need an Azure DevOps organization.
+  You need an organization in Azure DevOps.
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
 * **Using an on-premises server**: You need to install Release Management Server; 
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.

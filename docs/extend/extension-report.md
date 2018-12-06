@@ -14,7 +14,7 @@ ms.date: 04/13/2018
 
 # Extension reporting hub
 
-Now that your extension is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
+Now that your extension is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com) you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
@@ -28,7 +28,7 @@ You can view acquisition related data in this tab for the selected period.
 For paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. See the [Contact](#contact) section provided later in this topic for more details. 
 
 ## Uninstall
-You can view how many Azure DevOps Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
+You can view how many organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. [Contact](#contact) section provided later in this topic for more details.
@@ -69,6 +69,6 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 # Terminology
 
 * **Page views** is total number of extension detail page views. Repeated views are counted.
-* **Azure DevOps Services install** is the total number of Azure DevOps Services accounts the extension is installed. Repeated installs on the same organization are counted. 
+* **Azure DevOps Services install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted. 
 * **TFS install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
 

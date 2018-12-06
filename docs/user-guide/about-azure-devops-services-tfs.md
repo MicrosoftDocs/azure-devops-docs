@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 12/03/2018 
+ms.date: 12/04/2018 
 ---
 
 # Understand the differences between Azure DevOps Services and Azure DevOps Server
@@ -102,7 +102,7 @@ We recommend that you create organizations in Azure DevOps Services wherever you
 
 <!---We're working to support enterprise-wide policies.-->
 
-Learn more: [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md).
+Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 

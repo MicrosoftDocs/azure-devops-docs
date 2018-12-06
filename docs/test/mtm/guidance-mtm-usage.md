@@ -55,7 +55,7 @@ Comparison of [test planning with the [!INCLUDE [test-hub-include-nolink](../_sh
 | View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
 
 ### Test authoring
 

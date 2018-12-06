@@ -43,7 +43,7 @@ Once the build has been completed and the symbols have been published it is time
 
 To point Visual Studio to Azure DevOps Services for downloading symbols click on _Tools_, then _Options_ and then scroll down to the _Debugging_ group of items and select _Symbols_ item. Use the **New Azure DevOps Services Symbol Server location** icon to select your Azure DevOps Services server and add it to the list of symbols locations.
 
-![Adding Azure DevOps Services organization to the list of symbol locations](_img/symbollocationoptionspanel.png)
+![Adding organization to the list of symbol locations](_img/symbollocationoptionspanel.png)
 
 Next select the _General_ item under the _Debugging_ group and scroll down and check the **Enable Source Link support**.
 
