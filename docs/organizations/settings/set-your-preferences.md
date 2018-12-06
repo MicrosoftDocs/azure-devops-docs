@@ -1,6 +1,7 @@
 ---
-title: View and change your user preferences 
+title: View, change user preferences 
 titleSuffix: Azure DevOps & TFS
+ms.concept: seodec18
 description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps Services or Team Foundation Serer 
 ms.prod: devops
 ms.technology: devops-collab
@@ -10,11 +11,10 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 07-21-2018
+ms.date: 12/06/2018
 ---
 
-
-# Set your preferences
+# Set user preferences
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
@@ -71,7 +71,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
-0. To change your user preferences, open your profile menu.
+1. To change your user preferences, open your profile menu.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open profile menu](../../_shared/_img/settings/profile-menu-vert.png)
