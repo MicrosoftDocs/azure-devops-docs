@@ -731,7 +731,7 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/eventTypes?api-vers
     },
     {
       "id": "ms.vss-notifications.subscription-disabled-event",
-      "name": "Subcription disabled",
+      "name": "Subscription disabled",
       "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/ms.vss-notifications.subscription-disabled-event",
       "eventPublisher": {
         "id": "ms.vss-notifications.notifications-event-publisher",

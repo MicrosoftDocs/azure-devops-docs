@@ -367,7 +367,7 @@ and [standard GitHub service connections](#sep-github).
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
-| OAuth configuraton | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| OAuth configuration | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
 | GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 

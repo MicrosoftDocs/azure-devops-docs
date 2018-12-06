@@ -106,7 +106,7 @@ Close the loop by configuring Azure DevOps Services to update the Zendesk ticket
 
 5. Start configuring Zendesk.
 
-   <img alt="Sevice hooks tab, Zendesk selected" src="./_img/zendesk/target-service.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Service hooks tab, Zendesk selected" src="./_img/zendesk/target-service.png" style="border: 1px solid #CCCCCC" />
 
 6. Use the **Work item is commented on** event.
 You can filter for comments, too.
