@@ -1,6 +1,8 @@
 ---
-title: Authenticate access with personal access tokens in Azure DevOps
-description: Use personal access tokens (PATs) as alternate passwords to authenticate access to Azure DevOps
+title: Authenticate access with personal access tokens
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Use personal access tokens (PATs) as alternate passwords to authenticate access to Azure DevOps.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2017'
 ---
 

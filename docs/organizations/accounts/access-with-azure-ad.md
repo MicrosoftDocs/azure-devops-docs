@@ -1,5 +1,7 @@
 ---
-title: Access your organization in Azure DevOps with Azure Active Directory
+title: Access your organization with Azure Active Directory
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Learn how to authenticate users and control access to your organization the same way you can with Microsoft services, like Office 365 and Azure
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-/ms.date: 12/04/2018
+/ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 

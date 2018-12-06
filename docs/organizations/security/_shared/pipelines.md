@@ -16,7 +16,7 @@ ms.topic: include
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View build and release pipelines</td>
+<td align="left">View release pipelines</td>
 <td>![checkmark](/azure/devops/_img/icons/preview.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
