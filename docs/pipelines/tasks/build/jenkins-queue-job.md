@@ -80,7 +80,7 @@ None
 <tr>
 <td>Job parameters</td>
 <td>
-<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the paramter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> paramter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
+<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
 </td>
 </tr>
 

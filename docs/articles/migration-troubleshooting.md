@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
-description: Guidance for fixing common TfsMigrator valdiation errors. 
+description: Guidance for fixing common TfsMigrator validation errors. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
@@ -251,7 +251,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 
 
 ## Dealing with Import Errors
-Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will recieve a failure email if this happens. 
+Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
 
 ### Verification Failures
 Verification failures happen when the import fails to start. Issues falling into this category mean that something with your import request isn't valid. Look up you error message below and follow the recommended guidance on how to resolve the error. After that your team can try to queue the import again.   

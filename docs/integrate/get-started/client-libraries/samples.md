@@ -264,7 +264,7 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed Azure DevOps Services organization)
+	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
 	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
 	{
 		tpc.Authenticate();

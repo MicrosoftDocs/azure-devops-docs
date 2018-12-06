@@ -25,7 +25,7 @@ In the past, we have also shipped a client based solution as Microsoft Test Mana
 
 ### Supported combinations
 
-| Client | TFS 2015 | TFS 2017 | TFS 2018 | Azure DevOps Server 2019 | Azure DevOps Server "2020" | Azure DevOps Services |
+| Client | TFS 2015 | TFS 2017 | TFS 2018 | Azure DevOps Server 2019 | Azure DevOps Server vNext | Azure DevOps Services |
 | --- | --- | --- | --- | --- | --- | --- |
 | Microsoft Test Manager 2015 | Yes | Yes | Yes | Yes | No | Up to Jan 1, 2020 |
 | Microsoft Test Manager 2017 | No | Yes | Yes | Yes | No | Up to Jan 1, 2020 |
@@ -55,7 +55,7 @@ Comparison of [test planning with the [!INCLUDE [test-hub-include-nolink](../_sh
 | View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
 
 ### Test authoring
 

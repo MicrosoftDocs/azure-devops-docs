@@ -11,7 +11,7 @@ To help your team improve app quality, you can install the free
 but you'll get different capabilities based on your access level 
 and whether you work offline or connected to Azure DevOps Services or TFS. 
 For more details, see the extension's description 
-in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 <a name="trial-expired"></a>
 *	If you're using an organization, and you started a free extension trial, 

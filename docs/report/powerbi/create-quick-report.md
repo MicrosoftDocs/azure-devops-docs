@@ -10,14 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
 ms.topic: quickstart
-ms.date: 11/01/2018
+ms.date: 12/04/2018
 ---
 
 # Create a Power BI report with a default Analytics view
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Azure DevOps project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
+With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
 
 If you don't have Power BI Desktop, you can [download](https://powerbi.microsoft.com/desktop) and install it for free.
 

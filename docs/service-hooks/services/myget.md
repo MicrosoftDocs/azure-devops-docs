@@ -39,9 +39,9 @@ Use a MyGet feed for the following integration scenarios with Azure DevOps Servi
 
 3. Use your Azure DevOps Services organization.
 
-   <img alt="Enter the name of your Azure DevOps Services organization" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter the name of your organization" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access you Azure DevOps Services organization.
+4. Authorize MyGet to access your organization.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
@@ -61,9 +61,9 @@ Use a MyGet feed for the following integration scenarios with Azure DevOps Servi
 
 3. Use your Azure DevOps Services organization.
 
-   <img alt="Enter your Azure DevOps Services organization name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter your organization name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access your Azure DevOps Services organization.
+4. Authorize MyGet to access your organization.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 

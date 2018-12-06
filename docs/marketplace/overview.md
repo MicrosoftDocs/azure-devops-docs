@@ -41,9 +41,9 @@ that can be installed to help with the following:
 - Code testing and tracking
 - Collaboration amongst team members
 
-Adding extensions to your Azure DevOps organization is incredibly easy:
+Adding extensions to your organization is incredibly easy:
 
-1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
 You must have administrative permissions to upload or install extensions.

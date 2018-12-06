@@ -17,7 +17,7 @@ ms.date: 09/10/2018
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)] 
 
-You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any Azure DevOps organization that has alternate credentials enabled. OAuth is currently not supported. 
+You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any organization that has alternate credentials enabled in Azure DevOps. OAuth is currently not supported. 
 
 ## Access the Analytics service OData feed
 1. Make sure you have installed the [Analytics extension](../analytics/analytics-extension.md).  

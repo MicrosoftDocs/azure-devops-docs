@@ -42,7 +42,7 @@ to connect Azure DevOps Services to Bamboo.
 2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in Azure DevOps Services.
 The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git/{projectName}```.
 
-3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) of an Azure DevOps Services organization with read access to the repository. 
+3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) of an organization with read access to the repository. 
 
    <img alt="Repository settings with Git selected" src="./_img/bamboo/repository-management-settings.png" style="border: 1px solid #CCCCCC" />
 

@@ -1,4 +1,4 @@
-0. Sign in to your Azure DevOps Services organization 
+1. Sign in to your organization 
 (```https:dev.azure.com/{organization}```).
 
 0.	From your home page, open your profile. 

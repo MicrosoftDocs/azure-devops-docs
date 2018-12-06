@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/02/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -24,7 +24,7 @@ An Azure DevOps Services public project provides support to share code with othe
 
 
 ## Public versus private projects 
-Azure DevOps projects provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within an Azure DevOps organization.  
+Projects in Azure DevOps provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within an organization in Azure DevOps.  
 
 Users that aren't signed into the service have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services. 
 

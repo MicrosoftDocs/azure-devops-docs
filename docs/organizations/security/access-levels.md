@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -55,7 +55,7 @@ You assign users or groups of users to one of the following access levels:
 - **Stakeholders**: provides partial access, can be assigned to unlimited users for free
 ::: moniker-end
 
-Assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an Azure DevOps organization. 
+Assign **Basic** to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization. 
 
 ::: moniker range=">= tfs-2018"
 
@@ -80,7 +80,7 @@ See [what benefits come with each subscription level](https://docs.microsoft.com
 
 ## Basic, Azure Boards & Repos
 
-Assign **Basic**  to users in your Azure DevOps organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
+Assign **Basic**  to users in your organization who need to manage backlogs or sprints, or who need access to Git or TFVC code repos. You get 5 free users with your organization, and then pay per user per month for additional users.
 
 ::: moniker range="<= azdevserver-2019"
 ![Basic access features](_img/access-levels-2017-basic.png)

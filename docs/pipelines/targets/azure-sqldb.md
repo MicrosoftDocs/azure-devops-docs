@@ -253,7 +253,9 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 ## Additional SQL actions
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
-that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need. This section shows some of the common use cases for invoking the `SqlPackage.exe` tool. As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
+that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
+This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download).
+As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
 > [!NOTE]
 > If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.

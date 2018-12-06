@@ -1,6 +1,8 @@
 ---
-title: Disconnect your Azure DevOps organization from Azure Active Directory
-description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your Azure DevOps  account from your directory
+title: Disconnect organization from Azure Active Directory
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your organization from your directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
@@ -8,10 +10,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Separate your Azure DevOps organization from Azure Active Directory
+# Separate your organization from Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -36,7 +38,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 **What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps as new users. Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
 > [!IMPORTANT]
-> If you want to connect your Azure DevOps organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [connecting your organization to Azure AD](connect-organization-to-azure-ad.md).
+> If you want to connect your organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [connecting your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 ## Disconnect organization from directory
 
@@ -44,9 +46,9 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
    [Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-2. Select **All services**, and then **Azure DevOps Services organizations**.
+2. Select **All services**, and then **Azure DevOps organizations**.
 
-   ![Select Azure DevOps organizations in the Azure portal](_img/_shared/azure-portal-team-services-administration.png)
+   ![Select organizations in the Azure portal](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.
 

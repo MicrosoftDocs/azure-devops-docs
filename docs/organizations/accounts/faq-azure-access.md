@@ -1,5 +1,7 @@
 ---
-title: Troubleshoot Azure DevOps permissions and access via Azure Active Directory (Azure AD)
+title: Troubleshoot permissions and access via Azure Active Directory
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, how to add users, or how to connect or disconnect to and from your directory.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,11 +10,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot Azure DevOps access with Azure Active Directory (Azure AD)
+# Troubleshoot permissions and access with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -28,8 +30,8 @@ A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOp
 
 A: Yes.
 
-- Dont have an Azure DevOps organization yet? [Create an Azure DevOps organization](https://aka.ms/SignupAzureDevOps).
-- Have an existing Azure DevOps organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+- Dont have an organization yet? [Create an organization in Azure DevOps](https://aka.ms/SignupAzureDevOps).
+- Have an existing organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -133,7 +135,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 ## Add users to directory
 
-[Add Azure DevOps organization users to your Azure Active Directory](add-users-to-azure-ad.md).
+[Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
 #### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 

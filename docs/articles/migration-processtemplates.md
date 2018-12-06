@@ -37,7 +37,7 @@ We recommend that for any project that has not been customized, that you review 
 
 If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
 
-Here are some examples of error messages you will probably recieve:
+Here are some examples of error messages you will probably receive:
 
 ```no-highlight
 Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402571: Required element PortfolioBacklog is missing from Process Configuration.

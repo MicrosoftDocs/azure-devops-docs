@@ -1,7 +1,8 @@
 ---
-title: Naming restrictions and conventions 
+title: Restrictions and conventions for naming
 titleSuffix: Azure DevOps & TFS
-description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
+ms.concept: seodec18
+description: Requirements to meet when labeling objects such as an organization, project, tags, templates, and more, like length, uniqueness, and special characters 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
@@ -10,7 +11,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ---
 
 # Naming restrictions and conventions  
