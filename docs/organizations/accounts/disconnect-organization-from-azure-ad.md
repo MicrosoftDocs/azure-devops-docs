@@ -1,6 +1,8 @@
 ---
-title: Disconnect your organization in Azure DevOps from Azure Active Directory
-description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your Azure DevOps  account from your directory
+title: Disconnect organization from Azure Active Directory
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your organization from your directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
@@ -8,10 +10,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Separate your organization in Azure DevOps from Azure Active Directory
+# Separate your organization from Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
