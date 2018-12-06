@@ -1,14 +1,15 @@
 ---
-title: Add, run, and update inline tests in Azure DevOps
+title: Add, run, update inline tests - Azure DevOps
 titleSuffix: Azure DevOps
-description: Add, run, and update manual test cases when you work in Azure DevOps
+ms.custom: seodec18
+description: Learn how to add, run, and update manual test cases when you're working in Azure DevOps
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/03/2018
+ms.date: 12/06/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
