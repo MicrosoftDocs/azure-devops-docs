@@ -5,7 +5,8 @@ description: Sign up and get started using Azure Boards
 ms.custom: boards-get-started 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.assetid:  
+ms.assetid:
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: chcomley
 author: chcomley

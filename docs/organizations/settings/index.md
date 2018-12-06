@@ -1,6 +1,7 @@
 ---
-title: Project, collection, and organization settings
+title: Configure settings for projects, collections, organizations
 titleSuffix: Azure DevOps & TFS
+ms.concept: seodec18
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
@@ -10,10 +11,10 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ---
 
-# All settings 
+# Settings for projects, collections, and organizations
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
