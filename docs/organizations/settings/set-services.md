@@ -1,5 +1,5 @@
 ---
-title: Turn a service on or off 
+title: Turn a service on or off in Azure DevOps
 titleSuffix: Azure DevOps Services
 description: Determines which services are available for a project from the web portal  
 ms.technology: devops-settings
@@ -11,10 +11,10 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 07/27/2018
+ms.date: 12/04/2018
 ---
 
-# Turn an Azure DevOps service on or off 
+# Turn an Azure DevOps service on or off
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
@@ -22,7 +22,7 @@ You can control which services are available through the web portal by turning a
 
 ## Prerequisites
 
-- You must have an Azure DevOps organization. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 
 ## Change the visibility for a service  

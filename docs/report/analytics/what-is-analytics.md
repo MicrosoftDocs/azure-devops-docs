@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azdevserver-2019'
-ms.date: 04/04/2018
+ms.date: 12/04/2018
 ---
 
 # What is the Analytics Service?
@@ -19,7 +19,7 @@ ms.date: 04/04/2018
 
 The Analytics Service provides the reporting platform for Azure DevOps and Azure DevOps Server. Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over Azure DevOps. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
-To gain access to the Analytics Service for your Azure DevOps organization, install the [Analytics extension](../analytics/analytics-extension.md). Once installed, the Analytics Service populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
+To gain access to the Analytics Service for your organization in Azure DevOps, install the [Analytics extension](../analytics/analytics-extension.md). Once installed, the Analytics Service populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 
 > [!NOTE]
 > **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. Analytics is also available in all regions. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).

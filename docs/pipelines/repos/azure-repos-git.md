@@ -47,7 +47,7 @@ If your Azure Repos Git repository is open source, you can make your Azure DevOp
 
 Be aware of the following access restrictions when you're running builds in Azure Pipelines public projects:
 
-* **Cross-project access:** All builds in a Azure DevOps public project run with an access token restricted to the project. Builds in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the Azure DevOps organization.
+* **Cross-project access:** All builds in a Azure DevOps public project run with an access token restricted to the project. Builds in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
 * **Azure Artifacts packages:** If your builds need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
 
 ::: moniker-end
@@ -69,14 +69,14 @@ You can run a validation build with each commit or pull request that targets a b
 To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
 
 1. First, from the Azure Repos **Branches** page, make sure that your repository is selected.
-1. Next, hover over the branch you wish to protect, click `...` to display its context menu, and then select **Branch policies**.
-1. Finally, click **Add build policy** and choose the pipeline and methods of protecting the branch as detailed in the Azure Repos documentation [here](../../repos/git/branch-policies.md#build-validation).
+2. Next, hover over the branch you wish to protect, click `...` to display its context menu, and then select **Branch policies**.
+3. Finally, click **Add build policy** and choose the pipeline and methods of protecting the branch as detailed in the Azure Repos documentation [here](../../repos/git/branch-policies.md#build-validation).
 
 ::: moniker range=">=tfs-2018 || vsts"
 
 ## Validate contributions from forks
 
-Building pull requests from Azure Repos forks is no different from building pull requests within the same repository or project. You can create forks only within the same Azure DevOps organization that your project is part of.
+Building pull requests from Azure Repos forks is no different from building pull requests within the same repository or project. You can create forks only within the same organization that your project is part of.
 
 ::: moniker-end
 

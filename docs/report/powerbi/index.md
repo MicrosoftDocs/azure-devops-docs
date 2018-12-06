@@ -9,14 +9,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
-ms.date: 3/29/2018
+ms.date: 12/04/2018
 ---
 
 # Power BI for Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]  
 
-With Power BI, you can quickly generate reports for your Azure DevOps projects based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [Reporting Roadmap](../analytics/reporting-roadmap.md).
+With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [Reporting Roadmap](../analytics/reporting-roadmap.md).
 
 ## 5-Minute Quickstarts
  - [Create a Power BI report with an Analytics view](create-quick-report.md)

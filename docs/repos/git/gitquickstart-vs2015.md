@@ -43,17 +43,17 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
   ![Cloning Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
-0. Choose **Connect**, select your Azure DevOps organization, choose the projects you want to work on, then
+1. Choose **Connect**, select your organization, choose the projects you want to work on, then
 click **Connect**.   
 
 0. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
    
-   ![Cloning a Git Repository from a connected Azure DevOps organization](_shared/_img/cloneVsRepo.png)
+   ![Cloning a Git Repository from a connected organization in Azure DevOps](_shared/_img/cloneVsRepo.png)
 
 # [Command Line](#tab/command-line)
 
-0. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
-0. Open the Azure DevOps Services web portal in your browser and find your Git repository. 
+1. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
+2. Open the Azure DevOps Services web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
   ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_shared/_img/cloneURL.png)
@@ -142,13 +142,13 @@ team, you complete the pull request through the web browser.
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git push -u origin <font color="#b5bd68">dev</font></pre>
 
-0. Open up the Azure DevOps project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
+1. Open up the project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
    ![Creating a new Pull Request in Azure Repos](_shared/_img/vstsCreatePullReq.png)   
 
-0. Create the pull request, adding in team members to review and approve the code changes.
+2. Create the pull request, adding in team members to review and approve the code changes.
 
-0. Once the changes are approved, complete the pull request. 
+3. Once the changes are approved, complete the pull request. 
 This will pull your changes from the branch into the master branch of the code.
 
 ---

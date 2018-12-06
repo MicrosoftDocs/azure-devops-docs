@@ -4,14 +4,14 @@ ms.topic: include
 
 ## Create personal access tokens to authenticate access
 
-1.  Sign in to either your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```)
+1.  Sign in to either your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
 or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 2.  From your home page, open your profile. Go to your security details.
 
 	**Azure DevOps Services**
 
-	<img alt="Go to Azure DevOps organization home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to organization home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
     **TFS 2017**
 
@@ -24,7 +24,7 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 4.  Name your token. Select a lifespan for your token.
 
 	If you're using Azure DevOps Services, and you have more than one organization,
-	you can also select the Azure DevOps organization where you want to use the token.
+	you can also select the organization where you want to use the token.
 
     <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
@@ -58,7 +58,7 @@ When you don't need your token anymore, just revoke it to remove access.
 
 	**Azure DevOps Services**
 
-	<img alt="Go to the Azure DevOps organization home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to the organization home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
  
  **TFS 2017**
 

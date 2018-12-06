@@ -26,7 +26,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -61,19 +61,19 @@ Refer to the [list of install commands](https://git-scm.com/download/linux) for 
 
 Create a local Git repo for your code. If your code is already in a local Git repo, you can skip this step.
 
-0. Navigate to the folder where your code is on the command line:
+1. Navigate to the folder where your code is on the command line:
 
     ```
     cd /home/fabrikam/fiber
     ```
 
-0. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
+2. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
 
     ```
     git init .
     ```
 
-0. Commit your code into the local Git repo.
+3. Commit your code into the local Git repo.
 
     ```
     git add --all

@@ -43,7 +43,7 @@ While the functionality is the same across Azure DevOps Services and Team Founda
 
     <img alt="Connectors list" src="./_img/teams/Teams Connector config 2.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-3. Select your Azure DevOps Services organization (you may be prompted to sign in first), the project, and your team.
+3. Select your organization (you may be prompted to sign in first), the project, and your team.
 
     <img alt="Azure DevOps Services Connector event configuration" src="./_img/teams/Teams Connector config 4.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
@@ -112,15 +112,15 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
 >[!NOTE]  
 >The Kanban board and Dashboard integration has the following limitations:
 >1. Only works for Azure DevOps Services (Team Foundation Server is not supported)
->2. Only Kanban boards and Dashboards within Azure DevOps Services organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be configured.
+>2. Only Kanban boards and Dashboards within organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be configured.
 
 ### Configuring Azure DevOps Services Tabs in Microsoft Teams
 
-1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Visual Studio icon and follow the steps to connect to your Azure DevOps Services organization.
+1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Visual Studio icon and follow the steps to connect to your organization.
  <br/>
  <img alt="Add a new tab to Teams channel" src="./_img/teams/Teams Kanban board 3.png" style="width:80%;" />
 
-1. Once you have authenticated and selected your Azure DevOps Services organization, you will be displayed a screen to select a Kanban board or Dashboard.
+1. Once you have authenticated and selected your organization, you will be displayed a screen to select a Kanban board or Dashboard.
  <br/>
  <img alt="Teams tab configuration" src="./_img/teams/Teams Kanban board 4.png" style="width:80%;" />
 
@@ -137,10 +137,10 @@ A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
 create two additional subscriptions.
 
-####Q: I don't see my Azure DevOps Services organization when trying to connect Microsoft Teams 
+####Q: I don't see my organization when trying to connect Microsoft Teams 
 
-A: Only Azure DevOps Services organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
+A: Only organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
 
-To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams (see [Q: Why is my Azure DevOps Services organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-to-directory)).
+To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams (see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-to-directory)).
 
 <!-- ENDSECTION -->

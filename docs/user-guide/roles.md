@@ -162,4 +162,4 @@ To get started, see [Server Administration (TFS)](/tfs/server/index).
 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
-- [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md)
+- [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md)

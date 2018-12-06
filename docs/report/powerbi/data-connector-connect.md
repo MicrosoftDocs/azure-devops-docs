@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/01/2018
+ms.date: 12/04/2018
 ---
 
 # Connect to the Analytics service with Power BI Data Connector
@@ -76,7 +76,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
  
 	![Connect to Azure DevOps Services dialog](./_img/data-connector-parameters.png)
 
-	- For *Account*, enter the Azure DevOps organization name (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
+	- For *Account*, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
 	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
 
 	> [!IMPORTANT]  

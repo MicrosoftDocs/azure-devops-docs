@@ -6,7 +6,7 @@ ms.topic: include
 
 A: You'll find it in the Code page in your project.
 
-1. Sign in to your Azure DevOps organization and browse to your project or type the project URL directly in your browser. 
+1. Sign in to your organization in Azure DevOps and browse to your project or type the project URL directly in your browser. 
 
 * The URL will look like ```https://dev.azure.com/{your_account}/{your_team_project}```
 

@@ -77,7 +77,7 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 ```
 
 * **artifactFeeds**: the name of one or more Azure Artifacts feeds within your organization
-* **externalFeeds**: the name of one or more [external connection endpoints](/azure/devops/pipelines/library/service-endpoints), including PyPI or feeds in other Azure DevOps organizations
+* **externalFeeds**: the name of one or more [external connection endpoints](/azure/devops/pipelines/library/service-endpoints), including PyPI or feeds in other organizations in Azure DevOps
 
 # [Designer](#tab/designer)
 
@@ -126,7 +126,7 @@ twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to p
 
 1. The authentication credentials written into the `PYPIRC_PATH` environment variable supersede those in your ini/conf files. 
 
-1. If you add multiple Python Twine Authenticate tasks at different times in your pipeline steps, each additional build task execution will extend (not override) the existing `PYPIRC_PATH` environment variable.
+2. If you add multiple Python Twine Authenticate tasks at different times in your pipeline steps, each additional build task execution will extend (not override) the existing `PYPIRC_PATH` environment variable.
 
-1. Lastly, we strongly recommend **NOT** checking into source control any credentials or tokens.
+3. Lastly, we strongly recommend **NOT** checking into source control any credentials or tokens.
 

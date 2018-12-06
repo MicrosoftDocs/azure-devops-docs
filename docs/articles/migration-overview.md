@@ -50,7 +50,7 @@ The following features can be included with your import, but are currently in a 
 
 * [Azure Artifacts](https://visualstudio.microsoft.com/team-services/package-management/)
 
-When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new Azure DevOps Services organization along with all your other data. Should you choose to not include these features then their data will not be copied.
+When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
 For a list of items not included with an import please see the [migration guide](https://aka.ms/TFSDataImport).
 

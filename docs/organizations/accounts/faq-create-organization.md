@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot creating an Azure DevOps organization
-description: Troubleshoot creating an Azure DevOps organization with these frequently asked questions (FAQs), like the differences between using a Microsoft account versus a work or school account.
+title: Troubleshoot creating an organization in Azure DevOps
+description: Troubleshoot creating an organization with these frequently asked questions (FAQs), like the differences between using a Microsoft account versus a work or school account.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448

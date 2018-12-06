@@ -35,7 +35,7 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Concepts
 
-* [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add subscription user to organization](add-basic-or-vs-subscription-users.md)
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Glossary](../../project/navigation/glossary.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)

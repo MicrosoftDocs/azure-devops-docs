@@ -22,12 +22,12 @@ In this quickstart, you learn how to do the following:
 
 ## Prerequisites
 
-The first time that you set up billing for your Azure DevOps Services organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need the following:
+The first time that you set up billing for your organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need the following:
 
 1. [Azure DevOps Services project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](../organizations/billing/add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your Azure DevOps Services organization, you only need the owner or contributor role on your Azure subscription.
+To make subsequent edits to paid quantities in your organization, you only need the owner or contributor role on your Azure subscription.
 
 
 ## Find and buy the extension
@@ -65,7 +65,7 @@ To assign extensions, you need Azure DevOps Services [project collection adminis
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -78,7 +78,7 @@ To assign extensions, you need Azure DevOps Services [project collection adminis
 
    ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 5.	To assign the extension, right click or choose the ellipses (...) for the user you want to assign access to. Select **Manage extensions**.
 
@@ -94,7 +94,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 # [Previous navigation](#tab/previous-nav)
 
-1.	Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{organization}```.
+1.	Sign in to your organization: ```https://dev.azure.com/{organization}```.
 
 2.	Go to **Users**.
 
@@ -104,7 +104,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 4.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to.
 

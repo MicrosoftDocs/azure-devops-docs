@@ -37,11 +37,11 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 The first step is to create a PAT through the Azure DevOps Services UI to authenticate your command-line with the service.
 
-1. Head to your Azure DevOps Services organization: `https://dev.azure.com/<org_name>`
+1. Head to your organization in Azure DevOps Services: `https://dev.azure.com/<org_name>`
 
 2. From your home page, open your profile. Go to your security details:
 
-    <img alt="Go to Azure DevOps organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
 3. Create a personal access token.
 
@@ -49,7 +49,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 4.  Name your token. Select a lifespan for your token.
 
-	If you have more than one organization, you can also select the Azure DevOps organization where you want to use the token.
+	If you have more than one organization, you can also select the organization where you want to use the token.
 
     <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
@@ -65,7 +65,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 A feed is a central repository that can store multiple packages of different types. We will need to create a feed in order to store packages, which will be PowerShell Modules in this scenario.
 
-1. Navigate to **Azure Artifacts** from your Azure DevOps Services organization.
+1. Navigate to **Azure Artifacts** from your organization.
 
 2. On your first visit to **Azure Artifacts**, you'll be welcomed with an image telling you to create a new feed, click _+ New feed_. If you already have feeds in **Azure Artifacts**, simply click _+ New feed_ near the top of the UI.
 

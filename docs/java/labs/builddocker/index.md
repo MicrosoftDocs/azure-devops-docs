@@ -50,17 +50,17 @@ This exercise assumes you have completed the exercises to [create a Team Project
 
 In this task you will update the pom.xml file for the MyShuttle2 application so that it can consume the MyShuttleCalc package from the Maven package feed.
 
-1. In Chrome navigate to your Azure DevOps organization and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
+1. In Chrome, navigate to your organization and project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
     ![Get the package repository settings from Azure DevOps Services](../_img/builddocker/maven-packagefeed-settings.png)
 
-1. Open the MyShuttle2 project.
+2. Open the MyShuttle2 project.
 
-1. Click on the pom.xml file.
+3. Click on the pom.xml file.
 
-1. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from Azure DevOps Services.
+4. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from Azure DevOps Services.
 
-1. Find the `<dependency>` with `<groupId>com.microsoft.exampledep</groupId>` and update the version number to match the version number of the MyShuttleCalc package in your package feed. This may look something like:
+5. Find the `<dependency>` with `<groupId>com.microsoft.exampledep</groupId>` and update the version number to match the version number of the MyShuttleCalc package in your package feed. This may look something like:
 
     ```xml
     ...
@@ -72,7 +72,7 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
     ...
     ```
 
-1. Copy the maven settings file from the MyShuttleCalc project (you updated this file in another lab to include the authentication settings for the Maven package feed). Run the following command in a terminal:
+6. Copy the maven settings file from the MyShuttleCalc project (you updated this file in another lab to include the authentication settings for the Maven package feed). Run the following command in a terminal:
 
     ```sh
     cp ~/MyShuttleCalc/maven/settings.xml ~/MyShuttle2/maven/

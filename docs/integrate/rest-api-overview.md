@@ -84,7 +84,7 @@ For Azure DevOps Services, *instance* is `dev.azure.com/{organization}` and *col
 VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of projects in an Azure DevOps Services organization.
+For example, here's how to get a list of projects in an organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0

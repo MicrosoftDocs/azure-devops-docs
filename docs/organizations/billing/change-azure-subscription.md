@@ -1,5 +1,5 @@
 ---
-title: Change the Azure subscription that your Azure DevOps organization uses for billing
+title: Change the Azure subscription that your organization uses for billing in Azure DevOps
 description: Steps for how to unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -57,7 +57,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Azure DevOps Services organizations**.
+2. Go to **All services** > **Azure DevOps organizations**.
 
    ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 

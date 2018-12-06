@@ -31,7 +31,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Manage extensions**.
 
@@ -43,7 +43,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Manage extensions**.
 

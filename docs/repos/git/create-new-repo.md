@@ -21,7 +21,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * Git command-line tools:
   * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager - Windows](set-up-credential-managers.md#windows)
   * [Install Git for macOS and Linux](https://git-scm.com/downloads). For information on Git credential managers for these platforms, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux)
@@ -34,7 +34,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ::: moniker range="vsts"
 
-0. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
+1. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/repo-mgmt/select-project-repos.png)
 
@@ -93,15 +93,15 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the team project for your Azure DevOps organization and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
+1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
 
    ![Repos files](../get-started/_img/clone-repo/repos-files.png)
 
-1. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
+2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
    ![Retrieve the clone URL](../get-started/_img/clone-repo/clone-repo.png)
 
-1. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
+3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
    ```
    git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
@@ -109,7 +109,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
    Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
 
-1. Switch your directory to the repository that you cloned.
+4. Switch your directory to the repository that you cloned.
 
    ```
    cd fabrikam-fiber

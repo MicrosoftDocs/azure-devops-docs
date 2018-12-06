@@ -30,7 +30,7 @@ tf.exe="CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe"
 
 ## Add the symbol server to WinDbg
 
-To use the Azure DevOps Services symbol server in WinDbg, you'll add your Azure DevOps Services organization to the symbol search path.
+To use the Azure DevOps Services symbol server in WinDbg, you'll add your organization to the symbol search path.
 
 1. Open WinDbg (you can [install it from the Store](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86)).
 2. Load the executable you wish to debug.
