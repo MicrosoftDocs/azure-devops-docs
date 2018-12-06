@@ -93,7 +93,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[04 December 2018](2018/sprint-144-update.md)</td>
+            <td rowspan="12">[04 December 2018](2018/sprint-143-update.md)</td>
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Future</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Future</td></tr>
