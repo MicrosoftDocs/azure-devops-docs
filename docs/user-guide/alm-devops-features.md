@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 11/08/2018
+ms.date: 12/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -1061,7 +1061,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package](../artifacts/nuget/unlist-delete.md) you no longer want users to discover.</p>
+<p>[Unlist or remove a package][Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md) you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
 <p>Control who can [contribute to or consume from a feed](../artifacts/feeds/feed-permissions.md).</p>

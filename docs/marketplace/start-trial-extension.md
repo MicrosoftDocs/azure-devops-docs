@@ -18,19 +18,19 @@ monikerRange: 'vsts'
 
 **Azure DevOps Services**
 
-To add new features and capabilities to your Azure DevOps organization, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions. In this quickstart, you learn how to start a free trial for a preview extension.
+To add new features and capabilities to your organization in Azure DevOps, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions. In this quickstart, you learn how to start a free trial for a preview extension.
 
 To learn about building your own Azure DevOps extensions, see [developing](http://aka.ms/vsoextensions) and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="install-extension"></a>
 
-## Install an extension for your Azure DevOps organization
+## Install an extension for your organization
 
 ### What do I need to install an extension?
 
 * Only Azure DevOps [project collection administrators or organization owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead.
 
-* Private extensions must be shared with your Azure DevOps organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
+* Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 1. Sign in to the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 
@@ -42,17 +42,17 @@ To learn about building your own Azure DevOps extensions, see [developing](http:
 
 	![Get preview extension](_img/get-vsts-extensions/get-preview-extension.png)
 
-4.  Select your Azure DevOps organization and **Start 30 day free trial**.
+1.  Select your organization and **Start 30 day free trial**.
 
     > You can check the Permissions this extension requires and read the Terms of Services from this page.
 
-	![Select your Azure DevOps organization for this extension](_img/get-vsts-extensions/click-start-trial.png)
+	![Select your organization for this extension](_img/get-vsts-extensions/click-start-trial.png)
 
-	*	[Why don't I see any Azure DevOps organizations?](./faq-extensions.md#no-organizations) 
+	*	[Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
 
 	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
-5. Your trial is now started and you can go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
+2. Your trial is now started and you can go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
 
 ## Next steps
 

@@ -33,12 +33,12 @@ Link your Azure DevOps Services organization to your UserVoice account.
 
 	<img alt="Uservoice settings dialog box, integrations tab, Azure DevOps Services link" src="./_img/uservoice/sync-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
 
-5. Link your Azure DevOps Services organization to your UserVoice account. 
+5. Link your organization to your UserVoice account. 
 
 	<img alt="Uservoice settings dialog box, integrations tab, link account link" src="./_img/uservoice/uservoice-link-account.png" style="border: 1px solid #CCCCCC" />
 
 	
-6. Authorize UserVoice to access your Azure DevOps Services organization. 
+6. Authorize UserVoice to access your organization. 
 
 	<img alt="Azure DevOps Services authorization dialog box" src="./_img/uservoice/authorize.png" style="border: 1px solid #CCCCCC" />
 

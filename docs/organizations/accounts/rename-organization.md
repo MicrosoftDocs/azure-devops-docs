@@ -1,5 +1,7 @@
 ---
-title: Rename your organization in Azure DevOps
+title: Rename organization - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Find your organization owner to change your organization URL or provide a new name. What to do before and after renaming your organization.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 

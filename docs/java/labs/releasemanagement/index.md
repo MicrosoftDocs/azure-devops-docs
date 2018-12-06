@@ -46,7 +46,7 @@ In this task you will install an Azure DevOps Services extension from the [Azure
 
     ![Install the extension](../_img/releasemanagement/install-extension.png)
 
-1. In the dialog that appears, ensure that your Azure DevOps organization is selected and click Continue. Once your permissions have been verified, click the Confirm button.
+2. In the dialog that appears, ensure that your organization is selected and click Continue. Once your permissions have been verified, click the Confirm button.
 
 ## Create a Release Pipeline
 

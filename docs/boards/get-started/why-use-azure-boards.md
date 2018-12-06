@@ -104,7 +104,7 @@ Project managers who want to use familiar tools can import and export work item 
 
 ## 9. Extensions and extensibility  
 
-You can gain even greater functionality by adding Marketplace extensions, many of which are free. An extension is an installable unit that adds capabilities to Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions within these products or in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
+You can gain even greater functionality by adding Marketplace extensions, many of which are free. An extension is an installable unit that adds capabilities to Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions within these products or in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts), Azure DevOps tab.
 
 Here are a few extensions available from the Marketplace.
 

@@ -23,7 +23,7 @@ This guide assumes you've already set up Azure Artifacts. You can check out how 
 
 ::: moniker range=">=tfs-2018"
 
-> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your Azure DevOps organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 
@@ -31,7 +31,7 @@ This guide assumes you've already set up Azure Artifacts. You can check out how 
 
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
 
-1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Azure DevOps Services organization.
+2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 <a name="create-a-feed"></a>
 

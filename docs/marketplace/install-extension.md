@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 **Azure DevOps Services**
 
-To add new features and capabilities to your Azure DevOps organization, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) In this quickstart, you learn how to install a free extension.
+To add new features and capabilities to your organization in Azure DevOps, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) In this quickstart, you learn how to install a free extension.
 
 To learn about building your own Azure DevOps extensions, see [developing](http://aka.ms/vsoextensions) and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
@@ -28,7 +28,7 @@ To learn about building your own Azure DevOps extensions, see [developing](http:
 
 * Only Azure DevOps [project collection administrators or organization owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead.
 
-* Private extensions must be shared with your Azure DevOps organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
+* Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 ## Install the extension
 
@@ -43,15 +43,15 @@ To learn about building your own Azure DevOps extensions, see [developing](http:
 	![Install free extension](_img/get-vsts-extensions/install-free-extension.png)
 
 
-4.  Select your Azure DevOps organization and select **Install** to install the extension.
+1.  Select your organization and select **Install** to install the extension.
 
-	![Select Azure DevOps organization for this extension](_img/get-vsts-extensions/organization.png)
+	![Select organization for this extension](_img/get-vsts-extensions/organization.png)
 
-	*	[Why don't I see any Azure DevOps organizations?](./faq-extensions.md#no-organizations) 
+	*	[Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
 
 	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
-Your extension is now installed! You can now go to your Azure DevOps organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
+Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
 
 ![Extension installed](_img/get-vsts-extensions/go-to-organization.png)
 

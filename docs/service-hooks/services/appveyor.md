@@ -18,15 +18,15 @@ Set up continuous integration builds in AppVeyor for the code in your Azure DevO
 
 ## Integrate AppVeyor with Azure DevOps Services
 
-1. If you don't have an AppVeyor account, [sign up](http://ci.appveyor.com/signup) with your Azure DevOps Services organization.
+1. If you don't have an AppVeyor account, [sign up](http://ci.appveyor.com/signup) with your organization.
 
    <img alt="Azure DevOps Services button on the AppVeyor sign up page" src="./_img/appveyor/sign-up.png" style="border: 1px solid #CCCCCC" />
 
-1. Create a new project.
+2. Create a new project.
 
    <img alt="Create new project" src="./_img/appveyor/appveyor-new-project.png" style="border: 1px solid #CCCCCC" />
 
-1. Add a Git repository from your Azure DevOps Services organization.
+3. Add a Git repository from your organization.
 
    <img alt="Add Azure DevOps Services Git project" src="./_img/appveyor/appveyor-add-repository.png" style="border: 1px solid #CCCCCC" />
 
@@ -45,9 +45,9 @@ for pricing related to their services.
 ####Q: Do I need to sign into AppVeyor using my Visual Studio ID in order to set up this integration?
 
 A: No. If you use an organization that's not already associated with your Visual Studio ID,
-you'll authorize access to your Azure DevOps Services organization when you add Git repositories from Azure DevOps Services. 
+you'll authorize access to your organization when you add Git repositories from Azure DevOps Services. 
 
-####Q: Does AppVeyor change anything in my Azure DevOps Services organization?
+####Q: Does AppVeyor change anything in my organization?
 
 A: Yes. It adds a service hook subscription to your project.
 

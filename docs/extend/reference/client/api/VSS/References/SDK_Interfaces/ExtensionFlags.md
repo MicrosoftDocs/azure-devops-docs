@@ -19,7 +19,7 @@ Defined in vss.d.ts
 
 ### Values
 
-* `BuiltIn` A built-in extension is installed for all Azure DevOps Services accounts by default
+* `BuiltIn` A built-in extension is installed for all Azure DevOps Services organizations by default
 
 * `Trusted` The extension comes from a fully-trusted publisher
 

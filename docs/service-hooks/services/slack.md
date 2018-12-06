@@ -28,10 +28,10 @@ to open up the menu, and find **Apps and integrations**:
 
 1. On the Azure DevOps Services integration page, click **Install**.
 1. Choose a channel to have notifications posted to from the dropdown and click **Add Visual Studio Integration**. 
-1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your Azure DevOps Services organization.
+1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your organization.
 <img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-## Create a service hook subscription in your Azure DevOps Services organization
+## Create a service hook subscription in your organization
 
 0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 

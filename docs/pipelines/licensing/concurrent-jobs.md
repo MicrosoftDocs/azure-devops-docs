@@ -22,7 +22,7 @@ You can use a _parallel job_ in Azure Pipelines to run a single build job or a s
 
 If you want to run your builds and releases on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_.  Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
 
-We provide a *free tier* of service by default in your Azure DevOps Services organization:
+We provide a *free tier* of service by default in your organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
 - Private project: One free parallel job that can run for up to 30 minutes each time, until you've used 1,800 minutes (30 hours) per month.
@@ -34,9 +34,9 @@ When the free tier is no longer sufficient:
 
 ## Self-hosted CI/CD
 
-If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. You start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your Azure DevOps Services organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. 
+If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. You start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. 
 
-We provide a *free tier* of service by default in your Azure DevOps Services organization:
+We provide a *free tier* of service by default in your organization:
 
 - Public project: 10 free self-hosted parallel jobs.
 - Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
@@ -50,17 +50,17 @@ There are no time limits on self-hosted jobs.
 
 ## How a parallel job is consumed by a build or release
 
-For example, consider an Azure DevOps Services organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one build or release job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
+For example, consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one build or release job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
 
 A release consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 
 ![Simple example of parallel jobs](_img/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
 1. FabrikamFiber CI Build 102 (master branch) starts first.
-1. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
-1. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
-1. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
-1. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
+2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
+3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
+4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
+5. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
 
 ## Relationship between jobs and parallel jobs
 
@@ -74,7 +74,7 @@ The term *job* can refer to multiple concepts, and its meaning depends on the co
 
 ## Determine how many parallel jobs you need
 
-You can begin by seeing if the free tier offered in your Azure DevOps Services organization is enough for your teams.
+You can begin by seeing if the free tier offered in your organization is enough for your teams.
 When you've reached the 1,800-minute per month limit for the free tier of Microsoft-hosted parallel jobs,
 you can start by buying one parallel job to remove this monthly time limit before deciding to purchase more.
 
@@ -103,9 +103,9 @@ In the following scenarios, you might need multiple parallel jobs:
 
    URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
 
-1. View the maximum number of parallel jobs that are available in your organization.
+2. View the maximum number of parallel jobs that are available in your organization.
 
-1. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
+3. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
 
 ## Sharing of parallel jobs across projects in a collection
 
