@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/2/2018
+ms.date: 12/04/2018
 ---
 
 # Query your work tracking data using the OData Analytics service
@@ -48,7 +48,7 @@ All additional URL parts are specified as an additional part of the query string
 
 ## Prerequisites
 
-- You will need to have an Azure DevOps project. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
 - Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 

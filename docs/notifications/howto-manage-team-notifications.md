@@ -96,13 +96,8 @@ Choose the default method for your team to receive notifications by updating the
 
 2. Choose **Delivery settings**:
 
-   # [New navigation](#tab/new-nav)
    ![Delivery settings](_img/delivery-settings-newnav.png)
 
-   # [Previous navigation](#tab/previous-nav)
-   ![Delivery settings](_img/delivery-settings.png)
-
-   ---
 
 3. Choose which option best fits your team's needs:
 

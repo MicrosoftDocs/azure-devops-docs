@@ -33,7 +33,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -47,7 +47,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
    ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 5.	To assign the extension, right click or choose the ellipses (...) for the user you want to assign access to. Select **Manage extensions**.
 
@@ -71,7 +71,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
 	![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 4.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to.
 

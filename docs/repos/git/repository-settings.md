@@ -42,7 +42,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and choose **Project settings**, **Repositories**, and select your repository.
+1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
 
@@ -52,7 +52,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, open the project for your Azure DevOps organization and choose the gear icon, **Version Control**, and select your repository.
+1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
 
@@ -66,7 +66,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ::: moniker range="tfs-2018"
 
-1. From your web browser, open the project for your Azure DevOps organization and choose the gear icon, **Version Control**, and select your repository.
+1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
 

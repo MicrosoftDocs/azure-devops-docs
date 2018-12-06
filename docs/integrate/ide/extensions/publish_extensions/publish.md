@@ -42,5 +42,5 @@ Once your extension is ready to share, you can publish the extension to the [Vis
 
 # See also
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
 * [Help - FAQ](../help/help.md)

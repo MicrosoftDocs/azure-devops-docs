@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding members to Azure DevOps projects
+# Troubleshoot adding members to projects in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

@@ -71,7 +71,7 @@ vsts configure -d instance=https://[your-organization].visualstudio.com
 
 ## Publish a Universal Package
 
-Publish a package with vsts package universal publish. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* Azure DevOps organization with a placeholder description.
+Publish a package with vsts package universal publish. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
 
 Update these values as desired and use the feed name you noted earlier. You must use a [Semantic Version (SemVer)](https://semver.org) for the version. Package names must be lower case and can only use letters, numbers, and dashes (`-`).
 

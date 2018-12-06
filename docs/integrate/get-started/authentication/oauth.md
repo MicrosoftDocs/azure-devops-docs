@@ -52,14 +52,14 @@ When your register your app, the application settings page is displayed.
 <img alt="Application settings for your app" src="./_img/app-settings.png" style="border: 1px solid #CCCCCC" />
 
 You'll call the authorization URL and pass your app ID and authorized scopes
-when you want to have a user authorize your app to access his/her Azure DevOps Services organization.
+when you want to have a user authorize your app to access their organization.
 You'll call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile (https://app.vssps.visualstudio.com/profile/view).
 
 ## Authorize your app
 
-If your user hasn't yet authorized your app to access his/her Azure DevOps Services organization,
+If your user hasn't yet authorized your app to access their organization,
 call the authorization URL. 
 
 ```no-highlight

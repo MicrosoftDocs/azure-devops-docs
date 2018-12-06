@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot changing application access policies for your Azure DevOps organization
+title: Troubleshoot changing application access policies for your organization in Azure DevOps
 description: Learn the answers to frequently asked questions (FAQs), like what apps integrate with Azure DevOps and how personal access tokens differ from alternate authentication credentials.
 ms.prod: devops
 ms.technology: devops-accounts

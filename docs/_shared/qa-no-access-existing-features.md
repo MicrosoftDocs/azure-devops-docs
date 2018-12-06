@@ -6,7 +6,7 @@ A: Make sure that users have the correct [access level](https://visualstudio.mic
 
 * Learn [how to change access levels for Team Foundation Server](/azure/devops/organizations/security/change-access-levels).
 
-Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
 
 For example, to search your code, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but you need at least Basic access to use the extension.
 

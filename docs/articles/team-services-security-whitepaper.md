@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps - Data Protection
-description: Learn how Microsoft protects your Azure DevOps projects and data. Microsoft is committed to making sure that your Azure DevOps projects stay safe and secure, without exception. 
+description: Learn how Microsoft protects your projects and data in Azure DevOps. Microsoft is committed to making sure that your projects stay safe and secure, without exception. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 **Azure DevOps**
 
-Azure DevOps is a cloud-hosted application for your development projects, from planning through deployment. Based on the capabilities of Team Foundation Server, with additional cloud services, Azure DevOps manages your source code, work items, builds, tests, and much more. Azure DevOps uses Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. Because important data is at stake, this white paper discusses the steps that Microsoft takes to keep your Azure DevOps projects safe, available, secure, and private. In addition, it describes the role you play in keeping your projects safe and secure.
+Azure DevOps is a cloud-hosted application for your development projects, from planning through deployment. Based on the capabilities of Team Foundation Server, with additional cloud services, Azure DevOps manages your source code, work items, builds, tests, and much more. Azure DevOps uses Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. Because important data is at stake, this white paper discusses the steps that Microsoft takes to keep your projects safe, available, secure, and private. In addition, it describes the role you play in keeping your projects safe and secure.
 
 This white paper is part of our effort to illuminate how we manage and protect your data and is intended for organization administrators and IT professionals who manage their project assets daily. It will be most useful to individuals who are already familiar with Azure DevOps and want to know more about how Microsoft protects the assets that are stored in Azure DevOps.
 
@@ -58,7 +58,7 @@ Azure DevOps is hosted entirely in Azure data centers and uses many of the core 
 
 Azure DevOps uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval needs, we use Azure Blob (binary large objects) storage and Azure SQL data storage. To provide a seamless experience, we work hard to abstract these details from the end user. However, to discuss the details surrounding Azure DevOps approach to data protection, some background in these elements is important.
 
-**Azure Blob storage** is generally used to store large chunks of unstructured data. All projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most Azure DevOps projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
+**Azure Blob storage** is generally used to store large chunks of unstructured data. All projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
 [Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
@@ -89,7 +89,7 @@ In addition, we perform a "soft delete" for organization deletion operations. Th
 
 ### Practice is critical
 
-Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted an Azure DevOps project. We have the capability of restoring your organization’s data to any point in time over the last 30 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
+Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. We have the capability of restoring your organization’s data to any point in time over the last 30 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
 
 ## Service availability
 
@@ -208,7 +208,7 @@ In addition to these protections, we have also taken steps outside of the servic
 
 ## Internal adoption
 
-Teams across Microsoft have begun adopting Azure DevOps internally. The Azure DevOps team moved into an Azure DevOps organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses our risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases with more planning. Additional requirements for internal projects include associating the organization with the Microsoft.com Azure Active Directory to ensure proper user identity lifecycle and password complexity along with requiring the use of two-factor authentication for more sensitive projects.
+Teams across Microsoft have begun adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses our risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases with more planning. Additional requirements for internal projects include associating the organization with the Microsoft.com Azure Active Directory to ensure proper user identity lifecycle and password complexity along with requiring the use of two-factor authentication for more sensitive projects.
 
 ### Transparency
 

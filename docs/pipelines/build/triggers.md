@@ -380,11 +380,11 @@ If your code is in a Git repo on Azure Repos or Team Foundation Server, you can 
 
 ### My build didn't run. What happened?
 
-Someone must view a page in your Azure DevOps organization regularly for CI and scheduled builds to run. It can be any page, including, for example, **Azure Pipelines**.
+Someone must view a page in your organization regularly for CI and scheduled builds to run. It can be any page, including, for example, **Azure Pipelines**.
 
-Your Azure DevOps organization goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+Your organization goes dormant five minutes after the last user signed out of Azure DevOps. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
 
- * A nightly build of code in your Azure DevOps organization will run only one night until someone signs in again.
+ * A nightly build of code in your organization will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 

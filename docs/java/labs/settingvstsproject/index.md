@@ -21,14 +21,14 @@ This exercise will walk you through the steps to creating your Azure DevOps acco
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-1. Login to your Azure DevOps organization - `https://{your account name}.visualstudio.com`. If you do not have an Azure DevOps organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
+1. Sign in to your organization - `https://{your account name}.visualstudio.com`. If you do not have an organization, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
 
    > [!div class="mx-imgBorder"]
-   > ![Sign up for an Azure DevOps organization](../_img/settingvstsproject/newaccount.png)
+   > ![Sign up for an organization](../_img/settingvstsproject/newaccount.png)
 
 ## (Optional) Generate an Azure DevOps Services Personal Access Token (PAT)
 
-In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate Azure DevOps Services with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your Azure DevOps organization.
+In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate Azure DevOps Services with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your organization.
 
 > [!TIP]
 > If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).
@@ -38,36 +38,36 @@ In this task you will generate a personal access token for yourself. PATs essent
    > [!div class="mx-imgBorder"]
    > ![The location of your account's Security settings](../_img/settingvstsproject/click-security.png)
 
-1. On the Personal access tokens page, click **Add**. Enter "java" (or whatever you want) for the Description. Scroll to the bottom of the page and click **Create token**.
+2. On the Personal access tokens page, click **Add**. Enter "java" (or whatever you want) for the Description. Scroll to the bottom of the page and click **Create token**.
 
-1. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
+3. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 
-1. Click on the Visual Studio Code icon in the toolbar to open Visual Studio Code.
+4. Click on the Visual Studio Code icon in the toolbar to open Visual Studio Code.
 
    > [!div class="mx-imgBorder"]
    > ![The location of VS Code in the Java VM environment](../_img/settingvstsproject/vs-code.png)
 
-1. Press Ctrl-N (or use File -> New File) to create a new file. Paste in your PAT. Save this file (**File->Save** or Ctrl+S) to `/home/vmadmin/pat.txt`.
+5. Press Ctrl-N (or use File -> New File) to create a new file. Paste in your PAT. Save this file (**File->Save** or Ctrl+S) to `/home/vmadmin/pat.txt`.
 
 ## Create a new project with Azure DevOps Services Demo Generator...
 
-Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your Azure DevOps organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
+Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
 
 The steps below use Azure DevOps Services Demo Generator to provision a demo Java project for you.
 
 1. Open [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/).
 
-1. Enter your account name and the PAT you saved earlier. Click **Verify and Continue**.
+2. Enter your account name and the PAT you saved earlier. Click **Verify and Continue**.
 
    > [!div class="mx-imgBorder"]
    > ![The Azure DevOps Services Demo Generator login page](../_img/settingvstsproject/Azure DevOps Servicesdemogen.png)
 
-1. Use **MyShuttle2** for the template. Use **jdev-labs** for the Project Name. Select **Create Project**.
+3. Use **MyShuttle2** for the template. Use **jdev-labs** for the Project Name. Select **Create Project**.
 
    > [!div class="mx-imgBorder"]
    > ![The Azure DevOps Services Demo Generator project configuration page](../_img/settingvstsproject/create-project.png)
 
-1. After the project is provisioned, click the URL to navigate to the project.
+4. After the project is provisioned, click the URL to navigate to the project.
 
 
 ## ...or import a Github Repo into Azure DevOps Services

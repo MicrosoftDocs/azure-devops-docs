@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Clone an Azure DevOps Services Git repo using IntelliJ
 
-In this exercise, you are going to open the MyShuttle2 repo from your Azure DevOps organization in your VM for editing in IntelliJ.
+In this exercise, you are going to open the MyShuttle2 repo from your organization in your VM for editing in IntelliJ.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -32,27 +32,27 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Click IntelliJ in the Toolbar](../_img/intellijgit/click-intellij.png)
 
-1. The first time you run IntelliJ, it will prompt for IntelliJ settings and theme settings. Click on "Do not import settings," then click on "Skip All and Set Defaults" to use the defaults.
+2. The first time you run IntelliJ, it will prompt for IntelliJ settings and theme settings. Click on "Do not import settings," then click on "Skip All and Set Defaults" to use the defaults.
 
     ![Accept the default IntelliJ theme](../_img/intellijgit/intellij-defaults.png)
 
-1. When the Welcome dialog appears, click Configure and then select Plugins.
+3. When the Welcome dialog appears, click Configure and then select Plugins.
 
     ![Click on Configure to configure Plugins](../_img/intellijgit/intellij-config-plugins.png)
 
-1. In the search box type `Azure DevOps Services` and click the "Search in repositories" link in the main window.
+4. In the search box type `Azure DevOps Services` and click the "Search in repositories" link in the main window.
 
     ![Search for the Azure DevOps Services plugin](../_img/intellijgit/intellij-search-vsts.png)
 
-1. Click install to install the extension. The install button will change to a "Restart" button - click it to restart IntelliJ.
+5. Click install to install the extension. The install button will change to a "Restart" button - click it to restart IntelliJ.
 
     ![Install the plugin and restart IntelliJ](../_img/intellijgit/intellij-click-install.png)
 
-1. When IntelliJ restarts, the Welcome dialog will appear again. Click "Check out from Version Control" and select "Azure DevOps Services Git".
+6. When IntelliJ restarts, the Welcome dialog will appear again. Click "Check out from Version Control" and select "Azure DevOps Services Git".
 
     ![Checkout from Azure DevOps Services Git](../_img/intellijgit/intellij-open-from-vsts.png)
 
-1. Click on "Sign in..." to sign in to your Azure DevOps organization.
+7. Click on "Sign in..." to sign in to your organization.
 
     ![Sign in to Azure DevOps Services](../_img/intellijgit/intellij-vsts-signin.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Find or change your Azure DevOps organization location (region)
+title: Find or change your organization location (region) in Azure DevOps
 description: Find your organization's default location or update your organization location (region) in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts

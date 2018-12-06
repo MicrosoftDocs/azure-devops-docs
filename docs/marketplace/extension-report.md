@@ -34,7 +34,7 @@ For paid extension, all transactional details for buy and trials is available wi
 ![acqusition](_img/acq.png)
 
 ## Uninstall (Azure DevOps Services only)
-You can view how many Azure DevOps Services organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
+You can view how many organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 For Azure DevOps Services paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](/azure/devops/extend/extension-report#contact) for more details. 
@@ -81,10 +81,10 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 
 * **Acquisition** is the total count of all applicable acquisition events for the extension; install, buy, trial, get started clicks and downloads
 * **Page views** is the total number of extension detail page views. Repeated views by users are counted.
-* **Azure DevOps Services Install** is the total number of Azure DevOps Services organizations the extension is installed. Repeated installs on the same organization are counted. 
+* **Azure DevOps Services Install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted. 
 * **TFS Install** is the total number of TFS connected organizations the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
-* **Azure DevOps Services Trial** is the total number of Azure DevOps Services organizations that started trial. In the same period if the Azure DevOps Services organization makes a purchase, that would be counted too. 
-* **Azure DevOps Services Buy** is the total number of buy events for Azure DevOps Services organizations. Repeated buy on the same organization are counted. 
+* **Azure DevOps Services Trial** is the total number of organizations that started trial. In the same period if the organization makes a purchase, that would be counted too. 
+* **Azure DevOps Services Buy** is the total number of buy events for organizations. Repeated buy on the same organization are counted. 
 * **TFS Buy** is the total number of buy events for TFS connected organizations. Repeated buy on the same organization are counted. TFS disconnected server data isn't available.  
 * **Download from IDE** is the total number of VS extension downloads from Visual Studio IDE to help understand extension uptake directly in VS IDE
 * **Download from Marketplace** is the total number of VS extension downloads from the Marketplace

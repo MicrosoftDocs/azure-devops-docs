@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018  
+ms.date: 12/04/2018  
 ---
 
 # Publish a Git repository to a wiki
@@ -59,7 +59,7 @@ To perform these steps, you'll want to understand the underlying structure of yo
 Begin by connecting to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.  
 
 > [!NOTE]
-> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).  
+> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the organization in Azure DevOps. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).  
 
 # [New navigation](#tab/new-nav)  
 

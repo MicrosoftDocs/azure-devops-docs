@@ -46,22 +46,24 @@ Custom variables can be defined at various scopes.
 * Share values across all of the definitions
   in a project by using [variable groups](../library/variable-groups.md). Choose a variable
   group when you need to use the same values across all
-  the definitions, stages,
-  and tasks in a project, and you want to be able to change
+  the definitions, stages,   and tasks in a project, and you want to be able to change
   the values in a single place. You define and manage variable groups in the **Library** tab.
 
 * Share values across all of the stages by using
   **release pipeline variables**. Choose a release pipeline
   variable when you need to use the same value across all
   the stages and tasks in the release pipeline, and you
-  want to be able to change the value in a single place. You define and manage these variables in the **Variables** tab in a release pipeline.
+  want to be able to change the value in a single place.
+  You define and manage these variables in the **Variables** tab in a release pipeline.
+  In the Pipeline Variables page, open the Scope drop-down list and select "Release".
+  By default, when you add a variable, it is set to Release scope.  
 
-* Share values across all of the tasks within one specific stage by using
-  **stage variables**.
-  Use an stage-level variable for values that vary
-  from stage to stage (and are the same for
-  all the tasks in an stage). You define and manage these variables in the **Variables** tab of an stage in a release pipeline.
-
+* Share values across all of the tasks within one specific stage by using **stage variables**.
+  Use a stage-level variable for values that vary from stage to stage (and are the same for
+  all the tasks in an stage). You define and manage these variables in the **Variables** tab of a release pipeline.
+  In the Pipeline Variables page, open the Scope drop-down list and select the required stage.
+  When you add a variable, set the Scope to the appropriate environment.
+  
 Using custom variables at project, release pipeline, and stage scope helps you to:
 
 * Avoid duplication of values, making it easier to update
@@ -95,6 +97,7 @@ For more details, see [Approvals](approvals/index.md#scenarios).
 Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, stage, or agent they are running in.
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
 Some of the most significant variables are described in the following tables.
+To view the full list, see [View the current values of all variables](#view-vars).
 
 ### System variables
 
@@ -261,7 +264,7 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 <a name="view-vars"></a>
 
-### View the current values of all release variables
+### View the current values of all variables
 
 1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.

@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 # Export a list of users and their access levels
@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 <a id="export-audit-log" >  </a>
 
 ::: moniker range="vsts" 
-You can get a list of users and groups that have access to your Azure DevOps Services account by exporting the audit log. The audit log also indicates which access level has been granted.
+You can get a list of users and groups that have access to your organization in Azure DevOps by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end   
 
 ::: moniker range="<= azdevserver-2019" 

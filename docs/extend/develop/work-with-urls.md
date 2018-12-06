@@ -262,7 +262,7 @@ $releaseDefinitionsUrl = [string]::Format("{0}/_apis/release/definitions?api-pre
 This table shows the IDs for common resource areas. See the previous section for details on how to use this table. 
 
 > [!NOTE]
-> Resource area IDs are fixed and are consistent across all Azure DevOps Services organizations.
+> Resource area IDs are fixed and are consistent across all organizations in Azure DevOps Services.
 
 | Resource Area ID | Name |
 |---|---|

@@ -31,16 +31,16 @@ You use Team Explorer to coordinate your code efforts with other team members to
 
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/tfs/server/requirements).
 
-If you don't need Visual Studio, but want to connect to an Azure DevOps project, you can install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
+If you don't need Visual Studio, but want to connect to a project in Azure DevOps, you can install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
 ## Prerequisites 
 
-- You must have an Azure DevOps project. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
+- You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
 - You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
 
 ## Connect to a project or repository
 
-Team Explorer connects Visual Studio to Azure DevOps projects. You can manage source code, work items, and builds. The operations available to you depend on which source control option&mdash;Git or Team Foundation version control (TFVC) &mdash;was selected to manage source code when the project was created.
+Team Explorer connects Visual Studio to projects in Azure DevOps. You can manage source code, work items, and builds. The operations available to you depend on which source control option&mdash;Git or Team Foundation version control (TFVC) &mdash;was selected to manage source code when the project was created.
 
 > [!TIP]  
 > If you open Visual Studio and the Team Explorer pane doesn't appear, choose the **View>Team Explorer** menu option from the tool bar.

@@ -81,11 +81,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
 
-   ![Removing the Agent job](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
+   ![Removing the Agent job from the pipeline](_img/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
 
 1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
 
-   ![Adding a Deployment group job](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+   ![Adding a Deployment group stage to the pipeline](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
 1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
 
@@ -96,7 +96,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
    **Shell Script** task.
 
-   ![Adding a Shell Script task](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
+   ![Adding a Shell Script task to the pipeline](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
 
 1. In the properties of the **Shell Script** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
@@ -107,7 +107,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Save the release pipeline.
 
-   ![Saving the release pipeline](_img/deploy-linuxvm-deploygroups/save-definition.png)
+   ![Saving the newly created release pipeline](_img/deploy-linuxvm-deploygroups/save-definition-image.png)
 
 ## Create a release to deploy your app
 
