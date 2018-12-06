@@ -1,6 +1,8 @@
 ---
-title: Migrate to group-based resource management in Azure DevOps
-description: Learn how to move Azure DevOps to group-based resource (user) management for managing licensing
+title: Migrate to group-based resource management - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to move Azure DevOps to group-based resource (user) management for managing licensing.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid:
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Manage users and access in Azure DevOps
+title: Manage users and access levels - Azure DevOps
 description: Add users and assign access levels on the Users page in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Manage users and access in Azure DevOps
+# Manage users and their access in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -101,6 +101,8 @@ The Users view shows key information per user in a table. In this view, you can 
    * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
 5. Select **Add** to complete your invitation.
+
+---
 
 ### How is *access* different from *permissions*?
 

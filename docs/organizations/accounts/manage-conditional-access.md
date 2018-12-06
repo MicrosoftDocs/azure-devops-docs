@@ -1,6 +1,8 @@
 ---
-title: Manage conditional access policies for Azure DevOps
-description: Learn how to protect your organization credentials and keep your organization's data safe with multi-factor authentication, security group membership, and more.
+title: Manage conditional access policies - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to protect your organization credentials and keep your data safe with multi-factor authentication, security group membership, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -49,6 +51,7 @@ To enforce conditional access policy on your organization, you must enable the p
 
    ![Enable conditional access policy](_img/_shared/enable-conditional-access-policy.png)
 
-For more information and resources, see [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
+## Related articles
 
-For detailed instructions and requirements for conditional access, see this [quickstart](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+* [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
+* [Detailed instructions and requirements for conditional access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).

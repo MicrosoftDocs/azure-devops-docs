@@ -1,6 +1,8 @@
 ---
-title: Add organization users within Azure DevOps to your Azure Active Directory
-description: Add users to your Azure Active Directory when Azure AD is connected to your organization in Azure DevOps
+title: Add organization users to Azure Active Directory tenant
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Add users to your Azure Active Directory when Azure AD is connected to your organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +24,7 @@ If your organization was created with a Microsoft account, you can connect your 
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with Azure DevOps.
 
-If your users don't already exist in Azure AD:
+## If your users don't already exist in Azure AD
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See the following topics for information about signing in:
 
@@ -45,3 +47,9 @@ If your users don't already exist in Azure AD:
    For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
 
 3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
+
+## Related articles
+
+- [Add users to your organization](add-organization-users.md)
+- [Add users to your team](add-team-members.md)
+- [Add external users](add-external-user.md)

@@ -1,5 +1,7 @@
 ---
-title: Connect your organization in Azure DevOps to Azure Active Directory (Azure AD)
+title: Connect organization to Azure Active Directory
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Learn how to connect your organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
