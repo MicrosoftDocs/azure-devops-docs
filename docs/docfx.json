@@ -55,6 +55,9 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"  
     },
     "fileMetadata": {
+      "titleSuffix": {
+        "pipelines/**/**.md": "Azure Pipelines"
+      },
       "monikerRange": {
         "report/admin/**": "<= azdevserver-2019",
         "report/analytics/**": ">= azdevserver-2019",
