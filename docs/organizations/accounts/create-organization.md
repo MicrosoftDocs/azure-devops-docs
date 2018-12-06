@@ -1,5 +1,7 @@
 ---
-title: Create an organization in Azure DevOps
+title: Create, configure a new organization
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
