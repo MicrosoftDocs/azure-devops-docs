@@ -34,7 +34,7 @@ Paid extensions are supported and generally are charged per user per month.
 
 #### Q: Who can install extensions for Azure DevOps Services?
 
-A: The Azure DevOps Services organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
+A: The organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
 you can request extensions instead. 
 
 <a name="find-owner"></a>

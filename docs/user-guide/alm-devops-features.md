@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 11/08/2018
+ms.date: 12/04/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -83,7 +83,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your organization in Azure DevOps or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>

@@ -49,7 +49,7 @@ Configure a migration environment on a local workstation and install the followi
 * [Subversion](http://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/repos/git/docs/git-svn.html) (already part of Git)
 
-You will also need to create a Git repository on your Azure DevOps organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
+You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
 ](/azure/devops/repos/git/create-new-repo)
 
 ## Convert the source SVN repository to a local Git repository

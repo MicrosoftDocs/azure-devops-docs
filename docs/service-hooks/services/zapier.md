@@ -36,9 +36,9 @@ to a Git repository in our Azure DevOps Services organization to show how that w
 
    <img alt="Choose a triiger and action" src="./_img/zapier/triggered-action.png" style="border: 1px solid #CCCCCC" />
 
-4. Connect to your Azure DevOps Services organization.
+4. Connect to your organization.
 
-   <img alt="Connect and test your Azure DevOps Services organization" src="./_img/zapier/select-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Connect and test your organization" src="./_img/zapier/select-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
 
 5. Connect to the app that will respond to the event.
 
@@ -86,7 +86,7 @@ A: Yes, you can create a zap to post a message to a team room, queue a build, or
 
 A: If you are not able to create a zap, make sure that:
 
-- Service hooks are enabled on the Azure DevOps Services organization you are trying to create the zap in.
+- Service hooks are enabled on the organization you are trying to create the zap in.
 - You are a project administrator (or have the appropriate service hook management permissions) on the project.
 
 #### Q: Why can't I connect to the Azure DevOps Services service?

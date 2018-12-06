@@ -1,5 +1,5 @@
 ---
-title: About creating and managing your Azure DevOps organization 
+title: About creating and managing your organization in Azure DevOps
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
@@ -26,7 +26,7 @@ With an organization, you gain access to the platform in which you can do the fo
 
 ## Create your organization
 
-Before you get started, read [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
+Before you get started, read [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,

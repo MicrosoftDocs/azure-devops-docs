@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -28,8 +28,8 @@ A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOp
 
 A: Yes.
 
-- Dont have an Azure DevOps organization yet? [Create an Azure DevOps organization](https://aka.ms/SignupAzureDevOps).
-- Have an existing Azure DevOps organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+- Dont have an organization yet? [Create an organization in Azure DevOps](https://aka.ms/SignupAzureDevOps).
+- Have an existing organization? [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -133,7 +133,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 ## Add users to directory
 
-[Add Azure DevOps organization users to your Azure Active Directory](add-users-to-azure-ad.md).
+[Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
 #### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 

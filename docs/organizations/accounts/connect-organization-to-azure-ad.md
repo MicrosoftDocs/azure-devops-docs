@@ -1,5 +1,5 @@
 ---
-title: Connect your Azure DevOps organization to Azure Active Directory (Azure AD)
+title: Connect your organization in Azure DevOps to Azure Active Directory (Azure AD)
 description: Learn how to connect your organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,11 +8,11 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/29/2018
+ms.date: 12/05/2018
 monikerRange: 'vsts'
 ---
 
-# Tutorial: Connect your Azure DevOps organization to Azure Active Directory
+# Tutorial: Connect your organization to Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -119,7 +119,7 @@ Before you begin, do the following:
 ## Connect your organization to your Azure AD
 
 > [!IMPORTANT]
-> If you want to connect your Azure DevOps organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [disconnecting your organization from Azure AD](disconnect-organization-from-azure-ad.md).
+> If you want to connect your organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organizations to the new directory so users can regain access. Learn more about [disconnecting your organization from Azure AD](disconnect-organization-from-azure-ad.md).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with the Microsoft account that you chose in the previous section.
 
@@ -127,9 +127,9 @@ Before you begin, do the following:
 
     ![Confirm Azure AD connection](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Select **All services** and then **Azure DevOps Services organizations**.
+2. Select **All services** and then **Azure DevOps organizations**.
 
-   ![All services, Azure DevOps organizations](_img/_shared/azure-portal-team-services-administration.png)
+   ![All services, organizations](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your organization.  
     If you don't see your organization, ensure that you're using the directory that's displayed in the Azure portal at the upper right. Also, confirm that you're signed in with a Microsoft account that is the owner of the organization.

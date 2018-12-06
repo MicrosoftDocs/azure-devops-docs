@@ -45,7 +45,7 @@ To produce packages that can be consumed by others, you can publish NuGet, npm, 
 
 To use Azure Pipelines, you need:
 
-* An Azure DevOps organization.
+* An organization in Azure DevOps.
 * To have your source code stored in a version control system.
 
 ### Pricing

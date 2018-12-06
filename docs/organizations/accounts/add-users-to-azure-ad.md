@@ -1,5 +1,5 @@
 ---
-title: Add Azure DevOps organization users to your Azure Active Directory
+title: Add organization users within Azure DevOps to your Azure Active Directory
 description: Add users to your Azure Active Directory when Azure AD is connected to your organization in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 

@@ -52,7 +52,7 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
     ![Add public upstream sources](_img/us-add-public-source.png)
 
     > [!NOTE] 
-    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your Azure DevOps Services organization is in an enterprise or not.
+    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your organization is in an enterprise.
     
     If your organization **isn't** in an enterprise, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
 

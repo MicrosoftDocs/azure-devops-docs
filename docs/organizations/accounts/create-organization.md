@@ -1,5 +1,5 @@
 ---
-title: Create an Azure DevOps organization
+title: Create an organization in Azure DevOps
 description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/12/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +22,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
 
 ## Prerequisites
 
-1. Read and understand how to [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+1. Read and understand how to [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 2. Do either of the following:
    * Complete the following steps to use only Microsoft accounts with your organization.
 
@@ -59,7 +59,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
 
    ![Create your organization in Azure DevOps](_img/_shared/create-organization.png)
 
-   ![Taking you to your Azure DevOps organization notification](_img/_shared/taking-you-to-your-azure-devops-organization.png)
+   ![Taking you to your organization notification](_img/_shared/taking-you-to-your-azure-devops-organization.png)
    
    Congratulations, you're now an organization owner! You are prompted to [create a project](../projects/create-project.md) to get started.
    ![Create your first project screen in Azure DevOps](_img/_shared/create-project-screen.png)

@@ -1,7 +1,7 @@
 ---
-title: Create a public project
+title: Create a public project in Azure DevOps
 titleSuffix: Azure DevOps Services Public Project  
-description: Create or add a public project to your Azure DevOps organization 
+description: Create or add a public project to your organization 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
@@ -9,11 +9,11 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 07/02/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 
-# Create a public project
+# Create a public project in your organization
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
@@ -21,18 +21,18 @@ A public project is similar to any other project that you add to your organizati
 
 A public project allows non members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).   
 
-You can add a public project to your existing organization, or create an Azure DevOps organization and create a public project at that time. If you want to make an existing private project public, you can [change the project's visibility](make-project-public.md).
+You can add a public project to your existing organization, or create an organization and create a public project at that time. If you want to make an existing private project public, you can [change the project's visibility](make-project-public.md).
 
 
 ## Prerequisites
 
-- You must have an Azure DevOps organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
-- As an Azure DevOps organization owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
+- You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
+- As an organization owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
 
 
 ## Enable anonymous access to projects for your organization
 
-Before you can create a public project, you must enable anonymous access for your Azure DevOps organization.
+Before you can create a public project, you must enable anonymous access for your organization.
 
 [!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 

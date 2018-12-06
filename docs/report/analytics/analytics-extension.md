@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -23,7 +23,7 @@ Installing the Analytics Marketplace extension enables the [Analytics Service](.
 ## For Azure DevOps Services
 1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). 
 1.	Choose to **Install** the Analytics extension. You might need to sign in with your Azure DevOps organization credentials.
-1. Select the Azure DevOps organization where you would like to install this extension and confirm. Learn more about [Install extensions](../../marketplace/install-extension.md).
+1. Select the organization where you would like to install this extension and confirm. Learn more about [Install extensions](../../marketplace/install-vsts-extension.md).
 
 ## For Azure DevOps Server 2019 and later
 

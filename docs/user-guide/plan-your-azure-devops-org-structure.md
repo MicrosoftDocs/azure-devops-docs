@@ -1,5 +1,5 @@
 ---
-title: Plan the structure of your Azure DevOps organization
+title: Plan the structure of your organization in Azure DevOps
 titleSuffix: Azure DevOps
 description: Begin planning your organization in Azure DevOps 
 ms.technology: devops-new-user 
@@ -11,10 +11,10 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/03/2018
+ms.date: 12/04/2018
 ---
 
-# Plan your Azure DevOps organizational structure
+# Plan your organizational structure in Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -81,14 +81,14 @@ Within an organization, you can have one large single project or multiple projec
 * Create a single project that contains many repos and teams
 * Create many projects, each with its own set of teams, repos, builds, work items, and other elements
 
-Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single Azure DevOps project. However, if you want to manage more granular security between your software projects and their teams, consider using many Azure DevOps projects. At the highest level of isolation is an Azure DevOps organization, where each organization has its own Azure AD tenancy.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization has its own Azure AD tenancy.
 
 #### Single project
 
 A single project within an organization puts all of the work at the same “portfolio” level. It is all of the work for the entire organization in the same set of repos and iteration paths. One benefit of having a single project is that it allows teams to share source repos, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight interdependencies on each other across the product life cycle. You create a project and divide the work by using teams and area paths. This setup gives your teams visibility into each other’s work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
 
 > [!TIP]
-> When multiple teams work on the same product, having all teams on the same iteration schedule helps keep your teams aligned and delivering value on the same cadence. For example, the Azure DevOps organization has over 40 feature teams and 500 users within a single project - this works well because we're all working on a common product set with common goals and a common release schedule.
+> When multiple teams work on the same product, having all teams on the same iteration schedule helps keep your teams aligned and delivering value on the same cadence. For example, the organization in Azure DevOps has over 40 feature teams and 500 users within a single project - this works well because we're all working on a common product set with common goals and a common release schedule.
 
 A high volume of queries and boards can make it hard to find what you're looking for. Depending on the architecture of your product, this difficulty can bleed into other areas such as builds, releases, and repos. To help alleviate this issue, make sure that you use good naming conventions and a simple folder structure. When you add a repo to your project, consider your strategy and determine whether that repo could be placed into its own project.
 
@@ -201,7 +201,7 @@ Learn more about how to [manage users in Azure DevOps](../organizations/accounts
 
 ### Mapping organizations to business units
 
-When you map organizations to business units, each business unit within your company gets its own Azure DevOps organization, along with its own Azure Active Directory tenant. [Projects](#project-structure) can be set up within those individual organizations, as required, based on teams or ongoing work.
+When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#project-structure) can be set up within those individual organizations, as required, based on teams or ongoing work.
 
 For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You do not need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 
