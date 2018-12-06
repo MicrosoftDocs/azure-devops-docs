@@ -13,7 +13,7 @@ ms.date: 05/09/2018
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
-1. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an Azure DevOps Services organization. If you don't have an Azure DevOps Services organization, Click on **Get Started for Free** to create one and then log in with your credentials.
+2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
     > [!div class="mx-imgBorder"]
 ![Image of VSTS Demo Generator V2 login](_img/1.png)
@@ -24,7 +24,7 @@ ms.date: 05/09/2018
     > [!div class="mx-imgBorder"]
 ![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)
 
-1. Select the Azure DevOps organization you will use to host the Azure DevOps Services project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
+1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
     > [!div class="mxImage"]
 ![Image of VSTS Demo Generator template selection screen](_img/choose_template.png)
@@ -34,11 +34,11 @@ ms.date: 05/09/2018
     >
     > All four templates provide fictional Azure DevOps users and pre-populated Agile planning and tracking work items and data, along with source code in an Azure Repos Git repo, as well as access to Azure Pipelines.
 
-1. Some templates may require additional extensions to be installed to your Azure DevOps organization. The demo generation process checks to see if these extensions are already installed. If the extension is already installed, a green check will be displayed in front of the extension name. If the extension is **not** installed, select the empty check boxes to install the extension(s) to your account. When ready, click on **Create Project** button.
+1. Some templates may require additional extensions to be installed to your organization. The demo generation process checks to see if these extensions are already installed. If the extension is already installed, a green check will be displayed in front of the extension name. If the extension is **not** installed, select the empty check boxes to install the extension(s) to your account. When ready, click on **Create Project** button.
 
     > If you want to manually install the extensions,  click on the provided link for a specific extension, which takes you to the extension's page on Azure DevOps Marketplace. From there, you can install the extension.
 
-1. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
+2. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
 
     > [!div class="mxImage"]
 ![Image of Azure DevOps Demo Generator project created screen](_img/projectcreated.png)

@@ -1,5 +1,7 @@
 ---
-title: Organization management topics and articles for Azure DevOps 
+title: Organization management articles - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Index to topics for managing your organization in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization management in Azure DevOps
@@ -35,7 +37,7 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Concepts
 
-* [Plan your Azure DevOps organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add subscription user to organization](add-basic-or-vs-subscription-users.md)
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Glossary](../../project/navigation/glossary.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)

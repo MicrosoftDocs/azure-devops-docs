@@ -21,7 +21,7 @@ This guide assumes you've already set up Azure Artifacts. You can check out how 
 
 ::: moniker range=">=tfs-2017 < vsts"
 
-> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your Azure DevOps organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 

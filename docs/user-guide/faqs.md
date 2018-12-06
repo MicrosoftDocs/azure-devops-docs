@@ -1,12 +1,14 @@
 ---
-title: Questions and answers to support getting started using Azure DevOps Services & TFS
+title: Questions and answers to support getting started
+titleSuffix:  Azure DevOps Services & TFS
+ms.custom: seodec18
 description: FAQs to support getting started using the hosted cloud offering of Azure DevOps Services or on-premises Team Foundation Server (TFS)  
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/08/2018
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'
 ---
 

@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 # Remove user accounts
@@ -25,7 +25,7 @@ If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), the
 In this topic you'll find:
 > [!div class="checklist"]
 > * A checklist to review when removing user accounts
-> * Options for removing users from Azure DevOps organizations
+> * Options for removing users from organizations in Azure DevOps
 > * Links to topics for removing user accounts from AD or Azure AD  
 ::: moniker-end  
 
@@ -46,11 +46,11 @@ In this topic you'll find:
 * Have you reassigned work users you are removing to current team members? 
 
 ::: moniker range="vsts" 
-## Remove users from an Azure DevOps organization
+## Remove users from an organization in Azure DevOps
 
-If your Azure DevOps organization uses MSA accounts, then to you must remove users from the Azure DevOps organization as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
+If your organization uses MSA accounts, then to you must remove users from the organization as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
 
-If your Azure DevOps organization is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
+If your organization is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
 ::: moniker-end 
 
 ## Remove users from AD or Azure AD

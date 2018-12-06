@@ -157,7 +157,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
 > Below is what your endpoint will look like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
 
 
-If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service endpoint to your Azure DevOps Services organization.
+If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
 <img alt= "Service endpoint picker" src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.

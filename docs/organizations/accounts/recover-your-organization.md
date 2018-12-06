@@ -1,6 +1,8 @@
 ---
-title: Restore your organization after it's deleted
-description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization owner permissions
+title: Restore organization after it's removed, deleted
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization owner permissions.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -47,6 +49,7 @@ After you delete your organization, it's disabled but available for 30 days. If 
 
    * If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
 
-   [Need help?](faq-delete-restore-organization.md#get-support)
+## Related articles
 
-
+* [Need help?](faq-delete-restore-organization.md#get-support)
+* [Delete your organization from Azure DevOps](delete-your-organization.md)

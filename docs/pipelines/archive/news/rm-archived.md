@@ -74,7 +74,7 @@ The maximum number of concurrent builds you can run and releases
 you can deploy at the same time is limited only by the number
 of pipelines you have.
 
-Your Azure DevOps organization includes these free amounts:
+Your organization includes these free amounts:
 
 * One free Hosted Pipeline: With this free hosted pipeline, you get
   four hours (240 minutes) per month and a maximum duration of 30

@@ -1,6 +1,7 @@
 ---
-title: Understand the differences between Azure DevOps Services and Azure DevOps Server   
-titleSuffix: Azure DevOps   
+title: Understand differences between Azure DevOps Services and Server   
+titleSuffix: Azure DevOps
+ms.custom: seodec18   
 description: Understand the fundamental differences between Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops  
 ms.technology: devops-new-user
@@ -10,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 12/03/2018 
+ms.date: 12/06/2018 
 ---
 
 # Understand the differences between Azure DevOps Services and Azure DevOps Server
@@ -102,7 +103,7 @@ We recommend that you create organizations in Azure DevOps Services wherever you
 
 <!---We're working to support enterprise-wide policies.-->
 
-Learn more: [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md).
+Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 

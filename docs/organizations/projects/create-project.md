@@ -19,7 +19,7 @@ ms.date: 11/14/2018
 Create a project to establish a repository for source code, where a group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
 
 > [!NOTE]
-> This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create an Azure DevOps Project, see [Azure DevOps Project](/azure/devops-project/).
+> This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
 

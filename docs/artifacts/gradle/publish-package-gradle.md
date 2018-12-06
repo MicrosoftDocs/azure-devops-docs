@@ -46,7 +46,7 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
 
 # [New navigation](#tab/new-nav)
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
 Click **+ New Token**.
 
@@ -60,7 +60,7 @@ Click **Create**.
 
 # [Previous navigation](#tab/previous-nav)
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
 Click **Add**.
 
@@ -127,8 +127,8 @@ repositories {
     } 
 } 
 ```
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services organization. You can configure
-publishing and downloading to use separate Azure DevOps Services organizations, if you prefer.
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
+publishing and downloading to use separate organizations, if you prefer.
 
 Replace the following fields with your own values:
 

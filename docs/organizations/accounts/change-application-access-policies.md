@@ -1,6 +1,8 @@
 ---
-title: Change your organization's application access policies in Azure DevOps 
-description: Learn how to change your application access policies for your organization in Azure DevOps, so you don't have to enter user credentials multiple times
+title: Change application access policies for organizations
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn how to change application access policies for your organization, so you don't have to enter user credentials multiple times
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -75,4 +77,8 @@ To continue, you'll need at least Basic access and organization owner permission
 
 ---
 
-   [Need help?](faq-change-app-access.md#get-support)
+## Related articles
+
+- [Need help?](faq-change-app-access.md#get-support)
+- [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+- [Manage conditional access](manage-conditional-access.md)

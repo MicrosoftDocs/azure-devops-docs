@@ -41,7 +41,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 #### Q: I am making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](./../client-libraries/dotnet.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
 A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.
 
-#### Q: Can I use ADAL if I log into my Azure DevOps Services organization with a Microsoft account (MSA)?
+#### Q: Can I use ADAL if I log into my organization with a Microsoft account (MSA)?
 
 A: Yes, you can use ADAL to create client side applications for an MSA backed account using ADAL with some limitations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure Portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. 
 

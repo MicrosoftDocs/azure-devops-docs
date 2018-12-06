@@ -61,7 +61,7 @@ tfx extension create --manifest-globs vss-extension.json
 ## Share
 <a name="shareextension" />
 
-Before an extension can be installed into an Azure DevOps Services organization, it must be shared with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
+Before an extension can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
 To share an extension so it can be installed:
 
@@ -70,7 +70,7 @@ To share an extension so it can be installed:
 
   ![Share Extensions](../_img/share-extension.png)
 
-3. Specify the name of the Azure DevOps Services organization to make this extension visible to
+3. Specify the name of the organization to make this extension visible to
   - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 
@@ -80,7 +80,7 @@ To share an extension so it can be installed:
 
 To install an extension that has been shared:
 
-1. From your Azure DevOps Services organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
+1. From your organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 
   ![Manage Extensions](_img/manage-extensions.png)
 

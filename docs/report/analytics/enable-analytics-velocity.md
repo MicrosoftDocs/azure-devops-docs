@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: ">= azdevserver-2019"
-ms.date: 11/19/2018 
+ms.date: 12/04/2018 
 ---
 
 
@@ -29,7 +29,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ::: moniker range="vsts"
 
-- You must have a project defined for an Azure DevOps organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).  
+- You must have a project defined for an organization in Azure DevOps. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).  
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md).
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). 
@@ -53,7 +53,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 # [New navigation](#tab/new-nav)  
 
-0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](../dashboards/_img/dashboards/open-dashboards-vert.png)

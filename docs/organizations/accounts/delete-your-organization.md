@@ -1,5 +1,7 @@
 ---
-title: Delete your Azure DevOps organization
+title: Delete, remove an organization - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -40,7 +42,7 @@ If your organization uses an Azure subscription to bill purchases, you must firs
 To remove billing from your organization, you must be a project collection administrator.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. In the search box, enter *Azure DevOps*. In the list, select **Azure DevOps Services organizations**.
+2. In the search box, enter *Azure DevOps*. In the list, select **Azure DevOps organizations**.
 3. Select the organization you are deleting.
 4. Choose **Remove billing**. Your Azure subscription is removed from your organization.
 

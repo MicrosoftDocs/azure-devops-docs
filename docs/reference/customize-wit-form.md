@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 12/15/2017  
@@ -85,15 +86,15 @@ See the following topics to make the indicated customizations:
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for an Azure DevOps Services organization is https://dev.azure.com/*OrganizationName*.
+    An example of a *CollectionURL* for an organization is https://dev.azure.com/*OrganizationName*.
 
-0.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
+1.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 
-0.  Import the WIT definition file.  
+2.  Import the WIT definition file.  
 
         witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
 
-0.  Open either the web portal to view the changes. If the client is already open, refresh the page. 
+3.  Open either the web portal to view the changes. If the client is already open, refresh the page. 
 
     The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
 
