@@ -37,7 +37,7 @@ Read the [glossary](./test-glossary.md) to understand test reports terminology.
 
 1. Go to the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in Marketplace.
 1. Choose to install the Analytics extension. You might need to sign in with your Azure DevOps Services organization credentials.
-1. Select the Azure DevOps Services organization where you would like to install this extension and confirm. [Learn more about installing extensions](../../marketplace/overview.md).
+2. Select the organization where you would like to install this extension and confirm. [Learn more about installing extensions](../../marketplace/overview.md).
 
 <a name="viewinbuild"></a>
 

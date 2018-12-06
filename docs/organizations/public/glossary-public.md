@@ -1,5 +1,5 @@
 ---
-title: Glossary for public projects
+title: Glossary for public projects in Azure DevOps
 titleSuffix: Azure DevOps Services Public Project
 description: Description of key concepts and terms 
 ms.technology: devops-public-projects
@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/02/2018
+ms.date: 12/04/2018
 monikerRange: 'vsts'
 ---
 

@@ -1,6 +1,8 @@
 ---
-title: Troubleshoot adding administrators to projects and project collections in Azure DevOps
-description: Learn the answers to frequently asked questions (FAQs), like how to add administrators to Azure DevOps project collections and projects with these frequently asked questions.
+title: Troubleshoot adding administrators to projects and project collections
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), about adding administrator to projects and collections
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,11 +10,11 @@ ms.topic: conceptual
 ms.manager: douge  
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding administrators to projects in Azure DevOps
+# Troubleshoot adding administrators to projects and project collections
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

@@ -32,7 +32,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ##  Create a local Git repo for your project
 
@@ -53,9 +53,9 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ## Publish your code to Azure Repos
 
-0. Navigate to the **Push** view in Team Explorer by choosing the ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) icon in the status bar. You can also select **Sync** from the **Home** view in Team Explorer.
+1. Navigate to the **Push** view in Team Explorer by choosing the ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) icon in the status bar. You can also select **Sync** from the **Home** view in Team Explorer.
 
-0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
+2. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
 
  ![Publish your code from VS directly into Azure Repos](_img/share-your-code-in-git-vs-2017/publish-git-repo.png)
 

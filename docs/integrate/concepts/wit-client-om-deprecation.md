@@ -50,7 +50,7 @@ Updating your tools to use REST is vital to ensure your tools will work once the
 
 ## Visual Studio warnings
 
-Any references to the latest versions of WIT Client OM will result in a warning. This includes the dlls that come with Visual Studio 2019 and Azure DevOps 2019. Here is an example warning you may recieve...
+Any references to the latest versions of WIT Client OM will result in a warning. This includes the dlls that come with Visual Studio 2019 and Azure DevOps 2019. Here is an example warning you may receive...
 
 **CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at http://aka.ms/witclientom'**
 
@@ -60,7 +60,7 @@ Any references to the latest versions of WIT Client OM will result in a warning.
 
 ### How do I know what tools are running?
 
-If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and esnure they are aware of our deprecation plan.
+If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and ensure they are aware of our deprecation plan.
 
 ### How do I fix my tools?
 

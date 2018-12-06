@@ -19,7 +19,7 @@ A common scenario in Azure DevOps Services is to fetch work items using queries.
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* An Azure DevOps Services organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
+* An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 

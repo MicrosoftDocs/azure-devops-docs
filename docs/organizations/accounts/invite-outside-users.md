@@ -1,6 +1,7 @@
 ---
-title: About inviting external users to Azure DevOps
+title: About inviting external users - Azure DevOps
 titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Security and data access considerations when you add an external or outside user to Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
@@ -10,7 +11,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 

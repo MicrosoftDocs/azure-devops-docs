@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 # Tutorial: Grant or restrict access to select features and functions
@@ -189,7 +189,7 @@ For [On-premises XML process model](../../reference/on-premises-xml-process-mode
 You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group). 
 
 > [!NOTE]   
-> These restriction types aren't available for Azure DevOps organizations and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
+> These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
 
  

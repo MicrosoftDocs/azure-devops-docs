@@ -40,7 +40,7 @@ would use the tasks individually in your own custom build-test-deploy pipeline.
 
 Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
-extension from Visual Studio Marketplace:
+extension from Visual Studio Marketplace, Azure DevOps tab:
 
 * For Azure Pipelines, choose **Install**
 * For TFS, choose **Download** and install the extension on your server.

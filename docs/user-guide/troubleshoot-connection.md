@@ -1,6 +1,7 @@
 ---
-title: Troubleshoot connecting to a project in Azure DevOps Services or TFS
-titleSuffix: Azure DevOps Services & TFS  
+title: Troubleshoot connecting project
+titleSuffix: Azure DevOps Services & TFS
+ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-security
 ms.prod: devops
@@ -9,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/03/2018
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'
 ---
 

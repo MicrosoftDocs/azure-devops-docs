@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -26,7 +26,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 # [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azdevserver-2019"
-- **Projects**: Projects defined for an Azure DevOps organization  
+- **Projects**: Projects defined for an organization in Azure DevOps
 - **Work items**: Work items assigned to you
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
 - **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 10/23/2018 
+ms.date: 12/04/2018 
 ---
 
 
@@ -27,7 +27,7 @@ Some features provide a new user interface and functionality, which can be manag
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to TFS. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 > [!div class="mx-tdBreakAll"]  
-> |[Preview features per user](#user-level)| [Preview features per Azure DevOps organization](#account-level)|  
+> |[Preview features per user](#user-level)| [Preview features per organization](#account-level)|  
 > |-------------|----------|  
 > |-Experimental themes<br/>- Git commit menu extension points<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [Build YAML pipelines](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |- [Build YAML Definitions](../../pipelines/get-started-yaml.md)<br/>- Experimental themes<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build result page<br/>- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)<br/>- [New Navigation](index.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New YAML pipeline creation experience](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#create-yaml-build-pipelines-using-the-new-wizard)<br/>  |
 

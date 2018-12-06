@@ -21,7 +21,7 @@ Module path: `TFS/Build/ExtensionContracts`
 
 * `onBuildChanged`: (handler: (build: [Build_Contracts.Build](../../../TFS/Build/Contracts/Build.md)): void): void. Required if reacting to the current build.
 More than one callbacks can be added, and all will be called.
-It is important to have atleast one call back, since that&#x27;s how an extension can get information about the current build.
+It is important to have at least one call back, since that&#x27;s how an extension can get information about the current build.
 
 * `onViewDisplayed`: (onDisplayedCallBack: (): void): void. Optional, If needed, this callback will be called when this particular extension is selected/displayed
 

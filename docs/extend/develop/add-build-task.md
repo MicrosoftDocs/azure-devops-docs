@@ -14,7 +14,7 @@ ms.date: 10/18/2018
 
 # Add a build or release task
 
-Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into an Azure DevOps Services organization. 
+Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into an organization in Azure DevOps Services. 
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 
 ![Build task catalog for extensions in Azure DevOps Services](_img/build-task-ext-choose-task.png)
@@ -26,7 +26,7 @@ To learn more about the new cross-platform build/release system, see [Team Found
 ## Preparation and required setup for this tutorial
 In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
 
-- A **Azure DevOps Services organization**, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
+- An **organization** in Azure DevOps Services, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)

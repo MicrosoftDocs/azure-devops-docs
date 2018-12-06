@@ -66,7 +66,7 @@ At the application level, the composition of Azure DevOps extensions is innocuou
 
 ![Progressive exposure of the application layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
-At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in Azure DevOps organizations, they are hosted by the Azure DevOps service portal, with state persisted to Azure storage and/or the extension [data storage](/azure/devops/extend/develop/data-storage).
+At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in organization, they are hosted by the Azure DevOps service portal, with state persisted to Azure storage and/or the extension [data storage](/azure/devops/extend/develop/data-storage).
 
 ![Progressive exposure of the infrastructure layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
@@ -91,17 +91,17 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 2. The commit triggers a continuous integration build.
 3. The new build triggers a continuous deployment trigger, which automatically starts the **Canaries** environment deployment.
-4. The **Canaries** deployment publishes a private extension to the marketplace and shares it with predefined Azure DevOps organizations. Only the **Canaries** are impacted by the change.
+4. The **Canaries** deployment publishes a private extension to the marketplace and shares it with predefined organizations. Only the **Canaries** are impacted by the change.
 5. The **Canaries** deployment triggers the **Early Adopter** environment deployment. A pre-deployment approval gate requires any one of the authorized users to approve the release.
 
 	![Pre-deployment approval for Early Adopter environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-early-approval.png)
 
-6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined Azure DevOps organizations. Both the **Canaries** and **Early Adopter** are impacted by the change.
+6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined organizations. Both the **Canaries** and **Early Adopter** are impacted by the change.
 7. The **Early Adopter** deployment triggers the **Users** environment deployment. A stricter pre-deployment approval gate requires all of the authorized users to approve the release.
 
 	![Pre-deployment approval for User environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-users-approval.png)
 
-8. The **Users** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their Azure DevOps organization is affected by the change.
+8. The **Users** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their organization is affected by the change.
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving two opportunities to validate the change and hotfix critical bugs before a release to production.
 
 > [!NOTE]

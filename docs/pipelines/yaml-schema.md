@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
@@ -146,7 +146,7 @@ you specify your container images.
 ```yaml
 resources:
   containers:
-  - container: string  # identifier (no spaces allowed)
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
     image: string  # container image name
     options: string  # arguments to pass to container at startup
     endpoint: string  # endpoint for a private container registry
@@ -175,7 +175,7 @@ specify an external repository.
 ```yaml
 resources:
   repositories:
-  - repository: string  # identifier (no spaces allowed)
+  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
     type: enum  # see below
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use, defaults to 'refs/heads/master'
@@ -351,7 +351,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 # [Schema](#tab/schema)
 
 ```yaml
-- job: string  # name of the job, no spaces allowed
+- job: string  # name of the job, A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
@@ -659,7 +659,7 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 ```yaml
 - script: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (no spaces allowed)
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
   workingDirectory: string  # initial working directory for the step
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   condition: string
@@ -691,7 +691,7 @@ It will run a script in Bash on Windows, macOS, or Linux.
 ```yaml
 - bash: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (no spaces allowed)
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
   workingDirectory: string  # initial working directory for the step
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   condition: string
@@ -727,7 +727,7 @@ It will run a script in PowerShell on Windows.
 ```yaml
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (no spaces allowed)
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
   errorActionPreference: enum  # see below
   ignoreLASTEXITCODE: boolean  # see below
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
@@ -851,7 +851,7 @@ Or to avoid syncing sources at all:
 ```yaml
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
   displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (no spaces allowed)
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'

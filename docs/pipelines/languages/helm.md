@@ -31,8 +31,8 @@ Helm can package these files into a chart archive (*.tgz file), which gets deplo
 The steps required to build a container image and pushing it to a container registry remains the same. Once that has been the done, we start creating a Helm Chart archive package. 
 
 Azure Pipelines has built-in support for Helm charts:
-1.	[Helm Tool installer task](../tasks/deploy/helm-deploy.md) can be used to get the right version of Helm on the agents.
-2.	[Helm package and deploy task](../tasks/tool/helm-installer.md) can be used to package the application and deploy it to a Kubernetes cluster.
+1.	[Helm Tool installer task](../tasks/tool/helm-installer.md) can be used to get the right version of Helm on the agents.
+2.	[Helm package and deploy task](../tasks/deploy/helm-deploy.md) can be used to package the application and deploy it to a Kubernetes cluster.
 3.	You can use the task to install/update Tiller to a Kubernetes namespace, securely connect to the Tiller over TLS for deploying charts, use the task to run any Helm command like lint
 4.	The Helm task also supports connecting to an Azure Kubernetes Service by using Azure Service Connection. You can connect to any Kubernetes cluster by using kubeconfig or Service Account as well.
 5.	The Helm deployments can be supplemented by using Kubectl task. For example create/update imagepullsecret

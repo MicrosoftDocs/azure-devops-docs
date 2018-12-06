@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ---
 
 
@@ -25,7 +25,7 @@ The easiest way to add a number of users to a project is to add groups defined i
 ::: moniker range="vsts"
 
 > [!IMPORTANT]
-> If you're adding users to an Azure DevOps organization and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
+> If you're adding users to an organization in Azure DevOps and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
 
 ::: moniker-end
 
@@ -51,9 +51,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 ::: moniker range=">= azdevserver-2019"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-0. Choose **Project Settings** and then **Security**.
+2. Choose **Project Settings** and then **Security**.
 
 	*To see the full image, click to expand*.
 

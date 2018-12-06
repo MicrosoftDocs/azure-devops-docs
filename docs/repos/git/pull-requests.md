@@ -163,7 +163,7 @@ Initiate pull requests directly from Visual Studio.
 
   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Azure DevOps project.
+  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
 

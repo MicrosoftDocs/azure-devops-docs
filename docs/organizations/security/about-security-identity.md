@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 
-This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your Azure DevOps projects safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).    
+This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).    
 
 The main security concepts to understand are
 
@@ -39,7 +39,7 @@ Authentication verifies a user's identify based on the credentials provided when
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your Azure DevOps organization, you can simply use Microsoft accounts. For additional information, see [Access Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can simply use Microsoft accounts. For additional information, see [Access Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
 For on-premises deployments, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
