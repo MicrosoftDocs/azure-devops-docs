@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Visual Studio Test Platform Installer task
 
-**Azure DevOps Services | TFS 2018 Update 1**
+**Azure DevOps Services | TFS 2018 Update 2**
 
 Use this task in a build or release pipeline to acquire the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
 from nuget.org or a specified feed, and add it to the tools cache. The installer task satisfies the 'vstest'
