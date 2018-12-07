@@ -7,6 +7,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: chrispat
 ms.reviewer: chrispat
+ms.custom: seodec18
 ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---

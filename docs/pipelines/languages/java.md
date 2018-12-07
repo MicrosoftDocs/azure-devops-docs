@@ -1,6 +1,6 @@
 ---
 title: Build Java apps
-description: Building Java projects using Azure Pipelines and TFS
+description: Building Java apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
@@ -8,13 +8,13 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 08/31/2018
 ms.topic: quickstart
 ms.custom: seodec18
+ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build Java apps with Azure Pipelines
+# Build Java apps in Azure Pipelines
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

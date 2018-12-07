@@ -1,6 +1,5 @@
 ---
-title: Build Android apps
-titleSuffix: Azure Pipelines & TFS
+title: Build, test, and deploy Android apps
 description: Set up CI/CD to build, test, and deploy Android projects.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,11 +8,12 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build Android apps with Azure Pipelines or Team Foundation Server
+# Build, test, and deploy Android apps in Azure Pipelines
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

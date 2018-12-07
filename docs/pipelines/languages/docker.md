@@ -1,20 +1,20 @@
 ---
-title: Build Docker apps
-titleSuffix: Azure Pipelines and TFS
+title: Build, test, and push Docker container apps
 description: Build and deploy Docker images by using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
+ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Build Docker apps by using Azure Pipelines or Team Foundation Server
+# Build, test, and push Docker container apps in Azure Pipelines
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
