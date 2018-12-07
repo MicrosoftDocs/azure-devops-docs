@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about billing
+title: Frequently asked questions about billing management
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Find answers to frequently asked questions (FAQs) about billing for your organization, which is managed in the Azure portal
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019' 
-ms.date: 11/19/2018 
+ms.date: 12/05/2018 
 ---
 
 
@@ -22,6 +22,10 @@ ms.date: 11/19/2018
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
+The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
+
+![Conceptual image of how cycle time and lead time are measured](_img/cycle-lead-time-concept-intro.png) 
+
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
 In this topic you'll learn:
@@ -31,6 +35,7 @@ In this topic you'll learn:
 > * How to interpret the scatter-plot control charts  
 > * How moving average and standard deviation are calculated in the charts
 
+To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
 <a id="configure-widget"></a>
 ## Configure the Cycle Time and Lead Time widgets    
@@ -103,6 +108,7 @@ The standard deviation appears as a band that encompasses the moving average. St
 ## Related notes
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
+- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  
 - [Kanban basics](../../boards/boards/kanban-basics.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)

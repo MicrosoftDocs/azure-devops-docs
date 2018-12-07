@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 12/05/2018 
 ---
 
 
@@ -241,6 +241,7 @@ Project Collection Proxy Service Accounts
 Project Collection Service Accounts
 Project Collection Test Service Accounts
 Project Collection Valid Users
+Security Service Group
 -->
 
 > [!div class="mx-imgBorder"]  
@@ -337,7 +338,6 @@ Project Collection Valid Users
 <!---
 Build Administrators
 Contributors
-Readers
 Project Administrators
 Project Valid Users
 Readers
@@ -377,7 +377,7 @@ For each project that you create, the system creates the followings project-leve
 		<td>Readers</td>
 		<td>Has permissions to view the project but not modify it.</td>
 		<td>
-			Assign to [stakeholders](../../organizations/security/get-started-stakeholder.md)
+			Assign to members of your organization who you want to provide view-only permissions to a project. These users will be able to view backlogs, boards, dashboards, and more, but not add or edit anything. Typically, these aer members who aren't granted an access level ([Basic, Stakeholder, or other level](../../organizations/security/access-levels.md)) within the organization or on-premises deployment.
 			who want to be able to view work in progress.
 		</td>
 	</tr>
@@ -1133,7 +1133,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 
 Individual repositories inherit permissions from  the top-level **Git Repositories** entry. Branches inherit permissions from assignments made at the repository level.   
 
-By default, the project level and collection level Readers groups have only Read permissions.
+By default, the project level Readers groups have only Read permissions.
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1266,7 +1266,7 @@ By default, the project level and collection level Readers groups have only Read
 
 
 >[!NOTE]  
-> Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level and collection-level Readers groups only have Read permissions.
+> Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.
 
 To manage Git repo and branch permissions, see [Set branch permissions](../../repos/git/branch-permissions.md).
 
@@ -1942,7 +1942,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
 You can set these permissions by using the [TFSLabConfig permissions command-line tool](/tfs/server/ref/command-line/tfslabconfig-cmd#permissions).
 
-By default, the project level and collection-level Readers groups have only View lab resources (Read) permissions.
+By default, the project Readers groups have only View lab resources (Read) permissions.
 
 > [!NOTE]  
 > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).

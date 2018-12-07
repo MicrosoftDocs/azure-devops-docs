@@ -1,8 +1,8 @@
 ---
-title: Buy Basic access for users in the Marketplace
+title: Buy Basic access for users in the Visual Studio Marketplace
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Purchase more or increase users when you need more than the free amount via the Visual Studio Marketplace
+description: Increase number of users when you need more than the free amount via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
@@ -10,11 +10,11 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Pay for users (Basic)
+# Quickstart: Pay for more Basic users
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

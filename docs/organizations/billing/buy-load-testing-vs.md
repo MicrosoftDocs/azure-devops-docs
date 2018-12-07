@@ -1,8 +1,8 @@
 ---
-title: Buy cloud-based load testing
+title: Buy cloud-based load testing - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Purchase and enable cloud-based load testing via the Azure portal
+description: Purchase and enable cloud-based load testing in Azure DevOps via the Azure portal.
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
