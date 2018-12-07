@@ -1,5 +1,5 @@
 ---
-title: Connect Microsoft Test Manager to your project and test plan
+title: Connect MTM to a project and plan
 description: Manual and exploratory testing - Connect Microsoft Test Manager to your project and test plan when you want to test web applications
 ms.assetid: 4a2c7eb1-c65d-4fd9-bb19-f733164752c1
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

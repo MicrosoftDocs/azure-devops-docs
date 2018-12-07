@@ -1,6 +1,6 @@
 ---
 title: Predefined build variables
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: A comprehensive list of all available predefined build variables
 ms.topic: reference
 ms.prod: devops

@@ -1,8 +1,8 @@
 ---
-title: FAQs for continuous testing in Azure Pipelines and TFS 
-titleSuffix: Azure Pipelines & TFS
+title: FAQs for continuous testing 
 description: FAQs for continuous testing topics for Azure Pipelines and Team Foundation Server (TFS).
-ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
+ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677
+ms.custom: seodec18 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
@@ -10,7 +10,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: Copy or clone work items 
+title: Copy or clone user stories, issues, bugs, tasks, or other work items 
 titleSuffix: Azure Boards  
-description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard
+description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
+ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  

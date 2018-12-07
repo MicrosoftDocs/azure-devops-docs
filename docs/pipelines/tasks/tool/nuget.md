@@ -1,13 +1,13 @@
 ---
 title: NuGet Tool Installer task
-titleSuffix: Azure Pipelines & TFS
 description: Find, download, and cache a specified version of NuGet and add it to the PATH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
 ms.manager: douge
+ms.custom: seodec18
 ms.author: amullans
-ms.date: 7/05/2017
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

@@ -1,20 +1,20 @@
 ---
-title: Build .NET Core apps with Azure Pipelines and Team Foundation Server (TFS)
-titleSuffix: Azure Pipelines and TFS
+title: Build, test, and deploy .NET Core apps
 description: Build .NET Core apps by using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
+ms.custom: seodec18
 ms.date: 08/15/2018
-ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Build .NET Core apps with Azure Pipelines or Team Foundation Server
+# Build, test, and deploy .NET Core apps in Azure Pipelines
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

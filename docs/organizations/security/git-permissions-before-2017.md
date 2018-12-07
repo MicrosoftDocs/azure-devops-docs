@@ -31,7 +31,7 @@ Individual repositories inherit permissions from the top-level **Git Repositorie
 
 Branches inherit permissions from assignments made at the repository level.   
 
-By default, the project level and collection level Readers groups have only Read permissions.
+By default, the project level Readers groups have only Read permissions.
 
 <table valign="top" width="100%">
 <tbody valign="top">

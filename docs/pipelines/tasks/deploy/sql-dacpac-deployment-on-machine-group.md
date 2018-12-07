@@ -1,14 +1,14 @@
 ---
 title: WinRM SQL Server DB Deployment task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy to SQL Server Database using DACPAC or SQL scripts
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Record and replay cloud-based load tests with Azure DevOps
+title: Record and replay load tests
 description: Get app performance data by recording and replaying cloud-based load tests using the features of Azure DevOps
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 

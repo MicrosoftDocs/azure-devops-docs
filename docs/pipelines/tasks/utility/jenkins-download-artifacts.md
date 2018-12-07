@@ -1,14 +1,14 @@
 ---
 title: Jenkins Download Artifacts task
-titleSuffix: Azure Pipelines & TFS
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

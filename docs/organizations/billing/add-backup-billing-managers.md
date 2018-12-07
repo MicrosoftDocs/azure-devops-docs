@@ -1,6 +1,10 @@
 ---
-title: Add a user who can buy extensions for Azure DevOps
+title: Add a user who can buy extensions
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Add a backup user or other billing manager who can buy via Visual Studio Marketplace extensions
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
@@ -8,7 +12,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

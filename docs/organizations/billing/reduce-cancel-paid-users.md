@@ -1,6 +1,8 @@
 ---
-title: Change the number of paid users on your organization in Azure DevOps
-description: Steps to increase or decrease the number of paid users for your organization as your team grows or contracts (Azure DevOps)
+title: Change the number of paid users for your organization - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Increase or decrease the number of paid users for your organization as your team grows or contracts
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
@@ -8,10 +10,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
-# Change the number of paid users in your organization in Azure DevOps
+# Change the number of paid users in your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

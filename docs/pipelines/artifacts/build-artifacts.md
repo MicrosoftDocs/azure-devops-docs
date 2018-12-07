@@ -1,6 +1,6 @@
 ---
 title: Publish and consume build artifacts in builds
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference

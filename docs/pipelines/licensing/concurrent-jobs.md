@@ -1,6 +1,6 @@
 ---
 title: Parallel jobs in Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8

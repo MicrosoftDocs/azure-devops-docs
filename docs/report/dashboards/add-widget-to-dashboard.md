@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 11/01/2018
+ms.date: 12/05/2018 
 ---
 
 # Add widgets to a dashboard
@@ -39,78 +39,70 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
 
-## Connect to the web portal for your project 
-To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
+
+## Select a dashboard to modify 
+All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
-Open a web browser and choose **Overview>Dashboards**. 
+0. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
 
-> [!div class="mx-imgBorder"]  
-> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
-::: moniker-end  
+	If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+
+0. Choose the dashboard you want to modify. 
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
-
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range="vsts"  
 
-Open a web browser and choose **Dashboards**.
+Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
 
-![Open Dashboards](_img/dashboards-go-to.png) 
+> [!div class="mx-imgBorder"]  
+> ![Dashboards directory, previous navigation](_img/dashboards/directory-prev.png) 
+::: moniker-end  
 
-If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+Open a web browser, connect to your project, and choose **Dashboards**. 
 
-::: moniker-end
+![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
+
+Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
+
+Choose the name of the dashboard to modify it. 
+
+For example, here we choose to view the Work in Progress dashboard. 
+
+> [!div class="mx-imgBorder"]  
+> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+::: moniker-end  
 
 ::: moniker range="azdevserver-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
+
 ---
-
-## Select a dashboard to modify 
-All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
-
-::: moniker range="azdevserver-2019 || vsts"
-1. From **Overview>Dashboards** , open the selector and choose the **Browse all dashboards** option. 
- 
-	> [!div class="mx-imgBorder"]
-	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
-
-2. The dashboard directory page shows you your last visited dashboard, your favorited dashboards, all dashboards of teams that you belong to, and lists all dashboards defined for the project in alphabetical order.  Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
- 
-	> [!div class="mx-imgBorder"]
-	> ![Dashboards, Browse all dashboards option](_img/dashboards/all-dashboards-list.png)  
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
-
-2. Choose **Dashboards**.
-
-3. Choose the name of the dashboard to modify it. 
-
-	For example, here we choose to view the Work in Progress dashboard. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
-
-::: moniker-end  
-
 
 
 ## Add a widget to a dashboard  
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. 
 
@@ -153,6 +145,23 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 > [!div class="mx-imgBorder"]  
 > ![Open the create a dashboard dialog](_img/add-widgets/configure-widget.png) 
 
+::: moniker-end
+
+::: moniker range="vsts"
+Additional information is provided to configure the following widgets: 
+- [Burndown/burnup](configure-burndown-burnup-widgets.md)
+- [Cumulative flow](cumulative-flow.md)
+- [Lead time or cycle time](cycle-time-and-lead-time.md)
+- [Velocity widget](team-velocity.md)
+- [Test trend results](configure-test-results-trend.md)
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+Additional information is provided to configure the following widgets: 
+- [Burndown/burnup](configure-burndown-burnup-widgets.md)
+- [Cumulative flow](cumulative-flow.md)
+- [Lead time or cycle time](cycle-time-and-lead-time.md)
+- [Velocity widget](team-velocity.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"

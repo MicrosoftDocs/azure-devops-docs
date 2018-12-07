@@ -4,14 +4,14 @@ titleSuffix: Azure DevOps Services
 description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS). Includes tutorials, references, and other documentation.
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: conceptual
+layout: HubPage 
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
 ms.date: 02/19/2018
-ms.topic: conceptual
-layout: HubPage 
 monikerRange: '>= tfs-2013'
 ---
 

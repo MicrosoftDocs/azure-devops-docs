@@ -1,15 +1,15 @@
 ---
 title: PowerShell on Target Machines task
-titleSuffix: Azure Pipelines & TFS
 description: PowerShell on Target Machines build task
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
