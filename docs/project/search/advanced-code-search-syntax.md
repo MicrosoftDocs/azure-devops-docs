@@ -1,5 +1,5 @@
 ---
-title: Advanced search options in Microsoft Code Search in Azure DevOps and TFS
+title: Use advanced code search options
 description: How To Use Code Search - Advanced options for using Code Search across all your projects in Azure DevOps and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

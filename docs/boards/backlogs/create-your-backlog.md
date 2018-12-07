@@ -1,8 +1,8 @@
 ---
-title: Create your backlog 
+title: Define/plan your product backlog of user stories, issues, backlog items, or requirements
 titleSuffix: Azure Boards
-description: Add items, plan your project, order and prioritize, and estimate your backlog of deliverables in Azure Boards, Azure DevOps, & Team Foundation Server  
-ms.custom: boards-backlogs  
+description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-# Create your backlog
+# Create your product backlog 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

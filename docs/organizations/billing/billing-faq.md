@@ -1,6 +1,8 @@
 ---
-title: Frequently asked questions (FAQ) about billing for Azure DevOps
-description: Find answers to frequently asked questions about billing for your organization, which is managed in the Azure portal
+title: Frequently asked questions about billing management
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Find answers to frequently asked questions (FAQs) about billing for your organization, which is managed in the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
@@ -8,11 +10,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Azure DevOps billing FAQ
+# Billing FAQs
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

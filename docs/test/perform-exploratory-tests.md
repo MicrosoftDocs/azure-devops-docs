@@ -1,5 +1,5 @@
 ---
-title: Exploratory test your web app -  TestTools
+title: Exploratory test your web app
 description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

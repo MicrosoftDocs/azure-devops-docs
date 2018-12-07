@@ -1,6 +1,5 @@
 ---
 title: Azure Resource Group Deployment task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy, start, stop, or delete Azure Resource Groups
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 94A74903-F93F-4075-884F-DC11F34058B4
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

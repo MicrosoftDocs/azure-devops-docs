@@ -1,5 +1,5 @@
 ---
-title: Search your code in Azure DevOps and Team Foundation Server
+title: Search your code across your projects
 description: Get started with Code Search in Azure DevOps and TFS across all your projects to debug and manage your codebases
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

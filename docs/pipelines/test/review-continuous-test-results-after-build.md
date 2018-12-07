@@ -1,6 +1,5 @@
 ---
-title: Review continuous test results after a build or release in Azure Pipelines and TFS 
-titleSuffix: Azure Pipelines & TFS
+title: Review test results 
 description: Review continuous test results with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: vinojos
 author: vinojos
-ms.date: 07/16/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

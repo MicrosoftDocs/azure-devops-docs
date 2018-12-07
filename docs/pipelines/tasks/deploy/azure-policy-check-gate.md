@@ -1,5 +1,5 @@
 ---
-title: Azure Policy Check Gate
+title: Azure Policy Check Gate task
 description: Security and compliance assessment with Azure policies on resources that belong to the resource group and Azure subscription.
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.assetid: 8BA74703-E94F-4A35-814E-FC21F44578A2
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 11/19/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

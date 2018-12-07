@@ -1,5 +1,5 @@
 ---
-title: Load Testing with Visual Studio and Azure DevOps
+title: Load test with Visual Studio
 description: About Load Testing, overview of capabilities and features
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 

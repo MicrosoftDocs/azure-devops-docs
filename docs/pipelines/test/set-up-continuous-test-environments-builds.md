@@ -1,6 +1,5 @@
 ---
-title: Set up environments to run continuous tests with your builds
-titleSuffix: Azure Pipelines & TFS
+title: Set up test environments
 description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline Azure Pipelines and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

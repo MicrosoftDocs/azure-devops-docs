@@ -1,6 +1,5 @@
 ---
 title: Query Azure Monitor Alerts task
-titleSuffix: Azure Pipelines & TFS
 description: Observe the configured Azure monitor rules for active alerts in Azure Pipelines and TFS in a build or release pipeline
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

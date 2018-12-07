@@ -1,6 +1,5 @@
 ---
-title: Deploy a Web Deploy package to IIS using WinRM
-titleSuffix: Azure Pipelines & TFS
+title: Deploy to IIS using WinRM
 description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Mamangement (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

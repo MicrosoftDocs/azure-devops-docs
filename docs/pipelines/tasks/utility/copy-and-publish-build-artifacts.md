@@ -1,6 +1,5 @@
 ---
 title: Copy and Publish Build Artifacts task
-titleSuffix: Azure Pipelines & TFS
 description: Copy build artifacts to a staging folder and publish them with Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/19/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

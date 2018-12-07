@@ -1,6 +1,5 @@
 ---
 title: Java Tool Installer task
-titleSuffix: Azure Pipelines & TFS
 description: Change the version of Java in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 11/15/2017
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
