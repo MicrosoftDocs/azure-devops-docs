@@ -1,5 +1,7 @@
 ---
-title: Buy TFS CALs or access to Azure Test Plans
+title: Buy access to Team Foundation Server, Azure Test Plans
+titleSuffix: Azure DevOps Server & TFS
+ms.custom: seodec18
 description: Steps for administrators to follow on how to buy Team Foundation Server (TFS) client access licenses (CALs) or access to Azure Test Plans 
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or Azure Test Plans

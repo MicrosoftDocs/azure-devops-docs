@@ -1,5 +1,5 @@
 ---
-title: About projects and scaling your organization in Azure DevOps
+title: About projects and scaling your organization
 titleSuffix: Azure DevOps Services & TFS  
 description: Understand project management for Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user 
