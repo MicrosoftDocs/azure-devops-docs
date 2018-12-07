@@ -1,5 +1,5 @@
 ---
-title: Search index of topics for Azure DevOps and TFS
+title: Code, workitem, and wiki search - index of topics
 description: Search with Azure DevOps and TFS
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
