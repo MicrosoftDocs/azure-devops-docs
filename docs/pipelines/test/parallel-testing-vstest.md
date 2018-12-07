@@ -1,6 +1,5 @@
 ---
-title: Speed up testing by running tests in parallel using Visual Studio Test task
-titleSuffix: Azure Pipelines & TFS
+title: Run any tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
