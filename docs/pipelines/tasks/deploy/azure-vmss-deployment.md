@@ -1,6 +1,5 @@
 ---
 title: Azure VM Scale Set Deployment task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy Virtual Machine scale set image
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 4dda660c-b643-4598-a4a2-61080d0002d9
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

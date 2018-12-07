@@ -1,6 +1,5 @@
 ---
 title: Go Tool Installer task
-titleSuffix: Azure Pipelines & TFS
 description: Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 334727F4-9495-4F9D-A391-FC621D671474
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

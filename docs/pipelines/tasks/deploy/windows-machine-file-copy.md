@@ -1,6 +1,5 @@
 ---
 title: Windows Machine File Copy task
-titleSuffix: Azure Pipelines & TFS
 description: Copy application files and other artifacts to remote Windows machines
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Chef Knife task
-titleSuffix: Azure Pipelines & TFS
 description: Run scripts with Knife commands on your Chef workstation
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: C7B7CCF9-D6E0-472B-97BB-06B6E43504F3
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
