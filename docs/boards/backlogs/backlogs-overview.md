@@ -1,8 +1,8 @@
 ---
-title: Backlogs, portfolios, stack rank or backlog priority, and multi-team ownership 
+title: How are Backlogs used to support portfolios, priority, and multi-team ownership 
 titleSuffix: Azure Boards 
-description: Use the web portal to plan and track work 
-ms.custom: boards-backlogs 
+description: Plan, track, and organize user stories, features, and bugs using backlogs and multiple teams 
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4

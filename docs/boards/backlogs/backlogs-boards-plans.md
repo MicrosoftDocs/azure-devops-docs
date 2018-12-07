@@ -1,8 +1,8 @@
 ---
-title: Backlogs, boards, & plans
+title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
-description: Understand the tasks supported among backlogs, Kanban boards, and taskboards in Azure Boards, Azure DevOps, & Team Foundation Server  
-ms.custom: boards-backlogs 
+description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
@@ -15,7 +15,8 @@ ms.date: 11/19/2018
 ---
 
 ::: moniker range=">= tfs-2017"
-# Backlogs, boards, and plans 
+# Tasks supported by Backlogs, Boards, Taskboards, and Delivery plans 
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each?

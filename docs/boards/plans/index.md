@@ -1,7 +1,8 @@
 ---
-title: Plans (Agile at scale)
+title: Learn how manage portfolios and gain visibility across teams  
 titleSuffix: Azure Boards
-description: Index to topics for how to scale Agile tools in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

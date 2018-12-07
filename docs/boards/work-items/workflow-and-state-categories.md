@@ -1,7 +1,8 @@
 ---
-title: Workflow states and state categories
+title: Understand how backlogs and boards use workflow states and state categories
 titleSuffix: Azure Boards   
-description: Understand how workflow states map to state categories in Azure Boards and Team Foundation Server   
+description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
+ms.custom: seodec18   
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
@@ -12,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-# Workflow states and state categories
+# How workflow states and state categories are used in Backlogs and Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

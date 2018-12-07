@@ -1,8 +1,8 @@
 ---
-title: Filter backlogs and queries 
+title: Filter backlogs and queries based on keywords, tags, or other fields  
 titleSuffix: Azure Boards
-description: Filter your backlog or query based on keywords, tags, or other fields   
-ms.custom: boards-backlogs 
+description: Filter a backlog or query based on keywords, tags, or other fields   
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -14,8 +14,14 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
+::: moniker range=">= tfs-2018"
+# Filter backlogs or queries based on keywords, tags, or other fields  
+::: moniker-end 
 
-# Filter backlogs or queries
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+# Filter backlogs or queries based on keywords 
+::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
@@ -23,7 +29,7 @@ ms.date: 11/19/2018
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 ## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  

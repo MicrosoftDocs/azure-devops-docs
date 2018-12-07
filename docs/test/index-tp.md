@@ -1,12 +1,13 @@
 ---
 title: Azure Test Plans Documentation 
 titleSuffix: Azure DevOps Services
-description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
+description: Test your software using manual, exploratory, cloud, and load testing tools to improve your overall code quality. 
+ms.custom: seodec18
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
+ms.technology: devops-test
 ms.assetid:  
 ms.manager: douge 
 ms.author: kaelli 
