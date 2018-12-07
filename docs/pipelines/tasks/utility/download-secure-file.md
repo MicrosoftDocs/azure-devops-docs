@@ -1,6 +1,5 @@
 ---
 title: Download Secure File task
-titleSuffix: Azure Pipelines & TFS
 description: Download a secure file to a temporary location on the build or release agent in Azure Pipelines and Team Foundation Server
 ms.topic: reference
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 06/12/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

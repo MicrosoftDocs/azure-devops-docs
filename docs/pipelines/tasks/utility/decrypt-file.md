@@ -1,6 +1,5 @@
 ---
 title: Decrypt File (OpenSSL) task
-titleSuffix: Azure Pipelines & TFS
 description: A thin utility task for file decryption using OpenSSL
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

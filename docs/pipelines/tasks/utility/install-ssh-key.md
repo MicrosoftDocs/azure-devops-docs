@@ -1,6 +1,5 @@
 ---
 title: Install SSH Key task
-titleSuffix: Azure Pipelines & TFS
 description: Install an SSH key prior to a build or release
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 5c9af2eb-5fc5-42dc-9b91-dc234a8c4400
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

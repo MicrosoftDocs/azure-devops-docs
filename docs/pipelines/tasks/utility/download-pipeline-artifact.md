@@ -1,6 +1,5 @@
 ---
 title: Download Pipeline Artifact task
-titleSuffix: Azure Pipelines
 description: Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: hdixon
 ms.author: midenn
-ms.date: 10/10/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
