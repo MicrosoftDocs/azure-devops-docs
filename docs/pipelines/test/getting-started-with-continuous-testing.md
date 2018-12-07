@@ -1,6 +1,5 @@
 ---
-title: Run unit tests with your builds in Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+title: Run unit tests with your builds
 description: Get started with continuous testing. Run unit tests with your builds for continuous integration in Azure Pipelines and Team Foundation Server TFS 
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
