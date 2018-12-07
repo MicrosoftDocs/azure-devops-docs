@@ -68,7 +68,7 @@ Another handy feature is to simply update a field without having to open the wor
 
 This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates for backlog items on the Kanban board or update remaining work on the taskboard. 
 
-To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work work item, not from the card and not from within the form. 
+To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work item, not from the card and not from within the form. 
 
 To customize cards on the Kanban board, see [Change how cards display on the Kanban board](#kanban-board). To customize taskboard cards, see [Change how cards display on the taskboard](#task-board).  
 
