@@ -1,6 +1,5 @@
 ---
 title: Download Package task
-titleSuffix: Azure Pipelines & TFS
 description: Download a package from a Package Management feed in Azure Artifacts or TFS.
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

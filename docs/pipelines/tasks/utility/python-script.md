@@ -1,6 +1,5 @@
 ---
 title: Python Script task
-titleSuffix: Azure Pipelines & TFS
 description: Run a Python script in a build or release pipeline
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 6392F95F-7E76-4A18-B3C7-7F078D2F7700
 ms.manager: brcrista
 ms.author: brcrista
-ms.date: 05/17/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
