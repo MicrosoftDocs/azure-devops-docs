@@ -1,6 +1,6 @@
 ---
 title: Build and release jobs in Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand build and release jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: .NET Core build and release task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: How to use npm packages build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd

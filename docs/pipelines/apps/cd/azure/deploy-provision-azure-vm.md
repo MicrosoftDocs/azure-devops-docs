@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

@@ -7,6 +7,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 manager: douge
 ms.assetid:
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

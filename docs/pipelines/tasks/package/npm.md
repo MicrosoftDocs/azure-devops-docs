@@ -1,6 +1,6 @@
 ---
 title: npm task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Simple, Secure CI App Signing
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
