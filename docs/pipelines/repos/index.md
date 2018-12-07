@@ -1,7 +1,6 @@
 ---
 title: Build source repositories
-titleSuffix: Azure Pipelines & TFS
-description: Build source repositories using Azure Pipelines and Team Foundation Server (TFS)
+description: Build source repositories using Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +8,8 @@ ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015'
 ---
 
