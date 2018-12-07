@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
 ms.date: 12/07/2018
 monikerRange: 'vsts'

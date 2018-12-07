@@ -1,6 +1,6 @@
 ---
 title: PyPI Publisher task (Deprecated)
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

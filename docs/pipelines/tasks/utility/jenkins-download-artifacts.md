@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'

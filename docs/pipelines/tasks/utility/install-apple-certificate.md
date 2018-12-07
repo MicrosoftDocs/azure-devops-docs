@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel

@@ -1,6 +1,7 @@
 ---
 title: Deploy to App Services and Cosmos DB
 description: Use Azure Pipelines to enable Continuous Integration (CI) and Continuous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
+ms.custom: seodec18
 ms.author: mlearned
 ms.manager: douge
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Create a multi-platform pipeline
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build and test on macOS, Linux, and Windows
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,6 +1,6 @@
 ---
 title: Sign up for Azure Pipelines
-titleSuffix: Azure DevOps Services
+ms.custom: seodec18
 description: Learn how to sign up for Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd

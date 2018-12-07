@@ -1,6 +1,6 @@
 ---
 title: Azure policy compliance
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: DevOps CI CD - Understand how to use Azure Policy in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 4EAB3C63-B9E2-4397-92E6-DD56960368A9
 ms.prod: devops
