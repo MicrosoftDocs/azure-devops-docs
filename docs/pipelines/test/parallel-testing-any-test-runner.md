@@ -1,7 +1,6 @@
 ---
-title: Speed up testing by running tests in parallel
-titleSuffix: Azure Pipelines & TFS
-description: Continuous testing. Speed up testing by running tests in parallel for any test runner. 
+title: Run VSTest tests in parallel
+description: Speed up testing by running tests in parallel for any test runner
 ms.assetid: 21D3C181-5067-45C7-8A98-1F0ECB2CCB01
 ms.prod: devops
 ms.technology: devops-cicd
@@ -10,7 +9,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

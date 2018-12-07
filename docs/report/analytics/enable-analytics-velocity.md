@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: ">= azdevserver-2019"
-ms.date: 12/04/2018 
+ms.date: 12/05/2018 
 ---
 
 
@@ -53,7 +53,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 # [New navigation](#tab/new-nav)  
 
-1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](../dashboards/_img/dashboards/open-dashboards-vert.png)
@@ -62,7 +62,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 0. [Choose the dashboard](../dashboards/dashboards.md#choose-dashboard) that you want to modify. 
 
-0. Choose ![ ](../dashboards/_img/icons/edit-icon.png) to modify a dashboard. The widget catalog opens.  
+0. Choose ![edit icon](../dashboards/_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
 
 0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 
@@ -79,9 +79,9 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
 
-0. Select any dashboard or [create a new dashboard](../dashboards/dashboards.md).  
+0. Select any dashboard or [add a dashboard](../dashboards/dashboards.md).  
 
-0. Choose ![Edit dashboard icon](../dashboards/_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](../dashboards/_img/add-widget-icon.png) to add a widget to the dashboard.  
+0. Choose ![edit icon](../dashboards/_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
 
 0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 

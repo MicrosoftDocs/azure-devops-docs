@@ -1,6 +1,5 @@
 ---
 title: Bash task
-titleSuffix: Azure Pipelines & TFS
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

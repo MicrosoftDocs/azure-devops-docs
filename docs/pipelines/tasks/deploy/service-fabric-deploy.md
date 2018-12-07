@@ -1,6 +1,5 @@
 ---
 title: Service Fabric Application Deployment task 
-titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Application Deployment task
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Visual Studio Test Platform Installer task
-titleSuffix: Azure Pipelines & TFS
 description: Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

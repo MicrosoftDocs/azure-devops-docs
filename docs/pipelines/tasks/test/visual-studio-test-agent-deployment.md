@@ -1,6 +1,5 @@
 ---
 title: Visual Studio Test Agent Deployment task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

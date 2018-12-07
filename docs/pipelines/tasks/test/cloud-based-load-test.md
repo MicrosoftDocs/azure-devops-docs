@@ -1,6 +1,5 @@
 ---
 title: Cloud-based Load Test task
-titleSuffix: Azure Pipelines & TFS
 description: Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

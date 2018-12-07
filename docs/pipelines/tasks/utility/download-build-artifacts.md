@@ -1,6 +1,5 @@
 ---
 title: Download Build Artifacts task
-titleSuffix: Azure Pipelines & TFS
 description: Download Build Artifacts task for use in a build or release pipeline
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

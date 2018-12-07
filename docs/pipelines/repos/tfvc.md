@@ -1,7 +1,6 @@
 ---
 title: Build TFVC repositories
-titleSuffix: Azure Pipelines & TFS
-description: Using a TFVC repository with Azure Pipelines or Team Foundation Server (TFS)
+description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +8,8 @@ ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015'
 ---
 

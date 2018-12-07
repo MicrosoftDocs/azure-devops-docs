@@ -1,12 +1,13 @@
 ---
-title: Azure Boards Documentation 
-titleSuffix: Azure DevOps Services
-description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
+title: Learn about Agile tools, backlogs, Kanban boards that Azure Boards supports
+titleSuffix: Azure Boards
+description: Plan and track issues, bugs, user stories, and other work; collaborate on software development with customizable Agile tools. 
+ms.custom: seodec18
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
+ms.technology: devops-agile
 ms.assetid:  
 ms.manager: douge 
 ms.author: kaelli 
@@ -235,6 +236,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Settings</h3>
                                                             <p>Configure resources for Azure Boards.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/organizations/security/permissions-access-work-tracking">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security management icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Settings</h3>
+                                                            <p>Default permissions and access for Azure Boards.</p>
                                                         </div>
                                                     </div>
                                                 </div>

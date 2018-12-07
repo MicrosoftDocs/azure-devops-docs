@@ -1,9 +1,10 @@
 ---
-title: Define and plan sprints and work with scrum tools
+title: Learn how to define and plan sprints/iterations and use Scrum tools
 titleSuffix: Azure Boards 
-description: Define sprints, update your taskboard, and implement scrum in Azure Boards, Azure DevOps, & Team Foundation Server  
-ms.technology: devops-agile
+description: Define sprints, update your taskboard, and implement Scrum in Azure Boards, Azure DevOps, & Team Foundation Server  
+ms.custom: seodec18
 ms.prod: devops
+ms.technology: devops-agile
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli

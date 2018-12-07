@@ -1,6 +1,5 @@
 ---
 title: Cloud-based Web Performance Test task
-titleSuffix: Azure Pipelines & TFS
 description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
