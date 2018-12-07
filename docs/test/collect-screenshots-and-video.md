@@ -1,5 +1,5 @@
 ---
-title: Collect screenshots, video, logs, and attachments in continuous tests
+title: Collect screenshots, video, logs, and attachments
 description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Azure DevOps and TFS 
 ms.assetid: 234848A2-BDED-4DD5-8D15-AD56F6B49AD5
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

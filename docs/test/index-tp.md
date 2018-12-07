@@ -1,6 +1,5 @@
 ---
 title: Azure Test Plans Documentation 
-titleSuffix: Azure DevOps Services
 description: Test your software using manual, exploratory, cloud, and load testing tools to improve your overall code quality. 
 ms.custom: seodec18
 layout: HubPage 

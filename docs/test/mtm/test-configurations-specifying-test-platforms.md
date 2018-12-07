@@ -1,5 +1,5 @@
 ---
-title: Test configurations, specifying test platforms
+title: Use configurations and specify test platforms
 description: Manual and exploratory testing - Test configurations, specifying test platforms when you want to test web applications
 ms.assetid: 40d4a0f6-5978-404d-9627-fa81e950d718
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: FAQs and problem solutions for manual testing   
+title: FAQs and problem solutions   
 description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops

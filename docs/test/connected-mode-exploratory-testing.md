@@ -1,5 +1,5 @@
 ---
-title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
+title: Exploratory testing in connected mode
 description: Manual and exploratory testing - exploratory testing by using the Test & Feedback extension in Connected mode
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

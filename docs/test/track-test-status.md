@@ -1,5 +1,5 @@
 ---
-title: Track test status - manual testing in Azure DevOps
+title: Track test status
 description: Track test status with charts and graphs using Azure DevOps
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
