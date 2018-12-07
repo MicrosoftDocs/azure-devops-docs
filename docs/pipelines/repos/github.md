@@ -1,7 +1,6 @@
 ---
 title: Build GitHub repositories
-titleSuffix: Azure Pipelines & TFS
-description: Using a GitHub repository with Azure Pipelines or Team Foundation Server (TFS)
+description: Using a GitHub repository with Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +8,8 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: douge
 ms.author: dastahel
 author: davidstaheli
-ms.date: 11/16/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
