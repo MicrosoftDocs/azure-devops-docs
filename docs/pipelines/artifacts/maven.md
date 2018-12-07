@@ -1,7 +1,5 @@
 ---
 title: Use Maven artifact feeds
-titleSuffix: Azure Artifacts
-ms.custom: seodec18
 description: Learn about how you can use Maven artifacts with Azure Artifacts or Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -11,6 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
