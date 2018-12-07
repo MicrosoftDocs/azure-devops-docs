@@ -1,5 +1,7 @@
 ---
-title: Change the number of paid users for an Azure DevOps extension
+title: Change the number of paid users for an extension
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Increase or decrease the number of paid users for a feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/26/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2013'
 ---
 
