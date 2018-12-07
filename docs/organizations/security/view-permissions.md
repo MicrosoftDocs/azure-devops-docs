@@ -134,9 +134,9 @@ Permissions are set at the collection, project, and object level as described in
 
 ---
 
-## View collection-level permissions 
+## View organization or collection-level permissions 
 
-Open admin settings for the organization or a collection. 
+Open admin settings for the organization or a project collection. 
 
 # [New navigation](#tab/new-nav)
 
