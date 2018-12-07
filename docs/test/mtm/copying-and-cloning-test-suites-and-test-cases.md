@@ -1,5 +1,5 @@
 ---
-title: Copying and cloning test suites and test cases
+title: Copy and clone test suites and cases
 description: Manual and exploratory testing - Copying and cloning test suites and test cases when you want to test web applications
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
