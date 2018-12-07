@@ -1,5 +1,5 @@
 ---
-title: Change the number of paid users in your organization
+title: Change the number of paid users for your organization - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Increase or decrease the number of paid users for your organization as your team grows or contracts

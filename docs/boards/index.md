@@ -242,6 +242,25 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="/azure/devops/organizations/security/permissions-access-work-tracking">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security management icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Settings</h3>
+                                                            <p>Default permissions and access for Azure Boards.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Additional resources</h2>

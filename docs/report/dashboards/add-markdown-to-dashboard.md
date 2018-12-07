@@ -31,7 +31,7 @@ Here's an example:
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
@@ -47,7 +47,7 @@ To add the markdown widget to a dashboard, you connect to your project using a [
 
 # [New navigation](#tab/new-nav)
 ::: moniker range=">= azdevserver-2019"  
-Open a web browser window and choose **Overview>Dashboards**. 
+Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
@@ -65,7 +65,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
 
-Open a web browser window and choose **Dashboards**. 
+Open a web browser, connect to your project, and  choose **Dashboards**. 
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
@@ -80,7 +80,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ---
 
 ## Add the markdown widget to a dashboard  
-If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).  
+If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboards.md).  
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
