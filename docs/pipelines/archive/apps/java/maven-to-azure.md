@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy your Java application to an Azure Web App
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build and Deploy your Java application to an Azure Web App
 ms.topic: conceptual
 ms.prod: devops

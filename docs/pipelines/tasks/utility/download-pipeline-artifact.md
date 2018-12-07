@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: hdixon
+ms.custom: seodec18
 ms.author: midenn
 ms.date: 12/07/2018
 monikerRange: 'vsts'

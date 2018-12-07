@@ -1,6 +1,6 @@
 ---
 title: YAML schema
-titleSuffix: Azure Pipelines
+ms.custom: seodec18
 description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd

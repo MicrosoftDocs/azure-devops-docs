@@ -1,6 +1,6 @@
 ---
 title: Version selector for Microsoft Release Management
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Version selector for Microsoft Release Management for Visual Studio, Azure Pipelines, and Team Foundation Server
 ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
 title: Configure for UI testing
+ms.custom: seodec18
 description: Continuous testing. Things to consider when running UI tests and FAQ. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.prod: devops

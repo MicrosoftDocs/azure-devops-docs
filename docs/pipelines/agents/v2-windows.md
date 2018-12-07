@@ -1,6 +1,6 @@
 ---
 title: Deploy a build and release agent on Windows
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.prod: devops

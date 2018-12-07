@@ -5,6 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
+ms.custom: seodec18
 ms.author: brcrista
 ms.reviewer: dastahel
 ms.date: 12/07/2018

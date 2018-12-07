@@ -1,6 +1,6 @@
 ---
 title: Build pipeline history
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about how you can determine what changed, when it happened, and who did it on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
