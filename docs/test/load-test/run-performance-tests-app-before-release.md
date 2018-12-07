@@ -1,5 +1,5 @@
 ---
-title: Load test your app before release
+title: Load test before release
 description: Run load tests on your app before release with Azure DevOps, Cloud-based Load Testing, and Visual Studio
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 

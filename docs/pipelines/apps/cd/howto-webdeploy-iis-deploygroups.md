@@ -1,15 +1,15 @@
 ---
-title: Use IIS Deployment Groups for rolling deployments and databases
-titleSuffix: Azure Pipelines & TFS
-description: Next steps for deploying an app to IIS servers using Deployment Groups in Azure Pipelines or Team Foundation Server (TFS)
+title: Deploy apps and databases with Deployment Groups
+description: Deploy an app to IIS servers using Deployment Groups in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

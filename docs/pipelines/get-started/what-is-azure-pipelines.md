@@ -1,6 +1,6 @@
 ---
 title: What is Azure Pipelines?
-titleSuffix: Azure DevOps Services
+ms.custom: seodec18
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd

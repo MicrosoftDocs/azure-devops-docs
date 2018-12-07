@@ -1,5 +1,5 @@
 ---
-title: Plan manual tests with Microsoft Test Manager
+title: Plan manual tests with MTM
 description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager when you want to test web applications
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

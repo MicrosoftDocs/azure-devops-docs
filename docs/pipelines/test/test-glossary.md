@@ -1,6 +1,6 @@
 ---
-title: Test glossary
-titleSuffix: Azure Pipelines & TFS
+title: Glossary of testing terms
+ms.custom: seodec18
 description: Frequently used terms in test report and test analytics
 ms.assetid: 7C6E8651-FD90-40EB-8E0F-1AE48360B5DB
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: vinojos
 author: vinojos
-ms.date: 08/29/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

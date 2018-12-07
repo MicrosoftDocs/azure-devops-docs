@@ -1,8 +1,8 @@
 ---
-title: Queries index 
+title: Learn how to find, list, and filter work items using queries
 titleSuffix: Azure Boards
-description: Find and list work items, create flat-based query charts in Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.custom: boards-queries   
+description: Find and list work items, create flat-based query charts in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: "boards-queries, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

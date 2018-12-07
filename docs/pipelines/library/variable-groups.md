@@ -1,6 +1,6 @@
 ---
 title: Variable groups for Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand variable groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: devops

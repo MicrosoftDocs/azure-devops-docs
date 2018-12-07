@@ -1,8 +1,8 @@
 ---
-title: View & add work items from the Work Items page
+title: View, filter, & add user stories, issues, and bugs from the Work Items hub
 titleSuffix: Azure Boards
-description: Use the Work Items page to view and add work items that support 7 personalized pivot views   
-ms.custom: boards-work-items
+description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views   
+ms.custom: "boards-work-items, seodec18"  
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer

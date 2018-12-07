@@ -1,15 +1,15 @@
 ---
 title: Delay task
-titleSuffix: Azure Pipelines & TFS
 description: Pause execution of a build or release pipeline for a fixed delay time 
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 

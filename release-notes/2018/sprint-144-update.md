@@ -185,7 +185,7 @@ Now, you can host all of your NuGet, npm, Maven, Python, and Universal packages 
 
 ### Service health portal
 
-We addeded a new Azure DevOps Service Status Portal that will provide a better experience for following the health of our services. If you experience a problem with any of our services, you can check the service health [here](https://status.dev.azure.com/).
+We added a new Azure DevOps Service Status Portal that will provide a better experience for following the health of our services. If you experience a problem with any of our services, you can check the service health [here](https://status.dev.azure.com/).
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/144_07.png)

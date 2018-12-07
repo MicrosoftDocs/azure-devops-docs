@@ -1,7 +1,6 @@
 ---
-title: Pipeline options for Git repositories
-titleSuffix: Azure Pipelines & TFS
-description: Options that are available when using a Git repository with Azure Pipelines or Team Foundation Server (TFS)
+title: Options for Git repositories
+description: Options that are available when using a Git repository with Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +8,8 @@ ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/08/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Get started with Azure Pipelines 
-titleSuffix: Azure DevOps Services & TFS
+ms.custom: seodec18
 description: Sign up and get started with Azure Pipelines 
 ms.prod: devops
 ms.technology: devops-new-user

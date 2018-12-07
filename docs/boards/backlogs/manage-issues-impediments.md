@@ -1,9 +1,8 @@
 ---
-title: Manage issues or impediments 
+title: Add and manage issues or impediments 
 titleSuffix: Azure Boards 
-ms.global_help.title: Manage issues or impediments 
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 6
-description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards and Team Foundation 
+description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
+ms.custom: "boards-backlogs, seodec18"   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A

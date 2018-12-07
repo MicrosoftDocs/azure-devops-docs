@@ -1,14 +1,14 @@
 ---
 title: Chef task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy to Chef environments by editing environment attributes
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B719DB6C-40A2-4F43-9AFF-827825BAECAE
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

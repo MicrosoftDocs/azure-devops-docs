@@ -1,6 +1,6 @@
 ---
 title: Publish packages to PyPI
-titleSuffix: Azure Pipelines
+ms.custom: seodec18
 description: Publish Python packages to PyPI or Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
 ms.prod: devops

@@ -1,6 +1,5 @@
 ---
-title: Azure Web App deployment
-titleSuffix: Azure Pipelines & TFS
+title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
@@ -8,13 +7,14 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 manager: douge
 ms.assetid:
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Web App deployment
+# Deploy an Azure Web App
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

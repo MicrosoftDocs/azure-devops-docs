@@ -1,7 +1,8 @@
 ---
-title: Drive Git or TFVC development from a work item
+title: Create a Git branch or initiate Git commits or pull requests from a user story, issue, or bug
 titleSuffix: Azure Boards 
-description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  

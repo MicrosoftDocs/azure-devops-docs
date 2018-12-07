@@ -1,20 +1,20 @@
 ---
-title: Building and testing Go projects with Azure Pipelines or TFS
-titleSuffix: Azure Pipelines & TFS
+title: Build and test Go projects 
 description: Build and test Go projects using Azure Pipelines or TFS
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
-ms.topic: quickstart
 monikerRange: '> tfs-2018'
 ---
 
-# Build Go projects with Azure Pipelines
+# Build and test Go projects with Azure Pipelines
 
 **Azure Pipelines**
 

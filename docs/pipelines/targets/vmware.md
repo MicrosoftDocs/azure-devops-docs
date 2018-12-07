@@ -1,19 +1,19 @@
 ---
-title: VMware deployment
-titleSuffix: Azure Pipelines & TFS
+title: Deploy to VMware
 description: Provision and manage virtual machines (VMs) in VMware vCenter Server
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# VMware deployment
+# Deploy to VMware vCenter Server
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

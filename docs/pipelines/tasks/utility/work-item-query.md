@@ -1,15 +1,15 @@
 ---
 title: Query Work Items task 
-titleSuffix: Azure Pipelines & TFS
 description: Ensure the number of matching items returned by a work item query is within the configured threshold
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

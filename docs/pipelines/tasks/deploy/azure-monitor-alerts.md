@@ -1,14 +1,14 @@
 ---
 title: Azure Monitor Alerts task
-titleSuffix: Azure Pipelines & TFS
 description: Configure alerts on available metrics for an Azure resource
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1d876d40-9aa7-11e7-905d-f541cc882994
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

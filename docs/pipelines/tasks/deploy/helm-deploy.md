@@ -1,14 +1,14 @@
 ---
 title: Package and Deploy Helm Charts task
-titleSuffix: Azure Pipelines & TFS
 description: Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
