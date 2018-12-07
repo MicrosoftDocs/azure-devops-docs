@@ -1,7 +1,8 @@
 ---
-title: Follow work or pull requests
-titleSuffix: Azure Boards and TFS
-description: Track updates made to a work item or pull request by following it when using Azure Boards or Team Foundation Server 
+title: Track updates by following a user story, bug, or other work item or pull request
+titleSuffix: Azure Boards & Azure Repos
+description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
+ms.custom: seodec18
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
@@ -13,10 +14,10 @@ monikerRange: '>= tfs-2017'
 ms.date: 11/19/2018
 --- 
 
-# Follow a work item or pull request  
+# Follow a user story, bug, issue, or other work item or pull request  
 
+**Azure Boards | Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)] 
 
 <a id="follow"></a>  
 

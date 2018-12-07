@@ -1,7 +1,6 @@
 ---
-title: Building Ruby projects with Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
-description: CI and CD for Ruby projects.
+title: Build and test Ruby apps
+description: Build and test Ruby apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -9,11 +8,12 @@ ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Build Ruby projects with Azure Pipelines
+# Build and test Ruby apps in Azure Pipelines
 
 **Azure Pipelines**
 

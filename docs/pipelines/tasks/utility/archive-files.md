@@ -1,6 +1,5 @@
 ---
 title: Archive Files task
-titleSuffix: Azure Pipelines & TFS
 description: Use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS)  
 ms.topic: reference
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/30/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

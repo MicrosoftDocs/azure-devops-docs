@@ -1,5 +1,5 @@
 ---
-title: Exploratory testing with the Test &amp; Feedback extension in Standalone mode
+title: Exploratory test in standalone mode
 description: Manual and exploratory testing - exploratory testing by using the Microsoft Test & Feedback extension in Standalone mode
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,7 +1,6 @@
 ---
-title: Building Python apps with Azure Pipelines or TFS
-titleSuffix: Azure Pipelines & TFS
-description: CI and CD for Python projects.
+title: Build and test Python apps
+description: Build and test Python apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -9,11 +8,12 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Build Python apps with Azure Pipelines
+# Build Python apps in Azure Pipelines
 
 **Azure Pipelines**
 

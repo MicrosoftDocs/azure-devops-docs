@@ -1,6 +1,5 @@
 ---
 title: Use Ruby Version task
-titleSuffix: Azure Pipelines & TFS
 description: Select a version of Ruby to run on an agent and optionally add it to PATH
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +7,7 @@ ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
 ms.manager: madhurig
 ms.author: dastahel
 ms.reviewer: lukillgo
-ms.date: 05/03/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

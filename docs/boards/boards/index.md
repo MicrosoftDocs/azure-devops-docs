@@ -1,7 +1,8 @@
 ---
-title: Use Kanban boards to add & update work items
+title: Learn how to use Kanban boards to add & update issues, user stories, bugs, features, and epics
 titleSuffix: Azure Boards
-description: Work with Kanban boards in Azure Boards, Azure DevOps, & Team Foundation Server   
+description: Use Kanban boards to add & update issues, user stories, bugs, features, and epics in Azure Boards, Azure DevOps, & Team Foundation Server  
+ms.custom: seodec18 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

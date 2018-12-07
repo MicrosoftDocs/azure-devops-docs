@@ -9,7 +9,7 @@ ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/05/2018
+ms.date: 11/28/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -91,6 +91,29 @@ Consider cloning the pipeline and testing the cloned pipeline with the new major
 
 Each task offers you some **Control Options**.
 
+# [YAML](#tab/yaml)
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number  # how long to wait before timing out the task
+```
+
+> [!NOTE]
+> For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
+
+
+### Conditions
+
+[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+
+# [Designer](#tab/designer)
+
 ### Enabled
 
 Clear this check box to disable a task. This is useful
@@ -129,6 +152,8 @@ Select this option if you want subsequent tasks in the same job to run even if t
 #### Always run
 
 Select this check box if you want the task to run even if the build or deployment is failing.
+
+---
 
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
