@@ -1,7 +1,6 @@
 ---
 title: Start using Build and Release
 titleSuffix: TFS
-ms.custom: seodec18
 description: Build and deploy your app using Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
