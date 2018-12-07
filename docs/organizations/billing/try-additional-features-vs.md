@@ -1,6 +1,8 @@
 ---
-title: Start free trials for paid Azure DevOps features and extensions
-description: How to get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers
+title: Start free trials for paid features and extensions
+description: Get free trials for Test Manager, Azure Artifacts, and for extensions offered by other publishers
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
@@ -8,11 +10,11 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Start free trials for paid features and extensions in Azure DevOps
+# Quickstart: Start free trials for paid features and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

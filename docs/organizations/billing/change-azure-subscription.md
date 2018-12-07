@@ -1,6 +1,8 @@
 ---
-title: Change the Azure subscription that your organization uses for billing in Azure DevOps
-description: Steps for how to unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
+title: Change the Azure subscription used for billing for organization
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
