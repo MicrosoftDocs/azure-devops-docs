@@ -1,6 +1,6 @@
 ---
 title: Approvals and gates overview in Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops

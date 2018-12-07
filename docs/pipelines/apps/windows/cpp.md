@@ -1,6 +1,6 @@
 ---
 title: C++
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build your C++ app using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd

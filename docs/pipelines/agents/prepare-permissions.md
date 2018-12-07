@@ -1,6 +1,6 @@
 ---
 title: Prepare permissions
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Prepare permissions
 ms.topic: conceptual
 ms.prod: devops

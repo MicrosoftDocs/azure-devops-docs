@@ -1,6 +1,6 @@
 ---
 title: Azure Government Cloud deployment
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand Azure Government Cloud deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: devops

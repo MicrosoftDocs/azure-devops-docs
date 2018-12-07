@@ -1,6 +1,6 @@
 ---
 title: Pipeline variables
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Pipeline variables are name-value pairs defined by you or provided by Azure Pipelines or TFS. You can use variables as inputs and in your scripts.
 ms.topic: reference
 ms.prod: devops
