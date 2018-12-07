@@ -1,6 +1,6 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops

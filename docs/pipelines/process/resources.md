@@ -1,6 +1,6 @@
 ---
 title: Resources
-titleSuffix: Azure Pipelines
+ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
 ms.prod: devops

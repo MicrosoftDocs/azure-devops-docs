@@ -1,6 +1,6 @@
 ---
 title: Migrate from XAML builds
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: How to migrate from XAML builds to new builds in your Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops

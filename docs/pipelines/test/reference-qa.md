@@ -1,7 +1,8 @@
 ---
 title: FAQs for continuous testing 
 description: FAQs for continuous testing topics for Azure Pipelines and Team Foundation Server (TFS).
-ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
+ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677
+ms.custom: seodec18 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference

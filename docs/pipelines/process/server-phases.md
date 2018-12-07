@@ -1,6 +1,6 @@
 ---
 title: Server jobs in Azure pipelinjes Build and Release
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Understand server jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 093FD7B8-65F4-40E0-A429-A7944FD2ED9B
 ms.prod: devops

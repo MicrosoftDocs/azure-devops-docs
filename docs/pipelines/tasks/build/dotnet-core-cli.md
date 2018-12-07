@@ -1,6 +1,6 @@
 ---
 title: .NET Core CLI task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
 ms.prod: devops

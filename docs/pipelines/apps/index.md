@@ -1,6 +1,6 @@
 ---
 title: Build and deploy your app - examples
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build and deploy your app examples with Azure Pipelines and Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
