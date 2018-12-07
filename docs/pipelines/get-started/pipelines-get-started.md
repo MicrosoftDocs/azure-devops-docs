@@ -1,6 +1,6 @@
 ---
 title: Use Azure Pipelines
-titleSuffix: Azure DevOps Services
+ms.custom: seodec18
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
 ms.prod: devops
 ms.technology: devops-cicd

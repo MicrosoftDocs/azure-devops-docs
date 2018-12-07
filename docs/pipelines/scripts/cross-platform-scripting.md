@@ -1,6 +1,6 @@
 ---
 title: Cross-platform scripting
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.prod: devops

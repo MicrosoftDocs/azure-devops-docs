@@ -1,6 +1,6 @@
 ---
 title: New release landing page on Azure Pipelines
-titleSuffix: Azure Pipelines
+ms.custom: seodec18
 description: A preview of a new user experience for release landing page on Azure Pipelines
 ms.assetid: D44A450A-CD4F-42EB-B11C-95D5BE6DBBE4
 ms.prod: devops

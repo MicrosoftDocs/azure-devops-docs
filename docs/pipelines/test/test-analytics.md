@@ -1,5 +1,6 @@
 ---
 title: Analyze test results
+ms.custom: seodec18
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops

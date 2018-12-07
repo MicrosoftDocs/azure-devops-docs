@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure index to content
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
