@@ -1,6 +1,5 @@
 ---
 title: Use Python Version task
-titleSuffix: Azure Pipelines & TFS
 description: Select a version of Python to run on an agent and optionally add it to PATH
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +7,7 @@ ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
 ms.author: brcrista
 ms.reviewer: dastahel
-ms.date: 4/2/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

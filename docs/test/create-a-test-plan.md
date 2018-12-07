@@ -1,5 +1,5 @@
 ---
-title: Create a test plan - manual testing in Azure DevOps TestTools
+title: Create a test plan
 description: Test tools - Create test plans in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

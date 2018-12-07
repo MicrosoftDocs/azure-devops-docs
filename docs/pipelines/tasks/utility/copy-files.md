@@ -1,6 +1,5 @@
 ---
 title: Copy Files task
-titleSuffix: Azure Pipelines & TFS
 description: Copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -9,7 +8,7 @@ ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

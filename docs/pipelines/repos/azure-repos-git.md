@@ -1,7 +1,6 @@
 ---
-title: Build Azure Repos Git or TFS Git repositories
-titleSuffix: Azure Pipelines & TFS
-description: Using an Azure Repos Git repository with Azure Pipelines or Team Foundation Server (TFS)
+title: Build Azure Repos Git repositories
+description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +8,8 @@ ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015'
 ---
 

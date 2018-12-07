@@ -1,6 +1,5 @@
 ---
 title: Azure PowerShell task
-titleSuffix: Azure Pipelines & TFS
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
 ms.prod: devops
@@ -8,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 72A1931B-EFFB-4D2E-8FD8-F8472A07CB62
 ms.manager: dastahel
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

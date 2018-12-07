@@ -1,6 +1,5 @@
 ---
-title: GitHub Release
-titleSuffix: Azure Pipelines & TFS
+title: GitHub Release task
 description: Create, edit, or discard a GitHub release.
 ms.topic: reference
 ms.prod: devops
@@ -9,11 +8,11 @@ ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 11/26/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# GitHub Release
+# GitHub Release task
 
 **Azure Pipelines**
 

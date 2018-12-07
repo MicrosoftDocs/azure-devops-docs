@@ -1,7 +1,8 @@
 ---
-title: Plan and track work with work items
+title: Understand how work items are used to track user stories, issues, bugs, features, and epics 
 titleSuffix: Azure Boards and TFS
-description: Use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Team Foundation Server
+description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -13,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
 --- 
 
-# About work items 
+# Understand how work items are used to track user stories, issues, bugs, features, and epics 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
