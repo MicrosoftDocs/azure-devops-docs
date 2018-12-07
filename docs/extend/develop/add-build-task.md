@@ -65,7 +65,7 @@ There are four steps to creating a build or release task extension and putting i
 
 ### Create task scaffolding
 
-The first step is to create the folder structure for the task and intall the required libraries and dependencies.
+The first step is to create the folder structure for the task and install the required libraries and dependencies.
 
 #### Create a directory and package.json file
 
