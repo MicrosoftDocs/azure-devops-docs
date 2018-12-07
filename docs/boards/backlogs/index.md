@@ -1,7 +1,8 @@
 ---
-title: Backlogs index to content
+title: Learn how to create, organize, and filter your backlog of user stories, features, and epics 
 titleSuffix: Azure Boards
-description: Index to topics for planning and tracking work in Azure Boards, Azure DevOps, & Team Foundation Server   
+description: Plan and track user stories, features, and epics using product and portfolio backlogs in Azure Boards & Azure DevOps
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7

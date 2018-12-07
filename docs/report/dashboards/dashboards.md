@@ -1,8 +1,8 @@
 ---
-title: Add and manage team dashboards
+title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps Services and TFS  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
-ms.custom: dashboards
+ms.custom: "dashboards, seodec18" 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -14,7 +14,8 @@ monikerRange: '>= tfs-2015'
 ms.date: 11/01/2018
 ---
 
-# Add, rename, and delete dashboards
+# Add, rename, and delete team dashboards in Azure DevOps
+
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 

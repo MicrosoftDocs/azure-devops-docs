@@ -1,7 +1,8 @@
 ---
-title: Add work items
+title: Add, update, and follow user stories, issues, bugs, and other work items  
 titleSuffix: Azure Boards 
-description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Team Foundation Server  
+description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  

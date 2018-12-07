@@ -1,7 +1,8 @@
 ---
-title: Best tools for adding, updating, and linking work items 
-titleSuffix: Azure Boards and TFS
-description: Best tool to use to add or update one or more work items in Azure Boards & Team Foundation Server
+title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
+titleSuffix: Azure Boards
+description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS
+ms.custom: seodec18
 ms.custom: boards-work-items
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
 ---
 
-# Best tools for adding, updating, and linking work items 
+# Best tool to add, update, and link work items 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 

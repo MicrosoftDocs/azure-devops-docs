@@ -1,8 +1,9 @@
 ---
-title: Integrate GitHub with Azure Boards
+title: Learn how to connect/integrate GitHub with Azure Boards
 titleSuffix: Azure Boards
-description: Manage code in GitHub and work in Azure Boards
+description: Manage code in GitHub and track issues and link to GitHub commits and pull requests in Azure Boards
 ms.custom: boards-get-started 
+ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: overview
