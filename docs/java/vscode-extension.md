@@ -102,7 +102,7 @@ When you run the `team signin` command, the credentials that you provide will be
  - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
 ## Next steps
-Check out the [README.md in the GitHub repository](https://github.com/Microsoft/Azure DevOps Services-vscode/blob/master/README.md) for more details on the extension.
+Check out the [README.md in the GitHub repository](https://github.com/Microsoft/vsts-vscode/blob/master/README.md) for more details on the extension.
 
 ## Frequently asked questions (FAQ)
 
@@ -113,4 +113,4 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.
 
 **Q: Where can I find the source code for the extension?**
-**A:** The code is open source on GitHub at [Microsoft/Azure DevOps Services-vscode](https://github.com/Microsoft/Azure DevOps Services-vscode). We welcome feedback and contributions!
+**A:** The code is open source on GitHub at [Microsoft/vsts-vscode](https://github.com/Microsoft/vsts-vscode). We welcome feedback and contributions!

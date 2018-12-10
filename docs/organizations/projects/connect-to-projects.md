@@ -9,11 +9,11 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 11/14/2018 
+ms.date: 12/10/2018 
 monikerRange: '>= tfs-2013'
 ---
 
-# Connect to a project in Azure DevOps Services or TFS
+# Connect to a project in Azure DevOps or TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
