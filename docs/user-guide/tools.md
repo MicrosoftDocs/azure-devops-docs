@@ -1,6 +1,6 @@
 ---
-title: Tools and clients that connect to Azure DevOps Services and TFS
-titleSuffix: Azure DevOps Services and TFS
+title: Tools and clients that connect - Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps Services and Team Foundation Server  
 ms.technology: devops-new-user 

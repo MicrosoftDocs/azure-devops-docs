@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot connecting project
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-security
@@ -10,11 +10,11 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Troubleshoot connecting to a project in Azure DevOps Services or TFS
+# Troubleshoot connecting to a project
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ## Troubleshoot connectivity
 
-As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
+As a first step in resolving connectivity issues with Azure DevOps Services or TFS, complete the following steps:
 
 1. Sign out of your browser. To do this, select the [Visual Studio sign out](http://aka.ms/VsSignout) link.
 
@@ -32,11 +32,11 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 4. Close all browsers and close the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection to Azure DevOps. If the issue is with the Visual Studio IDE, remove the connection to Azure DevOps, and then readd it.
+5. Use a private browser session to retry the connection. If the issue is with the Visual Studio IDE, remove the connection, and then re-add it.
 
-## Troubleshoot signing in to Azure DevOps
+## Troubleshoot signing in
 
-Two types of identities can sign in to Azure DevOps: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
+Two types of identities can sign in: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
 
 > 401 - Not Authorized
 
@@ -107,7 +107,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ::: moniker range="vsts"
 
-## Switch organizations in Azure DevOps
+## Switch organizations
 
 When you use two or more organizations that are linked to Azure AD, such as organizations that are created in the Azure portal, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
