@@ -1,5 +1,6 @@
 ---
-title: Understand differences between Azure DevOps Services and Server   
+
+title: Understand differences between Azure DevOps Services and Azure DevOps Server   
 titleSuffix: Azure DevOps
 ms.custom: seodec18   
 description: Understand the fundamental differences between Azure DevOps Services and Team Foundation Server (TFS)

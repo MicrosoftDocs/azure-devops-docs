@@ -1,7 +1,8 @@
 ---
 title: About projects and scaling your organization
-titleSuffix: Azure DevOps Services & TFS  
-description: Understand project management for Azure DevOps Services & Team Foundation Server  
+titleSuffix: Azure DevOps
+ms.custom: seodec18  
+description: Understand project management and how you can track progress and collaborate on building software solutions.
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
@@ -10,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 ---
 
 # About projects and scaling your organization

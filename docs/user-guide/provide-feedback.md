@@ -1,6 +1,6 @@
 ---
 title: Get support and provide feedback
-titleSuffix: Azure DevOps Services and TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Guide to providing product and content feedback as well as accessing support resources in Azure DevOps Services and Team Foundation Server  
 ms.technology: devops-new-user

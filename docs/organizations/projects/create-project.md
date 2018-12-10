@@ -1,6 +1,8 @@
 ---
-title: Create a project in Azure DevOps or Team Foundation Server (TFS)
-description: Learn how to create a project in Azure DevOps or on-premises Team Foundation Server (TFS)
+title: Create a project
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Create a project where developers and teams can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -9,10 +11,10 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 ---
 
-# Create a project in Azure DevOps
+# Create a project in Azure DevOps and TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 

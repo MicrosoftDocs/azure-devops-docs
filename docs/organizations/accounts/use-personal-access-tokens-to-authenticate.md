@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Authenticate access with personal access tokens for Azure DevOps Services and TFS
+# Authenticate access with personal access tokens
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
