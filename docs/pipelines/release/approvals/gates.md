@@ -1,5 +1,5 @@
 ---
-title: Control deployments with gates in Azure Pipelines
+title: Control deployments by using gates
 ms.custom: seodec18
 description: Understand gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
