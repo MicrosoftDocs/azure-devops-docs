@@ -1,5 +1,5 @@
 ---
-title: Control deployments with approvals in Azure Pipelines
+title: Control deployments by using approvals
 ms.custom: seodec18
 description: Understand release approvals in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B

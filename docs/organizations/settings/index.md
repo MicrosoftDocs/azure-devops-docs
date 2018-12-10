@@ -1,6 +1,6 @@
 ---
 title: Configure settings for projects, collections, organizations
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings

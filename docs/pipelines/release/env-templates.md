@@ -1,5 +1,5 @@
 ---
-title: Stage templates in Azure Pipelines
+title: Use stage templates in deployments
 ms.custom: seodec18
 description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4

@@ -1,6 +1,6 @@
 ---
 title: Buy Basic access for users in the Visual Studio Marketplace
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Increase number of users when you need more than the free amount via the Visual Studio Marketplace
 ms.prod: devops

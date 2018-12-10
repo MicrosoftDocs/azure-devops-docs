@@ -1,6 +1,6 @@
 ---
 title: Connect to a project from a web browser or supported client in Azure DevOps
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
@@ -39,9 +39,9 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 
 ## Connect from the web portal
 
-0.  If you're not a member of a security group, ask your project administrator to add you.  
+1.  If you're not a member of a security group, ask your project administrator to add you.  
 
-0.  Open a browser window and type a URL that uses the following form:  
+2.  Open a browser window and type a URL that uses the following form:  
 
 	::: moniker range="vsts"
 	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>

@@ -1,7 +1,8 @@
 ---
-title: Delete or remove a project in Azure DevOps
-titleSuffix: Azure DevOps & TFS
-description: Learn how to delete or remove a project from Azure DevOps Services or from Team Foundation Server (TFS)
+title: Delete, remove project
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Delete or remove a project from Azure DevOps or Team Foundation Server
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
@@ -10,10 +11,10 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 ---
 
-# Delete a project in Azure DevOps
+# Delete a project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -29,7 +30,7 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 > Deleting a project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save project data](save-project-data.md) that you might want to access later.
 
 ::: moniker range=">= tfs-2017"
-0. Open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to delete and choose **Delete**.
+1. Open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to delete and choose **Delete**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Delete menu option](_img/delete-project/choose-delete-menu-option.png)

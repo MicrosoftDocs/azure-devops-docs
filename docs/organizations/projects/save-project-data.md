@@ -1,7 +1,8 @@
 ---
-title: Save project data in Azure DevOps and TFS
-titleSuffix: Azure DevOps & TFS
-description: Save project data, like source code, custom build templates, build data, and work items, for Azure DevOps Services
+title: Save project data - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Save project data, like source code, custom build templates, build data, and work items.
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops
 ms.technology: devops-accounts
@@ -9,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2013'
 ---
 

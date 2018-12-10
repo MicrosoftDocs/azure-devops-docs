@@ -1,5 +1,5 @@
 ---
-title: Deployment groups in Azure Pipelines
+title: Use deployment groups in a release pipeline
 ms.custom: seodec18
 description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707

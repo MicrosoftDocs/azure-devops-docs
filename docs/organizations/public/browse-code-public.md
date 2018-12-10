@@ -1,6 +1,6 @@
 ---
-title: Browse repos, files, branches, pushes, commits, & pull requests 
-titleSuffix: Azure DevOps Services Public Project
+title: Browse repos, files, branches, pushes, commits, pull requests 
+titleSuffix: Azure DevOps Services
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: devops-public-projects
 ms.prod: devops

@@ -15,7 +15,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot managing Azure DevOps group-based licensing
+# Troubleshoot managing group-based licensing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
