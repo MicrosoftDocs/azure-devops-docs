@@ -1,8 +1,8 @@
 ---
-title: Add, run, update inline tests - Azure DevOps
-titleSuffix: Azure DevOps
+title: Add, run, update inline tests
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to add, run, and update manual test cases when you're working in Azure DevOps
+description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
@@ -14,11 +14,11 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Add, run, and update inline tests in Azure DevOps
+# Quickstart: Add, run, and update inline tests
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps.
+In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps Services.
 
 For a quick and easy way to start manual testing, add the test to the user story or bug you want to test. Quickly define inline tests, or a set of manual tests, for a backlog item from the Kanban board. In addition to adding tests, you can also run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 

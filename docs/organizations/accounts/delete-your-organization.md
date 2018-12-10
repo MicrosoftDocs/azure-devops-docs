@@ -1,5 +1,5 @@
 ---
-title: Delete, remove an organization - Azure DevOps
+title: Delete, remove an organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Delete your organization in Azure DevOps
+# Delete your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

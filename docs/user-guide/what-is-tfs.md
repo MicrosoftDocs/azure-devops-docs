@@ -1,6 +1,6 @@
 ---
 title: Plan, code, collaborate, and ship code with Team Foundation Server   
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server & TFS
 description: Learn what you get when you install and use the on-premises Team Foundation Server 
 ms.technology: devops-new-user 
 ms.prod: devops

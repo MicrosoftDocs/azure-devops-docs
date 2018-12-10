@@ -1,20 +1,20 @@
 ---
 title: Code with Git - Azure DevOps
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Learn how to share code within a Git repo and new project in Azure DevOps Services and TFS
+description: Learn how to share code within a Git repo and new project
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Code with Git in Azure DevOps
+# Quickstart: Code with Git
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
