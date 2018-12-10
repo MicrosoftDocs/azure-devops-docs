@@ -217,7 +217,7 @@ sections:
       - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:
-          title: Differences between Azure DevOps Services and Azure DevOps Server
+          title: Azure DevOps Services vs. Azure DevOps Server
           alt: Article logo
           src: https://docs.microsoft.com/media/common/i_article.svg
         title: "Feature differences: Azure DevOps Services and Azure DevOps Server"
