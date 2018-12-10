@@ -138,7 +138,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     | Server URL | `http://10.0.0.4:8080`  | Selects JaCoCo as the coverage tool |
     | Source Files Directory | `src/main` | Sets the source files directory for JaCoCo |
 
-    ![Maven task settings](../_img/builddocker/Azure DevOps Services-maven.png)
+    ![Maven task settings](../_img/builddocker/vsts-maven.png)
 
 1. Click on the "Copy Files" task. Set the Contents property to:
 
@@ -148,7 +148,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     *.release.*
     ```
 
-    ![Copy Files task settings](../_img/builddocker/Azure DevOps Services-copyfiles.png)
+    ![Copy Files task settings](../_img/builddocker/vsts-copyfiles.png)
 
     The Publish Build Artifacts task publishes everything in the artifact staging directory. The Copy Files task copies the following artifacts into this directory so that they are available for Release (which you will create in a later lab):
 
