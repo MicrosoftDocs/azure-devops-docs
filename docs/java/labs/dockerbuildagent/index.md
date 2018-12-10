@@ -73,7 +73,7 @@ In this task you will start an Azure DevOps Services build agent container using
 
     ```dockerfile
     # Dockerfile for custom Azure DevOps Services agent image with phantomjd and docker config
-    FROM microsoft/Azure DevOps Services-agent
+    FROM microsoft/vsts-agent
 
     # install phantomjs
     RUN curl -L https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM.tar.bz2 > $PHANTOM.tar.bz2 && \
