@@ -14,7 +14,7 @@ ms.date: 12/06/2017
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot changing the organization owner in Azure DevOps
+# Troubleshoot changing the organization owner
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

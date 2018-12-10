@@ -1,6 +1,6 @@
 ---
 title: Buy continuous integration, continuous deployment, Azure Pipelines
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to pay for more parallel jobs in Azure Pipelines
 ms.prod: devops

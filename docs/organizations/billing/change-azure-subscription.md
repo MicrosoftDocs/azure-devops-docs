@@ -1,6 +1,6 @@
 ---
 title: Change the Azure subscription used for organization billing
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
 ms.prod: devops

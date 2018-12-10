@@ -1,8 +1,8 @@
 ---
 title: Understand key concepts and features
-titleSuffix:  Azure DevOps Services & TFS
+titleSuffix:  Azure DevOps
 ms.custom: seodec18
-description: Before you start to use our products, you'll want to become familiar with how the set of platforms, services, and tools fit together in Azure DevOps Services & TFS  
+description: Before you start to use our products, you'll want to become familiar with how the set of platforms, services, and tools fit together
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5

@@ -1,6 +1,6 @@
 ---
 title: Add a user who can buy extensions
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Add a backup user or other billing manager who can buy via Visual Studio Marketplace extensions
 titleSuffix: Azure DevOps

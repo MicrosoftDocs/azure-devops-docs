@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding and deleting organization users in Azure DevOps
+# Troubleshoot adding and deleting organization users
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
