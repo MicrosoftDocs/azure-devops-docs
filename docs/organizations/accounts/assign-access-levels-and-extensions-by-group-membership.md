@@ -12,7 +12,7 @@ author: chcomley
 ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Add a group rule to assign access levels and extensions to users in Azure DevOps
+# Add a group rule to assign access levels and extensions to users
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

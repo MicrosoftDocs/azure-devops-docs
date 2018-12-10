@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Team Services is now Azure DevOps Services
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Visual Studio Team Services has been rebranded and is now Azure DevOps Services
 ms.prod: devops

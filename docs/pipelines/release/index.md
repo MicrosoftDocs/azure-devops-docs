@@ -1,5 +1,5 @@
 ---
-title: Release pipelines in Azure Pipelines and TFS
+title: Understand release pipelines and release names
 ms.custom: seodec18
 description: DevOps CI CD - Understand release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4

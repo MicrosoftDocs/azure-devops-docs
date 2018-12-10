@@ -1,6 +1,6 @@
 ---
 title: Supported roles for software development
-titleSuffix: Azure DevOps Services and TFS
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand how Azure DevOps Services and Team Foundation Server tools support various software development roles
 ms.technology: devops-new-user 
