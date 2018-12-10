@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Add users to your organization or project in Azure DevOps
+# Add users to your organization or project
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

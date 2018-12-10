@@ -1,5 +1,5 @@
 ---
-title: Plan and track your work in Azure DevOps
+title: Plan and track work - Azure DevOps
 titleSuffix: Azure DevOps
 description: Learn how to add work items from the web portal and view work items that you've created for your new project in Azure DevOps.
 ms.technology: devops-new-user 
@@ -11,10 +11,10 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/10/2018
+ms.date: 12/07/2018
 ---
 
-# Quickstart: Plan and track work in Azure DevOps
+# Quickstart: Plan and track your work
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

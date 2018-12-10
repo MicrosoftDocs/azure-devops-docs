@@ -1,12 +1,12 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Start using Azure DevOps Services
+title: Start using Azure DevOps
 metadata:
   title: New user guide
-  titleSuffix: Azure DevOps Services
+  titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the basics of the Azure DevOps interface and how to perform some common tasks.
-  ms.date: 12/06/2018
+  ms.date: 12/07/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -26,7 +26,7 @@ abstract:
 sections:
 - title:
   items:
-  - html: Note <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps Services</a>. 
+  - html: Note <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps</a>. 
 - title:
   items:
   - html: To access our full content set, choose the <a href=index.md>Azure DevOps and TFS</a> breadcrumb link at the top left of this page.
@@ -175,7 +175,7 @@ sections:
       - href: concepts.md
         html: <p></p>
         image:
-          title: Concepts in the Azure DevOps Services user guide
+          title: Concepts in the Azure DevOps user guide
           alt: Learn about logo
           src: https://docs.microsoft.com/media/common/i_learn-about.svg
         title: Key concepts
@@ -217,7 +217,7 @@ sections:
       - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:
-          title: Differences between Azure DevOps Services and Azure DevOps Server
+          title: Azure DevOps Services vs. Azure DevOps Server
           alt: Article logo
           src: https://docs.microsoft.com/media/common/i_article.svg
         title: "Feature differences: Azure DevOps Services and Azure DevOps Server"

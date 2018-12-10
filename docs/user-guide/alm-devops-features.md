@@ -1,7 +1,7 @@
 ---
 title: Feature overview for Azure DevOps
-titleSuffix: Azure DevOps Services & TFS 
-description: Comprehensive index to all features in Azure DevOps Services & Team Foundation Server 
+titleSuffix: Azure DevOps 
+description: Comprehensive index to all features for Azure DevOps
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart

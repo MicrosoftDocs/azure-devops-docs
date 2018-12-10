@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot changing app access policies for your organization in Azure DevOps
+# Troubleshoot changing app access policies for your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

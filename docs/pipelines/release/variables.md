@@ -1,5 +1,5 @@
 ---
-title: Release variables in Azure Pipelines
+title: Release variables  and debugging
 ms.custom: seodec18
 description: Understand release variables in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3

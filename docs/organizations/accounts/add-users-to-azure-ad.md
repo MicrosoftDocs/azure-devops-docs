@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
 <a name="SetUpCurrentUsers"></a>
 
-# Add organization users in Azure DevOps to your Azure Active Directory
+# Add organization users to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

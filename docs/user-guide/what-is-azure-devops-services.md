@@ -2,14 +2,14 @@
 title: Plan, code, collaborate, ship applications
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: When you sign up to use Azure DevOps you get an integrated set of features to help you plan, code, collaborate, and ship your applications faster
+description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/03/2018
+ms.date: 12/07/2018
 ms.topic: overview
 monikerRange: 'vsts'
 ---

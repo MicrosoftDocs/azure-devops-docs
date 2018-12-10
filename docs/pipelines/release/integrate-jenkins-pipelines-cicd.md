@@ -1,5 +1,5 @@
 ---
-title: Integrate your Jenkins CI builds with Azure Pipelines CD to Azure
+title: Integrate Jenkins CI builds
 ms.custom: seodec18
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
 author: mlearned
