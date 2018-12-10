@@ -1,6 +1,6 @@
 ---
 title: Overview of billing articles
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
 ms.prod: devops

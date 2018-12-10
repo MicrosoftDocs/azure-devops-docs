@@ -1,6 +1,8 @@
 ---
-title: Troubleshooting renaming a project in Azure DevOps
-description: View frequently asked questions (FAQs) about renaming a project
+title: Troubleshooting renaming a project - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: View frequently asked questions (FAQs) about renaming a project, including what else gets renamed.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
@@ -9,11 +11,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Troubleshoot renaming a project in Azure DevOps
+# Troubleshoot renaming a project
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 

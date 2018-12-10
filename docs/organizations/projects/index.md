@@ -1,6 +1,8 @@
 ---
-title: Add and manage projects to support collaboration on software development in Azure DevOps
-description: Index to topics about project management in Azure DevOps
+title: Add and manage projects to support collaboration on software development
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Index to articles about project management.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2013'
 ---
 

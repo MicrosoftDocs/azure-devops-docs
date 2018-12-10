@@ -1,4 +1,4 @@
-- name: Azure DevOps Services user guide
+- name: User guide for Azure DevOps
   href: index.yml
 - name: Overview
   expanded: true
@@ -8,7 +8,9 @@
   - name: Overview of Services
     href: services.md
   - name: Where's VSTS?
-    href: what-happened-vsts.md 
+    href: what-happened-vsts.md
+  - name: Azure DevOps Services vs. Azure DevOps Server
+    href: about-azure-devops-services-tfs.md  
 - name: Quickstarts for users
   items:
   - name: Code with Git
@@ -63,8 +65,6 @@
     href: tools.md  
   - name: Software development roles
     href: roles.md
-  - name: What's the difference? Azure DevOps Services vs. Azure DevOps Server
-    href: about-azure-devops-services-tfs.md  
   - name: Glossary
     href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides
