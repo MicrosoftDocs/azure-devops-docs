@@ -32,9 +32,10 @@ approach:
 * You are not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 
 If you have problems using this simple approach (such as no subscriptions being shown in the drop-down list),
-or if you want to further limit users' permissions, you can do so by using a service principal as shown [here](#use-spn).  
+or if you want to further limit users' permissions, you can do so by using a service principal as shown [here](#use-spn)
+or to a VM using a managed service identity as shown [here](#use-msi).  
 
-## Create an Azure Resource Manager service connection
+## Create an Azure Resource Manager service connection using automated security  
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -97,12 +98,12 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 1. Copy these fields from the output of the PowerShell script into the Azure subscription dialog textboxes:
 
    * Subscription ID
-   * Subscription Name
-   * Service Principal ID
-   * Service Principal Key
+   * Subscription name
+   * Service principal ID
+   * Either the service principal client key or, if you have selected **Certificate**, enter the contents of both the certificate and private key sections of the *.pem file.
    * Tenant ID<p/>
 
-1. Choose **Verify connection** to ensure the information you entered is valid, then choose **OK**.
+1. Choose **Verify connection** to validate the settings you entered.
 
 1. After the new service connection is created:
 
@@ -113,6 +114,54 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
    [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
+
+See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+
+<a name="use-msi"></a>
+
+## Create an Azure Resource Manager service connection to a VM with a managed service identity
+
+You can configure Azure Virtual Machines (VM)-based agents with an
+[Azure Managed Service Identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview)
+in Azure Active Directory (Azure AD). This lets you use its Service Principal
+information to grant the VM access to any Azure resource that supports Azure AD,
+such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+
+1. Select the **Managed Identity Authentication** option.
+
+   ![Opening the managed service identity settings](_img/rm-endpoint-msi.png)
+
+1. Enter a user-friendly **Connection name** to use when referring to this service connection.
+
+1. Select the **Environment** name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
+
+1. Obtain the service principal information for your VM. You can do this by using
+   the [Azure Portal](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-portal),
+   a [PowerShell script](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-powershell),
+   or the [Azure CLI](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-cli).
+
+1. Enter the values for your service principal into these fields of the connection dialog:
+
+   * Subscription ID
+   * Subscription name
+   * Tenant ID<p/>
+
+1. After the new service connection is created:
+
+   * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
+
+1. If required, modify the service principal to expose the appropriate permissions.
+   For example, if your code needs to call Azure Resource Manager, assign the VM's service principal the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
+   For more details, see [How can I use managed identities for Azure resources?](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
