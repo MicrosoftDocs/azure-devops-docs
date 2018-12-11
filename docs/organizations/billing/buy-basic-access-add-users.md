@@ -10,13 +10,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
-monikerRange: 'vsts'
+ms.date: 12/10/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Quickstart: Pay for more Basic users
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
 
@@ -44,7 +44,6 @@ To make subsequent edits to paid quantities in your organization, you need only 
 ## Increase number of paid users
 
 1. Sign in to [**Visual Studio Marketplace**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), go to the **Azure DevOps** tab, and then find and choose **Azure DevOps Services Users**. Select **Get**.
-
 
    ![Go to Visual Studio Marketplace, Azure DevOps tab, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 
@@ -78,12 +77,28 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 # [New navigation](#tab/new-nav)
 
+::: moniker range=">= azdevserver-2019"
+
    ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range="<= tfs-2018 || vsts"
+
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
+::: moniker-end
 
 ---
 

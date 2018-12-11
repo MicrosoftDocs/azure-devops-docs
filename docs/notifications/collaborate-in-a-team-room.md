@@ -9,20 +9,20 @@ ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 02/20/2018
+ms.date: 12/10/2018
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
 
 # Collaborate in a team room  
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [version-tfs-2013-2017](../boards/_shared/version-tfs-2013-2017.md)]
+
+Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.
 
 > [!NOTE]  
 > **Feature availability:** Team Rooms are deprecated for Azure DevOps Services and Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in Azure DevOps Services and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 >
 > Several solutions are available that integrate well with Azure DevOps Services and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](/microsoftteams/platform/).
-
-Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.
 
 ![Team room with messages and links to events](_img/ALM_CT_Teamroom.png)
 

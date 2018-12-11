@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 09/01/2017
+ms.date: 12/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # FAQs on notifications
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 ## Can I receive emails in plain text?
 No. This was supported in earlier versions of Azure DevOps Services and TFS, but all emails are now HTML formatted.
