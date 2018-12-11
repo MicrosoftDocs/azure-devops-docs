@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
-monikerRange: 'vsts'
+ms.date: 12/10/2018
+monikerRange: '>= tfs-2015 <= azdevserver-2019'
 ---
 
 # Billing FAQs
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 In this topic, you'll find answers to frequently asked questions about billing for your organization. You can manage billing in the Azure portal.
 
@@ -135,10 +135,6 @@ A: Yes, you can use the same Azure subscription for billing across multiple orga
 
 A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -149,17 +145,6 @@ A: You can find your [project collection administrator](../security/set-project-
 
    ![Security page, project collection administrators members](_img/security-members-project-collection-administrators.png)
 
-# [Previous navigation](#tab/previous-nav)
-
-1. Go to your organization's security settings.
-
-   ![Open admin settings, security page](../../_shared/_img/settings/open-admin-settings-security-horz.png)
-
-2. Select **Project Collection Administrators** > **Members**.
-
-   <img alt="Go to Project Collection Administrators, Members" src="../../_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
-
----
 
 ### Q: How do I find the organization owner?
 
@@ -168,6 +153,8 @@ A: You can find the current owner in your organization settings.
 [!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -179,8 +166,15 @@ A: You can find the current owner in your organization settings.
 
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 1. Go to your organization settings.
 
@@ -189,6 +183,12 @@ A: You can find the current owner in your organization settings.
 2. Find the current organization owner.
 
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
+::: moniker-end
 
 ---
 

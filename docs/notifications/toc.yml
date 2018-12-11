@@ -16,12 +16,13 @@
   items:
   - name: "Follow work & pull requests"
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
-- name: How-to guides
-  items:
   - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
   - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
+
+- name: How-to guides
+  items:
   - name: Manage organization notifications
     href: howto-manage-organization-notifications.md
   - name: Manage organization default delivery settings
