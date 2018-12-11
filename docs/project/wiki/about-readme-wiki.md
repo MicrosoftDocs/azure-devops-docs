@@ -8,9 +8,10 @@ ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.reviewer: sancha
 ms.topic: overview
-ms.date: 11/19/2018
+ms.date: 12/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
