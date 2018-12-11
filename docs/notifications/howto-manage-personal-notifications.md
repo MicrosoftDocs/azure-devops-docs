@@ -35,15 +35,14 @@ From the web portal, select the icon with your initials or picture, and then sel
 
 [!INCLUDE [new-navigation-7](../_shared/new-navigation-7.md)]
 
-   # [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
    ::: moniker range=">= azdevserver-2019"  
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
    ::: moniker-end
 
+# [Previous navigation](#tab/previous-nav)
 
-
-   # [Previous navigation](#tab/previous-nav)  
    ::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
 ::: moniker-end  
@@ -56,11 +55,14 @@ From the web portal, select the icon with your initials or picture, and then sel
 
 This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the State as **On**.
 
-   # [New navigation](#tab/new-nav)  
+# [New navigation](#tab/new-nav)
+
    ::: moniker range=">= azdevserver-2019"  
    <img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
-   ::: moniker-end  
-   # [Previous navigation](#tab/previous-nav)  
+   ::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
    ::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
    <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
    ::: moniker-end  
