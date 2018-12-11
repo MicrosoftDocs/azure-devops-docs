@@ -11,16 +11,18 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 12/11/2018
 ---
 
 # Syntax guidance for markdown usage
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
+In this article you'll find some basic Markdown syntax guidance as well as specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-You can provide guidance to your team in these places using markdown:
+You can provide guidance in the following areas using markdown:
 
 ::: moniker range=">= azdevserver-2019"
 
@@ -69,8 +71,6 @@ You can provide guidance to your team in these places using markdown:
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 ::: moniker-end
-
-In this article you'll find some basic Markdown syntax guidance as well as specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 ## Basic format elements
 
@@ -280,6 +280,30 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
+## YAML tags
+
+Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+
+Basic example:
+
+```
+tag: post
+title: Hello world
+```
+ 
+![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+
+Tags with list:
+```
+tags: 
+- post
+- code
+- web
+title: Hello world
+```
+
+![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+
 ## Tables
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
@@ -320,9 +344,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Example:**  
 ```
-0. First item.
-0. Second item.
-0. Third item.
+1. First item.
+2. Second item.
+3. Third item.
 ```
 
 **Result:**  
