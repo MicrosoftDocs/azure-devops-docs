@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2015 <= tfs-2018'
+ms.date: 12/10/2018
+monikerRange: '>= tfs-2015 <= azdevserver-2019'
 ---
 # Buy access to Team Foundation Server or Azure Test Plans
 

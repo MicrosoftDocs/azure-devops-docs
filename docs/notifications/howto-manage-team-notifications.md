@@ -1,6 +1,6 @@
 ---
 title: Manage notifications for a team
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps
 description: Get notified when changes occur to source code, git, work items, and builds in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-collab
 ms.prod: devops
@@ -10,13 +10,13 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/14/2017  
+ms.date: 12/10/2018  
 monikerRange: '>= tfs-2017'
 ---
 
 # Manage notifications for a team
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../boards/queries/alerts-and-notifications.md)</b>
+[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
 
 > [!NOTE]  
 > This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
@@ -28,25 +28,43 @@ As changes occur to work items, code reviews, pull requests, source control file
 A subscription lets you control what your team should be notified about and how the team will receive those notifications.
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
-	
-   # [New navigation](#tab/new-nav)
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
 
-   # [Previous navigation](#tab/previous-nav)
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+	# [New navigation](#tab/new-nav)  
+	::: moniker range=">= azdevserver-2019"  
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+	::: moniker-end
 
-   ---
+    ::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+    [!INCLUDE [new-navigation-not-supported](../_shared/new-navigation-not-supported.md)]
+    ::: moniker-end
+
+	# [Previous navigation](#tab/previous-nav)  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)  
+	::: moniker-end  
+
+	::: moniker range="azdevserver-2019"  
+	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
+	::: moniker-end  
+
+	---
 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
-   # [New navigation](#tab/new-nav)
-   ![New subscription](_img/new-subscription-newnav.png)
+	# [New navigation](#tab/new-nav)  
+	::: moniker range=">= azdevserver-2019"  
+	![New subscription](_img/new-subscription-newnav.png)  
+	::: moniker-end  
 
-   # [Previous navigation](#tab/previous-nav)
+	# [Previous navigation](#tab/previous-nav)  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
    ![New subscription](_img/new-subscription.png)
+	::: moniker-end  
 
-   ---
-	
+	::: moniker range="azdevserver-2019"  
+	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
+	::: moniker-end  
+	---
 	
 3. Select the type of activity you want your team to be notified of.
 	
@@ -85,21 +103,15 @@ A subscription lets you control what your team should be notified about and how 
 Choose the default method for your team to receive notifications by updating the **team delivery settings**.
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
-	
-   # [New navigation](#tab/new-nav)
+
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
-
-   # [Previous navigation](#tab/previous-nav)
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
-
-   ---
 
 2. Choose **Delivery settings**:
 
    ![Delivery settings](_img/delivery-settings-newnav.png)
 
 
-3. Choose which option best fits your team's needs:
+3. Choose which option best fits your team's needs:  
 
 	![Delivery settings options](_img/delivery-settings-options.png)
 
