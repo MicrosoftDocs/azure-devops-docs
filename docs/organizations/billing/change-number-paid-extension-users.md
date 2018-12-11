@@ -26,63 +26,24 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 ## Change number of paid users
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
-
-2. Select the shopping bag icon and **Browse Marketplace**.
-
-   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace.png)
-
-3. Choose the extension you want to update.
+1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), select the **Azure DevOps** tab, and then choose the extension you want to update.
 
    ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
 
-4. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
+2. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
 
    ![Select Get in the Marketplace for the extension](_img/_shared/package-management-extension.png)
 
-5. Select **Change quantity**.
+3. Select **Change quantity**.
 
    ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
 
-6. Update the total number of paid users and then select **Continue**.
+4. Update the total number of paid users and then select **Continue**.
 
    ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
-7. Review and then select **Confirm**.
+5. Review and then select **Confirm**.
 
    ![Confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
-
-2. Select the shopping bag icon and **Browse Marketplace**.
-
-   ![Shopping bag icon, Browse Marketplace](_img/_shared/shopping-bag-browse-marketplace-prev-nav.png)
-
-3. Choose the extension you want to update.
-
-   ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
-
-4. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
-
-   ![Select Get in the Marketplace for the extension](_img/_shared/package-management-extension.png)
-
-5. Select **Change quantity**.
-
-   ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
-
-6. Update the total number of paid users and select **Continue**.
-
-   ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
-
-7. Review and **Confirm** the update.
-
-   ![confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
----
 
 The number of paid extension users is updated.
 

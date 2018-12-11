@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 11/20/2018
 monikerRange: 'vsts'
 ---
 # Change the number of paid users in your organization
@@ -30,13 +30,13 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 * [Project collection administrator or organization owner permissions](billing-faq.md#find-owner).
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md). To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
-## Update the number of paid users on your organization
+## Update the number of paid users for your organization
 
-1. As project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Get**.
+1. As project collection administrator or organization owner, sign in to [**Visual Studio Marketplace** > **Other** > **Azure DevOps Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and then choose **Get**.
 
    ![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 
-2. Select your organization and then choose **Buy**.
+2. Select your organization and then select **Buy**.
 
    > [!div class="mx-imgBorder"]
 ![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
@@ -49,14 +49,19 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 ![Change number of paid Basic users](_img/reduce-cancel-paid-users/change-quantity-of-users.png)
     > If you [pay for TFS client access licenses (CALs) through Azure DevOps](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
 
-1. Review your changes and then choose **Confirm**.
+4. Review your changes and then select **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Review your changes and confirm total paid users](_img/reduce-cancel-paid-users/review-and-confirm.png)
 
-1. Go back to your organization to [reassign access levels for your users, if necessary](../accounts/add-organization-users.md).
+5. Go back to your organization to [reassign access levels for your users, if necessary](../accounts/add-organization-users.md).
 
 ## Next steps
 
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
+
+## Related articles
+
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

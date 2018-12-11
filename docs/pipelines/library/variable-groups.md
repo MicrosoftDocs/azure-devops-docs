@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 10/30/2018
+ms.date: 12/11/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -94,6 +94,15 @@ To use a variable group, reference it in your variables mapping:
 ```yaml
 variables:
 - group: my-variable-group
+```
+
+If you use both variables and variable groups, you'll have to use `name`/`value` syntax for the bare variables:
+
+```yaml
+variables:
+- group: my-variable-group
+- name: my-bare-variable
+  value: 'value of my-bare-variable'
 ```
 
 ::: moniker-end

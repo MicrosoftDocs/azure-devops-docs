@@ -55,6 +55,7 @@ Service connections are created at project scope. A service connection created i
 
 4. Choose **OK** to create the connection.
 
+> For more information about Azure Resource Manager service connections, see [Create an Azure service connection](connect-to-azure.md).
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 <a name="security"></a>
@@ -84,6 +85,7 @@ To modify the security for a connection:
 
 1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
+> For more information about securing an Azure Resource Manager service connection, see [Create an Azure service connection](connect-to-azure.md).
 
 ## Use a service connection
 
@@ -161,7 +163,8 @@ using Azure credentials or an Azure management certificate.
 <h3 id="sep-azure-rm">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA). The dialog offers two modes:
+using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
+The dialog offers two main modes:
 
 * **Automated subscription detection**. In this mode, Azure Pipelines and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in Azure Pipelines or TFS (including Microsoft accounts and School or Work accounts).
   If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of Azure Pipelines or TFS and sign in again
