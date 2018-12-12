@@ -18,11 +18,11 @@ monikerRange: 'vsts'
 
 #### Azure Repos
 
-We impose a few resource limits on Git repositories in Visual Studio Team Services.
+We impose a few resource limits on Git repositories in Azure Repos.
 Our goal is to ensure reliability and availability for all customers.
 Also, by keeping the amount of data and number of pushes reasonable, you can expect to have a better overall experience with Git.
 
-Git participates in [rate limiting](../../integrate/concepts/rate-limits.md) along with the rest of Azure DevOps Services.
+Git participates in [rate limiting](../../integrate/concepts/rate-limits.md) along with the rest of Azure DevOps.
 In addition, we impose limits on the total size of repositories and pushes.
 
 ## Repository size
