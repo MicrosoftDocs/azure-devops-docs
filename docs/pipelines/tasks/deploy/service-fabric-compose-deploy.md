@@ -1,15 +1,15 @@
 ---
 title: Service Fabric Compose Deploy task
-titleSuffix: Azure Pipelines & TFS
 description: Service Fabric Compose Deploy Deployment task
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 

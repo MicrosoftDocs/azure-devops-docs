@@ -1,15 +1,15 @@
 ---
 title: Extract Files task
-titleSuffix: Azure Pipelines & TFS
 description: Extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/15/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

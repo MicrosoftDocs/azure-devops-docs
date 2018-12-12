@@ -1,20 +1,20 @@
 ---
-title: Building Xamarin apps with Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
-description: Building Xamarin projects using Azure Pipelines
+title: Build Xamarin apps
+description: Build Xamarin projects in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 11/16/2018
-ms.topic: quickstart
 monikerRange: '> tfs-2018'
 ---
 
-# Build Xamarin apps with Azure Pipelines
+# Build Xamarin apps in Azure Pipelines
 
 **Azure Pipelines**
 

@@ -1,5 +1,7 @@
 ---
-title: Buy CI/CD for Azure DevOps
+title: Buy continuous integration, continuous deployment, Azure Pipelines
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
 description: Learn how to pay for more parallel jobs in Azure Pipelines
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

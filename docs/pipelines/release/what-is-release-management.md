@@ -1,6 +1,6 @@
 ---
-title: Understand how Azure release pipelines work
-titleSuffix: Azure Pipelines & TFS
+title: Understand release pipelines
+ms.custom: seodec18
 description: DevOps CI CD - What are Azure Pipelines and Team Foundation Server (TFS) release pipelines?
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: devops

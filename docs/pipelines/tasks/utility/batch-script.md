@@ -1,15 +1,15 @@
 ---
 title: Batch Script task
-titleSuffix: Azure Pipelines & TFS
 description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Release artifacts and artifact sources
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops

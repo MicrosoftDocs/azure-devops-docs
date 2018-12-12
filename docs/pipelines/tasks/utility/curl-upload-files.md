@@ -1,15 +1,15 @@
 ---
 title: cURL Upload Files task
-titleSuffix: Azure Pipelines & TFS
 description: Use cURL to upload files with supported protocols in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E231D775-2BCE-4DFA-8C20-C17F83ECD700
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

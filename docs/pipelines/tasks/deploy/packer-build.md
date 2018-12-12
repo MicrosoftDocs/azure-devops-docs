@@ -1,14 +1,14 @@
 ---
 title: Build Machine Image task
-titleSuffix: Azure Pipelines & TFS
 description: Build a machine image using Packer to use for Azure Virtual machine scale set deployment
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 845fd4f4-642d-4694-8514-047948a5a556
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

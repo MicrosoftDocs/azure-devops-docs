@@ -1,14 +1,14 @@
 ---
 title: Azure App Service Manage task
-titleSuffix: Azure Pipelines & TFS
 description: Start, Stop, Restart, Slot swap, Install site extensions, or Enable Continuous Monitoring for an Azure App Service
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: f045e430-8704-11e6-968f-e717e6411619
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

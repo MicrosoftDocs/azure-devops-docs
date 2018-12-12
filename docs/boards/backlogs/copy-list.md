@@ -1,7 +1,8 @@
 ---
-title: Copy a list of work items
+title: Copy a list of user stories, issues, bugs, tasks, or other work items 
 titleSuffix: Azure Boards   
-description: Copy a list of work items from a backlog or query in Azure Boards or Team Foundation Server
+description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

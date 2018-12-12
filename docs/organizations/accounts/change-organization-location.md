@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
-# Find or change your organization location (region) in Azure DevOps
+# Find or change your organization location (region)
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

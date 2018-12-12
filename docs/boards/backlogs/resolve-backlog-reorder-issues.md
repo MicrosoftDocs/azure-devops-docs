@@ -1,8 +1,8 @@
 ---
-title: Resolve backlog issues 
+title: Fix backlog reorder and nesting issues
 titleSuffix: Azure Boards
-description: Resolve error messages when working in backlogs or boards in Azure Boards and Team Foundation Server (TFS) 
-ms.custom: boards-backlogs 
+description: Fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards & TFS 
+ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B

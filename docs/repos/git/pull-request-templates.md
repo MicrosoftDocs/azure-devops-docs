@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/26/2018
+ms.date: 12/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,6 +44,9 @@ Azure Repos allows you to create the following type of pull request templates:
 - **Additional** pull request templates that can be optionally added by the pull request creator
 
 The type of pull request template is determined by its filename and folder location, as covered in the following sections. The filenames and folder locations are not case sensitive, but they must be in the default branch of your repository.
+
+>[!NOTE]
+>All pull request template files must be located in the default branch (typically master) of your repository. Only pull request template files from the default branch are used.
 
 ## Default pull request templates
 

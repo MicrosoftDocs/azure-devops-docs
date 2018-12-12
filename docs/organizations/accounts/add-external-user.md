@@ -13,7 +13,7 @@ author: chcomley
 ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Add external users to your organization in Azure DevOps
+# Add external users to your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

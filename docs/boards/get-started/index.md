@@ -4,12 +4,12 @@ titleSuffix: Azure Boards & TFS
 description: Sign up and get started using Azure Boards
 ms.custom: boards-get-started 
 ms.prod: devops
-ms.technology: devops-new-user
-ms.assetid:
+ms.technology: devops-agile
 ms.topic: conceptual 
+ms.assetid:  
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---

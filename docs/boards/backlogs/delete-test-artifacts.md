@@ -1,9 +1,8 @@
 ---
-title: Delete test artifacts
+title: Delete test plans, test cases, test results, & other test artifacts
 titleSuffix: Azure Boards  
-description: Guide to deleting test artifacts in Azure DevOps Services and Team Foundation Server
-keywords: backlogs
-ms.global_help.title: Move, change, or delete work items
+description: How to delete test plans, test cases, test results, & other test artifacts in Azure DevOps Services & TFS 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  

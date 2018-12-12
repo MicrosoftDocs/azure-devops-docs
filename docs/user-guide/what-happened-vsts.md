@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Team Services is now Azure DevOps Services
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Visual Studio Team Services has been rebranded and is now Azure DevOps Services
 ms.prod: devops
@@ -36,17 +36,17 @@ Currently, you can acquire only Azure Pipelines as a separate service. In the fu
 > [!NOTE]   
 > You can [disable select services from the user interface](../organizations/settings/set-services.md).
 
-Follow the [Azure DevOps release notes](/vsts/release-notes/index) to get news on the latest updates.
+Follow the [Azure DevOps release notes](/azure/devops/release-notes/index) to get news on the latest updates.
 
 ## Can I still use visualstudio.com?
 
 Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. (Specifically, it's `https://dev.azure.com/{your organization}/{your project}`.) If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can change this from the organization settings page.
 
-We will continue to post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/vsts/release-notes/index).
+We will continue to post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](/azure/devops/release-notes/index).
 
 ## Can I still use the old interface?
 
-Yes. Although Azure DevOps Services features [redesigned navigation](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.msdn.microsoft.com%2Fdevops%2F2018%2F06%2F19%2Fnew-navigation%2F&data=02%7C01%7C%7Cdf018290c8a646863ded08d614f21833%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636719427348139788&sdata=5pJH93e4i2IYZqgBp48uHTKZDkG5iQnvhFt6fe3qTGE%3D&reserved=0), you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
+Yes. Although Azure DevOps Services features [redesigned navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/), you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
 > [!div class="mx-imgBorder"]  
 > ![Open Preview features](../project/navigation/_img/manage-features/choose-preview-features-vert.png)
@@ -62,6 +62,6 @@ To return to the Azure DevOps service-oriented UI, choose your profile icon, sel
 
 ## What about Team Foundation Server (TFS)?
 
-On November 19, 2018, [Azure DevOps Server 2019](/tfs/tfs-is-now-azure-devops-server-2019) was announced as the next version of Team Foundation Server, our on-premises Agile workflow and DevOps product. Currently, the Azure DevOps Server 2019 Release Candidate 1 is available for preview.
+On November 19, 2018, [Azure DevOps Server 2019](/tfs/server/tfs-is-now-azure-devops-server) was announced as the next version of Team Foundation Server, our on-premises Agile workflow and DevOps product. Currently, the Azure DevOps Server 2019 Release Candidate 1 is available for preview.
 
 Azure DevOps Server 2019 uses the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation](../project/navigation/index.md). 

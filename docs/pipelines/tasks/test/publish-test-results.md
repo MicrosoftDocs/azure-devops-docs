@@ -1,15 +1,15 @@
 ---
 title: Publish Test Results task
-titleSuffix: Azure Pipelines & TFS
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

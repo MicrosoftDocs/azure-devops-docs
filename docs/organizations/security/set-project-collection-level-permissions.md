@@ -23,7 +23,7 @@ Several permissions are set at the project or at the organization/project collec
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Organization/Collection level| 
 > |-------------|----------| 
-> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
+> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 
 > [!Note]  
 > The above list indicates the latest groups defined for Azure DevOps and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
@@ -42,13 +42,12 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="vsts"  
 * You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md). 
-::: moniker-end
-::: moniker range="<= azdevserver-2019"
+::: moniker-end  
+::: moniker range="<= azdevserver-2019"  
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
-::: moniker-end
-
+::: moniker-end  
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
 

@@ -12,10 +12,10 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 ---
 
-# Plan your organizational structure in Azure DevOps
+# Plan your organizational structure
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 

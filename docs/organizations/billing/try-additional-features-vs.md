@@ -1,6 +1,8 @@
 ---
-title: Start free trials for paid Azure DevOps features and extensions
-description: How to get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers
+title: Start free trials for paid features and extensions
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
@@ -8,15 +10,15 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 11/20/2018
 monikerRange: 'vsts'
 ---
 
-# Quickstart: Start free trials for paid features and extensions in Azure DevOps
+# Quickstart: Start free trials for paid features and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to start a trial for your organization, as well as how to keep using your extension after the trial ends.
+In this quickstart, you learn how to start a free trial for your organization, as well as how to keep using your extension after the trial ends.
 
 There are two paid features in Azure DevOps that are offered by Microsoft that you can use free for a 30-day trial:
 
@@ -24,7 +26,7 @@ There are two paid features in Azure DevOps that are offered by Microsoft that y
 
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
-During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
+During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you can choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
 This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including the following:
 
@@ -68,11 +70,7 @@ All other users can [request extensions](../../marketplace/install-extension.md)
 Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
 There's no penalty for buying early. Charges don't start until the trial ends.
 
-If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial:
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
+If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -83,6 +81,8 @@ If you lose access because the trial expired before you could purchase, buy and 
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 
+<<<<<<< HEAD
+=======
 # [Previous navigation](#tab/previous-nav)
 
 1. [Buy the extension](../../marketplace/install-extension.md#install-extension) for your users.
@@ -93,6 +93,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 
 ---
 
+>>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
 ## Clean up resources
 
 To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md), you must have access to the Azure subscription that was used to buy it.

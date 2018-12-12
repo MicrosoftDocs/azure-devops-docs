@@ -1,6 +1,6 @@
 ---
 title: Grunt build and release task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Grunt build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

@@ -1,7 +1,8 @@
 ---
-title: Add links to several work items 
+title: Link user stories, issues, bugs, and other work items  
 titleSuffix: Azure Boards
-description: Link several work items to other work items or a new git branch in Azure Boards or Team Foundation Server 
+description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
+ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
@@ -14,7 +15,7 @@ ms.date: 11/19/2018
 ---
 
 
-# Link work items  
+# Link user stories, issues, bugs, and other work items  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

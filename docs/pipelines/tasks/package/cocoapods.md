@@ -1,6 +1,6 @@
 ---
 title: CocoaPods task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: Search across all your code, wiki and work items
+title: Search across all your code, wiki, and work items
 description: Quickly Search with Azure DevOps and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

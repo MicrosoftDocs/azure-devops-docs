@@ -1,6 +1,6 @@
 ---
 title: NuGet Publisher task Version 0.*
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package

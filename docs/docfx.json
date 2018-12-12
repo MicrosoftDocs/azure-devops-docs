@@ -56,7 +56,8 @@
     },
     "fileMetadata": {
       "titleSuffix": {
-        "pipelines/**/**.md": "Azure Pipelines"
+        "pipelines/**/**.md": "Azure Pipelines",
+        "test/**/**.md": "Azure Test Plans"
       },
       "monikerRange": {
         "report/admin/**": "<= azdevserver-2019",

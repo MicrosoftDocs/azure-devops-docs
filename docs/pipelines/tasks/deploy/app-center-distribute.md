@@ -1,14 +1,14 @@
 ---
 title: App Center Distribute task
-titleSuffix: Azure Pipelines & TFS
 description: Distribute app builds to testers and users through App Center
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

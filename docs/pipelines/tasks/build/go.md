@@ -1,6 +1,6 @@
 ---
 title: Go task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Get, build, test a go application, or run a custom go command.
 ms.topic: reference
 ms.prod: devops

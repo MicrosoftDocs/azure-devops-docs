@@ -1,15 +1,15 @@
 ---
 title: Copy Files Over SSH task
-titleSuffix: Azure Pipelines & TFS
 description: Copy Files Over SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

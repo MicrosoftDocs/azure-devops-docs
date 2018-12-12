@@ -1,6 +1,6 @@
 ---
 title: Use the visual designer to create a CI/CD pipeline
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: CI/CD novice? Create an automated build and release definition in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,15 +1,15 @@
 ---
-title: Perform SQL server actions in Azure Pipelines or TFS
-titleSuffix: Azure Pipelines & TFS
+title: Execute SQL server actions
 description: Use the SQL DACPAC task to perform SQL server actions in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
