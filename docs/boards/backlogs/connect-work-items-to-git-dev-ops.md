@@ -34,7 +34,7 @@ Review this topic to learn:
 
 ::: moniker range="vsts"
 
-> [!NOTE]   
+> [!IMPORTANT]   
 > This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
 
 ::: moniker-end
@@ -86,7 +86,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 3. Add or modify files in the branch that you created.   
 
-	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.    
+	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.  
 
 	![Commit and push changes](_img/git-dev-commit-sync.png)  
 

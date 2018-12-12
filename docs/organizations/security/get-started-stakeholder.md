@@ -207,11 +207,18 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
-You can [add existing tags to any work item to support filter backlogs and queries](../../boards/queries/add-tags-to-work-items.md).
-
 > [!NOTE]    
 > Depending on the process chosen when the project was created, the types of work items you can create will differ. For example, backlog items may be called user stories ([Agile](../../boards/work-items/guidance/agile-process-workflow.md)), product backlog items ([Scrum](../../boards/work-items/guidance/scrum-process-workflow.md)), or requirements ([CMMI](../../boards/work-items/guidance/cmmi-process-workflow.md)). All three are similar&mdash;they describe the customer value to deliver and the work to be performed. For an overview of all three processes, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
 
+## Add tags to a work item
+
+Tags are useful for filtering backlogs, boards, and queries
+
+All users granted Stakeholder access for a private project can only [add existing tags to work items](../../boards/queries/add-tags-to-work-items.md), not add new tags. Even if the **Create tag definition** permission for the user is set to Allow. This is part of the Stakeholder access settings. 
+
+::: moniker range="vsts"
+Azure DevOps Services users granted Stakeholder access for a public project can add new and existing tags to work items. 
+::: moniker-end
 
 <a id="check-backlog">  </a> 
 ## Check the backlog, add work items to the backlog 
