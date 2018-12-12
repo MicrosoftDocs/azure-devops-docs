@@ -55,7 +55,7 @@ Examples:
 <a id="link-existing"> </a>  
 ## Add link from work items to GitHub commits and pull requests
 
-0. Open the work item and choose Add Link under the Development section. 
+0. Open the work item and choose **Add Link** under the Development section. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add link](_img/link/add-link-development.png) 
@@ -67,8 +67,7 @@ Examples:
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub pull request link dialog](_img/link/link-from-azb-gh-pull-requests.png)  
 
-	Azure Boards performs a check to ensure that you've entered a valid link.  
-
+	Azure Boards performs a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be integrated with the project](connect-to-github.md) or the validation will fail.
 
 
 ## View or open links from the Development section

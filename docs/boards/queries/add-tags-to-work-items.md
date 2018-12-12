@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/10/2018
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -24,6 +24,17 @@ A tag corresponds to a one or two keyword phrase that you define and that
 supports your needs to filter a backlog or query, or define a query. 
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
+
+## Prerequisites 
+- To add existing tags, you must be a member of the project Contributors group and have been assigned Stakeholder, Basic, or an advanced level access level. To learn more about Stakeholder access, see [About access levels](../../organizations/security/access-levels.md). 
+- To add new tags, your **Create new tags** permission must be set to Allow. By default, all members of the project Contributors group have this permission. Even if the permission is explicitly set for a Stakeholder, they won't have permission to add new tags, as they are prohibited through their access level. 
+
+::: moniker range="vsts"
+> [!NOTE]   
+> Stakeholders for public projects are allowed to add tags. 
+::: moniker-end
+
+
 
 
 <a id="assign"></a>
@@ -48,14 +59,14 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-
+::: moniker range="vsts"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
-	
+::: moniker-end	
 
 
 <a id="bulk-modify"></a>
@@ -171,6 +182,24 @@ If you misspell a tag, don't assign the misspelled tag to any work item and the 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
 ::: moniker-end
+
+::: moniker range=">=tfs-2015"  
+## Color-code tags on boards
+
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags]( 
+::: moniker-end   
+
+::: moniker range="tfs-2015"  
+Requires TFS 2015.1 or later version.  
+::: moniker-end   
+
+::: moniker range=">=tfs-2015"  
+
+> [!div class="mx-imgBorder"]
+> ![Boards>Settings>Tag colors dialog](_img/add-tags/color-code-tags.png)
+
+::: moniker-end   
+
 
 ## Related articles
 
