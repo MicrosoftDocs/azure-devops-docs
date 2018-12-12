@@ -334,7 +334,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@Today**</td>
-	<td>Use with a `DateTime` field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause `Created Date=@Today-7`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
+	<td>Use with a `DateTime` field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause `Created Date>=@Today-7`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
 </tr>
 
 </tbody> 

@@ -52,7 +52,7 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
     # [Mac](#tab/mac)
     ```
-    base64 <<< "YOUR_PAT_GOES_HERE"
+    echo -n "YOUR_PAT_GOES_HERE" | base64
     ```
    ---
 
