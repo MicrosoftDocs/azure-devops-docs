@@ -1,6 +1,6 @@
 ---
 title: Define a multi-stage CD release pipeline
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: DevOps CI CD - Define a multi-stage continuous deployment (CD) pipeline for your ASP.NET Core app using Azure Pipelines
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops

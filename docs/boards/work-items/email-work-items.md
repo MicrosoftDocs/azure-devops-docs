@@ -1,7 +1,8 @@
 ---
-title: Email or print work items
+title: Email or print user stories, issues, bugs, or other work items
 titleSuffix: Azure Boards
-description: Email or print work items to share work tracking information in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
@@ -14,8 +15,7 @@ ms.date: 11/19/2018
 --- 
 
 
-
-# Email or print work items 
+# Email or print user stories, bugs, and other work items 
 
 **Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 

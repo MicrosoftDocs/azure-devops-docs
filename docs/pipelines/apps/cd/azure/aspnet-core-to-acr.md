@@ -1,11 +1,11 @@
 ---
-title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
-titleSuffix: Azure Pipelines & TFS
+title: Deploy ASP.NET Core apps to Linux, Docker, and ACR 
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 services: vsts
 documentationcenter: vs-devops-build
+ms.custom: seodec18
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
@@ -15,7 +15,7 @@ ms.devlang: dotnetcore
 ms.topic: conceptual
 ms.tgt_pltfrm: acs
 ms.workload: ''
-ms.date: 02/07/2018
+ms.date: 12/07/2018
 ms.custom: mvc
 monikerRange: 'vsts'
 ---

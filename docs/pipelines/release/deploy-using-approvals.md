@@ -1,6 +1,6 @@
 ---
-title: Use approvals and gates to control your deployment
-titleSuffix: Azure Pipelines & TFS
+title: Control deployments with approvals and gates 
+ms.custom: seodec18
 description: DevOps CI CD - Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in Azure Pipelines and TFS
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.prod: devops

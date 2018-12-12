@@ -1,10 +1,12 @@
 ---
 title: Azure DevOps Report and Analytics Documentation 
 titleSuffix: Azure DevOps Services
-description: Create and share reports using dashboards and the Analytics Service 
+description: Add, view, manage, and monitor status and trends with dashboards, widgets, the Analytics Service and Power BI
+ms.custom: seodec18
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
+ms.custom: seodec18
 ms.prod: devops 
 ms.technology: devops-analytics
 ms.assetid:  
@@ -56,7 +58,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="../_img/index/i_analytics.svg" alt="Analytics views icon" />
+                                                                <img src="../_img/index/i_analytics.svg" alt="Analytics services icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

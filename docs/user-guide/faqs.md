@@ -1,6 +1,6 @@
 ---
 title: Questions and answers to support getting started
-titleSuffix:  Azure DevOps Services & TFS
+titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: FAQs to support getting started using the hosted cloud offering of Azure DevOps Services or on-premises Team Foundation Server (TFS)  
 ms.technology: devops-new-user 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# What are frequently asked questions about Azure DevOps Services and TFS?
+# What are frequently asked questions about Azure DevOps?
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
  

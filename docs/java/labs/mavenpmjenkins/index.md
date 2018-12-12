@@ -32,7 +32,7 @@ This exercise assumes you have completed the exercises to create a Team Project,
 
 ## Configure Package Management
 
-Before getting to the build, you will need to create the Maven Package Feed and then update the Maven settings file in the project to specify where to publish the package to. All these instructions are in the [Maven Package Management with Azure DevOps Services Team Build](../mavenpmAzure DevOps Services/index.md). Please complete the following exercises from that lab:
+Before getting to the build, you will need to create the Maven Package Feed and then update the Maven settings file in the project to specify where to publish the package to. All these instructions are in the [Maven Package Management with Azure DevOps Services Team Build](../mavenpmvsts/index.md). Please complete the following exercises from that lab:
 
 - Create a Maven Package Feed
 - Create a Maven Settings File with the Feed Credentials
@@ -144,7 +144,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
     - **Type**: JUnit, **Files to include**: `**/TEST-*.xml`
     - **Type**: JaCoCo, **Files to include**: `**/jacoco/**`
 
-    ![Azure DevOps Services Results action](../_img/mavenpmjenkins/Azure DevOps Services-post-build.png)
+    ![Azure DevOps Services Results action](../_img/mavenpmjenkins/vsts-post-build.png)
 
 1. Click the Save button.
 
@@ -243,9 +243,9 @@ In this task you will configure an Azure DevOps Services Team Build in Azure Dev
 
 1. The final list of tasks should look as follows:
 
-    ![Build tasks](../_img/mavenpmjenkins/Azure DevOps Services-tasks.png)
+    ![Build tasks](../_img/mavenpmjenkins/vsts-tasks.png)
 
 1. Save and Queue the build.
 1. When the build completes, click on the build number to see the results.
 
-    ![Build results](../_img/mavenpmjenkins/Azure DevOps Services-results.png)
+    ![Build results](../_img/mavenpmjenkins/vsts-results.png)

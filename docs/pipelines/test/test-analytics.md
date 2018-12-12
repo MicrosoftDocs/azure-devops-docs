@@ -1,6 +1,6 @@
 ---
-title: Test analytics in the pipeline
-titleSuffix: Azure Pipelines & TFS
+title: Analyze test results
+ms.custom: seodec18
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.custom: continuous-test
 ms.manager: douge
 ms.author: vinojos
 author: vinojos
-ms.date: 08/29/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

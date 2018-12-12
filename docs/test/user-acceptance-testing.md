@@ -1,5 +1,5 @@
 ---
-title: User acceptance testing - manual testing in Azure DevOps
+title: Perform user acceptance testing
 description: Create and run user acceptance tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.prod: devops
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

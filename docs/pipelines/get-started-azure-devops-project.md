@@ -1,6 +1,6 @@
 ---
 title: Use the Azure portal to create a pipeline
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Use the Azure portal to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd

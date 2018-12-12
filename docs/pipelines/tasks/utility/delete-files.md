@@ -1,15 +1,15 @@
 ---
 title: Delete Files task
-titleSuffix: Azure Pipelines & TFS
 description: Delete files from the agent working directory when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

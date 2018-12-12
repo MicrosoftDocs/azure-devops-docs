@@ -1,14 +1,14 @@
 ---
 title: Azure Database for Mysql Deployment task
-titleSuffix: Azure Pipelines & TFS
 description: Run your scripts and make changes to your Azure DB for Mysql. 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 

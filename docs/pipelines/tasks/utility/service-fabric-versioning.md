@@ -1,15 +1,15 @@
 ---
 title: Update Service Fabric App Versions task
-titleSuffix: Azure Pipelines & TFS
 description: Update the Service Fabric App versions in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3034CEF8-215C-408E-AD0F-C41D3D9C2F72
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 

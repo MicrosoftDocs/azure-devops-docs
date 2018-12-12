@@ -1,15 +1,15 @@
 ---
 title: Shell Script task
-titleSuffix: Azure Pipelines & TFS
 description: Execute a bash script when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/19/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 

@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/11/2018
+ms.date: 12/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Notifications  
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 Stay up-to-date with changes as they occur by subscribing to events such as code changes, build completions, or work item assignments.  
 
@@ -26,6 +26,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 
 * [Follow work & pull requests](../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 * [Set your personal notifications](howto-manage-personal-notifications.md)
+* [Manage team and group notifications](howto-manage-team-notifications.md)
 
 ## Concepts
 
@@ -34,8 +35,6 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 
 ## How-to guides
 
-* [Manage personal notifications](howto-manage-personal-notifications.md)
-* [Manage team and group notifications](howto-manage-team-notifications.md)
 * [Manage organization subscriptions](howto-manage-organization-notifications.md)
 * [Manage organization default delivery settings](howto-manage-organization-notifications-settings.md)
 * [View notification statistics for your organization](howto-view-organization-notification-statistics.md)

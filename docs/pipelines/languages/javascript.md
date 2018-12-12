@@ -1,6 +1,6 @@
 ---
-title: Build JavaScript and Node.js apps
-description: Build JavaScript and Node.js apps using Azure Pipelines and TFS
+title: Build, test, and deploy JavaScript and Node.js apps
+description: Build JavaScript and Node.js apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
@@ -8,13 +8,13 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 10/12/2018
 ms.topic: quickstart
 ms.custom: seodec18
+ms.date: 10/12/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build JavaScript and Node.js apps with Azure Pipelines
+# Build, test, and deploy JavaScript and Node.js apps in Azure Pipelines
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 

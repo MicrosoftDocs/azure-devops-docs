@@ -1,6 +1,6 @@
 ---
 title: Python Pip Authenticate
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
 ms.topic: reference
 ms.prod: devops

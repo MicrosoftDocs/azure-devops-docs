@@ -1,8 +1,8 @@
 ---
-title: Add, run, update inline tests - Azure DevOps
-titleSuffix: Azure DevOps
+title: Add, run, update inline tests
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to add, run, and update manual test cases when you're working in Azure DevOps
+description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
@@ -11,24 +11,26 @@ ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Add, run, and update inline tests in Azure DevOps
+# Quickstart: Add, run, and update inline tests
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps.
+In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps Services.
 
-For a quick and easy way to start manual testing, add the test to the user story or bug you want to test. Quickly define inline tests, or a set of manual tests, for a backlog item from the Kanban board. In addition to adding tests, you can also run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you also can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
- 
+
 ## Open your Kanban board
 
 [!INCLUDE [temp](../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -40,7 +42,15 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
    ![Azure Boards](_img/azure-devops-boards-board.png)
 
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -52,11 +62,15 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
     ![Azure DevOps backlogs board](_img/azure-devops-backlogs-board.png)
 
+::: moniker-end
+
 ---
 
 ## Add tests
 
 # [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
 
 1. To add tests, open the menu for a work item.
 
@@ -70,17 +84,35 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 2. If you have a number of tests to add, enter each title and select **Enter**.
 
-   ![Work items add more test cases](_img/work-item-add-more-test-cases.png)
+   ![Work item add more test cases](_img/work-item-add-more-test-cases.png)
 
 	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**.
 
    ![Open test case from Kanban board](_img/open-test-case-form-from-kanban-board.png)
 
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
+To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md). 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
+Prior to running the test, you must add details. 
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+<<<<<<< HEAD
+=======
 Before you run the test, you must add details.  
+>>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
+=======
+>>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
 
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 1. To add tests, open the menu for the work item.
 
@@ -104,7 +136,9 @@ Before you run the test, you must add details.
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-Before you run the test, you must add details.
+Prior to running the test, you must add details.
+
+::: moniker-end
 
 ---
 
@@ -112,13 +146,23 @@ Before you run the test, you must add details.
 
 # [New navigation](#tab/new-nav)
 
+::: moniker range=">= azdevserver-2019"
+
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.
 
 ![Run manual test](_img/run-manual-test.png)
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -126,19 +170,30 @@ Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run 
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 
+::: moniker-end
 ---
 
 ## Update the status of a test
 
 # [New navigation](#tab/new-nav)
 
+::: moniker range=">= azdevserver-2019"
+
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu. 
 
 ![Update status of tests](_img/test-update-status.png)
- 
+
 When you update the status of tests, you can [track test results](../test/track-test-status.md).
 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -146,11 +201,15 @@ You can update the status of the test from the ![Actions icon](../boards/_img/ic
  
 When you update the status of tests, you can [track test results](../test/track-test-status.md).  
 
+::: moniker-end
+
 ---
 
 ## Expand or collapse inline tests
 
 # [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
 
 When you first open the Kanban board, you'll see an unexpanded view of checklists and tests.
 
@@ -160,7 +219,15 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ![Inline tests expanded](_img/test-expanded-test-list.png)
 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="<= tfs-2018 || vsts"
 
 When you first open the Kanban board, you'll see an unexpanded view of checklists.
 
@@ -169,6 +236,8 @@ When you first open the Kanban board, you'll see an unexpanded view of checklist
 Select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list.
 
    ![Inline tests expanded](../boards/boards/_img/i-test-expanded-test-list.png)
+
+::: moniker-end
 
 ---
 
@@ -180,5 +249,13 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 > [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+=======
 Install Exploratory testing to set it up for a user story. For more information, read  [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
 
+>>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
+=======
+To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+>>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d

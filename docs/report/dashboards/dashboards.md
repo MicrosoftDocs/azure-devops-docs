@@ -1,8 +1,8 @@
 ---
-title: Add and manage team dashboards
+title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps Services and TFS  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
-ms.custom: dashboards
+ms.custom: "dashboards, seodec18" 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -11,10 +11,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 11/01/2018
+ms.date: 12/05/2018
 ---
 
-# Add, rename, and delete dashboards
+# Add, rename, and delete team dashboards in Azure DevOps
+
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
@@ -50,14 +51,29 @@ The Overview page provides access to a default team dashboard which you can cust
 
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
+All dashboards are associated with a team.
+
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"
-Open a web browser window and choose **Overview>Dashboards**. 
+::: moniker range=">= azdevserver-2019"  
+
+Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
 
 > [!div class="mx-imgBorder"]  
-> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
+> ![Dashboards Directory, new navigation](_img/dashboards/open-dashboards-vert.png)
+
+It lists dashboards in the following order: 
+- Your last visited dashboard
+- Your favorited dashboards
+- All dashboards of teams that you belong to
+- All dashboards defined for the project in alphabetical order. 
+
+Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
+
+> [!div class="mx-imgBorder"]  
+> ![Filter the dashboard directory](_img/dashboards/filter-directory.png)   
 
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
@@ -66,14 +82,33 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"   
+::: moniker range="vsts"  
 
-Open a web browser window and choose **Dashboards**. 
+Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
 
-![Open Dashboards](_img/dashboards-go-to.png) 
+> [!div class="mx-imgBorder"]  
+> ![Dashboards directory, previous navigation](_img/dashboards/directory-prev.png) 
 
-If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
-::: moniker-end 
+It lists dashboards in the following order: 
+- Your last visited dashboard
+- Your favorited dashboards
+- All dashboards of teams that you belong to
+- All dashboards defined for the project in alphabetical order. 
+
+Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
+
+> [!div class="mx-imgBorder"]  
+> ![Filter the dashboard directory](_img/dashboards/filter-directory.png)  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+Open a web browser, connect to your project, and choose **Dashboards**. 
+
+![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+::: moniker-end  
 
 ::: moniker range="azdevserver-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
@@ -82,32 +117,30 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ---
 
 <a id="choose-dashboard" />
-## Select a dashboard to view or modify
 
-All dashboards are associated with a team. 
 
 ::: moniker range=">= azdevserver-2019"
+## Select a dashboard to view, modify, or favorite
 
-1. From **Overview>Dashboards**, open the selector and choose the **Browse all dashboards** option. 
+0. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
-
-2. The dashboard directory page shows you your last visited dashboard, your favorited dashboards, all dashboards of teams that you belong to, and lists all dashboards defined for the project in alphabetical order. Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, All](_img/dashboards/all-dashboards-list.png)  
 	 
-3. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+0. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](_img/dashboards/favorite-dashboard.png)  
 
-	Favoriting a dashboard will cause it to appear within your Favorites page, and appear towards the top in the **Dashboards** selector.
+	Favoriting a dashboard will cause it to appear under **My Favorites dashboards** list on the dashboards directory. Also, it will appear towards the top in the **Dashboards** selector and in your [personal Favorites list](../../project/navigation/set-favorites.md). . 
+
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
+
+## Select a dashboard to view or modify
+
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project, repo or team](../../project/navigation/go-to-project-repo.md#switch-team-context).
 
 2. From **Dashboards**, choose the name of the dashboard to view it. 
@@ -116,14 +149,17 @@ All dashboards are associated with a team.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
+
 ::: moniker-end  
 
 
 ## Add and name your dashboard 
-Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team. All dashboards are associated with a team. 
 
-::: moniker range="azdevserver-2019 || vsts"
-1. From **Dashboards**, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
+Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
+
+::: moniker range=">= azdevserver-2019"
+
+1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
@@ -168,10 +204,10 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 - To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](_img/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
-- To delete a dashboard, open the **All** dashboards page, open the ![actions icon](../../_img/icons/actions-icon.png) actions menu for the dashboard, and choose the **Delete** option.  
+- To delete a dashboard, open the Dashboards directory, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Delete a dashboard](_img/dashboards/delete-dashboard.png)  

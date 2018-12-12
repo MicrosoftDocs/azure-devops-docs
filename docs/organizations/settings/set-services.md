@@ -1,7 +1,7 @@
 ---
 title: Turn a service on or off
-titleSuffix: Azure DevOps Services
-ms.concept: seodec18
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Control which services are available for a project from the web portal  
 ms.technology: devops-settings
 ms.prod: devops

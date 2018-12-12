@@ -1,6 +1,6 @@
 ---
 title: Python Twine Upload Authenticate
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. 
 ms.topic: reference
 ms.prod: devops

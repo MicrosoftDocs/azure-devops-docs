@@ -1,7 +1,8 @@
 ---
-title: Index to topics for work item tracking
+title: Learn about how issues, bugs, tasks, features, and more are tracked using work items 
 titleSuffix: Azure Boards 
 description: Index to topics for planning and tracking work in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

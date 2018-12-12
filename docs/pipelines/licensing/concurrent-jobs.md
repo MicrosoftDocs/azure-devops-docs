@@ -1,6 +1,6 @@
 ---
 title: Parallel jobs in Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
@@ -20,7 +20,7 @@ You can use a _parallel job_ in Azure Pipelines to run a single build job or a s
 
 ## Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_.  Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
+If you want to run your builds and releases on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
 
 We provide a *free tier* of service by default in your organization:
 
@@ -68,14 +68,14 @@ The term *job* can refer to multiple concepts, and its meaning depends on the co
 
 * When you define a build or release, you can define it as a collection of [jobs](../process/phases.md). When a build or release runs, you can run multiple jobs as part of that build or release.
 
-* Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, then the jobs are queued up and run one after the other.
+* Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
 
 * When you run a [server job](../process/server-phases.md) or deploy to a [deployment group](../process/deployment-group-phases.md), you don't consume any parallel jobs.
 
 ## Determine how many parallel jobs you need
 
 You can begin by seeing if the free tier offered in your organization is enough for your teams.
-When you've reached the 1,800-minute per month limit for the free tier of Microsoft-hosted parallel jobs,
+When you've reached the limit of 1,800 minutes per month for the free tier of Microsoft-hosted parallel jobs,
 you can start by buying one parallel job to remove this monthly time limit before deciding to purchase more.
 
 As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer.

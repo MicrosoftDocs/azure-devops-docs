@@ -1,6 +1,6 @@
 ---
 title: Expressions
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops

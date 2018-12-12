@@ -1,15 +1,15 @@
 ---
 title: Publish Build Artifacts task
-titleSuffix: Azure Pipelines & TFS
 description: Publish build artifacts to Azure Pipelines, Team Foundation Server (TFS), or to a file share
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/16/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
