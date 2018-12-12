@@ -22,7 +22,7 @@ typically to perform some manual steps or actions, and then continue the automat
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline. This task is not supported in build pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline. This task is not supported in a build pipeline.
 
 ::: moniker range="vsts"
 ## YAML snippet
