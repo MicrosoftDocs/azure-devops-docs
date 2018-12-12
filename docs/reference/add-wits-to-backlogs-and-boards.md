@@ -260,7 +260,17 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	Activity field (Agile, Scrum)
 	</td>
 	<td><pre><code>
-	&lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt;
+	&lt;FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension"&gt; 
+	   &ltHELPTEXT&gt;Type of work involved&lt/HELPTEXT&gt; 
+	   &lt;SUGGESTEDVALUES&gt;  
+	      &lt;LISTITEM value="Development" /&gt;    
+	      &lt;LISTITEM value="Testing" /&gt;    
+	      &lt;LISTITEM value="Requirements" /&gt;    
+	      &lt;LISTITEM value="Design" /&gt;    
+	      &lt;LISTITEM value="Deployment" /&gt;    
+	      &lt;LISTITEM value="Documentation" /&gt;    
+	   &lt;/SUGGESTEDVALUES&gt;    
+	&lt;/FIELD&gt;    
 	</code></pre> </td>
 	</tr>
 	<tr>

@@ -31,7 +31,8 @@ With work item templates you can quickly create work items which have pre-popula
 
 ::: moniker range=">= azdevserver-2019"
 
-- To add, capture, or edit work item templates through the web portal, you must be a member of the team under which you add them. - To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
+- To add, capture, or edit work item templates through the web portal, you must be a member of the team under which you add them. 
+- To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
 
 ::: moniker-end
 
@@ -377,7 +378,8 @@ You manage templates from  team settings. All templates are defined for a team. 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
 
-	Expand **Work** and choose **Team configuration**. 
+	Expand **Boards** and choose **Team configuration**. If you need to switch to a different team, use the team selector.
+
 	####Previous navigation  
 
 	Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
