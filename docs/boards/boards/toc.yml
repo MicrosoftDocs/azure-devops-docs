@@ -39,6 +39,8 @@
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
 - name: How-to guides 
   items:
+  - name: Add tags to work items
+    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards

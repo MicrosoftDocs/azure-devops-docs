@@ -405,7 +405,7 @@ Requires TFS 2015.1 or later version.
 
 <a id="color-tags">  </a>
 
-## Highlight tags (Kanban boards)  
+## Color-code tags (Kanban boards)  
 
 Prior to setting tag colors, first [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.  
  
