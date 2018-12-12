@@ -64,7 +64,7 @@ You can configure your Test Results Trend widget widget to show results for eith
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Restults Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
+	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 
