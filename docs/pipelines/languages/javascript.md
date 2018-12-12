@@ -369,7 +369,7 @@ This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha
 - script: mocha test --reporter mocha-junit-reporter
 ```
 
-If you have defined a `test` script in in your project's package.json file, you can invoke it by using `npm test` just as you would from the command line.
+If you have defined a `test` script in your project's package.json file, you can invoke it by using `npm test` just as you would from the command line.
 
 ```yaml
 - script: npm test
