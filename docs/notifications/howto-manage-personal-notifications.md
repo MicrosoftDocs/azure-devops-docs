@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/11/2018
+ms.date: 12/12/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 >[!NOTE]  
 >**Feature availability**: This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to  receive notifications.
 
-As changes occur to your code base, builds, work items, and other operations, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you.
+As changes occur to your code base, builds, work items, and other operations, you can receive email notifications. For example, you can set an alert, so you're notified whenever a bug that you opened is resolved or you're assigned to a work item.
 
 In this tutorial, you learn how to do the following tasks:
 
@@ -52,13 +52,13 @@ This view shows all subscriptions that you have created or that have been create
 
 # [New navigation](#tab/new-nav)
  
-   <img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+<img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 
 # [Previous navigation](#tab/previous-nav)
 
-    <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
 
-    [!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
+[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]
 
 ---
 
@@ -66,7 +66,7 @@ A subscription can be just for you, or if you are a team admin, can be shared by
 
 ## Add a custom subscription
 
-With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications for. In contrast to a default subscription which will only notify the users or groups directly associated with an event, a custom subscription can notify you about any event.
+With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications for. In contrast to a default subscription, which will only notify the users or groups directly associated with an event, a custom subscription can notify you about any event.
 
 1. From your Notifications page, select **New subscription**.
 
@@ -78,10 +78,10 @@ With custom personal subscriptions, you can define precise criteria for the even
 
    <img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
    
-	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
+	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]
   
    ---
-	
+
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
 	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.
