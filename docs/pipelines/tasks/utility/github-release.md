@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 **Azure Pipelines**
 
-Use this task in your pipeline to to create, edit, or discard a [GitHub release](https://help.github.com/categories/releases/).
+Use this task in your pipeline to create, edit, or discard a [GitHub release](https://help.github.com/categories/releases/).
 
 ## Prerequisites
 
