@@ -50,7 +50,7 @@ Test Results Trend charts require that you set up continuous testing in your bui
 ## Prerequisites
 In order to configure the Test Results Trend widget, you must have the following in place:  
 - Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/test/getting-started-with-continuous-testing.md)
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). Default settings provide all team members wit permissions.
 
 

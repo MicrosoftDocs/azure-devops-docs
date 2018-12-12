@@ -246,7 +246,7 @@ Provides quick access to open the following Agile tools and team resources:
 ::: moniker range=">= azdevserver-2019"
 ## Analytics widgets
 
-To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](../analytics/analytics-extension.md). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+To add Analytics widgets to your dashboard, you first need to install the [Analytics Marketplace extension](../analytics/analytics-extension.md). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 For an overview of each of these widgets, see [Widgets based on the Analytics Service](../analytics/analytics-widgets.md).
 
