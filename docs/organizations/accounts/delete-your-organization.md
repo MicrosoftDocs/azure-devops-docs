@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -50,7 +50,7 @@ To remove billing from your organization, you must be a project collection admin
 
   [Need help?](faq-delete-restore-organization.md#get-support)
 
-## Delete your organization
+## Delete organization
 
 To delete your organization, you need at least Basic access and organization owner
 permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
