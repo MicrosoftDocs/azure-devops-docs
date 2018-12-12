@@ -94,11 +94,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
     The tasks you add to this job will run on each of the machines in the deployment group you specified.
 
 1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
-   **Shell Script** task.
+   **Bash** task.
 
    ![Adding a Shell Script task to the pipeline](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
 
-1. In the properties of the **Shell Script** task, use the **Browse** button for the **Script Path** to select
+1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
    `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`

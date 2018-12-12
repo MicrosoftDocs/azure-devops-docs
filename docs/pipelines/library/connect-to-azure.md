@@ -123,8 +123,8 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 You can configure Azure Virtual Machines (VM)-based agents with an
 [Azure Managed Service Identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview)
-in Azure Active Directory (Azure AD). This lets you use its Service Principal
-information to grant the VM access to any Azure resource that supports Azure AD,
+in Azure Active Directory (Azure AD). This lets you use the system assigned identity (Service Principal)
+ to grant the Azure VM-based agents access to any Azure resource that supports Azure AD,
 such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -142,12 +142,8 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1. Select the **Environment** name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
 
-1. Obtain the service principal information for your VM. You can do this by using
-   the [Azure Portal](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-portal),
-   a [PowerShell script](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-powershell),
-   or the [Azure CLI](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-cli).
 
-1. Enter the values for your service principal into these fields of the connection dialog:
+1. Enter the values for your subscription into these fields of the connection dialog:
 
    * Subscription ID
    * Subscription name
@@ -158,8 +154,8 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
-1. If required, modify the service principal to expose the appropriate permissions.
-   For example, if your code needs to call Azure Resource Manager, assign the VM's service principal the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
+1. Ensure that the VM (agent) has the appropriate permissions.
+   For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
    For more details, see [How can I use managed identities for Azure resources?](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 

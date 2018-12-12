@@ -19,7 +19,7 @@ ms.date: 12/05/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-This topic provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+This article provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
 ::: moniker range="vsts"
 
@@ -765,7 +765,10 @@ You manage collection-level permissions through the [web portal admin context](.
 
 ## Project-level permissions
 
-You manage project-level permissions from the [web portal admin context](../../project/navigation/go-to-service-page.md#project-admin-context) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
+You manage project-level permissions from the [web portal admin context](set-project-collection-level-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
+
+> [!div class="mx-imgBorder"]
+> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
 
 
 <table valign="top" width="100%">
@@ -785,7 +788,10 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
-		<td>[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. </p></td>
+		<td>[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission. </p>
+		<blockquote>
+		All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the **Create tag definition** permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+		<blockquote></td>
 	</tr>
 	<tr>
 		<td id="create-test-runs-permission">Create test runs</td>
