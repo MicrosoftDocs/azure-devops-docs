@@ -154,5 +154,5 @@ A page similar to the one shown will open showing the version number.
 
 ## Related articles
 
-* [Azure DevOps features timeline](../extend/support/release-notes/#server-build-numbers)
+* [Azure DevOps features timeline](../extend/support/release-notes.md)
 * [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
