@@ -57,6 +57,7 @@ deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
 the deployment group is used in a [Deployment group job](../../process/deployment-group-phases.md).
+Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
 You manage the security for a deployment group by
 [assigning security roles](../../agents/pools-queues.md#security).
 

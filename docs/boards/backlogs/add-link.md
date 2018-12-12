@@ -176,7 +176,7 @@ Here, we have selected to add a link to the selected work items.
 
 You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Azure Active Directory to manage users. 
 
-Choose from one of the following three remote link types supported. 
+Choose from one of the following two remote link types supported. 
 
 - Use the **Consumes From/Produces For** link types when you want to track dependencies of work items that are defined in different organizations and managed by different teams. 
 - Use the **Remote Related** link type when the work items being linked are defined in different organizations and managed by different teams, but don't have strong inter-dependencies.
