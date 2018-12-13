@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.custom: seodec18
-ms.date: 12/06/2018
+ms.date: 12/13/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -158,7 +158,11 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 ::: moniker range="vsts"
 
-Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
+> [!NOTE]
+> New pipelines automatically override YAML PR triggers with a setting in the UI.
+> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
+
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
 

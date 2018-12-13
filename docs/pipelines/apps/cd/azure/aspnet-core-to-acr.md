@@ -3,20 +3,12 @@ title: Deploy ASP.NET Core apps to Linux, Docker, and ACR
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
-services: vsts
-documentationcenter: vs-devops-build
-ms.custom: seodec18
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-editor: ''
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
-ms.devlang: dotnetcore
-ms.topic: conceptual
-ms.tgt_pltfrm: acs
-ms.workload: ''
+ms.custom: "mvc, seodec18"
 ms.date: 12/07/2018
-ms.custom: mvc
 monikerRange: 'vsts'
 ---
 

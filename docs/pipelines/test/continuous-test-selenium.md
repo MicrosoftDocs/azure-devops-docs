@@ -1,12 +1,11 @@
 ---
 title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
-ms.custom: seodec18
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.custom: continuous-test
+ms.custom: "continuous-test, seodec18"
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1

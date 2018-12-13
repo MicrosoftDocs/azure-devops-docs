@@ -198,6 +198,9 @@ To install tools that your project needs but that are not set as dev dependencie
 
 The following example installs the latest version of the [Angular CLI](https://cli.angular.io/) by using `npm`. The rest of the pipeline can then use the `ng` tool from other `script` stages.
 
+> [!NOTE]
+> On Microsoft-hosted Linux agents, preface the command with `sudo`, like `sudo npm install -g`.
+
 ```yaml
 - script: npm install -g @angular/cli
 ```
@@ -464,12 +467,17 @@ For AngularJS apps, you can include Angular-specific commands such as **ng test*
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
+
+> [!NOTE]
+> On Microsoft-hosted Linux agents, preface the command with `sudo`, like `sudo npm install -g`.
+
 ```yaml
 - script: |
     npm install -g @angular/cli
     npm install
     ng build --prod
 ```
+
 ::: moniker-end
 
 ::: moniker range="< vsts"

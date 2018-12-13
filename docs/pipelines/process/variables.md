@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/26/2018
+ms.date: 12/13/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -398,12 +398,22 @@ You can also pass them explicitly into a script from your build task (for exampl
 
 ### Allow at queue time
 
+# [YAML](#tab/yaml)
+
+You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
+If a variable appears in the `variables` block of a YAML file, it is fixed and cannot be overridden at queue time.
+To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job.
+
+# [Designer](#tab/designer)
+
 You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
 Continuing the .NET example from above, `BuildConfiguration` can be settable at queue time for CI builds.
 This way, developers can choose whether to create Debug or Release builds depending on their needs.
 However, on your official builds, `BuildConfiguration` should not be settable at queue time so that you don't accidentally ship Debug binaries.
 
 [!INCLUDE [include](../_shared/set-variables-in-scripts.md)]
+
+---
 
 ## Environment variables
 

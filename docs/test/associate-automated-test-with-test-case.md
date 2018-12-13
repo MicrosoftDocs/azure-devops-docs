@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated tests with test cases
 
-**Visual Studio 2017 | [Previous version](https://msdn.microsoft.com/library/dd380741%28v=vs.110%29.aspx)**
+**Visual Studio 2017 and later | [Previous version](https://msdn.microsoft.com/library/dd380741%28v=vs.110%29.aspx)**
 
 Consider using Visual Studio to associate automated tests with a test case when:
 
@@ -45,8 +45,7 @@ The process to associate an automated test with a test case is:
    contains the automated test.
    [What are the differences if I am still using a XAML build?](../pipelines/test/reference-qa.md#xaml-build)
 
-1. Use Visual Studio 2017 Enterprise, Professional, or Test Professional, or
-   a later version, to associate the automated
+1. Use Visual Studio Enterprise or Professional 2017 or a later version to associate the automated
    test with a test case as shown [below](#add-test). The test case must have
    been added to a test plan that uses the build you just defined. 
 
@@ -70,7 +69,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 <a name="add-test"></a>
 ## Associate your test  
 
-1. Open your solution in Visual Studio 2017 Enterprise, Professional, or Test Professional, or a later version.
+1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 
 1. If you don't know the identifier of the work item for the test case,
    locate the test case in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
