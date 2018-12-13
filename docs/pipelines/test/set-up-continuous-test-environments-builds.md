@@ -1,12 +1,11 @@
 ---
 title: Set up test environments
-ms.custom: seodec18
 description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline Azure Pipelines and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.custom: continuous-test
+ms.custom: "continuous-test, seodec18"
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
