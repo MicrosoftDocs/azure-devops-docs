@@ -217,7 +217,7 @@ There is no longer a need to remember markdown syntax for adding [formulas](http
 
 ### Restore deleted projects
 
-With this release we added the ability to restore deleted projects. As of today, users with the delete project permission can restore deleted projects via our REST APIs. To do this, create an update project request with **state=wellFormed**. In a future release, we will be adding a UI that can be accessed from the organization overview page. For more information on the REST API see the documentation [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/update?view=azure-devops-rest-5.1).  
+With this release we added the ability to restore deleted projects. As of today, users with the delete project permission can restore deleted projects via our REST APIs. To do this, create an update project request with **{ "state" : "wellFormed" }**. In a future release, we will be adding a UI that can be accessed from the organization overview page. For more information on the REST API see the documentation [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/update?view=azure-devops-rest-5.1).  
 
 To get a list of deleted projects use the following request
 ```
@@ -226,9 +226,15 @@ GET https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-
 
 To restore a deleted project use the following request
 ```
-PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?state=wellFormed&api-version=5.0-preview.3
+PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=5.0-preview.3
 ```
 
+Request Body
+```
+{
+    "state" : "wellFormed"
+}
+```
 > [!NOTE]
 > You will only have up to 28 days to restore a deleted project. After 28 days, the project will be **permanently** deleted.
 
