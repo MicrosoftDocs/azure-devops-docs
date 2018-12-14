@@ -13,7 +13,7 @@ ms.topic: quickstart
 ms.date: 11/19/2018
 ---
 
-# Defie, triage, and manage bugs
+# Define, triage, and manage bugs
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
