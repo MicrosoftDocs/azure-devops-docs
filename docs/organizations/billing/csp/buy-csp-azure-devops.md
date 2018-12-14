@@ -1,5 +1,6 @@
 ---
 title: Buy and manage Azure DevOps resources for Cloud Solution Providers
+titleSuffix: Azure DevOps Services
 description: Cloud Solution Provider (CSP) partners can purchase and manage resources in Azure DevOps for customers
 ms.prod: devops
 ms.technology: devops-billing

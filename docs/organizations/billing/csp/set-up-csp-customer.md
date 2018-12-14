@@ -1,5 +1,6 @@
 ---
 title: "Set up billing for your customers for Azure DevOps Services and Visual Studio"
+titleSuffix: Azure DevOps Services
 description: Cloud Solution Provider (CSP) partners can purchase and manage various Azure DevOps Services, Visual Studio, HockeyApp, and other subscriptions for their customers
 ms.prod: devops
 ms.technology: devops-billing
@@ -8,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -30,7 +31,7 @@ Set up a customer and CSP-based Azure subscription in the Partner Center by comp
 
 1. Sign in to your [Partner Center](https://partnercenter.microsoft.com) account. 
 2. On the dashboard, choose **Add new customer**. Or add a new customer from the **Customers** page. Provide the customer's details and advance to the customer's subscriptions.
-3. Add an Azure subscription, which the marketplace uses for billing. Customers can have as many Azure subscriptions as needed. Choose **Add subscription** and then **Microsoft Azure** to add more.
+3. Add an Azure subscription, which the marketplace uses for billing. Customers can have as many Azure subscriptions as needed. Choose **Add subscription**, and then **Microsoft Azure** to add more.
 4. Review your order and select **Submit**.
 
 At first, new subscriptions have the subscription name **Microsoft Azure**. So be sure to give subscriptions

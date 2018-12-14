@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azdevserver-2019'
-ms.date: 12/04/2018  
+ms.date: 12/14/2018  
 ---
 
 # Publish a Git repository to a wiki
@@ -106,7 +106,7 @@ Choose this option when you maintain markdown files in an existing Git repo and 
 	> ![Create wiki, publish existing repo markdown files](_img/wiki/create-wiki-or-publish-publish-option.png) 
 
 	> [!NOTE]
-	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md) and then return and refresh this page.
+	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md), and then return and refresh this page.
 
 	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code as wiki** menu option.
 

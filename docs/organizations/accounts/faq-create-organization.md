@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot creating an organization
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like the differences between using a Microsoft account versus a work or school account, and more.
 ms.prod: devops
