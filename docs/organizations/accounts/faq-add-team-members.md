@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot adding members, users to projects
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to add more members to your project, help users sign in, remove users, and more.
 ms.prod: devops

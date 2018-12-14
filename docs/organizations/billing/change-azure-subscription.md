@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: 'vsts'
 If you want to use a different Azure subscription to bill purchases for your organization, you can do either of the following:
 
 - Move it to a different Azure subscription that you have access to
-- Remove the current Azure subscription and then buy again using a new subscription
+- Remove the current Azure subscription, and then buy again using a new subscription
 
 ## Move to a different subscription
 

@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 11/19/2018  
+ms.date: 12/14/2018  
 ---
 
 # View wiki page history and revert
@@ -134,7 +134,7 @@ To revert to an earlier committed version, one that is not the immediate last re
 0.	Create a pull request for your local branch into master.
 0.	Complete the pull request.
 
-You can use the following steps to identify the commit that contains the content you want to revert to. And then, use standard Git operations to revert the content.
+You can use the following steps to identify the commit that contains the content you want to revert to. Then, use standard Git operations to revert the content.
 
 For more information, see the following articles:
 

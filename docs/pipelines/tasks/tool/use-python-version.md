@@ -28,6 +28,9 @@ None
 
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
+> [!Note]
+> x86 versions of Python are available on Microsoft-hosted Windows agents, but not Linux nor macOS.
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]

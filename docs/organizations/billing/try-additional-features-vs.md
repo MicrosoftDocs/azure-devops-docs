@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -77,7 +77,7 @@ If you lose access because the trial expired before you could purchase, buy and 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select **Extensions** and then select your extension or **Browse Marketplace**.
+3. Select **Extensions**, and then select your extension or **Browse Marketplace**.
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 # Change the number of paid users in your organization
@@ -36,12 +36,12 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 
    ![Go to Visual Studio Marketplace, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 
-2. Select your organization and then select **Buy**.
+2. Select your organization, and then select **Buy**.
 
    > [!div class="mx-imgBorder"]
 ![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
-3. Update the number of paid users and then choose **Continue**. To cancel all your paid users, reduce this number to zero (0).
+3. Update the number of paid users, and then choose **Continue**. To cancel all your paid users, reduce this number to zero (0).
 
     For example, to increase our total paid users from one to 10:
 
@@ -49,7 +49,7 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 ![Change number of paid Basic users](_img/reduce-cancel-paid-users/change-quantity-of-users.png)
     > If you [pay for TFS client access licenses (CALs) through Azure DevOps](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
 
-4. Review your changes and then select **Confirm**.
+4. Review your changes, and then select **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Review your changes and confirm total paid users](_img/reduce-cancel-paid-users/review-and-confirm.png)

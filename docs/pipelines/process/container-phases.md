@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 11/19/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -73,8 +73,7 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 
 > [!Note]
 > You must specify "Hosted Ubuntu 1604" as the
-> pool name in order to run containers. Other pools won't work.
-> In the future, we intend to remove the need to specify a pool.
+> pool name in order to run Linux containers. Other pools won't work.
 
 ## Multiple jobs
 

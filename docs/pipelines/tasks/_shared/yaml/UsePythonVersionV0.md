@@ -5,5 +5,5 @@
   inputs:
     #versionSpec: '3.x' 
     #addToPath: true 
-    #architecture: 'x64' # Options: x86, x64
+    #architecture: 'x64' # Options: x64, x86 (x86 is only on Microsoft-hosted Windows)
 ```
