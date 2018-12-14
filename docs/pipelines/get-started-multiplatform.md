@@ -9,7 +9,7 @@ ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.manager: douge
 ms.author: alewis
 author: vtbassmatt
-ms.date: 9/20/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -37,7 +37,7 @@ You should now have a sample app in your GitHub account.
 
 ## Add additional platforms
 
-In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're going to add a second job that runs on Windows.
+In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're going to add additional jobs that run on other platforms.
 
 1. Go to your fork of the sample code on GitHub.
 
@@ -48,80 +48,52 @@ In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=vsts
-jobs:
-- job: Linux
+strategy:
+  matrix:
+    linux:
+      imageName: 'ubuntu-16.04'
+    mac:
+      imageName: 'macos-10.13'
+    windows:
+      imageName: 'vs2017-win2016'
 
-  pool:
-    vmImage: 'ubuntu 16.04'
+pool:
+  vmImage: $(imageName)
 
-  steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '8.x'
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '8.x'
 
-  - script: |
-      npm install
-      npm test
+- script: |
+    npm install
+    npm test
 
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFiles: '**/TEST-RESULTS.xml'
-      testRunTitle: 'Test results for JavaScript'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TEST-RESULTS.xml'
+    testRunTitle: 'Test results for JavaScript'
 
-  - task: PublishCodeCoverageResults@1
-    inputs: 
-      codeCoverageTool: Cobertura
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
-      reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+- task: PublishCodeCoverageResults@1
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 
-  - task: ArchiveFiles@2
-    inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-      includeRootFolder: false
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
 
-  - task: PublishBuildArtifacts@1
-
-- job: Windows
-
-  pool:
-    vmImage: 'vs2017-win2016'
-
-  steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '8.x'
-
-  - script: |
-      npm install
-      npm test
-
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFiles: '**/TEST-RESULTS.xml'
-      testRunTitle: 'Test results for JavaScript'
-
-  - task: PublishCodeCoverageResults@1
-    inputs: 
-      codeCoverageTool: Cobertura
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
-      reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
-
-  - task: ArchiveFiles@2
-    inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-      includeRootFolder: false
-
-  - task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@1
 ```
 
 At the bottom of the GitHub editor, select **Commit changes**.
 
 Each job in this example runs on a different VM image.
-By default, the Linux and Windows jobs run at the same time in parallel.
+By default, the jobs run at the same time in parallel.
 
-Note: To make this example clearer, we've copied the code.
-However, when you go to put a pipeline for your app into production, we recommend that you instead use [templates](process/templates.md) to reduce code duplication.
-Also, `script` runs in each platform's native script interpreter: Bash on macOS and Linux, CMD on Windows.
+Note: `script` runs in each platform's native script interpreter: Bash on macOS and Linux, CMD on Windows.
 See [multi-platform scripts](scripts/cross-platform-scripting.md) to learn more.
 
 ## Create the pipeline
