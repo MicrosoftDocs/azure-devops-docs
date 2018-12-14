@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 12/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -38,10 +38,10 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
    ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
 
-4. Update the total number of paid users and then select **Continue**.
+4. Update the total number of paid users, and then select **Continue**.
 
    ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
-5. Review and then select **Confirm**.
+5. Review, and then select **Confirm**.
 
    ![Confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
 

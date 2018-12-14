@@ -1,6 +1,6 @@
 ---
 title: Change application access policies for organizations
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change application access policies for your organization, so you don't have to enter user credentials multiple times
 ms.prod: devops

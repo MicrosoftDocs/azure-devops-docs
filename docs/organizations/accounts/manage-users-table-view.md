@@ -1,5 +1,6 @@
 ---
-title: Manage users and access levels - Azure DevOps
+title: Manage users and access levels
+titleSuffix: Azure DevOps Services
 description: Add users and assign access levels on the Users page in Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
