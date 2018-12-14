@@ -31,7 +31,7 @@ add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contr
 
 3. Choose **Access control (IAM)**.
 
-   ![Choose access control and then add](_img/add-backup-billing-manager/choose-access-control.png)
+   ![Choose access control, and then add](_img/add-backup-billing-manager/choose-access-control.png)
 
 4. Choose **Add**.
 

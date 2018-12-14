@@ -1,23 +1,15 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET Core app | Azure Pipelines
-ms.custom: seodec18
 description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-services: vsts
-documentationcenter: ''
-author: alewis
-manager: douge
-editor: ''
-ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: dotnetcore
-ms.date: 06/24/2017
 ms.author: alewis
 author: andyjlewis
-ms.custom: mvc
+manager: douge
+ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
+ms.custom: "mvc, seodec18"
+ms.date: 06/24/2017
 monikerRange: '>= tfs-2015'
 ---
 

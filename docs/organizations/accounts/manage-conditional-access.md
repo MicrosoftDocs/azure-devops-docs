@@ -1,6 +1,6 @@
 ---
-title: Manage conditional access policies - Azure DevOps
-titleSuffix: Azure DevOps
+title: Manage conditional access policies
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to protect your organization credentials and keep your data safe with multi-factor authentication, security group membership, and more.
 ms.prod: devops
