@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 12/06/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 
@@ -931,11 +931,9 @@ jobs:
 
 See [templates](process/templates.md) for more about working with templates.
 
-<!--
 ## Syntax highlighting
 
 Syntax highlighting is available for the pipeline schema via a VS Code
 extension. You can [download VS Code](https://code.visualstudio.com),
-[install the extension](https://example.com/TODO), and
-[check out the project on GitHub](https://github.com/Microsoft/pipelines-vscode).
--->
+[install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and
+[check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).

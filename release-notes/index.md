@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/28/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -93,7 +93,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[04 December 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="14">[04 December 2018](2018/sprint-143-update.md)</td>
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Future</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Future</td></tr>
@@ -104,11 +104,13 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>ServiceNow Change Management integration</td><td>Future</td></tr>
         <tr><td>Links to specific lines in a build log</td><td>Future</td></tr>
         <tr><td>Specify multi-platform pipeline in a single file</td><td>Future</td></tr>
+        <tr><td>Automatically redeploy on failure</td><td>Future</td></tr>
         <tr><td>Python Package Index (PyPI) public preview</td><td>Future</td></tr>
         <tr><td>Service health portal</td><td>N/A</td></tr>
         <tr><td>Markdown templates for formulas and videos</td><td>Future</td></tr>
+        <tr><td>Restore deleted projects</td><td>N/A</td></tr>
         <tr>
-            <td rowspan="15">[12 November 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
             <td>REST API version 5.0</td><td>Future</td>
         </tr>
         <tr><td>New work item text editor</td><td>Future</td></tr>
@@ -119,7 +121,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Declare container resources inline</td><td>Future</td></tr>
         <tr><td>Changes to default permissions for new projects</td><td>Future</td></tr>
         <tr><td>Deploy to failed targets in a Deployment Group</td><td>Future</td></tr>
-        <tr><td>Automatically redeploy on failure</td><td>Future</td></tr>
         <tr><td>Support for Infrastructure as Code</td><td>Future</td></tr>
         <tr><td>Exclude files in artifact uploads</td><td>N/A</td></tr>
         <tr><td>Provenance information on packages</td><td>Future</td></tr>

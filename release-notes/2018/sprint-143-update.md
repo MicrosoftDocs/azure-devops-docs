@@ -36,7 +36,6 @@ Azure Pipelines:
 - [Declare container resources inline](#declare-container-resources-inline)
 - [Changes to default permissions for new projects](#changes-to-default-permissions-for-new-projects)
 - [Deploy to failed targets in a Deployment Group](#deploy-to-failed-targets-in-a-deployment-group)
-- [Automatically redeploy on failure](#automatically-redeploy-on-failure)
 - [Support for Infrastructure as Code](#support-for-infrastructure-as-code)
 
 Azure Artifacts:
@@ -59,7 +58,7 @@ Every API request should include an api-version. However, if you are making a RE
 
 ### New work item text editor
 
-We're excited to announce the general availability of the new text editor on the work item form. Our text editor has been outdated for a while, and this new experience will be a huge improvement. The new editor is more modern and powerful, bringing in new capabilities including resizing of images, code snippets, keyboard shortcuts for both Mac and Windows, and a full emoji library. 
+We're excited to announce the general availability of the new text editor on the work item form. Our text editor has been outdated for a while, and this new experience will be a huge improvement. The new editor is more modern and powerful, bringing in new capabilities including resizing of images, code snippets, keyboard shortcuts for both Mac and Windows, and a full emoji library.
 
 You can use this control in any text field on the work item form, including in your discussions. Here is the new experience that you can expect to see:
 
@@ -152,13 +151,6 @@ By default, **Azure Pipelines** used to re-run all jobs when you redeploy a prev
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_08.png)
 
-### Automatically redeploy on failure
-
-When a deployment to a stage fails, **Azure Pipelines** can now automatically redeploy the last successful deployment. You can configure the stage to automatically deploy the last successful release by configuring the **Auto-redeploy trigger** in the **Post-deployment conditions**. We plan to add additional triggered events and actions to the auto redeploy configuration in a future sprint. See the [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/) documentation for more information.
-
-> [!div class="mx-imgBorder"]
-![Badge](_img/143_09.png)
-
 ### Support for Infrastructure as Code
 
 We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps projects](https://azure.microsoft.com/en-in/features/devops-projects/). IaC is a process of managing and provisioning computing infrastructure with some declarative approach, while setting their configuration using definition files instead of traditional interactive configuration tools. This will enable you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution using a template for deployment. This template can be used for different environments such as testing, staging, and production.
@@ -167,7 +159,7 @@ We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps proje
 
 ### Exclude files in artifact uploads
 
-Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/azure/devops/artifacts/reference/artifactignore?view=vsts) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory. 
+Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/azure/devops/artifacts/reference/artifactignore?view=vsts) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
 
 ### Provenance information on packages
 
@@ -184,18 +176,18 @@ With this sprint's update, we're rolling out substantial updates to the document
 
 ### Test result trend widget
 
-The **Test result trend widget** is now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Azure DevOps organization. It provides near real-time visibility into your test data for multiple builds and releases. The **Test results trend widget** displays a trend of your test results for your pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline. 
+The **Test result trend widget** is now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Azure DevOps organization. It provides near real-time visibility into your test data for multiple builds and releases. The **Test results trend widget** displays a trend of your test results for your pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 
 > [!div class="mx-imgBorder"]
 ![Test result widget](_img/143_01.png)
 
-The **Test result trend widget** helps you to find outliers in your test results and answer questions like what tests are taking longer to run than usual or what micro services are affecting my pass rate? 
+The **Test result trend widget** helps you to find outliers in your test results and answer questions like what tests are taking longer to run than usual or what micro services are affecting my pass rate?
 To help you answer these questions, the widget provides these features:
-* Displays a trend of pass rate, and count of test results or test duration 
-* Presents test results based on multiple build pipelines or release pipelines 
-* Uses combined charting options to display two metrics over the same trend 
-* Filters the test count over time by test outcome 
-* Filters all your test results by branch or test 
+* Displays a trend of pass rate, and count of test results or test duration
+* Presents test results based on multiple build pipelines or release pipelines
+* Uses combined charting options to display two metrics over the same trend
+* Filters the test count over time by test outcome
+* Filters all your test results by branch or test
 * Stacks your metrics by test attributes such as **Priority** or **Environment**
 
 The widget is highly configurable allowing you to use it for a wide variety of scenarios.
