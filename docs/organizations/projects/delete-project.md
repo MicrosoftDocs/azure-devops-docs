@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/07/2018
+ms.date: 12/14/2018
 ---
 
 # Delete a project
@@ -37,25 +37,24 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 
     If you don't see the actions icon ![actions icon image](../../_img/icons/actions-icon.png), either you're not accessing Azure DevOps Services or you're not a member of the Project Collection Administrators group. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-0. You must type the name of the project in order to initiate the delete operation. 
+0. You must type the name of the project in order to initiate the delete operation.
 
    >[!div class="mx-imgBorder"]
    ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
 
-::: moniker-end  
-
+::: moniker-end
 
 ::: moniker range="tfs-2015"
 0. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to delete and choose **Delete**.
 
     If you don't see the ![](../../_img/icons/context-menu.png) context icon menu, you don't have the permissions to delete the project. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-0. You must type the name of the project in order to initiate the delete operation. 
+0. You must type the name of the project in order to initiate the delete operation.
 
    >[!div class="mx-imgBorder"]
    ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
 
-::: moniker-end  
+::: moniker-end
 
 <a name="delete-team-proj"></a>
 
@@ -77,7 +76,7 @@ Using the administration console, you can delete a project from a project collec
 
     ![project collection delete button](_img/delete-project/ic686856.png)
 
-3.  Choose whether to delete external data associated with the project and then initiate the delete action.
+3.  Choose whether to delete external data associated with the project, and then initiate the delete action.
 
     ![delete projects dialog](_img/delete-project/ic687180.png)
 

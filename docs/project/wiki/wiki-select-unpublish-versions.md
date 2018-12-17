@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azdevserver-2019'
-ms.date: 11/15/2018  
+ms.date: 12/14/2018  
 ---
 
 # Version, select, or un-publish a published wiki
@@ -24,7 +24,7 @@ When you publish a Git repository to a wiki, you can publish new branch versions
 
 ## Publish a new wiki version
 
-When your published wiki corresponds to a product version, you can publish new versions as you release new versions of your product. To create a new version, create a new branch of your repo and then make updates to that new branch.
+When your published wiki corresponds to a product version, you can publish new versions as you release new versions of your product. To create a new version, create a new branch of your repo, and then make updates to that new branch.
 
 [!INCLUDE [temp](../../_shared/new-navigation-azdevops.md)]  
 

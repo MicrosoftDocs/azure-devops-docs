@@ -1,6 +1,6 @@
 ---
 title: Add new users to your organization or project
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: How to add users to an organization or project
 ms.prod: devops
@@ -63,7 +63,7 @@ To give other users access to your organization, add their email addresses.
 
     ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users** and then select **Add new users** to open the form.
+3. Select **Users**, and then select **Add new users** to open the form.
 
    ![Select Add new users](_img/_shared/add-new-users.png)
 

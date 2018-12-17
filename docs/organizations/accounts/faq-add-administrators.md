@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot adding administrators to projects and project collections
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), about adding administrator to projects and collections
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
