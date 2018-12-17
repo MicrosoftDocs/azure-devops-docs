@@ -87,7 +87,7 @@ The Test Impact data collector is automatically configured. No additional steps 
 If your application interacts with a service in the context of IIS, you must also configure the Test Impact data collector to run in the context of IIS by using a **.runsettings** file.
 Here is a sample that creates this configuration:
 
-``` sample.runsettings
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
   <DataCollectionRunSettings>

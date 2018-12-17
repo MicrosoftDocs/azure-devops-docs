@@ -98,7 +98,7 @@ C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TF
 
  To override one or more of the variables while debugging with Visual Studio, create an ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the INI file to override the variables. For example:
 
-```
+```ini
 [variables]
 TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 ```
