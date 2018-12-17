@@ -135,7 +135,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
@@ -287,7 +287,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
@@ -430,7 +430,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
