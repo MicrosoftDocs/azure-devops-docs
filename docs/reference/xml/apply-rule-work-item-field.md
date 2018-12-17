@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azdevserver-2019'
 ms.date: 05/10/2017
@@ -50,7 +51,7 @@ The following example shows the assignment of Help text to a custom Business Jus
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
-   <HELPTEXT>Only required when you set the Urgencyfield to Need Immediately. </HELPTEXT>
+   <HELPTEXT>Only required when you set the Urgency field to Need Immediately. </HELPTEXT>
 </FIELD>
 ```
 

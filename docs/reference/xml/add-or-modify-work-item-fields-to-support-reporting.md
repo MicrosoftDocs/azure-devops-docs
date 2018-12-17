@@ -5,7 +5,8 @@ description: Customize which fields appear in the relational warehouse or cube t
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= azdevserver-2019'
@@ -91,13 +92,13 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
     -   Assign `Detail` to export the field to the relational warehouse database but not to the cube. As the following example shows, use the `Detail` type only for Integer, Double, String, or DateTime fields:  
   
-        ```  
+        ```xml
         <FIELD refname="MyCorp.Summary" name="Summary" type="String" reportable="detail">  
         ```  
   
     -   Assign `Dimension` to export the field to both the relational warehouse database and the cube. As the following example shows, use `Dimension` only for Integer, String, or DateTime fields. This value is useful to include fields that are used to filter reports (for example, fields that have lists of valid values).  
   
-        ```  
+        ```xml
         <FIELD refname="MyCorp.Category" name="Category" type="String" reportable="dimension">  
         ```  
   
@@ -105,7 +106,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
          When you assign Measure as the `reportingtype`, you must assign `sum` as the `formula`, as the following example shows:  
   
-        ```  
+        ```xml
         <FIELD refname="MyCorp.Cost" name="Cost" type="Integer" reportable="measure" formula="sum">  
         ```  
   
