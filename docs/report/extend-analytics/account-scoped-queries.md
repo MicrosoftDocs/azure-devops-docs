@@ -24,7 +24,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-## Prerequistes 
+## Prerequisites 
 
 - Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
