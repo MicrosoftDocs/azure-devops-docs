@@ -39,7 +39,7 @@ Choose **Wiki**.
 > [!div class="mx-imgBorder"]  
 > ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
  
-If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), and then choose **Wiki>Wiki**.
+If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (ellipses), and then choose **Wiki>Wiki**.
 
 ![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
