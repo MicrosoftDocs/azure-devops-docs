@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot changing the owner of an organization
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like changing the organization owner and organization name (URL), learning the difference between an organization owner and user, and more.
 ms.prod: devops

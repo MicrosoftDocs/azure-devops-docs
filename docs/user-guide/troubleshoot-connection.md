@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/07/2018
+ms.date: 12/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -65,7 +65,7 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 
 In some cases, you might not know you have two identities with the same sign in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
 
-To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account** and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
+To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
 > [!TIP]
 > To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
@@ -81,7 +81,7 @@ Your personal Microsoft account doesn't have access but your Azure AD account do
 
 ### Mitigation
 
-If you enter your credentials correctly but you're redirected back to the original sign-in page, we recommend clearing all cookies and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
+If you enter your credentials correctly but you're redirected back to the original sign-in page, we recommend clearing all cookies, and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
 
 ::: moniker-end
 

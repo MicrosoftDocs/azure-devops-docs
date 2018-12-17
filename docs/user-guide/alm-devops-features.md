@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 12/05/2018
+ms.date: 12/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -1878,7 +1878,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a [Windows Language Interface Pack (LIP)](https://msdn.microsoft.com/library/ms246590.aspx), you can install a language version of Windows and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and will have a majority of the user interface localized. </p>
+<p>By using a [Windows Language Interface Pack (LIP)](https://msdn.microsoft.com/library/ms246590.aspx), you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and will have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
@@ -2178,7 +2178,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>

@@ -1,6 +1,6 @@
 ---
 title: Assign access levels, extensions to users by group membership
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign group-based licensing for users in Azure Active Directory and Azure DevOps groups by adding a group rule.
 ms.prod: devops

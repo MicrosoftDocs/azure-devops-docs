@@ -1,6 +1,6 @@
 ---
 title: Create, configure a new organization
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops

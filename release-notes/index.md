@@ -24,7 +24,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Azure DevOps Server Support for Move work item to another team project / Change work item type](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292418)|Boards|2019|
 |[New rich text Description and Discussion control](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1360789)|Boards|TBD|
 |[Create pull requests in draft mode](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1382660)|Repos|TBD|
-|[Git Pull Requests – Improved search/filter options for pull requests](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1257205)|Repos|TBD|
 |[Release Management orchestration improvements – Tag based triggers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221125)|Pipelines|2019|
 |[Agent-based deployment in Release Management – Sharing of VMs](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221126)|Pipelines|2019|
 |[Release traceability – Pull request integration](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221144)|Pipelines|2019|
@@ -65,6 +64,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Updated Security & Org Settings pages](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366414)|Admin|TBD|
 |[User licenses (Basic) can be purchased directly from the user's page](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366415)|Admin|N/A|
 |[User licenses will be charged once per user across Orgs in the same Azure Subscription](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366420)|Admin|N/A|
+|[Change project profile image from settings](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1411743)|Admin|N/A|
 
 ### 2019 Q2
 

@@ -11,7 +11,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 12/07/2018
+ms.date: 12/14/2018
 ---
 
 # Quickstart: Plan and track your work
@@ -50,7 +50,7 @@ You can add work items after you connect to a project. If you don't have an orga
 
    >![Choose New Work Item and type](_img/plan-track-work/new-work-item-select-type-vert.png)
 
-1. Enter a title and then **Save** the work item. Before you can change the **State** from its initial default value, you must save it.  
+1. Enter a title, and then **Save** the work item. Before you can change the **State** from its initial default value, you must save it.  
 
 	That's it!
 
@@ -72,7 +72,7 @@ You can add work items after you connect to a project. If you don't have an orga
 
 	![Open Work when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
 
-1. Enter a title and then save the work item. Before you can change the **State** from its initial default value, you must save it.  
+1. Enter a title, and then save the work item. Before you can change the **State** from its initial default value, you must save it.  
 
 	<img src="../boards/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
 

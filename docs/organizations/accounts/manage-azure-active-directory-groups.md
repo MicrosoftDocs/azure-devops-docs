@@ -1,6 +1,6 @@
 ---
 title: Manage access with Azure Active Directory groups
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to control who can access Azure DevOps with Azure Active Directory groups
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/14/2018
 monikerRange: 'vsts'
 ---
 # Access with Azure Active Directory groups
@@ -50,7 +50,7 @@ and differences in how you [control organization access with Microsoft accounts 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 
    ![Add a member to your selected group](_img/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
-4. Add groups and then save your changes.
+4. Add groups, and then save your changes.
 
     ![Bulk add members to a group](_img/manage-azure-ad-groups/bulk-add-groups.png)
 

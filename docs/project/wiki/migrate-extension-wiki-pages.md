@@ -12,7 +12,7 @@ author: chcomley
 ms.topic: conceptual
 ms.reviewer: sancha
 monikerRange: 'tfs-2018 || vsts'
-ms.date: 11/19/2018  
+ms.date: 12/14/2018  
 ---  
 
 # Migrate pages from Wiki extension to a team project wiki
@@ -24,7 +24,7 @@ With the release of the built-in wiki, any wiki pages that you created using the
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with the following steps:
 
 1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
-2.	Create and then clone your Azure DevOps wiki
+2.	Create, and then clone your Azure DevOps wiki
 3.	Move and commit all markdown pages to your Azure DevOps wiki
 4.	Run the wiki migration tool, **MigrateToVSTSWiki.exe**
 5.	Once you are done, push the changes to the default master branch, *wikiMaster*, of the Azure DevOps wiki repository.

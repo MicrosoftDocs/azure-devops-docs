@@ -15,6 +15,11 @@ monikerRange: '>= tfs-2018'
 ms.date: 11/15/2018  
 ---
 
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> GIT workflows like branch policies are applicable only for publish code as wiki workflows.
+::: moniker-end
+
 # Clone and update wiki content offline
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
