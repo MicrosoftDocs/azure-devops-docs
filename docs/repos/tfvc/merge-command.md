@@ -96,7 +96,7 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 ### Baseless Merge
 
-Use baseless merge to merge items that are not directly branched from each other. To perform a baseless merge, you must use the **tf** **merge** command. When you perform a baseless merge, Team Foundation does not have any information about the relationship of the files in the braches. In a baseless merge, you must perform manual conflict resolutions. After you have performed the baseless merge and resolved any conflicts, Team Foundation records the merge history and establishes a relationship between the folders and files.
+Use baseless merge to merge items that are not directly branched from each other. To perform a baseless merge, you must use the **tf** **merge** command. When you perform a baseless merge, Team Foundation does not have any information about the relationship of the files in the branches. In a baseless merge, you must perform manual conflict resolutions. After you have performed the baseless merge and resolved any conflicts, Team Foundation records the merge history and establishes a relationship between the folders and files.
 
 When you run **tf** **merge**, Team Foundation performs an implicit baseless merge between items that have the same relative name in two previously related version-controlled trees. For example, you might want to merge the related branches $SRC\\ and $TGT. Both branches contain an unrelated file that is named a.txt. When you run **tf** **merge**, Team Foundation establishes a relationship between the two a.txt files if the two files are the same, if FIPS-compliant encryption is disabled, and if the source file is not related to any other file in the target.
 

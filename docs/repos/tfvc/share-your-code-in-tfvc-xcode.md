@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
+Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
 
 ## Download and configure Git-tf
 
