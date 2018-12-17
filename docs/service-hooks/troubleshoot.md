@@ -73,7 +73,7 @@ A: Use tfssecurity.exe from the command line, for example:
 
 **Note:** The GUID represents the project ID which can be retrieved using the [Projects](/azure/devops/integrate/previous-apis/tfs/projects) REST API.
 
-#### Q: Can I programmatically create subsciptions? 
+#### Q: Can I programmatically create subscriptions? 
 
 A: Yes, use [REST APIs](./create-subscription.md).
 

@@ -52,7 +52,7 @@ and a queue can contain millions of messages, up to the total capacity limit of 
 
    <img alt="Open manage access keys" src="./_img/azure-storage/manage-access-keys.png" style="border: 1px solid #CCCCCC" />
 
-5. Copy the storage account name and primary acccess key.
+5. Copy the storage account name and primary access key.
 You need to provide these values when you create a Service Hook subscription.
 
    <img alt="Copy name and primary key values" src="./_img/azure-storage/access-keys.png" style="border: 1px solid #CCCCCC" />
@@ -96,7 +96,7 @@ for .NET Framework (and other languages) to access the message:
 
 Example:
 
-```
+```csharp
     // Retrieve storage account from connection string
     CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
         CloudConfigurationManager.GetSetting("StorageConnectionString"));
