@@ -26,14 +26,14 @@ or when an Azure DevOps Services build finishes.
 
 2. If you use Bamboo on-premises, [enable HTTPS](https://confluence.atlassian.com/display/BAMBOO/Advanced+actions) on your Bamboo server.
 
-3. If your project uses Team Foundation version control and not Git, install the [TFS respository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
+3. If your project uses Team Foundation version control and not Git, install the [TFS repository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
 
 ## Enable Azure DevOps Services basic authentication
 1. If you haven't already, enable [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) in your Azure DevOps Services profile.
 Be sure to set a secondary user name because you won't be able to use your email address
 to connect Azure DevOps Services to Bamboo.
 
-   <img alt="Profile, credentials tab, alternative credentials enabled wiht a secondary user name" src="./_img/bamboo/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/bamboo/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
 ## Set up a Bamboo build plan
 
