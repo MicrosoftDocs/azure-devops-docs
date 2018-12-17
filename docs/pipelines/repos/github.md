@@ -112,7 +112,7 @@ GitHub repository permissions map to Azure DevOps project permissions as follows
 
 If your GitHub repository grants permission to teams, you can create matching teams in the `Teams` section of your Azure DevOps project settings. Then, add the teams to the security groups above, just like users.
 
-### Pipleline-specific permissions
+### Pipeline-specific permissions
 
 To grant permissions to users or teams for specific pipelines in an Azure DevOps project, follow these steps:
 
@@ -142,7 +142,7 @@ The Azure Pipelines GitHub App is the **recommended** authentication type. By in
 To use the GitHub App, install it in your GitHub organization or user account. The app can be installed and uninstalled from 2 locations:
 
 1. The app's [homepage](https://github.com/apps/azure-pipelines) - **This is recommended** when no parallel jobs are being purchased, or when your organization pays GitHub by purchase order (PO) or invoice.
-1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories, but where cancelation of the price plan may delay uninstallation until the end of your GitHub billing period, even for the free plan.
+1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/) where additional parallel jobs can be purchased for private repositories, but where cancellation of the price plan may delay uninstallation until the end of your GitHub billing period, even for the free plan.
 
 To install the GitHub App, you must be a repository admin or GitHub organization owner.
 

@@ -39,7 +39,7 @@ Azure Pipelines has built-in support for Helm charts:
 
 ## Define your CI build process using Helm
 
-We'll show you how to set up a continuous intergration workflow for your containerized application using Azure Pipelines and Helm.
+We'll show you how to set up a continuous integration workflow for your containerized application using Azure Pipelines and Helm.
 
 
 ## Prerequisites
