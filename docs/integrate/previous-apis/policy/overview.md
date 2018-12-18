@@ -33,5 +33,5 @@ If you haven’t already, look at the information on getting started with these 
 
 ### Get a list of policy configurations
 
-* Get the available [policy types](./types.md) for anorganization. 
+* Get the available [policy types](./types.md) for an organization. 
 * Get the [policy configurations](./configurations.md) for a project.

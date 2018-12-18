@@ -132,7 +132,7 @@ Subscription Filter Clause represents a single clause in a subscription filter e
 <a id="ExpressionFilterGroup"></a>
 
 ## ExpressionFilterGroup
-Represents a hierarchy of SubscritionFilterClauses that have been grouped together through either adding a group in the WebUI or using parethesis in the Subscription condition string
+Represents a hierarchy of SubscriptionFilterClauses that have been grouped together through either adding a group in the WebUI or using parenthesis in the Subscription condition string
 
 
 | Field        | Type      | Notes
@@ -487,7 +487,7 @@ A subscription defines criteria for matching events and how the subscription's s
 | <code>status</code> | [SubscriptionStatus](#SubscriptionStatus) | Status of the subscription. Typically indicates whether the subscription is enabled or not.
 | <code>statusMessage</code> | string | Message that provides more details about the status of the subscription.
 | <code>subscriber</code> | [IdentityRef](#IdentityRef) | User or group that will receive notifications for events matching the subscription's filter criteria.
-| <code>url</code> | string | REST API URL of the subscriotion.
+| <code>url</code> | string | REST API URL of the subscription.
 | <code>userSettings</code> | [SubscriptionUserSettings](#SubscriptionUserSettings) | User-managed settings for the subscription. Only applies when the subscriber is a group. Typically used to indicate whether the calling user is opted in or out of a group subscription.
 
 
@@ -607,7 +607,7 @@ Encapsulates the properties of a SubscriptionEvaluationRequest. It defines the s
 <a id="SubscriptionEvaluationResult"></a>
 
 ## SubscriptionEvaluationResult
-Ecapsulates the subscription evaluation results. It defines the Date Interval that was used, number of events evaluated and events and notifications results
+Encapsulates the subscription evaluation results. It defines the Date Interval that was used, number of events evaluated and events and notifications results
 
 
 | Field        | Type      | Notes

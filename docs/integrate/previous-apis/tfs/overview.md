@@ -30,7 +30,7 @@ A VSTS organization has one or more [projects](./projects.md). Each project has 
 
 ### Get a list of projects
 
-Get the [projects](./projects.md) in theorganization. 
+Get the [projects](./projects.md) in the organization. 
 
 ### Get a project's source control provider
 
