@@ -22,11 +22,11 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Package Management feeds.
+This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
  
 This walkthrough assumes that you've already added the correct build service identity to your feed.
 
 1. Create a new build pipeline and select the **Maven** template.
 <br>
-2. Fill in the path to your `pom.xml`, configure the Maven goal you'd like for your build. Authentication to your Azure Artifacts feed should happen automatically.
+2. Fill in the path to `pom.xml`, and configure the Maven goal you'd like for your build. Authentication to your Azure Artifacts feed should happen automatically.
 <br>

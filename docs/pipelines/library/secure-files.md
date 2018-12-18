@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: dastahel
 ms.author: madhurig
-ms.date: 04/26/2017
+ms.date: 12/18/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -45,5 +45,12 @@ To handle secure files during build or release, you can refer to the common modu
 ### My task can't access the secure files. What do I do?
 
 Make sure your agent is running version of 2.116.0 or higher. See [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
+
+### How do I authorize a secure file for use in all pipelines?
+
+ 1. Navigate to the **Library** tab in **Azure Pipelines**.
+ 1. Select the **Secure files** tab at the top. 
+ 1. Select the secure file you want to authorize. 
+ 1. In the details view, below the "Properties" section, select **Authorize for use in all pipelines**, and then select **Save**.
 
 <!-- ENDSECTION -->
