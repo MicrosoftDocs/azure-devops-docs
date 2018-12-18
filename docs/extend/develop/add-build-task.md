@@ -52,7 +52,7 @@ This walkthrough was done on Windows with PowerShell. We attempted to make it ge
 If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ```export <var>=<val>```
 
 ## Steps
-There are four steps to creating a build or release task extension and putting it on the Marketplace:
+Below are the steps to create a build or release task extension and put it on the Marketplace:
 * [Step 1: Create a custom task](#createtask)
 * [Step 2: Unit test the task scripts](#testscripts)
 * [Step 3: Create the extension manifest file](#extensionmanifest)
