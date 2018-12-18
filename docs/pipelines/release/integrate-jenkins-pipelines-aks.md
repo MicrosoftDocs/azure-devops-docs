@@ -415,7 +415,7 @@ gs-spring-boot-docker   10.0.242.8   13.65.196.3   80:31215/TCP   3m
 When your AKS cluster is no longer needed, you can use the `az group delete` command to remove the resource group, which will remove all of its related resources;  for example:
 
 ```azurecli
-az group delete --name <yourAKSCluster> --yes --now-wait
+az group delete --name <yourAKSCluster> --yes --no-wait
 ```
 
 ## Next Steps
