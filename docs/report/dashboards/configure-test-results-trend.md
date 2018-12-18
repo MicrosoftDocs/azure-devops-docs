@@ -50,21 +50,21 @@ Test Results Trend charts require that you set up continuous testing in your bui
 ## Prerequisites
 In order to configure the Test Results Trend widget, you must have the following in place:  
 - Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/test/getting-started-with-continuous-testing.md)
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). Default settings provide all team members wit permissions.
 
 
 <a id="configure-widget"></a>
 ## Configure the Test Results Trend widget    
 
-You can configure your Test Results Trend widget widget to show results for either build or release pipelines. 
+You can configure your Test Results Trend widget to show results for either build or release pipelines. 
 
 0. From your team's dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
 	
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Restults Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
+	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 

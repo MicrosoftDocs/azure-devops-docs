@@ -186,7 +186,7 @@ Temporarily (this is actively being improved), follow these steps to create a pi
 
 1. Visit https://github.com/apps/azure-pipelines/installations/new and click **Configure** on the GitHub organization for which you want to create a pipeline in another Azure DevOps organization or project.
     * If Configure is not shown next to the GitHub organization, that means the GitHub App is not yet installed for the GitHub organization. Click the organization name to install it and skip the remaining steps below.
-1.	Under "Repository Access,” make sure that access is granted to the repository you wish to build. Optionally, toggle the selection between "All repositories" and "Only select repositories" so that the Save button is enabled. Then, click the **Save** button.
+1.	Under "Repository Access” make sure that access is granted to the repository you wish to build. Optionally, toggle the selection between "All repositories" and "Only select repositories" so that the Save button is enabled. Then, click the **Save** button.
 1.	You’ll be redirected to Azure DevOps to choose the organization, project, and repository for the new pipeline.
 
 <!--

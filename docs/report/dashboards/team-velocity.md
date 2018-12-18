@@ -39,7 +39,7 @@ There are two velocity charts, the one you access by adding the Velocity widget 
  
 ### Prerequisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 
@@ -48,7 +48,7 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 
 You configure your velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team which rolls up from several teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-1. If you haven't yet added the [Analyics Marketplace extension](../analytics/analytics-extension.md), do that now. 
+1. If you haven't yet added the [Analytics Marketplace extension](../analytics/analytics-extension.md), do that now. 
 
 2. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
