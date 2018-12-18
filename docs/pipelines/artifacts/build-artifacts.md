@@ -1,5 +1,6 @@
 ---
 title: Publish and consume build artifacts in builds
+titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
@@ -22,17 +23,17 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 > [!NOTE]
-> We recommend upgrading from Build artifacts to [Pipeline Artifacts (Preview)](pipeline-artifacts.md) for drastically faster output storage speeds. 
+> We recommend upgrading from build artifacts to [pipeline artifacts (preview)](pipeline-artifacts.md) for faster output storage speeds. 
 
-Artifacts are the files that you want your build to produce. Artifacts can be anything your team needs to test or deploy your app.
+Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
 
-Azure Pipelines can pick up and use your build artifacts as part of a continuous integration (CI)/continuous deployment (CD) pipeline. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release pipeline picks up the .ZIP (ASP.NET or Node.js) or .WAR (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
+Azure Pipelines can pick up and use your build artifacts as part of a continuous integration/continuous deployment (CI/CD) pipeline. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release pipeline picks up the .zip (ASP.NET or Node.js) or .war (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
 
-You can publish your artifacts to other tasks in your pipeline where they can be added onto, built, tested, or even deploy.
+You can publish your artifacts to other tasks in your pipeline. You can then add onto, build, test, or even deploy those artifacts.
 
 ## How do I publish artifacts?
 
-Artifacts can be published at any stage of pipeline. What to publish as an artifact and when to publish it can be configured using two different methods, alongside your code with **YAML**, or in the Azure Pipelines UI with the **visual designer**.
+Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **visual designer**.
 
 ## Example: Publish a text file as an artifact
 
@@ -50,22 +51,23 @@ Artifacts can be published at any stage of pipeline. What to publish as an artif
 # [Designer](#tab/designer)
 
 > [!TIP]
-> If you want to try this and you don't already have a Git repo with a **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
+> If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
 
 
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish
+* Path to publish:
 
- ```
-$(Build.SourcesDirectory)/environment-variables.txt
-```
-* Artifact name
+   ```
+   $(Build.SourcesDirectory)/environment-variables.txt
+   ```
 
- ```
-drop
-```
+* Artifact name:
+
+   ```
+   drop
+   ```
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
@@ -94,32 +96,33 @@ You can create multiple artifact items. For example:
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish
+* Path to publish:
 
- ```
-$(Build.SourcesDirectory)/environment-variables.txt
-```
-* Artifact name
+   ```
+   $(Build.SourcesDirectory)/environment-variables.txt
+   ```
 
- ```
-drop1
-```
+* Artifact name:
+
+   ```
+   drop1
+   ```
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish
+* Path to publish:
 
- ```
-$(Build.SourcesDirectory)/environment-variables.txt
-```
+   ```
+   $(Build.SourcesDirectory)/environment-variables.txt
+   ```
 
-* Artifact name
+* Artifact name:
 
- ```
-drop2
-```
+   ```
+   drop2
+   ```
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
@@ -152,37 +155,37 @@ The completed build delivers two sets of artifacts.
 
 ![icon](../tasks/utility/_img/copy-files.png) **Utility: Copy Files**
 
-* Source folder
+* Source folder:
 
- ```
-$(Build.SourcesDirectory)
-```
+   ```
+   $(Build.SourcesDirectory)
+   ```
 
-* Contents
+* Contents:
 
- ```
-**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)
-```
+   ```
+   /$(BuildConfiguration)//?(*.exe|*.dll|*.pdb)
+   ```
 
-* Target folder
+* Target folder:
 
- ```
-$(Build.ArtifactStagingDirectory)
-```
+   ```
+   $(Build.ArtifactStagingDirectory)
+   ```
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish
+* Path to publish:
 
- ```
-$(Build.ArtifactStagingDirectory)
-```
+   ```
+   $(Build.ArtifactStagingDirectory)
+   ```
 
-* Artifact name
+* Artifact name:
 
- ```
-drop
-```
+   ```
+   drop
+   ```
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
@@ -190,11 +193,11 @@ drop
 
 ## How do I consume artifacts?
 
-### Consume artifacts in Release Management
+### Consume artifacts in Azure Pipelines
 
-You can download artifacts to Release Management and deploy them to the target of your choice.
+You can download artifacts to Azure Pipelines and deploy them to the target of your choice.
 
-### In the next job of your build
+### Consume an artifact in the next job of your build
 
 You can consume an artifact from your build in a subsequent step of the build. This can be useful to build or test your artifact. 
 
@@ -223,29 +226,29 @@ You can download an artifact directly from a pipeline for use in debugging.
 
 * Download type: Specific artifact
 
-* Artifact name
+* Artifact name:
 
- ```
-drop
-```
+   ```
+   drop
+   ```
 
-* Destination directory
+* Destination directory:
 
- ```
-$(System.ArtifactsDirectory)
-```
+   ```
+   $(System.ArtifactsDirectory)
+   ```
 
 ---
 
 ## Tips
 
-* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
+* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
 
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On Azure Pipelines and some versions of TFS there are two different [variables](../build/variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
+* On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
@@ -255,43 +258,42 @@ $(System.ArtifactsDirectory)
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)` you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files ](../tasks/utility/delete-files.md) Handy to prune unnecessary files that you copied to the staging directory.
+* ![icon](../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files ](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
 * ![icon](../tasks/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
-When the build is done, if you watched it run, click the name of the completed build and then click the artifacts tab to see your artifact.
+When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
 ![Artifacts tab of a build with one artifact](_img/build-artifact-tab.png)
 
-From here you can explore or download the artifacts.
+From here, you can explore or download the artifacts.
 
-You can also use Azure Pipelines to deploy your app using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
+You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
 ::: moniker range=">=tfs-2015 < vsts"
 <a name="unc-file-share" />
 
-## Publish from TFS to UNC file share
+## Publish from TFS to a UNC file share
 
 If you're using a private Windows agent, you can set the **artifact publish location** option (**TFS 2018 RTM and older**: artifact type) to publish your files to a UNC **file share**.
 
 > [!NOTE]
->
 > Use a Windows build agent. This option doesn't work for macOS and Linux agents.
 
-Choose file share to copy the artifact to a file share. Some common reasons to do this:
+Choose **file share** to copy the artifact to a file share. Common reasons to do this:
 
 * The size of your drop is large and consumes too much time and bandwidth to copy.
 
 * You need to run some custom scripts or other tools against the artifact.
 
-If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build using [variables](../build/variables.md). For example ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
+If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build by using [variables](../build/variables.md). For example: ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
 
 <a name="tfs-2015" />
 
 ## Publish artifacts from TFS 2015 RTM
 
-If you're using TFS 2015 RTM, then the steps in the above examples are not available. Instead, you copy and publish your artifacts using a single task: [Build: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md).
+If you're using TFS 2015 RTM, the steps in the preceding examples are not available. Instead, you copy and publish your artifacts by using a single task: [Build: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md).
 
 ::: moniker-end
