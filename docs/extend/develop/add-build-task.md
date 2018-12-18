@@ -267,7 +267,7 @@ import * as ttm from 'azure-pipelines-task-lib/mock-test';
 
 describe('Sample task tests', function () {
 
-    before(() => {
+    before( function() {
 
     });
 
@@ -275,11 +275,11 @@ describe('Sample task tests', function () {
 
     });
 
-    it('should succeed with simple inputs', (done: MochaDone) => {
+    it('should succeed with simple inputs', function(done: MochaDone) {
         // Add success test here
     });
 
-    it('it should fail if tool returns 1', (done: MochaDone) => {
+    it('it should fail if tool returns 1', function(done: MochaDone) {
         // Add failure test here
     });    
 });
@@ -310,7 +310,7 @@ tmr.run();
 Next, add the following example success test to your ```_suite.ts``` file to run the task mock runner:
 
 ```typescript
-it('should succeed with simple inputs', (done: MochaDone) => {
+it('should succeed with simple inputs', function(done: MochaDone) {
     this.timeout(1000);
 
     let tp = path.join(__dirname, 'success.js');
@@ -349,7 +349,7 @@ tmr.run();
 Next, add the following to your ```_suite.ts``` file to run the task mock runner:
 
 ```typescript
-it('it should fail if tool returns 1', (done: MochaDone) => {
+it('it should fail if tool returns 1', function(done: MochaDone) {
     this.timeout(1000);
 
     let tp = path.join(__dirname, 'failure.js');
