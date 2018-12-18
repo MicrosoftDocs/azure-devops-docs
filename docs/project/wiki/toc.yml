@@ -2,7 +2,7 @@
   href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: Overview
   items:
-  - name: "About Wikis, READMes, & markdown"
+  - name: "About Wikis, READMes, &Markdown"
     href: about-readme-wiki.md  
   - name: Provisioned vs published wikis 
     href: provisioned-vs-published-wiki.md
@@ -16,7 +16,7 @@
     href: publish-repo-to-wiki.md
   - name: Share your project vision
     href: project-vision-status.md
-  - name: Add markdown to a dashboard
+  - name: AddMarkdown to a dashboard
     href: ../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: Concepts
   items:
@@ -43,7 +43,7 @@
 - name: Reference
   items:
   - name: Markdown guidance
-    href: markdown-guidance.md
+    href: Markdown-guidance.md
   - name: Keyboard shortcuts to manage Wiki pages 
     href: wiki-keyboard-shortcuts.md
   - name: "Default permissions (Security)"

@@ -35,7 +35,7 @@ Wikis and repository README files are great ways to share information with your 
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Publish code to a wiki](publish-repo-to-wiki.md)  
 - [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
+- [Add Markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Wikis and repository README files are great ways to share information with your 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
+- [Add Markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
 
 ::: moniker-end
 
