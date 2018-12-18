@@ -337,7 +337,7 @@ DELETE https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/403?api-versio
 
 #### Sample code
 
-* [C# (PermenentlyDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L90)
+* [C# (PermanentlyDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L90)
 
 ## Permanently delete multiple work items
 
@@ -390,4 +390,4 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
 
 #### Sample code
 
-* [C# (PermenentlyDeleteMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L101)
+* [C# (PermanentlyDeleteMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L101)

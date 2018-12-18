@@ -340,7 +340,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "email": "fabrikamfiber3@hotmail.com",
         "date": "2014-03-10T20:54:10Z"
       },
-      "comment": "Added method for submitting new customer addrress.",
+      "comment": "Added method for submitting new customer address.",
       "changeCounts": {
         "Edit": 2
       },
@@ -646,7 +646,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "email": "Fabrikamfiber16@hotmail.com",
         "date": "2014-03-10T20:54:10Z"
       },
-      "comment": "Added method for submitting new customer addrress.",
+      "comment": "Added method for submitting new customer address.",
       "changeCounts": {
         "Edit": 2
       },
@@ -952,7 +952,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "email": "Fabrikamfiber16@hotmail.com",
         "date": "2014-03-10T20:54:10Z"
       },
-      "comment": "Added method for submitting new customer addrress.",
+      "comment": "Added method for submitting new customer address.",
       "changeCounts": {
         "Edit": 2
       },
@@ -1912,7 +1912,7 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
         "email": "hhill@microsoft.com",
         "date": "2014-03-10T20:54:10Z"
       },
-      "comment": "Added method for submitting new customer addrress.",
+      "comment": "Added method for submitting new customer address.",
       "changeCounts": {
         "Edit": 2
       },

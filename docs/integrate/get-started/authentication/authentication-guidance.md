@@ -39,7 +39,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 ## Q&A
 
 #### Q: I am making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](./../client-libraries/dotnet.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
-A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.
+A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They are simpler and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.
 
 #### Q: Can I use ADAL if I log into my organization with a Microsoft account (MSA)?
 
