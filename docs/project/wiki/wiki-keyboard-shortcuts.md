@@ -12,16 +12,16 @@ author: chcomley
 ms.topic: reference
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 03/01/2018  
+ms.date: 12/17/2018  
 ---
 
-# Keyboard shortcuts to manage Wiki pages
+# Keyboard shortcuts for managing Wiki pages
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. 
+> Keyboard shortcuts for managing Wiki pages are supported on TFS 2018.2 or later versions.
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wiki-shortcuts.md)]

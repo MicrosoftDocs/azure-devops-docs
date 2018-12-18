@@ -25,7 +25,7 @@ By default, all members of the Contributors group can edit README files and Wiki
 
 ## Manage README permissions
 
-You manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md).
+You can manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md).
 
 ::: moniker range=">= tfs-2018"
 
