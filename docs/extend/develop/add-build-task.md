@@ -477,7 +477,7 @@ Now that your extension is in the marketplace and shared, anyone who wants to us
 ## Optional: Install and test your extension
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
-1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administraton page.
+1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administration page.
 2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, click on the extension link.
 3. Install the extension!
 

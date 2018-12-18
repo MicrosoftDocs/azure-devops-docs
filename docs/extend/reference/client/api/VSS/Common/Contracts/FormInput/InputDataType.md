@@ -21,7 +21,7 @@ Module path: `VSS/Common/Contracts/FormInput`
 
 * `String` Represents a textual value.
 
-* `Number` Represents a numberic value.
+* `Number` Represents a numeric value.
 
 * `Boolean` Represents a value of true or false.
 
