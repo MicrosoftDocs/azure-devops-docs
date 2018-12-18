@@ -25,7 +25,7 @@
 	VSS.require(["VSS/Controls", "VSS/Controls/Grids"],
 		function (Controls, Grids) {
 
-		// Initialize the grid control with two colums, "key" and "value"
+		// Initialize the grid control with two columns, "key" and "value"
         var dataSource = [];
         dataSource.push({key: "key", value: "value"});
 
