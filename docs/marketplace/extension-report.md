@@ -20,7 +20,7 @@ Extension developers have access to statistics and feedback about how their exte
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
-You can view all acquisition related data in this tab for the selected period. Based on the extension type, acqusition includes all events for install, buy, trial, download and get started clicks. 
+You can view all acquisition related data in this tab for the selected period. Based on the extension type, acquisition includes all events for install, buy, trial, download and get started clicks. 
 * Aggregated acquisition in the selected period with respect to acquisition till date
 * Aggregated acquisition in the selected period with respect to overall acquisition
 * Aggregated acquisition split by extension downloads, Azure DevOps Services and TFS connected install for free extension
@@ -31,7 +31,7 @@ You can view all acquisition related data in this tab for the selected period. B
 
 For paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](/azure/devops/extend/extension-report#contact) for more details. 
 
-![acqusition](_img/acq.png)
+![acquisition](_img/acq.png)
 
 ## Uninstall (Azure DevOps Services only)
 You can view how many organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
