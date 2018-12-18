@@ -1,7 +1,7 @@
 ---
 title: Search Wiki content defined in your team project
 titleSuffix: Azure DevOps
-description: Share information using a project or repo README or Wiki in Azure DevOps 
+description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -11,27 +11,27 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.topic: overview
-ms.date: 12/10/2018
+ms.date: 12/17/2018
 monikerRange: '>= tfs-2015'
 ---
 
 ::: moniker range=">= azdevserver-2019"
 
-# About Wikis, READMEs, and markdown
+# About Wikis, READMEs, and Markdown
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, within your team project README file, or other repository README file.  
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, your team project README file, or other repository README file.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-# About READMEs and markdown
+# About READMEs and Markdown
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, within your team project README file, or other repository README file.  
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 ## Markdown
 
-Markdown makes it easy to format text, include images, and link as needed to additional documentation within your project pages, README files, dashboards, and pull request comments.
+Markdown makes it easy to format text, include images, and link to documents within your project pages, README files, dashboards, and pull request comments.
 
 You can provide guidance to your team in the following places using Markdown:
 
@@ -47,10 +47,10 @@ You can provide guidance to your team in the following places using Markdown:
 
 ::: moniker range=">= azdevserver-2019"
   
-- [Team project wiki (provisioned wiki)](add-edit-wiki.md)
+- [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project vision page or Welcome pages](project-vision-status.md)
+- [Project mission page or Welcome pages](project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -60,7 +60,7 @@ You can provide guidance to your team in the following places using Markdown:
   
 - [Add and edit wiki pages](add-edit-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Project mission page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -69,7 +69,7 @@ You can provide guidance to your team in the following places using Markdown:
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Project mission page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -77,14 +77,13 @@ You can provide guidance to your team in the following places using Markdown:
 
 For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
 
-
 ## READMEs
 
-You can define a README file, or multiple files, for each repo or team project. Write your README in Markdown instead of plain text.
+You can define a README file or multiple files for each repo or team project. Write your README in Markdown instead of plain text.
 
-Use README pages to orient contributors to working within your project. Consider adding guidance about the following:
+Use README pages to orient contributors to working within your project. Consider adding the following guidance:
 
-- The project focus
+- Project focus
 - Prerequisites
 - Setting up the environment
 - Tips for getting things done within the project
@@ -93,19 +92,17 @@ Use README pages to orient contributors to working within your project. Consider
 - Workflow guidance about committing or uploading changes and adding branches
 - Project sponsors or contacts  
 
-Here are some great READMEs that use this format and speak to all three audiences, for reference and inspiration:
+Here are some great READMEs that use this format and speak to all audiences, for reference and inspiration:
 
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
-
-
 ::: moniker range=">= tfs-2018"
 
 ## Wiki
 
-Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a Git repository is created to store your markdown files, images, attachments, and the sequence of pages. This wiki supports collaborative editing of its content and structure.
+Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a Git repository is created to store your Markdown files, images, attachments, and the sequence of pages. This wiki supports collaborative editing of its content and structure.
 
 ::: moniker-end
 
@@ -118,17 +115,17 @@ Use your team project wiki to share information with other team members. When yo
 
 The following features are supported for the team project wiki.
 
-**Provision or create a wiki**
+### Provision or create a wiki
 
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 
-**Work with wiki content**
+### Work with wiki content
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)
 - [Search Wiki content](search-wiki.md)  
-- [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
+- [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
 - [Clone and update wiki content offline](wiki-update-offline.md)
 - [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)
 - [Filter or print Wiki content](filter-print-wiki.md) <sup>1</sup>  
@@ -136,7 +133,7 @@ The following features are supported for the team project wiki.
 > [!NOTE]
 > The print feature may not be available from the Firefox web browser.
 
-**Format wiki content**
+### Format wiki content
 
 - [Markdown format](markdown-guidance.md)  
 - [HTML tags](markdown-guidance.md#html)  
@@ -152,7 +149,7 @@ The following features are supported for the team project wiki.
 
 The following features are supported for the team project wiki you create in the indicated TFS version or later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md).
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |Feature | TFS version |  
 > |--------|--------------|  
 > |[Markdown format](markdown-guidance.md) | TFS 2018 |
@@ -166,7 +163,6 @@ The following features are supported for the team project wiki you create in the
 > |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
 > |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 |
 > |[Wiki search](search-wiki.md) | TFS 2018.2 |  
-
 > [!NOTE]
 > This feature may not be available from the Firefox web browser.
 
@@ -176,10 +172,10 @@ The following features are supported for the team project wiki you create in the
 
 ## Publish existing Git repositories to a wiki  
 
-Many teams document their code using markdown and check in these files along with the code. While Git supports the maintenance and review of such documentation along with standard pull requests, such files present a few challenges to consumers of the content.
+Many teams document their code using Markdown and check in these files along with the code. While Git supports the maintenance and review of such documentation along with standard pull requests, such files present a few challenges to consumers of the content.
 
-- Readers must often sift through multiple files and folders to find the content of interest.
-- Content lacks organization and structure. There is no inherent page hierarchy to support readers.
+- Readers must often sift through many files and folders to find the content of interest.
+- Content lacks organization and structure. There's no inherent page hierarchy to support readers.
 - Content versioning is not supported.
 - Searching through content relies on searching the code, rather than a search experience optimized for searching content.
 
