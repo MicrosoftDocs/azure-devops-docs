@@ -100,7 +100,7 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
 {
     "galleryFlags": [
         "Paid"        
-    ]
+    ],
      "tags": [        
         "__BYOL"
     ]

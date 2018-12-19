@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < vsts'
 title: Build Requests (XAML Build) | REST API Reference for Team Foundation Server
-description: Submit and acccess build requests programmatically using the REST APIs for Team Foundation Server.
+description: Submit and access build requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 40A7EF31-7303-4A6E-ADB5-69BCF7830A2A
 ms.manager: douge
 ms.topic: article
