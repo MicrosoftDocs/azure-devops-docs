@@ -55,7 +55,7 @@ To start your search, choose **Repos>Files** or other page under **Repos**, ente
 
 1. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
-   list, and type the criteria value.
+   list, and enter the criteria value.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Search from the title bar](_img/search/code-search-filters.png)     

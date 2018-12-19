@@ -34,7 +34,7 @@ You can change your application access policies for your organization in Azure D
 
 By default, your organization allows access for all authentication methods.
 You can limit access, but you must specifically restrict access for each method.
-When you deny access to an authentication method, no app can use that method to access your organization. Any app that previously had access will get an authentication error and can't access your organization.
+When you deny access to an authentication method, no app can use that method to access your organization. Any app that previously had access gets an authentication error and can't access your organization.
 
 > To remove access for personal access tokens,
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).

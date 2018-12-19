@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/19/2018
 monikerRange: 'vsts'
 ---
 # Manage users and their access in Azure DevOps
@@ -97,9 +97,9 @@ The Users view shows key information per user in a table. In this view, you can 
    ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
 
    * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
-   * **Access level**: Leave the access level at **Basic** for users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+   * **Access level**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
 5. Select **Add** to complete your invitation.
 
