@@ -387,6 +387,12 @@ List of Azure DevOps Services IPs:
 
 The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
 
+**VS403373**
+
+Importing multiple copies of the **SAME** collection is not supported by the TFS Database Import Service. However, we **DO** support importing **split** copies a collection. What you need to do is change the GUID for the _DataImportCollectionID_.
+
+From SQL Server Management Studio (SSMS) open the extended properties for the split copies that haven't been imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then re-run the prepare command and use the new import.json to queue the import.
+
 ### Import Failures
 When an import fails, the individual that queued the import will receive an email notification. Most of the time this email will include a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and try your import again. 
 
