@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 11/19/2018
@@ -49,7 +50,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 0. Choose **Card reordering** and select from the two reordering  behaviors listed.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings dialog, Card reording dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
+	> ![Settings dialog, Card reordering dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
 
 	The setting you choose applies to all active Kanban boards for your team.  
 
@@ -79,7 +80,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 0. Choose **Card reordering** and select from the two reordering behaviors listed.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings dialog, Card reording dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
+	> ![Settings dialog, Card reordering dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
 
 	The setting you choose applies to all active Kanban boards for your team.  
 
