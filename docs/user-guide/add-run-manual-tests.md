@@ -92,23 +92,13 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md). 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
-Prior to running the test, you must add details. 
-
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
-<<<<<<< HEAD
-=======
+
 Before you run the test, you must add details.  
->>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
-=======
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -249,13 +239,4 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 > [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
-=======
-Install Exploratory testing to set it up for a user story. For more information, read  [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
-
->>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
-=======
-To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
