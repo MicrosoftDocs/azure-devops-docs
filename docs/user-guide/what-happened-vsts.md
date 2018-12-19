@@ -60,8 +60,8 @@ Turning off **New Navigation** also changes the Azure DevOps Services names to t
 
 To return to the Azure DevOps service-oriented UI, choose your profile icon, select **Preview features**, and re-enable **New Navigation**.
 
-## What about Team Foundation Server (TFS)?
+## Team Foundation Server (TFS) is now called Azure DevOps Server
 
-On November 19, 2018, [Azure DevOps Server 2019](/tfs/server/tfs-is-now-azure-devops-server.md) was announced as the next version of Team Foundation Server, our on-premises Agile workflow and DevOps product. Currently, the Azure DevOps Server 2019 Release Candidate 1 is available for preview.
+On November 19, 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. Azure DevOps Server is the new name for the on-premises DevOps server product previously called Team Foundation Server. For more information about this change, see [Introducing Azure DevOps Server](https://docs.microsoft.com/en-us/tfs/server/tfs-is-now-azure-devops-server).
 
 Azure DevOps Server 2019 uses the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation](../project/navigation/index.md).
