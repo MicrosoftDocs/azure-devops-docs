@@ -264,7 +264,7 @@ Service endpoints enable connection to external and remote services to execute 
 
 ### Upload attachments to test runs and test results
 
-You can now attach files such as screenshots and log files to test runs or test results as additional information. Up to this point, this capabilitity was only available through the Microsoft Test Manager (MTM) client, forcing you to switch context between the **Test** hub in VSTS/TFS and the MTM client.
+You can now attach files such as screenshots and log files to test runs or test results as additional information. Up to this point, this capability was only available through the Microsoft Test Manager (MTM) client, forcing you to switch context between the **Test** hub in VSTS/TFS and the MTM client.
 
 ### Test batching
 

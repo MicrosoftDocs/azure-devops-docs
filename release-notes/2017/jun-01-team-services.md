@@ -155,7 +155,7 @@ Publishers can choose between __Marketplace Q&A__, __GitHub issues__ or custom _
 Marketplace users will now be able to retain their identity and will be automatically signed in when navigating to the Marketplace from the VSTS/TFS marketplace icon. 
 
 ##AAD sign-in address rename
-We have updated the way we resolve identities in VSTS. Users can now freely change their signp-in addresses through AAD without losing access to their VSTS resources.
+We have updated the way we resolve identities in VSTS. Users can now freely change their sign-in addresses through AAD without losing access to their VSTS resources.
 
 We would love to hear what you think about these features. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
