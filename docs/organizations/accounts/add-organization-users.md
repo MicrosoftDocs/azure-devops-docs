@@ -1,6 +1,6 @@
 ---
 title: Add new users to your organization or project
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: How to add users to an organization or project
 ms.prod: devops
@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -18,31 +18,21 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
+Learn how to add users to your organization, and specify the level of features they can use, such as Basic or Stakeholder.
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/),
-such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/en-us/services/devops/compare-features/),
-such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/en-us/services/devops/compare-features/)
-who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as working with your backlog, work items, and queries
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/en-us/services/devops/compare-features/) who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
 [Need more users with Basic features or Visual Studio subscriptions?](add-basic-or-vs-subscription-users.md)
 
 > [!NOTE]
-> You can add people to projects,
-> rather than to your organization. They are automatically assigned
-> [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
-> if your organization has seats available,
-> or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
-> if not. Learn [how to add members to projects](add-team-members.md).
->
-> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
+>If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, learn how to [add external users to Azure DevOps](add-external-user.md).
 
 ## How *access* differs from *permissions*
 
-Access levels control which features are available to users - that is, the full set of organization resources that a user is entitled to access. Permissions then control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps Services and TFS](../../security/permissions-access.md).
+Features that are available to users are controlled by access levels  - the full set of organization resources that a user is entitled to access. Permissions control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps Services and TFS](../../security/permissions-access.md).
 
 ## Prerequisites
 
@@ -63,7 +53,7 @@ link to the organization page.
 
 To give other users access to your organization, add their email addresses.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -72,8 +62,8 @@ To give other users access to your organization, add their email addresses.
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
- 
-3. Select **Users** and then select **Add new users** to open the form.
+
+3. Select **Users**, and then select **Add new users** to open the form.
 
    ![Select Add new users](_img/_shared/add-new-users.png)
 

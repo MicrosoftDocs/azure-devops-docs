@@ -81,7 +81,7 @@ that you want to activate this trigger.
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
 Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
-You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
@@ -131,7 +131,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **A pull request that updates the artifacts**. If you have enabled
   [pull request triggers](#prsettrigger) for your pipeline, you must also enable
   pull request deployment for the specific stages where you want the release to be deployed. 
-  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
   ![The pull request trigger conditions settings](_img/trigger-02c.png)
 

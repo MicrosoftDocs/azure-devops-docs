@@ -1,18 +1,16 @@
 ---
 title: Integrate Jenkins CI builds
-ms.custom: seodec18
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
-author: mlearned
-manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
-ms.devlang: na
 ms.topic: tutorial
-ms.tgt_pltfrm: 
-ms.workload: 
-ms.date: 03/30/2018
 ms.author: mlearned
-ms.custom: mvc
+author: mlearned
+ms.reviewer: vijayma
+ms.manager: douge
+ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
+ms.custom: "mvc, seodec18"
+ms.date: 03/30/2018
 monikerRange: '>= tfs-2015'
 ---
 

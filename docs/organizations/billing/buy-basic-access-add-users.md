@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2018
+ms.date: 12/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -47,24 +47,24 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
    ![Go to Visual Studio Marketplace, Azure DevOps tab, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
 
-2. Select your organization and then choose **Buy**.
+2. Select your organization, and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
 ![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
-3. Confirm the Azure subscription where your Azure DevOps charges are billed and then choose **Continue**.
+3. Confirm the Azure subscription where your Azure DevOps charges are billed, and then choose **Continue**.
 
    If you have multiple Azure subscriptions, select the Azure subscription that you want to use. If you don't have an Azure subscription, you can create a new one.
 
    > [!div class="mx-imgBorder"]
 ![Confirm or select your Azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.png)
 
-4. Enter the number of paid users and then choose **Continue**. You also see the number of free users that are included, which is separate.
+4. Enter the number of paid users, and then choose **Continue**. You also see the number of free users that are included, which is separate.
 
    > [!div class="mx-imgBorder"]
 ![Enter the number of paid users](_img/buy-more-basic-access/marketplace-select-number-of-users.png)
 
-5. Review your order and then choose **Confirm**.
+5. Review your order, and then choose **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
@@ -104,7 +104,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ## Clean up resources
 
-To remove users or make an adjustment, sign in to Azure DevOps. Choose **Manage users** and then choose **Change quantity**.
+To remove users or make an adjustment, sign in to Azure DevOps. Choose **Manage users**, and then choose **Change quantity**.
 
 ## Next steps
 

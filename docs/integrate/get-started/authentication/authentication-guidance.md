@@ -15,7 +15,7 @@ ms.date: 06/30/2017
 # Choosing the right authentication mechanism
 
 
-When writing an application which interfaces with Azure DevOps Services, you will have to authenticate to gain acess to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
+When writing an application which interfaces with Azure DevOps Services, you will have to authenticate to gain access to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|

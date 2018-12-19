@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/28/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -24,7 +24,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Azure DevOps Server Support for Move work item to another team project / Change work item type](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1292418)|Boards|2019|
 |[New rich text Description and Discussion control](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1360789)|Boards|TBD|
 |[Create pull requests in draft mode](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1382660)|Repos|TBD|
-|[Git Pull Requests – Improved search/filter options for pull requests](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1257205)|Repos|TBD|
 |[Release Management orchestration improvements – Tag based triggers](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221125)|Pipelines|2019|
 |[Agent-based deployment in Release Management – Sharing of VMs](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221126)|Pipelines|2019|
 |[Release traceability – Pull request integration](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1221144)|Pipelines|2019|
@@ -65,6 +64,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Updated Security & Org Settings pages](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366414)|Admin|TBD|
 |[User licenses (Basic) can be purchased directly from the user's page](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366415)|Admin|N/A|
 |[User licenses will be charged once per user across Orgs in the same Azure Subscription](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1366420)|Admin|N/A|
+|[Change project profile image from settings](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/edit/1411743)|Admin|N/A|
 
 ### 2019 Q2
 
@@ -93,7 +93,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[04 December 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="12">[04 December 2018](2018/sprint-144-update.md)</td>
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Future</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Future</td></tr>
@@ -104,11 +104,13 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>ServiceNow Change Management integration</td><td>Future</td></tr>
         <tr><td>Links to specific lines in a build log</td><td>Future</td></tr>
         <tr><td>Specify multi-platform pipeline in a single file</td><td>Future</td></tr>
+        <tr><td>Automatically redeploy on failure</td><td>Future</td></tr>
         <tr><td>Python Package Index (PyPI) public preview</td><td>Future</td></tr>
         <tr><td>Service health portal</td><td>N/A</td></tr>
         <tr><td>Markdown templates for formulas and videos</td><td>Future</td></tr>
+        <tr><td>Restore deleted projects</td><td>N/A</td></tr>
         <tr>
-            <td rowspan="15">[12 November 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
             <td>REST API version 5.0</td><td>Future</td>
         </tr>
         <tr><td>New work item text editor</td><td>Future</td></tr>
@@ -119,7 +121,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Declare container resources inline</td><td>Future</td></tr>
         <tr><td>Changes to default permissions for new projects</td><td>Future</td></tr>
         <tr><td>Deploy to failed targets in a Deployment Group</td><td>Future</td></tr>
-        <tr><td>Automatically redeploy on failure</td><td>Future</td></tr>
         <tr><td>Support for Infrastructure as Code</td><td>Future</td></tr>
         <tr><td>Exclude files in artifact uploads</td><td>N/A</td></tr>
         <tr><td>Provenance information on packages</td><td>Future</td></tr>
