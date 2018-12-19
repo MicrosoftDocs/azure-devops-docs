@@ -142,7 +142,7 @@ A Navigational Property with a Collection type represents a many to many relatio
 <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 ```
 
-ReferentialConstraints tie Navigational Properties to a specific key of an Entity, represeting a many to one relationship in the model.
+ReferentialConstraints tie Navigational Properties to a specific key of an Entity, representing a many to one relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
