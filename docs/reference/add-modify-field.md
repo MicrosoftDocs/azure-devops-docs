@@ -94,7 +94,7 @@ And then add the following syntax within the **FORM** section to have the field 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" /> 
 ```
  
 The field will appear as a checkbox on the form. 
