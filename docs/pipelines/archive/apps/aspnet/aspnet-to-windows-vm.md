@@ -83,7 +83,7 @@ Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home
 ![Screenshot showing update to code](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
 Add the following line of text as indicated in the image above:
-```
+```html
 <h1>Demo of CI/CD!!</h1>
 ```
 
