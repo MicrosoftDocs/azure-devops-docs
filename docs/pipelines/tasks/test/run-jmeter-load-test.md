@@ -32,7 +32,7 @@ The agent must have the following capability:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>VS Team Services Connection</td><td>(Optional) Select a previously registered service connection to talk to the cloud-based load test service. Choose 'Manage' to register a new connection.</td></tr>
+<tr><td>Azure Pipelines Connection</td><td>(Optional) Select a previously registered service connection to talk to the cloud-based load test service. Choose 'Manage' to register a new connection.</td></tr>
 <tr><td>Apache JMeter test files folder</td><td>(Required) Relative path from repo root where the load test files are available.</td></tr>
 <tr><td>Apache JMeter file</td><td>(Required) The Apache JMeter test filename to be used under the load test folder specified above.</td></tr>
 <tr><td>Agent Count</td><td>(Required) Number of test agents (dual-core) used in the run.</td></tr>

@@ -13,14 +13,14 @@ First, get the tools and your feed URL:
    nuget.exe push -Source {NuGet package source URL} -ApiKey key {your_package}.nupkg
    ```
 
-**Notes:**
-
-* The NuGet client's push command requires an API key. You can use any non-empty string you want; in this example, we used `key`.
-* If you're prompted for credentials in the command line, ensure that the credential provider downloaded is in the same folder as NuGet.exe.  For more help using credential providers with NuGet, see [here](/nuget/api/nuget-exe-credential-providers).
+> [!NOTE]
+>
+> * The NuGet client's push command requires an API key. You can use any non-empty string you want. In this example, we used `key`.
+> * If you're prompted for credentials on the command line, ensure that the downloaded credential provider is in the same folder as NuGet.exe. For more help in using credential providers with NuGet, see [Authenticating feeds with nuget.exe credential providers](https://docs.microsoft.com/en-us/nuget/reference/extensibility/nuget-exe-credential-providers).
 
 ## Get a sample package to push
 
-If you don't have a package but want to try this out, Microsoft provides a sample package on the public NuGet gallery.
+If you don't have a package but want to try this out, Microsoft provides a sample package in the public NuGet gallery.
 
 * Run these two commands:
 

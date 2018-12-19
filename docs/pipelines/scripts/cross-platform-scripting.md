@@ -194,7 +194,7 @@ echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
 
 1. Change the value of **Run this task** to "Custom conditions".
 
-1. In the **Custom condition** field which appears, enter "eq( variables.Agent.OS, 'Linux' )".
+1. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Linux' )".
 
 Next, add a macOS script.
 
@@ -204,7 +204,7 @@ export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
 echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
 ```
 
-1. For the **Custom condition**, enter "eq( variables.Agent.OS, 'Darwin' )".
+1. For the **Custom condition**, enter "eq( variables['Agent.OS'], 'Darwin' )".
 
 Next, add a Windows script.
 
@@ -220,7 +220,7 @@ Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
 
 1. Change the value of **Run this task** to "Custom conditions".
 
-1. In the **Custom condition** field which appears, enter "eq( variables.Agent.OS, 'Windows_NT' )".
+1. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
 
 Finally, add a task which uses the value, no matter how we got it.
 

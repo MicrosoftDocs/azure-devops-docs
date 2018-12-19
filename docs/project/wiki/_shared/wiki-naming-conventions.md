@@ -15,7 +15,7 @@ Each wiki page corresponds to a file within the wiki Git repo. Names you assign 
 
 ### Special characters in Wiki page titles
 
-You can specify page titles which contain one or more of these special characters `: < > * ? | -`. For example, you can name a markdown file as "FAQ?" or "Set-up guide". The following characters are translated to their UTF-8 encoded strings:
+You can specify page titles which contain one or more of these special characters `: < > * ? | -`. For example, you can name a Markdown file as "FAQ?" or "Set-up guide". The following characters are translated to their UTF-8 encoded strings:
 
 > [!div class="mx-tdCol2BreakAll"]
 > |        Character        | Encoded string |

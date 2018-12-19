@@ -233,7 +233,7 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 
 ### Update the iteration for a backlog item 
 
-As changes occur to the schedule, you you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
+As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
 > ![Move a card to a different iteration](_img/plans_move1.png)

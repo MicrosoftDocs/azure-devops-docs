@@ -9,7 +9,7 @@ ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.manager: douge
 ms.author: alewis
 author: vtbassmatt
-ms.date: 10/18/2018
+ms.date: 12/18/2018
 monikerRange: 'vsts'
 ---
 
@@ -51,3 +51,7 @@ For example, if you've made a change in a branch called `features/add-resource`,
 
 The act of saving the pipeline loads the file from the default branch and authorizes discovered resources.
 We're working on a better experience that won't require these steps.
+
+> [!NOTE]
+> 
+> To learn how to authorize secure files, see [secure files](../library/secure-files.md).
