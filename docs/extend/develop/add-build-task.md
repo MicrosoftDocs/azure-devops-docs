@@ -52,7 +52,7 @@ This walkthrough was done on Windows with PowerShell. We attempted to make it ge
 If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ```export <var>=<val>```
 
 ## Steps
-There are four steps to creating a build or release task extension and putting it on the Marketplace:
+Below are the steps to create a build or release task extension and put it on the Marketplace:
 * [Step 1: Create a custom task](#createtask)
 * [Step 2: Unit test the task scripts](#testscripts)
 * [Step 3: Create the extension manifest file](#extensionmanifest)
@@ -112,6 +112,9 @@ tsc --init
 In addition, for this example we want to compile to the ES6 standard instead of ES5.
 To ensure this happens, open the newly generated ```tsconfig.ts``` and update the ```target``` field to "es6".
 
+>[!NOTE]
+>To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
+
 ### Task implementation
 
 Now that the scaffolding is complete, we can start to create our custom task.
@@ -129,9 +132,7 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
     "friendlyName": "{{taskfriendlyname}}",
     "description": "{{taskdescription}}",
     "helpMarkDown": "",
-    "category": [
-        "Azure Pipelines"
-    ],
+    "category": "Utility",
     "author": "{{taskauthor}}",
     "version": {
         "Major": 0,
@@ -156,9 +157,6 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
     }
 }
 ```
-
->[!NOTE]
-> The `Azure Pipelines` value for the `category` property will make your extension available to Azure DevOps Services and Azure DevOps Server 2019. If you would like your extension to also be available to TFS 2018 and earlier, you should make this value `Build`. Check out the [manifest reference](manifest.md) for more information. Please note that the `task.json` file uses "category", while the extension manifest uses "categories".
 
 **task.json components**<br>
 Here is a description of some of the components of the `task.json` file:
@@ -267,7 +265,7 @@ import * as ttm from 'azure-pipelines-task-lib/mock-test';
 
 describe('Sample task tests', function () {
 
-    before(() => {
+    before( function() {
 
     });
 
@@ -275,11 +273,11 @@ describe('Sample task tests', function () {
 
     });
 
-    it('should succeed with simple inputs', (done: MochaDone) => {
+    it('should succeed with simple inputs', function(done: MochaDone) {
         // Add success test here
     });
 
-    it('it should fail if tool returns 1', (done: MochaDone) => {
+    it('it should fail if tool returns 1', function(done: MochaDone) {
         // Add failure test here
     });    
 });
@@ -310,7 +308,7 @@ tmr.run();
 Next, add the following example success test to your ```_suite.ts``` file to run the task mock runner:
 
 ```typescript
-it('should succeed with simple inputs', (done: MochaDone) => {
+it('should succeed with simple inputs', function(done: MochaDone) {
     this.timeout(1000);
 
     let tp = path.join(__dirname, 'success.js');
@@ -349,7 +347,7 @@ tmr.run();
 Next, add the following to your ```_suite.ts``` file to run the task mock runner:
 
 ```typescript
-it('it should fail if tool returns 1', (done: MochaDone) => {
+it('it should fail if tool returns 1', function(done: MochaDone) {
     this.timeout(1000);
 
     let tp = path.join(__dirname, 'failure.js');

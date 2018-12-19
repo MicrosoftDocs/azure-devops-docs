@@ -1,17 +1,15 @@
 ---
 title: Build your GitHub repository using the visual designer in Azure Pipelines
-ms.custom: seodec18
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
-ms.topic: conceptual
 ms.prod: devops
-ms.custom: mvc
 ms.technology: devops-cicd
-ms.prod: devops
+ms.topic: conceptual
 ms.assetid: B61506B0-766C-49D1-B991-85BBFCBCD3E6
-ms.manager: douge
 ms.author: mlearned
 author: mlearned
 ms.reviewer: dastahel
+ms.manager: douge
+ms.custom: "mvc, seodec18"
 ms.date: 06/29/2018
 monikerRange: 'vsts'
 ---

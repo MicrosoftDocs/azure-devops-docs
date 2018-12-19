@@ -1,6 +1,6 @@
 ---
 title: Migrate to group-based resource management - Azure DevOps
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to move Azure DevOps to group-based resource (user) management for managing licensing.
 ms.prod: devops
@@ -36,7 +36,7 @@ The most important thing to avoid is a situation where migration to group-based 
 
 3. Select **Users** > **Group rules**.
 
-   ![Select Users and then Group Rules](_img/assign-access-levels/see-group-rules.png)
+   ![Select Users, and then Group Rules](_img/assign-access-levels/see-group-rules.png)
 
 4. Make sure all required users are members of the groups. Highlight a group rule and from the command bar, select **Manage members**.
 

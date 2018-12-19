@@ -33,6 +33,7 @@ Azure Pipelines:
 - [ServiceNow Change Management integration](#servicenow-change-management-integration)
 - [Links to specific lines in a build log](#links-to-specific-lines-in-a-build-log)
 - [Specify multi-platform pipeline in a single file](#specify-multi-platform-pipeline-in-a-single-file)
+- [Automatically redeploy on failure](#automatically-redeploy-on-failure)
 
 Azure Artifacts:
 
@@ -45,6 +46,10 @@ General:
 Wiki:
 
 - [Markdown templates for formulas and videos](#markdown-templates-for-formulas-and-videos)
+
+Administration:
+
+- [Restore deleted projects](#restore-deleted-projects)
 
 ## Azure Boards
 
@@ -170,6 +175,13 @@ steps:
 - script: npm run test
 ```
 
+### Automatically redeploy on failure
+
+When a deployment to a stage fails, **Azure Pipelines** can now automatically redeploy the last successful deployment. You can configure the stage to automatically deploy the last successful release by configuring the **Auto-redeploy trigger** in the **Post-deployment conditions**. We plan to add additional triggered events and actions to the auto redeploy configuration in a future sprint. See the [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/) documentation for more information.
+
+> [!div class="mx-imgBorder"]
+![Badge](_img/143_09.png)
+
 ## Azure Artifacts
 
 ### PyPI public preview
@@ -200,6 +212,31 @@ There is no longer a need to remember markdown syntax for adding [formulas](http
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/144_04.png)
+
+## Administration
+
+### Restore deleted projects
+
+With this release we added the ability to restore deleted projects. As of today, users with the delete project permission can restore deleted projects via our REST APIs. To do this, create an update project request with **{ "state" : "wellFormed" }**. In a future release, we will be adding a UI that can be accessed from the organization overview page. For more information on the REST API see the documentation [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/update?view=azure-devops-rest-5.1).  
+
+To get a list of deleted projects use the following request
+```
+GET https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
+```
+
+To restore a deleted project use the following request
+```
+PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=5.0-preview.3
+```
+
+Request Body
+```
+{
+    "state" : "wellFormed"
+}
+```
+> [!NOTE]
+> You will only have up to 28 days to restore a deleted project. After 28 days, the project will be **permanently** deleted.
 
 ## Next steps
 

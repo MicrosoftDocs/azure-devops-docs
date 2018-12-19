@@ -1,5 +1,5 @@
 ---
-title: Delete, remove project
+title: Delete a project
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Delete or remove a project from Azure DevOps or Team Foundation Server
@@ -11,23 +11,26 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/07/2018
+ms.date: 12/12/2018
 ---
 
 # Delete a project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-If you find that you have a project you no longer use, you can delete it. Deleting a project helps simplify the navigation to projects that are in use. You can delete a project from Azure DevOps Services or from an on-premises deployment of Team Foundation Server (TFS).
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
-
-## Choose to delete a project 
+If you find that you have a project you no longer use, you can delete it. Deleting a project helps simplify the navigation to projects that are in use. You can delete a project from Azure DevOps or from an on-premises deployment of Team Foundation Server (TFS).
 
 > [!Caution]
-> Deleting a project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save project data](save-project-data.md) that you might want to access later.
+> Projects are permanently deleted, if not restored within 28 days.
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
+
+## Delete project
+
+> [!Caution]
+> If you wish to access project data while the project is deleted, without [restoring it](restore-project.md), you should [save project data](save-project-data.md).
 
 ::: moniker range=">= tfs-2017"
 1. Open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to delete and choose **Delete**.
@@ -37,7 +40,7 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 
     If you don't see the actions icon ![actions icon image](../../_img/icons/actions-icon.png), either you're not accessing Azure DevOps Services or you're not a member of the Project Collection Administrators group. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-0. You must type the name of the project in order to initiate the delete operation. 
+2. Enter the name of the project, and then select **Delete**.
 
    >[!div class="mx-imgBorder"]
    ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
@@ -54,6 +57,8 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 
    >[!div class="mx-imgBorder"]
    ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
+
+Your project is deleted and can be restored up to 28 days after.
 
 ::: moniker-end  
 

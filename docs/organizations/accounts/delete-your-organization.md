@@ -1,6 +1,6 @@
 ---
-title: Delete, remove an organization
-titleSuffix: Azure DevOps
+title: Delete or remove an organization
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
 ms.prod: devops

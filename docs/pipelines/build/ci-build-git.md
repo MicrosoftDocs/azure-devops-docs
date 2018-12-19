@@ -1,21 +1,16 @@
 ---
 title: Building multiple branches
-ms.custom: seodec18
 description: Build multiple branches using Azure Pipelines or TFS
 ms.prod: devops
-services: vsts
-documentationcenter: vs-devops-build
+ms.technology: devops-cicd
+ms.author: mlearned
+ms.topic: conceptual
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-editor: ''
-ms.technology: devops-cicd
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.topic: conceptual
-ms.tgt_pltfrm: ''
-ms.workload: ''
 ms.date: 10/19/2018
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 monikerRange: '>=tfs-2017'
 ---
 

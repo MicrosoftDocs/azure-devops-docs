@@ -1,6 +1,6 @@
 ---
 title: Set up Visual Studio
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Share code with Git and manage work with Agile tools for continuous integration and continuous delivery.
 ms.prod: devops

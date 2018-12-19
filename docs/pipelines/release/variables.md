@@ -165,6 +165,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 > | Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent. | FALSE |
 > | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually. | fabrikam\_app |
 > | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source | fabrikam\_web |
+> | Release.Reason | The reason of the deployment. <br> Supported values are: <br>- `automated`: the release started in Continuous Deployment after a build completed<br> - `manual`: the release started manually<br>- `none`: the deployment reason has not been specified<br>- `scheduled`: the release started from a schedule | automated | 
 
 <!-- Other hidden variables
 [RELEASE_RELEASEWEBURL] -> [https://dev.azure.com/adventwrks/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]

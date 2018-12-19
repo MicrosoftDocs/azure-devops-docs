@@ -28,6 +28,9 @@ None
 
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
+> [!Note]
+> x86 versions of Python are available on Microsoft-hosted Windows agents, but not Linux nor macOS.
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]
@@ -35,11 +38,11 @@ This task will fail if no Python versions are found in Agent.ToolsDirectory. Ava
 
 ## Arguments
 
-| Argument | Description |
-|----------|-------------|
-| Version spec | Version range or exact version of a Python version to use. |
-| Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
-| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. |
+| Argument | Description | Default |
+|----------|-------------|---------|
+| Version spec | Version range or exact version of a Python version to use. | 3.x |
+| Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. | true |
+| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. | x64 |
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 

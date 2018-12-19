@@ -1,12 +1,11 @@
 ---
 title: Trace test requirements
 description: Link requirements, tests, and bugs to enable requirements traceability
-ms.custom: seodec18
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.custom: continuous-test
+ms.custom: "continuous-test, seodec18"
 ms.manager: douge
 ms.author: vinojos
 author: vinojos

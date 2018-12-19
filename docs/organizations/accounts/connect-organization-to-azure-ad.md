@@ -1,6 +1,6 @@
 ---
 title: Connect organization to Azure Active Directory
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to connect your organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
@@ -129,7 +129,7 @@ Before you begin, do the following:
 
     ![Confirm Azure AD connection](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Select **All services** and then **Azure DevOps organizations**.
+2. Select **All services**, and then **Azure DevOps organizations**.
 
    ![All services, organizations](_img/_shared/azure-portal-team-services-administration.png)
 
@@ -167,7 +167,7 @@ When you inform your users of the completed change, include the tasks that each 
 
     a. On your Azure DevOps page, at the upper right, select your profile image, and then select **Security**.
 
-    b. On the SSH public keys page, select **Add**. Enter a description and then, at the bottom of the page, select **Create token**.
+    b. On the SSH public keys page, select **Add**. Enter a description, and then, at the bottom of the page, select **Create token**.
 
     c. When the token is created, make a note of it or copy it to the clipboard. It cannot be viewed again.
 

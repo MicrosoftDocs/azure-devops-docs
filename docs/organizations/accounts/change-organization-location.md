@@ -1,6 +1,6 @@
 ---
-title: Find or change location, region of organization 
-titleSuffix: Azure DevOps
+title: Find or change location or region of organization 
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Find your organization's default location or update your organization location or region in Azure DevOps
 ms.prod: devops
