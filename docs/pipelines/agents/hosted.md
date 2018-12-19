@@ -172,7 +172,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
 
-  ```
+  ```bash
   SYMLINK=5_4_1
   MONOPREFIX=/Library/Frameworks/Mono.framework/Versions/$SYMLINK
   echo "##vso[task.setvariable variable=DYLD_FALLBACK_LIBRARY_PATH;]$MONOPREFIX/lib:/lib:/usr/lib:$DYLD_LIBRARY_FALLBACK_PATH"

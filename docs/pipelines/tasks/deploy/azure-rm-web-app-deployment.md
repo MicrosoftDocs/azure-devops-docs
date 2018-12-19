@@ -191,7 +191,7 @@ to deploy the app.
 ### Web Deploy
 
 [Web Deploy](https://www.iis.net/downloads/microsoft/web-deploy) (msdeploy.exe) can be used to deploy a Web App on Windows
-or a Function Appan app to the Azure App Service using a Windows agent.
+or a Function App to the Azure App Service using a Windows agent.
 Web Deploy is feature-rich and offers options such as:
 
 * **Rename locked files:** Rename any file that is still in use by the web server by enabling the msdeploy flag

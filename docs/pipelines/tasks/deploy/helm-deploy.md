@@ -50,7 +50,7 @@ Azure Pipelines has built-in support for Helm charts:
 <tr><td>Resource group</td><td>(Required) Enter or select the resource group of your AKS cluster.</td></tr>
 <tr><td>Kubernetes cluster</td><td>(Required) Select an Azure Managed AKS Cluster.</td></tr>
 <tr><td>Kubernetes Service Connection</td><td>(Required) Select a Kubernetes service connection.</td></tr>
-<tr><td>Namespace</td><td>(Optional) Specify the Kubernetes cluster namespace where you want to deploy your application. Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. You can use Namespace to create diferent environments like dev/test/staging in the same cluster. Use Tiller namespace in advance section to specify tiller namespace.</td></tr>
+<tr><td>Namespace</td><td>(Optional) Specify the Kubernetes cluster namespace where you want to deploy your application. Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. You can use Namespace to create different environments like dev/test/staging in the same cluster. Use Tiller namespace in advance section to specify tiller namespace.</td></tr>
 <tr><td>Command</td><td>(Required) Select a helm command.</td></tr>
 <tr><td>Chart Type</td><td>(Required) Select how you want to enter chart info. You can either provide name of the chart or folder/file path to the chart.</td></tr>
 <tr><td>Chart Name</td><td>(Required) Name of the chart to install or upgrade.</td></tr>
