@@ -80,7 +80,7 @@ You must add your Microsoft account to Azure AD.
 
 Although directory membership isn't required to
 connect your organization to Azure AD, it makes sure that you can sign in and
-access your organization after you connect to Azure AD. Otherwise, your Microsoft account will not have access to
+access your organization after you connect to Azure AD. Otherwise, your Microsoft account does not have access to
 your organization.
 
 ## What happens to current users?
@@ -95,7 +95,7 @@ Your organization might have policies about adding users to the directory, so fi
 ### What if we can't use the same sign-in addresses?
 
 You have to add these users to the directory with new work or school accounts.
-If they have existing work or school accounts, they can use those instead. Their work won't be lost and will stay with their current sign-in addresses. You must add them as new
+If they have existing work or school accounts, they can use those instead. Their work won't be lost and stays with their current sign-in addresses. You must add them as new
 users, reassign access levels, and readd them to any projects. Users can migrate work that they want to keep,
 except for their work history. Learn [how to manage organization users](add-organization-users.md).
 
@@ -106,7 +106,7 @@ tools that run outside a web browser, like the Git command-line tool.  You have 
 
 ## What if I accidentally delete a user in Azure AD?
 
-You should [restore the user](/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user will not be associated with the previous identity.
+You should [restore the user](/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user is not associated with the previous identity.
 
 ## Manage organization access with Azure AD
 

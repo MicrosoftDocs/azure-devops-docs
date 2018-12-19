@@ -12,7 +12,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/07/2018
+ms.date: 12/19/2018
 ---
 
 # Rename a project in Azure DevOps
@@ -68,10 +68,9 @@ your team must restart their clients and perform additional actions based on the
 
 <a id="restarting-clients"></a>
 ### Restart your clients
-Opened clients keep a cache of all project names in memory and this cache isn't automatically cleared after a project is renamed. 
+Opened clients keep a cache of all project names in memory and this cache isn't automatically cleared after a project is renamed.
 To clear the cache, all that is necessary is to restart the client so it populates the new project name.
-If you don't restart the client, then operations that use the cached project name will
-fail with a project not found exception.
+If you don't restart the client, then operations that use the cached project name fails with a project not found exception.
 
 For the following clients, save your work in each and restart:
 
@@ -85,7 +84,7 @@ For the following clients, save your work in each and restart:
 
 <a id="git"></a>
 ### Update your Git remotes
-If your project uses Git, then your remote references for each repository from the renamed project need to be updated. This is due to the fact that the remote repository URL contains the project and the repository name. Git uses remote references to fetch and push changes between your local copy of a repository and the remote version stored on the server. Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project. 
+If your project uses Git, then your remote references for each repository from the renamed project need to be updated. This is due to the fact that the remote repository URL contains the project and the repository name. Git uses remote references to fetch and push changes between your local copy of a repository and the remote version stored on the server. Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project.
 
 <a name="copy_remote_repo_url"></a>
 #### Get the new URL for the repo
@@ -132,15 +131,17 @@ If you use an older version of Visual Studio or work with Git from the command p
 
  ![Refresh Team Explorer](_img/rename-project/refreshteamexplorer.png)
 
-2. Team Explorer now shows the updated repo name. 
+2. Team Explorer now shows the updated repo name.
 
  ![Team Explorer Updated](_img/rename-project/result.png)
 
 
 <a id="tfvc-server"></a>
+
 ### Update your TFVC server workspaces
-If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name. 
-For the following clients, execute a get or check-in and the workspace mapping will be corrected to use the new project name:
+
+If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces need to be updated with the new project name.
+For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
 
 - Visual Studio 2015 (RC or newer)  
 - Visual Studio 2013  
@@ -151,16 +152,18 @@ For the following clients, execute a get or check-in and the workspace mapping w
 ![Source control explorer, get latest version](_img/rename-project/tfvc-get.png)
 
 <a id="tfvc-local"></a>
+
 ### Update your TFVC local workspaces
-If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name.
-For the following clients, execute a get or check-in and the workspace mapping will be corrected to use the new project name:
+
+If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces need to be updated with the new project name.
+For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
 
 - Visual Studio 2015 (RC or later versions)  
 - Visual Studio 2012 with [Update 5](http://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)  
 - Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)
 
 We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
-except for Visual Studio 2010 which only supports server workspaces, 
+except for Visual Studio 2010 which only supports server workspaces,
 and Team Foundation Server plugin for Eclipse, 
 you must create a new local workspace mapped to the new project name.
 
@@ -175,34 +178,31 @@ Since local workspaces are managed locally and not on the server, older clients 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 <a id="tfs-onprem"></a>
-## Update your Team Foundation Server SharePoint and Reporting Integrations (on-premises)
-Both SharePoint and Reporting Services integrations continue to work, but some reports will not work as expected until the new project name is populated.
-The old project name is still present until caches are updated with the new name. 
-The reporting and SharePoint server administrator can manually run these jobs to immediately populate the new name. 
 
-- If your team uses reports, they will reflect the new names after the next incremental analysis job runs for the data warehouse.
-By default it runs every two hours.
-To expedite the process,
-[manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md)
-so the new name gets synced to warehouse and reports start using the new name.
-Reports will not work as expected until the jobs have run.
+## Update your Team Foundation Server SharePoint and Reporting Integrations (on-premises)
+
+Both SharePoint and Reporting Services integrations continue to work, but some reports don't work as expected until the new project name is populated.
+The old project name is still present until caches are updated with the new name. 
+The reporting and SharePoint server administrator can manually run these jobs to immediately populate the new name.
+
+- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default it runs every two hours. To expedite the process,[manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md), so the new name is synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
 
 - If your team uses SharePoint Integration and has custom queries or web parts which directly reference the project name,
- update the name in each to the new project name. All default queries and web parts do not need to be updated and will continue to work. 
- Uses of *@project* will also continue to work after a project rename and also don't need to be updated. 
+ update the name in each to the new project name. All default queries and web parts don't need to be updated and continue to work.
+ Use of *@project* also continues to work after a project rename and also don't need to be updated.
 
-- Excel reports and Excel web parts on MOSS will not show the right data until you execute the following.
+- Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
 	1. Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
 	so that Excel reports contain the correct data.
 	If the new project name is not synced to the warehouse,
-	Excel reports will not show the correct data.
+	Excel reports don't show the correct data.
 	To avoid this, manually run warehouse jobs.
 	2. SharePoint timer job - Run the "Team Foundation Server Dashboard Update" job
-	from the SharePoint central admin to update Excel web parts on the dashboard. 
+	from the SharePoint central admin to update Excel web parts on the dashboard.
 	By default, it runs every 30 minutes.
 	Until this job runs, the Excel web parts on the dashboard
 	and the web parts that show reports directly from the reporting folder
-	won't work because they'll use either the wrong project name or the wrong reporting folder. 
+	won't work because they'll use either the wrong project name or the wrong reporting folder.
 	3. SharePoint cache - Manually clear the SharePoint cache to avoid stale data,
 	such as report folder locations, appearing in the dashboards.
 	By default, this cache clears about every hour.

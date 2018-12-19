@@ -34,7 +34,7 @@ A:	No. You can't use the monthly Azure credits from [Visual Studio subscriptions
 <a name="spending-limit"></a>
 
 > [!Important]
-> To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription will be suspended, including virtual machines and all other workloads. 
+> To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription are suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
