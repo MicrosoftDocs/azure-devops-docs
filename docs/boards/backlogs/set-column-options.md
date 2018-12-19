@@ -70,7 +70,7 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
-Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** lsit. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
+Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
 <img src="_img/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
 

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -294,8 +295,8 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 #### Notes:
  
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
-	```
-	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate />  
+	```xml
+	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
 	   <SERVERDEFAULT from="clock"  />  
 	</FIELD >  
 	```
