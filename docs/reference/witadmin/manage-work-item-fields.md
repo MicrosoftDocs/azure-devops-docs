@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azdevserver-2019'
 ms.date: 03/20/2018
 ---
@@ -212,7 +213,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 6.  On the **Query** toolbar, choose ![Run Query](_img/icon_runquery.png "Icon_runQuery")**Run**.  
   
-7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Availablecolumns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
+7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   
 8.  Select **Important Rank** in the **Available columns** box, and then choose the **>** button (add selected columns). Choose **OK**.  
   

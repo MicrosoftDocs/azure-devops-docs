@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -39,7 +40,7 @@ For a summary of the link restrictions that are defined within the process templ
  ![Example of links control added to a work item form](_img/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
  
   
-```  
+```xml
 <Tab Label="All Links">  
       <Control Type="LinksControl" Name="All" >  
       <LinksControlOptions>  
@@ -71,7 +72,7 @@ When you add a link control to a work item form, you can specify filters that re
 ##  <a name="WILinks"></a> Restricting Link Relationships to Work Items  
  You use the `WorkItemLinkFilters` and the `Filter` child elements to define which link types the links control should include or exclude. You use this element to restrict the types of links that can be selected by the links control to form relationships to work items that are defined in the same project. The syntax for these elements is as follows.  
   
-```  
+```xml
 <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
       <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
 </WorkItemLinkFilters>  
@@ -87,7 +88,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  You can define a links control that allows link relationships for all link types except a custom requirement link type and the system hierarchy link type by using the following code example.  
   
-```  
+```xml
 <Control Type="LinksControl" Name="UniqueName">  
       <LinksControlOptions>  
       <WorkItemLinkFilters FilterType="exclude">  
@@ -102,9 +103,9 @@ When you add a link control to a work item form, you can specify filters that re
   
 <a name="NonWILinks"></a> 
 ## Restrict link relationships to external objects (not work items)   
- You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correpond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
+ You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correspond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
   
-```  
+```xml
 <ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
       <Filter LinkType="externalLinkName" />  
 </ExternalLinkFilters>  
@@ -119,7 +120,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  The following example defines a links control that includes all link types to work items, such as related and parent/child, but excludes link types to non-work items, such as changesets, hyperlinks, and test results.  
   
-```  
+```xml
 <Control Type="LinksControl" Name="UniqueName">  
       <LinksControlOptions>  
       <WorkItemLinkFilters FilterType="includeAll" />   
@@ -130,7 +131,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  The following example defines a link control that allows users to specify only the changeset link type and link only to changesets.  
   
-```  
+```xml
 <Control Type="LinksControl" Name="UniqueName">  
       <LinksControlOptions>  
       <WorkItemLinkFilters FilterType="excludeAll"/>  
@@ -146,7 +147,7 @@ When you add a link control to a work item form, you can specify filters that re
 ##  <a name="WorkItemTypes"></a> Restricting Link Relationships to Types of Work Items  
  You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the types of work items to which a links control can link. You can restrict link relationships to the project or by work item type. The syntax for these elements is as follows.  
   
-```  
+```xml
 <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" >  
       <Filter WorkItemType="workItemTypeReferenceName" />  
 </WorkItemTypeFilters>  
@@ -162,7 +163,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  The following example defines a links control that allows only hierarchical relationships to be formed to tasks that are defined in the project.  
   
-```  
+```xml
 <Control Type="LinksControl" Name="UniqueName">  
       <LinksControlOptions>  
       <WorkItemLinkFilters FilterType="include">  
@@ -181,7 +182,7 @@ When you add a link control to a work item form, you can specify filters that re
 ##  <a name="DefaultColumns"></a> Specifying the Default Columns to Display  
  You use the `LinkColumns` and `LinkColumn` child elements to specify the default columns to display in the links control. You can specify either the reference name for a work item field or a link attribute. The syntax for these elements is as follows.  
   
-```  
+```xml
 <LinkColumns>  
       <LinkColumn RefName="reference name" | LinkAttribute=" link attribute name" />  
 </LinkColumns>  
@@ -189,7 +190,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  The order in which the elements are listed defines the order in which the column fields are displayed in the work item form. For a list of reference names and link attributes, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). The following syntax defines the display of four columns: ID, State, Title, and the link attribute Comment.  
   
-```  
+```xml
 <Control Type="LinksControl">  
 . . .  
       <LinksControlOptions>  
