@@ -96,7 +96,7 @@ for .NET Framework (and other languages) to access the message:
 
 Example:
 
-```
+```csharp
     // Retrieve storage account from connection string
     CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
         CloudConfigurationManager.GetSetting("StorageConnectionString"));
