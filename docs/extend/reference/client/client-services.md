@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 A client service provides client-side (web) capability.  An instance of a client service can be acquired via the `VSS.getService` method:
 
-```
+```js
   var serviceId = "some service contribution identifier";
   
   VSS.getService(serviceId).then(function(svc) {

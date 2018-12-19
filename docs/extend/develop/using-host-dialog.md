@@ -106,7 +106,7 @@ The `uri` property references a page that will be rendered within the content ar
                 };
             })();
             
-            // Register form object to be used accross this extension
+            // Register form object to be used across this extension
             VSS.register("registration-form", registrationForm);
         </script>
     </body>
@@ -115,7 +115,7 @@ The `uri` property references a page that will be rendered within the content ar
 
 ### Showing the dialog
 
-To show the dialog (for example when a user clicks an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualifed identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
+To show the dialog (for example when a user clicks an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
 
 ```javascript
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {
