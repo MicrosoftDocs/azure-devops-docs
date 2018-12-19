@@ -119,7 +119,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
   
 6.  For information about how to label fields for reporting purposes, see [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md).  
   
-7.  When you add an existing field to a different WIT, either explicity set the reporting attributes to be the same as the current field definition, or let them default to these values.  
+7.  When you add an existing field to a different WIT, either explicitly set the reporting attributes to be the same as the current field definition, or let them default to these values.  
   
      Schema conflicts can occur if different reporting attributes are assigned to the same field in different WITs or the same WITs in different projects. To fix these conflicts, see [Resolve Data Conflicts That Are Occurring in the Data Warehouse](../../report/admin/resolve-schema-conflicts.md).  
   
@@ -129,7 +129,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
   
 ## Example  
   
-```  
+```xml
 <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">  
    <HELPTEXT>Type of work involved</HELPTEXT>  
    <SUGGESTEDVALUES>  

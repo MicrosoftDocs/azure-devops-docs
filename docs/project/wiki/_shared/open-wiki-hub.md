@@ -32,7 +32,7 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 > ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
 
 - If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
-- If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), and then choose **Wiki > Wiki**.
+- If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (ellipses), and then choose **Wiki > Wiki**.
 
 ![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 

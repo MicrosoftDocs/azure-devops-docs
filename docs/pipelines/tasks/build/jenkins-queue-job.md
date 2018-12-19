@@ -73,7 +73,7 @@ None
 <tr>
 <td>Parameterized job</td>
 <td>
-<p>Select this option if the Jekins job requires parameters.</p>
+<p>Select this option if the Jenkins job requires parameters.</p>
 </td>
 </tr>
 

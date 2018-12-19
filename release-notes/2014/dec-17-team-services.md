@@ -1,6 +1,6 @@
 ---
 title: Quick code editing, backlog filtering, and more – Dec 17
-description: VSTS release notes for Decemeber 17 2014
+description: VSTS release notes for December 17 2014
 ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: douge

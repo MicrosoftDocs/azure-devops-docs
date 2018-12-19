@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -43,7 +44,7 @@ https://dev.azure.com/fabrikam/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%
 
 The decoded WIQL conforms to: 
 
-```
+```wiql
 SELECT [System.ID], [System.Title]
    FROM WorkItems 
    WHERE [System.TeamProject]='FabrikamFiber' 

@@ -87,7 +87,7 @@ Extends: [DeploymentInput](#DeploymentInput)
 | <code>enforceIdentityRevalidation</code> | boolean
 | <code>releaseCreatorCanBeApprover</code> | boolean
 | <code>requiredApproverCount</code> | int32
-| <code>timeoutInMintues</code> | int32
+| <code>timeoutInMinutes</code> | int32
 
 
 
@@ -1064,7 +1064,7 @@ Enumerates data types that are supported as subscription input values.
 | :----------- | :----------
 | none | No data type is specified.
 | string | Represents a textual value.
-| number | Represents a numberic value.
+| number | Represents a numeric value.
 | boolean | Represents a value of true or false.
 | guid | Represents a Guid.
 | uri | Represents a URI.

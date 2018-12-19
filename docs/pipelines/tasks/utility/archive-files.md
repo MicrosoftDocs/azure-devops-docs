@@ -89,7 +89,7 @@ None
 </tr>
 <tr>
 <td>Replace existing archive</td>
-<td>If an existing archive exists, specify whether to overwrite it.  Otherwise, files will be added to it as long as it is not a comprssed tar.
+<td>If an existing archive exists, specify whether to overwrite it.  Otherwise, files will be added to it as long as it is not a compressed tar.
 <p>If adding to an existing archive, these types are supported:</p>
 <ul>
 <li><b>`zip`</b></li>

@@ -37,7 +37,7 @@ Filters are applied to each revision of a work item. For example, let's say we h
 
 The latest revision (#6) is the Current revision of the work item. In Analytics Views, if you selected "Current only" in the History tab, you would get one row of data for this work item, the current row.
 
-When reporting on history, we could potentionally be pulling in revisions 1 through 6 for reporting. 
+When reporting on history, we could potentially be pulling in revisions 1 through 6 for reporting. 
 
 Let's say when creating an Analytics View or configuring the Burndown widget, you set these two filters:
 

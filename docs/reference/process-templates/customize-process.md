@@ -73,7 +73,7 @@ The primary use of process templates is to create a project. For the Hosted XML 
   
 -   If you're most interested in customizing objects used to track work, which includes test plans, test suites, and test cases, review [Customize your work tracking experience](../customize-work.md).  The customizations you make by modifying an XML definition file for a project are the same types of customizations you make in a process template file.  
   
-     If you want to [add or modify types of work items](../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwit** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
+     If you want to [add or modify types of work items](../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwitd** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
   
 -   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](../configure-features-after-upgrade.md).  
   

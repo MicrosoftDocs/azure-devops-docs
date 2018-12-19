@@ -71,7 +71,7 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
         <td>
             <ul><li>Get the [top commits](./commits.md#apageatatime), or the [commits in a date range](./commits.md#inadaterange).</li>
             <li>Get each [commit with the changes](./commits.md#withchangeditems) in that commit.</li>
-            <li>You can also get the [differences](./diffs.md) between the commited version and the previous version.</li>
+            <li>You can also get the [differences](./diffs.md) between the committed version and the previous version.</li>
             </ul>
         </td>
     </tr>

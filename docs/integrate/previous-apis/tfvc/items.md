@@ -49,7 +49,7 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fab
 ```
 ####Response
 #####Status code: 200
-```
+```xml
 <?xml version="1.0"?>
 <configuration>
     <system.web>
@@ -65,7 +65,7 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items/$/Fabrikam
 ```
 ####Response
 #####Status code: 200
-```
+```html
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>

@@ -1171,7 +1171,7 @@ Content-Type: application/json
 | project              | string   |         | Name or ID of the project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| resultIds            | string   |         | A comma-separated list of upto 200 IDs of test results to update.
+| resultIds            | string   |         | A comma-separated list of up to 200 IDs of test results to update.
 | Body
 | testResult.Id        | int      |		    | ID of the test result which has to be updated.
 | state                | enum { Pending, Queued, InProgress, Paused, Completed } |     | State of the test result

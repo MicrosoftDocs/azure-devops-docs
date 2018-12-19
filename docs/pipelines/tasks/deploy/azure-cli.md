@@ -49,7 +49,7 @@ None
   - [Azure Resource Manager service connection](../../library/connect-to-azure.md)
 * Azure CLI installed on the computer(s) that run the build and release agent.
   See [Install the Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/).
-  If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevent stage variables are updated.
+  If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

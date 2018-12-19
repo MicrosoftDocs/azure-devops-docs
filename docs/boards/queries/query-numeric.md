@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -135,7 +136,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 ::: moniker range=">= azdevserver-2019"
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, stacked bar, sum of story pointsa](_img/numeric/config-psum-story-points-stacked-bar.png)  
+> ![Configure chart dialog, stacked bar, sum of story points](_img/numeric/config-psum-story-points-stacked-bar.png)  
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -285,7 +286,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
-<b>Note:</b> For Azure Boards, the taskboard always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
+<b>Note:</b> For Azure Boards, the taskboard always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label.  
 </blockquote>
 <p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
 </td>
