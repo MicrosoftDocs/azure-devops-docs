@@ -129,7 +129,7 @@ We now have the module and the module manifest. We are ready to package it and s
     * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
     * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
-    ```
+    ```xml
     <?xml version="1.0"?>
     <package >
       <metadata>
