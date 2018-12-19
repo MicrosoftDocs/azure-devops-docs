@@ -126,7 +126,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 |:-----------	|:---------
 | bugBehavior	| AsRequirements, AsTasks, Off
 | workingDays   | monday, tuesday, wednesday, thursday, friday, saturday, sunday
-| backlogVisibilities | A dictionary of keys (Microsoft.EpicCategory, Microsoft.FeatureCategor, Microsoft.RequirementCategory) and boolean values.
+| backlogVisibilities | A dictionary of keys (Microsoft.EpicCategory, Microsoft.FeatureCategory, Microsoft.RequirementCategory) and boolean values.
 
 #### Sample request
 

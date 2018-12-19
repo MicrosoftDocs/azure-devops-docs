@@ -112,7 +112,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
     },
     {
       "id": 4,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
@@ -493,7 +493,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
     },
     {
       "id": 72,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
@@ -527,7 +527,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
       "state": "Active",
       "rootSuite": {
         "id": "73",
-        "name": "spritn3",
+        "name": "sprint3",
         "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72/Suites/73"
       },
       "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=72"
@@ -675,7 +675,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
     },
     {
       "id": 4,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",

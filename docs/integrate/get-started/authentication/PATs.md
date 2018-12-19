@@ -36,6 +36,7 @@ Authorization: Basic BASE64PATSTRING
 <br/>
 Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 <br/>
+
 ```cs
 public static async void GetBuilds()
 {
