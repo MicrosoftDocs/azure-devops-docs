@@ -45,13 +45,13 @@ customer's end users. You can also delete existing assigned subscriptions or rea
 ## Convert your customers from other Azure billing to CSP
 If your customers have been buying Azure DevOps, Visual Studio cloud subscriptions, or Xamarin University directly through Microsoft, and they want to transition to paying through you as a CSP, they'll need to take the following steps:
 1. Reduce their paid amounts to zero.
-2. Let you know the ongoing paid amounts of each service and product to start billing on the first day of the next calendar month. For Visual Studio annual cloud subscriptions, customers need to tell you the month, or months, to start purchases of these subscriptions. Then they can continue coverage from the date it will expire from their existing annual cloud subscription purchases.
+2. Let you know the ongoing paid amounts of each service and product to start billing on the first day of the next calendar month. For Visual Studio annual cloud subscriptions, customers need to tell you the month, or months, to start purchases of these subscriptions. Then they can continue coverage from the date it expires from their existing annual cloud subscription purchases.
 
 For Azure DevOps, see additional details about [buying Azure DevOps through CSP](buy-csp-azure-devops.md).
 
 ## Convert your customers from CSP billing
 
-If your customers choose to stop buying Azure DevOps Services, Visual Studio cloud subscriptions, or Xamarin University through you as a CSP, you'll need to reduce the paid amounts to zero. Then there will be no renewal charges when these purchases expire. Most purchases are valid through the end of the calendar month. Examples are Azure DevOps Services users, Test Manager, Azure Artifacts, Visual Studio monthly cloud subscriptions, and Xamarin University. Visual Studio annual cloud subscriptions are valid for a year from purchase. Make sure to keep the Azure subscription that made the purchases active until all the purchases have expired. Canceling the Azure subscription earlier interrupts the customer's use of the purchases.
+If your customers choose to stop buying Azure DevOps Services, Visual Studio cloud subscriptions, or Xamarin University through you as a CSP, you'll need to reduce the paid amounts to zero. Then are no renewal charges when these purchases expire. Most purchases are valid through the end of the calendar month. Examples are Azure DevOps Services users, Test Manager, Azure Artifacts, Visual Studio monthly cloud subscriptions, and Xamarin University. Visual Studio annual cloud subscriptions are valid for a year from purchase. Make sure to keep the Azure subscription that made the purchases active until all the purchases have expired. Canceling the Azure subscription earlier interrupts the customer's use of the purchases.
 
 ## How to look up CSP pricing
 

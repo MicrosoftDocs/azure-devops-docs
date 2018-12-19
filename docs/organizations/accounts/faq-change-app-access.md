@@ -30,7 +30,7 @@ A:  No, you can still use that method in all the other organizations that you ow
 
 #### Q:  If I deny access to an authentication method, then allow access again, will the apps that need access continue to work?
 
-A:  Yes, those apps will continue to work.
+A:  Yes, those apps continue to work.
 
 #### Q:  What apps integrate with Azure DevOps?
 

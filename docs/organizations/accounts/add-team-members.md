@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/19/2018
 monikerRange: 'vsts'
 ---
 # Add members to projects
@@ -97,7 +97,7 @@ Which email addresses can I add?
 
 * You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
-* If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](add-external-user.md).
+* If your organization is connected to your directory, all users must be directory members and sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
   ![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
 

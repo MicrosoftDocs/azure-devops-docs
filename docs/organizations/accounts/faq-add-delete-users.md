@@ -76,7 +76,7 @@ A: If no other access levels are available, users can [work as stakeholders](../
 
 A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users will be transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
+Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users are transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
 
 The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
