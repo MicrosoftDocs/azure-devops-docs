@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 12/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -18,7 +18,10 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, you can assign a different user as the owner for your organization. Learn what permissions are required to make these updates in Azure DevOps.
+When your team's roles and responsibilities change, you can assign a different user as the owner for your organization. In this article, we show you what permissions are required and the steps to make this update in Azure DevOps.
+
+> [!NOTE]
+> When you remove an owner, they are also removed from the project collection administrator group.
 
 <a name="ChangeOwner"></a>
 
@@ -28,11 +31,10 @@ To change the organization owner, you must have [*project collection administrat
 If no one in the organization has these permissions, contact
 [Azure DevOps Support](https://azure.microsoft.com/support/devops).
 
-Make sure that the new owner:
+Make sure the new owner has completed the following tasks:
 
-* Has been added and invited to your organization (`https://<yourorganization>.visualstudio.com`).
-* Has signed in to your organization, created a profile, and agreed to the Terms of Service.
-* Has accessed the organization at least once after creating an initial profile.
+* Signed in to your organization, created a profile, and agreed to the Terms of Service.
+* Accessed the organization at least once after creating an initial profile.
 
    ![Last access date](_img/change-organization-ownership/user-last-access.png)
 
@@ -84,10 +86,10 @@ Make sure that the new owner:
 
    [Can't find the person you want?](faq-change-organization-ownership.md#NoNewOwner)
 
-6. Save your changes.
+6. **Save** your changes.
 
    ![Select new organization owner, and save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
 
 ---
 
-   You have successfully changed your organization owner.
+   Your organization has a new owner.
