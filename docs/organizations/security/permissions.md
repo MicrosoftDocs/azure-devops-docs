@@ -1891,27 +1891,27 @@ If you are working with the Release Management client and server supported for T
 
 ## Release (object-level) 
 
-You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
+You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
-In addition, you can assign approvers to specific steps within a release definition to ensure that the applications being deployed meet quality standards.
+In addition, you can assign approvers to specific steps within a release pipeline to ensure that the applications being deployed meet quality standards.
 
-The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release definition, or environment level.
+The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or environment level.
 
 >  [!div class="mx-tdCol2BreakAll"]  
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
-> | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |
-> | **Create releases** | Can create new releases. | Project, Release definition |
-> | **Delete release definition** | Can delete release definition(s). | Project, Release definition |
-> | **Delete release environment** | Can delete environment(s) in release definition(s). | Project, Release definition, Environment |
-> | **Delete releases** | Can delete releases for a definition. | Project, Release definition |
-> | **Edit release definition** | Can save any changes to a release definition, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release definition. To make changes to a specific environment in a release definition, the user also needs **Edit release environment** permission. | Project, Release definition |
-> | **Edit release environment** | Can edit environment(s) in release definition(s). To save the changes to the release definition, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release definition, Environment |
-> | **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release definition, Environment |
-> | **Manage release approvers** | Can add or edit approvers for environment(s) in release definition(s). This permissions also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release definition, Environment |
-> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release definition |
-> | **View release definition** | Can view release definition(s). | Project, Release definition |
-> | **View releases** | Can view releases belonging to release definition(s). | Project, Release definition |
+> | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release pipeline, Environment |
+> | **Create releases** | Can create new releases. | Project, Release pipeline |
+> | **Delete release pipeline** | Can delete release pipeline(s). | Project, Release pipeline |
+> | **Delete release environment** | Can delete environment(s) in release pipeline(s). | Project, Release pipeline, Environment |
+> | **Delete releases** | Can delete releases for a pipeline. | Project, Release pipeline |
+> | **Edit release pipeline** | Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs **Edit release environment** permission. | Project, Release pipeline |
+> | **Edit release environment** | Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Environment |
+> | **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Environment |
+> | **Manage release approvers** | Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release pipeline, Environment |
+> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release pipeline |
+> | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
+> | **View releases** | Can view releases belonging to release pipeline(s). | Project, Release pipeline |
 
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
@@ -1919,7 +1919,7 @@ project collections and project groups. For example,
 **Release Administrators** are given all of the above permissions by
 default. **Contributors** are given all permissions except
 **Administer release permissions**. **Readers**, by default,
-are denied all permissions except **View release definition** and
+are denied all permissions except **View release pipeline** and
 **View releases**.
 
 ::: moniker-end
