@@ -65,7 +65,7 @@ Below are the steps to create a build or release task extension and put it on th
 
 ### Create task scaffolding
 
-The first step is to create the folder structure for the task and intall the required libraries and dependencies.
+The first step is to create the folder structure for the task and install the required libraries and dependencies.
 
 #### Create a directory and package.json file
 
@@ -111,6 +111,9 @@ tsc --init
 
 In addition, for this example we want to compile to the ES6 standard instead of ES5.
 To ensure this happens, open the newly generated ```tsconfig.ts``` and update the ```target``` field to "es6".
+
+>[!NOTE]
+>To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
 
 ### Task implementation
 

@@ -296,7 +296,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <p>**Additional supported tasks**: </p>
 <ul>
 <li>[Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)</li>
-<li>[Capture feedback in in standalone mode](../../test/standalone-mode-exploratory-testing.md)</li>
+<li>[Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)</li>
 <li>[Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)</li>
 </ul>
 </td>
