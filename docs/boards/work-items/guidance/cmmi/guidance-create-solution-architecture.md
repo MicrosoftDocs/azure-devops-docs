@@ -1,12 +1,13 @@
 ---
 title: CMMI process guidance, Create a solution architecture
 titleSuffix: Azure Boards
-description: Investigate alternative architectural strategies to creat good architecture  
+description: Investigate alternative architectural strategies to create good architecture  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
