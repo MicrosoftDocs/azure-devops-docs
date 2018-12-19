@@ -63,7 +63,7 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 
 </td>
 <td>
-![Default kanboard boward, Agile template](_img/ALM_KB_Empty.png)
+![Default kanban board, Agile template](_img/ALM_KB_Empty.png)
 
 </td>
 </tr>
