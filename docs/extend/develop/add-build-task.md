@@ -132,9 +132,7 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
     "friendlyName": "{{taskfriendlyname}}",
     "description": "{{taskdescription}}",
     "helpMarkDown": "",
-    "category": [
-        "Azure Pipelines"
-    ],
+    "category": "Utility",
     "author": "{{taskauthor}}",
     "version": {
         "Major": 0,
@@ -159,9 +157,6 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
     }
 }
 ```
-
->[!NOTE]
-> The `Azure Pipelines` value for the `category` property will make your extension available to Azure DevOps Services and Azure DevOps Server 2019. If you would like your extension to also be available to TFS 2018 and earlier, you should make this value `Build`. Check out the [manifest reference](manifest.md) for more information. Please note that the `task.json` file uses "category", while the extension manifest uses "categories".
 
 **task.json components**<br>
 Here is a description of some of the components of the `task.json` file:
