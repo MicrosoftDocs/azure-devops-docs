@@ -69,7 +69,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
-   ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+   ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 0. Choose the **Security** page, **Project Administrators** group, and the **Members** tab.  
 
