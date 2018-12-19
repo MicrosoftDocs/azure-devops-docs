@@ -86,7 +86,7 @@ For example, a search such as **t: Bug path:"project\search"** finds all bugs in
 For example, a search such as **t: Bug CreatedDate> @Today-7** finds all bugs created in the last week
 
 * For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
-for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that neccesarily contain the path "tools.demoproject.com". 
+for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="_img/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
