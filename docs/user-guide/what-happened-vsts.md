@@ -7,7 +7,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
-ms.date: 12/06/2018
+ms.date: 12/19/2018
 ms.author: douge
 author: erickson-doug
 monikerRange: '>= tfs-2013'
@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-On September 10, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [this blog post](https://aka.ms/azurevsts).
+On September 10, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [Introducing Azure DevOps](https://aka.ms/azurevsts).
 
 VSTS features are now separate services:
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 >| VSTS feature name    | Azure DevOps service name | Description |
 > |----------------------|----------------------|-------------|
 > | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
@@ -60,8 +60,8 @@ Turning off **New Navigation** also changes the Azure DevOps Services names to t
 
 To return to the Azure DevOps service-oriented UI, choose your profile icon, select **Preview features**, and re-enable **New Navigation**.
 
-## What about Team Foundation Server (TFS)?
+## Team Foundation Server (TFS) is now called Azure DevOps Server
 
-On November 19, 2018, [Azure DevOps Server 2019](/tfs/server/tfs-is-now-azure-devops-server) was announced as the next version of Team Foundation Server, our on-premises Agile workflow and DevOps product. Currently, the Azure DevOps Server 2019 Release Candidate 1 is available for preview.
+On November 19, 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. Azure DevOps Server is the new name for the on-premises DevOps server product previously called Team Foundation Server. For more information about this change, see [Introducing Azure DevOps Server](https://docs.microsoft.com/en-us/tfs/server/tfs-is-now-azure-devops-server).
 
-Azure DevOps Server 2019 uses the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation](../project/navigation/index.md). 
+Azure DevOps Server 2019 uses the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation](../project/navigation/index.md).
