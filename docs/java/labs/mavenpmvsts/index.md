@@ -1,6 +1,6 @@
 ---
 title: Configure package management for Maven with Azure DevOps Services
-description: Tutorial lab for configuring packagement and building with Maven and Azure DevOps
+description: Tutorial lab for configuring package management and building with Maven and Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
