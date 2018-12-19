@@ -160,7 +160,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 
 | Parameter  	| Allowed Values     
 |:-----------	|:---------
-| activity name	| Deployment, Design, Development, Documentation, Localization, Program Managment, Testing (localized)
+| activity name	| Deployment, Design, Development, Documentation, Localization, Program Management, Testing (localized)
 
 #### Sample request
 

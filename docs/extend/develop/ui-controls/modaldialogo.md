@@ -113,7 +113,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 
 <a name="confirmation"></a>
 ## Confirmation dialog
-Below sample displays how to use modal dialgo as a confirmation dialog.
+Below sample displays how to use modal dialog as a confirmation dialog.
 
 ``` javascript
 	import Dialogs = require("VSS/Controls/Dialogs");

@@ -78,7 +78,7 @@ The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepf
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
 
 Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```
+```ini
 vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
@@ -88,7 +88,7 @@ Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the fil
 
 Create a file called **build.gradle** in the root of your cloned (local) repo. Open it with a UTF-8-capable text editor and add the following code:
 
-```text
+```groovy
 apply plugin: 'java' 
 apply plugin: 'maven-publish' 
  

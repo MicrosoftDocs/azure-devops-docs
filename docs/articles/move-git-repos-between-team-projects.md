@@ -1,6 +1,6 @@
 ---
 title: Move Git repositories between Team Projects
-description: Explore how to move git repositories between Team Projects with full-fidelity histiory
+description: Explore how to move git repositories between Team Projects with full-fidelity history
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers

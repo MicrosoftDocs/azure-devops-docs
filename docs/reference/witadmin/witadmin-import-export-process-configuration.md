@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azdevserver-2019'
 ms.date: 03/20/2018
@@ -96,7 +97,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
   
      For example, the following syntax adds the **Priority** element to the panel.  
   
-    ```  
+    ```xml
     <AddPanel>  
        <Fields>  
           <Field refname="System.Title" />  

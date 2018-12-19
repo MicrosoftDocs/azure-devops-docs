@@ -215,7 +215,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
 
 #### Sample code
 
-* [C# (GetListofWorkItemRevisions method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L19)
+* [C# (GetListOfWorkItemRevisions method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L19)
 
 ### A page at a time
 
@@ -283,7 +283,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$ski
 
 #### Sample code
 
-* [C# (GetListofWorkItemRevisionsPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L48)
+* [C# (GetListOfWorkItemRevisionsPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L48)
 
 ## Get a work item revision
 

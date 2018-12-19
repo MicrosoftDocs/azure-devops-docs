@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ce1d4951-e460-43d3-8852-a0f170012142
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -19,7 +20,7 @@ When a conflict or failed submission occurs during the synchronization process, 
   
  You can change the resubmit interval for a project collection by modifying the value in the collection hive using Powershell as described in the following page on the Microsoft website: [Updating the TF Registry using Powershell](http://go.microsoft.com/fwlink/?LinkId=207285). You use the following path to specify the configuration setting:  
   
-```  
+```powershell
 $collectionHive.SetValue("/Configuration/ProjectServer/StatusingResubmitInterval", "IntervalValue")  
 ```  
   

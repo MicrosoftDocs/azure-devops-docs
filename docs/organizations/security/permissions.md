@@ -1669,7 +1669,7 @@ You manage query and query folder permissions through the [web portal](../../boa
 > [!div class="mx-imgBorder"]  
 > ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
 
-Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
+Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
 > To create query charts [you need Basic access](change-access-levels.md).
 

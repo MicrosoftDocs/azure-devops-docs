@@ -51,13 +51,13 @@ You can control the label name, position, size of text box, and other display co
 
 Use `FieldControl` to provide a control field for an Integer field.
 
-```
+```xml
 <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />
 ```  
 
 Use `FieldControl` to provide a text field for the input or display of Double fields.
 
-```
+```xml
 <Control FieldName="ABC_Company.Statistics.Analysis" Type="FieldControl" Label="Analysis %" LabelPosition="Left" />
 ```  
 
@@ -65,13 +65,13 @@ Use `FieldControl` to provide a text field for the input or display of Double fi
 
 Specify the `String` control when you want to add a string field, such as used in pick lists or short text, that is limited to 255 characters. 
 
-```
+```xml
 <Control FieldName="Microsoft.VSTS.DocName" Type="FieldControl" Label="Vision Doc Location" LabelPosition="Left" />
 ```
 
 Specify the `PlainText` control when you want to capture text that contains descriptions that may be larger than 255 characters.
   
-```
+```xml
 <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
 ``` 
 
@@ -84,7 +84,7 @@ Specify the `PlainText` control when you want to capture text that contains desc
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 
-```
+```xml
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
   <DEFAULT from="value" value="False" />
   <HELPTEXT>Triage work item</HELPTEXT>
@@ -93,8 +93,8 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
 
-```
-<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+```xml
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" /> 
 ```
  
 The field will appear as a checkbox on the form. 
@@ -110,7 +110,7 @@ You use the `DateTimeControl` type to give users a calendar picker to select a d
   
 For example, you can specify a preferred start date or a review date that is in the future.  
   
-```  
+```xml
 <Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStart"  
 Label="Preferred Start Date:" LabelPosition="Left" Format="Short" />  
 <Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStartTime"  
@@ -168,7 +168,7 @@ Use the `StoryboardsControl` to open PowerPoint Storyboarding from a work item a
 
 To add the `StoryboardsControl` to the `FORM` section, add the following code snippet:
 
-```
+```xml
 <Tab Label="Storyboards">
      <Control Name="StoryboardsControl" Type="LinksControl">
         <LinksControlOptions>
@@ -191,7 +191,7 @@ To add the `StoryboardsControl` to the `FORM` section, add the following code sn
  
 You use the `WorkItemClassificationControl` type to add fields whose data type is `TreePath`. This control provides support to display area path fields and iteration path fields in a hierarchical, nested tree format. The tree shows hierarchical nodes that you can expand and collapse.  
   
-```  
+```xml
 <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area"LabelPosition="Left" />  
 ```  
   
@@ -207,7 +207,7 @@ You use the `WorkItemLogControl` to provide a control field for the History fiel
 
 You can use this control only to support the display of the history field of a work item, the System.History work item field. By using this control, you can expand and collapse details about historical revisions to a work item. You can also format text that you add to the history field.
 
-```
+```xml
 <Control Type="WorkItemLogControl" FieldName="System.History" Label="Detailed Description and History" LabelPosition="Top" Dock="Fill" />
 ```  
 
@@ -248,7 +248,7 @@ If you want to add the field in more than one area of the form, such as on the t
 ### Make a field Read-Only  
 You can mark a field as read-only in one of two ways. In the first method, you add the `READONLY` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using the `READONLY` element, you can specify whether certain users can modify the field. As shown in the following example, only program managers can modify a Sub-Title field.  
   
-```  
+```xml
 <FIELD name="Sub-Title" refname="ACME.ACE.SubTitle" type="String" >  
 <READONLY for="[Global]\Team Foundation Valid Users" not="Program Managers"/>  
 </FIELD>  
@@ -257,8 +257,8 @@ You can mark a field as read-only in one of two ways. In the first method, you a
  
 In the second method, you specify the `ReadOnly` attribute for the `CONTROL` element. In this method, all users are restricted from modifying the field.  
   
-```  
-Control FieldName=" ACME.ACE.SubTitle" Type="FieldControl" Label="Sub-Title" LabelPosition="Left" ReadOnly="True" />  
+```xml
+<Control FieldName=" ACME.ACE.SubTitle" Type="FieldControl" Label="Sub-Title" LabelPosition="Left" ReadOnly="True" />  
   
 ```  
 

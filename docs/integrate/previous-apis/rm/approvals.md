@@ -325,7 +325,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 
 | Scope | Name | Notes
 |:------|:-----|:-----
-| vso.release_manage | Release (read, write, execute and manage) | Grants the ability to read, update and delete release artifacts, including releases, release definitions and release envrionment, and the ability to queue and approve a new release.
+| vso.release_manage | Release (read, write, execute and manage) | Grants the ability to read, update and delete release artifacts, including releases, release definitions and release environment, and the ability to queue and approve a new release.
 
 
 #### Request parameters

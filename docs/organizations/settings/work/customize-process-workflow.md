@@ -48,7 +48,7 @@ States you add will appear in the picklist for the States field shown in work it
 > [!NOTE]    
 > States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
 >
-> If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board columm settings](../../../boards/boards/add-columns.md) in order to view and use the affected Kanban board.  
+> If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board column settings](../../../boards/boards/add-columns.md) in order to view and use the affected Kanban board.  
 
 0. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 

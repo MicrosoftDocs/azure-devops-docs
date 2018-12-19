@@ -34,7 +34,7 @@ To use the Azure DevOps Services symbol server in WinDbg, you'll add your organi
 
 1. Open WinDbg (you can [install it from the Store](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86)).
 2. Load the executable you wish to debug.
-3. Copy this command and replace `<yourOrg>` with your Azure DevOps Services acccount name: `.sympath+ https://artifacts.dev.azure.com/<yourOrg>/_apis/symbol/symsrv`
+3. Copy this command and replace `<yourOrg>` with your Azure DevOps Services account name: `.sympath+ https://artifacts.dev.azure.com/<yourOrg>/_apis/symbol/symsrv`
 4. In the Command window in WinDbg, enter the command from the previous step
 5. Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
 6. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard

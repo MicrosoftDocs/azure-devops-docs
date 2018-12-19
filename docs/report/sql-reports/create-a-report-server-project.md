@@ -44,7 +44,7 @@ You can track your team's progress by using SQL Server Report Designer to create
   
 3.  Under **Templates**, choose **Report Server Project.**  
   
-4.  In the **Name** box, typea name for the project, and then choose **OK**.  
+4.  In the **Name** box, type a name for the project, and then choose **OK**.  
   
 ### To create the Tfs2010ReportDS and Tfs2010OlapReportDS data sources  
   

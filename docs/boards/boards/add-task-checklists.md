@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
 ms.date: 11/19/2018
@@ -110,7 +111,7 @@ To configure or change the layout of the board, see one of these topics.
 
 ## Q & A
 
-### Q: If I manage bugs with tasks, can I add bugs as a checklist to a requirment? 
+### Q: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
 **A:** No. Task checklists only support the task work item type. 
  
 

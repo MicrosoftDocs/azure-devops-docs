@@ -1,7 +1,7 @@
 ---
 title: Search code of a public project  
 titleSuffix: Azure DevOps Services Public Project
-description: Search across all reposities defined in a public project to find specific types of code   
+description: Search across all repositories defined in a public project to find specific types of code   
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 

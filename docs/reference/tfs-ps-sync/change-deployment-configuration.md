@@ -80,7 +80,7 @@ ms.date: 01/12/2017
   
 5.  Use the **/MapPwaToCollection** command option to map each collection that you moved to the second instance of PWA.  
   
-6.  Use the **/MapPlapToTeamProject** command option to map each plan to the project that was moved to a different collection.  
+6.  Use the **/MapPlanToTeamProject** command option to map each plan to the project that was moved to a different collection.  
   
  For more information, see the following topics:  
 

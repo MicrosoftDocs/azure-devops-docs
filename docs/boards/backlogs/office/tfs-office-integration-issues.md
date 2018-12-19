@@ -76,7 +76,7 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 
 0. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
 
-	<img src="_img/tfs-office-issues-run-developer-cmd-prompt.png" alt="Deve;p[er Cp,,[amd {rp,[t fpr Vosia; Stidop, Run as administrator" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/tfs-office-issues-run-developer-cmd-prompt.png" alt="Developer Command Prompt for VS2015 start menu with 'Run as administrator' context menu" style="border: 2px solid #C3C3C3;" />
 
 0.	**For Office 2016 and Office 2013**, run the following commands:   
 

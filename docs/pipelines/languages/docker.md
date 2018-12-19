@@ -398,7 +398,7 @@ When you use Microsoft-hosted Linux agents, you create Linux container images fo
 
 1. Run the following script in your build pipeline.
 
-   ```Dockerfile
+   ```cmd
    # register QEMU binary - this can be done by running the following Docker image
    docker run --rm --privileged multiarch/qemu-user-static:register --reset
    # build your image

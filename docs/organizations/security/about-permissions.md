@@ -127,7 +127,7 @@ and add the same groups to grant access to additional resources.
 ![Conceptual image showing defining AD groups](_img/permissions/grant-permissions.png)
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-Of course, you don't need to grant permissions for reports or the project portalif your project doesn't use SQL Server Reporting Services or a SharePoint site.
+Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
 
 <a name="validusers"></a>

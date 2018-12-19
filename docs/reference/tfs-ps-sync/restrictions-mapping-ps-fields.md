@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f839c9c9-078b-4a96-93a3-132055edfb76
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
@@ -36,7 +37,7 @@ ms.date: 01/12/2017
   
  This mapping is represented in the following code of the field mappings:  
   
-```  
+```xml
 <field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
 &nbsp;&nbsp;&nbsp;<tfsToTarget>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name="pjTaskName" />  
@@ -56,7 +57,7 @@ ms.date: 01/12/2017
   
  In the following example, the Project Server Resource Work field is mapped to the MSFT.MappedTopjResourceWork field in Team Foundation for the status queue target.  
   
-```  
+```xml
 <field tfsName="MSFT.MappedTopjResourceWork" tfsMirrorName="Mirror.MSFT.MappedTopjResourceWork" displayTfsField="true" displayTfsMirror="true">  
 &nbsp;&nbsp;&nbsp;<tfsToTarget>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerStatusQueue" name="pjResourceWork" />  
@@ -67,7 +68,7 @@ ms.date: 01/12/2017
   
  You can also combine the mapping of a resource-specific field with a task-specific field to form a full mapping. In the following example, the pjTaskWork field is mapped within the **targetToTfs** element to provide a complete round-trip mapping.  
   
-```  
+```xml
 <field tfsName="MSFT.MappedTopjResourceWork" tfsMirrorName="Mirror.MSFT.MappedTopjResourceWork" displayTfsField="true" displayTfsMirror="true">  
 &nbsp;&nbsp;&nbsp;<tfsToTarget>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerStatusQueue" name="pjResourceWork" />  
@@ -88,7 +89,7 @@ ms.date: 01/12/2017
   
  In the following example, the Project Server Resource Work field is mapped to the MSFT.MappedTopjTaskBaseline1Start field in Team Foundation for the Team Foundation Server target.  
   
-```  
+```xml
 <field tfsName="MSFT.MappedTopjTaskBaseline1Start" tfsMirrorName="Mirror.MSFT.MappedTopjTaskBaseline1Start" displayTfsField="true" displayTfsMirror="true">  
 &nbsp;&nbsp;&nbsp;<targetToTfs>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerPublished" name="pjTaskBaseline1Start" />  
