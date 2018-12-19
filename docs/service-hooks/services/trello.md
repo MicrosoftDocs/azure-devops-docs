@@ -29,7 +29,7 @@ For example, when code is pushed, or a build occurs.
 
 4. Copy the authorization token.
 
-   <img alt="Trello athorization token" src="./_img/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Trello authorization token" src="./_img/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
 
 Create a Trello card or list from an Azure DevOps Services event.
 

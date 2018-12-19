@@ -53,7 +53,7 @@ A: Yes. It adds a service hook subscription to your project.
 
 <img alt="Azure DevOps Services AppVeyor consumer added" src="./_img/appveyor/appveyor-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-####Q: What happens if I remove the AppVeryor project?
+####Q: What happens if I remove the AppVeyor project?
 
 A: The AppVeyor service hook subscription is removed from Azure DevOps Services.
 
