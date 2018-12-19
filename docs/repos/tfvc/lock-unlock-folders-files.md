@@ -39,7 +39,7 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
 > [!IMPORTANT]
 > These options will appear only when you are making changes in a [server workspace](create-work-workspaces.md). 
-> The use of [local workspaces](decide-between-using-local-server-workspace.md) in your Project makes check-out locks un-enforcable. [Learn more](understand-lock-types.md).
+> The use of [local workspaces](decide-between-using-local-server-workspace.md) in your Project makes check-out locks un-enforceable. [Learn more](understand-lock-types.md).
 
 1.  On the **View** menu, choose **Other Windows**,and then choose **Source Control Explorer**.
 
