@@ -34,7 +34,7 @@ The commit details summary experience has been improved to show the commit messa
 
 With this week’s deployment you now can perform a SonarQube analysis simply by checking a new option provided on Maven build tasks.
 
-![The SonarQube analysic option for Maven build tasks](_img/10_8_03.png)
+![The SonarQube analysis option for Maven build tasks](_img/10_8_03.png)
 
 ##PREVIEW: New Work Item form
 
