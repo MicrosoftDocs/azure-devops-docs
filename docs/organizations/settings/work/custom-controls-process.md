@@ -68,7 +68,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
+	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
 
 	> [!IMPORTANT]  
 	> Extensions you install are added to all WITs across all processes.

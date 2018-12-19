@@ -168,7 +168,7 @@ We recommend that you add teams as your organization grows. Each team gets [acce
 ![Agile tools and team assets](../organizations/settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)
 
 To learn more, see the following articles: 
-- [About projects and scaling your organiziation](../organizations/projects/about-projects.md)  
+- [About projects and scaling your organization](../organizations/projects/about-projects.md)  
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)  
 - [Add a team administrator](../organizations/settings/add-team-administrator.md)  
 

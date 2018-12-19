@@ -35,7 +35,7 @@ Use this task in a build or release pipeline to build a machine image using Pack
 <tr><td>Resource group</td><td>(Required) Azure Resource group that contains the selected storage account.</td></tr>
 <tr><td>Base image source</td><td>(Required) Select the source of base image. You can either choose from a curated gallery of OS images or provide url of your custom image.</td></tr>
 <tr><td>Base image</td><td>(Required) Choose from curated list of OS images. This will be used for installing pre-requisite(s) and application(s) before capturing machine image.</td></tr>
-<tr><td>Base image URL</td><td>(Required) Specify url of base image. This will be used for installing pre-requisitie(s) and application(s) before capturing machine image.</td></tr>
+<tr><td>Base image URL</td><td>(Required) Specify url of base image. This will be used for installing pre-requisite(s) and application(s) before capturing machine image.</td></tr>
 <tr><td>Base image OS</td><td>(Required) undefined</td></tr>
 <tr><td>Deployment Package</td><td>(Required) Specify the path for deployment package directory relative to $(System.DefaultWorkingDirectory). Supports minimatch pattern. Example path: FrontendWebApp/**/GalleryApp</td></tr>
 <tr><td>Deployment script</td><td>(Required) Specify the relative path to powershell script(for Windows) or shell script(for Linux) which deploys the package. This script should be contained in the package path selected above. Supports minimatch pattern. Example path: deploy/**/scripts/windows/deploy.ps1</td></tr>

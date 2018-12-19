@@ -157,7 +157,7 @@ In addition, your process must pass the following validation checks:
  
 <a id="process-configuration"></a>
 ### Process configuration
-The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In additon, it must meet the following conditions:  
+The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In addition, it must meet the following conditions:  
 *   Specify all ```TypeFields```
 *   Limit definition to five portfolio backlogs  
 *   Contain only one unparented portfolio backlog   
@@ -192,7 +192,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 <a id="limits"></a>
 #### Limit restrictions  
 *   Limit definition to 512 fields 
-*   Limit definition of person-name fields, ones with an attribute of ```syncnamechange=true```, to 64 per work item type
+*   Limit definition of person-name fields, ones with an attribute of ```syncnamechanges=true```, to 64 per work item type
 *   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
@@ -253,7 +253,7 @@ For the current release of import process, the following restrictions are in eff
 
 **Correct example**   
 To limit the account names that are valid within an identity field, specify the  ```VALIDUSER```  with a group name attribute.   
-```
+```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
         <ALLOWEXISTINGVALUE />
         <VALIDUSER group="[PROJECT]\Program Manager Group" />
@@ -265,7 +265,7 @@ Prior to importing the process, make sure that you've created the group in the p
 
 **Incorrect example**  
 The following example isn't valid as it specifies the ```ALLOWEDVALUES``` element and the ```DEFAULT``` element which specifies ```value="Not Assigned"```, a non-identity string.    
-```
+```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
         <ALLOWEXISTINGVALUE />
         <ALLOWEDVALUES>

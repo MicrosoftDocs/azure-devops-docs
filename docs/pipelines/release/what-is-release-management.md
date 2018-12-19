@@ -29,7 +29,7 @@ You can **fully automate** the testing and delivery of your software
 in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
-![A release pipeline defines the stages for deploment](_img/what-is-release-management/understand-rm-01.1.png)
+![A release pipeline defines the stages for deployment](_img/what-is-release-management/understand-rm-01.1.png)
 
 1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Azure Pipelines releases in action.
 

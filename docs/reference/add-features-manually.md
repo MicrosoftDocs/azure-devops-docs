@@ -454,7 +454,7 @@ Depending on the customizations that you've made and the features you want to en
 	-	**Test Plan and Test Suite**:  Test Plan Category and Test Suite Category 
 
 	If you use custom WITs to support requirements or tasks, then you'll want to add or modify the Requirement Category and Task Category. For example, Fabrikam Fiber uses the following definitions to support their requirement tracking: 
-```
+```xml
 	 <CATEGORY name="Requirement Category" refname="Microsoft.RequirementCategory">
 	    <DEFAULTWORKITEMTYPE name="Customer App" />
 	    <WORKITEMTYPE name="Service App" />

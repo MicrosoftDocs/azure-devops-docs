@@ -189,7 +189,7 @@ For more information about the security model, see [Analytics Service security](
 
 ![Access to the resource is forbidden.](_img/AnalyticsAccessCheckException.png)
 
-<a id="ProjecNotFoundError">  </a>
+<a id="ProjectNotFoundError">  </a>
 ### Q: How do I resolve error: *Project "X" does not exist or you do not have permissions to access it*?
 
 > We encountered an error while trying to connect. <br>

@@ -216,7 +216,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 </tr>
 <tr>
 <td>**Consumes From-Produced For**<br/>(Dependency topology)<br/>  
-![Comsumes From topology image](_img/link-work-items-support-traceability/affected-by-cmmi.png)
+![Consumes From topology image](_img/link-work-items-support-traceability/affected-by-cmmi.png)
 ![Produced For topology image](_img/link-work-items-support-traceability/affects-cmmi.png)  
 </td>
 <td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
@@ -295,7 +295,7 @@ The following table describes the external link types you can choose when adding
 ::: moniker-endÂ 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link typesto scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
+The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 ::: moniker-endÂ 
 
 

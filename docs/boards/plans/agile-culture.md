@@ -166,7 +166,7 @@ Before you can create or work with any of the Agile tools, you need a project. I
 
 If you're ready to move from one team to two teams, or configure several teams, see [Add teams](../../organizations/settings/add-teams.md). To add a team administrator or configure team assets, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md). 
 
-For addtional guidance, see these topics: 
+For additional guidance, see these topics: 
 - [Practices that scale](practices-that-scale.md) 
 - [Visibility across teams](visibility-across-teams.md)
 - [Review team delivery plans](review-team-plans.md)

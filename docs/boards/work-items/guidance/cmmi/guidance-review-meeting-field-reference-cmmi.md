@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 35b045a4-1332-499d-97a6-f7797033990d
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
@@ -31,7 +32,7 @@ The following fields track information and changes for review meetings. Your tea
 > |**Called By**|The name of the team member who scheduled the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.CalledBy|String|  
 > |**Required Attendee 1**<br />**&hellip;**<br />**Required Attendee 8**|The names of each team member who is required to attend the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.RequiredAttendee1 &hellip; Microsoft.VSTS.CMMI.RequiredAttendee8|String|  
 > |**Optional Attendee 1**<br />**&hellip;**<br />**Optional Attendee 8**|The name of each team member who is invited but not required to attend the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.OptionalAttendee1 &hellip; Microsoft.VSTS.CMMI.OptionalAttendee8|String|  
-> |**Actual Attendee 1**<br />**&hellip;**<br />**Actual Attendee 8**|The name of each team member who attended the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.ActualAttendee1 &hellip; Microsoft.VSTS.CMMI.ActuallAttendee8|String|  
+> |**Actual Attendee 1**<br />**&hellip;**<br />**Actual Attendee 8**|The name of each team member who attended the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.ActualAttendee1 &hellip; Microsoft.VSTS.CMMI.ActualAttendee8|String|  
   
 ## Related articles
  [Index of work item fields](../work-item-field.md)

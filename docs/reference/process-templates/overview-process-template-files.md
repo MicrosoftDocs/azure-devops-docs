@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 10/19/2017
 ---
@@ -186,7 +187,7 @@ TFS 2018 and later versions no longer support native integration with SharePoint
 <p>This plug-in also uploads the information contained in the following files and folders:</p> 
 <ul>
 <li>**Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
-<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xslx files) to support bug triage and track issues. </li> 
+<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues. </li> 
 <li>**Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.</li>  
 </ul>
 

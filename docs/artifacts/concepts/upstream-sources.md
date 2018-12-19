@@ -57,7 +57,7 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 
 For npm, you should have only one `registry` line, like:
 
-```text
+```ini
 registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
 always-auth=true
 ```

@@ -76,7 +76,7 @@ If you aren't getting them, you can sign up in the team explorer settings page.
 
 0. Johnnie sees that Jamal changed the color to #ddd. He selects the code in the difference window and adds a comment (Keyboard: Ctrl + Shift + K).
 
- ![Comment added to Site.css using the differnece window toolbar button](_img/get-code-reviewed-vs/IC682763.png)
+ ![Comment added to Site.css using the difference window toolbar button](_img/get-code-reviewed-vs/IC682763.png)
 
 0. He suggests a different color instead and sends the comment to Jamal.
 

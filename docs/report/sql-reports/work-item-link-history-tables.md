@@ -7,7 +7,8 @@ ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -47,7 +48,7 @@ You can query for links between bugs, tasks, and other types of work items by us
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  
   
-```  
+```sql
 declare @TeamProjectNodeSK int  
 select @TeamProjectNodeSK = ProjectNodeSK from GetProjectNodeInfoFromReportFolder(N'/TfsReports/VSTSDF/ProcessDev10')  
 -- This table-value function returns the ProjectNodeSK: the Surrogate Key of a team project under a certain area path.  

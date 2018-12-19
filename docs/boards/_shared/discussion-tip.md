@@ -34,7 +34,7 @@ Use the  ![ ](../../_img/icons/pr-id.png) pull-request id icon to link to a pull
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 > [!IMPORTANT]  
-> For on-premises Azure DevOps Server or TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.
+> For on-premises Azure DevOps Server or TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.
 
 ::: moniker-end 
 

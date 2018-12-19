@@ -15,7 +15,7 @@ ms.topic: include
 ::: moniker range="azdevserver-2019"
 
 * You must have selected the Inheritance process model for the project collection where the project is created.  
-* To create, edit, and manage processes, you must be a member of the [Project Collection Administrators group](/azure/devops/organizations/security/set-project-collection-level-permissions) or have these permissions explicity granted to you.
+* To create, edit, and manage processes, you must be a member of the [Project Collection Administrators group](/azure/devops/organizations/security/set-project-collection-level-permissions) or have these permissions explicitly granted to you.
 * To create a project, you must be a member of the [Project Collection Administrators group](/azure/devops/organizations/security/set-project-collection-level-permissions), or have the permission **Create new team projects** set to Create new projects.
 
 ::: moniker-end

@@ -1,6 +1,6 @@
 ---
 title: Use the .artifactignore file
-description: Decide what files are uploaded when you publish Universal Packages and Pipeline Artifacts with the .arifactignore file.
+description: Decide what files are uploaded when you publish Universal Packages and Pipeline Artifacts with the .artifactignore file.
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -29,7 +29,7 @@ Refer to the [Git guidance](https://git-scm.com/docs/gitignore) on the ```.gitig
 
 ## Ignored by default
 
-To reduce the chances of the entire ```.git``` folder being uploaded, we automatically ignore this directory. You can uningore by adding the following to your ```.artifactignore``` file:
+To reduce the chances of the entire ```.git``` folder being uploaded, we automatically ignore this directory. You can unignore by adding the following to your ```.artifactignore``` file:
 
 ```
 !.git
