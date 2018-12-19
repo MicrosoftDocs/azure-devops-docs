@@ -2,19 +2,19 @@
 ms.topic: include
 ---
 
-The _Connect to feed_ dialog will generate an appropriately-formatted token that you can place into your **_.npmrc_** file with a lifespan of 90 days.
+The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
 
->  If you want to create a token that lasts _longer than 90 days_, skip to the second method below.
+>  If you want to create a token that lasts _longer than 90 days_, skip to the second of the following methods.
 
 **90-day token:**
 
 ::: moniker range="vsts"
 
-1. From **Azure Artifacts**, select _Connect to feed_
+1. From **Azure Artifacts**, select **Connect to feed**.
 
-1. Select _npm_.
+1. Select **npm**.
 
-1. Click _Generate npm credentials_ and copy them to add them to your user **_.npmrc_** manually:
+1. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -30,11 +30,11 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
 ::: moniker range=">=tfs-2017 < vsts"
 
-1. From the **Packages** page, select _Connect to feed_
+1. From the **Packages** page, select **Connect to feed**.
 
-1. Select _npm_.
+1. Select **npm**.
 
-1. Click _Generate npm credentials_ and copy them to add them to your user **_.npmrc_** manually:
+1. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
 
     ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
 
@@ -42,7 +42,7 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
 **Create a token that lasts longer than 90 days:**
 
-1. Navigate to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)".
+1. Browse to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)."
 2. Base64 encode the PAT.
 
     # [Windows](#tab/windows)
@@ -57,7 +57,7 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
    ---
 
 
-3. In your $home/.npmrc add the following lines replacing `yourorganization` and `yourfeed`, and adding your username (can be anything except empty), PAT, and email.
+3. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
 
     ```json
     //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY

@@ -19,7 +19,7 @@ ms.date: 05/09/2018
 ![Image of VSTS Demo Generator V2 login](_img/1.png)
 
 
-1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your VSTS account.
+1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps account.
 
     > [!div class="mx-imgBorder"]
 ![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)

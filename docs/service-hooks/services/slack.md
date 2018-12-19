@@ -23,7 +23,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 to open up the menu, and find **Apps and integrations**:
 <img alt="Integrations link on the account home page" src="./_img/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. Search for and click the Azure DevOps Services integration:
+1. Search for and click the Azure DevOps Services integration (Search "Visual Studio Team Services"):
 <img alt="Azure DevOps Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. On the Azure DevOps Services integration page, click **Install**.

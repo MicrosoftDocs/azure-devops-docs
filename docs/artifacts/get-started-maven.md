@@ -1,5 +1,5 @@
 ---
-title: Get Started with Maven Azure Artifacts in Azure DevOps Services and TFS
+title: Get started with Maven packages in Azure DevOps Services and TFS
 description: Quickly start hosting Maven artifacts in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 
 ## Before you start
 
-This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
 ::: moniker range=">=tfs-2018"
 
@@ -29,7 +29,7 @@ This guide assumes you've already set up Azure Artifacts. You can check out how 
 
 ### Prerequisites
 
-1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
+* Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
 
 2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
