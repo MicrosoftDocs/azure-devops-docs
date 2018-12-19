@@ -2217,7 +2217,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 For scenarios, such as migration or synchronization tools, when you want to make changes to a work item that otherwise would be invalid, you may optionally choose to bypass the rules engine on a work item update.  This allows you to modify the work item fields without any restrictions, for example you can assign a work item to a user no longer in the organization.
 
-To modify the System.CreatedBy, System.CreatedDate, System.ChangedBy, or System.ChangedDate fields, you must be a member of the "Project Collection Service Acccounts" group.
+To modify the System.CreatedBy, System.CreatedDate, System.ChangedBy, or System.ChangedDate fields, you must be a member of the "Project Collection Service Accounts" group.
 
 NOTE: System.CreatedBy and System.CreatedDate can only be modified using bypass rules on work item creation, i.e. the first revision of a work item.
 

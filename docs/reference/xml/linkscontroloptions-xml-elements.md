@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
 ms.date: 02/02/2018
 ---
@@ -227,7 +228,7 @@ For example, the syntax below would create a control specifically designed to di
 <a id="customize">  </a>  
 ## Create a scoped links control  
 
-To add or modify a scoped links control, use the information provided in this topic to modify the XML definition file for a specific work item type. Each links control must be added as a **Control** of **type="LinksControl"** within the **WebLayou**t section, specifying the appropriate **LinksControlOptions**.
+To add or modify a scoped links control, use the information provided in this topic to modify the XML definition file for a specific work item type. Each links control must be added as a **Control** of **type="LinksControl"** within the **WebLayout** section, specifying the appropriate **LinksControlOptions**.
 
 To import and export your changes, see [Customize the work item tracking web form](../customize-wit-form.md).   
 

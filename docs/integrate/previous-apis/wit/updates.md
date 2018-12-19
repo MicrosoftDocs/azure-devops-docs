@@ -508,7 +508,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
 
 #### Sample code
 
-* [C# (GetListofWorkItemUpdates method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L19)
+* [C# (GetListOfWorkItemUpdates method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L19)
 
 ### A page at a time
 
@@ -635,7 +635,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
 
 #### Sample code
 
-* [C# (GetListofWorkItemUpdatesPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L43)
+* [C# (GetListOfWorkItemUpdatesPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L43)
 
 ## Get a work item update
 

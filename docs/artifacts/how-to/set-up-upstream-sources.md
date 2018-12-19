@@ -39,7 +39,7 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
 
     If you do already have upstreams, you can select "Add upstream source" in the top menu:
 
-    ![Add upstream soures to existing feed](_img/us-upstreams-exist.png)
+    ![Add upstream sources to existing feed](_img/us-upstreams-exist.png)
 
 3. You will see the following menu, choose if you'd like to add public sources or Azure DevOps Services feeds 
 

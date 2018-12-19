@@ -58,7 +58,7 @@ By connecting your Azure Boards project with GitHub repositories, you support li
 0. In the Add GitHub repositories dialog, you'll see the list of repositories for which you are an administrator. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add GitHub repositiories dialog](_img/github/add-all-repos.png)  
+	> ![Add GitHub repositories dialog](_img/github/add-all-repos.png)  
 
 	 Check the ones that you want to add and then choose **Save**. When done, you should see the new connection with the selected repository listed.  
 
@@ -114,7 +114,7 @@ See [Troubleshoot GitHub repository connection](troubleshoot-git-hub-connection.
 <!---
  Enter the name of the GitHub repository and then choose **Save**. 
 	> [!div class="mx-imgBorder"]  
-	> ![Add GitHub repositiories dialog](_img/github/add-github-repos-dialog.png)   
+	> ![Add GitHub repositories dialog](_img/github/add-github-repos-dialog.png)   
 
-	The dialog will lists all repositories that you have GitHub administration rights for the specifed account. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. 
+	The dialog will lists all repositories that you have GitHub administration rights for the specified account. You can toggle between **Mine** and  **All** to determine if others appear, and then check the ones that you want to add. 
 -->

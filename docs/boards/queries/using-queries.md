@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 12/10/2018  
@@ -116,7 +117,7 @@ To group one or more clauses, select them and then choose the ![ ](../_img/icons
 You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
 
 > [!div class="mx-imgBorder"]  
-> ![Group multipled query clauses](_img/using-queries/multiple-clauses.png)
+> ![Group multiple query clauses](_img/using-queries/multiple-clauses.png)
 
 
 If your query results do not return your expected set of work items, follow these steps: 

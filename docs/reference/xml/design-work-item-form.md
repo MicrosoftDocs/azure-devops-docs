@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= tfs-2017'
 ms.date: 11/19/2018
 ---
@@ -61,7 +62,7 @@ Custom Form with Three Tabs in a Two Column Layout
   
  The following code defines the top of the form. You can introduce columns as needed. As shown in this example, the first column, which is sized at 70 percent of the width of the form, contains two groups of fields. The second group of fields, which contains the **PU (Use Area Path)** and **Priority** fields, is defined in a two-column layout. The second column spans the remaining 30-percent width of the form. As the form is resized, the areas that are allocated to the columns vary proportionally.  
   
-```  
+```xml
 <FORM>  
       <Layout>  
         <Group>  
@@ -123,7 +124,7 @@ Six Tabs Arranged in a Side by Side by Layout
   
  The following code lists the syntax that is used to create the layout that is shown in the previous illustration.  
   
-```  
+```xml
 <FORM>  
       <Layout>  
         . . .   
@@ -208,7 +209,7 @@ Six Tabs Arranged in a Side by Side by Layout
   
  The following code lists the syntax that is used to create the group of fields that is shown in the previous illustration. For more information about how to specify the fields by using the `Control` element, see [Specify work item form controls](specify-work-item-form-controls.md).  
   
-```  
+```xml
 <TabGroup>  
 <Tab Label="Planning">  
 <Group Label="Status" Padding="(0,0,0,3)">  
@@ -235,7 +236,7 @@ Three-Column Layout
   
  The following code produced the previous three-column layout of fields. When you organize groups of fields into columns, use the **Group** element to contain each column of fields. Optionally, you can label the groups of fields.  
   
-```  
+```xml
 <FORM>  
       <Layout>  
       <Group>  
@@ -283,7 +284,7 @@ Three-Column Layout
   
  See the following example for more information.  
   
-```  
+```xml
 <Group>  
       <Column PercentWidth="50">  
       <Group Label="First Group Left ">  
@@ -334,7 +335,7 @@ Three-Column Layout
 ##  </a> Specify different layouts for different targets  
  You can specify different layouts for different targets by using the `Layout` element `Target` attribute. To target Visual Studio or Team Explorer Everywhere, you specify `WinForms`, and to target the web portal, you specify `Web`.  
   
-```  
+```xml
 <FORM>  
       <Layout Target="WinForms" >  
       . . .   

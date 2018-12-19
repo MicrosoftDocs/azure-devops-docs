@@ -357,7 +357,7 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 1. Select the team **Project** that contains the triggering build pipeline.
 
-1. Select the triggerging **Build pipeline**.
+1. Select the triggering **Build pipeline**.
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 

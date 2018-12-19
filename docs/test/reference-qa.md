@@ -517,7 +517,7 @@ Some browser versions do not currently support all the features of the Test &amp
 | Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** |
 | Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
 | Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end tracability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
 | Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** |
 | View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** |
 | View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** |

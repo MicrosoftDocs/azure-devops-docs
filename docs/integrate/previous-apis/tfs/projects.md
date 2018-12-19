@@ -176,7 +176,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}?api-version={v
 | project            | string  |         | Name or ID of the project.   
 | Query                                                                                                                                                         
 | api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeCapabilites | boolean | `false` | Use `true` to [include capabilities](#withcapabilities) (such as source control) in the project result.
+| includeCapabilities | boolean | `false` | Use `true` to [include capabilities](#withcapabilities) (such as source control) in the project result.
 | includeHistory     | boolean | `false` | Use `true` to search within renamed projects that had such name in the past. 
 
 ### With capabilities
@@ -258,7 +258,7 @@ POST https://mytfsserver/DefaultCollection/_apis/projects?api-version=2.0-previe
 ```json
 {
   "name": "FabrikamTravel",
-  "description": "Frabrikam travel app for Windows Phone",
+  "description": "Fabrikam travel app for Windows Phone",
   "capabilities": {
     "versioncontrol": {
       "sourceControlType": "Git"
@@ -600,7 +600,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/projects/94e82dfb-8ce4-430c-aa
   {
     "op": "add",
     "path": "/Alias",
-    "value": "Frabrikam"
+    "value": "Fabrikam"
   }
 ]
 ```

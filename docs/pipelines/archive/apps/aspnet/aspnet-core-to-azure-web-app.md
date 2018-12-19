@@ -64,7 +64,7 @@ Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home
 ![Screenshot showing update to code](../../../apps/cd/azure/_shared/_img/aspnet-core-code-change.png)
 
 Add the following line of text above the carousel display in the page:
-```
+```html
 <h1>Demo of ASP.NET Core CI/CD!!</h1>
 ```
 

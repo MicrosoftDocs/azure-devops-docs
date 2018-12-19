@@ -70,7 +70,7 @@ to your system.
 When you have source files with large differences between versions and frequent updates, you can use [Git LFS](https://git-lfs.github.com/) to manage these file types. 
 Git LFS is an extension to Git which commits data describing the large files in a commit to your repo, and stores the binary file contents into separate remote storage. 
 When you clone and switch branches in your repo, Git LFS downloads the correct version from that remote storage. 
-Your local development tools will transparently work with the files as if they were commited directly to your repo.
+Your local development tools will transparently work with the files as if they were committed directly to your repo.
 
 ###  Benefits
 

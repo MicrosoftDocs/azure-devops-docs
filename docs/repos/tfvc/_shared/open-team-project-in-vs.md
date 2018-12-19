@@ -10,7 +10,7 @@ ms.topic: include
  * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
 0. Go to your project's page 
-(```http://dev.azure.com/{your organization}/{your teamp roject}```)
+(```http://dev.azure.com/{your organization}/{your team project}```)
 and then open Visual Studio to connect to your project.
 
 	![On your project overview page, click Open in Visual Studio](../../../_shared/_img/GoHomeOpenInVisualStudio.png)

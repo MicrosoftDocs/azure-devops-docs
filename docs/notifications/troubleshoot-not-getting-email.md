@@ -55,7 +55,7 @@ An email is only generated if an Azure DevOps Services event matches _all_ of th
 
 ## Step 4: Check the "Skip initiator" option on the subscription
 
-The `Skip initiator` checkbox option on a subscription will cause the initiator of the Azure DevOps Services event to be excluded from the recipient list of the generated email, while all others will receive the event. For example, consider a subscription for a _work item changed_ event. You can choose `Skip initiator` to avoid being emailed for changes you make to the work item. [Learn more about excluding the initator from notifications](howto-exclude-self-from-email.md).
+The `Skip initiator` checkbox option on a subscription will cause the initiator of the Azure DevOps Services event to be excluded from the recipient list of the generated email, while all others will receive the event. For example, consider a subscription for a _work item changed_ event. You can choose `Skip initiator` to avoid being emailed for changes you make to the work item. [Learn more about excluding the initiator from notifications](howto-exclude-self-from-email.md).
 
 ## Step 5: Check "Do not deliver" setting for the organization
 

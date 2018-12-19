@@ -136,7 +136,7 @@ contribution point (the release stage editor tab):
 1. Change the target and properties of the extension code in **vss-extension.json**. For example,   
    previous code for contributing to the old contribution point could be:
  
-   ```
+   ```json
    { 
       "id": "rm-details-view-sample", 
       "type": "ms.vss-releaseManagement-web.release-summary-section", 
@@ -150,7 +150,7 @@ contribution point (the release stage editor tab):
 
    The updated code for the new contribution point would be: 
 
-   ```
+   ```json
    { 
       "id": "rm-environments-tab", 
       "type": "ms.vss-web.tab", 
@@ -180,20 +180,20 @@ contribution point (the release stage editor tab):
  
 1. Make the following changes to the extension code in **main.js**:
 
-   ```
-   // This code helps in the initial load of the extension 
-   VSS.ready(()=>{ 
-        // Initial config from host i.e. selected release stage object.
-       console.log(JSON.stringify(VSS.getConfiguration()));     
-   }); 
- 
-   // This code is required for listening to updates on the release stage object 
-   VSS.register("registeredEnvironmentObject", { 
-       updateContext: function(tabContext) {  
-          /* tabContext will follow the contract for the extension, this function will be called on any update in context.*/ 
-           console.log(JSON.stringify(tabContext)); 
-       } 
-  }); 
+```js
+// This code helps in the initial load of the extension 
+VSS.ready(()=>{ 
+      // Initial config from host i.e. selected release stage object.
+      console.log(JSON.stringify(VSS.getConfiguration()));     
+}); 
+
+// This code is required for listening to updates on the release stage object 
+VSS.register("registeredEnvironmentObject", { 
+      updateContext: function(tabContext) {  
+         /* tabContext will follow the contract for the extension, this function will be called on any update in context.*/ 
+         console.log(JSON.stringify(tabContext)); 
+      } 
+}); 
 ```
 
 [Download the sample extension code](https://github.com/ankitk94/vsts-environment-tab-extension).

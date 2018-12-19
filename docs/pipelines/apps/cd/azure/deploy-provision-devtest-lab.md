@@ -106,7 +106,7 @@ use to create an Azure Virtual Machine on demand.
    **PowerShell on Target Machines**. These are the tasks you 
    typically use to deploy apps to an Azure VM, and they require values
    such as the VM Resource Group name, IP address, and 
-   fully-qualified domain name (FDQN).
+   fully-qualified domain name (FQDN).
 
 ## Deploy
 

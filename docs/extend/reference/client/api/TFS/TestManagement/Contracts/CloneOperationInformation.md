@@ -42,7 +42,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `sourceProject`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md). Shallow reference of the source
 
-* `state`: [CloneOperationState](../../../TFS/TestManagement/Contracts/CloneOperationState.md). Current state of the operation. When State reaches Suceeded or Failed, the operation is complete
+* `state`: [CloneOperationState](../../../TFS/TestManagement/Contracts/CloneOperationState.md). Current state of the operation. When State reaches Succeeded or Failed, the operation is complete
 
-* `url`: string. Url for geting the clone information
+* `url`: string. Url for getting the clone information
 

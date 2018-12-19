@@ -106,7 +106,7 @@ The Code Promotion strategy feels like a relic from the waterfall development er
 
 ### When merging **dev** to **main** branch, why are no changes detected?
 
-You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging developement branch to main: there were no changes to merge](http://stackoverflow.com/questions/27590388/merging-developement-branch-to-main-there-were-no-changes-to-merge) for details.
+You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging development branch to main: there were no changes to merge](http://stackoverflow.com/questions/27590388/merging-development-branch-to-main-there-were-no-changes-to-merge) for details.
 
 ### Are there similarities between TFVC and Git branch strategies?
 

@@ -164,7 +164,7 @@ An extension is an installable unit that contributes new capabilities to your pr
 0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
+	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
 
 	Extensions are available to add to all projects and processes. 
 

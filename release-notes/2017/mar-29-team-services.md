@@ -77,7 +77,7 @@ Individual folders or branches can be imported to the Git repository, or the ent
 ## Multiple recipients included on the same email (preview)
 With this feature enabled, the recipients of an email notification are combined on the TO line of a single email. Previously, individual emails were sent to each recipient. This made it difficult to know who else received the notification and to have a conversation about the activity over email. Also, if you are a member of multiple groups that receive a notification, you will now only get one email, instead of one per group.
 
-This feature applies to default (out of the box) and team subscriptions that are capable of targeting multiple recipients. For example, with this and the __Out of the box notifications__ feature enabled, all reviewers (except for those that have opt’ed out) of an updated pull request will be included on a single email.
+This feature applies to default (out of the box) and team subscriptions that are capable of targeting multiple recipients. For example, with this and the __Out of the box notifications__ feature enabled, all reviewers (except for those that have opt’d out) of an updated pull request will be included on a single email.
 
 This feature can be enabled by an account admin by switching on the account-level __Combine email recipients__ via the __Preview features__ panel under the user menu.
 

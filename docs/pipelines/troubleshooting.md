@@ -258,11 +258,14 @@ This may be characterized by a message in the log "All files up to date" from th
 
 ### Get sources through Team Foundation Proxy
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
-```
+
 Windows:
+```cmd
     set TFSPROXY=http://tfvcproxy:8081
     setx TFSPROXY=http://tfvcproxy:8081 // If the agent service is running as NETWORKSERVICE or any service account you can't easily set user level environment variable
+```
 macOS/Linux:
+```bash
     export TFSPROXY=http://tfvcproxy:8081
 ```
 

@@ -125,7 +125,7 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
 
 ## Build
 
-Use `go build` to bulid your Go project. Add the following snippet to your `azure-pipelines.yml` file:
+Use `go build` to build your Go project. Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - script: go build -v .
