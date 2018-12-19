@@ -98,16 +98,16 @@ With work item search, you can quickly find work items defined within a public p
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
  
-1. Start typing the name of a field in your work items; for example, type `ta`.
+1. Start to enter the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you enter](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)
 
-   The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions
+   that match user input thereby helping the user to complete the search faster. For example, a search such as
+   **tags:Critical** finds all work items tagged 'Critical'.
 
 1. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
+   to combine terms if required. For example,
    **a: Chris t: Bug s: Active** finds all active bugs assigned
    to a user named Chris.
 
@@ -130,12 +130,12 @@ With work item search, you can quickly find work items defined within a public p
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
  
-1. Start typing the name of a field in your work items; for example, type `ta`.
+1. Start to enter the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you enter](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)
 
    The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
+   that match user input thereby helping the user to complete the search faster. For example, a search such as
    **tags:Critical** finds all work items tagged 'Critical'. 
 
 1. Add more filters to further narrow your search, and use Boolean operators

@@ -136,7 +136,7 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 Use pipelines to implement continuous integration and continuous delivery.
 
-- **Build automation**: Define the steps to take during build and the triggers that will initiate a build.
+- **Build automation**: Define the steps to take during build and the triggers that initiate a build.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release pipelines that represent your environments from development to production. Run automation to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
 To learn more, see [Continuous integration on any platform](../pipelines/overview.md).

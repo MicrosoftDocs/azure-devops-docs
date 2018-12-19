@@ -55,4 +55,4 @@ For information on region availability, see [Products available by region](https
 
 ## Change organization location
 
-To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff will coordinate changing the region with the organization owner.
+To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization owner.
