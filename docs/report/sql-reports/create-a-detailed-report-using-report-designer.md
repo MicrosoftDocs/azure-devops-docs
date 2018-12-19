@@ -83,7 +83,7 @@ You can track your team's progress more easily by creating reports that contain 
   
 8.  In the query pane, delete the clauses that use Changed By and Created By so that you now have the following query.  
   
-    ```  
+    ```sql
     SELECT Person.Person, [Work Item].System_State  
     FROM   [Current Work Item] INNER JOIN  
            [Work Item] ON [Current Work Item].[Work Item] =  
