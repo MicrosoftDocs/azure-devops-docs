@@ -120,7 +120,10 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> ![Email created query from sprint backlog](_img/share-plan/email-query-agile.png) 
 
 0.  In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
- 
+
+	> [!IMPORTANT]     
+	> You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -145,6 +148,10 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	![Email query](_img/IC795975.png) 
 
 0.	In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
+
+	> [!IMPORTANT]     
+	> You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+
 
 ::: moniker-end
 
