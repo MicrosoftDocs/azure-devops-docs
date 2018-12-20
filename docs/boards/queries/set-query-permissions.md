@@ -18,18 +18,26 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
-All users can create and edit their own queries and save them under My Queries.
+All users can create and edit their own queries and save them under **My Queries**.
+
+By default, only project administrators can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 
 By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
-You set permissions from the web portal. By default, only members of the Project Collection Administrators group or Project Administrators group can create or edit a shared query and manage permissions. 
+## Prerequisites
+- You must be a member of the Project Collection Administrators or Project Administrators groups to create or edit a shared query or manage permissions.
+- Or to create a query or folder under a shared query folder, you must have the  **Contribute** permission set explicitly to **Allow** to  
+- Or to change permissions of a query or query folder, you must have the  **Manage Permissions** permission set explicitly to **Allow**. 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+
+> [!TIP]    
+> Consider creating a query folder for each team and give the team administrators or the team group query permissions to manage their folder. 
 
 ## Set permissions on a new query folder
+
+You set permissions from the web portal.
 
 1. If you're not a member of the project administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.
 
@@ -53,7 +61,7 @@ You set permissions from the web portal. By default, only members of the Project
 
 5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
 
-## Set permissions on shared query 
+## Set permissions on a shared query 
 
 To keep anyone else from modifying a shared query that you create, you may want to set permissions on a specific query. You can do this by opening the permissions dialog for the specific query.  
 
