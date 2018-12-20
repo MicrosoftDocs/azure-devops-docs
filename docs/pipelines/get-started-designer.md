@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 10/24/2018
+ms.date: 11/6/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,7 +27,7 @@ monikerRange: '>= tfs-2017'
 > This guidance applies to TFS version 2017.3 and newer.
 ::: moniker-end
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 > [!TIP]
 > For build pipelines, we recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
 ::: moniker-end
