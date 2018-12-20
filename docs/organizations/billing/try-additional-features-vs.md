@@ -67,7 +67,7 @@ All other users can [request extensions](../../marketplace/install-extension.md)
 
 ## Keep your extension after the trial ends
 
-Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
+Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users lose access when the trial expires.
 There's no penalty for buying early. Charges don't start until the trial ends.
 
 If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial.
@@ -81,19 +81,6 @@ If you lose access because the trial expired before you could purchase, buy and 
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 
-<<<<<<< HEAD
-=======
-# [Previous navigation](#tab/previous-nav)
-
-1. [Buy the extension](../../marketplace/install-extension.md#install-extension) for your users.
-
-    ![Users, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
-
-2. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
-
----
-
->>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
 ## Clean up resources
 
 To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md), you must have access to the Azure subscription that was used to buy it.

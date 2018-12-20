@@ -85,7 +85,7 @@ Before you can create a public project, you must enable anonymous access for you
 0. Provide a name for your project and choose **Public**. Keep the remaining defaults, or select the initial source control type and process for work item tracking. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project formt](_img/create-public-project/create-new-project-form-new-nav.png)
+	> ![Create new project form](_img/create-public-project/create-new-project-form-new-nav.png)
 
 0. Upon successful completion, the welcome page displays.
 
@@ -117,7 +117,7 @@ To get started managing your project, see [Get started as an administrator](../.
 0. Provide a name for your project and choose **Public**. Keep the remaining defaults, or select the initial source control type and process for work item tracking. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project formt](_img/create-public-project/add-public-project-form.png)
+	> ![Create new project form](_img/create-public-project/add-public-project-form.png)
 
 0. Upon successful completion, you'll see a page similar to the following image. From this page you can add code to your repository or build code from an external repository. For details, see  [Share your project vision](../../project/wiki/project-vision-status.md).  
 

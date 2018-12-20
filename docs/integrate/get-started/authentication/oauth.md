@@ -40,7 +40,7 @@ When Azure DevOps Services presents the authorization approval page to your user
 it will use your company name, and app name and descriptions,
 along with the URLs for your company's web site, your app's website, and your terms of service and privacy statements, like this.
 
-<img alt="Visaul Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When you call Azure DevOps Services to ask for a user's authorization, and the user grants it,
 Azure DevOps Services will redirect the user's browser to your authorization callback URL with the authorization code for that authorization.
@@ -77,7 +77,7 @@ client_id     | GUID   | The ID assigned to your app when it was registered
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
-redirect_uri  | URL    | Callback URL for your appp. **This must exactly match the URL registered with the app**
+redirect_uri  | URL    | Callback URL for your app. **This must exactly match the URL registered with the app**
 
 Azure DevOps Services will ask your user to authorize your app.
 It will handle authentication and then call you back with an authorization code, if the user approves the authorization.
@@ -226,7 +226,7 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopestable](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../_shared/scopes.md)]
 
 When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.

@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.date: 02/26/2018
 ---
@@ -69,7 +70,7 @@ Importing a global list creates a list if one does not exist. If the list alread
   
 To create a new global list, start with the following code and modify it as needed. This example defines a global list of disciplines that you can assign to tasks.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists"> <GLOBALLIST name="Disciplines"> <LISTITEM value="Architecture" /> <LISTITEM value="Requirements" /> <LISTITEM value="Development" /> <LISTITEM value="Release Management" /> <LISTITEM value="Project Management" /> <LISTITEM value="Test" /> </GLOBALLIST></gl:GLOBALLISTS>  
 ```  
@@ -78,7 +79,7 @@ To create a new global list, start with the following code and modify it as need
   
  To add a global list to a field, export the definition for the work item type that contains the field and add it to the field definition, as shown in the following example:  
   
-```  
+```xml
 <FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String">  
   <HELPTEXT>The discipline to which the task belongs</HELPTEXT>  
   <ALLOWEDVALUES>  

@@ -5,7 +5,8 @@ description: Add a file attachment control to a work item form for Team Foundati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2017'
@@ -25,7 +26,7 @@ If you are designing a work item form from the ground up, you might want to add 
   
 **Attachments control**
 
-```  
+```xml
 <Tab Label="Attachments">  
       <Control Type="AttachmentsControl" LabelPosition="Top" />  
 </Tab>  

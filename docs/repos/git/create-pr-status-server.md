@@ -179,7 +179,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 2. Update `app.js` to use body-parser for parsing `application/json`.
 
-    ```
+    ```js
     var bodyParser = require('body-parser')
 
     app.use(bodyParser.json());

@@ -252,7 +252,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 
 <tr>
 	<td><p>**ControlContribution**</p></td>
-	<td><p>Optional child element of **Group** within **WebLayout** used to secify a field-level work item extension to appear on the form.   </p>
+	<td><p>Optional child element of **Group** within **WebLayout** used to specify a field-level work item extension to appear on the form.   </p>
 <pre><code>&lt;ControlContribution Id="ContributionId" Label="Name"  &gt;
    &lt;Inputs&gt;
       &lt;Input Id="FieldName" Value="Value" /&gt;

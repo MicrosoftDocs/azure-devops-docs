@@ -457,7 +457,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 ### Define a template from scratch 
 
-1. From the Templates section, right-click Templates and choosee to create a template from scratch.
+1. From the Templates section, right-click Templates and choose to create a template from scratch.
 
 	<img src="_img/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
 

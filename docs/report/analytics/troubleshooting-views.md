@@ -49,7 +49,7 @@ To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existi
 
 ### **Analytics view ... Does not exist or you do not have permission to view it** 
 
-This error occurs when you try to refresh a view in Power BI that is no longer available in Azure DevOps. One or more of the following actions may have occured: 
+This error occurs when you try to refresh a view in Power BI that is no longer available in Azure DevOps. One or more of the following actions may have occurred: 
 - The view was renamed
 - The view was deleted
 - Your permissions to access the view were explicitly removed

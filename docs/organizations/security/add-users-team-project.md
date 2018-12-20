@@ -107,7 +107,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
-   ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+   ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 0. Choose **Security** and under **Groups**, choose one of the following:
    * To add users who will require read-only access to the project, choose **Readers**.

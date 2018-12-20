@@ -35,7 +35,7 @@ You can add the charts described in this topic to a dashboard from their corresp
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-## Prerequistes
+## Prerequisites
 You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboard-permissions.md). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
 ::: moniker-end
 

@@ -183,7 +183,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Password**: Enter the administrator password for target servers.
    
-   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FDQN.
+   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
    
    - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
    

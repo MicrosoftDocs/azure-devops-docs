@@ -65,12 +65,12 @@ Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **src/main/
 ![Screenshot showing update to code](_img/quick-to-azure/cicd-get-started-update-code.png)
 
 Change the following line of text:
-```
+```html
 <h2>Hello World!</h2>
 ```
 
 to the following:
-```
+```html
 <h2>Demo of CI/CD!!</h2>
 ```
 

@@ -117,7 +117,7 @@ To make subsequent edits to paid quantities in your organization, you need only 
 ## XAML build
 
 The hosted XAML build controller is no longer supported.
-  Organizations created on or after April 2016 do not have access to it.
+  Organizations created on or after April 2016 don't have access to it.
   The hosted YAML model is our newest build model, and as a best practice, consider adopting it. Read more about it [here](../../pipelines/get-started-yaml.md).
 
   > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),

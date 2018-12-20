@@ -37,7 +37,7 @@ ms.date: 09/05/2017
 
 ## How-to Guides
 
-- [Configure SharePoint integrationl](configure-sharepoint-tfs-2017-earlier.md)    
+- [Configure SharePoint integration](configure-sharepoint-tfs-2017-earlier.md)    
 - [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md )
 - [Set permissions to access a SharePoint project portal](../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json) 
 

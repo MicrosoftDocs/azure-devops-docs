@@ -130,7 +130,7 @@ Now, add the Initiative Category. This adds the Initiative backlog to process co
 
 Add the Initiative Category to the Categories.xml file. (The Categories.xml file is located in the WorkItem Tracking folder.)  
 	
-```  
+```xml
   <CATEGORY name="Initiative Category" refname="FabrikamFiber.InitiativeCategory">  
     <DEFAULTWORKITEMTYPE name="Initiative" />  
   </CATEGORY>  
@@ -144,11 +144,11 @@ You can add this category anywhere within the definition file. Since you are add
 ##4. Update ProcessConfiguration to add the Initiative portfolio backlog  
 In this last step, you add the Initiative portfolio backlog to the process and modify the Feature portfolio backlog to reflect the hierarchy between Initiatives and Features. The process configuration determines the parent-child relationships among the portfolio backlogs.  
 
-1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Processfolder of the ProcessTemplate folder.)
+1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Process folder of the ProcessTemplate folder.)
 
 	Add the Initiative Category by adding the following syntax. Replace the names, workflow state values, and default column fields to match those that you use. 
 
-	```
+	```xml
     <PortfolioBacklog category="FabrikamFiber.InitiativeCategory" pluralName="Initiatives" singularName="Initiative" workItemCountLimit="1000">
       <States>
         <State value="New" type="Proposed" />
@@ -177,7 +177,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 2.	Edit the ```PortfolioBacklog``` element for the Epic Category to point to ```Initiative``` as the parent backlog.  
 	
-	```
+	```xml
 	<PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"  
 	   singularName="Epic" parent="FabrikamFiber.InitiativeCategory"      
 	   workItemCountLimit="1000">   
@@ -188,7 +188,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 	Intermediate portfolio backlogs require specifying the parent category, which must be configured as a portfolio backlog.  
 
 4.	Add the color to use for Initiative to the ```WorkItemColors``` section.  
-	```
+	```xml
 	    <WorkItemColor primary="FFCC66FF" secondary="FFF0D1FF" name="Initiative" />
 	```
 
@@ -206,7 +206,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 		c. ProcessConfiguration.xml   
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../boards/backlogs/organize-backlog.md).  
-3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercies all the features available with portfolio backlogs.  
+3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercises all the features available with portfolio backlogs.  
 	For **Hosted XML:**  See [Assign licenses to users](../organizations/accounts/add-organization-users.md).
 
 

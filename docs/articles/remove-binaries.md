@@ -26,7 +26,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 
 *Adding large file to the local repository*
 
-> ![Server and local repos, both with a copy of the large video filee](./_img/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
+> ![Server and local repos, both with a copy of the large video files](./_img/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
 
 *After committing from the local repository, the server will also have the large file*
 

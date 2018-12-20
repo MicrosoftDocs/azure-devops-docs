@@ -85,7 +85,7 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 
 ![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
   
-```
+```xml
 <WORKFLOW>
  <STATES>
     <STATE value="Active">
@@ -165,7 +165,7 @@ You control the states to and from which team members can change a work item if 
   
  You can restrict who is allowed to make a transition from one state to another by using the *for* and *not* attributes of the `TRANSITION` element. As the following example shows, testers can reopen a bug but developers cannot.  
   
-```  
+```xml
 <TRANSITION from="Closed" to="Active"  
    for="[Project]\Testers"  
    not="[Project]\Developers">  
@@ -184,7 +184,7 @@ You control the states to and from which team members can change a work item if 
   
  The following example shows the elements that define the reasons why a member of the team might resolve a bug:  
   
-```  
+```xml
 <TRANSITION from="Active" to="Resolved">  
       . . .  
       <REASONS>  
@@ -204,7 +204,7 @@ You control the states to and from which team members can change a work item if 
 ###  Specify actions  
  In general, team members change the state of a work item by specifying a different value for the **State** field and then saving the work item. However, you can also define an `ACTION` element that automatically changes the state of a work item when that transition occurs. As the following example shows, you can specify that bug work items should be resolved automatically if they are associated with files that a developer checks into version control:  
   
-```  
+```xml
 <TRANSITION from="Active" to="Resolved">  
       <ACTIONS>  
       <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
@@ -235,7 +235,7 @@ You control the states to and from which team members can change a work item if 
 ###  Change the value of a field when the state changes  
  When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:  
   
-```  
+```xml
 <STATE value="Active">  
 <FIELDS>  
       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
@@ -257,7 +257,7 @@ You control the states to and from which team members can change a work item if 
 ###  Clear the value of a field when the value of another field changes  
  When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
   
-```  
+```xml
 <STATE value="Active">  
       <FIELDS>  
 . . .  
@@ -271,7 +271,7 @@ You control the states to and from which team members can change a work item if 
 ###  Define a field based on the contents of another field  
  When the value of the **State** field for a work item changes to Resolved and the work item is saved, the value of the **Resolved Reason** field is set to the value that the user specified in the **Reason** field. The following example shows the elements that enforce this rule:  
   
-```  
+```xml
 <STATE value="Resolved">  
       <FIELDS>  
 . . .  

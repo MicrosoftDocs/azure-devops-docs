@@ -158,7 +158,7 @@ To forecast your product backlog, perform the following actions.
 
 In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
-The forecast tool shows between two and four items can be worked on during Iterations 2 thorugh 6 based on the amount of Story Points assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
+The forecast tool shows between two and four items can be worked on during Iterations 2 through 6 based on the amount of Story Points assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
 
 - **Iteration 2**: 13 Story Points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
 - **Iteration 3**: 24 Story Points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint   

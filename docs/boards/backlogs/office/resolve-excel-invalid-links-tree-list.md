@@ -119,7 +119,7 @@ This message indicates that you can publish the changes that you made to the fie
 2.  Choose **Refresh**.  
 
 <a name="tf208104"></a>   
-##  TF208104: Hierarchical link Rrlationship is locked  
+##  TF208104: Hierarchical link Relationship is locked  
  If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
   
 >TF208104: You have modified one or more hierarchical link relationships that may have been locked by other processes, such as Project Server.

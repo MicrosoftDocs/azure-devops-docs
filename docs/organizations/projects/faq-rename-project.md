@@ -32,7 +32,7 @@ Yes, project names can be reused.
 
 A project name can't be reused if there are still workspace mappings addressing it.
 This is done to avoid the ambiguity case where a workspace could be mapped to two projects.
-You will need to reach out to the users that have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name. 
+You need to reach out to the users that have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name. 
 If the user's machine containing the workspace is no longer available then you can delete the workspace 
 by running the following command from Visual Studio's developer command prompt:
 
@@ -42,7 +42,7 @@ by running the following command from Visual Studio's developer command prompt:
 ### Q: How does renaming a project impact my browser navigation experience?
 
 After a project is renamed, any browsers with the project opened may encounter some errors. These errors are due to caches held by the browser which include the old project name. 
-Refreshing will make these errors go away since the cache will be repopulated with the new project name.
+Refreshing makes these errors go away since the cache is repopulated with the new project name.
 
 ### Q: Do other artifacts in the project get renamed when it is renamed?
 
@@ -59,7 +59,7 @@ For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* wou
 
 ### Q: Why can't I open queries saved to a disk after a rename?
 
-If you use Visual Studio 2010 and you have queries save to disk, you will not be able to open them after a project is renamed. You can use Visual Studio 2012 or newer to open them.
+If you use Visual Studio 2010 and you have queries save to disk, you can't open them after a project is renamed. You can use Visual Studio 2012 or newer to open them.
 
 ::: moniker range=">= tfs-2015"
 

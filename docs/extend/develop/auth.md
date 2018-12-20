@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps Services
-description: Auth and secuirty for Azure DevOps Services Extensions
+description: Auth and security for Azure DevOps Services Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
 ms.manager: douge

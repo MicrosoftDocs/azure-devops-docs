@@ -34,7 +34,7 @@ to a Git repository in our Azure DevOps Services organization to show how that w
 
 3. Pick the event in Visual Studio that you want to respond to, and then choose the app that you want to trigger and the action you want that app to take.
 
-   <img alt="Choose a triiger and action" src="./_img/zapier/triggered-action.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Choose a trigger and action" src="./_img/zapier/triggered-action.png" style="border: 1px solid #CCCCCC" />
 
 4. Connect to your organization.
 

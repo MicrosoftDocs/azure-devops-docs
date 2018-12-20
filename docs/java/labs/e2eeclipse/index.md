@@ -34,7 +34,7 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Open chrome and navigate to `https://chrome.google.com/webstore`. Enter "exploratory testing" into the search box. Find the "Test & Feedback" extension from Microsoft Corporation and click "Add to Chrome". Click Install in the dialog.
 
-    ![Adding the Exploratory Test Extenions to Chrome](../_img/e2eeclipse/add-ext.png)
+    ![Adding the Exploratory Test Extension to Chrome](../_img/e2eeclipse/add-ext.png)
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
@@ -69,7 +69,7 @@ In this task you will enforce quality on the master branch by creating branch po
 
     ![Policy configuration](../_img/e2eeclipse/policy.png)
 
-    > **Note**: You can enforce other policy options like comment resolution and minumum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
+    > **Note**: You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
 
 ## Log a Bug using the Exploratory Test Extension
 

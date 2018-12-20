@@ -222,7 +222,7 @@ Last Update we exposed [new editor settings for word wrap and white space](/azur
 Select the various editor features including **Show and diff white space**, **Enable word wrap**, **Enable code folding**, and **Show minimap**.
 
 > [!div class="mx-imgBorder"]
-![Editor perfs](_img/126_09.png)
+![Editor preferences](_img/126_09.png)
 
 Code folding (called “outlining” in some editors) is also being enabled for the web view. When code folding is enabled, click on the minus signs to collapse sections of code -- click on plus signs to expand collapsed sections. The F1 command palette also exposes options for folding various indentation levels across an entire file, making it easier to read and review large files.
 

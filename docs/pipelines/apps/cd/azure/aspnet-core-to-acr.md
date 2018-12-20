@@ -53,14 +53,14 @@ Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creatio
 4.  **Restart** Visual Studio and **open** your solution.
 5.  In solution explorer **Right Select** your solution and verify you see a **Configure Continuous Delivery** icon.
 
-    ![Connfigure CD icon](_img/aspnet-core-to-acr/vsconfigcdicon.png)    
+    ![Configure CD icon](_img/aspnet-core-to-acr/vsconfigcdicon.png)    
 
 ##  Configure and execute Continuous Delivery (CD) for your app    
 Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD tooling quickly creates various services in Azure and Azure Pipelines.  This automation allows you to enable CI/CD to Azure for your apps by creating full build and release pipelines in Azure Pipelines.
 
 1.  In Visual Studio, **right Select** your solution and Select **Configure Continuous Delivery**.
 
-    ![Connfigure CD from Visual Studio](_img/aspnet-core-to-acr/vsconfigurecd.png)
+    ![Configure CD from Visual Studio](_img/aspnet-core-to-acr/vsconfigurecd.png)
 2.  Choose App Service (Linux) as your **Host Type**.
 3.  Choose the **Container Registry** you created earlier.
 4.  Accept the default App Service name or Select **edit** to choose a new name.

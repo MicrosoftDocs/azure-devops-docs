@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 **Azure Pipelines**
 
 Use this task in a build or release pipeline to acquire a specific version of Java from a user supplied Azure blob,
-from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment varaible.
+from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment variable.
 Use this task to change the version of Java used in Java tasks.
 
 ## Demands

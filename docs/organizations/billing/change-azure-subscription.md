@@ -48,7 +48,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 - [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month will continue uninterrupted until the 1st of next month, but your organization will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
+> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for cloud-based load testing. Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
 
 [Remove billing subscription](#remove-billing-subscription)
 
@@ -72,8 +72,8 @@ If the target subscription is in the same Azure Active Directory as the destinat
 1. Make your purchases again in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. During your first purchase, select the new Azure subscription to use for billing going forward.
 
 >[!NOTE]
-> You will only incur incremental charges only if the quantities of Microsoft resources that you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.
-If you wait until the first of next month to make your purchases again, your organization reverts to the free tier and users in excess of the free limits will appear as expired.
+> You only incur incremental charges only if the quantities of Microsoft resources that you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions are treated as new purchases and billed immediately to your new Azure subscription.
+If you wait until the first of next month to make your purchases again, your organization reverts to the free tier and users in excess of the free limits appear as expired.
 
 ## Related articles
 
