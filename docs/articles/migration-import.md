@@ -371,7 +371,19 @@ First, no matter what Azure DevOps Services region you import into the following
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Azure DevOps Services Identity Service                        |    168.62.105.45    |
+|    Azure DevOps Services Identity Service       |    168.62.105.45    |
+
+Next you will need to grant access to the Regional Identity Service. You only need to grant an exception for the Import Service instance in the region that you're importing into. 
+
+|    Service                                                 |    IP                                                                                                                         |
+|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|    Regional Identity Service - Central United States       |    23.99.230.232, 104.43.253.175, 40.122.66.150, 40.122.117.178, 23.99.212.58, 23.99.214.58                                   |
+|    Regional Identity Service - West Europe                 |    52.232.119.33, 104.46.44.17, 40.114.142.95, 51.144.180.30, 51.145.130.146, 40.113.97.58, 52.232.113.92, 40.74.51.167       |
+|    Regional Identity Service - Australia East              |    13.70.121.123, 52.187.228.246                                                                                              |
+|    Regional Identity Service - Brazil South                |    N\A                                                                                                                        |
+|    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31                                                                                             |
+|    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98                                                                                                |
+|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159                                                                                                  |
 
 Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
@@ -439,9 +451,9 @@ You will need to add exceptions for all three services that make up Package Mana
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Package Management Blob - United States          |    70.37.94.103     |
+|    Package Management Blob - United States          |    70.37.94.103, 40.78.129.25     |
 |    Package Management Blob - West Europe            |    23.97.221.25     |
-|    Package Management Blob - Australia East         |    40.127.86.30     |
+|    Package Management Blob - Australia East         |    40.127.86.30, 20.188.213.113   |
 |    Package Management Blob - Brazil South           |    191.235.90.183   |
 |    Package Management Blob - India South            |    52.172.54.122    |
 |    Package Management Blob - Canada Central         |    52.237.16.145    |
