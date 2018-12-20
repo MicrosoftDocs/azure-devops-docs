@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -54,7 +55,7 @@ For information about the syntax structure of the elements used to add Web conte
   
 1.  Find the `<TabGroup>` section of the XML file. Notice that there are `<Tab>` elements for items such as Links and File Attachments in which each `<Tab>` element contains a `<Control>` element that renders the respective control.  
   
-    ```  
+    ```xml
     <Tab Label="Links">  
           <Control Type="LinksControl" />  
     </Tab>  
@@ -67,7 +68,7 @@ For information about the syntax structure of the elements used to add Web conte
   
     -   **To specify the URL of a Web page**:  
   
-        ```  
+        ```xml
         <Tab Label="Tab Label">  
               <Group>  
               <Column PercentWidth="100">  
@@ -85,7 +86,7 @@ For information about the syntax structure of the elements used to add Web conte
   
     -   **To specify a dynamic URL to be determined at run time**:  
   
-        ```  
+        ```xml
         <Tab Label="Tab Label">  
               <Group>  
               <Column PercentWidth="100">  
@@ -107,7 +108,7 @@ For information about the syntax structure of the elements used to add Web conte
   
     -   **To specify HTML content**:  
   
-        ```  
+        ```xml
         <Tab Label="Tab Label">  
               <Group>  
               <Column PercentWidth="100">  

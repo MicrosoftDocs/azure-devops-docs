@@ -43,7 +43,7 @@ Use this task in a build or release pipeline to download artifacts produced by a
 <tr><td>Artifacts are propagated to Azure</td><td>(Optional) Check this if Jenkins artifacts were propagated to Azure. To upload Jenkins artifacts to azure, refer to this [Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/Windows+Azure+Storage+Plugin)</td></tr>
 <tr><td>Artifact Provider</td><td>(Required) Choose the external storage provider used in Jenkins job to upload the artifacts.</td></tr>
 <tr><td>Azure Subscription</td><td>(Required) Choose the Azure Resource Manager subscription for the artifacts.</td></tr>
-<tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager stoarge accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
+<tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager storage accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
 <tr><td>Container Name</td><td>(Required) Name of the container in the storage account to which artifacts are uploaded.</td></tr>
 <tr><td>Common Virtual Path</td><td>(Optional) Path to the artifacts inside the Azure storage container.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

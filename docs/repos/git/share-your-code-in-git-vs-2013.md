@@ -108,7 +108,7 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 0. From the changes page (Keyboard: Ctrl + 0, G), make sure you've committed your changes.
 
- ![Commiting from the Changes page](_img/share-your-code-in-git-vs/IC682975.png)
+ ![Committing from the Changes page](_img/share-your-code-in-git-vs/IC682975.png)
 
 0. Go to the commits page (Keyboard: Ctrl + 0, C).
 

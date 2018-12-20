@@ -116,7 +116,7 @@ The Velocity widget will help you learn how much work your team can complete dur
 
 ![Velocity widget](../dashboards/_img/commerce-team-velocity-eight-iterations.png) 
 
-Here, the Velocity widget shows this team has a history of closing stories late. It also shows a discrepency between planned and completed work in the past 4 sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
+Here, the Velocity widget shows this team has a history of closing stories late. It also shows a discrepancy between planned and completed work in the past 4 sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
 Learn more about the Velocity widget in [Configure and view Velocity charts](../dashboards/team-velocity.md).  
 

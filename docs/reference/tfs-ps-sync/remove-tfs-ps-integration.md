@@ -7,7 +7,8 @@ ms.prod: devops
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 09/19/2017  
 ---
@@ -112,7 +113,7 @@ Example steps:
 	```witadmin exportcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
 
 2. Remove the following section from the XML definition and then save the categories.xml file:   
-	```
+	```xml
 	<CATEGORY refname="Microsoft.Sync.ProjSrv.WorkitemCategory" name="Provisioned Work Item types">  
 	       <DEFAULTWORKITEMTYPE name="Task" />  
 	       <WORKITEMTYPE name="User Story" />   
@@ -136,7 +137,7 @@ Example steps:
 	```witadmin exportglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:tpgf.xml```
 
 2. Remove all TFS-PS integration definitions, preserving any customizations not related to TFS-PS integration. An uncustomized  file should contain only the following:   
-	```
+	```xml
 	<?xml version="1.0" encoding="utf-8"?>
 	<GLOBALWORKFLOW>
 	</GLOBALWORKFLOW>
@@ -254,14 +255,14 @@ The final elements which remain correspond to entries in the TFS_Configuration d
 
 If you choose to remove these entries, run the following commands on the data-tier server in the order provided:  
 
-```
+```SQL
 DELETE FROM <TFS Configuration Database>.[dbo].[tbl_CatalogNode]    
 	WHERE PartitionId>=0 AND ResourceIdentifier IN     
 	(SELECT [Identifier] FROM <TFS Configuration Database>.dbo.tbl_CatalogResource   
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0)
 ```
  
-```
+```SQL
 DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource  
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0
 ```

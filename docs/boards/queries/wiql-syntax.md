@@ -30,14 +30,14 @@ The WIQL syntax is not case sensitive.
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
-```
+```WIQL
 SELECT System.ID, System.Title from workitems 
 where Priority=1 order by System.ID asc
 ```
 
 The general format of a query consists of a `SELECT` statement and a qualifying `WHERE` clause. The following examples illustrate the basic syntax.
 
-```
+```WIQL
 SELECT Select_List
    FROM workitems
    [WHERE Conditions]
@@ -189,7 +189,7 @@ Queries use logical expressions to qualify result sets. These logical expression
 
 Some simple query operations are listed below.
  
-```
+```WIQL
 WHERE [System.AssignedTo] = 'joselugo'  
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
@@ -262,7 +262,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
 
 You must quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
  
-```
+```WIQL
 WHERE [Adatum.Lite.ResolvedDate] >= '1/8/06 GMT' and [Resolved Date/Time] < '1/9/06 GMT'
 WHERE [Resolved Date] >= '1/8/06 14:30:01'
 ```
@@ -272,14 +272,14 @@ When the time is omitted in a DateTime literal and the dayPrecision parameter eq
 
 You must quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
 
-```
+```WIQL
 WHERE [Adatum.Lite.Blocking] = 'Not Blocking'
 WHERE [Adatum.Lite.Blocking] <> 'Blocked'
 ```
 
 You can use the contains operator to search for a substring anywhere in the field value. 
 
-```
+```WIQL
 WHERE [System.Description] contains 'WIQL' 
 ```
 
@@ -287,7 +287,7 @@ WHERE [System.Description] contains 'WIQL'
 
 You can use the under operator for the Area and Iteration Path fields. under evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
 
-```
+```WIQL
 WHERE [System.AreaPath] under 'MyProject\Server\Administration'
 ```
 
@@ -297,14 +297,14 @@ You can use some modifiers and special operators in a query expression.
 
 Use the `in` operator to evaluate whether a field value is equal to any of a set of values. This operator is supported for the String, Integer, Double, and DateTime field types. See the following example along with its semantic equivalent.
 
-```
+```WIQL
 WHERE [System.CreatedBy] in ('joselugo', 'jeffhay', 'linaabola')
 WHERE [System.CreatedBy] = 'joselugo' OR [System.CreatedBy] = 'jeffhay' OR [System.CreatedBy] = 'linaabola'
 ```
 
 The ever operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the ever operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
 
-```
+```WIQL
 WHERE ever ([Assigned To] =  'joselugo')
 WHERE [Assigned To] ever  'joselugo'
 ```
@@ -314,7 +314,7 @@ WHERE [Assigned To] ever  'joselugo'
 
 You can use the terms `and` and `or` in the typical Boolean sense to evaluate two clauses. You can group logical expressions and further conjoin them, as needed. Examples are shown below.
  
-```
+```WIQL
 WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([System.CreatedBy] = 'linaabola' 
 	OR [Adatum.CustomMethodology.ResolvedBy] = 'jeffhay') 
 	AND [System.State] = 'Closed'
@@ -324,7 +324,7 @@ WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([Syst
 
 You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
 
-```
+```WIQL
 WHERE [System.AreaPath] not under 'MyProject\Feature1'
 WHERE [System.AssignedTo] ever 'joselugo'
 ```
@@ -351,7 +351,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 The `@me` macro substitutes the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
 
-```
+```WIQL
 [System.AssignedTo] = @Me
 [System.AssignedTo] = 'joselugo'
 ```
@@ -361,25 +361,25 @@ You can use the `@today` macro with any DateTime field. This macro substitutes m
 
 The example below assumes that today is 1/3/16.
 
-```
+```WIQL
 [System.CreatedDate] = @today
 ```
 
 is the equivalent of:
 
-```
+```WIQL
 [System.CreatedDate] = '1/3/16'
 ```
 
 and
 
-```
+```WIQL
 [System.CreatedDate] > @today-2
 ```
 
 is the equivalent of:
 
-```
+```WIQL
 [System.CreatedDate] > '1/1/16'
 ```
 
@@ -387,7 +387,7 @@ is the equivalent of:
 
 WIQL also supports arbitrary custom macros. Any string prefixed by an '@' is treated as a custom macro and will be substituted. The substitute value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
 
-```
+```csharp
 public WorkItemCollection Query(string wiql, IDictionary context)
 ```
 
@@ -405,7 +405,7 @@ For example, suppose a work item was classified under an iteration path of MyPro
 >[!NOTE]  
 >If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
  
-```
+```WIQL
 SELECT [System.Title] 
 	FROM workitems 
 	WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
@@ -421,7 +421,7 @@ You can use the `ORDER BY` clause to sort the results of a query by one or more 
  
 The following example sorts work items first by **Priority** in ascending order, and then by **Created Date** in descending order.
 
-```
+```WIQL
 SELECT [System.Title] 
 	FROM workitems 
 	WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 

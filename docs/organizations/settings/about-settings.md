@@ -221,7 +221,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <li>[Add another team and team members](../../organizations/settings/add-teams.md)</li>
 <li>[Add a team administrator](../../organizations/settings/add-team-administrator.md)</li>
 </ul></td>
-<td>A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
+<td>A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
 </tr>
 <tr>
 <td>**Security**</td>

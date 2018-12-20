@@ -19,7 +19,7 @@ ms.date: 12/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that Azure DevOpsprovides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
+Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that Azure DevOps provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 
 Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. 
 

@@ -50,7 +50,7 @@ To fix this, take the following actions:
 
 Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](/azure/devops/boards/backlogs/organize-backlog), which creates parent-child links in the background.    
 
-![Create work items using different hiearchy](../../reference/_img/create-hierarchy-with-different-wits.png)  
+![Create work items using different hierarchy](../../reference/_img/create-hierarchy-with-different-wits.png)  
 
 <a id="leaf-nodes">  </a>
 ## When you track bugs as requirements

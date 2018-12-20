@@ -41,7 +41,7 @@ Get the [team rooms](./rooms.md) in a VSTS organization.
 ### Join a room
 
 1. Get the ID of the user.
-2. [Add the authenticed user](./users.md#joinaroom) to the room.
+2. [Add the authenticated user](./users.md#joinaroom) to the room.
 
 ### Post a message to the room
 

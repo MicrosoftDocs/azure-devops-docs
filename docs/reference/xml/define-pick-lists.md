@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 309c8545-249a-4d7a-8c91-fc10227fa0ba
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 05/10/2017
 ---
 
@@ -30,7 +31,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
 -   You use `ALLOWEDVALUES` to define a list of values that users can specify in a work item form or the query editor. Users must specify one of the values in the `GLOBALLIST` or the set of `LISTITEM` entries.  
   
-    ```  
+    ```xml
     <ALLOWEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
           <GLOBALLIST name="globalListName" />  
           <LISTITEM value="Name1" />  
@@ -42,7 +43,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
 -   You use `PROHIBITEDVALUES` to define a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value. You use this element if you want to restrict the use of a value that was previously allowed but is no longer valid.  
   
-    ```  
+    ```xml
     <PROHIBITEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
           <GLOBALLIST name="globalListName" />  
           <LISTITEM value="Name1" />  
@@ -54,7 +55,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
 -   You use `SUGGESTEDVALUES` to define a list of values that a field can contain. Users can specify other values in addition to those that you suggest.  
   
-    ```  
+    ```xml
     <SUGGESTEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
           <GLOBALLIST name="globalListName" />  
           <LISTITEM value="Name1" />  
@@ -89,7 +90,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
 -   You use **GLOBALLIST** to define a set of **LISTITEM** elements that is stored for a project collection and that all projects in that collection can use. **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can define a global list within a work item definition, a global list definition, or a global workflow.  
   
-    ```  
+    ```xml
     <GLOBALLIST name="globalListName">  
           <LISTITEM value="Name1" />  
           <LISTITEM value="Name2" />  
@@ -105,7 +106,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
 -   You use **LISTITEM** to enumerate a set of values. **LISTITEM** is a required child element of **GLOBALLIST** and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements.  
   
-    ```  
+    ```xml
     <LISTITEM value="listName" />  
     ```  
   
@@ -114,7 +115,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 ##  <a name="Allow"></a> Allow an existing value  
  You can use the `ALLOWEXISTINGVALUE` element to allow a field to maintain existing values, after you specify a pick list of items by using the `ALLOWEDVALUES` element. If you do not specify the `ALLOWEXISTINGVALUE` element, you force the user, at edit time, to specify one of the current valid values for that field. The `ALLOWEXISTINGVALUE` element modifies only those elements in the same block.  
   
-```  
+```xml
 <ALLOWEXISTINGVALUE />  
   
 ```  
@@ -131,7 +132,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
  To specify items in a field list, use the `<LISTITEM value="">` element. You can specify a string, a user name, or a group name.  
   
-```  
+```xml
 <LISTITEM value="Emergency"/>  
 <LISTITEM value="Major"/>  
 <LISTITEM value="Minor"/>  
@@ -146,7 +147,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 ##  <a name="Allowed"></a> Specify a set of allowed values  
  In this example, the Customer Severity field can have any one of three values: Emergency, Major, and Minor. The field is defined as required with a default value of Minor. At run time, users can specify one of the values in a drop-down list.  
   
-```  
+```xml
 <FIELD refname="System.Title" name="Title" type="String">  
 <HELPTEXT>Provide a brief description of the work item</HELPTEXT>  
 <REQUIRED/>  
@@ -169,7 +170,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 > [!NOTE]  
 >  The **WHEN** and **WHENNOT** rules in this example can also apply to other rules to specify when those rules should be evaluated. For more information, see [WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED XML elements](assign-conditional-based-values-and-rules.md).  
   
-```  
+```xml
 <FIELD name="My Field" refname="MyCompany.MyProcess.MyField" type="String" reportable="dimension">  
   <WHEN field="MyCompany.MyTeam.Discipline" value="Requirements">
     <ALLOWEDVALUES>

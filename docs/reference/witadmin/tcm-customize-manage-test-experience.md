@@ -5,7 +5,8 @@ description: Customize three of the features that are supported - Team Foundatio
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 monikerRange: '<= azdevserver-2019'
@@ -92,7 +93,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
   
  The following XML syntax lists the default contents of the bug field mappings file. All three fields must be specified when you import a bug field mappings file.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-16"?>  
 <BugFilerMappings workitemtypetocreate="Bug">  
    <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
@@ -106,7 +107,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 ##  <a name="resolution"></a> Mapping file for resolution states  
  The following XML syntax lists the default contents of the resolution states defined for the default process templates.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <TestResolutionStates>  
     <TestResolutionState name="Needs investigation" />  
@@ -125,7 +126,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 ##  <a name="failure"></a> Mapping file for failure types  
  The following XML syntax lists the default failure types defined for a project.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-16"?>  
 <TestFailureTypes>  
   <TestFailureType name="Regression" />  

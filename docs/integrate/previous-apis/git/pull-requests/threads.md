@@ -24,7 +24,7 @@ ms.date: 11/3/2016
 
 Comment threads can be added to the pull request in general or to a specific location in a file.  When a comment thread is
 created for a location in a file, an iteration context must be provided.  When requesting comment threads, a iteration context
-should be provided then as well.  This allows the comment thread to be posisitioned correctly in each iteration.  So if these
+should be provided then as well.  This allows the comment thread to be positioned correctly in each iteration.  So if these
 two contexts do not match, the file location of the returned threads may not match
 the file location of the thread when it was created if the file was modified between the two iterations.
 

@@ -143,7 +143,7 @@ Now, consider what would happen if the feature branch also had a PR active, and 
 
 ### Protect Git repos with cross platform compatibility settings
 
-Since Git is a cross-platform technology, it is possible for files or directories to find their way to a file system where they may be incompatible on a specific platform. You can see details about these incompatibilies in [our documentation](https://docs.microsoft.com/azure/devops/repos/git/os-compatibility?view=vsts).
+Since Git is a cross-platform technology, it is possible for files or directories to find their way to a file system where they may be incompatible on a specific platform. You can see details about these incompatibilities in [our documentation](https://docs.microsoft.com/azure/devops/repos/git/os-compatibility?view=vsts).
 
 To help teams protect their repo and its developers, we have added new repository settings to block pushes containing commits with files/directories that are incompatible with one or more OS platforms. Read more about [these settings](https://docs.microsoft.com/azure/devops/repos/git/repository-settings?view=vsts).
 

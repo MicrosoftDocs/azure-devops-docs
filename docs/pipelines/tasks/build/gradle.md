@@ -128,7 +128,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ### How do I generate a wrapper from my Gradle project?
 
 The Gradle wrapper allows the build agent to download and configure the exact Gradle environment that is 
-   checked into the repoistory without having any software configuration on the build agent itself other than the 
+   checked into the repository without having any software configuration on the build agent itself other than the 
    JVM.
 
 1. Create the Gradle wrapper by issuing the following command from the root project directory where your 

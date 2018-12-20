@@ -17,4 +17,4 @@ robots: NOINDEX, NOFOLLOW
 
 ## Custom tables in TFS databases
 
-If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom tables should be created in a seperate schema. For example, '**YourExtensionName**'.
+If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom tables should be created in a separate schema. For example, '**YourExtensionName**'.

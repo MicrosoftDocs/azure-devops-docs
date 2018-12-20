@@ -55,7 +55,7 @@ to pay for Azure DevOps. Before you make purchases by using this type of Azure s
 
 > [!NOTE]
 > Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges are billed the next month.
-> Otherwise, all resources billed to this subscription will be suspended, including virtual machines and all other workloads.
+> Otherwise, all resources billed to this subscription are suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
@@ -85,15 +85,15 @@ If you can't access the Azure Enterprise Portal, inquire within your organizatio
 
 A: Yes, you can use these prepaid funds for all Azure DevOps services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
-The only exclusion is for extensions offered by partners in the Visual Studio Marketplace. These charges will appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that are not eligible for Azure Monetary Commitment funds) will trigger an overage invoice.
+The only exclusion is for extensions offered by partners in the Visual Studio Marketplace. These charges appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that aren't eligible for Azure Monetary Commitment funds) trigger an overage invoice.
 
 ## How charges are processed
 
 ### Q: How are user charges (Azure DevOps User/Basic, Test Manager, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
-A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units will be billed.
+A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
 
-When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Test Manager user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May). 
+When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Test Manager user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
 
 ### Q: How do reductions or cancellations work?
 
@@ -103,7 +103,7 @@ A: When you reduce or cancel user charges or CI/CD charges, you're canceling aut
 
 ### Q: What happens if I cancel my Azure subscription or my credit card expires?
 
-A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization will revert to the free tier of service. But you'll keep any paid users or paid CI/CD concurrent jobs until next month.
+A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service. But you'll keep any paid users or paid CI/CD concurrent jobs until next month.
 
 >[!NOTE]
 >You must keep your Azure subscription in good standing to avoid interruptions in paid services.
@@ -118,7 +118,7 @@ A: If you're the owner or contributor for the Azure subscription used for billin
 
 ### Q: Why do I no longer see Team Projects in the Azure portal?
 
-A: Starting September 28th, 2018 you will no longer be able to create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
+A: Starting September 28th, 2018 you can no longer create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you’ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
 
 ### Q: Why is my organization already linked to an Azure subscription?
 

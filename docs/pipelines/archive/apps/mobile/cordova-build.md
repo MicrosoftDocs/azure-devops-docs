@@ -116,7 +116,7 @@ Now let's create a version of this same build pipeline to target iOS that will r
 
 2. Change the **Platform** value for the **Cordova Build** task to **ios** 
 
-3. Update the **iOS** category for the **Cordova Build** task. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applicaitons/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
+3. Update the **iOS** category for the **Cordova Build** task. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applications/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
 
 	![Windows Build pipeline - npm](_img/cordova-build/tfs2015-2.png)
 

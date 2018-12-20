@@ -269,7 +269,7 @@ You can also run your own instructions and commands to run when the service star
 
 0. Replace the following line with your instructions:
 
-```
+```bash
 
 # insert anything to setup env when running as a service
 

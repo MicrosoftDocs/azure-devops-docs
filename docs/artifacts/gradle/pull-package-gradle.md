@@ -79,7 +79,7 @@ The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepf
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
 
 Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```
+```ini
 vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
@@ -88,13 +88,13 @@ Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the fil
 ## Install a Maven artifact using Gradle
 
 Open your **build.gradle** file and confirm that the following text is present at the top of it:
-```
+```groovy
 apply plugin: 'java'
 ```
 
 Now, add the following code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
 
-```
+```groovy
 dependencies { 
     compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')  
 } 

@@ -146,7 +146,7 @@ The final image will be published to Docker or Azure Container Registry
 
 1. Create a `Dockerfile.build` file at the root of the directory with the following:
 
-   ```Dockerfile.build
+   ```Dockerfile
    # Build and run tests inside the docker container
    FROM microsoft/dotnet:2.1-sdk
    WORKDIR /app

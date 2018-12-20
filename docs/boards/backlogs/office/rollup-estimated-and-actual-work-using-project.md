@@ -40,7 +40,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
      For example, to rollup Original Estimate or Completed Work for user stories, add the following fields to the WIT definition for user story:  
   
-    ```  
+    ```xml
     <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  
        <HELPTEXT>Initial value for Remaining Work - set once, when work begins</HELPTEXT>  
     </FIELD>  
@@ -61,7 +61,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
      Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
-    ```  
+    ```xml
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />  
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />    
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.RemainingWork" ProjectField="pjTaskRemainingWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />      
@@ -73,7 +73,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 2.  If you want to map Effort, Story Points, or Size, use   a pjTaskNumber field, for example:  
   
-    ```  
+    ```xml
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StoryPoints" ProjectField="pjTaskNumber12" PublishOnly="false" IfSummaryRefreshOnly="false" />  
     ```  
   

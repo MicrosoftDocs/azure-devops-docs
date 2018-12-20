@@ -41,20 +41,20 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 
 We offer a path to connect to an Azure Active Directory where the users' email addresses are the same before and after the connection. For example, if users currently sign in to their Microsoft account (MSA) with the email address *jamalhartnett@fabrikam.com*, they'll sign in with the same email address as their Azure AD identity.
 
-We will update this guidance when we have a solution for scenarios where email addresses must be changed.
+We'll update this article when we have a solution for scenarios where email addresses must be changed.
 
 ## Prerequisites
 
 Before you begin, do the following:
 
 1. Inform users of the upcoming change.
-   Although there is no downtime during this change, users will be affected by it. It's best to let them know before you begin that there will be a short series of steps for them to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits will continue to work with their new identity, provided that their emails match.
+   Although there is no downtime during this change, users are be affected by it. It's best to let them know before you begin that there is a short series of steps for them to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, provided that their emails match.
 
 2. Ensure that the following is true about each user who performs the connection:
 
     * The user exists in Azure AD as a member.
     * The user is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md).
-    * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email. If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your organization to your Azure AD.
+    * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email. If the email addresses are the same, do the following. If the addresses aren't the same, continue on to connect your organization to your Azure AD.
 
          a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).  
          b. Sign in to your organization as a *project collection administrator*, and [add the new user](add-organization-users.md) as a member of the organization.  
@@ -86,7 +86,7 @@ Before you begin, do the following:
 
     These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
 
-   * If you are notified that you do not have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
+   * If you are notified that you don't have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
 
     ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
 
@@ -108,7 +108,7 @@ Before you begin, do the following:
 
     These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
 
-   * If you are notified that you do not have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
+   * If you are notified that you don't have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
 
     ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
 
@@ -161,7 +161,7 @@ Visual Studio subscription administrators assign subscriptions to users' corpora
 When you inform your users of the completed change, include the tasks that each user in the organization must complete, as follows:
 
 1. If you use Visual Studio or the Git command-line tool, you might need to clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory).  
-    Deleting the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine will resolve the issue.
+    Deleting the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine resolves the issue.
 
 2. If you use the alternate authentication tokens that are used by tools or scripts, [regenerate new tokens](use-personal-access-tokens-to-authenticate.md) for the Azure AD users. Complete the following:
 

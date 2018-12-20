@@ -174,7 +174,7 @@ In this task you will configure an Azure DevOps Services Team Build in Azure Dev
 
 1. Click "Manage Jenkins" and then click "Configure Global Security".
 
-1. In the Access Control section, select "Jenkin's own user database" and check "Allow users to sign up". Ensure "Anyone can do anything" is selected user Authorization.
+1. In the Access Control section, select "Jenkins' own user database" and check "Allow users to sign up". Ensure "Anyone can do anything" is selected user Authorization.
 
     ![Configure security](../_img/mavenpmjenkins/jenkins-security.png)
 
