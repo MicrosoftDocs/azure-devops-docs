@@ -46,6 +46,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
 ## How-to Guides
+- [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Define a work item template](../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) 
 - [Set team defaults](../../organizations/settings/set-team-defaults.md) 
