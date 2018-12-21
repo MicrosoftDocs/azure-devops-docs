@@ -464,6 +464,10 @@ Set the source to "IP Addresses", enter one of the IPs that need to be granted a
 
 You will need to repeat adding inbound port rules until all necessary Azure DevOps Services IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
+#### Windows Firewall
+
+By setting up and configuring the IP restrictions above, you are ensuring that only those IPs from the Azure DevOps import service can access the VM. Because of this, it is recommended you turn off the Windows Firewall to ensure there are no additional rules that would block the import service. 
+
 #### Restoring your Database on the VM
 
 After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require TFS to be installed on the VM. 
