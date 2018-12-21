@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/18/18
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,25 +17,19 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | TFS 2018 | TFS 2017**
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-This topic explains how to create an Azure Resource Manager service connection for connecting
-to Microsoft Azure resources. It starts by showing the simple case where you select the 
-subscription, and optionally the Azure Resource Group, to which you want to connect. Use this
-approach:
+To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
-* If you are connecting from Azure Pipelines, and not from TFS.
-* If you are the owner of both the Azure and the Azure DevOps subscriptions you are connecting from, and both accept the same credentials as you are currently signed into Azure Pipelines with.
-* You do not need to further limit the permissions for Azure resources accessed through the service connection.
-* You are not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+::: moniker range="vsts"
 
-If you have problems using this simple approach (such as no subscriptions being shown in the drop-down list),
-or if you want to further limit users' permissions, you can do so by using a service principal as shown [here](#use-spn)
-or to a VM using a managed service identity as shown [here](#use-msi).  
+## Create an Azure Resource Manager service connection using automated security
 
-## Create an Azure Resource Manager service connection using automated security  
+We recommend this simple approach if:
+
+* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
+* You don't need to further limit the permissions for Azure resources accessed through the service connection.
+* You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -44,7 +38,7 @@ or to a VM using a managed service identity as shown [here](#use-msi).
 
    ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
-1. Fill in the following parameters for the service connection.
+1. Specify the following parameters.
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -52,14 +46,25 @@ or to a VM using a managed service identity as shown [here](#use-msi).
    | Scope level | Select Subscription or Management Group. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. |
    | Subscription | If you selected Subscription for the scope, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
    | Management Group | If you selected Management Group for the scope, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
-   | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict the users' access (users will be able to access only the resources defined within that group). |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict users' access (users will be able to access only the resources defined within that group). |
 
 1. After the new service connection is created:
 
-   * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
+   * If you're using the designer, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+   * If you're using YAML, copy the connection name into your code as the `azureSubscription` value.
+
+1. To deploy to a specific Azure resource, the task will need additional data about that resource.
+
+   * If you're using the designer, select data you need. For example, the App service name.
+   * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
+
+If you have problems using this approach (such as no subscriptions being shown in the drop-down list),
+or if you want to further limit users' permissions, you can instead use a [service principal](#use-spn)
+or a [VM with a managed service identity](#use-msi).  
+
+::: moniker-end
 
 <a name="use-spn"></a>
 
