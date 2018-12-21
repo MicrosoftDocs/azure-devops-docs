@@ -226,7 +226,7 @@ Review your team's control chart for outliers. Outliers often represent an under
 As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
 
 #### Example Cycle Time widget showing several outliers 
-<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 2px solid #C3C3C3;" />
+<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" style="border: 2px solid #C3C3C3;" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 

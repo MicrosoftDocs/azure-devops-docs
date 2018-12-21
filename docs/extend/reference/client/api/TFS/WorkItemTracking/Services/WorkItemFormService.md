@@ -152,7 +152,7 @@ Gets field values of active work item.
 
 #### Parameters
 
-* `fieldReferenceNames`: string[]. An arrary of field reference names.
+* `fieldReferenceNames`: string[]. An array of field reference names.
 * `returnOriginalValue`: boolean. Optional. If false, gets unsaved field values. Default is false.
 
 #### Returns

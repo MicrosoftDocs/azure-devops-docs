@@ -18,7 +18,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `clonedRequirementsCount`: number. Number of Requirments cloned so far.
+* `clonedRequirementsCount`: number. Number of Requirements cloned so far.
 
 * `clonedSharedStepsCount`: number. Number of shared steps cloned so far.
 

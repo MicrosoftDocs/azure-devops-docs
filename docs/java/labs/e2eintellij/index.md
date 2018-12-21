@@ -146,7 +146,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     Change this line of code:
     ```java
-        session.setAttribute("driverFeeTotal", totalFareforDriver);
+        session.setAttribute("driverFeeTotal", totalFareForDriver);
     ```
     to
     ```java
