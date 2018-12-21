@@ -61,7 +61,7 @@ Default views automatically include the most common fields for the included work
 For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views common fields](_img\editable-views\common-fields.png)
+> ![Analytics views common fields](_img/editable-views/common-fields.png)
 
 Two fields that are reported on are only available from the Analytics Service data store, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 

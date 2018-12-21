@@ -24,7 +24,7 @@ With the test results trend widget, you can monitor test trends over a period of
 
 **Example Test Results Trend widget showing pass percentage and test failure for last 7 days**  
 
-![Test results trend (advanced) widget example](_img/test-results-trend-widget\Failed-test-pass.png) 
+![Test results trend (advanced) widget example](_img/test-results-trend-widget/Failed-test-pass.png) 
 
 In this article you'll learn:
 
@@ -64,7 +64,7 @@ You can configure your Test Results Trend widget to show results for either buil
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
+	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 
@@ -74,7 +74,7 @@ You can configure your Test Results Trend widget to show results for either buil
 
 	The following image shows a chart with pass rate and test results for last 7 days. 
    
-	![Test widget configuration panel](_img/test-results-trend-widget\passed-bypriority-pass.png)
+	![Test widget configuration panel](_img/test-results-trend-widget/passed-bypriority-pass.png)
 
 
 
