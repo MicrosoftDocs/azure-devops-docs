@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 12/21/2018
 monikerRange: 'vsts'
 ---
 
@@ -47,7 +47,7 @@ If you want to set up billing for your organization before buying something in t
 
 3. Select your organization.
 
-   ![In the Azure portal, select your organization](_img/set-up-billing/azure-portal-select-organization.png)
+  ![Select your organization](../accounts/_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Set up billing**.
 
