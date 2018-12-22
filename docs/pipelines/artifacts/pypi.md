@@ -100,7 +100,7 @@ After you've set up authentication with the preceding snippet, you can use `twin
 # [YAML](#tab/yaml)
 
 ```yaml
-- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
+- script: 'twine upload -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
 ```
 
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
