@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/21/2018
 monikerRange: 'vsts'
 ---
 # Separate your organization from Azure Active Directory
@@ -52,7 +52,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 3. Select your organization.
 
-   ![Select your organization in Azure portal](_img/_shared/azure-portal-select-organization.png)
+   ![Select your organization](_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Disconnect AAD**.
 
