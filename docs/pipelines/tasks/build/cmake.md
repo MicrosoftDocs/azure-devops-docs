@@ -44,7 +44,7 @@ cmake
 <p>Working directory when CMake is run. The default value is `build`.</p>
 <p>If you specify a relative path, then it is relative to your repo. For example, if you specify `build`, the result is the same as if you specified `$(Build.SourcesDirectory)\build`.</p>
 <p>You can also specify a full path outside the repo, and you can use [variables](../../build/variables.md). For example: `$(Build.ArtifactStagingDirectory)\build`</p>
- <p>If the path you specify does not exist, CMAke creates it.</p>
+ <p>If the path you specify does not exist, CMake creates it.</p>
 </td>
 </tr>
 <tr>
