@@ -25,8 +25,8 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 ## 5-minute quickstarts
 
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-- [Set area paths](set-area-paths.md)
-- [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
+- [Define area paths & assign to a team](set-area-paths.md)
+- [Define iteration paths (sprints) & configure team iterations](set-iteration-paths-sprints.md) 
 - [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
@@ -49,8 +49,7 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 
 ## How-to guides
-
-- [Set team defaults](set-team-defaults.md)    
+  
 - [Manage teams and configure team tools](manage-teams.md)   
 
 

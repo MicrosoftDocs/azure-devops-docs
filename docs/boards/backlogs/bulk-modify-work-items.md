@@ -187,7 +187,7 @@ All of the following actions can be performed by team members that belong to the
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 
 <table width="80%">
@@ -306,7 +306,7 @@ The menu options available to you change depending on the platform you work from
 </table>
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
@@ -356,8 +356,11 @@ Here, we use the context menu to move several non-sequential items to the curren
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ::: moniker range=">= tfs-2017"
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  ::: moniker-end
+> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 

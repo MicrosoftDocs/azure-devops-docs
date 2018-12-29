@@ -1,7 +1,7 @@
 ---
 title: Define area paths for a project
-titleSuffix: Azure DevOps & TFS
-description: Group work items based on team, product, or feature area by defining area paths for Azure DevOps Services or Team Foundation Server 
+titleSuffix: Azure Boards
+description: Group work items based on team, product, or feature area by defining area paths for Azure Boards, Azure DevOps, and Team Foundation Server (TFS)
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
@@ -14,31 +14,59 @@ ms.date: 11/19/2018
 ---
 
 
-# Define area paths  
+# Define area paths and assign to a team   
 
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
 
-Newly created projects contain a single, root area that corresponds to the project name. You add area paths under this root. You add area paths to support teams and queries based on work items that belong to different areas of the product. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
+You add area paths to support teams and to group work items based on product, feature, or business areas. You define area paths at the project level and then assign them to a team under the team configuration. You can create a hierarchy of area paths to support sub-categories within categories. 
+
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+
+Newly created projects contain a single, root area that corresponds to the project name. In addition, a team is created with the same project name and the root area path is assigned to that team.  
+
+To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
+
+[!INCLUDE [temp](../../_shared/version-selector.md)]
 
 ## Prerequisites
 <a name="permissions"></a>
-::: moniker range="vsts"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+
+- You add area paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
+- To add an area path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group or have **Edit project-level information** permission set to **Allow**. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
+- To add, edit, or delete area paths under a root or child note, you must be a member of the **Project Administrators** group or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the node that you want to modify. To acquire these permissions, see [Set permissions: Create child nodes, modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+- To set team area paths, you must be added as the team administrator or be a member of the **Project Administrators** group. To be added to the team administrator role, see [Add a team administrator](add-team-administrator.md). 
+	
+For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+
+<a id="guidance" />
+## Get started sequence
+
+If you are new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows: 
+0. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, you'll want to add one area path for each team that you'll define. For guidance, review [About areas and iterations](about-areas-iterations.md).
+0. Determine the number and names of teams you will want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
+0. Open Project settings>Project configuration and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
+0. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
+0. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
+0. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
+ 
+::: moniker range=">= tfs-2017"
+> [!NOTE] 
+> While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
 ::: moniker-end
-::: moniker range="<= azdevserver-2019"
-* You must be a member of a project. If you don't have a project yet,[create one](../projects/create-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
-::: moniker-end
-* To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
-	If you aren't a project administrator, [get added as one](../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
+As needed, you can perform the following actions at any time: 
 
-For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+- Add additional child nodes
+- Rename an area path (except the root area path)
+- Move a child node under another node 
+- Delete a child node 
+- Rename a team 
+- Change the area path assignments made to a team
 
-<a id="open-admin-context">  </a>
+<a id="open-project-settings" />
+<a id="open-admin-context" />  
 <a id="admin-intro-team-services" /> 
-
-## Open Project Settings, Project configuration    
-
+## Open Project Settings   
 From the web portal, open **Project Settings**.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
@@ -100,7 +128,8 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ---
 
-<a id="add-areas-team-services">   </a>
+<a id="add-areas" />  
+<a id="add-areas-team-services" />   
 <a id="tfs-15-area-paths" />
 ## Add an area path 
 
@@ -146,6 +175,110 @@ If you haven't added any areas or teams, you'll see that only one area is define
 ::: moniker-end
  
 
+
+<a id="open-team-settings" />
+## Open team settings  
+
+You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
+
+From a web browser, open the web portal administrative context for your team.  
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+
+0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+
+	Here we open the Board for the Web team and from there the team profile. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)   
+
+0. Choose **Iterations and areas**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Profile, choose Iterations and area](_img/team-defaults/team-profile-choose-iterations-areas.png)   
+
+0. If you need to switch the team context, use the team selector within the breadcrumbs.
+   
+	> [!div class="mx-imgBorder"]  
+	> ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+
+> [!div class="mx-imgBorder"]  
+> ![Open team settings](_img/team-defaults/open-team-settings-horz.png) 
+
+
+---
+
+
+<a id="default-iteration">  </a>
+<a id="team-area-paths">  </a>
+## Set team default area path(s) 
+
+::: moniker range=">= tfs-2017"  
+All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths.  Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
+::: moniker-end  
+
+The default area path determines the default area path assigned to work items that are created from the team context.  
+
+> [!IMPORTANT]  
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+
+::: moniker range=">= tfs-2017"  
+
+0.	Open **Areas** for the team context.  
+
+	Here, we show the Areas for the Web team.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Area page for team](_img/team-defaults/open-areas-web-team.png)
+
+2. Choose the area path(s) to be active for each team.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Work, Iterations page for team](_img/team-defaults/stdefaults-add-area-paths.png)  
+
+	In this instance, we choose to activate all three sub-area paths for the project. This allows the management team to track progress across all three teams.  
+
+	![Multiple area paths assigned to team](_img/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
+
+0.	When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+0. Open the Areas admin page for the team context.  
+
+	Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
+
+	![Work, Area page forWeb  team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
+
+0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
+
+	![Product backlog for Web team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
+
+::: moniker-end  
+
+
 <a name="rename-delete"></a>
 ## Rename, move, or delete an area path
 
@@ -165,21 +298,32 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 0. To delete a node, choose the **Delete** option from the actions menu. 
 
-	> [!NOTE]   
-	> When you delete an area node or change the Location field, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
+::: moniker range=">= tfs-2017"
+> [!NOTE]   
+> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
+
+::: moniker-end
 
 ## Chart progress by area 
 
-You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. As an example, you can [visualize progress of work items assigned to each team's area path](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. As an example, you can [visualize progress of work items assigned to each team's area path](../../report/dashboards/charts.md) as shown in the following stacked bar chart. Choose Node Name to get the leaf node of the Area Path.   
 
 ![Stacked bar chart by area and state](_img/areas/stacked-bar-chart.png)
 
+
+
+## Q & A 
+
+### Q: Do I have to assign an area path to a team?  
+**A:** No. You assign area paths to teams so that the work items assigned to that area path will appear on the team's backlogs and boards. By default, all work items will be assigned to the root area path and show up in the default team defined for the project.
+
+
 ## Try this next
 > [!div class="nextstepaction"]
-> [Set iteration paths or sprints](set-iteration-paths-sprints.md) or [Set team defaults](set-team-defaults.md)  
+> [Set iteration paths or sprints](set-iteration-paths-sprints.md)
 
 ## Related articles 
-As you can see, areas play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
+As you can see, areas play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these articles: 
 
 *	[About areas and iterations](about-areas-iterations.md)  
 *	[Add another team](../../organizations/settings/add-teams.md)  

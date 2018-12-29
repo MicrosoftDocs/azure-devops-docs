@@ -7,10 +7,9 @@ ms.topic: include
 For your team to gain the greatest utility from the velocity chart, follow these required and recommended tasks.  
 
 **Required:** 
-*	[Define sprints for the project](/azure/devops/organizations/settings/set-iteration-paths-sprints) - Sprints should be of the same duration. 
-*	[Select sprints for each team](/azure/devops/organizations/settings/set-team-defaults#activate)
-*	[Define and estimate backlog items](/azure/devops/boards/backlogs/create-your-backlog#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
-*	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done will show up on the velocity chart or velocity widget. 
+- [Define iteration paths (aka sprints) and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints) Sprints should be of the same duration. 
+- [Define and estimate backlog items](/azure/devops/boards/backlogs/create-your-backlog#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+- Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done will show up on the velocity chart or velocity widget. 
 
 **Recommended:**  
 *	Define and size backlog items to [minimize variability](/azure/devops/report/dashboards/velocity-guidance.md).  

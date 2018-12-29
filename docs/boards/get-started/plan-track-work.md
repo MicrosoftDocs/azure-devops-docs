@@ -73,7 +73,7 @@ Follow these steps to add a work item.
 	> ![Boards > Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 <!---
 	> [!TIP]    
-	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json). -->
+	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json). -->
 
 2. Enter a title, and then save the work item. Before you can change the state from its initial default, you must save it.  
 

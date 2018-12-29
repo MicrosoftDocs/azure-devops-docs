@@ -287,7 +287,7 @@ Items in any swimlane that contains "Test"
 <a id="kanban-query-results">  </a>
 
 > [!IMPORTANT] 
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../../reference/customize-work.md) which all teams can use.  
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to [add custom workflow states](../../reference/customize-work.md) which all teams can use.  
 
 ::: moniker-end
 

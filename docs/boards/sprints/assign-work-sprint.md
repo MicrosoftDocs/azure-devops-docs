@@ -1,7 +1,7 @@
 ---
-title: Assign work to a sprint
+title: Assign backlog items to a sprint
 titleSuffix: Azure Boards
-description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server 
+description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server (TFS)
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 ---
 
 
-# 1. Assign work to a sprint 
+# 1. Assign backlog items to a sprint 
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
@@ -284,7 +284,7 @@ You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-short
 
 ## Related articles
 
-If you need to add or rename the sprints your team uses, you must first [add or rename them at the project level](../../organizations/settings/set-iteration-paths-sprints.md) and then [select them for your team](../../organizations/settings/set-team-defaults.md). 
+If you need to add or rename the sprints your team uses, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 

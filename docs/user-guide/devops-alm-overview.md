@@ -111,7 +111,7 @@ Azure Pipelines, and Build &amp; Release in TFS, help you automate the deploymen
 
 As your team grows, your tools grow. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
+[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
 
  
 ## Related articles
