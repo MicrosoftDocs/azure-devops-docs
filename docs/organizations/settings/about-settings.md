@@ -124,8 +124,8 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <li>[Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Define work item templates](../../boards/backlogs/work-item-template.md)</li>
 </ul></td>
 <td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). </td>

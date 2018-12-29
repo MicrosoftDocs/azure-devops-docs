@@ -8,7 +8,7 @@
 <th>Readers</th>
 <th>Contributors</th>
 <th width="16%">Build Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
+<th width="16%">Project Admins</th>
 </tr>
 
 <tbody valign="top" align="center">
@@ -25,7 +25,7 @@
 
 
 <tr>
-<td align="left">Check in, revise, undo, unlock  other users' changes
+<td align="left">Check in, revise, undo, or unlock other users' changes
 </td>
 <td>  </td>
 <td>  </td>
@@ -42,15 +42,6 @@
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
-
-<tr>
-<td align="left">Powerful semantic code search
-</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
 
 </tbody>
 </table>

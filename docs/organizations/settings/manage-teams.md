@@ -57,7 +57,8 @@ These include making the following associations for each team:
 - **Select team iteration paths or sprints** 
 	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. 
  
-For details, see [Set team defaults](set-team-defaults.md). 
+For details, see [Define area paths and assign to a team](set-area-paths.md) and 
+[Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 ## Configure team backlogs and other common settings 
 
