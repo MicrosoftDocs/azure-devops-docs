@@ -81,11 +81,11 @@ A: No, when it comes to service updates, Hosted XML organizations are treated th
 
 #### Q: Will my organization be stuck in Hosted XML forever?
 
-A: You are using the Hosted XML process because the Inheritance process model does not contain all features yet. However, you can now [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/en-us/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
+A: You are using the Hosted XML process because the Inheritance process model does not contain all features yet. However, you can now [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
 
 #### Q: Will migrating from Hosted XML into Inheritance process model be a manual process?
 
-A: No, the migration is automated. Simply follow the steps to [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/en-us/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
+A: No, the migration is automated. Simply follow the steps to [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
 
 
 #### Q: What happens in Hosted XML when Microsoft makes a change to a system process?
