@@ -94,7 +94,7 @@ All work items under the Fabrikam/Account Management area path appear in their b
 <a id="feature-team-backlog"> </a>
 ## Feature team backlog ownership and view of progress 
 
-Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and taskboards. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
+Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and taskboards. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 
 > [!TIP]    

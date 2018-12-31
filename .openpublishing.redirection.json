@@ -8417,7 +8417,12 @@
     },
     {
       "source_path": "docs/work/scale/set-team-defaults.md",
-      "redirect_url": "/azure/devops/organizations/settings/set-team-defaults",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/set-team-defaults.md",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
       "redirect_document_id": false
     },
     {

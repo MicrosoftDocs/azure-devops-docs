@@ -288,15 +288,15 @@ External link types are system-defined link types. They support linking work ite
 
 ::: moniker range="vsts"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
-::: moniker-endÂ 
+::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019""  
+::: moniker range=">= tfs-2017 <= azdevserver-2019"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
-::: moniker-endÂ 
+::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-::: moniker-endÂ 
+::: moniker-end   
 
 
 <table width="100%"> 

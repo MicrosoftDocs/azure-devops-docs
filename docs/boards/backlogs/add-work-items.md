@@ -76,7 +76,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
 ::: moniker-end  
 
@@ -129,7 +129,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
+Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
 
 That's it! 
 
@@ -232,7 +232,7 @@ To stop following changes, choose the ![ ](../_img/icons/following-icon.png) fol
 
 ## Try this next  
 
-To quickly add backlog items, such as user stories, requirements or bugs, see these topics:  
+To quickly add backlog items, such as user stories, requirements or bugs, see these articles:  
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md)
 > [Kanban quickstart](../boards/kanban-quickstart.md) 

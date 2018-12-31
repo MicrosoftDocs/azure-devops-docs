@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 12/20/2018
 ---
 
 # Add a team, move from one default team to several teams
@@ -66,7 +66,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!div class="mx-imgBorder"]
 	> ![Create a sub-team with its own area path](_img/add-team/create-new-team-new-nav.png)
 
-0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Set team defaults](set-team-defaults.md).
+0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, choose Iterations and areas link](_img/add-team/team-profile-choose-iterations-and-areas.png)
@@ -110,7 +110,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Team profile, choose Iterations and areas link](_img/add-team/team-profile-tfs.png)  
 
-0. To select the set of sprints and area paths the team will use, see [Set team defaults](set-team-defaults.md).
+0. To select the set of sprints and area paths the team will use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
 
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
@@ -137,9 +137,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Web portal, admin context, project, Overview page, Select a sub-team to configure it](_img/add-team/scale-agile-select-team-to-configure-it-co.png)
 
-4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](set-team-defaults.md#activate).  
+4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
 
-5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-team-defaults.md#team-area-paths).  
+5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
  
 ::: moniker-end   
 

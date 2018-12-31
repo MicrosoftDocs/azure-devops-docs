@@ -39,7 +39,7 @@ To get started, you'll want to follow the steps outlined below.
 
 ## Product and portfolio boards 
 
-Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Set team defaults](../../organizations/settings/set-team-defaults.md). 
+Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
@@ -148,7 +148,7 @@ While the management teams you configure can use the Kanban board to monitor fea
 Only when the work item state changes does the card column reflect the same on all boards.
 
 > [!IMPORTANT]   
->Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/../../organizations/settings/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
+> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 
 ## Permissions and access

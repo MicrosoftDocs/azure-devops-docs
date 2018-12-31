@@ -145,7 +145,7 @@ Here we show how to list all User Stories and Bugs assigned to the sliding windo
 > [!div class="mx-imgBorder"]
 ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
 
-To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
+To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
 ::: moniker-end
 
@@ -236,7 +236,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project](../../organizations/settings/set-iteration-paths-sprints.md), and you [select iteration paths](../../organizations/settings/set-team-defaults.md) for a team. 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>

@@ -18,9 +18,9 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md). 
+The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team. 
 
-To better understand how to work with area and iteration paths, see [About area and iteration paths (aka sprints)](../../organizations/settings/about-areas-iterations.md).
+To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Supported operators and macros 
 When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
@@ -117,13 +117,11 @@ The following fields do not appear on work item forms but are tracked for each w
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item data type reference](../../reference/xml/define-modify-work-item-fields.md).
 
 
-
 ## Related articles 
 
-*	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
-*	[Customize iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)  
-*	[Customize area paths](../../organizations/settings/set-area-paths.md)  
-*	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
 ::: moniker range="<= azdevserver-2019"
 <a name="field-rules"></a>

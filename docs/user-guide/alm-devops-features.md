@@ -590,7 +590,7 @@ Use features supported by these familiar clients to manage your project and illu
 ![Multiple teams](_img/features/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).</p>
 
 </td>
 <td width="33%">
@@ -644,7 +644,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Schedule and activate your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
 
 <p><b>Select team sprints, set team defaults</b></p>
-<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](../organizations/settings/set-team-defaults.md) to support their work tracking activities. </p>
+<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s)](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to support their work tracking activities. </p>
 
 
 <p><b>Plan sprints</b></p>
@@ -2172,7 +2172,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../organizations/settings/add-teams.md) and [manage permissions](../organizations/security/change-individual-permissions.md). From any project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2689,7 +2689,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).</p>
 
 <p><b>Select team sprints</b></p>
 <p>[Select your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
