@@ -11,9 +11,9 @@
   items:
     - name: Get started as a project admin
       href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Set area paths
+    - name: Define area paths & assign to a team 
       href: set-area-paths.md
-    - name: Set iteration paths or sprints
+    - name: Define iteration paths (sprints) & configure team iterations
       href: set-iteration-paths-sprints.md
     - name: Add a team
       href: add-teams.md
@@ -84,8 +84,6 @@
     - name: Manage teams and configure team tools
       href: manage-teams.md
       items:
-        - name: Set team defaults
-          href: set-team-defaults.md
         - name: Use work item templates
           href: ../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
         - name: Customize cards on boards

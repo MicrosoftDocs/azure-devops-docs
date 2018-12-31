@@ -185,7 +185,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	> [!NOTE]  
 	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. 
 	
-	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).  
+	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).  
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
@@ -196,7 +196,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
+	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"

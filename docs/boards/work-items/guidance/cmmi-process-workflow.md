@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 --- 
 
 # CMMI process work item types and workflow
@@ -26,7 +26,7 @@ To gain insight into a portfolio of requirements, product owners can map require
 
 Using Microsoft Test Manager and the web portal, testers create and run test cases and define bugs to track code defects.
 
-To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
+To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you are new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
 
   
 [!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
@@ -433,7 +433,7 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
@@ -546,5 +546,3 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </table>
 
 
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

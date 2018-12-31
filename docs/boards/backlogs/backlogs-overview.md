@@ -76,7 +76,11 @@ Each backlog is associated with a team. Team configuration settings determine th
 - Determines which backlog levels are active for the team 
 - Defines how bugs will be treated, as requirements or as tasks. 
 
-For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md), [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md), and [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md).
+For details, see the following articles: 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 ## Define work items and create your backlog  
 
@@ -131,7 +135,7 @@ When you have several teams, your hierarchical views may show items that belong 
 
 ### View backlog items and parent items owned by other teams
 
-Your team's product backlog lists only those items whose area path matches those your team has subscribed to. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). However, if you show parents, 
+Your team's product backlog lists only those items whose area path matches those assigned to your team. For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
 # [New navigation](#tab/new-nav)

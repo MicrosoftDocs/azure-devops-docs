@@ -24,7 +24,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## 5-Minute Quickstarts  
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019"
 - [View and add work items](view-add-work-items.md)  
 - [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 
@@ -83,9 +83,9 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range="tfs-2013"
 
-## How-to Guides
 - [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
 - [Use work item templates](../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json)
+::: moniker-end
 
 ## Reference
 ::: moniker range=">= tfs-2017"
