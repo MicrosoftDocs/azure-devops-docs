@@ -353,8 +353,10 @@
   items:
     - name: IIS Basic Authentication and PATs
       href: get-started/authentication/iis-basic-auth.md
-- name: REST API Reference
+- name: REST API reference
   href: /rest/api/vsts/
+- name: .NET client libraries reference
+  href: https://docs.microsoft.com/en-us/dotnet/api/index?view=azure-devops-dotnet
 - name: How to get help
   href: ../extend/support/help.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Visual Studio extensions
