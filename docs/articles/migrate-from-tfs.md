@@ -51,7 +51,7 @@ The TFS & Azure DevOps Services product team provides a high fidelity TFS Databa
 Guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">
-<img alt="Migration Guide" src="_img\migration-import\VSTSMigrationGuideCover-227x300.png" align="middle" />
+<img alt="Migration Guide" src="_img/migration-import/VSTSMigrationGuideCover-227x300.png" align="middle" />
 </a>
 
 Because the TFS Database Import Service operates at a database level, it can provide a very high fidelity migration. 
