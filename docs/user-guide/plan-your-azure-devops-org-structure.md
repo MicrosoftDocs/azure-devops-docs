@@ -41,7 +41,7 @@ You need to have at least one organization, which may represent your company, yo
 
 ### What is an organization?
 
-And organization in Azure DevOps is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other enterprise structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
+An organization in Azure DevOps is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other enterprise structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
 Each organization gets its own free tier of Azure DevOps services (up to five users for each service type) as follows.
 
