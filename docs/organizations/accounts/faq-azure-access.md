@@ -87,7 +87,7 @@ A: When these group members sign in to your organization for the first time, Azu
 Azure DevOps assigns the respective access level to them. Otherwise, Azure DevOps assigns them the next "best available"
 [access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs), in this order: Basic, Stakeholder.
  
-If you don't have enough access levels for all Azure AD group members, those members who sign in will get a Stakeholder access.
+If you don't have enough access levels for all Azure AD group members, those members who sign in get a Stakeholder access.
 
 #### Q: Why doesn't the Security tab show all members when I select an Azure AD group?
 
@@ -186,7 +186,7 @@ A: Users can belong to your organization, both as individuals and as members of 
 
 To block all access for these users, remove them from Azure AD groups in your organization, or remove these groups from your organization. Although we'd like to make it possible to block access completely or make exceptions for such users, Azure DevOps doesn't currently have this capability.
 
-#### Q: If an AAD user is removed, will all their related PATs be revoked as well?
+#### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
 A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
 
@@ -236,7 +236,7 @@ A: This might happen due to the following:
 * Your organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link them](../billing/set-up-billing-for-your-organization-vs.md).
 
   >[!IMPORTANT]
-  >This link also sets up organization billing, so you can bill purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the next month when your monthly charges are billed. Otherwise, all resources billed to this subscription will be suspended, including all Azure DevOps purchases, Visual Studio Marketplace purchases, and Azure resources. Learn more about [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
+  >This link also sets up organization billing, so you can bill purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the next month when your monthly charges are billed. Otherwise, all resources billed to this subscription is suspended, including all Azure DevOps purchases, Visual Studio Marketplace purchases, and Azure resources. Learn more about [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
 
   If you're the [organization administrator](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator) for the subscription, visit the Azure Account Center to remove the spending limit:
 

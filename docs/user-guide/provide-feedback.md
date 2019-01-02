@@ -10,7 +10,7 @@ ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/14/2018
+ms.date: 12/19/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -88,7 +88,7 @@ To learn the version number, enter the following address in a web browser:
 ```
 https://dev.azure.com/{yourorganization/_home/About
 ```
-A page similar to the one shown will open showing the version number.
+A page similar to the following opens showing the version number.
 
 ![Learn the version number of Azure DevOps](_img/version-team-services.png)
 
@@ -100,7 +100,7 @@ To learn the version number, enter the following address in a web browser:
 ```
 https://ServerName:8080/tfs/_home/About
 ```
-A page similar to the one shown will open showing the version number.
+A page similar to the following opens showing the version number.
 
 <img src="../_img/version-tfs.png" alt="TFS About page, version number" style="border: 1px solid #CCCCCC;" />
 

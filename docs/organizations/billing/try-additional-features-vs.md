@@ -67,7 +67,7 @@ All other users can [request extensions](../../marketplace/install-extension.md)
 
 ## Keep your extension after the trial ends
 
-Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
+Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users lose access when the trial expires.
 There's no penalty for buying early. Charges don't start until the trial ends.
 
 If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial.
