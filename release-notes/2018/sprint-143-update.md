@@ -146,7 +146,7 @@ Up until now, project contributors could not create pipelines unless they are ex
 
 ### Deploy to failed targets in a Deployment Group
 
-By default, **Azure Pipelines** used to re-run all jobs when you redeploy a previously failed run. Now, you can override this behavior by configuring the **Deployment Option** when deploying. By selecting the **All jobs and limit to failed targets in a deployment group** option, the re-run will run all the jobs and skip the deployments to the targets that are already upto date.  
+By default, **Azure Pipelines** used to re-run all jobs when you redeploy a previously failed run. Now, you can override this behavior by configuring the **Deployment Option** when deploying. By selecting the **All jobs and limit to failed targets in a deployment group** option, the re-run will run all the jobs and skip the deployments to the targets that are already up to date.  
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_08.png)

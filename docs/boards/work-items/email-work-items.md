@@ -101,8 +101,8 @@ Some of the most common ways information is shared within a team or across teams
 
 You can quickly email a summary of one or more work items. Summaries include the values assigned to these fields: work item ID, title, work item type, assigned to, state, and tags.  
 
-> [!NOTE]    
-> You can only send the email to addresses that are recognized by the system, that is project members. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+> [!IMPORTANT]     
+> If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
 # [Browser](#tab/browser)
 

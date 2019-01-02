@@ -34,7 +34,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 
 ::: moniker range="tfs-2015" 
 > [!NOTE]    
-> **Feature availability**: The team setting for choosing which backlog levelsis available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
+> **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
 
 <a id="activate-backlogs"></a>

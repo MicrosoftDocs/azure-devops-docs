@@ -1496,7 +1496,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
 
 ### With more or less of each comment
 
-By default, 80 characters of each comments in the changset are returned.
+By default, 80 characters of each comments in the changeset are returned.
 
 #### Sample request
 

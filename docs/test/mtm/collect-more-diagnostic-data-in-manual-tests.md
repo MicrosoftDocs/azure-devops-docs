@@ -73,7 +73,7 @@ You need test settings only if you want to collect more data than the default. T
   
    The Local role is the client machine on which you'll perform the tests.  
   
-<a name="MTMTestSettingsDataandDiagnostics"></a>
+<a name="MTMTestSettingsDataAndDiagnostics"></a>
 ## What are the diagnostic data options?
 
 On the Data and Diagnostics page you can add and configure diagnostic adapters to collect data for each machine role in your lab environment. In most cases the diagnostic data is included with the test results.  

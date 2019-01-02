@@ -69,7 +69,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Delete field from account](../settings/work/customize-process-field.md)</li>
 <li>[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)</li>
 <li>[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)</li>
+<li>[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)</li>
 <li>[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
 </ul>
@@ -135,7 +135,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
@@ -218,7 +218,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Delete project collection (Server)](permissions.md#server-permissions)</li>
 <li>[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)</li>
 <li>[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)</li>
+<li>[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)</li>
 <li>[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
 </ul>
@@ -287,7 +287,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
@@ -366,7 +366,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Delete project collection (Server)](permissions.md#server-permissions)</li>
 <li>[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)</li>
 <li>[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Delivery plans (Object)](set-permissions-access-work-tracking.md#plan-permissions)</li>
+<li>[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)</li>
 <li>[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
 </ul>
@@ -430,7 +430,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags, Git (Oject)](../../repos/git/branch-permissions.md)</li>
+<li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
 <li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>

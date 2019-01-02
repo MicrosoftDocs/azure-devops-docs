@@ -79,7 +79,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	Select at least one **Project** and one **Team**.   
 	![Burndown Widget - Configuration - Select team](./_img/burndown-widget/burndownup-config-select-team.png)    
 	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other projects.  
-	![Burndown Widget - Configuration - Select multple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
+	![Burndown Widget - Configuration - Select multiple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
 
    > [!NOTE]   
@@ -108,7 +108,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
 	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-field-criteria.png)  
-	You may add multiple field critiera, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
+	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
@@ -153,7 +153,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
 	> [!NOTE]   
-	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best restuls, enter a **Start Date** that is the same as the first iteration's start date. 
+	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best results, enter a **Start Date** that is the same as the first iteration's start date. 
 
 	If you select to plot based on an iteration schedule, you will not be able to select **End Date**. The burndown assumes the **End Date** is the last iteration's end date.
 
@@ -165,10 +165,10 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.  
 	![Burndown Widget - Configuration - select time period daily](./_img/burndown-widget/burndownup-config-select-time-period-weekly.png)
 
-	If you select **Months**, then burndown will be caluclated based the last day of each month.  
+	If you select **Months**, then burndown will be calculated based the last day of each month.  
 
 	> [!NOTE]    
-	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first months's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first months's start date. **This is also true when plotting by weekly itervals.**
+	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first month's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first month's start date. **This is also true when plotting by weekly intervals.**
 
 ## Choose additional options 
 Check the boxes of the following options that you want to add to your chart.    
@@ -197,7 +197,7 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |**Average&nbsp;burndown**|Average work completed per interval or iteration.| 
 |**Items&nbsp;not&nbsp;estimated**|Shows only when burning down on a Sum of a field. It represents the current number of items that do not have a value in the selected **Burndown&nbsp;on** field. You may choose or press the number to see a full list of work items without estimates.|
 |**Total&nbsp;Scope&nbsp;Increase** |show how much work was added to the original scope since the burndown started.|
-|**Projected&nbsp;completion** |Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it will draw a vertical line on the interval/interation when the work should be complete. If the projected completion date is after the specified **End Date**, then it will display the projected completion date and how many additional intervals/iterations are needed to complete the work.|
+|**Projected&nbsp;completion** |Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it will draw a vertical line on the interval/iteration when the work should be complete. If the projected completion date is after the specified **End Date**, then it will display the projected completion date and how many additional intervals/iterations are needed to complete the work.|
 |**Original&nbsp;Scope** |Original scope is all remaining work as of the specified **Start Date**. The chart burns down from the original scope. **% Complete** and **Total Scope Increase** are calculated based on your original scope.|
 |**Total&nbsp;Scope** |Represents to the total scope of the burndown. The plotted points include both completed and remaining work. The total scope line tells you how much scope change your project has. For past data points, the plotted total scope represents actual total scope as of the end of each interval/iteration. For future data points, the plotted total scope represents a projected scope change, based on past scope changes.|
 |**Burndown**|Represents the burndown. The burndown line tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown.

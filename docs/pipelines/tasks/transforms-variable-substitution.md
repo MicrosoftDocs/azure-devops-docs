@@ -206,7 +206,7 @@ As an example, consider the task of changing the following values in `Web.config
         <!-- Change AdminUserName in this line: --> 
         <add key="AdminUserName" value="__AdminUserName__" />
         <!-- Change AdminPassword in this line: --> 
-        <add key="AdminPassword" value="__AdminPasword__" />
+        <add key="AdminPassword" value="__AdminPassword__" />
     </appSettings>
     <entityFramework>
         <defaultConnectionFactory type="System.Data.Entity.LocalDbConnectionFactory">
@@ -314,11 +314,11 @@ As an example, consider the task of overriding values in this JSON file:
 {
   "Data": {
     "DefaultConnection": {
-      "ConnectionString": "Data Source=(LocalDb)\MSDB;AttachDbFilename=aspcore-local.mdf;"
+      "ConnectionString": "Data Source=(LocalDb)\\MSDB;AttachDbFilename=aspcore-local.mdf;"
     },
     "DebugMode": "enabled",
     "DBAccess": {
-      "Admininstrators": ["Admin-1", "Admin-2"],
+      "Administrators": ["Admin-1", "Admin-2"],
       "Users": ["Vendor-1", "vendor-3"]
     },
     "FeatureFlags": {
@@ -371,7 +371,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
        },
        "DebugMode": "disabled",
        "DBAccess": {
-         "Admininstrators": ["Admin-1", "Admin-2"],
+         "Administrators": ["Admin-1", "Admin-2"],
          "Users": ["Admin-3", "vendor-3"]
        },
        "FeatureFlags": {

@@ -8,7 +8,7 @@ ms.manager: madhurig
 ms.custom: seodec18
 ms.author: brcrista
 ms.reviewer: dastahel
-ms.date: 12/07/2018
+ms.date: 12/13/2018
 monikerRange: 'vsts'
 ---
 
@@ -29,7 +29,7 @@ None
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
 > [!Note]
-> x86 versions of Python are available on Microsoft-hosted Windows agents, but not Linux nor macOS.
+> x86 and x64 versions of Python are available on Microsoft-hosted Windows agents, but not on Linux or macOS agents.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

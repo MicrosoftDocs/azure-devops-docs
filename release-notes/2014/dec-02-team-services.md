@@ -1,6 +1,6 @@
 ---
 title: A new identity control – Dec 2
-description: VSTS release notes for Decemeber 02 2014
+description: VSTS release notes for December 02 2014
 ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: douge

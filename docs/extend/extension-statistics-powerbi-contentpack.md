@@ -67,7 +67,7 @@ The power BI content pack gives data for all extensions and you can use the filt
 
 At high level, data available is: 
 
-1. Acqusition 
+1. Acquisition 
 2. Uninstall
 3. Rating and review
 

@@ -9,7 +9,7 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 12/10/2018 
+ms.date: 12/19/2018 
 monikerRange: '>= tfs-2013'
 ---
 
@@ -41,7 +41,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 
 1.  If you're not a member of a security group, ask your project administrator to add you.  
 
-2.  Open a browser window and type a URL that uses the following form:  
+2.  Open a browser window and enter a URL that uses the following form:  
 
 	::: moniker range="vsts"
 	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>

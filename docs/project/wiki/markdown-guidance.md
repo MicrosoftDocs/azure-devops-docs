@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 12/17/2018
+ms.date: 12/19/2018
 ---
 
 # Syntax guidance for Markdown usage
@@ -81,7 +81,7 @@ Structure your comments using headers. Headers segment longer comments, making t
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
 
 **Example:**
-```
+```markdown
 # This is a H1 header
 ## This is a H2 header
 ### This is a H3 header
@@ -207,7 +207,7 @@ Combine these elements to apply emphasis to text.
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~
-**_Bold, italizied text_**  
+**_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
 </pre>
 
@@ -286,7 +286,7 @@ Any file that contains a YAML block in a Wiki is processed by a table with one h
 
 Basic example:
 
-```
+```yaml
 tag: post
 title: Hello world
 ```
@@ -294,7 +294,7 @@ title: Hello world
 ![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
 
 Tags with list:
-```
+```yaml
 tags: 
 - post
 - code
@@ -319,7 +319,7 @@ a clear name to description mapping. You can format tables in pull requests, wik
 
 **Example:**
 
-```
+```markdown
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
@@ -343,7 +343,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 ### Ordered or numbered lists
 
 **Example:**  
-```
+```markdown
 1. First item.
 2. Second item.
 3. Third item.
@@ -403,7 +403,7 @@ Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). T
 
 In Markdown files and widgets, you can set text hyperlinks for your URL using the standard Markdown link syntax:
 
-```
+```markdown
 [Link Text](Link URL)
 ```
 When linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
@@ -427,7 +427,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 </ul>
 
 > [!NOTE]  
-> Links to documents on file shares using `file://` are not supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
+> Links to documents on file shares using `file://` aren't supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
 
@@ -531,7 +531,7 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Result:**
 ![Illustration of linked image](https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg)
 
-The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
+The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 <ul>
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
@@ -699,7 +699,7 @@ Attachments support the following file formats.
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
 > |------|---------|
-> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Hypertext Markup Language(.html, .htm), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  |
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Hypertext Markup Language(.html, .htm), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments aren't permitted in PR comments**  |
 > | Compressed files | ZIP (.zip) and GZIP (.gz) |
 > | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
 > | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg), Icons (.ico) | 
@@ -879,7 +879,7 @@ Consistency is maintained in the formatting in TOC.
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
 
-```
+```markdown
 ::: video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 :::

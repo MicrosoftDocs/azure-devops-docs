@@ -28,7 +28,7 @@ Delivery plans is also interactive. You can change the assigned sprint of a work
 
 Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
-In this topic you'll learn:
+In this article you'll learn:
 
 >[!div class="checklist"]   
 > - How to review a plan with your teams
@@ -40,18 +40,18 @@ In this topic you'll learn:
 
 
 ## Prerequisites
-In order to add and configure a plan, you must have the following in place:  
-- [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access for a private project can't add or view plans; users with Stakeholder access for a public project can add and view plans.)  
-- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
-- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
-- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
-
-All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
+- In order to add and configure a Delivery Plan, you must have the following in place:  
+	- [Installed the Delivery Plans extension](#install-plans).  
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access for a public project can add and view plans.
+	- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project.  
+	- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't add or view plans.  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
 
 
 <a id="install-plans">  </a>
-### Install the Plans page extension 
+### Install the Delivery Plans extension 
 
 The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
 

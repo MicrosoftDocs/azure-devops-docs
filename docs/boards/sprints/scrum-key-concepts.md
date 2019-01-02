@@ -137,7 +137,7 @@ Learn more: [Triage work items](../queries/triage-work-items.md).
 
 ## Velocity and velocity chart
 
-Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. After your team has worked several sprints, they can use the[velocity chartand [forecast](#forecast) tool to estimate work that can be accomplished in future sprints.  
+Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. After your team has worked several sprints, they can use the velocity chart and [forecast](#forecast) tool to estimate work that can be accomplished in future sprints.  
 
 Velocity is a measure of how much work a team can complete based on their sprint cadence. The built-in velocity chart measures velocity by summing the Story Points (Agile), Effort (Scrum), or Size (CMMI) defined for a sprint. 
 

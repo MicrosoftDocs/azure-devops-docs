@@ -88,7 +88,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 	> [!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
-3.  Upon successful import, you'll see the following messsage.  
+3.  Upon successful import, you'll see the following message.  
 
     <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
 
@@ -117,7 +117,7 @@ Once you've added a process, you can update it by importing a zip file where you
 
     <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
-4.  Upon successful import, you'll see the following messsage. All projects that were created with the process are updated with the modifications. 
+4.  Upon successful import, you'll see the following message. All projects that were created with the process are updated with the modifications. 
 
     <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 

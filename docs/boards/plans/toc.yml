@@ -35,6 +35,8 @@
     href: practices-that-scale.md
 - name: How-to Guides
   items:
+  - name: Edit plan permissions 
+    href: edit-delivery-plan-permissions.md
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
   - name: Manage team notifications

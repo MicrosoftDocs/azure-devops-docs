@@ -10,7 +10,7 @@ A publisher is owned by a user, typically the user that created it, and can also
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
-    * Specify an idenitifer for your publisher, for example: `mycompany-myteam`
+    * Specify an identifer for your publisher, for example: `mycompany-myteam`
         * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
     * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) and click **Create**

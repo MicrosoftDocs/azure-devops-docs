@@ -88,7 +88,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
-   ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
+   ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
 
 0. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who will require read-only access to the project, choose **Readers**.

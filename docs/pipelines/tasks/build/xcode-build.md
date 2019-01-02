@@ -141,7 +141,7 @@ You can specify the export method and Team ID in the task by selecting `Specify`
 <tr>
 <td>Export Method</td>
 <td>
-Method for how Xcode should export the archvie. E.g. app-store, package, ad-hoc, enterprise, development.
+Method for how Xcode should export the archive. E.g. app-store, package, ad-hoc, enterprise, development.
 </td>
 </tr>
 <tr>

@@ -20,7 +20,7 @@ ms.date: 12/05/2018
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
-You can add one or more charts or widgets to your dashboard. Up to 200 widets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
+You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
 ::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
@@ -136,7 +136,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 <a id="configure" />
 
 ## Configure a widget  
-Most widgets support configuration, which may include specifying the title, seeting the widget size, and other widget-specific variables.
+Most widgets support configuration, which may include specifying the title, setting the widget size, and other widget-specific variables.
 
 ::: moniker range=">= tfs-2018"
 

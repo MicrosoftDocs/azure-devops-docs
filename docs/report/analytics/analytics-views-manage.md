@@ -111,6 +111,6 @@ For a quick start, you can copy any view including [default Analytics Views](./a
 1. Provide the copy name description.
 1. Decide who can use this view. Set the radio to "Shared" if  you want to make this available to others. Learn more about [sharing Analytics Views](analytics-views-manage.md#share-views)and sharing option. All other definition is copied from the original view.
 
-1. Click Copy to created the new copy. The copied view is detached from the original view. Even if you copy a view from "My views" to "Shared views", it's a new seperate view.
+1. Click Copy to created the new copy. The copied view is detached from the original view. Even if you copy a view from "My views" to "Shared views", it's a new separate view.
 
 --->

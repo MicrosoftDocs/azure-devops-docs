@@ -189,6 +189,6 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### How long are Symbols retained?
 
-When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
+When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinitely.
 
 <!-- ENDSECTION -->

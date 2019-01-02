@@ -7,7 +7,7 @@ You can use the [free trial](http://azure.microsoft.com/pricing/free-trial/).
 
 1. Publish your web site from the solution explorer.
 
-	![Solution explorer, project context meny, publish web site](./_img/publish-azure/publish-web-site.png)
+	![Solution explorer, project context menu, publish web site](./_img/publish-azure/publish-web-site.png)
 
 1. Publish to Azure.
 
@@ -25,7 +25,7 @@ You can use the [free trial](http://azure.microsoft.com/pricing/free-trial/).
 
 1. Change your extension manifest to use your Microsoft Azure web app instead of localhost.
 
-	```
+	```json
     "baseUri": "https://fabrikam-vso-extensions.azurewebsites.net/",
 	```
 

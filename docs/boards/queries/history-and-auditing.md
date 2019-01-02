@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -288,7 +289,7 @@ Test Suite
 <a id="watermark"/>Watermark
   </td>
   <td>
-    <p>A system managed field (not editable) that increments with changes made to awork item.</p>
+    <p>A system managed field (not editable) that increments with changes made to a work item.</p>
 	<p>Reference name=System.Watermark, Data type=Integer</p>
 
   </td>
@@ -303,7 +304,7 @@ All
 #### Notes: 
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
  
-	```
+	```xml
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
 	   <SERVERDEFAULT from="clock" />  
 	</FIELD>  
