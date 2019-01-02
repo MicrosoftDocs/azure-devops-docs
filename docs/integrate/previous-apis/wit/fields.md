@@ -7668,7 +7668,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields/{fieldName}?api-versio
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
 | instance      | string    | TFS server name ({server:port}).
-| fieldName     | string    | Refernce name of the field
+| fieldName     | string    | Reference name of the field
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
