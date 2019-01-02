@@ -12,24 +12,19 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+ms.date: 12/20/2018  
 ---
 
 # Clone and update wiki content offline
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
-To update your wiki pages offline, clone your wiki repository and add or edit pages the same way you develop code in a Git repo. Then, push your changes to your working branch and merge them with the master branch of the wiki repository. Your wiki repository stores pages, images,attachments, and the sequence of pages and subpages.
+You can update your wiki pages offline the same way you develop code in a Git repo.
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> GIT workflows like branch policies are applicable only for publish code as wiki workflows.
+> GIT workflows, like branch policies, are applicable only for publish code as wiki workflows.
 ::: moniker-end
-
-See the following web portal **Files** page for the **Fabrikam Fiber.wiki** repo.
-
-> [!div class="mx-imgBorder"]
-> ![Wiki Master files](_img/wiki/wikimaster-files.png)
 
 You can use any client you want or git command-line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.md).
 
@@ -63,7 +58,13 @@ Do the following to migrate Markdown pages from another wiki to your team projec
 
 ## Clone your wiki
 
-1. Open the **More** context menu and select **Clone wiki**.
+Your wiki repository stores pages, images, attachments, and the sequence of pages and subpages. Clone your wiki to begin.
+
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`), and then select your project.
+
+   ![Screenshot of sign-in to Azure DevOps, and then select Project](_img/wiki/sign-in-to-azure-devops-select-project.png)
+
+2. Open the **More** context menu and select **Clone wiki**.
 
 	<img src="_img/wiki/clone-wiki.png" alt="Clone wiki Git repository" style="border: 1px solid #C3C3C3;" />
 
@@ -90,17 +91,17 @@ We author pages using [Markdown format](../../reference/markdown-guidance.md). A
 To add pages at the root of the wiki tree, add a Markdown file at the root of the Git repository.
 
 1. For each page you want to add, create a Markdown file with the page contents, and then add it under the root folder for your repo.
- 
+
 	For the Fabrikam Fiber team project, it's in the following folder:  
 
 	`C:\Users\UserName\Source\Repos\Fabrikam Fiber.wiki`
 
-2.  To add pages at the root of the wiki tree, add aMarkdown file for each page at the root of the Git repository.
+2.  To add pages at the root of the wiki tree, add a Markdown file for each page at the root of the Git repository.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Local branch wiki Git repo](_img/wiki/add-pages.png)
 
-3. After you've added all the pages you want to add at the root, update the **.order** file at the root. It should contain one entry for eachMarkdown file that is defined at the root. Each entry should match the file title with spaces replaced with a dash.
+3. After you've added all the pages you want to add at the root, update the **.order** file at the root. It should have one entry for each Markdown file that is defined at the root. Each entry should match the file title with spaces replaced with a dash.
 
 	For example:  
 
@@ -123,7 +124,7 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
 2. Add a **.order** file in the folder with the order of the subpages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 
-	For example, the file has the following:
+	For example, the file has the following subpages:
 
 	```
 	Request-extensions  
@@ -143,7 +144,7 @@ The added pages and subpages appear immediately in your wiki.
 
 If there are any errors in the process, the pages appear in your wiki with a warning sign.
 
-   <img src="_img/wiki/wiki-offline-order-warning.png" alt="Warning when .order file is not updated properly" style="border: 1px solid #C3C3C3;" />
+![Warning when .order file is not updated properly](_img/wiki/wiki-offline-order-warning.png)
 
 ## Related articles
 
