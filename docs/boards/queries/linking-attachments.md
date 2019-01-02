@@ -261,7 +261,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="related-link-count"/>
 <p>Related Link Count</p></td>
-<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Sucessor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)</p>
+<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)</p>
 <p>Reference Name=System.RelatedLinkCount, Data type=Integer</p>
 </td>
 <td>All</td>

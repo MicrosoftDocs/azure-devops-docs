@@ -374,7 +374,7 @@ tsc
 mocha tests/_suite.js
 ```
 
-Both tests should pass. If you want to run the tests with more verbose output (what you would see in the build console), set the environment variable: ```TAST_TEST_TRACE=1```:
+Both tests should pass. If you want to run the tests with more verbose output (what you would see in the build console), set the environment variable: ```TASK_TEST_TRACE=1```:
 
 ```
 $env:TASK_TEST_TRACE=1
