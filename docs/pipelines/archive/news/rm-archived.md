@@ -175,7 +175,7 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img\rm-archived\release-notes-29.png)
+![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
 ### November 16, 2016 Update (Azure Pipelines, TFS 2017)

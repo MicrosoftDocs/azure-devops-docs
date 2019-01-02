@@ -203,7 +203,7 @@ The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js ver
 
 Apply the following agent settings:
 
-1. Set **Parallelism** to **Mutli-configuration**
+1. Set **Parallelism** to **Multi-configuration**
 
 2. Specify **Multipliers**:
 

@@ -260,7 +260,7 @@ Get an instance of an object registered with the given id
 ### Parameters
 
 * `instanceId`: string. unique ID of the registered object
-* `contextData`: Object. Optional. Optional context data to pass to the contructor of an object factory method
+* `contextData`: Object. Optional. Optional context data to pass to the constructor of an object factory method
 
 ### Returns
 
