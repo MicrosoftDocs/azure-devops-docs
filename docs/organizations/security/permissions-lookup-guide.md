@@ -130,7 +130,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Service hooks](../../service-hooks/overview.md#subscription-permissions)</li>
 <li>[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Sprint, define (Object)](set-permissions-access-work-tracking.md)</li>
-<li>[Sprints, select (Team)](../settings/set-team-defaults.md)</li>
+<li>[Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)</li>
 <li>[Suppress notifications work items(Project)](set-project-collection-level-permissions.md)</li>
 </ul>
 <h3>T</h3>
@@ -138,7 +138,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
-<li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
 <li>[Team projects (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)</li>
 <li>[Test configurations (Project)](set-project-collection-level-permissions.md)</li>
@@ -281,7 +280,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Service hooks](../../service-hooks/overview.md#subscription-permissions)</li>
 <li>[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Sprint, define (Object)](set-permissions-access-work-tracking.md)</li>
-<li>[Sprints, select (Team)](../settings/set-team-defaults.md)</li>
+<li>[Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)</li>
 <li>[Suppress notifications work items (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Synchronization information (Collection)](set-project-collection-level-permissions.md)</li>
 </ul>
@@ -290,7 +289,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
-<li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
 <li>[Team projects (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)</li>
 <li>[Test configurations (Project)](set-project-collection-level-permissions.md)</li>
@@ -424,7 +422,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Service hook](../../service-hooks/overview.md#subscription-permissions)</li>
 <li>[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Sprint, define (Object)](set-permissions-access-work-tracking.md)</li>
-<li>[Sprints, select (Team)](../settings/set-team-defaults.md)</li>
+<li>[Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)</li>
 <li>[Suppress notifications work items (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Synchronization information (Collection)](set-project-collection-level-permissions.md)</li>
 </ul>
@@ -433,7 +431,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Tags, Git (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Tags, work items (Project)](set-permissions-access-work-tracking.md)</li>
 <li>[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)</li>
-<li>[Team defaults (Team)](../settings/set-team-defaults.md)</li>
 <li>[Team projects (Collection)](set-project-collection-level-permissions.md)</li>
 <li>[Test configurations (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Test controllers (Project)](set-project-collection-level-permissions.md)</li>

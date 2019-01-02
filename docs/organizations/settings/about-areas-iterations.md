@@ -83,11 +83,10 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../refe
 ## Related articles 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
-*	[Set project-level area paths](set-area-paths.md)  
-*	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
-*	[Set team defaults](set-team-defaults.md)  
-*	[Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
-*	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
+- [Define area paths and assign to a team](set-area-paths.md)
+- [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md)
+- [Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
 <a name="export"></a>

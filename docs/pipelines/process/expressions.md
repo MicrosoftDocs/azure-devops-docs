@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/22/2017
+ms.date: 01/02/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,12 +24,8 @@ monikerRange: '>= tfs-2017'
 Expressions let you describe decisions the system should make, such as whether to run a step or the value of a variable.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
 Expressions are typically a nested set of functions evaluated from the innermost function out.
-Expressions always evaluate to strings, though the strings may be treated as booleans or other data types depending on where they're used.
 
 ## Types
-
-Although expressions evaluate to strings, they're coerced to other data types as needed.
-For instance, if an inner function evaluates to `"true"` and then is used as an input to `and()`, it will be coerced to Boolean `True`.
 
 ### Boolean
 `True` and `False`
