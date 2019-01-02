@@ -313,6 +313,11 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
 
+
+> [!IMPORTANT]     
+> If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+
+
 ::: moniker range=">= tfs-2015"
 
 ## Team dashboards 

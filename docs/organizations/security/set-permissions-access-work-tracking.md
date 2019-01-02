@@ -222,44 +222,32 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ## Define and edit queries or query folders
 
-You can specify who can add or edit query folders or queries at the object-level. See [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md) to restrict who can modify the query or queries within a folder.
+You can specify who can add or edit query folders or queries at the object-level. 
+To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 
 
-To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/example-queries.md).
+**Query folder Permissions dialog**
+
+> [!div class="mx-imgBorder"]  
+> ![Permissions dialog for a query folder](../../boards/queries/_img/permissions/permissions-dialog-query-folder.png)
+
+For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/example-queries.md).
 
 
 ::: moniker range=">= tfs-2017"
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
-## Manage or edit Delivery plans 
+## Edit or manage permissions for Delivery Plans 
 
-Plans are an object within a project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../boards/queries/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
+Delivery Plans are an object within a project. You manage plan permissions for each plan similar to the way you manage permissions for shared queries or query folders. The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
 
-To learn more about Delivery Plans, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
+**Delivery Plan Permissions dialog**
+
+> [!div class="mx-imgBorder"]  
+> ![Permissions dialog for a delivery plan](../../boards/plans/_img/permissions/permissions-plans-dialog.png)
+
+To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md). To learn more about Delivery Plans, see [Review team plans](../../boards/plans/review-team-plans.md).
+ 
 ::: moniker-end
-
-::: moniker range="tfs-2017"
-> [!NOTE]  
-> **Feature availability**: Delivery plans are available for TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
-::: moniker-end  
-
-::: moniker range=">= tfs-2017"  
-0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
-
-0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the Permissions dialog for a plan](_img/work-tracking/open-plans-security.png)     
-
-0. Add a user or group who you want to grant permissions to or restrict access. By default, non-administrators can't delete or edit a plan that you create. 
-
-0. With the user or group selected, set the permission you want them to have to **Allow**. 
-
-	For example, here we grant permission to Raisa to edit the plan.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a delivery plan](_img/work-tracking/permissions-plans-dialog.png)
-
-::: moniker-end  
 
 
 <a id="move-delete-permissions"></a>
@@ -281,8 +269,8 @@ In this example, we grant members assigned to the team administrator role, who b
 ::: moniker range=">= tfs-2017"
 
 <a id="delete-test-permissions"></a>
-
-## Delete test artifacts
+<a id="manage-test-artifacts"></a>
+## Manage test artifacts
   
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
