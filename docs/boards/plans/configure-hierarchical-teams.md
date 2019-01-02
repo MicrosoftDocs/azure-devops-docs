@@ -319,8 +319,8 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include: 
 
 - [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-- [Select sprints for the team](../../organizations/settings/set-team-defaults.md#activate)
-- [Activate backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
 - [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)  
 

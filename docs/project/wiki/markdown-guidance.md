@@ -157,7 +157,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 ### Horizontal rules
 
-To add a horizonal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
+To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
 **Example:**
 

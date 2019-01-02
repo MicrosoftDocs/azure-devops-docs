@@ -96,7 +96,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	<img src="_img/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]
-	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../../organizations/settings/set-team-defaults.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 
 
 2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
@@ -130,9 +130,9 @@ Of course, if you have several teams, more complex release and sprint cadences t
 
 Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
 
-Defining additional sprints is a two-step process. You first define the sprints for your project&mdash;[Define project iterations](../../organizations/settings/set-area-paths.md)&mdash;and then you select the sprints that each team will use&mdash;[Select team sprints](../../organizations/settings/set-team-defaults.md). In this way, the system supports teams that work on different sprint cadences.  
+Defining additional sprints is a two-step process. You first define the sprints for your project and then you select the sprints that each team will use&mdash;[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). In this way, the system supports teams that work on different sprint cadences.  
 
-[![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-team-defaults.md)
+[![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-iteration-paths-sprints.md)
 
 Each sprint that you select for your team provides access to a [sprint backlog, taskboard, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
 
@@ -172,10 +172,10 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Assign work to a sprint](assign-work-sprint.md) or [Define iterations for your project](../../organizations/settings/set-iteration-paths-sprints.md) 
+> [Assign work to a sprint](assign-work-sprint.md) or [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../../organizations/settings/set-team-defaults.md).  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's[default area path and iteration path.  
 
 
 

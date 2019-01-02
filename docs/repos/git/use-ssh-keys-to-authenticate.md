@@ -122,7 +122,7 @@ user interface. Select **Security** in the menu that appears.
 >[!NOTE]
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikamifiber**, as indicated by the first part of the URL after `dev.azure.com`.
+0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
    ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
 

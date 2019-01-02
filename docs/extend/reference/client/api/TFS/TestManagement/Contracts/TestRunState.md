@@ -21,6 +21,6 @@ Module path: `TFS/TestManagement/Contracts`
 * `NotStarted` The run is still being created.  No tests have started yet.
 * `InProgress` Tests are running.
 * `Completed` All tests have completed or been skipped.
-* `Aborted` Run is stopped and remaing tests have been aborted
+* `Aborted` Run is stopped and remaining tests have been aborted
 * `Waiting` Run is currently initializing This is a legacy state and should not be used any more
 * `NeedsInvestigation` Run requires investigation because of a test point failure This is a legacy state and should not be used any more
