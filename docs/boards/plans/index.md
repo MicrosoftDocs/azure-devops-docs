@@ -39,7 +39,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 ::: moniker-end
 
 ## Concepts 
-       
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)    
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)  
@@ -49,7 +49,6 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Define a work item template](../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) 
-- [Set team defaults](../../organizations/settings/set-team-defaults.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md)   
 
 

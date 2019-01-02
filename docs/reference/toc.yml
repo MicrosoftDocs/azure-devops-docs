@@ -39,8 +39,6 @@
     - name: Configure team settings
       href: ../organizations/settings/configure-team-settings.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
       items:
-        - name: Set team defaults
-          href: ../organizations/settings/set-team-defaults.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Customize cards on boards
           href: ../boards/boards/customize-cards.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Reorder cards

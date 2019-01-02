@@ -24,7 +24,7 @@ This article provides a comprehensive reference for each built-in group and perm
 ::: moniker range="vsts"
 
 > [!div class="mx-tdBreakAll"]  
-> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
 > |-------------|----------|---------|   
 > |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
@@ -33,7 +33,7 @@ This article provides a comprehensive reference for each built-in group and perm
 ::: moniker range="azdevserver-2019"
 
 > [!div class="mx-tdBreakAll"]  
-> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
 > |-------------|----------|---------|   
 > |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
@@ -45,7 +45,7 @@ This article provides a comprehensive reference for each built-in group and perm
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-tdBreakAll"]  
-> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |Users and groups  |DevOps permissions  |Work tracking & dashboard permissions  |  
 > |-------------|----------|---------|   
 > |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
@@ -57,7 +57,7 @@ This article provides a comprehensive reference for each built-in group and perm
 ::: moniker range="<= tfs-2017"
 
 > [!div class="mx-tdBreakAll"]  
-> |Users and groups  |DevOps permissions  |Work tracking & analytics permissions  |  
+> |Users and groups  |DevOps permissions  |Work tracking & dashboard permissions  |  
 > |-------------|----------|---------|   
 > |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint integration](set-sharepoint-permissions.md)<br/>- [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
@@ -898,7 +898,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 </table>
 
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 
 <a name="analytics-views-permissions"></a>
 
@@ -909,7 +909,7 @@ With shared Analytics views, you can grant specific permissions to view, edit, o
 > [!div class="mx-imgBorder"]
 > ![Manage permissions](../../report/analytics/_img/editable-views/view-permissions.png)  
 
-The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../../report/analytics/what-are-analytics-views.md)  
+The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views](../../report/analytics/what-are-analytics-views.md)?  
 
 
 <table valign="top" width="100%">
@@ -924,7 +924,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 			Can delete the shared Analytics view.
 		</td>
 	</tr>
-	<tr>[]
+	<tr>
 		<td id="av-edit-permission">Edit shared Analytics views</td>
 		<td>
 			Can change the parameters of the shared Analytics view.

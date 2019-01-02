@@ -8,9 +8,9 @@
     href: ../about-teams-and-settings.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: Set area paths
+  - name: Define area paths & assign to a team 
     href: ../set-area-paths.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-  - name: Set iteration paths or sprints
+  - name: Define iteration paths (sprints) & configure team iterations 
     href: ../set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Add a team
     href: ../add-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
@@ -33,8 +33,6 @@
   - name: Manage teams and configure team tools
     href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
     items:
-    - name: Set team defaults
-      href: ../set-team-defaults.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
     - name: Use work item templates
       href: ../../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
     - name: Customize cards on boards

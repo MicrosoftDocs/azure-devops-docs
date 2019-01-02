@@ -87,12 +87,14 @@ If you want to preserve the backlog priority when you move a card to a new colum
 0. When done with your changes, choose **Save**.
 
 	> [!TIP]
-	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
+	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"
+
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
 ::: moniker-end
 
 ---

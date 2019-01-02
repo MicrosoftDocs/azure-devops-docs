@@ -247,11 +247,11 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 <a id="verify-bug">  </a>
 ###Verify a bug, re-run tests defined for web apps 
 ::: moniker-end  
-::: moniker range="vsts"  
-Choose the **Verify** option to re-run tests which identified the bug. You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
+::: moniker range=">= tfs-2018"  
+Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 ::: moniker-end  
-::: moniker range=">= tfs-2017 <= tfs-2018"
-Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
+::: moniker range="tfs-2017"
+Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
 ::: moniker-end  
 ::: moniker range=">= tfs-2017"  
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
@@ -311,7 +311,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
@@ -320,12 +320,12 @@ You can use Power BI to create more complex reports than what you can get from a
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= azdevserver-2019"  
 
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
