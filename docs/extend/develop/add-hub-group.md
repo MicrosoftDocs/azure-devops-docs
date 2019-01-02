@@ -22,7 +22,7 @@ then follow these steps to create the hub group.
 
 Here's the complete extension manifest with Hello in the samples hub group.
 
-```
+```json
 {
 	"namespace": "Fabrikam.myextension",
 	"name": "My Extension",

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 12/19/2018
 monikerRange: 'vsts'
 ---
 # Add external users to your organization
@@ -52,7 +52,7 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
    ![Add external user](_img/add-external-user/add-external-user-vert.png)
 
-5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your organization.
+5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which adds the user to your organization.
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -70,7 +70,7 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
    >![Add external user](_img/add-external-user/add-external-user.png)
 
-5. Advise the external user to locate the email that they received from Azure DevOps and go to the Azure B2B redemption URL, which will add the user to your organization.
+5. Advise the external user to locate the email that they received from Azure DevOps and go to the Azure B2B redemption URL, which adds the user to your organization.
 
 ---
 

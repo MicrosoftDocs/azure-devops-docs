@@ -38,7 +38,7 @@ You will:
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in Azure Pipelines
 > * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utilty tasks Azure Pipelines extension
+> * Install the Release Management Utility tasks Azure Pipelines extension
 > * Create an Azure Pipelines release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
@@ -95,7 +95,7 @@ You will find the **pom.xml** file in your repository in the folder named **comp
 
 1. Update the `<properties>` collection in the **pom.xml** with the login server value for your ACR.  The login server is the name of your ACR appended with *.azurecr.io*.  For example, **yourACRName.azurecr.io**.
 
-    ```
+    ```xml
     <properties>
        <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
        <java.version>1.8</java.version>
@@ -104,7 +104,7 @@ You will find the **pom.xml** file in your repository in the folder named **comp
 
 1. Update the **com.spotify** plugin in the **pom.xml** file so that the `<configuration>` section includes the tag for the Docker image that will be built and pushed to your ACR.  The tag will be set to the current Jenkins build id.  Also, add the **useMavenSettingsForAuth** setting to the configuration so that in a later step, you can configure Maven to authenticate with your ACR which is a private registry.
 
-    ```
+    ```xml
     <plugin>
       <groupId>com.spotify</groupId>
       <artifactId>dockerfile-maven-plugin</artifactId>
@@ -135,7 +135,7 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 1. Copy and paste the following contents into the **K8sDeploy.yaml** file.  Ensure the image prefix `<yourACRName>` is replaced with the name of your ACR appended with *.azurecr.io*.  Also, notice that the image is tagged with **__Build.BuildId__**.  This is a token that will be automatically replaced during the Azure Pipelines release so that it's set to the current Jenkins build id.  For example, if the current Jenkins build id is 5, the full name of an image that will be pulled during the Azure Pipelines release will look similar to: yourACRName.azurecr.io/gs-spring-boot-docker:5.
 
-    ```
+    ```yaml
     apiVersion: extensions/v1beta1
     kind: Deployment
     metadata:
@@ -212,7 +212,7 @@ Since your ACR is a private registry, you must configure the user name and passw
 
 1. In the **Content** window, update the `<servers>` section of the contents to include the name of your ACR and its password.  For example:
   
-    ```
+    ```xml
     <server>
       <id>yourACRName.azurecr.io</id>
       <username>yourACRName</username>
@@ -317,7 +317,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 1. Repeat the steps in this section to create another **service hook** for the **pull request merge attempted** trigger type.  This will allow either simple commits to the repository as well as pull requests to both trigger the Jenkins build.
 
-## Install the Release Management Utilty tasks Azure Pipelines extension
+## Install the Release Management Utility tasks Azure Pipelines extension
 
 A release pipeline specifies the steps that Azure Pipelines executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
@@ -430,7 +430,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in Azure Pipelines
 > * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utilty tasks Azure Pipelines extension
+> * Install the Release Management Utility tasks Azure Pipelines extension
 > * Create an Azure Pipelines release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app

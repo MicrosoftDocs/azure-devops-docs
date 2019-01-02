@@ -138,7 +138,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 ```json
 {
-    "galleryproperties" {
+    "galleryproperties": {
         "trialDays ": "30"
     } 
 }          
@@ -196,7 +196,7 @@ Properties for the CustomerQnASupport section:
 
 #### Example 10: Extension using custom Q&A
 
-```
+```json
 {
      "CustomerQnASupport": {
         "enableqna":"true",
@@ -206,7 +206,7 @@ Properties for the CustomerQnASupport section:
 ```
 #### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
 
-```
+```json
 {
      "CustomerQnASupport": {
         "enableqna":"true"
@@ -215,7 +215,7 @@ Properties for the CustomerQnASupport section:
 ```
 #### Example 12: Extension disabling Q&A section
 
-```
+```json
 {
      "CustomerQnASupport": {
         "enableqna":"false"
@@ -267,7 +267,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 
 #### Example 1: Extension that works with Azure DevOps Services and Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -279,7 +279,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 
 #### Example 2: Extension that works only with Azure DevOps Services
 
-```
+```json
 {
     "targets": [
         {
@@ -293,7 +293,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 
 #### Example 3: Integration that works with Azure DevOps Services and Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -305,7 +305,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 
 #### Example 4: Integration that only works with Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -342,7 +342,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 5: Extension that works with Azure DevOps Services and Team Foundation Server 2017 and later
 
-```
+```json
 {
     "targets": [
         {
@@ -358,7 +358,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 6: Integration that works with Team Foundation Server 2015 and later
 
-```
+```json
 {
     "targets": [
         {
@@ -371,7 +371,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 7: Integration that works with Team Foundation Server 2013 and 2015
 
-```
+```json
 {
     "targets": [
         {
@@ -386,7 +386,7 @@ Version numbers for Team Foundation Server:
 
 `Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps Services and Team Foundation Server 2015 Update 2 and later. So this:
 
-```
+```json
 {
     "targets": [
         {
@@ -398,7 +398,7 @@ Version numbers for Team Foundation Server:
 
 is equivalent to:
 
-```
+```json
 {
     "targets": [
         {
@@ -418,7 +418,7 @@ Installation targets and demands are used together to present users with an accu
 
 #### Example 8: Extension that uses version 3.0 APIs
 
-```
+```json
 {
     "targets": [
         {
@@ -438,7 +438,7 @@ Resolves to the following installation targets:
 
 #### Example 9: Integration that uses version 2.0 APIs
 
-```
+```json
 {
     "targets": [
         {

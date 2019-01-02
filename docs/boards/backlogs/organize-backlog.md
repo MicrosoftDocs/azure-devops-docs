@@ -1,5 +1,5 @@
 ---
-title: Organize your product backlog into a hierachy of items 
+title: Organize your product backlog into a hierarchy of items 
 titleSuffix: Azure Boards  
 description:  Map or parent backlog items to features, and features to epics in Azure Boards or TFS
 ms.custom: "boards-backlogs, seodec18"    
@@ -165,7 +165,7 @@ From the product backlog page, set **Parents** to **Show** when you want to dril
 
 Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
   
-![Collapsed hierachical view](_img/org-backlog-collapse-backlog-ts-new-nav.png) 
+![Collapsed hierarchical view](_img/org-backlog-collapse-backlog-ts-new-nav.png) 
 
 ::: moniker-end
 

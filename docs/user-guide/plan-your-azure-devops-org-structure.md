@@ -98,9 +98,9 @@ A high volume of queries and boards can make it hard to find what you're looking
 Project structure is best determined by how you ship the product. Having several projects shifts the administration burden and gives your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects. Having team independence with many projects creates some alignment challenges, however. If each project is using a different process or iteration schedule, it can make communication and collaboration difficult if the taxonomies aren't the same.
 
 > [!TIP]
-> If you use the same process and iteration schedules across all your projects, it will improve your ability to roll-up data and report across teams.
+> If you use the same process and iteration schedules across all your projects, your ability to roll-up data and report across teams is improved.
 
-Azure DevOps provides cross-project experiences when it comes to managing work. .
+Azure DevOps provides cross-project experiences when it comes to managing work.
 
 Instances where you may want to add another project include the following:
 
@@ -119,11 +119,11 @@ When you map projects to business units, your company gets a single organization
 |Works well if all business units of your company are in the same geographical area. (for example, the entire company is in North America)    | Business units can't administer their own users, policies, access management, or billing practices and require shared ownership of the organization        |
 |Works well if you don’t need to track budgets or spending per business unit    | Business units must share resources, like Azure Pipelines (for CI/CD)        |
 |Works well if you don’t have any regulatory or compliance needs for geographical isolation of your Azure DevOps assets    | Business units can't track spending and billing separately        |
-| You can easily create cross-project queries and move work items from one project to another | Will not work if you are migrating from on-premises with multiple collections, since you end up with multiple organizations with each collection on-premises mapped to a separate organization  |
+| You can easily create cross-project queries and move work items from one project to another | Doesn't work if you are migrating from on-premises with multiple collections, since you end up with multiple organizations with each collection on-premises mapped to a separate organization  |
 
 ## Structure your teams, repos, and version control within a project
 
-Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project will have a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
+Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
 
 Configure your project by visiting its URL and selecting the **Project settings** button at the lower-right of the page.
 
@@ -204,7 +204,7 @@ Learn more about how to [manage users in Azure DevOps](../organizations/accounts
 
 When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#project-structure) can be set up within those individual organizations, as required, based on teams or ongoing work.
 
-For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization will have a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You do not need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
+For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users in your company share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You do not need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 
 |Mapping organizations to business units        |    |
 |-------------------|---------|---------|

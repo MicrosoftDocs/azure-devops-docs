@@ -49,7 +49,7 @@ To delete test artifacts, the following restrictions and operations apply:
 
 <a id="test-experience"></a>
 ## Work item types that support the test experience  
-The following image illsutrates the set of work item types that support the test experience and work with Microsoft Test Manager (MTM). These work item types are linked together using the link types shown. 
+The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager (MTM). These work item types are linked together using the link types shown. 
 
   ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
 
@@ -83,5 +83,5 @@ However, these objects aren't connected to each other through link types. For de
 
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
-
+- [Set permissions and access for work tracking, Manage test artifacts](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts)
 

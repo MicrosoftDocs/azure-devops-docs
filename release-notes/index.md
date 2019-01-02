@@ -93,7 +93,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[04 December 2018](2018/sprint-144-update.md)</td>
+            <td rowspan="14">[04 December 2018](2018/sprint-144-update.md)</td>
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Future</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Future</td></tr>
@@ -359,7 +359,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Leave account</td><td>N/A</td></tr>
         <tr>
             <td rowspan="22">[24 Jan 2018](2018/jan-24-vsts.md)</td>
-            <td>View Analystics Widgets as a Stakeholder</td>
+            <td>View Analytics Widgets as a Stakeholder</td>
             <td>*2019*</td>
         </tr>
         <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td>*2019*</td></tr>
@@ -1605,7 +1605,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td>Team Room Deprecation Annoucement</td>
+            <td>Team Room Deprecation Announcement</td>
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>

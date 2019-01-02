@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 12/19/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
@@ -90,25 +90,17 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
    ![Open test case from Kanban board](_img/open-test-case-form-from-kanban-board.png)
 
-To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md). 
+To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
-Prior to running the test, you must add details. 
+Prior to running the test, you must add details.
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-<<<<<<< HEAD
-=======
-Before you run the test, you must add details.  
->>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
-=======
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d
+::: moniker range="<= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]
+
+::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -116,7 +108,7 @@ Before you run the test, you must add details.
 
 1. To add tests, open the menu for the work item.
 
-	<img src="../boards/boards/_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" />
 
 	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
 
@@ -126,13 +118,13 @@ Before you run the test, you must add details.
 
 	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
 
-2. If you have a number of tests to add, enter each title and select **Enter**. 
+2. If you have a number of tests to add, enter each title and select **Enter**.
 
 	<img src="../boards/boards/_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
 
 	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**.
 
-	<img src="../boards/boards/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" />
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
@@ -154,7 +146,7 @@ Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run 
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
@@ -171,6 +163,7 @@ Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 
 ::: moniker-end
+
 ---
 
 ## Update the status of a test
@@ -179,13 +172,13 @@ Microsoft Test Runner starts in a new browser instance. For information on how t
 
 ::: moniker range=">= azdevserver-2019"
 
-You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu. 
+You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
 ![Update status of tests](_img/test-update-status.png)
 
 When you update the status of tests, you can [track test results](../test/track-test-status.md).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
@@ -198,7 +191,7 @@ When you update the status of tests, you can [track test results](../test/track-
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
    ![Pass test](_img/pass-test.png)
- 
+
 When you update the status of tests, you can [track test results](../test/track-test-status.md).  
 
 ::: moniker-end
@@ -219,7 +212,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ![Inline tests expanded](_img/test-expanded-test-list.png)
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
@@ -249,13 +242,5 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 > [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
-=======
-Install Exploratory testing to set it up for a user story. For more information, read  [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see how to [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
 
->>>>>>> 5547070db253f37202be3a9c15a3542ad14fcab9
-=======
-To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see the article [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
->>>>>>> 4a963c0f6b96ff9c6d900a02bc9f26e21dc6734d

@@ -99,7 +99,7 @@ steps:
 
 ### Set the Xamarin SDK version on macOS
 
-To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent pool, add the following snippet before the `XamariniOS` task in your `azure-piplines.yml` file. For details on properly formatting the version number (shown as **5_4_1** below), see [How can I manually select versions of tools on the Hosted macOS agent?](../agents/hosted.md#how-can-i-manually-select-versions-of-tools-on-the-hosted-macos-agent).
+To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent pool, add the following snippet before the `XamariniOS` task in your `azure-pipelines.yml` file. For details on properly formatting the version number (shown as **5_4_1** below), see [How can I manually select versions of tools on the Hosted macOS agent?](../agents/hosted.md#how-can-i-manually-select-versions-of-tools-on-the-hosted-macos-agent).
 
 ```yaml
 - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1

@@ -85,7 +85,7 @@ YAML builds are not yet available on TFS.
      * **Root folder or file to archive:** `$(System.DefaultWorkingDirectory)`
      * **Prepend root folder name to archive paths:** Unchecked
 
-   * **Public Build Artifacts**
+   * **Publish Build Artifacts**
      * Leave all the default values for properties
 
 1. Save the pipeline and queue a build to see it in action.

@@ -8,7 +8,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
@@ -69,7 +70,7 @@ You add query folders from the **Boards>Queries** page.
 
 0. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can choose the ![ ](../_img/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Reanme query dialog, select the folder you want to save the query in. 
+	Optionally, you can choose the ![ ](../_img/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
 	![Rename query dialog](_img/organize-queries/rename-query-old-experience.png) 
 

@@ -113,7 +113,7 @@ Create the [Bash](../tasks/utility/bash.md) Task and copy paste the code below i
 Don't forget to arrange the emulator parameters to fit your testing environment.
  The emulator will be started as a background process and available in subsequent tasks.
 
-```
+```bash
 #!/usr/bin/env bash
 
 # Install AVD files

@@ -18,7 +18,7 @@ You have the option of hosting static content for your extension (like HTML, CSS
 
 >[!IMPORTANT]
 >If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom
->tables should be created in a seperate schema. For example, '**YourExtensionName**'.
+>tables should be created in a separate schema. For example, '**YourExtensionName**'.
 
 ## Host on Azure DevOps Services
 
@@ -65,7 +65,7 @@ In this model, static content is served from your own service and not included i
 
 1. Set the `baseUri` property in your extension manifest  For example, assuming a value of `https://myservice.net/extension` and this hub contribution:
 
-``` 
+```json
 	"baseUri": "https://myservice.net/extension",
 	"contributions": [
 		{

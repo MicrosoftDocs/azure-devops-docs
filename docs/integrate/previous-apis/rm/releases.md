@@ -189,7 +189,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "name": "Fabrikam-Website",
         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
-      "description": "Fabrikram website release - M6",
+      "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
@@ -352,7 +352,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "name": "Fabrikam-Website",
         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
-      "description": "Fabrikram website release - M6",
+      "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,

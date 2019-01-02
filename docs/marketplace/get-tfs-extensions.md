@@ -198,7 +198,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 > This section is only for adding pre-installed extensions (first-party), if you're installing extensions that
 > aren't pre-installed with TFS, head to the [Disconnected TFS section](#install-extensions-for-disconnected-tfs).
 
-With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatability issues.
+With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatibility issues.
 
 In this case, you can manage extensions in disconnected TFS by following the steps below:
 0. Hover over the shopping bag icon and select **Manage extensions**

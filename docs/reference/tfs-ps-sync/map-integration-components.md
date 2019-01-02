@@ -1,12 +1,13 @@
 ---
 title: Map integration components
 titleSuffix: TFS 
-description: Use TFSAdmin ProjectServer command-line tool to configure integration betwee Team Foundation Server & Project Server
+description: Use TFSAdmin ProjectServer command-line tool to configure integration between Team Foundation Server & Project Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ddac3deb-bb59-4536-9d4a-ecd389ceb265
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---

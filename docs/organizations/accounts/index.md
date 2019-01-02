@@ -52,6 +52,7 @@ Sign up for an organization, add users, and manage permissions and access.
     * [Recover your organization](recover-your-organization.md)
     * [Sign in with different credentials](../projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Change organization location (region)](change-organization-location.md)
+    * [Add privacy URL](add-privacy-url.md)
 * Manage access to your organization
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)

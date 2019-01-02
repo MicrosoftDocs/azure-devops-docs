@@ -121,7 +121,7 @@ You can specify more than one *Itemspec* argument.
 <td><p><strong>/global</strong></p></td>
 <td><p>Used to view or assign any Team Foundation server permission.</p>
 <p>To assign permissions, use the <strong>/allow</strong>, <strong>/deny</strong>, or <strong>/remove</strong> options.</p>
-<p>The argument <em>itmespec</em> is not required. If it is listed, it is ignored.</p>
+<p>The argument <em>itemspec</em> is not required. If it is listed, it is ignored.</p>
 <p>When used to view the Team Foundation server permissions, the five permissions listed are as follows:</p>
 <ul>
 <li><p>tf: AdminShelvesets</p></li>

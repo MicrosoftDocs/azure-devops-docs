@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 865f7e20-cc67-4279-b625-a27ac3f1e88f
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -39,7 +40,7 @@ ms.date: 01/12/2017
 ##  <a name="Overview"></a> Process overview of Agile development and PMO visibility  
  As the following illustration shows, the team lead initiates the process by planning the user stories and tasks in Team Foundation Server. The synchronization engine creates status updates for each user story that is submitted to Project Server. Because the project manager has enabled automatic approvals for the enterprise project plan, Project Server automatically updates the plan with changes that were made in Team Foundation. The project manager can review the plan for implementing new user stories and track their progress in the project plan.  
   
- ![PS&#45;TFS Agile wokflow process](_img/pstfs_agile_workflow.png "PSTFS_Agile_Workflow")  
+ ![PS&#45;TFS Agile workflow process](_img/pstfs_agile_workflow.png "PSTFS_Agile_Workflow")  
   
  Team Foundation automatically calculates the rollup of remaining and completed work by resource based on the tasks that are linked to each user story. As team members update tasks, the roll-up values are automatically updated for the user stories in the mapped project plan. The project manager must add team members to the enterprise resource pool for Project Server in addition to the resource pool for the enterprise project plan.  
   

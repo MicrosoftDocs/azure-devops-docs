@@ -170,7 +170,7 @@ quality. With the Build (1.0) API, you can access each of these components. --NO
 <tr>
 <td>[Build (2.0)](./build/overview.md) </td>
 <td>The Build (2.0) APIs provide numerous ways to utilize builds from Team Services or TFS in your extensions. 
-Whether you're kicking a build off, retreiving a build, or just adding a tag, you'll find what you need here.</td>
+Whether you're kicking a build off, retrieving a build, or just adding a tag, you'll find what you need here.</td>
 <td>
 <ul><li>Start a build</li>
 <li>Get a build</li>
@@ -206,7 +206,7 @@ from having a physical representation.</td>
 <tr>
 <td>[Packaging](./packaging/overview.md)</td>
 <td>*Packages* are bundles of DLLs, resources, and other software components combined with metadata. Common package formats include: NuGet, npm, and Maven.
-*Feeds* contain packages and enforce *permissions* about who can access the packages. This API gives you accesss to feeds, packages, and permissions.</td>
+*Feeds* contain packages and enforce *permissions* about who can access the packages. This API gives you access to feeds, packages, and permissions.</td>
 <td>
 <ul><li>Get a list of feeds</li>
 <li>Create a feed</li></ul>
@@ -214,7 +214,7 @@ from having a physical representation.</td>
 </tr>
 <tr>
 <td>[Projects and teams](./tfs/overview.md)</td>
-<td>Team Services accounts host projects, and each project has one or more teams that contibute to it. Get access to both with the Projects and Teams API.</td>
+<td>Team Services accounts host projects, and each project has one or more teams that contribute to it. Get access to both with the Projects and Teams API.</td>
 <td>
 <ul><li>Get a list of projects</li>
 <li>Get a project's source control provider</li>

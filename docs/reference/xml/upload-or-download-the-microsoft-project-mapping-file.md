@@ -52,7 +52,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
 |------------------|---------------------|  
 |**upload &#124; download**|Specifies whether to download or upload the field mapping file.|  
 |**/collection**:<i>CollectionURL</i>|Specifies the URI of the project collection in the following format: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory is used, you must use the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*<br /><br /> If you have previously connected to the server, you can specify the friendly name for the server instead of the URI.|  
-|**/teamproject:**<i>ProjectName</i>|Specfies the name of the project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
+|**/teamproject:**<i>ProjectName</i>|Specifies the name of the project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
 |**/mappingfile:**<i>MappingFile</i>|Specifies the name and file path of the mapping file.|  
   
 ## To change how work item fields are mapped to Project  

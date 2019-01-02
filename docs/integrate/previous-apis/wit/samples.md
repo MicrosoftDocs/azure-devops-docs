@@ -21,7 +21,7 @@ ms.date: 08/24/2016
 ## Getting Started Sample
 <a name="gettingstartedsample" />
 
-If this is your first time using the REST API's or .Net Libraries, check out the [geting started sample](../../get-started/rest/samples.md) first. 
+If this is your first time using the REST API's or .Net Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first. 
 
 All sample source code is located at [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 
@@ -536,7 +536,7 @@ There are a few things happening in the code sample below:
 >        var request = new HttpRequestMessage(method, "https://accountname.visualstudio.com/fabrikam/_apis/wit/workitems/$Bug?api-version=2.2") { Content = patchValue };
 >        var response = client.SendAsync(request).Result;
 >
->        //if the response is successfull, set the result to the workitem object
+>        //if the response is successful, set the result to the workitem object
 >        if (response.IsSuccessStatusCode)
 >        {
 >            var result = response.Content.ReadAsStringAsync().Result;
@@ -613,7 +613,7 @@ There are a few things happening in the code sample below:
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item.  For example, you may want to create a bug that retains the original created date and created by values from the system where it originated.  By using the basic REST example above, this is not possible since the Created and Changed date fields are automatically calculated by the system.  Luckily, there is a solution - you may optionally choose to bypass the rules engine on a work item update. This allows you to modify the work item fields without any restrictions. There are some limitations on what's supported:
 
-* To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Acccounts" group.
+* To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Accounts" group.
 * Created Date and Created By can ONLY be set on the initial revision
 * Changed Date must always be increasing, meaning you can't have a revision
 
@@ -658,7 +658,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >        var request = new HttpRequestMessage(method, "https://account.visualstudio.com/fabrikam/_apis/wit/workitems/$Bug?bypassRules=true&api-version=2.2") { Content = patchValue };
 >        var response = client.SendAsync(request).Result;
 >
->        //if the response is successfull, set the result to the workitem object
+>        //if the response is successful, set the result to the workitem object
 >        if (response.IsSuccessStatusCode)
 >        {
 >            var result = response.Content.ReadAsStringAsync().Result;

@@ -156,7 +156,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 3. (Optional) Open the Options tab and specify if the field should be required. 
 
-	![Set options for boolean fiel](_img/process/cpfield-edit-boolean-field-options-up1.png)
+	![Set options for boolean field](_img/process/cpfield-edit-boolean-field-options-up1.png)
 
 4. By default, the field is added to the last group defined in the second column. Open the Layout tab to drag and drop the field to another group on the form.  
 
