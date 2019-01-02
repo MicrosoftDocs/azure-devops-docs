@@ -21,7 +21,9 @@ To plan a software project and track software defects using Scrum, teams use the
 
 <img src="_img/scrum-process-plan-wits.png" alt="Scrum process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
-Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
+Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
+
+If you are new to the Scrum process, review the section [Plan and track work with Scrum](scrum-process.md#start-using-scrum) to get started. 
 
 [!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
@@ -182,7 +184,7 @@ You can add an impediment from the [New work item widget](../../../report/dashbo
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 ### Backlog list order

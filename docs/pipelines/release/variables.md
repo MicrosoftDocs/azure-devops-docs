@@ -223,6 +223,8 @@ it implies that the variable is not populated for that artifact type.
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranch | The full path and name of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow. | refs/heads/master |  |  | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranchName | The name only of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow. | master |  |  |  |
 
 See also [Artifact source alias](artifacts.md#source-alias)
 
@@ -245,6 +247,8 @@ You designate one of the artifacts as a primary artifact in a release pipeline. 
 > | Build.RequestedForID | Release.Artifacts.{Primary artifact alias}.RequestedForID |
 > | Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
 > | Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
+> | Build.PullRequest.TargetBranch | Release.Artifacts.{Primary artifact alias}.PullRequest.TargetBranch |
+> | Build.PullRequest.TargetBranchName | Release.Artifacts.{Primary artifact alias}.PullRequest.TargetBranchName |
 
 ### Using default variables
 
