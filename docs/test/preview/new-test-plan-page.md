@@ -20,7 +20,7 @@ or from the [user profile **Previews** panel](../../project/navigation/preview-f
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
-In the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], choose the **Test plans** link to access the new test plans view.
+In [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], choose the **Test plans** link to access the new test plans view.
 
 ![Opening the test plans view](_img/1.png)
 
