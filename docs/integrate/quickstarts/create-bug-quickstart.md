@@ -65,7 +65,7 @@ public class CreateBug
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manually set values to match yourorganization. 
+    /// Constructor. Manually set values to match your organization. 
     /// </summary>
     public CreateBug()
     {
