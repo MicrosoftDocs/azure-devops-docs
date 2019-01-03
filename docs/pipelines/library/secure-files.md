@@ -46,6 +46,10 @@ To handle secure files during build or release, you can refer to the common modu
 
 Make sure your agent is running version of 2.116.0 or higher. See [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
 
+### Why do I see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server/TFS on-premises?
+
+Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
+
 ### How do I authorize a secure file for use in all pipelines?
 
  1. Navigate to the **Library** tab in **Azure Pipelines**.
