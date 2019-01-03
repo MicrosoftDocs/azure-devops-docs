@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
-  Automated tests can also be run from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+  Automated tests can also be run from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
   If you are using [XAML builds](../pipelines/test/reference-qa.md#xaml-build) you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 
@@ -72,7 +72,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 
 1. If you don't know the identifier of the work item for the test case,
-   locate the test case in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
+   locate the test case in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
 1. When you know the identifier of the work item for the test case:
 
