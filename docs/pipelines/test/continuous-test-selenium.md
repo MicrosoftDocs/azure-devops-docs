@@ -176,14 +176,17 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 
 * When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
   pre-installed on the Windows agents (agents named **Hosted VS 20xx**) because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
-  The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
-  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
+  The paths to the folders containing these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
+  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
+  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
+
+<!--
+For example,  
 
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```
-  <p />
-  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
+-->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and release agents](../agents/agents.md#account).
