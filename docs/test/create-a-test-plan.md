@@ -40,7 +40,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
 1. In Azure DevOps or TFS, open your project.
 
-1. Go to the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. Create a test plan for your current sprint.
+1. Go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. Create a test plan for your current sprint.
 
    ![In test plan explorer, open the New (+) list, then click Test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 

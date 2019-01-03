@@ -16,12 +16,12 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
-Azure DevOps and Team Foundation Server (TFS) offer a web-based solution for manual testing. The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides experiences across Plan, Author, Execute and Track stages of Manual testing.
+Azure DevOps and Team Foundation Server (TFS) offer a web-based solution for manual testing. [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides experiences across Plan, Author, Execute and Track stages of Manual testing.
 
 In the past, we have also shipped a client based solution as Microsoft Test Manager. The Test Center in Microsoft Test Manager client is a desktop-based manual testing solution, which has traditionally been used by testers for their manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)). 
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
 
 ### Supported combinations
 
@@ -32,14 +32,14 @@ In the past, we have also shipped a client based solution as Microsoft Test Mana
 
 ## Manual Testing 
 
-The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully-featured test management solution spanning all stages of the testing lifecycle. It works on all platforms (such as Linux, macOS, Windows, and others) and all browsers (such as Edge, Chrome, Firefox, and others). You can easily get started using manual testing
-features right from your Kanban board, and use it for more advanced manual testing capabilities. This topic describes the capabilities included in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
+[!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully-featured test management solution spanning all stages of the testing lifecycle. It works on all platforms (such as Linux, macOS, Windows, and others) and all browsers (such as Edge, Chrome, Firefox, and others). You can easily get started using manual testing
+features right from your Kanban board, and use it for more advanced manual testing capabilities. This topic describes the capabilities included in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 
 ### Test planning
 
 Create and manage test plans and test suites for your teams with ease. Export and share the test plans and test suites with your team or assign multiple testers to execute tests. See the comparison matrix below for more information about these features.
 
-Comparison of [test planning with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-a-test-plan.md) and [test planning with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md):
+Comparison of [test planning with [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-a-test-plan.md) and [test planning with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md):
 
 | Test planning capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
@@ -59,9 +59,9 @@ Comparison of [test planning with the [!INCLUDE [test-hub-include-nolink](../_sh
 
 ### Test authoring
 
-You can easily get started creating test cases right from your Kanban board in the **Work hub**. Easily add, view, interact with, and execute tests from your Kanban cards, and create multiple test cases using a grid in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. Create shared parameters and use them in multiple test cases for data driven testing.
+You can easily get started creating test cases right from your Kanban board in the **Work hub**. Easily add, view, interact with, and execute tests from your Kanban cards, and create multiple test cases using a grid in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. Create shared parameters and use them in multiple test cases for data driven testing.
 
-Comparison of [test authoring with the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-test-cases.md) and [test authoring with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md):
+Comparison of [test authoring with [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]](../create-test-cases.md) and [test authoring with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md):
 
 | Test authoring capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Comparison of [test authoring with the [!INCLUDE [test-hub-include-nolink](../_s
 ### Test execution
 Test your web apps and your desktop apps.
 
-The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] provides a browser based Test Runner and a client based Test Runner which you can use to test your web and desktop apps.
+[!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] provides a browser based Test Runner and a client based Test Runner which you can use to test your web and desktop apps.
 Using either runner, you can mark test steps and test outcomes as pass or fail, and collect diagnostic information such as system information, image action logs, screen recordings and screen captures during your tests. Alternatively, you can use the Microsoft Test Runner client that is part of Microsoft Test Manager. 
 
 Comparison of [test execution with web based Test Runner](../run-manual-tests.md) and [test execution with Microsoft Test Runner (client)](run-manual-tests-with-microsoft-test-manager.md):
@@ -92,12 +92,12 @@ Comparison of [test execution with web based Test Runner](../run-manual-tests.md
 | Assign a Build for the test run | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Assign test settings | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 
-The test runners offered through the web-based hub does not support Action Recording (fast-forward test steps), Advanced Data collection (code coverage, IntelliTrace, and test impact) during your tests and Connecting to a machine in an environment. These 3 capabilities were not leveraged by our customers much and hence not being taken forward. You may however use the Microsoft Test Runner client, launched from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], for these requirements if really required.
+The test runners offered through the web-based hub does not support Action Recording (fast-forward test steps), Advanced Data collection (code coverage, IntelliTrace, and test impact) during your tests and Connecting to a machine in an environment. These 3 capabilities were not leveraged by our customers much and hence not being taken forward. You may however use the Microsoft Test Runner client, launched from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], for these requirements if really required.
 
 ### Test tracking
 
 You can easily track your manual testing results using your chosen light-weight chart types, and pin them to your dashboard to quickly analyze the test results.
-View test case result history across test suites and test plans easily by using the right-hand pane in the **Test plans** page of the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
+View test case result history across test suites and test plans easily by using the right-hand pane in the **Test plans** page of [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 You can also select a retention policy to specify how long you want to keep your manual testing results.
 
 | Test tracking capability | Web-based test features | Client-based Microsoft Test Manager |
@@ -111,10 +111,10 @@ You can also select a retention policy to specify how long you want to keep your
 
 Use the lightweight [Test &amp; Feedback browser extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to perform exploratory testing on your web applications.
 You can collect rich diagnostic data such as screen captures, screen recording, and image action logs using this extension.
-The extension also has the capability to capture page load data for your web applications. In the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] you can view completed exploratory
+The extension also has the capability to capture page load data for your web applications. In [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] you can view completed exploratory
 testing sessions and derive meaningful insights at team or individual level, and for a specific period.
 
-To explore your desktop applications, you can use the Exploratory Test Runner client in Microsoft Test Manager by launching it from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
+To explore your desktop applications, you can use the Exploratory Test Runner client in Microsoft Test Manager by launching it from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 
 **Comparison of 
 [exploratory testing with the Test &amp; Feedback extension](../perform-exploratory-tests.md)
@@ -131,8 +131,8 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 
 ## Conclusion
 
-The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a richer, faster, and easier-to-use solution for manual testing as compared to the Test Center in Microsoft Test Manager. It works on all platforms and all browsers, and has a rich and modern web UI that improves your testing experience across all stages of manual testing.
+[!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a richer, faster, and easier-to-use solution for manual testing as compared to the Test Center in Microsoft Test Manager. It works on all platforms and all browsers, and has a rich and modern web UI that improves your testing experience across all stages of manual testing.
 
-All the test plans, test suites, test cases, results and other test management data you create using Microsoft Test Manager are stored in Azure DevOps or TFS. Hence, existing Microsoft Test Manager users can easily get started using the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] without any data loss.
+All the test plans, test suites, test cases, results and other test management data you create using Microsoft Test Manager are stored in Azure DevOps or TFS. Hence, existing Microsoft Test Manager users can easily get started using [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] without any data loss.
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
