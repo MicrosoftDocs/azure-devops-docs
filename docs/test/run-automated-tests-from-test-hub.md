@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
 
-Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
+Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
 
 * Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
@@ -56,7 +56,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 ## Set up your environment
 
-1. In the **Test plans** page of the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose your test plan,
+1. In the **Test plans** page of [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose your test plan,
    open the shortcut menu, and choose **Test plan settings**.
 
    ![Choosing Test plan settings](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
@@ -69,7 +69,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 1. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
+   in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
    using this template, select it and then select the existing stage in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
@@ -165,7 +165,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 ## Run the automated tests
 
-1. In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], open the test plan and select a test suite that contains the
+1. In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], open the test plan and select a test suite that contains the
    automated tests.
 
 1. Select the test(s) you want to run, open the **Run** menu,
