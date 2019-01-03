@@ -159,14 +159,14 @@ from Visual Studio Test Explorer.
    
 4. Run the Selenium test locally using Test Explorer and check that it works.
 
-## Define your CI build pipeline
+## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
 For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
 
 ## Create your web app
 
-You'll need a web app to test. You can use an existing app, or deploy one in your CD release pipeline.
+You'll need a web app to test. You can use an existing app, or deploy one in your continuous deployment (CD) release pipeline.
 The example code above runs tests against Bing.com. For details of how to set up your own release pipeline
 to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 
@@ -192,7 +192,7 @@ For example,
   See [Build and release agents](../agents/agents.md#account).
 
 <a name="include-test"></a>
-## Include the test in a CD release
+## Include the test in a release
 
 ::: moniker range="<= tfs-2017"
 
