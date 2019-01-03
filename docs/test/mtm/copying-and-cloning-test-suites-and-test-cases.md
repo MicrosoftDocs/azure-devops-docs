@@ -23,7 +23,7 @@ There are several ways to duplicate test suites and test cases.
 It's important to understand that a test suite or plan contains a set of *references* to test cases.
 If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in Azure DevOps or TFS, and you can find it there with a query.  
 
-For details about copying tests in Azure DevOps or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
+**For details about copying tests in Azure DevOps or TFS, see [this FAQ](../reference-qa.md#copyclonetce).**
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
