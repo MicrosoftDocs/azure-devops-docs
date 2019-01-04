@@ -50,7 +50,7 @@ You can provide guidance to your team in the following places using Markdown:
 - [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Projectpage or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -60,7 +60,7 @@ You can provide guidance to your team in the following places using Markdown:
   
 - [Add and edit wiki pages](add-edit-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Projectpage or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -69,7 +69,7 @@ You can provide guidance to your team in the following places using Markdown:
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Projectpage or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 

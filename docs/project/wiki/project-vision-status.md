@@ -19,7 +19,7 @@ ms.date: 12/17/2018
 
 ::: moniker range=">= tfs-2018"
 
-From the project summary page, share your projectwith your team, add project members, and check the latest project activity. Share your projectand objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+From the project summary page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 
@@ -27,7 +27,7 @@ If you want to use a project wiki, then you'll want to first [Create a Wiki for 
 
 ::: moniker range="tfs-2015"
 
-From the project home page, share your projectwith your team, add project members, and check the latest project activity. Share your projectand objective, and ways for team members to contribute to the project through a project README file.
+From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
 ::: moniker-end
 
 ::: moniker range=">= azdevserver-2019"
@@ -105,7 +105,7 @@ To define a README file for your project, see [Initialize a README file for your
 
 ## Initialize a README file for a Git repo
 
-You can share your projectand objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
+You can share your project and objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
 
 # [New navigation](#tab/new-nav)
 
