@@ -41,7 +41,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
 
     ```
     npm init
-    ````
+    ```
 
     Press Enter to accept the defaults for all of the options except the entry point. Change it to `app.js` 
 
