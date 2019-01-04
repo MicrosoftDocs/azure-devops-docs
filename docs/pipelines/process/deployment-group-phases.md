@@ -13,13 +13,13 @@ ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
 # Deployment group jobs
 
 **Azure Pipelines | TFS 2018**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 [Deployment groups](../release/deployment-groups/index.md) make it easy to define groups of target servers for deployment. Tasks that you define in a deployment group job run on some or all of the target servers, depending on the arguments you specify for the tasks and the job itself.
 
@@ -58,3 +58,4 @@ Use the job timeout to specify the timeout in minutes for jobs in this job. A ze
 * [Jobs](phases.md)
 * [Server jobs](server-phases.md)
 * [Multiple jobs](multiple-phases.md)
+* [Specify conditions](conditions.md)

@@ -438,6 +438,8 @@ Job variables are not yet supported in the web editor.
 
 ---
 
+For information about using a **condition**, see [Specify conditions](conditions.md).
+
 <a name="artifact-download"></a>
 
 ## Artifact download
@@ -488,6 +490,8 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 ---
 
+For information about using **dependsOn** and **condition**, see [Specify conditions](conditions.md).
+
 ## Access to OAuth token
 
  You can allow tasks running in this job to access current Azure Pipelines or TFS OAuth security token.
@@ -530,3 +534,4 @@ Select the **Allow scripts to access OAuth token** option in the control options
 * [Multiple jobs](multiple-phases.md)
 * [Server jobs](server-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)
