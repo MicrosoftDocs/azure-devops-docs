@@ -153,9 +153,13 @@ Creating a draft release allows you to edit some of the settings for the release
 depending on your role permissions, before starting the deployment.
 The changes apply only to that release, and do not affect the settings of the original pipeline.
 
-Create a draft release using the "..." ellipses link in the release pipeline definition screen:
+Create a draft release using the "..." ellipses link in the list of releases:
 
-![Create a draft release](_img/what-is-release-management/draft-release.png)
+![Create a draft release in the list of releases](_img/what-is-release-management/draft-release.png)
+
+... or the **Release** drop-down in the pipeline definition page: 
+
+![Create a draft release in the pipeline definition page](_img/what-is-release-management/new-draft-release.png)
 
 After you finish editing the draft release, choose **Start** from the draft release toolbar. 
 
