@@ -63,5 +63,7 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
 </settings>
 ```
 
-> [!NOTE]
-> You can find more information about the settings.xml file in the [settings.xml reference](https://maven.apache.org/settings.html).
+> [!IMPORTANT]
+> The `<id>` tags in the _settings.xml_ and the _pom.xml_ **must** match.
+
+You can find more information about the settings.xml file in the [settings.xml reference](https://maven.apache.org/settings.html).
