@@ -194,7 +194,7 @@ Add the Epic.xml file to the WorkItem Tracking\TypeDefinitions folder.
 
 <a id="VS412454"></a>
 ### VS412454: Plug-in *[pluginName]* contains several ```taskList``` {1}, {2}. Only one ```taskList``` per plugin is allowed.
-Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist`````` elements defined. 
+Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist``` elements defined. 
 
 #### Error example
 The WorkItemTracking plug-in contains two ```tasklist``` statements.

@@ -69,3 +69,6 @@ monikerRange: '>= tfs-2018'
    </distributionManagement>
 </project>
 ```
+
+> [!IMPORTANT]
+> The `<id>` tags in the _settings.xml_ and the _pom.xml_ **must** match.
