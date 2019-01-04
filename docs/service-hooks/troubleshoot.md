@@ -120,7 +120,7 @@ A: Check these:
 
 A: Use tfssecurity.exe from the command line, for example:
 
-````
+```
     tfssecurity /a+ /collection: https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
